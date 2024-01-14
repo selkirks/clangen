@@ -173,22 +173,22 @@ class AllegiancesScreen(Screens):
         outputs = []
         if game.clan.leader and not (game.clan.leader.dead or game.clan.leader.outside):
             outputs.append(
-                ["<b><u>LEADER</u></b>", self.generate_one_entry(game.clan.leader)]
+                ["<b><u>SECRETKEEPER</u></b>", self.generate_one_entry(game.clan.leader)]
             )
 
         # Deputy Box:
         if game.clan.deputy and not (game.clan.deputy.dead or game.clan.deputy.outside):
             outputs.append(
-                ["<b><u>DEPUTY</u></b>", self.generate_one_entry(game.clan.deputy)]
+                ["<b><u>KEEPER'S APP</u></b>", self.generate_one_entry(game.clan.deputy)]
             )
 
         # Medicine Cat Box:
         if living_meds:
             _box = ["", ""]
             if len(living_meds) == 1:
-                _box[0] = "<b><u>MEDICINE CAT</u></b>"
+                _box[0] = "<b><u>PROTECTOR</u></b>"
             else:
-                _box[0] = "<b><u>MEDICINE CATS</u></b>"
+                _box[0] = "<b><u>PROTECTORS</u></b>"
 
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_meds])
             outputs.append(_box)

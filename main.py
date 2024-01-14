@@ -308,18 +308,14 @@ while 1:
         sound_manager.handle_sound_events(event)
 
         if event.type == pygame.QUIT:
-            # Don't display if on the start screen or there is no clan.
-            if (
-                game.switches["cur_screen"]
-                in [
-                    "start screen",
-                    "switch clan screen",
-                    "settings screen",
-                    "info screen",
-                    "make clan screen",
-                ]
-                or not game.clan
-            ):
+            # Dont display if on the start screen or there is no clan.
+            if (game.switches['cur_screen'] in ['start screen',
+                                                'switch clan screen',
+                                                'settings screen',
+                                                'info screen',
+                                                'make clan screen',
+                                                'intro screen']
+                or not game.clan):
                 quit(savesettings=False)
             else:
                 SaveCheck(game.switches["cur_screen"], False, None)

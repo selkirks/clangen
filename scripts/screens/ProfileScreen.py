@@ -885,7 +885,16 @@ class ProfileScreen(Screens):
         elif the_cat.exiled:
             output += "<font color='#FF0000'>exiled</font>"
         else:
-            output += the_cat.status
+            if the_cat.status == 'leader':
+                output+= "secret keeper"
+            elif the_cat.status == 'deputy':
+                output+= "secret keeper's apprentice"
+            elif the_cat.status == 'medicine cat':
+                output+= "protector of secrets"
+            elif the_cat.status == 'medicine cat apprentice':
+                output+= "apprentice protector of secrets"
+            else:
+                output += the_cat.status
 
         # NEWLINE ----------
         output += "\n"
