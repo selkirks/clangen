@@ -11,7 +11,7 @@ from scripts.game_structure.game_essentials import game, MANAGER
 from scripts.game_structure.propagating_thread import PropagatingThread
 
 
-class PatrolScreen(Screens):
+class TrialScreen(Screens):
     able_box = pygame.transform.scale(pygame.image.load("resources/images/patrol_able_cats.png").convert_alpha(),
                                       (540, 402))
     patrol_box = pygame.transform.scale(pygame.image.load("resources/images/patrol_cats.png").convert_alpha(),
@@ -70,7 +70,9 @@ class PatrolScreen(Screens):
                 self.change_screen('list screen')
 
     def handle_choose_cats_events(self, event):
-        if event.ui_element == self.elements["random"]:
+        if event.ui_element == self.elements["patrol_button"]:
+            self.change_screen("patrol screen")
+        elif event.ui_element == self.elements["random"]:
             self.selected_cat = choice(self.able_cats)
             self.update_selected_cat()
             self.update_button()
@@ -255,7 +257,7 @@ class PatrolScreen(Screens):
                         self.patrol_type = 'general'
 
                 if self.patrol_type == 'general':
-                    text = 'random patrol type'
+                    text = 'apprentice trials'
                 elif self.patrol_type == 'training':
                     text = 'training'
                 elif self.patrol_type == 'border':
@@ -363,6 +365,8 @@ class PatrolScreen(Screens):
                                                                  pygame.image.load(
                                                                      "resources/images/patrol_cat_frame.png").convert_alpha()
                                                                  , manager=MANAGER)
+        self.elements["patrol_button"] = UIImageButton(scale(pygame.Rect((770, 200), (68, 68))),
+                                                                 "", object_id="#events_cat_button", tool_tip_text="Switch to Patrols", manager=MANAGER)
 
         # Frames
         self.elements["able_frame"] = pygame_gui.elements.UIImage(
@@ -444,18 +448,6 @@ class PatrolScreen(Screens):
                                                       object_id="#start_patrol_button", manager=MANAGER)
         self.elements['patrol_start'].disable()
 
-        # add prey information
-        if game.clan.game_mode != 'classic':
-            current_amount =  round(game.clan.freshkill_pile.total_amount,2)
-            self.elements['current_prey'] = pygame_gui.elements.UITextBox(
-                f"current prey: {current_amount}", scale(pygame.Rect((600, 1260), (400, 800))),
-                object_id=get_text_box_theme("#text_box_30_horizcenter"), manager=MANAGER
-            )
-            needed_amount = round(game.clan.freshkill_pile.amount_food_needed(),2)
-            self.elements['needed_prey'] = pygame_gui.elements.UITextBox(
-                f"needed prey: {needed_amount}", scale(pygame.Rect((600, 1295), (400, 800))),
-                object_id=get_text_box_theme("#text_box_30_horizcenter"), manager=MANAGER
-            )
         self.update_cat_images_buttons()
         self.update_button()
 
@@ -618,14 +610,10 @@ class PatrolScreen(Screens):
 
         # ASSIGN TO ABLE CATS
         for the_cat in Cat.all_cats_list:
-            if not the_cat.dead and the_cat.in_camp and the_cat.ID not in game.patrolled and the_cat.status not in [
-                'elder', 'kitten', 'mediator', 'mediator apprentice'
-            ] and not the_cat.outside and the_cat not in self.current_patrol and not the_cat.not_working():
-                if the_cat.status == 'newborn' or game.config['fun']['all_cats_are_newborn']:
-                    if game.config['fun']['newborns_can_patrol']:
-                        self.able_cats.append(the_cat)
-                else:
-                    self.able_cats.append(the_cat)
+            if not the_cat.dead and the_cat.in_camp and the_cat.ID not in game.patrolled and the_cat.status in [
+                'apprentice', 'mediator apprentice', 'medicine cat apprentice'
+            ] and the_cat.moons == 6 and not the_cat.outside and the_cat not in self.current_patrol and not the_cat.not_working():
+                self.able_cats.append(the_cat)
 
         if not self.able_cats:
             all_pages = []

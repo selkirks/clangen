@@ -25,6 +25,7 @@ from .StartScreen import StartScreen
 from .SwitchClanScreen import SwitchClanScreen
 from .WarriorDenScreen import WarriorDenScreen
 from .IntroScreen import IntroScreen
+from .TrialScreen import TrialScreen
 
 # ---------------------------------------------------------------------------- #
 #                                  UI RULES                                    #
@@ -103,6 +104,7 @@ class AllScreens:
         cls.leader_den_screen = LeaderDenScreen("leader den screen")
 
         cls.events_screen = EventsScreen("events screen")
+        cls.trial_screen = TrialScreen('trial screen')
 
         cls.settings_screen = SettingsScreen("settings screen")
         cls.clan_settings_screen = ClanSettingsScreen("clan settings screen")

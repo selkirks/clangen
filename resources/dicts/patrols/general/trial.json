@@ -215,6 +215,56 @@
                 "weight": 25
             }
         ]
+    },
+    {
+        "patrol_id": "app_trial5",
+        "biome": [
+            "any"
+        ],
+        "season": [
+            "leaf-fall"
+        ],
+        "types": [
+            "trial"
+        ],
+        "tags": [],
+        "patrol_art": null,
+        "patrol_art_clean": null,
+        "min_cats": 1,
+        "max_cats": 1,
+        "weight": 20,
+        "chance_of_success": 50,
+        "relationship_constraint": [],
+        "pl_skill_constraint": [],
+        "intro_text": "As the leaves turn golden, r_c approaches the woods' edge to face their trial. They steel themselves for the hardest night of their lives.",
+        "decline_text": "They step back, choosing to wait for another day.",
+        "success_outcomes": [
+            {
+                "text": "r_c dashes back into camp the next morning, their eyes wide with fear. They've seen things in the woods during their trial that they won't speak of -- but they're alive.",
+                "exp": 25,
+                "weight": 25
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "injury": [
+                    {
+                        "cats": ["r_c"],
+                        "injuries": ["small_bite_injury"],
+                        "scars": ["LEGBITE"]
+                    }
+                ],
+                "text": "Eyes hollow, r_c stumbles back into camp, limping. They're promptly ushered into the medicine den for treatment.",
+                "exp": 15,
+                "weight": 25
+            },
+            {
+                "dead_cats": ["r_c"],
+                "text": "The night is pierced with a sudden screech -- coming from the direction of the woods. r_c never returns.",
+                "exp": 15,
+                "weight": 25
+            }
+        ]
     }
     
     

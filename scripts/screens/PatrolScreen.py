@@ -91,7 +91,9 @@ class PatrolScreen(Screens):
             # self.change_screen('list screen')
 
     def handle_choose_cats_events(self, event):
-        if event.ui_element == self.elements["random"]:
+        if event.ui_element == self.elements["patrol_button"]:
+            self.change_screen("trial screen")
+        elif event.ui_element == self.elements["random"]:
             if self.able_cats:
                 self.selected_cat = choice(self.able_cats)
             else:
@@ -550,6 +552,9 @@ class PatrolScreen(Screens):
             manager=MANAGER,
         )
         self.elements["cat_frame"].disable()
+
+        self.elements["patrol_button"] = UIImageButton(scale(pygame.Rect((770, 200), (68, 68))),
+                                                                 "", object_id="#claws_patrol_button", tool_tip_text="Switch to Apprentice Trials", manager=MANAGER)
 
         # Frames
         self.elements["able_frame"] = pygame_gui.elements.UIImage(
