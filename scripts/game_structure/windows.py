@@ -412,7 +412,7 @@ class GameOver(UIWindow):
         self.clan_name = str(game.clan.name + "Clan")
         self.last_screen = last_screen
         self.game_over_message = UITextBoxTweaked(
-            f"{self.clan_name} has died out. For now, this is where their story ends. Perhaps it's time to tell a new "
+            f"The woods have won. Perhaps it's time to tell a new "
             f"tale?",
             ui_scale(pygame.Rect((20, 20), (260, -1))),
             line_spacing=1,

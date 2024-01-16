@@ -67,7 +67,6 @@ class IntroScreen(Screens):
             
     def on_use(self):
         self.clock = pygame.time.Clock()
-        font = pygame.font.Font(None, 64)
 
         if self.fading_in:
             self.fade_in()

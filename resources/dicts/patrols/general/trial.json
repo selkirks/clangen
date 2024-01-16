@@ -1,0 +1,221 @@
+[
+    {
+        "patrol_id": "app_trial1",
+        "biome": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "types": [
+            "trial"
+        ],
+        "tags": [],
+        "patrol_art": null,
+        "patrol_art_clean": null,
+        "min_cats": 1,
+        "max_cats": 1,
+        "weight": 20,
+        "chance_of_success": 50,
+        "relationship_constraint": [],
+        "pl_skill_constraint": [],
+        "intro_text": "It's time. r_c has reached the age of six moons and is sent into the woods to prove their worth. Shaking, they step out of the safety of the camp.",
+        "decline_text": "They can't do this. Not today.",
+        "success_outcomes": [
+            {
+                "text": "r_c arrives back to camp, tail between their legs, but they are safe. They have proved their worth, and the woods have spared them today.",
+                "exp": 20,
+                "weight": 20
+            },
+            {
+                "text": "r_c arrives back to camp, tail high. The woods have been kind to them today, and they state that their trial was nothing more than a quiet walk in the forest.",
+                "exp": 20,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "dead_cats": ["r_c"],
+                "text": "The day turns into night and r_c still hasn't returned. The woods have decided that they are not worthy.",
+                "exp": 20,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "app_trial2",
+        "biome": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "types": [
+            "trial"
+        ],
+        "tags": [],
+        "patrol_art": null,
+        "patrol_art_clean": null,
+        "min_cats": 1,
+        "max_cats": 1,
+        "weight": 20,
+        "chance_of_success": 50,
+        "relationship_constraint": [],
+        "pl_skill_constraint": [],
+        "intro_text": "r_c, upon their sixth moon, steps into the cool shadows of the woods. Their eyes full of determination and fear, they disappear into the dense forest to undertake the trial.",
+        "decline_text": "They can't do this. Not today.",
+        "success_outcomes": [
+            {
+                "text": "Returning exhausted and with a weary gaze, r_c pushes through the foliage into the camp. They have survived the ordeal, earning the woods' acceptance and their place as an apprentice.",
+                "exp": 20,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "dead_cats": ["r_c"],
+                "text": "The moon hangs high, the camp waits in silence, but r_c does not return. The creatures of the woods have claimed them, finding them not worthy.",
+                "exp": 20,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "app_trial3",
+        "biome": [
+            "any"
+        ],
+        "season": [
+            "leaf-bare"
+        ],
+        "types": [
+            "trial"
+        ],
+        "tags": [],
+        "patrol_art": null,
+        "patrol_art_clean": null,
+        "min_cats": 1,
+        "max_cats": 1,
+        "weight": 20,
+        "chance_of_success": 50,
+        "relationship_constraint": [],
+        "pl_skill_constraint": [],
+        "intro_text": "The moon is full and the forest whispers as r_c steps into its snowy embrace. It is their sixth moon, and the trial awaits. The crunch of snow underpaw is their only company as they venture deeper into the unknown.",
+        "decline_text": "The cold is too much. They retreat back to the warmth of the camp.",
+        "success_outcomes": [
+            {
+                "text": "Battered but unharmed, r_c returns at dawn, their fur dusted with snow. They carry a quiet strength in their eyes, having faced the trials of the forest and emerged victorious.",
+                "exp": 30,
+                "weight": 30
+            },
+            {
+                "text": "r_c emerges from the forest as the sun rises. They have outwitted the creatures of the woods and earned their place as an apprentice.",
+                "exp": 30,
+                "weight": 30
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "dead_cats": ["r_c"],
+                "text": "As the night drags on, hope fades. r_c does not return, swallowed by the icy embrace of the winter forest. The woods have judged them, and found them wanting.",
+                "exp": 30,
+                "weight": 30
+            }
+        ]
+    },
+    {
+        "patrol_id": "app_trial4",
+        "biome": [
+            "mountainous"
+        ],
+        "season": [
+            "newleaf"
+        ],
+        "types": [
+            "trial"
+        ],
+        "tags": [],
+        "patrol_art": null,
+        "patrol_art_clean": null,
+        "min_cats": 1,
+        "max_cats": 1,
+        "weight": 25,
+        "chance_of_success": 45,
+        "relationship_constraint": [],
+        "pl_skill_constraint": [],
+        "intro_text": "With the first light of Newleaf, r_c faces their trial. They climb the rugged terrain of the mountain, their path fraught with challenges. The steep cliffs and echoing caves surrounding the woods test their courage and determination.",
+        "decline_text": "The mountain is too daunting. They return, deciding to face it another day.",
+        "success_outcomes": [
+            {
+                "text": "Triumphant, r_c descends from the mountain woods. Their fur is ruffled by the wind, but their spirit is unbroken. They have conquered the woods and proven themselves.",
+                "exp": 25,
+                "weight": 25
+            },
+            {
+                "text": "As the sun sets, r_c returns, their paws sore but their eyes alight with pride. The mountain's trials have been bested, paving their way to apprenticeship.",
+                "exp": 25,
+                "weight": 25
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "dead_cats": ["r_c"],
+                "text": "Night falls, and the mountain remains silent. r_c does not return, lost to the trials and perils of the woods of the high peaks.",
+                "exp": 25,
+                "weight": 25
+            }
+        ]
+    },
+    {
+        "patrol_id": "app_trial5",
+        "biome": [
+            "any"
+        ],
+        "season": [
+            "leaf-fall"
+        ],
+        "types": [
+            "trial"
+        ],
+        "tags": [],
+        "patrol_art": null,
+        "patrol_art_clean": null,
+        "min_cats": 1,
+        "max_cats": 1,
+        "weight": 25,
+        "chance_of_success": 40,
+        "relationship_constraint": [],
+        "pl_skill_constraint": [],
+        "intro_text": "As the leaves turn golden, r_c approaches the woods' edge to face their trial. They steel themselves for the hardest night of their lives.",
+        "decline_text": "They step back, choosing to wait for another day.",
+        "success_outcomes": [
+            {
+                "text": "r_c dashes back into camp the next morning, their eyes wide with fear. They've seen things in the woods during their trial that they won't speak of -- but they're alive.",
+                "exp": 25,
+                "weight": 25
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "injury": [
+                    {
+                        "cats": ["r_c"],
+                        "injuries": ["small_bite_injury"],
+                        "scars": ["LEGBITE"]
+                    }
+                ],
+                "text": "Eyes hollow, r_c stumbles back into camp, limping. They're promptly ushered into the medicine den for treatment.",
+                "exp": 15,
+                "weight": 25
+            },
+            {
+                "dead_cats": ["r_c"],
+                "text": "The night is pierced with a sudden screech -- coming from the direction of the woods. r_c never returns.",
+                "exp": 15,
+                "weight": 25
+            }
+        ]
+    }
+    
+    
+]

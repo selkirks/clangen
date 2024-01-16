@@ -177,6 +177,8 @@ class Clan:
         self.faded_ids = (
             []
         )  # Stores ID's of faded cats, to ensure these IDs aren't reused.
+        self.moons_since_fed = 0
+
         if self_run_init_functions:
             self.post_initialization_functions()
 

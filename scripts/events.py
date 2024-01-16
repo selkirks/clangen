@@ -284,6 +284,31 @@ class Events:
         self.check_and_promote_leader()
         self.check_and_promote_deputy()
 
+        game.clan.moons_since_fed += 1
+        if game.clan.moons_since_fed == 10:
+            woods_str = "The woods have not been fed..."
+            game.cur_events_list.insert(0, Single_Event(woods_str, "health"))
+        elif game.clan.moons_since_fed == 11:
+            woods_str = "The woods are starving."
+            game.cur_events_list.insert(0, Single_Event(woods_str, "health"))
+        elif game.clan.moons_since_fed > 11:
+            counter = 0
+            rand_cat = Cat.all_cats.get(random.choice(game.clan.clan_cats))
+            while rand_cat.dead or rand_cat.outside or rand_cat.status in ["leader", "deputy", "medicine cat"]:
+                rand_cat = Cat.all_cats.get(random.choice(game.clan.clan_cats))
+                counter += 1
+                if counter > 30:
+                    woods_str = f"The woods rumble with fury."
+                    game.cur_events_list.insert(0, Single_Event(woods_str, "health"))
+                    rand_cat = None
+            if rand_cat:
+                woods_str = f"The woods have been starving for too long. {rand_cat.name} is taken in the night."
+                rand_cat.die(body=False)
+                History.add_death(rand_cat, "This cat was fed to the woods.")
+                rand_cat.history.died_by[0]['text'] = "This cat was fed to the woods."
+                game.cur_events_list.insert(0, Single_Event(woods_str, "health"))
+                game.clan.not_fed_for = 0
+
         # Resort
         if game.sort_type != "id":
             Cat.sort_cats()
@@ -544,7 +569,7 @@ class Events:
                     )
                 )
                 cat.status_change("mediator")
-
+        
     def get_moon_freshkill(self):
         """Adding auto freshkill for the current moon."""
         healthy_hunter = list(

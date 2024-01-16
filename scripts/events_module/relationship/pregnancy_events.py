@@ -504,6 +504,28 @@ class Pregnancy_Events:
             Single_Event(print_event, ["health", "birth_death"], involved_cats)
         )
 
+        possible_woods_str = ["The woods demanded a sacrifice from the Clan. k_n was taken in the night.", 
+                            "k_n was eaten by the woods.",
+                            "k_n soon goes missing from the nursery. It looks like the woods were fed tonight."]
+        parent_reaction = False
+        for kit in kits:
+            if random.randint(1,3) == 1:
+                kit.die(body=False)
+                History.add_death(kit, "This cat died to the woods.")
+                kit.history.died_by[0]['text'] = "This cat died to the woods."
+                game.cur_events_list.insert(0, Single_Event(choice(possible_woods_str).replace("k_n", str(kit.name), "birth_death")))
+                game.clan.not_fed_for = 0
+                if random.randint(1,20) == 1 and not parent_reaction:
+                    parent_reaction = True
+                    try:
+                        parent = Cat.all_cats.get(kit.parent1)
+                        if not parent.dead:
+                            parent.die(body=False)
+                            History.add_death(parent, "This cat died trying to avenge their kit.")
+                            parent.history.died_by[0]['text'] = "This cat died trying to avenge their kit."
+                            game.cur_events_list.insert(0, Single_Event(f"{parent.name} screams their fury into the sky. Why, oh why did the woods have to take their kit from them? Claws unsheathed, they swear their revenge and sprint into the woods, never to be seen again.", "birth_death"))
+                    except:
+                        continue
     # ---------------------------------------------------------------------------- #
     #                          check if event is triggered                         #
     # ---------------------------------------------------------------------------- #
