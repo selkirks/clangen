@@ -249,7 +249,8 @@ class TrialScreen(Screens):
                 self.elements['claws'].disable()
                 self.elements['herb'].disable()
 
-                # self.elements['info'].kill()  # clearing the text before displaying new text
+                if 'info' in self.elements:
+                    self.elements['info'].kill()  # clearing the text before displaying new text
 
                 if self.patrol_type != 'med' and self.current_patrol:
                     self.elements['herb'].disable()
