@@ -540,12 +540,12 @@ class PatrolScreen(Screens):
         self.patrol_stage = "choose_cats"
         self.patrol_screen = "patrol_cats"  # List
 
-        self.elements["info"] = pygame_gui.elements.UITextBox(
-            "Choose up to six cats to take on patrol.\n"
-            "Smaller patrols help cats gain more experience, but larger patrols are safer.",
-            ui_scale(pygame.Rect((187, 95), (425, 100))),
-            object_id=get_text_box_theme("#text_box_22_horizcenter"),
-        )
+        # self.elements["info"] = pygame_gui.elements.UITextBox(
+        #     "Choose up to six cats to take on patrol.\n"
+        #     "Smaller patrols help cats gain more experience, but larger patrols are safer.",
+        #     ui_scale(pygame.Rect((187, 95), (425, 100))),
+        #     object_id=get_text_box_theme("#text_box_22_horizcenter"),
+        # )
         self.elements["cat_frame"] = pygame_gui.elements.UIImage(
             ui_scale(pygame.Rect((300, 165), (200, 275))),
             get_box(BoxStyles.FRAME, (200, 275)),
