@@ -492,12 +492,14 @@ class PatrolOutcome:
                     game.clan.leader_lives -= 1
                     results.append(f"{_cat.name} lost one life.")
             else:
-                results.append(f"{_cat.name} died.")
-
+                results.append(f"{_cat.name} has fed the woods.")
+            
+            
             # Kill Cat
             self.__handle_death_history(_cat, patrol)
             _cat.die(body)
-
+            game.clan.moons_since_fed = 0
+            
         return " ".join(results)
 
     def _handle_lost(self, patrol: "Patrol") -> str:

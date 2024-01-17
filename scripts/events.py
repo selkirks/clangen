@@ -307,7 +307,7 @@ class Events:
                 History.add_death(rand_cat, "This cat was fed to the woods.")
                 rand_cat.history.died_by[0]['text'] = "This cat was fed to the woods."
                 game.cur_events_list.insert(0, Single_Event(woods_str, "health"))
-                game.clan.not_fed_for = 0
+                game.clan.moons_since_fed = 0
 
         # Resort
         if game.sort_type != "id":

@@ -2,10 +2,10 @@
     {
         "patrol_id": "app_trial1",
         "biome": [
-            "any"
+            "Any"
         ],
         "season": [
-            "any"
+            "Any"
         ],
         "types": [
             "trial"
@@ -45,10 +45,10 @@
     {
         "patrol_id": "app_trial2",
         "biome": [
-            "any"
+            "Any"
         ],
         "season": [
-            "any"
+            "Any"
         ],
         "types": [
             "trial"
@@ -83,7 +83,7 @@
     {
         "patrol_id": "app_trial3",
         "biome": [
-            "any"
+            "Any"
         ],
         "season": [
             "leaf-bare"
@@ -169,7 +169,7 @@
     {
         "patrol_id": "app_trial5",
         "biome": [
-            "any"
+            "Any"
         ],
         "season": [
             "leaf-fall"
@@ -219,7 +219,7 @@
     {
         "patrol_id": "app_trial5",
         "biome": [
-            "any"
+            "Any"
         ],
         "season": [
             "leaf-fall"

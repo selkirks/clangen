@@ -518,6 +518,8 @@ class Clan:
         # Patrolled cats
         clan_data["patrolled_cats"] = [str(i) for i in game.patrolled]
 
+        clan_data["moons_since_fed"] = self.moons_since_fed
+
         # OTHER CLANS
         # Clan Names
         clan_data["other_clans_names"] = ",".join([str(i.name) for i in self.all_clans])
@@ -835,6 +837,7 @@ class Clan:
         if "custom_pronouns" in clan_data.keys():
             if clan_data["custom_pronouns"]:
                 game.clan.custom_pronouns = clan_data["custom_pronouns"]
+        game.clan.moons_since_fed = clan_data["moons_since_fed"]
 
         # Instructor Info
         if clan_data["instructor"] in Cat.all_cats:
