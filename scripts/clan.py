@@ -837,7 +837,7 @@ class Clan:
         if "custom_pronouns" in clan_data.keys():
             if clan_data["custom_pronouns"]:
                 game.clan.custom_pronouns = clan_data["custom_pronouns"]
-        game.clan.moons_since_fed = clan_data["moons_since_fed"]
+        game.clan.moons_since_fed = clan_data["moons_since_fed"] if "moons_since_fed" in clan_data else 0
 
         # Instructor Info
         if clan_data["instructor"] in Cat.all_cats:
