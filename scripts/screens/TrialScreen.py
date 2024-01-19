@@ -1,4 +1,4 @@
-from random import choice, sample
+from random import choice
 import pygame
 import pygame_gui
 
@@ -8,7 +8,6 @@ from scripts.game_structure.image_button import UIImageButton, UISpriteButton
 from scripts.patrol.patrol import Patrol
 from scripts.cat.cats import Cat
 from scripts.game_structure.game_essentials import game, MANAGER
-from scripts.game_structure.propagating_thread import PropagatingThread
 
 
 class TrialScreen(Screens):
@@ -236,12 +235,12 @@ class TrialScreen(Screens):
             self.elements['add_six'].disable()
             self.elements["random"].enable()
 
-            # making sure meds don't get the option for other patrols
-            if any((cat.status in ['medicine cat', 'medicine cat apprentice'] for cat in self.current_patrol)):
-                self.patrol_type = 'med'
-            else:
-                if self.patrol_type == 'med':
-                    self.patrol_type = 'general'
+            # # making sure meds don't get the option for other patrols
+            # if any((cat.status in ['medicine cat', 'medicine cat apprentice'] for cat in self.current_patrol)):
+            #     self.patrol_type = 'med'
+            # else:
+            #     if self.patrol_type == 'med':
+            #         self.patrol_type = 'general'
 
             if game.clan.game_mode != 'classic':
                 self.elements['paw'].disable()
@@ -252,27 +251,27 @@ class TrialScreen(Screens):
                 if 'info' in self.elements:
                     self.elements['info'].kill()  # clearing the text before displaying new text
 
-                if self.patrol_type != 'med' and self.current_patrol:
-                    self.elements['herb'].disable()
-                    if self.patrol_type == 'med':
-                        self.patrol_type = 'general'
+                # if self.patrol_type != 'med' and self.current_patrol:
+                #     self.elements['herb'].disable()
+                #     if self.patrol_type == 'med':
+                #         self.patrol_type = 'general'
 
                 if self.patrol_type == 'general':
                     text = 'apprentice trials'
-                elif self.patrol_type == 'training':
-                    text = 'training'
-                elif self.patrol_type == 'border':
-                    text = 'border'
-                elif self.patrol_type == 'hunting':
-                    text = 'hunting'
-                elif self.patrol_type == 'med':
-                    if self.current_patrol:
-                        text = 'herb gathering'
-                        self.elements['mouse'].disable()
-                        self.elements['claws'].disable()
-                        self.elements['paw'].disable()
-                    else:
-                        text = 'herb gathering'
+                # elif self.patrol_type == 'training':
+                #     text = 'training'
+                # elif self.patrol_type == 'border':
+                #     text = 'border'
+                # elif self.patrol_type == 'hunting':
+                #     text = 'hunting'
+                # elif self.patrol_type == 'med':
+                #     if self.current_patrol:
+                #         text = 'herb gathering'
+                #         self.elements['mouse'].disable()
+                #         self.elements['claws'].disable()
+                #         self.elements['paw'].disable()
+                #     else:
+                #         text = 'herb gathering'
                 else:
                     text = ""
 
