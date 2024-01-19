@@ -1083,7 +1083,11 @@ class Patrol:
                         text = " ".join(modify)
                         break
 
-        text = text.replace("c_n", str(game.clan.name) + "Clan")
+        text = text.replace('c_n', str(game.clan.name) + 'Clan')
+        if game.clan.leader and not game.clan.leader.outside and not game.clan.leader.dead:
+            text = text.replace('lead_name', str(game.clan.leader.name))
+        else:
+            text = text.replace('lead_name', "The protector of secrets")
 
         text, senses, list_type, _ = find_special_list_types(text)
         if list_type:

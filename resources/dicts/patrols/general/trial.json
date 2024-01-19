@@ -16,7 +16,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "weight": 20,
-        "chance_of_success": 50,
+        "chance_of_success": 60,
         "relationship_constraint": [],
         "pl_skill_constraint": [],
         "intro_text": "It's time. r_c has reached the age of six moons and is sent into the woods to prove their worth. Shaking, they step out of the safety of the camp.",
@@ -59,7 +59,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "weight": 20,
-        "chance_of_success": 50,
+        "chance_of_success": 60,
         "relationship_constraint": [],
         "pl_skill_constraint": [],
         "intro_text": "r_c, upon their sixth moon, steps into the cool shadows of the woods. Their eyes full of determination and fear, they disappear into the dense forest to undertake the trial.",
@@ -86,7 +86,7 @@
             "Any"
         ],
         "season": [
-            "leaf-bare"
+            "Leaf-bare"
         ],
         "types": [
             "trial"
@@ -97,7 +97,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "weight": 20,
-        "chance_of_success": 50,
+        "chance_of_success": 60,
         "relationship_constraint": [],
         "pl_skill_constraint": [],
         "intro_text": "The moon is full and the forest whispers as r_c steps into its snowy embrace. It is their sixth moon, and the trial awaits. The crunch of snow underpaw is their only company as they venture deeper into the unknown.",
@@ -129,7 +129,7 @@
             "mountainous"
         ],
         "season": [
-            "newleaf"
+            "Newleaf"
         ],
         "types": [
             "trial"
@@ -140,7 +140,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "weight": 25,
-        "chance_of_success": 45,
+        "chance_of_success": 60,
         "relationship_constraint": [],
         "pl_skill_constraint": [],
         "intro_text": "With the first light of Newleaf, r_c faces their trial. They climb the rugged terrain of the mountain, their path fraught with challenges. The steep cliffs and echoing caves surrounding the woods test their courage and determination.",
@@ -172,7 +172,7 @@
             "Any"
         ],
         "season": [
-            "leaf-fall"
+            "Leaf-fall"
         ],
         "types": [
             "trial"
@@ -183,7 +183,7 @@
         "min_cats": 1,
         "max_cats": 1,
         "weight": 25,
-        "chance_of_success": 40,
+        "chance_of_success": 60,
         "relationship_constraint": [],
         "pl_skill_constraint": [],
         "intro_text": "As the leaves turn golden, r_c approaches the woods' edge to face their trial. They steel themselves for the hardest night of their lives.",
@@ -217,12 +217,12 @@
         ]
     },
     {
-        "patrol_id": "app_trial5",
+        "patrol_id": "app_trial6",
         "biome": [
             "Any"
         ],
         "season": [
-            "leaf-fall"
+            "Any"
         ],
         "types": [
             "trial"
@@ -233,35 +233,23 @@
         "min_cats": 1,
         "max_cats": 1,
         "weight": 20,
-        "chance_of_success": 50,
+        "chance_of_success": 60,
         "relationship_constraint": [],
         "pl_skill_constraint": [],
-        "intro_text": "As the leaves turn golden, r_c approaches the woods' edge to face their trial. They steel themselves for the hardest night of their lives.",
-        "decline_text": "They step back, choosing to wait for another day.",
+        "intro_text": "r_c wails, huddling in the nursery. They don't want to go into the woods. lead_name has to drag them out, coldly shoving them in the direction of the woods and barring them from entering camp again until they face their trial.",
+        "decline_text": "r_c refuses to budge and lead_name reluctantly allows them another day.",
         "success_outcomes": [
             {
-                "text": "r_c dashes back into camp the next morning, their eyes wide with fear. They've seen things in the woods during their trial that they won't speak of -- but they're alive.",
+                "text": "It's morning when r_c returns, sprinting back into camp like there are a pack of dogs on their tail. The Clan breathes a collective sigh of relief when they realize that r_c is alive and unharmed -- finally ready to become an apprentice.",
                 "exp": 25,
                 "weight": 25
             }
         ],
         "fail_outcomes": [
             {
-                "injury": [
-                    {
-                        "cats": ["r_c"],
-                        "injuries": ["small_bite_injury"],
-                        "scars": ["LEGBITE"]
-                    }
-                ],
-                "text": "Eyes hollow, r_c stumbles back into camp, limping. They're promptly ushered into the medicine den for treatment.",
-                "exp": 15,
-                "weight": 25
-            },
-            {
                 "dead_cats": ["r_c"],
-                "text": "The night is pierced with a sudden screech -- coming from the direction of the woods. r_c never returns.",
-                "exp": 15,
+                "text": "It's night when the camp is woken up by sudden screeches. It's unmistakably r_c's voice. They call for everyone, <i> anyone </i> to come and please help them. But it's no use. The morning comes and r_c does not return.",
+                "exp": 0,
                 "weight": 25
             }
         ]
