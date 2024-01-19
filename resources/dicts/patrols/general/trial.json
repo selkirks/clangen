@@ -240,7 +240,7 @@
         "decline_text": "r_c refuses to budge and lead_name reluctantly allows them another day.",
         "success_outcomes": [
             {
-                "text": "It's morning when r_c returns, sprinting back into camp like there are a pack of dogs on their tail. The Clan breathes a collective sigh of relief when they realize that r_c is alive and unharmed -- finally ready to become an apprentice.",
+                "text": "It's morning when r_c returns, sprinting back into camp like there is a pack of dogs on their tail. The Clan breathes a collective sigh of relief when they realize that r_c is alive and unharmed -- finally ready to become an apprentice.",
                 "exp": 25,
                 "weight": 25
             }
