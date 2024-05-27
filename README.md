@@ -1,4 +1,4 @@
-# clangen
+# clangen the woods mod
 
 ### [Discord Server](https://discord.gg/clangen) || [Official website](https://clangen.io) || [Itch.io Page](https://sablesteel.itch.io/clan-gen-fan-edit) 
 
