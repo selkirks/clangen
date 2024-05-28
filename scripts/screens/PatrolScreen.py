@@ -420,11 +420,12 @@ class PatrolScreen(Screens):
                 if self.patrol_type == "med":
                     self.patrol_type = "general"
 
-            self.elements["paw"].enable()
-            self.elements["mouse"].enable()
-            self.elements["claws"].enable()
-            self.elements["herb"].enable()
-            self.elements["info"].kill()  # clearing the text before displaying new text
+            self.elements['paw'].enable()
+            self.elements['mouse'].enable()
+            self.elements['claws'].enable()
+            self.elements['herb'].enable()
+            if 'info' in self.elements:
+                self.elements['info'].kill()  # clearing the text before displaying new text
 
             if self.patrol_type != "med" and self.current_patrol:
                 self.elements["herb"].disable()

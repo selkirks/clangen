@@ -577,9 +577,11 @@ class Patrol:
                 filtered_patrols.append(patrol)
 
         # make sure the hunting patrols are balanced
-        if patrol_type == "hunting":
+        if patrol_type == 'hunting' and not game.current_screen == 'trial screen':
             filtered_patrols = self.balance_hunting(filtered_patrols)
 
+        if game.current_screen == "trial screen":
+            return possible_patrols, []
         return filtered_patrols, romantic_patrols
 
     def get_filtered_patrols(
