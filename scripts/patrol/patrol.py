@@ -322,6 +322,7 @@ class Patrol:
             chance = welcoming_chance
         if game.current_screen == "trial screen":
             possible_patrols.extend(self.generate_patrol_events(self.TRIAL))
+            final_patrols, final_romance_patrols = possible_patrols, []
         else:
             possible_patrols.extend(self.generate_patrol_events(self.HUNTING))
             possible_patrols.extend(self.generate_patrol_events(self.HUNTING_SZN))
@@ -341,44 +342,36 @@ class Patrol:
                 if dis_chance == 1:
                     possible_patrols.extend(self.generate_patrol_events(self.DISASTER))
 
+
             # new cat patrols
             if chance == 1:
                 if welcoming_rep:
-                    possible_patrols.extend(self.generate_patrol_events(self.NEW_CAT_WELCOMING))
+                    possible_patrols.extend(
+                        self.generate_patrol_events(self.NEW_CAT_WELCOMING)
+                    )
                 elif neutral_rep:
                     possible_patrols.extend(self.generate_patrol_events(self.NEW_CAT))
                 elif hostile_rep:
-                    possible_patrols.extend(self.generate_patrol_events(self.NEW_CAT_HOSTILE))
+                    possible_patrols.extend(
+                        self.generate_patrol_events(self.NEW_CAT_HOSTILE)
+                    )
 
-        # new cat patrols
-        if chance == 1:
-            if welcoming_rep:
-                possible_patrols.extend(
-                    self.generate_patrol_events(self.NEW_CAT_WELCOMING)
-                )
-            elif neutral_rep:
-                possible_patrols.extend(self.generate_patrol_events(self.NEW_CAT))
-            elif hostile_rep:
-                possible_patrols.extend(
-                    self.generate_patrol_events(self.NEW_CAT_HOSTILE)
-                )
+            # other Clan patrols
+            if other_clan_chance == 1:
+                if clan_neutral:
+                    possible_patrols.extend(self.generate_patrol_events(self.OTHER_CLAN))
+                elif clan_allies:
+                    possible_patrols.extend(
+                        self.generate_patrol_events(self.OTHER_CLAN_ALLIES)
+                    )
+                elif clan_hostile:
+                    possible_patrols.extend(
+                        self.generate_patrol_events(self.OTHER_CLAN_HOSTILE)
+                    )
 
-        # other Clan patrols
-        if other_clan_chance == 1:
-            if clan_neutral:
-                possible_patrols.extend(self.generate_patrol_events(self.OTHER_CLAN))
-            elif clan_allies:
-                possible_patrols.extend(
-                    self.generate_patrol_events(self.OTHER_CLAN_ALLIES)
-                )
-            elif clan_hostile:
-                possible_patrols.extend(
-                    self.generate_patrol_events(self.OTHER_CLAN_HOSTILE)
-                )
-
-        final_patrols, final_romance_patrols = self.get_filtered_patrols(
-            possible_patrols, biome, camp, current_season, patrol_type
-        )
+            final_patrols, final_romance_patrols = self.get_filtered_patrols(
+                possible_patrols, biome, camp, current_season, patrol_type
+            )
 
         # This is a debug option, this allows you to remove any constraints of a patrol regarding location, session, biomes, etc. 
         if game.config["patrol_generation"]["debug_override_patrol_stat_requirements"]:

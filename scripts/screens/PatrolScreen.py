@@ -554,9 +554,6 @@ class PatrolScreen(Screens):
         )
         self.elements["cat_frame"].disable()
 
-        self.elements["patrol_button"] = UIImageButton(scale(pygame.Rect((770, 200), (68, 68))),
-                                                                 "", object_id="#claws_patrol_button", tool_tip_text="Switch to Apprentice Trials", manager=MANAGER)
-
         # Frames
         self.elements["able_frame"] = pygame_gui.elements.UIImage(
             ui_scale(pygame.Rect((40, 460), (270, 201))),
@@ -652,6 +649,15 @@ class PatrolScreen(Screens):
             manager=MANAGER,
         )
         self.elements["herb"].disable()
+
+        self.elements["patrol_button"] = UISurfaceImageButton(
+            ui_scale(pygame.Rect((378, 110), (34, 34))),
+            Icon.SCRATCHES,
+            get_button_dict(ButtonStyles.ICON, (34, 34)),
+            object_id="@buttonstyles_icon",
+            tool_tip_text="Switch to Apprentice Trials",
+            manager=MANAGER,
+        )
 
         # Able cat page buttons
         self.elements["last_page"] = UIImageButton(
