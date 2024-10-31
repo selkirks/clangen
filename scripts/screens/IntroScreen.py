@@ -8,7 +8,7 @@ class IntroScreen(Screens):
         super().__init__(name)
         if game.settings['fullscreen']:
             screen_x, screen_y = 1600, 1400
-            self.screen = pygame.display.set_mode((screen_x, screen_y), pygame.FULLSCREEN | pygame.SCALED)
+            self.screen = pygame.display.set_mode((screen_x, screen_y), pygame.FULLSCREEN)
         else:
             screen_x, screen_y = 800, 700
             self.screen = pygame.display.set_mode((screen_x, screen_y))
