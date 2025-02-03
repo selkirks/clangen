@@ -8,7 +8,7 @@ Fan-edit of the warrior cat clangen game built using Python and Pygame.
 ## Credits
 Original creator: just-some-cat.tumblr.com
 
-Fan-edit creator: SableSteel, and many others
+Fan-edit creator: SableSteel, and many others 
 
 ## Downloads
 ### Stable
