@@ -433,7 +433,7 @@ class TrialScreen(Screens):
 
             self.elements["info"] = pygame_gui.elements.UITextBox(
                 text,
-                ui_scale(pygame.Rect((250, 525), (300, 400))),
+                ui_scale(pygame.Rect((250, 525), (300, 50))),
                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                 manager=MANAGER,
             )
@@ -707,14 +707,14 @@ class TrialScreen(Screens):
             current_amount = round(game.clan.freshkill_pile.total_amount, 2)
             self.elements["current_prey"] = pygame_gui.elements.UITextBox(
                 f"current prey: {current_amount}",
-                ui_scale(pygame.Rect((300, 630), (200, 400))),
+                ui_scale(pygame.Rect((300, 630), (200, 50))),
                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                 manager=MANAGER,
             )
             needed_amount = round(game.clan.freshkill_pile.amount_food_needed(), 2)
             self.elements["needed_prey"] = pygame_gui.elements.UITextBox(
                 f"needed prey: {needed_amount}",
-                ui_scale(pygame.Rect((300, 647), (200, 400))),
+                ui_scale(pygame.Rect((300, 647), (200, 50))),
                 object_id=get_text_box_theme("#text_box_30_horizcenter"),
                 manager=MANAGER,
             )

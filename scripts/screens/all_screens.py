@@ -84,6 +84,7 @@ class AllScreens:
     family_tree_screen = FamilyTreeScreen("family tree screen")
     mediation_screen = MediationScreen("mediation screen")
     change_gender_screen = ChangeGenderScreen("change gender screen")
+    trial_screen = TrialScreen("trial screen")
 
     @classmethod
     def rebuild_all_screens(cls):
