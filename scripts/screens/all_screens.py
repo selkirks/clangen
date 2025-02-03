@@ -7,6 +7,8 @@ from .ChooseMentorScreen import ChooseMentorScreen
 from .ClanScreen import ClanScreen
 from .ClanSettingsScreen import ClanSettingsScreen
 from .ClearingScreen import ClearingScreen
+from .IntroScreen import IntroScreen
+from .TrialScreen import TrialScreen
 from .EventsScreen import EventsScreen
 from .FamilyTreeScreen import FamilyTreeScreen
 from .LeaderDenScreen import LeaderDenScreen
@@ -56,6 +58,8 @@ class AllScreens:
     sprite_inspect_screen = SpriteInspectScreen("sprite inspect screen")
 
     make_clan_screen = MakeClanScreen("make clan screen")
+    intro_screen = IntroScreen('intro screen')
+
 
     allegiances_screen = AllegiancesScreen("allegiances screen")
     camp_screen = ClanScreen("camp screen")
@@ -123,3 +127,6 @@ class AllScreens:
         cls.family_tree_screen = FamilyTreeScreen("family tree screen")
         cls.mediation_screen = MediationScreen("mediation screen")
         cls.change_gender_screen = ChangeGenderScreen("change gender screen")
+
+        cls.trial_screen = TrialScreen("trial screen")
+        cls.intro_screen = IntroScreen("intro screen")

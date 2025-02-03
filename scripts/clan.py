@@ -178,7 +178,6 @@ class Clan:
             []
         )  # Stores ID's of faded cats, to ensure these IDs aren't reused.
         self.moons_since_fed = 0
-
         if self_run_init_functions:
             self.post_initialization_functions()
 
@@ -833,6 +832,7 @@ class Clan:
         game.clan.deputy_predecessors = clan_data["deputy_predecessors"]
         game.clan.med_cat_predecessors = clan_data["med_cat_predecessors"]
         game.clan.med_cat_number = clan_data["med_cat_number"]
+        game.clan.moons_since_fed = clan_data["moons_since_fed"] if "moons_since_fed" in clan_data else 0
         # Allows for the custom pronouns to show up in the add pronoun list after the game has closed and reopened.
         if "custom_pronouns" in clan_data.keys():
             if clan_data["custom_pronouns"]:

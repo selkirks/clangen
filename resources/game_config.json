@@ -424,7 +424,7 @@
 		"always_halloween": false
 	},
 	"theme": {
-		"dark_mode_background": [57, 50, 36],
+		"dark_mode_background": [47, 30, 26],
 		"light_mode_background": [206, 194, 168],
 		"fullscreen_background": {
 			"light": {
