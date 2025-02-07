@@ -23,7 +23,7 @@
   },
   "possible_tints": {
     "basic": ["none", "offwhite", "offwhite", "dark"],
-    "black": ["gray", "darkcream", "cream", "ashgray", "violet", "powder", "blue", "obsidian", "black", "darkblue", "paleblue", "lightblue", "slate"],
+    "black": ["gray", "darkcream", "cream", "ashgray", "violet", "powder", "blue", "obsidian", "black", "darkblue", "lightblue", "slate"],
     "gray": ["gray", "blue", "mocha", "honeydew", "ashgray", "violet", "powder", "dark"],
     "ginger": ["darkcream", "cream", "pink", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry", "golden", "dark", "lilac", "ash", "darkash", "ivory", "chalk", "ghastly", "lightgold", "gold", "darkgold", "sunshine"],
     "brown": ["darkcream", "cream", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach", "coyote", "caramel", "dark", "chocolate", "brown", "camel", "wheat", "fawn", "bronze"],

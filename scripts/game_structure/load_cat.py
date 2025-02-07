@@ -134,6 +134,8 @@ def json_load():
                 cat["backstory"] = "otherclan1"
             if cat["tint"] == "lightchocolate":
                 cat["tint"] = "lightorange"
+            if cat["tint"] == "paleblue":
+                cat["tint"] = "lightblue"
             if cat["trait"] == "princibled":
                 cat["trait"] = "principled"
             if cat["trait"] == "fun loving":

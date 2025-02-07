@@ -5742,7 +5742,7 @@
       "age": ["young adult"],
       "gender": ["female"]
     },
-    "new_gender": ["trans male", "nonbinary"]
+    "new_gender": ["trans male", "nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
   },
   {
     "event_id": "gen_misc_transition_from_male1",
@@ -5754,6 +5754,6 @@
     "m_c": {
       "gender": ["male"]
     },
-    "new_gender": ["trans female", "nonbinary"]
+    "new_gender": ["trans female", "nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
   }
 ]
