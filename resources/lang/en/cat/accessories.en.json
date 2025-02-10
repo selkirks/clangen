@@ -154,8 +154,18 @@
             "many": "clovers",
             "one": "bunch of clovers"
         },
+        "CLOVERTAIL": {
+            "zero": "clover tail",
+            "many": "clovers",
+            "one": "bunch of clovers"
+        },
+        "DAISYTAIL": {
+            "zero": "clover tail",
+            "many": "clovers",
+            "one": "bunch of clovers"
+        },
         "DAISY": {
-            "zero": "daisy tail",
+            "zero": "daisy",
             "many": "daisies",
             "one": "bunch of daisies"
         },
@@ -1253,9 +1263,9 @@
         "many": "cyan bandanas",
         "one": "cyan bandana"
     },
-    "YELLOWANDANA": {
+    "YELLOWBANDANA": {
         "zero": "yellow bandana",
-        "many": "yellow bandans",
+        "many": "yellow bandanas",
         "one": "yellow bandana"
     },
     "LIMEBANDANA": {
@@ -1537,6 +1547,157 @@
         "zero": "indigo dog teeth collar",
         "many": "indigo dog teeth collars",
         "one": "indigo dog teeth collar"
+    },
+"CRIMSONTIE": {
+    "zero": "crimson tie",
+    "many": "crimson ties",
+    "one": "crimson tie"
+},
+"BLUETIE": {
+    "zero": "blue tie",
+    "many": "blue ties",
+    "one": "blue tie"
+},
+"CYANTIE": {
+    "zero": "cyan tie",
+    "many": "cyan ties",
+    "one": "cyan tie"
+},
+"YELLOWTI": {
+    "zero": "yellow tie",
+    "many": "yellow ties",
+    "one": "yellow tie"
+},
+"LIMETIE": {
+    "zero": "lime tie",
+    "many": "lime ties",
+    "one": "lime tie"
+},
+"GREENTIE": {
+    "zero": "green tie",
+    "many": "green ties",
+    "one": "green tie"
+},
+"ORANGETIE": {
+    "zero": "orange tie",
+    "many": "orange ties",
+    "one": "orange tie"
+},
+"RAINBOWTIE": {
+    "zero": "rainbow tie",
+    "many": "rainbow ties",
+    "one": "rainbow tie"
+},
+"BLACKTIE": {
+    "zero": "black tie",
+    "many": "black ties",
+    "one": "black tie"
+},
+"SPIKESTIE": {
+    "zero": "blue and gold tie",
+    "many": "blue and gold ties",
+    "one": "blue and gold tie"
+},
+"WHITETIE": {
+    "zero": "white tie",
+    "many": "white ties",
+    "one": "white tie"
+},
+"PINKTIE": {
+    "zero": "pink tie",
+    "many": "pink ties",
+    "one": "pink tie"
+},
+"PURPLETIE": {
+    "zero": "purple tie",
+    "many": "purple ties",
+    "one": "purple tie"
+},
+"MULTITIE": {
+    "zero": "pastel pink tie",
+    "many": "pastel pink ties",
+    "one": "pastel pink tie"
+},
+"INDIGOTIE": {
+    "zero": "indigo tie",
+    "many": "indigo ties",
+    "one": "indigo tie"
+},
+"CRIMSONS": {
+    "zero": "crimson french scarf",
+    "many": "crimson french scarves",
+    "one": "crimson french scarf"
+},
+"BLUES": {
+    "zero": "blue french scarf",
+    "many": "blue french scarves",
+    "one": "blue french scarf"
+},
+"CYANS": {
+    "zero": "cyan french scarf",
+    "many": "cyan french scarves",
+    "one": "cyan french scarf"
+},
+"YELLOWS": {
+    "zero": "yellow french scarf",
+    "many": "yellow french scarves",
+    "one": "yellow french scarf"
+},
+"LIMES": {
+    "zero": "lime french scarf",
+    "many": "lime french scarves",
+    "one": "lime french scarf"
+},
+"GREENS": {
+    "zero": "green french scarf",
+    "many": "green french scarves",
+    "one": "green french scarf"
+},
+"ORANGES": {
+    "zero": "orange french scarf",
+    "many": "orange french scarves",
+    "one": "orange french scarf"
+},
+"RAINBOWS": {
+    "zero": "rainbow french scarf",
+    "many": "rainbow french scarves",
+    "one": "rainbow french scarf"
+},
+"BLACKS": {
+    "zero": "black french scarf",
+    "many": "black french scarves",
+    "one": "black french scarf"
+},
+"SPIKESS": {
+    "zero": "blue and gold french scarf",
+    "many": "blue and gold french scarves",
+    "one": "blue and gold french scarf"
+},
+"WHITES": {
+    "zero": "white french scarf",
+    "many": "white french scarves",
+    "one": "white french scarf"
+},
+"PINKS": {
+    "zero": "pink french scarf",
+    "many": "pink french scarves",
+    "one": "pink french scarf"
+},
+"PURPLES": {
+    "zero": "purple french scarf",
+    "many": "purple french scarves",
+    "one": "purple french scarf"
+},
+"MULTIS": {
+    "zero": "pastel pink french scarf",
+    "many": "pastel pink french scarves",
+    "one": "pastel pink french scarf"
+},
+"INDIGOS": {
+    "zero": "indigo french scarf",
+    "many": "indigo french scarves",
+    "one": "indigo french scarf"
+
     }
     }
-    }
+}

@@ -150,7 +150,8 @@ class Pelt:
                       'HALFHEART','FRECKLESTHREE','KITTY', 'SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW',
                       'BOOMSTAR','MIST','LEON', 'LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO',
                       'CHAOS', 'MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY', 'MOONSTONE', 'DRIP',
-                      'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY']
+                      'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY',
+                      'SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK',]
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
                    'classic', 'sokoke', 'agouti', 'singlestripe', 'masked','maned', 'ocelot', 'lynx', 'royal',
                    'bobcat', 'cheetah', 'dalmatian',
@@ -185,15 +186,17 @@ class Pelt:
                    'WINTER ROSE', 'BULLET', 'LIGHT YELLOW', 'SUNSHINE', 'GOLD ORE', 'FOSSILIZED AMBER', 'DUSKY',
             'LICHEN', 'SPRING', 'TREE', 'LEAVES', 'EMERALD ORE', 'HAZELNUT', 'BLUE SKY', 'OCEAN', 'OVERCAST', 'AQUA', 'IRIS', 'ROBIN', 'GREY SILVER', 'SAND', 'MUSTARD', 'BRONZE ORE', 'TIMBER', 'COPPER ORE',
             'FERN', 'APPLE', 'MOSS', 'THICKET', 'PEACOCK', 'OLIVE','STORMY BLUE', 'DEPTHS', 'STORMY', 'TEAL', 'INDIGO', 'STEEL', 'PEACH', 'DAFFODIL', 'MARIGOLD', 'BRASS', 'DARKAMBER', 'DAWN SKIES','MINT',
-             'CHARTREUSE', 'MEADOW', 'LEAF', 'LIGHT TURQUOISE', 'SAP', 'ALBINISTIC', 'COBALT ORE', 'RAIN', 'CYAN DYE', 'PERIWINKLE PURPLE', 'ICY CRACK', 'PINK', 'MORNING', 'DARK BROWN' , 'BAY', 'NEON GREEN', 'SEA', 'DISCORD']
+             'CHARTREUSE', 'MEADOW', 'LEAF', 'LIGHT TURQUOISE', 'SAP', 'ALBINISTIC', 'COBALT ORE', 'RAIN', 'CYAN DYE', 'PERIWINKLE PURPLE', 'ICY CRACK', 'PINK', 'MORNING', 'DARK BROWN' , 'BAY', 'NEON GREEN', 'SEA', 'DISCORD',
+             'AUTUMN LEAF', 'RUBY', 'PHANTOM', 'RIVER MOSS', 'WICKED']
     yellow_eyes = ['BULLET', 'GREY SILVER', 'PEACH', 'LIGHT YELLOW', 'SAND', 'DAFFODIL', 'SUNSHINE', 'MUSTARD', 'MARIGOLD', 'GOLD ORE', 'BRONZE ORE', 'BRASS', 'FOSSILIZED AMBER', 'TIMBER', 'DARKAMBER', 'DUSKY', 'COPPER ORE', 'DAWN SKY','YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ROSE', 'LIGHT FLAME', 'RED',
                    'PUMPKIN', 'BROWN', 'CEDAR', 'DARK PINE', 'FALL', 'GOLD MOON', 'OXIDIZED', 'BERRY BANANA', 'WORMY', 'THUNDERBOLT',
                    'VOLCANO', 'SEASHELL', 'PARADOX', 'BLESSING', 'VALENTINE', 'PALE BROWN', 'CRIMSON', 'MORNING',
-                   'BLACK', 'ROSE GOLD', 'DARK ROSE','DARK BROWN', 'MUDDY', 'RUSTY', 'ECLIPSE', 'BAY', 'DISCORD', "ORANGE"]
+                   'BLACK', 'ROSE GOLD', 'DARK ROSE','DARK BROWN', 'MUDDY', 'RUSTY', 'ECLIPSE', 'BAY', 'DISCORD', "ORANGE",
+                   "AUTUMN LEAF"]
     blue_eyes = ['BLUE SKY', 'STORMY BLUE', 'ALBINISTIC', 'OCEAN', 'DEPTHS', 'COBALT ORE', 'OVERCAST', 'STORMY', 'RAIN', 'AQUA', 'TEAL', 'CYAN DYE', 'IRIS', 'INDIGO', 'PERIWINKLE PURPLE', 'ROBIN', 'STEEL', 'DAWN SKIES','ICY CRACK','BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'SEAFOAM', 'CLOUDY', 'TURQUOISE',
-                 'RAINY', 'LILAC', 'PERIWINKLE', 'BLACKBERRY', 'POND', 'COTTON CANDY', 'HALLOWEEN', 'LOBELIA', 'MIDNIGHT', 'MOONSTONE', 'SNOW',
+                 'RAINY', 'RUBY', 'LILAC', 'PERIWINKLE', 'BLACKBERRY', 'POND', 'COTTON CANDY', 'HALLOWEEN', 'LOBELIA', 'MIDNIGHT', 'MOONSTONE', 'SNOW', 'WICKED', 'PHANTOM',
                  'DAWN SKY', 'TWILIGHT SKY', 'BLUE HAZEL', 'CURSE', 'FIREWORK', 'REVERSE SUNLITICE', 'ICY', 'VIOLET', 'PASTEL', 'WINTER ROSE', 'PASTEL LAVENDER', 'LAVENDER', 'PINK']
-    green_eyes = ['LICHEN', 'FERN', 'MINT', 'SPRING', 'APPLE', 'CHARTREUSE', 'LEAVES', 'MOSS', 'MEADOW', 'TREE', 'THICKET', 'LEAF', 'EMERALD ORE', 'PEACOCK', 'LIGHT TURQUOISE', 'HAZELNUT', 'OLIVE', 'SAP', 'PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'ALGAE', 'SWAMP', 'AQUAMARINE', 'EARTH', 'DIRT', 'CHRISTMAS', 'FOREST FIRE',
+    green_eyes = ['LICHEN', 'FERN', 'MINT', 'SPRING', 'APPLE', 'CHARTREUSE', 'LEAVES', 'MOSS', 'MEADOW', 'RIVER MOSS', 'TREE', 'THICKET', 'LEAF', 'EMERALD ORE', 'PEACOCK', 'LIGHT TURQUOISE', 'HAZELNUT', 'OLIVE', 'SAP', 'PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'ALGAE', 'SWAMP', 'AQUAMARINE', 'EARTH', 'DIRT', 'CHRISTMAS', 'FOREST FIRE',
                   'LIME', 'LUCKY', 'DARK HAZEL', 'DARK TURQUOISE', 'AVOCADO', 'NEON GREEN', 'SEA', "ORANGE"]
     
     physical_trait_teeth = ['TEETHUPPER', 'TEETHSABRE', 'TEETHUNDERBITE']
@@ -243,17 +246,10 @@ class Pelt:
                         ]
     wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY1", "CICADA WINGS", "BLACK CICADA"]
   
-    tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVERTAIL", "DAISYTAIL"]
-
-    bandana_collars = ["CRIMSONBANDANA", "BLUEBANDANA", "YELLOWANDANA", "CYANBANDANA", "REDBANDANA",
-    "LIMEBANDANA" ,"GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA","PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA"]
-    harness_accessories = ["CRIMSONH", "BLUEH", "YELLOWH", "CYANH", "REDH", "LIMEH", "GREENH", "RAINBOWH", "BLACKH", "SPIKESH", "WHITEH", "PINKH",
-                           "PURPLEH", "MULTIH", "INDIGOH"]
+    tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVERTAIL", "DAISYTAIL", "DAISY CORSAGE"]
+    
     bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
                         "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
-    dogteeth_collars = ["CRIMSONTEETHCOLLAR", "BLUETEETHCOLLAR", "YELLOWTEETHCOLLAR", "CYANTEETHCOLLAR", "REDTEETHCOLLAR",
-                        "LIMETEETHCOLLAR","GREENTEETHCOLLAR", "RAINBOWTEETHCOLLAR", "BLACKTEETHCOLLAR", "SPIKESTEETHCOLLAR", "WHITETEETHCOLLAR",
-                        "PINKTEETHCOLLAR", "PURPLETEETHCOLLAR", "MULTITEETHCOLLAR", "INDIGOTEETHCOLLAR"]
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
@@ -264,7 +260,21 @@ class Pelt:
         "PURPLEBOW", "MULTIBOW", "INDIGOBOW", "CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON",
         "REDNYLON", "LIMENYLON", "GREENNYLON", "RAINBOWNYLON",
         "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
-
+        "CRIMSONBANDANA", "BLUEBANDANA", "YELLOWANDANA", "CYANBANDANA", "REDBANDANA",
+        "LIMEBANDANA" ,"GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA",
+        "PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA",
+        "CRIMSONTEETHCOLLAR", "BLUETEETHCOLLAR", "YELLOWTEETHCOLLAR", "CYANTEETHCOLLAR", "REDTEETHCOLLAR",
+        "LIMETEETHCOLLAR","GREENTEETHCOLLAR", "RAINBOWTEETHCOLLAR", "BLACKTEETHCOLLAR", "SPIKESTEETHCOLLAR",
+        "WHITETEETHCOLLAR", "PINKTEETHCOLLAR", "PURPLETEETHCOLLAR", "MULTITEETHCOLLAR", "INDIGOTEETHCOLLAR",
+        "CRIMSONTIE", "BLUETIE", "YELLOWTIE", "CYANTIE", "ORANGETIE", "LIMETIE",
+        "GREENTIE", "RAINBOWTIE", "BLACKTIE", "SPIKESTIE", "WHITETIE",
+        "PINKTIE", "PURPLETIE", "MULTITIE", "INDIGOTIE",
+        "CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES",
+        "GREENS", "RAINBONS", "BLACKS", "SPIKESS", "WHITES",
+        "PINKS", "PURPLES", "MULTIS", "INDIGOS",
+        "CRIMSONH", "BLUEH", "YELLOWH", "CYANH", "REDH", "LIMEH",
+        "GREENH", "RAINBOWH", "BLACKH", "SPIKESH", "WHITEH", "PINKH",
+        "PURPLEH", "MULTIH", "INDIGOH"
         
     ]
     flower_accessories = ["DAISY", "DIANTHUS", "BLEEDING HEARTS", "FRANGIPANI", "BLUE GLORY",
@@ -303,6 +313,204 @@ class Pelt:
                     ]
     tail2_accessories = ["SEAWEED", "DAISY CORSAGE"
                     ]
+    head_accessories = [
+        "MOTH WINGS",
+        "ROSY MOTH WINGS",
+        "MORPHO BUTTERFLY",
+        "MONARCH BUTTERFLY",
+        "CICADA WINGS",
+        "BLACK CICADA",
+        "MAPLE LEAF",
+        "HOLLY",
+        "BLUE BERRIES",
+        "FORGET ME NOTS",
+        "RYE STALK",
+        "CATTAIL",
+        "POPPY",
+        "ORANGE POPPY",
+        "CYAN POPPY",
+        "WHITE POPPY",
+        "PINK POPPY",
+        "BLUEBELLS",
+        "LILY OF THE VALLEY",
+        "SNAPDRAGON",
+        "NETTLE",
+        "HEATHER",
+        "GORSE",
+        "JUNIPER",
+        "RASPBERRY",
+        "LAVENDER",
+        "OAK LEAVES",
+        "CATMINT",
+        "MAPLE SEED",
+        "LAUREL",
+        "BULB WHITE",
+        "BULB YELLOW",
+        "BULB ORANGE",
+        "BULB PINK",
+        "BULB BLUE",
+        "DRY CATMINT",
+        "DRY NETTLES",
+        "DRY LAURELS",
+        "RAT SKULL",
+        "FISH BONES",
+        "PEACOCK BUTTERFLY",
+        "DEATH HEAD HAWKMOTH",
+        "GARDEN TIGER MOTH",
+        "ATLAS MOTH",
+        "CECOROPIA MOTH",
+        "WHITE ERMINE MOTH",
+        "IO MOTH",
+        "COMET MOTH",
+        "JADE HAWKMOTH",
+        "HUMMINGBIRD HAWKMOTH",
+        "OWL BUTTERFLY",
+        "GLASSWING BUTTERFLY",
+        "QUEEN ALEXANDRA BIRDWING BUTTERFLY",
+        "GREEN DRAGONTAIL BUTTERFLY",
+        "MENELAUS BLUE MORPHO BUTTERFLY",
+        "DEAD LEAF BUTTERFLY",
+        "DVD",
+        "OLD PENCIL",
+        "OLD BRUSH",
+        "BANANA PEEL",
+        "BROKEN VHS TAPE",
+        "CLOVER",
+        "STICK",
+        "MOSS",
+        "IVY",
+        "ACORN",
+        "MONARCH BUTTERFLY1",
+        "DAISY",
+        "DIANTHUS",
+        "BLEEDING HEARTS",
+        "FRANGIPANI",
+        "BLUE GLORY",
+        "CATNIP FLOWER",
+        "BLANKET FLOWER",
+        "ALLIUM",
+        "LACELEAF",
+        "PURPLE GLORY",
+        "YELLOW PRIMROSE",
+        "MARIGOLD",
+        "WISTERIA",
+        "GRAY SQUIRREL",
+        "RED SQUIRREL",
+        "CRAB",
+        "WORM",
+        "OGRASPBERRY",
+        "BLACKBERRY",
+        "GOLDEN RASPBERRY",
+        "CHERRY",
+        "YEW",
+        "BIRD SKULL",
+        "LEAF BOW"
+    ]
+
+    body_accessories = [
+        "HERBS",
+        "PETALS",
+        "DRY HERBS",
+        "SNAKE",
+        "RIBS",
+        "BAT WINGS",
+        "CANIDAE SKULL",
+        "DEER ANTLERS",
+        "RAM HORN",
+        "GOAT HORN",
+        "OX SKULL",
+        "TEETH COLLAR",
+        "BIRD SKULL1",
+        "ROE SKULL",
+        "GOLDEN KEY",
+        "SILVER KEY",
+        "OLD NEWSPAPER",
+        "SEA GLASS",
+        "MUD AND DIRT",
+        "PUMPKIN",
+        "MOSS PELT",
+        "REEDS",
+        "BAMBOO",
+        "HESPERIS",
+        "GRASS SNAKE",
+        "BLUE RACER",
+        "WESTERN COACHWHIP",
+        "KINGSNAKE",
+        "WHITE RABBIT",
+        "BLACK RABBIT",
+        "BROWN RABBIT",
+        "INDIAN GIANT SQUIRREL",
+        "FAWN RABBIT",
+        "BROWN AND WHITE RABBIT",
+        "BLACK AND WHITE RABBIT",
+        "WHITE AND FAWN RABBIT",
+        "BLACK VITILIGO RABBIT",
+        "BROWN VITILIGO RABBIT",
+        "FAWN VITILIGO RABBIT",
+        "BLACKBIRD",
+        "ROBIN",
+        "JAY",
+        "THRUSH",
+        "CARDINAL",
+        "MAGPIE",
+        "CUBAN TROGON",
+        "TAN RABBIT",
+        "TAN AND WHITE RABBIT",
+        "TAN VITILIGO RABBIT",
+        "RAT", "WHITE MOUSE",
+        "BLACK MOUSE",
+        "GRAY MOUSE",
+        "BROWN MOUSE",
+        "GRAY RABBIT",
+        "GRAY AND WHITE RABBIT",
+        "GRAY VITILIGO RABBIT",
+        "BROWN SNAIL",
+        "RED SNAIL",
+        "BLUE SNAIL",
+        "ZEBRA ISOPOD",
+        "DUCKY ISOPOD",
+        "DAIRY COW ISOPOD",
+        "BEETLEJUICE ISOPOD",
+        "BEE",
+        "RED LADYBUG",
+        "ORANGE LADYBUG",
+        "YELLOW LADYBUG",
+        "WILLOWBARK BAG",
+        "CLAY DAISY POT",
+        "CLAY AMANITA POT",
+        "CLAY BROWNCAP POT",
+    ]
+
+    tail_accessories = [
+        "RED FEATHERS",
+        "BLUE FEATHERS",
+        "JAY FEATHERS",
+        "GULL FEATHERS",
+        "SPARROW FEATHERS",
+        "CLOVER",
+        "DAISYTAIL",
+        "DAISY CORSAGE",
+        "CLOVERTAIL",
+        "OLD SILVER WATCH",
+        "OLD GOLD WATCH",
+        "BAUBLES",
+        "SEAWEED",
+        "CRIMSONBOWS",
+        "BLUEBOWS",
+        "YELLOWBOWS",
+        "CYANBOWS",
+        "REDBOWS",
+        "LIMEBOWS",
+        "GREENBOWS",
+        "RAINBOWBOWS",
+        "BLACKBOWS",
+        "SPIKESBOWS",
+        "WHITEBOWS",
+        "PINKBOWS",
+        "PURPLEBOWS",
+        "MULTIBOWS",
+        "INDIGOBOWS"
+    ]
 
     tabbies = ["Tabby", "Ticked", "Mackerel", "Stermackerel", "Sillymackerel", "Dancemackerel", "Mimimackerel", 
                "Classic", "Sterclassic", "Sillyclassic", "Danceclassic", "Mimiclassic",
@@ -343,7 +551,8 @@ class Pelt:
         'PASTEL LAVENDER', 'BULLET', 'LIGHT YELLOW', 'SUNSHINE', 'GOLD ORE', 'FOSSILIZED AMBER', 'DUSKY',
             'LICHEN', 'SPRING', 'TREE', 'LEAVES', 'EMERALD ORE', 'HAZELNUT', 'BLUE SKY', 'OCEAN', 'OVERCAST', 'AQUA', 'IRIS', 'ROBIN', 'GREY SILVER', 'SAND', 'MUSTARD', 'BRONZE ORE', 'TIMBER', 'COPPER ORE',
             'FERN', 'APPLE', 'MOSS', 'THICKET', 'PEACOCK', 'OLIVE','STORMY BLUE', 'DEPTHS', 'STORMY', 'TEAL', 'INDIGO', 'STEEL', 'PEACH', 'DAFFODIL', 'MARIGOLD', 'BRASS', 'DARKAMBER', 'DAWN SKIES','MINT',
-             'CHARTREUSE', 'MEADOW', 'LEAF', 'LIGHT TURQUOISE', 'SAP', 'ALBINISTIC', 'COBALT ORE', 'RAIN', 'CYAN DYE', 'PERIWINKLE PURPLE', 'ICY CRACK', 'ALBINO', 'WINTER ROSE', 'PINK', 'MORNING', 'DARK BROWN',' BAY', 'NEON GREEN', 'SEA', 'DISCORD', "ORANGE"
+             'CHARTREUSE', 'MEADOW', 'LEAF', 'LIGHT TURQUOISE', 'SAP', 'ALBINISTIC', 'COBALT ORE', 'RAIN', 'CYAN DYE', 'PERIWINKLE PURPLE', 'ICY CRACK', 'ALBINO', 'WINTER ROSE', 'PINK', 'MORNING', 'DARK BROWN',' BAY', 'NEON GREEN', 'SEA', 'DISCORD', "ORANGE",
+             'AUTUMN LEAF', 'RUBY', 'PHANTOM', 'RIVER MOSS', 'WICKED'
     ]
     little_white = ['LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
                     'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY', 'LUNA',
@@ -380,44 +589,43 @@ class Pelt:
     """Holds all appearance information for a cat. """
 
     def __init__(self,
-                 name: str = "SingleColour",
-                 length: str = "short",
-                 colour: str = "WHITE",
-                 white_patches: str = None,
-                 eye_color: str = "BLUE",
-                 eye_colour2: str = None,
-                 tortiebase: str = None,
-                 tortiecolour: str = None,
-                 pattern:list=None,
-                 tortiepattern: str = None,
-                 vitiligo: str = None,
-                 points:str=None,
-                 physical_trait_1:str=None,
-                 physical_trait_2:str=None,
-                 physical_trait_3:str=None,
-                 physical_trait_4:str=None,
-                 physical_trait_hidden:str=None,
-                 physical_trait_hidden_2:str=None,
-                 physical_trait_hidden_3:str=None,
-                 physical_trait_hidden_4:str=None,
-                 accessory: str = None,
-                 paralyzed: bool = False,
-                 opacity: int = 100,
-                 scars: list = None,
-                 tint: str = "none",
-                 skin: str = "BLACK",
-                 white_patches_tint: str = "none",
-                 kitten_sprite: int = None,
-                 adol_sprite: int = None,
-                 adult_sprite: int = None,
-                 senior_sprite: int = None,
-                 para_adult_sprite: int = None,
-                 reverse: bool = False,
-                 fur_texture:str=None,
-                 build:str=None,
-                 height:str=None,
-                 accessories:list=None,
-                 ) -> None:
+        name: str = "SingleColour",
+        length: str = "short",
+        colour: str = "WHITE",
+        white_patches: str = None,
+        eye_color: str = "BLUE",
+        eye_colour2: str = None,
+        tortiebase: str = None,
+        tortiecolour: str = None,
+        pattern:list=None,
+        tortiepattern: str = None,
+        vitiligo: str = None,
+        points:str=None,
+        physical_trait_1:str=None,
+        physical_trait_2:str=None,
+        physical_trait_3:str=None,
+        physical_trait_4:str=None,
+        physical_trait_hidden:str=None,
+        physical_trait_hidden_2:str=None,
+        physical_trait_hidden_3:str=None,
+        physical_trait_hidden_4:str=None,
+        accessory: list = None,
+        paralyzed: bool = False,
+        opacity: int = 100,
+        scars: list = None,
+        tint: str = "none",
+        skin: str = "BLACK",
+        white_patches_tint: str = "none",
+        kitten_sprite: int = None,
+        adol_sprite: int = None,
+        adult_sprite: int = None,
+        senior_sprite: int = None,
+        para_adult_sprite: int = None,
+        reverse: bool = False,
+        fur_texture:str=None,
+        build:str=None,
+        height:str=None,
+    ) -> None:
         self.name = name
         self.colour = colour
         self.white_patches = white_patches
@@ -430,8 +638,8 @@ class Pelt:
         self.vitiligo = vitiligo
         self.length = length
         self.points = points
+        self.accessory = accessory
         self.paralyzed = paralyzed
-        self.accessories = accessories if accessories is not None else []
         self.opacity = opacity
         self.scars = scars if isinstance(scars, list) else []
         self.tint = tint
@@ -460,7 +668,6 @@ class Pelt:
 
         self.reverse = reverse
         self.skin = skin
-        self.accessory = accessory 
         self.fur_texture = fur_texture if fur_texture is not None else choice(["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse", "tangled", "fuzzy", "spiky"])
         self.build = build if build is not None else choice(["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate"])
         self.height = height if height is not None else choice(["petite", "short", "average", "average", "tall", "towering"])
@@ -561,7 +768,11 @@ class Pelt:
             self.pattern = "MINIMALTHREE"
         elif self.pattern == "MINIMAL4":
             self.pattern = "MINIMALFOUR"
-        
+
+        if isinstance(self.accessory, str):
+            self.accessory = [self.accessory]
+
+
     def init_eyes(self, parents):
         if not parents:
             self.eye_colour = choice(Pelt.eye_colours)
@@ -909,7 +1120,7 @@ class Pelt:
 
     def init_accessories(self, age):
         if age == "newborn":
-            self.accessory = None
+            self.accessory = []
             return
 
         acc_display_choice = random.randint(0, 80)
@@ -919,8 +1130,8 @@ class Pelt:
             acc_display_choice = random.randint(0, 100)
 
         if acc_display_choice == 1:
-            self.accessory = choice([
-                choice(Pelt.plant_accessories),
+            self.accessory = [choice(
+                [choice(Pelt.plant_accessories),
                 choice(Pelt.wild_accessories),
                 choice(Pelt.flower_accessories),
                 choice(Pelt.plant2_accessories),
@@ -934,12 +1145,10 @@ class Pelt:
                 choice(Pelt.bone_accessories),
                 choice(Pelt.butterflies_accessories),
                 choice(Pelt.stuff_accessories),
-                choice(Pelt.harness_accessories),
-                choice(Pelt.bows_accessories),
-                choice(Pelt.dogteeth_collars)
-            ])
+                choice(Pelt.bows_accessories)]
+            )]
         else:
-            self.accessory = None
+            self.accessory = []
 
     def init_pattern(self):
         if self.name in Pelt.torties:

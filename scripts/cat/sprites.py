@@ -144,7 +144,7 @@ class Sprites:
             'stersinglecolours', 'sillysinglecolours', 'dancesinglecolours', 'mimisinglecolours',
             'sterstripecolours', 'sillystripecolours', 'dancestripecolours', 'mimistripecolours',
             'stersmokecolours', 'sillysmokecolours', 'dancesmokecolours', 'mimismokecolours',
-            'stersokokecolours', 'sillysokokecolours', 'dancesokokecolours', 'mimisokokecolours',
+            'stersokokecolours', "french_scarves", "ties", 'sillysokokecolours', 'dancesokokecolours', 'mimisokokecolours',
             'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours'
@@ -200,7 +200,7 @@ class Sprites:
              'MUDDY', 'DARK TURQUOISE', 'BLACKBERRY'],
             ['RUSTY', 'PASTEL', 'AVOCADO', 'PASTEL LAVENDER', 'ALBINO', 'WINTER ROSE', 'PINK', 'MORNING', 'DARK BROWN', 'BAY',
              'NEON GREEN', 'SEA'],
-            ['DISCORD']
+            ['DISCORD', 'AUTUMN LEAF', 'RUBY', 'PHANTOM', 'RIVER MOSS', 'WICKED']
         ]
 
         for row, colors in enumerate(eye_colors):
@@ -287,7 +287,8 @@ class Sprites:
             ['SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW','BOOMSTAR','MIST','LEON'],
             ['LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO','CHAOS'],
             ['MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY'],
-            ['MOONSTONE', 'DRIP', 'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY']
+            ['MOONSTONE', 'DRIP', 'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY'],
+            ['SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK']
         ]
         for row, patches in enumerate(white_patches):
             for col, patch in enumerate(patches):
@@ -407,7 +408,8 @@ class Sprites:
             ['SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW','BOOMSTAR','MIST','LEON'],
             ['LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO', 'CHAOS'],
             ['MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY'],
-            ['MOONSTONE', 'DRIP', 'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY']
+            ['MOONSTONE', 'DRIP', 'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY'],
+            ['SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK']
           ]
 
         for row, masks in enumerate(tortiepatchesmasks):
@@ -593,6 +595,18 @@ class Sprites:
             ["PINKTEETHCOLLAR", "PURPLETEETHCOLLAR", "MULTITEETHCOLLAR", "INDIGOTEETHCOLLAR"]
         ]
 
+        ties_data = [
+            ["CRIMSONTIE", "BLUETIE", "YELLOWTIE", "CYANTIE", "ORANGETIE", "LIMETIE"],
+            ["GREENTIE", "RAINBOWTIE", "BLACKTIE", "SPIKESTIE", "WHITETIE"],
+            ["PINKTIE", "PURPLETIE", "MULTITIE", "INDIGOTIE"]
+        ]
+     
+        french_scarves_data = [
+            ["CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES"],
+            ["GREENS", "RAINBONS", "BLACKS", "SPIKESS", "WHITES"],
+            ["PINKS", "PURPLES", "MULTIS", "INDIGOS"]
+        ]
+
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -679,11 +693,11 @@ class Sprites:
         # bandanas
         for row, bandanas in enumerate(bandanas_data):
             for col, bandana in enumerate(bandanas):
-                self.make_group('bandanas', (col, row), f'bandanas{bandana}')
+                self.make_group('bandanas', (col, row), f'collars{bandana}')
         # harnesses
         for row, harnesses in enumerate(harnesses_data):
             for col, harness in enumerate(harnesses):
-                self.make_group('harnesses', (col, row), f'harnesses{harness}')
+                self.make_group('harnesses', (col, row), f'collars{harness}')
         # bows (on ear and tail) 
         for row, bows in enumerate(bows_data):
             for col, bow in enumerate(bows):
@@ -691,9 +705,15 @@ class Sprites:
         # dog teeth collars
         for row, teethcollars in enumerate(dog_teeth_collars_data):
             for col, teethcollar in enumerate(teethcollars):
-                self.make_group('teethcollars', (col, row), f'teethcollars{teethcollar}')
-
-
+                self.make_group('teethcollars', (col, row), f'collars{teethcollar}')
+        # ties 
+        for row, ties in enumerate(ties_data):
+            for col, tie in enumerate(ties):
+                self.make_group("ties", (col, row), f"collars{tie}")
+         # french_scarves
+        for row, frenchscarvess in enumerate( french_scarves_data):
+            for col, frenchscarf in enumerate(frenchscarvess):
+                self.make_group("french_scarves", (col, row), f"collars{frenchscarf}")
     def load_symbols(self):
         """
         loads clan symbols

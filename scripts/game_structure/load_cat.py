@@ -57,13 +57,6 @@ def json_load():
     for i, cat in enumerate(cat_data):
         try:
 
-             # moving clangen accs over to accessories + inventory
-            if "accessories" not in cat:
-                cat["accessories"] = []
-
-            if cat["accessory"] is not None:
-                cat["accessories"].append(cat["accessory"])
-                cat["accessory"] = None
             
             new_cat = Cat(
                 ID=cat["ID"],
@@ -102,10 +95,10 @@ def json_load():
                 cat["pelt_name"] = "Dalmatian"
             if cat["accessory"] == "Raspberry":
                 cat["accessory"] = "OGRaspberry"
-            if cat["accessories"] == ["DAISY1"]:
-                cat["accessories"] = ["DAISYTAIL"]
-            if cat["accessories"] == ["CLOVER1"]:
-                cat["accessories"] = ["CLOVERTAIL"]
+            if cat["accessory"] == ["DAISY1"]:
+                cat["accessory"] = ["DAISYTAIL"]
+            if cat["accessory"] == ["CLOVER1"]:
+                cat["accessory"] = ["CLOVERTAIL"]
             if cat["tint"] == "banana":
                 cat["tint"] = "bananaone"
             if cat["backstory"] == "clan_founder1":
@@ -134,12 +127,12 @@ def json_load():
                 cat["backstory"] = "otherclan1"
             if cat["tint"] == "lightchocolate":
                 cat["tint"] = "lightorange"
-            if cat["tint"] == "paleblue":
-                cat["tint"] = "lightblue"
             if cat["trait"] == "princibled":
                 cat["trait"] = "principled"
             if cat["trait"] == "fun loving":
                 cat["trait"] = "fun-loving"
+            if "accessories" in cat:
+                cat["accessory"] = cat.pop("accessories")
 
             new_cat.pelt = Pelt(
                 name=cat["pelt_name"],
@@ -196,7 +189,6 @@ def json_load():
                 physical_trait_hidden_4=cat["physical_trait_hidden_4"] if "physical_trait_hidden_4" in cat else None,
                 scars=cat["scars"] if "scars" in cat else [],
                 accessory=cat["accessory"],
-                accessories=cat["accessories"] if "accessories" in cat else [],
                 opacity=cat["opacity"] if "opacity" in cat else 100,
                 fur_texture=cat["fur_texture"] if "fur_texture" in cat else choice(["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse", "tangled", "fuzzy", "spiky"]),
                 build = cat['build'] if "build" in cat else choice(["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate"]),

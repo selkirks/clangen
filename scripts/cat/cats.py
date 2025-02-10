@@ -2112,7 +2112,7 @@ class Cat:
             "SNAKE",
             "OLD SILVER WATCH",
             "OLD GOLD WATCH",
-            "BAUBLES"
+            "BAUBLES",
             "GULL FEATHERS",
             "SPARROW FEATHERS",
             "CLOVERTAIL",
@@ -3538,7 +3538,6 @@ class Cat:
                 "tortie_pattern": self.pelt.tortiepattern,
                 "skin": self.pelt.skin,
                 "tint": self.pelt.tint,
-                'accessories': self.pelt.accessories if self.pelt.accessories else [],
                 "skill_dict": self.skills.get_skill_dict(),
                 "physical_trait_1": self.pelt.physical_trait_1,
                 "physical_trait_2": self.pelt.physical_trait_2,
@@ -3562,8 +3561,8 @@ class Cat:
                 "favourite": self.favourite,
                 "fur_texture": self.pelt.fur_texture,
                 "height": self.pelt.height,
-                "build": self.pelt.build,
-                "accessories": self.pelt.accessories if self.pelt.accessories else [],
+                "build": self.pelt.build
+               
             }
 
     def determine_next_and_previous_cats(
@@ -3591,10 +3590,6 @@ class Cat:
                 for check_cat in sorted_specific_list
                 if filter_func(check_cat)
             ]
-
-        if game.clan.instructor in sorted_specific_list:
-            sorted_specific_list.remove(game.clan.instructor)
-            sorted_specific_list.insert(0, game.clan.instructor)
 
         idx = sorted_specific_list.index(self)
 

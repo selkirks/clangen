@@ -322,13 +322,11 @@ class SpriteInspectScreen(Screens):
             self.the_cat.pelt.scars,
         )
 
-        # "Show accessories"
-        # if self.the_cat.pelt.accessories or self.the_cat.pelt.accessory:
         self.make_one_checkbox(
             ui_scale_offset((500, 575)),
             "acc_shown",
             self.acc_shown,
-            self.the_cat.pelt.accessories,
+            self.the_cat.pelt.accessory,
         )
 
         # "Show as living"
