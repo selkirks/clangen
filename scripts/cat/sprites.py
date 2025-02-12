@@ -179,32 +179,13 @@ class Sprites:
 
         # Define eye colors
         eye_colors = [
-            [
-                "YELLOW",
-                "AMBER",
-                "HAZEL",
-                "PALEGREEN",
-                "GREEN",
-                "BLUE",
-                "DARKBLUE",
-                "GREY",
-                "CYAN",
-                "EMERALD",
-                "HEATHERBLUE",
-                "SUNLITICE",
-            ],
-            [
-                "COPPER",
-                "SAGE",
-                "COBALT",
-                "PALEBLUE",
-                "BRONZE",
-                "SILVER",
-                "PALEYELLOW",
-                "GOLD",
-                "GREENYELLOW",
-                "ORANGE"
-            ],
+            ['SUNLITICE', 'LEMON', 'YELLOW', 'CITRINE', 'HONEY', 'SUNFLOWER', 'GOLD', 'MARIGOLD', 'PEACH', 'ORANGE', 'JASPER', 'COPPER'],
+            ['CORAL', 'AMBER', 'BRONZE', 'CRIMSON', 'FEATHER', 'BRASS', 'BROWN', 'CHOCOLATE', 'LIME', 'KIWI', 'PEAR', 'APPLE'],
+            ['PERIDOT', 'GREEN', 'CLOVER', 'FERN', 'JADE', 'SHAMROCK', 'EMERALD', 'FOREST', 'MINT', 'SPRING', 'OCEAN', 'JUNGLE'],
+            ['SAGE', 'LAUREL', 'PISTACHIO', 'MOSS', 'MIST', 'CYAN', 'AQUA', 'TURQUOISE', 'SAPPHIRE', 'DOLPHIN', 'DUCK', 'TEAL'],
+            ['ARCTIC', 'SKY', 'EGG', 'CERULEAN', 'CORNFLOWER', 'BERRY', 'AZURE', 'BLUE', 'LAPIS', 'COBALT', 'NAVY', 'MIDNIGHT'],
+            ['IRIS', 'SLATE', 'ULTRAMARINE', 'INDIGO', 'PERIWINKLE', 'HEATHER', 'VIOLET', 'AMETHYST', 'SILVER', 'GREY', 'STONE', 'METAL'],
+            ['SWAMP', 'ASPARAGUS', 'OLIVE', 'HAZEL', 'PINK', 'PURPLE', 'ICE', 'BLACK']
         ]
 
         for row, colors in enumerate(eye_colors):
@@ -367,9 +348,18 @@ class Sprites:
 
         # Define colors and categories
         color_categories = [
-            ["WHITE", "PALEGREY", "SILVER", "GREY", "DARKGREY", "GHOST", "BLACK"],
-            ["CREAM", "PALEGINGER", "GOLDEN", "GINGER", "DARKGINGER", "SIENNA"],
-            ["LIGHTBROWN", "LILAC", "BROWN", "GOLDEN-BROWN", "DARKBROWN", "CHOCOLATE"],
+            ['WHITE', 'PALEGREY', 'LIGHTGREY', 'GREY', 'DARKGREY', 'BLACK', 'OBSIDIAN', 'GHOST', 'PALEBLUE', 'LIGHTBLUE', 'BLUE', 'DARKBLUE', 'SILVERCHOCOLATE', 
+             'SILVERGINGER'],
+            ['DARKSLATE', 'SLATE', 'LIGHTSLATE', 'PALESLATE', 'PALELILAC', 'LIGHTLILAC', 'LILAC', 'DARKLILAC', 'DARKASH', 'ASH', 'LIGHTASH', 'PALEASH', 'SILVERCINNAMON', 
+             'SILVERRED'],
+            ['PALEBROWN', 'LIGHTBROWN', 'BROWN', 'DARKBROWN', 'EBONY', 'DARKCHOCOLATE', 'CHOCOLATE', 'LIGHTCHOCOLATE', 'PALECHOCOLATE', 'PALECINNAMON', 
+             'LIGHTCINNAMON', 'CINNAMON', 'SILVERFAWN'],
+            ['DARKCINNAMON', 'DARKFAWN', 'FAWN', 'LIGHTFAWN', 'PALEFAWN', 'PALECREAM', 'LIGHTCREAM', 'CREAM', 'DARKCREAM', 'DARKGOLD', 'GOLD', 'LIGHTGOLD', 
+             'SILVERCREAM'],
+            ['PALEGOLD', 'SUNSHINE', 'BRONZE', 'COPPER', 'DARKORANGE', 'ORANGE', 'LIGHTORANGE', 'PALEORANGE', 'PALEGINGER', 'LIGHTGINGER', 'GINGER', 
+             'DARKGINGER', 'SILVERGOLD'],
+            ['RUSSET', 'DARKRED', 'RED', 'LIGHTRED', 'PALERED', 'SILVER', 'SILVERGREY', 'SILVERBLUE', 'SILVERSLATE', 'SILVERLILAC', 'SILVERASH', 'SILVERBROWN', 
+             'SILVERORANGE']
         ]
 
         color_types = [

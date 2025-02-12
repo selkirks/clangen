@@ -77,6 +77,258 @@
             "one": "brown",
             "many": "dark brown"
         },
+        "LIGHTGREY": {
+            "one": "grey",
+            "many": "grey"
+        },
+        "OBSIDIAN": {
+            "one": "black",
+            "many": "black"
+        },
+        "PALEBLUE": {
+            "one": "blue",
+            "many": "blue"
+        },
+        "LIGHTBLUE": {
+            "one": "blue",
+            "many": "blue"
+        },
+        "BLUE": {
+            "one": "blue",
+            "many": "blue"
+        },
+        "DARKBLUE": {
+            "one": "blue",
+            "many": "blue"
+        },
+        "SILVERCHOCOLATE": {
+            "one": "brown",
+            "many": "dark brown"
+        },
+        "SILVERGINGER": {
+            "one": "ginger",
+            "many": "ginger"
+        },
+        "DARKSLATE": {
+            "one": "grey",
+            "many": "grey"
+        },
+        "LIGHTSLATE": {
+            "one": "grey",
+            "many": "grey"
+        },
+        "PALESLATE": {
+            "one": "grey",
+            "many": "grey"
+        },
+        "PALELILAC": {
+            "one": "lilac",
+            "many": "lilac"
+        },
+        "DARKLILAC": {
+            "one": "lilac",
+            "many": "lilac"
+        },
+        "LIGHTLILAC": {
+            "one": "lilac",
+            "many": "lilac"
+        },
+        "DARKASH": {
+            "one": "grey",
+            "many": "grey"
+        },
+        "ASH": {
+            "one": "grey",
+            "many": "grey"
+        },
+        "LIGHTASH": {
+            "one": "grey",
+            "many": "grey"
+        },
+        "PALEASH": {
+            "one": "grey",
+            "many": "grey"
+        },
+        "SILVERCINNAMON": {
+            "one": "cinnamon",
+            "many": "cinnamon"
+        },
+        "SILVERRED": {
+            "one": "red",
+            "many": "red"
+        },
+        "PALEBROWN": {
+            "one": "brown",
+            "many": "brown"
+        },
+        "EBONY": {
+            "one": "black",
+            "many": "black"
+            },
+        "DARKCHOCOLATE": {
+            "one": "brown",
+            "many": "brown"
+        },
+        "LIGHTCHOCOLATE": {
+            "one": "brown",
+            "many": "brown"
+        },
+        "PALECHOCOLATE": {
+            "one": "brown",
+            "many": "brown"
+        },
+        "PALECINNAMON": {
+            "one": "cinnamon",
+            "many": "cinnamon"
+        },
+        "LIGHTCINNAMON": {
+            "one": "cinnamon",
+            "many": "cinnamon"
+        },
+        "CINNAMON": {
+            "one": "cinnamon",
+            "many": "cinnamon"
+        },
+        "SILVERFAWN": {
+            "one": "fawn",
+            "many": "fawn"
+        },
+        "DARKCINNAMON": {
+            "one": "cinnamon",
+            "many": "cinnamon"
+        },
+        "DARKFAWN": {
+            "one": "fawn",
+            "many": "fawn"
+        },
+        "FAWN": {
+            "one": "fawn",
+            "many": "fawn"
+        },
+        "LIGHTFAWN": {
+            "one": "fawn",
+            "many": "fawn"
+        },
+        "PALEFAWN": {
+            "one": "fawn",
+            "many": "fawn"
+        },
+        "PALECREAM": {
+            "one": "cream",
+            "many": "cream"
+        },
+        "LIGHTCREAM": {
+            "one": "cream",
+            "many": "cream"
+        },
+        "DARKCREAM": {
+            "one": "cream",
+            "many": "cream"
+        },
+        "DARKGOLD": {
+            "one": "golden",
+            "many": "golden"
+        },
+        "GOLD": {
+            "one": "golden",
+            "many": "golden"
+        },
+        "LIGHTGOLD": {
+            "one": "golden",
+            "many": "golden"
+        },
+        "SILVERCREAM": {
+            "one": "cream",
+            "many": "cream"
+        },
+        "PALEGOLD": {
+            "one": "golden",
+            "many": "golden"
+        },
+        "SUNSHINE": {
+            "one": "golden",
+            "many": "golden"
+        },
+        "BRONZE": {
+            "one": "brown",
+            "many": "dark brown"
+        },
+        "COPPER": {
+            "one": "brown",
+            "many": "dark brown"
+        },
+        "DARKORANGE": {
+            "one": "orange",
+            "many": "orange"
+        },
+        "ORANGE": {
+            "one": "orange",
+            "many": "orange"
+        },
+        "LIGHTORANGE": {
+            "one": "orange",
+            "many": "orange"
+        },
+        "PALEORANGE": {
+            "one": "orange",
+            "many": "orange"
+        },
+        "LIGHTGINGER": {
+            "one": "ginger",
+            "many": "ginger"
+        },
+        "SILVERGOLD": {
+            "one": "golden",
+            "many": "golden"
+        },
+        "RUSSET": {
+            "one": "red",
+            "many": "red"
+        },
+        "DARKRED": {
+            "one": "red",
+            "many": "red"
+        },
+        "RED": {
+            "one": "red",
+            "many": "red"
+        },
+        "LIGHTRED": {
+            "one": "red",
+            "many": "red"
+        },
+        "PALERED": {
+            "one": "red",
+            "many": "red"
+        },
+        "SILVERGREY": {
+            "one": "gray",
+            "many": "gray"
+        },
+        "SILVERBLUE": {
+            "one": "blue",
+            "many": "blue"
+        },
+        "SILVERSLATE": {
+            "one": "gray",
+            "many": "gray"
+        },
+        "SILVERLILAC": {
+            "one": "lilac",
+            "many": "lilac"
+        },
+        "SILVERASH": {
+            "one": "gray",
+            "many": "gray"
+        },
+        "SILVERBROWN": {
+            "one": "brown",
+            "many": "brown"
+        },
+        "SILVERORANGE": {
+            "one": "orange",
+            "many": "orange"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
