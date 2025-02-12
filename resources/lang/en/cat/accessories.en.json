@@ -543,6 +543,462 @@
             "zero": "indigo nylon collar",
             "many": "indigo nylon collars",
             "one": "indigo nylon collar"
+       
+    
+   
+    },
+    "CRIMSONBANDANA": {
+        "zero": "crimson bandana",
+        "many": "crimson bandanas",
+        "one": "crimson bandana"
+    },
+    "BLUEBANDANA": {
+        "zero": "blue bandana",
+        "many": "blue bandanas",
+        "one": "blue bandana"
+    },
+    "CYANBANDANA": {
+        "zero": "cyan bandana",
+        "many": "cyan bandanas",
+        "one": "cyan bandana"
+    },
+    "YELLOWANDANA": {
+        "zero": "yellow bandana",
+        "many": "yellow bandans",
+        "one": "yellow bandana"
+    },
+    "LIMEBANDANA": {
+        "zero": "lime bandana",
+        "many": "lime bandanas",
+        "one": "lime bandana"
+    },
+    "GREENBANDANA": {
+        "zero": "green bandana",
+        "many": "green bandanas",
+        "one": "green bandana"
+    },
+    "REDBANDANA": {
+        "zero": "orange bandana",
+        "many": "orange bandanas",
+        "one": "orange bandana"
+    },
+    "RAINBOWBANDANA": {
+        "zero": "rainbow bandana",
+        "many": "rainbow bandanas",
+        "one": "rainbow bandana"
+    },
+    "BLACKBANDANA": {
+        "zero": "black bandana",
+        "many": "black bandanas",
+        "one": "black bandana"
+    },
+    "SPIKESBANDANA": {
+        "zero": "blue and gold bandana",
+        "many": "blue and gold bandanas",
+        "one": "blue and gold bandana"
+    },
+    "WHITEBANDANA": {
+        "zero": "white bandana",
+        "many": "white bandanas",
+        "one": "white bandana"
+    },
+    "PINKBANDANA": {
+        "zero": "pink bandana",
+        "many": "pink bandanas",
+        "one": "pink bandana"
+    },
+    "PURPLEBANDANA": {
+        "zero": "purple bandana",
+        "many": "purple bandanas",
+        "one": "purple bandana"
+    },
+    "MULTIBANDANA": {
+        "zero": "pastel pink bandana",
+        "many": "pastel pink bandanas",
+        "one": "pastel pink bandana"
+    },
+    "INDIGOBANDANA": {
+        "zero": "indigo bandana",
+        "many": "indigo bandanas",
+        "one": "indigo bandana"
+    },
+    "CRIMSONH": {
+        "zero": "crimson harness",
+        "many": "crimson harnesses",
+        "one": "crimson harness"
+    },
+    "BLUEH": {
+        "zero": "blue harness",
+        "many": "blue harnesses",
+        "one": "blue harness"
+    },
+    "CYANH": {
+        "zero": "cyan harness",
+        "many": "cyan harnesses",
+        "one": "cyan harness"
+    },
+    "YELLOWH": {
+        "zero": "yellow harness",
+        "many": "yellow harnesses",
+        "one": "yellow harness"
+    },
+    "LIMEH": {
+        "zero": "lime harness",
+        "many": "lime harnesses",
+        "one": "lime harness"
+    },
+    "GREENH": {
+        "zero": "green harness",
+        "many": "green harnesses",
+        "one": "green harness"
+    },
+    "REDH": {
+        "zero": "orange harness",
+        "many": "orange harnesses",
+        "one": "orange harness"
+    },
+    "RAINBOWH": {
+        "zero": "rainbow harness",
+        "many": "rainbow harnesses",
+        "one": "rainbow harness"
+    },
+    "BLACKH": {
+        "zero": "black harness",
+        "many": "black harnesses",
+        "one": "black harness"
+    },
+    "SPIKESH": {
+        "zero": "blue and gold harness",
+        "many": "blue and gold harnesses",
+        "one": "blue and gold harness"
+    },
+    "WHITEH": {
+        "zero": "white harness",
+        "many": "white harnesses",
+        "one": "white harness"
+    },
+    "PINKH": {
+        "zero": "pink harness",
+        "many": "pink harnesses",
+        "one": "pink harness"
+    },
+    "PURPLEH": {
+        "zero": "purple harness",
+        "many": "purple harnesses",
+        "one": "purple harness"
+    },
+    "MULTIH": {
+        "zero": "pastel pink harness",
+        "many": "pastel pink harnesses",
+        "one": "pastel pink harness"
+    },
+    "INDIGOH": {
+        "zero": "indigo harness",
+        "many": "indigo harnesses",
+        "one": "indigo harness"
+    },
+    "CRIMSONBOWS": {
+        "zero": "crimson bows",
+        "many": "crimson bows",
+        "one": "crimson bows"
+    },
+    "BLUEBOWS": {
+        "zero": "blue bows",
+        "many": "blue bows",
+        "one": "blue bows"
+    },
+    "CYANBOWS": {
+        "zero": "cyan bows",
+        "many": "cyan bows",
+        "one": "cyan bows"
+    },
+    "YELLOWBOWS": {
+        "zero": "yellow bows",
+        "many": "yellow bows",
+        "one": "yellow bows"
+    },
+    "LIMEBOWS": {
+        "zero": "lime bows",
+        "many": "lime bows",
+        "one": "lime bows"
+    },
+    "GREENBOWS": {
+        "zero": "green bows",
+        "many": "green bows",
+        "one": "green bows"
+    },
+    "REDBOWS": {
+        "zero": "orange bows",
+        "many": "orange bows",
+        "one": "orange bows"
+    },
+    "RAINBOWBOWS": {
+        "zero": "rainbow bows",
+        "many": "rainbow bows",
+        "one": "rainbow bows"
+    },
+    "BLACKBOWS": {
+        "zero": "black bows",
+        "many": "black bows",
+        "one": "black bows"
+    },
+    "SPIKESBOWS": {
+        "zero": "blue and gold bows",
+        "many": "blue and gold bows",
+        "one": "blue and gold bows"
+    },
+    "WHITEBOWS": {
+        "zero": "white bows",
+        "many": "white bows",
+        "one": "white bows"
+    },
+    "PINKBOWS": {
+        "zero": "pink bows",
+        "many": "pink bows",
+        "one": "pink bows"
+    },
+    "PURPLEBOWS": {
+        "zero": "purple bows",
+        "many": "purple bows",
+        "one": "purple bows"
+    },
+    "MULTIBOWS": {
+        "zero": "pastel pink bows",
+        "many": "pastel pink bows",
+        "one": "pastel pink bows"
+    },
+    "INDIGOBOWS": {
+        "zero": "indigo bows",
+        "many": "indigo bows",
+        "one": "indigo bows"
+    },
+    "CRIMSONTEETHCOLLAR": {
+        "zero": "crimson dog teeth collar",
+        "many": "crimson dog teeth collars",
+        "one": "crimson dog teeth collar"
+    },
+    "BLUETEETHCOLLAR": {
+        "zero": "blue dog teeth collar",
+        "many": "blue dog teeth collars",
+        "one": "blue dog teeth collar"
+    },
+    "CYANTEETHCOLLAR": {
+        "zero": "cyan dog teeth collar",
+        "many": "cyan dog teeth collars",
+        "one": "cyan dog teeth collar"
+    },
+    "YELLOWTEETHCOLLAR": {
+        "zero": "yellow dog teeth collar",
+        "many": "yellow dog teeth collars",
+        "one": "yellow dog teeth collar"
+    },
+    "LIMETEETHCOLLAR": {
+        "zero": "lime dog teeth collar",
+        "many": "lime dog teeth collars",
+        "one": "lime dog teeth collar"
+    },
+    "GREENTEETHCOLLAR": {
+        "zero": "green dog teeth collar",
+        "many": "green dog teeth collars",
+        "one": "green dog teeth collar"
+    },
+    "REDTEETHCOLLAR": {
+        "zero": "red dog teeth collar",
+        "many": "red dog teeth collars",
+        "one": "red dog teeth collar"
+    },
+    "RAINBOWTEETHCOLLAR": {
+        "zero": "rainbow dog teeth collar",
+        "many": "rainbow dog teeth collars",
+        "one": "rainbow dog teeth collar"
+    },
+    "BLACKTEETHCOLLAR": {
+        "zero": "black dog teeth collar",
+        "many": "black dog teeth collars",
+        "one": "black dog teeth collar"
+    },
+    "SPIKESTEETHCOLLAR": {
+        "zero": "blue and gold dog teeth collar",
+        "many": "blue and gold dog teeth collars",
+        "one": "blue and gold dog teeth collar"
+    },
+    "WHITETEETHCOLLAR": {
+        "zero": "white dog teeth collar",
+        "many": "white dog teeth collars",
+        "one": "white dog teeth collar"
+    },
+    "PINKTEETHCOLLAR": {
+        "zero": "pink dog teeth collar",
+        "many": "pink dog teeth collars",
+        "one": "pink dog teeth collar"
+    },
+    "PURPLETEETHCOLLAR": {
+        "zero": "purple dog teeth collar",
+        "many": "purple dog teeth collars",
+        "one": "purple dog teeth collar"
+    },
+    "MULTITEETHCOLLAR": {
+        "zero": "lilac dog teeth collar",
+        "many": "lilac dog teeth collars",
+        "one": "lilac dog teeth collar"
+    },
+    "INDIGOTEETHCOLLAR": {
+        "zero": "indigo dog teeth collar",
+        "many": "indigo dog teeth collars",
+        "one": "indigo dog teeth collar"
+
+
+    },
+    "CRIMSONTIE": {
+        "zero": "crimson tie",
+        "many": "crimson ties",
+        "one": "crimson tie"
+    },
+    "BLUETIE": {
+        "zero": "blue tie",
+        "many": "blue ties",
+        "one": "blue tie"
+    },
+    "CYANTIE": {
+        "zero": "cyan tie",
+        "many": "cyan ties",
+        "one": "cyan tie"
+    },
+    "YELLOWTI": {
+        "zero": "yellow tie",
+        "many": "yellow ties",
+        "one": "yellow tie"
+    },
+    "LIMETIE": {
+        "zero": "lime tie",
+        "many": "lime ties",
+        "one": "lime tie"
+    },
+    "GREENTIE": {
+        "zero": "green tie",
+        "many": "green ties",
+        "one": "green tie"
+    },
+    "ORANGETIE": {
+        "zero": "orange tie",
+        "many": "orange ties",
+        "one": "orange tie"
+    },
+    "RAINBOWTIE": {
+        "zero": "rainbow tie",
+        "many": "rainbow ties",
+        "one": "rainbow tie"
+    },
+    "BLACKTIE": {
+        "zero": "black tie",
+        "many": "black ties",
+        "one": "black tie"
+    },
+    "SPIKESTIE": {
+        "zero": "blue and gold tie",
+        "many": "blue and gold ties",
+        "one": "blue and gold tie"
+    },
+    "WHITETIE": {
+        "zero": "white tie",
+        "many": "white ties",
+        "one": "white tie"
+    },
+    "PINKTIE": {
+        "zero": "pink tie",
+        "many": "pink ties",
+        "one": "pink tie"
+    },
+    "PURPLETIE": {
+        "zero": "purple tie",
+        "many": "purple ties",
+        "one": "purple tie"
+    },
+    "MULTITIE": {
+        "zero": "pastel pink tie",
+        "many": "pastel pink ties",
+        "one": "pastel pink tie"
+    },
+    "INDIGOTIE": {
+        "zero": "indigo tie",
+        "many": "indigo ties",
+        "one": "indigo tie"
+    },
+    "CRIMSONS": {
+        "zero": "crimson french scarf",
+        "many": "crimson french scarves",
+        "one": "crimson french scarf"
+    },
+    "BLUES": {
+        "zero": "blue french scarf",
+        "many": "blue french scarves",
+        "one": "blue french scarf"
+    },
+    "CYANS": {
+        "zero": "cyan french scarf",
+        "many": "cyan french scarves",
+        "one": "cyan french scarf"
+    },
+    "YELLOWS": {
+        "zero": "yellow french scarf",
+        "many": "yellow french scarves",
+        "one": "yellow french scarf"
+    },
+    "LIMES": {
+        "zero": "lime french scarf",
+        "many": "lime french scarves",
+        "one": "lime french scarf"
+    },
+    "GREENS": {
+        "zero": "green french scarf",
+        "many": "green french scarves",
+        "one": "green french scarf"
+    },
+    "ORANGES": {
+        "zero": "orange french scarf",
+        "many": "orange french scarves",
+        "one": "orange french scarf"
+    },
+    "RAINBOWS": {
+        "zero": "rainbow french scarf",
+        "many": "rainbow french scarves",
+        "one": "rainbow french scarf"
+    },
+    "BLACKS": {
+        "zero": "black french scarf",
+        "many": "black french scarves",
+        "one": "black french scarf"
+    },
+    "SPIKESS": {
+        "zero": "blue and gold french scarf",
+        "many": "blue and gold french scarves",
+        "one": "blue and gold french scarf"
+    },
+    "WHITES": {
+        "zero": "white french scarf",
+        "many": "white french scarves",
+        "one": "white french scarf"
+    },
+    "PINKS": {
+        "zero": "pink french scarf",
+        "many": "pink french scarves",
+        "one": "pink french scarf"
+    },
+    "PURPLES": {
+        "zero": "purple french scarf",
+        "many": "purple french scarves",
+        "one": "purple french scarf"
+    },
+    "MULTIS": {
+        "zero": "pastel pink french scarf",
+        "many": "pastel pink french scarves",
+        "one": "pastel pink french scarf"
+    },
+    "INDIGOS": {
+        "zero": "indigo french scarf",
+        "many": "indigo french scarves",
+        "one": "indigo french scarf"
+
         }
     }
 }

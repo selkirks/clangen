@@ -157,6 +157,11 @@ class Sprites:
             "fadestarclan",
             "fadedarkforest",
             "symbols",
+            'eragonaeyes', 'eragonaeyes2',
+            'eragonatorite', 'eragonawp',
+            'eragonatorite2',
+            "harnesses", "bows", "teethcollars", "bandanas",
+            "french_scarves", "ties",
         ]:
             if "lineart" in x and game.config["fun"]["april_fools"]:
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -192,6 +197,20 @@ class Sprites:
             for col, color in enumerate(colors):
                 self.make_group("eyes", (col, row), f"eyes{color}")
                 self.make_group("eyes2", (col, row), f"eyes2{color}")
+
+        # Define era eye colors
+        era_eye_colors = [
+            ['DARK HAZEL', 'ROSE GOLD', 'ROSE', 'REVERSE SUNLITICE', 'ICY', 'SUNSET', 'LAVENDER', 'ECLIPSE', 'INK',
+             'MUDDY', 'GEM', 'OURPLE'],
+            ['RUSTY', 'PASTEL', 'AVOCADO', 'PASTEL LAVENDER', 'ALBINO', 'WINTER ROSE', 'SWEET', 'MORNING', 'DARK BROWN', 'BAY',
+             'NEON GREEN', 'SEA'],
+            ['DISCORD', 'AUTUMN LEAF', 'RUBY', 'PHANTOM', 'RIVER MOSS', 'WICKED']
+        ]
+
+        for row, colors in enumerate(era_eye_colors):
+            for col, color in enumerate(colors):
+                self.make_group('eragonaeyes', (col, row), f'eyes{color}')
+                self.make_group('eragonaeyes2', (col, row), f'eyes2{color}')
 
         # Define white patches
         white_patches = [
@@ -346,6 +365,22 @@ class Sprites:
             for col, patch in enumerate(patches):
                 self.make_group("whitepatches", (col, row), f"white{patch}")
 
+        # Define era white patches
+        era_white_patches = [
+            ['INK','WOLF','EYEV','GEM','FOX','ORCA','PINTO','FRECKLESTWO','SOLDIER',
+             'AKITA'],
+            ['CHESSBORAD','ANT','CREAMV','BUNNY','MOJO','STAINSONE','STAINST',
+              'HALFHEART','FRECKLESTHREE','KITTY'],
+            ['SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW','BOOMSTAR','MIST','LEON'],
+            ['LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO','CHAOS'],
+            ['MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY'],
+            ['MOONSTONE', 'DRIP', 'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY'],
+            ['SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK']
+        ]
+        for row, wps in enumerate(era_white_patches):
+            for col, wp in enumerate(wps):
+                self.make_group('eragonawp', (col, row), f'white{wp}')
+
         # Define colors and categories
         color_categories = [
             ['WHITE', 'PALEGREY', 'LIGHTGREY', 'GREY', 'DARKGREY', 'BLACK', 'OBSIDIAN', 'GHOST', 'PALEBLUE', 'LIGHTBLUE', 'BLUE', 'DARKBLUE', 'SILVERCHOCOLATE', 
@@ -440,6 +475,35 @@ class Sprites:
         for row, masks in enumerate(tortiepatchesmasks):
             for col, mask in enumerate(masks):
                 self.make_group("tortiepatchesmasks", (col, row), f"tortiemask{mask}")
+
+        # toritemasktwo
+        torite_mask_two = [
+            ['CHAOSONE', 'CHAOSTWO', 'CHAOSTHREE', 'CHAOSFOUR', 'ERROR', 'WAVE', 'PONINTTORITE', 'MASKTORITE', 'LITTLESTAR', 'TANBUNNY'],
+            ['STRIPES', 'PINITO',  'SKULL', 'SIGHT', 'BRINDLETORITE', 'SNOW', 'ROSETTESTORITE', 'AMBERONE', 'KINTSUGIONE', 'BENGALMASK'],
+            ['SHADOW', 'RAIN', 'MGLA', 'MOONLIGHT', 'MOUSE', 'SATURN', 'MARBLETORINE', 'AMBERTWO', 'PATTERN', 'MOSS'],
+            ['MONKEY', 'BUMBLEBEE', 'KINTSUGITWO', 'STORM', 'CLASSICTORNIE', 'STRIPEONETORITE', 'MACKERELTORITE', 'AMBERTHREE', 'SHADE', 'GRAFFITI'],
+            ['AGOUTITORIE', 'BENGALTORITE', 'TABBYTORITE', 'SOKKOKETORITE', 'SPECKLEDTORITE', 'TICKEDTORIE', 'MORRO', 'AMBERFOUR', 'DOG', 'ONESPOT']
+          
+          ]
+       # toritemaskthree
+        torite_mask_two2 = [
+            ['INK','WOLF','EYEV','GEM','FOX','ORCA','PINTO','FRECKLESTWO','SOLDIER',
+             'AKITA'],
+            ['CHESSBORAD','ANT','CREAMV','BUNNY','MOJO','STAINSONE','STAINST',
+              'HALFHEART','FRECKLESTHREE','KITTY'],
+            ['SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW','BOOMSTAR','MIST','LEON'],
+            ['LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO', 'CHAOS'],
+            ['MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY'],
+            ['MOONSTONE', 'DRIP', 'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY'],
+            ['SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK']
+          ]
+       
+        for row, maskstwo in enumerate(torite_mask_two):
+            for col, masktwo in enumerate(maskstwo):
+                self.make_group('eragonatorite', (col, row), f"tortiemask{masktwo}")
+        for row, masksthree in enumerate(torite_mask_two2):
+            for col, maskthree in enumerate(masksthree):
+                self.make_group('eragonatorite2', (col, row), f"tortiemask{maskthree}")
 
         # Define skin colors
         skin_colors = [
@@ -671,6 +735,68 @@ class Sprites:
         for row, nyloncollars in enumerate(nyloncollars_data):
             for col, nyloncollar in enumerate(nyloncollars):
                 self.make_group("nyloncollars", (col, row), f"collars{nyloncollar}")
+
+        bandanas_data = [
+            ["CRIMSONBANDANA", "BLUEBANDANA", "YELLOWANDANA", "CYANBANDANA", "REDBANDANA", "LIMEBANDANA"],
+            ["GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA"],
+            ["PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA"]
+        ]
+        
+        harnesses_data = [
+            ["CRIMSONH", "BLUEH", "YELLOWH", "CYANH", "REDH", "LIMEH"],
+            ["GREENH", "RAINBOWH", "BLACKH", "SPIKESH", "WHITEH"],
+            ["PINKH", "PURPLEH", "MULTIH", "INDIGOH"]
+        ]
+        
+        bows_data = [
+            ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS"],
+            ["GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS"],
+            ["PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
+        ]
+       
+        dog_teeth_collars_data = [
+            ["CRIMSONTEETHCOLLAR", "BLUETEETHCOLLAR", "YELLOWTEETHCOLLAR", "CYANTEETHCOLLAR", "REDTEETHCOLLAR",
+             "LIMETEETHCOLLAR"],
+            ["GREENTEETHCOLLAR", "RAINBOWTEETHCOLLAR", "BLACKTEETHCOLLAR", "SPIKESTEETHCOLLAR", "WHITETEETHCOLLAR"],
+            ["PINKTEETHCOLLAR", "PURPLETEETHCOLLAR", "MULTITEETHCOLLAR", "INDIGOTEETHCOLLAR"]
+        ]
+    
+        ties_data = [
+            ["CRIMSONTIE", "BLUETIE", "YELLOWTIE", "CYANTIE", "ORANGETIE", "LIMETIE"],
+            ["GREENTIE", "RAINBOWTIE", "BLACKTIE", "SPIKESTIE", "WHITETIE"],
+            ["PINKTIE", "PURPLETIE", "MULTITIE", "INDIGOTIE"]
+        ]
+     
+        french_scarves_data = [
+            ["CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES"],
+            ["GREENS", "RAINBONS", "BLACKS", "SPIKESS", "WHITES"],
+            ["PINKS", "PURPLES", "MULTIS", "INDIGOS"]
+        ]
+     # bandanas
+        for row, bandanas in enumerate(bandanas_data):
+            for col, bandana in enumerate(bandanas):
+                self.make_group("bandanas", (col, row), f"collars{bandana}")
+        # harnesses
+        for row, harnesses in enumerate(harnesses_data):
+            for col, harness in enumerate(harnesses):
+                self.make_group("harnesses", (col, row), f"collars{harness}")
+        # bows (on ear and tail) 
+        for row, bows in enumerate(bows_data):
+            for col, bow in enumerate(bows):
+                self.make_group("bows", (col, row), f"collars{bow}")
+        # dog teeth collars
+        for row, teethcollars in enumerate(dog_teeth_collars_data):
+            for col, teethcollar in enumerate(teethcollars):
+                self.make_group("teethcollars", (col, row), f'acc_teethcollars{teethcollar}')
+    
+       # ties 
+        for row, ties in enumerate(ties_data):
+            for col, tie in enumerate(ties):
+                self.make_group("ties", (col, row), f"collars{tie}")
+         # french_scarves
+        for row, frenchscarvess in enumerate( french_scarves_data):
+            for col, frenchscarf in enumerate(frenchscarvess):
+                self.make_group("french_scarves", (col, row), f"collars{frenchscarf}")
 
     def load_symbols(self):
         """
