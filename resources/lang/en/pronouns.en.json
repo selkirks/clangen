@@ -26,6 +26,33 @@
             "self": "herself",
             "conju": 2,
             "gender": 2
+        },
+        "3": {
+            "subject": "it",
+            "object": "it",
+            "poss": "its",
+            "inposs": "its",
+            "self": "itself",
+            "conju": 2,
+            "gender": 3
+        },
+        "4": {
+            "subject": "xe",
+            "object": "xem",
+            "poss": "xyr",
+            "inposs": "xyrs",
+            "self": "xemself",
+            "conju": 1,
+            "gender": 0
+        },
+        "5": {
+            "subject": "ae",
+            "object": "aer",
+            "poss": "aer",
+            "inposs": "aers",
+            "self": "aerself",
+            "conju": 2,
+            "gender": 0
         }
     }
 }

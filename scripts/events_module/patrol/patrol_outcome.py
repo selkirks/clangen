@@ -816,18 +816,20 @@ class PatrolOutcome:
 
         for i, attribute_list in enumerate(self.new_cat):
             patrol.new_cats.append(
-                create_new_cat_block(Cat, Relationship, patrol, in_event_cats, i, attribute_list)
+                create_new_cat_block(
+                    Cat, Relationship, patrol, in_event_cats, i, attribute_list
+                )
             )
             dead = []
             outside = []
             new = []
             for cat in patrol.new_cats[-1]:
                 if cat.dead:
-                    dead.append(cat.name)
+                    dead.append(str(cat.name))
                 elif cat.outside:
-                    outside.append(cat.name)
+                    outside.append(str(cat.name))
                 else:
-                    new.append(cat.name)
+                    new.append(str(cat.name))
             for type_list, string in [
                 (dead, "screens.patrol.dead_outsider"),
                 (outside, "screens.patrol.met_outsider"),

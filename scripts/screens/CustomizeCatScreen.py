@@ -136,12 +136,6 @@ class CustomizeCatScreen(Screens):
         self.white_patches_dropdown = None
 
         self.vitiligo_patterns = copy(Pelt.vit)
-        self.white_patches.append(Pelt.white_sprites[6]) # add fullwhite patch
-        self.white_patches.insert(0, "None")
-        self.white_patches_label = None
-        self.white_patches_dropdown = None
-
-        self.vitiligo_patterns = Pelt.vit
         self.vitiligo_patterns.insert(0, "None")
         self.vitiligo_label = None
         self.vitiligo_dropdown = None

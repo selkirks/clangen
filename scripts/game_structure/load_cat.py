@@ -123,8 +123,6 @@ def json_load():
                 cat["backstory"] = "kittypet1"
             if cat["backstory"] == "rogue4":
                 cat["backstory"] = "rogue1"
-            if cat["backstory"] == "otherclan5":
-                cat["backstory"] = "otherclan1"
             if cat["tint"] == "lightchocolate":
                 cat["tint"] = "lightorange"
             if cat["trait"] == "princibled":
