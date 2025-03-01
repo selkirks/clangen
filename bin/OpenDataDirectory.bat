@@ -1,1 +1,1 @@
-start %LocalAppData%\MegaMergeBeta\MegaMerge
+start %LocalAppData%\MegaMerge\MegaMergeBeta

@@ -272,6 +272,9 @@ def _check_cat_status(cat, statuses: list) -> bool:
     if cat.status in statuses:
         return True
 
+    if 'lost' in statuses and cat.outside:
+        return True
+
     return False
 
 
