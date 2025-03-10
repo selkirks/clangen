@@ -60,7 +60,7 @@ jobs:
           IS_RELEASE: 1
       - name: Create archive (.tar.xz)
         run: tar -caf DADMLinux64_glibc2.31+.tar.xz -C dist DADM
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: DADM_Linux64_glibc2.31+.tar.xz
           path: DADM_Linux64_glibc2.31+.tar.xz
