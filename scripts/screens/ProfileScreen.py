@@ -763,7 +763,24 @@ class ProfileScreen(Screens):
         # MOONS
         output += "\n"
         if the_cat.dead:
-            output += i18n.t("general.moons_age_in_life", count=the_cat.moons)
+            output += str(the_cat.moons)
+            if the_cat.moons == 1:
+                output += " moon (in life)\n"
+            elif the_cat.moons != 1:
+                output += " moons (in life)\n"
+
+            output += str(the_cat.dead_for)
+            if the_cat.dead_for == 1:
+                output += " moon (in death)"
+            elif the_cat.dead_for != 1:
+                output += " moons (in death)"
+        else:
+            output += str(the_cat.moons)
+            years = round((the_cat.moons / 12.0), 1)
+            if the_cat.moons == 1:
+                output += f" moon ({years} years)"
+            elif the_cat.moons != 1:
+                output += f" moons ({years} years)"
             output += "\n"
             output += i18n.t("general.moons_age_in_death", count=the_cat.dead_for)
         else:
