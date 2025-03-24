@@ -2469,14 +2469,35 @@ class Cat:
             return
 
         # remove accessories if need be
-        if ("HALFTAIL" in self.pelt.scars or "NOTAIL" in self.pelt.scars or (self.phenotype.bobtailnr > 0 and self.phenotype.bobtailnr < 5)) and self.pelt.accessory in [
+        if "NOTAIL" in self.pelt.scars and self.pelt.accessory in [
             "RED FEATHERS",
             "BLUE FEATHERS",
             "JAY FEATHERS",
+            'SEAWEED', 'DAISY CORSAGE',
+            "SNAKE",
+            "OLD SILVER WATCH",
+            "OLD GOLD WATCH",
+            "BAUBLES",
             "GULL FEATHERS",
             "SPARROW FEATHERS",
-            "CLOVER",
-            "DAISY",
+            "CLOVERTAIL",
+            "DAISYTAIL"
+        ]:
+            self.pelt.accessory = None
+        
+        if "HALFTAIL" in self.pelt.scars and self.pelt.accessory in [
+            "RED FEATHERS",
+            "BLUE FEATHERS",
+            "JAY FEATHERS",
+            'SEAWEED', 'DAISY CORSAGE',
+            "SNAKE",
+            "OLD SILVER WATCH",
+            "OLD GOLD WATCH",
+            "BAUBLES",
+            "GULL FEATHERS",
+            "SPARROW FEATHERS",
+            "CLOVERTAIL",
+            "DAISYTAIL"
         ]:
             self.pelt.accessory = None
 

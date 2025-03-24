@@ -404,9 +404,36 @@ class HandleShortEvents:
             acc_list.extend(pelts.plant_accessories)
         if "COLLAR" in possible_accs:
             acc_list.extend(pelts.collars)
+        if "BONE" in possible_accs:
+            acc_list.extend(pelts.bone_accessories)
+        if "BOWS" in possible_accs:
+            acc_list.extend(pelts.bows_accessories)
+        if "BUTTERFLIES" in possible_accs:
+            acc_list.extend(pelts.butterflies_accessories)
+        if "STUFF" in possible_accs:
+            acc_list.extend(pelts.stuff_accessories)
+        if "FLOWER" in possible_accs:
+            acc_list.extend(pelts.flower_accessories)
+        if "PLANT2" in possible_accs:
+            acc_list.extend(pelts.plant2_accessories)
+        if "SNAKE" in possible_accs:
+            acc_list.extend(pelts.snake_accessories)
+        if "SMALLANIMAL" in possible_accs:
+            acc_list.extend(pelts.smallAnimal_accessories)
+        if "DEADINSECT" in possible_accs:
+            acc_list.extend(pelts.deadInsect_accessories)
+        if "ALIVEINSECT" in possible_accs:
+            acc_list.extend(pelts.aliveInsect_accessories)
+        if "FRUIT" in possible_accs:
+            acc_list.extend(pelts.fruit_accessories)
+        if "CRAFTED" in possible_accs:
+            acc_list.extend(pelts.crafted_accessories)
+        if "TAIL2" in possible_accs:
+            acc_list.extend(pelts.tail2_accessories)
 
         for acc in possible_accs:
-            if acc not in ["WILD", "PLANT", "COLLAR"]:
+            if acc not in ["WILD", "PLANT", "COLLAR", "FLOWER", "CRAFTED", "PLANT2", "SMALLANIMAL", "DEADINSECT",
+                           "ALIVEINSECT", "FRUIT", "SNAKE", "TAIL2","BONE", "BUTTERFLIES", "STUFF", "BOWS"]:
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars") or (self.main_cat.phenotype.bobtailnr > 0 and self.main_cat.phenotype.bobtailnr < 5):
