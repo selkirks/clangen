@@ -111,6 +111,306 @@ class SkillPath(Enum):
         "prophet",
     )
     GHOST = ("morbid curiosity", "ghost sense", "ghost sight", "ghost speaker")
+    GARDENER = (
+        "loves to pick flowers",
+        "grows herbs",
+        "herb organizer",
+        "caretaker of the greens"
+    )
+    UNKNOWN = (
+        "intrigued about the Unknown Residence",
+        "Unknown Residence accord",
+        "deep Unknown Residence bond",
+        "unshakable Unknown Residence link"
+    ) 
+    WAKEFUL = (
+        "never settles down",
+        "light sleeper",
+        "alert",
+        "vigilant"
+    ) 
+    DELIVERER = (
+        "queen helper",
+        "helpful stork",
+        "kit deliverer",
+        "pregnancy expert"
+    ) 
+    DECORATOR = (
+        "makes things pretty",
+        "crafty paws",
+        "creative",
+        "decor master"
+    ) 
+    LEADERSHIP = (
+        "deputy helper",
+        "leads patrols",
+        "leader's accomplice",
+        "assiduous"
+    ) 
+    AGILED = (
+        "parkours around camp",
+        "light-footed",
+        "lithe",
+        "quick agilist"
+    ) 
+    MEMORY = (
+        "remembers little details",
+        "memorious",
+        "retentive memory",
+        "mnemonist"
+    ) 
+    MESSENGER = (
+        "delivers messages",
+        "message-bearer",
+        "message-carrier",
+        "harbinger to the clans"
+    ) 
+    ASSIST = (
+        "little helper",
+        "assist guard",
+        "alert assistant",
+        "camp's assister"
+    ) 
+    HISTORIAN = (
+        "remembers stories",
+        "bookkeeper",
+        "archivist",
+        "accountant of history"
+    ) 
+    BOOKMAKER = (
+        "loves to tell stories",
+        "journalist",
+        "novelist",
+        "author of many stories"
+    ) 
+    PATIENT = (
+        "waits their turn",
+        "serene",
+        "even-tempered",
+        "equanimous"
+    ) 
+    DETECTIVE = (
+        "curious about mysteries",
+        "elementary case-solver",
+        "great sleuth",
+        "masterful detective"
+    ) 
+    HERBALIST = (
+        "curious about remedies",
+        "herbal inventor",
+        "poison maker",
+        "creator of remedies"
+    )
+    CHEF = (
+        "seasons their food",
+        "cooks prey",
+        "gourmet prey maker",
+        "masterful chef"
+    )
+    PRODIGY = (
+        "unusually gifted",
+        "knows alot of facts",
+        "smart role model",
+        "seen as an omen"
+    )
+    EXPLORER = (
+        "curious wanderer",
+        "knowledgeable explorer",
+        "brave pathfinder",
+        "master of territories"
+    )
+    TRACKER = (
+        "tracker instincts",
+        "proficient tracker",
+        "great tracker",
+        "masterful tracker"
+    )
+    ARTISAN = (
+        "likes to decorate",
+        "good decorator",
+        "great decorator",
+        "ultimate artisan"
+    )
+    GUARDIAN = (
+        "watchful",
+        "good guard",
+        "great guard",
+        "ultimate guardian"
+    )
+    NAVIGATOR = (
+        "good with directions",
+        "good navigator",
+        "great navigator",
+        "pathfinder"
+    )
+    SONG = (
+        "likes to sing",
+        "good singer",
+        "great singer",
+        "captivating singer"
+    )
+    GRACE = (
+        "steps lightly",
+        "graceful",
+        "elegant",
+        "radiates elegance"
+    )
+    CLEAN = (
+        "tidy",
+        "fur-care enthusiast",
+        "meticulous cleaner",
+        "master of aesthetics"
+    )
+    INNOVATOR = (
+        "always curious",
+        "problem solver",
+        "creator of solutions",
+        "visionary thinker"
+    )
+    COMFORTER = (
+        "gentle voice",
+        "comforting presence",
+        "nightmare soother",
+        "boogeyman-fighter"
+    )
+    MATCHMAKER = (
+        "interested in relationship drama",
+        "relationship advisor",
+        "skilled heart-reader",
+        "masterful matchmaker"
+    )
+    THINKER = (
+        "oddly resourceful",
+        "out-of-the-box thinker",
+        "paradox enthusiast",
+        "philosopher"
+    )
+    COOPERATIVE = (
+        "lives in groups",
+        "good sport",
+        "team player",
+        "insider"
+    )
+    SCHOLAR = (
+        "always learning",
+        "well-versed",
+        "incredibly knowledgeable",
+        "polymath"
+    )
+    TIME = (
+        "oddly orderly",
+        "always busy",
+        "coordinated",
+        "efficiency aficionado"
+    )
+    TREASURE = (
+        "looks for trinkets",
+        "item stasher",
+        "trinket stower",
+        "treasure keeper"
+    )
+    FISHER = (
+        "bats at rivers", 
+        "grazes fish", 
+        "fish-catcher", 
+        "gold star fishercat"
+    )
+    LANGUAGE = (
+        "other-cat-ly whisperer",
+        "dog-whisperer",
+        "multilingual",
+        "listener of all voices"
+    ) 
+    SLEEPER = (
+        "dozes easily",
+        "sunhigh log",
+        "dormouse", 
+        "leader of SnoozeClan"
+    )
+    DISGUISE = (
+        "accessory hoarder",
+        "creator of appearances",
+        "skillful disguiser", 
+        "shapeshifter"
+    )
+    PYRO = (
+        "loves warmth",
+        "messes with embers",
+        "spark master", 
+        "fire starter"
+    )
+    HYDRO = (
+        "water lover",
+        "great firefighter",
+        "excellent extinguisher",
+        "masterful extinguisher"
+    )
+    WEATHER = (
+        "looks at the sky",
+        "cloud watcher",
+        "rain sense", 
+        "weather predictor"
+    )
+    GIFTGIVER = (
+        "loves to gift",
+        "nice giftgiver",
+        "excellent giftgiver", 
+        "always gives gifts"
+    )
+    VIBES = (
+        "senses vibes",
+        "knows who to trust",
+        "mood reader", 
+        "vibe detector"
+    )
+    STARGAZER = (
+        "gazes at the stars",
+        "night vision",
+        "star-filled eyes", 
+        "celestial insight"
+    )
+    IMMUNE = (
+        "rarely sick",
+        "better immune system",
+        "strong immune system", 
+        "constant germ immunity"
+    )
+    HIDER = (
+        "hide-and-seek winner",
+        "blends into surroundings",
+        "natural colors", 
+        "invisible hider"
+    )
+    MUSICVIBES = (
+        "charming voice",
+        "nice singing",
+        "beautiful singing", 
+        "lovely singing"
+    )
+    AURAVIBES = (
+        "nice aura",
+        "friendly aura",
+        "calming aura", 
+        "pleasant aura"
+    )
+    ANIMALTAKER = (
+        "friendly with animals",
+        "loves to care for animals",
+        "wildlife friend", 
+        "deep animal-lover"
+    )
+    VET = (
+        "cares for injured creatures",
+        "helps animals",
+        "animal soother", 
+        "woodland healer"
+    )
+    ANIMALMAGNET = (
+        "small critters follow them",
+        "attracts animals",
+        "animals gather around them", 
+        "animal magnet"
+    )
 
     @staticmethod
     def get_random(exclude: list = ()):
@@ -189,6 +489,56 @@ class Skill:
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
         SkillPath.DARK: "dark forest",
+        SkillPath.GARDENER: "gardener",
+        SkillPath.UNKNOWN: "unknown residence",
+        SkillPath.WAKEFUL: "awake",
+        SkillPath.DELIVERER: "delivery",
+        SkillPath.DECORATOR: "decorator",
+        SkillPath.LEADERSHIP: "great leader",
+        SkillPath.AGILED: "agile",
+        SkillPath.MEMORY: "memorizing",
+        SkillPath.MESSENGER: "messenger",
+        SkillPath.ASSIST: "assisting",
+        SkillPath.HISTORIAN: "history keeper",
+        SkillPath.BOOKMAKER: "storymaker",
+        SkillPath.PATIENT: "patience",
+        SkillPath.DETECTIVE: "solves mysteries",
+        SkillPath.HERBALIST: "herbalist",
+        SkillPath.CHEF: "chef",
+        SkillPath.PRODIGY: "prodigy",
+        SkillPath.EXPLORER: "exploring",
+        SkillPath.TRACKER: "tracking",
+        SkillPath.ARTISAN: "decorating",
+        SkillPath.GUARDIAN: "guarding",
+        SkillPath.NAVIGATOR: "navigator",
+        SkillPath.SONG: "singing",
+        SkillPath.GRACE: "grace",
+        SkillPath.CLEAN: "cleaning",
+        SkillPath.INNOVATOR: "innovating",
+        SkillPath.COMFORTER: "comforting",
+        SkillPath.MATCHMAKER: "matchmaking",
+        SkillPath.THINKER: "thinking",
+        SkillPath.COOPERATIVE: "cooperative",
+        SkillPath.SCHOLAR: "learning",
+        SkillPath.TIME: "efficient",
+        SkillPath.TREASURE: "finding",
+        SkillPath.FISHER: "fishing",
+        SkillPath.LANGUAGE: "language",
+        SkillPath.SLEEPER: "sleeping",
+        SkillPath.DISGUISE: "disguiser",
+        SkillPath.PYRO: "flame controller",
+        SkillPath.HYDRO: "water hoarder",
+        SkillPath.WEATHER: "weather predictor",
+        SkillPath.GIFTGIVER: "gives gifts",
+        SkillPath.VIBES: "vibe detector",
+        SkillPath.STARGAZER: "looks at the stars",
+        SkillPath.IMMUNE: "immunity to sickness",
+        SkillPath.HIDER: "excellent hider",
+        SkillPath.MUSICVIBES: "musical aura",
+        SkillPath.AURAVIBES: "pleasant aura",
+        SkillPath.ANIMALTAKER: "loves animals",
+        SkillPath.VET: "animal helper",
+        SkillPath.ANIMALMAGNET: "animal attractor"
     }
 
     def __init__(self, path: SkillPath, points: int = 0, interest_only: bool = False):
@@ -339,6 +689,56 @@ class CatSkills:
         SkillPath.PROPHET: SkillTypeFlag.SUPERNATURAL,
         SkillPath.GHOST: SkillTypeFlag.SUPERNATURAL,
         SkillPath.DARK: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.GARDENER: SkillTypeFlag.SMART,
+        SkillPath.HIDER: SkillTypeFlag.OBSERVANT,
+        SkillPath.UNKNOWN: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.WAKEFUL: SkillTypeFlag.STRONG | SkillTypeFlag.OBSERVANT,
+        SkillPath.DELIVERER: SkillTypeFlag.SMART | SkillTypeFlag.SOCIAL,
+        SkillPath.DECORATOR: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.LEADERSHIP: SkillTypeFlag.STRONG | SkillTypeFlag.SMART | SkillTypeFlag.SOCIAL,
+        SkillPath.AGILED: SkillTypeFlag.AGILE | SkillTypeFlag.OBSERVANT,
+        SkillPath.MEMORY: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.MESSENGER: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.ASSIST: SkillTypeFlag.STRONG | SkillTypeFlag.SOCIAL,
+        SkillPath.HISTORIAN: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.BOOKMAKER: SkillTypeFlag.SOCIAL,
+        SkillPath.PATIENT: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.DETECTIVE: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.HERBALIST: SkillTypeFlag.SMART | SkillTypeFlag.SUPERNATURAL,
+        SkillPath.CHEF: SkillTypeFlag.AGILE | SkillTypeFlag.SOCIAL,
+        SkillPath.PRODIGY: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.EXPLORER: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.TRACKER: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.ARTISAN: SkillTypeFlag.SMART,
+        SkillPath.GUARDIAN: SkillTypeFlag.STRONG | SkillTypeFlag.OBSERVANT,
+        SkillPath.NAVIGATOR: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.SONG: SkillTypeFlag.SOCIAL,
+        SkillPath.GRACE: SkillTypeFlag.AGILE,
+        SkillPath.CLEAN: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL,
+        SkillPath.INNOVATOR: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.COMFORTER: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.MATCHMAKER: SkillTypeFlag.SOCIAL | SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.THINKER: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.COOPERATIVE: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.SCHOLAR: SkillTypeFlag.SMART,
+        SkillPath.TIME: SkillTypeFlag.AGILE | SkillTypeFlag.SMART,
+        SkillPath.TREASURE: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.FISHER: SkillTypeFlag.STRONG | SkillTypeFlag.AGILE | SkillTypeFlag.OBSERVANT,
+        SkillPath.LANGUAGE: SkillTypeFlag.SOCIAL,
+        SkillPath.SLEEPER: SkillTypeFlag.STRONG,
+        SkillPath.DISGUISE: SkillTypeFlag.AGILE | SkillTypeFlag.OBSERVANT | SkillTypeFlag.SMART,
+        SkillPath.PYRO: SkillTypeFlag.SMART,
+        SkillPath.HYDRO: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.WEATHER: SkillTypeFlag.OBSERVANT,
+        SkillPath.GIFTGIVER: SkillTypeFlag.SOCIAL,
+        SkillPath.VIBES: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL | SkillTypeFlag.SMART,
+        SkillPath.STARGAZER: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL,
+        SkillPath.MUSICVIBES: SkillTypeFlag.SOCIAL,
+        SkillPath.AURAVIBES: SkillTypeFlag.SOCIAL,
+        SkillPath.ANIMALTAKER: SkillTypeFlag.SOCIAL,
+        SkillPath.VET: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL,
+        SkillPath.ANIMALMAGNET: SkillTypeFlag.SOCIAL,
+        SkillPath.IMMUNE: SkillTypeFlag.OBSERVANT,
     }
 
     # pylint: enable=unsupported-binary-operation

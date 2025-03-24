@@ -65,6 +65,29 @@
         ]
     },
     {
+        "id": "honest_mediator_apprentice",
+        "thoughts": [
+            "Blatantly says r_c is wrong during an argument",
+            "Is being reminded to be neutral in mediation",
+            "Believes that telling the truth is more important than staying neutral",
+            "Doesnt understand how cats can just lie to eachother"
+        ],
+        "main_trait_constraint": [
+            "honest"
+        ]
+    },
+    {
+        "id": "hypocrite_mediator_apprentice",
+        "thoughts": [
+            "Tells r_c it was their fault anyway after escalating an argument",
+            "Insults a cat instead of mediating an argument",
+            "Makes fun of r_c when they talk about their insecurities",
+            "Is being reminded to be neutral in mediation"
+        ],
+        "main_trait_constraint": [
+            "hypocrite"]
+    },
+    {
         "id": "righteous_mediator_apprentice",
         "thoughts": [
             "Was scolded for taking sides while mediating arguments recently",

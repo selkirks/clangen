@@ -208,6 +208,44 @@
         ]
     },
     {
+        "id": "thievish_medicine_cat",
+        "thoughts": [
+            "Considers taking herbs from another Clan",
+            "Sees a kittypet with a sparkly twoleg collar, feeling a hint of jealousy",
+            "Steals catmint from a Twoleg garden"
+        ],
+        "main_trait_constraint": [
+            "thievish"
+        ]
+    },
+    {
+        "id": "silly_medicine_cat",
+        "thoughts": [
+            "Is a goofy goober",
+            "I have hired r_c to stare at you.",
+            "Politely steals r_c's organs",
+            "Its time to eat rocks!! They're healthy, r_c trust me, trust me r_c, EAT THE ROCK NOW",
+            "Just interpreted an omen in the stupidest way ever. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} trying {PRONOUN/m_c/poss} best dont make fun of {PRONOUN/m_c/subject}"
+        ],
+        "main_trait_constraint": [
+            "silly"
+        ]
+    },
+    {
+        "id": "sentient_medicine_cat",
+        "thoughts": [
+            "Feels a hint of dread, knowing that healing their Clanmates isn't really their doing",
+            "Doesn't want to go on a herb patrol against their own will today",
+            "Wishes they could talk to the Twoleg that controls them, so that their Clanmates would stop thinking they just had a strange prophecy",
+            "Hello? Creator? Is there a way I can get a real prophecy?",
+            "I'm not actually thinking this thought by myself, am I?",
+            "Desperately tries to explain to r_c that they're in a simulation made by Twolegs, which only confuses the unsuspecting cat"
+        ],
+        "main_trait_constraint": [
+            "sentient"
+        ]
+    },
+    {
         "id": "compassionate_medicine_cat",
         "thoughts": [
             "Works long into the night taking care of the Clan",
@@ -244,12 +282,102 @@
         ]
     },
     {
+        "id": "confused_medicine_cat",
+        "thoughts": [
+            "huh"
+        ],
+        "main_trait_constraint": [
+            "confused"
+        ]
+    },
+    {
+        "id": "mysterious_medicine_cat",
+        "thoughts": [
+            "Tells r_c that they received a prophecy, and does not elaborate, instead staying silent",
+            "Seems to be hiding something in the medicine they give to r_c"
+        ],
+        "main_trait_constraint": [
+            "mysterious"
+        ]
+    },
+    {
+        "id": "flirty_medicine_cat",
+        "thoughts": [
+            "Winks playfully at another cat",
+            "Wishes that loving another cat wasnt against the Code",
+            "Tried to hit on another healer during the half-moon meeting (and failed)"
+        ],
+        "main_trait_constraint": [
+            "flirty"
+        ]
+    },
+    {
+        "id": "envious_medicine_cat",
+        "thoughts": [
+            "Glares at a pair of mates, feeling jealousy sting at their heart",
+            "Impatiently waits for the day they get a prophecy, so that they could be like the rest of the healers"
+        ],
+        "main_trait_constraint": [
+            "envious"
+        ]
+    },
+    {
+        "id": "vulnerable_medicine_cat",
+        "thoughts": [
+            "Still has so much to learn..."
+        ],
+        "main_trait_constraint": [
+            "vulnerable"
+        ]
+    },
+    {
+        "id": "rebellious_medicine_cat",
+        "thoughts": [
+            "Wants to find a way to change the healer code",
+            "Resists the urge to yell at r_c"
+        ],
+        "main_trait_constraint": [
+            "rebellious"
+         ]
+    },
+    {
+        "id": "annoying_medicine_cat",
+        "thoughts": [
+            "HEY r_c GUESS WHAT I GOT A PROPHECY I GOT A PROPHECY GUESS WHAT IT IS haahaa!! I was just joking!! I did not get a prophecy HEEHEE"
+        ],
+        "main_trait_constraint": [
+            "annoying"
+        ]
+    },
+    {
+        "id": "dramatic_medicine_cat",
+        "thoughts": [
+            "OH HOW HORRIBLE!!",
+            "Overdramaticizes the injury of a certain cat, scaring them for no reason"
+        ],
+        "main_trait_constraint": [
+            "dramatic"
+    ]
+},
+    {
         "id": "daring_medicine_cat",
         "thoughts": [
             "Steals catmint from a Twoleg garden"
         ],
         "main_trait_constraint": [
             "daring"
+        ]
+    },
+    {
+        "id": "faithless_medicine_cat",
+        "thoughts": [
+            "Hopes c_n would still accept them if they said their beliefs",
+            "Hopes their Clanmates dont know that they dont believe in StarClan",
+            "Had a really weird dream",
+            "Doesn't feel like a real healer"
+        ],
+        "main_trait_constraint": [
+            "faithless"
         ]
     },  
     {
@@ -259,6 +387,52 @@
         ],
         "main_trait_constraint": [
             "faithful"
+        ]
+    },  
+    {
+        "id": "frustrated_medicine_cat",
+        "thoughts": [
+            "Is hissing, for no apparent reason",
+            "Is ripping some leaves to shreds",
+            "Feeling overwhelmed and frustrated because of all the injuries cats keep getting"
+        ],
+        "main_trait_constraint": [
+            "frustrated"
+        ]
+    },  
+    {
+        "id": "malicious_medicine_cat",
+        "thoughts": [
+            "Hiding their collection of poisonous herbs from r_c",
+            "Offers r_c a deathberry",
+            "Gives the wrong herbs to a warrior on purpose",
+            "Is plotting the Clan's demise",
+            "MWAHAHAHAHAHAHAAAAAAAAAAAAAA"
+        ],
+        "main_trait_constraint": [
+            "malicious"
+        ]
+    },  
+    {
+        "id": "perfectionist_medicine_cat",
+        "thoughts": [
+            "Makes sure every cat receives just the right amount of herbs",
+            "Spent their entire day reorganizing the herb collection and tidying nests",
+            "Recounts the amount of catmint in {PRONOUN/m_c/poss} stores",
+            "Has the most tidy herb collection in all of the Clans"
+        ],
+        "main_trait_constraint": [
+            "perfectionist"
+        ]
+    },  
+    {
+        "id": "selfish_medicine_cat",
+        "thoughts": [
+            "Wonders why they can't just keep all the herbs to themself",
+            "Doesn't treat another cat's injury, believing that {PRONOUN/m_c/subject} deserve treatment more"
+        ],
+        "main_trait_constraint": [
+            "selfish"
         ]
     },
     {
@@ -316,6 +490,77 @@
         ],
         "random_status_constraint":[
             "newborn"
+        ]
+    },
+    {
+        "id": "coward_medicine_cat",
+        "thoughts": [
+            "Feels a sense of dread, thinking of having to treat major injuries",
+            "Fears the day they could lose a cat",
+            "Doesn't know what they'd do if they got an omen"
+        ],
+        "main_trait_constraint": [
+            "coward"
+        ]
+    },
+    {
+        "id": "gentle_medicine_cat",
+        "thoughts": [
+            "Tries to be as careful as they can when treating a cat",
+            "Feels bad for having to treat their Clanmates with bitter herbs"
+        ],
+        "main_trait_constraint": [
+            "gentle"
+        ]
+    },
+    {
+        "id": "aloof_medicine_cat",
+        "thoughts": [
+            "Hasn't talked to any warriors for a few days",
+            "Would prefer to be by themself today"
+        ],
+        "main_trait_constraint": [
+            "aloof"
+        ]
+    },
+    {
+        "id": "scary_medicine_cat",
+        "thoughts": [
+            "Is stocking up on yew berries",
+            "Insists that they do more battle training"
+        ],
+        "main_trait_constraint": [
+            "scary"
+        ]
+    },
+    {
+        "id": "messy_medicine_cat",
+        "thoughts": [
+            "Herbs strewn all over the place"
+        ],
+        "main_trait_constraint": [
+            "messy"
+        ]
+    },
+    {
+        "id": "chaotic_medicine_cat",
+        "thoughts": [
+            "Is running around the medicine den trying to treat 4 cats at the same time (and failing horribly)",
+            "Herbs strewn all over the place"
+        ],
+        "main_trait_constraint": [
+            "chaotic"
+        ]
+    },
+    {
+        "id": "creative_medicine_cat",
+        "thoughts": [
+            "Thinks about new ways to treat Clanmates",
+            "Thinks of all the ways to interpret a recent prophecy",
+            "Considers planting seeds near Clan camp"
+        ],
+        "main_trait_constraint": [
+            "creative"
         ]
     },
     {

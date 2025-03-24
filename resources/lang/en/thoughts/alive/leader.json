@@ -227,12 +227,18 @@
         "main_trait_constraint": [
             "bloodthirsty",
             "fierce",
+            "malicious",
+            "manipulative",
+            "scary",
             "cold",
             "vengeful"
         ],
         "random_trait_constraint": [
             "bloodthirsty",
             "fierce",
+            "malicious",
+            "manipulative",
+            "scary",
             "cold",
             "vengeful"
         ]
@@ -256,6 +262,12 @@
         "main_trait_constraint": [
             "bloodthirsty",
             "fierce",
+            "malicious",
+            "manipulative",
+            "scary",
+            "malicious",
+            "manipulative",
+            "scary",
             "cold",
             "vengeful"
         ],
@@ -293,6 +305,9 @@
         "random_trait_constraint": [
             "bloodthirsty",
             "fierce",
+            "malicious",
+            "manipulative",
+            "scary",
             "cold",
             "vengeful"
         ]

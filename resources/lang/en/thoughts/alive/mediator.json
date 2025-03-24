@@ -79,6 +79,47 @@
         ]
     },
     {
+        "id": "mediator_gen",
+        "thoughts": [
+            "Is feeling a sense of pride after mediating a difficult argument",
+            "Wishes {PRONOUN/m_c/poss} Clanmates would just talk to each other",
+            "Is upset over a recent negotiation with a rival Clan",
+            "Negotiates an herb trade with another Clan",
+            "Is negotiating with a kittypet to make use of the herbs in their Twoleg garden",
+            "Is dismayed at how quickly {PRONOUN/m_c/poss} Clanmates get into arguments",
+            "Feels exhausted after mediating so many arguments",
+            "Feels pride for {PRONOUN/m_c/poss} work",
+            "Is mediating a couple's relationship",
+            "Is mediating a long time friendship between two Clanmates",
+            "Is feeling frustrated after a failed negotiation",
+            "Is feeling exhausted from resolving petty arguments",
+            "Wants to solve a dispute with another Clan",
+            "Wonders if mediating is meant to be so draining",
+            "Wonders if being a warrior would have been more fun",
+            "Is proud of how well {PRONOUN/m_c/subject} {VERB/m_c/are/is} doing as a mediator",
+            "Accidentally made an argument worse",
+            "Is proud of getting through a difficult mediation session",
+            "Feels exhausted from {PRONOUN/m_c/poss} Clanmates' bickering",
+            "Is listening to both sides of an argument",
+            "Is feeling a bit underappreciated for {PRONOUN/m_c/poss} mediation",
+            "Is wondering if {PRONOUN/m_c/subject} made the right decision in becoming a mediator",
+            "Is relieved {PRONOUN/m_c/subject} broke up an argument before it started",
+            "Is hoping the Clan can stay peaceful",
+            "Is contemplating teaching the Clan communication skills",
+            "Is mediating a small disagreement between two Clanmates",
+            "Wonders if c_n considers {PRONOUN/m_c/object} to be a good mediator"
+        ]
+    },
+    {
+        "id": "altruistic_mediator",
+        "thoughts": [
+            "Wonders why everyone can't just get along"
+        ],
+        "main_trait_constraint": [
+            "altruistic"
+        ]
+    },
+    {
         "id": "bloodthirsty_mediator",
         "thoughts": [
             "Is wondering if {PRONOUN/m_c/subject} should sabotage a relationship that is going a bit too well",
