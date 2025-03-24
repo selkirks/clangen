@@ -393,7 +393,7 @@
     "war_injury_modifier": 100
   },
   "clan_creation": {
-    "rerolls": 3,
+    "rerolls": -1,
     "use_special_roller": true,
     "comment": "Set rerolls to -1 for it to be infinite. Special roller uses kittypet raised odds of special traits appearing."
   },

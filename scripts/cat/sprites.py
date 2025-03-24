@@ -132,9 +132,10 @@ class Sprites:
             'scars', 'missingscars',
             'medcatherbs', 'wild',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
-            'shadersnewwhite', 'lightingnew', 
-            'fademask', 'fadestarclan', 'fadedarkforest',
-            'symbols'
+            'shadersnewwhite', 'lightingnew', 'plant2_accessories',
+            'fademask', 'fadestarclan', 'fadedarkforest', 'flower_accessories', 'snake_accessories',
+            'smallAnimal_accessories', 'aliveInsect_accessories', 'harnesses', 'bows', 'teethcollars',
+            'symbols', 'deadInsect_accessories', 'fruit_accessories', 'crafted_accessories', 'tail2_accessories', 'bonesacc', 'butterflymothacc', 'twolegstuff',
         ]:
             if "lineart" in x and game.config["fun"]["april_fools"]:
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
