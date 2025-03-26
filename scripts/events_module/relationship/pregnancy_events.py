@@ -109,13 +109,14 @@ class Pregnancy_Events:
         second_parent, is_affair = Pregnancy_Events.get_second_parent(cat, clan)
 
         # check if the second_parent is not none and if they also can have kits
-        can_have_kits, kits_are_adopted = Pregnancy_Events.check_second_parent(
+        can_have_kits, kits_are_adopted, second_parent = Pregnancy_Events.check_second_parent(
             cat,
             second_parent,
             clan.clan_settings["single parentage"],
             clan.clan_settings["affair"],
             clan.clan_settings["same sex birth"],
             clan.clan_settings["same sex adoption"],
+            clan.clan_settings["surrogates"],
         )
         if second_parent:
             if not can_have_kits:
@@ -1131,26 +1132,41 @@ class Pregnancy_Events:
 
         # COMPATIBILITY
         # - decrease / increase depending on the compatibility
+        comp = None
+        inv = inverse_chance
         if second_parent:
-            comp = get_personality_compatibility(first_parent, second_parent)
-            if comp is not None:
-                buff = 0.85
-                if not comp:
-                    buff += 0.3
-                inverse_chance = int(inverse_chance * buff)
+            for x in second_parent:
+                if x == "Surrogate":
+                    continue
+                if comp == True:
+                    break
+                comp = get_personality_compatibility(first_parent, x)
+                if comp is not None:
+                    buff = 0.85
+                    if not comp:
+                        buff += 0.3
+                    inverse_chance = int(inv * buff)
+
+        average_romantic_love = -1000
+        average_comfort = -1000
+        average_trust = -1000
 
         # RELATIONSHIP
         # - decrease the inverse chance if the cats are going along well
         if second_parent:
             # get the needed relationships
-            if second_parent.ID in first_parent.relationships:
-                second_parent_relation = first_parent.relationships[second_parent.ID]
-                if not second_parent_relation.opposite_relationship:
-                    second_parent_relation.link_relationship()
-            else:
-                second_parent_relation = first_parent.create_one_relationship(
-                    second_parent
-                )
+            for x in second_parent:
+                if x == "Surrogate":
+                    continue
+                if x.ID in first_parent.relationships:
+                    second_parent_relation = first_parent.relationships[x.ID]
+                    if not second_parent_relation.opposite_relationship:
+                        second_parent_relation.link_relationship()
+                else:
+                    second_parent_relation = first_parent.create_one_relationship(x)
+
+                if not second_parent_relation:
+                    continue
 
             average_romantic_love = (
                 second_parent_relation.romantic_love
@@ -1197,11 +1213,15 @@ class Pregnancy_Events:
         if not Pregnancy_Events.biggest_family:  # set the family if not already
             Pregnancy_Events.set_biggest_family()
 
-        if (
-            first_parent.ID in Pregnancy_Events.biggest_family
-            or second_parent
-            and second_parent.ID in Pregnancy_Events.biggest_family
-        ):
+        InBiggest = False
+        if second_parent:
+            for x in second_parent:
+                if x == "Surrogate":
+                    continue
+                if x.ID in Pregnancy_Events.biggest_family:
+                    InBiggest = True
+
+        if first_parent.ID in Pregnancy_Events.biggest_family or second_parent and InBiggest:
             inverse_chance = int(inverse_chance * 1.7)
 
         # - decrease inverse chance if the current family is small

@@ -1748,7 +1748,7 @@ def pronoun_repl(m, cat_pronouns_dict, raise_exception=False):
     exception, and will use a simple replacement "error" """
 
     # Add protection about the "insert" sometimes used
-    if m.group(0) == "{insert}":
+    if m.group(0) in ["{insert}", "{surrogate}"]:
         return m.group(0)
 
     inner_details = m.group(1).split("/")

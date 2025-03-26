@@ -108,6 +108,28 @@
             "Allow cats to have kittens with an unknown second biological parent. The cat will be listed as the only biological parent.",
             false
         ],
+        "surrogates": [
+          "Allow cats to get surrogates for litters",
+          "Cats that cannot normally have biological litters can choose a surrogate if applicable.",
+          true
+        ],
+        "only inclan surrogates": [
+          "Only Clanmate surrogates",
+          "If surrogates are enabled, only Clanmates can be surrogates. Note: also selecting outsider surrogates will have no effect.",
+          false,
+          ["surrogates", true]
+        ],
+        "only outside surrogates": [
+          "Only outsider surrogates",
+          "If surrogates are enabled, only outsiders can be surrogates. Note: also selecting Clanmate surrogates will take priority.",
+          false,
+          ["surrogates", true]
+        ],
+        "multisire": [
+          "Allow litters with multiple sires",
+          "Allow cats to have litters with multiple sires",
+            false
+        ],
         "romantic with former mentor": [
             "Allow romantic interactions with former mentors",
             "Allows mentors and the cats they trained to be romantic after they become warriors.",

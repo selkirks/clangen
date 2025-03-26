@@ -58,6 +58,26 @@
         "They should also start with a space in order to ensure there is a space between the announcement/litter sentence and the severity sentence."
     ],
     "birth": {
+        "two_parents_surrogate": [
+        "m_c and r_c's eyes meet over their {insert} at the belly of {surrogate}, full of love for their growing family.",
+        "In the quiet of the nursery, in the nest they've spent so long preparing, m_c and r_c welcome a {insert} with help from {surrogate}.",
+        "With {PRONOUN/m_c/poss} {insert} mewling at {surrogate}'s belly, the long pregnancy has finally given {PRONOUN/m_c/object} and r_c the expansion to their family they've been hoping and waiting for.",
+        "Even with r_c by {PRONOUN/m_c/poss} side, m_c doesn't feel ready to be a parent of this {insert}. But {PRONOUN/m_c/subject} {VERB/m_c/promise/promises} to the tiny flailing limbs by {PRONOUN/m_c/poss} side that {PRONOUN/m_c/subject}'ll do {PRONOUN/m_c/poss} best. {PRONOUN/m_c/subject/CAP} {VERB/m_c/swear/swears} it on StarClan itself.",
+        "r_c and m_c have been waiting eagerly to meet their offspring. At {surrogate}'s invitation, they crawl into the nursery, purring and joining {surrogate} in licking their {insert} clean.",
+        "r_c and m_c have been impatient for the end of {surrogate}'s pregnancy, so when {PRONOUN/r_c/subject} {VERB/r_c/hear/hears} {surrogate} has gone into labor, they drop what they're doing and sprint for the nursery, where {surrogate} is bringing a {insert} into the world.",
+        "m_c and r_c are so, so grateful that their adorable {insert} is here. {surrogate} is all the more thrilled that they can take a turn parenting while {surrogate} finally takes a little break from the stuffy air of the nursery.",
+        "m_c and r_c were so busy worrying about and looking forward to the birth that it's only now that they look at their {insert} that they wonder what to name them, offering for {surrogate} to pitch some ideas too.",
+        "With r_c purring against {PRONOUN/m_c/poss} back, m_c feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} going to explode with love, looking at {PRONOUN/m_c/poss} tiny new {insert} at {surrogate}'s side."
+      ],
+      "surrogate_birth": [
+        "m_c had a {insert} for r_c's new family.",
+        "In the nursery, m_c lies suckling a {insert}, r_c watching over them with {PRONOUN/r_c/poss} mate and purring so hard {PRONOUN/r_c/poss} body vibrates.",
+        "With {PRONOUN/m_c/poss} {insert} mewling at {PRONOUN/m_c/poss} belly, m_c's long pregnancy has finally given r_c and {PRONOUN/r_c/poss} mate the expansion to their family they've been hoping and waiting for.",
+        "r_c has been waiting eagerly to meet {PRONOUN/r_c/poss} offspring. At m_c's invitation, {PRONOUN/r_c/subject} {VERB/r_c/crawl/crawls} into the nursery, purring and joining m_c in licking their {insert} clean.",
+        "r_c has been impatient for the end of m_c's pregnancy, so when {PRONOUN/r_c/subject} {VERB/r_c/hear/hears} m_c has gone into labor, {PRONOUN/r_c/subject} {VERB/r_c/drop/drops} what {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} doing and {VERB/r_c/sprint/sprints} for the nursery, where m_c is bringing a {insert} into the world.",
+        "m_c is so, so grateful that r_c's adorable {insert} is here - both thrilled to meet them, and thrilled that r_c can take on parenting while m_c finally takes a little break from the stuffy air of the nursery.",
+        "While on a walk in the territory with r_c, m_c unexpectedly had {PRONOUN/m_c/poss} {insert} with help from {PRONOUN/m_c/poss} friend."
+      ],
         "unmated_parent": [
             "m_c had a {insert} but refused to talk about their origin.",
             "m_c secretly had a {insert}.",
