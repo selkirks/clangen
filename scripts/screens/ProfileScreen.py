@@ -783,8 +783,6 @@ class ProfileScreen(Screens):
                 output += f" moons ({years} years)"
             output += "\n"
             output += i18n.t("general.moons_age_in_death", count=the_cat.dead_for)
-        else:
-            output += i18n.t("general.moons_age", count=the_cat.moons)
         # MATE
         if len(the_cat.mate) > 0:
             output += "\n"
