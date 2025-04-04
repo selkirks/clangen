@@ -293,9 +293,13 @@ class Pelt:
     plant2_accessories = ["CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"
                     ]
 
-    snake_accessories = ["GRASS SNAKE", "BLUE RACER", "WESTERN COACHWHIP", "KINGSNAKE"
-                     
+    snake_accessories = ["GRASS SNAKE", "BLUE RACER", "WESTERN COACHWHIP", "KINGSNAKE"  
                      ]
+    
+    boosbandanas_accessories = ["CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO",
+                    "LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO",
+                    "DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO",
+                    "WHITEBOO", "LIGHTGRAYBOO", "GRAYBOO", "BROWNBOO", "BLACKBOO"]
 
     smallAnimal_accessories = ["GRAY SQUIRREL", "RED SQUIRREL", "CRAB", "WHITE RABBIT", "BLACK RABBIT",
                            "BROWN RABBIT", "INDIAN GIANT SQUIRREL", "FAWN RABBIT",
@@ -1169,6 +1173,7 @@ class Pelt:
                 choice(Pelt.flower_accessories),
                 choice(Pelt.plant2_accessories),
                 choice(Pelt.snake_accessories),
+                choice(Pelt.boosbandanas_accessories),
                 choice(Pelt.smallAnimal_accessories),
                 choice(Pelt.deadInsect_accessories),
                 choice(Pelt.aliveInsect_accessories),

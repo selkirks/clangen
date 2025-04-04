@@ -150,7 +150,8 @@ class Sprites:
             'stersokokecolours', "french_scarves", "ties", 'sillysokokecolours', 'dancesokokecolours', 'mimisokokecolours',
             'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
-            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours'
+            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
+            'boosbandanas_accessories'
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -552,6 +553,11 @@ class Sprites:
             ["LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH BUTTERFLY", "DAPPLED MONARCH", "POLYPHEMUS MOTH", "MINT MOTH"]
         ]
 
+        boos_data = [["CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO"],
+                    ["LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO"],
+                    ["DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO" "WHITEBOO"],
+                    ["LIGHTGRAYBOO", "GRAYBOO", "BROWNBOO", "BLACKBOO"]]
+
         aliveInsect_data = [
             ["BROWN SNAIL", "RED SNAIL", "WORM", "BLUE SNAIL", "ZEBRA ISOPOD", "DUCKY ISOPOD", "DAIRY COW ISOPOD", "BEETLEJUICE ISOPOD", "BEE", "RED LADYBUG"],
             ["ORANGE LADYBUG", "YELLOW LADYBUG"]
@@ -739,6 +745,12 @@ class Sprites:
         for row, sterflowers in enumerate(ster_data):
             for col, sterflower in enumerate(sterflowers):
                 self.make_group("sterflowers", (col, row), f"acc_ster{sterflower}")
+
+        # boosbandanas
+        for row, boosbandanas_accessories in enumerate(boos_data):
+            for col, boosbandana in enumerate(boosbandanas_accessories):
+                self.make_group("boosbandanas_accessories", (col, row), f"acc_boos{boosbandana}")
+
     def load_symbols(self):
         """
         loads clan symbols
