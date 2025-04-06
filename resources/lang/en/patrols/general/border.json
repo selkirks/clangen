@@ -783,6 +783,7 @@
                 "patrol_art": "bord_general_intro",
                 "min_cats": 2,
                 "max_cats": 6,
+                "weight": 20,
                 "min_max_status": {},
                 "intro_text": "As the patrol marks the o_c_n border, r_c swears {PRONOUN/r_c/subject} {VERB/r_c/keep/keeps} hearing a strange whispering noise. The patrol pauses to listen closer, and after a few moments they hear the sound of hushed conversation coming from a hidden spot in the undergrowth.",
                 "decline_text": "After a moment, the noises stop, and p_l decides it must have been the wind. Marking the border is more important than jumping at shadows.",
@@ -791,7 +792,7 @@
                         {
                             "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner explains that o_c_n warriors attacked {PRONOUN/n_c:0/object} when {PRONOUN/n_c:0/subject} tried crossing their territory. p_l offers to bring the loner and {PRONOUN/n_c:0/poss} kits back to camp for treatment, and after a moment of consideration {PRONOUN/n_c:0/subject} {VERB/n_c:0/agree/agrees}.",
                             "exp": 20,
-                            "weight": 20,
+                            "weight": 10,
                             "art": "gen_cat_with_kits_loner",
                             "new_cat": [
                                 ["loner", "age:has_kits"],
@@ -818,7 +819,7 @@
                         {
                             "text": "p_l slowly approaches the undergrowth and is horrified when {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a dead loner, {PRONOUN/n_c:0/poss} fur reeking of o_c_n scent. Even worse, the loner was clearly guarding {PRONOUN/n_c:0/poss} kits, who are hidden wide-eyed in the undergrowth. The kits explain that 'big, scary cats' attacked them. p_l gathers the kits together, heart heavy as {PRONOUN/p_l/subject} {VERB/p_l/explain/explains} that the patrol will take them somewhere safe.",
                             "exp": 20,
-                            "weight": 20,
+                            "weight": 10,
                             "art": "gen_cat_with_kits_unknown_ghost",
                             "new_cat": [
                                 ["loner", "age:has_kits", "meeting", "dead"],
@@ -1190,6 +1191,7 @@
                 "patrol_art": "gen_bord_patrolabandonedkitrescue",
                 "min_cats": 1,
                 "max_cats": 1,
+                "weight": 20,
                 "min_max_status": {
                     "normal adult": [1, 6]
                 },
@@ -1200,7 +1202,7 @@
                         {
                             "text": "p_l won't get a better chance than this. {PRONOUN/p_l/subject/CAP} {VERB/p_l/rush/rushes} in and {VERB/p_l/grab/grabs} a single kit by the scruff. {PRONOUN/p_l/subject/CAP} {VERB/p_l/flee/flees} the o_c_n camp, desperate to avoid capture. p_l runs until {PRONOUN/p_l/subject} {VERB/p_l/arrive/arrives} safely home, still carrying the newest member of c_n.",
                             "exp": 20,
-                            "weight": 20,
+                            "weight": 10,
                             "new_cat": [
                                 ["status:kitten", "backstory:otherclan5"]
                             ],
@@ -1246,7 +1248,7 @@
                         {
                             "text": "p_l is eager to weaken o_c_n and strengthen c_n by stealing one of their kits. {PRONOUN/p_l/subject/CAP} {VERB/p_l/rush/rushes} in and {VERB/p_l/grab/grabs} a single kit by the scruff. {PRONOUN/p_l/subject/CAP} {VERB/p_l/flee/flees} the o_c_n camp, desperate to avoid capture. p_l runs until {PRONOUN/p_l/subject} {VERB/p_l/arrive/arrives} safely home, still carrying the newest member of c_n.",
                             "exp": 20,
-                            "weight": 20,
+                            "weight": 10,
                             "new_cat": [
                                 ["status:kitten", "backstory:otherclan1"]
                             ],
