@@ -424,7 +424,7 @@ class RelationshipScreen(Screens):
                 ),
                 reverse=True,
             )
-            self.all_relations = list(set(self.all_relations + blank_relations))
+            self.all_relations = self.all_relations + [r for r in blank_relations if r not in self.all_relations]
         else:
             self.all_relations = (list(self.the_cat.relationships.values()).copy() + blank_relations).sorted(key=lambda x: x.cat_to)
 
@@ -733,13 +733,13 @@ class RelationshipScreen(Screens):
         )
 
         # Gender alignment
-        if the_relationship.cat_to.genderalign == 'molly':
+        if the_relationship.cat_to.genderalign.replace("intersex ", "") == 'molly':
             gender_icon = image_cache.load_image("resources/images/female_big.png").convert_alpha()
-        elif the_relationship.cat_to.genderalign == 'tom':
+        elif the_relationship.cat_to.genderalign.replace("intersex ", "") == 'tom':
             gender_icon = image_cache.load_image("resources/images/male_big.png").convert_alpha()
-        elif the_relationship.cat_to.genderalign == 'trans molly':
+        elif the_relationship.cat_to.genderalign.replace("intersex ", "") == 'trans molly':
             gender_icon = image_cache.load_image("resources/images/transfem_big.png").convert_alpha()
-        elif the_relationship.cat_to.genderalign == 'trans tom':
+        elif the_relationship.cat_to.genderalign.replace("intersex ", "") == 'trans tom':
             gender_icon = image_cache.load_image("resources/images/transmasc_big.png").convert_alpha()
         else:
             # Everyone else gets the nonbinary icon

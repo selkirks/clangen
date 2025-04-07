@@ -1,6 +1,7 @@
 from .genotype import Genotype
 from random import choice, randint
 from scripts.cat.breed_functions import find_my_breed
+from scripts.special_dates import SpecialDate, is_today
 
 class Phenotype(Genotype):
 
@@ -399,6 +400,9 @@ class Phenotype(Genotype):
                 self.tailtype = 'no '
                 self.bobtailnr = 1
 
+        if self.odds["april_fools"] or is_today(SpecialDate.APRIL_FOOLS):
+            if "Pc" in self.april_fools.get("polycaudal", []) and self.tailtype != "no ":
+                self.tailtype = "double " + self.tailtype
         if(self.tailtype != ''):
             self.tailtype += "tail"
     def PhenotypeOutput(self, pattern=None, gender=None, chimera=False):
@@ -419,11 +423,15 @@ class Phenotype(Genotype):
             self.vitiligo_string = 'vitiligo'
         if (self.specialred and ('O' in self.sexgene or self.ext[0] not in ["Eg", "E"])):
             mut_red_desc = {
-                "cinnamon" : " (pseudo-cinnamon)",
+                "cinnamon" : " ('pseudo-cinnamon')",
                 "blue-tipped" : " (grey-tipped)",
                 "blue-red" : " ('red-on-blue')"
             }
             self.mutant_red = mut_red_desc.get(self.specialred, "")
+            
+        if self.odds["april_fools"] or is_today(SpecialDate.APRIL_FOOLS):
+            if "Dg" in self.april_fools.get("danish_green", []):
+                self.colour = "Danish green"
         self.SolidWhite(pattern=pattern)
 
         if(self.tortiepattern == ["CRYPTIC"] and self.tortie != "brindled bicolour "):
@@ -476,7 +484,7 @@ class Phenotype(Genotype):
         if chimera:
             sexstring = "chimera " + sexstring
 
-        breed = find_my_breed(self, self.odds)
+        breed = find_my_breed(self)
         if breed:
             breed = " " + breed + " "
         
@@ -647,7 +655,7 @@ class Phenotype(Genotype):
         self.patchcolour = ""
 
         if(self.silver[0] == 'I' and self.pseudomerle):
-            if not hasattr(self, "merlepattern") or self.merlepattern is None:
+            if self.merlepattern is None:
                 self.merlepattern = self.ChooseTortiePattern(spec = 'merle')
 
         if self.white[0] == "W" or self.pointgene[0] == "c" or ('DBEalt' not in self.pax3 and 'NoDBE' not in self.pax3) or (self.brindledbi and (('o' not in self.sexgene) or (self.ext[0] == 'ea' and ((moons > 11 and self.agouti[0] != 'a') or (moons > 23))) or (self.ext[0] == 'er' and moons > 23) or (self.ext[0] == 'ec' and (self.agouti[0] != 'a' or moons > 5)))):
@@ -918,8 +926,8 @@ class Phenotype(Genotype):
         colour = colour + rufousing + banding + "0"
         
         if(genes.specialred in ['blue-red', 'cinnamon']) or special == 'blue-tipped':
-            colour = colour.replace('cream', 'lilac')
             colour = colour.replace('red', 'blue')
+            colour = colour.replace('cream', 'lilac')
             colour = colour.replace('honey', 'dove')
             colour = colour.replace('ivory', 'lavender')
             if(genes.specialred == 'cinnamon'):
