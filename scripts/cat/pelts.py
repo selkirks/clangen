@@ -72,7 +72,7 @@ class Pelt:
         'Singlestripe': 'singlestripe',
         'Sterstripe': 'sterstripe',
         'Sillystripe': 'sillystripe',
-        'Dancestripe': 'sillystripe',
+        'Dancestripe': 'dancestripe',
         'Mimistripe': 'mimistripe',
         'Masked': 'masked',
         'Stermasked': 'stermasked',
