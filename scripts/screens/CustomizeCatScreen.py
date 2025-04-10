@@ -132,6 +132,7 @@ class CustomizeCatScreen(Screens):
         self.white_patches = copy(Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white)
         self.white_patches.append(Pelt.white_sprites[6]) # add fullwhite patch
         self.white_patches.insert(0, "None")
+        self.white_patches.sort()
         self.white_patches_label = None
         self.white_patches_dropdown = None
 
@@ -181,8 +182,10 @@ class CustomizeCatScreen(Screens):
         self.pose_right_button = None
         self.pose_left_button = None
 
-        self.accessories = ["None"] + list(
+        self.accessories = list(
             dict.fromkeys(Pelt.plant_accessories + Pelt.flower_accessories + Pelt.randomaccessories + Pelt.sailormoon + Pelt.bows_accessories + Pelt.plant2_accessories + Pelt.ster_accessories+ Pelt.wild_accessories + Pelt.tail_accessories + Pelt.collars + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories + Pelt.bone_accessories + Pelt.butterflies_accessories + Pelt.stuff_accessories))
+        self.accessories.insert(0, "None")
+        self.accessories.sort()
         self.accessory_label = None
         self.accessory_dropdown = None
 

@@ -541,7 +541,7 @@ class HerbSupply:
             # get the herbs that the condition allows as treatment
             try:
                 required_herbs = []
-                for level in source_dict[name]["herbs"].values():
+                for level in source_dict[name]["herbs"]:
                     required_herbs.extend(level)
             except KeyError:
                 print(
