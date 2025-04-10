@@ -854,6 +854,7 @@ class ProfileScreen(Screens):
             'TAILCURL': 'curled tail',
             'TAILTUFT': 'tufted tail',
             'TAILFORKED': 'forked tail',
+            'TAILFOX': 'fox-like tail',
             'CLAWSLONG': 'unusually long claws',
             'BACKFLUFF': 'fluffy back',
             'BACKRIDGE': 'fur ridge on back',
