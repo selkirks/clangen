@@ -2905,9 +2905,13 @@ def generate_sprite(
                             new_sprite.blit(
                                 sprites.sprites["acc_ster" + accessory + cat_sprite], (0, 0)
                             )
-                        elif accessory in cat.pelt.boosbandanas_accessories:
+                        elif accessory in cat.pelt.sailormoon:
                             new_sprite.blit(
-                                sprites.sprites["acc_boos" + accessory + cat_sprite], (0, 0)
+                                sprites.sprites["acc_sailor" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.randomaccessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_random" + accessory + cat_sprite], (0, 0)
                             )
         # Apply fading fog
         if (

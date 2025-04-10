@@ -151,7 +151,7 @@ class Sprites:
             'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
-            'boosbandanas_accessories'
+            'boosbandanas_accessories', 'sailormoon', 'randomaccessories'
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -536,6 +536,17 @@ class Sprites:
             ["CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"]
         ]
 
+        sailormoon_data = [
+            ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK"],
+            ["URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"]
+        ]
+
+        random_data = [
+            ["DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM"],
+            ["FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER"],
+            ["DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"]
+        ]
+
         crafted_data = [
             ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL", "LEAF BOW"]
         ]
@@ -555,7 +566,7 @@ class Sprites:
 
         boos_data = [["CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO"],
                     ["LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO"],
-                    ["DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO" "WHITEBOO"],
+                    ["DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO", "WHITEBOO"],
                     ["LIGHTGRAYBOO", "GRAYBOO", "BROWNBOO", "BLACKBOO"]]
 
         aliveInsect_data = [
@@ -749,7 +760,16 @@ class Sprites:
         # boosbandanas
         for row, boosbandanas_accessories in enumerate(boos_data):
             for col, boosbandana in enumerate(boosbandanas_accessories):
-                self.make_group("boosbandanas_accessories", (col, row), f"acc_boos{boosbandana}")
+                self.make_group("boosbandanas_accessories", (col, row), f"collars{boosbandana}")
+                
+        # sailor moon
+        for row, sailormoon in enumerate(sailormoon_data):
+            for col, sailormoonacc in enumerate(sailormoon):
+                self.make_group("sailormoon", (col, row), f"acc_sailor{sailormoonacc}")
+        # random
+        for row, randomaccessories in enumerate(random_data):
+            for col, randomaccessory in enumerate(randomaccessories):
+                self.make_group("randomaccessories", (col, row), f"acc_random{randomaccessory}")
 
     def load_symbols(self):
         """

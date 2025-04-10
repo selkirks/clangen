@@ -1762,7 +1762,256 @@
     "zero": "yarrow clump",
     "many": "yarrow clumps",
     "one": "yarrow clump"
-}
-
+},
+"CRIMSONBOO": {
+    "zero": "crimson bandana",
+    "many": "crimson bandanas",
+    "one": "crimson bandana"
+},
+"MAGENTABOO": {
+    "zero": "magenta bandana",
+    "many": "magenta bandanaa",
+    "one": "magenta bandana"
+},
+"PINKBOO": {
+    "zero": "pink bandana",
+    "many": "pink bandanas",
+    "one": "pink bandana"
+},
+"BLOODORANGEBOO": {
+    "zero": "blood orange bandana",
+    "many": "blood orange bandanas",
+    "one": "blood orange bandana"
+},
+"ORANGEBOO": {
+    "zero": "orange bandana",
+    "many": "orange bandanas",
+    "one": "orange bandana"
+},
+"YELLOWBOO": {
+    "zero": "yellow bandana",
+    "many": "yellow bandanaa",
+    "one": "yellow bandana"
+},
+"LIMEBOO": {
+    "zero": "lime bandana",
+    "many": "lime bandanas",
+    "one": "lime bandana"
+},
+"DARKGREENBOO": {
+    "zero": "dark green bandana",
+    "many": "dark green bandanas",
+    "one": "dark green bandana"
+},
+"GREENBOO": {
+    "zero": "green bandana",
+    "many": "green bandanas",
+    "one": "green bandana"
+},
+"TEALBOO": {
+    "zero": "teal bandana",
+    "many": "teal bandanas",
+    "one": "teal bandana"
+},
+"LIGHTBLUEBOO": {
+    "zero": "light blue bandana",
+    "many": "light blue bandanas",
+    "one": "light blue bandana"
+},
+"BLUEBOO": {
+    "zero": "blue bandana",
+    "many": "blue bandanas",
+    "one": "blue bandana"
+},
+"DARKBLUEBOO": {
+    "zero": "dark blue bandana",
+    "many": "dark blue bandanas",
+    "one": "dark blue bandana"
+},
+"LIGHTPURPLEBOO": {
+    "zero": "light purple bandana",
+    "many": "light purple bandanas",
+    "one": "light purple bandana"
+},
+"DARKPURPLEBOO": {
+    "zero": "dark purple bandana",
+    "many": "dark purple bandanas",
+    "one": "dark purple bandana"
+        },
+"VIBRANTPURPLEBOO": {
+    "zero": "vibrant purple bandana",
+    "many": "vibrant purple bandanas",
+    "one": "vibrant purple bandana"
+        },
+"PINKREDBOO": {
+    "zero": "pink-red bandana",
+    "many": "pink-red bandanas",
+    "one": "pink-red bandana"
+        },
+"WHITEBOO": {
+    "zero": "white bandana",
+    "many": "white bandanas",
+    "one": "white bandana"
+        },
+"LIGHTGRAYBOO": {
+    "zero": "light gray bandana",
+    "many": "light gray bandanas",
+    "one": "light gray bandana"
+        },
+"GRAYBOO": {
+    "zero": "gray bandana",
+    "many": "gray bandanas",
+    "one": "gray bandana"
+        },
+"BROWNBOO": {
+    "zero": "brown bandana",
+    "many": "brown bandanas",
+    "one": "brown bandana"
+        },
+"BLACKBOO": {
+    "zero": "black bandana",
+    "many": "black bandanas",
+    "one": "black bandana"
+        },
+"MOON": {
+    "zero": "Sailor Moon's bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"MERCURY": {
+    "zero": "Sailor Mercury's bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"MARS": {
+    "zero": "Sailor Mars' bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"JUPITER": {
+    "zero": "Sailor Jupiter's bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"VENUS": {
+    "zero": "Sailor Venus' bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"TUXEDO MASK": {
+    "zero": "Tuxedo Mask's rose",
+    "many": "roses",
+    "one": "rose"
+        },
+"URANUS": {
+    "zero": "Sailor Uranus' bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"NEPTUNE": {
+    "zero": "Sailor Neptune's bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"PLUTO": {
+    "zero": "Sailor Pluto's bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"SATURN": {
+    "zero": "Sailor Saturn's bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"MINI MOON": {
+    "zero": "Mini Moon's bow",
+    "many": "bows",
+    "one": "bow"
+        },
+"CRYSTAL BALL": {
+    "zero": "Queen Beryl's crystal ball",
+    "many": "crystal balls",
+    "one": "crystal ball"
+        },
+"DOGWOOD": {
+    "zero": "dogwood blossom",
+    "many": "dogwood blossoms",
+    "one": "dogwood blossom"
+        },
+"TREESTAR": {
+    "zero": "tree star",
+    "many": "tree stars",
+    "one": "tree star"
+        },
+"RACCOON LEAF": {
+    "zero": "raccoon leaf",
+    "many": "raccoon leaves",
+    "one": "raccoon leaf"
+        },
+"WHITE RACCOON LEAF": {
+    "zero": "white raccoon leaf",
+    "many": "white raccoon leaves",
+    "one": "white raccoon leaf"
+        },
+"CHERRY BLOSSOM": {
+    "zero": "cherry blossom",
+    "many": "cherry blossoms",
+    "one": "cherry blossom"
+        },
+"DAISY BLOOM": {
+    "zero": "daisy bloom",
+    "many": "daisy blooms",
+    "one": "daisy bloom"
+        },
+"FEATHERS": {
+    "zero": "feather",
+    "many": "feathers",
+    "one": "feather"
+        },
+"RED ROSE": {
+    "zero": "red rose",
+    "many": "red roses",
+    "one": "red rose"
+        },
+"WHITE ROSE": {
+    "zero": "white rose",
+    "many": "white roses",
+    "one": "white rose"
+        },
+"PEBBLE": {
+    "zero": "pebble",
+    "many": "pebbles",
+    "one": "pebble"
+        },
+"PEBBLE COLLECTION": {
+    "zero": "pebble collection",
+    "many": "pebble collections",
+    "one": "pebble collection"
+        },
+"GOLDEN FLOWER": {
+    "zero": "golden flower",
+    "many": "golden flowers",
+    "one": "golden flower"
+        },
+"DANDELIONS": {
+    "zero": "dandelion",
+    "many": "dandelions",
+    "one": "dandelion"
+        },
+"DANDELION PUFFS": {
+    "zero": "dandelion puff",
+    "many": "dandelion puffs",
+    "one": "dandelion puff"
+        },
+"DICE": {
+    "zero": "dice",
+    "many": "die",
+    "one": "dice"
+        },
+"GOLDEN EARRINGS": {
+    "zero": "golden earrings",
+    "many": "golden earrings",
+    "one": "golden earrings"
+        }
     }
 }

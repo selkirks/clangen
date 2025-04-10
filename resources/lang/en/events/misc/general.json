@@ -5141,7 +5141,16 @@
     "sub_type": ["accessory"],
     "weight": 5,
     "event_text": "m_c was last seen in the morning when {PRONOUN/m_c/subject} went hunting. {PRONOUN/m_c/subject/CAP} didn't come back for a long time. Clan members went to looking for {PRONOUN/m_c/object}, them m_c came back to camp wearing a acc_singular .",
-    "new_accessory": ["BANDANA","BOWS"],
+    "new_accessory": ["BANDANA","BOWS",
+      "CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO",
+        "LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO",
+        "DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO",
+        "WHITEBOO", "LIGHTGRAYBOO", "GRAYBOO", "BROWNBOO", "BLACKBOO",
+        "MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK",
+        "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL",
+      "DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM",
+            "FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER",
+            "DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"],
     "m_c":{
       "age": ["adolescent", "young adult", "adult", "senior adult"],
       "status": ["any"]
