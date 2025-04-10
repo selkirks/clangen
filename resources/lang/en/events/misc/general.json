@@ -5741,12 +5741,12 @@
     "season": ["any"],
     "sub_type": ["transition"],
     "weight": 10,
-    "event_text": "m_c has realized that she-cat doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore.",
+    "event_text": "m_c has realized that she-cat doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore - tom suits {PRONOUN/m_c/object} better!",
     "m_c": {
       "age": ["young adult"],
       "gender": ["female"]
     },
-    "new_gender": ["trans male", "nonbinary"]
+    "new_gender": ["trans male", "demiboy", "genderfaun"]
   },
   {
     "event_id": "gen_misc_transition_from_male1",
@@ -5754,10 +5754,58 @@
     "season": ["any"],
     "sub_type": ["transition"],
     "weight": 10,
-    "event_text": "m_c has realized that tom doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore.",
+    "event_text": "m_c has realized that tom doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore- she-cat suits {PRONOUN/m_c/object} better!.",
     "m_c": {
       "gender": ["male"]
     },
-    "new_gender": ["trans female", "nonbinary"]
+    "new_gender": ["trans female", "demigirl", "genderfae"]
+  },
+  {
+    "event_id": "gen_misc_transition_from_intersex1",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["transition"],
+    "weight": 10,
+    "event_text": "m_c will always be intersex, but that doesn't have to be {PRONOUN/m_c/poss} gender identity.",
+    "m_c": {
+      "gender": ["intersex"]
+    },
+    "new_gender": ["trans female", "nonbinary", "trans male", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+  },
+  {
+    "event_id": "gen_misc_transition_from_intersex2",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["transition"],
+    "weight": 10,
+    "event_text": "m_c has realized that {PRONOUN/m_c/poss} gender is closely connected with being intersex.",
+    "m_c": {
+      "gender": ["intersex"]
+    },
+    "new_gender": ["intergender","bigender", "genderfluid", "genderflux"]
+  },
+  {
+    "event_id": "gen_misc_transition_from_male2",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["transition"],
+    "weight": 10,
+    "event_text": "m_c has realized that tom doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore, but neither does she-cat.",
+    "m_c": {
+      "gender": ["male"]
+    },
+    "new_gender": ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+  },
+  {
+    "event_id": "gen_misc_transition_from_female2",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["transition"],
+    "weight": 10,
+    "event_text": "m_c has realized that she-cat doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore, but neither does tom.",
+    "m_c": {
+      "gender": ["female"]
+    },
+    "new_gender": ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
   }
 ]
