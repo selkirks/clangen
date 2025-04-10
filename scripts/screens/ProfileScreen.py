@@ -880,7 +880,7 @@ class ProfileScreen(Screens):
             'WEBBEDPAWS': 'webbed paws',
             'MISSINGTOE': 'missing a toe',
             'UNDERSIZEDJAW': 'undersized jaw',
-            'OVERSIZED JAW': 'oversized jaw'
+            'OVERSIZEDJAW': 'oversized jaw'
         }
 
         trait_list = []
