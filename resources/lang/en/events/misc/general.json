@@ -5763,7 +5763,7 @@
     "season": ["any"],
     "sub_type": ["transition"],
     "weight": 10,
-    "event_text": "m_c has realized that tom doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore- she-cat suits {PRONOUN/m_c/object} better!.",
+    "event_text": "m_c has realized that tom doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore- she-cat suits {PRONOUN/m_c/object} better!",
     "m_c": {
       "gender": ["male"]
     },

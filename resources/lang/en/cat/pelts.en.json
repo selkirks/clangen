@@ -246,7 +246,7 @@
             "MimiSingle_long": "single color %color",
             "SterSingle_long": "single-striped %color",
             "Maned_long": "oddly caped %{color}",
-            "Ocelot_long": "oddly dappled%{color}",
+            "Ocelot_long": "oddly dappled %{color}",
             "Lynx_long": "flecked %{color}",
             "Dalmatian_long": "flecked %{color}",
             "Royal_long": "dappled %{color}",
