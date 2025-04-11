@@ -131,8 +131,8 @@ class CustomizeCatScreen(Screens):
 
         self.white_patches = copy(Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white)
         self.white_patches.append(Pelt.white_sprites[6]) # add fullwhite patch
-        self.white_patches.insert(0, "None")
         self.white_patches.sort()
+        self.white_patches.insert(0, "None")
         self.white_patches_label = None
         self.white_patches_dropdown = None
 
