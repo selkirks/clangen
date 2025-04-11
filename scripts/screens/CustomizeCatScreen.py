@@ -184,8 +184,8 @@ class CustomizeCatScreen(Screens):
 
         self.accessories = list(
             dict.fromkeys(Pelt.plant_accessories + Pelt.flower_accessories + Pelt.randomaccessories + Pelt.sailormoon + Pelt.bows_accessories + Pelt.plant2_accessories + Pelt.ster_accessories+ Pelt.wild_accessories + Pelt.tail_accessories + Pelt.collars + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories + Pelt.bone_accessories + Pelt.butterflies_accessories + Pelt.stuff_accessories))
-        self.accessories.insert(0, "None")
         self.accessories.sort()
+        self.accessories.insert(0, "None")
         self.accessory_label = None
         self.accessory_dropdown = None
 
