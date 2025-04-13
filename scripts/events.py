@@ -2310,8 +2310,6 @@ class Events:
 
         random_cat = get_random_moon_cat(Cat, main_cat=cat)
 
-        nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
-
         transing_chance = game.config["transition_related"]
         chance = transing_chance["base_trans_chance"]
         if cat.age in [CatAgeEnum.ADOLESCENT]:

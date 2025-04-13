@@ -689,7 +689,10 @@
             "1": [
             "poppy",
             "juniper"
-        ]
+        ],
+        "2": [],
+        "3": []
+    }
     },
     "testosterone deficiency": {
         "severity": "minor",
@@ -863,4 +866,4 @@
             "3": []
         }
     }
-    }}
+    }
