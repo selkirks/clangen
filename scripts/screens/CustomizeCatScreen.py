@@ -117,6 +117,7 @@ class CustomizeCatScreen(Screens):
 
         self.patterns = copy(Pelt.tortiepatterns)
         self.patterns.sort()
+        self.patterns.insert(0, "None")
         self.pattern_label = None
         self.pattern_dropdown = None
 
