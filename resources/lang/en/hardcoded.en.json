@@ -102,8 +102,8 @@
         "scar_event2": "m_c's %{injury} has healed, but the injury left {PRONOUN/m_c/object} scarred.",
         "move_on_dead_mate": "m_c will always love r_c, but has decided to move on.",
         "expired_prey": {
-            "one": "A piece of freshkill expired and was removed from the freshkill pile.",
-            "many": "%{count} pieces of prey expired and were removed from the freshkill pile."
+            "one": "A piece of fresh-kill expired and was removed from the fresh-kill pile.",
+            "many": "%{count} pieces of prey expired and were removed from the fresh-kill pile."
         },
         "consumed_prey": {
             "one": "One piece of prey was consumed.",

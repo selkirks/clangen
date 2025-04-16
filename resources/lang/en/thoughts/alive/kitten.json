@@ -664,7 +664,7 @@
             "Is scrambling to hide from a loud noise",
             "Doesn't want to play",
             "Stays at the edges of camp to avoid getting taken by a hawk",
-            "Is creeped out by the faces of the prey on the fresh kill pile"
+            "Is creeped out by the faces of the prey on the fresh-kill pile"
         ],
         "main_trait_constraint": [
             "skittish"
