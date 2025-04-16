@@ -23,10 +23,10 @@
   },
   "possible_tints": {
     "basic": ["none", "offwhite", "offwhite", "dark"],
-    "black": ["gray", "darkcream", "cream", "ashgray", "violet", "powder", "blue", "obsidian", "black", "darkblue", "lightblue", "slate"],
-    "gray": ["gray", "blue", "mocha", "honeydew", "ashgray", "violet", "powder", "dark"],
-    "ginger": ["darkcream", "cream", "pink", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry", "golden", "dark", "lilac", "ash", "darkash", "ivory", "chalk", "ghastly", "lightgold", "gold", "darkgold", "sunshine"],
-    "brown": ["darkcream", "cream", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach", "coyote", "caramel", "dark", "chocolate", "brown", "camel", "wheat", "fawn", "bronze"],
+    "black": ["gray", "darkcream", "cream", "ashgray", "violet", "powder", "blue", "obsidian", "black", "darkblue", "lightblue", "slate", "lighterblue", "lightpurple", "lightblack"],
+    "gray": ["gray", "blue", "mocha", "honeydew", "ashgray", "violet", "powder", "dark", "lightgray", "overcast", "cloud", "storming"],
+    "ginger": ["darkcream", "cream", "pink", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry", "golden", "dark", "lilac", "ash", "darkash", "ivory", "chalk", "ghastly", "lightgold", "gold", "darkgold", "sunshine", "lightred", "lightorange", "lightyellow", "lightpink"],
+    "brown": ["darkcream", "cream", "orange", "ebb", "almond", "vanilla", "coffee", "malted", "dawn", "peach", "coyote", "caramel", "dark", "chocolate", "brown", "camel", "wheat", "fawn", "bronze", "lightgreen", "lightbrown", "quail", "plank"],
     "white": ["dark"]
   },
   "tint_colours":
@@ -77,6 +77,21 @@
     "darkgold": [218, 178, 120],
     "sunshine": [255, 231, 178],
     "bronze": [247, 218, 166],
+    "lightred": [255, 218, 218],
+    "lightorange": [255, 242, 218],
+    "lightyellow": [254, 255, 218],
+    "lightgreen": [225, 255, 218],
+    "lighterblue": [218, 235, 255],
+    "lightpurple": [240, 218, 255],
+    "lightpink": [255, 218, 237],
+    "lightblack": [117, 117, 117],
+    "lightgray": [196, 196, 196],
+    "lightbrown": [214, 200, 180],
+    "overcast": [196, 212, 205],
+    "cloud": [215, 214, 217],
+    "quail": [148, 147, 148],
+    "plank": [191, 187, 181],
+    "storming": [185, 191, 201],
     "none": null
   }
 }
