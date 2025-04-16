@@ -2072,6 +2072,7 @@
         "tags": ["new_cat"],
         "patrol_art": "gen_bord_patrolabandonedkitrescue",
         "min_cats": 1,
+        "max_cats": 3,
         "weight": 5,
         "min_max_status": {
             "normal adult": [1, 6]
