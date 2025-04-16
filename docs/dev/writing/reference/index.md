@@ -278,7 +278,7 @@ You can use either the backstory pool name, or an individual backstory name.  Wh
     > | **SKILL,**       | **1**                            | **2**                     | **3**                    | **4**                          |
     |------------------|:----------------------------------:|:---------------------------:|:--------------------------:|:--------------------------------:|
     | **TEACHER**     | `quick to help`                 | `good teacher`           | `great teacher`         | `excellent teacher`           |
-    | **HUNTER**      | `moss-ball hunter`              | `good hunter`            | `great hunter`          | `renowned hunter`             |
+    | **HUNTER**      | `moss ball hunter`              | `good hunter`            | `great hunter`          | `renowned hunter`             |
     | **FIGHTER**     | `avid play-fighter`             | `good fighter`           | `formidable fighter`    | `unusually strong fighter`     |
     | **RUNNER**      | `never sits still`              | `fast runner`            | `incredible runner`     | `fast as the wind`            |
     | **CLIMBER**     | `constantly climbing`           | `good climber`           | `great climber`         | `impressive climber`          |

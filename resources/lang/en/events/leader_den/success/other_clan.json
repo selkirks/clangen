@@ -633,7 +633,7 @@
   },
   {
     "interaction_type": "praise",
-    "event_text": "The night before the Gathering, m_c and o_c_n's leader share a dream of being kits again, playing mossball and tag. At the Gathering, m_c is pleased to see o_c_n's leader looking lighter.",
+    "event_text": "The night before the Gathering, m_c and o_c_n's leader share a dream of being kits again, playing moss ball and tag. At the Gathering, m_c is pleased to see o_c_n's leader looking lighter.",
     "rel_change": 5,
     "m_c": {
       "trait": ["childish", "playful" ],
@@ -1328,7 +1328,7 @@
   },
   {
     "interaction_type": "befriend",
-    "event_text": "At the Gathering, o_c_n's leader struggles through a report that an entire litter of o_c_n kits were wiped out by kitten-cough. m_c draws them aside after and reassures them that the kittens are playing moss-ball together in StarClan. o_c_n's leader thanks {PRONOUN/m_c/object}, their mew thick with emotion.",
+    "event_text": "At the Gathering, o_c_n's leader struggles through a report that an entire litter of o_c_n kits were wiped out by kitten-cough. m_c draws them aside after and reassures them that the kittens are playing moss ball together in StarClan. o_c_n's leader thanks {PRONOUN/m_c/object}, their mew thick with emotion.",
     "rel_change": 5,
     "m_c": {
       "skill": [ "KIT,2", "STAR,1"],
@@ -2270,7 +2270,7 @@
   },
   {
     "interaction_type": "appease",
-    "event_text": "The leader of o_c_n laughs at the sight of c_n being led by m_c. The cat makes a comment on how piteous m_c's clan must be, to have an apprentice leading them, and eventually announces that it would be dishonorable for them to continue attacking such dregs.",
+    "event_text": "The leader of o_c_n laughs at the sight of c_n being led by m_c. The cat makes a comment on how piteous m_c's Clan must be, to have an apprentice leading them, and eventually announces that it would be dishonorable for them to continue attacking such dregs.",
     "rel_change": 10,
     "m_c": {
       "status": ["apprentice", "mediator apprentice", "medicine cat apprentice"]
