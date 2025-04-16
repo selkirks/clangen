@@ -2065,6 +2065,87 @@
         ]
     },
     {
+        "patrol_id": "gen_bord_kitsteal1",
+        "biome": ["any"],
+        "season": ["any"],
+        "types": ["border"],
+        "tags": ["new_cat"],
+        "patrol_art": "gen_bord_patrolabandonedkitrescue",
+        "min_cats": 1,
+        "weight": 5,
+        "min_max_status": {
+            "normal adult": [1, 6]
+        },
+        "intro_text": "p_l lurks at the edge of the o_c_n camp, ears pricked. {PRONOUN/p_l/subject/CAP} {VERB/p_l/wait/waits} in the shadows until the perfect opprotunity arises. There! The last queen has left the nursery, padding away to chat with a Clanmate. The nursery stands unguarded.",
+            "decline_text": "On second thought, this mission is too dangerous. p_l could be killed. {PRONOUN/p_l/subject/CAP} {VERB/p_l/decide/decides} it's safest to turn back and return to c_n territory.",
+            "chance_of_success": 20,
+            "success_outcomes": [
+                {
+                    "text": "p_l won't get a better chance than this. {PRONOUN/p_l/subject/CAP} {VERB/p_l/rush/rushes} in and {VERB/p_l/grab/grabs} a single kit by the scruff. {PRONOUN/p_l/subject/CAP} {VERB/p_l/flee/flees} the o_c_n camp, desperate to avoid capture. p_l runs until {PRONOUN/p_l/subject} {VERB/p_l/arrive/arrives} safely home, still carrying the newest member of c_n.",
+                    "exp": 20,
+                    "weight": 10,
+                    "new_cat": [
+                        ["status:kitten", "backstory:otherclan5"]
+                    ],
+                    "relationships": [
+                        {
+                            "cats_to": ["n_c:0"],
+                            "cats_from": ["patrol"],
+                            "values": ["platonic", "trust", "comfort"],
+                            "amount": -30
+                        }
+                    ],
+                    "other_clan_rep": -8
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "Seconds after p_l takes {PRONOUN/p_l/poss} first hesitant steps towards the nursery, a queen appears. Mouse-dung! p_l knows {PRONOUN/p_l/poss} chance has passed. {PRONOUN/p_l/subject/CAP} {VERB/p_l/sneak/sneaks} out of the o_c_n camp, not realizing that {PRONOUN/p_l/poss} scent is left hanging outside the nursery, giving away {PRONOUN/p_l/poss} presence.",
+                    "exp": 0,
+                    "weight": 20,
+                    "other_clan_rep": -5
+                },
+                {
+                    "text": "As p_l takes {PRONOUN/p_l/poss} first steps towards the nursery, a patrol of o_c_n warriors emerges from deeper within camp. The warriors quickly realize what p_l was about to do and, bristling with fury, launch into an attack. p_l is killed for trying to steal o_c_n kits.",
+                    "exp": 0,
+                    "weight": 10,
+                    "dead_cats": ["p_l"],
+                    "history_text": {
+                        "reg_death": "m_c was slain by o_c_n warriors",
+                        "lead_death": "lost a life by o_c_n warriors"
+                    },
+                    "other_clan_rep": -4
+                }
+            ],
+            "antag_fail_outcomes": [
+                {
+                    "text": "Seconds after p_l takes {PRONOUN/p_l/poss} first hesitant steps towards the nursery, a queen appears. Mouse-dung! It seems p_l has lost {PRONOUN/p_l/poss} chance to weaken o_c_n.",
+                    "exp": 0,
+                    "weight": 20,
+                    "other_clan_rep": -3
+                }
+            ],
+            "antag_success_outcomes": [
+                {
+                    "text": "p_l is eager to weaken o_c_n and strengthen c_n by stealing one of their kits. {PRONOUN/p_l/subject/CAP} {VERB/p_l/rush/rushes} in and {VERB/p_l/grab/grabs} a single kit by the scruff. {PRONOUN/p_l/subject/CAP} {VERB/p_l/flee/flees} the o_c_n camp, desperate to avoid capture. p_l runs until {PRONOUN/p_l/subject} {VERB/p_l/arrive/arrives} safely home, still carrying the newest member of c_n.",
+                    "exp": 20,
+                    "weight": 10,
+                    "new_cat": [
+                        ["status:kitten", "backstory:otherclan1"]
+                    ],
+                    "relationships": [
+                        {
+                            "cats_from": ["n_c:0"],
+                            "cats_to": ["p_l"],
+                            "values": ["platonic", "trust", "comfort"],
+                            "amount": -30
+                        }
+                    ],
+                    "other_clan_rep": -6
+                }
+            ]
+        },
+    {
         "patrol_id": "pln_bord_solo1",
         "biome": ["plains"],
         "season": ["any"],
