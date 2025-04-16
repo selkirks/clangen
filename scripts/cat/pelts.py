@@ -256,6 +256,12 @@ class Pelt:
     bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
                         "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
     
+    beetle_accessories = ["FROG FRIEND", "MOUSE FRIEND", "BUNNY HAT", "SMILEY HAT", "PARTY HAT", "SANTA HAT",
+                          "STICK FRIEND", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF",
+                          "BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
+    beetle_feathers = ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS",
+                       "BLUE JAY FEATHERS", "ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]
+    
     ster_accessories = ["POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH", "LAURELLEAVES",
                         "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH", "YARROW"]
     collars = [
@@ -353,6 +359,16 @@ class Pelt:
         "BLUEBELLS",
         "LILY OF THE VALLEY",
         "SNAPDRAGON",
+        "BUNNY HAT",
+        "SMILEY HAT",
+        "PARTY HAT",
+        "SANTA HAT",
+        "STICK FRIEND",
+        "PINK SCARF",
+        "BLUETAILED SKINK",
+        "BLACKHEADED ORIOLE",
+        "MILKSNAKE",
+        "WORM FRIEND",
         "NETTLE",
         "HEATHER",
         "GORSE",
@@ -478,6 +494,9 @@ class Pelt:
         "CANIDAE SKULL",
         "DEER ANTLERS",
         "RAM HORN",
+        "BAT WING SUIT",
+        "PINK BOWTIE",
+        "GRAY BOWTIE",
         "GOAT HORN",
         "OX SKULL",
         "TEETH COLLAR",
@@ -511,6 +530,8 @@ class Pelt:
         "BLACKBIRD",
         "ROBIN",
         "JAY",
+        "FROG FRIEND",
+        "MOUSE FRIEND",
         "THRUSH",
         "CARDINAL",
         "MAGPIE",
@@ -576,6 +597,16 @@ class Pelt:
         "PURPLEBOWS",
         "MULTIBOWS",
         "INDIGOBOWS"
+        "THRUSH FEATHERS",
+        "GOLDFINCH FEATHERS",
+        "DOVE FEATHERS",
+        "PEACOCK FEATHERS",
+        "HAWK FEATHERS",
+        "BLUE JAY FEATHERS",
+        "ROBIN FEATHERS",
+        "FIERY FEATHERS",
+        "SUNSET FEATHERS",
+        "SILVER FEATHERS"
     ]
 
     tabbies = ["Tabby", "Ticked", "Mackerel", "Stermackerel", "Sillymackerel", "Dancemackerel", "Mimimackerel", 

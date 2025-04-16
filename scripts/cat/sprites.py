@@ -152,7 +152,7 @@ class Sprites:
             'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
-            'boosbandanas_accessories', 'sailormoon', 'randomaccessories'
+            'boosbandanas_accessories', 'sailormoon', 'randomaccessories', 'beetle_accessories', 'beetle_feathers'
         ]:
             if "lineart" in x and (game.config["fun"]["april_fools"] or is_today(SpecialDate.APRIL_FOOLS)):
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -537,6 +537,17 @@ class Sprites:
             ["CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"]
         ]
 
+        beetle_accessories_data = [
+        ["FROG FRIEND", "MOUSE FRIEND", "BUNNY HAT", "SMILEY HAT", "PARTY HAT", "SANTA HAT"],
+        ["STICK FRIEND", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF"],
+        ["BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
+        ]
+
+        beetle_feathers_data = [
+            ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS", "BLUE JAY FEATHERS"],
+            ["ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]
+            ]
+
         sailormoon_data = [
             ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK"],
             ["URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"]
@@ -771,6 +782,14 @@ class Sprites:
         for row, randomaccessories in enumerate(random_data):
             for col, randomaccessory in enumerate(randomaccessories):
                 self.make_group("randomaccessories", (col, row), f"acc_random{randomaccessory}")
+        
+        # beetles
+        for row, beetle_accessories in enumerate(beetle_accessories_data):
+            for col, beetleaccessory in enumerate(beetle_accessories):
+                self.make_group("beetle_accessories", (col, row), f"acc_beetle{beetleaccessory}")
+        for row, beetle_feathers in enumerate(beetle_feathers_data):
+            for col, beetlefeather in enumerate(beetle_feathers):
+                self.make_group("beetle_feathers", (col, row), f"acc_beetlefeathers{beetlefeather}")
 
     def load_symbols(self):
         """

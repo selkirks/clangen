@@ -724,7 +724,7 @@
     "sub_type": ["accessory"],
     "weight": 10,
     "event_text": "m_c always seems to have acc_plural stuck in {PRONOUN/m_c/poss} fur.",
-    "new_accessory": ["HERBS", "PETALS", "DRY HERBS", "DRY CATMINT", "DRY LAURELS", "DRY NETTLES", "RED FEATHERS","BLUE FEATHERS", "JAY FEATHERS", "HESPERIS", "CATNIP FLOWER","GULL FEATHERS", "SPARROW FEATHERS"
+    "new_accessory": ["HERBS", "BEETLEFEATHER", "PETALS", "DRY HERBS", "DRY CATMINT", "DRY LAURELS", "DRY NETTLES", "RED FEATHERS","BLUE FEATHERS", "JAY FEATHERS", "HESPERIS", "CATNIP FLOWER","GULL FEATHERS", "SPARROW FEATHERS"
   ],
     "m_c":{
       "age": ["any"],
@@ -1541,7 +1541,7 @@
         "sub_type": ["accessory"],
         "weight": 15,
         "event_text": "m_c was playing with acc_plural earlier, and decides to wear some of them.",
-        "new_accessory": ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "STICK", "MOSS","GULL FEATHERS", "SPARROW FEATHERS"],
+        "new_accessory": ["RED FEATHERS", "BEETLEFEATHER", "BLUE FEATHERS", "JAY FEATHERS", "STICK", "MOSS","GULL FEATHERS", "SPARROW FEATHERS"],
         "m_c": {
           "status": ["kitten"]
         }
@@ -1988,7 +1988,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c is nearly blindsided by r_c as {PRONOUN/m_c/subject} {VERB/m_c/walk/walks} into camp after a long training day, listening to the kit squeak about a type of feather. r_c leads m_c to the nursery, where {PRONOUN/r_c/subject} carefully {VERB/r_c/put/puts} acc_plural in m_c's fur.",
-    "new_accessory": ["BLUE FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "JAY FEATHERS", "RED FEATHERS"],
+    "new_accessory": ["BLUE FEATHERS", "BEETLEFEATHER", "GULL FEATHERS", "SPARROW FEATHERS", "JAY FEATHERS", "RED FEATHERS"],
     "m_c": {
         "age": ["adolescent"]
     },
@@ -2930,7 +2930,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "r_c finds a cool stick while on patrol! {PRONOUN/r_c/subject/CAP} {VERB/r_c/bring/brings} it back home to m_c, and tells {PRONOUN/m_c/object} it's a gift! m_c accepts it happily, and decides to carry it around.",
-    "new_accessory": ["STICK"],
+    "new_accessory": ["STICK", "STICK FRIEND"],
     "m_c": {
       "status":["any"],
       "age": ["any"]
@@ -2947,7 +2947,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c finds a cool stick near the edge of camp! m_c decides it's cool enough to keep around.",
-    "new_accessory": ["STICK"],
+    "new_accessory": ["STICK", "STICK FRIEND"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -2960,7 +2960,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c finds a cool stick! {PRONOUN/m_c/subject/CAP} decide to keep it with them around camp.",
-    "new_accessory": ["STICK"],
+    "new_accessory": ["STICK", "STICK FRIEND"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -3277,7 +3277,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "r_c spots acc_singular near camp. Before r_c can rip {PRONOUN/r_c/poss} way through camp and to the acc_singular, m_c stops {PRONOUN/r_c/object} and tells {PRONOUN/r_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/want/wants} it as a pet. r_c opens {PRONOUN/r_c/poss} mouth to <i>hiss</i> at m_c, but the kit bounds over to the acc_singular. Guess it's too late to catch it...",
-    "new_accessory": ["SMALLANIMAL"],
+    "new_accessory": ["SMALLANIMAL", "FROG FRIEND", "MOUSE FRIEND", "BLUETAILED SKINK"],
     "m_c": {
       "age": ["any"],
       "status": ["kitten"]
@@ -3297,7 +3297,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c disappears for a short little while, effectively sending the clan into a blind panic! m_c reappears quickly though, and with a new friend!",
-    "new_accessory": ["SMALLANIMAL"],
+    "new_accessory": ["SMALLANIMAL", "FROG FRIEND", "MOUSE FRIEND", "BLUETAILED SKINK"],
     "m_c": {
       "age": ["any"],
       "status": ["kitten"]
@@ -3327,7 +3327,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "r_c watches with exhausted eyes as m_c violently digs a hole off to the side of c_n camp, flinging dirt everywhere. m_c approaches less than a minute later, covered in dirt and with a long worm in their jaws. Mumbled, m_c asks if {PRONOUN/m_c/subject} can keep {PRONOUN/m_c/poss} new friend. Exasperated, r_c tells {PRONOUN/m_c/object} yes and to <i>not</i> dig holes in camp, and then tiredly walks over to clean up m_c's mess.",
-    "new_accessory": ["WORM"],
+    "new_accessory": ["WORM", "WORM FRIEND"],
     "m_c": {
       "age": ["any"],
       "status": ["kitten","apprentice"]
@@ -3344,7 +3344,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c finds a worm in camp on a rainy day! m_c decides to keep it.",
-    "new_accessory": ["WORM"],
+    "new_accessory": ["WORM", "WORM FRIEND"],
     "m_c": {
       "age": ["any"],
       "status": ["kitten","apprentice"]
@@ -3357,7 +3357,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c and r_c find a worm in camp on a rainy day! m_c decides to keep it.",
-    "new_accessory": ["WORM"],
+    "new_accessory": ["WORM", "WORM FRIEND"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -3532,7 +3532,7 @@
     "m_c": {
       "age": ["any"],
       "status": ["kitten"],
-      "trait": ["bouncy", "noisy", "daring", "charming", "inquisitive", "troublesome"]
+      "trait": ["bouncy", "noisy", "daring", "charming", "troublesome"]
     },
     "r_c": {
       "age": ["any"],
@@ -3657,7 +3657,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "r_c and m_c, on a walk together, stumble upon an acc_singular. m_c tilts {PRONOUN/m_c/poss} head, and decides to take it home! r_c is charmed by m_c's generosity. ",
-    "new_accessory": ["SMALLANIMAL"],
+    "new_accessory": ["SMALLANIMAL", "FROG FRIEND", "MOUSE FRIEND", "BLUETAILED SKINK"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -3937,7 +3937,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c skips back into camp with a pep in {PRONOUN/m_c/poss} step... and with a new noodly, harmless friend!",
-    "new_accessory": ["GRASS SNAKE", "KINGSNAKE"],
+    "new_accessory": ["GRASS SNAKE", "KINGSNAKE", "MILKSNAKE"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -3950,7 +3950,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "r_c chirps softly at m_c as {PRONOUN/r_c/subject} {VERB/r_c/walk/walks} over, and offers to show {PRONOUN/m_c/object} a cool, silly little snake {PRONOUN/r_c/subject} found! m_c takes {PRONOUN/r_c/poss} invitation. After seeing the weird, harmless thing, m_c decides to take it home with {PRONOUN/m_c/object}.",
-    "new_accessory": ["GRASS SNAKE", "KINGSNAKE"],
+    "new_accessory": ["GRASS SNAKE", "KINGSNAKE", "MILKSNAKE"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -4011,7 +4011,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c and r_c sneak out of camp to go bird watching. Seems like one of the birds decided to stick around m_c after they attempt to leave!",
-    "new_accessory": ["BLACKBIRD", "ROBIN", "JAY", "THRUSH", "CARDINAL", "MAGPIE", "CUBAN TROGON"],
+    "new_accessory": ["BLACKBIRD", "ROBIN", "JAY", "THRUSH", "CARDINAL", "MAGPIE", "CUBAN TROGON", "BLACKHEADED ORIOLE"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -4028,7 +4028,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c sneaks out of camp to go bird watching. Seems like one of the birds decided to stick around m_c after they attempt to leave!",
-    "new_accessory": ["BLACKBIRD", "ROBIN", "JAY", "THRUSH", "CARDINAL", "MAGPIE", "CUBAN TROGON"],
+    "new_accessory": ["BLACKBIRD", "ROBIN", "JAY", "THRUSH", "CARDINAL", "MAGPIE", "CUBAN TROGON", "BLACKHEADED ORIOLE"],
     "m_c": {
       "age": ["any"],
       "status": ["any"]
@@ -5149,8 +5149,9 @@
         "MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK",
         "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL",
       "DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM",
-            "FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER",
-            "DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"],
+      "FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER",
+      "DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS",
+    "BUNNY HAT", "SMILEY HAT", "PARTY HAT", "SANTA HAT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF"],
     "m_c":{
       "age": ["adolescent", "young adult", "adult", "senior adult"],
       "status": ["any"]
@@ -5165,7 +5166,8 @@
     "event_text": "Several days passed, but m_c did not return. Finally the patrol found {PRONOUN/m_c/object} near twolegs territory. m_c had a strange thing on {PRONOUN/m_c/poss} back.",
     "new_accessory": ["CRIMSONH", "BLUEH", "YELLOWH", "CYANH", "REDH", "LIMEH",
             "GREENH", "RAINBOWH", "BLACKH", "SPIKESH", "WHITEH",
-            "PINKH", "PURPLEH", "MULTIH", "INDIGOH"],
+            "PINKH", "PURPLEH", "MULTIH", "INDIGOH",
+          "BAT WING SUIT"],
     "m_c":{
       "age": ["adolescent", "young adult", "adult", "senior adult"],
       "status": ["any"]

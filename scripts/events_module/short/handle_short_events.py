@@ -417,10 +417,14 @@ class HandleShortEvents:
             acc_list.extend(pelts.sailormoon)
         if "RANDOM" in possible_accs:
             acc_list.extend(pelts.randomaccessories)
+        if "BEETLE" in possible_accs:
+            acc_list.extend(pelts.beetle_accessories)
+        if "BEETLEFEATHER" in possible_accs:
+            acc_list.extend(pelts.beetle_feathers)
 
         for acc in possible_accs:
             if acc not in ["WILD", "PLANT", "COLLAR", "FLOWER", "CRAFTED", "PLANT2", "SMALLANIMAL", "DEADINSECT",
-                           "ALIVEINSECT", "RANDOM", "FRUIT", "SNAKE", "TAIL2","BONE", "SAILORMOON", "BUTTERFLIES", "STUFF", "BOWS"]:
+                           "ALIVEINSECT", "BEETLEFEATHER", "BEETLE", "RANDOM", "FRUIT", "SNAKE", "TAIL2","BONE", "SAILORMOON", "BUTTERFLIES", "STUFF", "BOWS"]:
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):

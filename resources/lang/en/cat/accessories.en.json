@@ -2012,6 +2012,132 @@
     "zero": "golden earrings",
     "many": "golden earrings",
     "one": "golden earrings"
+        },
+    "FROG FRIEND": {
+        "zero": "frog friend",
+        "many": "frog friends",
+        "one": "frog friend"
+            },
+    "MOUSE FRIEND": {
+        "zero": "mouse friend",
+        "many": "mice friends",
+        "one": "mouse friend"
+            },
+    "BUNNY HAT": {
+        "zero": "bunny hat",
+        "many": "bunny hats",
+        "one": "bunny hat"
+            },
+    "SMILEY HAT": {
+        "zero": "smiley hat",
+        "many": "smiley hats",
+        "one": "smiley hat"
+            },
+    "PARTY HAT": {
+        "zero": "party hat",
+        "many": "party hats",
+        "one": "party hat"
+            },
+    "SANTA HAT": {
+        "zero": "santa hat",
+        "many": "santa hats",
+        "one": "santa hat"
+            },
+    "STICK FRIEND": {
+        "zero": "stick friend",
+        "many": "stick friends",
+        "one": "stick friend"
+            },
+    "BAT WING SUIT": {
+        "zero": "bat wings suit",
+        "many": "bat wings suits",
+        "one": "bat wings suit"
+            },
+    "PINK BOWTIE": {
+        "zero": "pink bowtie",
+        "many": "pink bowties",
+        "one": "pink bowtie"
+            },
+    "GRAY BOWTIE": {
+        "zero": "gray bowtie",
+        "many": "gray bowties",
+        "one": "gray bowtie"
+            },
+    "PINK SCARF": {
+        "zero": "pink scarf",
+        "many": "pink scarves",
+        "one": "pink scarf"
+            },
+    "BLUETAILED SKINK": {
+        "zero": "bluetailed skink",
+        "many": "bluetailed skinks",
+        "one": "bluetailed skink"
+            },
+    "BLACKHEADED ORIOLE": {
+        "zero": "blackheaded oriole",
+        "many": "blackheaded orioles",
+        "one": "blackheaded oriole"
+            },
+    "MILKSNAKE": {
+        "zero": "milksnake",
+        "many": "milksnakes",
+        "one": "milksnake"
+            },
+    "WORM FRIEND": {
+        "zero": "worm",
+        "many": "worms",
+        "one": "worm"
+            },
+    "THRUSH FEATHERS": {
+        "zero": "thrush feather",
+        "many": "thrush feathers",
+        "one": "thrush feather"
+            },
+    "GOLDFINCH FEATHERS": {
+        "zero": "goldfinch feather",
+        "many": "goldfinch feathers",
+        "one": "goldfinch feather"
+            },
+    "DOVE FEATHERS": {
+        "zero": "dove feather",
+        "many": "dove feathers",
+        "one": "dove feather"
+            },
+    "PEACOCK FEATHERS": {
+        "zero": "peacock feather",
+        "many": "peacock feathers",
+        "one": "peacock feather"
+            },
+    "HAWK FEATHERS": {
+        "zero": "hawk feather",
+        "many": "hawk feathers",
+        "one": "hawk feather"
+            },
+    "BLUE JAY FEATHERS": {
+        "zero": "blue jay feather",
+        "many": "blue jay feathers",
+        "one": "blue jay feather"
+            },
+    "ROBIN FEATHERS": {
+        "zero": "robin feather",
+        "many": "robin feathers",
+        "one": "robin feather"
+            },
+    "FIERY FEATHERS": {
+        "zero": "fiery feather",
+        "many": "fiery feathers",
+        "one": "fiery feather"
+            },
+    "SUNSET FEATHERS": {
+        "zero": "sunset feather",
+        "many": "sunset feathers",
+        "one": "sunset feather"
+            },
+    "SILVER FEATHERS": {
+        "zero": "silver feather",
+        "many": "silver feathers",
+        "one": "silver feathers"
+            
+            }
         }
-    }
 }
