@@ -106,26 +106,32 @@ class CustomizeCatScreen(Screens):
         self.next_cat_button = None
 
         self.pelt_names = list(Pelt.sprites_names.keys())
+        self.pelt_names.sort()
         self.pelt_name_label = None
         self.pelt_name_dropdown = None
 
         self.pelt_colours = copy(Pelt.pelt_colours)
+        self.pelt_colours.sort()
         self.pelt_colour_label = None
         self.pelt_colour_dropdown = None
 
         self.patterns = copy(Pelt.tortiepatterns)
+        self.patterns.sort()
         self.pattern_label = None
         self.pattern_dropdown = None
 
         self.tortie_bases = copy(Pelt.tortiebases)
+        self.tortie_bases.sort()
         self.tortie_base_label = None
         self.tortie_base_dropdown = None
 
         self.tortie_colours = copy(Pelt.pelt_colours)
+        self.tortie_colours.sort()
         self.tortie_colour_label = None
         self.tortie_colour_dropdown = None
 
         self.tortie_patterns = copy(Pelt.tortiepatterns)
+        self.tortie_patterns.sort()
         self.tortie_pattern_label = None
         self.tortie_pattern_dropdown = None
 
@@ -137,25 +143,30 @@ class CustomizeCatScreen(Screens):
         self.white_patches_dropdown = None
 
         self.vitiligo_patterns = copy(Pelt.vit)
+        self.vitiligo_patterns.sort()
         self.vitiligo_patterns.insert(0, "None")
         self.vitiligo_label = None
         self.vitiligo_dropdown = None
 
         self.points_markings = copy(Pelt.point_markings)
+        self.points_markings.sort()
         self.points_markings.insert(0, "None")
         self.points_label = None
         self.points_dropdown = None
 
         self.white_patches_tints = ["None"] + [tint for tint in list(sprites.white_patches_tints["tint_colours"].keys()) if tint != "none"]
+        self.white_patches_tints.sort()
         self.white_patches_tint_label = None
         self.white_patches_tint_dropdown = None
 
         self.tints = ["None"] + [tint for tint in list(sprites.cat_tints["tint_colours"].keys()) +
                       list(sprites.cat_tints["dilute_tint_colours"].keys()) if tint != "none"]
+        self.tints.sort()
         self.tint_label = None
         self.tint_dropdown = None
 
         self.skins = copy(Pelt.skin_sprites)
+        self.skins.sort()
         self.skin_label = None
         self.skin_dropdown = None
 
@@ -163,6 +174,7 @@ class CustomizeCatScreen(Screens):
         self.reset_button = None
 
         self.eye_colours = [colour.capitalize() for colour in copy(Pelt.eye_colours)]
+        self.eye_colours.sort()
         self.eye_colour1_label = None
         self.eye_colour1_dropdown = None
         self.heterochromia_text = None
@@ -190,6 +202,8 @@ class CustomizeCatScreen(Screens):
         self.accessory_dropdown = None
 
         self.scars = ["None"] + copy(Pelt.scars1 + Pelt.scars2 + Pelt.scars3)
+        self.scars.sort()
+        self.scars.insert(0, "None")
         self.scar_message = None
         self.scar1_label = None
         self.scar1_dropdown = None
