@@ -199,7 +199,7 @@
             "Stain": "stained c_n",
             "Sterspeckled_long": "speckled %{color}",
             "Sillyspeckled_long": "speckled %{color}",
-            "Dancespeckle_long": "speckled %{color}",
+            "Dancespeckled_long": "speckled %{color}",
             "Mimispeckled_long": "speckled %{color}",
             "Sterbengal_long": "unusually dappled %{color}",
             "Sillybengal_long": "unusually dappled %{color}",
