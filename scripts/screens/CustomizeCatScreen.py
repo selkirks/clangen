@@ -561,13 +561,16 @@ class CustomizeCatScreen(Screens):
 
         # convert to list
         if attribute == "pattern":
-            if isinstance(self.the_cat.pelt.pattern, list):
+            if selected_option == "NONE":
+                self.the_cat.pelt.pattern = None
+            elif self.the_cat.pelt.pattern is None:
+                self.the_cat.pelt.pattern = [selected_option]
+            elif isinstance (self.the_cat.pelt.pattern, list):
                 self.the_cat.pelt.pattern.append(selected_option)
             else:
                 self.the_cat.pelt.pattern = [selected_option]
         else:
             setattr(self.the_cat.pelt, attribute, selected_option)
-
         self.make_cat_sprite()
 
     def handle_back_button(self):
