@@ -542,12 +542,12 @@ class Cat:
         enby_masc = [ "demiboy", "genderfaun", "trans masc"]
         enby_fem = ["demigirl", "genderfae", "trans femme"]
         
-        she_him = randint(1,3)
-        neo_chance = 25
-        second_set = 20
+        she_him = randint(1,5)
+        neo_chance = game.config["cat_generation"]["neopronoun_chance"]
+        second_set = game.config["cat_generation"]["multiple_pronouns_chance"]
         if self.genderalign in queer_list:
-            neo_chance = 10
-            second_set = 5
+            neo_chance = int(neo_chance/2)
+            second_set = int(second_set/4)
         neos = randint(1,neo_chance)
         seconds = randint(1,second_set)
         
@@ -555,9 +555,9 @@ class Cat:
         value = self._pronouns.get(locale)
         if value is None:
             self._pronouns[locale] = pronouns.get_new_pronouns(self.genderalign)
-            if self.genderalign in enby_masc and she_him < 3:
+            if self.genderalign in enby_masc and she_him < 4:
                 self._pronouns[locale] += pronouns.get_new_pronouns("male")
-            elif self.genderalign in enby_fem and she_him < 3:
+            elif self.genderalign in enby_fem and she_him < 4:
                 self._pronouns[locale] += pronouns.get_new_pronouns("female")
             elif neos == 1:
                 self._pronouns[locale] += pronouns.get_new_pronouns("neos")
@@ -569,7 +569,10 @@ class Cat:
                 else:
                     #add neos
                     self._pronouns[locale] += pronouns.get_new_pronouns("neos")
-                
+            if len(self._pronouns[locale]) > 1:
+                if self._pronouns[locale][0]["subject"] == self._pronouns[locale][1]["subject"]:
+                    self._pronouns[locale] = [self._pronouns[locale][0]]
+                    print(self._pronouns[locale])
             value = self._pronouns[locale]
         return value
 
