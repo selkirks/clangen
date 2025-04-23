@@ -596,7 +596,7 @@ class Pelt:
         "PINKBOWS",
         "PURPLEBOWS",
         "MULTIBOWS",
-        "INDIGOBOWS"
+        "INDIGOBOWS",
         "THRUSH FEATHERS",
         "GOLDFINCH FEATHERS",
         "DOVE FEATHERS",
