@@ -1245,26 +1245,6 @@
         "evenness",
         "fortitude"
     ],
-    "unlovable": [
-        "honesty",
-        "cleverness",
-        "skill",
-        "intelligence",
-        "candor",
-        "pragmatism",
-        "level-headedness",
-        "dignity",
-        "calmness",
-        "composure",
-        "wit",
-        "observance",
-        "caution",
-        "independence",
-        "steadfastness",
-        "assurance",
-        "evenness",
-        "fortitude"
-    ],
     "blunt": [
         "honesty",
         "cleverness",
@@ -3173,24 +3153,6 @@
         "zeal",
         "perseverance"
     ],
-    "ruined": [
-        "enthusiasm",
-        "spirit",
-        "energy",
-        "determination",
-        "humor",
-        "heart of gold",
-        "kindness",
-        "friendliness",
-        "liveliness",
-        "tenacity",
-        "good nature",
-        "passion",
-        "openness",
-        "empathy",
-        "zeal",
-        "perseverance"
-    ],
     "chaotic": [
         "enthusiasm",
         "spirit",
@@ -3962,24 +3924,6 @@
         "dependability",
         "equanimity"
     ],
-    "hefty": [
-        "loyalty",
-        "commitment",
-        "enterprise",
-        "thoughtfulness",
-        "dedication",
-        "composure",
-        "responsibility",
-        "insight",
-        "perspective",
-        "exemplar",
-        "dignity",
-        "leadership",
-        "guidance",
-        "fortitude",
-        "dependability",
-        "equanimity"
-    ],
     "passive-aggressive": [
         "loyalty",
         "commitment",
@@ -4088,7 +4032,7 @@
         "honor",
         "amity"
     ],
-    "maternal": [
+    "nurturing": [
         "compassion",
         "dedication",
         "initiative",
@@ -4159,24 +4103,7 @@
         "wisdom",
         "honor",
         "amity"
-    ],
-    "motherly": [
-        "compassion",
-        "dedication",
-        "initiative",
-        "loyalty",
-        "insight",
-        "wisdom",
-        "consideration",
-        "wit",
-        "cunning",
-        "observance",
-        "empathy",
-        "understanding",
-        "commitment",
-        "wisdom",
-        "honor",
-        "amity"
+
     ],
     "old-fashioned": [
         "compassion",

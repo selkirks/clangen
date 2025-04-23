@@ -129,6 +129,16 @@ def json_load():
                 cat["trait"] = "principled"
             if cat["trait"] == "fun loving":
                 cat["trait"] = "fun-loving"
+            if cat["trait"] == "motherly":
+                cat["trait"] = "nurturing"
+            if cat["trait"] == "maternal":
+                cat["trait"] = "nurturing"
+            if cat["trait"] == "ruined":
+                cat["trait"] = "rebellious"
+            if cat["trait"] == "unlovable":
+                cat["trait"] = "warm"
+            if cat["trait"] == "hefty":
+                cat["trait"] = "charming"
             if "accessories" in cat:
                 cat["accessory"] = cat.pop("accessories")
 

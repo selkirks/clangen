@@ -104,7 +104,7 @@
     "m_c": {
       "age": ["any"],
       "status": ["any"],
-      "trait": ["cold", "unlovable", "colorless", "deceitful", "mysterious", "amoral", "boring", "snobbish", "greedy", "bold", "hefty", "daring", "pessimistic", "moralistic", "morbid", "strict", "complex", "fair"]
+      "trait": ["cold", "colorless", "deceitful", "mysterious", "amoral", "boring", "snobbish", "greedy", "bold", "daring", "pessimistic", "moralistic", "morbid", "strict", "complex", "fair"]
     }
   },
   {
@@ -268,7 +268,7 @@
     "m_c": {
       "age": ["any"],
       "status": ["any"],
-     "trait": ["childish", "regretful", "anxious", "ordinary", "youthful", "whimsical", "sappy", "creative", "perfectionist", "polite", "delicate", "cheerful", "coward", "silly", "tranquil", "dependent", "romantic", "warm", "organized", "self-pitying", "sensitive", "peaceful", "protective", "benevolent", "hardworking", "motherly", "loving", "innocent", "hearty", "humorous", "generous", "gracious", "gentle", "unagressive", "tiny", "soft", "zoomy", "chummy", "folksy", "maternal", "emotional", "distracted", "forgiving", "bubbly", "dedicated", "absent-minded", "compassionate", "playful", "thoughtful", "loyal", "sincere", "appreciative"]
+     "trait": ["childish", "regretful", "anxious", "ordinary", "youthful", "whimsical", "sappy", "creative", "perfectionist", "polite", "delicate", "cheerful", "coward", "silly", "tranquil", "dependent", "romantic", "warm", "organized", "self-pitying", "sensitive", "peaceful", "protective", "benevolent", "hardworking", "loving", "innocent", "hearty", "humorous", "generous", "gracious", "gentle", "unagressive", "tiny", "soft", "zoomy", "chummy", "folksy", "nurturing", "emotional", "distracted", "forgiving", "bubbly", "dedicated", "absent-minded", "compassionate", "playful", "thoughtful", "loyal", "sincere", "appreciative"]
     },
     "r_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
@@ -367,7 +367,7 @@
     "r_c": {
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "status": ["any"],
-      "trait": ["bold", "ruined", "ritualistic", "calculating", "sleepy", "sentient", "superficial", "daring", "strict", "righteous", "strange", "arrogant", "confident"]
+      "trait": ["bold", "ritualistic", "calculating", "sleepy", "sentient", "superficial", "daring", "strict", "righteous", "strange", "arrogant", "confident"]
     },
     "relationships": [
         {

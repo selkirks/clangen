@@ -378,7 +378,7 @@
             "aggression": [6, 18],
             "stability": [1, 11]
         },
-        "maternal": {
+        "nurturing": {
             "lawfulness": [0, 10],
             "sociability": [0, 19],
             "aggression": [6, 10],
@@ -491,12 +491,6 @@
             "sociability": [0, 4],
             "aggression": [1, 6],
             "stability": [1, 6]
-        },
-        "motherly": {
-            "lawfulness": [6, 16],
-            "sociability": [8, 16],
-            "aggression": [0, 8],
-            "stability": [10, 16]
         },
         "fun-loving": {
             "lawfulness": [0, 1],
@@ -658,12 +652,6 @@
             "lawfulness": [8, 16],
             "sociability": [10, 16],
             "aggression": [0, 6],
-            "stability": [10, 16]
-        },
-        "hefty": {
-            "lawfulness": [0, 10],
-            "sociability": [0, 20],
-            "aggression": [0, 10],
             "stability": [10, 16]
         },
         "organized": {
@@ -1398,12 +1386,6 @@
             "aggression": [3, 10],
             "stability": [3, 10]
         },
-        "ruined": {
-            "lawfulness": [0, 4],
-            "sociability": [0, 2],
-            "aggression": [2, 5],
-            "stability": [0, 1]
-        },
         "selfish": {
             "lawfulness": [0, 1],
             "sociability": [0, 3],
@@ -1463,12 +1445,6 @@
             "sociability": [0, 2],
             "aggression": [0, 1],
             "stability": [0, 10]
-        },
-        "unlovable": {
-            "lawfulness": [0, 1],
-            "sociability": [0, 1],
-            "aggression": [0, 2],
-            "stability": [0, 3]
         },
         "vague": {
             "lawfulness": [0, 3],
