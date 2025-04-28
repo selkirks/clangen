@@ -13,8 +13,46 @@ permissions:
   contents: write
 
 jobs:
-  build_ubuntu_20_04:
-    runs-on: ubuntu-20.04
+  build:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            artifact_name: MegaMerge_Linux64_glibc2.35+.tar.xz
+            python_version: "3.11"
+            python_arch: "x64"
+            itch_channel: linux64_glibc_235
+            api_artifact_name: linux2.35
+            
+          - os: windows-2019
+            artifact_name: MegaMerge_Win32.zip
+            python_version: "3.8"
+            python_arch: "x86"
+            itch_channel: win32
+            api_artifact_name: win32
+            
+          - os: windows-latest
+            artifact_name: MegaMerge_Win64.zip
+            python_version: "3.8"
+            python_arch: "x64"
+            itch_channel: win64
+            api_artifact_name: win64
+            
+          - os: windows-latest
+            artifact_name: MegaMerge_Win64_Windows10+.zip
+            python_version: "3.11"
+            python_arch: "x64"
+            itch_channel: win64_10
+            api_artifact_name: win10+
+            
+          - os: macos-13
+            artifact_name: MegaMerge_macOS64.dmg
+            python_version: "3.11"
+            python_arch: "x64"
+            itch_channel: osx64
+            api_artifact_name: macOS
+            
+    runs-on: ${{ matrix.os }}
     if: ${{ !startsWith(github.ref, 'ref/heads/release') }}
     env:
       gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
@@ -123,7 +161,7 @@ jobs:
             -F 'fileBundle=@MegaMerge_Linux64_glibc2.31+.tar.xz.sig' \
             --http1.1
       - name: Set up butler
-        uses: thlumyn/setup-butler@clangen
+        uses: jdno/setup-butler@v1
       - name: Upload build to itch.io
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
