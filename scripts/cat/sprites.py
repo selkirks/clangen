@@ -652,7 +652,7 @@ class Sprites:
      
         french_scarves_data = [
             ["CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES"],
-            ["GREENS", "RAINBONS", "BLACKS", "SPIKESS", "WHITES"],
+            ["GREENS", "RAINBOWS", "BLACKS", "SPIKESS", "WHITES"],
             ["PINKS", "PURPLES", "MULTIS", "INDIGOS"]
         ]
 

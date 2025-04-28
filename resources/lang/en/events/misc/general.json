@@ -3682,7 +3682,7 @@
     "event_text": "r_c carries in an acc_singular into the nursery, asking m_c if {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to play with it. m_c eye's sparkle with joy as {PRONOUN/m_c/subject} plead for the acc_singular! r_c drops it, expecting m_c to play with it, but instead, r_c watches m_c befriend the weird little thing.",
     "new_accessory": ["ALIVEINSECT"],
     "m_c": {
-      "status":["any"],
+      "status":["kitten"],
       "age": ["any"]
     },
     "r_c": {
