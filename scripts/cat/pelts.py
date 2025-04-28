@@ -256,8 +256,8 @@ class Pelt:
     bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
                         "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
     
-    beetle_accessories = ["FROG FRIEND", "MOUSE FRIEND", "BUNNY HAT", "SMILEY HAT", "PARTY HAT", "SANTA HAT",
-                          "STICK FRIEND", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF",
+    beetle_accessories = ["FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT",
+                          "BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF",
                           "BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
     beetle_feathers = ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS",
                        "BLUE JAY FEATHERS", "ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]
@@ -361,10 +361,10 @@ class Pelt:
         "LILY OF THE VALLEY",
         "SNAPDRAGON",
         "BUNNY HAT",
-        "SMILEY HAT",
+        "WINTER HAT",
         "PARTY HAT",
         "SANTA HAT",
-        "STICK FRIEND",
+        "BANANA HAT",
         "PINK SCARF",
         "BLUETAILED SKINK",
         "BLACKHEADED ORIOLE",
@@ -476,7 +476,8 @@ class Pelt:
         "DANDELIONS",
         "DANDELION PUFFS",
         "DICE",
-        "GOLDEN EARRINGS"
+        "GOLDEN EARRINGS",
+        "COWBOY HAT",
     ]
 
     body_accessories = [
@@ -532,7 +533,6 @@ class Pelt:
         "ROBIN",
         "JAY",
         "FROG FRIEND",
-        "MOUSE FRIEND",
         "THRUSH",
         "CARDINAL",
         "MAGPIE",

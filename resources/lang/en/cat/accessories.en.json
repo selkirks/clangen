@@ -2018,20 +2018,20 @@
         "many": "frog friends",
         "one": "frog friend"
             },
-    "MOUSE FRIEND": {
-        "zero": "mouse friend",
-        "many": "mice friends",
-        "one": "mouse friend"
+    "COWBOY HAT": {
+        "zero": "cowboy hat",
+        "many": "cowboy hats",
+        "one": "cowboy hat"
             },
     "BUNNY HAT": {
         "zero": "bunny hat",
         "many": "bunny hats",
         "one": "bunny hat"
             },
-    "SMILEY HAT": {
-        "zero": "smiley hat",
-        "many": "smiley hats",
-        "one": "smiley hat"
+    "WINTER HAT": {
+        "zero": "winter hat",
+        "many": "winter hats",
+        "one": "winter hat"
             },
     "PARTY HAT": {
         "zero": "party hat",
@@ -2043,10 +2043,10 @@
         "many": "santa hats",
         "one": "santa hat"
             },
-    "STICK FRIEND": {
-        "zero": "stick friend",
-        "many": "stick friends",
-        "one": "stick friend"
+    "BANANA HAT": {
+        "zero": "banana hat",
+        "many": "banana hats",
+        "one": "banana hat"
             },
     "BAT WING SUIT": {
         "zero": "bat wings suit",

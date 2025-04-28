@@ -99,6 +99,12 @@ def json_load():
                 cat["accessory"] = ["DAISYTAIL"]
             if cat["accessory"] == ["CLOVER1"]:
                 cat["accessory"] = ["CLOVERTAIL"]
+            if cat["accessory"] == ["MOUSE FRIEND"]:
+                cat["accessory"] = ["GRAY MOUSE"]
+            if cat["accessory"] == ["SMILEY HAT"]:
+                cat["accessory"] = ["WINTER HAT"]
+            if cat["accessory"] == ["STICK FRIEND"]:
+                cat["accessory"] = ["STICK"]
             if cat["tint"] == "banana":
                 cat["tint"] = "bananaone"
             if cat["backstory"] == "clan_founder1":

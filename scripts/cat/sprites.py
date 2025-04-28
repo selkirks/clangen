@@ -538,8 +538,8 @@ class Sprites:
         ]
 
         beetle_accessories_data = [
-        ["FROG FRIEND", "MOUSE FRIEND", "BUNNY HAT", "SMILEY HAT", "PARTY HAT", "SANTA HAT"],
-        ["STICK FRIEND", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF"],
+        ["FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT"],
+        ["BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF"],
         ["BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
         ]
 
