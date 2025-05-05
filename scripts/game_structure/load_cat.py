@@ -147,6 +147,14 @@ def json_load():
                 pattern=cat["pattern"],
                 skin=cat["skin"],
                 tint=cat["tint"] if "tint" in cat else "none",
+                physical_trait_1=cat["physical_trait_1"] if "physical_trait_1" in cat else None,
+                physical_trait_2=cat["physical_trait_2"] if "physical_trait_2" in cat else None,
+                physical_trait_3=cat["physical_trait_3"] if "physical_trait_3" in cat else None,
+                physical_trait_4=cat["physical_trait_4"] if "physical_trait_4" in cat else None,
+                physical_trait_hidden=cat["physical_trait_hidden"] if "physical_trait_hidden" in cat else None,
+                physical_trait_hidden_2=cat["physical_trait_hidden_2"] if "physical_trait_hidden_2" in cat else None,
+                physical_trait_hidden_3=cat["physical_trait_hidden_3"] if "physical_trait_hidden_3" in cat else None,
+                physical_trait_hidden_4=cat["physical_trait_hidden_4"] if "physical_trait_hidden_4" in cat else None,
                 scars=cat["scars"] if "scars" in cat else [],
                 accessory=cat["accessory"],
                 opacity=cat["opacity"] if "opacity" in cat else 100,
@@ -525,11 +533,28 @@ def csv_load(all_cats):
                     the_cat.no_kits = bool(attr[39])
                 if len(attr) > 40:
                     the_cat.genderalign = attr[40]
-                if len(attr) > 41 and attr[41] is not None:  # KEEP THIS AT THE END
-                    the_cat.former_apprentices = attr[41].split(";")
-        game.switches["error_message"] = (
-            "There was an error loading this clan's mentors, apprentices, relationships, or sprite info."
-        )
+                if len(attr) > 41:
+                    the_cat.pelt.physical_trait_1 = bool(attr[41])
+                if len(attr) > 42:
+                    the_cat.pelt.physical_trait_2 = bool(attr[42])
+                if len(attr) > 43:
+                    the_cat.pelt.physical_trait_3 = bool(attr[41])
+                if len(attr) > 44:
+                    the_cat.pelt.physical_trait_4 = bool(attr[42])
+                if len(attr) > 45:
+                    the_cat.pelt.physical_trait_hidden = bool(attr[43])
+                if len(attr) > 46:
+                    the_cat.pelt.physical_trait_hidden_2 = bool(attr[43])
+                if len(attr) > 47:
+                    the_cat.pelt.physical_trait_hidden_3 = bool(attr[43])
+                if len(attr) > 48:
+                    the_cat.pelt.physical_trait_hidden_4 = bool(attr[43])
+                if len(attr
+                       ) > 49 and attr[49] is not None:  # KEEP THIS AT THE END
+                    the_cat.former_apprentices = attr[49].split(';')
+        game.switches[
+            "error_message"
+        ] = "There was an error loading this clan's mentors, apprentices, relationships, or sprite info."
         for inter_cat in all_cats.values():
             # Load the mentors and apprentices after all cats have been loaded
             game.switches["error_message"] = (

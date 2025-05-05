@@ -196,6 +196,20 @@ class Pelt:
                  'DAWN SKY', 'TWILIGHT SKY', 'BLUE HAZEL', 'CURSE', 'FIREWORK', 'REVERSE SUNLITICE', 'ICY', 'VIOLET', 'PASTEL', 'WINTER ROSE', 'PASTEL LAVENDER', 'LAVENDER', 'PINK']
     green_eyes = ['LICHEN', 'FERN', 'MINT', 'SPRING', 'APPLE', 'CHARTREUSE', 'LEAVES', 'MOSS', 'MEADOW', 'RIVER MOSS', 'TREE', 'THICKET', 'LEAF', 'EMERALD ORE', 'PEACOCK', 'LIGHT TURQUOISE', 'HAZELNUT', 'OLIVE', 'SAP', 'PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'ALGAE', 'SWAMP', 'AQUAMARINE', 'EARTH', 'DIRT', 'CHRISTMAS', 'FOREST FIRE',
                   'LIME', 'LUCKY', 'DARK HAZEL', 'DARK TURQUOISE', 'AVOCADO', 'NEON GREEN', 'SEA', "ORANGE"]
+    physical_trait_teeth = ['TEETHUPPER', 'TEETHSABRE', 'TEETHUNDERBITE', 'TEETHOVERBITE', 'TEETHHANG', 'TEETHJAGGED', 'TEETHTUSK', 'TEETHGONE', 'TEETHCHIPPED']
+    physical_trait_ear_type = ['EARSMALL', 'EARBIG', 'EARTALL', 'EARPANTHER', 'EARWIDE', 'EARFLUFFY', "EARRABBIT", 'EARDROOPY']
+    physical_trait_ear_fold = ['FOLDBOTH', 'FOLDONE', 'EARCURL']
+    physical_trait_headfur = ['HEADFORELOCK', 'HEADCOWLICK', 'HEADMOHAWK', 'HEADTUFT', 'HEADEMO', 'HEADJOWLS']
+    physical_trait_cheekfur = ['CHEEKLONG', 'CHEEKPOINTED', 'CHEEKFLUFF', 'CHEEKCURL']
+    physical_trait_mane = ['MANESILKY', 'MANEFLUFFY', 'MANERUFF', 'MANEHORSE', 'MANELION', 'MANEBRAIDED', 'MANECOBRA']
+    physical_trait_fur_type = ['FURWAVY', 'FURCURLY', 'FURPATCHY', 'FURKINK', 'FURSHAGGY']
+    physical_trait_muzzle_type = ['MUZZLESHORT', 'MUZZLEBROAD', 'MUZZLELONG']
+    physical_trait_tail = ['TAILCROOKED', 'TAILLONG', 'TAILFEATHER', 'TAILCURL', 'TAILTUFT', 'TAILFORKED', 'TAILFOX']
+    physical_trait_bodyfur = ['BACKFLUFF', 'BACKRIDGE', 'SHOULDERTUFT']
+    physical_trait_misc = ['EARTUFTS', 'POLYDACTYL', 'LASHESUPPER', 'LASHESLOWER', 'WHISKERSLONG', 'CLAWSLONG', 'LEGTUFT', 'LARGEPAWS', 'SMALLPAWS', 'CLAWLESS', 'CLAWSSHORT', 'PAWTUFT',
+                           "BIGEYES", "SMALLEYES", "BIGNOSE", "HEARTSHAPEDNOSE", 'LONGLEGS', 'SHORTLEGS',
+                           'CROSSEYED', 'LAZYEYE', 'OVERGROWNTONGUE', 'LONGCHINFUR', 'SHORTCHINFUR', 'LONGMUZZLEFUR',
+                           'LONGINNEREARFUR', 'WEBBEDPAWS', 'MISSINGTOE', 'UNDERSIZEDJAW', 'OVERSIZEDJAW']
 
     # bite scars by @wood pank on discord
 
@@ -354,6 +368,14 @@ class Pelt:
                  tortiepattern: str = None,
                  vitiligo: str = None,
                  points: str = None,
+                 physical_trait_1:str=None,
+                 physical_trait_2:str=None,
+                 physical_trait_3:str=None,
+                 physical_trait_4:str=None,
+                 physical_trait_hidden:str=None,
+                 physical_trait_hidden_2:str=None,
+                 physical_trait_hidden_3:str=None,
+                 physical_trait_hidden_4:str=None,
                  accessory: str = None,
                  paralyzed: bool = False,
                  opacity: int = 100,
@@ -389,6 +411,14 @@ class Pelt:
         self.opacity = opacity
         self.scars = scars if isinstance(scars, list) else []
         self.tint = tint
+        self.physical_trait_1 = physical_trait_1
+        self.physical_trait_2 = physical_trait_2
+        self.physical_trait_3 = physical_trait_3
+        self.physical_trait_4 = physical_trait_4
+        self.physical_trait_hidden = physical_trait_hidden
+        self.physical_trait_hidden_2 = physical_trait_hidden_2
+        self.physical_trait_hidden_3 = physical_trait_hidden_3
+        self.physical_trait_hidden_4 = physical_trait_hidden_4
         self.white_patches_tint = white_patches_tint
         self.cat_sprites =  {
             "kitten": kitten_sprite if kitten_sprite is not None else random.randint(0, 2),
@@ -437,6 +467,7 @@ class Pelt:
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
         new_pelt.init_tint()
+        new_pelt.init_physical_traits(parents)
 
         return new_pelt
 
@@ -1225,6 +1256,154 @@ class Pelt:
                 self.white_patches_tint = "none"
         else:
             self.white_patches_tint = "none"
+
+    def init_physical_traits(self, parents: tuple=()):
+        
+        trait_categories = [
+            Pelt.physical_trait_teeth,
+            Pelt.physical_trait_ear_type,
+            Pelt.physical_trait_ear_fold,
+            Pelt.physical_trait_headfur,
+            Pelt.physical_trait_cheekfur,
+            Pelt.physical_trait_mane,
+            Pelt.physical_trait_fur_type,
+            Pelt.physical_trait_muzzle_type,
+            Pelt.physical_trait_tail,
+            Pelt.physical_trait_bodyfur,
+            Pelt.physical_trait_misc
+        ]
+        
+        trait_pool = [(trait, category) for category in trait_categories for trait in category]
+        
+        par_traits = set()
+        for p in parents:
+                par_traits.add(p.pelt.physical_trait_1)
+                par_traits.add(p.pelt.physical_trait_2)
+                par_traits.add(p.pelt.physical_trait_3)
+                par_traits.add(p.pelt.physical_trait_4)
+                par_traits.add(p.pelt.physical_trait_hidden)
+                par_traits.add(p.pelt.physical_trait_hidden_2)
+                par_traits.add(p.pelt.physical_trait_hidden_3)
+                par_traits.add(p.pelt.physical_trait_hidden_4)
+        
+        # Remove any None values from par_traits
+        par_traits.discard(None)
+        
+        if par_traits:
+            # Check for conflicting traits from the same category
+            for category in trait_categories:
+                clash_traits = par_traits.intersection(category)
+                if len(clash_traits) > 1:
+                    chosen_trait = random.choice(list(clash_traits))
+                    par_traits = par_traits.difference(clash_traits)
+                    par_traits.add(chosen_trait)
+            inherit_trait_chance = int(random.random() * 100)
+            if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
+                #Roll to inherit first trait, and if so, remove it from the list
+                self.physical_trait_1 = random.choice(list(par_traits))
+                par_traits.remove(self.physical_trait_1)
+                if len(par_traits) > 0:
+                    #If we have a first trait, roll to inherit a second, and if we do, remove it from the list
+                    inherit_trait_chance = int(random.random() * 100)
+                    if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
+                        self.physical_trait_2 = random.choice(list(par_traits))
+                        par_traits.remove(self.physical_trait_2)
+                        if len(par_traits) > 0:
+                            #If we have a second trait, roll to inherit a third, and if we do, remove it from the list
+                            inherit_trait_chance = int(random.random() * 100)
+                            if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
+                                self.physical_trait_3 = random.choice(list(par_traits))
+                                par_traits.remove(self.physical_trait_3)
+                                if len(par_traits) > 0:
+                                    #If we have a third trait, roll to inherit a fourth, and if we do, remove it from the list
+                                    inherit_trait_chance = int(random.random() * 100)
+                                    if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
+                                        self.physical_trait_4 = random.choice(list(par_traits))
+                                        par_traits.remove(self.physical_trait_4)
+            if len(par_traits) > 0:
+                #If there are still leftover traits, roll to inherit as hidden with a +50% chance
+                inherit_trait_chance = int((random.random() * 100) - 50)
+                if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
+                    self.physical_trait_hidden = random.choice(list(par_traits))
+                    par_traits.remove(self.physical_trait_hidden)
+                    if len(par_traits) > 0:
+                        #If there are still leftover traits, roll to inherit as hidden with a +50% chance
+                        inherit_trait_chance = int((random.random() * 100) - 50)
+                        if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
+                            self.physical_trait_hidden_2 = random.choice(list(par_traits))
+                            par_traits.remove(self.physical_trait_hidden_2)
+                            if len(par_traits) > 0:
+                                #If there are still leftover traits, roll to inherit as hidden with a +50% chance
+                                inherit_trait_chance = int((random.random() * 100) - 50)
+                                if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
+                                    self.physical_trait_hidden_3 = random.choice(list(par_traits))
+                                    par_traits.remove(self.physical_trait_hidden_3)
+                                    if len(par_traits) > 0:
+                                        #If there are still leftover traits, roll to inherit as hidden with a +50% chance
+                                        inherit_trait_chance = int((random.random() * 100) - 50)
+                                        if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
+                                            self.physical_trait_hidden_4 = random.choice(list(par_traits))
+                                            par_traits.remove(self.physical_trait_hidden_4)
+            
+        # Giving cats that inherited nothing a 50% of base chance roll for new traits
+        if not self.physical_trait_1:
+            trait_chance = int(random.random() * 100)
+            if trait_chance <= game.config["cat_generation"]["physical_trait_chance"]:
+                if trait_chance <= (0.5 * game.config["cat_generation"]["physical_trait_chance"]):
+                    traitcount = 2
+                    trait_chance = int(random.random() * 100)
+                    if trait_chance <= (0.5 * game.config["cat_generation"]["physical_trait_chance"]):
+                        traitcount = 3
+                        trait_chance = int(random.random() * 100)
+                        if trait_chance <= (0.5 * game.config["cat_generation"]["physical_trait_chance"]):
+                            traitcount = 4
+                else:
+                    traitcount = 1
+            else:
+                traitcount = 0
+                
+            if traitcount > 0:
+                # Select the first trait and its category
+                trait1, category1 = random.choice(trait_pool)
+                self.physical_trait_1 = trait1
+                
+                # Remove traits from the same category as the first trait
+                trait_pool = [(trait, category) for trait, category in trait_pool if category != category1]
+                
+                if traitcount >= 2 and trait_pool:
+                    # Select the second trait from the remaining pool
+                    trait2, category2 = random.choice(trait_pool)
+                    self.physical_trait_2 = trait2
+                    
+                    # Remove traits from the same category as the second trait
+                    trait_pool = [(trait, category) for trait, category in trait_pool if category != category2]
+                    
+                    if traitcount >= 3 and trait_pool:
+                        # Select the third trait from the remaining pool
+                        trait3, category3 = random.choice(trait_pool)
+                        self.physical_trait_3 = trait3
+                        
+                        # Remove traits from the same category as the third trait
+                        trait_pool = [(trait, category) for trait, category in trait_pool if category != category3]
+                        
+                        if traitcount == 4 and trait_pool:
+                            # Select the fourth trait from the remaining pool
+                            trait4, category4 = random.choice(trait_pool)
+                            self.physical_trait_4 = trait4
+                        else:
+                            self.physical_trait_4 = None
+                    else:
+                        self.physical_trait_3 = None
+                        self.physical_trait_4 = None
+                else:
+                    self.physical_trait_2 = None
+                    self.physical_trait_3 = None
+                    self.physical_trait_4 = None
+            else:
+                self.physical_trait_1 = None
+                self.physical_trait_2 = None
+                self.physical_trait_3 = None
+                self.physical_trait_4 = None
 
     @property
     def white(self):

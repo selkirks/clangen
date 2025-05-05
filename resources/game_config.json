@@ -188,6 +188,8 @@
 		"wildcard_tortie": 9,
 		"vit_chance": 8,
 		"random_point_chance": 5,
+		"physical_trait_chance": 20,
+		"physical_trait_inherit_chance": 50,
 		"base_extra_white": 5,
 		"max_white_amount": 2,
 		"base_extra_tortie": 3,
