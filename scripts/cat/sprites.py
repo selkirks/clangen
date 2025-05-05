@@ -129,10 +129,26 @@ class Sprites:
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours',
+            'manedcolours',  'ocelotcolours', 'lynxcolours', 'abyssiniancolours', 'cloudedcolours', 'dobermancolours', 'ghosttabbycolours', 'merlecolours', 'monarchcolours', 'oceloidcolours', 'pinstripetabbycolours', 'snowflakecolours', 'royalcolours', 'bobcatcolours', 'cheetahcolours',
             'shadersnewwhite', 'lightingnew',
-            'whitepatches', 'tortiepatchesmasks',
+            'eragonatorite', 'eragonawp', 'whitepatches', 'tortiepatchesmasks', 'minkswhite', 'voithexpatches', 'exoticwhitepatches','tortiepatchesmasks', 'minkstorties',
             'fademask', 'fadestarclan', 'fadedarkforest',
-            'symbols',
+            'symbols', 'minkswhite', 'minkstorties', 'brindlecolours', 'wildcatcolours', 'wolfcolours', 'spotscolours', 'smokepointcolours',
+            'dalmatiancolours', 'finleappatchescolours', 'eragonatorite2',
+            'steragouticolours', 'stainvoithex', 'sillyagouticolours', 'danceagouticolours', 'mimiagouticolours', 
+            'sterbengalcolours', 'sillybengalcolours', 'dancebengalcolours', 'mimibengalcolours',
+            'sterclassiccolours', 'sillyclassiccolours', 'danceclassiccolours', 'mimiclassiccolours',
+            'stermackerelcolours', 'sillymackerelcolours', 'dancemackerelcolours', 'mimimackerelcolours',
+            'stermarbledcolours', 'sillymarbledcolours', 'dancemarbledcolours', 'mimimarbledcolours',
+            'stermaskedcolours', 'sillymaskedcolours', 'dancemaskedcolours', 'mimimaskedcolours',
+            'sterrosettecolours', 'sillyrosettecolours', 'dancerosettecolours', 'mimirosettecolours',
+            'stersinglecolours', 'sillysinglecolours', 'dancesinglecolours', 'mimisinglecolours',
+            'sterstripecolours', 'sillystripecolours', 'dancestripecolours', 'mimistripecolours',
+            'stersmokecolours', 'sillysmokecolours', 'dancesmokecolours', 'mimismokecolours',
+            'stersokokecolours', 'sillysokokecolours', 'dancesokokecolours', 'mimisokokecolours',
+            'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
+            'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
+            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
 
             #OHDANS
             'flower_accessories', 'plant2_accessories', 'snake_accessories', 'smallAnimal_accessories', 'deadInsect_accessories',
@@ -258,10 +274,64 @@ class Sprites:
              'CAKE', 'ROSINA', 'PRINCESS'],
             ['LOCKET', 'BLAZEMASK', 'TEARS', 'DOUGIE']
         ]
+        # Define mink's white patches
+        minks_white_patches = [
+            ['MINKONE', 'MINKTWO', 'MINKTHREE', 'MINKFOUR', 'MINKREDTAIL', 'MINKDELILAH', 'MINKHALF', 'MINKSTREAK',
+             'MINKMASK', 'MINKSMOKE'],
+            ['MINKMINIMALONE', 'MINKMINIMALTWO', 'MINKMINIMALTHREE', 'MINKMINIMALFOUR', 'MINKOREO', 'MINKSWOOP',
+             'MINKCHIMERA', 'MINKCHEST', 'MINKARMTAIL',
+             'MINKGRUMPYFACE'],
+            ['MINKMOTTLED', 'MINKSIDEMASK', 'MINKEYEDOT', 'MINKBANDANA', 'MINKPACMAN', 'MINKSTREAMSTRIKE',
+             'MINKSMUDGED', 'MINKDAUB', 'MINKEMBER', 'MINKBRIE'],
+            ['MINKORIOLE', 'MINKROBIN', 'MINKBRINDLE', 'MINKPAIGE', 'MINKROSETAIL', 'MINKSAFI', 'MINKDAPPLENIGHT',
+             'MINKBLANKET', 'MINKBELOVED', 'MINKBODY'],
+            ['MINKSHILOH', 'MINKFRECKLED', 'MINKHEARTBEAT']
+        ]
 
+        exotic_white_patches = [
+            ['JACKAL', 'CHITAL']    
+        ]
+
+        # Define era white patches
+        era_white_patches = [
+            ['INK','WOLF','EYEV','GEM','FOX','ORCA','PINTO','FRECKLESTWO','SOLDIER',
+             'AKITA'],
+            ['CHESSBORAD','ANT','CREAMV','BUNNY','MOJO','STAINSONE','STAINST',
+              'HALFHEART','FRECKLESTHREE','KITTY'],
+            ['SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW','BOOMSTAR','MIST','LEON'],
+            ['LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO','CHAOS'],
+            ['MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY'],
+            ['MOONSTONE', 'DRIP', 'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY'],
+            ['SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK']
+        ]
         for row, patches in enumerate(white_patches):
             for col, patch in enumerate(patches):
                 self.make_group('whitepatches', (col, row), f'white{patch}')
+        for row, minkpatches in enumerate(minks_white_patches):
+            for col, minkpatch in enumerate(minkpatches):
+                self.make_group('minkswhite', (col, row), f'white{minkpatch}')
+        for row, patches in enumerate(white_patches):
+            for col, patch in enumerate(patches):
+                self.make_group('whitepatches', (col, row), f'white{patch}')
+
+        for row, patches in enumerate(exotic_white_patches):
+            for col, patch in enumerate(patches):
+                self.make_group('exoticwhitepatches', (col, row), f'white{patch}')
+
+        for row, wps in enumerate(era_white_patches):
+            for col, wp in enumerate(wps):
+                self.make_group('eragonawp', (col, row), f'white{wp}')
+
+        voithex_patches = [
+            ['BODYSTRIPE', 'BLACKBODYSTRIPE', 'BROWNBODYSTRIPE', 'GINGERBODYSTRIPE', 'TIGERBODYSTRIPE', 'BLACKTIGERBODYSTRIPE', 'BROWNTIGERBODYSTRIPE',
+             'GINGERTIGERBODYSTRIPE', 'SPRAYEDBODYSTRIPE', 'BLACKSPRAYEDBODYSTRIPE', 'BROWNSPRAYEDBODYSTRIPE', 'GINGERSPRAYEDBODYSTRIPE'],
+            ['REVERSEBODYSPRITE', 'BLACKREVERSEBODYSPRITE', 'BROWNREVERSEBODYSPRITE', 'GINGERREVERSEBODYSPRITE', 'REVERSETIGERBODYSPRITE',
+             'BLACKREVERSETIGERBODYSPRITE', 'BROWNREVERSETIGERBODYSPRITE', 'GINGERREVERSETIGERBODYSPRITE', 'REVERSELEOPARDBODYSPRITE',
+             'BLACKREVERSELEOPARDBODYSPRITE', 'BROWNREVERSELEOPARDBODYSPRITE', 'GINGERREVERSELEOPARDBODYSPRITE']
+        ]
+        for row, vopatches in enumerate(voithex_patches):
+            for col, vopatch in enumerate(vopatches):
+                self.make_group('voithexpatches', (col, row), f'white{vopatch}')
 
         # Define colors and categories
         color_categories = [
@@ -274,7 +344,27 @@ class Sprites:
             'singlecolours', 'tabbycolours', 'marbledcolours', 'rosettecolours',
             'smokecolours', 'tickedcolours', 'speckledcolours', 'bengalcolours',
             'mackerelcolours', 'classiccolours', 'sokokecolours', 'agouticolours',
-            'singlestripecolours', 'maskedcolours'
+            'singlestripecolours', 'maskedcolours', 'manedcolours', 'ocelotcolours',
+            'lynxcolours', 'royalcolours', 'abyssiniancolours', 'cloudedcolours', 'stainvoithex',
+            'dobermancolours', 'ghosttabbycolours', 'merlecolours', 'monarchcolours',
+            'oceloidcolours', 'pinstripetabbycolours', 'snowflakecolours','bobcatcolours',
+            'cheetahcolours', 'brindlecolours', 'wildcatcolours',
+            'wolfcolours', 'spotscolours', 'smokepointcolours',
+            'dalmatiancolours', 'finleappatchescolours', 'finleappatchescolours',
+            'steragouticolours', 'sillyagouticolours', 'danceagouticolours', 'mimiagouticolours',
+            'sterbengalcolours', 'sillybengalcolours', 'dancebengalcolours', 'mimibengalcolours',
+            'sterclassiccolours', 'sillyclassiccolours', 'danceclassiccolours', 'mimiclassiccolours',
+            'stermackerelcolours', 'sillymackerelcolours', 'dancemackerelcolours', 'mimimackerelcolours',
+            'stermarbledcolours', 'sillymarbledcolours', 'dancemarbledcolours', 'mimimarbledcolours',
+            'stermaskedcolours', 'sillymaskedcolours', 'dancemaskedcolours', 'mimimaskedcolours',
+            'sterrosettecolours', 'sillyrosettecolours', 'dancerosettecolours', 'mimirosettecolours',
+            'stersinglecolours', 'sillysinglecolours', 'dancesinglecolours', 'mimisinglecolours',
+            'sterstripecolours', 'sillystripecolours', 'dancestripecolours', 'mimistripecolours',
+            'stersmokecolours', 'sillysmokecolours', 'dancesmokecolours', 'mimismokecolours',
+            'stersokokecolours', 'sillysokokecolours', 'dancesokokecolours', 'mimisokokecolours',
+            'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
+            'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
+            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours'
         ]
 
         for row, colors in enumerate(color_categories):
@@ -291,10 +381,74 @@ class Sprites:
             ['ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY'],
             ['SHILOH', 'FRECKLED', 'HEARTBEAT']
         ]
+# Define mink's tortie patches
+        minks_tortie_patches = [
+            ['MINKFULLWHITE', 'MINKANY', 'MINKTUXEDO', 'MINKLITTLE', 'MINKCOLOURPOINT', 'MINKVAN', 'MINKANYTWO',
+             'MINKMOON', 'MINKPHANTOM', 'MINKPOWDER',
+             'MINKBLEACHED', 'MINKSAVANNAH', 'MINKFADESPOTS', 'MINKPEBBLESHINE'],
+            ['MINKEXTRA', 'MINKONEEAR', 'MINKBROKEN', 'MINKLIGHTTUXEDO', 'MINKBUZZARDFANG', 'MINKRAGDOLL',
+             'MINKLIGHTSONG', 'MINKVITILIGO', 'MINKBLACKSTAR',
+             'MINKPIEBALD', 'MINKCURVED', 'MINKPETAL', 'MINKSHIBAINU', 'MINKOWL'],
+            ['MINKTIP', 'MINKFANCY', 'MINKFRECKLES', 'MINKRINGTAIL', 'MINKHALFFACE', 'MINKPANTSTWO', 'MINKGOATEE',
+             'MINKVITILIGOTWO', 'MINKPAWS', 'MINKMITAINE',
+             'MINKBROKENBLAZE', 'MINKSCOURGE', 'MINKDIVA', 'MINKBEARD'],
+            ['MINKTAIL', 'MINKBLAZE', 'MINKPRINCE', 'MINKBIB', 'MINKVEE', 'MINKUNDERS', 'MINKHONEY', 'MINKFAROFA',
+             'MINKDAMIEN', 'MINKMISTER', 'MINKBELLY',
+             'MINKTAILTIP', 'MINKTOES', 'MINKTOPCOVER'],
+            ['MINKAPRON', 'MINKCAPSADDLE', 'MINKMASKMANTLE', 'MINKSQUEAKS', 'MINKSTAR', 'MINKTOESTAIL', 'MINKRAVENPAW',
+             'MINKPANTS', 'MINKREVERSEPANTS',
+             'MINKSKUNK', 'MINKKARPATI', 'MINKHALFWHITE', 'MINKAPPALOOSA', 'MINKDAPPLEPAW'],
+            ['MINKHEART', 'MINKLILTWO', 'MINKGLASS', 'MINKMOORISH', 'MINKSEPIAPOINT', 'MINKMINKPOINT', 'MINKSEALPOINT',
+             'MINKMAO', 'MINKLUNA', 'MINKCHESTSPECK',
+             'MINKWINGS', 'MINKPAINTED', 'MINKHEARTTWO', 'MINKWOODPECKER'],
+            ['MINKBOOTS', 'MINKMISS', 'MINKCOW', 'MINKCOWTWO', 'MINKBUB', 'MINKBOWTIE', 'MINKMUSTACHE',
+             'MINKREVERSEHEART', 'MINKSPARROW', 'MINKVEST',
+             'MINKLOVEBUG', 'MINKTRIXIE', 'MINKSAMMY', 'MINKSPARKLE'],
+            ['MINKRIGHTEAR', 'MINKLEFTEAR', 'MINKESTRELLA', 'MINKSHOOTINGSTAR', 'MINKEYESPOT', 'MINKREVERSEEYE',
+             'MINKFADEBELLY', 'MINKFRONT',
+             'MINKBLOSSOMSTEP', 'MINKPEBBLE', 'MINKTAILTWO', 'MINKBUDDY', 'MINKBACKSPOT', 'MINKEYEBAGS'],
+            ['MINKBULLSEYE', 'MINKFINN', 'MINKDIGIT', 'MINKKROPKA', 'MINKFCTWO', 'MINKFCONE', 'MINKMIA', 'MINKSCAR',
+             'MINKBUSTER', 'MINKSMOKEY', 'MINKHAWKBLAZE',
+             'MINKCAKE', 'MINKROSINA', 'MINKPRINCESS'],
+            ['MINKLOCKET', 'MINKBLAZEMASK', 'MINKTEARS', 'MINKDOUGIE']
+        ]
 
+        # toritemasktwo
+        torite_mask_two = [
+            ['CHAOSONE', 'CHAOSTWO', 'CHAOSTHREE', 'CHAOSFOUR', 'ERROR', 'WAVE', 'PONINTTORITE', 'MASKTORITE', 'LITTLESTAR', 'TANBUNNY'],
+            ['STRIPES', 'PINITO',  'SKULL', 'SIGHT', 'BRINDLETORITE', 'SNOW', 'ROSETTESTORITE', 'AMBERONE', 'KINTSUGIONE', 'BENGALMASK'],
+            ['SHADOW', 'RAIN', 'MGLA', 'MOONLIGHT', 'MOUSE', 'SATURN', 'MARBLETORINE', 'AMBERTWO', 'PATTERN', 'MOSS'],
+            ['MONKEY', 'BUMBLEBEE', 'KINTSUGITWO', 'STORM', 'CLASSICTORNIE', 'STRIPEONETORITE', 'MACKERELTORITE', 'AMBERTHREE', 'SHADE', 'GRAFFITI'],
+            ['AGOUTITORIE', 'BENGALTORITE', 'TABBYTORITE', 'SOKKOKETORITE', 'SPECKLEDTORITE', 'TICKEDTORIE', 'MORRO', 'AMBERFOUR', 'DOG', 'ONESPOT'],
+            
+           ]
+       # toritemaskthree
+        torite_mask_two2 = [
+            ['INK','WOLF','EYEV','GEM','FOX','ORCA','PINTO','FRECKLESTWO','SOLDIER',
+             'AKITA'],
+            ['CHESSBORAD','ANT','CREAMV','BUNNY','MOJO','STAINSONE','STAINST',
+              'HALFHEART','FRECKLESTHREE','KITTY'],
+            ['SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW','BOOMSTAR','MIST','LEON'],
+            ['LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO', 'CHAOS'],
+            ['MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY'],
+            ['MOONSTONE', 'DRIP', 'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY'],
+            ['SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK']
+          ]
         for row, masks in enumerate(tortiepatchesmasks):
             for col, mask in enumerate(masks):
                 self.make_group('tortiepatchesmasks', (col, row), f"tortiemask{mask}")
+        for row, minkmasks in enumerate(minks_tortie_patches):
+            for col, minkmask in enumerate(minkmasks):
+                self.make_group('minkstorties', (col, row), f"tortiemask{minkmask}")
+        for row, masks in enumerate(tortiepatchesmasks):
+            for col, mask in enumerate(masks):
+                self.make_group('tortiepatchesmasks', (col, row), f"tortiemask{mask}")
+        for row, maskstwo in enumerate(torite_mask_two):
+            for col, masktwo in enumerate(maskstwo):
+                self.make_group('eragonatorite', (col, row), f"tortiemask{masktwo}")
+        for row, masksthree in enumerate(torite_mask_two2):
+            for col, maskthree in enumerate(masksthree):
+                self.make_group('eragonatorite2', (col, row), f"tortiemask{maskthree}")
 
         # Define skin colors 
         skin_colors = [

@@ -187,7 +187,11 @@
 		"direct_inheritance": 15,
 		"wildcard_tortie": 9,
 		"vit_chance": 8,
-		"random_point_chance": 5
+		"random_point_chance": 5,
+		"base_extra_white": 5,
+		"max_white_amount": 2,
+		"base_extra_tortie": 3,
+		"max_tortie_amount": 2
 	},
 	"cat_name_controls": {
 		"always_name_after_appearance": false,

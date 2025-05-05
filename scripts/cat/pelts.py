@@ -9,22 +9,101 @@ from scripts.game_structure.game_essentials import game
 class Pelt:
     sprites_names = {
         "SingleColour": 'single',
+        'Stersingle': 'stersingle',
+        'Sillysingle': 'sillysingle',
+        'Dancesingle': 'dancesingle',
+        'Mimisingle': 'mimisingle',
         'TwoColour': 'single',
         'Tabby': 'tabby',
+        'Stertabby': 'stertabby',
+        'Sillytabby': 'sillytabby',
+        'Dancetabby': 'dancetabby',
+        'Mimitabby': 'mimitabby',
         'Marbled': 'marbled',
+        'Stermarbled': 'stermarbled',
+        'Sillymarbled': 'sillymarbled',
+        'Dancemarbled': 'dancemarbled',
+        'Mimimarbled': 'mimimarbled',
         'Rosette': 'rosette',
+        'Sterrosette': 'sterrosette',
+        'Sillyrosette': 'sillyrosette',
+        'Dancerosette': 'dancerosette',
+        'Mimirosette': 'mimirosette',
         'Smoke': 'smoke',
+        'Stersmoke': 'stersmoke',
+        'Sillysmoke': 'sillysmoke',
+        'Dancesmoke': 'dancesmoke',
+        'Mimismoke': 'mimismoke',
         'Ticked': 'ticked',
+        'Sterticked': 'sterticked',
+        'Sillyticked': 'sillyticked',
+        'Danceticked': 'danceticked',
+        'Mimiticked': 'mimiticked',
         'Speckled': 'speckled',
+        'Sterspeckled': 'sterspeckled',
+        'Sillyspeckled': 'sillyspeckled',
+        'Dancespeckled': 'dancespeckled',
+        'Mimispeckled': 'mimispeckled',
         'Bengal': 'bengal',
+        'Sterbengal': 'sterbengal',
+        'Sillybengal': 'sillybengal',
+        'Dancebengal': 'dancebengal',
+        'Mimibengal': 'mimibengal',
         'Mackerel': 'mackerel',
+        'Stermackerel': 'stermackerel',
+        'Sillymackerel': 'sillymackerel',
+        'Dancemackerel': 'dancemackerel',
+        'Mimimackerel': 'mimimackerel',
         'Classic': 'classic',
+        'Sterclassic': 'sterclassic',
+        'Sillyclassic': 'sillyclassic',
+        'Danceclassic': 'danceclassic',
+        'Mimiclassic': 'mimiclassic',
         'Sokoke': 'sokoke',
+        'Stersokoke': 'stersokoke',
+        'Sillysokoke': 'sillysokoke',
+        'Dancesokoke': 'dancesokoke',
+        'Mimisokoke': 'mimisokoke',
         'Agouti': 'agouti',
         'Singlestripe': 'singlestripe',
+        'Sterstripe': 'sterstripe',
+        'Sillystripe': 'sillystripe',
+        'Dancestripe': 'dancestripe',
+        'Mimistripe': 'mimistripe',
         'Masked': 'masked',
+        'Stermasked': 'stermasked',
+        'Sillymasked': 'sillymasked',
+        'Dancemasked': 'dancemasked',
+        'Mimimasked': 'mimimasked',
+        'Brindle': 'brindle',
+        'Wolf': 'wolf',
+        'Wildcat': 'wildcat',
+        'Spots': 'spots',
+        'Smokepoint': 'smokepoint',
+        'Steragouti': 'steragouti',
+        'Sillyagouti': 'sillyagouti',
+        'Danceagouti': 'danceagouti',
+        'Mimiagouti': 'mimiagouti',
+        'Finleappatches': 'finleappatches',
         'Tortie': None,
         'Calico': None,
+        'Stain': 'stain',
+        'Maned': 'maned',
+        'Ocelot': 'ocelot',
+        'Lynx': 'lynx',
+        'Dalmatian': 'dalmatian',
+        'Royal': 'royal',
+        'Bobcat': 'bobcat',
+        'Cheetah': 'cheetah',
+        'Abyssinian': 'abyssinian',
+        'Clouded': 'clouded',
+        'Doberman': 'doberman',
+        'Ghosttabby': 'ghosttabby',
+        'Merle': 'merle',
+        'Monarch': 'monarch',
+        'Oceloid': 'oceloid',
+        'Pinstripetabby': 'pinstripetabby',
+        'Snowflake': 'snowflake'
     }
 
     # ATTRIBUTES, including non-pelt related
@@ -44,15 +123,52 @@ class Pelt:
         'CHOCOLATE'
     ]
 
-    tortiepatterns = ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'MINIMALONE', 'MINIMALTWO', 'MINIMALTHREE',
-                      'MINIMALFOUR', 'HALF',
-                      'OREO', 'SWOOP', 'MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'ORIOLE',
-                      'CHIMERA', 'DAUB', 'EMBER', 'BLANKET',
-                      'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'SMUDGED', 'DAPPLENIGHT', 'STREAK', 'MASK',
-                      'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
-                      'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT']
+    tortiepatterns = ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'MINIMALONE', 'MINIMALTWO', 'MINIMALTHREE', 'MINIMALFOUR', 'HALF',
+                    'OREO', 'SWOOP', 'MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'ORIOLE', 'CHIMERA', 'DAUB', 'EMBER', 'BLANKET',
+                    'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'SMUDGED', 'DAPPLENIGHT', 'STREAK', 'MASK', 'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
+                    'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT', 'MINKFULLWHITE', 'MINKANY', 'MINKTUXEDO', 'MINKLITTLE', 'MINKCOLOURPOINT', 'MINKVAN', 'MINKANYTWO',
+            'MINKMOON', 'MINKPHANTOM', 'MINKPOWDER', 'MINKBLEACHED', 'MINKSAVANNAH', 'MINKFADESPOTS', 'MINKPEBBLESHINE', 'MINKEXTRA', 'MINKONEEAR', 'MINKBROKEN', 'MINKLIGHTTUXEDO', 'MINKBUZZARDFANG', 'MINKRAGDOLL', 
+            'MINKLIGHTSONG', 'MINKVITILIGO', 'MINKBLACKSTAR', 'MINKPIEBALD', 'MINKCURVED', 'MINKPETAL', 'MINKSHIBAINU', 'MINKOWL', 'MINKTIP', 'MINKFANCY', 'MINKFRECKLES', 'MINKRINGTAIL', 'MINKHALFFACE', 'MINKPANTSTWO', 'MINKGOATEE', 'MINKVITILIGOTWO',
+            'MINKPAWS', 'MINKMITAINE', 'MINKBROKENBLAZE', 'MINKSCOURGE', 'MINKDIVA', 'MINKBEARD', 'MINKTAIL', 'MINKBLAZE', 'MINKPRINCE', 'MINKBIB', 'MINKVEE', 'MINKUNDERS', 'MINKHONEY',
+            'MINKFAROFA', 'MINKDAMIEN', 'MINKMISTER', 'MINKBELLY', 'MINKTAILTIP', 'MINKTOES', 'MINKTOPCOVER', 'MINKAPRON', 'MINKCAPSADDLE', 'MINKMASKMANTLE', 'MINKSQUEAKS', 'MINKSTAR', 'MINKTOESTAIL', 'MINKRAVENPAW',
+                'MINKPANTS', 'MINKREVERSEPANTS', 'MINKSKUNK', 'MINKKARPATI', 'MINKHALFWHITE', 'MINKAPPALOOSA', 'MINKDAPPLEPAW', 'MINKHEART', 'MINKLILTWO', 'MINKGLASS', 'MINKMOORISH', 'MINKSEPIAPOINT', 'MINKMINKPOINT', 'MINKSEALPOINT',
+            'MINKMAO', 'MINKLUNA', 'MINKCHESTSPECK', 'MINKWINGS', 'MINKPAINTED', 'MINKHEARTTWO', 'MINKWOODPECKER', 'MINKBOOTS', 'MINKMISS', 'MINKCOW', 'MINKCOWTWO', 'MINKBUB', 'MINKBOWTIE', 'MINKMUSTACHE', 'MINKREVERSEHEART',
+            'MINKSPARROW', 'MINKVEST', 'MINKLOVEBUG', 'MINKTRIXIE', 'MINKSAMMY', 'MINKSPARKLE', 'MINKRIGHTEAR', 'MINKLEFTEAR', 'MINKESTRELLA', 'MINKSHOOTINGSTAR', 'MINKEYESPOT', 'MINKREVERSEEYE',
+            'MINKFADEBELLY', 'MINKFRONT', 'MINKBLOSSOMSTEP', 'MINKPEBBLE', 'MINKTAILTWO', 'MINKBUDDY', 'MINKBACKSPOT', 'MINKEYEBAGS', 'MINKBULLSEYE', 'MINKFINN', 'MINKDIGIT', 'MINKKROPKA', 'MINKFCTWO', 'MINKFCONE', 'MINKMIA', 'MINKSCAR',
+            'MINKBUSTER', 'MINKSMOKEY', 'MINKHAWKBLAZE', 'MINKCAKE', 'MINKROSINA', 'MINKPRINCESS', 'MINKLOCKET', 'MINKBLAZEMASK', 'MINKTEARS', 'MINKDOUGIE', 'CHAOSONE', 'CHAOSTWO', 'CHAOSTHREE', 'CHAOSFOUR', 'ERROR', 'WAVE', 'PONINTTORITE', 'MASKTORITE', 'LITTLESTAR',
+                      'TANBUNNY', 'STRIPES', 'PINITO',  'SKULL', 'SIGHT', 'BRINDLETORITE', 'SNOW', 'ROSETTESTORITE', 'AMBERONE',
+                      'KINTSUGIONE', 'BENGALMASK', 'SHADOW', 'RAIN', 'MGLA', 'MOONLIGHT', 'MOUSE', 'SATURN', 'MARBLETORINE', 'AMBERTWO',
+                      'PATTERN', 'MOSS',
+                      'MONKEY', 'BUMBLEBEE', 'KINTSUGITWO', 'STORM', 'CLASSICTORNIE', 'STRIPEONETORITE', 'MACKERELTORITE',
+                      'AMBERTHREE', 'SHADE', 'GRAFFITI', 'AGOUTITORIE', 'BENGALTORITE', 'TABBYTORITE', 'SOKKOKETORITE',
+                      'SPECKLEDTORITE', 'TICKEDTORIE', 'MORRO',
+                      'AMBERFOUR', 'DOG', 'ONESPOT', 'INK','WOLF','EYEV','GEM','FOX','ORCA','PINTO','FRECKLESTWO','SOLDIER',
+                      'AKITA', 'CHESSBORAD','ANT','CREAMV','BUNNY','MOJO','STAINSONE','STAINST',
+                      'HALFHEART','FRECKLESTHREE','KITTY', 'SUNRISE','HUSKY','STATNTHREE','MASK', 'S','PAW','SWIFTPAW',
+                      'BOOMSTAR','MIST','LEON', 'LADY','LEGS','MEADOW', 'SALT','BAMBI','PRIMITVE','SKUNKSTRIPE','NEPTUNE','KARAPATITWO',
+                      'CHAOS', 'MOSCOW','HALF','CAPETOWN','SUN','BANAN','PANDA','DOVE','PINTOTWO', 'SNOWSHOE','SKY', 'MOONSTONE', 'DRIP',
+                      'CRESCENT', 'ETERNAL', 'WINGTWO', 'STARBORN',  'SPIDERLEGS', 'APPEL', 'RUG', 'LUCKY',
+                      'SOCKS', 'BRAMBLEBERRY', 'LATKA', 'ASTRONAUT', 'STORK',]
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
-                   'classic', 'sokoke', 'agouti', 'singlestripe', 'masked']
+                   'classic', 'sokoke', 'agouti', 'singlestripe', 'masked','maned', 'ocelot', 'lynx', 'royal',
+                   'bobcat', 'cheetah', 'dalmatian',
+                   'wolf', 'brindle', 'spots', 'smokepoint',
+                   'finleappatches', 'wildcat',
+                   'steragouti', 'sillyagouti', 'danceagouti', 'mimiagouti', 
+                   'sterbengal', 'sillybengal', 'dancebengal', 'mimibengal',
+                   'sterclassic', 'sillyclassic', 'danceclassic', 'mimiclassic',
+                   'stermackerel', 'sillymackerel', 'dancemackerel', 'mimimackerel',
+                   'stermarbled', 'sillymarbled', 'dancemarbled', 'mimimarbled',
+                   'stermasked', 'sillymasked', 'dancemasked', 'mimimasked',
+                   'sterrosette', 'sillyrosette', 'dancerosette', 'mimirosette',
+                   'stersingle', 'sillysingle', 'dancesingle', 'mimisingle',
+                   'sterstripe', 'sillystripe', 'dancestripe', 'mimistripe',
+                   'stersmoke', 'sillysmoke', 'dancesmoke', 'mimismoke',
+                   'stersokoke', 'sillysokoke', 'dancesokoke', 'mimisokoke',
+                   'sterspeckled', 'sillyspeckled', 'dancespeckled', 'mimispeckled',
+                   'stertabby', 'sillytabby', 'dancetabby', 'mimitabby',
+                   'sterticked', 'sillyticked', 'danceticked', 'mimiticked', 'abyssinian', 'clouded', 'doberman', 'ghosttabby', 'merle',
+                   'monarch', 'oceloid', 'pinstripetabby', 'snowflake', 'stain']
 
     pelt_length = ["short", "medium", "long"]
     #please dontjudge the eye_colours section
@@ -146,10 +262,19 @@ class Pelt:
     tail2_accessories = ["SEAWEED", "DAISY CORSAGE"]
 
 
-    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
-    spotted = ["Speckled", "Rosette"]
-    plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe"]
-    exotic = ["Bengal", "Marbled", "Masked"]
+    tabbies = ["Tabby", "Ticked", "Mackerel", "Stermackerel", "Sillymackerel", "Dancemackerel", "Mimimackerel", 
+               "Classic", "Sterclassic", "Sillyclassic", "Danceclassic", "Mimiclassic",
+               "Sokoke", "Stersokoke", "Sillysokoke", "Dancesokoke", "Mimisokoke",
+               "Agouti", "Steragouti", "Sillyagouti", "Danceagouti", "Mimiagouti", "Royal", "Brindle", "Ghosttabby", "Pinstripetabby"]
+    spotted = ["Speckled", "Sterspeckled", "Sillyspeckled", "Dancespeckled", "Mimispeckled", 
+               "Rosette", "Sterrosette", "Sillyrosette", "Dancerosette", "Mimirosette", 
+               "Lynx", "Bobcat", "Spots", "Merle"]
+    plain = ["SingleColour", "Stersingle", "Sillysingle", "Dancesingle", "Mimisingle",
+             "TwoColour", "Smoke", "Stersmoke", "Sillysmoke", "Dancesmoke", "Mimismoke",
+             "Singlestripe", "Sterstripe", "Dancestripe", "Sillystripe", "Mimistripe", "Smokepoint", "Doberman", "Stain"]
+    exotic = ["Bengal", "Sterbengal", "Sillybengal", "Dancebengal", "Mimibengal", 
+              "Marbled", "Stermarbled", "Sillymarbled", "Dancemarbled", "Mimimarbled",
+              "Masked", "Stermasked", "Sillymasked", "Dancemasked", "Mimimasked", "Maned", "Ocelot", "Cheetah", "Wildcat", "Wolf", "Finleappatches", "Dalmatian", "Abyssinian", "Clouded", "Snowflake", "Oceloid", "Monarch"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
@@ -180,24 +305,34 @@ class Pelt:
              'AUTUMN LEAF', 'RUBY', 'PHANTOM', 'RIVER MOSS', 'WICKED'
     ]
     little_white = ['LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
-                    'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY',
-                    'LUNA',
-                    'EXTRA', 'MUSTACHE', 'REVERSEHEART', 'SPARKLE', 'RIGHTEAR', 'LEFTEAR', 'ESTRELLA', 'REVERSEEYE',
-                    'BACKSPOT',
-                    'EYEBAGS', 'LOCKET', 'BLAZEMASK', 'TEARS']
+                    'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY', 'LUNA',
+                    'EXTRA', 'MUSTACHE', 'REVERSEHEART', 'SPARKLE', 'RIGHTEAR', 'LEFTEAR', 'ESTRELLA', 'REVERSEEYE', 'BACKSPOT',
+                    'EYEBAGS', 'LOCKET', 'BLAZEMASK', 'TEARS', 'MINKMINIMALONE', 'MINKMINIMALTWO', 'MINKMINIMALTHREE',
+                    'MINKMINIMALFOUR', 'MINKMASK', 'MINKCHEST', 'MINKSIDEMASK', 'MINKEMBER', 'MINKORIOLE', 'MINKONE', 'MINKDAPPLENIGHT', 'MINKSAFI', 'SOLDIER', 'AKITA', 'FRECKLESTHREE','KITTY',
+                    'MASK', 'PAW', 'BOOMSTAR', 'LEGS', 'DOVE', 'CRESCENT', 'SPIDERLEGS', 'APPEL', 'BODYSTRIPE', 'BLACKBODYSTRIPE', 'BROWNBODYSTRIPE', 'GINGERBODYSTRIPE', 'SPRAYEDBODYSTRIPE', 'BLACKSPRAYEDBODYSTRIPE',
+                    'BROWNSPRAYEDBODYSTRIPE', 'GINGERSPRAYEDBODYSTRIPE']
     mid_white = ['TUXEDO', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS',
-                 'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE',
-                 'VEST',
-                 'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'DOUGIE']
+                'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE', 'VEST',
+                'FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'DOUGIE', 'MINKROSETAIL', 'MINKTWO',
+                'MINKFOUR', 'MINKREDTAIL', 'MINKSTREAK', 'MINKARMTAIL', 'MINKSTREAMSTRIKE', 'MINKDAUB', 'MINKBRIE', 'MINKROBIN',
+                'MINKBLANKET', 'MINKBELOVED', 'MINKHEARTBEAT', 'MINKCHIMERA', 'MINKEYEDOT', 'MINKSHILOH', 'INK', 'GEM', 'FOX','ORCA', 'MOJO', 'HALFHEART', 'LEON', 'MEADOW', 'BAMBI', 'SKUNKSTRIPE', 'BANAN',
+                 'MOONSTONE', 'WINGTWO', 'STARBORN', 'RUG']
     high_white = ['ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
-                  'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
-                  'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
-                  'SAMMY', 'FRONT', 'BLOSSOMSTEP', 'BULLSEYE', 'FINN', 'SCAR', 'BUSTER', 'HAWKBLAZE', 'CAKE']
+                'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
+                'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
+                'SAMMY', 'FRONT', 'BLOSSOMSTEP', 'BULLSEYE', 'FINN', 'SCAR', 'BUSTER', 'HAWKBLAZE', 'CAKE', 'CHITAL',
+                'MINKTHREE', 'MINKOREO', 'WOLF', 'PINTO', 'CHESSBORAD', 'SUNRISE','HUSKY', 'S', 'STATNTHREE', 'MIST', 'LADY', 'HALF', 'SUN',
+                  'PINTOTWO', 'SKY', 'MINKGRUMPYFACE', 'MINKPACMAN', 'MINKPAIGE', 'MINKMOTTLED', 'MINKDELILAH', 'TIGERBODYSTRIPE', 'BLACKTIGERBODYSTRIPE', 'BROWNTIGERBODYSTRIPE', 'GINGERTIGERBODYSTRIPE']
     mostly_white = ['VAN', 'ONEEAR', 'LIGHTSONG', 'TAIL', 'HEART', 'MOORISH', 'APRON', 'CAPSADDLE',
-                    'CHESTSPECK', 'BLACKSTAR', 'PETAL', 'HEARTTWO', 'PEBBLESHINE', 'BOOTS', 'COW', 'COWTWO', 'LOVEBUG',
-                    'SHOOTINGSTAR', 'EYESPOT', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA']
-    point_markings = ['COLOURPOINT', 'RAGDOLL', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT']
-    vit = ['VITILIGO', 'VITILIGOTWO', 'MOON', 'PHANTOM', 'KARPATI', 'POWDER', 'BLEACHED', 'SMOKEY']
+                    'CHESTSPECK', 'BLACKSTAR', 'PETAL', 'HEARTTWO','PEBBLESHINE', 'BOOTS', 'COW', 'COWTWO', 'LOVEBUG',
+                    'SHOOTINGSTAR', 'BUNNY', 'STAINSONE',
+                    'STAINST', 'SWIFTPAW', 'DRIP',  'PRIMITVE', 'KARAPATITWO','CHAOS',
+                    'MOSCOW', 'PANDA', 'LUCKY', 'EYESPOT', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA', 'MINKHALF', 'MINKBANDANA','MINKSWOOP', 'REVERSEBODYSPRITE', 'BLACKREVERSEBODYSPRITE', 'BROWNREVERSEBODYSPRITE', 'GINGERREVERSEBODYSPRITE',
+                    'REVERSETIGERBODYSPRITE', 'BLACKREVERSETIGERBODYSPRITE', 'BROWNREVERSETIGERBODYSPRITE', 'GINGERREVERSETIGERBODYSPRITE',
+                    'REVERSELEOPARDBODYSPRITE', 'BLACKREVERSELEOPARDBODYSPRITE', 'BROWNREVERSELEOPARDBODYSPRITE', 'GINGERREVERSELEOPARDBODYSPRITE']
+    point_markings = ['COLOURPOINT', 'ANT', 'CAPETOWN',
+                      'SNOWSHOE', 'ETERNAL', 'RAGDOLL', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT', 'MINKSMOKE', 'MINKBODY']
+    vit = ['VITILIGO', 'VITILIGOTWO', 'MOON', 'PHANTOM', 'KARPATI', 'POWDER', 'BLEACHED', 'SMOKEY', 'MINKBRINDLE', 'MINKFRECKLED', 'MINKSMUDGED','JACKAL', 'EYEV', 'FRECKLESTWO', 'CREAMV', 'SALT', 'NEPTUNE']
     white_sprites = [
         little_white, mid_white, high_white, mostly_white, point_markings, vit, 'FULLWHITE']
 
@@ -335,12 +470,6 @@ class Pelt:
             if self.tortiepattern == "solid":
                 self.tortiepattern = "single"
 
-        if self.white_patches in convert_dict["old_creamy_patches"]:
-            self.white_patches = convert_dict["old_creamy_patches"][self.white_patches]
-            self.white_patches_tint = "darkcream"
-        elif self.white_patches in ['SEPIAPOINT', 'MINKPOINT', 'SEALPOINT']:
-            self.white_patches_tint = "none"
-
         # Eye Color Convert Stuff
         if self.eye_colour == "BLUE2":
             self.eye_colour = "COBALT"
@@ -409,7 +538,12 @@ class Pelt:
 
         # White patches must be initalized before eye color.
         num = game.config["cat_generation"]["base_heterochromia"]
-        if self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE'] or self.colour == 'WHITE':
+        if (
+            self.white_patches in Pelt.high_white
+            or self.white_patches in Pelt.mostly_white
+            or self.white_patches == "FULLWHITE"
+            or self.colour == "WHITE"
+        ):
             num = num - 90
         if self.white_patches == 'FULLWHITE' or self.colour == 'WHITE':
             num -= 10
@@ -532,7 +666,7 @@ class Pelt:
         if torbie:
             # If it is tortie, the chosen pelt above becomes the base pelt.
             chosen_tortie_base = chosen_pelt
-            if chosen_tortie_base in ["TwoColour", "SingleColour"]:
+            if chosen_tortie_base in ["TwoColour", "SingleColour", "Stersingle", "Sillysingle", "Dancesingle", "Mimisingle"]:
                 chosen_tortie_base = "Single"
             chosen_tortie_base = chosen_tortie_base.lower()
             chosen_pelt = random.choice(Pelt.torties)
@@ -779,7 +913,19 @@ class Pelt:
             if not self.tortiebase:
                 self.tortiebase = choice(Pelt.tortiebases)
             if not self.pattern:
-                self.pattern = choice(Pelt.tortiepatterns)
+                chosen_pattern = set()
+                chosen_pattern.add(choice(Pelt.tortiepatterns))
+
+                num = game.config["cat_generation"]["base_extra_tortie"]
+
+                for x in range(game.config["cat_generation"]["max_tortie_amount"] - 1):
+                    if not random.randint(0, num):
+
+                        chosen_pattern.add(choice(Pelt.tortiepatterns))
+                        num += 3
+
+
+                self.pattern = list(chosen_pattern)
 
             wildcard_chance = game.config["cat_generation"]["wildcard_tortie"]
             if self.colour:
@@ -800,9 +946,14 @@ class Pelt:
 
                 else:
                     # Normal generation
-                    if self.tortiebase in ["singlestripe", "smoke", "single"]:
-                        self.tortiepattern = choice(['tabby', 'mackerel', 'classic', 'single', 'smoke', 'agouti',
-                                                     'ticked'])
+                    if self.tortiebase in ["singlestripe", "sterstripe", "sillystripe", "dancestripe", "mimistripe", 
+                                           "smoke","stersmoke", "sillysmoke", "dancesmoke", "mimismoke", "mimisingle", "single", "smokepoint"]:
+                        self.tortiepattern = choice(['tabby', 'stertabby', 'sillytabby', 'dancetabby', 'mimitabby',
+                                                     'mackerel', 'stermackerel', 'sillymackerel', 'dancemackerel', 'mimimackerel',  
+                                                     'classic', 'sterclassic', 'sillyclassic', 'danceclassic', 'mimiclassic', 'single', 'smoke',
+                                                     'stersmoke', 'sillysmoke', 'dancesmoke', 'mimismoke', "mimisingle", 'agouti', 'steragouti', 'sillyagouti', 'danceagouti', 'mimiagouti',
+                                                     'ticked', 'sterticked', 'sillyticked', 'danceticked', 'mimiticked',
+                                                     'brindle', 'spots'])
                     else:
                         self.tortiepattern = random.choices([self.tortiebase, 'single'], weights=[97, 3], k=1)[0]
 
@@ -839,7 +990,7 @@ class Pelt:
         for p in parents:
             if p:
                 if p.pelt.white_patches:
-                    par_whitepatches.add(p.pelt.white_patches)
+                    par_whitepatches.add(choice(p.pelt.white_patches))
                 if p.pelt.points:
                     par_points.append(p.pelt.points)
 
@@ -861,9 +1012,19 @@ class Pelt:
                     if p in Pelt.little_white + Pelt.mid_white:
                         _temp.remove(p)
 
+            chosen_white_patches = set()
             # Only proceed with the direct inheritance if there are white patches that match the pelt.
             if _temp:
-                self.white_patches = choice(list(_temp))
+                chosen_white_patches.add(choice(list(_temp)))
+                for x in range(game.config["cat_generation"]["max_white_amount"] - 1):
+                    if not random.randint(0, game.config["cat_generation"]["base_extra_white"]):
+                        for p in chosen_white_patches:
+                            if p in _temp:
+                                _temp.remove(p)
+                        if _temp:
+                            chosen_white_patches.add(choice(list(_temp)))
+
+                self.white_patches = list(chosen_white_patches)
 
                 # Direct inheritance also effect the point marking.
                 if par_points and self.name != "Tortie":
@@ -926,11 +1087,39 @@ class Pelt:
             if not any(weights):
                 weights = [2, 1, 0, 0, 0]
 
-        chosen_white_patches = choice(
+        chosen_white_patches = set()
+        chosen_white_patches.add(choice(
             random.choices(white_list, weights=weights, k=1)[0]
-        )
+        ))
 
-        self.white_patches = chosen_white_patches
+        num = game.config["cat_generation"]["base_extra_white"]
+        
+        if any(white in Pelt.high_white for white in chosen_white_patches):
+            num -= 2
+        elif any(white in Pelt.little_white for white in chosen_white_patches) or any(white in Pelt.mid_white for white in chosen_white_patches):
+            num -= 5
+
+        for p in parents:
+            if p:
+                if not p.pelt.white_patches:
+                    num += 1
+                elif len(p.pelt.white_patches) >= 2:
+                    num -= 1
+
+        if num < 0:
+            num = 1
+
+        for x in range(game.config["cat_generation"]["max_white_amount"] - 1):
+            if not random.randint(0, num):
+
+                weights = (12, 10, 3, 0, 0)
+                chosen_white_patches.add(choice(
+                    random.choices(white_list, weights=weights, k=1)[0]
+                ))
+                num += 1
+
+
+        self.white_patches = list(chosen_white_patches)
         if self.points and self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE']:
             self.points = None
 
@@ -951,16 +1140,36 @@ class Pelt:
         else:
             weights = (10, 10, 10, 10, 1)
 
+        chosen_white_patches = set()
         white_list = [Pelt.little_white, Pelt.mid_white, Pelt.high_white, Pelt.mostly_white, ['FULLWHITE']]
-        chosen_white_patches = choice(
+        chosen_white_patches.add(choice(
             random.choices(white_list, weights=weights, k=1)[0]
-        )
+        ))
 
-        self.white_patches = chosen_white_patches
+        num = game.config["cat_generation"]["base_extra_white"]
+        
+        if any(white in Pelt.high_white for white in chosen_white_patches):
+            num -= 2
+        elif any(white in Pelt.little_white for white in chosen_white_patches) or any(white in Pelt.mid_white for white in chosen_white_patches):
+            num -= 5
+
+        if num < 0:
+            num = 1
+
+        for x in range(game.config["cat_generation"]["max_white_amount"] - 1):
+            if not random.randint(0, num):
+
+                weights = (12, 10, 3, 0, 0)
+                chosen_white_patches.add(choice(
+                    random.choices(white_list, weights=weights, k=1)[0]
+                ))
+                num += 1
+
+        self.white_patches = list(chosen_white_patches)
         if self.points and self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE']:
             self.points = None
 
-    def init_white_patches(self, pelt_white, parents: tuple):
+    def init_white_patches(self, pelt_white, parents:tuple):
         # Vit can roll for anyone, not just cats who rolled to have white in their pelt. 
         par_vit = []
         for p in parents:
@@ -1082,7 +1291,77 @@ class Pelt:
             "Singlestripe": "dorsal-striped c_n",
             "Rosette": "unusually spotted c_n",
             "Sokoke": "c_n tabby",
-            "Masked": "masked c_n tabby"
+            "Masked": "masked c_n tabby",
+            "Sillyspeckled": "speckled c_n",
+            "Dancespeckled": "speckled c_n",
+            "Mimispeckled": "speckled c_n",
+            "Sterbengal": "unusually dappled c_n",
+            "Sillybengal": "unusually dappled c_n",
+            "Dancebengal": "unusually dappled c_n",
+            "Mimibengal": "unusually dappled c_n",
+            "Stermarbled": "c_n tabby",
+            "Sillymarbled": "c_n tabby",
+            "Dancemarbled": "c_n tabby",
+            "Mimimarbled": "c_n tabby",
+            "Stersmoke": "c_n smoke",
+            "Sillysmoke": "c_n smoke",
+            "Dancesmoke": "c_n smoke",
+            "Mimismoke": "c_n smoke",
+            "Stermackerel": "c_n tabby",
+            "Sillymackerel": "c_n tabby",
+            "Dancemackerel": "c_n tabby",
+            "Mimimackerel": "c_n tabby",
+            "Sterclassic": "c_n tabby",
+            "Sillyclassic": "c_n tabby",
+            "Danceclassic": "c_n tabby",
+            "Mimiclassic": "c_n tabby",
+            "Steragouti": "c_n tabby",
+            "Sillyagouti": "c_n tabby",
+            "Danceagouti": "c_n tabby",
+            "Mimiagouti": "c_n tabby",
+            "Sterstripe": "dorsal-striped c_n",
+            "Sillystripe": "dorsal-striped c_n",
+            "Dancestripe": "dorsal-striped c_n",
+            "Mimistripe": "dorsal-striped c_n",
+            "Sterrosette": "unusually spotted c_n",
+            "Sillyrosette": "unusually spotted c_n",
+            "Dancerosette": "unusually spotted c_n",
+            "Mimirosette": "unusually spotted c_n",
+            "Stersokoke": "c_n tabby",
+            "Sillysokoke": "c_n tabby",
+            "Dancesokoke": "c_n tabby",
+            "Mimisokoke": "c_n tabby",
+            "Stermasked": "masked c_n tabby",
+            "Sillymasked": "masked c_n tabby",
+            "Dancemasked": "masked c_n tabby",
+            "Mimimasked": "masked c_n tabby",
+            "Mimisingle": "single color c_n",
+            "Stersingle": "single-striped c_n",
+            "Sillysingle": "single color c_n",
+            "Dancesingle": "single color c_n",
+            "Maned": "oddly caped c_n",
+            "Ocelot": "oddly dappled c_n",
+            "Lynx": "flecked c_n",
+            "Dalmatian": "flecked c_n",
+            "Royal": "dappled c_n",
+            "Bobcat": "spotted c_n",
+            "Cheetah": "unusually speckled c_n",
+            "Brindle": "c_n tabby",
+            "Wildcat": "unusually tabby c_n",
+            "Wolf": "resembling a wolf c_n",
+            "Spots": "c_n spot",
+            "Smokepoint": "c_n smoke",
+            "Finleappatches": "c_n ticked",
+            "Abyssinian": "c_n oddly ticked",
+            "Clouded": "oddly swirled c_n",
+            "Doberman": "c_n dog-like",
+            "Ghosttabby": "softly-striped c_n",
+            "Merle": "colorfully splashed c_n",
+            "Monarch": "uniquely spotted c_n",
+            "Oceloid": "oddly spotted c_n",
+            "Pinstripetabby": "strangely striped c_n",
+            "Snowflake": "oddly dappled c_n",
+            "Stain": "stained c_n",
         }
 
         # Start with determining the base color name

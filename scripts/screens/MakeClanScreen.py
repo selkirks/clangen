@@ -1994,7 +1994,7 @@ class MakeClanScreen(Screens):
         pelts_tortie.remove("SingleColour")
         # pelts_tortie.remove("TwoColour")
         # pelts_tortie.append("Single")
-        permanent_conditions = ['born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches']
+        permanent_conditions = ['born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome']
 
         white_patches = ["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white
         self.pname= random.choice(pelts) if random.randint(1,3) == 1 else "Tortie"
@@ -2010,13 +2010,60 @@ class MakeClanScreen(Screens):
         self.vitiligo=choice(Pelt.vit) if random.randint(1,20) == 1 else None
         self.points=choice(Pelt.point_markings) if random.randint(1,5) == 1 else None
         self.scars=[choice(Pelt.scars1 + Pelt.scars2 + Pelt.scars3)] if random.randint(1,10) == 1 else []
-        self.tint=choice(["pink", "gray", "red", "orange", "black", "yellow", "purple", "blue","dilute","warmdilute","cooldilute"]) if random.randint(1,5) == 1 else None
+        self.tint=choice(["pink", "gray", "red", "orange", "black", "yellow", "purple", "blue","dilute","warmdilute","cooldilute", "blush", "rosy", "redwood", "maroon", "sandy", "beige", "coral", "tan", "cream", "yolk", "gold", "rust", "lightpurple", "darkpurple", "bananaone", "bananatwo", "sunny", "peach", "salmon", "buttercup", "fall", "willow", "lilac", "plum", "cadet", "cobalt", "bluesky", "browngray", "grapefruit", "lightpink", "green", "flower", "kiwi", "dullgreen", "olive", "sky", "lightblue", "tan", "cream", "bluesky", "browngray", "bluegray", "cadet", "flint", "storm", "darkpurple", "cobalt", "steel", "ebony", "sunrise", "lightorange", "periwinkle", "navy", "graygreen", "flint", "acacia", "bronze", "sooty", "plum", "lilac", "cadet", "cobalt", "bluegray", "darkpurple", "ebony", "sunrise", "pinkgray", "flower", "sunflower", "wood", "dust"]) if random.randint(1,5) == 1 else None
         self.skin=choice(Pelt.skin_sprites)
         self.white_patches_tint=choice(["offwhite", "cream", "darkcream", "gray", "pink"]) if random.randint(1,5) == 1 else None
         self.reverse= False if random.randint(1,2) == 1 else True
         self.skill = "Random"
         self.sex = random.choice(["male", "female"])
-        self.personality = choice(['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug'])
+        self.personality = choice(['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug', "wishful",
+        "indecisive",
+        "abrupt",
+        "solemn",
+        "dreary",
+        "entitled",
+        "goody-no-claws",
+        "CHAOS CHAOS",
+        "distrusting",
+        "nosy",
+        "moody",
+        "nasty",
+        "spoiled",
+        "sillay",
+        "sly",
+        "mature",
+        "salty",
+        "spicy",
+        "apologetic",
+        "whiny",
+        "bubbly",
+        "picky",
+        "cheeky",
+        "impressionable",
+        "high-spirited",
+        "crybaby",
+        "morbid",
+        "earnest",
+        "tiny",
+        "obedient",
+        "colorful",
+        "clingy",
+        "zoomy",
+        "grim",
+        "prim",
+        "jokester",
+        "tender",
+        "slug",
+        "curious",
+        "defiant",
+        "wild",
+        "bright",
+        "sloppy",
+        "rowdy",
+        "complex",
+        "emotional",
+        "threat to society",
+        "protective"])
 
         self.accessories = [choice(Pelt.plant_accessories + Pelt.wild_accessories + Pelt.collars + Pelt.flower_accessories + Pelt.plant2_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories)] if random.randint(1,5) == 1 else []
 
@@ -2068,12 +2115,12 @@ class MakeClanScreen(Screens):
             name=self.pname,
             length=self.length,
             colour=self.colour,
-            white_patches=self.white_patches,
+            white_patches=[self.white_patches] if self.white_patches else [],
             eye_color=self.eye_colour,
             eye_colour2=self.eye_colour2,
             tortiebase=self.tortiebase,
             tortiecolour=self.tortiecolour,
-            pattern=self.pattern,
+            pattern=[self.pattern] if self.pattern else [],
             tortiepattern=self.tortiepattern.lower() if self.tortiepattern else None,
             vitiligo=self.vitiligo,
             points=self.points,
@@ -2960,7 +3007,54 @@ class MakeClanScreen(Screens):
                     y_pos += 40
 
             y_pos = 0
-            traits = ['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug']
+            traits = ['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug', 'wishful',
+            "indecisive",
+        "abrupt",
+        "solemn",
+        "dreary",
+        "entitled",
+        "goody-no-claws",
+        "CHAOS CHAOS",
+        "distrusting",
+        "nosy",
+        "moody",
+        "nasty",
+        "spoiled",
+        "sillay",
+        "sly",
+        "mature",
+        "salty",
+        "spicy",
+        "apologetic",
+        "whiny",
+        "bubbly",
+        "picky",
+        "cheeky",
+        "impressionable",
+        "high-spirited",
+        "crybaby",
+        "morbid",
+        "earnest",
+        "tiny",
+        "obedient",
+        "colorful",
+        "clingy",
+        "zoomy",
+        "grim",
+        "prim",
+        "jokester",
+        "tender",
+        "slug",
+        "curious",
+        "defiant",
+        "wild",
+        "bright",
+        "sloppy",
+        "rowdy",
+        "complex",
+        "emotional",
+        "threat to society",
+        "protective"]
             if self.current_selection == "trait":
                 for trait in traits:
                     if 15 <= len(trait):
@@ -3124,7 +3218,7 @@ class MakeClanScreen(Screens):
                         current_index = patches.index(str(self.white_patches))
                         next_index = (current_index + num) % len(patches)
                         if patches[next_index] == "None":
-                            self.white_patches = None
+                            self.white_patches = []
                         else:
                             self.white_patches = patches[next_index]
                     elif self.current_selection == "points":
@@ -3152,8 +3246,10 @@ class MakeClanScreen(Screens):
                             current_index = pelts.index(basename)
                         else:
                             current_index = pelts.index(self.pname)
+                            print(f"self.pname = {self.pname}")
+                            print(f"pelts = {pelts}")   
                         next_index = (current_index + num) % len(pelts)
-                        if pelts[next_index] in ["SingleColour", "TwoColour", "Singlecolour"] and self.pname in ["Tortie", "Calico"]:
+                        if pelts[next_index] in ["SingleColour", "TwoColour", "Singlecolour", "TwoColour", "SingleColour"] and self.pname in ["Tortie", "Calico"]:
                             next_pelt = "single"
                         else:
                             next_pelt = pelts[next_index]
@@ -3290,7 +3386,54 @@ class MakeClanScreen(Screens):
                             if any(scar in ["LEFTBLIND", "RIGHTBLIND", "BRIGHTHEART"] for scar in self.scars):
                                 self.scars = []
                     elif self.current_selection == "trait":
-                        traits = ['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug']
+                        traits = ['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug', 'wishful',
+                                  "indecisive",
+        "abrupt",
+        "solemn",
+        "dreary",
+        "entitled",
+        "goody-no-claws",
+        "CHAOS CHAOS",
+        "distrusting",
+        "nosy",
+        "moody",
+        "nasty",
+        "spoiled",
+        "sillay",
+        "sly",
+        "mature",
+        "salty",
+        "spicy",
+        "apologetic",
+        "whiny",
+        "bubbly",
+        "picky",
+        "cheeky",
+        "impressionable",
+        "high-spirited",
+        "crybaby",
+        "morbid",
+        "earnest",
+        "tiny",
+        "obedient",
+        "colorful",
+        "clingy",
+        "zoomy",
+        "grim",
+        "prim",
+        "jokester",
+        "tender",
+        "slug",
+        "curious",
+        "defiant",
+        "wild",
+        "bright",
+        "sloppy",
+        "rowdy",
+        "complex",
+        "emotional",
+        "threat to society",
+        "protective"]
                         current_index = traits.index(self.personality)
                         next_index = (current_index + num) % len(traits)
                         self.personality = traits[next_index]
@@ -3326,7 +3469,7 @@ class MakeClanScreen(Screens):
                     elif self.current_selection == "pelt_colour":
                         self.colour = random.choice(Pelt.pelt_colours)
                     elif self.current_selection == "white_patches":
-                        self.white_patches = random.choice(["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white + [None])
+                        self.white_patches = [random.choice(["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white + [None])]
                     elif self.current_selection == "points":
                         self.points = random.choice(Pelt.point_markings + [None])
                     elif self.current_selection == "vitiligo":
@@ -3398,7 +3541,54 @@ class MakeClanScreen(Screens):
                         else:
                             self.paralyzed = False
                     elif self.current_selection == "trait":
-                        self.personality = random.choice(['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug'])
+                        self.personality = random.choice(['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug', 'wishful',
+        "indecisive",
+        "abrupt",
+        "solemn",
+        "dreary",
+        "entitled",
+        "goody-no-claws",
+        "CHAOS CHAOS",
+        "distrusting",
+        "nosy",
+        "moody",
+        "nasty",
+        "spoiled",
+        "sillay",
+        "sly",
+        "mature",
+        "salty",
+        "spicy",
+        "apologetic",
+        "whiny",
+        "bubbly",
+        "picky",
+        "cheeky",
+        "impressionable",
+        "high-spirited",
+        "crybaby",
+        "morbid",
+        "earnest",
+        "tiny",
+        "obedient",
+        "colorful",
+        "clingy",
+        "zoomy",
+        "grim",
+        "prim",
+        "jokester",
+        "tender",
+        "slug",
+        "curious",
+        "defiant",
+        "wild",
+        "bright",
+        "sloppy",
+        "rowdy",
+        "complex",
+        "emotional",
+        "threat to society",
+        "protective"])
                     elif self.current_selection == "skill":
                         skill_choices = []
                         for i in self.skills:
@@ -4025,12 +4215,12 @@ class MakeClanScreen(Screens):
             name=self.pname,
             length=self.length,
             colour=self.colour,
-            white_patches=self.white_patches,
+            white_patches=[self.white_patches] if self.white_patches else [],
             eye_color=self.eye_colour,
             eye_colour2=self.eye_colour2,
             tortiebase=self.tortiebase,
             tortiecolour=self.tortiecolour,
-            pattern=self.pattern,
+            pattern=[self.pattern] if [self.pattern] else [],
             tortiepattern=self.tortiepattern.lower() if self.tortiepattern else None,
             vitiligo=self.vitiligo,
             points=self.points,
@@ -4597,3 +4787,4 @@ class MakeClanScreen(Screens):
 
 
 make_clan_screen = MakeClanScreen()
+
