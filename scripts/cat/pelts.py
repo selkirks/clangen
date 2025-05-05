@@ -232,6 +232,8 @@ class Pelt:
     wild_accessories = ['ORANGEBUTTERFLY', 'WHITEPOINSETTIA', 'MUD', 'EGGSHELLS', 'FLOWERCROWN', 'STICKS', 'ASHY PAWS', 'CORALBELLS', 'SMALL LUNA', 'LILY', 'BLUEEGGSHELLS', 'CHERRYPLUMLEAVES', 'BROWNPELT', 'MORPHO BUTTERFLY', 'SPRINGFEATHERS', 'WOODENBIRCHANTLERS', 'DOGWOOD', 'REDCROWN', 'LADYBUGS', 'GULL FEATHERS', 'EASTEREGG', 'HONEYCOMB', 'DRIEDORANGE', 'FIRBRANCHES', 'BLACK CICADA', 'GRAYPELT', 'LILIESOFTHEVALLEY', 'MONARCH BUTTERFLY', 'FORSYTHIA', 'WHITEWOOL', 'YEWS', 'MUD PAWS', 'SPARROW FEATHERS', 'LARGE COMET', 'SANVITALIAFLOWERS', 'CALLUNA', 'YELLOWCROWN', 'ROSY MOTH WINGS', 'TEETHCOLLAR', 'CREAMWOOL', 'SNAILSHELL', 'JAY FEATHERS', 'MINTLEAF', 'STRAWMANE', 'CHERRYBLOSSOM', 'MISTLETOE', 'ROESKULL', 'BELLFLOWERS', 'WOODENOAKANTLERS', 'EAGLEFEATHER', 'CATKIN', 'CICADA WINGS', 'BROWNMOSSPELT', 'LARGE LUNA', 'LILYPADCROWN', 'BLEEDINGVINES','BLEEDINGHEART', 'TULIPPETALS', 'COTONEASTERWREATH', 'RED FEATHERS', 'BLUE FEATHERS', 'SMALL COMET', 'BLUEBUTTERFLY', 'MOREFERN', 'MOTH WINGS', 'REDPOINSETTIA', 'CLOVERFLOWER', 'SLIVERDUSTPLANT', 'PANSIES', 'GRAYMOSSPELT', 'BLACKWOOL', 'GRAYWOOL', 'FERN', "STARFLOWERS", "HEARTLEAVES", "LAVENDERHEADPIECE", "LAVENDERANKLET", "HOLLY2", "HOLLYVINES", "WINTERSTOAT", "BROWNSTOAT","LAVENDERTAILWRAP", "YELLOWWISTERIA", "WATTLE", "CORKHAT", "RAINBOWLORIKEET", "BILBY", "ZOOKEEPER"]
     
     tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVER", "DAISY"]
+    bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
+                        "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
@@ -242,7 +244,21 @@ class Pelt:
         "PURPLEBOW", "MULTIBOW", "INDIGOBOW", "CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON",
         "REDNYLON", "LIMENYLON", "GREENNYLON", "RAINBOWNYLON",
         "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
-        "REDHARNESS", "NAVYHARNESS", "YELLOWHARNESS", "TEALHARNESS", "ORANGEHARNESS", "GREENHARNESS","MOSSHARNESS", "RAINBOWHARNESS", "BLACKHARNESS", "BEEHARNESS", "CREAMHARNESS","PINKHARNESS", "MAGENTAHARNESS", "PEACHHARNESS", "VIOLETHARNESS"
+        "REDHARNESS", "NAVYHARNESS", "YELLOWHARNESS", "TEALHARNESS", "ORANGEHARNESS", "GREENHARNESS",
+        "MOSSHARNESS", "RAINBOWHARNESS", "BLACKHARNESS", "BEEHARNESS", "CREAMHARNESS",
+        "PINKHARNESS", "MAGENTAHARNESS", "PEACHHARNESS", "VIOLETHARNESS",
+        "CRIMSONBANDANA", "BLUEBANDANA", "YELLOWBANDANA", "CYANBANDANA", "REDBANDANA",
+        "LIMEBANDANA" ,"GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA",
+        "PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA",
+        "CRIMSONTEETHCOLLAR", "BLUETEETHCOLLAR", "YELLOWTEETHCOLLAR", "CYANTEETHCOLLAR", "REDTEETHCOLLAR",
+        "LIMETEETHCOLLAR","GREENTEETHCOLLAR", "RAINBOWTEETHCOLLAR", "BLACKTEETHCOLLAR", "SPIKESTEETHCOLLAR",
+        "WHITETEETHCOLLAR", "PINKTEETHCOLLAR", "PURPLETEETHCOLLAR", "MULTITEETHCOLLAR", "INDIGOTEETHCOLLAR",
+        "CRIMSONTIE", "BLUETIE", "YELLOWTIE", "CYANTIE", "ORANGETIE", "LIMETIE",
+        "GREENTIE", "RAINBOWTIE", "BLACKTIE", "SPIKESTIE", "WHITETIE",
+        "PINKTIE", "PURPLETIE", "MULTITIE", "INDIGOTIE",
+        "CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES",
+        "GREENS", "RAINBOWS", "BLACKS", "SPIKESS", "WHITES",
+        "PINKS", "PURPLES", "MULTIS", "INDIGOS",
     ]
 
     # ohdan's accessories
@@ -253,7 +269,17 @@ class Pelt:
     plant2_accessories = ["SINGULARCLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"]
 
     snake_accessories = ["GRASS SNAKE", "BLUE RACER", "WESTERN COACHWHIP", "KINGSNAKE"]
-
+    bone_accessories = ["SNAKE", "BAT WINGS", "CANIDAE SKULL", "DEER ANTLERS", "RAM HORN", "GOAT HORN", "OX SKULL",
+                        "RAT SKULL", "TEETH COLLAR", "ROE SKULL",
+                        "BIRD SKULL", "RIBS", "FISH BONES"]
+    butterflies_accessories = ["PEACOCK BUTTERFLY", "DEATH HEAD HAWKMOTH", "GARDEN TIGER MOTH", "ATLAS MOTH",
+                        "CECOROPIA MOTH", "WHITE ERMINE MOTH", "IO MOTH", "COMET MOTH",
+                        "JADE HAWKMOTH", "HUMMINGBIRD HAWKMOTH", "OWL BUTTERFLY", "GLASSWING BUTTERFLY",
+                        "QUEEN ALEXANDRA BIRDWING BUTTERFLY", "GREEN DRAGONTAIL BUTTERFLY",
+                        "MENELAUS BLUE MORPHO BUTTERFLY", "DEAD LEAF BUTTERFLY"]
+    stuff_accessories = ["OLD SILVER WATCH", "OLD GOLD WATCH", "GOLDEN KEY", "SILVER KEY",
+                         "DVD", "OLD PENCIL", "OLD BRUSH", "BANANA PEEL", "BROKEN VHS TAPE",
+                         "OLD NEWSPAPER", "SEA GLASS", "BAUBLES", "MUD AND DIRT"]
     smallAnimal_accessories = ["GRAY SQUIRREL", "RED SQUIRREL", "CRAB", "WHITE RABBIT", "BLACK RABBIT",
                            "BROWN RABBIT", "INDIAN GIANT SQUIRREL", "FAWN RABBIT",
                            "BROWN AND WHITE RABBIT", "BLACK AND WHITE RABBIT", "WHITE AND FAWN RABBIT",
@@ -271,7 +297,7 @@ class Pelt:
     
     fruit_accessories = ["RASPBERRY2", "BLACKBERRY", "GOLDEN RASPBERRY", "CHERRY", "YEW"]
 
-    crafted_accessories = ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL", "LEAF BOW", "PURPLERAINCOAT", "BLUERAINCOAT", "GREENRAINCOAT", "PINKRAINCOAT", "REDRAINCOAT", "LIMERAINCOAT", "ORANGERAINCOAT", "YELLOWRAINCOAT", "POPTABS", "FAZBEAR", "WHITEBEAR", "PANDA", "BEAR", "BROWNBEAR", "TIDE", "CELESTIALCHIMES", "LUNARCHIMES", "STARCHIMES", "SILVERLUNARCHIMES", "FIDDLEHEADS", "LANTERNS", "HEARTCHARMS", "BATHARNESS", "TOAST","TOASTBERRY", "TOASTGRAPE", "TOASTNUTELLA", "TOASTPB", "EGG", 'WOODDRAGON']
+    crafted_accessories = ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL1", "LEAF BOW", "PURPLERAINCOAT", "BLUERAINCOAT", "GREENRAINCOAT", "PINKRAINCOAT", "REDRAINCOAT", "LIMERAINCOAT", "ORANGERAINCOAT", "YELLOWRAINCOAT", "POPTABS", "FAZBEAR", "WHITEBEAR", "PANDA", "BEAR", "BROWNBEAR", "TIDE", "CELESTIALCHIMES", "LUNARCHIMES", "STARCHIMES", "SILVERLUNARCHIMES", "FIDDLEHEADS", "LANTERNS", "HEARTCHARMS", "BATHARNESS", "TOAST","TOASTBERRY", "TOASTGRAPE", "TOASTNUTELLA", "TOASTPB", "EGG", 'WOODDRAGON']
 
     tail2_accessories = ["SEAWEED", "DAISY CORSAGE"]
 
@@ -546,17 +572,6 @@ class Pelt:
                 self.cat_sprites['senior'] = 13
             elif self.cat_sprites['senior'] == 5:
                 self.cat_sprites['senior'] = 14
-        
-        if self.pattern in convert_dict["old_tortie_patches"]:
-            old_pattern = self.pattern
-            self.pattern = convert_dict["old_tortie_patches"][old_pattern][1]
-
-            # If the pattern is old, there is also a chance the base color is stored in
-            # tortiecolour. That may be different from the pelt color ("main" for torties)
-            # generated before the "ginger-on-ginger" update. If it was generated after that update,
-            # tortiecolour and pelt_colour will be the same. Therefore, let's also re-set the pelt color
-            self.colour = self.tortiecolour
-            self.tortiecolour = convert_dict["old_tortie_patches"][old_pattern][0]
             
         if self.pattern == "MINIMAL1":
             self.pattern = "MINIMALONE"
@@ -940,7 +955,11 @@ class Pelt:
                 choice(Pelt.aliveInsect_accessories),
                 choice(Pelt.fruit_accessories),
                 choice(Pelt.crafted_accessories),
-                choice(Pelt.tail2_accessories)
+                choice(Pelt.tail2_accessories),
+                choice(Pelt.bows_accessories),
+                choice(Pelt.bone_accessories),
+                choice(Pelt.butterflies_accessories),
+                choice(Pelt.stuff_accessories)
             ])
         else:
             self.accessory = None

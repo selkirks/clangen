@@ -267,7 +267,7 @@
             "accept_like": "t_c presents {PRONOUN/t_c/poss} paw to the snail and waits, enthralled, as it slowly trundles up {PRONOUN/t_c/poss} leg.",
             "accept_dislike": "t_c lets the snail climb up {PRONOUN/t_c/poss} leg, but frowns at the trail of slime it leaves on {PRONOUN/t_c/poss} fur. {PRONOUN/t_c/subject/CAP} immediately {VERB/t_c/begin/begins} licking the slime off, making a disgusted face at the taste."
         },
-        "BIRD SKULL": {
+        "BIRD SKULL1": {
             "accept_like": "t_c admires how smooth and light the tiny skull is. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} into its eye sockets for a moment, {PRONOUN/t_c/poss} expression unreadable, before attaching it to {PRONOUN/t_c/poss} fur and nodding to you.",
             "accept_dislike": "t_c seems unnerved by the bare bone and empty eye sockets. {PRONOUN/t_c/subject/CAP} {VERB/t_c/glance/glances} from a nearby songbird to the skull and back again, then {VERB/t_c/pick/picks} up your gift and {VERB/t_c/walk/walks} away."
         },

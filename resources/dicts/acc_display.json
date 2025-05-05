@@ -985,7 +985,7 @@
     "plural": "clay browncap pots",
     "singular": "clay browncap pot"
   },
-  "BIRD SKULL": {
+  "BIRD SKULL1": {
     "default": "bird skull",
     "plural": "bird skulls",
     "singular": "bird skull"
@@ -1150,6 +1150,71 @@
     "plural": "blue butterflies",
     "singular": "blue butterfly"
   },
+  "OLD SILVER WATCH": {
+  "default": "old silver watch",
+  "plural": "old silver watches",
+  "singular": "old silver watch"
+},
+"OLD GOLD WATCH": {
+  "default": "old gold watch",
+  "plural": "old gold watches",
+  "singular": "old gold watch"
+},
+"GOLDEN KEY": {
+  "default": "golden key",
+  "plural": "golden keys",
+  "singular": "golden key"
+},
+"SILVER KEY": {
+  "default": "silver key",
+  "plural": "silver keys",
+  "singular": "silver key"
+},
+"DVD": {
+  "default": "dvd",
+  "plural": "dvd's",
+  "singular": "dvd"
+},
+"OLD PENCIL": {
+  "default": "old pencil",
+  "plural": "old pencils",
+  "singular": "old pencil"
+},
+"OLD BRUSH": {
+  "default": "old brush",
+  "plural": "old brushes",
+  "singular": "old brush"
+},
+"BANANA PEEL": {
+  "default": "banana peel",
+  "plural": "banana peels",
+  "singular": "banana peel"
+},
+"BROKEN VHS TAPE": {
+  "default": "broken vhs tape",
+  "plural": "broken vhs tapes",
+  "singular": "broken vhs tape"
+},
+"OLD NEWSPAPER": {
+  "default": "old newspaper",
+  "plural": "old newspapers",
+  "singular": "old newspaper"
+},
+"SEA GLASS": {
+  "default": "sea glass",
+  "plural": "sea glass",
+  "singular": "sea glass"
+},
+"BAUBLES": {
+  "default": "baubles",
+  "plural": "baubles",
+  "singular": "bauble"
+},
+"MUD AND DIRT": {
+  "default": "mud and dirt",
+  "plural": "mud and dirt",
+  "singular": "mud and dirt"
+},
   "BROWNPELT": {
     "default": "brown hide",
     "plural": "brown hides",
@@ -1670,6 +1735,156 @@
     "plural": "bat harnesses",
     "singular": "bat harness"
   },
+  "CRIMSONTIE": {
+  "default": "crimson tie",
+  "plural": "crimson ties",
+  "singular": "crimson tie"
+},
+"BLUETIE": {
+  "default": "blue tie",
+  "plural": "blue ties",
+  "singular": "blue tie"
+},
+"CYANTIE": {
+  "default": "cyan tie",
+  "plural": "cyan ties",
+  "singular": "cyan tie"
+},
+"YELLOWTIE": {
+  "default": "yellow tie",
+  "plural": "yellow ties",
+  "singular": "yellow tie"
+},
+"LIMETIE": {
+  "default": "lime tie",
+  "plural": "lime ties",
+  "singular": "lime tie"
+},
+"GREENTIE": {
+  "default": "green tie",
+  "plural": "green ties",
+  "singular": "green tie"
+},
+"ORANGETIE": {
+  "default": "orange tie",
+  "plural": "orange ties",
+  "singular": "orange tie"
+},
+"RAINBOWTIE": {
+  "default": "rainbow tie",
+  "plural": "rainbow ties",
+  "singular": "rainbow tie"
+},
+"BLACKTIE": {
+  "default": "black tie",
+  "plural": "black ties",
+  "singular": "black tie"
+},
+"SPIKESTIE": {
+  "default": "blue and gold tie",
+  "plural": "blue and gold ties",
+  "singular": "blue and gold tie"
+},
+"WHITETIE": {
+  "default": "white tie",
+  "plural": "white ties",
+  "singular": "white tie"
+},
+"PINKTIE": {
+  "default": "pink tie",
+  "plural": "pink ties",
+  "singular": "pink tie"
+},
+"PURPLETIE": {
+  "default": "purple tie",
+  "plural": "purple ties",
+  "singular": "purple tie"
+},
+"MULTITIE": {
+  "default": "pastel pink tie",
+  "plural": "pastel pink ties",
+  "singular": "pastel pink tie"
+},
+"INDIGOTIE": {
+  "default": "indigo tie",
+  "plural": "indigo ties",
+  "singular": "indigo tie"
+},
+"CRIMSONS": {
+  "default": "crimson french scarf",
+  "plural": "crimson french scarves",
+  "singular": "crimson french scarf"
+},
+"BLUES": {
+  "default": "blue french scarf",
+  "plural": "blue french scarves",
+  "singular": "blue french scarf"
+},
+"CYANS": {
+  "default": "cyan french scarf",
+  "plural": "cyan french scarves",
+  "singular": "cyan french scarf"
+},
+"YELLOWS": {
+  "default": "yellow french scarf",
+  "plural": "yellow french scarves",
+  "singular": "yellow french scarf"
+},
+"LIMES": {
+  "default": "lime french scarf",
+  "plural": "lime french scarves",
+  "singular": "lime french scarf"
+},
+"GREENS": {
+  "default": "green french scarf",
+  "plural": "green french scarves",
+  "singular": "green french scarf"
+},
+"ORANGES": {
+  "default": "orange french scarf",
+  "plural": "orange french scarves",
+  "singular": "orange french scarf"
+},
+"RAINBOWS": {
+  "default": "rainbow french scarf",
+  "plural": "rainbow french scarves",
+  "singular": "rainbow french scarf"
+},
+"BLACKS": {
+  "default": "black french scarf",
+  "plural": "black french scarves",
+  "singular": "black french scarf"
+},
+"SPIKESS": {
+  "default": "blue and gold french scarf",
+  "plural": "blue and gold french scarves",
+  "singular": "blue and gold french scarf"
+},
+"WHITES": {
+  "default": "white french scarf",
+  "plural": "white french scarves",
+  "singular": "white french scarf"
+},
+"PINKS": {
+  "default": "pink french scarf",
+  "plural": "pink french scarves",
+  "singular": "pink french scarf"
+},
+"PURPLES": {
+  "default": "purple french scarf",
+  "plural": "purple french scarves",
+  "singular": "purple french scarf"
+},
+"MULTIS": {
+  "default": "pastel pink french scarf",
+  "plural": "pastel pink french scarves",
+  "singular": "pastel pink french scarf"
+},
+"INDIGOS": {
+  "default": "indigo french scarf",
+  "plural": "indigo french scarves",
+  "singular": "indigo french scarf"
+},
   "STARFLOWERS": {
     "default": "star flowers",
     "plural": "star flowers",
@@ -1744,6 +1959,385 @@
     "default": "brown stoat",
     "plural": "brown stoats",
     "singular": "brown stoat"
+  },
+  "CRIMSONBANDANA": {
+    "default": "crimson bandana",
+    "plural": "crimson bandanas",
+    "singular": "crimson bandana"
+  },
+  "BLUEBANDANA": {
+    "default": "blue bandana",
+    "plural": "blue bandanas",
+    "singular": "blue bandana"
+  },
+  "CYANBANDANA": {
+    "default": "cyan bandana",
+    "plural": "cyan bandanas",
+    "singular": "cyan bandana"
+  },
+  "YELLOWBANDANA": {
+    "default": "yellow bandana",
+    "plural": "yellow bandans",
+    "singular": "yellow bandana"
+  },
+  "LIMEBANDANA": {
+    "default": "lime bandana",
+    "plural": "lime bandanas",
+    "singular": "lime bandana"
+  },
+  "GREENBANDANA": {
+    "default": "green bandana",
+    "plural": "green bandanas",
+    "singular": "green bandana"
+  },
+  "REDBANDANA": {
+    "default": "orange bandana",
+    "plural": "oragne bandanas",
+    "singular": "orange bandana"
+  },
+  "RAINBOWBANDANA": {
+    "default": "rainbow bandana",
+    "plural": "rainbow bandanas",
+    "singular": "rainbow bandana"
+  },
+  "BLACKBANDANA": {
+    "default": "black bandana",
+    "plural": "black bandanas",
+    "singular": "black bandana"
+  },
+  "SPIKESBANDANA": {
+    "default": "blue and gold bandana",
+    "plural": "blue and gold bandanas",
+    "singular": "blue and gold bandana"
+  },
+  "WHITEBANDANA": {
+    "default": "white bandana",
+    "plural": "white bandanas",
+    "singular": "white bandana"
+  },
+  "PINKBANDANA": {
+    "default": "pink bandana",
+    "plural": "pink bandanas",
+    "singular": "pink bandana"
+  },
+  "PURPLEBANDANA": {
+    "default": "purple bandana",
+    "plural": "purple bandanas",
+    "singular": "purple bandana"
+  },
+  "MULTIBANDANA": {
+    "default": "pastel pink bandana",
+    "plural": "pastel pink bandanas",
+    "singular": "pastel pink bandana"
+  },
+  "INDIGOBANDANA": {
+    "default": "indigo bandana",
+    "plural": "indigo bandanas",
+    "singular": "indigo bandana"
+  },
+  "CRIMSONBOWS": {
+    "default": "crimson bows",
+    "plural": "crimson bows",
+    "singular": "crimson bows"
+  },
+  "BLUEBOWS": {
+    "default": "blue bows",
+    "plural": "blue bows",
+    "singular": "blue bows"
+  },
+  "CYANBOWS": {
+    "default": "cyan bows",
+    "plural": "cyan bows",
+    "singular": "cyan bows"
+  },
+  "YELLOWBOWS": {
+    "default": "yellow bows",
+    "plural": "yellow bows",
+    "singular": "yellow bows"
+  },
+  "LIMEBOWS": {
+    "default": "lime bows",
+    "plural": "lime bows",
+    "singular": "lime bows"
+  },
+  "GREENBOWS": {
+    "default": "green bows",
+    "plural": "green bows",
+    "singular": "green bows"
+  },
+  "REDBOWS": {
+    "default": "orange bows",
+    "plural": "oragne bows",
+    "singular": "orange bows"
+  },
+  "RAINBOWBOWS": {
+    "default": "rainbow bows",
+    "plural": "rainbow bows",
+    "singular": "rainbow bows"
+  },
+  "BLACKBOWS": {
+    "default": "black bows",
+    "plural": "black bows",
+    "singular": "black bows"
+  },
+  "SPIKESBOWS": {
+    "default": "blue and gold bows",
+    "plural": "blue and gold bows",
+    "singular": "blue and gold bows"
+  },
+  "WHITEBOWS": {
+    "default": "white bows",
+    "plural": "white bows",
+    "singular": "white bows"
+  },
+  "PINKBOWS": {
+    "default": "pink bows",
+    "plural": "pink bows",
+    "singular": "pink bows"
+  },
+  "PURPLEBOWS": {
+    "default": "purple bows",
+    "plural": "purple bows",
+    "singular": "purple bows"
+  },
+  "MULTIBOWS": {
+    "default": "pastel pink bows",
+    "plural": "pastel pink bows",
+    "singular": "pastel pink bows"
+  },
+  "INDIGOBOWS": {
+    "default": "indigo bows",
+    "plural": "indigo bows",
+    "singular": "indigo bows"
+  },
+  "CRIMSONTEETHCOLLAR": {
+    "default": "crimson dog teeth collar",
+    "plural": "crimson dog teeth collars",
+    "singular": "crimson dog teeth collar"
+  },
+  "BLUETEETHCOLLAR": {
+    "default": "blue dog teeth collar",
+    "plural": "blue dog teeth collars",
+    "singular": "blue dog teeth collar"
+  },
+  "CYANTEETHCOLLAR": {
+    "default": "cyan dog teeth collar",
+    "plural": "cyan dog teeth collars",
+    "singular": "cyan dog teeth collar"
+  },
+  "YELLOWTEETHCOLLAR": {
+    "default": "yellow dog teeth collar",
+    "plural": "yellow dog teeth collars",
+    "singular": "yellow dog teeth collar"
+  },
+  "LIMETEETHCOLLAR": {
+    "default": "lime dog teeth collar",
+    "plural": "lime dog teeth collars",
+    "singular": "lime dog teeth collar"
+  },
+  "GREENTEETHCOLLAR": {
+    "default": "green dog teeth collar",
+    "plural": "green dog teeth collars",
+    "singular": "green dog teeth collar"
+  },
+  "REDTEETHCOLLAR": {
+    "default": "red dog teeth collar",
+    "plural": "red dog teeth collars",
+    "singular": "red dog teeth collar"
+  },
+  "RAINBOWTEETHCOLLAR": {
+    "default": "rainbow dog teeth collar",
+    "plural": "rainbow dog teeth collars",
+    "singular": "rainbow dog teeth collar"
+  },
+  "BLACKTEETHCOLLAR": {
+    "default": "black dog teeth collar",
+    "plural": "black dog teeth collars",
+    "singular": "black dog teeth collar"
+  },
+  "SPIKESTEETHCOLLAR": {
+    "default": "blue and gold dog teeth collar",
+    "plural": "blue and gold dog teeth collars",
+    "singular": "blue and gold dog teeth collar"
+  },
+  "WHITETEETHCOLLAR": {
+    "default": "white dog teeth collar",
+    "plural": "white dog teeth collars",
+    "singular": "white dog teeth collar"
+  },
+  "PINKTEETHCOLLAR": {
+    "default": "pink dog teeth collar",
+    "plural": "pink dog teeth collars",
+    "singular": "pink dog teeth collar"
+  },
+  "PURPLETEETHCOLLAR": {
+    "default": "purple dog teeth collar",
+    "plural": "purple dog teeth collars",
+    "singular": "purple dog teeth collar"
+  },
+  "MULTITEETHCOLLAR": {
+    "default": "lilac dog teeth collar",
+    "plural": "lilac dog teeth collars",
+    "singular": "lilac dog teeth collar"
+  },
+  "INDIGOTEETHCOLLAR": {
+    "default": "indigo dog teeth collar",
+    "plural": "indigo dog teeth collars",
+    "singular": "indigo dog teeth collar"
+  },
+  "PEACOCK BUTTERFLY": {
+    "default": "peacock butterfly",
+    "plural": "peacock butterflies",
+    "singular": "peacock butterfly"
+    
+  },
+  "DEATH HEAD HAWKMOTH": {
+    "default": "death's-head hawkmoth",
+    "plural": "death's-head hawkmoths",
+    "singular": "death's-head hawkmoth"
+    
+  },
+  "GARDEN TIGER MOTH": {
+    "default": "garden tiger moth",
+    "plural": "garden tiger moths",
+    "singular": "garden tiger moth"
+
+  },
+  "ATLAS MOTH": {
+    "default": "atlas moth",
+    "plural": "atlas moths",
+    "singular": "atlas moth"
+  
+  },
+  "CECOROPIA MOTH": {
+    "default": "cecropia moth",
+    "plural": "cecropia moths",
+    "singular": "cecropia moth"
+  },
+  "WHITE ERMINE MOTH": {
+    "default": "white ermine moth",
+    "plural": "white ermine moths",
+    "singular": "white ermine moth"
+    
+  },
+  "IO MOTH": {
+    "default": "io moth",
+    "plural": "io moths",
+    "singular": "io moth"
+    
+  },
+  "COMET MOTH": {
+    "default": "comet moth",
+    "plural": "comet moths",
+    "singular": "comet moth"
+    
+  },
+  "JADE HAWKMOTH": {
+    "default": "jade hawkmoth",
+    "plural": "jade hawkmoths",
+    "singular": "jade hawkmoth"
+    
+  },
+  "HUMMINGBIRD HAWKMOTH": {
+    "default": "hummingbird hawkmoth",
+    "plural": "hummingbird hawkmoths",
+    "singular": "hummingbird hawkmoth"
+    
+  },
+  "OWL BUTTERFLY": {
+    "default": "owl butterfly",
+    "plural": "owl butterflies",
+    "singular": "owl butterfly"
+  },
+  "GLASSWING BUTTERFLY": {
+    "default": "glasswing butterfly",
+    "plural": "glasswing butterflies",
+    "singular": "glasswing butterfly"
+    
+  },
+  "QUEEN ALEXANDRA BIRDWING BUTTERFLY": {
+    "default": "Queen Alexandra's birdwing butterfly",
+    "plural": "birdwing butterflies",
+    "singular": "birdwing butterfly"
+    
+  },
+  "GREEN DRAGONTAIL BUTTERFLY": {
+    "default": "green dragontail butterfly",
+    "plural": "green dragontail butterflies",
+    "singular": "green dragontail butterfly"
+    
+  },
+  "MENELAUS BLUE MORPHO BUTTERFLY": {
+    "default": "menelaus blue morpho butterfly",
+    "plural": "blue morpho butterflies",
+    "singular": "blue morpho butterfly"
+    
+  },
+  "DEAD LEAF BUTTERFLY": {
+    "default": "dead leaf butterfly",
+    "plural": "dead leaf butterflies",
+    "singular": "dead leaf butterfly"
+  },
+  "SNAKE": {
+    "default": "snake skeleton",
+    "plural": "snake skeletons",
+    "singular": "snake skeleton"
+  },
+  "BAT WINGS": {
+    "default": "bat wings skeleton",
+    "plural": "bat wings skeleton",
+    "singular": "bat wing skeleton"
+  },
+  "CANIDAE SKULL": {
+    "default": "canidae skull",
+    "plural": "canidae skulls",
+    "singular": "canidae skull"
+  },
+  "DEER ANTLERS": {
+    "default": "deer antlers",
+    "plural": "deer antlers",
+    "singular": "deer antler"
+  },
+  "RAM HORN": {
+    "default": "ram horn",
+    "plural": "ram horns",
+    "singular": "ram horn"
+  },
+  "GOAT HORN": {
+    "default": "goat horn",
+    "plural": "goat horns",
+    "singular": "goat horn"
+  },
+  "OX SKULL": {
+    "default": "ox skull",
+    "plural": "ox skulls",
+    "singular": "ox skull"
+  },
+  "RAT SKULL": {
+    "default": "rat skull",
+    "plural": "rat skulls",
+    "singular": "rat skull"
+  },
+  "TEETH COLLAR": {
+    "default": "teeth collar",
+    "plural": "teeth collars",
+    "singular": "teeth collar"
+ 
+  },
+  "BIRD SKULL": {
+    "default": "bird skull necklace",
+    "plural": "bird skulls necklace",
+    "singular": "bird skull necklace"
+  },
+  "RIBS": {
+    "default": "ribs",
+    "plural": "ribs",
+    "singular": "rib"
+  },
+  "FISH BONES": {
+    "default": "fish bones",
+    "plural": "fish bones",
+    "singular": "fish bone"
   },
   "WATTLE": {
     "default": "wattle",
