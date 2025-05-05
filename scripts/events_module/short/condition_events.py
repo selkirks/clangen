@@ -466,6 +466,8 @@ class Condition_Events:
             "recurring shock",
             "lasting grief",
             "persistent headaches",
+            "cleft palate",
+            "persistent headaches",
         ]
 
         got_condition = False

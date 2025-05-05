@@ -57,11 +57,39 @@
         "In the middle of camp, right as {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} about to pounce, m_c falls to the ground and begins shaking, a seizure rolling through {PRONOUN/m_c/poss} little body."
     ],
     "allergies": [
-        "m_c sneezes again, {PRONOUN/m_c/poss} frantic parent yowling about whitecough, but r_c calms everycat down. It's only allergies, and {PRONOUN/r_c/subject} {VERB/r_c/have/has} just the herbs to help.",
+        "m_c sneezes again, {PRONOUN/m_c/poss} frantic parent yowling about whitecough, but r_c calms everyone down. It's only allergies, and {PRONOUN/r_c/subject} {VERB/r_c/have/has} just the herbs to help.",
         "In the middle of playing, m_c sneezes so hard {PRONOUN/m_c/subject} {VERB/m_c/fall/falls} over. Again. This is really becoming a pattern."
     ],
     "persistent headaches": [
         "r_c notices with some concern that any time m_c opens {PRONOUN/m_c/poss} eyes, {PRONOUN/m_c/subject} {VERB/m_c/mewl/mewls} incessantly and {VERB/m_c/try/tries} to wriggle into the darkest corners of the medicine cat den. r_c suspects {PRONOUN/m_c/subject} may have chronic headaches.",
         "Rather than go outside in the bright sunlight to play with {PRONOUN/m_c/poss} littermates, m_c prefers to huddle by {PRONOUN/m_c/self} in the dark and quiet of the medicine cat den, {PRONOUN/m_c/poss} head hurting too much to move."
+    ],
+    "testosterone deficiency": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
+    ],
+    "excess testosterone": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex. "
+    ],
+    "aneuploidy": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
+    ],
+    "mosaicism": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
+    ],
+    "chimerism": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
+    ],
+    "wobbly cat syndrome": [
+        "It seems m_c constantly shakes. After being looked over by r_c, {PRONOUN/m_c/subject} {VERB/m_c/are/is} diagnosed with wobbly cat syndrome.",
+        "After being unable to stand without wobbling, it appears m_c will wobble {PRONOUN/m_c/poss} entire life. Despite this, family is reassured that m_c will live a long and healthy life- just one a bit more wobbly than others."
+    ],
+    "cleft palate": [
+        "r_c looks closely at the gap between m_c's nose and mouth. A clear sign of a cleft palate. r_c reassures that m_c will do just fine with proper treatment of symptoms!",
+        "It appears there is a gap between m_c's nose and mouth. After {PRONOUN/m_c/poss} parent looks {PRONOUN/m_c/object} over, it appears m_c has a cleft palate."
     ]
 }
