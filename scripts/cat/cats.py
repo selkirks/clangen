@@ -113,12 +113,18 @@ class Cat:
     # Ranges are inclusive to both bounds
     experience_levels_range = {
         "untrained": (0, 0),
-        "trainee": (1, 50),
-        "prepared": (51, 110),
-        "competent": (110, 170),
-        "proficient": (171, 240),
-        "expert": (241, 320),
-        "master": (321, 321),
+        "trainee": (1, 49),
+        "beginner": (50, 60),
+        "novice": (61, 90), 
+        "prepared": (91, 130),
+        "competent": (131, 170),
+        "skilled": (171, 210),
+        "proficient": (211, 250),
+        "advanced": (251, 290), 
+        "expert": (291, 330),
+        "adept": (331, 370), 
+        "master": (371, 410),
+        "grandmaster": (411, 411)
     }
 
     default_pronouns = [
@@ -3941,6 +3947,9 @@ class Cat:
                 "opacity": self.pelt.opacity,
                 "prevent_fading": self.prevent_fading,
                 "favourite": self.favourite if self.favourite else 0,
+                "fur_texture": self.pelt.fur_texture,
+                "height": self.pelt.height,
+                "build": self.pelt.build,
                 "w_done": self.w_done if self.w_done else False,
                 "talked_to": self.talked_to if self.talked_to else False,
                 "insulted": self.insulted if self.insulted else False,
