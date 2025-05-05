@@ -124,7 +124,7 @@ class Sprites:
             'lineart', 'lineartdf', 'lineartdead', "lineartur",
             'eyes', 'eyes2', 'skin',
             'scars', 'missingscars',
-            'medcatherbs', 'wild',
+            'medcatherbs', 'wild', 'beetleeyes', 'beetleeyes2', 'beetlemore', 'beetlemore2', 'eyesvivid', 'vivid2', 'towheeeyes', 'towheeeyes2', 'eragonaeyes', 'eragonaeyes2', 'eyesdark', 'dark2',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
@@ -169,9 +169,37 @@ class Sprites:
 
         # Define eye colors
         eye_colors = [
-            ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD',
-             'HEATHERBLUE', 'SUNLITICE'],
-            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW']
+            ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'HEATHERBLUE', 'SUNLITICE'],
+            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW', "ORANGE"]
+            ]
+        beetle_eyes = [    
+            ['ROSE', 'ALGAE', 'SEAFOAM', 'LIGHT FLAME', 'CLOUDY', 'RED', 'TURQUOISE', 'SWAMP', 'RAINY', 'AQUAMARINE', 'EARTH', 'PUMPKIN'],
+            ['LILAC', 'PERIWINKLE', 'VIOLET', 'POND', 'DIRT', 'BROWN', 'CEDAR', 'CHRISTMAS', 'COTTON CANDY', 'VALENTINE', 'FIREWORK', 'LUCKY']
+            ]
+        beetle_more = [    
+            ['DARK PINE', 'FALL', 'FOREST FIRE', 'GOLD MOON', 'HALLOWEEN', 'LOBELIA', 'MIDNIGHT', 'MOONSTONE', 'OXIDIZED', 'SNOW', 'BERRY BANANA', 'DAWN SKY'],
+            ['TWILIGHT SKY', 'WORMY', 'BLUE HAZEL', 'THUNDERBOLT', 'VOLCANO', 'SEASHELL', 'PARADOX', 'CURSE', 'BLESSING', 'LIME', 'PALE BROWN', 'CRIMSON']
+            ]
+        towheeeyes = [    
+            ['BULLET', 'LIGHT YELLOW', 'SUNSHINE', 'GOLD ORE', 'FOSSILIZED AMBER', 'DUSKY', 'LICHEN', 'SPRING', 'TREE', 'LEAVES', 'EMERALD ORE', 'HAZELNUT'],
+            ['BLUE SKY', 'OCEAN', 'OVERCAST', 'AQUA', 'IRIS', 'ROBIN']
+            ]
+        eyesdark = [    
+            ['GREY SILVER', 'SAND', 'MUSTARD', 'BRONZE ORE', 'TIMBER', 'COPPER ORE', 'FERN', 'APPLE',  'MOSS', 'THICKET', 'PEACOCK', 'OLIVE'],
+            ['STORMY BLUE', 'DEPTHS', 'STORMY', 'TEAL', 'INDIGO', 'STEEL']
+            ]
+        eyesvivid = [    
+            ['PEACH', 'DAFFODIL', 'MARIGOLD', 'BRASS', 'DARKAMBER', 'DAWN SKIES','MINT', 'CHARTREUSE', 'MEADOW', 'LEAF', 'LIGHT TURQUOISE', 'SAP',],
+            ['ALBINISTIC', 'COBALT ORE', 'RAIN', 'CYAN DYE', 'PERIWINKLE PURPLE', 'ICY CRACK']
+            ]
+        
+        # Define era eye colors
+        era_eye_colors = [
+            ['DARK HAZEL', 'ROSE GOLD', 'DARK ROSE', 'REVERSE SUNLITICE', 'ICY', 'SUNSET', 'LAVENDER', 'ECLIPSE', 'BLACK',
+             'MUDDY', 'DARK TURQUOISE', 'BLACKBERRY'],
+            ['RUSTY', 'PASTEL', 'AVOCADO', 'PASTEL LAVENDER', 'ALBINO', 'WINTER ROSE', 'PINK', 'MORNING', 'DARK BROWN', 'BAY',
+             'NEON GREEN', 'SEA'],
+            ['DISCORD', 'AUTUMN LEAF', 'RUBY', 'PHANTOM', 'RIVER MOSS', 'WICKED']
         ]
 
         for row, colors in enumerate(eye_colors):
@@ -179,6 +207,35 @@ class Sprites:
                 self.make_group('eyes', (col, row), f'eyes{color}')
                 self.make_group('eyes2', (col, row), f'eyes2{color}')
 
+        for row, colors in enumerate(beetle_eyes):
+            for col, color in enumerate(colors):
+                self.make_group('beetleeyes', (col, row), f'eyes{color}')
+                self.make_group('beetleeyes2', (col, row), f'eyes2{color}')
+
+        for row, colors in enumerate(beetle_more):
+            for col, color in enumerate(colors):
+                self.make_group('beetlemore', (col, row), f'eyes{color}')
+                self.make_group('beetlemore2', (col, row), f'eyes2{color}')
+
+        for row, colors in enumerate(era_eye_colors):
+            for col, color in enumerate(colors):
+                self.make_group('eragonaeyes', (col, row), f'eyes{color}')
+                self.make_group('eragonaeyes2', (col, row), f'eyes2{color}')
+
+        for row, colors in enumerate(towheeeyes):
+            for col, color in enumerate(colors):
+                self.make_group('towheeeyes', (col, row), f'eyes{color}')
+                self.make_group('towheeeyes2', (col, row), f'eyes2{color}')
+
+        for row, colors in enumerate(eyesdark):
+            for col, color in enumerate(colors):
+                self.make_group('eyesdark', (col, row), f'eyes{color}')
+                self.make_group('dark2', (col, row), f'eyes2{color}')
+
+        for row, colors in enumerate(eyesvivid):
+            for col, color in enumerate(colors):
+                self.make_group('eyesvivid', (col, row), f'eyes{color}')
+                self.make_group('vivid2', (col, row), f'eyes2{color}')
         # Define white patches
         white_patches = [
             ['FULLWHITE', 'ANY', 'TUXEDO', 'LITTLE', 'COLOURPOINT', 'VAN', 'ANYTWO', 'MOON', 'PHANTOM', 'POWDER',
