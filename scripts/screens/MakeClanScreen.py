@@ -2851,7 +2851,10 @@ class MakeClanScreen(Screens):
                     Pelt.plant2_accessories + Pelt.snake_accessories +
                     Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories +
                     Pelt.aliveInsect_accessories + Pelt.fruit_accessories +
-                    Pelt.crafted_accessories + Pelt.tail2_accessories)
+                    Pelt.crafted_accessories + Pelt.tail2_accessories +
+                    Pelt.bows_accessories + Pelt.sailormoon + Pelt.beetle_accessories +
+                    Pelt.beetle_feathers + Pelt.randomaccessories + Pelt.ster_accessories +
+                    Pelt.stuff_accessories + Pelt.butterflies_accessories)
                 if self.customiser_sort == "alphabetical":
                     acc_list.sort()
 
@@ -3325,7 +3328,10 @@ class MakeClanScreen(Screens):
                             Pelt.plant2_accessories + Pelt.snake_accessories +
                             Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories +
                             Pelt.aliveInsect_accessories + Pelt.fruit_accessories +
-                            Pelt.crafted_accessories + Pelt.tail2_accessories)
+                            Pelt.crafted_accessories + Pelt.tail2_accessories +
+                            Pelt.bows_accessories + Pelt.sailormoon + Pelt.beetle_accessories +
+                    Pelt.beetle_feathers + Pelt.randomaccessories + Pelt.ster_accessories +
+                    Pelt.stuff_accessories + Pelt.butterflies_accessories)
                         if self.customiser_sort == "alphabetical":
                             acc_list.sort()
 
@@ -3500,7 +3506,10 @@ class MakeClanScreen(Screens):
                             Pelt.plant2_accessories + Pelt.snake_accessories +
                             Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories +
                             Pelt.aliveInsect_accessories + Pelt.fruit_accessories +
-                            Pelt.crafted_accessories + Pelt.tail2_accessories
+                            Pelt.crafted_accessories + Pelt.tail2_accessories +
+                            Pelt.bows_accessories + Pelt.sailormoon + Pelt.beetle_accessories +
+                    Pelt.beetle_feathers + Pelt.randomaccessories + Pelt.ster_accessories +
+                    Pelt.stuff_accessories + Pelt.butterflies_accessories
                             )
                         new_acc_list = []
                         searched = self.search_text
