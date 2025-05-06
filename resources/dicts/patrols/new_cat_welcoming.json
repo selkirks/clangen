@@ -83,7 +83,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol approaches the loner and tells them firmly that newcomers aren't being taken in right now. The loner seems disappointed, but leaves anyway.",
+                "text": "The patrol approaches the loner and tells them firmly that newcomers aren't welcome here. The loner doesn't seem to get it, and has to be driven across the border.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -177,7 +177,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l approaches the loner and tells them firmly that newcomers aren't being taken in right now. The loner seems disappointed, but leaves anyway.",
+                "text": "The patrol approaches the loner and tells them firmly that newcomers aren't welcome here. The loner doesn't seem to get it, and has to be driven across the border.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -259,7 +259,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol approaches the kittypet and tells them firmly that newcomers aren't being taken in right now. The kittypet seems disappointed, but leaves anyway.",
+                "text": "The patrol approaches the kittypet and tells them firmly that newcomers aren't welcome here. The kittypet doesn't seem to get it, and has to be driven across the border.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -338,7 +338,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l approaches the kittypet and tells them firmly that newcomers aren't being taken in right now. The kittypet seems disappointed, but leaves anyway.",
+                "text": "The patrol approaches the kittypet and tells them firmly that newcomers aren't welcome here. The kittypet doesn't seem to get it, and has to be driven across the border.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -357,7 +357,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "r_c finds a wounded cat near the Thunderpath.",
-        "decline_text": "{PRONOUN/r_c/subject/CAP} leave the wounded cat alone.",
+        "decline_text": "{PRONOUN/r_c/subject/CAP} {VERB/r_c/leave/leaves} the wounded cat alone.",
         "chance_of_success": 60,
         "success_outcomes": [
             {
@@ -399,7 +399,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The patrol attempts to help the cat to a healer nearby, but the cat passes before they can make it. They bury the cat outside their borders.",
+                "text": "r_c attempts to move the cat out of their territory for someone else to find, but the cat passes before they can make it. They bury the cat outside their borders.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1,
@@ -410,7 +410,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol helps the cat to the nearest healer. They can't spare the herbs for an outsider right now.",
+                "text": "r_c moves the cat out of their territory. c_n can't spare the medical supplies to treat a stranger.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -474,7 +474,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "p_l attempts to help the cat to a healer nearby, but the cat passes before the two can make it back. p_l buries the cat outside c_n borders.",
+                "text": "p_l attempts to move the cat for someone else to find, but the cat passes before the two can make it out of the territory. p_l buries the cat outside c_n borders.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1,
@@ -485,7 +485,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l helps the cat to the nearest healer. c_n can't spare the herbs for an outsider right now.",
+                "text": "p_l moves the cat out of their territory. They can't spare the medical supplies to treat a stranger.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -613,7 +613,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The patrol immediately stops their border marking and switches to tracking the scent of the intruder instead. At the end of the trail they find an old kittypet, wheezing {PRONOUN/n_c:0/poss} Twoleg's name. They try to drag the kittypet back to camp - but the elderly cat is too weak.",
+                "text": "The patrol immediately stops their border marking and switches to tracking the scent of the intruder instead. At the end of the trail they find an old kittypet, wheezing {PRONOUN/n_c:0/poss} Twoleg's name. They try to drive the kittypet past the border - but the elderly cat is too weak.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1,
@@ -909,7 +909,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The patrol attempts to take the kit to a neighboring Clan instead of leaving it, but it dies on the journey. They give it a small burial.",
+                "text": "The patrol attempts to take the kit to the Twolegplace instead of leaving it, but it dies on the journey. They give it a small burial.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -917,7 +917,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol can't bear to leave the kit alone, so they take it to the border of the closest Clan and wait for a patrol to arrive. The other Clan agrees to take the kit.",
+                "text": "The patrol can't bring themselves to leave the kit here, and bring it to the Twolegplace. There's no way it would fit in in c_n.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -973,7 +973,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "p_l attempts to take the kit to a neighboring Clan instead of leaving it, but it dies on the journey. {PRONOUN/p_l/subject/CAP} {VERB/p_l/give/gives} it a small burial.",
+                "text": "The patrol attempts to take the kit to the Twolegplace instead of leaving it, but it dies on the journey. They give it a small burial.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1
@@ -981,7 +981,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l can't bear to leave the kit alone, so {PRONOUN/p_l/subject} {VERB/p_l/take/takes} it to the border of the closest Clan and {VERB/p_l/wait/waits} for a patrol to arrive. The other Clan agrees to take the kit.",
+                "text": "The patrol can't bring themselves to leave the kit here, and bring it to the Twolegplace. There's no way it would fit in in c_n.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2
@@ -1052,7 +1052,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "The patrol says that they can't take on another cat right now and tries to direct the loner somewhere else, but the loner hisses and says that they can find their own way.",
+                "text": "The patrol says that there's no room for outsiders and tries to direct the loner somewhere else, but the loner hisses and says that they can find their own way.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1,
@@ -1072,7 +1072,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "The patrol says that they can't take on another cat right now, but they point the loner in the direction of the neighboring Clan.",
+                "text": "The patrol says that there's no room for outsiders here, and asks the loner politely yet firmly to leave.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -1146,7 +1146,7 @@
         ],
         "antag_fail_outcomes": [
             {
-                "text": "p_l says that c_n can't take on another cat right now and tries to direct the loner somewhere else, but the loner hisses and says that they can find their own way.",
+                "text": "The patrol says that there's no room for outsiders and tries to direct the loner somewhere else, but the loner hisses and says that they can find their own way.",
                 "exp": 0,
                 "weight": 20,
                 "outsider_rep": -1,
@@ -1166,7 +1166,7 @@
         ],
         "antag_success_outcomes": [
             {
-                "text": "p_l says that c_n can't take on another cat right now, but {PRONOUN/p_l/subject} {VERB/p_l/point/points} the loner in the direction of the neighboring Clan.",
+                "text": "The patrol says that there's no room for outsiders here, and asks the loner politely yet firmly to leave.",
                 "exp": 10,
                 "weight": 20,
                 "outsider_rep": -2,
@@ -2587,7 +2587,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "The patrol hears desperate screams coming from a nearby lake.",
-        "decline_text": "Its not the scream of any cat p_l recognizes, so {PRONOUN/p_l/subject} {VERB/p_l/decide/decides} to continue the patrol without checking it out.",
+        "decline_text": "It's not the scream of any cat p_l recognizes, so {PRONOUN/p_l/subject} {VERB/p_l/decide/decides} to continue the patrol without checking it out.",
         "chance_of_success": 85,
         "success_outcomes": [
             {
@@ -2779,13 +2779,13 @@
                 "other_clan_rep": 0
             },
             {
-                "text": "The patrol brings the apprentice, back to camp. However, the Clan is unwelcoming, and the apprentice slips out in the middle of the night, dejected.",
+                "text": "The patrol brings the apprentice back to camp. However, the Clan is unwelcoming, and the apprentice slips out in the middle of the night, dejected.",
                 "exp": 0,
                 "weight": 5,
                 "other_clan_rep": 0
             },
             {
-                "text": "s_c knows accepting this apprentice will cause conflict with o_c_n, and c_n can't risk a war. Still, {PRONOUN/s_c/subject} {VERB/s_c/want/wants} to help. {PRONOUN/s_c/subject/CAP} {VERB/s_c/subject/sit/sits} with the apprentice for a while, listening to their problems and offering advice. The apprentice returns home with a new prespective.",
+                "text": "s_c knows accepting this apprentice will cause conflict with o_c_n, and c_n can't risk a war. Still, {PRONOUN/s_c/subject} {VERB/s_c/want/wants} to help. {PRONOUN/s_c/subject/CAP} {VERB/s_c/subject/sit/sits} with the apprentice for a while, listening to their problems and offering advice. The apprentice returns home with a new perspective.",
                 "exp": 5,
                 "weight": 5,
                 "stat_skill": ["MEDIATOR,2", "SPEAKER,2"],

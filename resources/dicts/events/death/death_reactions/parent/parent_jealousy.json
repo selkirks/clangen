@@ -46,8 +46,12 @@
         "no_body": []
     },
     "childish": {
-        "body": [],
-        "no_body": []
+        "body": [
+        "r_c soaks up all the sympathetic gazes and comforting words during m_c's vigil. {PRONOUN/r_c/subject} {VERB/r_c/know/knows} {PRONOUN/r_c/subject} should feel worse, but it feels good to steal the spotlight from m_c for once."
+    ],
+    "no_body": [
+	"r_c soaks up all the sympathetic gazes and comforting words during m_c's vigil. {PRONOUN/r_c/subject} {VERB/r_c/know/knows} {PRONOUN/r_c/subject} should feel worse, but it feels good to steal the spotlight from m_c for once."
+        ]
     },
     "cold": {
         "body": [],

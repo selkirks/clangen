@@ -1505,6 +1505,14 @@
             "strength",
             "unity"
           ]
+        },
+        {
+          "text": "m_c feels a rush of energy, as if running alongside a thousand warriors when r_c bestows a life for [virtue].",
+          "virtue": ["certainty", "clear judgment", "confidence", "courage", "determination", "endurance", "sympathy", "friendship", "instincts", "strength", "unity"]
+        },
+        {
+          "text": "When r_c approaches, neither cat needs to say a thing. m_c accepts the life for [virtue] with full understanding.",
+          "virtue": ["acceptance", "bravery", "certainty", "clear judgment", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "friendship", "instincts", "mercy", "strength", "unity"]
         }
       ]
     },
@@ -2345,6 +2353,14 @@
             "compassion",
             "acceptance"
           ]
+        },
+        {
+          "text": "Stepping lightly through the mist, r_c stops a limb-length away from m_c. {PRONOUN/r_c/subject} urges m_c to not poison {PRONOUN/m_c/self} and {PRONOUN/m_c/poss} Clan with petty grudges, and offers a life for [virtue].",
+          "virtue": ["acceptance", "certainty", "clear judgement", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "forgiveness", "friendship", "instincts", "mercy", "unity"]
+        },
+        {
+          "text": "The life given for [virtue] pulls the breath from m_c's lungs; {PRONOUN/m_c/subject} can hardly even speak as r_c pulls away to return to the crowd.",
+          "virtue": ["acceptance", "certainty", "clear judgement", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "forgiveness", "friendship", "instincts", "mercy", "unity"]
         }
       ]
     },

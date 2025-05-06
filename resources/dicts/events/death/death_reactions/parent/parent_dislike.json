@@ -78,7 +78,9 @@
         "no_body": []
     },
     "insecure": {
-        "body": [],
+        "body": [
+            "r_c feels a tangle of emotions when {PRONOUN/r_c/subject} {VERB/r_c/see/sees} {PRONOUN/m_c/poss} kit's body. {PRONOUN/r_c/subject/CAP} never cared for the child, but a wave of guilt threatens to crush {PRONOUN/m_c/object} at the thought of admitting it."
+        ],
         "no_body": []
     },
     "lonesome": {
@@ -94,7 +96,9 @@
         "no_body": []
     },
     "nervous": {
-        "body": [],
+        "body": [
+            "r_c feels a tangle of emotions when {PRONOUN/r_c/subject} {VERB/r_c/see/sees} {PRONOUN/m_c/poss} kit's body. {PRONOUN/r_c/subject/CAP} never cared for the child, but a wave of guilt threatens to crush {PRONOUN/m_c/object} at the thought of admitting it."
+        ],
         "no_body": []
     },
     "patient": {
@@ -114,12 +118,19 @@
         "no_body": []
     },
     "shameless": {
-        "body": [],
-        "no_body": []
+        "body": [
+            "r_c kicks dirt onto the body of m_c as {PRONOUN/r_c/object} {VERB/r_c/leave/leaves}, hoping {PRONOUN/m_c/object} can feel it in the afterlife."
+        ],
+        "no_body": [
+        ]
     },
     "sneaky": {
-        "body": [],
-        "no_body": []
+        "body": [
+        "r_c manages to find a reason to be out of camp during m_c's vigil. {PRONOUN/r_c/subject/CAP} {VERB/r_c/have/has} no desire to attend."
+    ],
+    "no_body": [
+	"r_c manages to find a reason to be out of camp during m_c's vigil. {PRONOUN/r_c/subject/CAP} {VERB/r_c/have/has} no desire to attend."
+        ]
     },
     "strange": {
         "body": [],
@@ -138,11 +149,20 @@
         "no_body": []
     },
     "vengeful": {
-        "body": [],
-        "no_body": []
-    },
-    "wise": {
-        "body": [],
-        "no_body": []
+        "body": [
+            "r_c kicks dirt onto the body of m_c as {PRONOUN/r_c/object} {VERB/r_c/leave/leaves}, hoping {PRONOUN/m_c/object} can feel it in the afterlife."
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "wise": {
+    "body": [
+	"What went so wrong? r_c finds {PRONOUN/r_c/self} lost in thought after the vigil, thinking through a thousand ways {PRONOUN/r_c/subject} could have done better by m_c."
+    ],
+    "no_body": [
+	"What went so wrong? r_c finds {PRONOUN/r_c/self} lost in thought after the vigil, thinking through a thousand ways {PRONOUN/r_c/subject} could have done better by m_c."
+]
     }
 }

@@ -1169,6 +1169,26 @@
     ],
     "m_c has always longed for adventure and {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like being a medicine cat apprentice will be the greatest adventure of them all. (mentor) eagerly accepts such an eager and willing apprentice."
   ],
+  "med_app_29": [
+      [
+        "medicine cat apprentice",
+        "general_mentor",
+        "general_leader",
+        "general_backstory",
+        "arrogant"
+      ],
+      "m_c feels as though it's obvious {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} the best choice for (mentor)'s apprentice- until l_n announces {PRONOUN/m_c/subject} will be a warrior apprentice. Shocked, m_c interrupts to request training as a medicine cat, and though l_n and (mentor) exchange glances, they agree to it."
+    ],
+    "med_app_30": [
+      [
+        "medicine cat apprentice",
+        "general_mentor",
+        "general_leader",
+        "general_backstory",
+        "gloomy"
+      ],
+      "Though m_c doesn't even grin as {PROUNOUN/m_c/subject} {VERB/m_c/touch/touches} {PRONOUN/m_c/poss} nose to (mentor)'s, a small glimmer of excitement flickers in {PRONOUN/m_c/poss} chest."
+  ],
   "mediator_app_0": [
     [
       "mediator apprentice",

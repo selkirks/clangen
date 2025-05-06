@@ -8,10 +8,20 @@
       "r_c holds m_c in {PRONOUN/r_c/poss} paws during the vigil, weeping burning tears onto the cold, limp body. Even if things have soured throughout their lives, and r_c wants nothing more but to hiss at {PRONOUN/r_c/poss} dumb mate, deep down, {PRONOUN/r_c/subject} misses m_c.",
       "Near the end of m_c's vigil, Clanmates' eyes shift towards r_c, moving aside for the widow to say {PRONOUN/r_c/poss} farewells. However, unlike what is expected, {PRONOUN/r_c/subject} twists {PRONOUN/r_c/poss} head solemnly, and, with an icy voice, states that {PRONOUN/r_c/subject} has nothing to say about {PRONOUN/r_c/poss} mate.",
       "At the end of the vigil, after the tears are shed and the mourning sweeps through the Clan, r_c drags {PRONOUN/r_c/self} straight into {PRONOUN/r_c/poss} nest. m_c and r_c once share this nest, but now it's all {PRONOUN/r_c/poss}. Despite only resurfacing horrible memories between the two, the nest feels... empty.",
-      "{PRONOUN/r_c/subject/CAP} doesn't care what {PRONOUN/r_c/poss} Clanmates say about how {PRONOUN/r_c/subject} should behave during m_c's vigil. Tears are meant for those {PRONOUN/r_c/subject} cares about, but m_c will never receive a single drop from {PRONOUN/r_c/object}."
+      "{PRONOUN/r_c/subject/CAP} doesn't care what {PRONOUN/r_c/poss} Clanmates say about how {PRONOUN/r_c/subject} should behave during m_c's vigil. Tears are meant for those {PRONOUN/r_c/subject} cares about, but m_c will never receive a single drop from {PRONOUN/r_c/object}.",
+      "r_c avoids m_c's vigil. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} content to let {PRONOUN/r_c/poss} Clanmates think it's because {PRONOUN/r_c/subject/}{VERB/r_c/'re/'s} grieving privately.",
+      "m_c's mate is strikingly absent from the vigil. r_c doesn't want to bother pretending to grieve {PRONOUN/m_c/object}.",
+      "r_c and m_c had a difficult relationship, but now that m_c is dead, r_c attempts to look back fondly on some of the good times.",
+      "r_c studies the body of {PRONOUN/r_c/poss} mate with no emotion coloring {PRONOUN/r_c/poss} gaze. That's that, then.",
+      "Everyone knew that m_c and r_c had been going through a rough patch, but it's still a shock when r_c doesn't even attend the vigil."
     ],
     "no_body": [
-      "As the days fade, it doesn't take much for r_c to notice the sudden disappearance of m_c. {PRONOUN/m_c/poss/CAP} disappearance is like a StarClan's blessing. Thus, r_c won't squander this opportunity to savor the long-desired taste of freedom without {PRONOUN/r_c/poss} mate breathing down {PRONOUN/r_c/poss} neck. And, with no body found to hold a vigil, {PRONOUN/r_c/subject} doesn't need to weep, only to celebrate."
+      "As the days fade, it doesn't take much for r_c to notice the sudden disappearance of m_c. {PRONOUN/m_c/poss/CAP} disappearance is like a StarClan's blessing. Thus, r_c won't squander this opportunity to savor the long-desired taste of freedom without {PRONOUN/r_c/poss} mate breathing down {PRONOUN/r_c/poss} neck. And, with no body found to hold a vigil, {PRONOUN/r_c/subject} doesn't need to weep, only to celebrate.",
+      "Perhaps {PRONOUN/r_c/poss} Clanmates expected r_c to be more mournful over m_c's passing, but r_c can't help {PRONOUN/r_c/poss} bitter sense of relief to be free of {PRONOUN/m_c/object}.",
+    "r_c avoids m_c's vigil. {PRONOUN/r_c/subject/CAP}{VERB/r_c/'re/'s} content to let {PRONOUN/r_c/poss} Clanmates think it's because {PRONOUN/r_c/subject/}{VERB/r_c/'re/'s} grieving privately.",
+    "m_c's mate is strikingly absent from the vigil. r_c doesn't want to bother pretending to grieve {PRONOUN/m_c/object}.",
+    "r_c and m_c had a difficult relationship, but now that m_c is dead, r_c attempts to look back fondly on some of the good times.",
+    "r_c wonders if {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} truly free of m_c, or if the reports of {PRONOUN/r_c/poss} mate's death are exaggerated."
     ]
   },
   "adventurous": {
@@ -43,7 +53,7 @@
     "no_body": []
   },
   "charismatic": {
-    "body": [],
+    "body": ["r_c seems more intent on accepting the condolences of {PRONOUN/r_c.poss} Clanmates than remembering m_c's life."],
     "no_body": []
   },
   "childish": {
@@ -51,12 +61,20 @@
     "no_body": []
   },
   "cold": {
-    "body": [],
-    "no_body": []
+    "body": [
+	"r_c avoids m_c's vigil, saying the Clan needs {PRONOUN/r_c/object} more than m_c does now."
+    ],
+    "no_body": [
+	"r_c avoids m_c's vigil, saying the Clan needs {PRONOUN/r_c/object} more than m_c does now."
+    ]
   },
   "compassionate": {
-    "body": [],
-    "no_body": []
+    "body": [
+	"Even if {PRONOUN/r_c/subject} and m_c didn't see eye to eye at the end, r_c pulls it together enough to share a few anecdotes at the vigil."
+    ],
+    "no_body": [
+	"Even if {PRONOUN/r_c/subject} and m_c didn't see eye to eye at the end, r_c pulls it together enough to share a few anecdotes at the vigil."
+    ]
   },
   "confident": {
     "body": [],
@@ -67,8 +85,12 @@
     "no_body": []
   },
   "empathetic": {
-    "body": [],
-    "no_body": []
+    "body": [
+	"Even if {PRONOUN/r_c/subject} and m_c didn't see eye to eye at the end, r_c pulls it together enough to share a few anecdotes at the vigil."
+    ],
+    "no_body": [
+	"Even if {PRONOUN/r_c/subject} and m_c didn't see eye to eye at the end, r_c pulls it together enough to share a few anecdotes at the vigil."
+    ]
   },
   "faithful": {
     "body": [],
@@ -83,20 +105,32 @@
     "no_body": []
   },
   "lonesome": {
-    "body": [],
-    "no_body": []
+    "body": [
+	"m_c was never the perfect mate, but r_c can't help but feel a twinge of anxiety looking at {PRNOUN/m_c/poss} body. {PRONOUN/r_c/subject} {VERB/r_c/huddle/huddles} close as {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} {PRONOUN/r_c/poss} future is no longer bonded."
+    ],
+    "no_body": [
+
+    ]
   },
   "loving": {
     "body": [],
     "no_body": []
   },
   "loyal": {
-    "body": [],
-    "no_body": []
+    "body": [
+	"m_c was never the perfect mate, but r_c can't help but feel a twinge of anxiety looking at {PRNOUN/m_c/poss} body. {PRONOUN/r_c/subject} {VERB/r_c/huddle/huddles} close as {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} {PRONOUN/r_c/poss} future is no longer bonded."
+    ],
+    "no_body": [
+
+    ]
   },
   "nervous": {
-    "body": [],
-    "no_body": []
+    "body": [
+	"m_c was never the perfect mate, but r_c can't help but feel a twinge of anxiety looking at {PRNOUN/m_c/poss} body. {PRONOUN/r_c/subject} {VERB/r_c/huddle/huddles} close as {PRONOUN/r_c/subject} {VERB/r_c/realize/realizes} {PRONOUN/r_c/poss} future is no longer bonded."
+    ],
+    "no_body": [
+
+    ]
   },
   "patient": {
     "body": [],
@@ -115,7 +149,8 @@
     "no_body": []
   },
   "shameless": {
-    "body": [],
+    "body": [
+	"After m_c is buried, r_c looks happier than any cat's seen {PRONOUN/r_c/object} in a long time."],
     "no_body": []
   },
   "sneaky": {

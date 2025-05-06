@@ -1111,6 +1111,35 @@
         ]
     },
     {
+        "event_id": "gen_death_siege_kit1",
+        "location": ["any"],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["war"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "o_c_n broke into the nursery during battle and managed to kill m_c.",
+        "m_c": {
+            "dies": true,
+            "age": [
+                "newborn",
+                "kitten"
+            ],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "This cat died when o_c_n broke into the nursery."
+        }],
+        "other_clan": {
+            "current_rep": [
+                "hostile"
+            ],
+            "changed": -6
+        }
+    },
+    {
         "event_id": "gen_death_greencough_leafbare1",
         "location": [
             "any"
@@ -1863,6 +1892,50 @@
         }
     },
     {
+        "event_id": "gen_death_war_roadkill",
+        "location": ["any"],
+        "season": ["any"],
+        "sub_type": [ "war" ],
+        "tags": [],
+        "weight": 20,
+        "event_text": "A o_c_n patrol chased m_c across a Thunderpath, getting {PRONOUN/m_c/object} hit by a monster.",
+        "m_c": {
+            "status": ["apprentice", "warrior", "deputy", "leader"],
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was struck by a monster attempting to escape an enemy attack.",
+            "lead_death": "was struck by a monster while attempting to escape an enemy attack."
+        }],
+        "other_clan": {
+            "current_rep": ["hostile"],
+            "changed": -2
+        }
+    },
+    {
+        "event_id": "gen_death_war_roadkill2",
+        "location": ["any"],
+        "season": ["any"],
+        "sub_type": [ "war" ],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c chases o_c_n warriors across a Thunderpath, realizing much too late the cost of {PRONOUN/m_c/poss} rage.",
+        "m_c": {
+            "status": ["apprentice", "warrior", "deputy", "leader"],
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was struck by a monster while attacking a o_c_n patrol.",
+            "lead_death": "was struck by a monster while attacking a o_c_n patrol."
+        }],
+        "other_clan": {
+            "current_rep": ["hostile"],
+            "changed": -2
+        }
+    },
+    {
         "event_id": "gen_death_war_any7",
         "location": [
             "any"
@@ -2315,6 +2388,70 @@
             }
         ]
     },
+    {
+        "event_id": "gen_death_murder_anydep3",
+        "location": ["any"],
+        "season": [
+            "any"
+        ],
+        "sub_type": [ "murder" ],
+        "tags": [],
+        "weight": 30,
+        "event_text": "m_c was murdered by r_c, in hopes of pleasing {PRONOUN/r_c/poss} mentor.",
+        "m_c": {
+            "status": [
+                "deputy"
+            ],
+            "not_skill": [
+                "FIGHTER,2"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "status": [ "apprentice" ],
+            "trait": [
+                "ambitious",
+                "cold",
+                "righteous",
+                "loyal",
+                "vengeful",
+                "sneaky"
+            ]
+        },
+        "history": [{
+            "cats": [ "m_c", "r_c" ],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic",
+                    "trust",
+                    "comfort"
+                ],
+                "amount": -15
+            }
+        ]
+    },
+    
     {
         "event_id": "gen_death_murder_any5",
         "location": [
@@ -3190,6 +3327,102 @@
                 "neutral"
             ],
             "changed": -3
+        }
+    },
+    {
+        "event_id": "gen_death_ocdishonor_any1",
+        "location": ["any"],
+        "season": [
+            "any"
+        ],
+        "subtype": ["war"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was killed while trying to attack the kits of o_c_n.",
+        "m_c": {
+            "status": [
+                "apprentice",
+                "warrior",
+                "deputy",
+                "leader"
+            ],
+            "not_skill": [
+                "FIGHTER,3"
+            ],
+            "trait": [
+                "bold",
+                "confident",
+                "daring",
+		"troublesome",
+		"fierce",
+		"bloodthirsty",
+		"cold",
+		"ambitious",
+		"vengeful",
+		"shameless",
+		"arrogant",
+		"cunning"
+            ],
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was killed while trying to attack o_c_n's kits.",
+            "lead_death": "{VERB/m_c/were/was} killed while trying to attack o_c_n's kits"
+        }],
+        "other_clan": {
+            "current_rep": [
+                "hostile"
+            ],
+            "changed": -7
+        }
+    },
+    {
+        "event_id": "gen_death_ocdishonor_any2",
+        "location": ["any"],
+        "season": [
+            "any"
+        ],
+        "subtype": ["war"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was killed while trying to attack the medicine cat of o_c_n.",
+        "m_c": {
+            "status": [
+                "apprentice",
+                "warrior",
+                "deputy",
+                "leader"
+            ],
+            "not_skill": [
+                "FIGHTER,3"
+            ],
+            "trait": [
+                "bold",
+                "confident",
+                "daring",
+		"troublesome",
+		"fierce",
+		"bloodthirsty",
+		"cold",
+		"ambitious",
+		"vengeful",
+		"shameless",
+		"arrogant",
+		"cunning"
+            ],
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was killed while trying to attack o_c_n's medicine cat.",
+            "lead_death": "{VERB/m_c/were/was} killed while trying to attack o_c_n's medicine cat"
+        }],
+        "other_clan": {
+            "current_rep": [
+                "hostile"
+            ],
+            "changed": -7
         }
     },
     {
@@ -4529,6 +4762,39 @@
                 "reg_death": "m_c died of greencough."
             }
         ]
+    },
+    {
+        "event_id": "gen_death_ockill_anymedi1",
+        "location": ["any"],
+        "season": [
+            "any"
+        ],
+        "subtype": ["war"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was killed by enemy warriors when {PRONOUN/m_c/subject} travelled to o_c_n in an attempt to ease tensions between the Clans.",
+        "m_c": {
+            "status": [
+                "mediator",
+		"mediator apprentice"
+            ],
+            "not_skill": [
+                "FIGHTER,3",
+                "OMEN,3",
+                "PROPHET,3"
+            ],
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was killed attempting to make peace with o_c_n warriors."
+        }],
+        "other_clan": {
+            "current_rep": [
+                "hostile"
+            ],
+            "changed": -3
+        }
     },
     {
         "event_id": "gen_death_wander_any1",
@@ -6079,6 +6345,38 @@
                 "lead_death": "{VERB/m_c/were/was} brutally murdered by the deputy of o_c_n"
             }
         ],
+        "other_clan": {
+            "current_rep": [
+                "hostile"
+            ],
+            "changed": -3
+        }
+    },
+    {
+        "event_id": "gen_death_ockill_anylead9",
+        "location": ["any"],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["war"],
+        "tags": [
+            "all_lives"
+        ],
+        "weight": 20,
+        "event_text": "During an attack, m_c and the o_c_n leader find themselves locked in a heated battle, each taking life after life from the other. In the end, neither cat is left standing.",
+        "m_c": {
+            "status": [
+                "leader"
+            ],
+            "not_skill": [
+                "FIGHTER,3"
+            ],
+            "dies": true
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "lead_death": "went life-for-life with the leader of o_c_n"
+        }],
         "other_clan": {
             "current_rep": [
                 "hostile"

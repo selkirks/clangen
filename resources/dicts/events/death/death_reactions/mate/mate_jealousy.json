@@ -1,7 +1,13 @@
 {
   "general": {
-    "body": [],
-    "no_body": []
+    "body": [
+      "r_c loved m_c, {PRONOUN/r_c/subject} did, but it was difficult to be mates with such a popular, well-liked cat.",
+      "r_c tries to quash the jealousy in {PRONOUN/r_c/poss} heart long enough to give {PRONOUN/r_c/poss} mate the proper send-off at m_c's vigil."
+   ],
+   "no_body": [
+    "r_c loved m_c, {PRONOUN/r_c/subject} did, but it was difficult to be mates with such a popular, well-liked cat.",
+    "r_c tries to quash the jealousy in {PRONOUN/r_c/poss} heart long enough to give {PRONOUN/r_c/poss} mate the proper send-off at m_c's vigil."
+   ]
   },
   "adventurous": {
     "body": [],
@@ -20,8 +26,14 @@
     "no_body": []
   },
   "bold": {
-    "body": [],
-    "no_body": []
+    "body": [
+      "r_c turns up to m_c's vigil freshly groomed and ready to soak up {PRONOUN/r_c/poss} Clanmates heartfelt condolences."
+
+    ],
+    "no_body": [
+      "r_c turns up to m_c's vigil freshly groomed and ready to soak up {PRONOUN/r_c/poss} Clanmates heartfelt condolences."
+
+    ]
   },
   "calm": {
     "body": [],
@@ -32,12 +44,21 @@
     "no_body": []
   },
   "charismatic": {
-    "body": [],
-    "no_body": []
+    "body": [
+"r_c turns up to m_c's vigil freshly groomed and ready to soak up {PRONOUN/r_c/poss} Clanmates heartfelt condolences."
+    ],
+    "no_body": [
+	"r_c turns up to m_c's vigil freshly groomed and ready to soak up {PRONOUN/r_c/poss} Clanmates heartfelt condolences."
+    ]
   },
   "childish": {
-    "body": [],
-    "no_body": []
+    "body": [
+	"While Clanmates are quietly sitting by the body, r_c loudly exclaims how hard m_c's death is for {PRONOUN/r_c/object}."
+
+    ],
+    "no_body": [
+
+    ]
   },
   "cold": {
     "body": [],
@@ -52,8 +73,12 @@
     "no_body": []
   },
   "daring": {
-    "body": [],
-    "no_body": []
+    "body": [
+"r_c turns up to m_c's vigil freshly groomed and ready to soak up {PRONOUN/r_c/poss} Clanmates heartfelt condolences."
+    ],
+    "no_body": [
+	"r_c turns up to m_c's vigil freshly groomed and ready to soak up {PRONOUN/r_c/poss} Clanmates heartfelt condolences."
+    ]
   },
   "empathetic": {
     "body": [],
@@ -104,8 +129,12 @@
     "no_body": []
   },
   "shameless": {
-    "body": [],
-    "no_body": []
+    "body": [
+    "r_c turns up to m_c's vigil freshly groomed and ready to soak up {PRONOUN/r_c/poss} Clanmates heartfelt condolences."
+  ],
+  "no_body": [
+"r_c turns up to m_c's vigil freshly groomed and ready to soak up {PRONOUN/r_c/poss} Clanmates heartfelt condolences."
+    ]
   },
   "sneaky": {
     "body": [],
