@@ -2508,6 +2508,190 @@
             ]
         },
         {
+            "patrol_id": "gen_bord_fleeingloner",
+            "biome": ["any"],
+            "season": ["any"],
+            "types": ["border"],
+            "tags": ["new_cat"],
+            "patrol_art": "bord_general_intro",
+            "min_cats": 2,
+            "max_cats": 6,
+            "weight": 10,
+            "min_max_status": {},
+            "intro_text": "As the patrol marks the o_c_n border, r_c swears {PRONOUN/r_c/subject} {VERB/r_c/keep/keeps} hearing a strange whispering noise. The patrol pauses to listen closer, and after a few moments they hear the sound of hushed conversation coming from a hidden spot in the undergrowth.",
+            "decline_text": "After a moment, the noises stop, and p_l decides it must have been the wind. Marking the border is more important than jumping at shadows.",
+            "chance_of_success": 20,
+                "success_outcomes": [
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner explains that o_c_n warriors attacked {PRONOUN/n_c:0/object} when {PRONOUN/n_c:0/subject} tried crossing their territory. p_l offers to bring the loner and {PRONOUN/n_c:0/poss} kits back to camp for treatment, and after a moment of consideration {PRONOUN/n_c:0/subject} {VERB/n_c:0/agree/agrees}.",
+                        "exp": 20,
+                        "weight": 10,
+                        "art": "gen_cat_with_kits_loner",
+                        "new_cat": [
+                            ["loner", "age:has_kits"],
+                            ["litter", "parent:0", "status:kitten", "backstory:outsider_roots2"]
+                        ],
+                        "relationships": [
+                            {
+                                "cats_from": ["n_c:0"],
+                                "cats_to": ["patrol"],
+                                "values": ["platonic", "trust", "comfort"],
+                                "amount": 10
+                            }
+                        ],
+                        "injury": [
+                            {
+                                "cats": ["n_c:0"],
+                                "injuries": ["battle_injury"],
+                                "no_results": true
+                            }
+                        ],
+                        "outsider_rep": 1,
+                        "other_clan_rep": -1
+                    },
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is horrified when {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a dead loner, {PRONOUN/n_c:0/poss} fur reeking of o_c_n scent. Even worse, the loner was clearly guarding {PRONOUN/n_c:0/poss} kits, who are hidden wide-eyed in the undergrowth. The kits explain that 'big, scary cats' attacked them. p_l gathers the kits together, heart heavy as {PRONOUN/p_l/subject} {VERB/p_l/explain/explains} that the patrol will take them somewhere safe.",
+                        "exp": 20,
+                        "weight": 10,
+                        "art": "gen_cat_with_kits_unknown_ghost",
+                        "new_cat": [
+                            ["loner", "age:has_kits", "meeting", "dead"],
+                            ["litter", "parent:0", "status:kitten", "backstory:outsider_roots2"]
+                        ],
+                        "relationships": [
+                            {
+                                "cats_from": ["n_c:0"],
+                                "cats_to": ["patrol"],
+                                "values": ["platonic", "trust", "comfort"],
+                                "amount": 10
+                            }
+                        ],
+                        "outsider_rep": 1,
+                        "other_clan_rep": -1
+                    }
+                ],
+                "fail_outcomes": [
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens, and when p_l tries to talk to {PRONOUN/n_c:0/object}, {PRONOUN/n_c:0/subject} {VERB/n_c:0/attack/attacks}. p_l orders the patrol to back off. When they return later, the loner and {PRONOUN/n_c:0/poss} kits are gone.",
+                        "exp": 0,
+                        "weight": 20,
+                        "art": "gen_angry_cat_loner",
+                        "new_cat": [
+                                ["female", "loner", "age:has_kits", "meeting"],
+                                ["age:newborn", "loner", "meeting", "parent:0"]
+                        ],
+                        "injury": [
+                            {
+                                "cats": ["p_l"],
+                                "injuries": ["battle_injury"]
+                            }
+                        ],
+                        "outsider_rep": -1
+                    },
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens. p_l offers to bring the family back to camp for treatment, but the loner insists that {PRONOUN/n_c:0/subject} will be taking {PRONOUN/n_c:0/poss} kits and leaving as soon as {PRONOUN/n_c:0/subject} gets {PRONOUN/n_c:0/poss} breath back.",
+                        "exp": 0,
+                        "weight": 20,
+                        "art": "gen_angry_cat_loner",
+                        "new_cat": [
+                                ["female", "loner", "age:has_kits", "meeting"],
+                                ["age:newborn", "loner", "meeting", "parent:0"]
+                        ],
+                        "outsider_rep": -1
+                    },
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is horrified when {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a dead loner, {PRONOUN/n_c:0/poss} fur reeking of o_c_n scent. Worse, {PRONOUN/p_l/subject} can smell frightened kit-scent, though the kits are nowhere to be found. The patrol settles in to bury the loner.",
+                        "exp": 0,
+                        "weight": 20,
+                        "art": "gen_cat_with_kits_loner",
+                        "new_cat": [
+                            ["loner", "age:has_kits", "meeting", "dead"]
+                        ]
+                    }
+                ],
+                "antag_fail_outcomes": [
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens. p_l coldly informs the loner that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} tresspassing, but {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} unimpressed. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/snap/snaps} that {PRONOUN/n_c:0/subject}'ll leave when {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} ready, and not a moment sooner.",
+                        "exp": 0,
+                        "weight": 20,
+                        "art": "gen_cat_with_kits_loner",
+                        "new_cat": [
+                                ["female", "loner", "age:has_kits", "meeting"],
+                                ["age:newborn", "loner", "meeting", "parent:0"]
+                        ],
+                        "relationships": [
+                            {
+                                "cats_to": ["p_l"],
+                                "cats_from": ["patrol"],
+                                "mutual": false,
+                                "values": ["respect", "trust"],
+                                "amount": -5
+                            }
+                        ],
+                        "outsider_rep": -1
+                    },
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens, and when p_l orders {PRONOUN/n_c:0/object} to leave c_n territory, {PRONOUN/n_c:0/subject} {VERB/n_c:0/attack/attacks}. The patrol retreats, and when they return later, the loner and {PRONOUN/n_c:0/poss} kits are gone.",
+                        "exp": 0,
+                        "weight": 20,
+                        "art": "gen_angry_cat_loner",
+                        "new_cat": [
+                                ["female", "loner", "age:has_kits", "meeting"],
+                                ["age:newborn", "loner", "meeting", "parent:0"]
+                        ],
+                        "injury": [
+                            {
+                                "cats": ["p_l"],
+                                "injuries": ["battle_injury"]
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "cats_to": ["p_l"],
+                                "cats_from": ["patrol"],
+                                "mutual": false,
+                                "values": ["respect", "trust"],
+                                "amount": -5
+                            }
+                        ],
+                        "outsider_rep": -1
+                    }
+                ],
+                "antag_success_outcomes": [
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is surprised to find a snarling, injured loner. The loner attacks, but {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} woefully outnumbered. The patrol makes quick work of the loner, but they're horrified when they hear the mewling of kits deeper in the undergrowth. They can't just leave the kits to starve. The patrol gathers the kits up and brings them back to camp, while p_l quickly buries the loner.",
+                        "exp": 0,
+                        "weight": 10,
+                        "art": "gen_angry_cat_loner",
+                        "stat_trait": ["vengeful", "bloodthirsty", "fierce"],
+                        "new_cat": [
+                            ["meeting", "loner", "age:has_kits", "dead"],
+                            ["loner", "litter", "parent:0", "status:kitten", "backstory:abandoned1"]
+                        ],
+                        "relationships": [
+                            {
+                                "cats_from": ["n_c:0"],
+                                "cats_to": ["patrol"],
+                                "values": ["platonic", "trust", "comfort"],
+                                "amount": -10
+                            }
+                        ],
+                        "outsider_rep": -1
+                    },
+                    {
+                        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens. p_l coldly informs the loner that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} tresspassing, and the patrol escorts the family off of c_n territory.",
+                        "exp": 0,
+                        "weight": 20,
+                        "art": "gen_angry_cat_loner",
+                        "new_cat": [
+                                ["female", "loner", "age:has_kits", "meeting"],
+                                ["age:newborn", "loner", "meeting", "parent:0"]
+                        ],
+                        "outsider_rep": -1
+                    }
+                ]
+            },
+        {
             "text": "Of course, s_c wouldn't risk <i>{PRONOUN/s_c/poss}</i> reputation stealing o_c_n's prey. But {PRONOUN/s_c/subject} wouldn't be too upset if a particularly irritating apprentice did. It only takes a few sly words of encouragement for app1 to sneak across the border... right as a furious o_c_n patrol arrives. s_c allows the scuffle to go on for a bit, before ever-so-apologetically excusing the apprentice's recklessness.",
             "exp": 0,
             "weight": 20,
