@@ -2558,7 +2558,7 @@
                     "exp": 20,
                     "weight": 10,
                     "new_cat": [
-                        ["status:kitten", "backstory:otherclan5"]
+                        ["status:kitten", "backstory:otherclan14"]
                     ],
                     "relationships": [
                         {
