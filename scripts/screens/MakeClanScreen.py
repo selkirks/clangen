@@ -2065,9 +2065,9 @@ class MakeClanScreen(Screens):
         "threat to society",
         "protective"])
 
-        self.accessories = [choice(Pelt.plant_accessories + Pelt.stuff_accessories + Pelt.bows_accessories + Pelt.bone_accessories + Pelt.butterflies_accessories + Pelt.wild_accessories + Pelt.collars + Pelt.flower_accessories + Pelt.plant2_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories)] if random.randint(1,5) == 1 else []
+        self.accessories = [choice(Pelt.plant_accessories + Pelt.stuff_accessories + Pelt.bows_accessories + Pelt.bone_accessories + Pelt.randomaccessories + Pelt.ster_accessories + Pelt.sailormoon + Pelt.beetle_accessories + Pelt.beetle_feathers + Pelt.butterflies_accessories + Pelt.wild_accessories + Pelt.collars + Pelt.flower_accessories + Pelt.plant2_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories)] if random.randint(1,5) == 1 else []
 
-        self.accessories = [choice(Pelt.plant_accessories + Pelt.wild_accessories + Pelt.collars + Pelt.flower_accessories + Pelt.plant2_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories)] if random.randint(1,5) == 1 else []
+        self.accessories = [choice(Pelt.plant_accessories + Pelt.stuff_accessories + Pelt.bows_accessories + Pelt.bone_accessories + Pelt.randomaccessories + Pelt.ster_accessories + Pelt.sailormoon + Pelt.beetle_accessories + Pelt.beetle_feathers + Pelt.butterflies_accessories + Pelt.wild_accessories + Pelt.collars + Pelt.flower_accessories + Pelt.plant2_accessories + Pelt.snake_accessories + Pelt.smallAnimal_accessories + Pelt.deadInsect_accessories + Pelt.aliveInsect_accessories + Pelt.fruit_accessories + Pelt.crafted_accessories + Pelt.tail2_accessories)] if random.randint(1,5) == 1 else []
         self.permanent_condition = choice(permanent_conditions) if random.randint(1,30) == 1 else None
 
         if self.permanent_condition == "born without a tail":

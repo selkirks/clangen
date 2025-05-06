@@ -411,6 +411,22 @@ class HandleShortEvents:
             acc_list.extend(pelts.plant_accessories)
         if "COLLAR" in possible_accs:
             acc_list.extend(pelts.collars)
+        if "BONE" in possible_accs:
+            acc_list.extend(pelts.bone_accessories)
+        if "BOWS" in possible_accs:
+            acc_list.extend(pelts.bows_accessories)
+        if "BUTTERFLIES" in possible_accs:
+            acc_list.extend(pelts.butterflies_accessories)
+        if "STUFF" in possible_accs:
+            acc_list.extend(pelts.stuff_accessories)
+        if "SAILOR" in possible_accs:
+            acc_list.extend(pelts.sailormoon)
+        if "RANDOM" in possible_accs:
+            acc_list.extend(pelts.randomaccessories)
+        if "BEETLE" in possible_accs:
+            acc_list.extend(pelts.beetle_accessories)
+        if "BEETLEFEATHER" in possible_accs:
+            acc_list.extend(pelts.beetle_feathers)
 
         for acc in possible_accs:
             if acc not in ["WILD", "PLANT", "COLLAR"]:

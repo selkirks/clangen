@@ -234,6 +234,15 @@ class Pelt:
     tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVER", "DAISY"]
     bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
                         "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
+    
+    beetle_accessories = ["FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT",
+                          "BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF",
+                          "BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
+    beetle_feathers = ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS",
+                       "BLUE JAY FEATHERS", "ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]
+    
+    ster_accessories = ["POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH", "LAURELLEAVES",
+                        "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH", "YARROW"]
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
@@ -259,6 +268,10 @@ class Pelt:
         "CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES",
         "GREENS", "RAINBOWS", "BLACKS", "SPIKESS", "WHITES",
         "PINKS", "PURPLES", "MULTIS", "INDIGOS",
+        "CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO",
+        "LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO",
+        "DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO",
+        "WHITEBOO", "LIGHTGRAYBOO", "GRAYBOO", "BROWNBOO", "BLACKBOO"
     ]
 
     # ohdan's accessories
@@ -291,7 +304,13 @@ class Pelt:
     
     deadInsect_accessories = ["LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH", "DAPPLED MONARCH",
                               "POLYPHEMUS MOTH", "MINT MOTH"]
-    
+    randomaccessories = ["DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM",
+            "FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER",
+            "DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"
+                    ]
+    sailormoon = ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK",
+                  "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"
+                    ]
     aliveInsect_accessories = ["BROWN SNAIL", "RED SNAIL", "WORM", "BLUE SNAIL", "ZEBRA ISOPOD", "DUCKY ISOPOD", "DAIRY COW ISOPOD",
                                "BEETLEJUICE ISOPOD", "BEE", "RED LADYBUG", "ORANGE LADYBUG", "YELLOW LADYBUG"]
     
@@ -959,7 +978,8 @@ class Pelt:
                 choice(Pelt.bows_accessories),
                 choice(Pelt.bone_accessories),
                 choice(Pelt.butterflies_accessories),
-                choice(Pelt.stuff_accessories)
+                choice(Pelt.stuff_accessories),
+                choice(Pelt.ster_accessories)
             ])
         else:
             self.accessory = None
