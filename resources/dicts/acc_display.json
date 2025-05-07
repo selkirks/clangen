@@ -1821,6 +1821,99 @@
     "plural": "swan feather",
     "singular": "swan feather"
   },
+  "PEACOCK BUTTERFLY": {
+        "default": "peacock butterfly",
+        "plural": "peacock butterflies",
+        "singular": "peacock butterfly"
+        
+    },
+    "DEATH HEAD HAWKMOTH": {
+        "default": "death's-head hawkmoth",
+        "plural": "death's-head hawkmoths",
+        "singular": "death's-head hawkmoth"
+        
+    },
+    "GARDEN TIGER MOTH": {
+        "default": "garden tiger moth",
+        "plural": "garden tiger moths",
+        "singular": "garden tiger moth"
+
+    },
+    "ATLAS MOTH": {
+        "default": "atlas moth",
+        "plural": "atlas moths",
+        "singular": "atlas moth"
+    
+    },
+    "CECOROPIA MOTH": {
+        "default": "cecropia moth",
+        "plural": "cecropia moths",
+        "singular": "cecropia moth"
+    },
+    "WHITE ERMINE MOTH": {
+        "default": "white ermine moth",
+        "plural": "white ermine moths",
+        "singular": "white ermine moth"
+        
+    },
+    "IO MOTH": {
+        "default": "io moth",
+        "plural": "io moths",
+        "singular": "io moth"
+        
+    },
+    "COMET MOTH": {
+        "default": "comet moth",
+        "plural": "comet moths",
+        "singular": "comet moth"
+        
+    },
+    "JADE HAWKMOTH": {
+        "default": "jade hawkmoth",
+        "plural": "jade hawkmoths",
+        "singular": "jade hawkmoth"
+        
+    },
+    "HUMMINGBIRD HAWKMOTH": {
+        "default": "hummingbird hawkmoth",
+        "plural": "hummingbird hawkmoths",
+        "singular": "hummingbird hawkmoth"
+        
+    },
+    "OWL BUTTERFLY": {
+        "default": "owl butterfly",
+        "plural": "owl butterflies",
+        "singular": "owl butterfly"
+    },
+    "GLASSWING BUTTERFLY": {
+        "default": "glasswing butterfly",
+        "plural": "glasswing butterflies",
+        "singular": "glasswing butterfly"
+        
+    },
+    "QUEEN ALEXANDRA BIRDWING BUTTERFLY": {
+        "default": "Queen Alexandra's birdwing butterfly",
+        "plural": "birdwing butterflies",
+        "singular": "birdwing butterfly"
+        
+    },
+    "GREEN DRAGONTAIL BUTTERFLY": {
+        "default": "green dragontail butterfly",
+        "plural": "green dragontail butterflies",
+        "singular": "green dragontail butterfly"
+        
+    },
+    "MENELAUS BLUE MORPHO BUTTERFLY": {
+        "default": "menelaus blue morpho butterfly",
+        "plural": "blue morpho butterflies",
+        "singular": "blue morpho butterfly"
+        
+    },
+    "DEAD LEAF BUTTERFLY": {
+        "default": "dead leaf butterfly",
+        "plural": "dead leaf butterflies",
+        "singular": "dead leaf butterfly"
+    },
   "DRACULAPARROTFEATHER": {
     "default": "dracula parrot feather",
     "plural": "dracula parrot feathers",

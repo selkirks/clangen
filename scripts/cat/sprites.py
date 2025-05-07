@@ -151,11 +151,14 @@ class Sprites:
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
 
             #ERAGONA
-            'bonesacc',
+            'bonesacc', 'butterflymothacc',
+
             #STER
             'sterflowers',
+
             #BOOS
             'boosbandanas_accessories',
+
             #OHDANS
             'flower_accessories', 'plant2_accessories', 'snake_accessories', 'smallAnimal_accessories', 'deadInsect_accessories',
             'aliveInsect_accessories', 'fruit_accessories', 'crafted_accessories', 'tail2_accessories',
@@ -593,6 +596,16 @@ class Sprites:
             "BIRD SKULL1", "RIBS", "FISH BONES"]):
             self.make_group('bonesacc', (a, 1), f'acc_wild{i}')
 
+        for a, i in enumerate([
+            "PEACOCK BUTTERFLY", "DEATH HEAD HAWKMOTH", "GARDEN TIGER MOTH", "ATLAS MOTH",
+            "CECOROPIA MOTH", "WHITE ERMINE MOTH", "IO MOTH", "COMET MOTH",
+            "JADE HAWKMOTH", "HUMMINGBIRD HAWKMOTH"]):
+            self.make_group('butterflymothacc', (a, 0), f'acc_deadInsect{i}')
+        for a, i in enumerate([
+            "OWL BUTTERFLY", "GLASSWING BUTTERFLY",
+                        "QUEEN ALEXANDRA BIRDWING BUTTERFLY", "GREEN DRAGONTAIL BUTTERFLY",
+                        "MENELAUS BLUE MORPHO BUTTERFLY", "DEAD LEAF BUTTERFLY"]):
+            self.make_group('butterflymothacc', (a, 1), f'acc_deadInsect{i}')
 
         for a, i in enumerate(["CHERRYBLOSSOM","TULIPPETALS","CLOVERFLOWER","PANSIES","BELLFLOWERS","SANVITALIAFLOWERS","EGGSHELLS","BLUEEGGSHELLS","EASTEREGG","FORSYTHIA"]):
             self.make_group('springwinter', (a, 0), f'acc_wild{i}')
@@ -741,6 +754,14 @@ class Sprites:
              "RAT SKULL", "TEETH COLLAR", "ROE SKULL"],
             ["BIRD SKULL1", "RIBS", "FISH BONES"]
         ]
+
+        butterflymoth_data = [
+            ["PEACOCK BUTTERFLY", "DEATH HEAD HAWKMOTH", "GARDEN TIGER MOTH", "ATLAS MOTH", "CECOROPIA MOTH", "WHITE ERMINE MOTH",
+             "IO MOTH", "COMET MOTH", "JADE HAWKMOTH", "HUMMINGBIRD HAWKMOTH"],
+            ["OWL BUTTERFLY", "GLASSWING BUTTERFLY", "QUEEN ALEXANDRA BIRDWING BUTTERFLY", "GREEN DRAGONTAIL BUTTERFLY",
+             "MENELAUS BLUE MORPHO BUTTERFLY", "DEAD LEAF BUTTERFLY"]
+            
+        ]
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -778,6 +799,10 @@ class Sprites:
         for row, bones in enumerate(bones_data):
             for col, bone in enumerate(bones):
                 self.make_group('bonesacc', (col, row), f'acc_wild{bone}')
+        # butterflies and moths
+        for row, butterflies_accessories in enumerate(butterflymoth_data):
+            for col, butterflies in enumerate(butterflies_accessories):
+                self.make_group('butterflymothacc', (col, row), f'acc_deadInsect{butterflies}')
         # ster
         for row, sterflowers in enumerate(ster_data):
             for col, sterflower in enumerate(sterflowers):
