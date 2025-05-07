@@ -1762,17 +1762,17 @@ def change_relationship_values(
 def get_cluster(trait):
         # Mapping traits to their respective clusters
         trait_to_clusters = {
-            "assertive": ["bloodthirsty", "fierce", "bold", "daring", "confident", "arrogant", "competitive", "smug", "impulsive", "noisy"],
-            "brooding": ["bloodthirsty", "cold", "gloomy", "strict", "vengeful", "grumpy", "bullying", "secretive", "aloof", "stoic", "reserved"],
-            "cool": ["charismatic", "cunning", "arrogant", "charming", "manipulative", "leader-like", "passionate", "witty", "flexible", "mellow", "flamboyant"],
-            "upstanding": ["righteous", "ambitious", "strict", "competitive", "responsible", "bossy", "know-it-all", "leader-like", "smug", "loyal", "justified", "methodical"],
-            "introspective": ["lonesome", "righteous", "calm", "wise", "thoughtful", "quiet", "daydreamer", "flexible", "mellow", "Self-conscious"],
-            "neurotic": ["nervous", "insecure", "lonesome", "quiet", "secretive", "careful", "meek", "cowardly", "emotional", "self-conscious", "skittish"],
-            "silly": ["troublesome", "childish", "playful", "strange", "noisy", "attention-seeker", "rebellious", "bouncy", "energetic", "spontaneous"],
-            "stable": ["loyal", "responsible", "wise", "faithful", "polite", "disciplined", "patient", "passionate", "witty", "trusting"],
-            "sweet": ["compassionate", "faithful", "loving", "oblivious", "sincere", "sweet", "polite", "daydreamer", "trusting", "humble", "emotional"],
-            "unabashed": ["childish", "confident", "bold", "shameless", "strange", "oblivious", "flamboyant", "impulsive", "noisy", "honest", "spontaneous", "fearless"],
-            "unlawful": ["adventurous", "sneaky", "rebellious", "manipulative", "obsessive", "aloof", "stoic", "cunning", "troublesome", "unruly"]
+            "assertive": ["bloodthirsty", "remorseless", "judgemental", "serious", "passive-agressive", "intense", "forceful", "alert", "fierce", "bold", "daring", "confident", "arrogant", "competitive", "smug", "impulsive", "noisy"],
+            "brooding": ["bloodthirsty", "desolate", "disgusted", "grim", "pessimistic", "passive-agressive", "reserved", "complex", "dry", "cold", "cryptic", "angry", "gloomy", "strict", "vengeful", "grumpy", "bullying", "secretive", "aloof", "stoic", "reserved"],
+            "cool": ["charismatic", "cool", "serious", "persuasive", "stoic", "secretive", "sarcastic", "logical", "dry", "escapist", "elegant", "cunning", "cryptic", "arrogant", "charming", "manipulative", "leader-like", "passionate", "witty", "flexible", "mellow", "flamboyant"],
+            "upstanding": ["righteous", "cooperative", "punctual", "philosophical", "reliable", "principled", "scholarly", "practical", "incorruptible", "leaderly", "peaceful", "protective", "polished", "hardworking", "passionate", "benevolent", "gallant", "heroic", "easy-going", "dedicated", "appreciative", "ambitious", "strict", "competitive", "responsible", "bossy", "know-it-all", "leader-like", "smug", "loyal", "justified", "methodical"],
+            "introspective": ["alert", "philosophical", "overthinker", "high-minded", "incisive", "open", "free-thinking", "farsighted", "logical", "idealistic", "lonesome", "complex", "righteous", "calm", "wise", "thoughtful", "quiet", "daydreamer", "flexible", "mellow", "Self-conscious"],
+            "neurotic": ["nervous", "unpredictable", "fearful", "pessimistic", "self-pitying", "sensitive", "emotional", "dramatic", "angry", "insecure", "lonesome", "quiet", "secretive", "careful", "meek", "cowardly", "emotional", "self-conscious", "skittish"],
+            "silly": ["troublesome", "energetic", "hyper", "cheeky", "goofy", "fun-loving", "humorous", "dedicated", "childish", "bubbly", "playful", "strange", "noisy", "attention-seeker", "rebellious", "bouncy", "energetic", "spontaneous"],
+            "stable": ["loyal", "tidy", "talkative", "dependent", "nerdy", "boring", "unreligious", "organized", "patient", "relaxed", "optimistic", "moralistic", "unaggressive", "folksy", "old-fashioned", "neutral", "fair", "casual", "dynamic", "responsible", "wise", "faithful", "polite", "disciplined", "patient", "passionate", "witty", "trusting"],
+            "sweet": ["compassionate", "supportive", "romantic", "warm", "genuine", "innocent", "hearty", "generous", "gracious", "soft", "unaggressive", "gentle", "nurturing", "chummy", "forgiving", "easy-going", "appreciative", "faithful", "loving", "oblivious", "sincere", "sweet", "polite", "daydreamer", "trusting", "humble", "emotional"],
+            "unabashed": ["childish", "monotone", "clumsy", "superficial", "snobbish", "charmless", "thoughtless", "forgetful", "aimless", "sarcastic", "sassy", "genuine", "free-thinking", "hypnotic", "dramatic", "distracted", "absent-minded", "carefree", "cryptic", "confident", "bold", "shameless", "strange", "oblivious", "flamboyant", "impulsive", "noisy", "honest", "spontaneous", "fearless"],
+            "unlawful": ["adventurous", "amoral", "weak-willed", "spiteful", "greedy", "unreliable", "forceful", "destructive", "secretive", "sneaky", "rebellious", "manipulative", "obsessive", "aloof", "stoic", "cunning", "troublesome", "unruly"]
         }
         clusters = [key for key, values in trait_to_clusters.items() if trait in values]
 
