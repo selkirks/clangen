@@ -151,7 +151,7 @@ class Sprites:
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
 
             #ERAGONA
-            'bonesacc', 'butterflymothacc',
+            'bonesacc', 'butterflymothacc', 'twolegstuff',
 
             #STER
             'sterflowers',
@@ -597,6 +597,15 @@ class Sprites:
             self.make_group('bonesacc', (a, 1), f'acc_wild{i}')
 
         for a, i in enumerate([
+            "OLD SILVER WATCH", "OLD GOLD WATCH", "GOLDEN KEY", "SILVER KEY",
+            "DVD", "OLD PENCIL", "OLD BRUSH", "BANANA PEEL", "BROKEN VHS TAPE",
+            "OLD NEWSPAPER"]):
+            self.make_group('twolegstuff', (a, 0), f'acc_crafted{i}')
+        for a, i in enumerate([
+            "SEA GLASS", "BAUBLES", "MUD AND DIRT"]):
+            self.make_group('twolegstuff', (a, 1), f'acc_crafted{i}')
+
+        for a, i in enumerate([
             "PEACOCK BUTTERFLY", "DEATH HEAD HAWKMOTH", "GARDEN TIGER MOTH", "ATLAS MOTH",
             "CECOROPIA MOTH", "WHITE ERMINE MOTH", "IO MOTH", "COMET MOTH",
             "JADE HAWKMOTH", "HUMMINGBIRD HAWKMOTH"]):
@@ -761,6 +770,11 @@ class Sprites:
             ["OWL BUTTERFLY", "GLASSWING BUTTERFLY", "QUEEN ALEXANDRA BIRDWING BUTTERFLY", "GREEN DRAGONTAIL BUTTERFLY",
              "MENELAUS BLUE MORPHO BUTTERFLY", "DEAD LEAF BUTTERFLY"]
             
+        ]
+        twolegstuff_data = [
+            ["OLD GOLD WATCH", "OLD SILVER WATCH", "GOLDEN KEY", "SILVER KEY", "DVD", "OLD PENCIL", "OLD BRUSH",
+             "BANANA PEEL", "BROKEN VHS TAPE", "OLD NEWSPAPER"],
+            ["SEA GLASS", "BAUBLES", "MUD AND DIRT"]
         ]
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):

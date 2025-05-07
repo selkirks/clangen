@@ -1979,6 +1979,75 @@
     "plural": "holly vines",
     "singular": "holly vine"
   },
+  "OLD SILVER WATCH": {
+        "default": "old silver watch",
+        "plural": "old silver watches",
+        "singular": "old silver watch"
+    },
+    "OLD GOLD WATCH": {
+        "default": "old gold watch",
+        "plural": "old gold watches",
+        "singular": "old gold watch"
+    },
+    "GOLDEN KEY": {
+        "default": "golden key",
+        "plural": "golden keys",
+        "singular": "golden key"
+    },
+    "SILVER KEY": {
+        "default": "silver key",
+        "plural": "silver keys",
+        "singular": "silver key"
+    },
+    "DVD": {
+        "default": "dvd",
+        "plural": "dvd's",
+        "singular": "dvd"
+    },
+    "OLD PENCIL": {
+        "default": "old pencil",
+        "plural": "old pencils",
+        "singular": "old pencil"
+    },
+    "OLD BRUSH": {
+        "default": "old brush",
+        "plural": "old brushes",
+        "singular": "old brush"
+    },
+    "BANANA PEEL": {
+        "default": "banana peel",
+        "plural": "banana peels",
+        "singular": "banana peel"
+        
+    },
+    "BROKEN VHS TAPE": {
+        "default": "broken vhs tape",
+        "plural": "Broken vhs tapes",
+        "singular": "broken vhs tape"
+        
+    },
+    "OLD NEWSPAPER": {
+        "default": "old newspaper",
+        "plural": "old newspapers",
+        "singular": "old newspaper"
+        
+    },
+    "SEA GLASS": {
+        "default": "sea glass",
+        "plural": "sea glass",
+        "singular": "sea glass"
+    },
+    "BAUBLES": {
+        "default": "baubles",
+        "plural": "baubles",
+        "singular": "bauble"
+    },
+    "MUD AND DIRT": {
+        "default": "mud and dirt",
+        "plural": "mud and dirt",
+        "singular": "mud and dirt"
+
+    },
   "TOAST": {
     "default": "toast",
     "plural": "toast",
