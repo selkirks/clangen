@@ -151,7 +151,7 @@ class Sprites:
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
 
             #ERAGONA
-            'bonesacc', 'butterflymothacc', 'twolegstuff',
+            'bonesacc', 'butterflymothacc', 'twolegstuff', 'bandanas', 'ties', 'teethcollars', 'french_scarves', 'bows',
             #BEETLE
             'beetle_feathers', 'beetle_accessories',
 
@@ -587,6 +587,56 @@ class Sprites:
             self.make_group('eragona', (a, 2), f'collars{i}')
 
         for a, i in enumerate([
+            "CRIMSONTIE", "BLUETIE", "YELLOWTIE", "CYANTIE", "ORANGETIE", "LIMETIE"]):
+            self.make_group('ties', (a, 0), f'collars{i}')
+        for a, i in enumerate([
+            "GREENTIE", "RAINBOWTIE", "BLACKTIE", "SPIKESTIE", "WHITETIE"]):
+            self.make_group('ties', (a, 1), f'collars{i}')
+        for a, i in enumerate([
+            "PINKTIE", "PURPLETIE", "MULTITIE", "INDIGOTIE"]):
+            self.make_group('ties', (a, 2), f'collars{i}')
+
+        for a, i in enumerate([
+            "CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS"]):
+            self.make_group('bows', (a, 0), f'collars{i}')
+        for a, i in enumerate([
+            "GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS"]):
+            self.make_group('bows', (a, 1), f'collars{i}')
+        for a, i in enumerate([
+            "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]):
+            self.make_group('bows', (a, 2), f'collars{i}')
+
+        for a, i in enumerate([
+            "CRIMSONTEETHCOLLAR", "BLUETEETHCOLLAR", "YELLOWTEETHCOLLAR", "CYANTEETHCOLLAR", "REDTEETHCOLLAR"]):
+            self.make_group('teethcollars', (a, 0), f'collars{i}')
+        for a, i in enumerate([
+            "LIMETEETHCOLLAR","GREENTEETHCOLLAR", "RAINBOWTEETHCOLLAR", "BLACKTEETHCOLLAR", "SPIKESTEETHCOLLAR"]):
+            self.make_group('teethcollars', (a, 1), f'collars{i}')
+        for a, i in enumerate([
+            "WHITETEETHCOLLAR", "PINKTEETHCOLLAR", "PURPLETEETHCOLLAR", "MULTITEETHCOLLAR", "INDIGOTEETHCOLLAR"]):
+            self.make_group('teethcollars', (a, 2), f'collars{i}')
+
+        for a, i in enumerate([
+            "CRIMSONBANDANA", "BLUEBANDANA", "YELLOWBANDANA", "CYANBANDANA", "REDBANDANA"]):
+            self.make_group('bandanas', (a, 0), f'collars{i}')
+        for a, i in enumerate([
+            "LIMEBANDANA" ,"GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA"]):
+            self.make_group('bandanas', (a, 1), f'collars{i}')
+        for a, i in enumerate([
+            "PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA"]):
+            self.make_group('bandanas', (a, 2), f'collars{i}')
+
+        for a, i in enumerate([
+            "CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES"]):
+            self.make_group('french_scarves', (a, 0), f'collars{i}')
+        for a, i in enumerate([
+            "GREENS", "RAINBONS", "BLACKS", "SPIKESS", "WHITES"]):
+            self.make_group('french_scarves', (a, 1), f'collars{i}')
+        for a, i in enumerate([
+            "PINKS", "PURPLES", "MULTIS", "INDIGOS"]):
+            self.make_group('french_scarves', (a, 2), f'collars{i}')
+
+        for a, i in enumerate([
             "YELLOWCROWN", "REDCROWN", "LILYPADCROWN"]):
             self.make_group('crowns', (a, 0), f'acc_wild{i}')
         
@@ -796,6 +846,36 @@ class Sprites:
              "BANANA PEEL", "BROKEN VHS TAPE", "OLD NEWSPAPER"],
             ["SEA GLASS", "BAUBLES", "MUD AND DIRT"]
         ]
+        bandanas_data = [
+            ["CRIMSONBANDANA", "BLUEBANDANA", "YELLOWANDANA", "CYANBANDANA", "REDBANDANA", "LIMEBANDANA"],
+            ["GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA"],
+            ["PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA"]
+        ]
+
+        bows_data = [
+            ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS"],
+            ["GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS"],
+            ["PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
+        ]
+       
+        dog_teeth_collars_data = [
+            ["CRIMSONTEETHCOLLAR", "BLUETEETHCOLLAR", "YELLOWTEETHCOLLAR", "CYANTEETHCOLLAR", "REDTEETHCOLLAR",
+             "LIMETEETHCOLLAR"],
+            ["GREENTEETHCOLLAR", "RAINBOWTEETHCOLLAR", "BLACKTEETHCOLLAR", "SPIKESTEETHCOLLAR", "WHITETEETHCOLLAR"],
+            ["PINKTEETHCOLLAR", "PURPLETEETHCOLLAR", "MULTITEETHCOLLAR", "INDIGOTEETHCOLLAR"]
+        ]
+
+        ties_data = [
+            ["CRIMSONTIE", "BLUETIE", "YELLOWTIE", "CYANTIE", "ORANGETIE", "LIMETIE"],
+            ["GREENTIE", "RAINBOWTIE", "BLACKTIE", "SPIKESTIE", "WHITETIE"],
+            ["PINKTIE", "PURPLETIE", "MULTITIE", "INDIGOTIE"]
+        ]
+     
+        french_scarves_data = [
+            ["CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES"],
+            ["GREENS", "RAINBOWS", "BLACKS", "SPIKESS", "WHITES"],
+            ["PINKS", "PURPLES", "MULTIS", "INDIGOS"]
+        ]
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -837,6 +917,31 @@ class Sprites:
         for row, butterflies_accessories in enumerate(butterflymoth_data):
             for col, butterflies in enumerate(butterflies_accessories):
                 self.make_group('butterflymothacc', (col, row), f'acc_deadInsect{butterflies}')
+        for row, twolegstuff in enumerate(twolegstuff_data):
+            for col, stuff in enumerate(twolegstuff):
+                self.make_group('twolegstuff', (col, row), f'acc_crafted{stuff}')
+
+        # bandanas
+        for row, bandanas in enumerate(bandanas_data):
+            for col, bandana in enumerate(bandanas):
+                self.make_group('bandanas', (col, row), f'collars{bandana}')
+
+        # bows (on ear and tail) 
+        for row, bows in enumerate(bows_data):
+            for col, bow in enumerate(bows):
+                self.make_group('bows', (col, row), f'bows{bow}')
+        # dog teeth collars
+        for row, teethcollars in enumerate(dog_teeth_collars_data):
+            for col, teethcollar in enumerate(teethcollars):
+                self.make_group('teethcollars', (col, row), f'collars{teethcollar}')
+        # ties 
+        for row, ties in enumerate(ties_data):
+            for col, tie in enumerate(ties):
+                self.make_group("ties", (col, row), f"collars{tie}")
+         # french_scarves
+        for row, frenchscarvess in enumerate(french_scarves_data):
+            for col, frenchscarf in enumerate(frenchscarvess):
+                self.make_group("french_scarves", (col, row), f"collars{frenchscarf}")
         # ster
         for row, sterflowers in enumerate(ster_data):
             for col, sterflower in enumerate(sterflowers):

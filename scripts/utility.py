@@ -3023,6 +3023,16 @@ def generate_sprite(
                         new_sprite.blit(sprites.sprites['beetle_feathers' + i + cat_sprite], (0, 0))
                     elif i in cat.pelt.beetle_accessories:
                         new_sprite.blit(sprites.sprites['beetle_accessories' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.ties:
+                        new_sprite.blit(sprites.sprites['ties' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.french_scarves:
+                        new_sprite.blit(sprites.sprites['french_scarves' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.bandanas:
+                        new_sprite.blit(sprites.sprites['bandanas' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.teethcollars:
+                        new_sprite.blit(sprites.sprites['teethcollars' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.bows:
+                        new_sprite.blit(sprites.sprites['bows' + i + cat_sprite], (0, 0))
                 except:
                     continue
 
