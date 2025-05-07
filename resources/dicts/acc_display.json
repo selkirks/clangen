@@ -2191,6 +2191,66 @@
     "plural": "radios",
     "singular": "radio"
   },
+  "MOON": {
+    "default": "Sailor Moon's bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"MERCURY": {
+    "default": "Sailor Mercury's bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"MARS": {
+    "default": "Sailor Mars' bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"JUPITER": {
+    "default": "Sailor Jupiter's bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"VENUS": {
+    "default": "Sailor Venus' bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"TUXEDO MASK": {
+    "default": "Tuxedo Mask's rose",
+    "plural": "roses",
+    "singular": "rose"
+        },
+"URANUS": {
+    "default": "Sailor Uranus' bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"NEPTUNE": {
+    "default": "Sailor Neptune's bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"PLUTO": {
+    "default": "Sailor Pluto's bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"SATURN": {
+    "default": "Sailor Saturn's bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"MINI MOON": {
+    "default": "Mini Moon's bow",
+    "plural": "bows",
+    "singular": "bow"
+        },
+"CRYSTAL BALL": {
+    "default": "Queen Beryl's crystal ball",
+    "plural": "crystal balls",
+    "singular": "crystal ball"
+        },
   "SWANFEATHER": {
     "default": "swan feather",
     "plural": "swan feather",

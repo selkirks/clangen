@@ -159,7 +159,7 @@ class Sprites:
             'sterflowers',
 
             #BOOS
-            'boosbandanas_accessories',
+            'boosbandanas_accessories', 'sailormoon',
 
             #OHDANS
             'flower_accessories', 'plant2_accessories', 'snake_accessories', 'smallAnimal_accessories', 'deadInsect_accessories',
@@ -734,6 +734,14 @@ class Sprites:
             "YARROW"]):
             self.make_group('sterflowers', (a, 2), f'acc_flower{i}')
         
+        # boo's accessories
+        for a, i in enumerate(
+            ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK"]):
+            self.make_group('sailormoon', (a, 0), f'acc_crafted{i}')
+        for a, i in enumerate([
+            "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"]):
+            self.make_group('sailormoon', (a, 1), f'acc_crafted{i}')
+
         #beetle's accessories
         for a, i in enumerate(
             ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS",
@@ -832,6 +840,10 @@ class Sprites:
             ["SNAKE", "BAT WINGS", "CANIDAE SKULL", "DEER ANTLERS", "RAM HORN", "GOAT HORN", "OX SKULL",
              "RAT SKULL", "TEETH COLLAR", "ROE SKULL"],
             ["BIRD SKULL1", "RIBS", "FISH BONES"]
+        ]
+        sailormoon_data = [
+            ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK"],
+            ["URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"]
         ]
 
         butterflymoth_data = [
@@ -950,6 +962,10 @@ class Sprites:
         for row, boosbandanas_accessories in enumerate(boos_data):
             for col, boosbandana in enumerate(boosbandanas_accessories):
                 self.make_group("boosbandanas_accessories", (col, row), f"collars{boosbandana}")
+        # sailor moon
+        for row, sailormoon in enumerate(sailormoon_data):
+            for col, sailormoonacc in enumerate(sailormoon):
+                self.make_group("sailormoon", (col, row), f"acc_sailor{sailormoonacc}")
     def load_symbols(self):
         """
         loads clan symbols
