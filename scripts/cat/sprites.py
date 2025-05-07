@@ -134,7 +134,7 @@ class Sprites:
             'eragonatorite', 'eragonawp', 'whitepatches', 'tortiepatchesmasks', 'minkswhite', 'voithexpatches', 'exoticwhitepatches','tortiepatchesmasks', 'minkstorties',
             'fademask', 'fadestarclan', 'fadedarkforest',
             'symbols', 'minkswhite', 'minkstorties', 'brindlecolours', 'wildcatcolours', 'wolfcolours', 'spotscolours', 'smokepointcolours',
-            'dalmatiancolours', 'finleappatchescolours', 'eragonatorite2', 'sterflowers',
+            'dalmatiancolours', 'finleappatchescolours', 'eragonatorite2',
             'steragouticolours', 'stainvoithex', 'sillyagouticolours', 'bandanas', 'harnesses', 'bows', 'bonesacc', 'butterflymothacc', 'twolegstuff', 'danceagouticolours', 'bows', 'teethcollars', 'mimiagouticolours', 
             'sterbengalcolours', 'sillybengalcolours', 'dancebengalcolours', 'mimibengalcolours',
             'sterclassiccolours', 'sillyclassiccolours', 'danceclassiccolours', 'mimiclassiccolours',
@@ -150,10 +150,6 @@ class Sprites:
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
 
-            #boos
-            'boosbandanas_accessories', 'sailormoon', 'randomaccessories',
-            #beetles
-            'beetle_accessories', 'beetle_feathers',
             #OHDANS
             'flower_accessories', 'plant2_accessories', 'snake_accessories', 'smallAnimal_accessories', 'deadInsect_accessories',
             'aliveInsect_accessories', 'fruit_accessories', 'crafted_accessories', 'tail2_accessories',
@@ -190,7 +186,7 @@ class Sprites:
         # Define eye colors
         eye_colors = [
             ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'HEATHERBLUE', 'SUNLITICE'],
-            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW']
+            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW', "ORANGE"]
             ]
         beetle_eyes = [    
             ['ROSE', 'ALGAE', 'SEAFOAM', 'LIGHT FLAME', 'CLOUDY', 'RED', 'TURQUOISE', 'SWAMP', 'RAINY', 'AQUAMARINE', 'EARTH', 'PUMPKIN'],
@@ -669,11 +665,6 @@ class Sprites:
         wild_data = [
             ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY", "CICADA WINGS", "BLACK CICADA"]
         ]
-        ster_data = [
-            ["POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH"],
-            ["LAURELLEAVES", "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH"],
-            ["YARROW"]
-        ]
 
         collars_data = [
             ["CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME"],
@@ -698,31 +689,6 @@ class Sprites:
             ["GREENNYLON", "RAINBOWNYLON", "BLACKNYLON", "SPIKESNYLON", "WHITENYLON"],
             ["PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON"]
         ]
-        beetle_accessories_data = [
-        ["FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT"],
-        ["BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF"],
-        ["BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
-        ]
-
-        beetle_feathers_data = [
-            ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS", "BLUE JAY FEATHERS"],
-            ["ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]
-            ]
-
-        sailormoon_data = [
-            ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK"],
-            ["URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"]
-        ]
-
-        random_data = [
-            ["DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM"],
-            ["FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER"],
-            ["DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"]
-        ]
-        boos_data = [["CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO"],
-                    ["LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO"],
-                    ["DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO", "WHITEBOO"],
-                    ["LIGHTGRAYBOO", "GRAYBOO", "BLACKBOO", "BROWNBOO"]]
 
         #eragona
         bones_data = [
@@ -851,32 +817,6 @@ class Sprites:
         for row, frenchscarvess in enumerate(french_scarves_data):
             for col, frenchscarf in enumerate(frenchscarvess):
                 self.make_group("french_scarves", (col, row), f"collars{frenchscarf}")
-        # ster
-        for row, sterflowers in enumerate(ster_data):
-            for col, sterflower in enumerate(sterflowers):
-                self.make_group("sterflowers", (col, row), f"acc_ster{sterflower}")
-
-        # boosbandanas
-        for row, boosbandanas_accessories in enumerate(boos_data):
-            for col, boosbandana in enumerate(boosbandanas_accessories):
-                self.make_group("boosbandanas_accessories", (col, row), f"collars{boosbandana}")
-                
-        # sailor moon
-        for row, sailormoon in enumerate(sailormoon_data):
-            for col, sailormoonacc in enumerate(sailormoon):
-                self.make_group("sailormoon", (col, row), f"acc_sailor{sailormoonacc}")
-        # random
-        for row, randomaccessories in enumerate(random_data):
-            for col, randomaccessory in enumerate(randomaccessories):
-                self.make_group("randomaccessories", (col, row), f"acc_random{randomaccessory}")
-        
-        # beetles
-        for row, beetle_accessories in enumerate(beetle_accessories_data):
-            for col, beetleaccessory in enumerate(beetle_accessories):
-                self.make_group("beetle_accessories", (col, row), f"acc_beetle{beetleaccessory}")
-        for row, beetle_feathers in enumerate(beetle_feathers_data):
-            for col, beetlefeather in enumerate(beetle_feathers):
-                self.make_group("beetle_feathers", (col, row), f"acc_beetlefeathers{beetlefeather}")
     def load_symbols(self):
         """
         loads clan symbols
