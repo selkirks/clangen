@@ -920,6 +920,72 @@
     "plural": "beetlejuice isopods",
     "singular": "beetlejuice isopod"
   },
+  "DEER ANTLERS": {
+        "default": "deer antlers",
+        "plural": "deer antlers",
+        "singular": "deer antler"
+    },
+    "RAM HORN": {
+        "default": "ram horn",
+        "plural": "ram horns",
+        "singular": "ram horn"
+    },
+    "GOAT HORN": {
+        "default": "goat horn",
+        "plural": "goat horns",
+        "singular": "goat horn"
+    },
+    "OX SKULL": {
+        "default": "ox skull",
+        "plural": "ox skulls",
+        "singular": "ox skull"
+    },
+    "RAT SKULL": {
+        "default": "rat skull",
+        "plural": "rat skulls",
+        "singular": "rat skull"
+    },
+    "TEETH COLLAR": {
+        "default": "teeth collar",
+        "plural": "teeth collars",
+        "singular": "teeth collar"
+    },
+    "ROE SKULL": {
+        "default": "roe skull",
+        "plural": "roe skulls",
+        "singular": "roe skull"
+    },
+    "BIRD SKULL1": {
+        "default": "bird skull necklace",
+        "plural": "bird skulls necklace",
+        "singular": "bird skull necklace"
+    },
+    "SNAKE": {
+        "default": "snake skeleton",
+        "plural": "snake skeletons",
+        "singular": "snake skeleton"
+    },
+    "BAT WINGS": {
+        "default": "bat wings skeleton",
+        "plural": "bat wings skeleton",
+        "singular": "bat wing skeleton"
+    },
+    "CANIDAE SKULL": {
+        "default": "canidae skull",
+        "plural": "canidae skulls",
+        "singular": "canidae skull"
+    },
+    "RIBS": {
+        "default": "ribs",
+        "plural": "ribs",
+        "singular": "rib"
+    },
+    "FISH BONES": {
+        "default": "fish bones",
+        "plural": "fish bones",
+        "singular": "fish bone"
+    
+    },
   "BEE": {
     "default": "bee friend",
     "plural": "bees",

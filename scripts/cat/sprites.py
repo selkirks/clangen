@@ -150,6 +150,8 @@ class Sprites:
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
 
+            #ERAGONA
+            'bonesacc',
             #STER
             'sterflowers',
             #BOOS
@@ -582,6 +584,14 @@ class Sprites:
         for a, i in enumerate([
             "YELLOWCROWN", "REDCROWN", "LILYPADCROWN"]):
             self.make_group('crowns', (a, 0), f'acc_wild{i}')
+        
+        for a, i in enumerate([
+            "SNAKE", "BAT WINGS", "CANIDAE SKULL", "DEER ANTLERS", "RAM HORN", "GOAT HORN", "OX SKULL",
+            "RAT SKULL", "TEETH COLLAR", "ROE SKULL"]):
+            self.make_group('bonesacc', (a, 0), f'acc_wild{i}')
+        for a, i in enumerate([
+            "BIRD SKULL1", "RIBS", "FISH BONES"]):
+            self.make_group('bonesacc', (a, 1), f'acc_wild{i}')
 
 
         for a, i in enumerate(["CHERRYBLOSSOM","TULIPPETALS","CLOVERFLOWER","PANSIES","BELLFLOWERS","SANVITALIAFLOWERS","EGGSHELLS","BLUEEGGSHELLS","EASTEREGG","FORSYTHIA"]):
@@ -726,6 +736,11 @@ class Sprites:
                     ["DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO", "WHITEBOO"],
                     ["LIGHTGRAYBOO", "GRAYBOO", "BLACKBOO", "BROWNBOO"]]
 
+        bones_data = [
+            ["SNAKE", "BAT WINGS", "CANIDAE SKULL", "DEER ANTLERS", "RAM HORN", "GOAT HORN", "OX SKULL",
+             "RAT SKULL", "TEETH COLLAR", "ROE SKULL"],
+            ["BIRD SKULL1", "RIBS", "FISH BONES"]
+        ]
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
             for col, herb in enumerate(herbs):
@@ -759,6 +774,10 @@ class Sprites:
             for col, nyloncollar in enumerate(nyloncollars):
                 self.make_group('nyloncollars', (col, row), f'collars{nyloncollar}')
 
+        # bones
+        for row, bones in enumerate(bones_data):
+            for col, bone in enumerate(bones):
+                self.make_group('bonesacc', (col, row), f'acc_wild{bone}')
         # ster
         for row, sterflowers in enumerate(ster_data):
             for col, sterflower in enumerate(sterflowers):
