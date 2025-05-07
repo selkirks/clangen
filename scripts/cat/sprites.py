@@ -150,6 +150,8 @@ class Sprites:
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
 
+            #STER
+            'sterflowers',
             #BOOS
             'boosbandanas_accessories',
             #OHDANS
@@ -637,6 +639,17 @@ class Sprites:
         for a, i in enumerate([
             "LAVENDERHEADPIECE", "LAVENDERTAILWRAP", "LAVENDERANKLET"]):
             self.make_group('moipa2', (a, 2), f'acc_wild{i}')
+
+        # ster's accessories
+        for a, i in enumerate([
+            "POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH"]):
+            self.make_group('sterflowers', (a, 0), f'acc_flower{i}')
+        for a, i in enumerate([
+            "LAURELLEAVES", "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH"]):
+            self.make_group('sterflowers', (a, 1), f'acc_flower{i}')
+        for a, i in enumerate([
+            "YARROW"]):
+            self.make_group('sterflowers', (a, 2), f'acc_flower{i}')
         
         # Define scars
         scars_data = [
@@ -676,6 +689,12 @@ class Sprites:
         ]
         wild_data = [
             ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY", "CICADA WINGS", "BLACK CICADA"]
+        ]
+
+        ster_data = [
+            ["POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH"],
+            ["LAURELLEAVES", "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH"],
+            ["YARROW"]
         ]
 
         collars_data = [
@@ -740,6 +759,10 @@ class Sprites:
             for col, nyloncollar in enumerate(nyloncollars):
                 self.make_group('nyloncollars', (col, row), f'collars{nyloncollar}')
 
+        # ster
+        for row, sterflowers in enumerate(ster_data):
+            for col, sterflower in enumerate(sterflowers):
+                self.make_group("sterflowers", (col, row), f"acc_flower{sterflower}")
         # boosbandanas
         for row, boosbandanas_accessories in enumerate(boos_data):
             for col, boosbandana in enumerate(boosbandanas_accessories):

@@ -1879,5 +1879,70 @@
     "default": "zookeeper outfit",
     "plural": "zookeeper outfits",
     "singular": "zookeeper outfit"
-  }
+  },
+  "POPPYFLOWER": {
+    "default": "poppy flower",
+    "plural": "poppy flower",
+    "singular": "poppy flower"
+},
+"JUNIPERBERRY": {
+    "default": "juniper berry",
+    "plural": "juniper berries",
+    "singular": "juniper berry"
+},
+"DAISYFLOWER": {
+    "default": "daisy flower",
+    "plural": "daisy flowers",
+    "singular": "daisy flower"
+},
+"BORAGEFLOWER": {
+    "default": "borage flower",
+    "plural": "borage flowers",
+    "singular": "borage flower"
+},
+"OAK": {
+    "default": "oak leaf",
+    "plural": "oak leaves",
+    "singular": "oak leaf"
+},
+"BEECH": {
+    "default": "beech leaf",
+    "plural": "beech leaves",
+    "singular": "beech leaf"
+},
+"LAURELLEAVES": {
+    "default": "laurel leaf",
+    "plural": "laurel leaves",
+    "singular": "laurel leaf"
+},
+"COLTSFOOT": {
+    "default": "coltsfoot flower",
+    "plural": "coltsfoot flowers",
+    "singular": "coltsfoot flower"
+},
+"BINDWEED": {
+    "default": "bindweed vine",
+    "plural": "bindweed vines",
+    "singular": "bindweed vine"
+},
+"TORMENTIL": {
+    "default": "tormentil flower",
+    "plural": "tormentil flowers",
+    "singular": "tormentil flower"
+},
+"BRIGHTEYE": {
+    "default": "bright-eye flower",
+    "plural": "bright-eye flowers",
+    "singular": "bright-eye flower"
+},
+"LAVENDERWREATH": {
+    "default": "lavender wreath",
+    "plural": "lavender wreaths",
+    "singular": "lavender wreath"
+},
+"YARROW": {
+    "default": "yarrow clump",
+    "plural": "yarrow clumps",
+    "singular": "yarrow clump"
+}
 }
