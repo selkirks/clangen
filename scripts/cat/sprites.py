@@ -153,8 +153,8 @@ class Sprites:
             #ERAGONA
             'bonesacc', 'butterflymothacc', 'twolegstuff',
             #BEETLE
-            'beetle_feathers',
-            
+            'beetle_feathers', 'beetle_accessories',
+
             #STER
             'sterflowers',
 
@@ -692,6 +692,16 @@ class Sprites:
         for a, i in enumerate([
             "ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]):
             self.make_group('beetle_feathers', (a, 1), f'acc_wild{i}')
+        
+        for a, i in enumerate([
+            "FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT"]):
+            self.make_group('beetle_accessories', (a, 0), f'acc_crafted{i}')
+        for a, i in enumerate([
+            "BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF"]):
+            self.make_group('beetle_accessories', (a, 1), f'acc_crafted{i}')
+        for a, i in enumerate([
+            "BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]):
+            self.make_group('beetle_accessories', (a, 2), f'acc_smallAnimal{i}')
 
         # Define scars
         scars_data = [

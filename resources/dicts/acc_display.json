@@ -2173,6 +2173,81 @@
     "plural": "yarrow clumps",
     "singular": "yarrow clump"
 },
+"FROG FRIEND": {
+        "default": "frog friend",
+        "plural": "frog friends",
+        "singular": "frog friend"
+            },
+    "COWBOY HAT": {
+        "default": "cowboy hat",
+        "plural": "cowboy hats",
+        "singular": "cowboy hat"
+            },
+    "BUNNY HAT": {
+        "default": "bunny hat",
+        "plural": "bunny hats",
+        "singular": "bunny hat"
+            },
+    "WINTER HAT": {
+        "default": "winter hat",
+        "plural": "winter hats",
+        "singular": "winter hat"
+            },
+    "PARTY HAT": {
+        "default": "party hat",
+        "plural": "party hats",
+        "singular": "party hat"
+            },
+    "SANTA HAT": {
+        "default": "santa hat",
+        "plural": "santa hats",
+        "singular": "santa hat"
+            },
+    "BANANA HAT": {
+        "default": "banana hat",
+        "plural": "banana hats",
+        "singular": "banana hat"
+            },
+    "BAT WING SUIT": {
+        "default": "bat wings suit",
+        "plural": "bat wings suits",
+        "singular": "bat wings suit"
+            },
+    "PINK BOWTIE": {
+        "default": "pink bowtie",
+        "plural": "pink bowties",
+        "singular": "pink bowtie"
+            },
+    "GRAY BOWTIE": {
+        "default": "gray bowtie",
+        "plural": "gray bowties",
+        "singular": "gray bowtie"
+            },
+    "PINK SCARF": {
+        "default": "pink scarf",
+        "plural": "pink scarves",
+        "singular": "pink scarf"
+            },
+    "BLUETAILED SKINK": {
+        "default": "bluetailed skink",
+        "plural": "bluetailed skinks",
+        "singular": "bluetailed skink"
+            },
+    "BLACKHEADED ORIOLE": {
+        "default": "blackheaded oriole",
+        "plural": "blackheaded orioles",
+        "singular": "blackheaded oriole"
+            },
+    "MILKSNAKE": {
+        "default": "milksnake",
+        "plural": "milksnakes",
+        "singular": "milksnake"
+            },
+    "WORM FRIEND": {
+        "default": "worm",
+        "plural": "worms",
+        "singular": "worm"
+            },
 "THRUSH FEATHERS": {
         "default": "thrush feather",
         "plural": "thrush feathers",
