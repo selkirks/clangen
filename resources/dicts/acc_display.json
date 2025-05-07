@@ -2608,6 +2608,86 @@
     "plural": "yarrow clumps",
     "singular": "yarrow clump"
 },
+"DOGWOOD2": {
+    "default": "dogwood blossom",
+    "plural": "dogwood blossoms",
+    "singular": "dogwood blossom"
+        },
+"TREESTAR": {
+    "default": "tree star",
+    "plural": "tree stars",
+    "singular": "tree star"
+        },
+"RACCOON LEAF": {
+    "default": "raccoon leaf",
+    "plural": "raccoon leaves",
+    "singular": "raccoon leaf"
+        },
+"WHITE RACCOON LEAF": {
+    "default": "white raccoon leaf",
+    "plural": "white raccoon leaves",
+    "singular": "white raccoon leaf"
+        },
+"CHERRY BLOSSOM": {
+    "default": "cherry blossom",
+    "plural": "cherry blossoms",
+    "singular": "cherry blossom"
+        },
+"DAISY BLOOM": {
+    "default": "daisy bloom",
+    "plural": "daisy blooms",
+    "singular": "daisy bloom"
+        },
+"FEATHERS": {
+    "default": "feather",
+    "plural": "feathers",
+    "singular": "feather"
+        },
+"RED ROSE": {
+    "default": "red rose",
+    "plural": "red roses",
+    "singular": "red rose"
+        },
+"WHITE ROSE": {
+    "default": "white rose",
+    "plural": "white roses",
+    "singular": "white rose"
+        },
+"PEBBLE": {
+    "default": "pebble",
+    "plural": "pebbles",
+    "singular": "pebble"
+        },
+"PEBBLE COLLECTION": {
+    "default": "pebble collection",
+    "plural": "pebble collections",
+    "singular": "pebble collection"
+        },
+"GOLDEN FLOWER": {
+    "default": "golden flower",
+    "plural": "golden flowers",
+    "singular": "golden flower"
+        },
+"DANDELIONS": {
+    "default": "dandelion",
+    "plural": "dandelions",
+    "singular": "dandelion"
+        },
+"DANDELION PUFFS": {
+    "default": "dandelion puff",
+    "plural": "dandelion puffs",
+    "singular": "dandelion puff"
+        },
+"DICE": {
+    "default": "dice",
+    "plural": "die",
+    "singular": "dice"
+        },
+"GOLDEN EARRINGS": {
+    "default": "golden earrings",
+    "plural": "golden earrings",
+    "singular": "golden earrings"
+        },
 "FROG FRIEND": {
         "default": "frog friend",
         "plural": "frog friends",

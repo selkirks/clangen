@@ -159,7 +159,7 @@ class Sprites:
             'sterflowers',
 
             #BOOS
-            'boosbandanas_accessories', 'sailormoon',
+            'boosbandanas_accessories', 'sailormoon', 'randomaccessories',
 
             #OHDANS
             'flower_accessories', 'plant2_accessories', 'snake_accessories', 'smallAnimal_accessories', 'deadInsect_accessories',
@@ -741,6 +741,16 @@ class Sprites:
         for a, i in enumerate([
             "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"]):
             self.make_group('sailormoon', (a, 1), f'acc_crafted{i}')
+        
+        for a, i in enumerate([
+            "DOGWOOD2", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM"]):
+            self.make_group('randomaccessories', (a, 0), f'acc_wild{i}')
+        for a, i in enumerate([
+            "FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER"]):
+            self.make_group('randomaccessories', (a, 1), f'acc_wild{i}')
+        for a, i in enumerate([
+            "DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"]):
+            self.make_group('randomaccessories', (a, 2), f'acc_wild{i}')
 
         #beetle's accessories
         for a, i in enumerate(
@@ -829,6 +839,11 @@ class Sprites:
             ["CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON", "REDNYLON", "LIMENYLON"],
             ["GREENNYLON", "RAINBOWNYLON", "BLACKNYLON", "SPIKESNYLON", "WHITENYLON"],
             ["PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON"]
+        ]
+        random_data = [
+            ["DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM"],
+            ["FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER"],
+            ["DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"]
         ]
 
         boos_data = [["CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO"],
@@ -966,6 +981,11 @@ class Sprites:
         for row, sailormoon in enumerate(sailormoon_data):
             for col, sailormoonacc in enumerate(sailormoon):
                 self.make_group("sailormoon", (col, row), f"acc_sailor{sailormoonacc}")
+
+        # random
+        for row, randomaccessories in enumerate(random_data):
+            for col, randomaccessory in enumerate(randomaccessories):
+                self.make_group("randomaccessories", (col, row), f"acc_random{randomaccessory}")
     def load_symbols(self):
         """
         loads clan symbols

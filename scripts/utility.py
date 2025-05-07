@@ -3035,6 +3035,8 @@ def generate_sprite(
                         new_sprite.blit(sprites.sprites['bows' + i + cat_sprite], (0, 0))
                     elif i in cat.pelt.sailormoon:
                         new_sprite.blit(sprites.sprites['sailormoon' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.randomaccessories:
+                        new_sprite.blit(sprites.sprites['randomaccessories' + i + cat_sprite], (0, 0))
                 except:
                     continue
 
