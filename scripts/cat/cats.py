@@ -107,7 +107,7 @@ class Cat:
         "leader",
     ]
 
-    gender_tags = {"female": "F", "male": "M"}
+    gender_tags = {"female": "F", "male": "M", 'intersex' : 'I'}
 
     # EX levels and ranges.
     # Ranges are inclusive to both bounds
@@ -355,7 +355,14 @@ class Cat:
 
         # sex!?!??!?!?!??!?!?!?!??
         if self.gender is None:
-            self.gender = choice(["female", "male"])
+            intersexchance = randint(1,25)
+            #probability that the cat will be intersex.. base chance around 8%
+            if intersexchance < 3 and example is False:
+                self.gender = "intersex"
+                intersex_condition = choice (["excess testosterone", "testosterone deficiency", "aneuploidy", "mosaicism", "chimerism"])
+                self.get_permanent_condition(intersex_condition, born_with=True)
+            else:
+                self.gender = choice(["female", "male"])
         self.g_tag = self.gender_tags[self.gender]
 
         """if self.genderalign == "":
@@ -466,35 +473,54 @@ class Cat:
         :return: None
         """
         # trans cat chances
+        nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+        enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+        enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
         theythemdefault = game.settings["they them default"]
         self.genderalign = self.gender
-        trans_chance = randint(0, 50)
-        nb_chance = randint(0, 75)
+        trans_chance = randint(0, 20)
+        nb_chance = randint(0, 25)
 
         # GENDER IDENTITY
-        if self.age in ["kitten", "newborn"]:
-            # newborns can't be trans, sorry babies
-            pass
-        elif nb_chance == 1:
-            self.genderalign = "nonbinary"
-        elif trans_chance == 1:
-            if self.gender == "female":
-                self.genderalign = "trans male"
+        if self.gender == "female" and not self.status in ['newborn', 'kitten']:
+            if trans_chance == 1:
+                binary_chance = randint(1,10)
+                if binary_chance > 2:
+                    self.genderalign = "trans male"
+                else:
+                    self.genderalign = choice(enby_masc)
+            elif nb_chance == 1:
+                self.genderalign = choice(nonbiney_list)
             else:
-                self.genderalign = "trans female"
-
-        # PRONOUNS
-        if theythemdefault is True:
-            self.pronouns = [self.default_pronouns[0].copy()]
+                self.genderalign = self.gender
+        elif self.gender == "male" and not self.status in ['newborn', 'kitten']:
+            if trans_chance == 1:
+                binary_chance = randint(1,10)
+                if binary_chance > 2:
+                    self.genderalign = "trans female"
+                else:
+                    self.genderalign = choice(enby_fem)
+            elif nb_chance == 1:
+                self.genderalign = choice(nonbiney_list)
+            else:
+                self.genderalign = self.gender
+        elif self.gender == "intersex" and not self.status in ['newborn', 'kitten']:
+            if trans_chance == 1:
+                binary_chance = randint(1,10)
+                if binary_chance > 2:
+                    self.genderalign = choice(["trans female", "trans male"])
+                else:
+                    self.genderalign = choice(enby_fem + enby_masc)
+            elif nb_chance == 1:
+                intergenderchance = randint(1,2)
+                if intergenderchance == 1:
+                    self.genderalign = "intergender"
+                else:
+                    self.genderalign = choice(nonbiney_list)
+            else:
+                self.genderalign = self.gender
         else:
-            # Assigning pronouns based on gender
-            if self.genderalign in ["female", "trans female"]:
-                self.pronouns = [self.default_pronouns[1].copy()]
-            elif self.genderalign in ["male", "trans male"]:
-                self.pronouns = [self.default_pronouns[2].copy()]
-            else:
-                self.genderalign = "nonbinary"
-                self.pronouns = [self.default_pronouns[0].copy()]
+            self.genderalign = self.gender
 
         # APPEARANCE
         self.pelt = Pelt.generate_new_pelt(
@@ -2419,6 +2445,10 @@ class Cat:
             )
             return
 
+        intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
+        if self.gender != "intersex":
+            if name in intersex_exclusive:
+                return
         if "blind" in self.permanent_condition and name == "failing eyesight":
             return
         if "deaf" in self.permanent_condition and name == "partial hearing loss":
