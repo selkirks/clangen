@@ -3019,6 +3019,8 @@ def generate_sprite(
                         new_sprite.blit(sprites.sprites['butterflies' + i + cat_sprite], (0, 0))
                     elif i in cat.pelt.twolegstuff:
                         new_sprite.blit(sprites.sprites['twolegstuff' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.beetle_feathers:
+                        new_sprite.blit(sprites.sprites['beetle_feathers' + i + cat_sprite], (0, 0))
                 except:
                     continue
 

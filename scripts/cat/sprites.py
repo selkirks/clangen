@@ -152,7 +152,9 @@ class Sprites:
 
             #ERAGONA
             'bonesacc', 'butterflymothacc', 'twolegstuff',
-
+            #BEETLE
+            'beetle_feathers',
+            
             #STER
             'sterflowers',
 
@@ -612,8 +614,8 @@ class Sprites:
             self.make_group('butterflymothacc', (a, 0), f'acc_deadInsect{i}')
         for a, i in enumerate([
             "OWL BUTTERFLY", "GLASSWING BUTTERFLY",
-                        "QUEEN ALEXANDRA BIRDWING BUTTERFLY", "GREEN DRAGONTAIL BUTTERFLY",
-                        "MENELAUS BLUE MORPHO BUTTERFLY", "DEAD LEAF BUTTERFLY"]):
+            "QUEEN ALEXANDRA BIRDWING BUTTERFLY", "GREEN DRAGONTAIL BUTTERFLY",
+            "MENELAUS BLUE MORPHO BUTTERFLY", "DEAD LEAF BUTTERFLY"]):
             self.make_group('butterflymothacc', (a, 1), f'acc_deadInsect{i}')
 
         for a, i in enumerate(["CHERRYBLOSSOM","TULIPPETALS","CLOVERFLOWER","PANSIES","BELLFLOWERS","SANVITALIAFLOWERS","EGGSHELLS","BLUEEGGSHELLS","EASTEREGG","FORSYTHIA"]):
@@ -627,7 +629,6 @@ class Sprites:
         for a, i in enumerate([
             "WOODENOAKANTLERS","WOODENBIRCHANTLERS","DOGWOOD","GRAYWOOL","BLACKWOOL","CREAMWOOL","WHITEWOOL","FIRBRANCHES","CORALBELLS","SLIVERDUSTPLANT"]):
             self.make_group('springwinter', (a, 3), f'acc_wild{i}')
-
         #Lifegen artist additions
         for a, i in enumerate(
             ["PURPLERAINCOAT", "BLUERAINCOAT", "GREENRAINCOAT", "PINKRAINCOAT", "REDRAINCOAT", "LIMERAINCOAT", "ORANGERAINCOAT"]):
@@ -683,6 +684,15 @@ class Sprites:
             "YARROW"]):
             self.make_group('sterflowers', (a, 2), f'acc_flower{i}')
         
+        #beetle's accessories
+        for a, i in enumerate(
+            ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS",
+            "BLUE JAY FEATHERS"]):
+            self.make_group('beetle_feathers', (a, 0), f'acc_wild{i}')
+        for a, i in enumerate([
+            "ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]):
+            self.make_group('beetle_feathers', (a, 1), f'acc_wild{i}')
+
         # Define scars
         scars_data = [
             ["ONE", "TWO", "THREE", "MANLEG", "BRIGHTHEART", "MANTAIL", "BRIDGE", "RIGHTBLIND", "LEFTBLIND",

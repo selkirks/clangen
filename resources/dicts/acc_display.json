@@ -2172,5 +2172,54 @@
     "default": "yarrow clump",
     "plural": "yarrow clumps",
     "singular": "yarrow clump"
-}
+},
+"THRUSH FEATHERS": {
+        "default": "thrush feather",
+        "plural": "thrush feathers",
+        "singular": "thrush feather"
+            },
+    "GOLDFINCH FEATHERS": {
+        "default": "goldfinch feather",
+        "plural": "goldfinch feathers",
+        "singular": "goldfinch feather"
+            },
+    "DOVE FEATHERS": {
+        "default": "dove feather",
+        "plural": "dove feathers",
+        "singular": "dove feather"
+            },
+    "PEACOCK FEATHERS": {
+        "default": "peacock feather",
+        "plural": "peacock feathers",
+        "singular": "peacock feather"
+            },
+    "HAWK FEATHERS": {
+        "default": "hawk feather",
+        "plural": "hawk feathers",
+        "singular": "hawk feather"
+            },
+    "BLUE JAY FEATHERS": {
+        "default": "blue jay feather",
+        "plural": "blue jay feathers",
+        "singular": "blue jay feather"
+            },
+    "ROBIN FEATHERS": {
+        "default": "robin feather",
+        "plural": "robin feathers",
+        "singular": "robin feather"
+            },
+    "FIERY FEATHERS": {
+        "default": "fiery feather",
+        "plural": "fiery feathers",
+        "singular": "fiery feather"
+            },
+    "SUNSET FEATHERS": {
+        "default": "sunset feather",
+        "plural": "sunset feathers",
+        "singular": "sunset feather"
+            },
+    "SILVER FEATHERS": {
+        "default": "silver feather",
+        "plural": "silver feathers",
+        "singular": "silver feathers"}
 }
