@@ -601,54 +601,53 @@ class ProfileScreen(Screens):
                 self.change_screen("change gender screen")
             # when button is pressed...
             elif event.ui_element == self.cis_trans_button:
-                # if the cat is anything besides m/f/transm/transf then turn them back to cis
-                if self.the_cat.genderalign not in [
-                    "female",
-                    "trans female",
-                    "male",
-                    "trans male",
-                ]:
+                nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+                enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+                enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
+                oriented_enby = enby_masc + enby_fem
+                oriented_all = oriented_enby + ["female", "male", "intersex", "intergender"]
+                if self.the_cat.genderalign not in oriented_all:
                     self.the_cat.genderalign = self.the_cat.gender
                 elif (
-                    self.the_cat.gender == "male"
-                    and self.the_cat.genderalign == "female"
+                        self.the_cat.gender == "male"
+                        and self.the_cat.genderalign == "female"
                 ):
                     self.the_cat.genderalign = self.the_cat.gender
                 elif (
-                    self.the_cat.gender == "female"
-                    and self.the_cat.genderalign == "male"
+                        self.the_cat.gender == "female"
+                        and self.the_cat.genderalign == "male"
                 ):
                     self.the_cat.genderalign = self.the_cat.gender
 
                 # if the cat is cis (gender & gender align are the same) then set them to trans
+                elif (
+                        self.the_cat.gender == "intersex" and self.the_cat.genderalign == "intersex"
+                ):
+                    self.the_cat.genderalign = "intergender"
+                elif (
+                        self.the_cat.gender == "intersex" and self.the_cat.genderalign == "intergender"
+                ):
+                    self.the_cat.genderalign = choice(["trans male", choice(enby_masc)])
+                elif (
+                        self.the_cat.gender == "intersex" and self.the_cat.genderalign in enby_masc
+                ):
+                    self.the_cat.genderalign = choice(["trans female", choice(enby_fem)])
                 # cis males -> trans female first
                 elif (
-                    self.the_cat.gender == "male" and self.the_cat.genderalign == "male"
+                        self.the_cat.gender == "male" and self.the_cat.genderalign == "male"
                 ):
-                    self.the_cat.genderalign = "trans female"
+                    self.the_cat.genderalign = choice(["trans female", choice(enby_fem)])
                 # cis females -> trans male
                 elif (
-                    self.the_cat.gender == "female"
-                    and self.the_cat.genderalign == "female"
+                        self.the_cat.gender == "female"
+                        and self.the_cat.genderalign == "female"
                 ):
-                    self.the_cat.genderalign = "trans male"
+                    self.the_cat.genderalign = choice(["trans male", choice(enby_masc)])
                 # if the cat is trans then set them to nonbinary
-                elif self.the_cat.genderalign in ["trans female", "trans male"]:
-                    self.the_cat.genderalign = "nonbinary"
+                elif self.the_cat.genderalign in oriented_enby or self.the_cat.genderalign == "intergender":
+                    self.the_cat.genderalign = choice(nonbiney_list)
                 # pronoun handler
-                if self.the_cat.genderalign in ["female", "trans female"]:
-                    self.the_cat.pronouns = [self.the_cat.default_pronouns[1].copy()]
-                elif self.the_cat.genderalign in ["male", "trans male"]:
-                    self.the_cat.pronouns = [self.the_cat.default_pronouns[2].copy()]
-                elif self.the_cat.genderalign in ["nonbinary"]:
-                    self.the_cat.pronouns = [self.the_cat.default_pronouns[0].copy()]
-                elif self.the_cat.genderalign not in [
-                    "female",
-                    "trans female",
-                    "male",
-                    "trans male",
-                ]:
-                    self.the_cat.pronouns = [self.the_cat.default_pronouns[0].copy()]
+                self.the_cat.pronouns = self.get_new_pronouns(self.the_cat.genderalign)
                 self.clear_profile()
                 self.build_profile()
                 self.update_disabled_buttons_and_text()
@@ -1053,6 +1052,566 @@ class ProfileScreen(Screens):
         # game.clan.load_accessories()
 
         self.set_cat_location_bg(self.the_cat)
+        
+    def get_new_pronouns(self, genderalign):
+        default_pronouns = [
+        {
+            "subject": "they",
+            "object": "them",
+            "poss": "their",
+            "inposs": "theirs",
+            "self": "themself",
+            "conju": 1,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "she",
+            "object": "her",
+            "poss": "her",
+            "inposs": "hers",
+            "self": "herself",
+            "conju": 2,
+            "parent": "mother",
+            "sibling": "sister"
+        },
+        {
+            "subject": "he",
+            "object": "him",
+            "poss": "his",
+            "inposs": "his",
+            "self": "himself",
+            "conju": 2,
+            "parent": "father",
+            "sibling": "brother"
+        },
+        {
+            "subject": "ae",
+            "object": "aer",
+            "poss": "aers",
+            "inposs": "aers",
+            "self": "aerself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "astra",
+            "object": "astral",
+            "poss": "astrals",
+            "inposs": "astrals",
+            "self": "astralself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "bat",
+            "object": "bat",
+            "poss": "bats",
+            "inposs": "bats",
+            "self": "batself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "bea",
+            "object": "beam",
+            "poss": "beams",
+            "inposs": "beams",
+            "self": "beamself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "ber",
+            "object": "berry",
+            "poss": "berrys",
+            "inposs": "berrys",
+            "self": "berryself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "bun",
+            "object": "bun",
+            "poss": "buns",
+            "inposs": "buns",
+            "self": "bunself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "caw",
+            "object": "caw",
+            "poss": "caws",
+            "inposs": "caws",
+            "self": "cawself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "chir",
+            "object": "chirp",
+            "poss": "chirps",
+            "inposs": "chirps",
+            "self": "chirpself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "claw",
+            "object": "claw",
+            "poss": "claws",
+            "inposs": "claws",
+            "self": "clawself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "click",
+            "object": "click",
+            "poss": "clicks",
+            "inposs": "clicks",
+            "self": "clickself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "clo",
+            "object": "cloud",
+            "poss": "clouds",
+            "inposs": "clouds",
+            "self": "cloudself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "co",
+            "object": "co",
+            "poss": "cos",
+            "inposs": "cos",
+            "self": "coself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "dae",
+            "object": "daem",
+            "poss": "daer",
+            "inposs": "daers",
+            "self": "daemself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "drip",
+            "object": "drop",
+            "poss": "drips",
+            "inposs": "drops",
+            "self": "dropself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "e",
+            "object": "em",
+            "poss": "eir",
+            "inposs": "eirs",
+            "self": "emself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "ey",
+            "object": "em",
+            "poss": "eir",
+            "inposs": "eirs",
+            "self": "emself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "fae",
+            "object": "faer",
+            "poss": "faer",
+            "inposs": "faers",
+            "self": "faerself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "faun",
+            "object": "faun",
+            "poss": "fauns",
+            "inposs": "fauns",
+            "self": "faunself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "fang",
+            "object": "fang",
+            "poss": "fangs",
+            "inposs": "fangs",
+            "self": "fangself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "fern",
+            "object": "fern",
+            "poss": "ferns",
+            "inposs": "ferns",
+            "self": "fernself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "fluff",
+            "object": "fluff",
+            "poss": "fluffs",
+            "inposs": "fluffs",
+            "self": "fluffself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "fox",
+            "object": "fox",
+            "poss": "foxs",
+            "inposs": "foxs",
+            "self": "foxself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "grr",
+            "object": "grr",
+            "poss": "grr",
+            "inposs": "grrs",
+            "self": "grrself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "hiss",
+            "object": "hiss",
+            "poss": "hisses",
+            "inposs": "hisses",
+            "self": "hissself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "it",
+            "object": "it",
+            "poss": "its",
+            "inposs": "its",
+            "self": "itself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "lea",
+            "object": "leaf",
+            "poss": "leafs",
+            "inposs": "leaves",
+            "self": "leafself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "moon",
+            "object": "moon",
+            "poss": "moons",
+            "inposs": "moons",
+            "self": "moonself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "mrr",
+            "object": "mrrp",
+            "poss": "mrrps",
+            "inposs": "mrrps",
+            "self": "mrrpself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "ne",
+            "object": "nem",
+            "poss": "nir",
+            "inposs": "nirs",
+            "self": "nemself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "null",
+            "object": "null",
+            "poss": "nulls",
+            "inposs": "nulls",
+            "self": "nullself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "petal",
+            "object": "petal",
+            "poss": "petals",
+            "inposs": "petals",
+            "self": "petalself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "pitter",
+            "object": "patter",
+            "poss": "pitters",
+            "inposs": "patters",
+            "self": "patterself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "purr",
+            "object": "purr",
+            "poss": "purrs",
+            "inposs": "purrs",
+            "self": "purrself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "rai",
+            "object": "rain",
+            "poss": "rains",
+            "inposs": "rains",
+            "self": "rainself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "rey",
+            "object": "reym",
+            "poss": "reyr",
+            "inposs": "reyrs",
+            "self": "reymself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "ro",
+            "object": "rose",
+            "poss": "roses",
+            "inposs": "roses",
+            "self": "roseself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "sin",
+            "object": "sin",
+            "poss": "sins",
+            "inposs": "sins",
+            "self": "sinself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "sno",
+            "object": "snow",
+            "poss": "snows",
+            "inposs": "snows",
+            "self": "snowself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "star",
+            "object": "star",
+            "poss": "stars",
+            "inposs": "stars",
+            "self": "starself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "stor",
+            "object": "storm",
+            "poss": "storms",
+            "inposs": "storms",
+            "self": "stormself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "sun",
+            "object": "sun",
+            "poss": "suns",
+            "inposs": "suns",
+            "self": "sunself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "thon",
+            "object": "thon",
+            "poss": "thons",
+            "inposs": "thons",
+            "self": "thonself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "ve",
+            "object": "ven",
+            "poss": "ver",
+            "inposs": "vers",
+            "self": "venself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "ve",
+            "object": "ver",
+            "poss": "vis",
+            "inposs": "vis",
+            "self": "verself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "voi",
+            "object": "void",
+            "poss": "voids",
+            "inposs": "voids",
+            "self": "voidself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "wra",
+            "object": "wrath",
+            "poss": "wraths",
+            "inposs": "wraths",
+            "self": "wrathself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "xe",
+            "object": "xem",
+            "poss": "xyr",
+            "inposs": "xyrs",
+            "self": "xemself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "ze",
+            "object": "hir",
+            "poss": "hir",
+            "inposs": "hirs",
+            "self": "hirself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        },
+        {
+            "subject": "ze",
+            "object": "zir",
+            "poss": "zir",
+            "inposs": "zirs",
+            "self": "zirself",
+            "conju": 2,
+            "parent": "parent",
+            "sibling": "sibling"
+        }]
+        pronouns = []
+        if not game.settings["they them default"]:
+            nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+            enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+            enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
+            #woke be upon ye
+            #binaries
+            bonus_they = randint(1,3)
+            bonus_hershey = randint(1,10)
+            if genderalign == "female" or genderalign in enby_fem:
+                pronouns = [default_pronouns[1].copy()]
+                if genderalign in enby_fem and bonus_they == 1:
+                    pronouns.append(default_pronouns[0].copy())
+                elif bonus_hershey == 1:
+                    pronouns.append(default_pronouns[2].copy())
+            elif genderalign == "male" or genderalign in enby_masc:
+                pronouns = [default_pronouns[2].copy()]
+                if genderalign in enby_masc and bonus_they == 1:
+                    pronouns.append(default_pronouns[0].copy())
+                elif bonus_hershey == 1:
+                    pronouns.append(default_pronouns[1].copy())
+            else:
+                neo_chance = randint(1,3)
+                if neo_chance == 1:
+                    pronouns = [default_pronouns[randint(3,51)].copy()]
+                else:
+                    pronouns = [default_pronouns[0].copy()]
+            
+            second_set = randint(1,10)
+            queer_list = nonbiney_list + ["trans male", "trans female", "intergender"]
+            if genderalign in queer_list:
+                second_set = randint(1,5)
+            if second_set == 1:
+                pronouns.append(default_pronouns[randint(3,51)].copy())
+        else:
+            pronouns = [default_pronouns[0].copy()]
+        return(pronouns)
 
     def clear_profile(self):
         """Clears all profile objects."""
@@ -3538,29 +4097,58 @@ class ProfileScreen(Screens):
 
         elif self.open_tab == "personal":
             # Button to trans or cis the cats.
+            nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+            enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+            enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
+            oriented_enby = enby_masc + enby_fem
             if self.the_cat.gender == "male" and self.the_cat.genderalign == "male":
-                self.cis_trans_button.set_text("change to trans\nfemale")
+                self.cis_trans_button.set_text(
+                    "change gender to trans female"
+                )
             elif (
-                self.the_cat.gender == "female" and self.the_cat.genderalign == "female"
+                    self.the_cat.gender == "female" and self.the_cat.genderalign == "female"
             ):
-                self.cis_trans_button.set_text("change to trans\nmale")
-            elif self.the_cat.genderalign in ["trans female", "trans male"]:
-                self.cis_trans_button.set_text("change to\nnonbinary")
+                self.cis_trans_button.set_text(
+                    "change gender to trans male"
+                )
+            elif (
+                    self.the_cat.gender == "intersex" and self.the_cat.genderalign == "intersex"
+            ):
+                self.cis_trans_button.set_text(
+                    "change gender to intergender"
+                )
+            elif (
+                    self.the_cat.gender == "intersex" and self.the_cat.genderalign == "intergender"
+            ):
+                self.cis_trans_button.set_text(
+                    "change gender to trans male"
+                )
+            elif (
+                    self.the_cat.gender == "intersex" and self.the_cat.genderalign in enby_masc
+            ):
+                self.cis_trans_button.set_text(
+                    "change gender to trans female"
+                )
+            elif self.the_cat.genderalign in oriented_enby:
+                self.cis_trans_button.set_text(
+                    "change gender to nonbinary"
+                )
             elif self.the_cat.genderalign not in [
                 "female",
                 "trans female",
                 "male",
                 "trans male",
+                'intersex',
             ]:
-                self.cis_trans_button.set_text("change to \ncisgender")
+                self.cis_trans_button.set_text("change gender to cis")
             elif self.the_cat.gender == "male" and self.the_cat.genderalign == "female":
-                self.cis_trans_button.set_text("change to \ncisgender")
+                self.cis_trans_button.set_text("change gender to cis")
             elif self.the_cat.gender == "female" and self.the_cat.genderalign == "male":
-                self.cis_trans_button.set_text("change to \ncisgender")
+                self.cis_trans_button.set_text("change gender to cis")
             elif self.the_cat.genderalign:
-                self.cis_trans_button.set_text("change to \ncisgender")
+                self.cis_trans_button.set_text("change gender to cis")
             else:
-                self.cis_trans_button.set_text("change to \ncisgender")
+                self.cis_trans_button.set_text("change gender to cis")
                 self.cis_trans_button.disable()
 
         elif self.open_tab == 'your tab':
