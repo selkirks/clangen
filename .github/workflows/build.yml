@@ -209,7 +209,7 @@ jobs:
           python-version: "3.8" # 3.8 to support older versions of Windows
           architecture: "x86"
       - name: Install poetry
-        uses: abatilo/actions-poetry@v3
+        uses: abatilo/actions-poetry@v4
         with:
           poetry-version: 1.4.1
       - name: Set up cargo cache
@@ -322,7 +322,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install poetry
-        uses: abatilo/actions-poetry@v3
+        uses: abatilo/actions-poetry@v4
         with:
           poetry-version: 1.4.1
       - name: Setup Python 3.8 x64
@@ -575,7 +575,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install poetry
-        uses: abatilo/actions-poetry@v3
+        uses: abatilo/actions-poetry@v4
         with:
           poetry-version: 1.7.1
       - name: Setup Python 3.11

@@ -25,7 +25,7 @@ jobs:
       - name: Remove the zip
         run: rm tests/saves.zip
       - name: Install poetry
-        uses: abatilo/actions-poetry@v3
+        uses: abatilo/actions-poetry@v4
         with:
           poetry-version: 1.4.1
       - name: install dependencies
@@ -47,7 +47,7 @@ jobs:
           python-version: '3.11'
           architecture: 'x64'
       - name: Install poetry
-        uses: abatilo/actions-poetry@v3
+        uses: abatilo/actions-poetry@v4
         with:
           poetry-version: 1.4.1
       - name: Check file encoding
@@ -61,7 +61,7 @@ jobs:
         run: poetry run python3 tests/test_encoding.py fix
       - name: Make a pr
         if: ${{ failure() && steps.fixit.conclusion == 'success' && github.event_name == 'push' }}
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           commit-message: Fix file encoding
           title: Fix file encoding
@@ -81,7 +81,7 @@ jobs:
           python-version: '3.11'
           architecture: 'x64'
       - name: Install poetry
-        uses: abatilo/actions-poetry@v3
+        uses: abatilo/actions-poetry@v4
         with:
           poetry-version: 1.4.1
       - name: install dependencies
@@ -98,7 +98,7 @@ jobs:
             python-version: '3.11'
             architecture: 'x64'
         - name: Install poetry
-          uses: abatilo/actions-poetry@v3
+          uses: abatilo/actions-poetry@v4
           with:
             poetry-version: 1.4.1
         - name: install dependencies
@@ -115,7 +115,7 @@ jobs:
             python-version: '3.11'
             architecture: 'x64'
         - name: Install poetry
-          uses: abatilo/actions-poetry@v3
+          uses: abatilo/actions-poetry@v4
           with:
             poetry-version: 1.4.1
         - name: install dependencies
