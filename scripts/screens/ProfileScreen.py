@@ -1545,6 +1545,11 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
+        # SKIN COLOR
+        output += "skin: " + str(the_cat.describe_skin())
+        # NEWLINE ----------
+        output += "\n"
+
         # PELT TYPE
         output += "pelt: " + the_cat.pelt.name.lower()
         # NEWLINE ----------

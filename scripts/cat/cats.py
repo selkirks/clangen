@@ -1297,6 +1297,28 @@ class Cat:
         # Add "a" or "an"
         output = f"an {output}" if output[0].lower() in "aeiou" else f"a {output}"
         return output
+    
+    def describe_skin(self):
+        """Get a human-readable description of this cat's skin colour"""
+        skin = str(self.pelt.skin).lower()
+
+        if skin == "darkbrown":
+            skin = "dark brown"
+        elif skin == "lightbrown":
+            skin = "light brown"
+        elif skin == "darkgrey":
+            skin = "dark grey"
+        elif skin == "darksalmon":
+            skin = "dark salmon"
+        elif skin == "darkmarbled":
+            skin = "dark marbled"
+        elif skin == "lightmarbled":
+            skin = "light marbled"
+        elif skin == "darkblue":
+            skin = "dark blue"
+        elif skin == "lightblue":
+            skin = "light blue"
+        return skin
 
     def describe_eyes(self):
         """Get a human-readable description of this cat's eye colour"""
