@@ -199,15 +199,7 @@
 		"base_extra_white": 5,
 		"max_white_amount": 2,
 		"base_extra_tortie": 3,
-		"max_tortie_amount": 2,
-		"multiple_pronouns_chance": 20, 
-		"neopronoun_chance": 30,
-		"comment": [
-			"max_white_amount is the max amount of white patches one cat can generate with - 2 by default",
-			"max_tortie_amount is the max amount of tortie patches one cat can generate with - 2 by default",
-			"Note that extra patch chances decrease with each extra patch - chances base_extra_white 5 by default, base_extra_tortie 3 by default",
-			"neopronoun_chance refers to the chance that a cats FIRST set of pronouns will be neopronouns"
-		]
+		"max_tortie_amount": 2
 	},
 	"cat_name_controls": {
 		"always_name_after_appearance": false,

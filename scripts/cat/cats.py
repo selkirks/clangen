@@ -107,7 +107,7 @@ class Cat:
         "leader",
     ]
 
-    gender_tags = {"female": "F", "male": "M", 'intersex' : 'I'}
+    gender_tags = {"female": "F", "male": "M"}
 
     # EX levels and ranges.
     # Ranges are inclusive to both bounds
@@ -157,496 +157,6 @@ class Cat:
             "conju": 2,
             "parent": "father",
             "sibling": "brother"
-        },
-        {
-            "subject": "ae",
-            "object": "aer",
-            "poss": "aers",
-            "inposs": "aers",
-            "self": "aerself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "astra",
-            "object": "astral",
-            "poss": "astrals",
-            "inposs": "astrals",
-            "self": "astralself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "bat",
-            "object": "bat",
-            "poss": "bats",
-            "inposs": "bats",
-            "self": "batself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "bea",
-            "object": "beam",
-            "poss": "beams",
-            "inposs": "beams",
-            "self": "beamself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "ber",
-            "object": "berry",
-            "poss": "berrys",
-            "inposs": "berrys",
-            "self": "berryself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "bun",
-            "object": "bun",
-            "poss": "buns",
-            "inposs": "buns",
-            "self": "bunself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "caw",
-            "object": "caw",
-            "poss": "caws",
-            "inposs": "caws",
-            "self": "cawself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "chir",
-            "object": "chirp",
-            "poss": "chirps",
-            "inposs": "chirps",
-            "self": "chirpself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "claw",
-            "object": "claw",
-            "poss": "claws",
-            "inposs": "claws",
-            "self": "clawself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "click",
-            "object": "click",
-            "poss": "clicks",
-            "inposs": "clicks",
-            "self": "clickself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "clo",
-            "object": "cloud",
-            "poss": "clouds",
-            "inposs": "clouds",
-            "self": "cloudself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "co",
-            "object": "co",
-            "poss": "cos",
-            "inposs": "cos",
-            "self": "coself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "dae",
-            "object": "daem",
-            "poss": "daer",
-            "inposs": "daers",
-            "self": "daemself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "drip",
-            "object": "drop",
-            "poss": "drips",
-            "inposs": "drops",
-            "self": "dropself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "e",
-            "object": "em",
-            "poss": "eir",
-            "inposs": "eirs",
-            "self": "emself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "ey",
-            "object": "em",
-            "poss": "eir",
-            "inposs": "eirs",
-            "self": "emself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "fae",
-            "object": "faer",
-            "poss": "faer",
-            "inposs": "faers",
-            "self": "faerself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "faun",
-            "object": "faun",
-            "poss": "fauns",
-            "inposs": "fauns",
-            "self": "faunself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "fang",
-            "object": "fang",
-            "poss": "fangs",
-            "inposs": "fangs",
-            "self": "fangself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "fern",
-            "object": "fern",
-            "poss": "ferns",
-            "inposs": "ferns",
-            "self": "fernself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "fluff",
-            "object": "fluff",
-            "poss": "fluffs",
-            "inposs": "fluffs",
-            "self": "fluffself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "fox",
-            "object": "fox",
-            "poss": "foxs",
-            "inposs": "foxs",
-            "self": "foxself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "grr",
-            "object": "grr",
-            "poss": "grr",
-            "inposs": "grrs",
-            "self": "grrself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "hiss",
-            "object": "hiss",
-            "poss": "hisses",
-            "inposs": "hisses",
-            "self": "hissself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "it",
-            "object": "it",
-            "poss": "its",
-            "inposs": "its",
-            "self": "itself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "lea",
-            "object": "leaf",
-            "poss": "leafs",
-            "inposs": "leaves",
-            "self": "leafself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "moon",
-            "object": "moon",
-            "poss": "moons",
-            "inposs": "moons",
-            "self": "moonself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "mrr",
-            "object": "mrrp",
-            "poss": "mrrps",
-            "inposs": "mrrps",
-            "self": "mrrpself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "ne",
-            "object": "nem",
-            "poss": "nir",
-            "inposs": "nirs",
-            "self": "nemself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "null",
-            "object": "null",
-            "poss": "nulls",
-            "inposs": "nulls",
-            "self": "nullself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "petal",
-            "object": "petal",
-            "poss": "petals",
-            "inposs": "petals",
-            "self": "petalself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "pitter",
-            "object": "patter",
-            "poss": "pitters",
-            "inposs": "patters",
-            "self": "patterself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "purr",
-            "object": "purr",
-            "poss": "purrs",
-            "inposs": "purrs",
-            "self": "purrself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "rai",
-            "object": "rain",
-            "poss": "rains",
-            "inposs": "rains",
-            "self": "rainself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "rey",
-            "object": "reym",
-            "poss": "reyr",
-            "inposs": "reyrs",
-            "self": "reymself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "ro",
-            "object": "rose",
-            "poss": "roses",
-            "inposs": "roses",
-            "self": "roseself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "sin",
-            "object": "sin",
-            "poss": "sins",
-            "inposs": "sins",
-            "self": "sinself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "sno",
-            "object": "snow",
-            "poss": "snows",
-            "inposs": "snows",
-            "self": "snowself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "star",
-            "object": "star",
-            "poss": "stars",
-            "inposs": "stars",
-            "self": "starself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "stor",
-            "object": "storm",
-            "poss": "storms",
-            "inposs": "storms",
-            "self": "stormself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "sun",
-            "object": "sun",
-            "poss": "suns",
-            "inposs": "suns",
-            "self": "sunself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "thon",
-            "object": "thon",
-            "poss": "thons",
-            "inposs": "thons",
-            "self": "thonself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "ve",
-            "object": "ven",
-            "poss": "ver",
-            "inposs": "vers",
-            "self": "venself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "ve",
-            "object": "ver",
-            "poss": "vis",
-            "inposs": "vis",
-            "self": "verself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "voi",
-            "object": "void",
-            "poss": "voids",
-            "inposs": "voids",
-            "self": "voidself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "wra",
-            "object": "wrath",
-            "poss": "wraths",
-            "inposs": "wraths",
-            "self": "wrathself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "xe",
-            "object": "xem",
-            "poss": "xyr",
-            "inposs": "xyrs",
-            "self": "xemself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "ze",
-            "object": "hir",
-            "poss": "hir",
-            "inposs": "hirs",
-            "self": "hirself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
-        },
-        {
-            "subject": "ze",
-            "object": "zir",
-            "poss": "zir",
-            "inposs": "zirs",
-            "self": "zirself",
-            "conju": 2,
-            "parent": "parent",
-            "sibling": "sibling"
         }
     ]
 
@@ -845,14 +355,7 @@ class Cat:
 
         # sex!?!??!?!?!??!?!?!?!??
         if self.gender is None:
-            intersexchance = randint(1,25)
-            #probability that the cat will be intersex.. base chance around 8%
-            if intersexchance < 3 and example is False:
-                self.gender = "intersex"
-                intersex_condition = choice (["excess testosterone", "testosterone deficiency", "aneuploidy", "mosaicism", "chimerism"])
-                self.get_permanent_condition(intersex_condition, born_with=True)
-            else:
-                self.gender = choice(["female", "male"])
+            self.gender = choice(["female", "male"])
         self.g_tag = self.gender_tags[self.gender]
 
         """if self.genderalign == "":
@@ -963,86 +466,35 @@ class Cat:
         :return: None
         """
         # trans cat chances
-        nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
-        enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
-        enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
+        theythemdefault = game.settings["they them default"]
         self.genderalign = self.gender
-        trans_chance = randint(0, 20)
-        nb_chance = randint(0, 25)
+        trans_chance = randint(0, 50)
+        nb_chance = randint(0, 75)
 
         # GENDER IDENTITY
-        if self.gender == "female" and not self.status in ['newborn', 'kitten']:
-            if trans_chance == 1:
-                binary_chance = randint(1,10)
-                if binary_chance > 2:
-                    self.genderalign = "trans male"
-                else:
-                    self.genderalign = choice(enby_masc)
-            elif nb_chance == 1:
-                self.genderalign = choice(nonbiney_list)
+        if self.age in ["kitten", "newborn"]:
+            # newborns can't be trans, sorry babies
+            pass
+        elif nb_chance == 1:
+            self.genderalign = "nonbinary"
+        elif trans_chance == 1:
+            if self.gender == "female":
+                self.genderalign = "trans male"
             else:
-                self.genderalign = self.gender
-        elif self.gender == "male" and not self.status in ['newborn', 'kitten']:
-            if trans_chance == 1:
-                binary_chance = randint(1,10)
-                if binary_chance > 2:
-                    self.genderalign = "trans female"
-                else:
-                    self.genderalign = choice(enby_fem)
-            elif nb_chance == 1:
-                self.genderalign = choice(nonbiney_list)
-            else:
-                self.genderalign = self.gender
-        elif self.gender == "intersex" and not self.status in ['newborn', 'kitten']:
-            if trans_chance == 1:
-                binary_chance = randint(1,10)
-                if binary_chance > 2:
-                    self.genderalign = choice(["trans female", "trans male"])
-                else:
-                    self.genderalign = choice(enby_fem + enby_masc)
-            elif nb_chance == 1:
-                intergenderchance = randint(1,2)
-                if intergenderchance == 1:
-                    self.genderalign = "intergender"
-                else:
-                    self.genderalign = choice(nonbiney_list)
-            else:
-                self.genderalign = self.gender
+                self.genderalign = "trans female"
+
+        # PRONOUNS
+        if theythemdefault is True:
+            self.pronouns = [self.default_pronouns[0].copy()]
         else:
-            self.genderalign = self.gender
-            
-        if not game.settings["they them default"]:
-            #woke be upon ye
-            #binaries
-            bonus_they = randint(1,3)
-            bonus_hershey = randint(1,10)
-            if self.genderalign == "female" or self.genderalign in enby_fem:
+            # Assigning pronouns based on gender
+            if self.genderalign in ["female", "trans female"]:
                 self.pronouns = [self.default_pronouns[1].copy()]
-                if self.genderalign in enby_fem and bonus_they == 1:
-                    self.pronouns.append(self.default_pronouns[0].copy())
-                elif bonus_hershey == 1:
-                    self.pronouns.append(self.default_pronouns[2].copy())
-            elif self.genderalign == "male" or self.genderalign in enby_masc:
+            elif self.genderalign in ["male", "trans male"]:
                 self.pronouns = [self.default_pronouns[2].copy()]
-                if self.genderalign in enby_masc and bonus_they == 1:
-                    self.pronouns.append(self.default_pronouns[0].copy())
-                elif bonus_hershey == 1:
-                    self.pronouns.append(self.default_pronouns[1].copy())
             else:
-                neo_chance = randint(1,3)
-                if neo_chance == 1:
-                    self.pronouns = [self.default_pronouns[randint(3,51)].copy()]
-                else:
-                    self.pronouns = [self.default_pronouns[0].copy()]
-            
-            second_set = randint(1,10)
-            queer_list = nonbiney_list + ["trans male", "trans female", "intergender"]
-            if self.genderalign in queer_list:
-                second_set = randint(1,5)
-            if second_set == 1:
-                self.pronouns.append(self.default_pronouns[randint(3,51)].copy())
-                    
-                
+                self.genderalign = "nonbinary"
+                self.pronouns = [self.default_pronouns[0].copy()]
 
         # APPEARANCE
         self.pelt = Pelt.generate_new_pelt(
@@ -2989,10 +2441,6 @@ class Cat:
             )
             return
 
-        intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
-        if self.gender != "intersex":
-            if name in intersex_exclusive:
-                return
         if "blind" in self.permanent_condition and name == "failing eyesight":
             return
         if "deaf" in self.permanent_condition and name == "partial hearing loss":
