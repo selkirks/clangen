@@ -228,7 +228,7 @@ class SkillPath(Enum):
         "likes to decorate",
         "good decorator",
         "great decorator",
-        "artisan"
+        "artistan"
     )
     GUARDIAN = (
         "watchful",

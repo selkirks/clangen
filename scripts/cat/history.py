@@ -311,7 +311,7 @@ class History:
                 SkillPath.PRODIGY: ["learning"],
                 SkillPath.EXPLORER: ["exploring"],
                 SkillPath.TRACKER: ["tracking"],
-                SkillPath.ARTISAN: ["decorating"],
+                SkillPath.ARTISTAN: ["decorating"],
                 SkillPath.GUARDIAN: ["guarding"],
                 SkillPath.NAVIGATOR: ["navigating"],
                 SkillPath.SONG: ["singing"],
