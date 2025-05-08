@@ -148,7 +148,11 @@ class Sprites:
             'stersokokecolours', 'sillysokokecolours', 'dancesokokecolours', 'mimisokokecolours',
             'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
-            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
+            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours', 
+
+            #CALIIRRIN
+            'caliisokokecolours', 'dotcolours', 
+            'caliispeckledcolours', 'dotfadecolours', 'circletabbycolours', 'lynxpointcolours', 'birchtabbycolours',
 
             #ERAGONA
             'bonesacc', 'butterflymothacc', 'twolegstuff', 'bandanas', 'ties', 'teethcollars', 'french_scarves', 'bows',
@@ -375,7 +379,9 @@ class Sprites:
             'stersokokecolours', 'sillysokokecolours', 'dancesokokecolours', 'mimisokokecolours',
             'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
-            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours'
+            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours', 'caliisokokecolours', 
+            'dotcolours', 'caliispeckledcolours', 'dotfadecolours', 'circletabbycolours', 'lynxpointcolours',
+            'birchtabbycolours'
         ]
 
         for row, colors in enumerate(color_categories):

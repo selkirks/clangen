@@ -103,7 +103,14 @@ class Pelt:
         'Monarch': 'monarch',
         'Oceloid': 'oceloid',
         'Pinstripetabby': 'pinstripetabby',
-        'Snowflake': 'snowflake'
+        'Snowflake': 'snowflake',
+        'Dot': 'dot',
+        'Caliisokoke': 'caliisokoke',
+        'Caliispeckled': 'caliispeckled',
+        'Dotfade': 'dotfade',
+        'Circletabby': 'circletabby',
+        'Lynxpoint': 'lynxpoint',
+        'Birchtabby': 'birchtabby'
     }
 
     # ATTRIBUTES, including non-pelt related
@@ -168,7 +175,7 @@ class Pelt:
                    'sterspeckled', 'sillyspeckled', 'dancespeckled', 'mimispeckled',
                    'stertabby', 'sillytabby', 'dancetabby', 'mimitabby',
                    'sterticked', 'sillyticked', 'danceticked', 'mimiticked', 'abyssinian', 'clouded', 'doberman', 'ghosttabby', 'merle',
-                   'monarch', 'oceloid', 'pinstripetabby', 'snowflake', 'stain']
+                   'monarch', 'oceloid', 'pinstripetabby', 'snowflake', 'stain', 'caliisokoke', 'caliispeckled', 'circletabby', 'birchtabby', 'dot', 'dotfade', 'lynxpoint']
 
     pelt_length = ["short", "medium", "long"]
     #please dontjudge the eye_colours section
@@ -321,16 +328,16 @@ class Pelt:
     tabbies = ["Tabby", "Ticked", "Mackerel", "Stermackerel", "Sillymackerel", "Dancemackerel", "Mimimackerel", 
                "Classic", "Sterclassic", "Sillyclassic", "Danceclassic", "Mimiclassic",
                "Sokoke", "Stersokoke", "Sillysokoke", "Dancesokoke", "Mimisokoke",
-               "Agouti", "Steragouti", "Sillyagouti", "Danceagouti", "Mimiagouti", "Royal", "Brindle", "Ghosttabby", "Pinstripetabby"]
+               "Agouti", "Steragouti", "Sillyagouti", "Danceagouti", "Mimiagouti", "Royal", "Brindle", "Ghosttabby", "Pinstripetabby", "Caliisokoke", "Circletabby", "Birchtabby"]
     spotted = ["Speckled", "Sterspeckled", "Sillyspeckled", "Dancespeckled", "Mimispeckled", 
                "Rosette", "Sterrosette", "Sillyrosette", "Dancerosette", "Mimirosette", 
-               "Lynx", "Bobcat", "Spots", "Merle"]
+               "Lynx", "Bobcat", "Spots", "Merle", "Dot", "Caliispeckled", "Dotfade"]
     plain = ["SingleColour", "Stersingle", "Sillysingle", "Dancesingle", "Mimisingle",
              "TwoColour", "Smoke", "Stersmoke", "Sillysmoke", "Dancesmoke", "Mimismoke",
              "Singlestripe", "Sterstripe", "Dancestripe", "Sillystripe", "Mimistripe", "Smokepoint", "Doberman", "Stain"]
     exotic = ["Bengal", "Sterbengal", "Sillybengal", "Dancebengal", "Mimibengal", 
               "Marbled", "Stermarbled", "Sillymarbled", "Dancemarbled", "Mimimarbled",
-              "Masked", "Stermasked", "Sillymasked", "Dancemasked", "Mimimasked", "Maned", "Ocelot", "Cheetah", "Wildcat", "Wolf", "Finleappatches", "Dalmatian", "Abyssinian", "Clouded", "Snowflake", "Oceloid", "Monarch"]
+              "Masked", "Stermasked", "Sillymasked", "Dancemasked", "Mimimasked", "Maned", "Ocelot", "Cheetah", "Wildcat", "Wolf", "Finleappatches", "Dalmatian", "Abyssinian", "Clouded", "Snowflake", "Oceloid", "Monarch", "Lynxpoint"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
@@ -1021,7 +1028,7 @@ class Pelt:
                                                      'classic', 'sterclassic', 'sillyclassic', 'danceclassic', 'mimiclassic', 'single', 'smoke',
                                                      'stersmoke', 'sillysmoke', 'dancesmoke', 'mimismoke', "mimisingle", 'agouti', 'steragouti', 'sillyagouti', 'danceagouti', 'mimiagouti',
                                                      'ticked', 'sterticked', 'sillyticked', 'danceticked', 'mimiticked',
-                                                     'brindle', 'spots'])
+                                                     'brindle', 'spots', 'birchtabby', 'circletabby'])
                     else:
                         self.tortiepattern = random.choices([self.tortiebase, 'single'], weights=[97, 3], k=1)[0]
 
@@ -1578,6 +1585,12 @@ class Pelt:
             "Pinstripetabby": "strangely striped c_n",
             "Snowflake": "oddly dappled c_n",
             "Stain": "stained c_n",
+            "Caliisokoke": "c_n tabby",
+            "Dot": "strangely dappled c_n",
+			"Caliispeckled": "sparsely spotted c_n",
+            "Dotfade": "strangely dappled c_n",
+            "Circletabby": "c_n tabby",
+            "Birchtabby": "c_n tabby"
         }
 
         # Start with determining the base color name
