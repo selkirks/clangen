@@ -18,7 +18,7 @@ from scripts.cat.history import History
 from scripts.cat.names import Name
 from scripts.clan_resources.freshkill import FRESHKILL_EVENT_ACTIVE
 from scripts.conditions import (
-    medical_cats_condition_fulfilled,
+    medicine_cats_can_cover_clan,
     get_amount_cat_for_one_medic,
 )
 from scripts.event_class import Single_Event
@@ -278,7 +278,7 @@ class Events:
 
         if game.clan.game_mode in ["expanded", "cruel season"]:
             amount_per_med = get_amount_cat_for_one_medic(game.clan)
-            med_fulfilled = medical_cats_condition_fulfilled(
+            med_fulfilled = medicine_cats_can_cover_clan(
                 Cat.all_cats.values(), amount_per_med
             )
 
@@ -747,16 +747,16 @@ class Events:
                         chosen_injury = random.choice(possible_injuries)
                         cat.get_injured(chosen_injury)
                         involved_cats["injured"].append(cat.ID)
-                else:
-                    chance = game.config["focus"]["hoarding"]["illness_chance"]
-                    if not int(random.random() * chance):  # 1/chance
-                        possible_illnesses = []
-                        injury_dict = game.config["focus"]["hoarding"]["illnesses"]
-                        for illness, amount in injury_dict.items():
-                            possible_illnesses.extend([illness] * amount)
-                        chosen_illness = random.choice(possible_illnesses)
-                        cat.get_ill(chosen_illness)
-                        involved_cats["sick"].append(cat.ID)
+                    else:
+                        chance = game.config["focus"]["hoarding"]["illness_chance"]
+                        if not int(random.random() * chance):  # 1/chance
+                            possible_illnesses = []
+                            injury_dict = game.config["focus"]["hoarding"]["illnesses"]
+                            for illness, amount in injury_dict.items():
+                                possible_illnesses.extend([illness] * amount)
+                            chosen_illness = random.choice(possible_illnesses)
+                            cat.get_ill(chosen_illness)
+                            involved_cats["sick"].append(cat.ID)
 
             # if it is raiding, lower the relation to other clans
             if game.clan.clan_settings.get("raid other clans"):
@@ -768,13 +768,13 @@ class Events:
                     change_clan_relations(clan, amount)
 
             # finish
-            text_snippet = "hardcoded.injury_hoarding"
+            text_snippet = "hardcoded.focus_injury_hoarding"
             if game.clan.clan_settings.get("raid other clans"):
-                text_snippet = "hardcoded.injury_raiding"
+                text_snippet = "hardcoded.focus_injury_raiding"
             for condition_type, value in involved_cats.items():
                 game.cur_events_list.append(
                     Single_Event(
-                        i18n.t(text_snippet, condition=condition_type, count=value),
+                        i18n.t(text_snippet, condition=condition_type, count=len(value)),
                         "health",
                         value,
                     )
@@ -1279,7 +1279,7 @@ class Events:
                     ]
 
                     # check if the Clan has sufficient med cats
-                    has_med = medical_cats_condition_fulfilled(
+                    has_med = medicine_cats_can_cover_clan(
                         Cat.all_cats.values(),
                         amount_per_med=get_amount_cat_for_one_medic(game.clan),
                     )
@@ -2309,8 +2309,6 @@ class Events:
             return
 
         random_cat = get_random_moon_cat(Cat, main_cat=cat)
-
-        nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
 
         transing_chance = game.config["transition_related"]
         chance = transing_chance["base_trans_chance"]

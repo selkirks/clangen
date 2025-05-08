@@ -29,7 +29,8 @@ from scripts.conditions import (
     Injury,
     PermanentCondition,
     get_amount_cat_for_one_medic,
-    medical_cats_condition_fulfilled,
+    medicine_cats_can_cover_clan,
+    amount_clanmembers_covered,
 )
 from scripts.event_class import Single_Event
 from scripts.events_module.generate_events import GenerateEvents
@@ -294,11 +295,12 @@ class Cat:
 
         # sex!?!??!?!?!??!?!?!?!??
         if self.gender is None:
-            intersexchance = randint(1,100)
-            #probability that the cat will be intersex.. base chance around 5%
-            if intersexchance < 5 and example is False:
+            intersexchance = randint(1,25)
+            #probability that the cat will be intersex.. base chance around 8%
+            if intersexchance < 3 and example is False:
                 self.gender = "intersex"
                 intersex_condition = choice (["excess testosterone", "testosterone deficiency", "aneuploidy", "mosaicism", "chimerism"])
+                self.get_permanent_condition(intersex_condition, born_with=True)
             else:
                 self.gender = choice(["female", "male"])
         self.g_tag = self.gender_tags[self.gender]
@@ -412,29 +414,43 @@ class Cat:
         """
         # trans cat chances
         nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+        enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+        enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
         theythemdefault = game.settings["they them default"]
         self.genderalign = self.gender
-        trans_chance = randint(0, 50)
-        nb_chance = randint(0, 75)
+        trans_chance = randint(0, 20)
+        nb_chance = randint(0, 25)
 
         # GENDER IDENTITY
         if self.gender == "female" and not self.status in ['newborn', 'kitten']:
             if trans_chance == 1:
-                self.genderalign = "trans male"
+                binary_chance = randint(1,10)
+                if binary_chance > 2:
+                    self.genderalign = "trans male"
+                else:
+                    self.genderalign = choice(enby_masc)
             elif nb_chance == 1:
                 self.genderalign = choice(nonbiney_list)
             else:
                 self.genderalign = self.gender
         elif self.gender == "male" and not self.status in ['newborn', 'kitten']:
             if trans_chance == 1:
-                self.genderalign = "trans female"
+                binary_chance = randint(1,10)
+                if binary_chance > 2:
+                    self.genderalign = "trans female"
+                else:
+                    self.genderalign = choice(enby_fem)
             elif nb_chance == 1:
                 self.genderalign = choice(nonbiney_list)
             else:
                 self.genderalign = self.gender
         elif self.gender == "intersex" and not self.status in ['newborn', 'kitten']:
             if trans_chance == 1:
-                self.genderalign = choice(["trans male", "trans female"])
+                binary_chance = randint(1,10)
+                if binary_chance > 2:
+                    self.genderalign = choice(["trans female", "trans male"])
+                else:
+                    self.genderalign = choice(enby_fem + enby_masc)
             elif nb_chance == 1:
                 intergenderchance = randint(1,2)
                 if intergenderchance == 1:
@@ -522,10 +538,44 @@ class Cat:
         Loads the correct pronouns for the loaded language.
         :return: List of dicts for the cat's pronouns
         """
+        queer_list = ["intersex", "intergender", "trans male", "trans female","nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+        enby_masc = [ "demiboy", "genderfaun", "trans masc"]
+        enby_fem = ["demigirl", "genderfae", "trans femme"]
+        
+        she_him = randint(1,5)
+        neo_chance = game.config["cat_generation"]["neopronoun_chance"]
+        second_set = game.config["cat_generation"]["multiple_pronouns_chance"]
+        if self.genderalign in queer_list:
+            neo_chance = int(neo_chance/2)
+            second_set = int(second_set/4)
+        neos = randint(1,neo_chance)
+        seconds = randint(1,second_set)
+        
+        if self.faded:
+            return []
+
         locale = i18n.config.get("locale")
         value = self._pronouns.get(locale)
         if value is None:
             self._pronouns[locale] = pronouns.get_new_pronouns(self.genderalign)
+            if self.genderalign in enby_masc and she_him < 4:
+                self._pronouns[locale] += pronouns.get_new_pronouns("male")
+            elif self.genderalign in enby_fem and she_him < 4:
+                self._pronouns[locale] += pronouns.get_new_pronouns("female")
+            elif neos == 1:
+                self._pronouns[locale] += pronouns.get_new_pronouns("neos")
+            if seconds == 1:
+                pronoun_gender = randint(1,10)
+                if pronoun_gender < 6:
+                    #add he, she or they
+                    self._pronouns[locale] += pronouns.get_new_pronouns(choice(["male","female","nonbinary"]))
+                else:
+                    #add neos
+                    self._pronouns[locale] += pronouns.get_new_pronouns("neos")
+            if len(self._pronouns[locale]) > 1:
+                if self._pronouns[locale][0]["subject"] == self._pronouns[locale][1]["subject"]:
+                    self._pronouns[locale] = [self._pronouns[locale][0]]
+                    print(self._pronouns[locale])
             value = self._pronouns[locale]
         return value
 
@@ -1031,6 +1081,28 @@ class Cat:
         #     output = i18n.t("utility.indefinite", text=output, m_c=self)
         event_text_adjust(Cat, output, main_cat=self)
         return output
+    
+    def describe_skin(self):
+        """Get a human-readable description of this cat's skin colour"""
+        skin = str(self.pelt.skin).lower()
+
+        if skin == "darkbrown":
+            skin = "dark brown"
+        elif skin == "lightbrown":
+            skin = "light brown"
+        elif skin == "darkgrey":
+            skin = "dark grey"
+        elif skin == "darksalmon":
+            skin = "dark salmon"
+        elif skin == "darkmarbled":
+            skin = "dark marbled"
+        elif skin == "lightmarbled":
+            skin = "light marbled"
+        elif skin == "darkblue":
+            skin = "dark blue"
+        elif skin == "lightblue":
+            skin = "light blue"
+        return skin
 
     def describe_eyes(self):
         """Get a human-readable description of this cat's eye colour"""
@@ -1927,7 +1999,7 @@ class Cat:
 
         amount_per_med = get_amount_cat_for_one_medic(game.clan)
 
-        if medical_cats_condition_fulfilled(Cat.all_cats.values(), amount_per_med):
+        if medicine_cats_can_cover_clan(Cat.all_cats.values(), amount_per_med):
             duration = med_duration
         if severity != "minor":
             duration += randrange(-1, 1)
@@ -1995,7 +2067,7 @@ class Cat:
         med_duration = injury["medicine_duration"]
 
         injury_severity = injury["severity"] if severity == "default" else severity
-        if medical_cats_condition_fulfilled(
+        if medicine_cats_can_cover_clan(
             Cat.all_cats.values(), get_amount_cat_for_one_medic(game.clan)
         ):
             duration = med_duration
@@ -2077,9 +2149,8 @@ class Cat:
 
         for condition in PERMANENT:
             possible = PERMANENT[condition]
-            if possible["congenital"] in ['always', 'sometimes']:
-                if not(condition == "excess testosterone" or condition == "testosterone deficiency" or condition == "aneuploidy" or condition == "mosaicism" or condition == "chimerism"):
-                    possible_conditions.append(condition)
+            if possible["congenital"] in ["always", "sometimes"]:
+                possible_conditions.append(condition)
 
         new_condition = choice(possible_conditions)
 
@@ -2098,50 +2169,37 @@ class Cat:
             )
             return
 
+        intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
+        if self.gender != "intersex":
+            if name in intersex_exclusive:
+                return
         if "blind" in self.permanent_condition and name == "failing eyesight":
             return
         if "deaf" in self.permanent_condition and name == "partial hearing loss":
             return
 
         # remove accessories if need be
-        if "NOTAIL" in self.pelt.scars and self.pelt.accessory in [
-            "RED FEATHERS",
-            "BLUE FEATHERS",
-            "JAY FEATHERS",
-            'SEAWEED', 'DAISY CORSAGE',
-            "SNAKE",
-            "OLD SILVER WATCH",
-            "OLD GOLD WATCH",
-            "BAUBLES",
-            "GULL FEATHERS",
-            "SPARROW FEATHERS",
-            "CLOVERTAIL",
-            "DAISYTAIL"
-        ]:
-            self.pelt.accessory = None
-        
-        if "HALFTAIL" in self.pelt.scars and self.pelt.accessory in [
-            "RED FEATHERS",
-            "BLUE FEATHERS",
-            "JAY FEATHERS",
-            'SEAWEED', 'DAISY CORSAGE',
-            "SNAKE",
-            "OLD SILVER WATCH",
-            "OLD GOLD WATCH",
-            "BAUBLES",
-            "GULL FEATHERS",
-            "SPARROW FEATHERS",
-            "CLOVERTAIL",
-            "DAISYTAIL"
-        ]:
-            self.pelt.accessory = None
+        if "NOTAIL" in self.pelt.scars or "HALFTAIL" in self.pelt.scars:
+            self.pelt.accessory = [
+                acc for acc in self.pelt.accessory
+                if acc not in (
+                    "RED FEATHERS",
+                    "BLUE FEATHERS",
+                    "JAY FEATHERS",
+                    "GULL FEATHERS",
+                    "SPARROW FEATHERS",
+                    "CLOVERTAIL",
+                    "DAISYTAIL",
+                    'SEAWEED',
+                    'DAISY CORSAGE',
+                    "SNAKE",
+                    "OLD SILVER WATCH",
+                    "OLD GOLD WATCH",
+                    "BAUBLES",
+                    "SEAWEED",
+                )
+            ]
 
-       
-           
-        intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
-        if self.gender != "intersex":
-            if name in intersex_exclusive:
-                return
         condition = PERMANENT[name]
         new_condition = False
         mortality = condition["mortality"][self.age.value]
@@ -2559,12 +2617,12 @@ class Cat:
             if not self.dead:
                 if other_cat.ID not in self.relationships:
                     self.create_one_relationship(other_cat)
-                    self.relationships[other_cat.ID].mate = True
+                    self.relationships[other_cat.ID].mates = True
                 self_relationship = self.relationships[other_cat.ID]
                 self_relationship.romantic_love -= randint(20, 60)
                 self_relationship.comfortable -= randint(10, 30)
                 self_relationship.trust -= randint(5, 15)
-                self_relationship.mate = False
+                self_relationship.mates = False
                 if fight:
                     self_relationship.romantic_love -= randint(10, 30)
                     self_relationship.platonic_like -= randint(15, 45)
@@ -2572,12 +2630,12 @@ class Cat:
             if not other_cat.dead:
                 if self.ID not in other_cat.relationships:
                     other_cat.create_one_relationship(self)
-                    other_cat.relationships[self.ID].mate = True
+                    other_cat.relationships[self.ID].mates = True
                 other_relationship = other_cat.relationships[self.ID]
                 other_relationship.romantic_love -= 40
                 other_relationship.comfortable -= 20
                 other_relationship.trust -= 10
-                other_relationship.mate = False
+                other_relationship.mates = False
                 if fight:
                     self_relationship.romantic_love -= 20
                     other_relationship.platonic_like -= 30
@@ -2618,22 +2676,22 @@ class Cat:
         if not self.dead:
             if other_cat.ID not in self.relationships:
                 self.create_one_relationship(other_cat)
-                self.relationships[other_cat.ID].mate = True
+                self.relationships[other_cat.ID].mates = True
             self_relationship = self.relationships[other_cat.ID]
             self_relationship.romantic_love += 20
             self_relationship.comfortable += 20
             self_relationship.trust += 10
-            self_relationship.mate = True
+            self_relationship.mates = True
 
         if not other_cat.dead:
             if self.ID not in other_cat.relationships:
                 other_cat.create_one_relationship(self)
-                other_cat.relationships[self.ID].mate = True
+                other_cat.relationships[self.ID].mates = True
             other_relationship = other_cat.relationships[self.ID]
             other_relationship.romantic_love += 20
             other_relationship.comfortable += 20
             other_relationship.trust += 10
-            other_relationship.mate = True
+            other_relationship.mates = True
 
     def unset_adoptive_parent(self, other_cat: Cat):
         """Unset the adoptive parent from self"""
@@ -2938,9 +2996,9 @@ class Cat:
                 elif game.clan and game.clan.game_mode == "cruel season":
                     gm_modifier = 6
 
-                if mediator.experience_level == "average":
+                if mediator.experience_level == "proficient":
                     lvl_modifier = 1.25
-                elif mediator.experience_level == "high":
+                elif mediator.experience_level == "expert":
                     lvl_modifier = 1.75
                 elif mediator.experience_level == "master":
                     lvl_modifier = 2
@@ -2994,6 +3052,8 @@ class Cat:
             else:
                 bonus = 0
 
+            decrease: bool = sabotage
+
             if trait == "romantic":
                 if mates:
                     ran = (5, 10)
@@ -3009,7 +3069,6 @@ class Cat:
                         rel2.romantic_love,
                         -(randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Romantic interest decreased. "
                 else:
                     rel1.romantic_love = Cat.effect_relation(
                         rel1.romantic_love,
@@ -3019,7 +3078,6 @@ class Cat:
                         rel2.romantic_love,
                         (randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Romantic interest increased. "
 
             elif trait == "platonic":
                 ran = (4, 6)
@@ -3033,7 +3091,6 @@ class Cat:
                         rel2.platonic_like,
                         -(randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Platonic like decreased. "
                 else:
                     rel1.platonic_like = Cat.effect_relation(
                         rel1.platonic_like,
@@ -3043,7 +3100,6 @@ class Cat:
                         rel2.platonic_like,
                         (randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Platonic like increased. "
 
             elif trait == "respect":
                 ran = (4, 6)
@@ -3057,7 +3113,6 @@ class Cat:
                         rel2.admiration,
                         -(randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Respect decreased. "
                 else:
                     rel1.admiration = Cat.effect_relation(
                         rel1.admiration,
@@ -3067,7 +3122,6 @@ class Cat:
                         rel2.admiration,
                         (randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Respect increased. "
 
             elif trait == "comfortable":
                 ran = (4, 6)
@@ -3081,7 +3135,6 @@ class Cat:
                         rel2.comfortable,
                         -(randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Comfort decreased. "
                 else:
                     rel1.comfortable = Cat.effect_relation(
                         rel1.comfortable,
@@ -3091,7 +3144,6 @@ class Cat:
                         rel2.comfortable,
                         (randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Comfort increased. "
 
             elif trait == "trust":
                 ran = (4, 6)
@@ -3105,7 +3157,6 @@ class Cat:
                         rel2.trust,
                         -(randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Trust decreased. "
                 else:
                     rel1.trust = Cat.effect_relation(
                         rel1.trust,
@@ -3115,7 +3166,6 @@ class Cat:
                         rel2.trust,
                         (randint(ran[0], ran[1]) + bonus) + personality_bonus,
                     )
-                    output += "Trust increased. "
 
             elif trait == "dislike":
                 ran = (4, 9)
@@ -3128,7 +3178,6 @@ class Cat:
                         rel2.dislike,
                         (randint(ran[0], ran[1]) + bonus) - personality_bonus,
                     )
-                    output += "Dislike increased. "
                 else:
                     rel1.dislike = Cat.effect_relation(
                         rel1.dislike,
@@ -3138,7 +3187,8 @@ class Cat:
                         rel2.dislike,
                         -(randint(ran[0], ran[1]) + bonus) - personality_bonus,
                     )
-                    output += "Dislike decreased. "
+
+                decrease = not decrease
 
             elif trait == "jealousy":
                 ran = (4, 6)
@@ -3152,7 +3202,6 @@ class Cat:
                         rel2.jealousy,
                         (randint(ran[0], ran[1]) + bonus) - personality_bonus,
                     )
-                    output += "Jealousy increased. "
                 else:
                     rel1.jealousy = Cat.effect_relation(
                         rel1.jealousy,
@@ -3162,7 +3211,13 @@ class Cat:
                         rel2.jealousy,
                         -(randint(ran[0], ran[1]) + bonus) - personality_bonus,
                     )
-                    output += "Jealousy decreased. "
+
+                decrease = not decrease
+
+            if decrease:
+                output += i18n.t("screens.mediation.output_decrease", trait=i18n.t(f"screens.mediation.{trait}"))
+            else:
+                output += i18n.t("screens.mediation.output_increase", trait=i18n.t(f"screens.mediation.{trait}"))
 
         return output
 
@@ -3423,6 +3478,17 @@ class Cat:
     # ---------------------------------------------------------------------------- #
 
     def get_info_block(self, *, make_clan=False, patrol=False, relationship=False):
+        pronoun_txt = ""
+        if len(self.pronouns) == 1:
+            if self.pronouns[0].get("subject") == self.pronouns[0].get("object"):
+                    pronoun_txt += self.pronouns[0].get("subject") + "/" + self.pronouns[0].get("poss")
+            else:
+                    pronoun_txt += self.pronouns[0].get("subject") + "/" + self.pronouns[0].get("object")
+        else:
+            for pronoun in self.pronouns:
+                    pronoun_txt += pronoun.get("subject") + "/"
+            if pronoun_txt[-1] == "/":
+                    pronoun_txt = pronoun_txt[:-1]
         if make_clan:
             return "\n".join(
                 [
@@ -3435,6 +3501,7 @@ class Cat:
                     ),
                     i18n.t(f"cat.personality.{self.personality.trait}"),
                     self.skills.skill_string(),
+                    pronoun_txt
                 ]
             )
         elif patrol:
@@ -3452,7 +3519,7 @@ class Cat:
                 ]
             )
         elif relationship:
-            return "\n".join(
+            return " - ".join(
                 [
                     i18n.t("general.moons_age", count=self.moons),
                     self.genderalign,

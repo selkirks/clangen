@@ -65,7 +65,9 @@
 			"m_c feels like r_c was too rough while playing.",
 			"m_c doesn't think r_c was playing fair.",
 			"m_c accuses r_c of cheating during a game of hide-n-seek!",
-			"m_c cries after r_c wins one of their games."
+			"m_c cries after r_c wins one of their games.",
+			"m_c told r_c {PRONOUN/m_c/subject} didn't want to play but r_c whined until {PRONOUN/m_c/subject} relented.",
+            		"m_c doesn't want to play with r_c."
 		],
 		"main_status_constraint": [
 			"kitten"
@@ -101,7 +103,10 @@
 			"r_c giggles beneath {PRONOUN/r_c/poss} breath every time m_c walks by.",
 			"m_c is put off by r_c's big, toothy grin.",
 			"m_c swears that r_c hasn't blinked today.",
-			"m_c notices that r_c looks a little too entertained by a Clanmate's unsettling story."
+			"m_c notices that r_c looks a little too entertained by a Clanmate's unsettling story.",
+			"m_c woke up to find r_c staring at {PRONOUN/m_c/object}.",
+            		"r_c caught m_c taking some bedding from {PRONOUN/m_c/poss} nest!",
+					"m_c woke up to find r_c staring at {PRONOUN/m_c/object}."
 		],
 		"random_trait_constraint": [
 			"strange"
@@ -112,6 +117,7 @@
 		"interactions": [
 			"r_c talks to m_c a bit too enthusiastically about how best to kill prey.",
 			"r_c started a fight with m_c.",
+			"m_c was startled after r_c snarled viciously during a trivial disagreement.",
 			"m_c notices that r_c hasn't groomed fresh-kill blood off {PRONOUN/r_c/poss} paw.",
 			"m_c notices that r_c is playing with {PRONOUN/r_c/poss} fresh-kill.",
 			"m_c notices that r_c looks a little too entertained by a Clanmate's unsettling story."
@@ -141,6 +147,7 @@
 			"r_c crashes into m_c while eager for the new day.",
 			"r_c rejects m_c's advice without letting {PRONOUN/m_c/object} finish.",
 			"r_c interrupts m_c during a conversation.",
+			"m_c asked r_c an uncomfortably invasive question.",
 			"r_c blurts out something. m_c wishes that r_c held {PRONOUN/r_c/poss} tongue.",
 			"r_c says something bad about m_c that's been on everyone's mind."
 		],
@@ -150,12 +157,27 @@
 		]
 	},
 	{
+		"id": "comfort_de_med7",
+		"interactions": [
+            "m_c made a poorly timed joke while r_c was telling {PRONOUN/m_c/object} some bad news."
+		],
+		"main_trait_constraint": [
+			"charismatic",
+            "playful",
+            "troublesome",
+            "impulsive",
+            "childish",
+            "shameless"
+		]
+	},
+	{
 		"id": "comfort_de_high1",
 		"intensity": "high",
 		"interactions": [
 			"m_c bristles after being scolded by r_c.",
 			"r_c laughs at something m_c said that shouldn't have been laughed at.",
 			"m_c sees r_c neglect a Clanmate.",
+			"m_c shied away from r_c when {PRONOUN/r_c/subject} tried touching noses in greeting.",
 			"m_c doesn't think that r_c's smile is genuine.",
 			"Every muscle in m_c's body tenses when r_c walks by.",
 			"m_c keeps having bad dreams about r_c.",
@@ -218,7 +240,8 @@
 			"m_c thinks that r_c is casting a dark shadow over the whole Clan's reputation.",
 			"m_c noticed that things have gotten more tense since r_c earned {PRONOUN/r_c/poss} rank.",
 			"When r_c addresses the Clan, m_c notices a frightening edge to {PRONOUN/r_c/poss} tone.",
-			"m_c is worried that r_c might be sending the Clan down a dark path."
+			"m_c is worried that r_c might be sending the Clan down a dark path.",
+			"m_c has been wondering if StarClan has actually been guiding r_c or if it's really the Dark Forest's influence."
 		],
 		"random_trait_constraint": [
 			"bloodthirsty",
@@ -240,7 +263,9 @@
 			"m_c noticed that there are less deathberries than usual in r_c's herb storage.",
 			"m_c feels more nauseous after being treated r_c for a stomach ache.",
 			"m_c catches r_c doing experimental treatments on a piece of fresh-kill.",
-			"m_c bristles after seeing r_c add more deathberries to {PRONOUN/r_c/poss} herb storage."
+			"m_c bristles after seeing r_c add more deathberries to {PRONOUN/r_c/poss} herb storage.",
+			"m_c stopped r_c before {PRONOUN/r_c/subject} gave the wrong herbs to another cat. The look in r_c's eyes as {PRONOUN/r_c/subject} did so scared m_c...",
+            		"m_c has been wondering if StarClan has actually been guiding r_c or if it's really the Dark Forest's influence."
 		],
 		"random_trait_constraint": [
 			"bloodthirsty",

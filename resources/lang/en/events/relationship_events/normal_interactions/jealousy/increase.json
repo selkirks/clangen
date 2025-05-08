@@ -82,6 +82,40 @@
 		]
 	},
 	{
+        "id": "jel_inc_med4",
+        "interactions": [
+            "m_c is huffing in annoyance seeing that r_c caught more prey than {PRONOUN/m_c/object}.",
+            "During a border patrol, another Clan's patrol stopped them and chatted up a storm with r_c, but more or less ignored m_c...",
+            "m_c feels like r_c is always trying to catch more prey than {PRONOUN/m_c/object}."
+        ],
+        "main_status_constraint": [
+            "warrior",
+            "apprentice",
+            "deputy",
+            "leader"
+        ],
+        "random_status_constraint": [
+            "apprentice",
+            "warrior",
+            "deputy",
+            "leader"
+        ]
+    },
+    {
+        "id": "jel_inc_med5",
+        "interactions": [
+            "m_c has been giving r_c the cold shoulder after seeing {PRONOUN/r_c/object} having fun with another cat.",
+            "m_c doesn't like the idea of r_c having a mate that isn't {PRONOUN/m_c/object}.",
+            "m_c has been trying to monopolize r_c's time after seeing {PRONOUN/r_c/object} showing interest in spending time with another cat."
+        ],
+        "relationship_constraint": [
+            "romantic_15"
+        ],
+        "reaction_main_cat": {
+            "jealousy": "increase"
+        }
+    },
+	{
 		"id": "jealousy_kit_inc_med1",
 		"interactions": [
 			"m_c is jealous that r_c is getting more attention than {PRONOUN/m_c/object}.",
@@ -89,7 +123,8 @@
 			"r_c was told {PRONOUN/r_c/subject} {VERB/r_c/are/is} growing bigger than m_c.",
 			"r_c is better at moss-ball than m_c.",
 			"The older Clanmates always believe r_c over m_c.",
-			"m_c is upset that r_c always wins in their games."
+			"m_c is upset that r_c always wins in their games.",
+			"m_c whines and cries when r_c gets more attention than {PRONOUN/m_c/subject}."
 		],
 		"main_status_constraint": [
 			"kitten"
@@ -124,7 +159,9 @@
 			"m_c is afraid that r_c is going to grow up bigger than {PRONOUN/m_c/object}.",
 			"r_c says that m_c said something mean, and no one will believe m_c's defense.",
 			"m_c gets scolded for not watching r_c when r_c does something naughty.",
-			"m_c is resentful that so much is expected of {PRONOUN/m_c/object}, yet no one expects anything of r_c."
+			"m_c is resentful that so much is expected of {PRONOUN/m_c/object}, yet no one expects anything of r_c.",
+			"m_c watches r_c, wondering why {PRONOUN/m_c/subject} wanted to grow up so bad.",
+            "m_c wishes {PRONOUN/m_c/subject} had all the time in the world to play mossball like r_c."
 		],
 		"main_status_constraint": [
 			"apprentice",
@@ -148,7 +185,8 @@
 			"m_c feels like r_c's life is easier as a medicine cat apprentice.",
 			"m_c tries to get free catmint from r_c, but gets snitched on instead.",
 			"m_c thinks r_c's training sounds way easier than what m_c does now.",
-			"m_c thinks it's unfair that r_c always gets to go to Gatherings."
+			"m_c thinks it's unfair that r_c always gets to go to Gatherings.",
+			"m_c is jealous that r_c always smells of beautiful fragrant herbs."
 		],
 		"main_status_constraint": [
 			"apprentice",
@@ -171,7 +209,9 @@
 			"A Clanmate tells m_c that r_c's stories are better.",
 			"m_c knows that r_c would be saved before {PRONOUN/m_c/object} during an emergency.",
 			"m_c has big plans for the day, but they're thwarted by r_c doing something more important.",
-			"m_c wants to spend time with friends, but all of them have plans with r_c."
+			"m_c wants to spend time with friends, but all of them have plans with r_c.",
+			"m_c keeps comparing {PRONOUN/m_c/self} to r_c.",
+            "m_c hates how r_c has been getting lots of attention as of late."
 		]
 	},
 	{
@@ -194,5 +234,65 @@
 		"random_status_constraint": [
 			"elder"
 		]
-	}
+	},
+    {
+        "id": "jel_inc_med4",
+        "intensity": "high",
+        "interactions": [
+            "m_c watches r_c in annoyance wishing {PRONOUN/m_c/subject} were as youthful as {PRONOUN/r_c/object}."
+        ],
+        "main_status_constraint": [
+            "elder"
+        ],
+        "random_status_constraint": [
+            "kitten",
+            "apprentice",
+            "medicine cat apprentice",
+            "mediator apprentice",
+            "deputy",
+            "warrior"
+        ]
+    },
+    {
+        "id": "jealousy_sibs_inc_med1",
+        "interactions": [
+            "m_c is crestfallen when r_c is praised for catching a rabbit after m_c brought back 3 mice.",
+            "m_c growls as r_c is called away from cleaning the dens with {PRONOUN/m_c/object}, leaving {PRONOUN/m_c/object} to do all the work."
+        ],
+        "main_status_constraint": [
+            "apprentice"
+        ],
+        "random_status_constraint": [
+            "apprentice"
+        ],
+        "relationship_constraint": [
+            "siblings"
+        ]
+    },
+    {
+        "id": "jealousy_sibs_inc_med2",
+        "interactions": [
+            "m_c wishes cats would thank {PRONOUN/m_c/object} for doing {PRONOUN/m_c/poss} job the same way they do r_c."
+        ],
+        "main_status_constraint": [
+            "apprentice",
+            "warrior"
+        ],
+        "random_status_constraint": [
+            "medicine cat apprentice",
+            "medicine cat"
+        ],
+        "relationship_constraint": [
+            "siblings"
+        ]
+    },
+    {
+        "id": "jealousy_mates_inc_med1",
+        "interactions": [
+            "m_c feels hurt by r_c mate sharing tongues with somebody else during their usual time."
+        ],
+        "relationship_constraint": [
+            "mates"
+        ]
+    }
 ]

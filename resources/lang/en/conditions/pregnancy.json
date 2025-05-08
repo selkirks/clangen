@@ -81,7 +81,10 @@
             "m_c is so, so grateful that {PRONOUN/m_c/poss} adorable {insert} is here - both thrilled to meet them, and thrilled that r_c can take a turn parenting while m_c finally takes a little break from the stuffy air of the nursery.",
             "m_c and r_c were so busy worrying about and looking forward to the birth that it's only now that they look at their {insert} that they wonder what to name them.",
             "With r_c purring against {PRONOUN/m_c/poss} back, m_c feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} going to explode with love, looking at {PRONOUN/m_c/poss} tiny new {insert}.",
-            "While on a walk in the territory with r_c, m_c unexpectedly had {PRONOUN/m_c/poss} {insert} with help from {PRONOUN/m_c/poss} mate."
+            "While on a walk in the territory with r_c, m_c unexpectedly had {PRONOUN/m_c/poss} {insert} with help from {PRONOUN/m_c/poss} mate.",
+            "Despite r_c refusing to be present for the birth of their {insert}, m_c hopes beyond hope that {PRONOUN/r_c/subject} will be a good parent.",
+      "When m_c welcomes {PRONOUN/m_c/poss} new {insert}, r_c is nowhere to be found, only showing up to the nursery hours later.",                
+      "m_c and r_c argue passionately over names for hours after their {insert} is born."
 
         ],
         "dead_mate": [
@@ -97,7 +100,9 @@
             "r_c sheepishly peeks into the nursery to see {PRONOUN/r_c/poss} {insert}. m_c looks surprised but not unhappy to see {PRONOUN/r_c/object} there, and welcomes {PRONOUN/r_c/object} in with a purr.",
             "m_c purrs loudly as r_c grooms {PRONOUN/m_c/poss} pelt. As their new {insert} squirms around m_c's belly, the two cats think about their new responsibilities together.",
             "m_c gazes lovingly at {PRONOUN/m_c/poss} new {insert}. r_c looks nervous and awkward in the nursery, but m_c calls {PRONOUN/r_c/object} forward to meet the litter.",
-            "Nobody can judge what two cats do in private. Some ask whether m_c and r_c will become mates for the sake of their {insert}, but most turn a blind eye to it, opting to allow the pair their privacy as new parents."
+            "Nobody can judge what two cats do in private. Some ask whether m_c and r_c will become mates for the sake of their {insert}, but most turn a blind eye to it, opting to allow the pair their privacy as new parents.",
+            "m_c invites r_c to meet {PRONOUN/r_c/poss} {insert}, but r_c seems uninterested in being a parent.",
+      "r_c sniffs politely at m_c's new {insert}, but can't bring {PRONOUN/r_c/self} to feel like a parent."
     ],
         "affair": [
             "m_c secretly had a {insert} with r_c.",
@@ -109,7 +114,8 @@
         ],
         "affair_mated": [
             "m_c's mate is such a wonderful cat, deserving of being a parent... so why does m_c's {insert} look more like r_c instead?",
-            "m_c can see it, m_c's mate can see it, r_c can see it, everyone in c_n can see how the new {insert} looks a bit too much like r_c for it to be coincidence..."
+            "m_c can see it, m_c's mate can see it, r_c can see it, everyone in c_n can see how the new {insert} looks a bit too much like r_c for it to be coincidence...",
+            "m_c watches longingly as r_c wanders past the nursery, pretending to have nothing to do with their new {insert}."
         ],
         "death": [
             "Later, as the medicine cat wails with m_c's blood streaked through their pelt and a warrior comes to move the body for the vigil, no one knows what to do with the {insert}.",

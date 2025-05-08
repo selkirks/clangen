@@ -99,13 +99,16 @@ class Clan:
         camp_bg=None,
         symbol=None,
         game_mode="classic",
-        starting_members=[],
+        starting_members=None,
         starting_season="Newleaf",
         self_run_init_functions=True,
     ):
         self.history = History()
         if name == "":
             return
+
+        if starting_members is None:
+            starting_members = []
 
         self.name = name
         self.leader = leader
@@ -935,9 +938,11 @@ class Clan:
             ) as write_file:
                 _load_settings = ujson.loads(write_file.read())
 
-        for key, value in _load_settings.items():
-            if key in self.clan_settings:
-                self.clan_settings[key] = value
+            for key, value in _load_settings.items():
+                if key in self.clan_settings:
+                    self.clan_settings[key] = value
+
+        # if settings files does not exist, default has been loaded by __init__
 
     def load_pregnancy(self, clan):
         """

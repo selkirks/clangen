@@ -21,266 +21,357 @@
     },
     "altruistic": {
         "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "ambitious": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "bloodthirsty": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "bold": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "calm": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "careful": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "charismatic": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "childish": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "cold": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "compassionate": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "confident": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "daring": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "empathetic": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "faithful": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "fierce": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "insecure": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "lonesome": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "loving": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "loyal": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "nervous": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "patient": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "playful": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "responsible": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "righteous": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "shameless": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "sneaky": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "strange": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "strict": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "thoughtful": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "troublesome": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "vengeful": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "wise": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "attention-seeker": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "bossy": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "bouncy": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "bullying": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "charming": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "daydreamer": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "impulsive": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "inquisitive": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "noisy": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "polite": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "quiet": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "sweet": {
-        "body": [
-        ],
-        "no_body": [
-        ]
-    }
+        "r_c doesn't say anything as others come up to comfort {PRONOUN/r_c/object} over the loss of m_c. {PRONOUN/r_c/subject}'ll keep {PRONOUN/r_c/poss} own bad blood to {PRONOUN/r_c/self} while others are still grieving."
+
+    ],
+    "no_body": [
+	"r_c doesn't say anything as others come up to comfort {PRONOUN/r_c/object} over the loss of m_c. {PRONOUN/r_c/subject}'ll keep {PRONOUN/r_c/poss} own bad blood to {PRONOUN/r_c/self} while others are still grieving."
+
+    ]
+  },
+  "ambitious": {
+    "body": [
+	"r_c takes over m_c's duties in the days following the vigil, hoping Clanmates will notice {PRONOUN/r_c/poss} skill."
+    ],
+    "no_body": [
+	"r_c takes over m_c's duties in the days following the vigil, hoping Clanmates will notice {PRONOUN/r_c/poss} skill."
+
+    ]
+  },
+  "bloodthirsty": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "bold": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "calm": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "careful": {
+    "body": [
+	"r_c seems to be sprinkling in anecdotes of all the ways m_c wronged them into {PRONOUN/r_c/poss} eulogy..."
+    ],
+    "no_body": [
+	"r_c seems to be sprinkling in anecdotes of all the ways m_c wronged them into {PRONOUN/r_c/poss} eulogy..."
+    ]
+  },
+  "charismatic": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "childish": {
+    "body": [
+	"r_c seems to be sprinkling in anecdotes of all the ways m_c wronged them into {PRONOUN/r_c/poss} eulogy..."
+    ],
+    "no_body": [
+	"r_c seems to be sprinkling in anecdotes of all the ways m_c wronged them into {PRONOUN/r_c/poss} eulogy..."
+    ]
+  },
+  "cold": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "compassionate": {
+    "body": [
+	"m_c and r_c had no love between them, but r_c can't help but feel a pang of grief for the relationship they could have had as the fact that they'll never get to reconcile sinks in."
+    ],
+    "no_body": [
+	"m_c and r_c had no love between them, but r_c can't help but feel a pang of grief for the relationship they could have had as the fact that they'll never get to reconcile sinks in."
+    ]
+  },
+  "confident": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "daring": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "empathetic": {
+    "body": [
+	"m_c and r_c had no love between them, but r_c can't help but feel a pang of grief for the relationship they could have had as the fact that they'll never get to reconcile sinks in."
+    ],
+    "no_body": [
+	"m_c and r_c had no love between them, but r_c can't help but feel a pang of grief for the relationship they could have had as the fact that they'll never get to reconcile sinks in."
+    ]
+  },
+  "faithful": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "fierce": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "insecure": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "lonesome": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "loving": {
+    "body": [
+	"m_c and r_c had no love between them, but r_c can't help but feel a pang of grief for the relationship they could have had as the fact that they'll never get to reconcile sinks in."
+    ],
+    "no_body": [
+	"m_c and r_c had no love between them, but r_c can't help but feel a pang of grief for the relationship they could have had as the fact that they'll never get to reconcile sinks in."
+    ]
+  },
+  "loyal": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "nervous": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "patient": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "playful": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "responsible": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "righteous": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "shameless": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "sneaky": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "strange": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "strict": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "thoughtful": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "troublesome": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "vengeful": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "wise": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "attention-seeker": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "bossy": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "bouncy": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "bullying": {
+    "body": [
+	"r_c seems noticeablely more subdued now that their favorite chew toy is gone forever."
+    ],
+    "no_body": [
+	"r_c seems noticeablely more subdued now that their favorite chew toy is gone forever."
+    ]
+  },
+  "charming": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "daydreamer": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "impulsive": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "inquisitive": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "noisy": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "polite": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "quiet": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  },
+  "sweet": {
+    "body": [
+
+    ],
+    "no_body": [
+
+    ]
+  }
 }

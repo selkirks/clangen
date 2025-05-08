@@ -44,18 +44,6 @@ from ..ui.icon import Icon
 
 
 # ---------------------------------------------------------------------------- #
-#             change how accessory info displays on cat profiles               #
-# ---------------------------------------------------------------------------- #
-def accessory_display_name(cat):
-    accessory = cat.pelt.accessory
-
-    if accessory is None:
-        return ""
-
-    return i18n.t(f"cat.accessories.{accessory}", count=0)
-
-
-# ---------------------------------------------------------------------------- #
 #               assigns backstory blurbs to the backstory                      #
 # ---------------------------------------------------------------------------- #
 def bs_blurb_text(cat):
@@ -267,15 +255,12 @@ class ProfileScreen(Screens):
                 self.change_screen("change gender screen")
             # when button is pressed...
             elif event.ui_element == self.cis_trans_button:
-                nonbiney_list = ['nonbinary', 'genderfluid', 'demigirl', 'demiboy', 'genderfae', 'genderfaun', 'bigender', 'genderqueer', 'agender', '???', "deminonbinary", "trigender", "genderflux", "polygender"]
-                # if the cat is anything besides m/f/transm/transf then turn them back to cis
-                if self.the_cat.genderalign not in [
-                    "female",
-                    "trans female",
-                    "male",
-                    "trans male",
-                    "intersex"
-                ]:
+                nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+                enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+                enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
+                oriented_enby = enby_masc + enby_fem
+                oriented_all = oriented_enby + ["female", "male", "intersex", "intergender"]
+                if self.the_cat.genderalign not in oriented_all:
                     self.the_cat.genderalign = self.the_cat.gender
                 elif (
                         self.the_cat.gender == "male"
@@ -289,19 +274,31 @@ class ProfileScreen(Screens):
                     self.the_cat.genderalign = self.the_cat.gender
 
                 # if the cat is cis (gender & gender align are the same) then set them to trans
+                elif (
+                        self.the_cat.gender == "intersex" and self.the_cat.genderalign == "intersex"
+                ):
+                    self.the_cat.genderalign = "intergender"
+                elif (
+                        self.the_cat.gender == "intersex" and self.the_cat.genderalign == "intergender"
+                ):
+                    self.the_cat.genderalign = choice(["trans male", choice(enby_masc)])
+                elif (
+                        self.the_cat.gender == "intersex" and self.the_cat.genderalign in enby_masc
+                ):
+                    self.the_cat.genderalign = choice(["trans female", choice(enby_fem)])
                 # cis males -> trans female first
                 elif (
                         self.the_cat.gender == "male" and self.the_cat.genderalign == "male"
                 ):
-                    self.the_cat.genderalign = "trans female"
+                    self.the_cat.genderalign = choice(["trans female", choice(enby_fem)])
                 # cis females -> trans male
                 elif (
                         self.the_cat.gender == "female"
                         and self.the_cat.genderalign == "female"
                 ):
-                    self.the_cat.genderalign = "trans male"
+                    self.the_cat.genderalign = choice(["trans male", choice(enby_masc)])
                 # if the cat is trans then set them to nonbinary
-                elif self.the_cat.genderalign in ["trans female", "trans male", "intersex"]:
+                elif self.the_cat.genderalign in oriented_enby or self.the_cat.genderalign == "intergender":
                     self.the_cat.genderalign = choice(nonbiney_list)
                 # pronoun handler
                 self.the_cat.pronouns = get_new_pronouns(self.the_cat.genderalign)
@@ -340,7 +337,7 @@ class ProfileScreen(Screens):
                 self.build_profile()
                 self.update_disabled_buttons_and_text()
             elif event.ui_element == self.destroy_accessory_button:
-                self.the_cat.pelt.accessory = None
+                self.the_cat.pelt.accessory = []
                 self.clear_profile()
                 self.build_profile()
                 self.update_disabled_buttons_and_text()
@@ -730,6 +727,11 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
+        # SKIN COLOR
+        output += "skin: " + str(the_cat.describe_skin())
+        # NEWLINE ----------
+        output += "\n"
+
         # PELT TYPE
         output += "pelt: " + the_cat.pelt.name.lower()
         # NEWLINE ----------
@@ -795,17 +797,29 @@ class ProfileScreen(Screens):
             'TEETHUPPER': 'long upper fangs',
             'TEETHSABRE': 'sabre teeth',
             'TEETHUNDERBITE': 'underbite',
+            'TEETHOVERBITE': 'overbite',
+            'TEETHHANG': 'a hanging fang',
+            'TEETHJAGGED': 'uneven teeth',
+            'TEETHTUSK': 'tusked fangs',
+            'TEETHGONE': 'missing a tooth',
+            'TEETHCHIPPED': 'a chipped tooth',
             'EARSMALL': 'small ears',
             'EARBIG': 'big ears',
             'EARTALL': 'tall ears',
             'EARPANTHER': 'rounded ears',
+            'EARWIDE': 'wide-set ears',
+            'EARFLUFFY': 'fluffy ears',
             'FOLDBOTH': 'folded ears',
             'FOLDONE': 'one folded ear',
+            'EARCURL': 'curled ears',
+            'EARDROOPY': 'droopy ears',
+            'EARRABBIT': 'rabbit-like ears',
             'HEADFORELOCK': 'forelock',
             'HEADCOWLICK': 'cowlick',
             'HEADMOHAWK': 'mohawk',
             'HEADTUFT': 'tufted head fur',
             'HEADEMO': 'emo-style head fur',
+            'HEADJOWLS': 'prominent jowls',
             'CHEEKLONG': 'long cheek fur',
             'CHEEKPOINTED': 'pointed cheek fur',
             'CHEEKFLUFF': 'fluffy cheeks',
@@ -814,10 +828,14 @@ class ProfileScreen(Screens):
             'MANEFLUFFY': 'fluffy mane',
             'MANERUFF': 'ruff',
             'MANEHORSE': 'horse-like mane',
+            'MANELION': 'lion-like mane',
+            'MANEBRAIDED': 'braided mane',
+            'MANECOBRA': 'cobra-like mane',
             'FURWAVY': 'wavy fur',
             'FURCURLY': 'curly fur',
             'FURPATCHY': 'patchy fur',
             'FURKINK': 'kinked fur',
+            'FURSHAGGY': 'shaggy fur',
             'MUZZLESHORT': 'short muzzle',
             'MUZZLEBROAD': 'broad muzzle',
             'MUZZLELONG': 'long muzzle',
@@ -827,6 +845,19 @@ class ProfileScreen(Screens):
             'BODYSKINNY': 'skinny',
             'BODYBUFF': 'muscular',
             'BODYCOMPACT': 'compact',
+            'BODYHUNCHED': 'hunched',
+            'BODYHEFTY': 'hefty',
+            'BODYBURLY': 'burly',
+            'BODYBULKY': 'bulky',
+            'BODYPLUMP': 'plump',
+            'BODYBRAWNY': 'brawny',
+            'BODYSTOUT': 'stout',
+            'BODYBROAD': 'broad',
+            'BODYCHUBBY': 'chubby',
+            'BODYFAT': 'fat',
+            'BODYSTOCKY': 'stocky',
+            'BODYCHUNKY': 'chunky',
+            'BODYBIGBONED': 'big-boned',
             'SIZETINY': 'tiny',
             'SIZESMALL': 'small',
             'SIZESHORT': 'short',
@@ -843,11 +874,35 @@ class ProfileScreen(Screens):
             'TAILFEATHER': 'feathered tail',
             'TAILCURL': 'curled tail',
             'TAILTUFT': 'tufted tail',
+            'TAILFORKED': 'forked tail',
+            'TAILFOX': 'fox-like tail',
             'CLAWSLONG': 'unusually long claws',
             'BACKFLUFF': 'fluffy back',
             'BACKRIDGE': 'fur ridge on back',
             'SHOULDERTUFT': 'tufted shoulders',
-            'LEGTUFT': 'tufted legs'
+            'LEGTUFT': 'tufted legs',
+            'LARGEPAWS': 'large paws',
+            'SMALLPAWS': 'small paws',
+            'CLAWLESS': 'clawless',
+            'CLAWSSHORT': 'unusually short claws',
+            'PAWTUFT': 'tufted paws',
+            'BIGEYES': 'big eyes',
+            'SMALLEYES': 'small eyes',
+            'BIGNOSE': 'big nose',
+            'HEARTSHAPEDNOSE': 'heart-shaped nose',
+            'LONGLEGS': 'long-legged',
+            'SHORTLEGS': 'short-legged',
+            'CROSSEYED': 'cross-eyed',
+            'LAZYEYE': 'lazy eye',
+            'OVERGROWNTONGUE': 'overgrown tongue',
+            'LONGCHINFUR': 'long chin fur',
+            'SHORTCHINFUR': 'short chin fur',
+            'LONGMUZZLEFUR': 'long muzzle fur',
+            'LONGINNEREARFUR': 'long inner ear fur',
+            'WEBBEDPAWS': 'webbed paws',
+            'MISSINGTOE': 'missing a toe',
+            'UNDERSIZEDJAW': 'undersized jaw',
+            'OVERSIZEDJAW': 'oversized jaw'
         }
 
         trait_list = []
@@ -933,7 +988,19 @@ class ProfileScreen(Screens):
             output += i18n.t(f"general.{the_cat.status}", count=1)
 
         # NEWLINE ----------
-        output += "\n"
+        output += "\n"    
+        pronoun_text = ""
+        if len(the_cat.pronouns) == 1:
+            if the_cat.pronouns[0].get("subject") == the_cat.pronouns[0].get("object"):
+                    pronoun_text += the_cat.pronouns[0].get("subject") + "/" + the_cat.pronouns[0].get("poss")
+            else:
+                    pronoun_text += the_cat.pronouns[0].get("subject") + "/" + the_cat.pronouns[0].get("object")
+        else:
+            for pronoun in the_cat.pronouns:
+                    pronoun_text += pronoun.get("subject") + "/"
+            if pronoun_text[-1] == "/":
+                    pronoun_text = pronoun_text[:-1]
+        output += pronoun_text + "\n"
 
         # LEADER LIVES:
         # Optional - Only shows up for leaders
@@ -2254,6 +2321,10 @@ class ProfileScreen(Screens):
 
         elif self.open_tab == "personal":
             # Button to trans or cis the cats.
+            nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender", "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+            enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+            enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
+            oriented_enby = enby_masc + enby_fem
             if self.the_cat.gender == "male" and self.the_cat.genderalign == "male":
                 self.cis_trans_button.set_text(
                     "screens.profile.change_gender_transfemale"
@@ -2264,7 +2335,25 @@ class ProfileScreen(Screens):
                 self.cis_trans_button.set_text(
                     "screens.profile.change_gender_transmale"
                 )
-            elif self.the_cat.genderalign in ["trans female", "trans male"]:
+            elif (
+                    self.the_cat.gender == "intersex" and self.the_cat.genderalign == "intersex"
+            ):
+                self.cis_trans_button.set_text(
+                    "screens.profile.change_gender_intergender"
+                )
+            elif (
+                    self.the_cat.gender == "intersex" and self.the_cat.genderalign == "intergender"
+            ):
+                self.cis_trans_button.set_text(
+                    "screens.profile.change_gender_transmale"
+                )
+            elif (
+                    self.the_cat.gender == "intersex" and self.the_cat.genderalign in enby_masc
+            ):
+                self.cis_trans_button.set_text(
+                    "screens.profile.change_gender_transfemale"
+                )
+            elif self.the_cat.genderalign in oriented_enby:
                 self.cis_trans_button.set_text(
                     "screens.profile.change_gender_nonbinary"
                 )

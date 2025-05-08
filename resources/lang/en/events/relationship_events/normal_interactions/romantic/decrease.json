@@ -7,7 +7,8 @@
 			"m_c gave a gift to r_c, but {PRONOUN/r_c/subject} turned up {PRONOUN/r_c/poss} nose at the offering.",
 			"m_c heard r_c express an ideal {PRONOUN/m_c/subject} cannot agree with.",
 			"m_c heard r_c talking badly about {PRONOUN/m_c/object}.",
-			"m_c catches r_c staring at another cat."
+			"m_c catches r_c staring at another cat.",
+			"m_c feels that r_c's path is diverging from {PRONOUN/m_c/poss} own."
 		]
 	},
 	{
@@ -66,7 +67,8 @@
 		"interactions": [
 			"m_c had a disagreement with r_c over kits.",
 			"m_c and r_c had a disagreement on how to raise kits.",
-            		"m_c and r_c had a fight over if they would take a new mate if one of them died or went missing."
+            		"m_c and r_c had a fight over if they would take a new mate if one of them died or went missing.",
+					"m_c is less attracted to r_c than {PRONOUN/m_c/subject} used to be."
 		],
 		"relationship_constraint": [
 			"mates"

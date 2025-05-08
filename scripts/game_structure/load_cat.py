@@ -99,6 +99,12 @@ def json_load():
                 cat["accessory"] = ["DAISYTAIL"]
             if cat["accessory"] == ["CLOVER1"]:
                 cat["accessory"] = ["CLOVERTAIL"]
+            if cat["accessory"] == ["MOUSE FRIEND"]:
+                cat["accessory"] = ["GRAY MOUSE"]
+            if cat["accessory"] == ["SMILEY HAT"]:
+                cat["accessory"] = ["WINTER HAT"]
+            if cat["accessory"] == ["STICK FRIEND"]:
+                cat["accessory"] = ["STICK"]
             if cat["tint"] == "banana":
                 cat["tint"] = "bananaone"
             if cat["backstory"] == "clan_founder1":
@@ -129,6 +135,16 @@ def json_load():
                 cat["trait"] = "principled"
             if cat["trait"] == "fun loving":
                 cat["trait"] = "fun-loving"
+            if cat["trait"] == "motherly":
+                cat["trait"] = "nurturing"
+            if cat["trait"] == "maternal":
+                cat["trait"] = "nurturing"
+            if cat["trait"] == "ruined":
+                cat["trait"] = "rebellious"
+            if cat["trait"] == "unlovable":
+                cat["trait"] = "warm"
+            if cat["trait"] == "hefty":
+                cat["trait"] = "charming"
             if "accessories" in cat:
                 cat["accessory"] = cat.pop("accessories")
 
@@ -189,7 +205,7 @@ def json_load():
                 accessory=cat["accessory"],
                 opacity=cat["opacity"] if "opacity" in cat else 100,
                 fur_texture=cat["fur_texture"] if "fur_texture" in cat else choice(["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse", "tangled", "fuzzy", "spiky"]),
-                build = cat['build'] if "build" in cat else choice(["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate"]),
+                build = cat['build'] if "build" in cat else choice(["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate", "hunched", "hefty", "burly", "bulky", "plump", "brawny", "stout", "broad", "chubby", "fat", "chunky", "big-boned"]),
                 height=cat["height"] if "height" in cat else choice(["petite", "short", "average", "average", "tall", "towering"]),
                 
             )
@@ -471,7 +487,7 @@ def csv_load(all_cats):
                 ] = "10There was an error loading cat # " + str(attr[0])
                 the_cat.skill = attr[25]
                 if len(attr) > 28:
-                    the_cat.pelt.accessory = attr[28]
+                    the_cat.pelt.accessory = [attr[28]]
                 if len(attr) > 29:
                     the_cat.specialty2 = attr[29]
                 else:

@@ -78,15 +78,19 @@
     },
     "childish": {
         "body": [
-        ],
-        "no_body": [
-        ]
-    },
-    "cold": {
-        "body": [
-        ],
-        "no_body": [
-        ]
+	"Surprising some Clanmates, r_c offers to speak at m_c's vigil. However, it quickly becomes clear {PRONOUN/r_c/subject} just wanted the oppurtunity to talk about {PRONOUN/r_c/self}."
+    ],
+    "no_body": [
+	"Surprising some Clanmates, r_c offers to speak at m_c's vigil. However, it quickly becomes clear {PRONOUN/r_c/subject} just wanted the oppurtunity to talk about {PRONOUN/r_c/self}."
+    ]
+  },
+  "cold": {
+    "body": [
+	"Though r_c stays silent when the Clan tells tales of m_c's life, inside {PRONOUN/r_c/subject}{VERB/m_c/'re/'s} angry. When {PRONOUN/r_c/subject} {VERB/r_c/go/goes} to join StarClan, will so many clanmates remember {PRONOUN/r_c/object}?"
+    ],
+    "no_body": [
+	"Though r_c stays silent when the Clan tells tales of m_c's life, inside {PRONOUN/r_c/subject}{VERB/m_c/'re/'s} angry. When {PRONOUN/r_c/subject} {VERB/r_c/go/goes} to join StarClan, will so many clanmates remember {PRONOUN/r_c/object}?"
+    ]
     },
     "compassionate": {
         "body": [

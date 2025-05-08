@@ -72,7 +72,7 @@ class Pelt:
         'Singlestripe': 'singlestripe',
         'Sterstripe': 'sterstripe',
         'Sillystripe': 'sillystripe',
-        'Dancestripe': 'sillystripe',
+        'Dancestripe': 'dancestripe',
         'Mimistripe': 'mimistripe',
         'Masked': 'masked',
         'Stermasked': 'stermasked',
@@ -171,9 +171,10 @@ class Pelt:
                    'sterspeckled', 'sillyspeckled', 'dancespeckled', 'mimispeckled',
                    'stertabby', 'sillytabby', 'dancetabby', 'mimitabby',
                    'sterticked', 'sillyticked', 'danceticked', 'mimiticked', 'abyssinian', 'clouded', 'doberman', 'ghosttabby', 'merle',
-                   'monarch', 'oceloid', 'pinstripetabby', 'snowflake']
+                   'monarch', 'oceloid', 'pinstripetabby', 'snowflake', 'stain']
 
     pelt_length = ["short", "medium", "long"]
+    #please dontjudge the eye_colours section
     eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
         'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT', 'SUNLITICE', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ROSE',
         'ALGAE', 'SEAFOAM', 'LIGHT FLAME', 'CLOUDY', 'RED', 'TURQUOISE', 'SWAMP', 'RAINY', 'AQUAMARINE', 'EARTH', 'PUMPKIN', 'LILAC',
@@ -199,17 +200,20 @@ class Pelt:
     green_eyes = ['LICHEN', 'FERN', 'MINT', 'SPRING', 'APPLE', 'CHARTREUSE', 'LEAVES', 'MOSS', 'MEADOW', 'RIVER MOSS', 'TREE', 'THICKET', 'LEAF', 'EMERALD ORE', 'PEACOCK', 'LIGHT TURQUOISE', 'HAZELNUT', 'OLIVE', 'SAP', 'PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'ALGAE', 'SWAMP', 'AQUAMARINE', 'EARTH', 'DIRT', 'CHRISTMAS', 'FOREST FIRE',
                   'LIME', 'LUCKY', 'DARK HAZEL', 'DARK TURQUOISE', 'AVOCADO', 'NEON GREEN', 'SEA', "ORANGE"]
     
-    physical_trait_teeth = ['TEETHUPPER', 'TEETHSABRE', 'TEETHUNDERBITE']
-    physical_trait_ear_type = ['EARSMALL', 'EARBIG', 'EARTALL', 'EARPANTHER']
-    physical_trait_ear_fold = ['FOLDBOTH', 'FOLDONE']
-    physical_trait_headfur = ['HEADFORELOCK', 'HEADCOWLICK', 'HEADMOHAWK', 'HEADTUFT', 'HEADEMO']
+    physical_trait_teeth = ['TEETHUPPER', 'TEETHSABRE', 'TEETHUNDERBITE', 'TEETHOVERBITE', 'TEETHHANG', 'TEETHJAGGED', 'TEETHTUSK', 'TEETHGONE', 'TEETHCHIPPED']
+    physical_trait_ear_type = ['EARSMALL', 'EARBIG', 'EARTALL', 'EARPANTHER', 'EARWIDE', 'EARFLUFFY', "EARRABBIT", 'EARDROOPY']
+    physical_trait_ear_fold = ['FOLDBOTH', 'FOLDONE', 'EARCURL']
+    physical_trait_headfur = ['HEADFORELOCK', 'HEADCOWLICK', 'HEADMOHAWK', 'HEADTUFT', 'HEADEMO', 'HEADJOWLS']
     physical_trait_cheekfur = ['CHEEKLONG', 'CHEEKPOINTED', 'CHEEKFLUFF', 'CHEEKCURL']
-    physical_trait_mane = ['MANESILKY', 'MANEFLUFFY', 'MANERUFF', 'MANEHORSE']
-    physical_trait_fur_type = ['FURWAVY', 'FURCURLY', 'FURPATCHY', 'FURKINK']
+    physical_trait_mane = ['MANESILKY', 'MANEFLUFFY', 'MANERUFF', 'MANEHORSE', 'MANELION', 'MANEBRAIDED', 'MANECOBRA']
+    physical_trait_fur_type = ['FURWAVY', 'FURCURLY', 'FURPATCHY', 'FURKINK', 'FURSHAGGY']
     physical_trait_muzzle_type = ['MUZZLESHORT', 'MUZZLEBROAD', 'MUZZLELONG']
-    physical_trait_tail = ['TAILCROOKED', 'TAILLONG', 'TAILFEATHER', 'TAILCURL', 'TAILTUFT']
+    physical_trait_tail = ['TAILCROOKED', 'TAILLONG', 'TAILFEATHER', 'TAILCURL', 'TAILTUFT', 'TAILFORKED', 'TAILFOX']
     physical_trait_bodyfur = ['BACKFLUFF', 'BACKRIDGE', 'SHOULDERTUFT']
-    physical_trait_misc = ['EARTUFTS', 'POLYDACTYL', 'LASHESUPPER', 'LASHESLOWER', 'WHISKERSLONG', 'CLAWSLONG', 'LEGTUFT']
+    physical_trait_misc = ['EARTUFTS', 'POLYDACTYL', 'LASHESUPPER', 'LASHESLOWER', 'WHISKERSLONG', 'CLAWSLONG', 'LEGTUFT', 'LARGEPAWS', 'SMALLPAWS', 'CLAWLESS', 'CLAWSSHORT', 'PAWTUFT',
+                           "BIGEYES", "SMALLEYES", "BIGNOSE", "HEARTSHAPEDNOSE", 'LONGLEGS', 'SHORTLEGS',
+                           'CROSSEYED', 'LAZYEYE', 'OVERGROWNTONGUE', 'LONGCHINFUR', 'SHORTCHINFUR', 'LONGMUZZLEFUR',
+                           'LONGINNEREARFUR', 'WEBBEDPAWS', 'MISSINGTOE', 'UNDERSIZEDJAW', 'OVERSIZEDJAW']
 
     # bite scars by @wood pank on discord
 
@@ -250,6 +254,16 @@ class Pelt:
     
     bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
                         "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
+    
+    beetle_accessories = ["FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT",
+                          "BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF",
+                          "BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
+    beetle_feathers = ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS",
+                       "BLUE JAY FEATHERS", "ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]
+    
+    ster_accessories = ["POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH", "LAURELLEAVES",
+                        "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH", "YARROW"]
+                        
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
@@ -260,7 +274,7 @@ class Pelt:
         "PURPLEBOW", "MULTIBOW", "INDIGOBOW", "CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON",
         "REDNYLON", "LIMENYLON", "GREENNYLON", "RAINBOWNYLON",
         "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
-        "CRIMSONBANDANA", "BLUEBANDANA", "YELLOWANDANA", "CYANBANDANA", "REDBANDANA",
+        "CRIMSONBANDANA", "BLUEBANDANA", "YELLOWBANDANA", "CYANBANDANA", "REDBANDANA",
         "LIMEBANDANA" ,"GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA",
         "PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA",
         "CRIMSONTEETHCOLLAR", "BLUETEETHCOLLAR", "YELLOWTEETHCOLLAR", "CYANTEETHCOLLAR", "REDTEETHCOLLAR",
@@ -274,7 +288,11 @@ class Pelt:
         "PINKS", "PURPLES", "MULTIS", "INDIGOS",
         "CRIMSONH", "BLUEH", "YELLOWH", "CYANH", "REDH", "LIMEH",
         "GREENH", "RAINBOWH", "BLACKH", "SPIKESH", "WHITEH", "PINKH",
-        "PURPLEH", "MULTIH", "INDIGOH"
+        "PURPLEH", "MULTIH", "INDIGOH",
+        "CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO",
+        "LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO",
+        "DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO",
+        "WHITEBOO", "LIGHTGRAYBOO", "GRAYBOO", "BROWNBOO", "BLACKBOO"
         
     ]
     flower_accessories = ["DAISY", "DIANTHUS", "BLEEDING HEARTS", "FRANGIPANI", "BLUE GLORY",
@@ -285,8 +303,7 @@ class Pelt:
     plant2_accessories = ["CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"
                     ]
 
-    snake_accessories = ["GRASS SNAKE", "BLUE RACER", "WESTERN COACHWHIP", "KINGSNAKE"
-                     
+    snake_accessories = ["GRASS SNAKE", "BLUE RACER", "WESTERN COACHWHIP", "KINGSNAKE"  
                      ]
 
     smallAnimal_accessories = ["GRAY SQUIRREL", "RED SQUIRREL", "CRAB", "WHITE RABBIT", "BLACK RABBIT",
@@ -301,12 +318,20 @@ class Pelt:
     deadInsect_accessories = ["LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH BUTTERFLY", "DAPPLED MONARCH",
                       "POLYPHEMUS MOTH", "MINT MOTH"
                     ]
+    
+    randomaccessories = ["DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM",
+            "FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER",
+            "DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"
+                    ]
 
     aliveInsect_accessories = ["BROWN SNAIL", "RED SNAIL", "WORM", "BLUE SNAIL", "ZEBRA ISOPOD", "DUCKY ISOPOD", "DAIRY COW ISOPOD",
                            "BEETLEJUICE ISOPOD", "BEE", "RED LADYBUG", "ORANGE LADYBUG", "YELLOW LADYBUG"
                     ]
 
     fruit_accessories = ["OGRASPBERRY", "BLACKBERRY", "GOLDEN RASPBERRY", "CHERRY", "YEW"
+                    ]
+    sailormoon = ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK",
+                  "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"
                     ]
 
     crafted_accessories = ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL", "LEAF BOW"
@@ -334,6 +359,16 @@ class Pelt:
         "BLUEBELLS",
         "LILY OF THE VALLEY",
         "SNAPDRAGON",
+        "BUNNY HAT",
+        "WINTER HAT",
+        "PARTY HAT",
+        "SANTA HAT",
+        "BANANA HAT",
+        "PINK SCARF",
+        "BLUETAILED SKINK",
+        "BLACKHEADED ORIOLE",
+        "MILKSNAKE",
+        "WORM FRIEND",
         "NETTLE",
         "HEATHER",
         "GORSE",
@@ -409,19 +444,60 @@ class Pelt:
         "DAPPLED MONARCH",
         "POLYPHEMUS MOTH",
         "MINT MOTH",
-        "ROSY MAPLE MOTH"
+        "ROSY MAPLE MOTH",
+        "POPPYFLOWER",
+        "JUNIPERBERRY",
+        "DAISYFLOWER",
+        "BORAGEFLOWER",
+        "OAK",
+        "BEECH",
+        "LAURELLEAVES",
+        "COLTSFOOT",
+        "BINDWEED",
+        "TORMENTIL",
+        "BRIGHTEYE",
+        "LAVENDERWREATH",
+        "YARROW",
+        "MOON",
+        "MERCURY",
+        "MARS",
+        "JUPITER",
+        "VENUS",
+        "URANUS",
+        "NEPTUNE",
+        "PLUTO",
+        "SATURN",
+        "MINI MOON",
+        "CHERRY BLOSSOM",
+        "DAISY BLOOM",
+        "PEBBLE", 
+        "GOLDEN FLOWER",
+        "DANDELIONS",
+        "DANDELION PUFFS",
+        "DICE",
+        "GOLDEN EARRINGS",
+        "COWBOY HAT",
     ]
 
     body_accessories = [
         "HERBS",
         "PETALS",
+        "RED ROSE",
+        "WHITE ROSE",
+        "PEBBLE COLLECTION",
+        "FEATHERS",
         "DRY HERBS",
         "SNAKE",
         "RIBS",
         "BAT WINGS",
+        "DOGWOOD",
+        "TREESTAR",
         "CANIDAE SKULL",
         "DEER ANTLERS",
         "RAM HORN",
+        "BAT WING SUIT",
+        "PINK BOWTIE",
+        "GRAY BOWTIE",
         "GOAT HORN",
         "OX SKULL",
         "TEETH COLLAR",
@@ -455,6 +531,7 @@ class Pelt:
         "BLACKBIRD",
         "ROBIN",
         "JAY",
+        "FROG FRIEND",
         "THRUSH",
         "CARDINAL",
         "MAGPIE",
@@ -462,7 +539,8 @@ class Pelt:
         "TAN RABBIT",
         "TAN AND WHITE RABBIT",
         "TAN VITILIGO RABBIT",
-        "RAT", "WHITE MOUSE",
+        "RAT",
+        "WHITE MOUSE",
         "BLACK MOUSE",
         "GRAY MOUSE",
         "BROWN MOUSE",
@@ -484,6 +562,10 @@ class Pelt:
         "CLAY DAISY POT",
         "CLAY AMANITA POT",
         "CLAY BROWNCAP POT",
+        "CRYSTAL BALL",
+        "TUXEDO MASK",
+        "RACCOON LEAF",
+        "WHITE RACCOON LEAF",
     ]
 
     tail_accessories = [
@@ -514,7 +596,17 @@ class Pelt:
         "PINKBOWS",
         "PURPLEBOWS",
         "MULTIBOWS",
-        "INDIGOBOWS"
+        "INDIGOBOWS",
+        "THRUSH FEATHERS",
+        "GOLDFINCH FEATHERS",
+        "DOVE FEATHERS",
+        "PEACOCK FEATHERS",
+        "HAWK FEATHERS",
+        "BLUE JAY FEATHERS",
+        "ROBIN FEATHERS",
+        "FIERY FEATHERS",
+        "SUNSET FEATHERS",
+        "SILVER FEATHERS"
     ]
 
     tabbies = ["Tabby", "Ticked", "Mackerel", "Stermackerel", "Sillymackerel", "Dancemackerel", "Mimimackerel", 
@@ -526,7 +618,7 @@ class Pelt:
                "Lynx", "Bobcat", "Spots", "Merle"]
     plain = ["SingleColour", "SterSingle", "SillySingle", "DanceSingle", "MimiSingle",
              "TwoColour", "Smoke", "Stersmoke", "Sillysmoke", "Dancesmoke", "Mimismoke",
-             "Singlestripe", "Sterstripe", "Dancestripe", "Sillystripe", "Mimistripe", "Smokepoint", "Doberman"]
+             "Singlestripe", "Sterstripe", "Dancestripe", "Sillystripe", "Mimistripe", "Smokepoint", "Doberman", "Stain"]
     exotic = ["Bengal", "Sterbengal", "Sillybengal", "Dancebengal", "Mimibengal", 
               "Marbled", "Stermarbled", "Sillymarbled", "Dancemarbled", "Mimimarbled",
               "Masked", "Stermasked", "Sillymasked", "Dancemasked", "Mimimasked", "Maned", "Ocelot", "Cheetah", "Wildcat", "Wolf", "Finleappatches", "Dalmatian", "Abyssinian", "Clouded", "Snowflake", "Oceloid", "Monarch"]
@@ -674,7 +766,7 @@ class Pelt:
         self.reverse = reverse
         self.skin = skin
         self.fur_texture = fur_texture if fur_texture is not None else choice(["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse", "tangled", "fuzzy", "spiky"])
-        self.build = build if build is not None else choice(["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate"])
+        self.build = build if build is not None else choice(["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate", "hunched", "hefty", "burly", "bulky", "plump", "brawny", "stout", "broad", "chubby", "fat", "stocky", "chunky", "big-boned"])
         self.height = height if height is not None else choice(["petite", "short", "average", "average", "tall", "towering"])
     @staticmethod
     def generate_new_pelt(gender: str, parents: tuple = (), age: str = "adult"):
@@ -765,7 +857,9 @@ class Pelt:
             elif self.cat_sprites["senior"] == 5:
                 self.cat_sprites["senior"] = 14
 
-        if isinstance(self.accessory, str):
+        if self.accessory is None:
+            self.accessory = []
+        elif isinstance(self.accessory, str):
             self.accessory = [self.accessory]
 
 
@@ -1154,6 +1248,7 @@ class Pelt:
                 choice(Pelt.bone_accessories),
                 choice(Pelt.butterflies_accessories),
                 choice(Pelt.stuff_accessories),
+                choice(Pelt.ster_accessories),
                 choice(Pelt.bows_accessories)]
             )]
         else:
@@ -1643,6 +1738,14 @@ class Pelt:
             )
             if self.eye_colour2
             else i18n.t(f"cat.eyes.{self.eye_colour}")
+        )
+    def describe_skin(self):
+        return (
+            adjust_list_text(
+                [
+                    i18n.t(f"cat.skin.{self.skin}"),
+                ]
+            )
         )
     @staticmethod
     def describe_appearance(cat, short=False):

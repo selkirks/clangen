@@ -164,5 +164,107 @@
 				"trust": "decrease"
 			}
 		}
-	}
-]
+		},
+		{
+			"id": "group_3_family_neg1",
+			"cat_amount": 3,
+			"interactions": ["m_c asks r_c1 why {PRONOUN/r_c1/subject} can't be more like r_c2."],
+			"relationship_constraint": {
+				"m_c_to_r_c1": [
+					"parent/child"
+				],
+				"m_c_to_r_c2": [
+					"parent/child"
+				],
+				"r_c1_to_r_c2": [
+					"siblings"
+				]
+			},
+			"trait_constraint": {
+				"m_c": [
+					"strict",
+					"cold",
+					"righteous",
+					"shameless",
+					"vengeful",
+					"arrogant",
+					"competitive",
+					"grumpy",
+					"cunning",
+					"gloomy",
+					"grumpy",
+					"fierce",
+					"bloodthirsty",
+					"childish",
+					"bold",
+					"daring"
+				],
+				"r_c1": [
+					"playful",
+					"nervous",
+					"troublesome",
+					"lonesome",
+					"childish",
+					"insecure",
+					"adventurous",
+					"shameless",
+					"strange",
+					"oblivious",
+					"gloomy",
+					"grumpy",
+					"flamboyant",
+					"rebellious",
+					"impulsive",
+					"noisy",
+					"daydreamer"
+				],
+				"r_c2": [
+					"charming",
+					"charismatic",
+					"daring",
+					"righteous",
+					"strict",
+					"compassionate",
+					"thoughtful",
+					"ambitious",
+					"confident",
+					"calm",
+					"faithful",
+					"responsible",
+					"wise",
+					"arrogant",
+					"sincere",
+					"sweet",
+					"polite"
+				]
+			},
+			"specific_reaction": {
+				"m_c_to_r_c1": {
+					"dislike": "increase",
+					"comfortable": "increase",
+					"trust": "decrease"
+				},
+				"r_c1_to_m_c": {
+					"dislike": "increase",
+					"comfortable": "decrease",
+					"trust": "decrease"
+				},
+				"r_c1_to_r_c2": {
+					"platonic": "decrease",
+					"dislike": "increase",
+					"comfortable": "decrease",
+					"trust": "decrease"
+				},
+				"r_c2_to_r_c1": {
+					"platonic": "decrease",
+					"comfortable": "decrease"
+				},
+				"r_c2_to_m_c": {
+					"platonic": "increase",
+					"dislike": "decrease",
+					"comfortable": "decrease",
+					"trust": "increase"
+				}
+			}
+		}
+	]

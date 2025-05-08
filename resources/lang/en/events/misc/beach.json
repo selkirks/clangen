@@ -326,8 +326,8 @@
     "m_c": {
       "status": ["leader"],
       "skill": ["MEDIATOR,1"],
-      "trait": ["thoughtful", "wise", "righteous"],
-      "not_trait": ["bloodthirsty", "ambitious"]
+      "trait": ["thoughtful", "wise", "righteous", "heroic", "tranquil", "reliable", "philosophical", "benevolent"],
+      "not_trait": ["bloodthirsty", "ambitious", "sadistic", "venomous", "cruel"]
     }
   },
   {

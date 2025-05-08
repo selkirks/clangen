@@ -38,7 +38,16 @@
 
     ]
   },
-  "ambitious": {
+
+"altruistic": {
+    "body": [
+	"r_c doesn't say anything as others come up to comfort {PRONOUN/r_c/object} over the loss of m_c. {PRONOUN/r_c/subject}'ll keep {PRONOUN/r_c/poss} bad blood to {PRONOUN/r_c/self} while others are still grieving."
+    ],
+    "no_body": [
+	"r_c doesn't say anything as others come up to comfort {PRONOUN/r_c/object} over the loss of m_c. {PRONOUN/r_c/subject}'ll keep {PRONOUN/r_c/poss} bad blood to {PRONOUN/r_c/self} while others are still grieving."
+    ]
+  },
+    "ambitious": {
     "body": [
 
     ],

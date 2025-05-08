@@ -2464,12 +2464,13 @@ def ceremony_text_adjust(
     return adjust_text, random_living_parent, random_dead_parent
 
 
-def get_pronouns(Cat: "Cat"):
+def get_pronouns(cat: "Cat"):
     """Get a cat's pronoun even if the cat has faded to prevent crashes (use gender-neutral pronouns when the cat has faded)"""
-    if Cat.pronouns == {}:
-        return localization.get_new_pronouns("default")
+    if not cat.pronouns:
+        # since get_new_pronouns returns a list with length 1
+        return localization.get_new_pronouns("default")[0]
     else:
-        return choice(Cat.pronouns)
+        return choice(cat.pronouns)
 
 
 def shorten_text_to_fit(
@@ -2900,6 +2901,26 @@ def generate_sprite(
                         elif accessory in cat.pelt.tail2_accessories:
                             new_sprite.blit(
                                 sprites.sprites["acc_tail2" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.ster_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_ster" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.sailormoon:
+                            new_sprite.blit(
+                                sprites.sprites["acc_sailor" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.randomaccessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_random" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.beetle_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_beetle" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.beetle_feathers:
+                            new_sprite.blit(
+                                sprites.sprites["acc_beetlefeathers" + accessory + cat_sprite], (0, 0)
                             )
         # Apply fading fog
         if (

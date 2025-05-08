@@ -1169,6 +1169,26 @@
     ],
     "m_c has always longed for adventure and {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like being a medicine cat apprentice will be the greatest adventure of them all. (mentor) eagerly accepts such an eager and willing apprentice."
   ],
+"med_app_29": [
+    [
+      "medicine cat apprentice",
+      "general_mentor",
+      "general_leader",
+      "general_backstory",
+      "arrogant"
+    ],
+    "m_c feels as though it's obvious {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} the best choice for (mentor)'s apprentice- until l_n announces {PRONOUN/m_c/subject} will be a warrior apprentice. Shocked, m_c interrupts to request training as a medicine cat, and though l_n and (mentor) exchange glances, they agree to it."
+  ],
+  "med_app_30": [
+    [
+      "medicine cat apprentice",
+      "general_mentor",
+      "general_leader",
+      "general_backstory",
+      "gloomy"
+    ],
+    "Though m_c doesn't even grin as {PROUNOUN/m_c/subject} {VERB/m_c/touch/touches} {PRONOUN/m_c/poss} nose to (mentor)'s, a small glimmer of excitement flickers in {PRONOUN/m_c/poss} chest."
+  ], 
   "mediator_app_0": [
     [
       "mediator apprentice",
@@ -2802,7 +2822,7 @@
       "loyal",
       "responsible"
     ],
-    "As c_n yowl m_c's new name, l_n murmurs that dead_par1 and dead_par2 would be proud of {PRONOUN/m_c/poss} r_h."
+    "As c_n yowls m_c's new name, l_n murmurs that dead_par1 and dead_par2 would be proud of {PRONOUN/m_c/poss} r_h."
   ],
   "warrior_61": [
     [
@@ -3001,7 +3021,7 @@
       "calm",
       "wise"
     ],
-    "As the Clan yowls m_c's new warrior name {PRONOUN/m_c/subject} {VERB/m_c/smile/smiles} and {VERB/m_c/nod/nods}, pleased but not overcome. l_n jumps down to congratulate {PRONOUN/m_c/object}. As their heads press together, l_n whispers that balanced sense of self and r_h will serve m_c well."
+    "As the Clan yowls m_c's new warrior name {PRONOUN/m_c/subject} {VERB/m_c/smile/smiles} and {VERB/m_c/nod/nods}, pleased but not overcome. l_n jumps down to congratulate {PRONOUN/m_c/object}. As their heads press together, l_n whispers that a balanced sense of self and r_h will serve m_c well."
   ],
   "warrior_72": [
     [
@@ -3204,7 +3224,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "m_c is welcomed as fully trained mediator of the Clan."
+    "m_c is welcomed as a fully trained mediator of the Clan."
   ],
   "mediator_2": [
     [

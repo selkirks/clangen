@@ -130,7 +130,7 @@
             "Wants to be big someday",
             "Wants to have fun",
             "Is playing pretend",
-            "Is going through an angsty phase, much to {PRONOUN/m_c/poss} Clanmates chagrin",
+            "Is going through an angsty phase, much to {PRONOUN/m_c/poss} Clanmates' chagrin",
             "Is fighting sleep... and failing",
             "Knocked {PRONOUN/m_c/self} over with a sneeze",
             "Wants a badger ride",
@@ -365,10 +365,21 @@
             "Pounced on r_c",
             "Runs out of energy for several seconds... then hops back up, fully re-energized!",
             "Nips at r_c, then runs away giggling",
-            "Is trying to climb r_c"
+            "Is trying to climb r_c",
+			"Can't stop sneezing",
+			"Is booping a Clanmate on the nose",
+			"Keeps trying out tongue-twisters with {PRONOUN/m_c/poss} denmates",
+			"Is pretending to be a snail",
+			"Fell asleep inside the leader's den",
+			"Keeps bursting into giggles",
+			"Sticks {PRONOUN/m_c/poss} tongue out at {PRONOUN/m_c/poss} Clamnates",
+			"Is trying to keep a bug as a pet",
+			"Calls everyone by a silly nickname",
+			"Keeps climbing on everything in sight"
         ],
         "main_trait_constraint": [
-            "zoomy"
+            "zoomy",
+            "jokester"
         ],
         "random_living_status": [
             "living"
@@ -1071,6 +1082,38 @@
         ]
     },
     {
+        "id": "sinister_kit",
+        "thoughts": [
+			"Is constantly staring at {PRONOUN/m_c/poss} Clanmates",
+			"Seems to appear out of nowhere",
+			"Is talking to {PRONOUN/m_c/object}self",
+			"Claims to be talking to an imaginary friend",
+			"Wants to know everything {PRONOUN/m_c/self} can about ghosts",
+			"Is telling ghost stories",
+			"Wants to hear a scary story",
+			"Sneaks out of the nursery to look up at the moon",
+			"Slinks around in the shadows",
+			"Is asking older cats about StarClan",
+			"Starts a collection of prey bones",
+			"Walks so quietly you can hardly hear {PRONOUN/m_c/object}",
+			"Accidentally snuck up on a Clanmate",
+			"Only wants to come out at night",
+			"Asks a Clanmate an unsettling question",
+			"Has big round eyes",
+			"Is imitating owl calls",
+			"Wants to visit the graves of those who have passed on",
+			"Is feeling angsty",
+			"Is feeling somber",
+			"Asks the medicine cat which herbs make you sick"
+        ],
+        "main_trait_constraint": [
+            "sinister"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
         "id": "attention-seeker_kit",
         "thoughts": [
             "Wakes r_c in the middle of the night to ask a question about snails",
@@ -1111,6 +1154,36 @@
         ],
         "random_living_status": [
             "living"]
+        },
+        {
+            "id": "tender_kit",
+            "thoughts": [
+                "Worries that nobody likes {PRONOUN/m_c/object}",
+                "Curls up next to a Clanmate",
+                "Never wants to be alone",
+                "Had a nightmare after hearing a scary story",
+                "Feels overwhelmed",
+                "Doesn't want to leave the nursery today",
+                "Got {PRONOUN/m_c/poss} feelings hurt",
+                "Is feeling weepy",
+                "Is scared of {PRONOUN/m_c/poss} own shadow",
+                "Is crying after being teased",
+                "Tries to listen to a Clanmate's problems",
+                "Wants to help a Clanmate feel better",
+                "Insists {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} NOT a crybaby!",
+                "Worries that {PRONOUN/m_c/subject} accidentally hurt someone's feelings",
+                "Finds a bug and gently guides it out of camp",
+                "Cries when {PRONOUN/m_c/subject} sees the prey pile",
+                "Is scared after hearing a strange noise",
+                "Tries to keep up with {PRONOUN/m_c/poss} Clanmates",
+                "Tries to be brave"
+            ],
+            "main_trait_constraint": [
+                "tender"
+            ],
+            "random_living_status": [
+                "living"
+            ]
         },
         {
             "id": "insecure_kit",
@@ -1273,6 +1346,35 @@
         ]
     },
     {
+        "id": "prim_kit",
+        "thoughts": [
+			"Has {PRONOUN/m_c/poss} pelt groomed to perfection",
+			"Tries to be involved with the conversations of older cats",
+			"Doesn't like getting messy",
+			"Insists {PRONOUN/m_c/subject} {VERB/m_c/are/is} practically a grown-up",
+			"Hates being treated like a kit",
+			"Frantically washes {PRONOUN/m_c/poss} paws after getting them dirty",
+			"Snaps at a denmate for kicking up dust",
+			"Sits politely and listens to a Clan meeting",
+			"Is feeling superior",
+			"Sticks {PRONOUN/m_c/poss} nose up in the air",
+			"Is looking down {PRONOUN/m_c/poss} nose at a denmate",
+			"Thinks {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} the most mature kit in the nursery",
+			"Lectures a denmate for being immature",
+			"Pretends {PRONOUN/m_c/self} {VERB/m_c/don't/doesn't} enjoy kit games",
+			"Doesn't want to play outside",
+			"Carefully decorates {PRONOUN/m_c/poss} nest",
+			"Has a collection of shiny things",
+			"Wishes {PRONOUN/m_c/subject} would just grow up already!"
+        ],
+        "main_trait_constraint": [
+            "prim"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
         "id": "polite_kit",
         "thoughts": [
             "Always says please and thank you",
@@ -1367,5 +1469,34 @@
             "leader",
             "elder"
         ]
+    },
+    {
+        "id": "kittencough_gen",
+        "thoughts": [
+            "Wants to play but can't stop coughing",
+            "Is unusually willing to nap",
+            "Is trembling after a coughing fit",
+            "Is rattling when breathing",
+            "Just wants to stay in {PRONOUN/m_c/poss} nest"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "kittencough"
+            ]
+        }
+    },
+    {
+        "id": "kit_to_pregnant_cat",
+        "thoughts": [
+            "Wants r_c to let {PRONOUN/m_c/object} name one of the kits",
+            "Can't wait for r_c's kits to be here so they can play together",
+            "Is asking r_c question after question about being pregnant",
+            "Asks r_c if {PRONOUN/r_c/subject}'ll have twelve kits since {PRONOUN/r_c/poss} belly is so big"
+        ],
+        "has_injuries": {
+            "r_c": [
+                "pregnant"
+            ]
+        }
     }
 ]

@@ -91,7 +91,7 @@
     "m_c": {
       "age": ["any"],
       "status": ["any"],
-      "trait": ["bold", "adventurous", "careful", "confident", "calm", "strange", "charismatic", "loving", "compassionate"]
+      "trait": ["bold", "adventurous", "careful", "confident", "calm", "strange", "charismatic", "loving", "compassionate", "bubbly", "cool", "nurturing", "idealistic", "chummy", "passionate", "cooperative", "benevolent"]
     }
   },
   {
@@ -293,7 +293,7 @@
     "r_c": {
       "age": ["any"],
       "status": ["any"],
-      "trait": ["strange", "thoughtful"]
+      "trait": ["strange", "thoughtful", "bizarre", "secretive", "sensitive", "soft", "dedicated", "cryptic"]
     }
   },
   {

@@ -32,7 +32,10 @@
 			"r_c snickered when m_c tripped.",
 			"m_c is taken aback by one of r_c's comments.",
 			"r_c tries to convince m_c that an obvious lie is real.",
-			"r_c did an embarrassing prank on m_c's friend."
+			"r_c did an embarrassing prank on m_c's friend.",
+			"r_c saw m_c taking extra fresh kill before others had a chance to eat.",
+            		"m_c walks away when r_c asks for help.",
+            		"r_c saw m_c do something kinda selfish."
 		],
 		"reaction_random_cat": {
 			"admiration": "decrease"
@@ -77,6 +80,7 @@
 		"interactions": [
 			"m_c tried to bring r_c's behavior up to them, but it turned into a fight that someone else had to break up.",
 			"m_c confronted r_c about {PRONOUN/r_c/poss} bad attitude but that only makes r_c act out more.",
+			"r_c saw m_c do something really selfish and, while it didn't affect anyone else, m_c's view of {PRONOUN/r_c/object} is definitely warped.",
 			"m_c is disappointed when r_c doesn't uphold a promise.",
 			"m_c doesn't tell r_c that {PRONOUN/r_c/subject} forgot to groom a part of {PRONOUN/r_c/poss} fur.",
 			"r_c ignored m_c's question.",
@@ -96,7 +100,8 @@
 		"interactions": [
 			"m_c and r_c had to fix something around camp and argued about how to fix it. It ended up being fixed by some other cat in the end.",
 			"m_c notices that r_c has been avoiding {PRONOUN/r_c/poss} responsibilities lately.",
-			"m_c and r_c were supposed to be working together today, but they can never agree long enough to accomplish anything."
+			"m_c and r_c were supposed to be working together today, but they can never agree long enough to accomplish anything.",
+			"m_c is frustrated after finishing a task that r_c was supposed to do."
 		],
 		"reaction_random_cat": {
 			"admiration": "decrease"
@@ -164,7 +169,9 @@
 		"id": "admire_adult_de_med2",
 		"interactions": [
 			"m_c has noticed r_c isn't doing a lot of work lately.",
-			"m_c is disappointed in r_c's lack of initiative."
+			"m_c is disappointed in r_c's lack of initiative.",
+			"m_c notices that r_c seems to disappear whenever difficult tasks are being discussed.",
+			"m_c has noticed r_c's been a lot lazier lately."
 		],
 		"main_status_constraint": [
 			"elder",
