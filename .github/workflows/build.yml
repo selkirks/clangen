@@ -59,11 +59,11 @@ jobs:
         env:
           IS_RELEASE: 1
       - name: Create archive (.tar.xz)
-        run: tar -caf Lifegen_Linux64_glibc2.31+.tar.xz -C dist Lifegen
+        run: tar -caf LifegenMegaMerge_Linux64_glibc2.31+.tar.xz -C dist LifegenMegaMerge
       - uses: actions/upload-artifact@v4
         with:
-          name: Lifegen_Linux64_glibc2.31+.tar.xz
-          path: Lifegen_Linux64_glibc2.31+.tar.xz
+          name: LifegenMegaMerge_Linux64_glibc2.31+.tar.xz
+          path: LifegenMegaMerge_Linux64_glibc2.31+.tar.xz
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v5
@@ -72,9 +72,9 @@ jobs:
           gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
           passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
       - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/Lifegen-dev' || startsWith(github.ref, 'refs/tags/')) }}
+        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/LifegenMegaMerge-dev' || startsWith(github.ref, 'refs/tags/')) }}
         run: |
-          gpg --output Lifegen_Linux64_glibc2.31+.tar.xz.sig --detach-sig -a Lifegen_Linux64_glibc2.31+.tar.xz
+          gpg --output LifegenMegaMerge_Linux64_glibc2.31+.tar.xz.sig --detach-sig -a LifegenMegaMerge_Linux64_glibc2.31+.tar.xz
           curl -X 'POST' \
             'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
@@ -84,8 +84,8 @@ jobs:
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
             -H 'accept: */*' \
             -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Lifegen_Linux64_glibc2.31+.tar.xz' \
-            -F 'fileBundle=@Lifegen_Linux64_glibc2.31+.tar.xz.sig' \
+            -F 'fileBundle=@LifegenMegaMerge_Linux64_glibc2.31+.tar.xz' \
+            -F 'fileBundle=@LifegenMegaMerge_Linux64_glibc2.31+.tar.xz.sig' \
             --http1.1
       - name: Set up butler
         uses: thlumyn/setup-butler@clangen
@@ -93,12 +93,12 @@ jobs:
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Lifegen_Linux64_glibc2.31+.tar.xz sablesteel/clan-gen-fan-edit:linux64_glibc_231 --userversion "${{ env.VERSION_NUMBER }}"
+        run: butler push LifegenMegaMerge_Linux64_glibc2.31+.tar.xz sablesteel/clan-gen-fan-edit:linux64_glibc_231 --userversion "${{ env.VERSION_NUMBER }}"
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Lifegen_Linux64_glibc2.31+.tar.xz
+          files: LifegenMegaMerge_Linux64_glibc2.31+.tar.xz
 
   build_ubuntu_22_04:
     runs-on: ubuntu-22.04
@@ -153,11 +153,11 @@ jobs:
         env:
           IS_RELEASE: 1
       - name: Create archive (.tar.xz)
-        run: tar -caf Lifegen_Linux64_glibc2.35+.tar.xz -C dist Lifegen
+        run: tar -caf LifegenMegaMerge_Linux64_glibc2.35+.tar.xz -C dist LifegenMegaMerge
       - uses: actions/upload-artifact@v4
         with:
-          name: Lifegen_Linux64_glibc2.35+.tar.xz
-          path: Lifegen_Linux64_glibc2.35+.tar.xz
+          name: LifegenMegaMerge_Linux64_glibc2.35+.tar.xz
+          path: LifegenMegaMerge_Linux64_glibc2.35+.tar.xz
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v5
@@ -166,9 +166,9 @@ jobs:
           gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
           passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
       - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/Lifegen-dev' || startsWith(github.ref, 'refs/tags/')) }}
+        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/LifegenMegaMerge-dev' || startsWith(github.ref, 'refs/tags/')) }}
         run: |
-          gpg --output Lifegen_Linux64_glibc2.35+.tar.xz.sig --detach-sig -a Lifegen_Linux64_glibc2.35+.tar.xz
+          gpg --output LifegenMegaMerge_Linux64_glibc2.35+.tar.xz.sig --detach-sig -a LifegenMegaMerge_Linux64_glibc2.35+.tar.xz
           curl -X 'POST' \
             'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
@@ -178,8 +178,8 @@ jobs:
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
             -H 'accept: */*' \
             -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Lifegen_Linux64_glibc2.35+.tar.xz' \
-            -F 'fileBundle=@Lifegen_Linux64_glibc2.35+.tar.xz.sig' \
+            -F 'fileBundle=@LifegenMegaMerge_Linux64_glibc2.35+.tar.xz' \
+            -F 'fileBundle=@LifegenMegaMerge_Linux64_glibc2.35+.tar.xz.sig' \
             --http1.1
       - name: Set up butler
         uses: thlumyn/setup-butler@clangen
@@ -187,12 +187,12 @@ jobs:
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Lifegen_Linux64_glibc2.35+.tar.xz sablesteel/clan-gen-fan-edit:linux64_glibc_235 --userversion "${{ env.VERSION_NUMBER }}"
+        run: butler push LifegenMegaMerge_Linux64_glibc2.35+.tar.xz sablesteel/clan-gen-fan-edit:linux64_glibc_235 --userversion "${{ env.VERSION_NUMBER }}"
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Lifegen_Linux64_glibc2.35+.tar.xz
+          files: LifegenMegaMerge_Linux64_glibc2.35+.tar.xz
 
   build_win32:
     runs-on: windows-2019
@@ -269,12 +269,12 @@ jobs:
           IS_RELEASE: 1
       - name: Create archive (.zip)
         run: |
-          cp dist/Lifegen/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f Lifegen_Win32.zip -C dist Lifegen .itch.toml
+          cp dist/LifegenMegaMerge/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f LifegenMegaMerge_Win32.zip -C dist LifegenMegaMerge .itch.toml
       - uses: actions/upload-artifact@v4
         with:
-          name: Lifegen_Win32
-          path: Lifegen_Win32.zip
+          name: LifegenMegaMerge_Win32
+          path: LifegenMegaMerge_Win32.zip
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v5
@@ -283,10 +283,10 @@ jobs:
           gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
           passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
       - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/Lifegen-dev' || startsWith(github.ref, 'refs/tags/')) }}
+        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/LifegenMegaMerge-dev' || startsWith(github.ref, 'refs/tags/')) }}
         shell: bash
         run: |
-          gpg --output Lifegen_Win32.zip.sig --detach-sig -a Lifegen_Win32.zip
+          gpg --output LifegenMegaMerge_Win32.zip.sig --detach-sig -a LifegenMegaMerge_Win32.zip
           curl -X 'POST' \
             'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
@@ -296,8 +296,8 @@ jobs:
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
             -H 'accept: */*' \
             -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Lifegen_Win32.zip;type=application/zip' \
-            -F 'fileBundle=@Lifegen_Win32.zip.sig' \
+            -F 'fileBundle=@LifegenMegaMerge_Win32.zip;type=application/zip' \
+            -F 'fileBundle=@LifegenMegaMerge_Win32.zip.sig' \
             --http1.1
       - name: Set up butler
         uses: thlumyn/setup-butler@clangen
@@ -305,12 +305,12 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-        run: butler push Lifegen_Win32.zip sablesteel/clan-gen-fan-edit:win32 --userversion "${{ env.VERSION_NUMBER }}"
+        run: butler push LifegenMegaMerge_Win32.zip sablesteel/clan-gen-fan-edit:win32 --userversion "${{ env.VERSION_NUMBER }}"
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Lifegen_Win32.zip
+          files: LifegenMegaMerge_Win32.zip
 
   build_win64:
     runs-on: windows-latest
@@ -393,12 +393,12 @@ jobs:
           IS_RELEASE: 1
       - name: Create archive (.zip)
         run: |
-          cp dist/Lifegen/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f Lifegen_Win64.zip -C dist Lifegen .itch.toml
+          cp dist/LifegenMegaMerge/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f LifegenMegaMerge_Win64.zip -C dist LifegenMegaMerge .itch.toml
       - uses: actions/upload-artifact@v4
         with:
-          name: Lifegen_Win64
-          path: Lifegen_Win64.zip
+          name: LifegenMegaMerge_Win64
+          path: LifegenMegaMerge_Win64.zip
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v5
@@ -407,10 +407,10 @@ jobs:
           gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
           passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
       - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/Lifegen-dev' || startsWith(github.ref, 'refs/tags/')) }}
+        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/LifegenMegaMerge-dev' || startsWith(github.ref, 'refs/tags/')) }}
         shell: bash
         run: |
-          gpg --output Lifegen_Win64.zip.sig --detach-sig -a Lifegen_Win64.zip
+          gpg --output LifegenMegaMerge_Win64.zip.sig --detach-sig -a LifegenMegaMerge_Win64.zip
           curl -X 'POST' \
             'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
@@ -420,8 +420,8 @@ jobs:
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
             -H 'accept: */*' \
             -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Lifegen_Win64.zip;type=application/zip' \
-            -F 'fileBundle=@Lifegen_Win64.zip.sig' \
+            -F 'fileBundle=@LifegenMegaMerge_Win64.zip;type=application/zip' \
+            -F 'fileBundle=@LifegenMegaMerge_Win64.zip.sig' \
             --http1.1
       - name: Set up butler
         uses: thlumyn/setup-butler@clangen
@@ -429,12 +429,12 @@ jobs:
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Lifegen_Win64.zip sablesteel/clan-gen-fan-edit:win64 --userversion "${{ env.VERSION_NUMBER }}"
+        run: butler push LifegenMegaMerge_Win64.zip sablesteel/clan-gen-fan-edit:win64 --userversion "${{ env.VERSION_NUMBER }}"
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Lifegen_Win64.zip
+          files: LifegenMegaMerge_Win64.zip
 
   build_win64_py311:
     runs-on: windows-latest
@@ -517,12 +517,12 @@ jobs:
           IS_RELEASE: 1
       - name: Create archive (.zip)
         run: |
-          cp dist/Lifegen/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f Lifegen_Win64_Windows10+.zip -C dist Lifegen .itch.toml
+          cp dist/LifegenMegaMerge/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f LifegenMegaMerge_Win64_Windows10+.zip -C dist LifegenMegaMerge .itch.toml
       - uses: actions/upload-artifact@v4
         with:
-          name: Lifegen_Win64_Windows10+
-          path: Lifegen_Win64_Windows10+.zip
+          name: LifegenMegaMerge_Win64_Windows10+
+          path: LifegenMegaMerge_Win64_Windows10+.zip
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v5
@@ -531,10 +531,10 @@ jobs:
           gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
           passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
       - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/Lifegen-dev' || startsWith(github.ref, 'refs/tags/')) }}
+        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/LifegenMegaMerge-dev' || startsWith(github.ref, 'refs/tags/')) }}
         shell: bash
         run: |
-          gpg --output Lifegen_Win64_Windows10+.zip.sig --detach-sig -a Lifegen_Win64_Windows10+.zip
+          gpg --output LifegenMegaMerge_Win64_Windows10+.zip.sig --detach-sig -a LifegenMegaMerge_Win64_Windows10+.zip
           curl -X 'POST' \
             'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
@@ -544,8 +544,8 @@ jobs:
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
             -H 'accept: */*' \
             -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Lifegen_Win64_Windows10+.zip;type=application/zip' \
-            -F 'fileBundle=@Lifegen_Win64_Windows10+.zip.sig' \
+            -F 'fileBundle=@LifegenMegaMerge_Win64_Windows10+.zip;type=application/zip' \
+            -F 'fileBundle=@LifegenMegaMerge_Win64_Windows10+.zip.sig' \
             --http1.1
       - name: Set up butler
         uses: thlumyn/setup-butler@clangen
@@ -553,12 +553,12 @@ jobs:
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Lifegen_Win64_Windows10+.zip sablesteel/clan-gen-fan-edit:win64_10 --userversion "${{ env.VERSION_NUMBER }}"
+        run: butler push LifegenMegaMerge_Win64_Windows10+.zip sablesteel/clan-gen-fan-edit:win64_10 --userversion "${{ env.VERSION_NUMBER }}"
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Lifegen_Win64_Windows10+.zip
+          files: LifegenMegaMerge_Win64_Windows10+.zip
 
   build_macos64:
     # For commits to the original mac build action see:
@@ -617,15 +617,15 @@ jobs:
         env:
           IS_RELEASE: 1
       - name: Create archive (.tar.xz)
-        run: rm -r dist/Lifegen
+        run: rm -r dist/LifegenMegaMerge
       - name: Install appdmg
         run: "npm install -g appdmg"
       - name: Generate .dmg
-        run: "appdmg appdmg.json Lifegen_macOS64.dmg"
+        run: "appdmg appdmg.json LifegenMegaMerge_macOS64.dmg"
       - uses: actions/upload-artifact@v4
         with:
-          name: Lifegen_macOS64.dmg
-          path: Lifegen_macOS64.dmg
+          name: LifegenMegaMerge_macOS64.dmg
+          path: LifegenMegaMerge_macOS64.dmg
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v5
@@ -634,10 +634,10 @@ jobs:
           gpg_private_key: ${{ secrets.PACKAGESIGNKEY }}
           passphrase: ${{ secrets.PACKAGESIGNKEYPASSPHRASE }}
       - name: Upload artifact to API
-        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/Lifegen-dev' || startsWith(github.ref, 'refs/tags/')) }}
+        if: ${{ env.update_api_push_token != '' && (github.ref == 'refs/heads/LifegenMegaMerge-dev' || startsWith(github.ref, 'refs/tags/')) }}
         run: |
-          zip Lifegen_macOS64.dmg.zip ./Lifegen_macOS64.dmg
-          gpg --output Lifegen_macOS64.dmg.zip.sig --detach-sig -a Lifegen_macOS64.dmg.zip
+          zip LifegenMegaMerge_macOS64.dmg.zip ./LifegenMegaMerge_macOS64.dmg
+          gpg --output LifegenMegaMerge_macOS64.dmg.zip.sig --detach-sig -a LifegenMegaMerge_macOS64.dmg.zip
           curl -X 'POST' \
             'https://clangen.io/api/v1/Update/Channels/${{ env.RELEASE_CHANNEL }}/Releases/${{ env.VERSION_NUMBER }}/Appoint' \
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
@@ -647,8 +647,8 @@ jobs:
             -H 'X-API-Key: ${{ secrets.UPDATE_API_DEPLOY_KEY }}' \
             -H 'accept: */*' \
             -H 'Content-Type: multipart/form-data' \
-            -F 'fileBundle=@Lifegen_macOS64.dmg.zip;type=application/zip' \
-            -F 'fileBundle=@Lifegen_macOS64.dmg.zip.sig' \
+            -F 'fileBundle=@LifegenMegaMerge_macOS64.dmg.zip;type=application/zip' \
+            -F 'fileBundle=@LifegenMegaMerge_macOS64.dmg.zip.sig' \
             --http1.1
       - name: Set up butler
         uses: thlumyn/setup-butler@clangen
@@ -656,16 +656,16 @@ jobs:
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         if: startsWith(github.ref, 'refs/tags/') && env.BUTLER_API_KEY != ''
-        run: butler push Lifegen_macOS64.dmg sablesteel/clan-gen-fan-edit:osx64 --userversion "${{ env.VERSION_NUMBER }}"
+        run: butler push LifegenMegaMerge_macOS64.dmg sablesteel/clan-gen-fan-edit:osx64 --userversion "${{ env.VERSION_NUMBER }}"
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Lifegen_macOS64.dmg
+          files: LifegenMegaMerge_macOS64.dmg
 
   confirm_release_ubuntu_22_04:
     runs-on: ubuntu-22.04
-    if: ${{ vars.USE_UPDATE_API != '' && (github.ref == 'refs/heads/Lifegen-dev' || startsWith(github.ref, 'refs/tags/')) }}
+    if: ${{ vars.USE_UPDATE_API != '' && (github.ref == 'refs/heads/LifegenMegaMerge-dev' || startsWith(github.ref, 'refs/tags/')) }}
     needs:
       - build_ubuntu_20_04
       - build_ubuntu_22_04

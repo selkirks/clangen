@@ -35,7 +35,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='Lifegen',
+    name='LifegenMegaMerge',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -56,11 +56,11 @@ coll = COLLECT(
     strip=False,
     upx=False,
     upx_exclude=[],
-    name='Lifegen',
+    name='LifegenMegaMerge',
 )
 app = BUNDLE(
     coll,
-    name='Lifegen.app',
+    name='LifegenMegaMerge.app',
     icon='resources/images/icon.png',
     bundle_identifier='com.sablesteel.clangen',
     version='0.7.5' # imo we should give dev builds .5
