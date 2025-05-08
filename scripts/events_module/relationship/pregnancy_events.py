@@ -942,41 +942,41 @@ class Pregnancy_Events:
         """Get the amount of kits which will be born."""
         min_kits = game.config["pregnancy"]["min_kits"]
         min_kit = [min_kits] * game.config["pregnancy"]["one_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         two_kits = [min_kits + 1] * game.config["pregnancy"]["two_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         three_kits = [min_kits + 2] * game.config["pregnancy"]["three_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         four_kits = [min_kits + 3] * game.config["pregnancy"]["four_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         five_kits = [min_kits + 4] * game.config["pregnancy"]["five_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         six_kits = [min_kits + 5] * game.config["pregnancy"]["six_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         seven_kits = [min_kits + 6] * game.config["pregnancy"]["seven_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         eight_kits = [min_kits + 7] * game.config["pregnancy"]["eight_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         nine_kits = [min_kits + 8] * game.config["pregnancy"]["nine_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         ten_kits = [min_kits + 9] * game.config["pregnancy"]["ten_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         eleven_kits = [min_kits + 10] * game.config["pregnancy"]["eleven_kit_possibility"][
-            cat.age.value
+            cat.age
         ]
         max_kits = [game.config["pregnancy"]["max_kits"]] * game.config["pregnancy"][
             "max_kit_possibility"
-        ][cat.age.value]
+        ][cat.age]
         amount = choice(
             min_kit + two_kits + three_kits + four_kits + five_kits + six_kits + seven_kits + eight_kits + nine_kits + ten_kits + eleven_kits + max_kits
         )
