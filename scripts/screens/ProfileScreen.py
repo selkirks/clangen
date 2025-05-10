@@ -962,7 +962,7 @@ class ProfileScreen(Screens):
             manager=MANAGER,
         )
         self.customize_cat_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((605, 60), (130, 34))),
+            ui_scale(pygame.Rect((645, 100), (130, 34))),
             "Customize Cat",
             get_button_dict(ButtonStyles.SQUOVAL, (130, 34)),
             object_id="@buttonstyles_squoval",
