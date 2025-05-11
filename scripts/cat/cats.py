@@ -2197,8 +2197,11 @@ class Cat:
                     "OLD GOLD WATCH",
                     "BAUBLES",
                     "SEAWEED",
-                    "WISTERIA",
+                    "WISTERIA2",
                     "GOLDEN CREEPING JENNY",
+                    "CELESTIAL CHARMS",
+                    "GOLDEN CELESTIAL CHARMS",
+                    "SILVER CELESTIAL CHARMS"
                 )
             ]
 

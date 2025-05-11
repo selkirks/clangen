@@ -230,6 +230,9 @@ class Scar_Events:
                     "OLD GOLD WATCH",
                     "BAUBLES",
                     "SEAWEED",
+                    "CELESTIAL CHARMS",
+                    "GOLDEN CELESTIAL CHARMS",
+                    "SILVER CELESTIAL CHARMS"
                     )
                 ]
 

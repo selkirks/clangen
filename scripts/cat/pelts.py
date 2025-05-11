@@ -247,13 +247,13 @@ class Pelt:
                         "BLUEBELLS", "LILY OF THE VALLEY", "SNAPDRAGON", "HERBS", "PETALS", "NETTLE", "HEATHER", "GORSE", "JUNIPER", "RASPBERRY", "LAVENDER",
                         "OAK LEAVES", "CATMINT", "MAPLE SEED", "LAUREL", "BULB WHITE", "BULB YELLOW", "BULB ORANGE", "BULB PINK", "BULB BLUE", "CLOVERTAIL", "DAISYTAIL",
                         "LILY OF THE VALLEY", "HEATHER", "SNAPDRAGON", "GORSE",
-                        "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS", "WISTERIA", "ROSE MALLOW", "PICKLEWEED",
+                        "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS", "WISTERIA2", "ROSE MALLOW", "PICKLEWEED",
                         "GOLDEN CREEPING JENNY",
                         ]
     wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY1", "CICADA WINGS", "BLACK CICADA"]
   
     tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVERTAIL", "DAISYTAIL", "DAISY CORSAGE",
-                        "GOLDEN CREEPING JENNY", "WISTERIA2"]
+                        "GOLDEN CREEPING JENNY", "WISTERIA2", "CELESTIAL CHARMS", "GOLDEN CELESTIAL CHARMS", "SILVER CELESTIAL CHARMS"]
     
     bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
                         "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
@@ -498,8 +498,6 @@ class Pelt:
         "HEART CHARM",
         "SILVER CELESTIAL CHARMS",
         "GOLDEN STAR CHARM", 
-        "GOLDEN CELESTIAL CHARMS", 
-        "CELESTIAL CHARMS",
         "ROSE MALLOW",
         "PICKLEWEED",
     ]
@@ -632,7 +630,12 @@ class Pelt:
         "ROBIN FEATHERS",
         "FIERY FEATHERS",
         "SUNSET FEATHERS",
-        "SILVER FEATHERS"
+        "SILVER FEATHERS",
+        "WISTERIA2",
+        "GOLDEN CREEPING JENNY",
+        "CELESTIAL CHARMS",
+        "GOLDEN CELESTIAL CHARMS",
+        "SILVER CELESTIAL CHARMS"
     ]
 
     tabbies = ["Tabby", "Ticked", "Mackerel", "Stermackerel", "Sillymackerel", "Dancemackerel", "Mimimackerel", 
