@@ -153,7 +153,7 @@ class Sprites:
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
             'boosbandanas_accessories', 'sailormoon', 'randomaccessories', 'beetle_accessories', 'beetle_feathers',
-            'heartacc', 'moipaacc'
+            'heartacc', 'moipaacc', 'pridebowcollars', 'pridecollars', 'pridenyloncollars'
         ]:
             if "lineart" in x and (game.config["fun"]["april_fools"] or is_today(SpecialDate.APRIL_FOOLS)):
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -538,6 +538,24 @@ class Sprites:
             ["CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"]
         ]
 
+        pridecollars_data = [
+            ["GIRLFLUXCOLLAR", "MINCOLLAR", "GENDERFLUXCOLLAR", "BOYFLUXCOLLAR", "GENDERFAUNCOLLAR", "GENDERFAECOLLAR"],
+            ["GRAYAROCOLLAR", "XENOCOLLAR", "NINCOLLAR", "VOIDPUNKCOLLAR", "UNLABELEDCOLLAR"],
+            ["GENDERFLORCOLLAR", "GRAYACECOLLAR", "FINCOLLAR", "ENBYFLUXCOLLAR"]
+        ]
+
+        pridebowcollars_data = [
+            ["TRANSFEMBOW", "DEMIBOYBOW", "PANGENDERBOW", "TRANSMASCBOW", "INTERSEXBOW", "GENDERQUEERBOW"],
+            ["AGENDERBOW", "GENDERVOIDBOW", "DEMIGIRLBOW", "DEMINONBINARYBOW", "DEMIFLUIDBOW"],
+            ["BIGENDERBOW", "NONBINARYBOW", "TRANSBOW", "GENDERFLUIDBOW"]
+        ]
+
+        pridenyloncollars_data = [
+            ["PRIDENYLONCOLLAR", "NEPTUNICNYLONCOLLAR", "PANNYLONCOLLAR", "URANICNYLONCOLLAR", "LESBIANNYLONCOLLAR", "MLMCNYLONCOLLAR"],
+            ["AROMANTICNYLONCOLLAR", "MULTISEXUALNYLONCOLLAR", "QUEERNYLONCOLLAR", "AROACENYLONCOLLAR", "POLYNYLONCOLLAR"],
+            ["OMNINYLONCOLLAR", "ACENYLONCOLLAR", "ABRONYLONCOLLAR", "BINYLONCOLLAR"]
+        ]
+
         beetle_accessories_data = [
         ["FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT"],
         ["BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF"],
@@ -814,6 +832,17 @@ class Sprites:
         for row, moipaacc in enumerate(moipa_data):
             for col, moipaaccessory in enumerate(moipaacc):
                 self.make_group("moipaacc", (col, row), f"acc_moipa{moipaaccessory}")
+
+        # pride
+        for row, pridebowcollars in enumerate(pridebowcollars_data):
+            for col, bowcollar in enumerate(pridebowcollars):
+                self.make_group("pridebowcollars", (col, row), f"collars{bowcollar}")
+        for row, pridecollars in enumerate(pridecollars_data):
+            for col, collar in enumerate(pridecollars):
+                self.make_group("pridecollars", (col, row), f"collars{collar}")
+        for row, pridenyloncollars in enumerate(pridenyloncollars_data):
+            for col, nyloncollar in enumerate(pridenyloncollars):
+                self.make_group("pridenyloncollars", (col, row), f"collars{nyloncollar}")
 
     def load_symbols(self):
         """

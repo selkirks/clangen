@@ -329,6 +329,81 @@
             "many": "indigo leather collars",
             "one": "indigo leather collar"
         },
+        "GIRLFLUXCOLLAR": {
+            "zero": "girlflux leather collar",
+            "many": "girlflux leather collars",
+            "one": "girlflux leather collar"
+        },
+        "MINCOLLAR": {
+            "zero": "MIN leather collar",
+            "many": "MIN leather collars",
+            "one": "MIN leather collar"
+        },
+        "GENDERFLUXCOLLAR": {
+            "zero": "genderflux leather collar",
+            "many": "genderflux leather collars",
+            "one": "genderflux leather collar"
+        },
+        "BOYFLUXCOLLAR": {
+            "zero": "boyflux leather collar",
+            "many": "boyflux leather collars",
+            "one": "boyflux leather collar"
+        },
+        "GENDERFAUNCOLLAR": {
+            "zero": "genderfaun leather collar",
+            "many": "genderfaun leather collars",
+            "one": "genderfaun leather collar"
+        },
+        "GENDERFAECOLLAR": {
+            "zero": "genderfae leather collar",
+            "many": "genderfae leather collars",
+            "one": "genderfae leather collar"
+        },
+        "GRAYAROCOLLAR": {
+            "zero": "grayaromantic leather collar",
+            "many": "grayaromantic leather collars",
+            "one": "grayaromantic leather collar"
+        },
+        "XENOCOLLAR": {
+            "zero": "xenogender leather collar",
+            "many": "xenogender leather collars",
+            "one": "xenogender leather collar"
+        },
+        "NINCOLLAR": {
+            "zero": "NIN leather collar",
+            "many": "NIN leather collars",
+            "one": "NIN leather collar"
+        },
+        "VOIDPUNKCOLLAR": {
+            "zero": "voidpunk leather collar",
+            "many": "voidpunk leather collars",
+            "one": "voidpunk leather collar"
+        },
+        "UNLABELEDCOLLAR": {
+            "zero": "unlabeled leather collar",
+            "many": "unlabeled leather collars",
+            "one": "unlabeled leather collar"
+        },
+        "GENDERFLORCOLLAR": {
+            "zero": "genderflor leather collar",
+            "many": "genderflor leather collars",
+            "one": "genderflor leather collar"
+        },
+        "GRAYACECOLLAR": {
+            "zero": "grayasexual leather collar",
+            "many": "grayasexual leather collars",
+            "one": "grayasexual leather collar"
+        },
+        "FINCOLLAR": {
+            "zero": "FIN leather collar",
+            "many": "FIN leather collars",
+            "one": "FIN leather collar"
+        },
+        "ENBYFLUXCOLLAR": {
+            "zero": "enbyflux leather collar",
+            "many": "enbyflux leather collars",
+            "one": "enbyflux leather collar"
+        },
         "CRIMSONBELL": {
             "zero": "crimson bell collar",
             "many": "crimson bell collars",
@@ -479,6 +554,81 @@
             "many": "indigo bow collars",
             "one": "indigo bow collar"
         },
+        "TRANSFEMBOW": {
+            "zero": "transfeminine bow collar",
+            "many": "transfeminine bow collars",
+            "one": "transfeminine bow collar"
+        },
+        "DEMIBOYBOW": {
+            "zero": "demiboy bow collar",
+            "many": "demiboy bow collars",
+            "one": "demiboy bow collar"
+        },
+        "PANGENDERBOW": {
+            "zero": "pangender bow collar",
+            "many": "pangender bow collars",
+            "one": "pangender bow collar"
+        },
+        "TRANSMASCBOW": {
+            "zero": "transmasculine bow collar",
+            "many": "transmasculine bow collars",
+            "one": "transmasculine bow collar"
+        },
+        "INTERSEXBOW": {
+            "zero": "intersex bow collar",
+            "many": "intersex bow collars",
+            "one": "intersex bow collar"
+        },
+        "GENDERQUEERBOW": {
+            "zero": "genderqueer bow collar",
+            "many": "genderqueer bow collars",
+            "one": "genderqueer bow collar"
+        },
+        "AGENDERBOW": {
+            "zero": "agender bow collar",
+            "many": "agender bow collars",
+            "one": "agender bow collar"
+        },
+        "GENDERVOIDBOW": {
+            "zero": "gendervoid bow collar",
+            "many": "gendervoid bow collars",
+            "one": "gendervoid bow collar"
+        },
+        "DEMIGIRLBOW": {
+            "zero": "demigirl bow collar",
+            "many": "demigirl bow collars",
+            "one": "demigirl bow collar"
+        },
+        "DEMINONBINARYBOW": {
+            "zero": "deminonbinary bow collar",
+            "many": "deminonbinary bow collars",
+            "one": "deminonbinary bow collar"
+        },
+        "DEMIFLUIDBOW": {
+            "zero": "demifluid bow collar",
+            "many": "demifluid bow collars",
+            "one": "demifluid bow collar"
+        },
+        "BIGENDERBOW": {
+            "zero": "bigender bow collar",
+            "many": "bigender bow collars",
+            "one": "bigender bow collar"
+        },
+        "NONBINARYBOW": {
+            "zero": "nonbinary bow collar",
+            "many": "nonbinary bow collars",
+            "one": "nonbinary bow collar"
+        },
+        "TRANSBOW": {
+            "zero": "transgender bow collar",
+            "many": "transgender bow collars",
+            "one": "transgender bow collar"
+        },
+        "GENDERFLUIDBOW": {
+            "zero": "genderfluid bow collar",
+            "many": "genderfluid bow collars",
+            "one": "genderfluid bow collar"
+        },
         "CRIMSONNYLON": {
             "zero": "crimson nylon collar",
             "many": "crimson nylon collars",
@@ -553,6 +703,81 @@
             "zero": "indigo nylon collar",
             "many": "indigo nylon collars",
             "one": "indigo nylon collar"
+        },
+    "PRIDENYLONCOLLAR": {
+            "zero": "pride nylon collar",
+            "many": "pride nylon collars",
+            "one": "pride nylon collar"
+        },
+        "NEPTUNICNYLONCOLLAR": {
+            "zero": "neptunic nylon collar",
+            "many": "neptunic nylon collars",
+            "one": "neptunic nylon collar"
+        },
+        "PANNYLONCOLLAR": {
+            "zero": "pan nylon collar",
+            "many": "pan nylon collars",
+            "one": "pan nylon collar"
+        },
+        "URANICNYLONCOLLAR": {
+            "zero": "uranic nylon collar",
+            "many": "uranic nylon collars",
+            "one": "uranic nylon collar"
+        },
+        "LESBIANNYLONCOLLAR": {
+            "zero": "lesbian nylon collar",
+            "many": "lesbian nylon collars",
+            "one": "lesbian nylon collar"
+        },
+        "MLMCNYLONCOLLAR": {
+            "zero": "MLM nylon collar",
+            "many": "MLM nylon collars",
+            "one": "MLM nylon collar"
+        },
+        "AROMANTICNYLONCOLLAR": {
+            "zero": "aromantic nylon collar",
+            "many": "aromantic nylon collars",
+            "one": "aromantic nylon collar"
+        },
+        "MULTISEXUALNYLONCOLLAR": {
+            "zero": "multisexual nylon collar",
+            "many": "multisexual nylon collars",
+            "one": "multisexual nylon collar"
+        },
+        "QUEERNYLONCOLLAR": {
+            "zero": "queer nylon collar",
+            "many": "queer nylon collars",
+            "one": "queer nylon collar"
+        },
+        "AROACENYLONCOLLAR": {
+            "zero": "aroace nylon collar",
+            "many": "aroace nylon collars",
+            "one": "aroace nylon collar"
+        },
+        "POLYNYLONCOLLAR": {
+            "zero": "polysexual nylon collar",
+            "many": "polysexual nylon collars",
+            "one": "polysexual nylon collar"
+        },
+        "OMNINYLONCOLLAR": {
+            "zero": "omnisexual nylon collar",
+            "many": "omnisexual nylon collars",
+            "one": "omnisexual nylon collar"
+        },
+        "ACENYLONCOLLAR": {
+            "zero": "asexual nylon collar",
+            "many": "asexual nylon collars",
+            "one": "asexual nylon collar"
+        },
+        "ABRONYLONCOLLAR": {
+            "zero": "abrosexual nylon collar",
+            "many": "abrosexual nylon collars",
+            "one": "abrosexual nylon collar"
+        },
+        "BINYLONCOLLAR": {
+            "zero": "bisexual nylon collar",
+            "many": "bisexual nylon collars",
+            "one": "bisexual nylon collar"
         },
     "SNAKE": {
         "zero": "snake skeleton",
