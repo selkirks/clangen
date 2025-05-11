@@ -441,6 +441,10 @@ class ProfileScreen(Screens):
             object_id="@buttonstyles_squoval",
             manager=MANAGER,
         )
+        if self.the_cat.status== "newborn":
+            self.customize_stats_button.disable()
+        else:
+            self.customize_stats_button.enable()
         self.inspect_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((741, 60), (34, 34))),
             Icon.MAGNIFY,
