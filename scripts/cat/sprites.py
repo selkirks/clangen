@@ -495,7 +495,8 @@ class Sprites:
         medcatherbs_data = [
             ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "CATTAIL", "POPPY", "ORANGE POPPY", "CYAN POPPY", "WHITE POPPY", "PINK POPPY"],
             ["BLUEBELLS", "LILY OF THE VALLEY", "SNAPDRAGON", "HERBS", "PETALS", "NETTLE", "HEATHER", "GORSE", "JUNIPER", "RASPBERRY", "LAVENDER"],
-            ["OAK LEAVES", "CATMINT", "MAPLE SEED", "LAUREL", "BULB WHITE", "BULB YELLOW", "BULB ORANGE", "BULB PINK", "BULB BLUE", "CLOVERTAIL", "DAISYTAIL"]
+            ["OAK LEAVES", "CATMINT", "MAPLE SEED", "LAUREL", "BULB WHITE", "BULB YELLOW", "BULB ORANGE", "BULB PINK", "BULB BLUE", "CLOVERTAIL", "DAISYTAIL"],
+            ["WISTERIA", "ROSE MALLOW", "PICKLEWEED", "GOLDEN CREEPING JENNY"]
         ]
         dryherbs_data = [
             ["DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS"]
@@ -694,7 +695,7 @@ class Sprites:
         #dryherbs
         for row, dry in enumerate(dryherbs_data):
             for col, dryherbs in enumerate(dry):
-                self.make_group('medcatherbs', (col, 3), f'acc_herbs{dryherbs}')     
+                self.make_group("medcatherbs", (col, 4), f"acc_herbs{dryherbs}")
         # wild
         for row, wilds in enumerate(wild_data):
             for col, wild in enumerate(wilds):

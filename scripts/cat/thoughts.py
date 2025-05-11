@@ -176,8 +176,12 @@ class Thoughts:
             if living_status and living_status != "living":
                 return False
 
-        if random_cat and random_cat.outside and random_cat.status not in ["kittypet", "loner", "rogue",
-                                                                           "former Clancat", "exiled"]:
+        if (
+            random_cat
+            and random_cat.outside
+            and random_cat.status
+            not in ("kittypet", "loner", "rogue", "former Clancat", "exiled")
+        ):
             outside_status = "lost"
         elif random_cat and random_cat.outside:
             outside_status = "outside"

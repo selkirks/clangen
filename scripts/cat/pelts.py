@@ -247,11 +247,13 @@ class Pelt:
                         "BLUEBELLS", "LILY OF THE VALLEY", "SNAPDRAGON", "HERBS", "PETALS", "NETTLE", "HEATHER", "GORSE", "JUNIPER", "RASPBERRY", "LAVENDER",
                         "OAK LEAVES", "CATMINT", "MAPLE SEED", "LAUREL", "BULB WHITE", "BULB YELLOW", "BULB ORANGE", "BULB PINK", "BULB BLUE", "CLOVERTAIL", "DAISYTAIL",
                         "LILY OF THE VALLEY", "HEATHER", "SNAPDRAGON", "GORSE",
-                        "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS"
+                        "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS", "WISTERIA", "ROSE MALLOW", "PICKLEWEED",
+                        "GOLDEN CREEPING JENNY",
                         ]
     wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY1", "CICADA WINGS", "BLACK CICADA"]
   
-    tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVERTAIL", "DAISYTAIL", "DAISY CORSAGE"]
+    tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVERTAIL", "DAISYTAIL", "DAISY CORSAGE",
+                        "GOLDEN CREEPING JENNY", "WISTERIA2"]
     
     bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
                         "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
@@ -497,7 +499,9 @@ class Pelt:
         "SILVER CELESTIAL CHARMS",
         "GOLDEN STAR CHARM", 
         "GOLDEN CELESTIAL CHARMS", 
-        "CELESTIAL CHARMS"
+        "CELESTIAL CHARMS",
+        "ROSE MALLOW",
+        "PICKLEWEED",
     ]
 
     body_accessories = [
@@ -851,7 +855,7 @@ class Pelt:
         if self.eye_colour2 == "TURQUOISE2":
             self.eye_colour2 == "DARK TURQUOISE"
 
-        if self.eye_colour in ["BLUEYELLOW", "BLUEGREEN"]:
+        if self.eye_colour in ("BLUEYELLOW", "BLUEGREEN"):
             if self.eye_colour == "BLUEYELLOW":
                 self.eye_colour2 = "YELLOW"
             elif self.eye_colour == "BLUEGREEN":
@@ -861,20 +865,20 @@ class Pelt:
         if self.colour == "Lynx2":
             self.colour == "Dalmatian"
 
-        if self.length == 'long':
-            if self.cat_sprites['adult'] not in [9, 10, 11]:
-                if self.cat_sprites['adult'] == 0:
-                    self.cat_sprites['adult'] = 9
-                elif self.cat_sprites['adult'] == 1:
-                    self.cat_sprites['adult'] = 10
-                elif self.cat_sprites['adult'] == 2:
-                    self.cat_sprites['adult'] = 11
-                self.cat_sprites['young adult'] = self.cat_sprites['adult']
-                self.cat_sprites['senior adult'] = self.cat_sprites['adult']
-                self.cat_sprites['para_adult'] = 16
+        if self.length == "long":
+            if self.cat_sprites["adult"] not in (9, 10, 11):
+                if self.cat_sprites["adult"] == 0:
+                    self.cat_sprites["adult"] = 9
+                elif self.cat_sprites["adult"] == 1:
+                    self.cat_sprites["adult"] = 10
+                elif self.cat_sprites["adult"] == 2:
+                    self.cat_sprites["adult"] = 11
+                self.cat_sprites["young adult"] = self.cat_sprites["adult"]
+                self.cat_sprites["senior adult"] = self.cat_sprites["adult"]
+                self.cat_sprites["para_adult"] = 16
         else:
             self.cat_sprites["para_adult"] = 15
-        if self.cat_sprites["senior"] not in [12, 13, 14]:
+        if self.cat_sprites["senior"] not in (12, 13, 14):
             if self.cat_sprites["senior"] == 3:
                 self.cat_sprites["senior"] = 12
             elif self.cat_sprites["senior"] == 4:
@@ -1109,7 +1113,7 @@ class Pelt:
         chosen_white = random.randint(1, 100) <= chance
 
         # Adjustments to pelt chosen based on if the pelt has white in it or not.
-        if chosen_pelt in ["TwoColour", "SingleColour"]:
+        if chosen_pelt in ("TwoColour", "SingleColour"):
             if chosen_white:
                 chosen_pelt = "TwoColour"
             else:
@@ -1148,7 +1152,7 @@ class Pelt:
         if torbie:
             # If it is tortie, the chosen pelt above becomes the base pelt.
             chosen_tortie_base = chosen_pelt
-            if chosen_tortie_base in ["TwoColour", "SingleColour"]:
+            if chosen_tortie_base in ("TwoColour", "SingleColour"):
                 chosen_tortie_base = "Single"
             chosen_tortie_base = chosen_tortie_base.lower()
             chosen_pelt = random.choice(Pelt.torties)
@@ -1174,7 +1178,7 @@ class Pelt:
         chosen_white = random.randint(1, 100) <= 40
 
         # Adjustments to pelt chosen based on if the pelt has white in it or not.
-        if chosen_pelt in ["TwoColour", "SingleColour"]:
+        if chosen_pelt in ("TwoColour", "SingleColour"):
             if chosen_white:
                 chosen_pelt = "TwoColour"
             else:
@@ -1317,14 +1321,18 @@ class Pelt:
 
                 else:
                     # Normal generation
-                    if self.tortiebase in ["singlestripe", "sterstripe", "sillystripe", "dancestripe", "mimistripe", 
-                                           "smoke","stersmoke", "sillysmoke", "dancesmoke", "mimismoke", "mimisingle", "single", "smokepoint"]:
-                        self.tortiepattern = choice(['tabby', 'stertabby', 'sillytabby', 'dancetabby', 'mimitabby',
-                                                     'mackerel', 'stermackerel', 'sillymackerel', 'dancemackerel', 'mimimackerel',  
-                                                     'classic', 'sterclassic', 'sillyclassic', 'danceclassic', 'mimiclassic', 'single', 'smoke',
-                                                     'stersmoke', 'sillysmoke', 'dancesmoke', 'mimismoke', "mimisingle", 'agouti', 'steragouti', 'sillyagouti', 'danceagouti', 'mimiagouti',
-                                                     'ticked', 'sterticked', 'sillyticked', 'danceticked', 'mimiticked',
-                                                     'brindle', 'spots'])
+                    if self.tortiebase in ("singlestripe", "smoke", "single"):
+                        self.tortiepattern = choice(
+                            [
+                                "tabby",
+                                "mackerel",
+                                "classic",
+                                "single",
+                                "smoke",
+                                "agouti",
+                                "ticked",
+                            ]
+                        )
                     else:
                         self.tortiepattern = random.choices([self.tortiebase, 'single'], weights=[97, 3], k=1)[0]
 
@@ -1892,7 +1900,7 @@ def _describe_torties(cat, color_name, short=False) -> [str, str]:
     ):
         return "cat.pelts.mottled_long", color_name
     else:
-        if base in [tabby.lower() for tabby in Pelt.tabbies] + [
+        if base in (tabby.lower() for tabby in Pelt.tabbies) + [
             "bengal",
             "rosette",
             "speckled",
@@ -1925,9 +1933,9 @@ def unpack_appearance_ruleset(cat, rule, short, pelt, color):
     elif rule == "color":
         return color
     elif rule == "cat":
-        if cat.genderalign in ["female", "trans female"]:
+        if cat.genderalign in ("female", "trans female"):
             return "general.she-cat"
-        elif cat.genderalign in ["male", "trans male"]:
+        elif cat.genderalign in ("male", "trans male"):
             return "general.tom"
         else:
             return "general.cat"
