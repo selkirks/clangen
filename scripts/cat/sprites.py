@@ -132,7 +132,7 @@ class Sprites:
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours',
             'manedcolours',  'ocelotcolours', 'lynxcolours', 'abyssiniancolours', 'cloudedcolours', 'dobermancolours', 'ghosttabbycolours', 'merlecolours', 'monarchcolours', 'oceloidcolours', 'pinstripetabbycolours', 'snowflakecolours', 'royalcolours', 'bobcatcolours', 'cheetahcolours',
-            'shadersnewwhite', 'lightingnew',
+            'shadersnewwhite', 'lightingnew', 'lanternacc',
             'whitepatches', 'minkswhite', 'voithexpatches', 'exoticwhitepatches','tortiepatchesmasks', 'minkstorties',
             'fademask', 'fadestarclan', 'fadedarkforest','bandanas', 'stainvoithex',
             'symbols', 'plant2_accessories', 'flower_accessories', 'snake_accessories', 'eragonatorite', 'eragonawp', 'eragonaeyes', 'eragonaeyes2',
@@ -152,7 +152,8 @@ class Sprites:
             'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
-            'boosbandanas_accessories', 'sailormoon', 'randomaccessories', 'beetle_accessories', 'beetle_feathers'
+            'boosbandanas_accessories', 'sailormoon', 'randomaccessories', 'beetle_accessories', 'beetle_feathers',
+            'heartacc', 'moipaacc'
         ]:
             if "lineart" in x and (game.config["fun"]["april_fools"] or is_today(SpecialDate.APRIL_FOOLS)):
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -559,6 +560,18 @@ class Sprites:
             ["DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"]
         ]
 
+        lantern_data = [
+            ["LANTERN"]
+        ]
+
+        heart_data = [
+            ["HEART CHARM"]
+        ]
+
+        moipa_data = [
+            ["SILVER CELESTIAL CHARMS", "GOLDEN STAR CHARM", "GOLDEN CELESTIAL CHARMS", "CELESTIAL CHARMS"]
+        ]
+
         crafted_data = [
             ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL", "LEAF BOW"]
         ]
@@ -790,6 +803,17 @@ class Sprites:
         for row, beetle_feathers in enumerate(beetle_feathers_data):
             for col, beetlefeather in enumerate(beetle_feathers):
                 self.make_group("beetle_feathers", (col, row), f"acc_beetlefeathers{beetlefeather}")
+
+        # moipas
+        for row, lanternacc in enumerate(lantern_data):
+            for col, lanternaccessory in enumerate(lanternacc):
+                self.make_group("lanternacc", (col, row), f"acc_lantern{lanternaccessory}")
+        for row, heartacc in enumerate(heart_data):
+            for col, heartaccessory in enumerate(heartacc):
+                self.make_group("heartacc", (col, row), f"acc_heart{heartaccessory}")
+        for row, moipaacc in enumerate(moipa_data):
+            for col, moipaaccessory in enumerate(moipaacc):
+                self.make_group("moipaacc", (col, row), f"acc_moipa{moipaaccessory}")
 
     def load_symbols(self):
         """

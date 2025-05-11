@@ -264,6 +264,12 @@ class Pelt:
     
     ster_accessories = ["POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH", "LAURELLEAVES",
                         "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH", "YARROW"]
+    
+    lanternacc = ["LANTERN"]
+
+    heartacc = ["HEART CHARM"]
+
+    moipaacc = ["SILVER CELESTIAL CHARMS", "GOLDEN STAR CHARM", "GOLDEN CELESTIAL CHARMS", "CELESTIAL CHARMS"]
                         
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
@@ -478,6 +484,11 @@ class Pelt:
         "DICE",
         "GOLDEN EARRINGS",
         "COWBOY HAT",
+        "HEART CHARM",
+        "SILVER CELESTIAL CHARMS",
+        "GOLDEN STAR CHARM", 
+        "GOLDEN CELESTIAL CHARMS", 
+        "CELESTIAL CHARMS"
     ]
 
     body_accessories = [
@@ -567,6 +578,7 @@ class Pelt:
         "TUXEDO MASK",
         "RACCOON LEAF",
         "WHITE RACCOON LEAF",
+        "LANTERN"
     ]
 
     tail_accessories = [

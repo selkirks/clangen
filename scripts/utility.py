@@ -2922,6 +2922,18 @@ def generate_sprite(
                             new_sprite.blit(
                                 sprites.sprites["acc_beetlefeathers" + accessory + cat_sprite], (0, 0)
                             )
+                        elif accessory in cat.pelt.lanternacc:
+                            new_sprite.blit(
+                                sprites.sprites["acc_lantern" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.heartacc:
+                            new_sprite.blit(
+                                sprites.sprites["acc_heart" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.moipaacc:
+                            new_sprite.blit(
+                                sprites.sprites["acc_moipa" + accessory + cat_sprite], (0, 0)
+                            )
         # Apply fading fog
         if (
                 cat.pelt.opacity <= 97

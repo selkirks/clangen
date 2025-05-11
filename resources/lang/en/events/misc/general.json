@@ -810,7 +810,7 @@
     "sub_type": ["accessory"],
     "weight": 20,
     "event_text": "m_c received a present, acc_plural, from r_c and decided to keep it with {PRONOUN/m_c/object} on {PRONOUN/m_c/poss} pelt.",
-    "new_accessory": ["WILD", "PLANT", "FLOWER2","SNAKE","BAT WINGS","RAT SKULL","RIBS","FISH BONES","TEETH COLLAR", "BIRD SKULL1","BUTTERFLIES"],
+    "new_accessory": ["WILD", "PLANT", "FLOWER2","SNAKE","BAT WINGS","RAT SKULL","RIBS","FISH BONES","TEETH COLLAR", "BIRD SKULL1","BUTTERFLIES", "LANTERN", "HEARTCHARM", "MOIPAACC"],
     "m_c":{
       "age": ["any"],
       "status": ["any"]
@@ -849,7 +849,7 @@
     "sub_type": ["ceremony", "accessory"],
     "weight": 20,
     "event_text": "r_c gives m_c something to adorn {PRONOUN/m_c/poss} pelt as congratulations.",
-    "new_accessory": ["WILD", "PLANT", "FLOWER", "DEADINSECT", "PLANT2","TEETH COLLAR", "BIRD SKULL1"],
+    "new_accessory": ["WILD", "PLANT", "FLOWER", "DEADINSECT", "PLANT2","TEETH COLLAR", "BIRD SKULL1", "LANTERN", "HEARTCHARM", "MOIPAACC"],
     "m_c":{
       "age": ["any"],
       "status": ["any"]
@@ -882,7 +882,7 @@
     "sub_type": ["ceremony", "accessory"],
     "weight": 20,
     "event_text": "r_c tells m_c that {PRONOUN/m_c/subject} {VERB/m_c/have/has} been waiting for this day for ages... and prepared a pretty new accessory for them to wear.",
-    "new_accessory": ["FLOWER", "DEADINSECT", "PLANT2", "FRUIT", "BIRD SKULL"],
+    "new_accessory": ["FLOWER", "DEADINSECT", "PLANT2", "FRUIT", "BIRD SKULL", "LANTERN", "HEARTCHARM", "MOIPAACC"],
     "m_c":{
       "age": ["any"],
       "status": ["any"]
@@ -5823,277 +5823,11 @@
     "sub_type": ["accessory"],
     "weight": 5,
     "event_text":  "After a crisis where m_c disappeared for a few days, {PRONOUN/m_c/subject} {VERB/m_c/return/returns} with acc_singular.",
-    "new_accessory": ["COLLAR", "BOOTIES"],
+    "new_accessory": ["COLLAR"],
     "m_c": {
         "status": [
           "leader"
         ]
-    }
-  },
-  {
-    "event_id": "gen_misc_any_spirited_heart_accessory1",
-    "location": ["any"],
-    "season": ["any"],
-    "sub_type": ["accessory"],
-    "weight": 20,
-    "event_text": "While out on a walk, m_c finds acc_singular! While most cats would catch it for the fresh-kill pile, {PRONOUN/m_c/subject} {VERB/m_c/befriend/befriends} it and {VERB/m_c/protect/protects} it as if it's {PRONOUN/m_c/poss} kit.",
-    "new_accessory": [
-      "SNAKE",
-      "SMALLANIMAL"
-    ],
-    "m_c": {
-      "age": [
-        "adolescent",
-        "young adult",
-        "adult",
-        "senior adult",
-        "senior"
-      ],
-      "permanent_condition": [
-        "spirited heart"
-      ]
-    }
-  },
-  {
-    "event_id": "gen_misc_any_spirited_heart_kit_accessory1",
-    "location": ["any"],
-    "season": ["any"],
-    "sub_type": ["accessory"],
-    "weight": 20,
-    "event_text": "r_c finds acc_singular on a walk and decides to bring it back alive for m_c to practice pouncing on. Instead, m_c feels upset that r_c would think that {PRONOUN/m_c/subject} would <i>ever</i> want to kill such a sweet thing and fiercely protects it from harm.",
-    "new_accessory": [
-      "SNAKE",
-      "SMALLANIMAL",
-      "ALIVEINSECT"
-    ],
-    "m_c": {
-      "status": [
-        "kitten"
-      ],
-      "relationship_status": [
-        "child/parent"
-      ],
-      "permanent_condition": [
-        "spirited heart"
-      ]
-    },
-    "r_c": {
-      "age": [
-        "young adult",
-        "adult",
-        "senior adult",
-        "senior"
-      ],
-      "status": [
-        "any"
-      ],
-      "not_permanent_condition": [
-        "spirited heart"
-      ]
-    },
-    "relationships": [
-      {
-        "cats_from": [
-          "m_c"
-        ],
-        "cats_to": [
-          "r_c"
-        ],
-        "mutual": false,
-        "values": [
-          "platonic",
-          "comfort",
-          "trust",
-          "respect"
-        ],
-        "amount": -5
-      }
-    ]
-  },
-  {
-    "event_id": "gen_misc_any_starwalker_kit_accessory1",
-    "location": ["any"],
-    "season": ["any"],
-    "sub_type": ["accessory"],
-    "weight": 20,
-    "event_text": "r_c knows that m_c struggles with voicing when {PRONOUN/m_c/subject} {VERB/m_c/have/has} a problem. The medicine cat suggests using an emotional support companion.",
-    "new_accessory": [
-      "SNAKE",
-      "SMALLANIMAL"
-    ],
-    "m_c": {
-      "status": [
-        "kitten"
-      ],
-      "relationship_status": [
-        "child/parent"
-      ],
-      "permanent_condition": [
-        "starwalker"
-      ]
-    },
-    "r_c": {
-      "age": [
-        "young adult",
-        "adult",
-        "senior adult",
-        "senior"
-      ],
-      "status": [
-        "any"
-      ]
-    },
-    "relationships": [
-      {
-        "cats_from": [
-          "m_c"
-        ],
-        "cats_to": [
-          "r_c"
-        ],
-        "mutual": false,
-        "values": [
-          "platonic",
-          "comfort",
-          "trust",
-          "respect"
-        ],
-        "amount": 15
-      }
-    ]
-  },
-  {
-    "event_id": "gen_misc_any_ESA_accessory1",
-    "location": ["any"],
-    "season": ["any"],
-    "sub_type": ["accessory"],
-    "weight": 20,
-    "event_text": "With r_c's assistance, m_c finds acc_singular to serve as an emotional support companion.",
-    "new_accessory": [
-      "SNAKE",
-      "SMALLANIMAL"
-    ],
-    "m_c": {
-      "age": [
-        "adolescent",
-        "young adult",
-        "adult",
-        "senior adult",
-        "senior"
-      ],
-      "permanent_condition": [
-        "starwalker",
-        "comet spirit",
-        "thunderous spirit",
-        "otherworldy mind",
-        "weighted heart"
-      ]
-    },
-    "r_c": {
-      "status": [
-        "medicine cat apprentice",
-        "medicine cat"
-      ]
-    }
-  },
-  {
-    "event_id": "gen_misc_any_OISA_accessory1",
-    "location": ["any"],
-    "season": ["any"],
-    "sub_type": ["accessory"],
-    "weight": 20,
-    "event_text": "r_c helps m_c find a companion to alert the Clan when {PRONOUN/m_c/subject} {VERB/m_c/faint/faints}.",
-    "new_accessory": [
-      "SNAKE",
-      "SMALLANIMAL"
-    ],
-    "m_c": {
-      "age": [
-        "adolescent",
-        "young adult",
-        "adult",
-        "senior adult",
-        "senior"
-      ],
-      "permanent_condition": [
-        "flooded paws",
-        "frequent fainting",
-        "falling paws",
-        "seizure prone"
-      ]
-    },
-    "r_c": {
-      "status": [
-        "medicine cat apprentice",
-        "medicine cat"
-      ]
-    }
-  },
-  {
-    "event_id": "gen_misc_any_SSA_accessory1",
-    "location": ["any"],
-    "season": ["any"],
-    "sub_type": ["accessory"],
-    "weight": 20,
-    "event_text": "r_c helps m_c find a companion to alert the Clan when {PRONOUN/m_c/subject} {VERB/m_c/have/has} a seizure.",
-    "new_accessory": [
-      "SNAKE",
-      "SMALLANIMAL"
-    ],
-    "m_c": {
-      "age": [
-        "adolescent",
-        "young adult",
-        "adult",
-        "senior adult",
-        "senior"
-      ],
-      "permanent_condition": [
-        "frequent fainting",
-        "seizure prone"
-      ]
-    },
-    "r_c": {
-      "status": [
-        "medicine cat apprentice",
-        "medicine cat"
-      ]
-    }
-  },
-  {
-    "event_id": "gen_misc_any_MSA_accessory1",
-    "location": ["any"],
-    "season": ["any"],
-    "sub_type": ["accessory"],
-    "weight": 20,
-    "event_text": "With some help from r_c, m_c finds a trained companion to help {PRONOUN/m_c/object} travel on bad days.",
-    "new_accessory": [
-      "SMALLANIMAL"
-    ],
-    "m_c": {
-      "age": [
-        "adolescent",
-        "young adult",
-        "adult",
-        "senior adult",
-        "senior"
-      ],
-      "permanent_condition": [
-        "curved spine",
-        "bad knee",
-        "weak leg",
-        "paralyzed",
-        "born without a leg",
-        "lost a leg",
-        "twisted leg",
-        "constant roaming pain"
-      ]
-    },
-    "r_c": {
-      "status": [
-        "medicine cat apprentice",
-        "medicine cat"
-      ]
     }
   }
 ]

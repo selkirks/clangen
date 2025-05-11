@@ -427,10 +427,13 @@ class HandleShortEvents:
             acc_list.extend(pelts.beetle_accessories)
         if "BEETLEFEATHER" in possible_accs:
             acc_list.extend(pelts.beetle_feathers)
+        if "MOIPAACC" in possible_accs:
+            acc_list.extend(pelts.moipaacc)
 
         for acc in possible_accs:
             if acc not in ["WILD", "PLANT", "COLLAR", "FLOWER", "CRAFTED", "PLANT2", "SMALLANIMAL", "DEADINSECT",
-                           "ALIVEINSECT", "BEETLEFEATHER", "BEETLE", "RANDOM", "FRUIT", "SNAKE", "TAIL2","BONE", "SAILORMOON", "BUTTERFLIES", "STUFF", "BOWS"]:
+                           "ALIVEINSECT", "BEETLEFEATHER", "BEETLE", "RANDOM", "FRUIT", "SNAKE", "TAIL2","BONE", "SAILORMOON", "BUTTERFLIES", "STUFF", "BOWS",
+                           "MOIPAACC"]:
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):

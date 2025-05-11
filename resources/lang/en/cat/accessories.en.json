@@ -2137,7 +2137,36 @@
         "zero": "silver feather",
         "many": "silver feathers",
         "one": "silver feathers"
-            
+        },
+    "LANTERN": {
+        "zero": "lantern",
+        "many": "lanterns",
+        "one": "lantern"
+            },
+    "HEART CHARM": {
+        "zero": "heart charm",
+        "many": "heart charms",
+        "one": "heart charm"
+            },
+    "SILVER CELESTIAL CHARMS": {
+        "zero": "silver celestial charm",
+        "many": "silver celestial charms",
+        "one": "silver celestial charm"
+            },
+    "GOLDEN STAR CHARM": {
+        "zero": "golden star charm",
+        "many": "golden star charms",
+        "one": "golden star charm"
+            },
+    "GOLDEN CELESTIAL CHARMS": {
+        "zero": "golden celestial charm",
+        "many": "golden celestial charms",
+        "one": "golden celestial charm"
+            },
+    "CELESTIAL CHARMS": {
+        "zero": "celestial charm",
+        "many": "celestial charms",
+        "one": "celestial charm"
             }
         }
 }
