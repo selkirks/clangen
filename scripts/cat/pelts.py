@@ -638,19 +638,25 @@ class Pelt:
         "SILVER CELESTIAL CHARMS"
     ]
 
-    tabbies = ["Tabby", "Ticked", "Mackerel", "Stermackerel", "Sillymackerel", "Dancemackerel", "Mimimackerel", 
-               "Classic", "Sterclassic", "Sillyclassic", "Danceclassic", "Mimiclassic",
-               "Sokoke", "Stersokoke", "Sillysokoke", "Dancesokoke", "Mimisokoke",
-               "Agouti", "Steragouti", "Sillyagouti", "Danceagouti", "Mimiagouti", "Royal", "Brindle", "GhostTabby", "PinstripeTabby"]
-    spotted = ["Speckled", "Sterspeckled", "Sillyspeckled", "Dancespeckled", "Mimispeckled", 
-               "Rosette", "Sterrosette", "Sillyrosette", "Dancerosette", "Mimirosette", 
-               "Lynx", "Bobcat", "Spots", "Merle"]
-    plain = ["SingleColour", "SterSingle", "SillySingle", "DanceSingle", "MimiSingle",
-             "TwoColour", "Smoke", "Stersmoke", "Sillysmoke", "Dancesmoke", "Mimismoke",
-             "Singlestripe", "Sterstripe", "Dancestripe", "Sillystripe", "Mimistripe", "Smokepoint", "Doberman", "Stain"]
-    exotic = ["Bengal", "Sterbengal", "Sillybengal", "Dancebengal", "Mimibengal", 
-              "Marbled", "Stermarbled", "Sillymarbled", "Dancemarbled", "Mimimarbled",
-              "Masked", "Stermasked", "Sillymasked", "Dancemasked", "Mimimasked", "Maned", "Ocelot", "Cheetah", "Wildcat", "Wolf", "Finleappatches", "Dalmatian", "Abyssinian", "Clouded", "Snowflake", "Oceloid", "Monarch"]
+    tabbies = ["Tabby", "Stertabby", "Sillytabby", "Dancetabby", "Mimitabby",
+        "Ticked", "Sterticked", "Sillyticked", "Danceticked", "Mimiticked",
+        "Mackerel", "Stermackerel", "Sillymackerel", "Dancemackerel", "Mimimackerel",
+        "Classic", "Sterclassic", "Sillyclassic", "Danceclassic", "Mimiclassic",
+        "Sokoke", "Stersokoke", "Sillysokoke", "Dancesokoke", "Mimisokoke",
+        "Agouti", "Steragouti", "Sillyagouti", "Danceagouti", "Mimiagouti",
+        "Royal", "Brindle", "GhostTabby", "PinstripeTabby"]
+    spotted = ["Speckled", "Sterspeckled", "Sillyspeckled", "Dancespeckled", "Mimispeckled",
+        "Rosette", "Sterrosette", "Sillyrosette", "Dancerosette", "Mimirosette",
+        "Lynx", "Bobcat", "Spots", "Merle"]
+    plain = ["SingleColour", "SterSingle", "SillySingle", "DanceSingle", "MimiSingle", "TwoColour",
+        "Smoke", "Stersmoke", "Sillysmoke", "Dancesmoke", "Mimismoke",
+        "Singlestripe", "Sterstripe", "Dancestripe", "Sillystripe", "Mimistripe",
+        "Smokepoint", "Doberman", "Stain"]
+    exotic = ["Bengal", "Sterbengal", "Sillybengal", "Dancebengal", "Mimibengal",
+        "Marbled", "Stermarbled", "Sillymarbled", "Dancemarbled", "Mimimarbled",
+        "Masked", "Stermasked", "Sillymasked", "Dancemasked", "Mimimasked",
+        "Maned", "Ocelot", "Cheetah", "Wildcat", "Wolf", "Finleappatches", "Dalmatian", "Abyssinian", "Clouded",
+        "Snowflake", "Oceloid", "Monarch"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
@@ -1030,7 +1036,7 @@ class Pelt:
                 break
 
         # Determine tortie:
-        if gender == "female":
+        if gender == "female" or gender == "intersex":
             torbie = random.getrandbits(tortie_chance_f) == 1
         else:
             torbie = random.getrandbits(tortie_chance_m) == 1
@@ -1324,18 +1330,14 @@ class Pelt:
 
                 else:
                     # Normal generation
-                    if self.tortiebase in ("singlestripe", "smoke", "single"):
-                        self.tortiepattern = choice(
-                            [
-                                "tabby",
-                                "mackerel",
-                                "classic",
-                                "single",
-                                "smoke",
-                                "agouti",
-                                "ticked",
-                            ]
-                        )
+                    if self.tortiebase in ["singlestripe", "sterstripe", "sillystripe", "dancestripe", "mimistripe", 
+                                           "smoke","stersmoke", "sillysmoke", "dancesmoke", "mimismoke", "mimisingle", "single", "smokepoint"]:
+                        self.tortiepattern = choice(['tabby', 'stertabby', 'sillytabby', 'dancetabby', 'mimitabby',
+                                                     'mackerel', 'stermackerel', 'sillymackerel', 'dancemackerel', 'mimimackerel',  
+                                                     'classic', 'sterclassic', 'sillyclassic', 'danceclassic', 'mimiclassic', 'single', 'smoke',
+                                                     'stersmoke', 'sillysmoke', 'dancesmoke', 'mimismoke', "mimisingle", 'agouti', 'steragouti', 'sillyagouti', 'danceagouti', 'mimiagouti',
+                                                     'ticked', 'sterticked', 'sillyticked', 'danceticked', 'mimiticked',
+                                                     'brindle', 'spots'])
                     else:
                         self.tortiepattern = random.choices([self.tortiebase, 'single'], weights=[97, 3], k=1)[0]
 
