@@ -163,6 +163,9 @@ class ProfileScreen(Screens):
             elif event.ui_element == self.customize_cat_button:
                 self.close_current_tab()
                 self.change_screen("customize cat screen")
+            elif event.ui_element == self.customize_stats_button:
+                self.close_current_tab()
+                self.change_screen("customize stats screen")
             elif event.ui_element == self.inspect_button:
                 self.close_current_tab()
                 self.change_screen("sprite inspect screen")
@@ -430,6 +433,14 @@ class ProfileScreen(Screens):
             object_id="@buttonstyles_squoval",
             manager=MANAGER,
         )
+        
+        self.customize_stats_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((605, 100), (130, 34))),
+            "Customize Stats",
+            get_button_dict(ButtonStyles.SQUOVAL, (130, 34)),
+            object_id="@buttonstyles_squoval",
+            manager=MANAGER,
+        )
         self.inspect_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((741, 60), (34, 34))),
             Icon.MAGNIFY,
@@ -538,6 +549,7 @@ class ProfileScreen(Screens):
         self.placeholder_tab_4.kill()
         self.inspect_button.kill()
         self.customize_cat_button.kill()
+        self.customize_stats_button.kill()
         self.close_current_tab()
 
     def build_profile(self):
