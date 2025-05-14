@@ -468,6 +468,7 @@ class Condition_Events:
             "persistent headaches",
             "cleft palate",
             "persistent headaches",
+            "testosterone deficiency", "excess testosterone", "aneuploidy", "mosaicism", "chimerism"
         ]
 
         got_condition = False
