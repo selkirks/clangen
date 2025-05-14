@@ -2015,7 +2015,7 @@ class MakeClanScreen(Screens):
         self.white_patches_tint=choice(["offwhite", "cream", "darkcream", "gray", "pink"]) if random.randint(1,5) == 1 else None
         self.reverse= False if random.randint(1,2) == 1 else True
         self.skill = "Random"
-        self.sex = random.choice(["male", "female"])
+        self.sex = random.choice(["male", "female", "intersex"])
         self.personality = choice(['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug', "wishful",
         "indecisive",
         "abrupt",
@@ -2967,7 +2967,7 @@ class MakeClanScreen(Screens):
                     object_id=get_text_box_theme("#text_box_30_horizcenter"),
                     manager=MANAGER
                 )
-            for gender in ["male", "female"]:
+            for gender in ["male", "female", "intersex"]:
                 self.sex_buttons[gender] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((sex_x_pos, 500), (34, 34))),
                     gender[0].upper(),
