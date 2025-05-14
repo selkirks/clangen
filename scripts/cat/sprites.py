@@ -636,7 +636,7 @@ class Sprites:
             "CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES"]):
             self.make_group('french_scarves', (a, 0), f'collars{i}')
         for a, i in enumerate([
-            "GREENS", "RAINBONS", "BLACKS", "SPIKESS", "WHITES"]):
+            "GREENS", "RAINBOWS", "BLACKS", "SPIKESS", "WHITES"]):
             self.make_group('french_scarves', (a, 1), f'collars{i}')
         for a, i in enumerate([
             "PINKS", "PURPLES", "MULTIS", "INDIGOS"]):
