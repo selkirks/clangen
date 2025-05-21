@@ -4000,38 +4000,38 @@ def generate_sprite(
                                 sprites.sprites["collars" + accessory + cat_sprite], (0, 0)
                             )
 
-            elif cat.pelt.accessory in cat.pelt.bone_accessories:
-                new_sprite.blit(
-                    sprites.sprites["acc_bones" + cat.pelt.accessory + cat_sprite],
-                    (0, 0),
-               )
+                        elif cat.pelt.accessory in cat.pelt.bone_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_bones" + cat.pelt.accessory + cat_sprite],
+                                (0, 0),
+                        )
             
-            elif cat.pelt.accessory in cat.pelt.butterflies_accessories:
-                new_sprite.blit(
-                    sprites.sprites["acc_butterflymoth" + cat.pelt.accessory + cat_sprite],
-                    (0, 0)
-                )
-            elif cat.pelt.accessory in cat.pelt.stuff_accessories:
-                new_sprite.blit(
-                    sprites.sprites["acc_twolegstuff" + cat.pelt.accessory + cat_sprite],
-                    (0, 0)
-                )
-            elif cat.pelt.accessory in cat.pelt.bandana_collars:
-                new_sprite.blit(
-                    sprites.sprites["bandanas" + cat.pelt.accessory + cat_sprite], (0, 0),
-                )
-            elif cat.pelt.accessory in cat.pelt.harness_accessories:
-                new_sprite.blit(
-                    sprites.sprites["harnesses" + cat.pelt.accessory + cat_sprite], (0, 0),
-                )
-            elif cat.pelt.accessory in cat.pelt.bows_accessories:
-                new_sprite.blit(
-                    sprites.sprites["bows" + cat.pelt.accessory + cat_sprite], (0, 0),
-                )
-            elif cat.pelt.accessory in cat.pelt.dogteeth_collars:
-                new_sprite.blit(
-                    sprites.sprites["teethcollars" + cat.pelt.accessory + cat_sprite], (0, 0),
-                )
+                        elif cat.pelt.accessory in cat.pelt.butterflies_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_butterflymoth" + cat.pelt.accessory + cat_sprite],
+                                (0, 0)
+                            )
+                        elif cat.pelt.accessory in cat.pelt.stuff_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_twolegstuff" + cat.pelt.accessory + cat_sprite],
+                                (0, 0)
+                            )
+                        elif cat.pelt.accessory in cat.pelt.bandana_collars:
+                            new_sprite.blit(
+                                sprites.sprites["bandanas" + cat.pelt.accessory + cat_sprite], (0, 0),
+                            )
+                        elif cat.pelt.accessory in cat.pelt.harness_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["harnesses" + cat.pelt.accessory + cat_sprite], (0, 0),
+                            )
+                        elif cat.pelt.accessory in cat.pelt.bows_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["bows" + cat.pelt.accessory + cat_sprite], (0, 0),
+                            )
+                        elif cat.pelt.accessory in cat.pelt.dogteeth_collars:
+                            new_sprite.blit(
+                                sprites.sprites["teethcollars" + cat.pelt.accessory + cat_sprite], (0, 0),
+                            )
         # Apply fading fog
         if (
                 cat.pelt.opacity <= 97
