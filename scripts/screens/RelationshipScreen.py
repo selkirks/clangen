@@ -401,8 +401,8 @@ class RelationshipScreen(Screens):
 
         self.current_page = 1
         self.inspect_cat = None
-        self.the_cat.blank_relations = list(set(self.the_cat.blank_relations))
-        blank_relations = [Relationship(self.the_cat, Cat.fetch_cat(x)) for x in self.the_cat.blank_relations]
+        self.the_cat.blank_relations = list(set([x for x in self.the_cat.blank_relations if x not in self.the_cat.relationships]))
+        blank_relations = [Relationship(self.the_cat, Cat.fetch_cat(x)) for x in self.the_cat.blank_relations if Cat.fetch_cat(x)]
         
         # Keep a list of all the relations
         if game.config["sorting"]["sort_by_rel_total"]:
@@ -424,7 +424,7 @@ class RelationshipScreen(Screens):
                 ),
                 reverse=True,
             )
-            self.all_relations = self.all_relations + blank_relations
+            self.all_relations = self.all_relations + [r for r in blank_relations if r not in self.all_relations]
         else:
             self.all_relations = (list(self.the_cat.relationships.values()).copy() + blank_relations).sorted(key=lambda x: x.cat_to)
 
@@ -633,7 +633,11 @@ class RelationshipScreen(Screens):
         self.filtered_cats = self.all_relations.copy()
         if not game.clan.clan_settings["show dead relation"]:
             self.filtered_cats = list(
-                filter(lambda rel: not rel.cat_to.dead, self.filtered_cats)
+                filter(lambda rel: rel.cat_to and not rel.cat_to.dead, self.filtered_cats)
+            )
+        else:
+            self.filtered_cats = list(
+                filter(lambda rel: rel.cat_to and not rel.cat_to.faded, self.filtered_cats)
             )
 
         if not game.clan.clan_settings["show empty relation"]:
@@ -729,13 +733,13 @@ class RelationshipScreen(Screens):
         )
 
         # Gender alignment
-        if the_relationship.cat_to.genderalign == 'molly':
+        if the_relationship.cat_to.genderalign.replace("intersex ", "") == 'molly':
             gender_icon = image_cache.load_image("resources/images/female_big.png").convert_alpha()
-        elif the_relationship.cat_to.genderalign == 'tom':
+        elif the_relationship.cat_to.genderalign.replace("intersex ", "") == 'tom':
             gender_icon = image_cache.load_image("resources/images/male_big.png").convert_alpha()
-        elif the_relationship.cat_to.genderalign == 'trans molly':
+        elif the_relationship.cat_to.genderalign.replace("intersex ", "") == 'trans molly':
             gender_icon = image_cache.load_image("resources/images/transfem_big.png").convert_alpha()
-        elif the_relationship.cat_to.genderalign == 'trans tom':
+        elif the_relationship.cat_to.genderalign.replace("intersex ", "") == 'trans tom':
             gender_icon = image_cache.load_image("resources/images/transmasc_big.png").convert_alpha()
         else:
             # Everyone else gets the nonbinary icon

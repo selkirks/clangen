@@ -130,9 +130,19 @@
         "Healers will always default to herb gathering patrols",
         "Different types of patrols can still be selected manually",
         false
+      ],
+      "allow_mediator_patrols": [
+        "Allow mediators to patrol",
+        "Allows mediators to be selected for patrols as warriors",
+        false
       ]
     },
     "relation": {
+      "no_litters": [
+        "Prevent new litters",
+        "While this setting is toggled on, no new litters or pregnancies should occur in the Clan.",
+        false
+      ],
       "affair": [
         "Allow cats to breed with cats that aren't their mates",
         "This will allow mated and unmated cats to have kits with other cats they are not mated with. This includes, but is not limited to, affairs/cheating.",
@@ -316,6 +326,10 @@
             false
         ],
         "show fav": [
+            false,
+            true
+        ],
+        "search genotypes": [
             false,
             true
         ]

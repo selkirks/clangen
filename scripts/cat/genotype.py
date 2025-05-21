@@ -1,6 +1,7 @@
 from random import choice, randint, random
 import json
 from scripts.cat.breed_functions import breed_functions
+from scripts.special_dates import SpecialDate, is_today
 from operator import xor
 import math
 
@@ -10,17 +11,10 @@ class Genotype:
         self.odds = odds
         self.ban_genes = ban_genes
         self.chimerapattern = None
-        if spec:
-            self.chimera = False
-        else:
-            self.chimera = True if odds['chimera'] > 0 and randint(1, odds['chimera']) == 1 else False
-        if self.chimera:
-            self.chimerageno = Genotype(self.odds, self.ban_genes, 'chimera')
-            print("Chimera!")
-        else:
-            self.chimerageno = None
 
         self.fevercoat = False
+
+        self.april_fools = {}
         
         self.furLength = ["", ""]
         self.longtype = choice(['long', 'long', 'long', 'medium'])
@@ -31,7 +25,7 @@ class Genotype:
         self.pseudomerle = False
         self.merlepattern = None
         self.brindledbi = False
-        self.sex = "intersex"
+        self.sex = ""
         self.dilute = ["", ""]
         self.white = ["", ""]
         self.whitegrade = randint(1, 5)
@@ -144,6 +138,7 @@ class Genotype:
         return getattr(self, name)
     
     def fromJSON(self, jsonstring):
+        self.april_fools = jsonstring.get("april_fools", {})
         self.fevercoat = jsonstring.get("fevercoat", False)
         self.furLength = jsonstring["furLength"]
         self.eumelanin = jsonstring["eumelanin"]
@@ -156,16 +151,6 @@ class Genotype:
         self.specialred = jsonstring['specialred']
         self.merlepattern = jsonstring.get('merlepattern', None)
         self.pseudomerle = jsonstring.get('pseudomerle')
-        
-        self.chimera = jsonstring['chimera']
-        self.chimerapattern = jsonstring['chimerapattern']
-        if self.chimerapattern and not isinstance(self.chimerapattern, list):
-            self.chimerapattern = [self.chimerapattern]
-        if(jsonstring["chimerageno"]):
-            self.chimerageno = Genotype(self.odds, self.ban_genes, 'chimera')
-            self.chimerageno.fromJSON(jsonstring["chimerageno"])
-        else:
-            self.chimerageno = None    
         self.longtype = jsonstring["longtype"]
 
         try:
@@ -225,8 +210,9 @@ class Genotype:
         self.spotted = jsonstring["spotted"]
         self.tickgenes = jsonstring["tickgenes"]
 
-        self.refraction = jsonstring["refraction"]
-        self.pigmentation = jsonstring["pigmentation"]
+        if isinstance(jsonstring["refraction"], int):
+            self.refraction = jsonstring["refraction"]
+            self.pigmentation = jsonstring["pigmentation"]
 
         self.lefteye = jsonstring["lefteye"]
         self.righteye = jsonstring["righteye"]
@@ -237,23 +223,22 @@ class Genotype:
         self.extraeyetype = jsonstring["extraeyetype"]
         self.extraeyecolour = jsonstring["extraeyecolour"]
 
-        self.breeds = json.loads(jsonstring.get("breeds", "{}"))
-        self.somatic = json.loads(jsonstring.get("somatic", "{}"))
+        self.breeds = json.loads(jsonstring.get("breeds", "{}")) if isinstance(jsonstring.get("breeds", "{}"), str) else jsonstring.get("breeds", {})
+        self.somatic = json.loads(jsonstring.get("somatic", "{}")) if isinstance(jsonstring.get("somatic", "{}"), str) else jsonstring.get("somatic", {})
         self.body_value = jsonstring.get("body_type", 0)
         self.height_value = jsonstring.get("height", 0)
         self.shoulder_height = jsonstring.get("shoulder_height", '')
         self.body_label = jsonstring.get("body_type_label", '')
+
+        if "Clippercat" in self.breeds:
+            self.breeds["New Zealand"] = self.breeds["Clippercat"] + self.breeds.get("New Zealand", 0)
+            del self.breeds["Clippercat"]
 
         self.GeneSort()
         self.PolyEval()
         self.EyeColourName()
 
     def toJSON(self):
-        chimgen = None
-
-        if self.chimerageno:
-            chimgen = self.chimerageno.toJSON()
-
         return {
             "fevercoat" : self.fevercoat,
             "furLength": self.furLength,
@@ -266,9 +251,6 @@ class Genotype:
 
             "pseudomerle" : self.pseudomerle,
             "merlepattern" : self.merlepattern,
-            "chimera" : self.chimera,
-            "chimerapattern" : self.chimerapattern,
-            "chimerageno" : chimgen,
 
             "sex": self.sex,
             "dilute": self.dilute,
@@ -340,26 +322,27 @@ class Genotype:
             "height" : self.height_value,
             "shoulder_height" : self.shoulder_height,
 
-            "breeds" : json.dumps(self.breeds),
-            "somatic" : json.dumps(self.somatic)
+            "breeds" : self.breeds,
+            "somatic" : self.somatic,
+            "april_fools" : self.april_fools
         }
+    
+    def AprilFools(self):
+        if self.odds["april_fools"] or is_today(SpecialDate.APRIL_FOOLS):
+            self.april_fools = {
+                "danish_green" : ["dg", "dg"],
+                "polycaudal" : ["pc", "pc"]
+            }
+            for i in range(2):
+                if self.odds["green"] > 0 and random() < (1/self.odds["green"]):
+                    self.april_fools["danish_green"][i] = "Dg"
+                if self.odds["polycaudal"] > 0 and random() < (1/self.odds["polycaudal"]):
+                    self.april_fools["polycaudal"][i] = "Pc"
+            for key in ["danish_green", "polycaudal"]:
+                if self.april_fools[key][0].islower() and self.april_fools[key][1].islower():
+                    del self.april_fools[key]
 
     def Generator(self, special=None):
-        if self.chimera:
-            par1 = Genotype(self.odds, self.ban_genes, 'chimera')
-            par2 = Genotype(self.odds, self.ban_genes, 'chimera')
-            par1.Generator()
-            par2.Generator()
-            self.KitGenerator(par1, par2)
-            if self.munch[1] == 'Mk':
-                self.munch[1] = "mk"
-            if self.manx[1] not in ['m', 'ab']:
-                self.manx[1] = self.manx[1].lower()
-            if 'NoDBE' not in self.pax3 and 'DBEalt' not in self.pax3:
-                self.pax3[0] = 'DBEalt'
-
-            return
-
         if self.odds["other_breed"] > 0 and randint(1, self.odds["other_breed"]) == 1:
             return self.BreedGenerator(special)
         
@@ -367,6 +350,8 @@ class Genotype:
             self.vitiligo = True
         
         self.GenerateBody()
+
+        self.AprilFools()
 
         # FUR LENGTH
         
@@ -642,21 +627,6 @@ class Genotype:
         self.EyeColourFinder()
 
     def AltGenerator(self, special=None):
-        if self.chimera:
-            par1 = Genotype(self.odds, self.ban_genes, 'chimera')
-            par2 = Genotype(self.odds, self.ban_genes, 'chimera')
-            par1.AltGenerator()
-            par2.AltGenerator()
-            self.KitGenerator(par1, par2)
-            if self.munch[1] == 'Mk':
-                self.munch[1] = "mk"
-            if self.manx[1] not in ['m', 'ab']:
-                self.manx[1] = self.manx[1].lower()
-            if 'NoDBE' not in self.pax3 and 'DBEalt' not in self.pax3:
-                self.pax3[0] = 'DBEalt'
-
-            return
-        
         if self.odds["kittypet_breed"] > 0 and randint(1, self.odds["kittypet_breed"]) == 1:
             return self.BreedGenerator(special)
     
@@ -664,6 +634,8 @@ class Genotype:
             self.vitiligo = True
         
         self.GenerateBody()
+
+        self.AprilFools()
 
         # FUR LENGTH
 
@@ -944,8 +916,6 @@ class Genotype:
         self.EyeColourFinder()
 
     def BreedGenerator(self, special=None):
-        if self.chimera:
-            self.chimerageno.Generator()
 
         common_breeds = [
             "Abyssinian", "American Burmese/Bombay", "American Curl", "American Shorthair", "Asian/Burmese", 
@@ -960,7 +930,7 @@ class Genotype:
             "Ragamuffin", "Savannah", "Snowshoe", "Sokoke", "Thai", "Toybob", "Toyger"
         ]
         rare_breeds = [
-            "Aphrodite", "Arabian Mau", "Brazilian Shorthair", "Cheetoh", "Ceylon", "Clippercat", "Foldex", "Gaelic Fold", 
+            "Aphrodite", "Arabian Mau", "Brazilian Shorthair", "Cheetoh", "Ceylon", "Foldex", "Gaelic Fold", 
             "German Longhair", "Kanaani", "Karelian Bobtail", "Kinkalow", "Lambkin", "Lin-Qing Lion cat", "Mekong Bobtail", 
             "Napoleon", "New Zealand", "Serengeti", "Skookum", "Tennessee Rex", "Ural Rex"
         ]
@@ -978,20 +948,29 @@ class Genotype:
 
         self.GeneSort()
 
-        if self.body_value == 0:
-            self.body_value = randint(self.body_indexes[2]+1, self.body_indexes[3])
-        if self.height_value == 0:
-            self.height_value = randint(self.height_indexes[3]+1, self.height_indexes[4])
-
         if self.odds['somatic_mutation'] > 0 and randint(1, self.odds['somatic_mutation']) == 1:
             self.GenerateSomatic()
 
         self.PolyEval()
         self.EyeColourFinder()
 
-    def KitGenerator(self, par1, par2=None, par3=None):
+    def KitGenerator(self, par1, par2=None, par3=None, chimera=False):
         try:
-            par2 = par2.genotype
+            if par1.passes == 1 or not par1.chimerapheno:
+                par1 = par1.phenotype
+            elif not par1.passes:
+                par1 = choice([par1.phenotype, par1.chimerapheno])
+            else:
+                par1 = par1.chimerapheno
+        except:
+            par1 = par1
+        try:
+            if par2.passes == 1 or not par2.chimerapheno:
+                par2 = par2.phenotype
+            elif not par2.passes:
+                par2 = choice([par2.phenotype, par2.chimerapheno])
+            else:
+                par2 = par2.chimerapheno
         except:
             par2 = par2
         if not par2:
@@ -1000,12 +979,17 @@ class Genotype:
             par2.Generator()
         if not par1:
             print("No first parent genotype given")
-            par1 = Genotype(self.odds, self.ban_genes, 'no chimeras')
+            par1 = Genotype(self.odds, self.ban_genes)
             par1.Generator()
 
         threepars = False
         try:
-            par3 = par3.genotype
+            if par3.passes == 1 or not par3.chimerapheno:
+                par3 = par3.phenotype
+            elif not par3.passes:
+                par3 = choice([par3.phenotype, par3.chimerapheno])
+            else:
+                par3 = par3.chimerapheno
         except:
             par3 = par3
             if par2 == par3:
@@ -1024,12 +1008,10 @@ class Genotype:
         
         self.KitEyes(par1, par2)
 
-        if self.chimera:
+        if chimera:
             if isinstance(par3, Genotype) and random() < 0.33:
-                self.chimerageno.KitGenerator(par1, par3)
+                self.KitGenerator(par1, par3)
                 threepars = True
-            else:
-                self.chimerageno.KitGenerator(par1, par2)
     
         if randint(1, 5) == 1:
             self.whitegrade = par1.whitegrade
@@ -1051,7 +1033,20 @@ class Genotype:
         if self.odds['pseudo_merle'] > 0 and randint(1, self.odds['pseudo_merle'])==1:
             self.pseudomerle = True 
         
-        
+        for gene in ["danish_green", "polycaudal"]:
+            self.april_fools[gene] = ["", ""]
+            if gene in par1.april_fools.keys():
+                self.april_fools[gene][0] = choice(par1.april_fools[gene])
+            if gene in par2.april_fools.keys():
+                self.april_fools[gene][1] = choice(par2.april_fools[gene])
+            
+            if self.april_fools[gene] == ["", ""]:
+                del self.april_fools[gene]
+            elif not self.april_fools[gene][0]:
+                self.april_fools[gene][0] = self.april_fools[gene][1].lower()
+            elif not self.april_fools[gene][1]:
+                self.april_fools[gene][1] = self.april_fools[gene][0].lower()
+
         self.furLength = [choice(par1.furLength), choice(par2.furLength)]
         
         self.eumelanin = [choice(par1.eumelanin), choice(par2.eumelanin)]
@@ -1527,7 +1522,7 @@ class Genotype:
         else:
             self.soktype = soktypes[2]
 
-        body_types = ['snub-nosed', 'cobby', 'semi-cobby', 'intermediate', 'semi-oriental', 'oriental', 'wedge-faced']
+        body_types = ['snub-nosed cobby', 'cobby', 'semi-cobby', 'intermediate', 'semi-oriental', 'oriental', 'wedge-faced oriental']
         height_types = ['teacup', 'tiny', 'small', 'below average', 'average', 'above average', 'large', 'massive', 'giant', 'goliath']
 
         if self.body_label != '':
@@ -1595,12 +1590,15 @@ class Genotype:
                      'curl', 'fold', 'kab', 'toybob', 'jbob', 'kub', 'ring', 'munch', 'poly']:
             if self[gene][0] != self[gene][1] and self[gene][0].islower():
                 self[gene][0], self[gene][1] = self[gene][1], self[gene][0]
+        for gene in self.april_fools.keys():
+            if self.april_fools[gene][0] != self.april_fools[gene][1] and self.april_fools[gene][0].islower():
+                self.april_fools[gene][0], self.april_fools[gene][1] = self.april_fools[gene][1], self.april_fools[gene][0]
 
         if self.eumelanin[0] == "bl":
             self.eumelanin[0] = self.eumelanin[1]
             self.eumelanin[1] = "bl"
-        elif self.eumelanin[0] == "b" and self.eumelanin[1] != "bl":
-            self.eumelanin[0] = self.eumelanin[1]
+        elif self.eumelanin[0] == "b" and self.eumelanin[1] == "B":
+            self.eumelanin[0] = "B"
             self.eumelanin[1] = "b"
 
         if len(self.sexgene) > 2 and self.sexgene[2] == "O" and self.sexgene[0] == "o":
@@ -1619,10 +1617,10 @@ class Genotype:
         elif self.white[0] == "wg" and self.white[1] != "wsal":
             self.white[0] = self.white[1]
             self.white[1] = "wg"
-        elif self.white[0] == "w" and self.white[1] != "wg" and self.white[1] != "wsal":
+        elif self.white[0] == "w" and self.white[1] not in ["wsal", "wg"]:
             self.white[0] = self.white[1]
             self.white[1] = "w"
-        elif self.white[0] == "wt" and self.white[1] != "wg" and self.white[1] != "w" and self.white[1] != "wsal":
+        elif self.white[0] == "wt" and self.white[1] not in ["wsal", "wg", "w"]:
             self.white[0] = self.white[1]
             self.white[1] = "wt"
         elif self.white[1] == "W":
@@ -1635,7 +1633,7 @@ class Genotype:
         elif self.pointgene[0] == "cm" and self.pointgene[1] != "c":
             self.pointgene[0] = self.pointgene[1]
             self.pointgene[1] = "cm"
-        elif self.pointgene[0] == "cs" and self.pointgene[1] != "c" and self.pointgene[1] != "cm":
+        elif self.pointgene[0] == "cs" and self.pointgene[1] not in ["c", "cm"]:
             self.pointgene[0] = self.pointgene[1]
             self.pointgene[1] = "cs"
         elif self.pointgene[1] == "C":
@@ -1672,13 +1670,13 @@ class Genotype:
             self.ext[1] = self.ext[0]
             self.ext[0] = "E"
 
-        if self.corin[0] == "sh":
-            self.corin[0] = self.corin[1]
-            self.corin[1] = "sh"
-        elif self.corin[0] == "fg":
+        if self.corin[0] == "fg":
             self.corin[0] = self.corin[1]
             self.corin[1] = "fg"
-        elif self.corin[0] == "sg":
+        elif self.corin[0] == "sh" and self.corin[1] != "fg":
+            self.corin[0] = self.corin[1]
+            self.corin[1] = "sh"
+        elif self.corin[0] == "sg" and self.corin[1] not in ["sh", "fg"]:
             self.corin[0] = self.corin[1]
             self.corin[1] = "sg"
 
@@ -1707,8 +1705,8 @@ class Genotype:
         "R10" : ["Turquoise", "Viridian", "Green Onion", "Leaf Green", "Green", "Sap Green", "Dark Leaf Green", "Forest Green", "Dark Peridot", "Seaweed Green", "Dark Olive", "Sapphire", "Albino Sky Blue"],
         "R11" : ["Deep Turquoise", "Amazonite", "Pine Green", "Deep Leaf Green", "Jade", "Emerald", "Deep Green", "Deep Forest Green", "Dark Green", "Dark Moss Green", "Black Olive", "Azure", "Albino Azure"]
         }
-        sectoralindex = randint(0, 74)
-        het2index = randint(0, 99)
+        sectoralindex = randint(0, self.odds["sectoral_heterochromia"]-1) if self.odds["sectoral_heterochromia"] > 1 else 0
+        het2index = randint(0, self.odds["random_heterochromia"]-1) if self.odds["random_heterochromia"] > 1 else 0
         blueindex = 1
         hetindex = 1
 
@@ -1752,19 +1750,27 @@ class Genotype:
 
 
         if self.pointgene == ["cb","cs"]:
-            blueindex = randint(0, 7)
+            blueindex = randint(0, 10)
         if self.white[0] in ['w', 'wg', 'wsal'] or blueindex == 0:
             pass
         elif self.white[0] in ['ws', 'wt'] and self.white[1] not in ['ws', 'wt']:
-            blueindex = randint(0, 74)
+            if self.whitegrade < 3:
+                blueindex = randint(0, self.odds["no-low_white_blue_eyes"]-1) if self.odds["no-low_white_blue_eyes"] > 1 else 0
+            elif self.whitegrade < 5:
+                blueindex = randint(0, self.odds["low_white_blue_eyes"]-1) if self.odds["low_white_blue_eyes"] > 1 else 0
+            else:
+                blueindex = randint(0, self.odds["mid_white_blue_eyes"]-1) if self.odds["mid_white_blue_eyes"] > 1 else 0
         elif self.white[0] in ['ws', 'wt']:
-            blueindex = randint(0, 24)
+            if self.whitegrade < 3:
+                blueindex = randint(0, self.odds["mid_white_blue_eyes"]-1) if self.odds["mid_white_blue_eyes"] > 1 else 0
+            else:
+                blueindex = randint(0, self.odds["high_white_blue_eyes"]-1) if self.odds["high_white_blue_eyes"] > 1 else 0
         elif self.white[0] == "W":
-            blueindex = randint(0, 14)
+            blueindex = randint(0, self.odds["het_dom_white_blue_eyes"]-1) if self.odds["het_dom_white_blue_eyes"] > 1 else 0
             if randint(1, 4) == 1 and blueindex == 0:
                 self.deaf = True
         if self.white == ["W","W"]:
-            blueindex = randint(0, 2)
+            blueindex = randint(0, self.odds["homo_dom_white_blue_eyes"]-1) if self.odds["homo_dom_white_blue_eyes"] > 1 else 0
             if randint(1, 4) < 4 and blueindex == 0:
                 self.deaf = True
         
@@ -1775,15 +1781,23 @@ class Genotype:
         if self.white[0] in ['w', 'wg', 'wsal']:
             pass
         elif self.white[0] in ['ws', 'wt'] and self.white[1] not in ['ws', 'wt']:
-            hetindex = randint(0, 24)
+            if self.whitegrade < 3:
+                hetindex = randint(0, self.odds["no-low_white_one_blue_eye"]-1) if self.odds["no-low_white_one_blue_eye"] > 1 else 0
+            elif self.whitegrade < 5:
+                hetindex = randint(0, self.odds["low_white_one_blue_eye"]-1) if self.odds["low_white_one_blue_eye"] > 1 else 0
+            else:
+                hetindex = randint(0, self.odds["mid_white_one_blue_eye"]-1) if self.odds["mid_white_one_blue_eye"] > 1 else 0
         elif self.white[0] in ['ws', 'wt']:
-            hetindex = randint(0, 14)
+            if self.whitegrade < 3:
+                hetindex = randint(0, self.odds["mid_white_one_blue_eye"]-1) if self.odds["mid_white_one_blue_eye"] > 1 else 0
+            else:
+                hetindex = randint(0, self.odds["high_white_one_blue_eye"]-1) if self.odds["high_white_one_blue_eye"] > 1 else 0
         elif self.white[0] == "W":
-            hetindex = randint(0, 9)
+            hetindex = randint(0, self.odds["het_dom_white_one_blue_eye"]-1) if self.odds["het_dom_white_one_blue_eye"] > 1 else 0
             if randint(1, 10) == 1 and hetindex == 0:
                 self.deaf = True
         if self.white == ["W","W"]:
-            hetindex = randint(0, 2)
+            hetindex = randint(0, self.odds["homo_dom_white_one_blue_eye"]-1) if self.odds["homo_dom_white_one_blue_eye"] > 1 else 0
             if randint(1, 8) == 1 and hetindex == 0:
                 self.deaf = True
 
@@ -1967,6 +1981,7 @@ class Genotype:
         self.PolyEval()
         self.Cat_Genes = [self.furLength, self.eumelanin, self.sexgene, self.dilute, self.white, self.pointgene, self.silver,
                      self.agouti, self.mack, self.ticked]
+        april_fools_output = []
         if filter:
             self.Fur_Genes = []
             self.Other_Colour = []
@@ -1985,12 +2000,18 @@ class Genotype:
                         self.Body_Genes.append(x)
                 elif x[0] != x[1] or x[0] not in ['cu', 'fd', 'm', 'ab', 'Kab', 'tb', 'Jb', 'kub', 'Rt', 'mk', 'pd', 'NoDBE']:
                     self.Body_Genes.append(x)
+            for x in self.april_fools.values():
+                if x[0] != x[1] or not x[0].islower():
+                    april_fools_output.append(x)
         else:
             self.Fur_Genes = [self.wirehair, self.laperm, self.cornish, self.urals, self.tenn, self.fleece, self.sedesp, self.ruhr, self.ruhrmod, self.lykoi]
             self.Other_Colour = [self.pinkdilute, self.dilutemd, self.ext, self.corin, self.karp, self.bleach, self.ghosting, self.satin, self.glitter]
             self.Body_Genes = [self.curl, self.fold, self.manx, self.kab, self.toybob, self.jbob, self.kub, self.ring, self.munch, self.poly, self.pax3]
+            april_fools_output = [self.april_fools.values()]
         self.Polygenes = ["Wideband:", self.wideband, self.wbtype, "Rufousing:", self.rufousing, self.ruftype, "Saturation:", self.saturation, "Bengal:", self.bengal, self.bengtype, "Sokoke:", self.sokoke, self.soktype, "Spotted:", self.spotted, self.spottype, "Ticked:", self.tickgenes, self.ticktype, "Refraction:", self.refraction, "Pigmentation:", self.pigmentation]
 
+        if self.odds["april_fools"] or is_today(SpecialDate.APRIL_FOOLS):
+            return self.Cat_Genes, "Other Fur Genes: ", self.Fur_Genes, "Other Colour Genes: ", self.Other_Colour, "Body Mutations: ", self.Body_Genes, "Polygenes: ", self.Polygenes, "April Fools:", april_fools_output
         return self.Cat_Genes, "Other Fur Genes: ", self.Fur_Genes, "Other Colour Genes: ", self.Other_Colour, "Body Mutations: ", self.Body_Genes, "Polygenes: ", self.Polygenes
     
     def Mutate(self):

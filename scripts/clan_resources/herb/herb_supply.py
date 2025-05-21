@@ -179,7 +179,7 @@ class HerbSupply:
             "major": [],
             "minor": []
         }
-        cats_to_treat = [kitty for kitty in clan_cats if kitty.is_ill() or kitty.is_injured() or kitty.is_disabled()]
+        cats_to_treat = [kitty for kitty in clan_cats if not kitty.outside and (kitty.is_ill() or kitty.is_injured() or kitty.is_disabled())]
         for kitty in cats_to_treat:
             # if there are no working med cats, then only allow med cats to be treated. the idea being that a med cat
             # could conceivably attempt to care for themselves, but would not be well enough to care for the Clan as
@@ -456,8 +456,13 @@ class HerbSupply:
                 found_herbs[herb] = choices(population=[1, 2, 3], weights=weight, k=1)[0] * quantity_modifier
                 amount_of_herbs -= 1
 
-        list_of_herb_strs = []
+        return self.handle_found_herbs_outcomes(found_herbs)
 
+    def handle_found_herbs_outcomes(self, found_herbs: dict = {}):
+        """
+        Handles adding herbs to the collection and preparing outcome for patrols
+        """
+        list_of_herb_strs = []
         if found_herbs:
             for herb, count in found_herbs.items():
                 # add it to the collection
