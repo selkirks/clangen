@@ -60,7 +60,8 @@ class Pregnancy_Events:
 
         living_cats = len(
             [
-                i for i in Cat.all_cats.values()
+                i
+                for i in Cat.all_cats.values()
                 if not i.dead and not i.outside and not i.exiled
             ]
         )
@@ -1227,7 +1228,8 @@ class Pregnancy_Events:
         # - increase the inverse chance if the clan is bigger
         living_cats = len(
             [
-                i for i in Cat.all_cats.values()
+                i
+                for i in Cat.all_cats.values()
                 if not i.dead and not i.outside and not i.exiled
             ]
         )

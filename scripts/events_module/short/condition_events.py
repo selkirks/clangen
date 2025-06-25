@@ -326,11 +326,7 @@ class Condition_Events:
                     illness=illness,
                 )
 
-                event_string = event_text_adjust(
-                    Cat,
-                    text=event_string,
-                    main_cat=cat
-                )
+                event_string = event_text_adjust(Cat, text=event_string, main_cat=cat)
 
         # if an event happened, then add event to cur_event_list and save death if it happened.
         if event_string:
@@ -1222,4 +1218,3 @@ class Condition_Events:
 
 
 Condition_Events.rebuild_strings()
-
