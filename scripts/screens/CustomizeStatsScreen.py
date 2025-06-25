@@ -237,13 +237,16 @@ class CustomizeStatsScreen(Screens):
                        "stable", "strong", "fox-hearted", "sympathetic", "macabre", "civil", "teacherly", "tolerant", "unfoolable", "witty", "youthful", "enigmatic",
                        "ordinary", "private", "loud", "questioning", "predictable", "airy", "anxious", "argumentative", "bizarre", "blunt", "calculating", "crude", "deceitful",
                        "cruel", "devious", "messy", "opinionated", "overimaginative", "power-hungry", "quirky", "reactive", "resentful", "regretful", "ritualistic", "selfish",
-                       "sadistic", "scheming", "sloppy", "suspicious", "thievish", "transparent", "vague", "venomous", "envious"]
+                       "sadistic", "scheming", "sloppy", "suspicious", "thievish", "transparent", "vague", "venomous", "envious", "artificial", "aimless", "boring", "charmless",
+                       "unreliable", "dependant", "disgusted", "self-pitying", "colorless", "obnoxious", "small-thinking", "uncaring", "unimaginative", "desolate", "monotone",
+                       "dull", "misguided", "humorous"]
         self.adult_traits.sort()
         self.kit_traits = ["troublesome", "lonesome", "impulsive", "bullying", "attention-seeker", "daydreamer", "dreary", "abrupt", "solemn", "wishful", "indecisive",
                            "entitled", "distrusting", "charming", "nervous", "quiet", "insecure", "sweet", "goody-no-claws", "chaotic", "nosy", "moody", "nasty", "silly",
                            "know-it-all", "spoiled", "sly", "mature", "apologetic", "salty", "whiny", "spicy", "bubbly", "picky", "cheeky", "shy", "fearless", "skittish",
                            "self-conscious", "impressionable", "high-spirited", "crybaby", "tiny", "morbid", "obedient", "colorful", "zoomy", "clingy", "curious", "slug",
-                           "defiant", "sinister", "prim", "tender", "jokester", "wild", "bright", "earnest", "rowdy", "sloppy", "complex", "emotional", "protective", "bossy"]
+                           "defiant", "sinister", "prim", "tender", "jokester", "wild", "bright", "earnest", "rowdy", "sloppy", "complex", "emotional", "protective", "bossy",
+                           "CHAOS CHAOS"]
         self.kit_traits.sort()
         self.traits = copy(self.adult_traits)
         self.traits_label1 = None
