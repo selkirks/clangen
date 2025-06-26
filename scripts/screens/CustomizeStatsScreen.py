@@ -123,8 +123,8 @@ class CustomizeStatsScreen(Screens):
             "recurring shock",
             "lasting grief",
             "wobbly cat syndrome", "cleft palate",
-            "persistent headaches", "testosterone deficiency", "excess testosterone", "aneuploidy", "mosaicism", "chimerism",]
-        self.permanent_conditions = copy(scarless_conditions) + ["one bad eye", "lost a leg", "lost their tail", "twisted leg", "declawed", "constant rash"]
+            "persistent headaches", "testosterone deficiency", "excess testosterone", "aneuploidy", "mosaicism", "chimerism"]
+        self.permanent_conditions = copy(scarless_conditions) + ["one bad eye", "lost a leg", "lost their tail", "twisted leg"]
         self.permanent_conditions.sort()
         self.permanent_conditions.insert(0, "none")
         self.permanent_conditions_label = None
