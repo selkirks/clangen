@@ -203,7 +203,7 @@ def self_update(
             zip_ref.extractall("Downloads")
         os.remove("download.tmp")
         shutil.copy(
-            "./Downloads/Clangen/_internal/resources/self_updater.exe",
+            "./Downloads/MegaMerge/_internal/resources/self_updater.exe",
             "./Downloads/self_updater.exe",
         )
         announce_restart_callback()
@@ -230,20 +230,20 @@ def self_update(
             progress_bar.advance()
 
             os.system(
-                f"hdiutil attach -nobrowse -mountpoint {mountdir} Downloads/Clangen_macOS64.dmg"
+                f"hdiutil attach -nobrowse -mountpoint {mountdir} Downloads/MegaMerge_macOS64.dmg"
             )
             progress_bar.advance()
 
-            shutil.rmtree("/Applications/Clangen.app.old", ignore_errors=True)
+            shutil.rmtree("/Applications/MegaMerge.app.old", ignore_errors=True)
             progress_bar.advance()
 
-            if os.path.exists("/Applications/Clangen.app"):
+            if os.path.exists("/Applications/MegaMerge.app"):
                 shutil.move(
-                    "/Applications/Clangen.app", "/Applications/Clangen.app.old"
+                    "/Applications/MegaMerge.app", "/Applications/MegaMerge.app.old"
                 )
             progress_bar.advance()
 
-            shutil.copytree(f"{mountdir}/Clangen.app", "/Applications/Clangen.app")
+            shutil.copytree(f"{mountdir}/MegaMerge.app", "/Applications/MegaMerge.app")
             progress_bar.advance()
 
             shutil.rmtree("Downloads", ignore_errors=True)
@@ -256,7 +256,7 @@ def self_update(
             progress_bar.advance()
         announce_restart_callback()
         time.sleep(3)
-        os.execv("/Applications/Clangen.app/Contents/MacOS/Clangen", sys.argv)
+        os.execv("/Applications/MegaMerge.app/Contents/MacOS/MegaMerge", sys.argv)
         quit()
 
     elif platform.system() == "Linux":
