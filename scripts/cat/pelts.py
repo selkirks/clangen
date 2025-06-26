@@ -357,6 +357,31 @@ class Pelt:
                     ]
     tail2_accessories = ["SEAWEED", "DAISY CORSAGE"
                     ]
+
+    acc_categories = {
+        "PLANT": plant_accessories,
+        "WILD": wild_accessories,
+        "COLLAR": collars,
+        "BONE": bone_accessories,
+        "BUTTERFLIES": butterflies_accessories,
+        "STUFF": stuff_accessories,
+        "BEETLE": beetle_accessories,
+        "BEETLEFEATHER": beetle_feathers,
+        "STERFLOWERS": ster_accessories,
+        "LANTERN": lanternacc,
+        "HEARTACC": heartacc,
+        "MOIPAACC": moipaacc,
+        "PLANT2": plant2_accessories,
+        "SNAKE": snake_accessories,
+        "SMALLANIMAL": smallAnimal_accessories,
+        "DEADINSECT": deadInsect_accessories,
+        "RANDOM": randomaccessories,
+        "ALIVEINSECT": aliveInsect_accessories,
+        "FRUIT": fruit_accessories,
+        "SAILOR": sailormoon,
+        "CRAFTED": crafted_accessories
+    }
+    
     head_accessories = [
         "MOTH WINGS",
         "ROSY MOTH WINGS",
