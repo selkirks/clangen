@@ -826,6 +826,118 @@ class ProfileScreen(Screens):
                 output += f" moon ({years} years)"
             elif the_cat.moons != 1:
                 output += f" moons ({years} years)"
+
+            # TRAITS
+        trait_descriptions = {
+            'TEETHUPPER': 'long upper fangs',
+            'TEETHSABRE': 'sabre teeth',
+            'TEETHUNDERBITE': 'underbite',
+            'TEETHOVERBITE': 'overbite',
+            'TEETHHANG': 'a hanging fang',
+            'TEETHJAGGED': 'uneven teeth',
+            'TEETHTUSK': 'tusked fangs',
+            'TEETHGONE': 'missing a tooth',
+            'TEETHCHIPPED': 'a chipped tooth',
+            'EARSMALL': 'small ears',
+            'EARBIG': 'big ears',
+            'EARTALL': 'tall ears',
+            'EARPANTHER': 'rounded ears',
+            'EARWIDE': 'wide-set ears',
+            'EARFLUFFY': 'fluffy ears',
+            'EARDROOPY': 'droopy ears',
+            'EARRABBIT': 'rabbit-like ears',
+            'HEADFORELOCK': 'forelock',
+            'HEADCOWLICK': 'cowlick',
+            'HEADMOHAWK': 'mohawk',
+            'HEADTUFT': 'tufted head fur',
+            'HEADEMO': 'emo-style head fur',
+            'HEADJOWLS': 'prominent jowls',
+            'CHEEKLONG': 'long cheek fur',
+            'CHEEKPOINTED': 'pointed cheek fur',
+            'CHEEKFLUFF': 'fluffy cheeks',
+            'CHEEKCURL': 'curled cheek fur',
+            'MANESILKY': 'silky mane',
+            'MANEFLUFFY': 'fluffy mane',
+            'MANERUFF': 'ruff',
+            'MANEHORSE': 'horse-like mane',
+            'MANELION': 'lion-like mane',
+            'MANEBRAIDED': 'braided mane',
+            'MANECOBRA': 'cobra-like mane',
+            'BODYBROAD': 'broad shoulders',
+            'BODYWIRY': 'wiry',
+            'BODYLITHE': 'lithe',
+            'BODYSKINNY': 'skinny',
+            'BODYBUFF': 'muscular',
+            'BODYCOMPACT': 'compact',
+            'BODYHUNCHED': 'hunched',
+            'BODYHEFTY': 'hefty',
+            'BODYBURLY': 'burly',
+            'BODYBULKY': 'bulky',
+            'BODYPLUMP': 'plump',
+            'BODYBRAWNY': 'brawny',
+            'BODYSTOUT': 'stout',
+            'BODYBROAD': 'broad',
+            'BODYCHUBBY': 'chubby',
+            'BODYFAT': 'fat',
+            'BODYSTOCKY': 'stocky',
+            'BODYCHUNKY': 'chunky',
+            'BODYBIGBONED': 'big-boned',
+            'SIZETINY': 'tiny',
+            'SIZESMALL': 'small',
+            'SIZESHORT': 'short',
+            'SIZETALL': 'tall',
+            'SIZELARGE': 'large',
+            'SIZEHUGE': 'huge',
+            'EARTUFTS': 'ear tufts',
+            'LASHESUPPER': 'upper lashes',
+            'LASHESLOWER': 'lower lashes',
+            'WHISKERSLONG': 'long whiskers',
+            'CLAWSLONG': 'unusually long claws',
+            'BACKFLUFF': 'fluffy back',
+            'BACKRIDGE': 'fur ridge on back',
+            'SHOULDERTUFT': 'tufted shoulders',
+            'LEGTUFT': 'tufted legs',
+            'LARGEPAWS': 'large paws',
+            'SMALLPAWS': 'small paws',
+            'CLAWLESS': 'clawless',
+            'CLAWSSHORT': 'unusually short claws',
+            'PAWTUFT': 'tufted paws',
+            'BIGEYES': 'big eyes',
+            'SMALLEYES': 'small eyes',
+            'BIGNOSE': 'big nose',
+            'HEARTSHAPEDNOSE': 'heart-shaped nose',
+            'CROSSEYED': 'cross-eyed',
+            'LAZYEYE': 'lazy eye',
+            'OVERGROWNTONGUE': 'overgrown tongue',
+            'LONGCHINFUR': 'long chin fur',
+            'SHORTCHINFUR': 'short chin fur',
+            'LONGMUZZLEFUR': 'long muzzle fur',
+            'LONGINNEREARFUR': 'long inner ear fur',
+            'WEBBEDPAWS': 'webbed paws',
+            'MISSINGTOE': 'missing a toe',
+            'UNDERSIZEDJAW': 'undersized jaw',
+            'OVERSIZEDJAW': 'oversized jaw'
+        }
+
+        trait_list = []
+        if the_cat.pelt.physical_trait_1:
+            trait_list.append(the_cat.pelt.physical_trait_1)
+            if the_cat.pelt.physical_trait_2:
+                trait_list.append(the_cat.pelt.physical_trait_2)
+                if the_cat.pelt.physical_trait_3:
+                    trait_list.append(the_cat.pelt.physical_trait_3)
+                    if the_cat.pelt.physical_trait_4:
+                        trait_list.append(the_cat.pelt.physical_trait_4)
+
+        if trait_list:
+            output += "\n"
+            output += "traits: "
+            for trait in trait_list:
+                if trait in trait_descriptions:
+                    output += trait_descriptions[trait] + ", "
+                else:
+                    output += trait + ", "  # In case the trait is not found in the dictionary
+            output = output.rstrip(", ")  # Remove the trailing comma and space
             output += "\n"
             output += i18n.t("general.moons_age_in_death", count=the_cat.dead_for)
         # MATE
