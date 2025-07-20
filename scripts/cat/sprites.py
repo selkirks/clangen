@@ -136,8 +136,10 @@ class Sprites:
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             'shadersnewwhite', 'lightingnew', 'plant2_accessories',
             'fademask', 'fadestarclan', 'fadedarkforest', 'flower_accessories', 'snake_accessories',
-            'smallAnimal_accessories', 'aliveInsect_accessories', 'harnesses', 'bows', 'teethcollars',
+            'smallAnimal_accessories', 'aliveInsect_accessories', 'harnesses', 'bows', 'teethcollars', 'sterflowers',
             'symbols', "french_scarves", "ties", 'deadInsect_accessories', 'fruit_accessories', 'crafted_accessories', 'tail2_accessories', 'bonesacc', 'butterflymothacc', 'twolegstuff',
+            'boosbandanas_accessories', 'sailormoon', 'randomaccessories', 'beetle_accessories', 'beetle_feathers',
+            'heartacc', 'moipaacc', 'pridebowcollars', 'pridecollars', 'pridenyloncollars', 'lanternacc',
         ]:
             if "lineart" in x and is_today(SpecialDate.APRIL_FOOLS):
                 self.spritesheet(f"sprites/aprilfools{x}.png", "aprilfools"+x)
@@ -593,11 +595,11 @@ class Sprites:
                 "BULB ORANGE",
                 "BULB PINK",
                 "BULB BLUE",
-                "CLOVER",
-                "DAISY",
+                "CLOVERTAIL",
+                "DAISYTAIL",
             ],
             [
-                "WISTERIA",
+                "WISTERIA2",
                 "ROSE MALLOW",
                 "PICKLEWEED",
                 "GOLDEN CREEPING JENNY",
@@ -619,13 +621,18 @@ class Sprites:
                 "MOTH WINGS",
                 "ROSY MOTH WINGS",
                 "MORPHO BUTTERFLY",
-                "MONARCH BUTTERFLY",
+                "MONARCH BUTTERFLY1",
                 "CICADA WINGS",
                 "BLACK CICADA",
             ],
             [
                 "ROAD RUNNER FEATHER",
             ],
+        ]
+        ster_data = [
+            ["POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH"],
+            ["LAURELLEAVES", "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH"],
+            ["YARROW"]
         ]
 
         collars_data = [
@@ -662,6 +669,58 @@ class Sprites:
             ["CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"]
         ]
 
+        pridecollars_data = [
+            ["GIRLFLUXCOLLAR", "MINCOLLAR", "GENDERFLUXCOLLAR", "BOYFLUXCOLLAR", "GENDERFAUNCOLLAR", "GENDERFAECOLLAR"],
+            ["GRAYAROCOLLAR", "XENOCOLLAR", "NINCOLLAR", "VOIDPUNKCOLLAR", "UNLABELEDCOLLAR"],
+            ["GENDERFLORCOLLAR", "GRAYACECOLLAR", "FINCOLLAR", "ENBYFLUXCOLLAR"]
+        ]
+
+        pridebowcollars_data = [
+            ["TRANSFEMBOW", "DEMIBOYBOW", "PANGENDERBOW", "TRANSMASCBOW", "INTERSEXBOW", "GENDERQUEERBOW"],
+            ["AGENDERBOW", "GENDERVOIDBOW", "DEMIGIRLBOW", "DEMINONBINARYBOW", "DEMIFLUIDBOW"],
+            ["BIGENDERBOW", "NONBINARYBOW", "TRANSBOW", "GENDERFLUIDBOW"]
+        ]
+
+        pridenyloncollars_data = [
+            ["PRIDENYLONCOLLAR", "NEPTUNICNYLONCOLLAR", "PANNYLONCOLLAR", "URANICNYLONCOLLAR", "LESBIANNYLONCOLLAR", "MLMCNYLONCOLLAR"],
+            ["AROMANTICNYLONCOLLAR", "MULTISEXUALNYLONCOLLAR", "QUEERNYLONCOLLAR", "AROACENYLONCOLLAR", "POLYNYLONCOLLAR"],
+            ["OMNINYLONCOLLAR", "ACENYLONCOLLAR", "ABRONYLONCOLLAR", "BINYLONCOLLAR"]
+        ]
+
+        beetle_accessories_data = [
+        ["FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT"],
+        ["BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF"],
+        ["BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
+        ]
+
+        beetle_feathers_data = [
+            ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS", "BLUE JAY FEATHERS"],
+            ["ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]
+            ]
+
+        sailormoon_data = [
+            ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK"],
+            ["URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"]
+        ]
+
+        random_data = [
+            ["DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM"],
+            ["FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER"],
+            ["DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"]
+        ]
+
+        lantern_data = [
+            ["LANTERN"]
+        ]
+
+        heart_data = [
+            ["HEART CHARM"]
+        ]
+
+        moipa_data = [
+            ["SILVER CELESTIAL CHARMS", "GOLDEN STAR CHARM", "GOLDEN CELESTIAL CHARMS", "CELESTIAL CHARMS"]
+        ]
+
         crafted_data = [
             ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL", "LEAF BOW"]
         ]
@@ -679,6 +738,11 @@ class Sprites:
             ["LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH BUTTERFLY", "DAPPLED MONARCH", "POLYPHEMUS MOTH", "MINT MOTH"]
         ]
 
+        boos_data = [["CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO"],
+                    ["LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO"],
+                    ["DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO", "WHITEBOO"],
+                    ["LIGHTGRAYBOO", "GRAYBOO", "BLACKBOO", "BROWNBOO"]]
+        
         aliveInsect_data = [
             ["BROWN SNAIL", "RED SNAIL", "WORM", "BLUE SNAIL", "ZEBRA ISOPOD", "DUCKY ISOPOD", "DAIRY COW ISOPOD", "BEETLEJUICE ISOPOD", "BEE", "RED LADYBUG"],
             ["ORANGE LADYBUG", "YELLOW LADYBUG"]
@@ -718,7 +782,7 @@ class Sprites:
             ["SEA GLASS", "BAUBLES", "MUD AND DIRT"]
         ]
         bandanas_data = [
-            ["CRIMSONBANDANA", "BLUEBANDANA", "YELLOWANDANA", "CYANBANDANA", "REDBANDANA", "LIMEBANDANA"],
+            ["CRIMSONBANDANA", "BLUEBANDANA", "YELLOWBANDANA", "CYANBANDANA", "REDBANDANA", "LIMEBANDANA"],
             ["GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA"],
             ["PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA"]
         ]
@@ -750,7 +814,7 @@ class Sprites:
      
         french_scarves_data = [
             ["CRIMSONS", "BLUES", "YELLOWS", "CYANS", "ORANGES", "LIMES"],
-            ["GREENS", "RAINBONS", "BLACKS", "SPIKESS", "WHITES"],
+            ["GREENS", "RAINBOWS", "BLACKS", "SPIKESS", "WHITES"],
             ["PINKS", "PURPLES", "MULTIS", "INDIGOS"]
         ]
 
@@ -858,9 +922,58 @@ class Sprites:
             for col, tie in enumerate(ties):
                 self.make_group("ties", (col, row), f"collars{tie}")
          # french_scarves
-        for row, frenchscarvess in enumerate( french_scarves_data):
+        for row, frenchscarvess in enumerate(french_scarves_data):
             for col, frenchscarf in enumerate(frenchscarvess):
                 self.make_group("french_scarves", (col, row), f"collars{frenchscarf}")
+        
+        # ster
+        for row, sterflowers in enumerate(ster_data):
+            for col, sterflower in enumerate(sterflowers):
+                self.make_group("sterflowers", (col, row), f"acc_ster{sterflower}")
+
+        # boosbandanas
+        for row, boosbandanas_accessories in enumerate(boos_data):
+            for col, boosbandana in enumerate(boosbandanas_accessories):
+                self.make_group("boosbandanas_accessories", (col, row), f"collars{boosbandana}")
+                
+        # sailor moon
+        for row, sailormoon in enumerate(sailormoon_data):
+            for col, sailormoonacc in enumerate(sailormoon):
+                self.make_group("sailormoon", (col, row), f"acc_sailor{sailormoonacc}")
+        # random
+        for row, randomaccessories in enumerate(random_data):
+            for col, randomaccessory in enumerate(randomaccessories):
+                self.make_group("randomaccessories", (col, row), f"acc_random{randomaccessory}")
+        
+        # beetles
+        for row, beetle_accessories in enumerate(beetle_accessories_data):
+            for col, beetleaccessory in enumerate(beetle_accessories):
+                self.make_group("beetle_accessories", (col, row), f"acc_beetle{beetleaccessory}")
+        for row, beetle_feathers in enumerate(beetle_feathers_data):
+            for col, beetlefeather in enumerate(beetle_feathers):
+                self.make_group("beetle_feathers", (col, row), f"acc_beetlefeathers{beetlefeather}")
+
+        # moipas
+        for row, lanternacc in enumerate(lantern_data):
+            for col, lanternaccessory in enumerate(lanternacc):
+                self.make_group("lanternacc", (col, row), f"acc_lantern{lanternaccessory}")
+        for row, heartacc in enumerate(heart_data):
+            for col, heartaccessory in enumerate(heartacc):
+                self.make_group("heartacc", (col, row), f"acc_heart{heartaccessory}")
+        for row, moipaacc in enumerate(moipa_data):
+            for col, moipaaccessory in enumerate(moipaacc):
+                self.make_group("moipaacc", (col, row), f"acc_moipa{moipaaccessory}")
+
+        # pride
+        for row, pridebowcollars in enumerate(pridebowcollars_data):
+            for col, bowcollar in enumerate(pridebowcollars):
+                self.make_group("pridebowcollars", (col, row), f"collars{bowcollar}")
+        for row, pridecollars in enumerate(pridecollars_data):
+            for col, collar in enumerate(pridecollars):
+                self.make_group("pridecollars", (col, row), f"collars{collar}")
+        for row, pridenyloncollars in enumerate(pridenyloncollars_data):
+            for col, nyloncollar in enumerate(pridenyloncollars):
+                self.make_group("pridenyloncollars", (col, row), f"collars{nyloncollar}")
     def load_symbols(self):
         """
         loads clan symbols

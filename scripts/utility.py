@@ -4518,6 +4518,38 @@ def generate_sprite(
                             new_sprite.blit(
                                 sprites.sprites["acc_tail2" + accessory + cat_sprite], (0, 0)
                             )
+                        elif accessory in cat.pelt.ster_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_ster" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.sailormoon:
+                            new_sprite.blit(
+                                sprites.sprites["acc_sailor" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.randomaccessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_random" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.beetle_accessories:
+                            new_sprite.blit(
+                                sprites.sprites["acc_beetle" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.beetle_feathers:
+                            new_sprite.blit(
+                                sprites.sprites["acc_beetlefeathers" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.lanternacc:
+                            new_sprite.blit(
+                                sprites.sprites["acc_lantern" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.heartacc:
+                            new_sprite.blit(
+                                sprites.sprites["acc_heart" + accessory + cat_sprite], (0, 0)
+                            )
+                        elif accessory in cat.pelt.moipaacc:
+                            new_sprite.blit(
+                                sprites.sprites["acc_moipa" + accessory + cat_sprite], (0, 0)
+                            )
 
         # apply experimental sparkle layer
         if dead and cat.status.group == CatGroup.STARCLAN:

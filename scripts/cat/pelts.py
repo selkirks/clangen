@@ -99,14 +99,29 @@ class Pelt:
                         "OAK LEAVES", "CATMINT", "MAPLE SEED", "LAUREL", "BULB WHITE", "BULB YELLOW", "BULB ORANGE", "BULB PINK", "BULB BLUE", "CLOVERTAIL", "DAISYTAIL",
                         "LILY OF THE VALLEY", "HEATHER", "SNAPDRAGON", "GORSE",
                         "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS", "ROSE MALLOW", "PICKLEWEED", "GOLDEN CREEPING JENNY", "DESERT WILLOW", "CACTUS FLOWER",
-                        "PRAIRIE FIRE", "VERBENA EAR", "VERBENA PELT",
+                        "PRAIRIE FIRE", "VERBENA EAR", "VERBENA PELT", "WISTERIA2"
                         ]
     wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY1", "CICADA WINGS", "BLACK CICADA", "ROAD RUNNER FEATHER",]
   
-    tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVERTAIL", "DAISYTAIL", "DAISY CORSAGE"]
+    tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVERTAIL", "DAISYTAIL", "DAISY CORSAGE", "WISTERIA2", "CELESTIAL CHARMS", "GOLDEN CELESTIAL CHARMS", "SILVER CELESTIAL CHARMS"]
     
     bows_accessories = ["CRIMSONBOWS", "BLUEBOWS", "YELLOWBOWS", "CYANBOWS", "REDBOWS", "LIMEBOWS","GREENBOWS", "RAINBOWBOWS", "BLACKBOWS", "SPIKESBOWS", "WHITEBOWS",
                         "PINKBOWS", "PURPLEBOWS", "MULTIBOWS", "INDIGOBOWS"]
+    
+    beetle_accessories = ["FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT",
+                          "BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF",
+                          "BLUETAILED SKINK", "BLACKHEADED ORIOLE", "MILKSNAKE", "WORM FRIEND"]
+    beetle_feathers = ["THRUSH FEATHERS", "GOLDFINCH FEATHERS", "DOVE FEATHERS", "PEACOCK FEATHERS", "HAWK FEATHERS",
+                       "BLUE JAY FEATHERS", "ROBIN FEATHERS", "FIERY FEATHERS", "SUNSET FEATHERS", "SILVER FEATHERS"]
+    
+    ster_accessories = ["POPPYFLOWER", "JUNIPERBERRY", "DAISYFLOWER", "BORAGEFLOWER", "OAK", "BEECH", "LAURELLEAVES",
+                        "COLTSFOOT", "BINDWEED", "TORMENTIL", "BRIGHTEYE", "LAVENDERWREATH", "YARROW"]
+    
+    lanternacc = ["LANTERN"]
+
+    heartacc = ["HEART CHARM"]
+
+    moipaacc = ["SILVER CELESTIAL CHARMS", "GOLDEN STAR CHARM", "GOLDEN CELESTIAL CHARMS", "CELESTIAL CHARMS"]
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
@@ -117,7 +132,7 @@ class Pelt:
         "PURPLEBOW", "MULTIBOW", "INDIGOBOW", "CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON",
         "REDNYLON", "LIMENYLON", "GREENNYLON", "RAINBOWNYLON",
         "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
-        "CRIMSONBANDANA", "BLUEBANDANA", "YELLOWANDANA", "CYANBANDANA", "REDBANDANA",
+        "CRIMSONBANDANA", "BLUEBANDANA", "YELLOWBANDANA", "CYANBANDANA", "REDBANDANA",
         "LIMEBANDANA" ,"GREENBANDANA", "RAINBOWBANDANA", "BLACKBANDANA", "SPIKESBANDANA", "WHITEBANDANA",
         "PINKBANDANA", "PURPLEBANDANA", "MULTIBANDANA", "INDIGOBANDANA",
         "CRIMSONTEETHCOLLAR", "BLUETEETHCOLLAR", "YELLOWTEETHCOLLAR", "CYANTEETHCOLLAR", "REDTEETHCOLLAR",
@@ -131,7 +146,20 @@ class Pelt:
         "PINKS", "PURPLES", "MULTIS", "INDIGOS",
         "CRIMSONH", "BLUEH", "YELLOWH", "CYANH", "REDH", "LIMEH",
         "GREENH", "RAINBOWH", "BLACKH", "SPIKESH", "WHITEH", "PINKH",
-        "PURPLEH", "MULTIH", "INDIGOH"
+        "PURPLEH", "MULTIH", "INDIGOH",
+        "CRIMSONBOO", "MAGENTABOO", "PINKBOO", "BLOODORANGEBOO", "ORANGEBOO", "YELLOWBOO",
+        "LIMEBOO", "DARKGREENBOO", "GREENBOO", "TEALBOO", "LIGHTBLUEBOO", "BLUEBOO",
+        "DARKBLUEBOO", "LIGHTPURPLEBOO", "DARKPURPLEBOO", "VIBRANTPURPLEBOO", "PINKREDBOO",
+        "WHITEBOO", "LIGHTGRAYBOO", "GRAYBOO", "BROWNBOO", "BLACKBOO",
+        "PRIDENYLONCOLLAR", "NEPTUNICNYLONCOLLAR", "PANNYLONCOLLAR", "URANICNYLONCOLLAR", "LESBIANNYLONCOLLAR",
+        "MLMCNYLONCOLLAR", "AROMANTICNYLONCOLLAR", "MULTISEXUALNYLONCOLLAR", "QUEERNYLONCOLLAR", "AROACENYLONCOLLAR",
+        "POLYNYLONCOLLAR", "OMNINYLONCOLLAR", "ACENYLONCOLLAR", "ABRONYLONCOLLAR", "BINYLONCOLLAR", "TRANSFEMBOW",
+        "DEMIBOYBOW", "PANGENDERBOW", "TRANSMASCBOW", "INTERSEXBOW", "GENDERQUEERBOW",
+        "AGENDERBOW", "GENDERVOIDBOW", "DEMIGIRLBOW", "DEMINONBINARYBOW", "DEMIFLUIDBOW",
+        "BIGENDERBOW", "NONBINARYBOW", "TRANSBOW", "GENDERFLUIDBOW", "GIRLFLUXCOLLAR", "MINCOLLAR",
+        "GENDERFLUXCOLLAR", "BOYFLUXCOLLAR", "GENDERFAUNCOLLAR", "GENDERFAECOLLAR", "GRAYAROCOLLAR",
+        "XENOCOLLAR", "NINCOLLAR", "VOIDPUNKCOLLAR", "UNLABELEDCOLLAR", "GENDERFLORCOLLAR",
+        "GRAYACECOLLAR", "FINCOLLAR", "ENBYFLUXCOLLAR"
         
     ]
     flower_accessories = ["DAISY", "DIANTHUS", "BLEEDING HEARTS", "FRANGIPANI", "BLUE GLORY",
@@ -158,9 +186,16 @@ class Pelt:
     deadInsect_accessories = ["LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH BUTTERFLY", "DAPPLED MONARCH",
                       "POLYPHEMUS MOTH", "MINT MOTH"
                     ]
+    randomaccessories = ["DOGWOOD", "TREESTAR", "RACCOON LEAF", "WHITE RACCOON LEAF", "CHERRY BLOSSOM", "DAISY BLOOM",
+            "FEATHERS", "RED ROSE", "WHITE ROSE", "PEBBLE", "PEBBLE COLLECTION", "GOLDEN FLOWER",
+            "DANDELIONS", "DANDELION PUFFS", "DICE", "GOLDEN EARRINGS"
+                    ]
 
     aliveInsect_accessories = ["BROWN SNAIL", "RED SNAIL", "WORM", "BLUE SNAIL", "ZEBRA ISOPOD", "DUCKY ISOPOD", "DAIRY COW ISOPOD",
                            "BEETLEJUICE ISOPOD", "BEE", "RED LADYBUG", "ORANGE LADYBUG", "YELLOW LADYBUG"
+                    ]
+    sailormoon = ["MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK",
+                  "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"
                     ]
 
     fruit_accessories = ["OGRASPBERRY", "BLACKBERRY", "GOLDEN RASPBERRY", "CHERRY", "YEW"
@@ -176,6 +211,24 @@ class Pelt:
         "PLANT": plant_accessories,
         "WILD": wild_accessories,
         "COLLAR": collars,
+        "BONE": bone_accessories,
+        "BUTTERFLIES": butterflies_accessories,
+        "STUFF": stuff_accessories,
+        "BEETLE": beetle_accessories,
+        "BEETLEFEATHER": beetle_feathers,
+        "STERFLOWERS": ster_accessories,
+        "LANTERN": lanternacc,
+        "HEARTACC": heartacc,
+        "MOIPAACC": moipaacc,
+        "PLANT2": plant2_accessories,
+        "SNAKE": snake_accessories,
+        "SMALLANIMAL": smallAnimal_accessories,
+        "DEADINSECT": deadInsect_accessories,
+        "RANDOM": randomaccessories,
+        "ALIVEINSECT": aliveInsect_accessories,
+        "FRUIT": fruit_accessories,
+        "SAILOR": sailormoon,
+        "CRAFTED": crafted_accessories
     }
 
     tail_accessories = [
@@ -211,6 +264,16 @@ class Pelt:
         "BLUEBELLS",
         "LILY OF THE VALLEY",
         "SNAPDRAGON",
+        "BUNNY HAT",
+        "WINTER HAT",
+        "PARTY HAT",
+        "SANTA HAT",
+        "BANANA HAT",
+        "PINK SCARF",
+        "BLUETAILED SKINK",
+        "BLACKHEADED ORIOLE",
+        "MILKSNAKE",
+        "WORM FRIEND",
         "NETTLE",
         "HEATHER",
         "GORSE",
@@ -286,6 +349,41 @@ class Pelt:
         "POLYPHEMUS MOTH",
         "MINT MOTH",
         "ROSY MAPLE MOTH",
+        "POPPYFLOWER",
+        "JUNIPERBERRY",
+        "DAISYFLOWER",
+        "BORAGEFLOWER",
+        "OAK",
+        "BEECH",
+        "LAURELLEAVES",
+        "COLTSFOOT",
+        "BINDWEED",
+        "TORMENTIL",
+        "BRIGHTEYE",
+        "LAVENDERWREATH",
+        "YARROW",
+        "MOON",
+        "MERCURY",
+        "MARS",
+        "JUPITER",
+        "VENUS",
+        "URANUS",
+        "NEPTUNE",
+        "PLUTO",
+        "SATURN",
+        "MINI MOON",
+        "CHERRY BLOSSOM",
+        "DAISY BLOOM",
+        "PEBBLE", 
+        "GOLDEN FLOWER",
+        "DANDELIONS",
+        "DANDELION PUFFS",
+        "DICE",
+        "GOLDEN EARRINGS",
+        "COWBOY HAT",
+        "HEART CHARM",
+        "SILVER CELESTIAL CHARMS",
+        "GOLDEN STAR CHARM",
         "ROSE MALLOW",
         "PICKLEWEED",
         "DESERT WILLOW",
@@ -297,13 +395,22 @@ class Pelt:
     body_accessories = [
         "HERBS",
         "PETALS",
+        "RED ROSE",
+        "WHITE ROSE",
+        "PEBBLE COLLECTION",
+        "FEATHERS",
         "DRY HERBS",
         "SNAKE",
         "RIBS",
         "BAT WINGS",
+        "DOGWOOD",
+        "TREESTAR",
         "CANIDAE SKULL",
         "DEER ANTLERS",
         "RAM HORN",
+        "BAT WING SUIT",
+        "PINK BOWTIE",
+        "GRAY BOWTIE",
         "GOAT HORN",
         "OX SKULL",
         "TEETH COLLAR",
@@ -337,6 +444,7 @@ class Pelt:
         "BLACKBIRD",
         "ROBIN",
         "JAY",
+        "FROG FRIEND",
         "THRUSH",
         "CARDINAL",
         "MAGPIE",
@@ -344,7 +452,8 @@ class Pelt:
         "TAN RABBIT",
         "TAN AND WHITE RABBIT",
         "TAN VITILIGO RABBIT",
-        "RAT", "WHITE MOUSE",
+        "RAT",
+        "WHITE MOUSE",
         "BLACK MOUSE",
         "GRAY MOUSE",
         "BROWN MOUSE",
@@ -366,6 +475,11 @@ class Pelt:
         "CLAY DAISY POT",
         "CLAY AMANITA POT",
         "CLAY BROWNCAP POT",
+        "CRYSTAL BALL",
+        "TUXEDO MASK",
+        "RACCOON LEAF",
+        "WHITE RACCOON LEAF",
+        "LANTERN"
     ]
 
     tail_accessories = [
@@ -399,6 +513,21 @@ class Pelt:
         "INDIGOBOWS",
         "VERBENA PELT",
         "ROAD RUNNER FEATHER",
+        "THRUSH FEATHERS",
+        "GOLDFINCH FEATHERS",
+        "DOVE FEATHERS",
+        "PEACOCK FEATHERS",
+        "HAWK FEATHERS",
+        "BLUE JAY FEATHERS",
+        "ROBIN FEATHERS",
+        "FIERY FEATHERS",
+        "SUNSET FEATHERS",
+        "SILVER FEATHERS",
+        "WISTERIA2",
+        "GOLDEN CREEPING JENNY",
+        "CELESTIAL CHARMS",
+        "GOLDEN CELESTIAL CHARMS",
+        "SILVER CELESTIAL CHARMS"
     ]
     """Holds all appearance information for a cat. """
 
@@ -883,6 +1012,7 @@ class Pelt:
                 choice(Pelt.bone_accessories),
                 choice(Pelt.butterflies_accessories),
                 choice(Pelt.stuff_accessories),
+                choice(Pelt.ster_accessories),
                 choice(Pelt.bows_accessories)]
             )]
         else:
