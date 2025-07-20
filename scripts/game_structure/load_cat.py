@@ -8,13 +8,22 @@ import i18n
 import ujson
 
 from scripts.cat.cats import Cat, BACKSTORIES
-from scripts.game_structure.localization import get_new_pronouns
-from ..cat.personality import Personality
+from scripts.clan import clan_class
+from ..cat.enums import CatGroup, CatRank
 from scripts.cat.pelts import Pelt
 from scripts.cat_relations.inheritance import Inheritance
+from scripts.game_structure.game.switches import (
+    switch_get_value,
+    switch_set_value,
+    Switch,
+)
+from scripts.game_structure.localization import get_new_pronouns
 from scripts.housekeeping.version import SAVE_VERSION_NUMBER
+from scripts.game_structure import constants
 from .game_essentials import game
+from ..cat.personality import Personality
 from ..cat.skills import CatSkills
+from ..cat.status import StatusDict
 from ..housekeeping.datadir import get_save_dir
 
 logger = logging.getLogger(__name__)
@@ -24,14 +33,16 @@ def load_cats():
     try:
         json_load()
     except FileNotFoundError as e:
-        game.switches["error_message"] = "Can't find clan_cats.json!"
-        game.switches["traceback"] = e
-        raise
+        switch_set_value(Switch.error_message, "Can't find clan_cats.json!")
+        switch_set_value(Switch.traceback, e)
 
 
 def json_load():
+    Cat.all_cats.clear()
+    Cat.all_cats_list.clear()
+    Cat.dead_cats.clear()
     all_cats = []
-    clanname = game.switches["clan_list"][0]
+    clanname = switch_get_value(Switch.clan_list)[0]
     clan_cats_json_path = f"{get_save_dir()}/{clanname}/clan_cats.json"
     with open(
         f"resources/dicts/conversion_dict.json", "r", encoding="utf-8"
@@ -41,23 +52,35 @@ def json_load():
         with open(clan_cats_json_path, "r", encoding="utf-8") as read_file:
             cat_data = ujson.loads(read_file.read())
     except PermissionError as e:
-        game.switches["error_message"] = f"Can\t open {clan_cats_json_path}!"
-        game.switches["traceback"] = e
+        switch_set_value(Switch.error_message, f"Can\t open {clan_cats_json_path}!")
+        switch_set_value(Switch.traceback, e)
         raise
     except ujson.JSONDecodeError as e:
-        game.switches["error_message"] = f"{clan_cats_json_path} is malformed!"
-        game.switches["traceback"] = e
+        switch_set_value(Switch.error_message, f"{clan_cats_json_path} is malformed!")
+        switch_set_value(Switch.traceback, e)
         raise
 
     # create new cat objects
     for i, cat in enumerate(cat_data):
         try:
+            if isinstance(cat["status"], str):
+                # this sucks, but we need to get the actual str age to make sure nothing goes wonky
+                age = None
+                for key_age in Cat.age_moons.keys():
+                    if cat["moons"] in range(
+                        Cat.age_moons[key_age][0], Cat.age_moons[key_age][1] + 1
+                    ):
+                        age = key_age
+                status_dict = {"rank": cat["status"], "age": age}
+            else:
+                status_dict = cat["status"]
             try:
                 new_cat = Cat(ID=cat["ID"],
                         prefix=cat["name_prefix"],
                         suffix=cat["name_suffix"],
                         specsuffix_hidden=(cat["specsuffix_hidden"] if 'specsuffix_hidden' in cat else False),
-                        status=cat["status"],
+                        status_dict=status_dict,
+                        backstory=cat["backstory"],
                         parent1=cat["parent1"],
                         parent2=cat["parent2"],
                         parent3=cat.get("parent3"),
@@ -69,24 +92,27 @@ def json_load():
                         chim_white=cat["chim_white"] if 'chim_white' in cat else None,
                         chim_pattern=cat["chimera_pattern"] if "chimera_pattern" in cat else cat["genotype"]["chimerapattern"],
                         loading_cat=True)
-            except:
+                if cat.get("group"):
+                    new_cat.group = cat.get("group")
+                if cat.get("exiled"):
+                    new_cat.exile()
+                elif not new_cat.status.is_outsider and cat.get("outside"):
+                    new_cat.become_lost()
+            except Exception as e:
                 if cat.get("genotype", False):
-                    traceback.print_exc()
-                    try:
-                        cat['gender'] = cat['genotype']['sex']
-                    except:
-                        cat['gender'] = cat['genotype']['gender']
+                    raise e
                 new_cat = Cat(ID=cat["ID"],
                         prefix=cat["name_prefix"],
                         suffix=cat["name_suffix"],
                         specsuffix_hidden=(cat["specsuffix_hidden"] if 'specsuffix_hidden' in cat else False),
                         gender=cat['gender'],
-                        status=cat["status"],
+                        status_dict=status_dict,
                         parent1=cat["parent1"],
+                        parent2=cat["parent2"],
                         parent3=cat.get("parent3"),
                         moons=cat["moons"],
                         loading_cat=True)
-                
+
             new_cat.pelt = Pelt(
                 new_cat.phenotype,
                 tint=cat.get('tint', 'none'),
@@ -120,6 +146,8 @@ def json_load():
                 accessory=cat["accessory"],
                 opacity=cat["opacity"] if "opacity" in cat else 100,
             )
+
+            # Runs a bunch of appearance-related conversion of old stuff.
             new_cat.pelt.check_and_convert()
 
             # converting old specialty saves into new scar parameter
@@ -172,7 +200,6 @@ def json_load():
             new_cat.no_kits = cat["no_kits"]
             new_cat.no_mates = cat["no_mates"] if "no_mates" in cat else False
             new_cat.no_retire = cat["no_retire"] if "no_retire" in cat else False
-            new_cat.exiled = cat["exiled"]
             new_cat.driven_out = cat["driven_out"] if "driven_out" in cat else False
 
             if "skill_dict" in cat:
@@ -188,7 +215,7 @@ def json_load():
                     else:
                         new_cat.backstory = "clanborn"
                 new_cat.skills = CatSkills.get_skills_from_old(
-                    cat["skill"], new_cat.status, new_cat.moons
+                    cat["skill"], new_cat.status.rank, new_cat.moons
                 )
 
             new_cat.mate = cat["mate"] if type(cat["mate"]) is list else [cat["mate"]]
@@ -197,21 +224,43 @@ def json_load():
             new_cat.previous_mates = (
                 cat["previous_mates"] if "previous_mates" in cat else []
             )
-            new_cat.dead = cat["dead"]
+
+            # checking for old dead
+            if cat.get("dead") or cat.get("df"):
+                if not new_cat.status.group or not new_cat.status.group.is_afterlife():
+                    if cat.get("df"):
+                        new_cat.status.send_to_afterlife(target=CatGroup.DARK_FOREST)
+                    elif cat.get("outside"):
+                        new_cat.status.send_to_afterlife(
+                            target=CatGroup.UNKNOWN_RESIDENCE
+                        )
+                    else:
+                        new_cat.status.send_to_afterlife(target=CatGroup.STARCLAN)
+
+                # these should properly change the cat's status to align with old bool info
+                if not new_cat.dead and cat.get("exiled"):
+                    new_cat.status.exile_from_group()
+                if (
+                    not new_cat.dead
+                    and cat.get("outside")
+                    and not new_cat.status.is_outsider
+                ):
+                    new_cat.status.become_lost()
+
             new_cat.dead_for = cat["dead_moons"]
             new_cat.experience = cat["experience"]
             new_cat.apprentice = cat["current_apprentice"]
             new_cat.former_apprentices = cat["former_apprentices"]
-            new_cat.df = cat["df"] if "df" in cat else False
 
-            new_cat.outside = cat["outside"] if "outside" in cat else False
             new_cat.faded_offspring = (
                 cat["faded_offspring"] if "faded_offspring" in cat else []
             )
             new_cat.prevent_fading = (
                 cat["prevent_fading"] if "prevent_fading" in cat else False
             )
-            new_cat.favourite = cat["favourite"] if "favourite" in cat else False
+            new_cat.favourite = cat["favourite"] if "favourite" in cat else 0
+            if new_cat.favourite == True:
+                new_cat.favourite = 1
 
             if "died_by" in cat or "scar_event" in cat or "mentor_influence" in cat:
                 new_cat.convert_history(
@@ -226,11 +275,14 @@ def json_load():
                 key = f" ID #{cat['ID']} "
             else:
                 key = f" at index {i} "
-            game.switches[
-                "error_message"
-            ] = f"Cat{key}in clan_cats.json is missing {e}!"
-            game.switches["traceback"] = e
+            switch_set_value(
+                Switch.error_message, f"Cat{key}in clan_cats.json is missing {e}!"
+            )
+            switch_set_value(Switch.traceback, e)
             raise
+
+    version_info = clan_class.load_clan()
+    version_convert(version_info)
 
     # replace cat ids with cat objects and add other needed variables
     for cat in all_cats:
@@ -252,10 +304,11 @@ def json_load():
             logger.exception(
                 f"There was an error loading relationships for cat #{cat}."
             )
-            game.switches[
-                "error_message"
-            ] = f"There was an error loading relationships for cat #{cat}."
-            game.switches["traceback"] = e
+            switch_set_value(
+                Switch.error_message,
+                f"There was an error loading relationships for cat #{cat}.",
+            )
+            switch_set_value(Switch.traceback, e)
             raise
 
         cat.inheritance = Inheritance(cat)
@@ -267,14 +320,15 @@ def json_load():
             logger.exception(
                 f"There was an error when thoughts for cat #{cat} are created."
             )
-            game.switches[
-                "error_message"
-            ] = f"There was an error when thoughts for cat #{cat} are created."
-            game.switches["traceback"] = e
+            switch_set_value(
+                Switch.error_message,
+                f"There was an error when thoughts for cat #{cat} are created.",
+            )
+            switch_set_value(Switch.traceback, e)
             raise
 
         # Save integrety checks
-        if game.config["save_load"]["load_integrity_checks"]:
+        if constants.CONFIG["save_load"]["load_integrity_checks"]:
             save_check()
 
 

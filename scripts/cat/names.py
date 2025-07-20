@@ -7,9 +7,12 @@ import random
 
 import ujson
 
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import constants
+from scripts.cat.enums import CatRank, CatGroup
 from scripts.housekeeping.datadir import get_save_dir
 from .alt_namer import Namer
+from scripts.game_structure.game_essentials import game
+from scripts.clan_package.settings.clan_settings import get_clan_setting
 
 
 class Name:
@@ -77,7 +80,6 @@ class Name:
                             names_dict["special_suffixes"][_tmp[0]] = _tmp[1]
 
     def __init__(self,
-                 Cat=None,
                  cat=None,
                  prefix=None,
                  suffix=None,
@@ -113,7 +115,7 @@ class Name:
         name_fixpref = False
         # Set prefix
         if prefix is None:
-            self.give_prefix(Cat, biome, no_suffix=True if suffix == "" else False)
+            self.give_prefix(cat, biome, no_suffix=True if suffix == "" else False)
             # needed for random dice when we're changing the Prefix
             name_fixpref = True
 
@@ -125,9 +127,14 @@ class Name:
                 name_fixpref = False
 
         if self.suffix and not load_existing_name:
-            self.check_name(Cat, name_fixpref)
+            self.check_name(cat, name_fixpref)
+            if get_clan_setting("ancient names") and get_clan_setting("modded names"):
+                self.suffix = " " + self.suffix[0].upper() + self.suffix[1:]
+                self.specsuffix_hidden = True
     
-    def check_name(self, Cat, name_fixpref):
+    def check_name(self, cat, name_fixpref):
+        if not self.suffix:
+            return
         # Prevent triple letter names from joining prefix and suffix from occurring (ex. Beeeye)
         possible_three_letter = (
             self.prefix[-2:] + self.suffix[0],
@@ -169,7 +176,7 @@ class Name:
         ):
             # check if random die was for prefix
             if name_fixpref and not(self.cat and hasattr(self.cat, "pelt") and not self.cat.pelt.scars and self.suffix == "scar"):
-                self.give_prefix(Cat, self.biome)
+                self.give_prefix(cat, self.biome)
             else:
                 self.suffix = None
                 self.give_suffix(self.skills, self.personality, self.biome, self.honour)
@@ -197,7 +204,7 @@ class Name:
     def filter(self, all, used):
         return [x for x in all if x not in used]
 
-    def change_prefix(self, Cat, moons, biome, change):
+    def change_prefix(self, cat, moons, biome, change):
         self.moons = moons
 
         colour_changed = False
@@ -234,27 +241,29 @@ class Name:
         elif self.prefix in self.mod_prefixes['general']['big'] and self.phenotype.height_label in ['teacup', 'tiny', 'small', 'below average', 'average']:
             colour_changed = True
             
-        chance = game.config["cat_name_controls"]["prefix_change_chance"][change]
+        chance = constants.CONFIG["cat_name_controls"]["prefix_change_chance"][change]
         if colour_changed:
-            chance /= game.config["cat_name_controls"]["prefix_change_chance"]["pelt-change-modifier"]
+            chance /= constants.CONFIG["cat_name_controls"]["prefix_change_chance"]["pelt-change-modifier"]
 
         if random.random() < (1/chance):
-            self.give_prefix(Cat, biome)
+            self.give_prefix(cat, biome)
+
+        self.check_name(cat, True)
 
 
     # Generate possible prefix
-    def give_prefix(self, Cat, biome, no_suffix=False):
+    def give_prefix(self, cat, biome, no_suffix=False):
         if not self.phenotype:
             self.prefix = random.choice(self.names_dict["normal_prefixes"])
             return
 
         try:
-            used_prefixes = [cat.name.prefix for cat in Cat.all_cats.values() if not cat.dead and not cat.status in ['kittypet', 'loner', 'rogue', 'former Clancat']]
+            used_prefixes = [c.name.prefix for c in cat.all_cats.values() if c.status.group == cat.status.group]
         except:
             used_prefixes = []
 
         namer = Namer(used_prefixes, self.mod_prefixes, self.moons, self.phenotype, self.chimpheno)
-        if not game.clan or (game.clan.clan_settings["modded names"] and game.clan.clan_settings['new prefixes']):
+        if get_clan_setting("modded names") and get_clan_setting('new prefixes'):
             self.prefix = namer.start()
             if no_suffix:
                 if self.prefix == "Striped":
@@ -326,7 +335,7 @@ class Name:
         with contextlib.suppress(NameError):
             if self.prefix in names.prefix_history:
                 # do this recurively until a name that isn't on the history list is chosses.
-                self.give_prefix(Cat, biome, no_suffix)
+                self.give_prefix(cat, biome, no_suffix)
                 # prevent infinite recursion
                 if len(names.prefix_history) > 0:
                     names.prefix_history.pop(0)
@@ -340,7 +349,7 @@ class Name:
     # Generate possible suffix
     def give_suffix(self, skills, personality, biome, honour=None):
         try:
-            if self.mod_suffixes and (not game.clan or (game.clan.clan_settings["modded names"] and game.clan.clan_settings['new suffixes'])) and skills and personality:
+            if self.mod_suffixes and (not game.clan or (get_clan_setting('modded names') and get_clan_setting('new suffixes'))) and skills and personality:
                 options = []
                 for i in range(4):
                     try:
@@ -468,37 +477,29 @@ class Name:
             else:
                 self.suffix = random.choice(self.names_dict["normal_suffixes"])
 
+        self.check_name(self.cat, False)
+
     def __repr__(self):
         # Handles predefined suffixes (such as newborns being kit),
         # then suffixes based on ages (fixes #2004, just trust me)
 
         # Handles suffix assignment with outside cats
-        if self.cat.status not in ["rogue", "loner", "kittypet"] and self.cat.outside:
-            adjusted_status: str = ""
-            if self.cat.moons >= 15:
-                adjusted_status = "warrior"
-            elif self.cat.moons >= 6:
-                adjusted_status = "apprentice"
-            if self.cat.moons == 0:
-                adjusted_status = "newborn"
-            elif self.cat.moons < 6:
-                adjusted_status = "kitten"
-            elif self.cat.moons < 12:
-                adjusted_status = "apprentice"
-            else:
-                adjusted_status = "warrior"
+        if self.cat.status.is_former_clancat:
+            old_rank = self.cat.status.find_prior_clan_rank()
 
-            if adjusted_status != "warrior" and not self.specsuffix_hidden:
-                return (
-                    self.prefix + self.names_dict["special_suffixes"][adjusted_status]
-                )
+            if (
+                old_rank in self.names_dict["special_suffixes"]
+                and not self.specsuffix_hidden
+            ):
+                return self.prefix + self.names_dict["special_suffixes"][old_rank]
+
         if (
-            self.cat.status in self.names_dict["special_suffixes"]
+            self.cat.status.rank in self.names_dict["special_suffixes"]
             and not self.specsuffix_hidden
         ):
-            return self.prefix + self.names_dict["special_suffixes"][self.cat.status]
-        if game.config["fun"]["april_fools"]:
-            return f"{self.prefix}egg"
+            return (
+                self.prefix + self.names_dict["special_suffixes"][self.cat.status.rank]
+            )
         return self.prefix + self.suffix
 
 

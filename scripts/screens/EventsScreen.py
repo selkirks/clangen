@@ -3,15 +3,24 @@ from typing import Dict
 import i18n
 import pygame
 import pygame_gui
+from pygame_gui.core import ObjectID
 
 from scripts.cat.cats import Cat
 from scripts.event_class import Single_Event
 from scripts.events import events_class
 from scripts.game_structure import image_cache
+from scripts.game_structure.game.settings import game_setting_get
+from scripts.game_structure.game.switches import (
+    Switch,
+    switch_get_value,
+    switch_set_value,
+    switch_set_dict_value,
+)
 from scripts.game_structure.game_essentials import game
 from scripts.game_structure.screen_settings import MANAGER
 from scripts.game_structure.ui_elements import (
     UIModifiedScrollingContainer,
+    UIDropDownContainer,
     IDImageButton,
     UISurfaceImageButton,
     CatButton,
@@ -57,6 +66,7 @@ class EventsScreen(Screens):
         "other clans",
         "miscellaneous",
     ]
+    current_clan = None
 
     def __init__(self, name):
         super().__init__(name)
@@ -70,6 +80,9 @@ class EventsScreen(Screens):
         self.events_frame = None
         self.event_buttons = {}
         self.alert = {}
+        self.choose_group_buttons = {}
+        self.choose_group_button = None
+        self.current_clan = None
 
         self.event_display = None
         self.event_display_containers = []
@@ -136,14 +149,20 @@ class EventsScreen(Screens):
                 self.make_cat_buttons(element)
             elif element in self.cat_profile_buttons:
                 self.save_scroll_position()
-                game.switches["cat"] = element.cat_id
+                switch_set_value(Switch.cat, element.cat_id)
                 self.change_screen("profile screen")
+            elif element in self.choose_group_buttons.values():
+                self.choose_living_dropdown.close()
+                self.current_clan = next(filter(lambda c: c.name == element.text.replace("Clan", ""), game.clan.all_clans), game.clan).enum
+                self.change_clan()
+                self.timeskip_done(True)
             else:
                 self.save_scroll_position()
                 self.menu_button_pressed(event)
 
+          
         # KEYBIND CONTROLS
-        elif game.settings["keybinds"]:
+        elif game_setting_get("keybinds"):
             # ON PRESSING A KEY
             if event.type == pygame.KEYDOWN:
                 # LEFT ARROW
@@ -158,14 +177,25 @@ class EventsScreen(Screens):
                 elif event.key == pygame.K_RETURN:
                     self.handle_tab_switch(self.selected_display)
 
+    def change_clan(self):
+        curr_clan = next(filter(lambda c: c.enum == self.current_clan, game.clan.all_clans), game.clan)
+        
+        self.clan_info["symbol"].set_image(pygame.transform.scale(
+                    clan_symbol_sprite(curr_clan), ui_scale_dimensions((100, 100))
+                ))
+        self.update_heading_text(f"{curr_clan.name}Clan")
+
     def save_scroll_position(self):
         """
-        adds current event display vert scroll bar position to game.switches["saved_scroll_positions"] dict
+        adds current event display vert scroll bar position to switches.saved_scroll_positions dict
         """
         if self.event_display.vert_scroll_bar:
-            game.switches["saved_scroll_positions"][self.current_display] = (
+            position = (
                 self.event_display.vert_scroll_bar.scroll_position
                 / self.event_display.vert_scroll_bar.scrollable_height
+            )
+            switch_set_dict_value(
+                Switch.saved_scroll_positions, self.current_display, position
             )
 
     def handle_tab_select(self, event):
@@ -244,10 +274,14 @@ class EventsScreen(Screens):
             manager=MANAGER,
         )
 
+        if self.current_clan not in [game.clan.enum] + [c for c in game.clan.other_clans]:
+            self.current_clan = game.clan.enum
+        curr_clan = next(filter(lambda c: c.enum == self.current_clan, game.clan.all_clans), game.clan)
+
         self.clan_info["symbol"] = pygame_gui.elements.UIImage(
             ui_scale(pygame.Rect((227, 105), (100, 100))),
             pygame.transform.scale(
-                clan_symbol_sprite(game.clan), ui_scale_dimensions((100, 100))
+                clan_symbol_sprite(curr_clan), ui_scale_dimensions((100, 100))
             ),
             object_id=f"clan_symbol",
             starting_height=1,
@@ -293,6 +327,62 @@ class EventsScreen(Screens):
             manager=MANAGER,
             sound_id="timeskip",
         )
+
+        if game.clan.clancount == 'multiclan':
+            if not self.current_clan:
+                self.current_clan = game.clan.enum
+            self.choose_group_button = UISurfaceImageButton(
+                ui_scale(pygame.Rect((500, 218), (190, 34))),
+                "screens.list.choose_group",
+                get_button_dict(ButtonStyles.DROPDOWN, (190, 34)),
+                container=self.event_screen_container,
+                object_id="@buttonstyles_dropdown",
+                manager=MANAGER,
+                starting_height=1,
+            )
+            
+            self.living_groups_container = pygame_gui.elements.UIAutoResizingContainer(
+                ui_scale(pygame.Rect((500, 250), (0, 0))),
+                container=self.event_screen_container,
+                object_id="#choose_group_container",
+                manager=MANAGER,
+                starting_height=1,
+            )
+            self.living_groups_container.change_layer(10)
+            self.choose_group_buttons[game.clan.enum] = UISurfaceImageButton(
+                ui_scale(pygame.Rect((0, 0), (190, 34))),
+                game.clan.name + "Clan",
+                get_button_dict(ButtonStyles.DROPDOWN, (190, 34)),
+                container=self.living_groups_container,
+                object_id=ObjectID(class_id="@buttonstyles_dropdown", object_id=None),
+                starting_height=2,
+                manager=MANAGER,
+            )
+            y_pos = 32
+            for clan in game.clan.all_clans:
+                self.choose_group_buttons[clan.enum] = UISurfaceImageButton(
+                    ui_scale(pygame.Rect((0, y_pos), (190, 34))),
+                    clan.name + "Clan",
+                    get_button_dict(ButtonStyles.DROPDOWN, (190, 34)),
+                    container=self.living_groups_container,
+                    object_id=ObjectID(class_id="@buttonstyles_dropdown", object_id=None),
+                    starting_height=2,
+                    manager=MANAGER,
+                )
+                y_pos += 32
+
+            self.choose_living_dropdown = UIDropDownContainer(
+                self.living_groups_container.relative_rect,
+                container=self.event_screen_container,
+                object_id="#choose_living_dropdown",
+                starting_height=1,
+                parent_button=self.choose_group_button,
+                child_button_container=self.living_groups_container,
+                manager=MANAGER,
+            )
+
+            self.choose_living_dropdown.close()
+            self.choose_living_dropdown.show()
 
         self.full_event_display_container = pygame_gui.core.UIContainer(
             ui_scale(pygame.Rect((45, 266), (700, 700))),
@@ -340,11 +430,12 @@ class EventsScreen(Screens):
 
         self.make_event_scrolling_container()
         self.open_involved_cat_button = None
+        self.update_display_events_lists()
         self.update_events_display()
 
         # Draw and disable the correct menu buttons.
         self.set_disabled_menu_buttons(["events_screen"])
-        self.update_heading_text(f"{game.clan.name}Clan")
+        self.update_heading_text(f"{curr_clan.name}Clan")
         self.show_menu_buttons()
 
     def display_change_save(self) -> Dict:
@@ -367,9 +458,9 @@ class EventsScreen(Screens):
         self.handle_tab_switch(self.current_display, is_rescale=True)
         MANAGER.update(1)
 
-        if game.switches["saved_scroll_positions"].get(self.current_display):
+        if switch_get_value(Switch.saved_scroll_positions).get(self.current_display):
             self.event_display.vert_scroll_bar.set_scroll_from_start_percentage(
-                game.switches["saved_scroll_positions"][self.current_display]
+                switch_get_value(Switch.saved_scroll_positions)[self.current_display]
             )
 
     def make_event_scrolling_container(self):
@@ -536,23 +627,37 @@ class EventsScreen(Screens):
         Categorize events from game.cur_events_list into display categories for screen
         """
 
+        if not self.current_clan:
+            self.current_clan = game.clan.enum
+
         self.all_events = [
-            x for x in game.cur_events_list if "interaction" not in x.types
+            x for x in game.cur_events_list if "interaction" not in x.types 
+            and (not x.clan or x.clan == self.current_clan) 
         ]
         self.ceremony_events = [
-            x for x in game.cur_events_list if "ceremony" in x.types
+            x for x in game.cur_events_list if "ceremony" in x.types 
+            and (not x.clan or x.clan == self.current_clan)
         ]
         self.birth_death_events = [
-            x for x in game.cur_events_list if "birth_death" in x.types
+            x for x in game.cur_events_list if "birth_death" in x.types 
+            and (not x.clan or x.clan == self.current_clan)
         ]
         self.relation_events = [
-            x for x in game.cur_events_list if "relation" in x.types
+            x for x in game.cur_events_list if "relation" in x.types 
+            and (not x.clan or x.clan == self.current_clan)
         ]
-        self.health_events = [x for x in game.cur_events_list if "health" in x.types]
+        self.health_events = [
+            x for x in game.cur_events_list if "health" in x.types 
+            and (not x.clan or x.clan == self.current_clan)
+        ]
         self.other_clans_events = [
-            x for x in game.cur_events_list if "other_clans" in x.types
+            x for x in game.cur_events_list if "other_clans" in x.types 
+            and (not x.clan or x.clan == self.current_clan)
         ]
-        self.misc_events = [x for x in game.cur_events_list if "misc" in x.types]
+        self.misc_events = [
+            x for x in game.cur_events_list if "misc" in x.types 
+            and (not x.clan or x.clan == self.current_clan)
+        ]
 
     def update_events_display(self):
         """
@@ -608,7 +713,7 @@ class EventsScreen(Screens):
 
         alternate_color = (
             pygame.Color(87, 76, 55)
-            if game.settings["dark mode"]
+            if game_setting_get("dark mode")
             else pygame.Color(167, 148, 111)
         )
 
@@ -626,7 +731,7 @@ class EventsScreen(Screens):
                 MANAGER,
                 container=self.event_display,
                 element_id="event_panel",
-                object_id="#dark" if game.settings["dark mode"] else None,
+                object_id="#dark" if game_setting_get("dark mode") else None,
                 margins={"top": 0, "bottom": 0, "left": 0, "right": 0},
                 anchors=anchor,
             )
@@ -701,9 +806,9 @@ class EventsScreen(Screens):
         )
 
         # set saved scroll position
-        if game.switches["saved_scroll_positions"].get(self.current_display):
+        if switch_get_value(Switch.saved_scroll_positions).get(self.current_display):
             self.event_display.vert_scroll_bar.set_scroll_from_start_percentage(
-                game.switches["saved_scroll_positions"][self.current_display]
+                switch_get_value(Switch.saved_scroll_positions)[self.current_display]
             )
 
     def update_list_buttons(self):
@@ -719,13 +824,16 @@ class EventsScreen(Screens):
         super().on_use()
         self.loading_screen_on_use(self.events_thread, self.timeskip_done)
 
-    def timeskip_done(self):
+    def timeskip_done(self, clanswitch=False):
         """Various sorting and other tasks that must be done with the timeskip is over."""
 
-        game.switches["saved_scroll_positions"] = {}
+        switch_set_value(Switch.saved_scroll_positions, {})
 
-        if get_living_clan_cat_count(Cat) == 0:
-            GameOver("events screen")
+        if not clanswitch:
+            if get_living_clan_cat_count(Cat) == 0:
+                GameOver("events screen")
+            self.current_clan = game.clan.enum
+            self.change_clan()
 
         self.update_display_events_lists()
 

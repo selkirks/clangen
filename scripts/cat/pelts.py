@@ -4,7 +4,9 @@ from re import sub
 
 import i18n
 
+import scripts.game_structure.screen_settings
 from scripts.cat.sprites import sprites
+from scripts.game_structure import constants
 from scripts.game_structure.game_essentials import game
 from .phenotype import Phenotype
 from scripts.game_structure.localization import get_lang_config
@@ -96,9 +98,10 @@ class Pelt:
                         "BLUEBELLS", "LILY OF THE VALLEY", "SNAPDRAGON", "HERBS", "PETALS", "NETTLE", "HEATHER", "GORSE", "JUNIPER", "RASPBERRY", "LAVENDER",
                         "OAK LEAVES", "CATMINT", "MAPLE SEED", "LAUREL", "BULB WHITE", "BULB YELLOW", "BULB ORANGE", "BULB PINK", "BULB BLUE", "CLOVERTAIL", "DAISYTAIL",
                         "LILY OF THE VALLEY", "HEATHER", "SNAPDRAGON", "GORSE",
-                        "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS"
+                        "DRY HERBS", "DRY CATMINT", "DRY NETTLES", "DRY LAURELS", "ROSE MALLOW", "PICKLEWEED", "GOLDEN CREEPING JENNY", "DESERT WILLOW", "CACTUS FLOWER",
+                        "PRAIRIE FIRE", "VERBENA EAR", "VERBENA PELT",
                         ]
-    wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY1", "CICADA WINGS", "BLACK CICADA"]
+    wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "MOTH WINGS", "ROSY MOTH WINGS", "MORPHO BUTTERFLY", "MONARCH BUTTERFLY1", "CICADA WINGS", "BLACK CICADA", "ROAD RUNNER FEATHER",]
   
     tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVERTAIL", "DAISYTAIL", "DAISY CORSAGE"]
     
@@ -166,6 +169,26 @@ class Pelt:
     crafted_accessories = ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL", "LEAF BOW"
                     ]
     tail2_accessories = ["SEAWEED", "DAISY CORSAGE"]
+
+    # this is used for acc-giving events, only change if you're adding a new category tag to the event filter
+    # adding a category here will automatically update the event editor's options
+    acc_categories = {
+        "PLANT": plant_accessories,
+        "WILD": wild_accessories,
+        "COLLAR": collars,
+    }
+
+    tail_accessories = [
+        "RED FEATHERS",
+        "BLUE FEATHERS",
+        "JAY FEATHERS",
+        "GULL FEATHERS",
+        "SPARROW FEATHERS",
+        "CLOVER",
+        "DAISY",
+        "WISTERIA",
+        "GOLDEN CREEPING JENNY",
+    ]
 
     head_accessories = [
         "MOTH WINGS",
@@ -262,7 +285,13 @@ class Pelt:
         "DAPPLED MONARCH",
         "POLYPHEMUS MOTH",
         "MINT MOTH",
-        "ROSY MAPLE MOTH"
+        "ROSY MAPLE MOTH",
+        "ROSE MALLOW",
+        "PICKLEWEED",
+        "DESERT WILLOW",
+        "CACTUS FLOWER",
+        "PRAIRIE FIRE",
+        "VERBENA EAR",
     ]
 
     body_accessories = [
@@ -367,7 +396,9 @@ class Pelt:
         "PINKBOWS",
         "PURPLEBOWS",
         "MULTIBOWS",
-        "INDIGOBOWS"
+        "INDIGOBOWS",
+        "VERBENA PELT",
+        "ROAD RUNNER FEATHER",
     ]
     """Holds all appearance information for a cat. """
 
@@ -402,7 +433,7 @@ class Pelt:
         self.cat_sprites["sick_adult"] = 18
         self.cat_sprites["sick_young"] = 19
         if phenotype.length == "longhaired" and phenotype.longtype == 'long' and phenotype.cornish[0] == "R" and phenotype.lykoi[0] == 'Ly' and phenotype.sedesp[0] != "re" and 'brush' not in phenotype.furtype:    
-            self.length="long"
+            self.length = "long"
             if self.cat_sprites['adult'] < 9:
                 self.cat_sprites['adult'] += 3
                 self.cat_sprites['young adult'] += 3
@@ -411,23 +442,25 @@ class Pelt:
             if phenotype.length == "mediumhaired":
                 self.length = 'medium'
             else:
-                self.length="short"
+                self.length = "short"
             if self.cat_sprites['adult'] > 8:
                 self.cat_sprites['adult'] -= 3
                 self.cat_sprites['young adult'] -= 3
                 self.cat_sprites['senior adult'] -= 3
         else:
-            self.length="hairless"
+            self.length = "hairless"
             if self.cat_sprites['adult'] > 8:
                 self.cat_sprites['adult'] -= 3
                 self.cat_sprites['young adult'] -= 3
                 self.cat_sprites['senior adult'] -= 3
-        self.accessory = accessory
-        self.paralyzed = paralyzed
+        self.rebuild_sprite = True
+        self._accessory = accessory
+        self._paralyzed = paralyzed
         self.opacity = opacity
         self.scars = scars if isinstance(scars, list) else []
         self.tint = tint
         self.white_patches_tint = white_patches_tint
+        self.screen_scale = scripts.game_structure.screen_settings.screen_scale
         self.cat_sprites = {
             "kitten": kitten_sprite if kitten_sprite is not None else 0,
             "adolescent": adol_sprite if adol_sprite is not None else 0,
@@ -450,6 +483,24 @@ class Pelt:
         elif self.cat_sprites["adult"] < 9 and self.length == "long":
             self.cat_sprites["adult"] = randint(9, 11)
             self.cat_sprites["para_adult"] = 15
+
+    @property
+    def accessory(self):
+        return self._accessory
+
+    @accessory.setter
+    def accessory(self, val):
+        self.rebuild_sprite = True
+        self._accessory = val
+
+    @property
+    def paralyzed(self):
+        return self._paralyzed
+
+    @paralyzed.setter
+    def paralyzed(self, val):
+        self.rebuild_sprite = True
+        self._paralyzed = val
 
     @staticmethod
     def generate_new_pelt(phenotype, age:str="adult"):
@@ -742,7 +793,7 @@ class Pelt:
         that are stored in Pelt, and converts them. To be run when loading a cat in."""
 
         if self.length == "long":
-            if self.cat_sprites["adult"] not in [9, 10, 11]:
+            if self.cat_sprites["adult"] not in (9, 10, 11):
                 if self.cat_sprites["adult"] == 0:
                     self.cat_sprites["adult"] = 9
                 elif self.cat_sprites["adult"] == 1:
@@ -754,7 +805,7 @@ class Pelt:
                 self.cat_sprites["para_adult"] = 16
         else:
             self.cat_sprites["para_adult"] = 15
-        if self.cat_sprites["senior"] not in [12, 13, 14]:
+        if self.cat_sprites["senior"] not in (12, 13, 14):
             if self.cat_sprites["senior"] == 3:
                 self.cat_sprites["senior"] = 12
             elif self.cat_sprites["senior"] == 4:

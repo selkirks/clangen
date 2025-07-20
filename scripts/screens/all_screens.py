@@ -7,6 +7,7 @@ from .ChooseMentorScreen import ChooseMentorScreen
 from .ClanScreen import ClanScreen
 from .ClanSettingsScreen import ClanSettingsScreen
 from .ClearingScreen import ClearingScreen
+from .EventEditScreen import EventEditScreen
 from .EventsScreen import EventsScreen
 from .FamilyTreeScreen import FamilyTreeScreen
 from .LeaderDenScreen import LeaderDenScreen
@@ -24,6 +25,7 @@ from .SpriteInspectScreen import SpriteInspectScreen
 from .StartScreen import StartScreen
 from .SwitchClanScreen import SwitchClanScreen
 from .WarriorDenScreen import WarriorDenScreen
+from .PredictOffspringScreen import PredictOffspringScreen
 
 # ---------------------------------------------------------------------------- #
 #                                  UI RULES                                    #
@@ -68,6 +70,7 @@ class AllScreens:
     settings_screen = SettingsScreen("settings screen")
     clan_settings_screen = ClanSettingsScreen("clan settings screen")
     start_screen = StartScreen("start screen")
+    event_edit_screen = EventEditScreen("event edit screen")
     switch_clan_screen = SwitchClanScreen("switch clan screen")
 
     patrol_screen = PatrolScreen("patrol screen")
@@ -81,6 +84,8 @@ class AllScreens:
     family_tree_screen = FamilyTreeScreen("family tree screen")
     mediation_screen = MediationScreen("mediation screen")
     change_gender_screen = ChangeGenderScreen("change gender screen")
+    
+    predict_offspring_screen = PredictOffspringScreen("predict offspring screen")
 
     @classmethod
     def rebuild_all_screens(cls):
@@ -118,3 +123,4 @@ class AllScreens:
         cls.family_tree_screen = FamilyTreeScreen("family tree screen")
         cls.mediation_screen = MediationScreen("mediation screen")
         cls.change_gender_screen = ChangeGenderScreen("change gender screen")
+        cls.predict_offspring_screen = PredictOffspringScreen("predict offspring screen")

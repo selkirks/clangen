@@ -19,7 +19,9 @@
               "exists",
               "unknown",
               "litter",
-              "dead"
+              "dead",
+              "change_clan",
+              "change_clan_rev"
             ]
           },
           {
@@ -37,6 +39,10 @@
           {
             "type": "string",
             "pattern": "^parent:([,0-9]+)$"
+          },
+          {
+            "type": "string",
+            "pattern": "^sibling:([,0-9]+)$"
           },
           {
             "type": "string",
@@ -246,6 +252,7 @@
         "otherclan2",
         "otherclan3",
         "otherclan4",
+        "otherclan5",
         "ostracized_warrior",
         "disgraced1",
         "disgraced2",

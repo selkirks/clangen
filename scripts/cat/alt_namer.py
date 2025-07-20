@@ -74,6 +74,7 @@ class Namer():
         #mixing solid + tabby or different base-colours changes tabby pattern to blotched
         if set_one[0] != set_two[0] and set_one[0] not in ['ginger', 'cream'] and set_two[0] not in ['ginger', 'cream']:
             tabby['pattern'] = 'blotched'
+            tabby['tortie_red'] = 'blotched'
         
         #mixing different bases
 
@@ -201,7 +202,7 @@ class Namer():
             tabby['tortie_red'] = 'mackerel'
         else:
             tabby['tortie_red'] = 'spotted'
-        if base in ['ginger', 'cream'] or (phenotype.agouti[0] != "a") or (phenotype.ext[0] not in ['Eg', 'E']) or 'light smoke' in phenotype.silvergold:
+        if base in ['ginger', 'cream'] or (phenotype.agouti[0] != "a") or (phenotype.ext[0] not in ['Eg', 'E']) or ('smoke' in phenotype.silvergold and 14 > phenotype.wbsum > 9):
             tabby['pattern'] = tabby['tortie_red']
 
             if base not in ['ginger', 'cream'] and ('smoke' in phenotype.silvergold or 'masked' in phenotype.silvergold or phenotype.ext[0] == "Eg" or (('charcoal' in phenotype.tabtype or phenotype.ruftype == 'low') and phenotype.wbtype in ['low', 'medium'])):
@@ -237,6 +238,18 @@ class Namer():
 
     def filter(self, all, used, filter_out):
         return [x for x in all if x not in used and x not in filter_out]
+
+    def use_tortie_red(self, params):
+        if not params[1] or len(params) == 6 and not params[5]:
+            return False
+        elif random() < 0.25:
+            return True
+        else:
+            pattern = self.phenotype.tortiepattern if self.phenotype.tortiepattern else self.chimera_pheno.chimerapattern
+            base = self.phenotype.maincolour
+            if random() < 0.75 and len(pattern) > 2 and ('rufoused' in base or 'medium' in base or 'low' in base):
+                return True
+        return False
 
     def get_extras(self, tortie, tabby, white):
         extra_prefixes = []
@@ -299,6 +312,8 @@ class Namer():
 
         try:
             possible_prefixes = possible_prefixes[tabby['type']]
+            if isinstance(possible_prefixes, dict):
+                possible_prefixes = possible_prefixes[white + '_white']
             if base in ['ginger', 'cream', 'blue', 'lilac', 'fawn'] and tabby['type'] == 'silver':
                 try:
                     possible_prefixes += self.all_prefixes[base]['tortie' if tortie else 'plain']['tabby'][tabby['pattern']]['regular'][white + '_white']
@@ -317,6 +332,8 @@ class Namer():
 
         try:
             extra_prefixes = extra_prefixes[tabby['type']]
+            if isinstance(possible_prefixes, dict):
+                possible_prefixes = possible_prefixes[white + '_white']
             if base in ['ginger', 'cream', 'blue', 'lilac', 'fawn'] and tabby['type'] == 'silver':
                 try:
                     extra_prefixes += self.all_prefixes[base]['tortie' if tortie else 'plain']['tabby'][tabby['pattern']]['regular'][white + '_white']
@@ -421,7 +438,7 @@ class Namer():
             #naming for point colour
 
             if random() < 0.1:
-                if (self.phenotype.tortiepattern or params[5]) and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+                if self.use_tortie_red(params):
                     return self.tabby('ginger', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'silver'}, params[3])
                 elif self.phenotype.tortiepattern and random() < 0.33:
                     return self.solid(params[0], False, params[2]['pattern'], params[3])
@@ -429,7 +446,7 @@ class Namer():
                     return self.solid(params[0], params[1], params[2]['pattern'], params[3])
 
             #overall colourpoint names
-            if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+            if self.use_tortie_red(params):
                 if params[4] == 'sepia':
                     return self.tabby('ginger', False, {'pattern' : params[2]['tortie_red'], 'type' : 'silver'}, params[3])
                 else:
@@ -443,7 +460,7 @@ class Namer():
             params[0] = 'golden shaded'
             return self.golden(params)
         
-        if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+        if self.use_tortie_red(params):
             return self.tabby('ginger', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'silver' if self.phenotype.silver[0] == 'I' else 'regular'}, params[3])
             
         if params[2]['type'] == 'dark' or params[2]['pattern'] == '':
@@ -476,7 +493,7 @@ class Namer():
             #naming for point colour
 
             elif random() < 0.1:
-                if (self.phenotype.tortiepattern or params[5]) and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+                if self.use_tortie_red(params):
                     return self.tabby('cream', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
                 elif self.phenotype.tortiepattern and random() < 0.33:
                     return self.solid(params[0], False, params[2]['pattern'], params[3])
@@ -484,7 +501,7 @@ class Namer():
                     return self.solid(params[0], params[1], params[2]['pattern'], params[3])
 
             #overall colourpoint names
-            elif self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+            elif self.use_tortie_red(params):
                 if params[4] == 'sepia':
                     return self.tabby('cream', False, {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
                 else:
@@ -497,7 +514,7 @@ class Namer():
         if params[2]['type'] == 'golden' and params[2]['pattern'] == 'ticked':
             return self.cream(params)
         
-        if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+        if self.use_tortie_red(params):
             return self.tabby('cream', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
             
         if params[2]['type'] == 'dark' or params[2]['pattern'] == '':
@@ -536,7 +553,7 @@ class Namer():
             #naming for point colour
 
             if random() < 0.1:
-                if (self.phenotype.tortiepattern or params[5]) and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+                if self.use_tortie_red(params):
                     return self.tabby('ginger', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'silver'}, params[3])
                 elif self.phenotype.tortiepattern and random() < 0.33:
                     return self.solid(params[0], False, params[2]['pattern'], params[3])
@@ -544,7 +561,7 @@ class Namer():
                     return self.solid(params[0], params[1], params[2]['pattern'], params[3])
 
             #overall colourpoint names
-            if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+            if self.use_tortie_red(params):
                 if params[4] == 'sepia':
                     return self.tabby('ginger', False, {'pattern' : params[2]['tortie_red'], 'type' : 'silver'}, params[3])
                 else:
@@ -558,7 +575,7 @@ class Namer():
             params[0] = 'golden shaded'
             return self.golden(params)
         
-        if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+        if self.use_tortie_red(params):
             return self.tabby('ginger', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'silver' if self.phenotype.silver[0] == 'I' else 'regular'}, params[3])
             
         if params[2]['type'] == 'dark' or params[2]['pattern'] == '':
@@ -584,7 +601,7 @@ class Namer():
             if self.moons == 0 and 'C' not in self.phenotype.pointgene and params[4] != 'sepia':
                 return self.white('white')
             elif self.moons == 0 and params[4] == 'sepia':
-                return self.lilac(params)
+                return self.fawn(params)
 
             #naming for body colour
             elif (params[2]['pattern'] != '' and params[2]['type'] != 'dark') or random() < 0.25:
@@ -596,7 +613,7 @@ class Namer():
             #naming for point colour
 
             elif random() < 0.1:
-                if (self.phenotype.tortiepattern or params[5]) and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+                if self.use_tortie_red(params):
                     return self.tabby('cream', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
                 elif self.phenotype.tortiepattern and random() < 0.33:
                     return self.solid(params[0], False, params[2]['pattern'], params[3])
@@ -604,7 +621,7 @@ class Namer():
                     return self.solid(params[0], params[1], params[2]['pattern'], params[3])
 
             #overall colourpoint names
-            elif self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+            elif self.use_tortie_red(params):
                 if params[4] == 'sepia':
                     return self.tabby('cream', False, {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
                 else:
@@ -617,7 +634,7 @@ class Namer():
         if params[2]['type'] == 'golden' and params[2]['pattern'] == 'ticked':
             return self.cream(params)
         
-        if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+        if self.use_tortie_red(params):
             return self.tabby('cream', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
             
         if params[2]['type'] == 'dark' or params[2]['pattern'] == '':
@@ -653,7 +670,7 @@ class Namer():
             #naming for point colour
 
             if random() < 0.1:
-                if (self.phenotype.tortiepattern or params[5]) and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+                if self.use_tortie_red(params):
                     return self.tabby('ginger', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'silver'}, params[3])
                 elif self.phenotype.tortiepattern and random() < 0.33:
                     return self.solid(params[0], False, params[2]['pattern'], params[3])
@@ -661,7 +678,7 @@ class Namer():
                     return self.solid(params[0], params[1], params[2]['pattern'], params[3])
 
             #overall colourpoint names
-            if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+            if self.use_tortie_red(params):
                 if not((self.phenotype.pointgene[0] != 'C' and self.phenotype.pointgene != ['cb', 'cb']) or 'masked' in self.phenotype.silvergold or (self.moons < 4 and self.phenotype.fevercoat) or (self.moons > 3 and self.phenotype.bleach[0] == 'lb')):
                     return self.tabby('ginger', False, {'pattern' : params[2]['tortie_red'], 'type' : 'silver'}, params[3])
                 else:
@@ -675,7 +692,7 @@ class Namer():
             params[0] = 'golden shaded'
             return self.golden(params)
         
-        if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+        if self.use_tortie_red(params):
             return self.tabby('ginger', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'silver' if self.phenotype.silver[0] == 'I' else 'regular'}, params[3])
             
         if params[2]['type'] == 'dark' or params[2]['pattern'] == '':
@@ -706,7 +723,7 @@ class Namer():
             #naming for point colour
 
             if random() < 0.1:
-                if (self.phenotype.tortiepattern or params[5]) and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+                if self.use_tortie_red(params):
                     return self.tabby('cream', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
                 elif self.phenotype.tortiepattern and random() < 0.33:
                     return self.solid(params[0], False, params[2]['pattern'], params[3])
@@ -714,7 +731,7 @@ class Namer():
                     return self.solid(params[0], params[1], params[2]['pattern'], params[3])
 
             #overall colourpoint names
-            if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+            if self.use_tortie_red(params):
                 if not((self.phenotype.pointgene[0] != 'C' and self.phenotype.pointgene != ['cb', 'cb']) or 'masked' in self.phenotype.silvergold or (self.moons < 4 and self.phenotype.fevercoat) or (self.moons > 3 and self.phenotype.bleach[0] == 'lb')):
                     return self.tabby('cream', False, {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
                 else:
@@ -727,7 +744,7 @@ class Namer():
         if params[2]['type'] == 'golden' and params[2]['pattern'] == 'ticked':
             return self.cream(params)
         
-        if self.phenotype.tortiepattern and (random() < 0.25 or (len(self.phenotype.tortiepattern) > 2 and 'rev' not in self.phenotype.tortiepattern[0])):
+        if self.use_tortie_red(params):
             return self.tabby('cream', params[1], {'pattern' : params[2]['tortie_red'], 'type' : 'regular'}, params[3])
             
         if params[2]['type'] == 'dark' or params[2]['pattern'] == '':
