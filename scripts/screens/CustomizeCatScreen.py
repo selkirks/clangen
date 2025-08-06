@@ -17,6 +17,7 @@ from scripts.ui.generate_box import get_box, BoxStyles
 from scripts.ui.generate_button import get_button_dict, ButtonStyles
 from scripts.ui.get_arrow import get_arrow
 from scripts.utility import ui_scale, generate_sprite, ui_scale_dimensions, get_text_box_theme
+from scripts.utility import update_sprite
 
 """ Cat customization UI """
 
@@ -487,6 +488,7 @@ class CustomizeCatScreen(Screens):
             pygame.transform.scale(self.cat_image, ui_scale_dimensions((250, 250))),
             manager=MANAGER
         )
+        update_sprite(self.the_cat)
 
     # TODO: create a subclass for dropdowns, create a function to regenerate dropdowns with specific data
     def handle_event(self, event):
