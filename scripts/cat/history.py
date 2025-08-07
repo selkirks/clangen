@@ -286,7 +286,7 @@ class History:
                 SkillPath.TRACKER: ["tracking down scents"],
                 SkillPath.ARTISTAN: ["decorating dens"],
                 SkillPath.GUARDIAN: ["guarding the camp"],
-                 SkillPath.GARDENER: ["tending to the Clan's garden"],
+                SkillPath.GARDENER: ["tending to the Clan's garden"],
                 SkillPath.UNKNOWN: ["connecting to the unknown residence"],
                 SkillPath.WAKEFUL: ["vigilance"],
                 SkillPath.DELIVERER: ["delivering kits"],

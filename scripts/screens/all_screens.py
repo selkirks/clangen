@@ -24,6 +24,7 @@ from .ListScreen import ListScreen
 from .MakeClanScreen import MakeClanScreen
 from .MedDenScreen import MedDenScreen
 from .MediationScreen import MediationScreen
+from .CustomizeStatsScreen import CustomizeStatsScreen
 from .PatrolScreen import PatrolScreen
 from .ProfileScreen import ProfileScreen
 from .RelationshipScreen import RelationshipScreen
@@ -64,6 +65,7 @@ class AllScreens:
     ceremony_screen = CeremonyScreen("ceremony screen")
     role_screen = RoleScreen("role screen")
     customize_cat_screen = CustomizeCatScreen("customize cat screen")
+    customize_stats_screen = CustomizeStatsScreen("customize stats screen")
     sprite_inspect_screen = SpriteInspectScreen("sprite inspect screen")
 
     make_clan_screen = MakeClanScreen("make clan screen")
@@ -117,6 +119,7 @@ class AllScreens:
         cls.ceremony_screen = CeremonyScreen("ceremony screen")
         cls.role_screen = RoleScreen("role screen")
         cls.customize_cat_screen = CustomizeCatScreen("customize cat screen")
+        cls.customize_stats_screen = CustomizeStatsScreen("customize stats screen")
         cls.sprite_inspect_screen = SpriteInspectScreen("sprite inspect screen")
 
         cls.make_clan_screen = MakeClanScreen("make clan screen")
