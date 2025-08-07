@@ -558,5 +558,54 @@
                 ]
             }
         ]
+    },
+    {
+        "patrol_id": "life_sc_sam2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_sc",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're wandering around when you see two StarClan warriors fighting. It hasn't gotten physical yet, but it looks like it will soon.",
+        "decline_text": "It's not your problem if they're fighting. You walk away.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You intervene, using the skills your mentor taught you while you were alive to de-escalate the situation. The warriors thank you for your help.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You step in cheerily, as if no argument was going on. You crack a joke, making both of the cats laugh despite the heated argument that had been happening merely moments ago. Thanks to your jokes, they eventually calm down and discuss the argument in a more civil manner.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["p_l"],
+                "stat_cluster": ["silly"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You intervene, trying to listen to both sides, but the warriors seem to be getting more and more angry, both with each other and with you. A different mediator steps in to diffuse the situation.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You skip in between the two, cracking a joke that you thought would make them laugh, but they don't laugh. After a few moments of silence, they go back to their heated argument.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["p_l"],
+                "stat_cluster": ["silly"]
+            }
+        ]
     }
 ]

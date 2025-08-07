@@ -81,7 +81,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_kit_default",
+        "patrol_art": "lifegen_kit3",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -291,7 +291,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_kit_default",
+        "patrol_art": "lifegen_kit9",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -361,7 +361,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_kit_default",
+        "patrol_art": "lifegen_kit11",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -501,7 +501,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_kit_default",
+        "patrol_art": "lifegen_kit15",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -643,7 +643,7 @@
         "tags": [
             "shunned"
         ],
-        "patrol_art": "lg_kit_default",
+        "patrol_art": "lg_shunned_kit_J1",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -681,7 +681,7 @@
             "border",
             "shunned"
         ],
-        "patrol_art": "lg_kit_default",
+        "patrol_art": "life_shunkit_Guy1",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -723,5 +723,457 @@
                 "weight": 20
             }
         ]
-    }
+    },
+    {
+        "patrol_id": "lifegen_kit_R1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_kit_default",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "It's time for some mischief! You've managed to slip away from keen eyes, and now you've found a private spot in the camp. What's next? Can you sneak out of camp from here?",
+        "decline_text": "It's not very fun by yourself. You return to the nursery for company.",
+        "chance_of_success": 60,
+        "success_outcomes": [
+            {
+                "text": "You scrabble your way through the camp wall and are rewarded with fresh new sights! You play make believe for ages before a patrol finds you. Their relief doesn't negate their scolding - but that can't dampen your joy. This was so worth it!",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Sneaking out of camp sounds fun, but you know the risk outweighs the reward. It isn't worth it. Instead, you come up with a fun make believe game until you grow tired. The queens actually jump when you reappear - and before they can scold you you're fast asleep in your nest.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You try to make your way through the camp wall, but r_w-unlawful catches you before you can get through. {PRONOUN/r_w-unlawful/subject/CAP}{VERB/r_w-unlawful/'re/'s} seemingly a little impressed you found this spot - but reminds you of the dangers beyond the camp walls. Despite the scolding, you're indulged in a game, and you have a new respect for r_w-unlawful.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You try to make your way through the camp wall, but it's just too strong. You entertain yourself with a make believe game about spying on an enemy clan until you're caught by r_w and returned to the nursery with a scolding.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Sneaking out of camp sounds fun, but you know the risk outweighs the reward. Just as you decide to entertain yourself here, r_w finds you and gives you a scolding. Could have been worse...",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "sc_kitten_c0",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_sc",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You can't help but wonder what your full name would have been had you not entered StarClan so early. Perhaps you could ask d_c what suffix they think would fit you?",
+        "decline_text": "Maybe it's best not to dwell upon what could have been.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "d_c ponders for a bit. They'd imagine a vibrant suffix like -shine or -spark would reflect a cat like you who thrives on being noticed.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "attention-seeker"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a bold and intimidating suffix like -claw or -fang would reflect a cat like you who always stands their ground.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "bullying"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a melodic suffix like -song or -heart would reflect a cat like you who charms everyone they meet.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "charming"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a dreamy suffix like -cloud or -sky would reflect a cat like you who is often lost in thought.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "daydreamer"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a strong and structured suffix like -stone or -strike would reflect a cat like you who shows such discipline.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "disciplined"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a powerful suffix like -storm or -fire would reflect a cat like you who never backs down from danger.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "fearless"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a prickly suffix like -thorn or -frost would reflect a cat like you who appears standoffish -- until cats get to know you better.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "grumpy"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a genuine suffix like -truth or -heart would reflect a cat like you who values honesty above all else.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "honest"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a quick suffix like -flight or -rush would reflect a cat like you who acts on instinct.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "impulsive"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a clever suffix like -whisker or -sage would reflect a cat like you who always seems to know best.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "know-it-all"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine that the only suffix right for you is -star.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "leader-like"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine an cool suffix like -shade or -mask would reflect a cat like you who knows how to get their way.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "manipulative"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a lively suffix like -screech or -chatter would reflect a cat like you who rarely stays quiet.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "noisy"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a fiery suffix like -flame or -spirit would reflect a cat like you who puts their whole heart into everything.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "passionate"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a calm suffix like -pool or -stone would reflect a cat like you who waits for the right moment.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "patient"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a gentle suffix like -flower or -breeze would reflect a cat like you who always shows courtesy.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "polite"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a quiet suffix like -whisper or -shadow would reflect a cat like you who prefers staying unnoticed.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "quiet"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a mysterious suffix like -shade or -mist would reflect a cat like you who always keeps their secrets.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "secretive"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a delicate suffix like -fern or -dawn would reflect a cat like you who's thoughtful and often self-conscious.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "self-conscious"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a soft suffix like -mouse or -willow would reflect a cat like you who is quiet and reserved around others.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "shy"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a cautious suffix like -hare or -finch would reflect a cat like you who startles easily.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "skittish"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a proud suffix like -stride or -nose would reflect a cat like you who carries themselves confidently.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "smug"
+                ],
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "d_c ponders for a bit. They'd imagine a sweet suffix like -berry or -petal would reflect a cat like you whose kindness is unmistakable.",
+	    "can_have_stat": ["p_l"],
+                "stat_trait": [
+                    "sweet"
+                ],
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+{
+                "text": "d_c thinks and thinks but can't seem to find a suffix that would fit you.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "d_c declines to answer. After all, only warriors have earned the right to their full names -- not kits who hadn't even caught a piece of prey.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+{
+        "patrol_id": "dead_patrol_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "dead_patrol_J1",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Today, you've decided to go wandering. Eventually, you stumble across a piece of StarClan territory that is a bit darker and scarier-looking than the rest. You've been warned about this sort of thing... maybe you should leave.",
+        "decline_text": "You turn around and run back into the familiar hunting grounds of your home.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You trot forward into the spooky forest, unperturbed by the foreboding whine that seems to be coming from the trees. This place doesn't seem as scary as the StarClan queens always tell you. You spend some time investigating the abandoned forest before turning around to go home, hoping no one noticed your absence.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": [
+                    "p_l"
+                ],
+                "stat_skill": [
+                    "DARK,1"
+                ]
+            },
+            {
+                "text": "As you make your way forward, the lush trees of StarClan fade into a forest of dark, spindly, leafless stalks. It makes you a bit sad... maybe they don't get enough rain around here? You remind yourself to come back later with some water-- maybe this patch just needs to be upkept more carefully.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You make your way forwards, but you're suddenly tripped by a large, dirty paw you hadn't seen before. A ghostly cat pokes their head out of the shadows and tells you you don't belong here, and that this place is only for bad, bad cats. You're not sure if that's true... they don't seem evil. You eventually agree to go back home, on the condition that you'll be allowed to come back and play with them later!",
+                "exp": 0,
+                "weight": 10,
+                "new_cat": [
+                    [
+                        "meeting",
+                        "residence:df",
+                        "clan_status",
+                        "status:warrior"
+                    ]
+                ]
+            },
+            {
+                "text": "You walk forward, the ground cold beneath your paws. You're not able to find much in the spooky forest, but you have fun exploring. No one has noticed your brief departure when you return home.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You're no scaredy-mouse! Tentatively sniffing the ground, you creep into the darkness... for about three tail-lengths before a twig snaps and sends you back the way you came. Maybe you'll come back later when you're better prepared.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You don't get far into the creepy forest before stumbling into a puddle. The black water tries its best to swallow you as you climb your way out, cold and shaking. When you return to your StarClan friends, you're scolded for wandering off.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You make your way through the thick undergrowth and into the spooky forest as all light from StarClan disappears behind you. You don't make it far, however, before a pair of eyes opens up in the shadows ahead. You turn and run. Whoever that is can have the forest for themself!",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You try to enter the forest, but before you know it, a large, ghostly cat has stepped in your way. The cat growls and tells you to get back to StarClan, which you happily obey.",
+                "exp": 0,
+                "weight": 10
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_ur_sam1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "ur_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_ur",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "This Unknown Residence place is so boring! You miss all of the c_n cats, they were much more fun than this. You decide to go exploring.",
+        "decline_text": "rur_c calls out for you, warning you not to go further. Realizing you are caught trying to wander, you grumble and reluctantly go back.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You eventually settle down to observe a flock of geese. One of them unexpectedly takes flight, and without thinking, you leap up to chase after it - something that, in life, would have sent you crashing into the ground. This time, though, you find yourself soaring through the air just like the goose! Thrilled with this newly-discovered ability, you quickly abandon the wild goose chase in favor of flying anywhere you can think of. Maybe the Unknown Residence isn't so boring after all.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Exploring seems like a fun idea... until you realize you can't touch anything in the living. Even something as simple as blowing on a feather doesn't budge! Maybe exploring isn't as fun as you thought it would be...",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+            "patrol_id": "df_kit_deadpatrol_E1",
+            "biome": [
+                "Any"
+            ],
+            "season": [
+                "Any"
+            ],
+            "types": [
+                "df_lifegen"
+            ],
+            "tags": [],
+            "patrol_art": "lg_default_df",
+            "min_cats": 1,
+            "max_cats": 1,
+            "min_max_cat_status": {},
+            "weight": 20,
+            "intro_text": "You're picking your way through the decaying underbrush of the Dark Forest when a distant, starry glow catches your eye. You begin to make your way towards it, recalling the stories you had heard about StarClan's territory.",
+            "decline_text": "Maybe this is an adventure for another day. You turn away as your eyes begin to burn from the dazzling light, and stumble back into the shadows you have grown accustomed to.",
+            "chance_of_success": 50,
+            "success_outcomes": [
+                {
+                    "text": "You venture onto StarClan's territory without hesitation! You spend time frolicking in the soft, sparkling grass and admiring the bright, colorful plants. You remain unseen and eventually return to the gloom of the Dark Forest, buzzing with energy and already planning your next adventure!",
+                    "exp": 0,
+                    "weight": 20
+                },
+                {
+                    "text": "You stumble onto the unfamiliar territory and immediately find yourself face to face with a StarClan kit! The kit chirps out a greeting and invites you to play a game with them. Your heart soars as you and your new friend spend time chasing after a sparkling ball of moss, resurfacing previously forgotten memories of games you had played in the nursery while you were alive.",
+                    "exp": 0,
+                    "weight": 20
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "You can barely take two pawsteps forward when a shadow jumps out from behind a nearby bush. It hisses, scolding you for being so close to the border as you are quickly ushered back into the shadows.",
+                    "exp": 0,
+                    "weight": 20
+                },
+                {
+                    "text": "You stumble into the unfamiliar territory and immediately find yourself face to face with a StarClan cat! They let out a startled hiss and swipe at you with a paw, causing you to flee back into the familiar gloom of the Dark Forest.",
+                    "exp": 0,
+                    "weight": 20
+                }
+            ]
+        }
+
 ]

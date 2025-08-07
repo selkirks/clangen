@@ -11,7 +11,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_queenapp_default",
+        "patrol_art": "life_qapp_og1",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -289,7 +289,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_queenapp_default",
+        "patrol_art": "life_qapp_og4",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -391,7 +391,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_queenapp_default",
+        "patrol_art": "life_qapp_R1",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -551,7 +551,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "The play is a success, and the kits have a great time! The camp is full of laughter and cheer, a thing that'd been missing for days now. You couldn't be prouder, and you express that to the Clan once the play concludes. The kits of c_nClan have such a bright future, and you're eager to see where it goes.",
+                "text": "The play is a success, and the kits have a great time! The camp is full of laughter and cheer, a thing that'd been missing for days now. You couldn't be prouder, and you express that to the Clan once the play concludes. The kits of c_n have such a bright future, and you're eager to see where it goes.",
                 "exp": 15,
                 "weight": 30
             },
@@ -590,6 +590,55 @@
             },
             {
                 "text": "When the play starts, the kittens get distracted and devolve into a big play fight. Although the adults are amused, your nest is torn to barely recognizable shreds and all of your hard work is destroyed along with it. You realize you have to rebuild your nest which'll surely take all night, and you have to ignore the looks of very sad and guilty kittens.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_sc_sam3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_sc",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're taking care of a StarClan kit, when you see r_k peeking {PRONOUN/r_k/poss} head into the Dark Forest.",
+        "decline_text": "{PRONOUN/r_k/subject/CAP}'ll wake up soon enough. You don't need to pay {PRONOUN/r_k/object} any mind.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You quickly give the StarClan kit to another cat, rushing over to r_k. You curl your body around {PRONOUN/r_k/object}, keeping {PRONOUN/r_k/object} away from the Dark Forest until {PRONOUN/r_k/subject} {VERB/r_k/wake/wakes} up.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Your mentor never told you how to keep kits in one place! Despite not having the knowledge of a full-fledged queen, you're able to persuade r_k to stay with you and the StarClan kits until {PRONOUN/r_k/subject} {VERB/r_k/wake/wakes} up.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["p_l"],
+                "stat_skill": ["CLEVER", "INNOVATOR", "KIT", "THINKER"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You quickly nudge the StarClan kit towards another cat, running off towards r_k. Before you can catch up, r_k is running into the Dark Forest with surprising speed. Since when were kits so fast?",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["r_k"],
+                "stat_skill": ["RUNNER"]
+            },
+            {
+                "text": "You rush off, leaving the StarClan kit unsupervised. You manage to catch up to r_k, but turn around to realize that the StarClan kit has disappeared. You spend your time until r_k wakes up running between both kits, making sure they're both safe. You end up losing one of them a few times.",
                 "exp": 0,
                 "weight": 20
             }

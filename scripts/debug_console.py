@@ -257,8 +257,8 @@ class DebugMode:
             elements = MANAGER.ui_group.visible
             for surface in elements:
                 rect = surface[1]
-                if rect in [self.coords_display.rect, self.console.rect]:
-                    continue
+                # if rect in [self.coords_display.rect, self.console.rect]:
+                #     continue
                 if rect.collidepoint(pygame.mouse.get_pos()):
                     pygame.draw.rect(screen, (0, 255, 0), rect, 1)
                 else:

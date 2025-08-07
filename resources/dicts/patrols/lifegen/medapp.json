@@ -11,7 +11,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_medcatapp_default",
+        "patrol_art": "life_medapp_og1",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -86,7 +86,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_medcatapp_default",
+        "patrol_art": "life_medapp_og3",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -156,7 +156,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_medcatapp_default",
+        "patrol_art": "life_medapp_og5",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -246,6 +246,61 @@
         "fail_outcomes": [
             {
                 "text": "When you poke your head into the den, the medicine cat doesn't seem very welcoming. They send you out before you can ask your question.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_sc_sam1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+        "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_sc",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're watching r_m take care of r_i, and can't help but feel a sense of sadness, since you never got to use your medicinal skills to help anycat.",
+        "decline_text": "You sigh and turn to help one of the StarClan queens with all of the kits.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You decide to send an omen to r_m, telling {PRONOUN/r_m/object} something {PRONOUN/r_m/subject} missed while taking care of r_i. {PRONOUN/r_m/subject/CAP} {VERB/r_m/receive/receives} the omen, and quickly fixes {PRONOUN/r_m/poss} mistake.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Just as you turn away from watching r_m and r_i, d_c passes by with a fresh fading spot, which gives you an idea. You promptly pretend to 'treat' d_c's fading spot as if it were an injury. You both have loads of fun, and you forget all about your sadness.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["p_l"],
+                "stat_cluster": [
+                    "silly"
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You decide to send an omen to r_m, telling {PRONOUN/r_m/object} something {PRONOUN/r_m/subject} missed while taking care of r_i. Although, {PRONOUN/r_m/object} {VERB/r_m/don't/doesn't} seem to notice the omen, which leads to r_i's injury worsening.",
+                "exp": 0,
+                "weight": 10,
+                "injury": [
+                    {
+                        "cats": ["r_i"],
+                        "injuries": ["an infected wound", "a festering wound"]
+                    }
+                ]
+            },
+            {
+                "text": "You decide to send an omen to r_m, telling {PRONOUN/r_m/object} something {PRONOUN/r_m/subject} missed while taking care of r_i. {PRONOUN/r_m/object/CAP} {VERB/r_m/don't/doesn't} notice the omen, but it luckily doesn't cause r_i's injury to worsen.",
                 "exp": 0,
                 "weight": 20
             }

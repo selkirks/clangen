@@ -3354,7 +3354,7 @@
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "It takes them all day, but finally, p_l spots the speckled leaves {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} been looking for, so crucial to replenishing the Clan's stores after the long leaf-bare. For just a moment, {PRONOUN/p_l/subject} {VERB/p_l/feel/feels} the weight of {PRONOUN/p_l/poss} responsibilities lift, the strength of that relief catching {PRONOUN/p_l/object} off guard.",
+                "text": "It takes {PRONOUN/p_l/object} all day, but finally, p_l spots the speckled leaves {PRONOUN/p_l/subject}{VERB/p_l/'ve/'s} been looking for, so crucial to replenishing the Clan's stores after the long leaf-bare. For just a moment, {PRONOUN/p_l/subject} {VERB/p_l/feel/feels} the weight of {PRONOUN/p_l/poss} responsibilities lift, the strength of that relief catching {PRONOUN/p_l/object} off guard.",
                 "exp": 20,
                 "weight": 20,
                 "herbs": [
@@ -3575,16 +3575,9 @@
                 "text": "It takes all of s_c's considerable talent for such things to hunt down the lungwort within their borders. The medicine cat visits each likely nook and cranny in a carefully planned search pattern until, finally, those telltale speckled leaves are found.",
                 "exp": 20,
                 "weight": 20,
-                "stat_skill": [
-                    "SENSE,2",
-                    "CLEVER,3"
-                ],
-                "can_have_stat": [
-                    "r_c"
-                ],
-                "herbs": [
-                    "lungwort"
-                ],
+                "stat_skill": ["SENSE,2", "CLEVER,3"],
+                "can_have_stat": ["p_l"],
+                "herbs": ["lungwort"],
                 "relationships": [
                     {
                         "cats_to": [

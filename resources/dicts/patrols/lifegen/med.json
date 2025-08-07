@@ -46,7 +46,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_medcat_default",
+        "patrol_art": "life_med_og2",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -186,7 +186,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_medcat_default",
+        "patrol_art": "life_med_og6",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -339,7 +339,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_medcat_default",
+        "patrol_art": "life_Med_Guy2",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -499,6 +499,58 @@
             },
             {
                 "text": "You tell the medicine cat that they can talk to a mediator about it.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_medcat_rad1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "lifegen"
+        ],
+        "patrol_art": "lg_medcat_default",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "r_w enters your den complaining of pain and asking for some herbs that might help. When you ask what happened, though, {PRONOUN/r_w/subject} {VERB/r_w/clam/clams} up, seemingly too embarrassed to admit why {PRONOUN/r_w/subject} {VERB/r_w/need/needs} the herbs.",
+        "decline_text": "Between your typical duties and the number of cats in the medicine den today, you don't have time to drag the story out of {PRONOUN/r_w/object}. Shaking your head, you tell r_w that you aren't able to help.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You remind r_w that you're here to heal, not to judge. That seems to persuade {PRONOUN/r_w/object}, who sheepishly admits that {PRONOUN/r_w/subject} tried to stalk a goose, only to get chased down and pecked for {PRONOUN/r_w/poss} efforts. Just the description makes you wince, and you tell r_w to wait in the den while you make {PRONOUN/r_w/object} a salve for pain relief.",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "It takes some coaxing, but r_w eventually relents: apparently a dare gone wrong resulted in {PRONOUN/r_w/object} getting relentlessly pecked by a goose. By the grace of StarClan, you're able to maintain a neutral expression while you provide r_w with a salve for {PRONOUN/r_w/poss} pain. Once {PRONOUN/r_w/subject}{VERB/r_w/'ve/'s} left the medicine den, though, you burst out laughing. That was the <i>last</i> thing you expected!",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "When you finally get r_w to admit {PRONOUN/r_w/subject} {VERB/r_w/were/was} bitten by a goose, you let out a little trill of amusement - not because r_w was attacked, but because you've been bitten by a goose before, too. This information gets a sheepish, yet relieved laugh from r_w, and as you treat {PRONOUN/r_w/subject} injuries, the two of you commiserate about the Dark Forest-level atrocities that those birds are capable of committing.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Your attempts to help r_w just wind up going in circles: despite you repeatedly explaining that you can't treat {PRONOUN/r_w/object} without knowing what happened, all r_w will say is that it's nothing serious. The discussion ends with both of you frustrated, and no solution in sight.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You promised not to laugh if r_w told you the truth, but you can't help yourself - the last thing you expected was for a cat to tell you they were pecked by a goose. Unfortunately, {PRONOUN/r_w/subject} {VERB/r_w/don't/doesn't} find it nearly as amusing as you do. {PRONOUN/r_w/subject/CAP} {VERB/r_w/snap/snaps} at you and stalks out of the medicine den, lashing {PRONOUN/r_w/poss} tail, and you're left feeling guilty for how the encounter played out.",
                 "exp": 0,
                 "weight": 20
             }

@@ -675,7 +675,7 @@
             "LARGE COMET",
             "SMALL LUNA",
             "SMALL COMET",
-            "LADYBUG",
+            "LADYBUGS",
             "ORANGEBUTTERFLY",
             "BLUEBUTTERFLY",
             "BROWNPELT",
@@ -720,7 +720,8 @@
             "JAYFEATHER",
             "EAGLEFEATHER",
             "EGG",
-            "CATMINT"
+            "CATMINT",
+            "MOONHAT"
         ],
         "dislike": [
             "DOGWOOD",
@@ -882,7 +883,8 @@
             "PINKBOW",
             "PURPLEBOW",
             "MULTIBOW",
-            "INDIGOBOW"
+            "INDIGOBOW",
+            "MOONHAT"
         ],
         "dislike": [
             "MUD PAWS",
@@ -1027,7 +1029,8 @@
             "CATMINT",
             "LEAF BOW",
             "WOODENOAKANTLERS",
-            "WOODENBIRCHANTLERS"
+            "WOODENBIRCHANTLERS",
+            "MOONHAT"
         ],
         "dislike": [
             "GRASS SNAKE",
@@ -1706,7 +1709,7 @@
             "GRAYWOOL"
         ],
         "emotional": [
-            "LADYBUG"
+            "LADYBUGS"
         ],
         "troublesome": [
             "FIDDLEHEADS"

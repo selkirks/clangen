@@ -10,12 +10,11 @@ import pygame_gui
 from pygame_gui.core import ObjectID
 
 import scripts.screens.screens_core.screens_core
-from scripts.cat.cats import create_example_cats, create_cat, Cat
+from scripts.cat.cats import create_example_cats, Cat
 from scripts.cat.pelts import Pelt
 from scripts.cat.personality import Personality
 from scripts.cat.names import names
 from scripts.clan import Clan
-from scripts.game_structure import image_cache
 from scripts.game_structure.game_essentials import (
     game,
 )
@@ -145,6 +144,7 @@ class MakeClanScreen(Screens):
 
     def screen_switches(self):
         super().screen_switches()
+        self.set_mute_button_position("topright")
         self.show_mute_buttons()
         self.set_bg("default", "mainmenu_bg")
 
@@ -579,6 +579,10 @@ class MakeClanScreen(Screens):
                 return
             self.your_cat.name.prefix = new_name
 
+            while self.your_cat.name.prefix.lower() == self.your_cat.name.suffix:
+                print("Prefix and suffix are the same, rerolling suffix...")
+                self.your_cat.name.give_suffix(self.your_cat.pelt, game.clan.biome, None)
+
             if game.switches["customise_new_life"] is True:
                 self.open_clan_saved_screen()
             else:
@@ -841,6 +845,7 @@ class MakeClanScreen(Screens):
         self.rolls_left = game.config["clan_creation"]["rerolls"]
         self.fullscreen_bgs = {}
         self.game_bgs = {}
+        self.set_mute_button_position("bottomright")
         return super().exit_screen()
 
     def on_use(self):
@@ -2111,6 +2116,10 @@ class MakeClanScreen(Screens):
 
         self.clear_all_page()
         self.sub_screen = "customize cat"
+
+        self.selected_cat = None
+        # clearing selected cat for the eye colour display bug
+
         pelt2 = Pelt(
             name=self.pname,
             length=self.length,
@@ -2757,7 +2766,7 @@ class MakeClanScreen(Screens):
                         manager=MANAGER
                         )
                     self.eye_colour_names[colour] = pygame_gui.elements.UITextBox(
-                        str(colour).lower().capitalize(),
+                        str(Cat.describe_eyes(self.selected_cat, colour)).lower().capitalize(),
                         ui_scale(pygame.Rect((0 + 32, eye_y_pos), (200, 34))),
                         object_id=get_text_box_theme("#text_box_30_horizleft"),
                         container=self.elements["scroll_container"],
@@ -2775,7 +2784,7 @@ class MakeClanScreen(Screens):
                         manager=MANAGER
                         )
                     self.heterochromia_names[str(colour)] = pygame_gui.elements.UITextBox(
-                        str(colour).lower().capitalize(),
+                        str(Cat.describe_eyes(self.selected_cat, colour)).lower().capitalize(),
                         ui_scale(pygame.Rect((0 + 32, eye_y_pos), (200, 34))),
                         object_id=get_text_box_theme("#text_box_30_horizleft"),
                         container=self.elements["scroll_container"],
@@ -3007,6 +3016,9 @@ class MakeClanScreen(Screens):
                     y_pos += 40
 
             y_pos = 0
+            traits = []
+            for trait in Personality.trait_ranges["kit_traits"]:
+                traits.append(trait)
             traits = ['troublesome', 'lonesome', 'impulsive', 'bullying', 'attention-seeker', 'charming', 'daring', 'noisy', 'nervous', 'quiet', 'insecure', 'daydreamer', 'sweet', 'polite', 'know-it-all', 'bossy', 'disciplined', 'patient', 'manipulative', 'secretive', 'rebellious', 'grumpy', 'passionate', 'honest', 'leader-like', 'smug', 'wishful',
             "indecisive",
         "abrupt",
@@ -3215,7 +3227,10 @@ class MakeClanScreen(Screens):
                             new_patch_list = patch_list
 
                         patches = ["None"] + new_patch_list
-                        current_index = patches.index(str(self.white_patches))
+                        try:
+                            current_index = patches.index(str(self.white_patches))
+                        except ValueError:
+                            current_index = 0
                         next_index = (current_index + num) % len(patches)
                         if patches[next_index] == "None":
                             self.white_patches = []
@@ -3343,7 +3358,10 @@ class MakeClanScreen(Screens):
                                 if i[0] in new_acc_list or i[0] in self.accessories:
                                     new_acc_list.remove(i[0])
                         accs = ["None"] + new_acc_list
-                        current_index = accs.index(self.accessories[0]) if self.accessories else 0
+                        try:
+                            current_index = accs.index(self.accessories[0]) if self.accessories else 0
+                        except ValueError:
+                            current_index = 0
                         next_index = (current_index + num) % len(accs)
                         if accs[next_index] == "None":
                             next_acc = []
@@ -3909,11 +3927,11 @@ class MakeClanScreen(Screens):
                     self.your_cat.permanent_condition['born without a leg']["moons_with"] = -1
                     self.your_cat.permanent_condition['born without a leg']['born_with'] = True
                 self.your_cat.pelt.accessories = self.accessories
-                self.your_cat.pelt.inventory = self.accessories
+                self.your_cat.pelt.inventory = self.inventory
                 self.your_cat.personality = Personality(trait=self.personality, kit_trait=True)
                 if self.skill == "Random":
                     self.skill = random.choice(self.skills)
-                self.your_cat.skills.primary = Skill.get_skill_from_string(Skill, self.skill)
+                self.your_cat.skills.primary = Skill.get_skill_from_string(Skill, self.skill, "True")
                 self.your_cat.lock_faith = self.faith
                 self.selected_cat = None
                 self.open_name_cat()
@@ -4236,7 +4254,7 @@ class MakeClanScreen(Screens):
             senior_sprite=self.elder_pose if self.elder_pose > 2 else self.elder_pose + 12,
             reverse=self.reverse,
             accessories=self.accessories,
-            inventory=self.accessories
+            inventory=self.inventory
         )
 
 
@@ -4650,6 +4668,7 @@ class MakeClanScreen(Screens):
                 "#text_box_30_horizcenter"),
             manager=MANAGER
             )
+        
     def delete_example_cats(self):
         """ Deletes the other generated kits so they don't also get added to the Clan """
         key_copy = tuple(Cat.all_cats.keys())
@@ -4680,19 +4699,18 @@ class MakeClanScreen(Screens):
         if ID in game.clan.darkforest_cats:
             game.clan.darkforest_cats.remove(ID)
 
-        self.get_camp_bg()
-
-        scripts.screens.screens_core.screens_core.rebuild_bgs()
 
     def save_clan(self):
         if game.switches["customise_new_life"] is True:
             self.your_cat.create_inheritance_new_cat()
             game.clan.your_cat = self.your_cat
             game.clan.your_cat.moons = -1
+            game.clan.add_cat(game.clan.your_cat)
             self.delete_example_cats()
         else:
             self.handle_create_other_cats()
             game.mediated.clear()
+            game.told_story.clear()
             game.patrolled.clear()
             game.dated_cats.clear()
             game.cat_to_fade.clear()

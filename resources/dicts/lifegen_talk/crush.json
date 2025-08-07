@@ -1,678 +1,1050 @@
 {
-    "gen_crush": [
-        [
-            "no_kit",
-            "platonic_like",
-            "any"
+    "gen_crush": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "intro": [
             "[You're chatting with t_c, but {PRONOUN/t_c/subject} {VERB/t_c/keep/keeps} glancing away and swishing {PRONOUN/t_c/poss} tail. It's clear that {PRONOUN/t_c/poss} attention lies elsewhere.]",
             "*Sigh* ...",
-            "[You follow {PRONOUN/t_c/poss} gaze to the middle of the clearing, where their_crush lazes, grooming {PRONOUN/their_crush/self}.]",
+            "[You follow {PRONOUN/t_c/poss} gaze to the middle of the clearing, where theircrush lazes, grooming {PRONOUN/theircrush/self}.]",
             "[It seems there's something t_c isn't telling you ...]"
         ]
-    ],
-    "gen_crush1": [
-        [
-            "no_kit",
-            "platonic_like",
-            "silly",
-            "assertive",
-            "cool",
-            "unlawful",
-            "unabashed",
-            "they_blind",
-            "Any"
+    },
+    "gen_crush1": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "unabashed",
+                "cool",
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
-            "[t_c and their_crush laugh hysterically together in the middle of the clearing, howls careening off the camp walls.]",
+        "intro": [
+            "[t_c and theircrush laugh hysterically together in the middle of the clearing, howls careening off the camp walls.]",
             "[You smile to yourself, happy to see t_c make some progress with {PRONOUN/t_c/poss} obvious crush.]"
         ]
-    ],
-    "gen_crush4": [
-        [
-            "no_kit",
-            "introspective",
-            "they_deaf",
-            "you_deaf",
-            "Any"
-        ],
-        [
+    },
+    "gen_crush4": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "intro": [
             "[t_c sits alone at the edge of camp, grinning from ear to ear with a dreamy look in {PRONOUN/t_c/poss} eyes.]",
             "[You'd know that look anywhere, and if you had to guess, you could probably predict exactly who {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} thinking about.]",
-            "[Just then, their_crush peeks in through the camp entrance, and t_c races over to greet {PRONOUN/their_crush/object}, apparently overjoyed.]",
+            "[Just then, theircrush peeks in through the camp entrance, and t_c races over to greet {PRONOUN/theircrush/object}, apparently overjoyed.]",
             "[It seems your prediction was correct!]"
         ]
-    ],
-    "gen_crush5": [
-        [
-            "no_kit",
-            "they_adult",
-            "brooding",
-            "assertive",
-            "unlawful",
-            "they_deaf",
-            "you_deaf",
-            "Any"
-        ],
-        [
-            "[t_c stares at their_crush talking with r_w across camp, expression filled with pain.]",
-            "[When their_crush laughs and bats at {PRONOUN/r_w/object}, t_c digs {PRONOUN/t_c/poss} claws into the soil.]",
+    },
+    "gen_crush5": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "brooding"
+            ],
+            "age": [
+                "adult",
+                "not_kitten"
+            ],
+            "condition": [
+                "deaf:any:false"
+            ]
+        },
+        "intro": [
+            "[t_c stares at theircrush talking with r_w across camp, expression filled with pain.]",
+            "[When theircrush laughs and bats at {PRONOUN/r_w/object}, t_c digs {PRONOUN/t_c/poss} claws into the soil.]",
             "[Yeesh ... probably best to give {PRONOUN/t_c/object} some space.]"
         ]
-    ],
-    "trust_crush": [
-        [
-            "no_kit",
-            "platonic_love",
-            "trust",
-            "comfort",
-            "Any"
+    },
+    "trust_crush": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50",
+            "min_trust_50",
+            "min_comfort_50"
         ],
-        [
-            "Say, ah ... What do you think about their_crush?",
-            "I mean, like, me and their_crush. Do you think we'd make a good pair?",
+        "intro": [
+            "Say, ah ... What do you think about theircrush?",
+            "I mean, like, me and theircrush. Do you think we'd make a good pair?",
             "I dunno. I just ... value your opinion, I guess.",
             "I really like {PRONOUN/t_c/object}, but asking someone to be your mate? It's a big decision. Plus, I have no idea if {PRONOUN/t_c/subject} even {VERB/t_c/feel/feels} the same way!",
             "I just don't want to make a mistake and end up heartbroken ...",
-            "[t_c stares at their_crush from across camp, expression filled with incredible yearning.]"
+            "[t_c stares at theircrush from across camp, expression filled with incredible yearning.]"
         ]
-    ],
-    "confront_crush": [
-        [
-            "no_kit",
-            "assertive",
-            "unlawful",
-            "brooding",
-            "cool",
-            "you_blind",
-            "Any"
-        ],
-        [
-            "[You ask t_c if the rumors about {PRONOUN/t_c/object} and their_crush are true.]",
-            "What? Me and their_crush? C'mon, don't be ridiculous! Why would I ever like their_crush?",
-            "Sure, I guess {PRONOUN/their_crush/subject}{VERB/their_crush/'re/'s} kinda pretty, and - and smart, and {PRONOUN/their_crush/subject} {VERB/their_crush/make/makes} me laugh like no one else can ...",
-            "Not to mention talented ... and hardworking ... and {PRONOUN/their_crush/poss} smile, great StarClan, there's nothing else like it ...",
-            "... But - But it's not like I like {PRONOUN/their_crush/object}, or anything!",
+    },
+    "confront_crush": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "cool",
+                "brooding"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "intro": [
+            "[You ask t_c if the rumors about {PRONOUN/t_c/object} and theircrush are true.]",
+            "What? Me and theircrush? C'mon, don't be ridiculous! Why would I ever like theircrush?",
+            "Sure, I guess {PRONOUN/theircrush/subject}{VERB/theircrush/'re/'s} kinda pretty, and - and smart, and {PRONOUN/theircrush/subject} {VERB/theircrush/make/makes} me laugh like no one else can ...",
+            "Not to mention talented ... and hardworking ... and {PRONOUN/theircrush/poss} smile, great StarClan, there's nothing else like it ...",
+            "... But - But it's not like I like {PRONOUN/theircrush/object}, or anything!",
             "*Blush*"
         ]
-    ],
-    "crush_moveon": [
-        [
-            "no_kit",
-            "platonic_love",
-            "they_blind",
-            "Any"
+    },
+    "crush_moveon": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
-            "Ah - maybe I just gotta face it, y_c. There's no way I'm gonna end up with their_crush, not in a million moons.",
-            "Why would a cat like {PRONOUN/t_c/object} ever settle down with a cat like me? It just wouldn't make any sense.",
-            "Maybe I just gotta move on and -- Oh, hang on, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} coming over here!",
-            "Oh - Oh, hey, their_crush! Yeah, sure, I can come on a walk with you tonight, when are you free?",
+        "intro": [
+            "Ah - maybe I just gotta face it, y_c. There's no way I'm gonna end up with theircrush, not in a million moons.",
+            "Why would a cat like {PRONOUN/theircrush/object} ever settle down with a cat like me? It just wouldn't make any sense.",
+            "Maybe I just gotta move on and -- Oh, hang on, {PRONOUN/theircrush/subject}{VERB/theircrush/'re/'s} coming over here!",
+            "Oh - Oh, hey, theircrush! Yeah, sure, I can come on a walk with you tonight, when are you free?",
             "[You roll your eyes. t_c is hopeless!]"
         ]
-    ],
-    "gen_yourcrush": [
-        [
-            "Any",
-            "unabashed",
-            "cool",
-            "assertive",
-            "brooding",
-            "they_blind",
-            "you_blind",
-            "they_hearing",
-            "Any"
-        ],
-        [
+    },
+    "gen_yourcrush": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "cool",
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false",
+                "hearing"
+            ]
+        },
+        "intro": [
             "You talk in your sleep, y'know, y_c? It woke me up last night.",
-            "It sounded like you were mumbling about your_crush ...",
+            "It sounded like you were mumbling about yourcrush ...",
             "... Something you wanna announce to the Clan, y_c? *snrk*"
         ]
-    ],
-    "gen_yourcrush1": [
-        [
-            "no_kit",
-            "assertive",
-            "unabashed",
-            "upstanding",
-            "platonic_like",
-            "Any"
+    },
+    "gen_yourcrush1": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "upstanding"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "intro": [
             "[t_c walks over to you with a plump rabbit.]",
             "Hey, y_c!",
-            "I saw you stealing glances at your_crush earlier. You should ask {PRONOUN/your_crush/object} to share this freshkill with you.",
-            "Oh come on, that crush of yours is obvious! Don't be such a scaredy-cat and walk over to {PRONOUN/your_crush/object}.",
-            "[t_c smiles encouragingly at you as you walk over to your_crush. You ought to thank {PRONOUN/t_c/object} later.]"
+            "I saw you stealing glances at yourcrush earlier. You should ask {PRONOUN/yourcrush/object} to share this freshkill with you.",
+            "Oh come on, that crush of yours is obvious! Don't be such a scaredy-cat and walk over to {PRONOUN/yourcrush/object}.",
+            "[t_c smiles encouragingly at you as you walk over to yourcrush. You ought to thank {PRONOUN/t_c/object} later.]"
         ]
-    ],
-    "apprentice_confront_yourcrush": [
-        [
-            "no_kit",
-            "they_app",
-            "assertive",
-            "cool",
-            "unabashed",
-            "they_blind",
-            "you_any"
-        ],
-        [
+    },
+    "apprentice_confront_yourcrush": {
+        "y_c": {
+            "status": [
+                "any"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "cool"
+            ],
+            "age": [
+                "adolescent",
+                "not_kitten"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "And then, tm_n told me I had to do tick duty because r_a was out battle training, like, how is that fair?!",
-            "[While t_c rambles on, your only focus is your_crush. How could anyone ever be so amazing?]",
+            "[While t_c rambles on, your only focus is yourcrush. How could anyone ever be so amazing?]",
             ".. Oh, so that's why you haven't been answering?",
-            "Wait, let me call {PRONOUN/your_crush/object} over. Hi, your_crush! y_c wants to tell you something important!!!",
-            "[You put your paw over t_c's mouth quickly, but your_crush is already looking in your direction.]",
-            "[You blush and lift your paw to wave at your_crush. {PRONOUN/your_crush/subject/CAP} {VERB/your_crush/send/sends} you a big, sunny smile before continuing {PRONOUN/your_crush/poss} task.]",
+            "Wait, let me call {PRONOUN/yourcrush/object} over. Hi, yourcrush! y_c wants to tell you something important!!!",
+            "[You put your paw over t_c's mouth quickly, but yourcrush is already looking in your direction.]",
+            "[You blush and lift your paw to wave at yourcrush. {PRONOUN/yourcrush/subject/CAP} {VERB/yourcrush/send/sends} you a big, sunny smile before continuing {PRONOUN/yourcrush/poss} task.]",
             "*snrk*. You're funnier than I am! Haha!"
         ]
-    ],
-    "hater_yourcrush": [
-        [
-            "any",
-            "dislike",
-            "they_blind",
-            "you_blind"
+    },
+    "hater_yourcrush": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
-            "You don't stand a chance with your_crush ... You know that, don't you?",
+        "intro": [
+            "You don't stand a chance with yourcrush ... You know that, don't you?",
             "A cat like that is way out of your league.",
             "I'd give up now, if you know what's good for you."
         ]
-    ],
-    "hater_yourcrush1": [
-        [
-            "any",
-            "assertive",
-            "cool",
-            "unlawful",
-            "unabashed",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Rumor around camp is that you have a thing for your_crush. Isn't that a laugh?",
+    },
+    "hater_yourcrush1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "unabashed",
+                "cool"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
+            "Rumor around camp is that you have a thing for yourcrush. Isn't that a laugh?",
             "As if the two of you could ever end up together. Haha!",
-            "... Why do you look so sad? It's not like you actually like {PRONOUN/your_crush/object}, right?"
+            "... Why do you look so sad? It's not like you actually like {PRONOUN/yourcrush/object}, right?"
         ]
-    ],
-    "inform_yourcrush1": [
-        [
-            "any",
-            "platonic_love",
-            "assertive",
-            "cool",
-            "unabashed",
-            "silly",
-            "they_went_blind"
+    },
+    "inform_yourcrush1": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "cool",
+                "silly"
+            ],
+            "condition": [
+                "blind:false:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "intro": [
             "Hey, flea-brain! Wanna go on a walk later?",
-            "[You tell t_c that you'd love to, but you already have plans with your_crush.]",
-            "your_crush, huh?",
+            "[You tell t_c that you'd love to, but you already have plans with yourcrush.]",
+            "yourcrush, huh?",
             "I gotta say, the two of you are spending an awful lot of time together lately ...",
             "Is there something going on that I should know about?",
             "[t_c grins and bats {PRONOUN/t_c/poss} eyelashes at you. Though you vehemently deny, you know {PRONOUN/t_c/subject} pushed you into a corner.]",
             "It's okay. Your secret's safe with me, hehe!",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/dash/dashes} off. Knowing t_c, the whole Clan will probably know about your crush on your_crush by tomorrow.]"
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/dash/dashes} off. Knowing t_c, the whole Clan will probably know about your crush on yourcrush by tomorrow.]"
         ]
-    ],
-    "inform_yourcrush": [
-        [
-            "any",
-            "platonic_like",
-            "assertive",
-            "cool",
-            "respect",
-            "they_blind",
-            "you_blind"
+    },
+    "inform_yourcrush": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "cool"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_respect_50"
         ],
-        [
-            "Look, y_c. You wanna get your_crush to like you - which, don't even try to deny, it's embarrassingly obvious - you need to work on your flirting skills.",
+        "intro": [
+            "Look, y_c. You wanna get yourcrush to like you - which, don't even try to deny, it's embarrassingly obvious - you need to work on your flirting skills.",
             "Luckily for you, you've come to just the right cat! I have a whole system worked out for these kinds of things.",
-            "Okay, so, pretend I'm your_crush, and you want to ask me out for some alone time. What are you gonna say?",
+            "Okay, so, pretend I'm yourcrush, and you want to ask me out for some alone time. What are you gonna say?",
             "[You pretend to ask t_c on a date.]",
             "EERGH! Let me stop you right there! Wrong, it's all wrong! Yeesh, is that really the best you can do?",
-            "First of all, you want to engage {PRONOUN/your_crush/object} physically. Bat {PRONOUN/your_crush/object} with your paw, some playful touches, nothing too crazy.",
-            "Secondly, you were way too direct in your language. You gotta tease it out, y'know, make {PRONOUN/your_crush/object} feel like it's {PRONOUN/your_crush/poss} idea to go with you.",
+            "First of all, you want to engage {PRONOUN/yourcrush/object} physically. Bat {PRONOUN/yourcrush/object} with your paw, some playful touches, nothing too crazy.",
+            "Secondly, you were way too direct in your language. You gotta tease it out, y'know, make {PRONOUN/yourcrush/object} feel like it's {PRONOUN/yourcrush/poss} idea to go with you.",
             "Thirdly, and this is the most important thing ...",
             "[You really try to keep up with t_c's flirting advice, but trying to follow along for too long honestly just makes your head spin!]"
         ]
-    ],
-    "introspective_yourcrush": [
-        [
-            "any",
-            "introspective",
-            "stable",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "So, you and your_crush, hm? Interesting ...",
-            "Of all the potential matches for you, your_crush is never one I would've predicted, but the two of you make a good pair.",
+    },
+    "introspective_yourcrush": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable",
+                "introspective"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
+            "So, you and yourcrush, hm? Interesting ...",
+            "Of all the potential matches for you, yourcrush is never one I would've predicted, but the two of you make a good pair.",
             "Who told me? Ah, I didn't need to hear it from someone else! Call it one of the perks of being so observant",
-            "You should ask {PRONOUN/your_crush/object} out, by the way. By my calculations ... {PRONOUN/your_crush/subject} should definitely like you back. *Wink*"
+            "You should ask {PRONOUN/yourcrush/object} out, by the way. By my calculations ... {PRONOUN/yourcrush/subject} should definitely like you back. *Wink*"
         ]
-    ],
-    "neurotic_yourcrush": [
-        [
-            "any",
-            "neurotic",
-            "sweet",
-            "silly",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Ah, y_c, you and your_crush are just so cute together. I'm so happy for the two of you.",
+    },
+    "neurotic_yourcrush": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet",
+                "silly",
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
+            "Ah, y_c, you and yourcrush are just so cute together. I'm so happy for the two of you.",
             "Oh, what? You're not mates yet? Could've fooled me!",
             "If that's how you act together before you're even mates, I'd hate to see how you act once you actually do get together, heh!"
         ]
-    ],
-    "yourcrush_downbad": [
-        [
-            "any",
-            "romantic_like"
+    },
+    "yourcrush_downbad": {
+        "y_c": {},
+        "t_c": {},
+        "relationship": [
+            "min_romantic_20"
         ],
-        [
-            "What's wrong, y_c? Romantic troubles? Is your_crush getting you down?",
+        "intro": [
+            "What's wrong, y_c? Romantic troubles? Is yourcrush getting you down?",
             "Ah, don't let it worry you, even for one second. You're so amazing, y_c ... any cat in this Clan would be lucky to have you.",
-            "And if your_crush can't see that, {PRONOUN/your_crush/subject} must be the most mouse-brained cat on this entire planet!",
+            "And if yourcrush can't see that, {PRONOUN/yourcrush/subject} must be the most mouse-brained cat on this entire planet!",
             "In fact, I'm sure there's plenty of cats who would do just about anything to be with you, but are too afraid to say it ...",
             "Ahem.",
             "[t_c blushes and glances away.]"
         ]
-    ],
-    "yourcrush_downbad1": [
-        [
-            "any",
-            "romantic_like"
+    },
+    "yourcrush_downbad1": {
+        "y_c": {},
+        "t_c": {},
+        "relationship": [
+            "min_romantic_20"
         ],
-        [
-            "So, uh ... are the rumors about you and your_crush true, then? It's all anyone around camp is talking about.",
+        "intro": [
+            "So, uh ... are the rumors about you and yourcrush true, then? It's all anyone around camp is talking about.",
             "They are?",
             "Oh ...",
-            "Um, what do you see in {PRONOUN/your_crush/object}, if you don't mind me asking?",
+            "Um, what do you see in {PRONOUN/yourcrush/object}, if you don't mind me asking?",
             "Mm ... I see ...",
-            "{PRONOUN/your_crush/subject/CAP} {VERB/your_crush/make/makes} you happy, then?",
+            "{PRONOUN/yourcrush/subject/CAP} {VERB/yourcrush/make/makes} you happy, then?",
             "Well ... I guess that's all that really matters.",
             "I'm glad you've found someone, y_c.",
             "Even if ... Even though ... Ah. E-Excuse me.",
             "[t_c slinks away with {PRONOUN/t_c/poss} shoulders hunched, tail drooping.]"
         ]
-    ],
-    "yourcrush_parent": [
-        [
-            "any",
-            "from_parent",
+    },
+    "yourcrush_parent": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {},
+        "relationship": [
             "adopted_parent",
-            "you_blind"
+            "from_parent"
         ],
-        [
-            "I've been seeing you and your_crush around together a lot ... am I gonna be getting some grandkits soon?",
+        "intro": [
+            "I've been seeing you and yourcrush around together a lot ... am I gonna be getting some grandkits soon?",
             "Hehe, only joking, of course. I'm happy for you, y_c.",
             "The two of you make a good pair."
         ]
-    ],
-    "yourcrush_parent1": [
-        [
-            "any",
-            "from_parent",
+    },
+    "yourcrush_parent1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {},
+        "relationship": [
             "adopted_parent",
-            "you_blind"
+            "from_parent"
         ],
-        [
-            "Ah, seeing you and your_crush really takes me back ... The two of you are just like me and t_m were at your age!",
+        "intro": [
+            "Ah, seeing you and yourcrush really takes me back ... The two of you are just like me and t_m were at your age!",
             "So young and free ... Don't waste these moons, y_c! You'll remember them fondly later."
         ]
-    ],
-    "yourcrush_sibling": [
-        [
-            "any",
-            "sibling",
+    },
+    "yourcrush_sibling": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "unabashed",
+                "cool",
+                "silly"
+            ]
+        },
+        "relationship": [
             "adopted_sibling",
-            "unlawful",
-            "assertive",
-            "cool",
-            "unabashed",
-            "silly"
+            "sibling"
         ],
-        [
-            "[t_c spots you talking with your_crush across camp, and a huge dirt-eating smile forms on {PRONOUN/t_c/poss} face.]",
-            "Oh, your_crush! your_crush, I love you so much~! Hahahahaa!",
+        "intro": [
+            "[t_c spots you talking with yourcrush across camp, and a huge dirt-eating smile forms on {PRONOUN/t_c/poss} face.]",
+            "Oh, yourcrush! yourcrush, I love you so much~! Hahahahaa!",
             "[You swat {PRONOUN/t_c/object} away, completely mortified.]",
-            "[your_crush laughs it off, but you're already planning your revenge on your {PRONOUN/t_c/sibling} for later.]"
+            "[yourcrush laughs it off, but you're already planning your revenge on your {PRONOUN/t_c/sibling} for later.]"
         ]
-    ],
-    "yourcrush_sibling1": [
-        [
-            "any",
-            "sibling",
+    },
+    "yourcrush_sibling1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "cool",
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
             "adopted_sibling",
-            "unlawful",
-            "assertive",
-            "cool",
-            "silly",
-            "they_blind",
-            "you_blind"
+            "sibling"
         ],
-        [
-            "Say, when are you and your_crush finally gonna make it official? I'm dying to have some little nieces and nephews to play with!",
+        "intro": [
+            "Say, when are you and yourcrush finally gonna make it official? I'm dying to have some little nieces and nephews to play with!",
             "Haha, okay, okay, I'll leave it alone.",
             "Just don't keep me waiting too much longer! And, ah, promise to name one of the little ones after me, when the time comes. Gotta carry on the family legacy, after all."
         ]
-    ],
-    "yourcrush_supportive": [
-        [
-            "any",
-            "platonic_like",
-            "unlawful",
-            "assertive",
-            "cool",
-            "silly",
-            "stable"
+    },
+    "yourcrush_supportive": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "stable",
+                "cool",
+                "silly"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
-            "[t_c interrupts you in the middle of talking to your_crush.]",
+        "intro": [
+            "[t_c interrupts you in the middle of talking to yourcrush.]",
             "Hey, r_c told me to tell you --",
-            "Oh, I'm sorry. I didn't notice you and your_crush were talking.",
+            "Oh, I'm sorry. I didn't notice you and yourcrush were talking.",
             "No, by all means, please, carry on. I'll, ah, leave the two of you lovebirds to it ... hehehe",
             "[t_c shoots you a wink on the way out. You can practically sense {PRONOUN/t_c/object} begging for every detail of the conversation later.]"
         ]
-    ],
-    "yourcrush_apprentice": [
-        [
-            "you_apprentice",
-            "they_app",
-            "unabashed",
-            "assertive",
-            "cool",
-            "they_blind",
-            "you_blind"
-        ],
-        [
+    },
+    "yourcrush_apprentice": {
+        "y_c": {
+            "status": [
+                "apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "cool"
+            ],
+            "age": [
+                "adolescent"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Psst, y_c!",
             "[t_c tries to nudge you awake, though you remain sound asleep in your nest.]",
-            "y_c, wake up! your_crush is asking for you!",
+            "y_c, wake up! yourcrush is asking for you!",
             "[As fast as the wind, you sit up, giving t_c your full attention.]",
             "Hah! I knew that would work. Actually, I just wanted to know if you would help me replace the elder's moss..",
             "...",
-            "... No, your_crush wasn't actually asking for you. But if you're that eager to talk to {PRONOUN/your_crush/object}, maybe you should just go ask {PRONOUN/their_crush/object}."
+            "... No, yourcrush wasn't actually asking for you. But if you're that eager to talk to {PRONOUN/yourcrush/object}, maybe you should just go ask {PRONOUN/theircrush/object}."
         ]
-    ],
-    "yourcrush_parent2": [
-        [
-            "any",
-            "from_parent",
-            "adopted_parent"
+    },
+    "yourcrush_parent2": {
+        "y_c": {},
+        "t_c": {},
+        "relationship": [
+            "adopted_parent",
+            "from_parent"
         ],
-        [
+        "intro": [
             "y_c? Where are you going in that haste?",
-            "You're going to hang out with your_crush?",
+            "You're going to hang out with yourcrush?",
             "[t_c shoots you that familiar proud smile {PRONOUN/t_c/subject} always {VERB/t_c/give/gives} you.]",
             "Well, in that case, you can't be going out like that. Get over here.",
             "[You reluctantly turn to t_c, who starts grooming your fur intently.]",
             "There, you're all done.",
             "... Have fun!"
         ]
-    ],
-    "meddy_crush": [
-        [
-            "you_medicine_cat",
-            "you_medicine_cat_apprentice",
-            "assertive",
-            "silly",
-            "cool",
-            "sweet",
-            "stable",
-            "upstanding",
-            "you_blind"
-        ],
-        [
-            "Is it just me, or has your_crush been coming into the medicine den an awful lot lately?",
+    },
+    "meddy_crush": {
+        "y_c": {
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "sweet",
+                "stable",
+                "cool",
+                "silly",
+                "upstanding"
+            ]
+        },
+        "intro": [
+            "Is it just me, or has yourcrush been coming into the medicine den an awful lot lately?",
             "What? I'm just saying! I've seen the way {PRONOUN/t_c/subject} {VERB/t_c/look/looks} at you!",
             "Not like {PRONOUN/t_c/subject}{VERB/t_c/'re/s} exactly bad looking either... You could certainly do much worse!",
             "Okay, okay, I'll stop now. Hehe!"
         ]
-    ],
-    "yourcrush_youshunned_J1": [
-        [
-            "you_shunned",
-            "any"
-        ],
-        [
-            "[t_c catches you watching your_crush sharing tongues across camp.]",
+    },
+    "yourcrush_youshunned_J1": {
+        "y_c": {
+            "shunned": true
+        },
+        "t_c": {},
+        "intro": [
+            "[t_c catches you watching yourcrush sharing tongues across camp.]",
             "Aw, buddy.",
             "Never gonna happen. Not now."
         ]
-    ],
-    "deaf_crush_J1": [
-        [
-            "any",
-            "you_deaf",
-            "only_they_deaf",
-            "no_kit"
-        ],
-        [
-            "[As you stare at your_crush from across camp, t_c waves {PRONOUN/t_c/poss} tail in front of your face.]",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/cock/cocks} {PRONOUN/t_c/poss} head, but after glancing between you and your_crush, {VERB/t_c/seem/seems} to come to a realisation.]",
+    },
+    "deaf_crush_J1": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "deaf:any:true"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "intro": [
+            "[As you stare at yourcrush from across camp, t_c waves {PRONOUN/t_c/poss} tail in front of your face.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/cock/cocks} {PRONOUN/t_c/poss} head, but after glancing between you and yourcrush, {VERB/t_c/seem/seems} to come to a realisation.]",
             "..! *Wink*",
             "[Ugh. You turn your focus elsewhere.]"
         ]
-    ],
-    "cool_tomedcat": [
-        [
-            "you_medicine_cat",
-            "you_medicine_cat_apprentice",
-            "cool",
+    },
+    "cool_tomedcat": {
+        "y_c": {
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ]
+        },
+        "relationship": [
             "min_platonic_40"
         ],
-        [
-            "[You notice aloud to t_c that your_crush has been sick an awful lot recently ...]",
-            "Psh, yeah, no doubt they're sick. {PRONOUN/your_crush/subject/CAP}{VERB/your_crush/'ve/'s}  got a horrible case of y_c fever.",
-            "[You blush, looking away. Surely your_crush doesn't actually feel that way about you ... right?]",
+        "intro": [
+            "[You notice aloud to t_c that yourcrush has been sick an awful lot recently ...]",
+            "Psh, yeah, no doubt {PRONOUN/yourcrush/subject}{VERB/yourcrush/'re/'s} sick. {PRONOUN/yourcrush/subject/CAP}{VERB/yourcrush/'ve/'s}  got a horrible case of y_c fever.",
+            "[You blush, looking away. Surely yourcrush doesn't actually feel that way about you ... right?]",
             "[Sensing your hesitation, t_c rolls {PRONOUN/t_c/poss} eyes.]",
             "I swear, y_c, you're so blind, there has got to be some mole blood in your ancestry.",
             "If I have to see the two of you pining after each other any longer, I just might have to take matters into my own paws!"
         ]
-    ],
-    "deaf_crush_J2": [
-        [
-            "any",
-            "you_deaf",
-            "they_deaf",
-            "they_blind",
-            "only_you_blind",
-            "no_kit"
-        ],
-        [
-            "[As you sit next to t_c, you smell your_crush approach and lay down next to you.]",
-            "[{PRONOUN/your_crush/poss/CAP} scent is comforting, and when {PRONOUN/your_crush/poss} fur brushes yours, you feel your face grow hot.]",
-            "[t_c smacks your haunches teasingly with {PRONOUN/t_c/poss} tail, and you reach out a hind leg to kick {PRONOUN/t_c/object}. Against you, your_crush's body shakes with laughter.]"
+    },
+    "deaf_crush_J2": {
+        "y_c": {
+            "condition": [
+                "blind:any:true",
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "intro": [
+            "[As you sit next to t_c, you smell yourcrush approach and lay down next to you.]",
+            "[{PRONOUN/yourcrush/poss/CAP} scent is comforting, and when {PRONOUN/yourcrush/poss} fur brushes yours, you feel your face grow hot.]",
+            "[t_c smacks your haunches teasingly with {PRONOUN/t_c/poss} tail, and you reach out a hind leg to kick {PRONOUN/t_c/object}. Against you, yourcrush's body shakes with laughter.]"
         ]
-    ],
-    "gen_yourkit11": [
-        [
-            "any",
+    },
+    "gen_yourkit11": {
+        "y_c": {},
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
             "from_your_kit",
-            "from_adopted_kit",
-            "they_blind"
+            "from_adopted_kit"
         ],
-        [
+        "intro": [
             "[You tease t_c about how much time {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} been spending with {PRONOUN/t_c/poss} crush, asking if there will maybe be an expansion to the family soon.]",
-            "Ah, come off it, y_c. their_crush is just a friend, that's all ...",
-            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/sigh/sighs} wistfully and you can't suppress an eyeroll. If t_c and their_crush are 'just friends', then hedgehogs can fly.]",
-            "[Still, you just hope the kit has the sense not to get {PRONOUN/t_c/poss} heart broken ... Or else you might have to have a conversation with their_crush yourself.]"
+            "Ah, come off it, y_c. theircrush is just a friend, that's all ...",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/sigh/sighs} wistfully and you can't suppress an eyeroll. If t_c and theircrush are 'just friends', then hedgehogs can fly.]",
+            "[Still, you just hope the kit has the sense not to get {PRONOUN/t_c/poss} heart broken ... Or else you might have to have a conversation with theircrush yourself.]"
         ]
-    ],
-    "assertive_gen1": [
-        [
-            "Any",
-            "assertive",
-            "cool",
-            "they_blind",
-            "they_deaf"
-        ],
-        [
-            "[t_c is flexing, showing off {PRONOUN/t_c/poss} muscles for their_crush.]",
-            "[It almost seems like t_c is enjoying the whole display more than their_crush is.]"
+    },
+    "assertive_gen1": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "cool"
+            ],
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
+            ]
+        },
+        "intro": [
+            "[t_c is flexing, showing off {PRONOUN/t_c/poss} muscles for theircrush.]",
+            "[It almost seems like t_c is enjoying the whole display more than theircrush is.]"
         ]
-    ],
-    "neurotic_abouttheircrush_SQ1": [
-        [
-            "they_neurotic",
-            "no_kit",
+    },
+    "neurotic_abouttheircrush_SQ1": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "younger",
+                "not_kitten"
+            ]
+        },
+        "relationship": [
             "min_platonic_20",
-            "min_trust_15",
-            "they_younger"
+            "min_trust_15"
         ],
-        [
+        "intro": [
             "y_c, how do you impress a cat that you like? I can't help but...",
-            "[t_c trails off as their_crush passes by, giving a small chirp of greeting. t_c's whiskers twitch as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} {PRONOUN/their_crush/object} go.]",
+            "[t_c trails off as theircrush passes by, giving a small chirp of greeting. t_c's whiskers twitch as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} {PRONOUN/theircrush/object} go.]",
             "Um. I just feel like I'm not all that interesting? I'm not exactly the daring-show-of-skill sort of cat, or a clever talker... I'm just... me. And that's really disappointing, sometimes."
         ]
-    ],
-    "neurotic_abouttheircrush_SQ2": [
-        [
-            "they_neurotic",
-            "no_kit",
+    },
+    "neurotic_abouttheircrush_SQ2": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
             "min_platonic_30"
         ],
-        [
-            "Have you seen how pretty their_crush's fur looks today? Wow...",
-            "[t_c sneaks a wistful glance at their_crush but then quickly looks away, {PRONOUN/t_c/poss} whiskers twitching.]",
-            "*sigh* I wish I could compliment {PRONOUN/their_crush/object} on it, but my words all feel jumbled and wrong when I'm around {PRONOUN/their_crush/object}."
+        "intro": [
+            "Have you seen how pretty theircrush's fur looks today? Wow...",
+            "[t_c sneaks a wistful glance at theircrush but then quickly looks away, {PRONOUN/t_c/poss} whiskers twitching.]",
+            "*sigh* I wish I could compliment {PRONOUN/theircrush/object} on it, but my words all feel jumbled and wrong when I'm around {PRONOUN/theircrush/object}."
         ]
-    ],
-    "neurotic_abouttheircrush_SQ3": [
-        [
-            "they_neurotic",
-            "no_kit",
-            "min_platonic_20",
-            "min_trust_15",
+    },
+    "neurotic_abouttheircrush_SQ3": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
             "greenleaf"
         ],
-        [
-            "[t_c slips over to you, casting surreptitious glances towards their_crush.]",
+        "relationship": [
+            "min_platonic_20",
+            "min_trust_15"
+        ],
+        "intro": [
+            "[t_c slips over to you, casting surreptitious glances towards theircrush.]",
             "Psst, y_c. The heat is really messing with my fur... does it look bad?",
             "[You point out a few patches that could use grooming and t_c quickly gets to work.]"
         ]
-    ],
-    "neurotic_skillclimber_SQ1": [
-        [
-            "they_neurotic",
-            "they_climber",
-            "greenleaf",
-            "no_kit",
-            "min_platonic_20",
-            "they_blind",
-            "you_blind"
+    },
+    "neurotic_skillclimber_SQ1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ],
+            "skill": [
+                "CLIMBER,1"
+            ]
+        },
+        "season": [
+            "greenleaf"
         ],
-        [
-            "I found a great place I want to take their_crush. There's a big tree with a branch big enough for the two of us to sit, and it's shaded by the leaves, and it has a great view of the territory.",
-            "I want to take {PRONOUN/their_crush/object} there, but I'm a bit worried... I'm pretty skilled at climbing, but I don't know how good {PRONOUN/their_crush/subject} {VERB/their_crush/are/is}, and it'd be terrible if {PRONOUN/their_crush/subject} slipped and fell.",
-            "From that height, their_crush could be really hurt! And then it would be hard for {PRONOUN/their_crush/object} to trust me again, and I'd feel terrible...",
+        "relationship": [
+            "min_platonic_20"
+        ],
+        "intro": [
+            "I found a great place I want to take theircrush. There's a big tree with a branch big enough for the two of us to sit, and it's shaded by the leaves, and it has a great view of the territory.",
+            "I want to take {PRONOUN/theircrush/object} there, but I'm a bit worried... I'm pretty skilled at climbing, but I don't know how good {PRONOUN/theircrush/subject} {VERB/theircrush/are/is}, and it'd be terrible if {PRONOUN/theircrush/subject} slipped and fell.",
+            "From that height, theircrush could be really hurt! And then it would be hard for {PRONOUN/theircrush/object} to trust me again, and I'd feel terrible...",
             "[You tell t_c to calm down. {PRONOUN/t_c/subject/CAP} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head to jolt {PRONOUN/t_c/self} out of {PRONOUN/t_c/poss} thoughts and {VERB/t_c/smile/smiles} weakly.]"
         ]
-    ],
-    "TinyTeddy_stable_sibling_theyadult_youadult_02": [
-        [
-            "they_adult",
-            "they_stable",
-            "you_adult",
-            "sibling",
+    },
+    "TinyTeddy_stable_sibling_theyadult_youadult_02": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "age": [
+                "adult"
+            ]
+        },
+        "relationship": [
             "adopted_sibling",
-            "half sibling"
+            "sibling",
+            "half_sibling"
         ],
-        [
-            "Hey, y_c, could I please have some advice? Seeing as you're my sibling and all, I thought you would be one of the better cats to get an opinion from.",
+        "intro": [
+            "Hey, y_c, could I please have some advice? Seeing as you're my {PRONOUN/y_c/sibling} and all, I thought you would be one of the better cats to get an opinion from.",
             "...",
-            "Every time I look at their_crush I can't help but feel lighter... And honestly, I'd love to get to know {PRONOUN/their_crush/object} more. I would really like to get to know {PRONOUN/their_crush/object} more... Maybe even one day, I could ask {PRONOUN/their_crush/object} to be...",
-            "I've never met someone like {PRONOUN/their_crush/object} before, y_c. Really, I never thought someone like me could ever find somebody... and maybe, I've found them.",
-            "{PRONOUN/their_crush/subject/CAP}{VERB/their_crush/'re/'s} just so kind, caring, loyal and the way the light bounces off {PRONOUN/their_crush/poss} fur~ My heart stops every time we speak.",
-            "Thank you for listening, y_c, you're the best sibling I could ever ask for.",
-            "[t_c bounds away, a dreamy look in {PRONOUN/t_c/poss} eyes... Wait, didn't {PRONOUN/t_c/subject} ask for your opinion??? You chuckle, your sibling is so lost in thought {PRONOUN/t_c/subject} forgot to wait for you to answer."
+            "Every time I look at theircrush I can't help but feel lighter... And honestly, I'd love to get to know {PRONOUN/theircrush/object} more. I would really like to get to know {PRONOUN/theircrush/object} more... Maybe even one day, I could ask {PRONOUN/theircrush/object} to be...",
+            "I've never met someone like {PRONOUN/theircrush/object} before, y_c. Really, I never thought someone like me could ever find somebody... and maybe, I've found them.",
+            "{PRONOUN/theircrush/subject/CAP}{VERB/theircrush/'re/'s} just so kind, caring, loyal and the way the light bounces off {PRONOUN/theircrush/poss} fur~ My heart stops every time we speak.",
+            "Thank you for listening, y_c, you're the best {PRONOUN/y_c/sibling} I could ever ask for.",
+            "[t_c bounds away, a dreamy look in {PRONOUN/t_c/poss} eyes... Wait, didn't {PRONOUN/t_c/subject} ask for your opinion??? You chuckle, your {PRONOUN/t_c/sibling} is so lost in thought {PRONOUN/t_c/subject} forgot to wait for you to answer."
         ]
-    ],
-    "neurotic_abouttheircrush_SQ4": [
-        [
-            "they_neurotic",
-            "no_kit",
-            "newleaf",
+    },
+    "neurotic_abouttheircrush_SQ4": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
             "greenleaf",
-            "you_deaf"
+            "newleaf"
         ],
-        [
-            "[You notice t_c sliding a bundle of tiny periwinkle flowers towards their_crush with a bashful smile.]",
-            "[their_crush's eyes widen, and {PRONOUN/their_crush/subject} {VERB/their_crush/start/starts} to say something, but t_c is already fleeing the scene.]"
+        "intro": [
+            "[You notice t_c sliding a bundle of tiny periwinkle flowers towards theircrush with a bashful smile.]",
+            "[theircrush's eyes widen, and {PRONOUN/theircrush/subject} {VERB/theircrush/start/starts} to say something, but t_c is already fleeing the scene.]"
         ]
-    ],
-    "neurotic_abouttheircrush_SQ5": [
-        [
-            "they_neurotic",
-            "no_kit",
-            "min_platonic_15",
+    },
+    "neurotic_abouttheircrush_SQ5": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
             "leafbare"
         ],
-        [
-            "[Flowers are a classic gift to give a crush, but now that it's leafbare, t_c seems at a loss for something to show their affection towards their_crush.]",
+        "relationship": [
+            "min_platonic_15"
+        ],
+        "intro": [
+            "[Flowers are a classic gift to give a crush, but now that it's leafbare, t_c seems at a loss for something to show their affection towards theircrush.]",
             "[While you're on a walk together, {PRONOUN/t_c/subject} {VERB/t_c/stop/stops} and {VERB/t_c/stare/stares} at a scarlet lichen for a few seconds, then {VERB/t_c/sigh/sighs} and {VERB/t_c/turn/turns} away.]",
-            "I don't want to give {PRONOUN/their_crush/object} something weird, or useless, or silly. And I don't want to give {PRONOUN/their_crush/object} a random thing, just for the sake of giving {PRONOUN/their_crush/object} <i>something</i>.",
-            "I just don't know how to show {PRONOUN/their_crush/object} that I... you know... like {PRONOUN/their_crush/object}! And giving gifts is still scary, but it feels safer than talking to {PRONOUN/their_crush/object} about my feelings, and that sort of thing.",
+            "I don't want to give {PRONOUN/theircrush/object} something weird, or useless, or silly. And I don't want to give {PRONOUN/theircrush/object} a random thing, just for the sake of giving {PRONOUN/theircrush/object} <i>something</i>.",
+            "I just don't know how to show {PRONOUN/theircrush/object} that I... you know... like {PRONOUN/theircrush/object}! And giving gifts is still scary, but it feels safer than talking to {PRONOUN/theircrush/object} about my feelings, and that sort of thing.",
             "Maybe... a pinecone? A leaf from leaffall? Not an icicle... That would just melt..."
         ]
-    ],
-    "neurotic_abouttheircrush_SQ6": [
-        [
-            "they_neurotic",
-            "no_kit",
-            "leafbare",
-            "you_deaf",
-            "they_deaf"
+    },
+    "neurotic_abouttheircrush_SQ6": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
+            "leafbare"
         ],
-        [
-            "[You glimpse t_c sitting by their_crush, pointing out the way ice is feathering across a nearby rock.]",
-            "[t_c seems a bit nervous to be sitting so close to their_crush as the pair admire the way the sun glints off of the delicate pattern, but their_crush looks too entranced by the ice to notice.]"
+        "intro": [
+            "[You glimpse t_c sitting by theircrush, pointing out the way ice is feathering across a nearby rock.]",
+            "[t_c seems a bit nervous to be sitting so close to theircrush as the pair admire the way the sun glints off of the delicate pattern, but theircrush looks too entranced by the ice to notice.]"
         ]
-    ],
-    "neurotic_abouttheircrush_SQ7": [
-        [
-            "they_neurotic",
-            "no_kit",
-            "leaffall",
-            "neutral",
-            "you_deaf",
-            "they_deaf"
+    },
+    "neurotic_abouttheircrush_SQ7": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
+            "leaffall"
         ],
-        [
-            "[t_c sits beside their_crush, admiring the bright leaves tumbling from the sky. Several times, {PRONOUN/t_c/subject} {VERB/t_c/start/starts} to lean closer to their_crush, then {VERB/t_c/pull/pulls} away at the last moment.]",
-            "[When t_c notices you, {PRONOUN/t_c/subject} {VERB/t_c/lean/leans} even further away from their_crush, almost losing {PRONOUN/t_c/poss} balance. You leave before {PRONOUN/t_c/subject} {VERB/t_c/get/gets} even more nervous about being watched.]"
+        "relationship": [
+            "neutral"
+        ],
+        "intro": [
+            "[t_c sits beside theircrush, admiring the bright leaves tumbling from the sky. Several times, {PRONOUN/t_c/subject} {VERB/t_c/start/starts} to lean closer to theircrush, then {VERB/t_c/pull/pulls} away at the last moment.]",
+            "[When t_c notices you, {PRONOUN/t_c/subject} {VERB/t_c/lean/leans} even further away from theircrush, almost losing {PRONOUN/t_c/poss} balance. You leave before {PRONOUN/t_c/subject} {VERB/t_c/get/gets} even more nervous about being watched.]"
         ]
-    ],
-    "neurotic_abouttheircrush_SQ8": [
-        [
-            "they_neurotic",
-            "no_kit",
-            "newleaf",
+    },
+    "neurotic_abouttheircrush_SQ8": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
             "greenleaf",
+            "newleaf"
+        ],
+        "relationship": [
             "min_platonic_30"
         ],
-        [
-            "I was going to give their_crush some flowers, but I noticed {PRONOUN/their_crush/subject} already {VERB/their_crush/have/has} some in {PRONOUN/their_crush/poss} nest. Do you know... is someone else, you know, interested in {PRONOUN/their_crush/object}? I don't have a chance, do I?",
+        "intro": [
+            "I was going to give theircrush some flowers, but I noticed {PRONOUN/theircrush/subject} already {VERB/theircrush/have/has} some in {PRONOUN/theircrush/poss} nest. Do you know... is someone else, you know, interested in {PRONOUN/theircrush/object}? I don't have a chance, do I?",
             "I know that cats give each other things for different reasons, but I just... I'm super nervous about this...",
             "Y-you know, on second thought, I don't want to know right now.",
             "[t_c dashes off, leaving you alone.]"
         ]
-    ],
-    "gen_sh_crush_H1": [
-        [
-            "you_shunned",
-            "no_kit",
-            "dislike"
+    },
+    "gen_sh_crush_H1": {
+        "y_c": {
+            "shunned": true,
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
-            "You have to stop looking at your_crush like that.",
-            "It's not like {PRONOUN/your_crush/subject}'ll like you after what you did."
+        "intro": [
+            "You have to stop looking at yourcrush like that.",
+            "It's not like {PRONOUN/yourcrush/subject}'ll like you after what you did."
         ]
-    ]
+    }
 }

@@ -3199,7 +3199,7 @@
             "tags": [
                 "df"
             ],
-            "patrol_art": "life_df_og11",
+            "patrol_art": "life_df_ant5",
             "min_cats": 1,
             "max_cats": 1,
             "min_max_status": {},
@@ -3492,7 +3492,7 @@
             ],
             "antag_success_outcomes": [
                 {
-                    "text": "You lunge forward, leaving a wound across the apprentice's eye before they can even react. Even if you've been shunned in your own Clan, you harshly remind them that that doesn't apply here, and they'd better not talk back to you, or else. The Dark Forest cat, rdf_c_brooding, catches your eye from afar and gives you a small nod of approval.",
+                    "text": "You lunge forward, leaving a wound across the apprentice's eye before they can even react. Even if you've been shunned in your own Clan, you harshly remind them that that doesn't apply here, and they'd better not talk back to you, or else. The Dark Forest cat, rdf_c-brooding, catches your eye from afar and gives you a small nod of approval.",
                     "exp": 30,
                     "weight": 20
                 }
@@ -3517,6 +3517,86 @@
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "patrol_id": "dfcat_patrol_J1",
+            "biome": [
+                "Any"
+            ],
+            "season": [
+                "Any"
+            ],
+            "types": [
+                "lifegen"
+            ],
+            "tags": [],
+            "patrol_art": "df_default",
+            "min_cats": 2,
+            "max_cats": 2,
+            "min_max_status": {
+                "df": [1 ,1]
+            },
+            "weight": 20,
+            "intro_text": "You spot the Dark Forest inhabitant, r_c, slinking through the undergrowth nearby as you're exploring. {VERB/r_c/Are/Is} {PRONOUN/r_c/subject} watching you..?",
+            "decline_text": "You decide to retreat. Whatever r_c wants, you're sure you can't supply it.",
+            "chance_of_success": 50,
+            "success_outcomes": [
+                {
+                    "text": "You call out to r_c, asking what {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} looking for. The cat emerges from the shadows, slowly dipping {PRONOUN/r_c/poss} head at you, and tells you {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} been watching your training, and {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} impressed. You're still a bit unsettled, but you thank {PRONOUN/r_c/object} politely, and {PRONOUN/r_c/subject} {VERB/r_c/retreat/retreats} back into the forest. Weird...",
+                    "exp": 15,
+                    "weight": 20
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "You call out to r_c to ask what {PRONOUN/r_c/subject} {VERB/r_c/want/wants}, but the pair of gleaming eyes vanishes into the darkness without a word.",
+                    "exp": 0,
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "patrol_id": "dfcat_patrol_J2",
+            "biome": [
+                "Any"
+            ],
+            "season": [
+                "Any"
+            ],
+            "types": [
+                "lifegen"
+            ],
+            "tags": [
+                "df"
+            ],
+            "patrol_art": "life_df_og11",
+            "min_cats": 3,
+            "max_cats": 3,
+            "min_max_status": {
+                "df": [1,1]
+            },
+            "weight": 20,
+            "intro_text": "When you awaken in the Dark Forest tonight, you open your eyes to see an uninitiated Clanmate of yours surrounded by a group of Dark Forest cats, all jeering and swiping.",
+            "decline_text": "You decide to escape while you can, hoping your Clanmate will be okay.",
+            "chance_of_success": 60,
+            "success_outcomes": [
+                {
+                    "text": "You race forward, shoving a Dark Forest cat, s_c, out of the way, before {PRONOUN/s_c/subject} can land a blow on r_c. You're able to push r_c out of the crowd and into the safety of the undergrowth as s_c and {PRONOUN/s_c/poss} friends continue laughing behind you.",
+                    "exp": 10,
+                    "weight": 20,
+                    "can_have_stat": ["any"],
+                    "stat_residence": ["df"]
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "You call out to your Clanmate, s_c, hoping it might distract the Dark Forest cats and allow {PRONOUN/s_c/object} to escape. However, the Dark Forest warrior, r_c, sees right through you and breaks out of the crowd to chase you down. You're able to escape into the forest, hoping that s_c is safe.",
+                    "exp": 0,
+                    "weight": 20,
+                    "can_have_stat": ["any"],
+                    "stat_residence": ["living"]
                 }
             ]
         }

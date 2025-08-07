@@ -595,7 +595,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og5",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -711,7 +711,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og7",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -816,7 +816,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og10",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -851,7 +851,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og11",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -886,7 +886,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og12",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -1127,7 +1127,7 @@
                 "weight": 20
             },
             {
-                "text": "You ask if your_crush wants to hear a story, and they accept. You relate a tale of a long-ago c_n medicine cat going on a journey to find a legendary herb to save their mate from a terrible illness while your_crush listens, enraptured. Your storytelling is skillful enough to distract them from their worries, and when you're finished, they seem much lighter.",
+                "text": "You ask if yourcrush wants to hear a story, and they accept. You relate a tale of a long-ago c_n medicine cat going on a journey to find a legendary herb to save their mate from a terrible illness while yourcrush listens, enraptured. Your storytelling is skillful enough to distract them from their worries, and when you're finished, they seem much lighter.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": [
@@ -1146,7 +1146,7 @@
                 "weight": 20
             },
             {
-                "text": "You're nervous that you might make your_crush feel worse, so you decide to simply cheer them up with some encouragement. You spend several hours planning exactly what you want to say to them, but by time you feel confident enough to execute your plan, your_crush already seems to be feeling better.",
+                "text": "You're nervous that you might make yourcrush feel worse, so you decide to simply cheer them up with some encouragement. You spend several hours planning exactly what you want to say to them, but by time you feel confident enough to execute your plan, yourcrush already seems to be feeling better.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1192,7 +1192,7 @@
                 "weight": 20
             },
             {
-                "text": "They agree and meet you by the river that night. You spent the whole day preparing conversation topics in case the walk is awkward, but your_crush doesn't seem to mind your silences. You spend several hours strolling by the water, brushing against each other and pointing out the stars.",
+                "text": "They agree and meet you by the river that night. You spent the whole day preparing conversation topics in case the walk is awkward, but yourcrush doesn't seem to mind your silences. You spend several hours strolling by the water, brushing against each other and pointing out the stars.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1210,7 +1210,7 @@
                 ]
             },
             {
-                "text": "Of course you're nervous to take a walk with your_crush, but your anxiety slips away when you hear the river's familiar burbling. You take a deep breath, remembering other calm evenings at this very spot. The walk is peaceful, and you learn a lot about each other.",
+                "text": "Of course you're nervous to take a walk with yourcrush, but your anxiety slips away when you hear the river's familiar burbling. You take a deep breath, remembering other calm evenings at this very spot. The walk is peaceful, and you learn a lot about each other.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -1238,7 +1238,7 @@
                 "weight": 20
             },
             {
-                "text": "Your nervousness only grows throughout the day, and by the time you meet  your_crush by the river, your stomach feels like you've eaten crowfood. When you become too anxious to form coherent sentences, you excuse yourself and head back to camp early.",
+                "text": "Your nervousness only grows throughout the day, and by the time you meet  yourcrush by the river, your stomach feels like you've eaten crowfood. When you become too anxious to form coherent sentences, you excuse yourself and head back to camp early.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1269,7 +1269,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og18",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -1304,7 +1304,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og19",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -1454,7 +1454,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og21",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -1489,7 +1489,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "lg_warrior_default",
+        "patrol_art": "life_warrior_og22",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -1659,19 +1659,19 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You're sitting in camp in the afternoon when dislike_r_w returns home from a solo hunting patrol, carrying such a huge rabbit that {PRONOUN/dislike_r_w/subject}{VERB/dislike_r_w/'re/'s} tripping over it. You wonder if you should get up to help.",
-        "decline_text": "dislike_r_w is plenty capable. You sit and watch {PRONOUN/dislike_r_w/object} stumble to the fresh-kill pile, snickering to yourself at the trouble {PRONOUN/dislike_r_w/subject}{VERB/dislike_r_w/'re/'s} having. Though you can't deny it's an impressive catch.",
+        "intro_text": "You're sitting in camp in the afternoon when dislike-r_w returns home from a solo hunting patrol, carrying such a huge rabbit that {PRONOUN/dislike-r_w/subject}{VERB/dislike-r_w/'re/'s} tripping over it. You wonder if you should get up to help.",
+        "decline_text": "dislike-r_w is plenty capable. You sit and watch {PRONOUN/dislike-r_w/object} stumble to the fresh-kill pile, snickering to yourself at the trouble {PRONOUN/dislike-r_w/subject}{VERB/dislike-r_w/'re/'s} having. Though you can't deny it's an impressive catch.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "Despite dislike_r_w being one of your least favourite cats at the moment, you push aside your personal feelings and get up to ask dislike_r_w if {PRONOUN/dislike_r_w/subject}'d like any help. Thankfully, dislike_r_w accepts without any unnecessary fuss and you work as a team to get the huge rabbit to the freshkill pile.",
+                "text": "Despite dislike-r_w being one of your least favourite cats at the moment, you push aside your personal feelings and get up to ask dislike-r_w if {PRONOUN/dislike-r_w/subject}'d like any help. Thankfully, dislike-r_w accepts without any unnecessary fuss and you work as a team to get the huge rabbit to the freshkill pile.",
                 "exp": 15,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You stand up to give dislike_r_w a paw, but {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/swat/swats} you away, hissing through a mouthful of rabbit fur that {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/don't/doesn't} need any help. You return to your nest with a flick of your tail and make sure {PRONOUN/dislike_r_w/subject} can hear you laughing when {PRONOUN/dislike_r_w/subject} immediately {VERB/dislike_r_w/trip/trips} over the prey and {VERB/dislike_r_w/fall/falls} flat on {PRONOUN/dislike_r_w/poss} face.",
+                "text": "You stand up to give dislike-r_w a paw, but {PRONOUN/dislike-r_w/subject} {VERB/dislike-r_w/swat/swats} you away, hissing through a mouthful of rabbit fur that {PRONOUN/dislike-r_w/subject} {VERB/dislike-r_w/don't/doesn't} need any help. You return to your nest with a flick of your tail and make sure {PRONOUN/dislike-r_w/subject} can hear you laughing when {PRONOUN/dislike-r_w/subject} immediately {VERB/dislike-r_w/trip/trips} over the prey and {VERB/dislike-r_w/fall/falls} flat on {PRONOUN/dislike-r_w/poss} face.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -1683,10 +1683,10 @@
                         "competitive",
                         "smug"
                     ],
-                "can_have_stat": ["dislike_r_w"],
+                "can_have_stat": ["dislike-r_w"],
                 "relationships": [
                     {
-                        "cats_to": ["dislike_r_w"],
+                        "cats_to": ["dislike-r_w"],
                         "cats_from": ["y_c"],
                         "mutual": true,
                         "values": ["dislike"],
@@ -1695,7 +1695,7 @@
                 ]
             },
             {
-                "text": "You know that dislike_r_w doesn't like you that much, so you decide to start chatting with {PRONOUN/dislike_r_w/object}! You hope that this will motivate {PRONOUN/dislike_r_w/object} to move faster, but it turns out that chatting with {PRONOUN/dislike_r_w/object} made dislike_r_w move slower. You just wanted the rabbit to be brought to the fresh-kill pile faster, not to strike up an actual conversation with {PRONOUN/dislike_r_w/object}.",
+                "text": "You know that dislike-r_w doesn't like you that much, so you decide to start chatting with {PRONOUN/dislike-r_w/object}! You hope that this will motivate {PRONOUN/dislike-r_w/object} to move faster, but it turns out that chatting with {PRONOUN/dislike-r_w/object} made dislike-r_w move slower. You just wanted the rabbit to be brought to the fresh-kill pile faster, not to strike up an actual conversation with {PRONOUN/dislike-r_w/object}.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": ["troublesome","childish","playful","strange","rebellious","spontaneous","energetic","bouncy"],
@@ -1703,14 +1703,14 @@
                 "relationships": [
                     {
                         "cats_to": ["p_l"],
-                        "cats_from": ["dislike_r_w"],
+                        "cats_from": ["dislike-r_w"],
                         "mutual": false,
                         "values": ["comfort", "platonic"],
                         "amount": 10
                     },
                     {
                         "cats_to": ["p_l"],
-                        "cats_from": ["dislike_r_w"],
+                        "cats_from": ["dislike-r_w"],
                         "mutual": false,
                         "values": ["dislike"],
                         "amount": -5
@@ -1718,7 +1718,7 @@
                 ]
             },
             {
-                "text": "You're nothing but awkward as you approach dislike_r_w, asking if {PRONOUN/dislike_r_w/subject} would like any help. Your awkwardness must have peeved dislike_r_w off and {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/refuse/refuses} the offer, only to take one more step and fall directly on {PRONOUN/dislike_r_w/poss} face. It takes everything in you to not laugh.",
+                "text": "You're nothing but awkward as you approach dislike-r_w, asking if {PRONOUN/dislike-r_w/subject} would like any help. Your awkwardness must have peeved dislike-r_w off and {PRONOUN/dislike-r_w/subject} {VERB/dislike-r_w/refuse/refuses} the offer, only to take one more step and fall directly on {PRONOUN/dislike-r_w/poss} face. It takes everything in you to not laugh.",
                 "exp": 0,
                 "weight": 20
             }

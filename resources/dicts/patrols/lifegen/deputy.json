@@ -545,17 +545,17 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "As you're leaving your den in the morning to assemble dawn patrols, r_w1_neurotic stops you, apologises for bothering you, and asks not to be put on patrol with r_w2_brooding this morning.",
-        "decline_text": "You wave r_w1_neurotic off. All Clanmates must learn to work together, and if they end up on patrol together, {PRONOUN/r_w1_neurotic/subject}'ll have to deal with it!",
+        "intro_text": "As you're leaving your den in the morning to assemble dawn patrols, r_w1-neurotic stops you, apologises for bothering you, and asks not to be put on patrol with r_w2-brooding this morning.",
+        "decline_text": "You wave r_w1-neurotic off. All Clanmates must learn to work together, and if they end up on patrol together, {PRONOUN/r_w1-neurotic/subject}'ll have to deal with it!",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You ask why, and r_w1_neurotic explains that r_w2_brooding is a bit intimidating, and tends to throw off {PRONOUN/r_w1_neurotic/poss} focus. You tell r_w1_neurotic you'll assign {PRONOUN/r_w1_neurotic/object} and r_w2_brooding to separate duties, but let {PRONOUN/r_w1_neurotic/object} know that r_w2_brooding isn't as scary as {PRONOUN/r_w2_brooding/subject} {VERB/r_w2_brooding/seem/seems}.",
+                "text": "You ask why, and r_w1-neurotic explains that r_w2-brooding is a bit intimidating, and tends to throw off {PRONOUN/r_w1-neurotic/poss} focus. You tell r_w1-neurotic you'll assign {PRONOUN/r_w1-neurotic/object} and r_w2-brooding to separate duties, but let {PRONOUN/r_w1-neurotic/object} know that r_w2-brooding isn't as scary as {PRONOUN/r_w2-brooding/subject} {VERB/r_w2-brooding/seem/seems}.",
                 "exp": 15,
                 "weight": 20
             },
             {
-                "text": "You tell r_w1_neurotic that {PRONOUN/r_w1_neurotic/subject} can't avoid {PRONOUN/r_w1_neurotic/poss} Clanmates, and in fact, you'll make sure {PRONOUN/r_w1_neurotic/subject}{VERB/r_w1_neurotic/'re/'s} put on a patrol with r_w2_brooding today. r_w1_neurotic looks upset, but when {PRONOUN/r_w1_neurotic/subject} {VERB/r_w1_neurotic/return/returns} from {PRONOUN/r_w1_neurotic/poss} dawn patrol later, you see {PRONOUN/r_w1_neurotic/object} laughing and joking around with r_w2_brooding. Looks like {PRONOUN/r_w2_brooding/subject} {VERB/r_w2_brooding/weren't/wasn't} so scary after all.",
+                "text": "You tell r_w1-neurotic that {PRONOUN/r_w1-neurotic/subject} can't avoid {PRONOUN/r_w1-neurotic/poss} Clanmates, and in fact, you'll make sure {PRONOUN/r_w1-neurotic/subject}{VERB/r_w1-neurotic/'re/'s} put on a patrol with r_w2-brooding today. r_w1-neurotic looks upset, but when {PRONOUN/r_w1-neurotic/subject} {VERB/r_w1-neurotic/return/returns} from {PRONOUN/r_w1-neurotic/poss} dawn patrol later, you see {PRONOUN/r_w1-neurotic/object} laughing and joking around with r_w2-brooding. Looks like {PRONOUN/r_w2-brooding/subject} {VERB/r_w2-brooding/weren't/wasn't} so scary after all.",
                 "exp": 15,
                 "weight": 20,
                 "can_have_stat": ["p_l"],
@@ -571,8 +571,8 @@
                 ],
                 "relationships": [
                     {
-                        "cats_to": ["r_w1_neurotic"],
-                        "cats_from": ["r_w2_brooding"],
+                        "cats_to": ["r_w1-neurotic"],
+                        "cats_from": ["r_w2-brooding"],
                         "mutual": true,
                         "values": ["platonic"],
                         "amount": 10
@@ -582,17 +582,17 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You're about to ask why, but just as you do, you notice r_w2_brooding emerging from {PRONOUN/r_w2_brooding/poss} den, blinking sleep from {PRONOUN/r_w2_brooding/poss} eyes. You give r_w1_neurotic a quick nod, approving of {PRONOUN/r_w1_neurotic/subject} request, and continue on your way to the front of camp.",
+                "text": "You're about to ask why, but just as you do, you notice r_w2-brooding emerging from {PRONOUN/r_w2-brooding/poss} den, blinking sleep from {PRONOUN/r_w2-brooding/poss} eyes. You give r_w1-neurotic a quick nod, approving of {PRONOUN/r_w1-neurotic/subject} request, and continue on your way to the front of camp.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "You dismiss r_w1_neurotic-- surely {PRONOUN/r_w1_neurotic/subject} can't be that intimidated by r_w2_brooding. You put the two on the dawn patrol together, but r_w1_neurotic returns home early, muttering that {PRONOUN/r_w1_neurotic/subject} {VERB/r_w1_neurotic/don't/doesn't} feel well as {PRONOUN/r_w1_neurotic/subject} {VERB/r_w1_neurotic/run/runs} past you to go back to sleep.",
+                "text": "You dismiss r_w1-neurotic-- surely {PRONOUN/r_w1-neurotic/subject} can't be that intimidated by r_w2-brooding. You put the two on the dawn patrol together, but r_w1-neurotic returns home early, muttering that {PRONOUN/r_w1-neurotic/subject} {VERB/r_w1-neurotic/don't/doesn't} feel well as {PRONOUN/r_w1-neurotic/subject} {VERB/r_w1-neurotic/run/runs} past you to go back to sleep.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "You sympathise with r_w1_neurotic but deny {PRONOUN/r_w1_neurotic/poss} request. r_w2_brooding isn't a bad cat - surely there is no harm in patrolling with {PRONOUN/r_w2_brooding/object} once in a while. Though, you start to regret your decision as r_w1_neurotic falls further into {PRONOUN/r_w1_neurotic/poss} nerves when the patrol heads off.",
+                "text": "You sympathise with r_w1-neurotic but deny {PRONOUN/r_w1-neurotic/poss} request. r_w2-brooding isn't a bad cat - surely there is no harm in patrolling with {PRONOUN/r_w2-brooding/object} once in a while. Though, you start to regret your decision as r_w1-neurotic falls further into {PRONOUN/r_w1-neurotic/poss} nerves when the patrol heads off.",
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
@@ -609,7 +609,7 @@
                 "relationship": [
                     {
                         "cats_to": ["p_l"],
-                        "cats_from": ["r_w1_neurotic"],
+                        "cats_from": ["r_w1-neurotic"],
                         "mutual": false,
                         "values": ["comfort"],
                         "amount": -5
@@ -630,7 +630,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "patrol_art_png_name",
+        "patrol_art": "DefaultDeputy",
         "min_cats": 1,
         "max_cats": 1,
         "min_max_status": {},
@@ -725,6 +725,68 @@
                     "p_l"
                 ]
             }
+        ]
+    },
+    {
+        "patrol_id": "dead_patrol_J3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "dead_patrol_J3",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Today, you've found yourself watching c_n through a puddle during a Clan meeting. You listen closely as d_n assembles today's patrols. Wait-- no, no, no! {PRONOUN/d_n/subject/CAP}{VERB/d_n/'re/'s} doing it all wrong!",
+        "decline_text": "You decide to walk away from the puddle and leave d_n to it. If {PRONOUN/d_n/subject} {VERB/d_n/want/wants} to create inefficient patrols, that's {PRONOUN/d_n/poss} business.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "Wanting to somehow voice your frustration, you splash your forepaws into the puddle. To your surprise, d_n's ear flicks, and {PRONOUN/d_n/subject} {VERB/d_n/mutter/mutters} something about rain. You splash more water into {PRONOUN/d_n/poss} face until the slight shift in the weather ends up causing {PRONOUN/d_n/object} to rethink {PRONOUN/d_n/poss} patrol groupings. The final result is a much more efficient plan than before, and you finally leave d_n be, satisfied.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You reach behind you and pick up a nearby twig. You chuck it into the puddle as hard as you can, and you manage to break through and bonk d_n on the head with it. Somehow, d_n gets the message that the two warriors {PRONOUN/d_n/subject} just paired up were a horrible match, and {PRONOUN/d_n/subject} {VERB/d_n/take/takes} it back and {VERB/d_n/make/makes} a much better decision.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Luckily for you, d_n falls asleep before the patrols get sent out! You manage to visit d_n's dreams, expressing how incorrectly {PRONOUN/d_n/subject} did the patrols. d_n takes your advice and changes the patrols to a much better arrangement.",
+                "exp": 0,
+                "weight": 20
+            }
+
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You yowl your frustrations into the puddle, but d_n can't hear you. {PRONOUN/d_n/poss/CAP} inefficient patrols end up being sent out, and when today's fresh-kill pile is a less-than-ideal size, you just sigh.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Annoyed, you splash your paws into the puddle, hoping to get through to {PRONOUN/d_n/object} somehow. However, as the water falls, all d_n does is mutter something about rain and proceed with {PRONOUN/d_n/poss} sloppy patrols.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You heckle d_n's decisions through the puddle as you enjoy a midday mouse. How could they pair those two warriors together? They clearly hate each other! You remind yourself to try to visit d_n's dreams later to ask {PRONOUN/d_n/object} what {PRONOUN/d_n/subject} {VERB/d_n/were/was} thinking.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Luckily for you, d_n falls asleep before the patrols get sent out! You manage to visit d_n's dreams, expressing how incorrectly {PRONOUN/d_n/subject} did the patrols. Despite your warnings, d_n doesn't listen to your advice. When the patrols come back with less fresh-kill than usual, you can see the look on d_n's face of realization that {PRONOUN/d_n/subject} should've listened to you.",
+                "exp": 0,
+                "weight": 20
+            }
+
         ]
     }
 ]

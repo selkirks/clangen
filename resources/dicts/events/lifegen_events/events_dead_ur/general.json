@@ -29,7 +29,7 @@
         "You lose your footing in a tree - literally. Panic strikes you as you fall through the branch you'd been on. At least, it does until you remember you're a ghost, and it can't hurt you to fall. You could even just... gracefully float the rest of the way down. Small perks?",
         "One day you learn to just... float. It's a very strange feeling. Higher and higher you go... Wow! You can see for ages up here!",
         "The longer you spend watching living cats, the more you realize just how much you didn't know. It feels so foolish now to think back on all of the miscommunications and mistakes you made.",
-        "As you're wandering around, you encounter another lost spirit. You two watch c_nClan for a while together, laughing at the current argument between r_c1 and r_c2. Eventually, the argument gets resolved and you part ways, both of you happier than before."
+        "As you're wandering around, you encounter another lost spirit. You two watch c_n for a while together, laughing at the current argument between r_c1 and r_c2. Eventually, the argument gets resolved and you part ways, both of you happier than before."
     ],
     "general assertive": [],
     "general brooding": [],
@@ -43,6 +43,6 @@
     "general unabashed": [],
     "general unlawful": [],
     "general rare": [
-        "You're wandering around c_nClan, when r_k_ghost stares right into your eyes, almost as if {PRONOUN/r_k_ghost/subject} could see you. As you're about to approach {PRONOUN/r_k_ghost/object}, {PRONOUN/r_k_ghost/subject} {VERB/r_k_ghost/get/gets} pulled away by r_q. You wonder if there are other cats in c_nClan that can see you."
+        "You're wandering around c_n, when r_k-ghost stares right into your eyes, almost as if {PRONOUN/r_k-ghost/subject} could see you. As you're about to approach {PRONOUN/r_k-ghost/object}, {PRONOUN/r_k-ghost/subject} {VERB/r_k-ghost/get/gets} pulled away by r_q. You wonder if there are other cats in c_n that can see you."
     ]
 }

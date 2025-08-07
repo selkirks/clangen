@@ -1149,8 +1149,8 @@ class MurderScreen(Screens):
                 print("Discovery chances will go up if the leader doesn't lose all of their lives.")
 
     def change_cat(self, new_mentor=None, accomplice=None, accompliced=None):
+        self.current_page = 1
         self.exit_screen()
-        self.current_page = 0
         r = randint(0,100)
         r2 = randint(-10, 10)
 
@@ -2941,7 +2941,7 @@ class MurderScreen(Screens):
                 chance += 10
             if accomplice.status in ['medicine cat', 'mediator', 'deputy', 'leader']:
                 chance -= 20
-            if accomplice.ID in game.clan.your_cat.mate:
+            if accomplice.ID in game.clan.your_cat.mates:
                 chance += 50
             if game.clan.your_cat.is_related(accomplice, False):
                 chance += 30

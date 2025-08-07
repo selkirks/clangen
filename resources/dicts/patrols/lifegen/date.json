@@ -11,7 +11,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "date_default",
+        "patrol_art": "date_snow",
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {},
@@ -247,7 +247,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "date_default",
+        "patrol_art": "date_sunrise",
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {},
@@ -346,7 +346,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "{PRONOUN/r_c/subject/CAP} {VERB/r_c/agree/agrees}, and you walk out to the seabank together. When you've stepped out in the water, r_c looks at you questionably, not seeming to understand why you think this is fun. You attempt to show {PRONOUN/r_c/object} as you joyfully jump around, but a sharp wave hits r_c and {PRONOUN/r_c/subject} hiss loudly, walking back with a soaked pelt. Maybe this wasn't the best idea after all..",
+                "text": "{PRONOUN/r_c/subject/CAP} {VERB/r_c/agree/agrees}, and you walk out to the seabank together. When you've stepped out in the water, r_c looks at you questionably, not seeming to understand why you think this is fun. You attempt to show {PRONOUN/r_c/object} as you joyfully jump around, but a sharp wave hits r_c and {PRONOUN/r_c/subject} hiss loudly, walking back with a soaked pelt. Maybe this wasn't the best idea after all...",
                 "exp": 0,
                 "weight": 20
             }
@@ -764,7 +764,7 @@
         ],
         "success_outcomes": [
             {
-                "text": "You nervously ask r_c and {PRONOUN/r_c/subject} look away, blushing a bit. {PRONOUN/r_c/subject/CAP} purr and tell you to just focus on the sky, though you can't help but notice {PRONOUN/r_c/object} glancing at you affectionately every now and then.",
+                "text": "You nervously ask r_c and {PRONOUN/r_c/subject} look away, blushing a bit. {PRONOUN/r_c/subject/CAP} {VERB/r_c/purr/purrs} and tell you to just focus on the sky, though you can't help but notice {PRONOUN/r_c/object} glancing at you affectionately every now and then.",
                 "exp": 0,
                 "weight": 20,
                 "relationships": [
@@ -1016,7 +1016,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "date_default",
+        "patrol_art": "edge_leafbrush",
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {},
@@ -1126,7 +1126,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "date_default",
+        "patrol_art": "date_star",
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {},
@@ -1343,7 +1343,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You and r_c end up on a patrol together. As you walk together through your Clan's territory, the smell of budding plants fills your nostrils and your attention is drawn to r_c. Did {PRONOUN/r_c/subject} always look so nice? You can't seem to look away, {PRONOUN/r_c/poss} luxurious fur, the way {PRONOUN/r_c/subject} {VERB/r_c/walk/walks}..",
+        "intro_text": "You and r_c end up on a patrol together. As you walk together through your Clan's territory, the smell of budding plants fills your nostrils and your attention is drawn to r_c. Did {PRONOUN/r_c/subject} always look so nice? You can't seem to look away, {PRONOUN/r_c/poss} luxurious fur, the way {PRONOUN/r_c/subject} {VERB/r_c/walk/walks}...",
         "decline_text": "You shake off the feeling. There are more important things to do than to swoon at a stupid crush.",
         "chance_of_success": 50,
         "relationship_constraint": [
@@ -1373,7 +1373,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "As you stare over at them, their fur prickles and they turn around to see you gawking. They give you a confused and disgusted glare.",
+                "text": "As you stare over at {PRONOUN/r_c/object}, {PRONOUN/r_c/poss} fur prickles and {PRONOUN/r_c/subject} {VERB/r_c/turn/turns} around to see you gawking. {PRONOUN/r_c/subject/CAP} {VERB/r_c/give/gives} you a confused and disgusted glare.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1528,7 +1528,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You stutter a lot while trying to express your love towards r_c, but {PRONOUN/r_c/subject} awkwardly {VERB/r_c/turn/turns} {PRONOUN/r_c/poss} head to look at you, cringing. With {PRONOUN/r_c/poss} mouth full of moss, r_c doesn't talk to you after that patrol, and quickly continues their duties without interacting with you afterwards.",
+                "text": "You stutter a lot while trying to express your love towards r_c, but {PRONOUN/r_c/subject} awkwardly {VERB/r_c/turn/turns} {PRONOUN/r_c/poss} head to look at you, cringing. With {PRONOUN/r_c/poss} mouth full of moss, r_c doesn't talk to you after that patrol, and quickly continues {PRONOUN/r_c/poss} duties without interacting with you afterwards.",
                 "exp": 0,
                 "weight": 20
             }
@@ -1666,7 +1666,7 @@
         "tags": [
             "shunned"
         ],
-        "patrol_art": "poly_date_default",
+        "patrol_art": "poly_date_J3",
         "min_cats": 3,
         "max_cats": 3,
         "min_max_status": {},
@@ -1834,7 +1834,7 @@
         "tags": [
             "shunned"
         ],
-        "patrol_art": "date_default",
+        "patrol_art": "shunned_date_J1",
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {},
@@ -1893,7 +1893,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "In a rare moment of joy during your punishment, you and r_c are in the camp clearing, rolling around in the sun and laughing together. You think {PRONOUN/r_c/poss} fur is so beautiful when the sun hits it just right, but you think it might be weird to tell them that.",
+        "intro_text": "In a rare moment of joy during your punishment, you and r_c are in the camp clearing, rolling around in the sun and laughing together. You think {PRONOUN/r_c/poss} fur is so beautiful when the sun hits it just right, but you think it might be weird to tell {PRONOUN/r_c/object} that.",
         "decline_text": "You look away. Now isn't the time.",
         "chance_of_success": 60,
         "relationship_constraint": [
@@ -1948,7 +1948,7 @@
         "tags": [
             "shunned"
         ],
-        "patrol_art": "date_default",
+        "patrol_art": "shunned_date_J3",
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {},
@@ -2701,200 +2701,6 @@
                     "amount": 3
                 }
             ]
-        }
-    ]
-},
-{
-    "patrol_id": "lifegen_general_SQ1",
-    "biome": [
-        "Any"
-    ],
-    "season": [
-        "Newleaf"
-    ],
-    "types": [
-        "lifegen"
-    ],
-    "tags": [],
-    "patrol_art": "life_warrior_og12",
-    "min_cats": 1,
-    "max_cats": 1,
-    "min_max_status": {},
-    "weight": 15,
-    "intro_text": "Now that newleaf is here, some cats have expressed how nice the camp would look with flower decorations. Do you want to look for some?",
-    "decline_text": "Flowers would be nice, but you already have a lot to do today. Maybe one of your less-busy Clanmates would be willing to take on the task instead.",
-    "chance_of_success": 50,
-    "success_outcomes": [
-        {
-            "text": "The territory is full of flowers, and it's easy to locate some beautiful bunches along your usual patrol routes. You collect a variety and bring them back to camp, earning oohs from some of your Clanmates when they first see the colors. You even have enough to keep some for yourself!",
-            "exp": 10,
-            "weight": 15,
-            "accessory": [
-                {
-                    "cats": [
-                        "y_c"
-                    ],
-                    "accessory": [
-                        "FLOWER"
-                    ]
-                }
-            ]
-        },
-        {
-            "text": "You find a few scattered flowers, but not enough to decorate the entire camp. You switch tactics and collect leaves from the trees that already have them, and trot back to camp with a bristling bundle of them! The bright green really livens up the den entrances. ",
-            "exp": 10,
-            "weight": 15
-        },
-        {
-            "text": "If you're going to be the one doing the work, then you're going to choose the flowers you like the best! You find a patch of your favorite blossoms just outside of camp, and venture a bit further to find other flowers with colors that match. The camp looks beautiful when you're done with it.",
-            "exp": 10,
-            "weight": 15
-        },
-        {
-            "text": "Of course you want to help out, but you don't want to overpick any plants! You spend a whole day combing the territory, carefully picking one or two blossoms at a time. You're exhausted by the end of the day, but you return to camp with a bouquet of dozens of types of flowers. Your Clanmates compliment your effort.",
-            "exp": 10,
-            "weight": 20,
-            "stat_trait": [
-                "careful",
-                "nervous",
-                "insecure",
-                "meek",
-                "cowardly",
-                "reserved",
-                "emotional",
-                "lonesome"
-            ],
-            "can_have_stat": [
-                "p_l"
-            ]
-        },
-        {
-            "text": "You've been waiting for this moment! You have a plan for the whole camp: what flowers and color schemes to use around the different dens, and how to blend them all together so they look cohesive. You excitedly get to work. The flower collecting and decorating takes several days, but by the end, the camp looks stunning. You're already planning what to do once greenleaf arrives...",
-            "exp": 0,
-            "weight": 20,
-            "stat_skill": [
-                "ARTISTAN,1",
-                "CAMP,1"
-            ],
-            "can_have_stat": [
-                "p_l"
-            ]
-        }
-    ],
-    "fail_outcomes": [
-        {
-            "text": "You scour the territory for flowers, but the only ones you can find are medicinal herbs. You collect a few to drop off at the medicine den, and are glad to have helped bolster the herb supply, but are disappointed that the camp still looks as drab as when you started.",
-            "exp": 0,
-            "weight": 15,
-            "herbs": [
-                "marigold"
-            ]
-        },
-        {
-            "text": "You remember seeing a small patch of flowers not far from camp, but when you find it again, it's been mowed down by a group of rabbits. You manage to catch a few rabbits to bring back to camp, though, and your Clanmates are excited to see the unexpected fresh-kill.",
-            "exp": 5,
-            "weight": 15
-        },
-        {
-            "text": "You collect some delicate blue flowers at the beginning of a patrol, thinking they would look great around the nursery. Unfortunately, over the course of the patrol they become more wilted and battered, and when you return to camp you're forced to admit they wouldn't make very good decorations anymore.",
-            "exp": 0,
-            "weight": 15
-        },
-        {
-            "text": "You're worried about choosing decorations that the rest of your Clan won't like, so you spend a while surveying everyone about their favorite flowers and colors. Unfortunately, everyone has such different preferences that you can't come to a conclusion about what flowers to gather, and you can't help but feel like you've wasted everyone's time.",
-            "exp": 0,
-            "weight": 20,
-            "stat_trait": [
-                "careful",
-                "nervous",
-                "insecure",
-                "meek",
-                "cowardly",
-                "reserved",
-                "emotional",
-                "lonesome"
-            ],
-            "can_have_stat": [
-                "p_l"
-            ]
-        },
-        {
-            "text": "You head out of camp to pick the most colorful flowers you can find, but you're unable to locate many. When you get back home, you're greeted by new den entrances covered in vibrant plants and shiny stones. Apparently, r_w got to the decorating before you!",
-            "exp": 0,
-            "weight": 20,
-            "can_have_stat": [
-                "r_w"
-            ],
-            "stat_skill": [
-                "ARTISTAN,1"
-            ]
-        }
-    ]
-},
-{
-    "patrol_id": "gen_life_J3",
-    "biome": [
-        "Any"
-    ],
-    "season": [
-        "leafbare"
-    ],
-    "types": [
-        "lifegen"
-    ],
-    "tags": [],
-    "patrol_art": "lg_warrior_default",
-    "min_cats": 1,
-    "max_cats": 1,
-    "min_max_status": {},
-    "weight": 20,
-    "intro_text": "You're enjoying a meal during a calm, snowy day in camp when suddenly, you receive a sharp and cold <i>thwap</i> to the back of your head. You turn to see plike_r_w_silly with a pawful of snow, snickering to {PRONOUN/plike_r_w_silly/self}.",
-    "decline_text": "You pick up your fresh-kill and head inside to finish it, ignoring your friend's disappointed face. {PRONOUN/plike_r_w_silly/subject/CAP} should know not to mess with a cat's mealtime!",
-    "chance_of_success": 60,
-    "success_outcomes": [
-        {
-            "text": "Challenge accepted! You jump to your paws, dodging your friend's second snowball attack, and manage to tackle {PRONOUN/plike_r_w_silly/object} into a snowbank with a triumphant laugh. You take turns shoving each other into the snow until you're too exhausted to continue.",
-            "exp": 15,
-            "weight": 20,
-            "relationships": [
-                {
-                    "cats_to": [
-                        "plike_r_w_silly"
-                    ],
-                    "cats_from": [
-                        "p_l"
-                    ],
-                    "mutual": true,
-                    "values": [
-                        "platonic"
-                    ],
-                    "amount": 10
-                }
-            ]
-        },
-        {
-            "text": "When you meet plike_r_w_silly's gaze, {PRONOUN/plike_r_w_silly/subject} instantly {VERB/plike_r_w_silly/drop/drops} {PRONOUN/plike_r_w_silly/poss} snowball and {VERB/plike_r_w_silly/dip/dips} {PRONOUN/plike_r_w_silly/poss} head with a polite laugh. Your friend knows you well enough not to continue messing with you during your meal. You'll make sure to get {PRONOUN/plike_r_w_silly/object} back later, though.",
-            "exp": 15,
-            "weight": 15,
-            "can_have_stat": [
-                "p_l"
-            ],
-            "stat_trait": [
-                "cold",
-                "gloomy",
-                "strict",
-                "vengeful",
-                "grumpy",
-                "aloof",
-                "stoic"
-            ]
-        }
-    ],
-    "fail_outcomes": [
-        {
-            "text": "You covertly scoop up a pawful of snow from next to you and turn around, launching it in plike_r_w_silly's direction. Your attack hits {PRONOUN/plike_r_w_silly/object} square in the face-- so hard that {PRONOUN/plike_r_w_silly/subject} {VERB/plike_r_w_silly/let/lets} out a yelp and {VERB/plike_r_w_silly/fall/falls} into the snowbank behind {PRONOUN/plike_r_w_silly/object}. When you rush to check on {PRONOUN/plike_r_w_silly/object}, there's no serious damage and {PRONOUN/plike_r_w_silly/subject} {VERB/plike_r_w_silly/laugh/laughs} it off, but you still feel bad.",
-            "exp": 0,
-            "weight": 20
         }
     ]
 }

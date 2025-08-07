@@ -14,7 +14,7 @@
         "During a Gathering, you and a warrior from o_c_n get into a heated debate.",
         "You're chosen to help r_m with a herb gathering patrol this moon. r_m thanks you gratefully as you carry back a large bundle of herbs.",
         "You're chosen to help r_d with a mediation this moon over at o_c_n. r_d thanks you for keeping {PRONOUN/r_d/object} safe as you travel through the other Clan's territory.",
-        "You and plike_r_w chase each other through the territory!"
+        "You and plike-r_w chase each other through the territory!"
     ],
     "warrior assertive": [],
     "warrior brooding": [],
@@ -29,7 +29,7 @@
     "warrior neurotic": [
         "r_a looks to you for reassurance before {PRONOUN/r_a/poss} assessment, and your encouraging words soothe {PRONOUN/r_a/poss} fears. You remember when you were in the same place, moons ago.",
         "When a hunting patrol takes longer than expected to return, you fear the worst, convinced something terrible happened.",
-        "You're not too disappointed when neutral_r_w1 has to help r_w2 instead of joining you on a hunting patrol, leaving you to go alone. You spend an afternoon traipsing through the territory, enjoying the solitude."
+        "You're not too disappointed when neutral-r_w1 has to help r_w2 instead of joining you on a hunting patrol, leaving you to go alone. You spend an afternoon traipsing through the territory, enjoying the solitude."
     ],
     "warrior silly": [],
     "warrior stable": [

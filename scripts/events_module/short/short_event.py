@@ -11,6 +11,9 @@ class ShortEvent:
             self,
             event_id: str = "",
             location: List[str] = None,
+            # LG
+            faith_effect: int = 0,
+            # ---
             season: List[str] = None,
             sub_type: List[str] = None,
             tags: List[str] = None,
@@ -32,6 +35,7 @@ class ShortEvent:
             print("WARNING: moon event has no event_id")
         self.event_id = event_id
         self.location = location if location else ["any"]
+        self.faith_effect = faith_effect if faith_effect else 0
         self.season = season if season else ["any"]
         self.sub_type = sub_type if sub_type else []
         self.tags = tags if tags else []

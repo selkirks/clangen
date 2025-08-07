@@ -37,7 +37,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -48,7 +48,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
                                                  patrol.patrol_leader))
 
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2, parent], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2, parent], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -64,8 +64,8 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
         mate2 = Cat()
         cat1 = Cat()
 
-        mate1.mate.append(mate2.ID)
-        mate2.mate.append(mate1.ID)
+        mate1.mates.append(mate2.ID)
+        mate2.mates.append(mate1.ID)
 
         # when
         con_patrol_event = PatrolEvent(patrol_id="test1")
@@ -77,7 +77,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([mate1, mate2], test_clan, None)
+        patrol.add_patrol_cats([mate1, mate2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -88,7 +88,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
                                                  patrol.patrol_leader))
 
         patrol = Patrol()
-        patrol.add_patrol_cats([mate1, cat1], test_clan, None)
+        patrol.add_patrol_cats([mate1, cat1], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -99,7 +99,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
                                                  patrol.patrol_leader))
 
         patrol = Patrol()
-        patrol.add_patrol_cats([mate1, mate2, cat1], test_clan, None)
+        patrol.add_patrol_cats([mate1, mate2, cat1], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -125,7 +125,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([parent, cat1], test_clan, None)
+        patrol.add_patrol_cats([parent, cat1], test_clan)
         patrol.patrol_leader = parent
         patrol.random_cat = cat1
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
@@ -138,7 +138,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
                                                  patrol.patrol_leader))
 
         patrol = Patrol()
-        patrol.add_patrol_cats([parent, cat1], test_clan, None)
+        patrol.add_patrol_cats([parent, cat1], test_clan)
         patrol.patrol_leader = cat1
         patrol.random_cat = parent
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
@@ -152,7 +152,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         patrol = Patrol()
         cat_list = [cat1, cat2, parent]
-        patrol.add_patrol_cats(cat_list, test_clan, None)
+        patrol.add_patrol_cats(cat_list, test_clan)
         patrol.patrol_leader = parent
         patrol.random_cat = cat2
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
@@ -180,7 +180,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([parent, cat1], test_clan, None)
+        patrol.add_patrol_cats([parent, cat1], test_clan)
         patrol.patrol_leader = cat1
         patrol.random_cat = parent
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
@@ -193,7 +193,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
                                                  patrol.patrol_leader))
 
         patrol = Patrol()
-        patrol.add_patrol_cats([parent, cat1], test_clan, None)
+        patrol.add_patrol_cats([parent, cat1], test_clan)
         patrol.patrol_leader = parent
         patrol.random_cat = cat1
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
@@ -207,7 +207,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         patrol = Patrol()
         cat_list = [cat1, cat2, parent]
-        patrol.add_patrol_cats(cat_list, test_clan, None)
+        patrol.add_patrol_cats(cat_list, test_clan)
         patrol.patrol_leader = parent
         patrol.random_cat = cat2
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
@@ -245,7 +245,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -261,7 +261,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                   con_patrol_event.relationship_constraints,
                                                   con_patrol_event.patrol_id,
@@ -297,7 +297,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -312,7 +312,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
         con_patrol_event.relationship_constraints = ["platonic_30"]
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                   con_patrol_event.relationship_constraints,
                                                   con_patrol_event.patrol_id,
@@ -348,7 +348,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -364,7 +364,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                   con_patrol_event.relationship_constraints,
                                                   con_patrol_event.patrol_id,
@@ -400,7 +400,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -416,7 +416,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                   con_patrol_event.relationship_constraints,
                                                   con_patrol_event.patrol_id,
@@ -452,7 +452,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -468,7 +468,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                   con_patrol_event.relationship_constraints,
                                                   con_patrol_event.patrol_id,
@@ -504,7 +504,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -520,7 +520,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                   con_patrol_event.relationship_constraints,
                                                   con_patrol_event.patrol_id,
@@ -574,7 +574,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2, cat3], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2, cat3], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -590,7 +590,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2, cat3], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2, cat3], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                   con_patrol_event.relationship_constraints,
                                                   con_patrol_event.patrol_id,
@@ -607,7 +607,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2, cat3], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2, cat3], test_clan)
         self.assertFalse(filter_relationship_type(patrol.patrol_cats,
                                                   con_patrol_event.relationship_constraints,
                                                   con_patrol_event.patrol_id,
@@ -645,7 +645,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,
@@ -660,7 +660,7 @@ class TestRelationshipConstraintPatrols(unittest.TestCase):
 
         # then
         patrol = Patrol()
-        patrol.add_patrol_cats([cat1, cat2], test_clan, None)
+        patrol.add_patrol_cats([cat1, cat2], test_clan)
         self.assertTrue(filter_relationship_type(patrol.patrol_cats,
                                                  con_patrol_event.relationship_constraints,
                                                  con_patrol_event.patrol_id,

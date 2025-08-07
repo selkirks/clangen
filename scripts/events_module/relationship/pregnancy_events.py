@@ -154,12 +154,12 @@ class Pregnancy_Events:
         if other_cat:
             adoptive_parents.append(other_cat.ID)
 
-        for _m in cat.mate:
+        for _m in cat.mates:
             if _m not in adoptive_parents:
                 adoptive_parents.append(_m)
 
         if other_cat:
-            for _m in other_cat.mate:
+            for _m in other_cat.mates:
                 if _m not in adoptive_parents:
                     adoptive_parents.append(_m)
 
@@ -410,25 +410,25 @@ class Pregnancy_Events:
             if other_cat and not other_cat.outside:
                 adding_text = choice(events["birth"]["outside_in_clan"])
             event_list.append(adding_text)
-        elif other_cat.ID in cat.mate and not other_cat.dead and not other_cat.outside:
+        elif other_cat.ID in cat.mates and not other_cat.dead and not other_cat.outside:
             involved_cats.append(other_cat.ID)
             event_list.append(choice(events["birth"]["two_parents"] + events["birth"][f"two_parents {game.clan.seasons[game.clan.age % 12]}"]))
-        elif other_cat.ID in cat.mate and other_cat.dead or other_cat.outside:
+        elif other_cat.ID in cat.mates and other_cat.dead or other_cat.outside:
             involved_cats.append(other_cat.ID)
             event_list.append(choice(events["birth"]["dead_mate"]))
-        elif len(cat.mate) < 1 and len(other_cat.mate) < 1 and not other_cat.dead:
+        elif len(cat.mates) < 1 and len(other_cat.mates) < 1 and not other_cat.dead:
             involved_cats.append(other_cat.ID)
             event_list.append(choice(events["birth"]["both_unmated"]))
         elif (
-            len(cat.mate) > 0 and other_cat.ID not in cat.mate and not other_cat.dead
+            len(cat.mates) > 0 and other_cat.ID not in cat.mates and not other_cat.dead
         ) or (
-            len(other_cat.mate) > 0
-            and cat.ID not in other_cat.mate
+            len(other_cat.mates) > 0
+            and cat.ID not in other_cat.mates
             and not other_cat.dead
         ):
             involved_cats.append(other_cat.ID)
             event_list.append(choice(events["birth"]["affair"]))
-            if len(cat.mate) > 0:
+            if len(cat.mates) > 0:
                 event_list.append(choice(events["birth"]["affair_mated"]))
         else:
             event_list.append(choice(events["birth"]["unmated_parent"]))
@@ -450,7 +450,7 @@ class Pregnancy_Events:
             meds = get_alive_status_cats(
                 Cat, ["medicine cat", "medicine cat apprentice"], sort=True
             )
-            mate_is_med = [mate_id for mate_id in cat.mate if mate_id in meds]
+            mate_is_med = [mate_id for mate_id in cat.mates if mate_id in meds]
             if not meds or cat in meds or len(mate_is_med) > 0:
                 for event in possible_events:
                     if "medicine cat" in event:
@@ -483,7 +483,7 @@ class Pregnancy_Events:
                 meds = get_alive_status_cats(
                     Cat, ["medicine cat", "medicine cat apprentice"]
                 )
-                mate_is_med = [mate_id for mate_id in cat.mate if mate_id in meds]
+                mate_is_med = [mate_id for mate_id in cat.mates if mate_id in meds]
                 if not meds or cat in meds or len(mate_is_med) > 0:
                     for event in possible_events:
                         if "medicine cat" in event:
@@ -538,16 +538,16 @@ class Pregnancy_Events:
             return False
 
         # check for mate
-        if len(cat.mate) > 0:
-            for mate_id in cat.mate:
+        if len(cat.mates) > 0:
+            for mate_id in cat.mates:
                 if mate_id not in cat.all_cats:
                     print(
                         f"WARNING: {cat.name}  has an invalid mate # {mate_id}. This has been unset."
                     )
-                    cat.mate.remove(mate_id)
+                    cat.mates.remove(mate_id)
 
         # If the "single parentage setting in on, we should only allow cats that have mates to have kits.
-        if not single_parentage and len(cat.mate) < 1 and not allow_affair:
+        if not single_parentage and len(cat.mates) < 1 and not allow_affair:
             return False
 
         # if function reaches this point, having kits is possible
@@ -701,15 +701,15 @@ class Pregnancy_Events:
         mate = None
 
         # randomly select a mate of given cat
-        if len(cat.mate) > 0:
-            mate = choice(cat.mate)
+        if len(cat.mates) > 0:
+            mate = choice(cat.mates)
             mate = cat.fetch_cat(mate)
 
         # if the sex does matter, choose the best solution to allow kits
         if not samesex and mate and mate.gender == cat.gender:
             opposite_mate = [
                 cat.fetch_cat(mate_id)
-                for mate_id in cat.mate
+                for mate_id in cat.mates
                 if cat.fetch_cat(mate_id).gender != cat.gender
             ]
             if len(opposite_mate) > 0:
@@ -737,7 +737,7 @@ class Pregnancy_Events:
         # RANDOM AFFAIR
         chance = game.config["pregnancy"]["random_affair_chance"]
         special_affair = False
-        if len(cat.mate) <= 0:
+        if len(cat.mates) <= 0:
             # Special random affair check only for unmated cats. For this check, only
             # other unmated cats can be the affair partner.
             chance = game.config["pregnancy"]["unmated_random_affair_chance"]
@@ -760,11 +760,11 @@ class Pregnancy_Events:
                 for i in Cat.all_cats_list
                 if i.is_potential_mate(cat, for_love_interest=True)
                 and (samesex or i.gender != cat.gender)
-                and i.ID not in cat.mate
+                and i.ID not in cat.mates
             ]
             if special_affair:
                 possible_affair_partners = [
-                    c for c in possible_affair_partners if len(c.mate) < 1
+                    c for c in possible_affair_partners if len(c.mates) < 1
                 ]
 
             # even it is a random affair, the cats should not hate each other or something like that
@@ -855,7 +855,7 @@ class Pregnancy_Events:
         for _par in (cat, other_cat):
             if not _par:
                 continue
-            for _m in _par.mate:
+            for _m in _par.mates:
                 if _m not in birth_parents and _m not in all_adoptive_parents:
                     all_adoptive_parents.append(_m)
 
@@ -1180,7 +1180,7 @@ class Pregnancy_Events:
         # Now that the second parent is determined, we can calculate the balanced chance for kits
         # get the chance for pregnancy
         inverse_chance = game.config["pregnancy"]["primary_chance_unmated"]
-        if len(first_parent.mate) > 0 and not affair:
+        if len(first_parent.mates) > 0 and not affair:
             inverse_chance = game.config["pregnancy"]["primary_chance_mated"]
 
         # SETTINGS

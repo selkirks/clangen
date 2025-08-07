@@ -679,7 +679,7 @@
         "types": [
             "lifegen"
         ],
-        "patrol_art": "lg_queen_default",
+        "patrol_art": "life_queen_R6",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -895,17 +895,17 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_k_neurotic is missing! Just as you leave the den to look for them, they barrel into you, crying so hard they can't get a word out.",
-        "decline_text": "You let the kit cry into your fur without a word until {PRONOUN/r_k_neurotic/subject} tucker {VERB/r_k_neurotic/self} out.",
+        "intro_text": "r_k-neurotic is missing! Just as you leave the den to look for them, they barrel into you, crying so hard they can't get a word out.",
+        "decline_text": "You let the kit cry into your fur without a word until {PRONOUN/r_k-neurotic/subject} {VERB/r_k-neurotic/tucker/tuckers} {PRONOUN/r_k-neurotic/self} out.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You know that if r_k_neurotic doesn't get regulated, {PRONOUN/r_k_neurotic/subject}{VERB/r_k_neurotic/'re/'s} not going to be able to breathe properly. Instead of asking what happened, you hug {PRONOUN/r_k_neurotic/object} close and begin to groom {PRONOUN/r_k_neurotic/poss} fur until {PRONOUN/r_k_neurotic/subject} {VERB/r_k_neurotic/fall/falls} asleep. Later, r_w comes in to check on {PRONOUN/r_k_neurotic/object} and tells you {PRONOUN/r_k_neurotic/subject} got startled by an angry squirrel. Poor little kit!",
+                "text": "You know that if r_k-neurotic doesn't get regulated, {PRONOUN/r_k-neurotic/subject}{VERB/r_k-neurotic/'re/'s} not going to be able to breathe properly. Instead of asking what happened, you hug {PRONOUN/r_k-neurotic/object} close and begin to groom {PRONOUN/r_k-neurotic/poss} fur until {PRONOUN/r_k-neurotic/subject} {VERB/r_k-neurotic/fall/falls} asleep. Later, r_w comes in to check on {PRONOUN/r_k-neurotic/object} and tells you {PRONOUN/r_k-neurotic/subject} got startled by an angry squirrel. Poor little kit!",
                 "exp": 15,
                 "weight": 20
             },
             {
-                "text": "Though startled, you understand that r_k_neurotic is suffocating underneath {PRONOUN/r_k_neurotic/poss} panic and you need to act quickly. You curl around r_k_neurotic and start humming a rhythmic tune, hoping the vibrations will be a welcome distraction from {PRONOUN/r_k_neurotic/poss} fear. It takes a bit, but r_k_neurotic takes comfort in your humming and calms down enough to breathe properly again.",
+                "text": "Though startled, you understand that r_k-neurotic is suffocating underneath {PRONOUN/r_k-neurotic/poss} panic and you need to act quickly. You curl around r_k-neurotic and start humming a rhythmic tune, hoping the vibrations will be a welcome distraction from {PRONOUN/r_k-neurotic/poss} fear. It takes a bit, but r_k-neurotic takes comfort in your humming and calms down enough to breathe properly again.",
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": [
@@ -916,7 +916,7 @@
                 ]
             },
             {
-                "text": "You coax r_k_neurotic to a secluded area within the nursery to give {PRONOUN/r_k_neurotic/poss} some privacy, and stay with {PRONOUN/r_k_neurotic/object} as a comforting presence until r_k_neurotic is able to catch {PRONOUN/r_k_neurotic/poss} breath. r_k_neurotic blubbers out that a bird of prey scared {PRONOUN/r_k_neurotic/object} and {PRONOUN/r_k_neurotic/subject}{VERB/r_k_neurotic/'re/'s} sorry, but you shush {PRONOUN/r_k_neurotic/object} gently before r_k_neurotic apologizes again. There's no need for apologies when seeking comfort.",
+                "text": "You coax r_k-neurotic to a secluded area within the nursery to give {PRONOUN/r_k-neurotic/poss} some privacy, and stay with {PRONOUN/r_k-neurotic/object} as a comforting presence until r_k-neurotic is able to catch {PRONOUN/r_k-neurotic/poss} breath. r_k-neurotic blubbers out that a bird of prey scared {PRONOUN/r_k-neurotic/object} and {PRONOUN/r_k-neurotic/subject}{VERB/r_k-neurotic/'re/'s} sorry, but you shush {PRONOUN/r_k-neurotic/object} gently before r_k-neurotic apologizes again. There's no need for apologies when seeking comfort.",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -936,12 +936,149 @@
         ],
         "fail_outcomes": [
             {
-                "text": "You try to guide the kit through some breathing exercises, but {PRONOUN/r_k_neurotic/subject} {VERB/r_k_neurotic/don't/doesn't} seem to hear you. Whatever happened must have scared {PRONOUN/r_k_neurotic/object} a lot.",
+                "text": "You try to guide the kit through some breathing exercises, but {PRONOUN/r_k-neurotic/subject} {VERB/r_k-neurotic/don't/doesn't} seem to hear you. Whatever happened must have scared {PRONOUN/r_k-neurotic/object} a lot.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "You try to ask what is wrong, but r_k_neurotic is unable to speak through {PRONOUN/r_k_neurotic/poss} tears and quickened breath. You make the mistake of allowing panic to appear in your expression and r_k_neurotic cries harder, not finding any comfort at all. In a last ditch effort, you call over another queen and they take care of the issue with hushed words and gentle snuggles.",
+                "text": "You try to ask what is wrong, but r_k-neurotic is unable to speak through {PRONOUN/r_k-neurotic/poss} tears and quickened breath. You make the mistake of allowing panic to appear in your expression and r_k-neurotic cries harder, not finding any comfort at all. In a last ditch effort, you call over another queen and they take care of the issue with hushed words and gentle snuggles.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_df_sam3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_df",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're sitting with the Dark Forest kits, when you can't help but wish you knew how to fight so you could protect them better. It's good to know how to fight - you're in the Dark Forest, after all.",
+        "decline_text": "Most of the Dark Forest cats probably don't have time, or don't care enough, to teach you even the basics of fighting. You just hope that you won't run into any situations where you'd need to fight.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You eventually ask rdf_c to help you learn to fight, and {PRONOUN/rdf_c/subject} {VERB/rdf_c/agree/agrees}! You spend a few hours with {PRONOUN/rdf_c/object}, training and learning the basics of fighting. You leave the training session with confidence that you'll be able to protect the kits now.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "When you ask rdf_c to help you learn to fight, {PRONOUN/rdf_c/subject} {VERB/rdf_c/agree/agrees}. You quickly realize that you're actually a natural at fighting! Who knew? You leave the training session with much more confidence, despite not having learned anything.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["p_l"],
+                "stat_skill": ["FIGHTER"]
+            },
+            {
+                "text": "You realize that you may not be the best at fighting, and probably never will be, but you can do other things! You're quite good at protecting the kits, for example, even without fighting. You decide that makes you happy enough, and continue to protect them with your innate skill.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["p_l"],
+                "stat_skill": ["GUARDIAN"]
+            },
+            {
+                "text": "You realize that you may not be the best at fighting, and probably never will be, but you can do other things! You're quite good at creating safe places for the kits, for example, so you don't even need to protect them by fighting! That makes you happy enough, so you continue to do what you do best.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["p_l"],
+                "stat_skill": ["INNOVATOR", "THINKER"]
+            },
+            {
+                "text": "When you ask rdf_c to help you, {PRONOUN/rdf_c/subject} {VERB/rdf_c/agree/agrees}, but {VERB/rdf_c/say/says} it'll come with a price. {PRONOUN/rdf_c/subject/CAP} {VERB/rdf_c/have/has} you do a few tasks to 'earn' the training, and you do them gladly. You'd do anything for the kits, after all. Once you've done the tasks, rdf_c eagerly teaches you anything you want to know.",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["rdf_c"],
+                "stat_cluster": ["upstanding"]
+            },
+            {
+                "text": "Just as you begin to lose hope on learning how to fight, r_w appears in the Dark Forest. {PRONOUN/r_w/subject/CAP} {VERB/r_w/are/is} clearly in distress, but calms down after seeing you with the kits. You approach {PRONOUN/r_w/object} and ask for {PRONOUN/r_w/object} to help you learn to fight. {PRONOUN/r_w/subject/CAP} {VERB/r_w/agree/agrees}, and even decides to train in the Dark Forest! rdf_c would be proud.",
+                "exp": 0,
+                "weight": 15,
+                "convert": ["r_w"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You eventually ask rdf_c to help you learn to fight, but {PRONOUN/rdf_c/subject} {VERB/rdf_c/decline/declines}. Maybe you'll be able to ask a different cat.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You eventually ask rdf_c to help you learn to fight, and {PRONOUN/rdf_c/subject} {VERB/rdf_c/agree/agrees}! After only a few minutes of training, you unfortunately realize that rdf_c is <i>not</i> a good teacher. You spend about an hour training with {PRONOUN/rdf_c/object}, but you learn nothing from the session.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "When you ask rdf_c to help you learn to fight, {PRONOUN/rdf_c/subject} {VERB/rdf_c/laugh/laughs} and leads you on a wild goose chase around the Dark Forest, doing odd tasks for hours. After you finish the last task, you turn around to see {PRONOUN/rdf_c/object} gone. This was all for nothing?!",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": ["rdf_c"],
+                "stat_cluster": ["unlawful"]
+            },
+            {
+                "text": "You're beginning to lose hope on learning how to fight, when r_w shows up! Before you can approach {PRONOUN/r_w/object}, {PRONOUN/r_w/subject} {VERB/r_w/run/runs} away from you. Well, without a guide, {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} definitely getting lost.",
+                "exp": 0,
+                "weight": 5,
+                "lost_cats": ["r_w"]
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_ur_sam2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "ur_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_ur",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You could've sworn you heard soft meowing nearby, as if there were kits in the Unknown Residence too.",
+        "decline_text": "You shake your head, and convince yourself that you're just hearing things.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You sniff around for a bit before finding a kit! {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/introduce/introduces} {PRONOUN/n_c:0/self} as n_c:0. You decide to take {PRONOUN/n_c:0/object} under your care.",
+                "exp": 0,
+                "weight": 5,
+                "new_cat": [
+                    ["meeting", "residence:ur", "clan_status", "status:kitten"]
+                ]
+            },
+            {
+                "text": "Perhaps you are just hearing things, but you decide to follow your gut and approach where you think the meowing is coming from. Well, you discover that you are not going crazy, and find an Unknown Residence kitten who ventured too far from the dens. Tsking, you guide them back to safety.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "After searching for what feels like moons, you discover there <i>is</i> a kit in the Unknown Residence... but that kit isn't a resident. Somehow a very-much-alive kit from one of the Clans has managed to slip into this ghostly afterlife, and {PRONOUN/r_k/subject}{VERB/r_k/'ve/'s} been calling to you, thinking the two of you were playing some game {PRONOUN/r_k/subject} {VERB/r_k/have/has} with {PRONOUN/r_k/poss} Clanmates. While you're relieved that the kit is still alive, you can't help but feel disappointed; you were truly hoping you could care for kittens again like you did in life.",
+                "exp": 0,
+                "weight": 20,
+                "stat_skill": ["GHOST,1"],
+                "can_have_stat": ["r_k"]
+            },
+            {
+                "text": "You turn your head and see a shadow in the mist, strangely kitten-like in shape. You tentatively creep closer, calling out for them, but they do not move or respond back. Once you get near enough to see through the mist, you only find a pile of sticks and a goop-like substance from the Dark Forest. You've been pranked again!",
                 "exp": 0,
                 "weight": 20
             }

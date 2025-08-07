@@ -78,16 +78,13 @@ def test():
         "t_ka": _r,
         "t_kk": _r,
         "y_m": _r,
-        "t_p_positive": _r,
-        "t_p_pos": _r,
-        "t_p_negative": _r,
         "m_n": _r,
         "r_q": _r,
         "r_k": _r,
         "r_e": _r,
         "crush1": _r,
-        "their_crush": _r,
-        "your_crush": _r,
+        "theircrush": _r,
+        "yourcrush": _r,
         "mate1": _r,
         "r_w": _r,
         "r_w1": _r,
@@ -101,6 +98,7 @@ def test():
         "r_d": _r,
         "df_y_a": _r,
         "df_m_n": _r,
+        "t_df_mn": _r,
         "r_c_sc": _r,
         "a_n": _r,
         "t_q": _r,
@@ -127,169 +125,34 @@ def test():
         "med_name": _r,
         "cat_tag": _r,
         "tg_c": _r,
-        "yg_c": _r
+        "yg_c": _r,
+        "n_r1": _r,
+        "n_r2": _r,
+        "theircrush": _r,
+        "insert_siblings": _r,
+        "o_c1": _r
     }
-
-    file_names = [
-        "lifegen_talk/apprentice",
-        "lifegen_talk/choice_dialogue",
-        "lifegen_talk/crush",
-        "lifegen_talk/deputy",
-        "lifegen_talk/elder",
-        "lifegen_talk/exiled",
-        "lifegen_talk/flirt",
-        "lifegen_talk/former Clancat",
-        "lifegen_talk/general_no_kit",
-        "lifegen_talk/general_no_newborn",
-        "lifegen_talk/general_outsider",
-        "lifegen_talk/general",
-        "lifegen_talk/kitten",
-        "lifegen_talk/kittypet",
-        "lifegen_talk/leader",
-        "lifegen_talk/loner",
-        "lifegen_talk/mediator apprentice",
-        "lifegen_talk/mediator",
-        "lifegen_talk/medicine cat apprentice",
-        "lifegen_talk/medicine cat",
-        "lifegen_talk/newborn",
-        "lifegen_talk/queen",
-        "lifegen_talk/queen's apprentice",
-        "lifegen_talk/rogue",
-        "lifegen_talk/warrior",
-        "lifegen_talk/focuses/hailstorm",
-        "lifegen_talk/focuses/leader",
-        "lifegen_talk/focuses/starving",
-        "lifegen_talk/focuses/unknown_murder",
-        "lifegen_talk/focuses/valentines",
-        "lifegen_talk/focuses/war",
-        "events/lifegen_events/events/apprentice",
-        "events/lifegen_events/events/deputy",
-        "events/lifegen_events/events/elder",
-        "events/lifegen_events/events/exiled",
-        "events/lifegen_events/events/former Clancat",
-        "events/lifegen_events/events/general_no_kit",
-        "events/lifegen_events/events/kitten",
-        "events/lifegen_events/events/kittypet",
-        "events/lifegen_events/events/leader",
-        "events/lifegen_events/events/loner",
-        "events/lifegen_events/events/mediator apprentice",
-        "events/lifegen_events/events/mediator",
-        "events/lifegen_events/events/medicine cat apprentice",
-        "events/lifegen_events/events/medicine cat",
-        "events/lifegen_events/events/queen",
-        "events/lifegen_events/events/queen's apprentice",
-        "events/lifegen_events/events/rogue",
-        "events/lifegen_events/events/warrior",
-        "events/lifegen_events/events/young_elder",
-        "events/lifegen_events/events_dead_sc/apprentice",
-        "events/lifegen_events/events_dead_sc/deputy",
-        "events/lifegen_events/events_dead_sc/elder",
-        "events/lifegen_events/events_dead_sc/exiled",
-        "events/lifegen_events/events_dead_sc/former Clancat",
-        "events/lifegen_events/events_dead_sc/general_no_kit",
-        "events/lifegen_events/events_dead_sc/kitten",
-        "events/lifegen_events/events_dead_sc/kittypet",
-        "events/lifegen_events/events_dead_sc/leader",
-        "events/lifegen_events/events_dead_sc/loner",
-        "events/lifegen_events/events_dead_sc/mediator apprentice",
-        "events/lifegen_events/events_dead_sc/mediator",
-        "events/lifegen_events/events_dead_sc/medicine cat apprentice",
-        "events/lifegen_events/events_dead_sc/medicine cat",
-        "events/lifegen_events/events_dead_sc/queen",
-        "events/lifegen_events/events_dead_sc/queen's apprentice",
-        "events/lifegen_events/events_dead_sc/rogue",
-        "events/lifegen_events/events_dead_sc/warrior",
-        "events/lifegen_events/events_dead_sc/young_elder",
-        "events/lifegen_events/events_dead_df/apprentice",
-        "events/lifegen_events/events_dead_df/deputy",
-        "events/lifegen_events/events_dead_df/elder",
-        "events/lifegen_events/events_dead_df/exiled",
-        "events/lifegen_events/events_dead_df/former Clancat",
-        "events/lifegen_events/events_dead_df/general_no_kit",
-        "events/lifegen_events/events_dead_df/kitten",
-        "events/lifegen_events/events_dead_df/kittypet",
-        "events/lifegen_events/events_dead_df/leader",
-        "events/lifegen_events/events_dead_df/loner",
-        "events/lifegen_events/events_dead_df/mediator apprentice",
-        "events/lifegen_events/events_dead_df/mediator",
-        "events/lifegen_events/events_dead_df/medicine cat apprentice",
-        "events/lifegen_events/events_dead_df/medicine cat",
-        "events/lifegen_events/events_dead_df/queen",
-        "events/lifegen_events/events_dead_df/queen's apprentice",
-        "events/lifegen_events/events_dead_df/rogue",
-        "events/lifegen_events/events_dead_df/warrior",
-        "events/lifegen_events/events_dead_df/young_elder",
-        "events/lifegen_events/events_dead_ur/apprentice",
-        "events/lifegen_events/events_dead_ur/deputy",
-        "events/lifegen_events/events_dead_ur/elder",
-        "events/lifegen_events/events_dead_ur/exiled",
-        "events/lifegen_events/events_dead_ur/former Clancat",
-        "events/lifegen_events/events_dead_ur/general_no_kit",
-        "events/lifegen_events/events_dead_ur/kitten",
-        "events/lifegen_events/events_dead_ur/kittypet",
-        "events/lifegen_events/events_dead_ur/leader",
-        "events/lifegen_events/events_dead_ur/loner",
-        "events/lifegen_events/events_dead_ur/mediator apprentice",
-        "events/lifegen_events/events_dead_ur/mediator",
-        "events/lifegen_events/events_dead_ur/medicine cat apprentice",
-        "events/lifegen_events/events_dead_ur/medicine cat",
-        "events/lifegen_events/events_dead_ur/queen",
-        "events/lifegen_events/events_dead_ur/queen's apprentice",
-        "events/lifegen_events/events_dead_ur/rogue",
-        "events/lifegen_events/events_dead_ur/warrior",
-        "events/lifegen_events/events_dead_ur/young_elder",
-        "patrols/lifegen/app.json",
-        "patrols/lifegen/date.json",
-        "patrols/lifegen/deputy.json",
-        "patrols/lifegen/df.json",
-        "patrols/lifegen/elder.json",
-        "patrols/lifegen/kit.json",
-        "patrols/lifegen/leader.json",
-        "patrols/lifegen/med.json",
-        "patrols/lifegen/medapp.json",
-        "patrols/lifegen/mediator.json",
-        "patrols/lifegen/mediatorapp.json",
-        "patrols/lifegen/queen.json",
-        "patrols/lifegen/queenapp.json",
-        "patrols/lifegen/warrior.json"
-    ]
-    
-    # uncomment below to run the entire, long ass test for lifegen abbrevs
-    # addon_json = None
-    # with open(f"resources/dicts/abbrev_list.json", 'r') as read_file:
-    #     addon_json = ujson.loads(read_file.read())
-
-    # this will go through lifegen's dialogue files and search for abbrevs with addons.
-    # if theyre there, they get added to the dict.
-    # this avoids the 2 hour pronoun test when we try to check for literally all of them lol
-    # lifegen_files = {}
-    # for file in file_names:
-    #     file_json = None
-    #     with open(f"resources/dicts/{file}.json", 'r') as read_file:
-    #         file_json = ujson.loads(read_file.read())
-    #     lifegen_files[file] = file_json
-    
-    #     for i in addon_json:
-    #         if i in str(file_json):
-    #             print(i, "in", file)
-    #             replacement_dict[f"{i}"] = _r
 
     for x in range(0, 11):
         replacement_dict[f"n_c:{x}"] = _r
 
     for root, _, files in os.walk("resources"):
         for file in files:
+            if root == "resources\\dicts\\lifegen_talk\\old\\focuses":
+                continue
+            if root == "resources\\dicts\\lifegen_talk\\old":
+                continue
             if file.endswith(".json") and file not in [
                 "credits_text.json",
-                "abbrev_list.json",
                 "clansettings.json",
                 "gamesettings.json",
             ]:
                 path = os.path.join(root, file)
 
-                if not test_replacement_failure(path, replacement_dict):
-                    failed = True
-                    failed_files.append(path)
+                if "lifegen_talk/old" not in path:
+                    if not test_replacement_failure(path, replacement_dict):
+                        failed = True
+                        failed_files.append(path)
 
     if failed:
         # Set the GITHUB_OUTPUT environment variable to the list of failed files
@@ -310,10 +173,6 @@ def test_replacement_failure(path: str, repl_dict: dict) -> bool:
 
     success = True
 
-    addon_json = None
-    with open(f"resources/dicts/abbrev_list.json", 'r') as read_file:
-        addon_json = ujson.loads(read_file.read())
-
     with open(path, "r") as file:
         try:
             contents = ujson.loads(file.read())
@@ -326,24 +185,23 @@ def test_replacement_failure(path: str, repl_dict: dict) -> bool:
         try:
             processed = process_text(_str, repl_dict, True)
         except (KeyError, IndexError) as _e:
-            # LIFEGEN ---
-            # this just... ignores the addon abbrevs
-            # so if theyre formatted wrong.... we'll never know
-            # but otherwise this test will take forever.
-            # comment/delete this section to run the test with LG abbrevs + addons
-            skip = False
-            for i in addon_json:
-                if i in _str:
-                    skip = True
-                    break
-            if not skip:
-            # ------------
-                print(
-                    f'::error file={path}: "{_str}" contains invalid pronoun or verb tags.'
-                )
-                print(_e)
-                success = False
+            print(
+                f'::error file={path}: "{_str}" contains invalid pronoun or verb tags.'
+            )
+            print(_e)
+            success = False
         else:
+            # LG
+            exceptions = [
+                "plike", "plove", "neutral", "rlike", "rlove", "neutral", "dislike", "hate",
+                "jealous", "trust", "comfort", "respect"
+                ]
+            match = (
+                re.search(r"(?<!\.\.)(?<!\.\s\.\s)\.\s+([a-z_]+)", processed)
+                or re.search(r"[?!]\s+([a-z]+)", processed)
+            )
+            # ---
+
             # This tests for any pronoun or verb tag fragments that might have
             # snuck through. This is most likely caused by using the incorrect type of
             # brackets
@@ -357,19 +215,14 @@ def test_replacement_failure(path: str, repl_dict: dict) -> bool:
             # excludes ellipses (i.e. ... and . . .) but includes regular colons
             # includes ? and ! always (e.g. "...!" is included).
             # DOES NOT check the start of the string for capitalization
-            elif (
-                re.search(r"(?<!\.\.)(?<!\.\s\.\s)\.\s+[a-z]", processed) is not None
-                or re.search(r"[?!]\s+[a-z]", processed) is not None
-            ):
-                # LG: again. skipping if theres a lg abbrev after a period
-                skip = False
-                for i in addon_json + ["o_c1", "insert_siblings"]: # im lazy sorry
-                    if i in _str:
-                        skip = True
-                        break
-                if not skip:
-                # ----
+
+            # LG
+            # edited to make exceptions for lifegen rel addons
+            elif match:
+                following = match.group(1)
+                if following not in exceptions:
                     print(f'::error file={path}: Capitalization errors in "{_str}"')
+                    print("ERROR:", following)
                     success = False
 
     return success

@@ -5095,16 +5095,9 @@
                 "text": "It takes all of s_c's considerable talent for such things to hunt down the lungwort within their borders. The medicine cat visits each likely nook and cranny in a carefully planned search pattern until, finally, those telltale speckled leaves are found.",
                 "exp": 20,
                 "weight": 20,
-                "stat_skill": [
-                    "SENSE,2",
-                    "CLEVER,3"
-                ],
-                "can_have_stat": [
-                    "r_c"
-                ],
-                "herbs": [
-                    "lungwort"
-                ],
+                "stat_skill": ["SENSE,2", "CLEVER,3"],
+                "can_have_stat": ["p_l"],
+                "herbs": ["lungwort"],
                 "relationships": [
                     {
                         "cats_to": [
@@ -5125,19 +5118,9 @@
                 "text": "Night falls, but still s_c keeps going - {PRONOUN/s_c/subject} just can't let c_n go without. Exhausted, but determined, the medicine cat persists until {PRONOUN/s_c/subject} {VERB/s_c/find/finds} the precious, speckled leaves.",
                 "exp": 20,
                 "weight": 20,
-                "stat_trait": [
-                    "thoughtful",
-                    "confident",
-                    "loyal",
-                    "responsible",
-                    "arrogant"
-                ],
-                "can_have_stat": [
-                    "r_c"
-                ],
-                "herbs": [
-                    "lungwort"
-                ],
+                "stat_trait": ["thoughtful", "confident", "loyal", "responsible", "arrogant"],
+                "can_have_stat": ["p_l"],
+                "herbs": ["lungwort"],
                 "relationships": [
                     {
                         "cats_to": [

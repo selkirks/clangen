@@ -22,7 +22,7 @@
     "queen's apprentice assertive": [],
     "queen's apprentice brooding": [],
     "queen's apprentice cool": [
-        "With all the respect you can muster, you do not judge dislike_r_w as {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/walk/walks} through the camp covered in thorns. And you <i>totally</i> don't whisper to the kittens that dislike_r_w turned into a porcupine overnight. Totally not.",
+        "With all the respect you can muster, you do not judge dislike-r_w as {PRONOUN/dislike-r_w/subject} {VERB/dislike-r_w/walk/walks} through the camp covered in thorns. And you <i>totally</i> don't whisper to the kittens that dislike-r_w turned into a porcupine overnight. Totally not.",
         "The kittens have been spreading rumors in the nursery, and r_q asks you if you know who is responsible. With a smooth lie, you're able to rid yourself of {PRONOUN/r_q/poss} questioning. Phew! You gotta tell the kittens to be more careful!",
         "You boast to m_n about how the kittens prefer you as their caregiver, and it's not even that hard!"
     ],
@@ -33,7 +33,7 @@
         "After a rough moon of watching over the kittens, you flee to r_m to ask for herbs to help with your growing headache. Thankfully, r_m pities you enough to spare a few.",
         "There's pride in finally learning about a kitten enough to silently care for them. When r_k seems to be having a bad day, all you need to do is let r_k cling to you. The simplicity is amazing.",
         "r_k seems to be having a bad day. To attempt to calm {PRONOUN/r_k/poss} emotions, you invite {PRONOUN/r_k/object} to watch the clouds with you. Thankfully, your quiet observations of the clouds' shapes puts r_k into a well-needed nap.",
-        "You feel distracted today. Staring off into space while in-charge of watching over the kittens is not a good idea, and you learn this brutally as r_k_assertive pulls a dirty prank on you.",
+        "You feel distracted today. Staring off into space while in-charge of watching over the kittens is not a good idea, and you learn this brutally as r_k-assertive pulls a dirty prank on you.",
         "You asked m_n a lot of questions this moon. Hopefully m_nc doesn't mind it."
     ],
     "queen's apprentice neurotic": [
@@ -44,7 +44,7 @@
         "You wonder if you're living up to y_p's hopes and expectations."
     ],
     "queen's apprentice silly": [
-        "With all the respect you can muster, you do not judge dislike_r_w as {PRONOUN/dislike_r_w/subject} {VERB/dislike_r_w/walk/walks} through the camp covered in thorns. And you <i>totally</i> don't whisper to the kittens that dislike_r_w turned into a porcupine overnight. Totally not."
+        "With all the respect you can muster, you do not judge dislike-r_w as {PRONOUN/dislike-r_w/subject} {VERB/dislike-r_w/walk/walks} through the camp covered in thorns. And you <i>totally</i> don't whisper to the kittens that dislike-r_w turned into a porcupine overnight. Totally not."
     ],
     "queen's apprentice stable": [],
     "queen's apprentice sweet": [],
@@ -52,6 +52,6 @@
     "queen's apprentice unlawful": [],
     "queen's apprentice rare": [
         "After making a mistake that almost injures one of the kits, you begin to wonder if the path of a queen's apprentice is truly the right choice.",
-        "r_k has found out about your feelings toward your_crush, and the mischievous look in {PRONOUN/r_k/poss} eye has you unnerved. What {VERB/r_k/are/is} {PRONOUN/r_k/subject} planning?"
+        "r_k has found out about your feelings toward yourcrush, and the mischievous look in {PRONOUN/r_k/poss} eye has you unnerved. What {VERB/r_k/are/is} {PRONOUN/r_k/subject} planning?"
     ]
 }

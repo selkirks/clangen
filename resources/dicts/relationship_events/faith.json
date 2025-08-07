@@ -1,0 +1,1897 @@
+[
+    {
+        "event_id": "twocat_sc_J1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c and r_c watch the stars together.",
+            "m_c tells r_c a story about StarClan.",
+	        "r_c admires m_c's strong beliefs."
+        ],
+        "m_c": {
+            "min_max_faith": [2, 9],
+            "affected": true
+        },
+        "r_c": {
+            "min_max_faith": [-2, 2],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "solo_df_young_J1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c had a scary nightmare about the Dark Forest.",
+            "m_c has been seeing scary shadows."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, 9],
+            "age": ["kitten", "adolescent"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "sc_medcat_J1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "season": ["greenleaf"],
+        "interactions": [
+            "m_c prayed for some rain to water the herbs, and it came!",
+            "m_c thanks StarClan for leading {PRONOUN/m_c/object} towards a brand new herb patch.",
+            "m_c hopes StarClan is proud of {PRONOUN/m_c/poss} work."
+        ],
+        "m_c": {
+            "min_max_faith": [2, 9],
+            "status": ["medicine cat", "medicine cat apprentice"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "solo_sc_faith_lvl1_J1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c thanks StarClan for {PRONOUN/m_c/poss} meal.",
+            "m_c gazes up at the stars, trying to guess which ones are {PRONOUN/m_c/poss} fallen Clanmates.",
+            "m_c thinks about StarClan.",
+            "m_c finds a strangely sparkly feather in {PRONOUN/m_c/poss} nest and wonders if it's a sign.",
+	        "m_c is feeling especially spiritual today."
+        ],
+        "m_c": {
+            "min_max_faith": [-2, 2],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "twocat_df_J1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c and r_c have a heated argument about faith. In the end, m_c is able to slightly sway r_c away from StarClan.",
+            "m_c tells r_c about {PRONOUN/m_c/poss} disdain for StarClan."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -2],
+            "cluster": ["assertive"],
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
+            "affected": true
+        },
+        "r_c": {
+            "min_max_faith": [2, 9],
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "twocat_df_J2",
+        "faith_effect": -0.5,
+        "weight": 15,
+        "interactions": [
+            "m_c has a dream about the Dark Forest after speaking with r_c."
+        ],
+        "m_c": {
+            "min_max_faith": [0, 5],
+            "affected": true
+        },
+        "r_c": {
+            "min_max_faith": [-9, -3]
+        }
+    },
+    {
+        "event_id": "sc_skill_df_J1",
+        "faith_effect": -0.5,
+        "weight": 10,
+        "interactions": [
+            "r_c tries to warn m_c about the dangers of the Dark Forest, but the idea just intrigues {PRONOUN/m_c/object}.",
+            "m_c's faith in StarClan starts to wane when r_c doesn't answer {PRONOUN/m_c/object}.",
+	        "m_c gets into a fight with r_c and starts wondering if StarClan really is as kind as {PRONOUN/m_c/subject} thought."
+        ],
+        "m_c": {
+            "min_max_faith": [0, 5],
+            "affected": true,
+            "skill": ["STAR,2"]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "residence": ["sc"]
+        }
+    },
+    {
+        "event_id": "rare_sc_J1",
+        "faith_effect": 2,
+        "weight": 5,
+        "interactions": [
+            "m_c has a near-death experience and comes out of it with a whole new perspective on life."
+        ],
+        "m_c": {
+            "min_max_faith": [-1.5, 0.5],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "neutral_faith_J1",
+        "faith_effect": 0,
+        "weight": 20,
+        "interactions": [
+            "While r_c thanks StarClan for {PRONOUN/r_c/poss} meal, m_c begrudgingly thanks {PRONOUN/m_c/self} for being the one to catch it.",
+            "r_c asks m_c what {PRONOUN/m_c/subject} {VERB/m_c/think/thinks} of StarClan. m_c simply responds that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't}."
+        ],
+        "m_c": {
+            "min_max_faith": [-1, 1],
+            "affected": true,
+            "status": ["apprentice", "warrior", "deputy", "leader"]
+        },
+        "r_c": {
+            "min_max_faith": [1, 9],
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        }
+    },
+    {
+        "event_id": "df_increase_J1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c grows more confident in {PRONOUN/m_c/poss} belief in the Dark Forest.",
+            "While {PRONOUN/m_c/poss} Clanmates pray to StarClan, m_c gives thanks to a force much darker.",
+            "m_c's faith in the Dark Forest grows.",
+            "m_c finds more comfort in the wasteland of the Dark Forest than the supposed paradise of StarClan.",
+            "m_c feels thankful for the power that the Dark Forest promises."
+        ],
+        "m_c": {
+            "min_max_faith": [-7, -1],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "sc_decrease_J1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c can't help but think the stars are twinkling a bit less brightly tonight.",
+            "m_c's calls to StarClan go unanswered.",
+            "m_c starts to wonder if relying so much on {PRONOUN/m_c/poss} invisible ancestors is really a good idea.",
+            "m_c skips {PRONOUN/m_c/poss} prayer to StarClan tonight.",
+            "m_c eats a meal without thanking StarClan."
+        ],
+        "m_c": {
+            "min_max_faith": [1, 7],
+            "affected": true,
+            "not_skill": ["STAR,1"]
+        }
+    },
+    {
+        "event_id": "df_decrease_J1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "The Dark Forest starts to scare m_c more than it intrigues {PRONOUN/m_c/object}.",
+            "m_c turns away from a Dark Forest warrior in {PRONOUN/m_c/poss} dreams.",
+            "m_c asks a few of {PRONOUN/m_c/poss} Clanmates why they look up to StarClan so much.",
+            "m_c starts to wonder why the darkness used to be so appealing to {PRONOUN/m_c/object}.",
+            "m_c has been feeling more grounded lately."
+        ],
+        "m_c": {
+            "min_max_faith": [-8, -1],
+            "affected": true,
+            "not_skill": ["DARK,1"]
+        }
+    },
+    {
+        "event_id": "kit_to_adult_df_J1",
+        "faith_effect": -0.3,
+        "weight": 10,
+        "interactions": [
+            "Looking for attention, r_c tells m_c that {PRONOUN/r_c/subject} {VERB/r_c/see/sees} a Dark Forest cat across the camp. Unfortunately, m_c ends up being more interested in the fake ghost than r_c...",
+            "r_c calls StarClan a bunch of stinky ghosts. While some other grown-ups in camp scold {PRONOUN/r_c/object} for the outburst, m_c chuckles, giving r_c a cheeky nod in agreement."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, 3],
+            "affected": true,
+            "status": ["queen", "queen's apprentice"]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "cluster": ["assertive", "unlawful", "unabashed"],
+            "age": ["kitten"]
+        }
+    },
+    {
+        "event_id": "kit_to_adult_df_J2",
+        "faith_effect": -0.3,
+        "weight": 10,
+        "interactions": [
+            "r_c asks m_c questions about the Dark Forest until {PRONOUN/m_c/subject} {VERB/m_c/run/runs} out of answers.",
+            "r_c and m_c bond over how boring they both think StarClan nursery tales are.",
+            "m_c tells r_c a story about the Dark Forest before bed."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, 5],
+            "affected": true,
+            "status": ["queen", "queen's apprentice"]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "affected": true,
+            "age": ["kitten"]
+        }
+    },
+    {
+        "event_id": "kit_to_adult_sc_J1",
+        "faith_effect": 0.3,
+        "weight": 10,
+        "interactions": [
+            "m_c has a bad day and r_c reassures {PRONOUN/m_c/object}, telling {PRONOUN/m_c/object} StarClan is watching over {PRONOUN/m_c/object}.",
+            "When r_c and m_c both can't get to sleep, they stay up late and watch the stars together.",
+            "r_c's favourite stick goes missing! When it turns up in {PRONOUN/r_c/poss} nest at the end of the day, m_c comments that StarClan must have brought it back."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, 9],
+            "affected": true,
+            "status": ["queen", "queen's apprentice"]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "cluster": ["sweet", "stable", "neurotic", "introspective"],
+            "age": ["kitten"],
+            "affected": true
+        },
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "mutual": false,
+                "values": [
+                    "trust",
+                    "respect",
+                    "comfort",
+                    "platonic"
+                ],
+                "amount": 6
+            }
+        ]
+    },
+    {
+        "event_id": "df_dislike_mocking_H1-SQ",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c smirks and asks r_c how long it's going to take for {PRONOUN/r_c/poss} precious StarClan to graduate {PRONOUN/r_c/object} to a warrior.",
+            "m_c claims r_c's inexperience and loyalty to StarClan will be r_c's downfall - and r_c should take a leaf out of m_c's tree and turn to the Dark Forest.",
+            "After r_c returns from a failed hunt, m_c loudly muses that r_c's supposed StarClan guides don't seem to be helping {PRONOUN/r_c/object} much."
+        ],
+        "m_c": {
+            "min_max_faith": [-9,-4],
+            "age": ["young adult", "adult", "senior adult"],
+            "relationship_status": ["dislike_30"]
+        },
+        "r_c": {
+            "min_max_faith": [1,5],
+            "status": ["apprentice"],
+            "age": ["young adult", "adult", "senior adult"],
+            "affected": true
+        },
+       "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "mutual": true,
+                "values": [
+                    "dislike"
+                ],
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "event_id": "df_dislike_mocking_H2",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c continues to dig deep into r_c's insecurities, questioning StarClan's decision to keep r_c as an apprentice.",
+            "m_c is nothing but smug as {PRONOUN/m_c/subject}, once again, {VERB/m_c/mock/mocks} r_c's stagnant role as an apprentice.",
+            "m_c huffs knowingly as r_c's apprenticeship lasts another moon, StarClan's inaction causing r_c to be at a standstill. Or, at least, that's what m_c claims."
+        ],
+        "m_c": {
+            "min_max_faith": [-9,-4],
+            "status": ["warrior", "medicine cat", "mediator", "queen"],
+            "age": ["young adult", "adult", "senior adult"],
+            "relationship_status": [
+                "dislike_30",
+                "mentor/app"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [1,4],
+            "status": ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"],
+            "age": ["young adult", "adult", "senior adult"],
+            "affected": true
+        },
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "mutual": true,
+                "values": [
+                    "dislike"
+                ],
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "event_id": "df_dislike_mocking_H3",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c boasts about getting {PRONOUN/m_c/poss} full name before r_c, claiming believing in the Dark Forest helped {PRONOUN/m_c/object} get ahead of other cats {PRONOUN/m_c/poss} age.",
+            "m_c has a firm belief that the Dark Forest helped {PRONOUN/m_c/object} thrive, unlike r_c.",
+            "m_c claims StarClan is allowing r_c to fall behind {PRONOUN/m_c/object}."
+        ],
+        "m_c": {
+            "min_max_faith": [-9,-1],
+            "status": ["warrior", "medicine cat", "mediator", "queen"],
+            "age": ["adolescent"],
+            "affected": true
+        },
+        "r_c": {
+            "min_max_faith": [1,9],
+            "status": ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"],
+            "age": ["adolescent"]
+        }
+    },
+    {
+        "event_id": "sc_dislike_mocking_H1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c side-eyes r_c with a smug smile on {PRONOUN/m_c/poss} face, thanking StarClan for letting {PRONOUN/m_c/object} graduate early."
+        ],
+        "m_c": {
+            "min_max_faith": [1,9],
+            "status": ["warrior", "medicine cat", "mediator", "queen"],
+            "age": ["adolescent"],
+            "affected": true,
+            "cluster": ["cool"]
+        },
+        "r_c": {
+            "min_max_faith": [-9,9],
+            "status": ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"],
+            "age": ["adolescent"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "sc_cluster_H1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c offers to pray to StarClan with r_c, promising it would help {PRONOUN/r_c/object} finally graduate."
+        ],
+        "m_c": {
+            "min_max_faith": [1,9],
+            "status": ["warrior", "medicine cat", "mediator", "queen"],
+            "age": ["adolescent"],
+            "affected": true,
+            "cluster": ["stable","sweet","upstanding","neurotic"]
+        },
+        "r_c": {
+            "min_max_faith": [-9,9],
+            "status": ["apprentice", "medicine cat apprentice", "mediator apprentice", "queen's apprentice"],
+            "age": ["adolescent"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "inconvenience_H1",
+        "weight": 10,
+        "faith_effect": -0.1,
+        "interactions": [
+            "m_c tripped over a pebble and cursed the Dark Forest under {PRONOUN/m_c/poss} breath for not saving {PRONOUN/m_c/object} from the embarrassment.",
+            "m_c gets bested by a porcupine and curses the Dark Forest for not preparing {PRONOUN/m_c/object} for it.",
+            "m_c wakes up with an awful cramp in {PRONOUN/m_c/poss} back and is convinced the Dark Forest ancestors put it there on purpose.",
+            "m_c trips over air in the middle of camp, cursing the Dark Forest in embarrassment.",
+            "With the utmost certainty, m_c is convinced the Dark Forest is intentionally inconveniencing {PRONOUN/m_c/object}.",
+            "{PRONOUN/m_c/poss/CAP} piece of fresh-kill tasted weird and m_c {VERB/m_c/blame/blames} the strange taste on the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -1],
+            "age": ["adolescent", "adult", "young adult", "senior adult", "senior"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "inconvenience_H2",
+        "weight": 10,
+        "faith_effect": 0.1,
+        "interactions": [
+            "m_c tripped over a pebble and cursed StarClan under {PRONOUN/m_c/poss} breath for not saving {PRONOUN/m_c/object} from the embarrassment.",
+            "m_c gets bested by a porcupine and curses StarClan for not preparing {PRONOUN/m_c/object} for it.",
+            "m_c wakes up with an awful cramp in {PRONOUN/m_c/poss} back and is convinced the StarClan ancestors put it there on purpose.",
+            "m_c trips over air in the middle of camp, cursing StarClan in embarrassment.",
+            "With the utmost certainty, m_c is convinced StarClan is intentionally inconveniencing {PRONOUN/m_c/object}.",
+            "{PRONOUN/m_c/poss/CAP} piece of fresh-kill tasted weird and m_c {VERB/m_c/blame/blames} the strange taste on StarClan."
+        ],
+        "m_c": {
+            "min_max_faith": [1, 9],
+            "age": ["adolescent", "adult", "young adult", "senior adult", "senior"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "season_spec_H1",
+        "weight": 20,
+        "season": ["leaf-bare"],
+        "faith_effect": -0.5,
+        "interactions": [
+            "m_c wonders if StarClan is not looking after c_n this leafbare.",
+            "When the herb storage dwindles a little more, m_c feels a disappointed tinge in {PRONOUN/m_c/poss} faith.",
+            "Leafbare has been proven to be harsher, and with no clear communication from StarClan, m_c wonders if they're even watching.",
+            "The stars are dim in the freezing night, and m_c can't help but feel a tinge of bitterness in response to StarClan's silence.",
+            "m_c's faith sways irritably as StarClan's silence proves to be as suffocating as the snow outside."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["medicine cat", "medicine cat apprentice"],
+            "min_max_faith": [1,9]
+        }
+    },
+    {
+        "event_id": "season_spec_H2",
+        "weight": 20,
+        "season": ["leaf-bare"],
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c was uncertain StarClan would hear {PRONOUN/m_c/poss} prayers, but after a desperate herb gathering proved fruitful, m_c is ever more grateful for StarClan's guidance.",
+            "m_c whispers a prayer to the stars, hoping StarClan will look after the patrols today."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["medicine cat", "medicine cat apprentice"],
+            "min_max_faith": [1,9]
+        }
+    },
+    {
+        "event_id": "season_spec_H3",
+        "weight": 20,
+        "season": ["leaf-bare"],
+        "faith_effect": -0.5,
+        "interactions": [
+            "While every other cat is praying to StarClan for herbs, m_c is following the Dark Forests ways and doesn't wait for a miracle to happen.",
+            "m_c believes that the lack of herbs is a test from the Dark Forest, not a chance to beg and pray to StarClan.",
+            "Begging is for mice, and m_c thinks the rough leaf-bare is a trial of the fittest from the Dark Forest itself.",
+            "m_c exclaims the lack of herbs is simply proof that the Dark Forest demands survival of the fittest.",
+            "m_c believes there is only one correct reaction to the lack of herbs - allowing nature to take its course, as the Dark Forest ancestors intended it."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["medicine cat", "medicine cat apprentice"],
+            "min_max_faith": [-9,-1]
+        },
+        "supplies": [
+            {
+                "type": "all_herb",
+                "trigger": [
+                    "low"
+                ],
+                "adjust": ""
+            }
+        ]
+    },
+    {
+        "event_id": "questioningSC_H1",
+        "weight": 20,
+        "faith_effect": -0.5,
+        "interactions": [
+            "m_c finds {PRONOUN/m_c/self} contemplating a lot of things after r_c questioned StarClan during storytime.",
+            "r_c asked a taboo question about StarClan that m_c had no good answer to.",
+            "r_c's constant questioning about StarClan's inaction caused m_c to think about things {PRONOUN/m_c/subject} never thought about before."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["queen", "queen's apprentice"],
+            "min_max_faith": [1,9]
+        },
+        "r_c": {
+            "affected": false,
+            "status": ["kitten"],
+            "min_max_faith": [1,-1]
+        }
+    },
+    {
+        "event_id": "leader_kittenapp_H1",
+        "weight": 20,
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c patiently tells the story of {PRONOUN/m_c/poss} Leaders' Ceremony to a curious r_c.",
+            "To provide some encouragement, m_c claims StarClan sees potential in r_c just as m_c does.",
+            "m_c amusingly asks r_c how m_c got {PRONOUN/m_c/poss} lives if StarClan supposedly isn't real."
+        ],
+        "m_c": {
+            "affected": false,
+            "status": ["leader"],
+            "min_max_faith": [1,9]
+        },
+        "r_c": {
+            "affected": true,
+            "status": ["kitten", "apprentice"],
+            "min_max_faith": [1,-1]
+        }
+    },
+    {
+        "event_id": "app/mentor_influence_H1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "Once m_c catches wind that r_c believes in the Dark Forest, {PRONOUN/m_c/subject} {VERB/m_c/begin/begins} to rethink {PRONOUN/m_c/poss} own faith.",
+            "m_c muses that if r_c believes in the Dark Forest, then perhaps {PRONOUN/m_c/subject} can too.",
+            "m_c readily contemplates trying to believe in the Dark Forest once r_c confirms {PRONOUN/r_c/poss} faith.",
+            "Realizing r_c believes in the Dark Forest, m_c quickly begins claiming {PRONOUN/m_c/subject} {VERB/m_c/believe/believes} in them too.",
+            "m_c faith sways with r_c's influence.",
+            "During m_c apprenticeship, {PRONOUN/m_c/subject} {VERB/m_c/begin/begins} to slowly follow r_c's faith in the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [0,3],
+            "affected": true,
+            "status": [
+                "apprentice"
+            ],
+            "relationship_status": [
+               "app/mentor",
+               "admiration_20"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, -3],
+            "status": [
+                "warrior"
+            ]
+        }
+    },
+    {
+        "event_id": "app/mentor_influence_H2",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "Once m_c catches wind that r_c believes in StarClan, {PRONOUN/m_c/subject} {VERB/m_c/begin/begins} to rethink {PRONOUN/m_c/poss} own faith.",
+            "m_c muses that if r_c believes in StarClan, then perhaps {PRONOUN/m_c/subject} should too.",
+            "m_c readily contemplates trying to believe in StarClan once r_c confirms {PRONOUN/r_c/poss} faith.",
+            "Realizing r_c believes in StarClan, m_c quickly begins claiming {PRONOUN/m_c/subject} {VERB/m_c/believe/believes} in them too.",
+            "m_c faith sways with r_c's influence.",
+            "During m_c apprenticeship, {PRONOUN/m_c/subject} {VERB/m_c/begin/begins} to slowly follow r_c's faith in StarClan."
+        ],
+        "m_c": {
+            "min_max_faith": [0,-3],
+            "affected": true,
+            "relationship_status": [
+               "app/mentor",
+               "admiration_20"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [3,9]
+        }
+    },
+    {
+        "event_id": "mentor/app_influence_H1",
+        "faith_effect": -0.3,
+        "weight": 20,
+        "interactions": [
+            "m_c happily explains {PRONOUN/m_c/poss} reasoning for believing in the Dark Forest, and huffs with pride as r_c continues to stay interested in learning more.",
+            "m_c slowly begins to influence r_c's faith to lean to the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [0,3],
+            "relationship_status": [
+               "mentor/app",
+               "comfort_15"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, -3],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "mentor/app_influence_H2",
+        "faith_effect": -0.3,
+        "weight": 10,
+        "interactions": [
+            "m_c teaches r_c some tricks {PRONOUN/m_c/subject} learned from {PRONOUN/m_c/poss} time training in the Dark Forest.",
+            "m_c tells tales of {PRONOUN/m_c/poss} experiences exploring the Dark Forest, watching with swelling pride as r_c's eyes brighten with interest.",
+            "m_c patiently answers any questions r_c has about the Dark Forest and what it was like training there.",
+            "m_c describes the Dark Forest to r_c, who is listening with keen interest."
+        ],
+        "m_c": {
+            "min_max_faith": [0,-9],
+            "relationship_status": [
+               "mentor/app",
+               "comfort_15"
+            ],
+            "df_status": [
+                "apprentice",
+                "warrior"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [1,-1],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "parent/child_H1",
+        "faith_effect": 0.2,
+        "weight": 10,
+        "interactions": [
+            "m_c whispers stories of the stars to put r_c to bed.",
+            "When r_c startles awake from a nightmare, m_c spends a few minutes pointing out the brightest stars and giving each one a story to calm r_c down.",
+            "m_c patiently explains the leader's ceremony to a curious r_c, detailing how lives are given and why it's so important.",
+            "m_c patiently explains the Moonplace to a curious r_c.",
+            "m_c quietly claims with certainty that r_c is a blessing gifted from StarClan.",
+            "m_c coaxes r_c to pray to StarClan with {PRONOUN/m_c/object}.",
+            "m_c murmurs songs of the StarClan ancestors while laying with r_c."
+        ],
+        "m_c": {
+            "min_max_faith": [0,9],
+            "affected": true,
+            "relationship_status": [
+               "parent/child"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [1,-1],
+            "affected": true,
+            "status": [
+                "kitten"
+            ]
+        }
+    },
+    {
+        "event_id": "leafbare_hunting_ant1",
+        "weight": 20,
+        "season": ["leaf-bare"],
+        "faith_effect": 0.5,
+        "interactions": [
+            "Despite the cold, m_c found a giant piece of prey earlier, making sure to thank StarClan before {PRONOUN/m_c/subject} brought it home.",
+            "m_c looks up to the stars in gratitude after finding a nice piece of prey.",
+            "Prey has been scarce recently, so m_c sends {PRONOUN/m_c/poss} thanks to StarClan after managing to find some."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["warrior", "apprentice"],
+            "min_max_faith": [1,9]
+        }
+    },
+    {
+        "event_id": "leafbare_hunting_twocats_ant1",
+        "weight": 20,
+        "season": ["leaf-bare"],
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c and r_c pad into camp after a successful hunt, purring their thanks to StarClan.",
+            "After a successful--but cold--hunt, m_c and r_c are sure to thank StarClan.",
+            "Despite almost freezing their paws off, m_c and r_c are sure to send their thanks to StarClan after a successful hunt."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["warrior", "apprentice"],
+            "min_max_faith": [1,9]
+        },
+        "r_c": {
+            "min_max_faith": [1,9],
+            "status": ["warrior", "apprentice"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "mediatorapp_ant1",
+        "weight": 20,
+        "faith_effect": -0.5,
+        "interactions": [
+            "When a meeting with o_cClan goes south, m_c wonders whether the stars were looking out for {PRONOUN/m_c/object}.",
+            "After angering a warrior from  c_n, m_c wonders whether being a mediator is the right path for {PRONOUN/m_c/object}.",
+            "When m_c is unable to resolve a minor conflict between two cats, {PRONOUN/m_c/subject} {VERB/m_c/wonder/wonders} if being a mediator is really written in {PRONOUN/m_c/poss} future."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["mediator", "mediator apprentice"],
+            "min_max_faith": [1,9]
+        }
+    },
+    {
+        "event_id": "kitten_sc_ant1",
+        "weight": 20,
+        "faith_effect": 0.5,
+        "interactions": [
+            "On a cloudy night, m_c mistakes fireflies for stars, happy to know someone is watching over {PRONOUN/m_c/object}.",
+            "After hearing an elder's story about StarClan, m_c is all too happy to repeat it to anyone who will listen.",
+            "m_c spends an entire afternoon pretending to be a StarClan warrior {PRONOUN/m_c/subject} heard about in a story."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["kitten"],
+            "min_max_faith": [-9,9]
+        }
+    },
+    {
+        "event_id": "kitten_sc_twocat_ant1",
+        "weight": 20,
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c prayed to StarClan that r_c would give {PRONOUN/m_c/poss} a badger ride, and r_c did!",
+            "It took a lot of asking, but m_c managed to convince r_c to tell {PRONOUN/m_c/object} a story about StarClan!",
+            "r_c told a story about a StarClan warrior that enchanted m_c.",
+            "After having a bad dream, r_c reassures m_c that the stars are watching out for {PRONOUN/m_c/object}.",
+            "When m_c is unable to sleep one night, r_c sits with {PRONOUN/m_c/object}, pointing out the stars to {PRONOUN/m_c/object} until m_c falls asleep."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["kitten"],
+            "min_max_faith": [1,9]
+        },
+        "r_c": {
+            "min_max_faith": [-9,9],
+            "status": ["warrior", "medicine cat", "elder", "mediator", "queen"],
+            "affected": false
+        }
+    },
+    {
+        "event_id": "kitten_df_ant1",
+        "weight": 20,
+        "faith_effect": -0.5,
+        "interactions": [
+            "m_c swears that {PRONOUN/m_c/subject} saw a shadowy figure in a dream last night.",
+            "m_c's interest is piqued after hearing a rumor about the Dark Forest.",
+            "m_c wants to learn more about a place called the Dark Forest."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["kitten"],
+            "min_max_faith": [-9,9]
+        }
+    },
+    {
+        "event_id": "medapp_sc_ant1",
+        "weight": 20,
+        "faith_effect": 0.5,
+        "interactions": [
+            "After a long stretch of silence from StarClan, m_c is relieved when a message finally arrives.",
+            "m_c received a dream last night from StarClan!",
+            "m_c is looking forward to attending the next half-moon meeting.",
+            "During a particularly hard moment, m_c feels the presence of StarClan comforting {PRONOUN/m_c/object}."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["medicine cat apprentice"],
+            "min_max_faith": [0,9]
+        }
+    },
+    {
+        "event_id": "medapp_sc_twocat_ant1",
+        "weight": 20,
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c was worried that StarClan's silence was somehow {PRONOUN/m_c/poss} fault, but r_c assured m_c it has nothing to do with {PRONOUN/m_c/object}.",
+            "m_c feels awful after accidentally giving one of {PRONOUN/m_c/poss} clanmates the wrong herb. r_c assures {PRONOUN/m_c/object} that no cat is perfect and mistakes are just learning opportunities in disguise.",
+            "m_c and r_c pray for one of their sick clanmates together.",
+            "m_c and r_c are relieved when one of their sick clanmates finally starts getting better."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["medicine cat apprentice"],
+            "min_max_faith": [1,9]
+        },
+        "r_c": {
+            "min_max_faith": [1,9],
+            "status": ["medicine cat"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "elder_sc_ant1",
+        "weight": 20,
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c tells an ancient story about c_n's warrior ancestors to a small gathering of cats.",
+            "m_c fondly remembers a story about StarClan that an elder told {PRONOUN/m_c/object} when {PRONOUN/m_c/subject} {VERB/m_c/were/was} a kit.",
+            "One night, m_c gazes up at the stars thoughtfully."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["elder"],
+            "min_max_faith": [0,9]
+        }
+    },
+    {
+        "event_id": "ur_twocat_ant1",
+        "weight": 20,
+        "faith_effect": -0.5,
+        "interactions": [
+            "After hearing r_c's point of view about the Dark Forest, m_c has to admit that it doesn't sound as bad as some cats make it seem.",
+            "r_c's interesting perspective on the Dark Forest makes m_c reflect on {PRONOUN/m_c/poss} own views.",
+            "m_c appreciates a conversation {PRONOUN/m_c/subject} had with r_c about the Dark Forest, valuing the opportunity to view {PRONOUN/m_c/poss} faith through a different light.",
+            "r_c brings up some interesting points about the Dark Forest that m_c hadn't considered before."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["adult", "young adult", "adolescent", "senior adult", "senior"],
+            "min_max_faith": [1,9]
+        },
+        "r_c": {
+            "min_max_faith": [-9,-1],
+            "status": ["adult", "young adult", "adolescent", "senior adult", "senior"],
+            "affected": false
+        }
+    },
+    {
+        "event_id": "leader_df_ant1",
+        "weight": 20,
+        "faith_effect": -0.5,
+        "interactions": [
+            "m_c can't help but wonder whether StarClan is still watching out for c_n.",
+            "m_c curses StarClan after disputes about c_n's border kick back up.",
+            "m_c received a troubling dream that left {PRONOUN/m_c/poss} faith in StarClan shaken.",
+            "During a tough time in the Clan, the stars offer m_c no guidance, causing {PRONOUN/m_c/object} to feel adrift."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["leader"],
+            "min_max_faith": [0,9]
+        }
+    },
+    {
+        "event_id": "adult_general_df_ant1",
+        "weight": 10,
+        "faith_effect": -0.5,
+        "interactions": [
+            "Silence from the stars has left m_c feeling lost.",
+            "m_c is happy to receive a dream from a cat {PRONOUN/m_c/subject} {VERB/m_c/know/knows} in the Dark Forest.",
+            "m_c daydreams about visiting the Dark Forest.",
+            "m_c feels an inexplicable pull towards the Dark Forest.",
+            "Over the past moon, m_c's interest in the Dark Forest has grown.",
+            "m_c doesn't think the Dark Forest is as bad as most cats think.",
+            "m_c daydreams about sparring in the Dark Forest."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["young adult", "adult", "senior adult", "senior"],
+            "min_max_faith": [-6,4]
+        }
+    },
+    {
+        "event_id": "adult_general_sc_ant1",
+        "weight": 10,
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c hopes for a dream from StarClan.",
+            "m_c fondly remembers a cat {PRONOUN/m_c/subject} {VERB/m_c/know/knows} in StarClan.",
+            "m_c contentedly watches the stars on a clear night.",
+            "m_c wishes {PRONOUN/m_c/subject} could talk to someone {PRONOUN/m_c/subject} {VERB/m_c/know/knows} in StarClan.",
+            "m_c hopes the stars are looking out for {PRONOUN/m_c/object}.",
+            "m_c wonders what cats in StarClan do all day."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["young adult", "adult", "senior adult", "senior"],
+            "min_max_faith": [-4,6]
+        }
+    },
+    {
+        "event_id": "leader_sc_twocat_ant1",
+        "weight": 20,
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c thanks StarClan after r_c informs {PRONOUN/m_c/object} that {PRONOUN/r_c/subject} found extra herbs recently.",
+            "r_c helps m_c decipher a dream {PRONOUN/m_c/subject} received from StarClan.",
+            "r_c informs m_c of an omen {PRONOUN/r_c/subject} received from StarClan."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["leader"],
+            "min_max_faith": [1,9]
+        },
+        "r_c": {
+            "min_max_faith": [1,9],
+            "status": ["medicine cat"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "app_df_twocat_ant1",
+        "weight": 20,
+        "faith_effect": -0.5,
+        "interactions": [
+            "r_c tells m_c about a cool place called the Dark Forest!",
+            "After hearing about the Dark Forest from r_c, m_c decides {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to visit there.",
+            "During a sparring session, r_c tells m_c that a good way to improve {PRONOUN/m_c/poss} skills is by going to the Dark Forest.",
+            "m_c's interest in the Dark Forest grows after {PRONOUN/m_c/subject} {VERB/m_c/hear/hears} r_c mention it to someone else."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["apprentice"],
+            "min_max_faith": [-4,4]
+        },
+        "r_c": {
+            "min_max_faith": [-9,-1],
+            "status": ["apprentice"],
+            "affected": false
+        }
+    },
+    {
+        "event_id": "adult_general_ur_ant1",
+        "weight": 10,
+        "faith_effect": 0.5,
+        "interactions": [
+            "m_c's interest in StarClan has been growing.",
+            "m_c received a dream from StarClan.",
+            "m_c wonders what StarClan thinks of {PRONOUN/m_c/object}."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["young adult", "adult", "senior adult", "senior"],
+            "min_max_faith": [-9,-1]
+        }
+    },
+    {
+        "event_id": "adult_general_ur_ant2",
+        "weight": 10,
+        "faith_effect": -0.5,
+        "interactions": [
+            "m_c wonders if the Dark Forest is really as bad as everycat says.",
+            "m_c's interest in the Dark Forest has been growing.",
+            "m_c wants to visit the Dark Forest in {PRONOUN/m_c/poss} dreams."
+        ],
+        "m_c": {
+            "affected": true,
+            "status": ["young adult", "adult", "senior adult", "senior"],
+            "min_max_faith": [1,9]
+        }
+    },
+
+    {
+        "event_id": "df_medcat_rad1",
+        "faith_effect": -0.5,
+        "weight": 10,
+        "season": ["newleaf", "greenleaf", "leaffall"],
+        "interactions": [
+            "m_c curses at StarClan upon discovering that insects have infested a nearby herb patch.",
+            "m_c is horrified to find a once-flourishing herb patch plagued by some kind of rot."
+        ],
+        "m_c": {
+            "min_max_faith": [-2, 4],
+            "affected": true,
+            "status": ["medicine cat apprentice", "medicine cat"]
+        }
+    },
+    {
+        "event_id": "sc_shunned_rad1",
+        "faith_effect": 0.5,
+        "weight": 10,
+        "interactions": [
+            "m_c ponders whether the Dark Forest is truly on {PRONOUN/m_c/poss} side."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -1],
+            "affected": true,
+            "shunned": true
+        }
+    },
+    {
+        "event_id": "df_shunned_gen_rad1",
+        "faith_effect": -0.5,
+        "weight": 10,
+        "interactions": [
+            "To m_c, it feels like StarClan has turned their backs on {PRONOUN/m_c/object}, just like {PRONOUN/m_c/poss} Clanmates have.",
+            "m_c desperately pleads StarClan to show that they understand {PRONOUN/m_c/poss} actions, but the stars remain silent.",
+            "One clear night, m_c asks StarClan if they forgive {PRONOUN/m_c/object}. {PRONOUN/m_c/subject/CAP}{VERB/m_c/swear/swears} {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} never seen the clouds come in so quickly."
+        ],
+        "m_c": {
+            "min_max_faith": [-2, 6],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
+            "shunned": true
+        }
+    },
+    {
+        "event_id": "sc_lovedone_rad1",
+        "faith_effect": 0.5,
+        "weight": 5,
+        "interactions": [
+            "It's hard for m_c to explain how {PRONOUN/m_c/subject} {VERB/m_c/know/knows} r_c is watching over {PRONOUN/m_c/object} - {PRONOUN/m_c/subject} just {VERB/m_c/know/knows}.",
+            "Sometimes m_c could swear {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} r_c's presence at {PRONOUN/m_c/poss} side."
+        ],
+        "m_c": {
+            "min_max_faith": [0, 9],
+            "affected": true,
+            "skill": ["STAR,1", "CLAIRVOYANT,1"],
+            "status": ["apprentice", "mediator apprentice", "queen's apprentice", "warrior", "mediator", "queen", "deputy", "leader", "elder"],
+            "relationship_status": [
+                    "platonic_30"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "residence": ["sc"],
+            "affected": false,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        }
+    },
+    {
+        "event_id": "df_lovedone_rad1",
+        "faith_effect": 0.5,
+        "weight": 5,
+        "interactions": [
+            "It's hard for m_c to explain how {PRONOUN/m_c/subject} {VERB/m_c/know/knows} r_c is watching over {PRONOUN/m_c/object} - {PRONOUN/m_c/subject} just {VERB/m_c/know/knows}.",
+            "Sometimes m_c could swear {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} r_c's presence at {PRONOUN/m_c/poss} side."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, 0],
+            "affected": true,
+            "skill": ["DARK,1", "CLAIRVOYANT,1"],
+            "status": ["apprentice", "mediator apprentice", "queen's apprentice", "warrior", "mediator", "queen", "deputy", "leader", "elder"],
+            "relationship_status": [
+                    "platonic_30"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "residence": ["df"],
+            "affected": false,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        }
+    },
+    {
+        "event_id": "ur_lovedone_rad1",
+        "faith_effect": 0.5,
+        "weight": 5,
+        "interactions": [
+            "It's hard for m_c to explain how {PRONOUN/m_c/subject} {VERB/m_c/know/knows} r_c is watching over {PRONOUN/m_c/object} - {PRONOUN/m_c/subject} just {VERB/m_c/know/knows}.",
+            "Sometimes m_c could swear {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} r_c's presence at {PRONOUN/m_c/poss} side."
+        ],
+        "m_c": {
+            "min_max_faith": [-3, 2],
+            "affected": true,
+            "skill": ["GHOST,1", "CLAIRVOYANT,1"],
+            "status": ["apprentice", "mediator apprentice", "queen's apprentice", "warrior", "mediator", "queen", "deputy", "leader", "elder"],
+            "relationship_status": [
+                    "child/parent"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "residence": ["ur"],
+            "affected": false,
+            "age": ["young adult", "adult", "senior adult", "senior"]
+        }
+    },
+    {
+        "event_id": "ur_lovedone_rad2",
+        "faith_effect": -0.5,
+        "weight": 5,
+        "interactions": [
+            "It's hard for m_c to explain how {PRONOUN/m_c/subject} {VERB/m_c/know/knows} r_c is watching over {PRONOUN/m_c/object} - {PRONOUN/m_c/subject} just {VERB/m_c/know/knows}.",
+            "Sometimes m_c could swear {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} r_c's presence at {PRONOUN/m_c/poss} side."
+        ],
+        "m_c": {
+            "min_max_faith": [-2, 3],
+            "affected": true,
+            "skill": ["GHOST,1", "CLAIRVOYANT,1"],
+            "status": ["apprentice", "mediator apprentice", "queen's apprentice", "warrior", "mediator", "queen", "deputy", "leader", "elder"],
+            "relationship_status": [
+                    "child/parent"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "residence": ["ur"],
+            "affected": false,
+            "age": ["young adult", "adult", "senior adult", "senior"]
+        }
+    },
+
+    {
+        "event_id": "df_upstandingparent_shunnedkit_rad1",
+        "faith_effect": -0.3,
+        "weight": 15,
+        "interactions": [
+            "m_c keeps asking StarClan where {PRONOUN/m_c/subject} went wrong, hoping to understand how r_c strayed so far from {PRONOUN/m_c/poss} values.",
+            "r_c's actions have shaken m_c to {PRONOUN/m_c/poss} core - does StarClan think {PRONOUN/m_c/subject} didn't teach {PRONOUN/m_c/poss} kit the ways of the Warrior Code?"
+        ],
+        "m_c": {
+            "min_max_faith": [3, 8],
+            "affected": true,
+            "cluster": ["upstanding"],
+            "shunned": false,
+            "relationship_status": [
+                    "parent/child"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "affected": false,
+            "shunned": true
+        },
+        "relationships": [
+            {
+            "cats_from": [
+                    "m_c"
+            ],
+            "cats_to": [
+                    "r_c"
+            ],
+            "mutual": false,
+            "values": [
+                    "comfort",
+                    "trust"
+            ],
+                "amount": -1
+            }
+        ]
+    },
+    {
+        "event_id": "sc_innovator_rad1",
+        "faith_effect": 0.3,
+        "weight": 15,
+        "interactions": [
+            "After multiple failed endeavors at {PRONOUN/m_c/poss} latest innovation, m_c half-jokingly asks StarClan to help - and is surprised when {PRONOUN/m_c/poss} next attempt is a success."
+        ],
+        "m_c": {
+            "min_max_faith": [0, 5],
+            "affected": true,
+            "skill": ["INNOVATOR,1"],
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        }
+    },
+    {
+        "event_id": "ur_war_gen_rad1",
+        "sub_type": ["war"],
+        "faith_effect": 1,
+        "weight": 15,
+        "interactions": [
+            "m_c doesn't bother turning to StarClan or the Dark Forest for hope during this war, as it's clear neither are looking out for c_n.",
+            "When the Dark Forest doesn't answer m_c's pleas to end the war, {PRONOUN/m_c/subject} {VERB/m_c/turn/turns} to StarClan, only to be met with the same silence."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, 0],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult"]
+        }
+    },
+    {
+        "event_id": "ur_war_gen_rad2",
+        "sub_type": ["war"],
+        "faith_effect": -1,
+        "weight": 15,
+        "interactions": [
+            "m_c doesn't bother turning to StarClan or the Dark Forest for hope during this war, as it's clear neither are looking out for c_n.",
+            "When StarClan doesn't answer m_c's pleas to end the war, {PRONOUN/m_c/subject} {VERB/m_c/turn/turns} to the Dark Forest, only to be met with the same silence."
+        ],
+        "m_c": {
+            "min_max_faith": [0, 9],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult"]
+        }
+    },
+    {
+        "event_id": "neutral_faithquarrel_rad1",
+        "faith_effect": 0,
+        "weight": 20,
+        "interactions": [
+            "r_c is curious about m_c's faith in the Dark Forest, but doesn't really understand it.",
+            "m_c is curious about r_c's faith in StarClan, but doesn't really understand it.",
+            "m_c and r_c have a respectful discussion about each other's beliefs.",
+            "m_c and r_c wind up in a fruitless debate about StarClan and the Dark Forest.",
+            "When m_c praises the Dark Forest for a stroke of good luck, r_c simply nods without comment.",
+            "When r_c praises StarClan for a stroke of good luck, m_c simply nods without comment."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -1],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        },
+        "r_c": {
+            "min_max_faith": [1, 9],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        }
+    },
+    {
+        "event_id": "sc_medcat_kit_rad1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "When m_c asks if medicine cats can bring cats back from the dead, r_c purrs in amusement, saying only StarClan can do that."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, 9],
+            "affected": true,
+            "age": ["kitten"]
+        },
+        "r_c": {
+            "min_max_faith": [2, 9],
+            "affected": false,
+            "status": ["medicine cat apprentice", "medicine cat"]
+        }
+    },
+    {
+        "event_id": "sc_sleeper_rad1",
+        "faith_effect": 0.1,
+        "weight": 10,
+        "interactions": [
+            "m_c curses StarClan in irritation after a noisy Clanmate wakes {PRONOUN/m_c/object} up."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -1],
+            "affected": true,
+            "skill": ["SLEEPER,1"],
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        }
+    },
+    {
+        "event_id": "df_sleeper_rad1",
+        "faith_effect": 0.1,
+        "weight": 10,
+        "interactions": [
+            "m_c curses the Dark Forest in irritation after a noisy Clanmate wakes {PRONOUN/m_c/object} up."
+        ],
+        "m_c": {
+            "min_max_faith": [1, 9],
+            "affected": true,
+            "skill": ["SLEEPER,1"],
+            "age": ["adolescent","young adult","adult","senior adult","senior"]
+        }
+    },
+    {
+        "event_id": "df_queen_sleeper_rad1",
+        "faith_effect": -0.2,
+        "weight": 10,
+        "interactions": [
+            "m_c is grateful to the Dark Forest spirits for letting {PRONOUN/m_c/object} get sufficient rest despite the chaos of the nursery.",
+            "Sometimes m_c thinks {PRONOUN/m_c/poss} ability to sleep with kits clambering atop {PRONOUN/m_c/object} is {PRONOUN/m_c/poss} reward for {PRONOUN/m_c/poss} faith in the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -2],
+            "affected": true,
+            "skill": ["SLEEPER,1"],
+            "status": ["queen's apprentice", "queen"]
+        }
+    },
+    {
+        "event_id": "sc_gen_star_rad1",
+        "faith_effect": 0.4,
+        "weight": 10,
+        "interactions": [
+            "m_c wonders why {PRONOUN/m_c/subject}, of all cats, {VERB/m_c/are/is} able to speak to StarClan so easily.",
+            "Sometimes m_c wonders if {PRONOUN/m_c/poss} connection to StarClan is a sign that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} destined for something bigger."
+        ],
+        "m_c": {
+            "min_max_faith": [1, 9],
+            "affected": true,
+            "skill": ["STAR,1"],
+            "status": ["apprentice", "mediator apprentice", "queen's apprentice", "warrior", "mediator", "queen", "elder"]
+        }
+    },
+    {
+        "event_id": "df_gen_dark_rad1",
+        "faith_effect": -0.4,
+        "weight": 10,
+        "interactions": [
+            "m_c wonders why {PRONOUN/m_c/subject}, of all cats, {VERB/m_c/are/is} able to speak to Dark Forest cats so easily.",
+            "Sometimes m_c wonders if {PRONOUN/m_c/poss} connection to the Dark Forest is a sign that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} destined for something bigger."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -1],
+            "affected": true,
+            "skill": ["DARK,1"],
+            "status": ["apprentice", "mediator apprentice", "queen's apprentice", "warrior", "mediator", "queen", "elder"]
+        }
+    },
+    {
+        "event_id": "df_sam1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c swears {PRONOUN/m_c/subject} {VERB/m_c/see/sees} a mud-covered cat at the edge of camp, but nobody else sees the cat. {VERB/m_c/Are/Is} {PRONOUN/m_c/subject} going crazy, or was something truly there?"
+        ],
+        "m_c": {
+            "min_max_faith": [-1, 9],
+            "affected": true,
+            "skill": ["DARK,1"]
+        }
+    },
+    {
+        "event_id": "sc_sam1",
+        "faith_effect": 0.3,
+        "weight": 20,
+        "interactions": [
+            "m_c tells r_c that the stars seem to twinkle when {PRONOUN/m_c/subject} {VERB/m_c/succeed/succeeds} at something."
+        ],
+        "m_c": {
+            "min_max_faith": [2, 9],
+            "age": ["kitten"]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "age": ["kitten"],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "ur_sam1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c swears {PRONOUN/m_c/subject} saw a wisp at the edge of camp, seeming to be neither from StarClan or the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -1],
+            "affected": true,
+            "skill": ["GHOST,1"]
+        }
+    },
+    {
+        "event_id": "ur_sam2",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c swears {PRONOUN/m_c/subject} saw a wisp at the edge of camp, seeming to be neither from StarClan or the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [1, 9],
+            "affected": true,
+            "skill": ["GHOST,1"]
+        }
+    },
+    {
+        "event_id": "df_sam2",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c tells a story to r_c about {PRONOUN/m_c/poss} days training in the Dark Forest. Initially, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} just talking about battle training, but {PRONOUN/m_c/subject} {VERB/m_c/turn/turns} it into a lesson about why cats shouldn't train in the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [1, 9],
+            "age": ["senior"]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 2],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "df_sam3-J1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c tells r_c about the Dark Forest, explaining that it's not as bad as everycat makes it out to be.",
+"m_c tells r_c to keep an open mind about {PRONOUN/r_c/poss} faith as {PRONOUN/r_c/subject} {VERB/r_c/grow/grows} up."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -2],
+            "relationship_status": [
+                "parent/child", 
+                "trust_20"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-1, 9],
+            "age": ["kitten"]
+        }
+    },
+    {
+        "event_id": "sc_sam2",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "season": ["newleaf", "greenleaf", "leaf-fall"],
+        "interactions": [
+            "m_c was out on a hunting patrol, and stumbled upon a river perfect for fishing! {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} not sure what's more surprising: the fact that a fish slapped {PRONOUN/m_c/object} in the face, or that {PRONOUN/m_c/subject} still caught the fish. {PRONOUN/m_c/subject/CAP} {VERB/m_c/thank/thanks} StarClan for {PRONOUN/m_c/poss} luck."
+        ],
+        "m_c": {
+            "min_max_faith": [1, 9],
+            "affected": true,
+            "trait": [
+                "strange"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ]
+        }
+    },
+    {
+        "event_id": "sc_sam3",
+        "faith_effect": 0.3,
+        "weight": 10,
+        "season": ["leafbare"],
+        "interactions": [
+            "m_c jokingly decides to 'fish' during leafbare, hoping to get a laugh out of {PRONOUN/m_c/poss} Clanmates. When {PRONOUN/m_c/subject} '{VERB/m_c/try/tries}' to fish, the ice cracks under {PRONOUN/m_c/poss} paws, and {PRONOUN/m_c/subject} {VERB/m_c/leap/leaps} back onto solid ground before {PRONOUN/m_c/subject} can plunge into the frigid water. Clearly, this is StarClan telling {PRONOUN/m_c/object} not to be fishing during leafbare! {PRONOUN/m_c/subject/CAP} {VERB/m_c/thank/thanks} StarClan for the reminder."
+        ],
+        "m_c": {
+            "min_max_faith": [5, 9],
+            "affected": true,
+            "trait": [
+                "strange"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ]
+        }
+    },
+    {
+        "event_id": "df_sam4",
+        "faith_effect": -0.5,
+        "weight": 10,
+        "interactions": [
+            "m_c wakes up with a start, {PRONOUN/m_c/poss} chest heaving. Did {PRONOUN/m_c/subject} just see the Dark Forest in {PRONOUN/m_c/poss} dreams?"
+        ],
+        "m_c": {
+            "min_max_faith": [0, 9],
+            "affected": true,
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "df_sam5",
+        "faith_effect": -0.5,
+        "weight": 10,
+        "interactions": [
+            "m_c can't explain it, but {PRONOUN/m_c/subject} can feel r_c watching {PRONOUN/m_c/object}. Although, it doesn't seem to be from StarClan. Strange.",
+            "r_c talks to m_c in a dream, but {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} not starry-pelted like StarClan cats are described as. No, quite the opposite in fact. {PRONOUN/r_c/poss/CAP} pelt is muddy and {PRONOUN/r_c/poss} eyes are red. m_c has a realization with a jolt - Is r_c in the Dark Forest?"
+        ],
+        "m_c": {
+            "min_max_faith": [-1, 9],
+            "affected": true,
+            "relationship_status": [
+                "child/parent"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "residence": ["df"]
+        }
+    },
+    {
+        "event_id": "sc_sam5",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c watches r_c talk so passionately about {PRONOUN/r_c/poss} belief in StarClan that m_c can't help but be swayed by {PRONOUN/r_c/poss} words."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, 1],
+            "affected": true,
+            "relationship_status": [
+                "mates"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [6, 9]
+        }
+    },
+    {
+        "event_id": "df_sam6",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c watches r_c talk so passionately about {PRONOUN/r_c/poss} belief in the Dark Forest that m_c can't help but be swayed by {PRONOUN/r_c/poss} words."
+        ],
+        "m_c": {
+            "min_max_faith": [-1, 9],
+            "affected": true,
+            "relationship_status": [
+                "mates"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, -6]
+        }
+    },
+    {
+        "event_id": "df_sam7",
+        "faith_effect": -0.7,
+        "weight": 15,
+        "interactions": [
+            "m_c makes up a play for the kits to teach them about the Dark Forest. r_c is particularly swayed by the play."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -1],
+            "status": [
+                "queen's apprentice"
+            ],
+            "cluster": [
+                "silly"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-1, 9],
+            "age": [
+                "kitten"
+            ],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "sc_sam6",
+        "faith_effect": 0.7,
+        "weight": 15,
+        "interactions": [
+            "m_c makes up a play for the kits to teach them about StarClan. r_c is particularly swayed by the play."
+        ],
+        "m_c": {
+            "min_max_faith": [1, 9],
+            "status": [
+                "queen's apprentice"
+            ],
+            "cluster": [
+                "silly"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 1],
+            "age": [
+                "kitten"
+            ],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "gen_neg_sam1",
+        "faith_effect": -0.3,
+        "weight": 20,
+        "interactions": [
+            "Just after m_c finishes bathing {PRONOUN/m_c/self}, a bird flies over {PRONOUN/m_c/poss} head and makes dirt, the dirt landing right on {PRONOUN/m_c/poss} head. m_c curses StarClan for this bout of bad luck."
+        ],
+        "m_c": {
+            "min_max_faith": [0, 9],
+            "affected": true
+        }
+    },
+    {
+        "event_id": "gen_pos_sam1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c fails in a mock spar against one of {PRONOUN/m_c/poss} fellow apprentices and curses the Dark Forest, specifically r_c, for {PRONOUN/m_c/poss} failure."
+        ],
+        "m_c": {
+            "min_max_faith": [-9, -1],
+            "status": [
+                "apprentice"
+            ],
+            "df": ["trainee"],
+            "relationship_status": [
+                "df_app/df_mentor"
+            ],
+            "affected": true
+        },
+        "r_c": {
+            "min_max_faith": [-9, 9],
+            "residence": ["df"]
+        }
+    },
+    {
+        "event_id": "gen_neg_sam2",
+        "faith_effect": -0.3,
+        "weight": 20,
+        "interactions": [
+            "m_c blames StarClan for {PRONOUN/m_c/poss} bad fur day."
+        ],
+        "m_c": {
+            "affected": true,
+            "min_max_faith": [0, 9],
+            "age": [
+                "adolescent",
+                "adult",
+                "young adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "sc_sam7",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "r_c makes a joke about StarClan, not meaning it, but m_c takes it to heart."
+        ],
+        "m_c": {
+            "affected": true,
+            "min_max_faith": [-9, 3]
+        },
+        "r_c": {
+            "min_max_faith": [-9, 1]
+        }
+    },
+    {
+        "event_id": "df_sam8",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "r_c makes a joke about the Dark Forest, not meaning it, but m_c takes it to heart."
+        ],
+        "m_c": {
+            "affected": true,
+            "min_max_faith": [-3, 9]
+        },
+        "r_c": {
+            "min_max_faith": [-1, 9]
+        }
+    },
+
+{
+        "event_id": "singlecat_sc_increase_E1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "A recent dream has helped strengthen m_c's connection to StarClan.",
+            "m_c thanks StarClan for their guidance over the last moon.",
+            "m_c finds comfort in StarClan after a hard day."
+        ],
+        "m_c": {
+            "min_max_faith": [2, 9],
+            "affected": true
+        }
+    },
+
+    {
+        "event_id": "singlecat_slight_sc_decrease_E1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c is reconsidering {PRONOUN/m_c/poss} faith in StarClan.",
+            "m_c considers the possibility of an afterlife outside StarClan and the Dark Forest.",
+            "m_c doesn't understand why StarClan can't just give {PRONOUN/m_c/object} a straight answer."
+        ],
+        "m_c": {
+            "min_max_faith": [1,4],
+            "affected": true
+        }
+    },
+ 
+    {
+        "event_id": "singlecat_low_sc_decrease_E1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c can't wrap {PRONOUN/m_c/poss} head around how omens are made.",
+            "m_c is beginning to see the Dark Forest from a different perspective.",
+            "Bitter from StarClan's constant silence, m_c considers turning to the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [0,2],
+            "affected": true
+        }
+    },
+
+    {
+        "event_id": "singlecat_neutral_faith_E1",
+        "faith_effect": 0,
+        "weight": 20,
+        "interactions": [
+            "m_c doesn't have the time to think about where {PRONOUN/m_c/poss} faith lies."
+        ],
+        "m_c": {
+            "min_max_faith": [-1,1],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        }
+    },
+
+    {
+        "event_id": "singlecat_neutral_dec_E1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c wishes more cats would start taking the initiative instead of constantly looking to StarClan for guidance."
+        ],
+        "m_c": {
+            "min_max_faith": [-1,1],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        }
+    },
+
+    {
+        "event_id": "multicat_neutral_dec_E1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c doesn't understand why r_c insists on praying for StarClan to guide the Clan through future hardships. Isn't that {PRONOUN/r_c/poss} job?"
+        ],
+        "m_c": {
+            "min_max_faith": [-1,1],
+            "affected": true
+        },
+        "r_c": {
+            "min_max_faith": [1,9],
+            "affected": false,
+            "status": ["leader"]
+        }
+    },
+
+{
+        "event_id": "multicat_sc_increase_E1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c whispers a prayer to StarClan, hoping they'll keep r_c safe."
+        ],
+        "m_c": {
+            "min_max_faith": [0,9],
+            "affected": true,
+            "relationship_status": [
+                "platonic_30"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9,9],
+            "affected": false
+        }
+    },
+   
+    {
+        "event_id": "multicat_sc_decrease_E1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "'How can StarClan watch us from so far away?' m_c originally brushes off r_c's question, but later finds {PRONOUN/m_c/self} wondering the same."
+        ],
+        "m_c": {
+            "min_max_faith": [1,9],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        },
+        "r_c": {
+            "min_max_faith": [-9,9],
+            "affected": false,
+            "age": ["kitten"]
+        }
+    },
+
+    {
+        "event_id": "multicat_sc_decrease_E2",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c is puzzled when {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} share the same star-filled dream as r_c during the half-moon meeting."
+        ],
+        "m_c": {
+            "min_max_faith": [-9,9],
+            "affected": true,
+            "status": ["medicine cat", "medicine cat apprentice"]
+        },
+        "r_c": {
+            "min_max_faith": [-9,9],
+            "affected": false,
+            "status": ["medicine cat"]
+        }
+    },
+
+    {
+        "event_id": "multicat_sc_decrease_E3",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c asks for a sign that r_c has made it to StarClan, but receives none."
+        ],
+        "m_c": {
+            "min_max_faith": [0,9],
+            "affected": true,
+            "relationship_status": [
+                "platonic_30"
+            ]
+        },
+        "r_c": {
+            "min_max_faith": [-9,9],
+            "affected": false,
+            "residence": ["sc"]
+        }
+    },
+
+    {
+        "event_id": "singlecat_df_increase_E1",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "A recent dream has helped strengthen m_c's connection to the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [-9,-1],
+            "affected": true
+        }
+    },
+
+    {
+        "event_id": "singlecat_df_dec_E1",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c is reconsidering {PRONOUN/m_c/poss} faith in the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [-3,-1],
+            "affected": true
+        }
+    },
+
+    {
+        "event_id": "multicat_df_increase_E2",
+        "faith_effect": -0.5,
+        "weight": 20,
+        "interactions": [
+            "m_c watches as r_c struggles to decipher yet another vague dream from StarClan. At least m_c can always depend on the Dark Forest for answers."
+        ],
+        "m_c": {
+            "min_max_faith": [-9,-1],
+            "affected": true,
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        },
+        "r_c": {
+            "min_max_faith": [1,9],
+            "affected": false,
+            "status": ["medicine cat", "medicine cat apprentice"]
+        }
+    },
+
+    {
+        "event_id": "multicat_df_decrease_E3",
+        "faith_effect": 0.5,
+        "weight": 20,
+        "interactions": [
+            "A recent conversation with r_c makes m_c realize that {PRONOUN/m_c/poss} faith may no longer be in the Dark Forest."
+        ],
+        "m_c": {
+            "min_max_faith": [-4,-1],
+            "affected": true
+        },
+        "r_c": {
+            "min_max_faith": [-9,-1],
+            "affected": false,
+            "age": ["adult", "senior adult", "senior"]
+        }
+    }
+]

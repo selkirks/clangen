@@ -27,7 +27,7 @@
 			"m_c didn't expect an apology from r_c, but accepted it regardless.",
 			"m_c has been a little kinder to r_c today.",
 			"m_c and r_c bond over something small.",
-			"m_c helps r_c with something {PRONOUN/r_c/subject} were struggling with.",
+			"m_c helps r_c with something {PRONOUN/r_c/subject} {VERB/r_c/was/were} struggling with.",
 			"m_c clears up a misunderstanding with r_c."
 		],
 		"reaction_random_cat": {
@@ -80,7 +80,7 @@
 			"m_c didn't realize how generous r_c could be.",
 			"m_c sees r_c stand up for a Clanmate despite the pushback from {PRONOUN/r_c/poss} peers.",
 			"m_c overhears r_c saying something kind about {PRONOUN/m_c/object}.",
-			"m_c tries to look at r_c's actions from another perspective, and starts to like {PRONOUN/r_c/subject} more.",
+			"m_c tries to look at r_c's actions from another perspective, and starts to like {PRONOUN/r_c/poss} more.",
 			"m_c notices that some of {PRONOUN/m_c/poss} Clanmates talk very highly of r_c.",
 			"The way r_c jumps to help a Clanmate makes m_c think {PRONOUN/r_c/subject} might not be all that bad.",
 			"There's something soothing about r_c that m_c never realized before.",

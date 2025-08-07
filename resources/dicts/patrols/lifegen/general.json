@@ -163,12 +163,12 @@
             ]
         },
         "weight": 15,
-        "intro_text": "You're on a dawn patrol with r_w_neurotic. Fog hangs over the whole territory, turning familiar landmarks into ghostly silhouettes and making it hard to see even several tail-lengths in front of you. Suddenly, r_w_neurotic gasps. With a jolt, you follow {PRONOUN/r_w_neurotic/poss} gaze and see an indistinct, cat-sized shadow with two glowing eyes, watching you. The figure turns and runs. A haunting jingling noise follows them.",
-        "decline_text": "Absolutely not. It's too early for this! You turn away and lead r_w_neurotic the opposite direction.",
+        "intro_text": "You're on a dawn patrol with r_w-neurotic. Fog hangs over the whole territory, turning familiar landmarks into ghostly silhouettes and making it hard to see even several tail-lengths in front of you. Suddenly, r_w-neurotic gasps. With a jolt, you follow {PRONOUN/r_w-neurotic/poss} gaze and see an indistinct, cat-sized shadow with two glowing eyes, watching you. The figure turns and runs. A haunting jingling noise follows them.",
+        "decline_text": "Absolutely not. It's too early for this! You turn away and lead r_w-neurotic the opposite direction.",
         "chance_of_success": 30,
         "success_outcomes": [
             {
-                "text": "Despite r_w_neurotic's protests, you leap after the shadow. You quickly catch up to it and leap for it, but your paws pass straight through the shape and you crash to the ground! When you've finally regained your bearings, the shadow is gone. The only sign of it is a belled collar lying a tail-length away.",
+                "text": "Despite r_w-neurotic's protests, you leap after the shadow. You quickly catch up to it and leap for it, but your paws pass straight through the shape and you crash to the ground! When you've finally regained your bearings, the shadow is gone. The only sign of it is a belled collar lying a tail-length away.",
                 "exp": 10,
                 "weight": 15,
                 "accessory": [
@@ -209,7 +209,7 @@
                 ]
             },
             {
-                "text": "You remember an old story that says dead cats sometimes appear when the fog is thickest: not StarClan cats, but cats who have died and now roam elsewhere. You call after the shadow, asking if they're one of those cats. For a long moment, there's no response. r_w_neurotic quivers beside you. Then, the figure reappears and blinks at you with its still-glowing eyes. You make out an indistinct cat silhouette before it seems to fade and become one with the fog, leaving a belled collar on the ground where it once stood.",
+                "text": "You remember an old story that says dead cats sometimes appear when the fog is thickest: not StarClan cats, but cats who have died and now roam elsewhere. You call after the shadow, asking if they're one of those cats. For a long moment, there's no response. r_w-neurotic quivers beside you. Then, the figure reappears and blinks at you with its still-glowing eyes. You make out an indistinct cat silhouette before it seems to fade and become one with the fog, leaving a belled collar on the ground where it once stood.",
                 "exp": 10,
                 "weight": 15,
                 "stat_skill": [
@@ -232,12 +232,12 @@
                 ]
             },
             {
-                "text": "You race after the jingling noise, and r_w_neurotic follows close behind. As you run, the fog gradually clears, until you're standing before a gnarled, lone tree with tangled chimes hanging from one branch. Was that what was making the noise? You're skeptical, but r_w_neurotic is obviously spooked, so you quickly leave the area.",
+                "text": "You race after the jingling noise, and r_w-neurotic follows close behind. As you run, the fog gradually clears, until you're standing before a gnarled, lone tree with tangled chimes hanging from one branch. Was that what was making the noise? You're skeptical, but r_w-neurotic is obviously spooked, so you quickly leave the area.",
                 "exp": 10,
                 "weight": 15
             },
             {
-                "text": "You race after the jingling noise, and r_w_neurotic follows close behind. As you run, the fog gradually clears, until you're standing before a gnarled, lone tree with tangled chimes hanging from one branch. Was that what was making the noise? Despite r_w_neurotic's nervous protests, you climb the tree and cut the chimes down before heading back towards more familiar territory.",
+                "text": "You race after the jingling noise, and r_w-neurotic follows close behind. As you run, the fog gradually clears, until you're standing before a gnarled, lone tree with tangled chimes hanging from one branch. Was that what was making the noise? Despite r_w-neurotic's nervous protests, you climb the tree and cut the chimes down before heading back towards more familiar territory.",
                 "exp": 10,
                 "weight": 15,
                 "accessory": [
@@ -254,7 +254,7 @@
                 ]
             },
             {
-                "text": "You're familiar with ghost cats, and that looks like a ghost! You gently call after the shadow, and {PRONOUN/n_c:0/subject} {VERB/n_c:0/pause/pauses}. Slowly, {PRONOUN/n_c:0/subject} {VERB/n_c:0/pad/pads} back towards you, {PRONOUN/n_c:0/poss} collar gently jangling. While the interaction is a bit awkward, especially with a clearly spooked r_w_neurotic beside you, you have a polite conversation before parting ways.",
+                "text": "You're familiar with ghost cats, and that looks like a ghost! You gently call after the shadow, and {PRONOUN/n_c:0/subject} {VERB/n_c:0/pause/pauses}. Slowly, {PRONOUN/n_c:0/subject} {VERB/n_c:0/pad/pads} back towards you, {PRONOUN/n_c:0/poss} collar gently jangling. While the interaction is a bit awkward, especially with a clearly spooked r_w-neurotic beside you, you have a polite conversation before parting ways.",
                 "exp": 10,
                 "weight": 15,
                 "stat_skill": [
@@ -283,7 +283,7 @@
                 ]
             },
             {
-                "text": "You're about to run after the shadow but r_w_neurotic, panicked, begs for you not to leave {PRONOUN/r_w_neurotic/object}. {PRONOUN/r_w_neurotic/subject/CAP}{VERB/r_w_neurotic/'re/'s} wide-eyed and breathing hard, clearly terrified by the fog. You turn back and talk to {PRONOUN/r_w_neurotic/object} gently, urging {PRONOUN/r_w_neurotic/object} to take deep breaths, trying to calm {PRONOUN/r_w_neurotic/object} down. It takes a few minutes, but you manage to talk r_w_neurotic out of {PRONOUN/r_w_neurotic/poss} panic, and your Clanmate is shaken but grateful.",
+                "text": "You're about to run after the shadow but r_w-neurotic, panicked, begs for you not to leave {PRONOUN/r_w-neurotic/object}. {PRONOUN/r_w-neurotic/subject/CAP}{VERB/r_w-neurotic/'re/'s} wide-eyed and breathing hard, clearly terrified by the fog. You turn back and talk to {PRONOUN/r_w-neurotic/object} gently, urging {PRONOUN/r_w-neurotic/object} to take deep breaths, trying to calm {PRONOUN/r_w-neurotic/object} down. It takes a few minutes, but you manage to talk r_w-neurotic out of {PRONOUN/r_w-neurotic/poss} panic, and your Clanmate is shaken but grateful.",
                 "exp": 10,
                 "weight": 15,
                 "stat_skill": [
@@ -302,7 +302,7 @@
                             "y_c"
                         ],
                         "cats_from": [
-                            "r_w_neurotic"
+                            "r_w-neurotic"
                         ],
                         "mutual": false,
                         "values": [
@@ -316,7 +316,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "For a second, you're frozen, but then you leap after the shadow. Is it another cat? A harmless kittypet, or maybe a dangerous rogue? You're spurred onwards by a need to make sure the shadow isn't a threat to your Clan, but you lose it in the thick fog. It takes you a while to find your way back to r_w_neurotic.",
+                "text": "For a second, you're frozen, but then you leap after the shadow. Is it another cat? A harmless kittypet, or maybe a dangerous rogue? You're spurred onwards by a need to make sure the shadow isn't a threat to your Clan, but you lose it in the thick fog. It takes you a while to find your way back to r_w-neurotic.",
                 "exp": 0,
                 "weight": 15,
                 "stat_trait": [
@@ -333,12 +333,12 @@
                 ]
             },
             {
-                "text": "You start to run after the shadow, but r_w_neurotic leaps in front of you, {PRONOUN/r_w_neurotic/poss} eyes wide and {PRONOUN/r_w_neurotic/poss} fur fluffed in terror. {PRONOUN/r_w_neurotic/subject/CAP} {VERB/r_w_neurotic/beg/begs} you not to follow the figure and {VERB/r_w_neurotic/plead/pleads} for you to come back to camp with {PRONOUN/r_w_neurotic/object} instead. You manage to talk {PRONOUN/r_w_neurotic/object} out of {PRONOUN/r_w_neurotic/poss} panic, but by then the shadow is long gone.",
+                "text": "You start to run after the shadow, but r_w-neurotic leaps in front of you, {PRONOUN/r_w-neurotic/poss} eyes wide and {PRONOUN/r_w-neurotic/poss} fur fluffed in terror. {PRONOUN/r_w-neurotic/subject/CAP} {VERB/r_w-neurotic/beg/begs} you not to follow the figure and {VERB/r_w-neurotic/plead/pleads} for you to come back to camp with {PRONOUN/r_w-neurotic/object} instead. You manage to talk {PRONOUN/r_w-neurotic/object} out of {PRONOUN/r_w-neurotic/poss} panic, but by then the shadow is long gone.",
                 "exp": 0,
                 "weight": 15
             },
             {
-                "text": "You leap after the figure, but you trip and slam into the ground. You look back to see what you tripped over, and see a familiar log... But you recognize it from a completely different part of the territory. How did you get here? Did the fog disorient you so much you've been wandering the complete wrong direction? Unnerved, and with the shadowy figure now long gone, you and r_w_neurotic quickly make your way back to camp.",
+                "text": "You leap after the figure, but you trip and slam into the ground. You look back to see what you tripped over, and see a familiar log... But you recognize it from a completely different part of the territory. How did you get here? Did the fog disorient you so much you've been wandering the complete wrong direction? Unnerved, and with the shadowy figure now long gone, you and r_w-neurotic quickly make your way back to camp.",
                 "exp": 0,
                 "weight": 15
             },
@@ -348,7 +348,7 @@
                 "weight": 15
             },
             {
-                "text": "You plunge into the fog, following the jingling sound. Soon, you can't see anything, and the jingling seems to be coming from all around you. You think you're running in circles, but without any visible landmarks, it feels like you're in a void. You're not sure how long it takes for the fog to clear. When you finally regain your bearings, you're at the edge of the territory, and you trudge home to find a distraught r_w_neurotic telling your Clanmates how the fog seemed to eat you.",
+                "text": "You plunge into the fog, following the jingling sound. Soon, you can't see anything, and the jingling seems to be coming from all around you. You think you're running in circles, but without any visible landmarks, it feels like you're in a void. You're not sure how long it takes for the fog to clear. When you finally regain your bearings, you're at the edge of the territory, and you trudge home to find a distraught r_w-neurotic telling your Clanmates how the fog seemed to eat you.",
                 "exp": 0,
                 "weight": 15
             }
@@ -373,12 +373,12 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "r_w_neurotic has been insisting that a grove of trees on the territory is haunted. {PRONOUN/r_w_neurotic/subject/CAP} {VERB/r_w_neurotic/claim/claims} to hear strange noises whenever {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/get/gets} close, and {VERB/r_w_neurotic/say/says} {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/feel/feels} like {PRONOUN/r_w_neurotic/subject}{VERB/r_w_neurotic/'re/'s} being watched. After several days of this, you consider checking the grove out yourself.",
-        "decline_text": "You don't have time to investigate every rumor you hear. If r_w_neurotic is really worried, {PRONOUN/r_w_neurotic/subject} should ask someone to accompany {PRONOUN/r_w_neurotic/object} {PRONOUN/r_w_neurotic/self}.",
+        "intro_text": "r_w-neurotic has been insisting that a grove of trees on the territory is haunted. {PRONOUN/r_w-neurotic/subject/CAP} {VERB/r_w-neurotic/claim/claims} to hear strange noises whenever {PRONOUN/r_w-neurotic/subject} {VERB/r_w-neurotic/get/gets} close, and {VERB/r_w-neurotic/say/says} {PRONOUN/r_w-neurotic/subject} {VERB/r_w-neurotic/feel/feels} like {PRONOUN/r_w-neurotic/subject}{VERB/r_w-neurotic/'re/'s} being watched. After several days of this, you consider checking the grove out yourself.",
+        "decline_text": "You don't have time to investigate every rumor you hear. If r_w-neurotic is really worried, {PRONOUN/r_w-neurotic/subject} should ask someone to accompany {PRONOUN/r_w-neurotic/object} {PRONOUN/r_w-neurotic/self}.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "As you approach the grove, you hear a strange hissing noise. You crouch and creep forward, alert for any signs of danger. Could r_w_neurotic be right? Could the grove really be haunted? You follow the sound to a bundle of Twoleg trash and cautiously paw through it until you uncover a strange, hissing device. When you bat at the pieces sticking out of it, the hissing subsides, and you triumphantly return to camp with the now-silent object to let r_w_neurotic know what you discovered.",
+                "text": "As you approach the grove, you hear a strange hissing noise. You crouch and creep forward, alert for any signs of danger. Could r_w-neurotic be right? Could the grove really be haunted? You follow the sound to a bundle of Twoleg trash and cautiously paw through it until you uncover a strange, hissing device. When you bat at the pieces sticking out of it, the hissing subsides, and you triumphantly return to camp with the now-silent object to let r_w-neurotic know what you discovered.",
                 "exp": 15,
                 "weight": 10,
                 "accessory": [
@@ -393,7 +393,7 @@
                 ]
             },
             {
-                "text": "You approach the grove and hear a haunting, bird-like chorus coming from the branches above. You creep forward, ready to fight or flee, but... oh! You're familiar with ghost cats, but this is a different sight: a flock of translucent birds flits through the canopy, calling to each other with chirps that sound a bit too ghostly and resonant to be comforting. You're not sure how r_w_neurotic was able to hear them, too, but they don't look like a threat. You watch the ghost birds for a while before returning to camp.",
+                "text": "You approach the grove and hear a haunting, bird-like chorus coming from the branches above. You creep forward, ready to fight or flee, but... oh! You're familiar with ghost cats, but this is a different sight: a flock of translucent birds flits through the canopy, calling to each other with chirps that sound a bit too ghostly and resonant to be comforting. You're not sure how r_w-neurotic was able to hear them, too, but they don't look like a threat. You watch the ghost birds for a while before returning to camp.",
                 "exp": 15,
                 "weight": 20,
                 "stat_skill": [
@@ -406,7 +406,7 @@
                 ]
             },
             {
-                "text": "As you enter the grove, something lunges at you with a yowl! You yelp and prepare to fight or flee, only for you to realize your attacker is... r_w_neurotic? It seems this was the setup to a prank! You wouldn't have guessed r_w_neurotic to be capable of such a thing, but {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/seem/seems} thrilled to have scared you.",
+                "text": "As you enter the grove, something lunges at you with a yowl! You yelp and prepare to fight or flee, only for you to realize your attacker is... r_w-neurotic? It seems this was the setup to a prank! You wouldn't have guessed r_w-neurotic to be capable of such a thing, but {PRONOUN/r_w-neurotic/subject} {VERB/r_w-neurotic/seem/seems} thrilled to have scared you.",
                 "exp": 15,
                 "weight": 20
             }
@@ -423,7 +423,7 @@
                 "weight": 20
             },
             {
-                "text": "As you enter the grove, you hear a strange creaking noise coming from the canopy. You tense, but quickly realize it's just the trees creaking as they're blown back and forth by the wind. You spend some time searching the area for anything suspicious, but find nothing. You aren't convinced that r_w_neurotic wouldn't have recognized the sounds of creaking trees, but that must be all... right?",
+                "text": "As you enter the grove, you hear a strange creaking noise coming from the canopy. You tense, but quickly realize it's just the trees creaking as they're blown back and forth by the wind. You spend some time searching the area for anything suspicious, but find nothing. You aren't convinced that r_w-neurotic wouldn't have recognized the sounds of creaking trees, but that must be all... right?",
                 "exp": 0,
                 "weight": 20
             }
@@ -717,6 +717,690 @@
             },
             {
                 "text": "You invite your friend to walk with you along the border of their Clan, hoping the both of you can still do your duties while talking. It doesn't take long for your friend to find a bird or two for their Clan, but on your side of the border, you're out of luck. The o_c_n cat gives you a sympathetic nod, reluctant to share their prey.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "lifegen_general_SQ1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Newleaf"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "life_warrior_og12",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 15,
+        "intro_text": "Now that newleaf is here, some cats have expressed how nice the camp would look with flower decorations. Do you want to look for some?",
+        "decline_text": "Flowers would be nice, but you already have a lot to do today. Maybe one of your less-busy Clanmates would be willing to take on the task instead.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "The territory is full of flowers, and it's easy to locate some beautiful bunches along your usual patrol routes. You collect a variety and bring them back to camp, earning oohs from some of your Clanmates when they first see the colors. You even have enough to keep some for yourself!",
+                "exp": 10,
+                "weight": 15,
+                "accessory": [
+                    {
+                        "cats": [
+                            "y_c"
+                        ],
+                        "accessory": [
+                            "FLOWER"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "You find a few scattered flowers, but not enough to decorate the entire camp. You switch tactics and collect leaves from the trees that already have them, and trot back to camp with a bristling bundle of them! The bright green really livens up the den entrances. ",
+                "exp": 10,
+                "weight": 15
+            },
+            {
+                "text": "If you're going to be the one doing the work, then you're going to choose the flowers you like the best! You find a patch of your favorite blossoms just outside of camp, and venture a bit further to find other flowers with colors that match. The camp looks beautiful when you're done with it.",
+                "exp": 10,
+                "weight": 15
+            },
+            {
+                "text": "Of course you want to help out, but you don't want to overpick any plants! You spend a whole day combing the territory, carefully picking one or two blossoms at a time. You're exhausted by the end of the day, but you return to camp with a bouquet of dozens of types of flowers. Your Clanmates compliment your effort.",
+                "exp": 10,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+                    "nervous",
+                    "insecure",
+                    "meek",
+                    "cowardly",
+                    "reserved",
+                    "emotional",
+                    "lonesome"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
+            },
+            {
+                "text": "You've been waiting for this moment! You have a plan for the whole camp: what flowers and color schemes to use around the different dens, and how to blend them all together so they look cohesive. You excitedly get to work. The flower collecting and decorating takes several days, but by the end, the camp looks stunning. You're already planning what to do once greenleaf arrives...",
+                "exp": 0,
+                "weight": 20,
+                "stat_skill": [
+                    "ARTISTAN,1",
+                    "CAMP,1"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You scour the territory for flowers, but the only ones you can find are medicinal herbs. You collect a few to drop off at the medicine den, and are glad to have helped bolster the herb supply, but are disappointed that the camp still looks as drab as when you started.",
+                "exp": 0,
+                "weight": 15,
+                "herbs": [
+                    "marigold"
+                ]
+            },
+            {
+                "text": "You remember seeing a small patch of flowers not far from camp, but when you find it again, it's been mowed down by a group of rabbits. You manage to catch a few rabbits to bring back to camp, though, and your Clanmates are excited to see the unexpected fresh-kill.",
+                "exp": 5,
+                "weight": 15
+            },
+            {
+                "text": "You collect some delicate blue flowers at the beginning of a patrol, thinking they would look great around the nursery. Unfortunately, over the course of the patrol they become more wilted and battered, and when you return to camp you're forced to admit they wouldn't make very good decorations anymore.",
+                "exp": 0,
+                "weight": 15
+            },
+            {
+                "text": "You're worried about choosing decorations that the rest of your Clan won't like, so you spend a while surveying everyone about their favorite flowers and colors. Unfortunately, everyone has such different preferences that you can't come to a conclusion about what flowers to gather, and you can't help but feel like you've wasted everyone's time.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": [
+                    "careful",
+                    "nervous",
+                    "insecure",
+                    "meek",
+                    "cowardly",
+                    "reserved",
+                    "emotional",
+                    "lonesome"
+                ],
+                "can_have_stat": [
+                    "p_l"
+                ]
+            },
+            {
+                "text": "You head out of camp to pick the most colorful flowers you can find, but you're unable to locate many. When you get back home, you're greeted by new den entrances covered in vibrant plants and shiny stones. Apparently, r_w got to the decorating before you!",
+                "exp": 0,
+                "weight": 20,
+                "can_have_stat": [
+                    "r_w"
+                ],
+                "stat_skill": [
+                    "ARTISTAN,1"
+                ]
+            }
+        ]
+    },
+    {
+        "patrol_id": "gen_life_J3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "leafbare"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_warrior_default",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're enjoying a meal during a calm, snowy day in camp when suddenly, you receive a sharp and cold <i>thwap</i> to the back of your head. You turn to see plike-r_w-silly with a pawful of snow, snickering to {PRONOUN/plike-r_w-silly/self}.",
+        "decline_text": "You pick up your fresh-kill and head inside to finish it, ignoring your friend's disappointed face. {PRONOUN/plike-r_w-silly/subject/CAP} should know not to mess with a cat's mealtime!",
+        "chance_of_success": 60,
+        "success_outcomes": [
+            {
+                "text": "Challenge accepted! You jump to your paws, dodging your friend's second snowball attack, and manage to tackle {PRONOUN/plike-r_w-silly/object} into a snowbank with a triumphant laugh. You take turns shoving each other into the snow until you're too exhausted to continue.",
+                "exp": 15,
+                "weight": 20,
+                "relationships": [
+                    {
+                        "cats_to": [
+                            "plike-r_w-silly"
+                        ],
+                        "cats_from": [
+                            "p_l"
+                        ],
+                        "mutual": true,
+                        "values": [
+                            "platonic"
+                        ],
+                        "amount": 10
+                    }
+                ]
+            },
+            {
+                "text": "When you meet plike-r_w-silly's gaze, {PRONOUN/plike-r_w-silly/subject} instantly {VERB/plike-r_w-silly/drop/drops} {PRONOUN/plike-r_w-silly/poss} snowball and {VERB/plike-r_w-silly/dip/dips} {PRONOUN/plike-r_w-silly/poss} head with a polite laugh. Your friend knows you well enough not to continue messing with you during your meal. You'll make sure to get {PRONOUN/plike-r_w-silly/object} back later, though.",
+                "exp": 15,
+                "weight": 15,
+                "can_have_stat": [
+                    "p_l"
+                ],
+                "stat_trait": [
+                    "cold",
+                    "gloomy",
+                    "strict",
+                    "vengeful",
+                    "grumpy",
+                    "aloof",
+                    "stoic"
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You covertly scoop up a pawful of snow from next to you and turn around, launching it in plike-r_w-silly's direction. Your attack hits {PRONOUN/plike-r_w-silly/object} square in the face-- so hard that {PRONOUN/plike-r_w-silly/subject} {VERB/plike-r_w-silly/let/lets} out a yelp and {VERB/plike-r_w-silly/fall/falls} into the snowbank behind {PRONOUN/plike-r_w-silly/object}. When you rush to check on {PRONOUN/plike-r_w-silly/object}, there's no serious damage and {PRONOUN/plike-r_w-silly/subject} {VERB/plike-r_w-silly/laugh/laughs} it off, but you still feel bad.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_sc_patrol_rad1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_sc",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Dusk brings a surprise: you spot r_w making {PRONOUN/r_w/poss} way to the Moonplace. You're unsure if you're even allowed to communicate with r_w - it's rare for StarClan to speak with anycat other than a leader or medicine cat, but surely ordinary warriors sometimes need guidance from their ancestors, too.",
+        "decline_text": "Unsure what to do, you call over your fellow StarClan residents to let them know. Some other cat can decide how to respond to r_w.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "Just because you can't communicate directly with r_w doesn't mean you can't show {PRONOUN/r_w/object} that StarClan is with {PRONOUN/r_w/object}. When {PRONOUN/r_w/subject} {VERB/r_w/settle/settles} down to unsuccessfully share tongues with StarClan, you gently touch your nose to {PRONOUN/r_w/poss} head, sending {PRONOUN/r_w/object} dreams of warmth and support. When r_w wakes, you can immediately recognize that {PRONOUN/r_w/subject} {VERB/r_w/were/was} reassured that StarClan is always at {PRONOUN/r_w/poss} side, and you purr contentedly to yourself as {PRONOUN/r_w/subject} {VERB/r_w/head/heads} back to camp with a newfound confidence.",
+                "exp": 0,
+                "weight": 20,
+                "faith_effect": [
+                        {
+                            "faith_cat": ["r_w"],
+                            "amount": 0.5
+                        }
+                    ]
+            },
+            {
+                "text": "You have a feeling that r_w truly needs guidance from StarClan, so you wait for {PRONOUN/r_w/object} to fall asleep at the Moonplace - and you're glad you did. When you greet r_w in the starry landscape, {PRONOUN/r_w/subject} {VERB/r_w/confess/confesses} that {PRONOUN/r_w/subject}{VERB/r_w/'ve/'s} been having strange visions and senses that no other cat seems to have. While you tell {PRONOUN/r_w/object} that you aren't able to explain what these mean, you <i>are</i> able to tell {PRONOUN/r_w/object} that they're messages from StarClan, much like the ones medicine cats and leaders can receive. By the time r_w has to wake up, {PRONOUN/r_w/subject} {VERB/r_w/have/has} a new resolve to speak with the medicine cat, believing {PRONOUN/r_w/poss} latest vision may have been a sign of something the Clan needs to be prepared for.",
+                "exp": 0,
+                "weight": 10,
+                "stat_skill": ["CLAIRVOYANT,1","PROPHET,1","OMEN,1"],
+                "can_have_stat": ["r_w"],
+                "faith_effect": [
+                        {
+                        "faith_cat": ["r_w"],
+                        "amount": 1
+                        }
+                    ]
+                }
+            ],
+        "fail_outcomes": [
+            {
+                "text": "There's not much you can do. r_w isn't a leader or medicine cat, and you don't get to talk to just any cat who happens to visit the Moonplace. All you can do is let {PRONOUN/r_w/object} sleep and try to ignore the dismay on {PRONOUN/r_w/poss} face when {PRONOUN/r_w/subject} wake up.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Believing that r_w might truly need some guidance, you decide to give {PRONOUN/r_w/object} the benefit of the doubt. After a barrage of aimless questions, however, it becomes clear that r_w came to the Moonplace out of boredom or curiosity rather than a genuine need to speak with the stars. You cut r_w off midsentence, sharply telling {PRONOUN/r_w/object} that the Moonplace isn't for frivolous things like this, and {PRONOUN/r_w/poss} tail droops in embarrassment as {PRONOUN/r_w/subject} {VERB/r_w/turn/turns} and pads away.",
+                "exp": 0,
+                "weight": 20,
+                "stat_cluster": ["silly", "unlawful"],
+                "can_have_stat": ["r_w"],
+                "faith_effects": [
+                    {
+                        "faith_cat": ["r_w"],
+                        "amount": -0.5
+                    }
+                ]
+            },
+	        {
+                "text": "Curious, you decide to wait for r_w on the starry hunting grounds... but {PRONOUN/r_w/subject} {VERB/r_w/don't/doesn't} show up. Certain that the warrior would be asleep by now, you begin searching StarClan's territory, wondering if {PRONOUN/r_w/subject} somehow got lost. Once you reach the border with the Dark Forest, you're about to give up and turn back when something makes your fur stand on end: a whiff of r_w's scent, entangled with the smell of Dark Forest cats.",
+                "exp": 0,
+                "weight": 10,
+                "stat_faith": [-9, -5],
+                "can_have_stat": ["r_w"],
+                "faith_effects": [
+                    {
+                        "faith_cat": ["r_w"],
+                        "amount": -1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_df_newtrainee_rad1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_df",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "As you wander aimlessly through the Dark Forest, you spot an apprentice from c_n. {PRONOUN/r_a/subject/CAP}{VERB/r_a/'re/'s} alone, ears pinned back as {PRONOUN/r_a/subject} cautiously {VERB/r_a/sniff/sniffs} around the unforgiving landscape. You can't help but wonder if the apprentice has gotten lost.",
+        "decline_text": "You flick your tail dismissively and continue on your way. If the apprentice can't find {PRONOUN/r_a/poss} way out, why should that be your problem?",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "With pity for the poor apprentice, you emerge from the shadows, offering to help a startled r_a get out of this frightening place. When {PRONOUN/r_a/subject} {VERB/r_a/accept/accepts}, you tell {PRONOUN/r_a/object} to hold still - and then throw your full weight at the apprentice, slamming into {PRONOUN/r_a/poss} side with your claws sheathed. As {PRONOUN/r_a/poss} form dissipates from the Dark Forest, you feel a prickle of guilt, knowing that r_a will wake up sore... but hey, you got {PRONOUN/r_a/object} to wake up from the nightmare of the Dark Forest, and surely {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} grateful for that.",
+                "exp": 0,
+                "weight": 20,
+                "faith_effect": [
+                    {
+                    "faith_cat": ["r_a"],
+                    "amount": -1
+                    }
+                ]
+            },
+            {
+                "text": "As you observe r_a trying to find {PRONOUN/r_a/poss} way out of the endless shadows, an idea pops into your head. Making sure you're concealed from sight, you snarl like a coyote - and have to restrain your laughter when the poor apprentice practically leaps out of {PRONOUN/r_a/poss} fur and bolts off. Sure, it was a little mean, but you have to find ways to entertain yourself <i>somehow<i>.",
+                "exp": 0,
+                "weight": 20,
+                "stat_skill": ["LANGUAGE,1"],
+                "can_have_stat": ["p_l"]
+            },
+            {
+                "text": "When you step out of the muck and fog, the apprentice whirls to face you, nervously introducing {PRONOUN/r_a/self} as r_a and hesitantly asking if you're from StarClan. Before you can answer, {PRONOUN/r_a/subject} {VERB/r_a/confide/confides} that {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} seeking guidance: {PRONOUN/r_a/subject} {VERB/r_a/worry/worries} that {PRONOUN/r_a/poss} Clanmates see {PRONOUN/r_a/object} as weak, cowardly, and nothing more than an annoyance. Hearing the apprentice's fears, you smile and suggest that {PRONOUN/r_a/subject} train under you. After all, you promise, when {PRONOUN/r_a/subject} {VERB/r_a/demonstrate/demonstrates} what {PRONOUN/r_a/subject}{VERB/r_a/'ve/'s} learned from you, none of {PRONOUN/r_a/poss} Clanmates will doubt what {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} capable of.",
+                "exp": 0,
+                "weight": 15,
+                "stat_cluster": ["introspective","neurotic"],
+                "stat_faith": [-4, 2],
+                "can_have_stat": ["r_a"],
+                "convert": ["r_a"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Surely you can show this apprentice how much more powerful {PRONOUN/r_a/subject} can be with the Dark Forest on {PRONOUN/r_a/poss} side! You lift your head, call out to the apprentice, and step forward... and promptly trip over a root, crashing muzzle-first into the muddy ground. There's no way the apprentice will take anything you say seriously now, not with how hard {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} laughing at you.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+{
+        "patrol_id": "life_df_sam1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_df",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {
+            "kitten": [-1, 0]
+        },
+        "weight": 20,
+        "intro_text": "You're bathing yourself the best you can in one of the murky rivers in the Dark Forest, when a starry-pelted kit shows up all of a sudden.",
+        "decline_text": "You walk away, leaving the kit on its own.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You gently nudge the kit back towards StarClan, telling them that this isn't a place for kits like them. The kit listens, but makes you promise to go play with them someday. You don't have the heart to tell them that's not possible.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You bare your teeth, trying to startle the kit so that it will run back to the safety of StarClan. However, the kitten doesn't seem very intimidated by you. Instead, it spends some time splashing around in the muck and rolling in the dead grass before wandering back towards the border.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+   {
+        "patrol_id": "cheshirecat_DEADDF_H1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_df",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "While just idly causing minor chaos, you stumble across r_w searching for a cat named l_c. {PRONOUN/r_w/subject/CAP} {VERB/r_w/appear/appears} alone, and suddenly, you feel a large grin creep onto your face. This would be a great opportunity to have some fun!",
+        "decline_text": "Despite your initial excitement, even you can realize that getting in the way of r_w's search is not appropriate. You'd look for l_c too, if you cared. Oh well!",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "To stir up some trouble, you appear in r_w's path and claim you know where l_c went, pointing in a random direction. The warrior seems suspicious, but asks again for confirmation. You act like you have no idea what {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} talking about or who {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} searching for, despite clearly knowing. The warrior walks off in frustration.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Once r_w comes close enough to where you're hidden in the shadows, you poke your head out to scare {PRONOUN/r_w/object}. r_w screams like a little mouse and scatters off out of sight, and you can't help just cackle in {PRONOUN/r_w/poss} wake. How hilarious!",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Obviously, you have no idea where l_c has gone, but you pop into r_w's line of sight and point in a random direction. Despite you being a Dark Forest cat, r_w seems to take your word for it and thanks you as {PRONOUN/r_w/subject} {VERB/r_w/run/runs} where you guided {PRONOUN/r_w/object} to. Well, r_w is definitely getting lost.",
+                "exp": 0,
+                "weight": 5,
+                "lost_cats": ["r_w"],
+                "stat_trait": ["oblivious", "trusting"],
+                "can_have_stat": ["r_w"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You had everything right - the talk, attitude, appearance, and jokes, but r_w sees right through you! {PRONOUN/r_w/subject/CAP} {VERB/r_w/continue/continues} on with {PRONOUN/r_w/poss} search, and you're left to your lonesome self. Rats.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You wanted to unnerve r_w, but not this bad! The warrior flees at the sight of you, and you feel a sense of boredom. Couldn't {PRONOUN/r_w/subject} have stayed for at least one joke?",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You try your best to stir up some trouble, even claiming you know where l_c went. However, r_w sees through your act. With a hiss, {PRONOUN/r_w/subject} {VERB/r_w/run/runs} off in the opposite direction you pointed to.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+{
+        "patrol_id": "dead_patrol_J5",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "dead_patrol_J5",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You scramble your way out from under a bush and glance around. Your plan has worked; you've made it to the world of the living!",
+        "decline_text": "This is not your place. You turn and dig your way back to the Dark Forest.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "As you tentatively walk forward into the c_n camp, it becomes apparent that no cat can actually see you. However, you have a bit of fun passing through their bodies and hearing them remark on the sudden chill.",
+                "exp": 0,
+                "weight": 20
+            },
+{
+                "text": "You walk into the c_n camp and sit at the edge of it, watching the cats go about their day, oblivious to your presence. You dearly miss Clan life. You later return to the Dark Forest with an aching heart.",
+                "exp": 0,
+                "weight": 20
+            },
+{
+                "text": "You expect no one to be able to see you, but as you enter the c_n camp, you lock eyes with r_k. You've spoken with this kit before. {PRONOUN/r_k/subject/CAP}{VERB/r_k/'re/'s} special. You play a quick game of moss-ball with the little fluffball before a queen drags {PRONOUN/r_k/object} away.",
+                "exp": 0,
+                "weight": 20,
+	    "can_have_stat": ["r_k"],
+	    "stat_skill": ["DARK,1"]
+            },
+
+{
+                "text": "You pad into the c_n camp, not expecting anyone to be able to see you. However, as you pass by, plike-r_w lets out a horrified gasp. {PRONOUN/plike-r_w/subject/CAP} can see you, and {PRONOUN/plike-r_w/subject}{VERB/plike-r_w/'re/'s} shocked by where you've ended up. As the muck on your pelt settles into the floor of the camp, you ask plike-r_w if {PRONOUN/plike-r_w/subject}{VERB/plike-r_w/'ve/'s} missed you.",
+                "exp": 0,
+                "weight": 20
+            },
+{
+                "text": "You wander into the c_n camp, where it quickly becomes apparent that no one can see you. That's not a big deal, though. You make your way to the leader's den, where you listen in on some important political discussions between d_n and l_n. Maybe you can visit another Clan's leader in their dreams and tell them about it, just to start some conflict.",
+                "exp": 0,
+                "weight": 20,
+	    "can_have_stat": ["p_l"],
+	    "stat_cluster": ["unlawful"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You race forward into the c_n camp, claws unsheathed, ready to give everyone a fright. However, no cat seems to be able to see you. What a waste of a trip.",
+                "exp": 0,
+                "weight": 20
+            },
+{
+                "text": "You step forward to go see your Clan once more, but a paw grabs your haunches and pulls you back. The Dark Forest cat, rdf_c, drags you back to your home, hissing at you about how irresponsible it was to visit the Clan.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "wanderingalone_URDEAD_H1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "ur_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "wanderingalone_URDEAD_H1",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "There's a certain thrill to wandering around areas unknown to you. As you approach the borders of the other afterlives, your curiosity gets to the best of you.",
+        "decline_text": "They say curiosity kills the cat, and quite frankly, you don't want to die again. So, you swallow back your pride and return to the Unknown Residence.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "The clouds of StarClan are surprisingly cool on your paws as you walk through the seemingly endless sea of white. It isn't long until a starry-pelted cat notices your presence, and greets you with a curious look. You explain you just wanted to explore outside of your own afterlife, but they gently crush your curiosity - claiming it's unwise to explore territories without permission. Hearing the warning in their voice, you politely leave.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "It didn't take long for a Dark Forest cat to find you walking into {PRONOUN/rdf_c/poss} territory. You exchange greetings with {PRONOUN/rdf_c/object}, and despite thinking rdf_c was going to immediately chase you out, {PRONOUN/rdf_c/subject} {VERB/rdf_c/offer/offers} to teach you about the Dark Forest instead! Before long, you have found a new friend, but regrettably have to leave before a not-so-accepting cat finds you.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "As your paw sinks into the murky depths of the Dark Forest, your heart drops along with it. The unnerving silence, looming trees, and sinking black murk quickly brings you back to reality. What are you doing, trying to explore the Place of No Stars? The disapproving voice of your elders rings in your ears as you slowly creep away.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "As you approach StarClan, the sight of endless white clouds is just slightly unnerving, like a poison berry that looks too tasty to resist. Despite knowing in the back of your mind that StarClan is a safe, sacred place, your nerves get to the best of you. Seeing a cat in the far distance, you bolt to where you came from.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "There is an uncertainty weighing down heavily on your mind as you cautiously explore the Dark Forest, jumping at every little sound. The deeper you explore, the distant sound of cats fighting draws closer. It's only a matter of time before you get caught, and you're not staying any further to find out.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "df_deadpatrol_E1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_df",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_cat_status": {},
+        "weight": 20,
+        "intro_text": "The Dark Forest has always been a bit...dull. This is why you, in your long-standing effort to try and restore a little bit of life into the gloomy forest, are making your way through the dark forest with a muck-soaked ball of moss held tightly in your jaws. You're eager to check on the progress of the sparkling blue flower that you have managed to sneak over from StarClan's hunting grounds.",
+        "decline_text": "On second thought, maybe you should just leave it alone for a little while.",
+        "chance_of_success": 30,
+        "success_outcomes": [
+            {
+                "text": "A soft glow greets you as you pad into the little area that you had cleared out. Against all odds, the flower is still alive! You carefully squeeze the contents of the moss onto the soil, mind racing as you start thinking about the possibility of giving a bit of life to the Dark Forest.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "The path feels longer than you remember... Wait, didn't you pass that tree earlier? You wander around for a little longer until you accept that you're hopelessly lost. Looks like you have to go through the trouble of sneaking in another flower. Great.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "The lack of sunlight, or anything in the Dark Forest for that matter, doesn't mix well with plants. You learn that with a sinking heart as you are met with a dead, wilting flower slumped onto the soil.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "Your hopes are immediately squashed as you find the shredded, muddy remnants of the flower littering the ground, accompanied by deep claw marks in the soil and muddy pawprints that lead away from the scene. Not everyone seems to be a fan of your efforts.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "ur_deadpatrol_E1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "ur_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_ur",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_cat_status": {},
+        "weight": 20,
+        "intro_text": "You are wandering around aimlessly, deep in thought, when a shadow in the distance grabs your attention. You watch as the shadow turns, its tail flicking up in a greeting. A voice soon follows, calling out to you.",
+        "decline_text": "You're not in the mood for a conversation. You slink away into a cloud of mist, ignoring as the stranger's cries grow shrill and desperate, eventually fading off into the distance.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "Intrigued, you venture closer. You step out of the mist to find you nose-to-nose with another cat! They explain that they are a kittypet who has gotten lost while on an adventure out of their garden, eagerly asking if you knew where their home was. You feel a twinge of pity as you gently explain that this is the afterlife, and that they likely died while on their adventure. The kittypet sits in stunned silence for a while, then quietly thanks you as they stand up and stumble off into the mist.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You make your way towards the shadow, stepping out of a cloud of mist to find... nothing. You look around, but the shadow is nowhere to be seen, leaving you in an eerie silence. You shiver and the fur along your spine ripples with unease as you quickly scurry back into a cloud of mist.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You try to make your way towards the voice, but you quickly lose yourself in a cloud of mist. You wander in circles, trying to pinpoint the stranger's increasingly desperate cries until they mysteriously fade into silence.",
+                "exp": 20,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "dead_patrol_J2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "sc_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "dead_patrol_J2",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {
+            "healer cats": [1, 1]
+        },
+        "weight": 20,
+        "intro_text": "As you wander the endless lush territory of StarClan, you find yourself searching for herbs in similar spots to where you did in life.",
+        "decline_text": "You cut the herb search short; it's not like there's much you can do with them in StarClan, anyway.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "Your muscle memory leads you through a path in the woods and to the base of a tree. On the underside of a large, twisted root, is a well-hidden patch of plantain. You're halfway through picking it when you remember that cats don't get injured or sick in StarClan, so they won't have any use back at camp. Oh, well. You leave the herb bundle there... maybe some StarClan squirrels can make use of it.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You catch a familiar scent and snake your way through the trees until you find it-- a large, untouched patch of catmint surrounding a crystal-clear puddle. Looking into the puddle gives you a hazy view of the c_n medicine den! You pluck a few catmint leaves and drop them in, hoping your living Clanmates will be able to receive them, and take the remaining herbs back to your StarClan camp.",
+                "exp": 0,
+                "weight": 15,
+                "herbs": ["catmint"]
+            },
+            {
+                "text": "Your herb-finding instincts lead you to a beautiful patch of berry bushes deep in StarClan territory. You're able to wrestle a branch from one of the bushes to bring the kits a nice snack.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You catch an herb scent on the breeze and follow it until you stumble across the c_n medicine cat, r_m, in the middle of a dream! You have nothing profound to say... something tells you you aren't supposed to be here. You just give r_m a wise nod before turning and running back to camp. How in, well, <i>here</i> {VERB/r_m/are/is} {PRONOUN/r_m/subject} going to end up interpreting that?",
+                "exp": 0,
+                "weight": 15
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You follow your instincts to some familiar-looking territory, only to find that the mullein patch you were expecting to find isn't there. It makes sense, you suppose... herbs aren't really necessary in StarClan. But it's still a bit disappointing.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You catch a familiar herb scent and follow it into the wilderness, but you end up traipsing in circles. Perhaps you were just imagining it.",
                 "exp": 0,
                 "weight": 20
             }

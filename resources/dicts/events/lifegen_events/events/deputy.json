@@ -12,10 +12,15 @@
         "l_n consults you about who may be best to mentor r_k when {PRONOUN/r_k/subject} {VERB/r_k/reach/reaches} six moons.",
         "You check in with r_q during the kits' afternoon nap. {PRONOUN/r_q/subject/CAP} {VERB/r_q/are/is} grateful for your attentiveness, and the two of you get a few tasks done before the sleeping kittens awake.",
         "You take some time to check in with r_m. {PRONOUN/r_m/subject/CAP} {VERB/r_m/inform/informs} you of a few den repairs and {VERB/r_m/advise/advises} an area to keep the patrols away from to avoid unnecessary injuries. You're grateful for the insight and organize r_w1 and r_w2 to fix up the den.",
-        "As you come back with a hunting patrol, r_k and a few others surround you with questions about how the patrol went. You indulge them with a smile."
+        "As you come back with a hunting patrol, r_k and a few others surround you with questions about how the patrol went. You indulge them with a smile.",
+        "You overhear r_w giving advice to r_a about stalking techniques. Impressed, you suggest {PRONOUN/r_w/subject} formally assist with r_a's next hunting assessment.",
+        "l_n takes over assigning evening patrols, giving you a chance to have some time to yourself.",
+        "r_w1 paces anxiously before finally asking if {PRONOUN/r_w1/subject} can switch patrol duties with r_w2. You nod after considering the day's plans. Sometimes flexibility keeps the Clan running smooth.",
+        "With a gathering approaching, l_n quietly checks in about which warriors you think should attend. You list a few names, including r_w and r_a, feeling confident in your choices.",
+        "You notice r_q struggling to haul a thorny branch out of the camp entrance. You call over r_w to help, and the two of them make quick work of clearing the obstruction."
     ],
     "deputy assertive": [
-        "You approach l_n about strengthening the borders. You feel it is necessary to show off a united front about the matter, but l_n isn't immediately convinced of the need to do so. You leave the den unsatisfied with your attempt to strengthen c_nClan.",
+        "You approach l_n about strengthening the borders. You feel it is necessary to show off a united front about the matter, but l_n isn't immediately convinced of the need to do so. You leave the den unsatisfied with your attempt to strengthen c_n.",
         "r_w sees it fit to question your decisions regarding patrols. You shut down the argument swiftly and succinctly, leading to amusement from the other warriors as r_w licks {PRONOUN/r_k/poss} chest in embarrassment.",
         "You take initiative after scenting a loner on patrol with r_w1 and r_w2. When the loner is found, you relish the feeling of telling them to stay out - or else.",
         "r_m has complained of needing extra paws while gathering herbs. You don't want to take away from your supply of warriors, so you suggest {PRONOUN/r_m/subject} {VERB/r_m/ask/asks} an apprentice or elder to assist. r_m is less than pleased, but that isn't your problem.",
@@ -28,7 +33,7 @@
     "deputy neurotic": [],
     "deputy silly": [],
     "deputy stable": [
-        "You want the best for c_nClan... But maybe in order for that to happen, you should step down. You're left unsure.",
+        "You want the best for c_n... But maybe in order for that to happen, you should step down. You're left unsure.",
         "After a morning of self-reflection and a session with r_d, you attend to your duties with a clear mind.",
         "r_w asks for your guidance in regards to training apprentices. You assure {PRONOUN/r_w/object} that {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} doing the right thing.",
         "You can hear squabbling at the edges of camp and move to investigate, only to find a mentor tearing into their apprentice, who's in tears. Your voice cuts through the air and you aggressively scorn the warrior. Later, you report back to l_n and request that the apprentice trains under you for the time being.",
@@ -47,7 +52,7 @@
         "You are up late one night, unable to sleep. Looking out, you see l_n is also awake. You approach l_n and end up having a quiet conversation about the Clan under the blanket of stars above, knowing your ancestors are watching over you. You return to the den, reassured of your position.",
         "One morning, you feel a paw jab into your side as you slowly awaken. After finally coming to, you realize that you woke up late and your Clanmates are wondering about patrols. Mouse-dung!",
         "You lecture r_w about {PRONOUN/r_w/poss} behavior. {PRONOUN/r_w/subject/CAP} {VERB/r_w/don't/doesn't} take it well, boldly stating how terrible of a deputy you are. You do your best to shake it off.",
-        "l_n rests {PRONOUN/l_n/poss} tail on you, sharing how much {PRONOUN/l_n/subject} {VERB/l_n/appreciate/appreciates} what you do for c_nClan. {PRONOUN/l_n/subject/CAP} {VERB/l_n/are/is} grateful to have chosen you as {PRONOUN/l_n/poss} deputy, knowing that you will be a great leader when {PRONOUN/l_n/subject} {VERB/l_n/are/is} in StarClan.",
+        "l_n rests {PRONOUN/l_n/poss} tail on you, sharing how much {PRONOUN/l_n/subject} {VERB/l_n/appreciate/appreciates} what you do for c_n. {PRONOUN/l_n/subject/CAP} {VERB/l_n/are/is} grateful to have chosen you as {PRONOUN/l_n/poss} deputy, knowing that you will be a great leader when {PRONOUN/l_n/subject} {VERB/l_n/are/is} in StarClan.",
         "r_m is watching you closely today. You finally stop to ask {PRONOUN/r_m/object} if {PRONOUN/r_m/subject} {VERB/r_m/need/needs} something and r_m just smiles before sharing that {PRONOUN/r_m/subject} {VERB/r_m/know/knows} you will be a great leader before walking away, leaving you to wonder if StarClan sent {PRONOUN/r_m/object} a sign...",
         "You watch l_n as {PRONOUN/l_n/subject} {VERB/l_n/address/addresses} a Clan meeting to grieve over tg_c, knowing one day you will have to do the same."
     ]

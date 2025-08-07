@@ -1,12 +1,27 @@
 {
     "halloween_J1": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable",
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
+        ],
         "tags": [
-            "silly",
-            "stable",
-            "min_platonic_20",
-            "halloween",
-            "no_kit",
-            "they_blind"
+            "halloween"
         ],
         "intro": [
             "Boo!",
@@ -33,29 +48,48 @@
             "[t_c backs away slowly. Maybe you should sleep with one eye open tonight.]"
         ]
     },
-    "halloween_J2": [
-        [
-            "they_brooding",
-            "no_kit",
+    "halloween_J2": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
             "halloween"
         ],
-        [
+        "intro": [
             "[everycat in the Clan has been doing their best to scare each other lately. Today, r_k catches a glimpse of t_c from across the camp, jumps, and races back into the nursery.]",
             "What? What's wrong?",
             "I scared {PRONOUN/r_k/object}?",
             "... That's just my face."
         ]
-    ],
-    "halloween_J3": [
-        [
-            "they_kitten",
-            "min_platonic_10",
-            "you_queen",
-            "you_queen's_apprentice",
-            "you_medicine_cat",
-            "you_medicine_cat_apprentice"
+    },
+    "halloween_J3": {
+        "y_c": {
+            "status": [
+                "queen",
+                "queen's apprentice",
+                "medicine cat",
+                "medicine cat apprentice"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_10"
         ],
-        [
+        "intro": [
             "y_c, y_c! Look, look, look!",
             "[t_c runs towards you with a shiny, rectangular Twoleg object in {PRONOUN/t_c/poss} mouth.]",
             "Look what r_a brought back for me from a patrol! {PRONOUN/r_a/subject/CAP} said {PRONOUN/r_a/subject} {VERB/r_a/think/thinks} it's Twoleg food... wanna share?",
@@ -63,57 +97,108 @@
             "Whoa, really? But r_a said the Twolegs were giving them to each other as gifts!",
             "They're so cruel..."
         ]
-    ],
-    "halloween_J4": [
-        [
-            "they_artistan",
-            "no_kit",
+    },
+    "halloween_J4": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ],
+            "skill": [
+                "ARTISTAN,1"
+            ]
+        },
+        "tags": [
             "halloween"
         ],
-        [
+        "intro": [
             "[t_c is licking clean the bones of some prey, long after most cats would have discarded of it.]",
             "Hi, y_c!",
             "Oh, I'm just cleaning up these bones so I can decorate the camp with them, since we're all in such a spooky mood lately.",
             "I think this sparrow skull would look perfect on the top of the leader's den, don't you?"
         ]
-    ],
-    "halloween_J5": [
-        [
-            "they_brooding",
-            "they_cool",
-            "halloween",
-            "no_kit",
-            "they_blind"
+    },
+    "halloween_J5": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool",
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "[t_c stalks past you with an indignant look on {PRONOUN/t_c/poss} face. {PRONOUN/t_c/subject/CAP} {VERB/t_c/have/has} a few sticks fastened to {PRONOUN/t_c/poss} head with vines.]",
-            "plike_r_c_silly wanted to put me in a costume. I'm a deer.",
+            "plike-r_c-silly wanted to put me in a costume. I'm a deer.",
             "Uncanny, right?"
         ]
-    ],
-    "halloween_J6": [
-        [
-            "halloween",
-            "stable",
-            "neurotic",
-            "introspective",
-            "you_medicine_cat",
-            "you_medicine_cat_apprentice",
-            "no_kit"
+    },
+    "halloween_J6": {
+        "y_c": {
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable",
+                "introspective",
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
-            "y_c, would it be insensitive to pretend I'm a ghost to scare plove_r_c?",
+        "intro": [
+            "y_c, would it be insensitive to pretend I'm a ghost to scare plove-r_c?",
             "Could you ask StarClan? I don't want to be rude."
         ]
-    ],
+    },
     "halloween_J7": {
+        "y_c": {
+            "age": [
+                "not_kit"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "non-related"
+        ],
         "tags": [
-            "halloween",
-            "they_kitten",
-            "you_not_kit",
-            "non-related",
-            "they_blind",
-            "you_blind"
+            "halloween"
         ],
         "intro": [
             "[t_c runs up to your den and skids to a stop.]",
@@ -143,18 +228,30 @@
         ]
     },
     "halloween_sam1": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "silly"
+            ],
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ],
+            "backstory": [
+                "formerlyakittypet"
+            ]
+        },
         "tags": [
-            "they_queen",
-            "they_queen's_apprentice",
-            "you_kitten",
-            "they_formerlyakittypet",
-            "they_silly",
             "halloween"
         ],
         "intro": [
             "[t_c walks into camp, holding some strange colorful things. Pelt decorations, maybe?]",
             "I got costumes!!! The Twolegs would always dress me up in these around this time of year and then point metal boxes at me.",
-            "I don't have metal boxes, but I thought you guys would look adorable in these! plike_r_c_unlawful gave me the idea.",
+            "I don't have metal boxes, but I thought you guys would look adorable in these! plike-r_c-unlawful gave me the idea.",
             "Who wants a costume first?",
             "y_c! Come here, you'll be first!"
         ],
@@ -207,14 +304,24 @@
             "Who's next?"
         ]
     },
-    "halloween_sam2": [
-        [
-            "they_kitten",
-            "you_kitten",
-            "halloween",
-            "they_silly"
+    "halloween_sam2": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "silly"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "y_c! Do you want to hear the story that r_e just told me?",
             "So once upon a time a cat got attacked.",
             "Wait, that's not the right part.",
@@ -226,26 +333,42 @@
             "Haha look at your face! I'm kidding.",
             "Or am I? Hehehe!"
         ]
-    ],
-    "Halloween_SV1": [
-        [
-            "halloween",
-            "they_ghost"
+    },
+    "Halloween_SV1": {
+        "y_c": {},
+        "t_c": {
+            "skill": [
+                "GHOST,1"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "y_c! Come join us! r_e is going to tell ghost stories!",
             "What? Ghosts aren't real?",
             "Hmph, alright.",
             "Then I suppose that white paw on your shoulder isn't either..."
         ]
-    ],
-    "Halloween_SV2": [
-        [
-            "halloween",
-            "leaffall",
-            "no_kit"
+    },
+    "Halloween_SV2": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
+            "leaffall"
         ],
-        [
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "[You and t_c sit in the clearing, watching the last light of day fade from the sky.]",
             "Look at that.",
             "[t_c points to a shadow cast by the twisted roots of a nearby tree.]",
@@ -255,16 +378,26 @@
             "[The silence stretches, and the shadow seems to creep closer, dark and menacing.]",
             "M-Maybe we should leave."
         ]
-    ],
-    "Halloween_SV3": [
-        [
-            "halloween",
-            "leaffall",
-            "they_warrior",
-            "you_warrior",
-            "you_apprentice"
+    },
+    "Halloween_SV3": {
+        "y_c": {
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "warrior"
+            ]
+        },
+        "season": [
+            "leaffall"
         ],
-        [
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "[While out on patrol, t_c suddenly halts and holds you back with {PRONOUN/t_c/poss} tail.]",
             "Whoa, whoa, don't get too close to that thing.",
             "[t_c glances at a nearby hollowed-out tree, its bark gnarled and twisted into strange patterns.]",
@@ -272,14 +405,22 @@
             "[In an instant, a sharp scraping sound emerges from within the hollow.]",
             "Did you hear that?"
         ]
-    ],
-    "Halloween_SV4": [
-        [
-            "halloween",
-            "they_kitten",
-            "you_adult"
+    },
+    "Halloween_SV4": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "Watch me! I'm practicing my scary faces!",
             "[On cue, t_c scrunches up {PRONOUN/t_c/poss} nose and bares {PRONOUN/t_c/poss} teeth, trying to look fierce.]",
             "Raaaar! I'm a mean old fox!",
@@ -289,27 +430,47 @@
             "How about this? I'm a ghost! Oooooo!",
             "[You try to pretend to be frightened, but it's hard to take such a cute sight seriously.]"
         ]
-    ],
-    "Halloween_SV5": [
-        [
-            "halloween",
-            "they_kitten",
-            "you_not_kit",
-            "they_blind",
-            "you_blind"
+    },
+    "Halloween_SV5": {
+        "y_c": {
+            "age": [
+                "not_kit"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "[t_c blocks your path, bursting into song.]",
             "Prank or prey, come and play! Give me some fresh-kill today! If you don't, I don't care, I'll give you a big old scare!"
         ]
-    ],
-    "Halloween_SV6": [
-        [
-            "halloween",
-            "they_app",
-            "you_any"
+    },
+    "Halloween_SV6": {
+        "y_c": {
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "adolescent"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "[A group of cats are gathered around a large puddle, with t_c in the forefront, crouched low.]",
             "Okay, okay, I just need to grab one real quick.",
             "[As you draw closer, you spot a few apples bobbing teasingly on the surface.]",
@@ -319,205 +480,381 @@
             "Mouse-dung!",
             "[It seems like {PRONOUN/t_c/subject} might be at this all day.]"
         ]
-    ],
-    "ofrenda_dead_H1": [
-        [
-            "they_kittypet",
-            "they_introspective",
-            "halloween",
-            "they_dead",
-            "any",
+    },
+    "ofrenda_dead_H1": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "dead": [
+                "any"
+            ]
+        },
+        "season": [
             "leaffall"
         ],
-        [
+        "tags": [
+            "they_kittypet",
+            "halloween"
+        ],
+        "intro": [
             "[Anytime you saw t_c in the past, {PRONOUN/t_c/subject} looked gloomy. However, as the leaves turn orange and the air chills, t_c is absolutely ecstatic.]",
             "y_c! y_c, do you know what time it is?",
             "Oh, who am I kidding? It's when the housefolk-- I mean, Twolegs start putting up the pictures and candles! They say the dead visits them when they do.",
             "I hope - no, I know I'm in one of the pictures! I'll get to visit them! Isn't that exciting?",
             "[You nod, though as t_c continues to talk, you wonder what exactly a 'picture' and a 'candle' is.]"
         ]
-    ],
-    "ofrenda_dead_H2": [
-        [
+    },
+    "ofrenda_dead_H2": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "dead": [
+                "any"
+            ]
+        },
+        "tags": [
             "they_kittypet",
-            "they_introspective",
-            "they_dead",
-            "any",
-            "halloween",
-            "they_blind"
+            "halloween"
         ],
-        [
+        "intro": [
             "[While all the other kittypets you've talked to lately are excited for the incoming 'visit' to their Twolegs, t_c is curled away in the distance.]",
             "Sorry for being all moppy. I didn't want to ruin the good mood.",
             "I just... I know I'm not in my previous Twolegs pictures. I should be optimistic and have some faith!",
             "But I know lying to myself is just going to cause more pain."
         ]
-    ],
-    "ofrenda_dead_H3": [
-        [
+    },
+    "ofrenda_dead_H3": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "dead": [
+                "any"
+            ]
+        },
+        "tags": [
             "they_loner",
             "they_rogue",
-            "they_introspective",
-            "they_dead",
-            "any",
             "halloween"
         ],
-        [
+        "intro": [
             "Oh, hey, y_c? Have you heard of what the kittypets have been talking about lately - the 'pictures' and 'candles'?",
             "It's really sweet, I think, to have others so dedicated to keeping your memory alive.",
             "... The kittypets must be adored so much, even if it's from Twolegs, huh? It must've been nice."
         ]
-    ],
-    "halloween_SQ1~1": [
-        [
-            "halloween",
-            "they_neurotic",
-            "no_kit",
-            "min_platonic_10",
-            "you_blind"
+    },
+    "halloween_SQ1~1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_10"
         ],
-        [
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "Have you noticed there've been lots of spiders around camp recently?",
             "I mean... I've got nothing against spiders! And I don't think these ones are venomous, it's just... They're a bit startling, you know?",
             "I wonder why there are so many around recently. I hope they stop soon."
         ]
-    ],
-    "halloween_SQ1~2": [
-        [
+    },
+    "halloween_SQ1~2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_10"
+        ],
+        "tags": [
             "halloween",
-            "they_neurotic",
-            "no_kit",
-            "min_platonic_10",
-            "you_blind",
             "connected"
         ],
-        [
+        "intro": [
             "Ugh! There are still so many spiders around camp... I've been trying to stay out of their way.",
             "There was one hanging right in the middle of the entrance to the warriors' den, like it was guarding the place... it was huge, and orange, and... *shudder*",
             "I know they eat insects, and they're good to have around! All their legs, though... They just creep me out.",
             "I still don't understand why there are so many in camp."
         ]
-    ],
-    "halloween_SQ2": [
-        [
-            "halloween",
-            "they_language",
-            "no_kit"
+    },
+    "halloween_SQ2": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ],
+            "skill": [
+                "LANGUAGE,1"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "[A large raven has been hanging around the camp recently, filling silences with its mournful croaks and loudly flapping its wings when cats least expect it.]",
             "[t_c is trying to speak with the bird to figure out what it wants, but so far {PRONOUN/t_c/poss} efforts have just been met with disparaging glances.]"
         ]
-    ],
-    "halloween_SQ3": [
-        [
-            "halloween",
-            "they_story",
-            "no_kit",
-            "they_blind"
+    },
+    "halloween_SQ3": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ],
+            "skill": [
+                "STORY,1"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "[t_c's using the recent spooky mood in camp as an excuse to tell scarier stories than usual.]",
-            "And with a mournful wail, the ghost lifted its paw and pointed at the c_nClan cats! It hissed that for the blood they had spilled, all of them would be cursed for the rest of their lives...",
-            "[r_c_neurotic excuses {PRONOUN/r_c_neurotic/self} and quickly leaves the audience, shivering.]"
+            "And with a mournful wail, the ghost lifted its paw and pointed at the c_n cats! It hissed that for the blood they had spilled, all of them would be cursed for the rest of their lives...",
+            "|r_c-neurotic|Um... excuse me.",
+            "[r_c-neurotic quickly leaves the audience, shivering.]"
         ]
-    ],
-    "halloween_SQ4": [
-        [
-            "halloween",
-            "they_navigator",
-            "no_kit",
+    },
+    "halloween_SQ4": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ],
+            "skill": [
+                "NAVIGATOR,1"
+            ]
+        },
+        "relationship": [
             "min_platonic_15"
         ],
-        [
-            "I just had a weird experience today when I was on a walk with plike_r_w. We were on the western side of the territory, and it was a bit foggy...",
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
+            "I just had a weird experience today when I was on a walk with plike-r_w. We were on the western side of the territory, and it was a bit foggy...",
             "And suddenly, we were just... in another part of the territory. I swear, it was like I blinked and everything around us shifted!",
             "[t_c shudders. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'ve/'s} always been unnaturally good at keeping {PRONOUN/t_c/poss} bearings, and you used to think it was impossible for {PRONOUN/t_c/object} to get lost.]",
             "[This experience seems to have spooked {PRONOUN/t_c/object} more than {PRONOUN/t_c/subject}'d like to admit.]"
         ]
-    ],
-    "halloween_SQ5": [
-        [
-            "halloween",
-            "they_dream",
-            "they_neurotic",
-            "no_kit",
+    },
+    "halloween_SQ5": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ],
+            "skill": [
+                "DREAM,1"
+            ]
+        },
+        "relationship": [
             "min_platonic_15"
         ],
-        [
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "I've been having weird dreams lately. They're full of shadows and spiderwebs, and it keeps feeling like someone's watching me...",
             "[t_c shivers. For a moment, {PRONOUN/t_c/subject} {VERB/t_c/stare/stares} into space.]",
             "I... I really hope they don't mean something bad."
         ]
-    ],
-    "halloween_SQ6~1": [
-        [
-            "halloween",
-            "they_neurotic",
-            "no_kit",
-            "min_platonic_15",
-            "you_blind",
-            "they_blind"
+    },
+    "halloween_SQ6~1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_15"
         ],
-        [
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "Have you ever wondered if we could fight ghosts? You know, if one decided to come after the Clan?",
             "Please don't laugh at me. It's just... Everycat's been talking about ghosts and spooky things recently, and I can't help but worry. What if that stuff's real, and dangerous?"
         ]
-    ],
-    "halloween_SQ6~2": [
-        [
+    },
+    "halloween_SQ6~2": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_15"
+        ],
+        "tags": [
             "halloween",
-            "they_neurotic",
-            "no_kit",
-            "min_platonic_15",
             "connected"
         ],
-        [
+        "intro": [
             "[t_c stares intently at the empty space in front of {PRONOUN/t_c/object}. {PRONOUN/t_c/subject/CAP} {VERB/t_c/swipe/swipes} one paw through the air with a quiet battlecry, but {VERB/t_c/stumble/stumbles} when {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you nearby.]",
             "Ah... hi, y_c. So, remember how I was wondering about fighting ghosts a while back?",
-            "r_c_introspective said maybe in order to fight a ghost, you just have to believe really hard that you'll be able to hit them. And if you don't believe enough, your paws will just pass through...",
+            "r_c-introspective said maybe in order to fight a ghost, you just have to believe really hard that you'll be able to hit them. And if you don't believe enough, your paws will just pass through...",
             "I know, it sounds like a kit story. But I couldn't stop thinking about it, so I guess I'm... practicing? Yeah. I'm practicing my believing, if that makes any sense.",
             "...I'll go do something useful now."
         ]
-    ],
-    "halloween_SQ7": [
-        [
-            "halloween",
-            "they_neurotic",
-            "no_kit",
-            "min_platonic_15",
-            "they_hearing"
+    },
+    "halloween_SQ7": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "hearing"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_15"
         ],
-        [
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "[t_c sits slumped at the edge of camp, looking at {PRONOUN/t_c/poss} paws. You ask {PRONOUN/t_c/object} if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} okay, and {PRONOUN/t_c/subject} {VERB/t_c/sigh/sighs}.]",
-            "Yeah... I'm trying to be. Um... neutral_r_c1_silly jumped out at me as I was coming back into camp. {PRONOUN/neutral_r_c1_silly/subject/CAP} {VERB/neutral_r_c1_silly/were/was} just joking around, but {PRONOUN/neutral_r_c1_silly/subject} scared me.",
-            "Anyways, I kind of screamed... I'm surprised you didn't hear me. And then I snapped at neutral_r_c1_silly, even though I didn't mean it, and now I feel really bad...",
-            "[t_c looks across the camp at neutral_r_c1_silly, who's joking around with r_c2_silly.]",
-            "{PRONOUN/neutral_r_c1_silly/subject/CAP} {VERB/neutral_r_c1_silly/don't/doesn't} seem too bothered, but maybe {PRONOUN/neutral_r_c1_silly/subject}{VERB/neutral_r_c1_silly/'re/'s} just hiding it well? But if {PRONOUN/neutral_r_c1_silly/subject} really {VERB/neutral_r_c1_silly/have/has} forgotten, I don't want to bring anything back up by apologizing."
+            "Yeah... I'm trying to be. Um... neutral-r_c1-silly jumped out at me as I was coming back into camp. {PRONOUN/neutral-r_c1-silly/subject/CAP} {VERB/neutral-r_c1-silly/were/was} just joking around, but {PRONOUN/neutral-r_c1-silly/subject} scared me.",
+            "Anyways, I kind of screamed... I'm surprised you didn't hear me. And then I snapped at neutral-r_c1-silly, even though I didn't mean it, and now I feel really bad...",
+            "[t_c looks across the camp at neutral-r_c1-silly, who's joking around with r_c2-silly.]",
+            "{PRONOUN/neutral-r_c1-silly/subject/CAP} {VERB/neutral-r_c1-silly/don't/doesn't} seem too bothered, but maybe {PRONOUN/neutral-r_c1-silly/subject}{VERB/neutral-r_c1-silly/'re/'s} just hiding it well? But if {PRONOUN/neutral-r_c1-silly/subject} really {VERB/neutral-r_c1-silly/have/has} forgotten, I don't want to bring anything back up by apologizing."
         ]
-    ],
-    "halloween_E1": [
-        [
-            "halloween",
-            "no_kit",
-            "you_queen's_apprentice",
-            "you_queen",
-            "they_blind"
+    },
+    "halloween_E1": {
+        "y_c": {
+            "status": [
+                "queen's apprentice",
+                "queen"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "halloween"
         ],
-        [
+        "intro": [
             "Oh- Oh! y_c!",
             "[t_c's wide, guilty eyes meet your own as you enter the nursery. {PRONOUN/t_c/subject/CAP} {VERB/t_c/shift/shifts} awkwardly to the side, trying to conceal a shivering r_k who is currently sobbing into {PRONOUN/t_c/poss} fur.]",
             "I uh... heh- I think my ghost stories might have been a <i>little</i>... over the top."
         ]
-    ],
-    "halloween_E2": [
-        [
-            "halloween",
-            "leaffall",
-            "min_platonic_10",
-            "no_kit"
+    },
+    "halloween_E2": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
+            "leaffall"
         ],
-        [
+        "relationship": [
+            "min_platonic_10"
+        ],
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "Hey y_c, look what I found!",
             "[You watch with interest as t_c carefully holds up a paw. Snagged in {PRONOUN/t_c/poss} claws is a large, fuzzy... is that a SPIDER?!]",
             "[You shriek and leap back as t_c bursts out laughing. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} completely unbothered as {PRONOUN/t_c/subject} {VERB/t_c/toss/tosses} the spider onto the ground.]",
@@ -527,39 +864,69 @@
             "...",
             "Do you think I can prank r_c with it?"
         ]
-    ],
-    "halloween_E3": [
-        [
-            "halloween",
-            "min_platonic_10",
-            "no_kit",
-            "you_apprentice",
-            "you_warrior",
-            "you_deputy",
-            "you_leader"
+    },
+    "halloween_E3": {
+        "y_c": {
+            "status": [
+                "apprentice",
+                "warrior",
+                "deputy",
+                "leader"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_10"
         ],
-        [
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "[In a moment of downtime you ask t_c if {PRONOUN/t_c/subject} would like to accompany you while you check on the o_c_n border.]",
             "The o_c_n border? No way! The river over there is totally haunted.",
             "I heard that if you look into the water, you'll see another cat in your reflection looking right back at you!",
             "r_c thinks they're Dark Forest cats trying to find their way back to the Clans. Creepy huh?"
         ]
-    ],
-    "halloween_E4": [
-        [
-            "halloween",
-            "leaffall",
-            "no_kit",
-            "they_medicine_cat",
-            "they_medicine_cat_apprentice",
-            "they_blind",
-            "you_blind"
+    },
+    "halloween_E4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "season": [
+            "leaffall"
         ],
-        [
+        "tags": [
+            "halloween"
+        ],
+        "intro": [
             "The medicine den could use some decorations to match the spooky mood around the camp, don't you think?",
             "Something not too scary but still on theme. Something like... oh Starclan, what even is there?",
             "Oh! Cobwebs! Cobwebs are perfect. I'm sure there is plenty that I can spare for decorating. At least, I think so.",
             "...I'm going to go check."
         ]
-    ]
+    }
 }

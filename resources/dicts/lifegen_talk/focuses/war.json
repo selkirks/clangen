@@ -1,361 +1,646 @@
 {
-    "silly_mentor_war": [
-        [
-            "apprentice",
-            "mediator apprentice",
-            "medicine_cat_apprentice",
-            "queen's apprentice",
-            "silly",
+    "silly_mentor_war": {
+        "y_c": {
+            "status": [
+                "apprentice",
+                "mediator apprentice",
+                "medicine cat apprentice",
+                "queen's apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "silly"
+            ]
+        },
+        "relationship": [
+            "from_mentor"
+        ],
+        "tags": [
             "war",
-            "from_mentor",
             "focus"
         ],
-        [
+        "intro": [
             "y_c...",
             "I, uh... I wanna let you know that I know everything's scary right now.",
             "Not to mention the... well, everything?",
             "I dunno! I'm not good at these weird adulty talks. But I wanna let you know that even if no warriors in your life have your back, I do. I might not be good at talking seriously, but I wanna hear what you have to say.",
             "Here, I gotcha a pebble. It's a fun shape and your favorite color, so it reminded me of you!"
         ]
-    ],
-    "sc_living_8": [
-        [
-            "they_sc",
-            "no_kit",
+    },
+    "sc_living_8": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "dead": [
+                "sc"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
             "war",
             "focus"
         ],
-        [
+        "intro": [
             "[t_c sits down with a sigh, looking almost alive under the moon's glow.]",
             "Remember when the biggest worry was just a border skirmish? Seems like moons ago."
         ]
-    ],
-    "war_kitten_H1": [
-        [
-            "focus",
-            "they_kitten",
-            "they_healer",
-            "you_warrior",
-            "you_injured"
+    },
+    "war_kitten_H1": {
+        "y_c": {
+            "condition": [
+                "injury:any"
+            ],
+            "status": [
+                "warrior"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "kitten"
+            ],
+            "skill": [
+                "HEALER,1"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c's eyes hold an unnerving understanding as you limp around camp.]",
             "You are injured. Why hasn't r_m treated you yet?",
             "{VERB/r_m/Are/Is} {PRONOUN/r_m/subject} busy? That's fine. I'm not a medicine cat, but I can help!"
         ]
-    ],
-    "war_app_H1": [
-        [
-            "focus",
-            "they_apprentice",
-            "you_any",
-            "trust",
-            "comfort",
-            "you_blind",
-            "they_blind"
+    },
+    "war_app_H1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "min_trust_50",
+            "min_comfort_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Does war really mean anything? This just seems petty, but tm_n keeps telling me it's a lesson to be learned.",
             "If it was true... I wish the lessons were less bloody and painful.",
             "I'm sorry to bother you with my thoughts, y_c. I just needed to speak to someone that wasn't a puddle or tm_n. {PRONOUN/tm_n/subject/CAP} {VERB/tm_n/hover/hovers}, and now it makes me uncomfortable beyond belief.",
             "It would take a long time before I would be comfortable with some cat standing behind me."
         ]
-    ],
-    "war_kitten_H2": [
-        [
-            "focus",
-            "they_kitten",
-            "you_any",
-            "you_blind",
-            "they_blind"
+    },
+    "war_kitten_H2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "No one is telling me anything! I know something bad is happening, I just know it."
         ]
-    ],
-    "war_queen_H1": [
-        [
+    },
+    "war_queen_H1": {
+        "y_c": {
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "queen"
+            ]
+        },
+        "tags": [
             "focus",
-            "they_queen",
-            "you_any",
             "clan_has_kits"
         ],
-        [
+        "intro": [
             "[t_c looks tired, yet {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} up and about watching over the kits.]",
             "War is so unpredictable. I need to watch over them, I need to.",
             "I always feel like the moment I turn away, something is going to happen.",
             "It <i>feels</i> irrational but... is it, really?"
         ]
-    ],
-    "war_kitten_H3": [
-        [
-            "focus",
-            "they_kitten",
-            "you_any",
-            "you_blind",
-            "they_blind"
+    },
+    "war_kitten_H3": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[You find t_c mumbling to {PRONOUN/t_c/self} in the nursery.]",
             "This is not scary, not at all! Everycat is going to come back safe...",
             "Breathe in and out, in and out, like r_q says."
         ]
-    ],
-    "war_kitten_H4": [
-        [
-            "focus",
-            "they_kitten",
-            "you_any",
-            "you_blind",
-            "they_blind"
+    },
+    "war_kitten_H4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Why can't l_n just call off the war? Why is it taking so long to stop it?",
             "No... It feels unfair. r_d says we should be talking about our feelings instead of fighting about it!",
-            "That's what w_cClan and c_nClan are doing, right? Fighting about something?"
+            "That's what w_cClan and c_n are doing, right? Fighting about something?"
         ]
-    ],
-    "war_kitten_H5": [
-        [
-            "focus",
-            "they_kitten",
-            "you_any",
-            "you_blind",
-            "they_blind"
+    },
+    "war_kitten_H5": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "I am going to be as big and strong as r_w! So I can help!"
         ]
-    ],
-    "war_pregnant_AJ": [
-        [
-            "focus",
-            "they_pregnant",
-            "no_kit"
+    },
+    "war_pregnant_AJ": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "pregnant"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "I'm excited for my kits to be born, I really am, but ...",
             "[t_c casts a worried glance towards w_cClan camp.]",
             "I can't help but worry what will become of them."
         ]
-    ],
-    "war_silly_AJ": [
-        [
-            "focus",
-            "no_kit",
-            "silly",
-            "they_blind"
+    },
+    "war_silly_AJ": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c is fruitlessly trying to make the warriors laugh.]",
             "C'mon, guys! Hey, how about this one? A w_cClan cat walks into a creek ...",
             "[One of the warriors tosses a stick at {PRONOUN/t_c/object}, snapping at {PRONOUN/t_c/object} to give it a rest.]",
-            "[It seems like no one in c_nClan is in much of a laughing mood. Defeated, t_c slinks back to {PRONOUN/t_c/poss} nest.]"
+            "[It seems like no one in c_n is in much of a laughing mood. Defeated, t_c slinks back to {PRONOUN/t_c/poss} nest.]"
         ]
-    ],
-    "war_silly_AJ1": [
-        [
-            "focus",
-            "no_kit",
-            "silly",
-            "unabashed",
-            "assertive",
-            "you_blind",
-            "they_blind"
+    },
+    "war_silly_AJ1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Psh, w_cClan isn't so scary.",
-            "Try dealing with t_l_brooding when the last of {PRONOUN/t_l_brooding/poss} favorite prey is stolen from the pile. Now <i>that's</i> scary."
+            "Try dealing with t_l-brooding when the last of {PRONOUN/t_l-brooding/poss} favorite prey is stolen from the pile. Now <i>that's</i> scary."
         ]
-    ],
-    "unlawful_war1": [
-        [
-            "Any",
+    },
+    "unlawful_war1": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "unlawful"
+            ]
+        },
+        "tags": [
             "focus",
-            "unlawful",
             "war"
         ],
-        [
+        "intro": [
             "[t_c slashes at the ground menacingly, mumbling to {PRONOUN/t_c/self} about the war.]",
-            "If any of those fox-hearts put even <i>one</i> whisker over the border, I'll kill their leader myself as many times as it takes... They'll learn not to mess with c_nClan."
+            "If any of those fox-hearts put even <i>one</i> whisker over the border, I'll kill their leader myself as many times as it takes... They'll learn not to mess with c_n."
         ]
-    ],
-    "unlawful_warGuy1": [
-        [
-            "no_kit",
+    },
+    "unlawful_warGuy1": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
             "focus",
             "war"
         ],
-        [
+        "intro": [
             "I expect you to do anything we ask of you, y_c.",
             "Even if it goes against the code, we will not let those mouse-dung eating w_cClan cats hurt our kits."
         ]
-    ],
-    "war_mckitten_H1": [
-        [
-            "focus",
-            "you_kitten",
-            "they_older",
-            "they_any",
+    },
+    "war_mckitten_H1": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "older"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "relationship": [
             "non-related"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Huh? I don't need to tell you nothin'!",
             "You're too young anyway, I'm not gonna be responsible for a kittens nightmares.",
             "[With a flick of a tail, t_c huffs and turns away.]"
         ]
-    ],
-    "war_mckitten_H2": [
-        [
-            "focus",
-            "you_kitten",
-            "they_older",
-            "they_any",
+    },
+    "war_mckitten_H2": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "older"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "relationship": [
             "non-related"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[You ask t_c what war is and why everycat is making a big deal about it.]",
             "That sounds like something your {PRONOUN/y_p/parent} should explain to you, not me."
         ]
-    ],
-    "war_mckitten_H3": [
-        [
-            "focus",
-            "you_kitten",
-            "they_queen",
+    },
+    "war_mckitten_H3": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "queen"
+            ]
+        },
+        "relationship": [
             "non-related"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "The world is cruel, sweet kit. It stops for no one.",
             "Especially during times like this."
         ]
-    ],
-    "war_mckitten_H4": [
-        [
-            "focus",
-            "you_kitten",
+    },
+    "war_mckitten_H4": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {},
+        "relationship": [
             "from_parent"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Well- war is, um...",
             "[Your {PRONOUN/t_c/parent} seems to stiffen up, looking awfully uncomfortable.]",
             "War is uhh...",
             "You're too young to know!"
         ]
-    ],
-    "war_faith_H1": [
-        [
-            "focus",
-            "sc_faith",
-            "Any"
+    },
+    "war_faith_H1": {
+        "y_c": {},
+        "t_c": {
+            "min_max_faith": [
+                0,
+                9
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Oh, StarClan, save us!"
         ]
-    ],
-    "war_faith_H2": [
-        [
-            "focus",
-            "sc_faith",
-            "they_elder",
-            "you_kitten"
+    },
+    "war_faith_H2": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "elder"
+            ],
+            "min_max_faith": [
+                0,
+                9
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Oh, don't worry about the war!",
             "I heard r_m got a promising prophecy from StarClan, that's all I need to know we're in good hands."
         ]
-    ],
-    "war_faith_H3": [
-        [
-            "focus",
-            "sc_faith",
-            "no_kit"
+    },
+    "war_faith_H3": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "min_max_faith": [
+                0,
+                9
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Humf! l_n must be speaking to the Dark Forest to get these awful ideas during a time like this!"
         ]
-    ],
-    "war_neuroticmate_H1": [
-        [
-            "focus",
-            "from_mate",
-            "they_neurotic",
-            "you_warrior",
-            "romantic_like",
-            "trust"
+    },
+    "war_neuroticmate_H1": {
+        "y_c": {
+            "status": [
+                "warrior"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ]
+        },
+        "relationship": [
+            "min_romantic_20",
+            "min_trust_50",
+            "from_mate"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Be careful on your patrol, I have a bad feeling.",
             "No-- yes, I know I say that every time but still! I have a bad feeling, I always have a bad feeling.",
             "I just don't want you to get hurt."
         ]
-    ],
-    "war_neuroticmate_H2": [
-        [
-            "focus",
-            "from_mate",
-            "they_neurotic",
-            "you_queen",
-            "you_mediator",
-            "you_medicine_cat"
+    },
+    "war_neuroticmate_H2": {
+        "y_c": {
+            "status": [
+                "queen",
+                "mediator",
+                "medicine cat"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ]
+        },
+        "relationship": [
+            "from_mate"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "You're going to be fine while I'm gone on patrol, right? Don't get too close to the border, make sure to stay in the dens, stay around r_w--",
             "[You cut t_c off and tell {PRONOUN/t_c/object} that you'll be fine.]",
             "Are you sure? Really sure? It's always nice to take precautions!"
         ]
-    ],
-    "war_neuroticmate_H3": [
-        [
-            "focus",
-            "from_mate",
-            "they_neurotic",
-            "they_introspective",
-            "you_warrior"
+    },
+    "war_neuroticmate_H3": {
+        "y_c": {
+            "status": [
+                "warrior"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective",
+                "neurotic"
+            ]
+        },
+        "relationship": [
+            "from_mate"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Stay safe for me, please."
         ]
-    ],
-    "warfocus_SQ1": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic"
+    },
+    "warfocus_SQ1": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c, crouched outside the nursery, has made {PRONOUN/t_c/self} even smaller than usual.]",
             "[{PRONOUN/t_c/poss/CAP} eyes are wide as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} r_w reinforce the camp wall and l_n review battle plans.]",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/meet/meets} your gaze and {VERB/t_c/blink/blinks}, but {VERB/t_c/say/says} nothing.]"
         ]
-    ],
-    "warfocus_SQ2": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_queen",
-            "you_queen's_apprentice",
-            "platonic_like",
-            "trust"
+    },
+    "warfocus_SQ2": {
+        "y_c": {
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_trust_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Um, y_c?",
             "[t_c presses close to you, fidgeting with {PRONOUN/t_c/poss} tiny paws.]",
             "The... The scary cats everycat's talking about? The ones they're fighting?",
             "T-they won't come here, right?"
         ]
-    ],
-    "warfocus_SQ3": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_medicine_cat",
-            "you_medicine_cat_apprentice",
-            "platonic_like"
+    },
+    "warfocus_SQ3": {
+        "y_c": {
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[Long after dusk, you're organizing your herbs in the medicine den when you hear tiny paws at the entrance.]",
             "[t_c creeps in, {PRONOUN/t_c/poss} eyes wide and fur fluffed. When {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, {PRONOUN/t_c/subject} {VERB/t_c/gasp/gasps}.]",
             "I- I'm sorry! I know I'm not supposed to be here!",
@@ -365,17 +650,29 @@
             "Y-you talk to StarClan, right?",
             "Are they really watching? Are they... are they really going to keep us safe?"
         ]
-    ],
-    "warfocus_SQ4": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_adult",
-            "you_app",
-            "platonic_love"
+    },
+    "warfocus_SQ4": {
+        "y_c": {
+            "age": [
+                "adolescent",
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[You hear a scuffle coming from inside the nursery. You peer inside to see t_c alone, swinging {PRONOUN/t_c/poss} little paws at empty air.]",
             "Grr!",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/lunge/lunges} into the air, batting at nothing, but upon landing {PRONOUN/t_c/subject} {VERB/t_c/slip/slips} and {VERB/t_c/tumble/tumbles} unceremoniously in a ball of fluff.]",
@@ -387,140 +684,249 @@
             "What if w_cClan attacks the camp? I want to be useful! I don't want to hide while everycat gets hurt!",
             "[t_c buries {PRONOUN/t_c/poss} face in your side, wailing, as you try to calm {PRONOUN/t_c/object} down.]"
         ]
-    ],
-    "warfocus_SQ5": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_kitten",
-            "you_queen",
-            "you_queen's_apprentice"
+    },
+    "warfocus_SQ5": {
+        "y_c": {
+            "status": [
+                "kitten",
+                "queen",
+                "queen's apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[You suggest playing mossball with t_c, but {PRONOUN/t_c/subject} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head.]",
             "Can we play hide-and-seek again? I wanna try out some new hiding spots.",
             "If they're good, I can use them when... um, <i>if</i> w_cClan comes here."
         ]
-    ],
-    "warfocus_SQ6": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_kitten",
-            "platonic_love",
-            "you_assertive",
-            "you_unlawful"
+    },
+    "warfocus_SQ6": {
+        "y_c": {
+            "cluster": [
+                "assertive",
+                "unlawful"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[You're half asleep in the nursery when t_c's whisper wakes you up.]",
             "Hey, y_c?",
             "If w_cClan comes here, you'll hide with me, right?",
             "Please promise me you're not gonna try to fight!"
         ]
-    ],
-    "warfocus_SQ7": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_adult",
-            "platonic_like",
-            "trust"
+    },
+    "warfocus_SQ7": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_trust_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "I heard r_w saying something like, 'this war's gonna go on forever'.",
             "Is... is that true? Is it never, ever going to end?"
         ]
-    ],
-    "warfocus_SQ8": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_warrior",
-            "you_apprentice",
-            "you_deputy",
-            "you_leader",
-            "platonic_like",
-            "trust"
+    },
+    "warfocus_SQ8": {
+        "y_c": {
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_trust_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "...y_c? Could... could you teach me how to fight?",
             "Just one move, in case w_cClan comes here, and everycat else is gone, and I hide but they find me, and...",
             "[t_c starts sniffling. You quickly distract {PRONOUN/t_c/object} with a nearby feather.]"
         ]
-    ],
-    "warfocus_SQ9": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_kitten",
-            "littermate",
-            "platonic_like"
+    },
+    "warfocus_SQ9": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "littermate"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "I had a dream last night where w_cClan was gone.",
             "We didn't have to worry about anything anymore, so t_p took us just outside camp to show us a really pretty tree.",
             "It was nice. I hope I have that dream again."
         ]
-    ],
-    "warfocus_SQ10": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_kitten",
-            "littermate",
-            "platonic_like"
+    },
+    "warfocus_SQ10": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "littermate"
         ],
-        [
-            "We don't have to worry about anything happening to t_p_positive, right?",
-            "Even with the war, {PRONOUN/t_p_positive/subject}{VERB/t_p_positive/'re/'s} gonna be okay, right?"
+        "tags": [
+            "focus"
+        ],
+        "intro": [
+            "We don't have to worry about anything happening to plove-t_p, right?",
+            "Even with the war, {PRONOUN/plove-t_p/subject}{VERB/plove-t_p/'re/'s} gonna be okay, right?"
         ]
-    ],
-    "warfocus_SQ11": [
-        [
-            "focus",
-            "they_kitten",
-            "they_neurotic",
-            "you_queen",
-            "you_queen's_apprentice",
-            "platonic_like"
+    },
+    "warfocus_SQ11": {
+        "y_c": {
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[t_c has been especially quiet since the war started, so you put together a game to distract {PRONOUN/t_c/object}.]",
             "[As {PRONOUN/t_c/subject} {VERB/t_c/dash/dashes} around the nursery, hunting for the colorful feathers you hid, you hear {PRONOUN/t_c/object} laugh for the first time in a while.]"
         ]
-    ],
-    "warfocus_SQ12": [
-        [
-            "focus",
-            "they_neurotic",
-            "you_any",
-            "platonic_love",
+    },
+    "warfocus_SQ12": {
+        "y_c": {
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50",
             "littermate"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[After overhearing l_n and d_n discussing the war, t_c has curled up in one corner of {PRONOUN/t_c/poss} den, not talking to anyone.]",
             "[Your {PRONOUN/t_c/sibling}'s eyes are closed, but {PRONOUN/t_c/poss} ears prick at your approach.]",
             "[You curl around {PRONOUN/t_c/object} and gently lick the top of {PRONOUN/t_c/poss} head, like y_p used to do when you were kits.]",
             "[After a moment, you hear a weak giggle.]"
         ]
-    ],
-    "neurotic_warfocus_SQ123": [
-        [
-            "focus",
-            "they_not_dftrainee",
-            "they_neurotic",
-            "no_kit",
-            "platonic_like",
-            "trust",
-            "comfort"
+    },
+    "neurotic_warfocus_SQ123": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "not_df_trainee"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_trust_50",
+            "min_comfort_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[It's midday, but you find y_c curled up in {PRONOUN/t_c/poss} nest. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} open {PRONOUN/t_c/poss} eyes when you approach.]",
             "Hi, y_c. I'm not feeling great.",
             "I'll be okay, and I don't want to bother r_m when {PRONOUN/r_m/subject}{VERB/r_m/'re/'s} so busy already.",
@@ -528,247 +934,451 @@
             "...cats I care about being hurt, and fighting other cats for real...",
             "...I'm so scared, y_c. I'm so scared, I feel sick."
         ]
-    ],
-    "war_focus_J1": [
-        [
-            "focus",
-            "you_kitten",
-            "they_warrior",
-            "they_apprentice",
-            "they_deputy",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_J1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c notices you wandering close to the camp entrance and scoops you up, hastily dropping you closer to the nursery.]",
             "Whoa, y_c! You can't be that close to the entrance. It's not safe.",
             "There's bad guys out there. You have to stay inside so you can get big and strong to help us fight them, okay?",
             "[You agree, and t_c heads off on a patrol. You can't wait to be like {PRONOUN/t_c/object} when you grow up!]"
         ]
-    ],
-    "war_focus_J2": [
-        [
-            "focus",
-            "you_warrior",
-            "you_deputy",
-            "they_warrior",
-            "they_deputy",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_J2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[You and t_c hobble back into camp after a skirmish on the border. You're not badly injured, just sore.]",
             "StarClan, that was annoying. We can't simply go on a stroll anymore without an enemy patrol interrupting! Do they have infinite warriors to station at our borders, or something?",
             "I need to grab some prey and lay in the sun for a bit. Wanna join me?"
         ]
-    ],
-    "war_focus_assertive_AJ": [
-        [
-            "focus",
-            "no_kit",
-            "they_warrior",
-            "they_deputy",
-            "they_apprentice",
-            "assertive",
-            "they_sameage",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_assertive_AJ": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy",
+                "apprentice"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
-            "If you ask me, this war couldn't have come soon enough! No other Clan disrespects c_nClan and gets away with it!",
+        "intro": [
+            "If you ask me, this war couldn't have come soon enough! No other Clan disrespects c_n and gets away with it!",
             "I think I'm gonna ask l_n about putting me on the front lines ... Just you wait, y_c! Those lousy w_cClan cats aren't gonna know what hit 'em!"
         ]
-    ],
-    "war_focus_assertive1_AJ": [
-        [
-            "focus",
-            "no_kit",
-            "assertive",
-            "upstanding",
-            "they_sameage",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_assertive1_AJ": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "upstanding"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Everybody around here talks about this war like it's some huge tragedy ... But I see it as an opportunity!",
-            "I've been waiting my whole life for the chance to show everycat in c_nClan what I'm really capable of!",
+            "I've been waiting my whole life for the chance to show everycat in c_n what I'm really capable of!",
             "Get ready, y_c, because my name's about to go down in history! 't_c, slayer of w_cClan!'",
             "Heh ... Has a nice ring to it, doesn't it?"
         ]
-    ],
-    "war_focus_assertive2_AJ": [
-        [
-            "focus",
-            "no_kit",
-            "they_warrior",
-            "they_apprentice",
-            "they_deputy",
-            "they_leader",
-            "assertive",
-            "they_blind"
+    },
+    "war_focus_assertive2_AJ": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c is battered and bruised, being tended to by a frantic r_m.]",
             "Heh, don't worry ... You should see what the w_cClan warrior who did this to me looks like!"
         ]
-    ],
-    "war_focus_AJ3": [
-        [
-            "focus",
-            "they_mediator",
-            "they_queen",
-            "they_mediator_apprentice",
-            "they_queen's_apprentice",
-            "mediator",
-            "queen",
-            "mediator apprentice",
-            "queen's apprentice",
-            "platonic_like",
-            "they_sameage"
+    },
+    "war_focus_AJ3": {
+        "y_c": {
+            "status": [
+                "mediator",
+                "queen",
+                "mediator apprentice",
+                "queen's apprentice"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "sameage"
+            ],
+            "status": [
+                "mediator",
+                "queen",
+                "mediator apprentice",
+                "queen's apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[t_c watches the medicine cats rush to tend to the recent border patrol, deeply troubled.]",
             "Y'know, sometimes I wonder what our role is, in the midst of all this.",
             "Why should we get to stay in camp all day while our Clanmates have to struggle and die on the front lines?",
             "I get that what we do is important, but ... There's a war going on. Is it really more important than the lives of our Clanmates? It just seems a little unfair."
         ]
-    ],
-    "war_focus_AJ4": [
-        [
-            "focus",
-            "they_kitten",
-            "you_adult",
-            "assertive",
-            "upstanding",
-            "silly",
-            "unabashed",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_AJ4": {
+        "y_c": {
+            "age": [
+                "adult"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "silly",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c tussles with r_k.]",
             "Grahh! Die, w_cClan scum!!!",
             "[Seems like even the kits aren't sheltered from the violence ...]"
         ]
-    ],
-    "war_focus_AJ5": [
-        [
-            "focus",
-            "no_kit",
-            "platonic_love",
-            "you_blind",
-            "they_blind",
-            "you_deaf",
-            "they_deaf"
+    },
+    "war_focus_AJ5": {
+        "y_c": {
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[Every time t_c leaves camp now, you say an extra prayer to StarClan, terrified that this might be the time {PRONOUN/t_c/subject} won't make it back alive.]"
         ]
-    ],
-    "war_focus_AJ6": [
-        [
-            "focus",
-            "no_kit",
-            "they_apprentice",
-            "they_warrior",
-            "they_deputy",
+    },
+    "war_focus_AJ6": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "apprentice",
+                "warrior",
+                "deputy"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50",
             "from_your_kit",
-            "from_adopted_kit",
-            "platonic_love",
-            "you_blind",
-            "they_blind"
+            "from_adopted_kit"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[You rush to t_c as soon as {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} back from patrol, pressing your nose into {PRONOUN/t_c/poss} pelt and pulling {PRONOUN/t_c/object} close to you.]",
             "Tch ... I'm alright, y'know, y_c ... You don't have to do this every time. It's not like there are w_cClan warriors lurking everywhere I turn.",
             "[Still, in the slight tremble in {PRONOUN/t_c/poss} voice, you can tell that {PRONOUN/t_c/subject} secretly {VERB/t_c/appreciate/appreciates} you worrying after {PRONOUN/t_c/object}.]"
         ]
-    ],
-    "war_focus_assertive7_AJ": [
-        [
-            "focus",
-            "no_kit",
-            "they_warrior",
-            "they_apprentice",
-            "they_deputy",
-            "they_leader",
-            "assertive",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_assertive7_AJ": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "A day where I haven't taken down at least 3 w_cClanners, is a bad day for me. Hah!"
         ]
-    ],
-    "war_focus_assertive8_AJ": [
-        [
-            "focus",
-            "no_kit",
-            "they_warrior",
-            "they_apprentice",
-            "they_deputy",
-            "they_leader",
-            "assertive",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_assertive8_AJ": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c and r_w are talking loudly in the middle of camp.]",
             "Oh, hey, y_c! r_w and I were just talking about current events.",
             "I bet half my freshkill that, by the end of the war, I'll have taken down more w_cClan warriors than they have.",
             "You wanna get in on this? I'd be happy to go double or nothing!"
         ]
-    ],
-    "war_focus_assertive9_AJ": [
-        [
-            "focus",
-            "Any",
-            "they_warrior",
-            "they_apprentice",
-            "they_deputy",
-            "they_leader",
-            "assertive",
-            "silly",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_assertive9_AJ": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Grahhhh!",
             "Oh, hey, y_c! I was just practicing my war cry. Gotta be extra terrifying to go down in w_cClan legend, y'know?",
             "You wanna practice with me?"
         ]
-    ],
-    "war_focus_assertive10_AJ": [
-        [
-            "focus",
-            "no_kit",
-            "they_warrior",
-            "they_apprentice",
-            "they_deputy",
-            "they_leader",
-            "assertive",
-            "upstanding",
-            "they_blind",
-            "they_hearing"
+    },
+    "war_focus_assertive10_AJ": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false",
+                "hearing"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c is grinning ear to ear, looking as pleased as {PRONOUN/t_c/subject}{VERB/t_c/'ve/'s} ever been, like {PRONOUN/t_c/subject} could paw the white out of the moon.]",
             "I just heard a rumor that the w_cClan cats have started using 'the fearsome t_c' as a nursery tale to scare their kits into sleeping ...",
             "*Sniff* Ah, it's almost enough to bring a tear to my eye."
         ]
-    ],
-    "war_focus_AJ11~1": [
-        [
-            "focus",
-            "no_kit",
-            "they_leader",
-            "they_warrior",
-            "they_deputy",
-            "assertive",
-            "platonic_love",
-            "they_sameage"
+    },
+    "war_focus_AJ11~1": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "leader",
+                "warrior",
+                "deputy"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[t_c is arranging some things around {PRONOUN/t_c/poss} nest.]",
             "Oh, hey, y_c! Come to admire my collection?",
             "I like to keep little trophies from all of my past battles. Call me sentimental, but it helps me to remember what I'm fighting for.",
@@ -777,20 +1387,35 @@
             "Ever since the war with w_cClan started, my collection's really expanded. But I'm not gonna stop until I run out of room!",
             "Just imagine, a tuft of fur that I pulled off the leader of w_cClan personally ... That'd be the perfect thing to finish off my collection."
         ]
-    ],
-    "war_focus_AJ11~2": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "they_leader",
-            "they_warrior",
-            "they_deputy",
-            "assertive",
-            "platonic_love",
-            "they_sameage"
+    },
+    "war_focus_AJ11~2": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "leader",
+                "warrior",
+                "deputy"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "Hey, y_c, uh ... C-Could I talk to you for a second?",
             "[t_c looks unusually uncertain and on-edge. You take {PRONOUN/t_c/object} to a private part of camp and ask what's wrong.]",
             "Uh ...",
@@ -806,39 +1431,69 @@
             "All this time I've spent dreaming of the battlefield, of losing myself in the glory and exhilaration of bloodshed ...",
             "I guess I just never pictured a kid's face on the other side of it all."
         ]
-    ],
-    "war_focus_AJ11~3": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "they_leader",
-            "they_warrior",
-            "they_deputy",
-            "assertive",
-            "platonic_love",
-            "they_sameage"
+    },
+    "war_focus_AJ11~3": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "leader",
+                "warrior",
+                "deputy"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "[t_c is staring at r_a dozing in front of the apprentice's den.]",
             "StarClan, the apprentices sure look young, don't they ...?",
             "If any cat were ever to lay a paw on them ...",
             "[t_c bites the inside of {PRONOUN/t_c/poss} cheek and looks away, visions of the w_cClan apprentice undoubtedly flashing through {PRONOUN/t_c/poss} mind.]"
         ]
-    ],
-    "war_focus_AJ11~4": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "they_leader",
-            "they_warrior",
-            "they_deputy",
-            "assertive",
-            "platonic_love",
-            "they_sameage"
+    },
+    "war_focus_AJ11~4": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "leader",
+                "warrior",
+                "deputy"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "[t_c is pondering {PRONOUN/t_c/poss} trophy collection, brow furrowed, tail flicking idly from side-to-side.]",
             "[Gently, {PRONOUN/t_c/subject} {VERB/t_c/ghost/ghosts} {PRONOUN/t_c/poss} paw over a series of mementos from battles against w_cClan ... Teeth and claws, scraps of fur, trampled foliage.]",
             "All of these used to belong to cats, once ...",
@@ -850,20 +1505,35 @@
             "The cats I took these from ... I wonder what their stories are like.",
             "They'd probably have some pretty good ones to tell."
         ]
-    ],
-    "war_focus_AJ11~5": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "they_leader",
-            "they_warrior",
-            "they_deputy",
-            "assertive",
-            "platonic_love",
-            "they_sameage"
+    },
+    "war_focus_AJ11~5": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "leader",
+                "warrior",
+                "deputy"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "[You catch t_c slipping out of {PRONOUN/t_c/poss} den early one morning, carrying {PRONOUN/t_c/poss} w_cClan trophies outside of camp.]",
             "Oh, hey, y_c ... I was just about to go bury this stuff. Wanna help me?",
             "[The two of you pad out into the dewy, springy air, wrapped in a pleasant, ponderous silence.]",
@@ -877,21 +1547,38 @@
             "[t_c's gaze trails sideways across the border, fixated on the rising sun, washing the world in an anxious, watery light. Another day of fighting is about to begin.]",
             "[With a deep breath, {PRONOUN/t_c/subject} {VERB/t_c/push/pushes} the tuft of fur into the hole and {VERB/t_c/cover/covers} it with a thin layer of soil, never again to resurface.]"
         ]
-    ],
-    "war_focus_AJ12": [
-        [
-            "focus",
-            "no_kit",
-            "they_leader",
-            "they_warrior",
-            "they_deputy",
-            "they_apprentice",
-            "assertive",
-            "cool",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_AJ12": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "cool"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "leader",
+                "warrior",
+                "deputy",
+                "apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c is telling war stories to lift everycat's spirits.]",
             "So there I was, backed into a corner -- sheer fifteen fox-length drop in front of me, legion of w_cClan warriors behind.",
             "I thought for sure that I was toast. Even started praying to my warrior ancestors for help.",
@@ -900,29 +1587,57 @@
             "Ahaha, okay, okay! My stories aren't <i>so</i> boring, you know.",
             "Oh, hey, y_c! Wanna get in on this? I was just about to start the tale of how I tricked a w_cClan warrior into thinking I was a kittypet!"
         ]
-    ],
-    "war_focus_AJ13": [
-        [
-            "focus",
-            "no_kit",
-            "assertive",
-            "neutral",
-            "you_blind"
+    },
+    "war_focus_AJ13": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "neutral"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Oh, hey, y_c! You're looking a little faint; have you eaten anything yet today?",
             "We all have to stay strong, if we wanna show w_cClan what's what!"
         ]
-    ],
-    "war_focus_AJ14": [
-        [
-            "focus",
-            "no_kit",
-            "brooding",
-            "introspective",
-            "trust"
+    },
+    "war_focus_AJ14": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding",
+                "introspective"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_trust_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[t_c looks across the groups of warriors, boasting and sharing stories, with a slightly sad expression.]",
             "Do you ever feel like some inextricable part of our identities is being lost in all of this ...?",
             "We used to be artists, dreamers, children and parents. We used to be <i>individuals.</i>",
@@ -930,74 +1645,126 @@
             "y_c, promise me that, no matter what happens, you'll never let this war make you forget who you are.",
             "You're so much more than just an instrument for violence ... No matter what some cats might lead you to believe."
         ]
-    ],
-    "war_focus_AJ15": [
-        [
-            "focus",
-            "introspective"
+    },
+    "war_focus_AJ15": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c scans the barren branches above camp, deeply saddened.]",
             "It seems even the birds have been scared off by the fighting ..."
         ]
-    ],
-    "war_focus_AJ16": [
-        [
-            "focus",
-            "no_kit",
-            "introspective"
+    },
+    "war_focus_AJ16": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c's gaze is fixed on a small flower that had been growing in the camp entrance, now trampled and flattened by the border patrol.]",
             "Can any beauty truly exist in the face of all this violence?"
         ]
-    ],
-    "war_focus_AJ17": [
-        [
-            "focus",
-            "Any",
-            "they_warrior",
-            "they_deputy",
-            "they_leader",
-            "they_apprentice",
-            "they_hunter",
-            "they_blind",
-            "you_deaf",
-            "they_deaf"
+    },
+    "war_focus_AJ17": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy",
+                "leader",
+                "apprentice"
+            ],
+            "skill": [
+                "HUNTER,1"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[The prey pile has been looking a little scarce lately, what with so many warriors out to battle.]",
             "[But t_c, the Clan's best hunter, has been working {PRONOUN/t_c/self} to the point of exhaustion to ensure that the Clan is fed.]",
             "[{PRONOUN/t_c/subject/CAP} may not know the fame and glory of battle, but as {PRONOUN/t_c/subject} {VERB/t_c/add/adds} five birds to the dwindling freshkill pile, you hope that t_c knows just how essential and valued {PRONOUN/t_c/poss} contributions really are.]"
         ]
-    ],
-    "war_focus_AJ18": [
-        [
-            "focus",
-            "you_warrior",
-            "you_apprentice",
-            "you_deputy",
-            "you_leader",
-            "brooding",
-            "platonic_love"
+    },
+    "war_focus_AJ18": {
+        "y_c": {
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[A w_cClan warrior scraped you up a little on border patrol; nothing major, but still a bit scary-looking.]",
             "[When you re-enter camp for the first time and t_c sees you, {PRONOUN/t_c/subject} {VERB/t_c/freeze/freezes}, eyes wide.]",
             "What happened? Who did this to you?",
             "[{PRONOUN/t_c/poss/CAP} gaze suddenly darkens.]",
             "I swear to StarClan, y_c, if this gets any worse ... All of w_cClan is going to have me to answer to."
         ]
-    ],
-    "war_focus_AJ19": [
-        [
-            "focus",
-            "no_kit",
-            "platonic_love",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_AJ19": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "So ... I guess we should talk about it.",
             "What's gonna happen if one of us doesn't make it out the other side of this.",
             "... y_c, if anything happens to me -- and I'm not saying it will, but if it does ...",
@@ -1006,20 +1773,34 @@
             "I know it will be hard, but ... I won't know any peace unless I'm sure you'll be okay.",
             "Can you promise me that?"
         ]
-    ],
-    "war_focus_AJ202": [
-        [
-            "focus",
-            "kitten",
-            "assertive",
-            "brooding",
-            "cool",
-            "from_parent",
+    },
+    "war_focus_AJ202": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "cool",
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
             "from_adopted_parent",
-            "you_blind",
-            "they_blind"
+            "from_parent"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[You rouse t_c from {PRONOUN/t_c/poss} sleep in the middle of the night.]",
             "What is it? You had a nightmare?",
             "C'mere.",
@@ -1027,63 +1808,109 @@
             "I know the war is scary ... But I'm not going to let anything happen to you.",
             "Nothing's gonna hurt you on my watch. I'm here. You don't have to be afraid."
         ]
-    ],
-    "war_focus_AJ21": [
-        [
-            "focus",
-            "medicine_cat_apprentice",
-            "medicine_cat",
-            "they_medicine_cat",
-            "they_medicine_cat_apprentice"
+    },
+    "war_focus_AJ21": {
+        "y_c": {
+            "status": [
+                "medicine cat apprentice",
+                "medicine cat"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Herb stores are running low ...",
             "[t_c casts a nervous glance towards the camp entrance.]",
             "I hope we'll have enough for everycat."
         ]
-    ],
-    "war_focus_AJ22": [
-        [
-            "focus",
-            "no_kit",
-            "they_queen",
-            "they_queen's_apprentice"
+    },
+    "war_focus_AJ22": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c is teaching the kits defense tactics in case of a w_cClan invasion.]",
             "And if a w_cClan warrior makes it into the nursery, what should you do?",
             "That's right, r_k! You should make yourself small. Can you all make yourself small for me?",
             "[The kits all crouch and huddle, giggling with glee, as t_c's smile grows increasingly strained.]"
         ]
-    ],
-    "war_focus_AJ23": [
-        [
-            "focus",
-            "kitten",
-            "they_kitten",
-            "assertive",
-            "upstanding",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_AJ23": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "It isn't fair! Why do we hafta sit around the nursery all day while the grownups get to go out and fight?",
             "Everybody talks about kits like we're just helpless fluff balls ... But I'm not scared of w_cClan! I know I can fight!",
             "If only we were apprentices already ..."
         ]
-    ],
+    },
     "war_focus_AJ24": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_trust_50"
+        ],
         "tags": [
-            "focus",
-            "no_kit",
-            "they_mediator",
-            "they_mediator_apprentice",
-            "trust"
+            "focus"
         ],
         "intro": [
             "[t_c watches the camp entrance with a troubled expression.]",
             "Mediators ... We're not supposed to play favorites with any one Clan. Everycat's needs must be taken into account, especially in times like this.",
-            "But c_nClan is my home. My friends, my family, my entire life is here. How am I supposed to make a decision that could hurt the ones I love? After all that w_cClan has done?"
+            "But c_n is my home. My friends, my family, my entire life is here. How am I supposed to make a decision that could hurt the ones I love? After all that w_cClan has done?"
         ],
         "intro_choices": {
             "choice1": {
@@ -1097,82 +1924,130 @@
             "choice3": {
                 "text": "I'm sorry. This sounds hard.",
                 "next_scene": "sympathy"
-            },
-            "duty": [
-                "Don't you think I know that?",
-                "When I signed up to be a mediator, I knew what it would entail ...",
-                "I just never expected it to be this hard."
-            ],
-            "loyal": [
-                "Do you really think that's right? To throw away everything it means to be a mediator for my own personal benefit?",
-                "It might work for now ... But I'll have StarClan to answer to in the long run.",
-                "Still, at this point, I would do anything to stop this war."
-            ],
-            "sympathy": [
-                "Hard doesn't even begin to describe it ...",
-                "[t_c scoots closer to you, pressing {PRONOUN/t_c/poss} side into your fur.]",
-                "I just don't know what to do anymore, y_c.",
-                "All I want is to take away everycat's pain. All the suffering our Clanmates have endured at the paws of w_cClan ... How much more can this community take?",
-                "It's my job to maintain peace. To stop the war. But everything I ever learned in my training has failed. Logic has failed us. Reason has failed us.",
-                "StarClan ....",
-                "Well, I just don't know what to think about StarClan anymore.",
-                "I'm just tired. I want it to be over ...",
-                "[t_c sighs, burying {PRONOUN/t_c/poss} head into your pelt as if {PRONOUN/t_c/subject} can hide away there forever.]"
-            ]
-        }
-    },
-    "war_focus_AJ25": [
-        [
-            "focus",
-            "any",
-            "they_adult",
-            "cool",
-            "platonic_like"
+            }
+        },
+        "duty": [
+            "Don't you think I know that?",
+            "When I signed up to be a mediator, I knew what it would entail ...",
+            "I just never expected it to be this hard."
         ],
-        [
+        "loyal": [
+            "Do you really think that's right? To throw away everything it means to be a mediator for my own personal benefit?",
+            "It might work for now ... But I'll have StarClan to answer to in the long run.",
+            "Still, at this point, I would do anything to stop this war."
+        ],
+        "sympathy": [
+            "Hard doesn't even begin to describe it ...",
+            "[t_c scoots closer to you, pressing {PRONOUN/t_c/poss} side into your fur.]",
+            "I just don't know what to do anymore, y_c.",
+            "All I want is to take away everycat's pain. All the suffering our Clanmates have endured at the paws of w_cClan ... How much more can this community take?",
+            "It's my job to maintain peace. To stop the war. But everything I ever learned in my training has failed. Logic has failed us. Reason has failed us.",
+            "StarClan ....",
+            "Well, I just don't know what to think about StarClan anymore.",
+            "I'm just tired. I want it to be over ...",
+            "[t_c sighs, burying {PRONOUN/t_c/poss} head into your pelt as if {PRONOUN/t_c/subject} can hide away there forever.]"
+        ]
+    },
+    "war_focus_AJ25": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "adult"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
+        ],
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Y'know, they say war is never pretty ... But clearly, whoever said that never met me, 'cause I think I look great!",
             "[t_c strikes a dramatic pose, grinning at the sound of your laugh.]"
         ]
-    ],
-    "war_focus_AJ251": [
-        [
-            "focus",
-            "any",
-            "they_warrior",
-            "cool",
-            "platonic_like"
+    },
+    "war_focus_AJ251": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "status": [
+                "warrior"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Doesn't d_n know what {PRONOUN/d_n/subject}{VERB/d_n/'re/'s} risking by putting me on the border patrol?",
-            "How ever will the brave little soldiers of c_nClan get by without my beautiful face as moral support?~"
+            "How ever will the brave little soldiers of c_n get by without my beautiful face as moral support?~"
         ]
-    ],
-    "war_focus_AJ26": [
-        [
-            "focus",
-            "no_kit",
-            "cool",
-            "platonic_like",
-            "you_blind",
-            "they_blind",
-            "they_hearing"
+    },
+    "war_focus_AJ26": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "condition": [
+                "blind:any:false",
+                "hearing"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "I overheard r_w comparing w_cClan to a bunch of monsters earlier. Couldn't believe my ears. I mean, are we all still in the nursery?",
             "They're not monsters. They're just a bunch of sorry scraps of fur, as pathetic and desperate as the rest of us.",
             "I'm sure they don't want to march out there getting killed any more than we do.",
             "And I know I <i>really</i> don't want to."
         ]
-    ],
+    },
     "war_focus_AJ27~1": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
+        ],
         "tags": [
-            "focus",
-            "no_kit",
-            "cool",
-            "platonic_like",
-            "they_warrior",
-            "they_apprentice",
-            "they_sameage"
+            "focus"
         ],
         "intro": [
             "Everybody sure is eager to go marching to their deaths ...",
@@ -1199,21 +2074,39 @@
             "Hey, wanna cut the next border patrol with me? I've been faking sick since I was in the nursery ... Maybe you could use a few pointers."
         ]
     },
-    "war_focus_AJ28": [
-        [
-            "focus",
-            "you_apprentice",
-            "brooding",
-            "introspective",
-            "they_warrior",
-            "they_deputy",
-            "they_leader",
-            "they_older",
-            "platonic_like",
-            "you_blind",
-            "they_blind"
+    "war_focus_AJ28": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding",
+                "introspective"
+            ],
+            "age": [
+                "older"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy",
+                "leader"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[After coming down with a slight cold, you beg your mentor to let you skip the border patrol, afraid of infecting any of the warriors with your sickness.]",
             "[Just as m_n tells you that having the sniffles is no excuse to get out of your duties, t_c steps in.]",
             "I can go.",
@@ -1222,67 +2115,119 @@
             "[Just as you begin to stammer out your thanks, t_c silences you with a flick of {PRONOUN/t_c/poss} tail.]",
             "Don't get used to it. Just focus on getting well."
         ]
-    ],
-    "war_focus_AJ29": [
-        [
-            "focus",
-            "cool",
-            "platonic_like"
+    },
+    "war_focus_AJ29": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "cool"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[t_c watches a debate between r_m and r_w about the role of StarClan in the midst of the war, tail flicking in practiced disinterest.]",
             "If you ask me, I say sure, we still got our warrior ancestors in our corner. Why not? Plenty of dead guys up there, it's not like all of them would give up at once.",
             "Problem is, w_cClan's got no shortage of dead guys, either ...",
             "So, whaddaya think, y_c? Maybe we here in the land of the living should just take a break, let StarClan do all the fighting."
         ]
-    ],
-    "war_focus_AJ27~2": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "cool",
-            "platonic_like",
-            "they_warrior",
-            "they_apprentice",
-            "they_sameage"
+    },
+    "war_focus_AJ27~2": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "[d_n is swatting at t_c, insisting that {PRONOUN/d_n/poss} {VERB/d_n/know/knows} {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not really sick, and {PRONOUN/d_n/subject} {VERB/d_n/need/needs} all the warriors {PRONOUN/d_n/subject} can get for the next border patrol.]",
             "Y'know, have you tried yelling just a little louder? I feel like that'd <i>really</i> convince me.",
             "[With a grunt of effort, t_c sluggishly rises to {PRONOUN/t_c/poss} paws and shakes scraps of moss out of {PRONOUN/t_c/poss} fur.]",
-            "c_nClan's bravest little warrior. Reporting for duty.",
+            "c_n's bravest little warrior. Reporting for duty.",
             "Let's just get this over with so I can go back to napping."
         ]
-    ],
-    "war_focus_AJ27~3": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "cool",
-            "platonic_like",
-            "they_warrior",
-            "they_apprentice",
-            "they_sameage"
+    },
+    "war_focus_AJ27~3": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "[The camp is alive with whisperings of a skirmish on the latest border patrol, the same one that d_n forced t_c to participate in.]",
             "[As the warriors file in through the camp entrance, battered and bruised, t_c rushes in with {PRONOUN/t_c/poss} tail tucked between {PRONOUN/t_c/poss} legs, seemingly unharmed.]",
             "[You approach {PRONOUN/t_c/object}, expecting some pithy remark or witty comment about how pointless it was, but instead {PRONOUN/t_c/subject} simply {VERB/t_c/brush/brushes} past you and dart straight into {PRONOUN/t_c/poss} den.]",
             "[What was that all about?]"
         ]
-    ],
+    },
     "war_focus_AJ27~4": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
+        ],
         "tags": [
             "focus",
-            "connected",
-            "no_kit",
-            "cool",
-            "platonic_like",
-            "they_warrior",
-            "they_apprentice",
-            "they_sameage"
+            "connected"
         ],
         "intro": [
             "[Ever since the incident with the border patrol, t_c's been acting differently than usual.]",
@@ -1302,57 +2247,87 @@
             "choice3": {
                 "text": "[Ask someone else.]",
                 "next_scene": "gossip"
-            },
-            "confront": [
-                "[As t_c drags a piece of freshkill into {PRONOUN/t_c/poss} nest, you decide to ask {PRONOUN/t_c/object}, head-on, what happened on the border patrol.]",
-                "... I was forced to kill a nosy cat who was too stupid to mind {PRONOUN/t_c/poss} own business. Now leave me alone.",
-                "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pick/picks} up {PRONOUN/t_c/poss} piece of freshkill and {VERB/t_c/curl/curls} into a tight ball, closing {PRONOUN/t_c/self} off from the world. Clearly, whatever happened, {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} want to talk about it.]"
-            ],
-            "subtle": [
-                "[As t_c drags a piece of freshkill into {PRONOUN/t_c/poss} nest, you casually attempt to bring up that you heard something strange happened on the border patrol.]",
-                "... Was that your attempt at subtlety? Or are you really just so mouse-brained that you think you can pull one over on a master manipulator?",
-                "Nothing happened on that patrol that's of any interest to <i>you</i> at all, y_c. Now leave me alone.",
-                "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pick/picks} up {PRONOUN/t_c/poss} piece of freshkill and {VERB/t_c/curl/curls} into a tight ball, closing {PRONOUN/t_c/self} off from the world. Clearly, whatever happened, {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} want to talk about it.]"
-            ],
-            "gossip": [
-                "[You decide to ask r_w, another warrior on the patrol, what happened with t_c. {PRONOUN/r_w/subject/CAP} {VERB/r_w/tell/tells} you that {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} busy, but will have a conversation with you at the prey pile before nightfall.]",
-                "[However, as the sky darkens overhead, it's not r_w you find at the prey pile, but t_c!]",
-                "Never took you for such a gossip, y_c.",
-                "I have pull with practically everycat in this entire Clan. Did you seriously think something like this wouldn't get back to me?",
-                "You're never finding out what happened on that patrol. End. Of. Story."
-            ]
-        }
-    },
-    "war_focus_AJ27~5": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "cool",
-            "platonic_like",
-            "they_warrior",
-            "they_apprentice",
-            "they_sameage"
+            }
+        },
+        "confront": [
+            "[As t_c drags a piece of freshkill into {PRONOUN/t_c/poss} nest, you decide to ask {PRONOUN/t_c/object}, head-on, what happened on the border patrol.]",
+            "... I was forced to kill a nosy cat who was too stupid to mind {PRONOUN/t_c/poss} own business. Now leave me alone.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pick/picks} up {PRONOUN/t_c/poss} piece of freshkill and {VERB/t_c/curl/curls} into a tight ball, closing {PRONOUN/t_c/self} off from the world. Clearly, whatever happened, {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} want to talk about it.]"
         ],
-        [
+        "subtle": [
+            "[As t_c drags a piece of freshkill into {PRONOUN/t_c/poss} nest, you casually attempt to bring up that you heard something strange happened on the border patrol.]",
+            "... Was that your attempt at subtlety? Or are you really just so mouse-brained that you think you can pull one over on a master manipulator?",
+            "Nothing happened on that patrol that's of any interest to <i>you</i> at all, y_c. Now leave me alone.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pick/picks} up {PRONOUN/t_c/poss} piece of freshkill and {VERB/t_c/curl/curls} into a tight ball, closing {PRONOUN/t_c/self} off from the world. Clearly, whatever happened, {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} want to talk about it.]"
+        ],
+        "gossip": [
+            "[You decide to ask r_w, another warrior on the patrol, what happened with t_c. {PRONOUN/r_w/subject/CAP} {VERB/r_w/tell/tells} you that {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} busy, but will have a conversation with you at the prey pile before nightfall.]",
+            "[However, as the sky darkens overhead, it's not r_w you find at the prey pile, but t_c!]",
+            "Never took you for such a gossip, y_c.",
+            "I have pull with practically everycat in this entire Clan. Did you seriously think something like this wouldn't get back to me?",
+            "You're never finding out what happened on that patrol. End. Of. Story."
+        ]
+    },
+    "war_focus_AJ27~5": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
+        ],
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "[Shortly after t_c confronts you about the patrol, a Clan meeting is called to discuss the war.]",
             "[l_n updates everycat on territories, borders, and diplomacy, making scathing comments all the while about what a disappointing lack of loyalty <i>certain</i> warriors have shown to their Clan.]",
             "[Even though you can't be sure, you're sure {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} looking right at t_c while {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} doing it.]",
             "[After the meeting ends, t_c slinks out of camp with {PRONOUN/t_c/poss} head held low, shame rippling off {PRONOUN/t_c/poss} pelt like brutal waves of greenleaf heat.]"
         ]
-    ],
-    "war_focus_AJ27~6": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "cool",
-            "platonic_like",
-            "they_warrior",
-            "they_apprentice",
-            "they_sameage"
+    },
+    "war_focus_AJ27~6": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "[After the Clan meeting, you find t_c sulking in a tree near the w_cClan border.]",
             "[Though {PRONOUN/t_c/subject} {VERB/t_c/acknowledge/acknowledges} you with a flick of {PRONOUN/t_c/poss} tail, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} unaffected by your presence.]",
             "Sure are one persistent little mouse-brain, aren't you? Don't you have your own life to worry about?",
@@ -1367,19 +2342,34 @@
             "Why am I like this?",
             "[You're unsure who t_c is asking: you, or {PRONOUN/t_c/self}.]"
         ]
-    ],
-    "war_focus_AJ27~7": [
-        [
-            "focus",
-            "connected",
-            "no_kit",
-            "cool",
-            "platonic_like",
-            "they_warrior",
-            "they_apprentice",
-            "they_sameage"
+    },
+    "war_focus_AJ27~7": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "sameage",
+                "not_kitten"
+            ],
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus",
+            "connected"
+        ],
+        "intro": [
             "[It's been a few days since your conversation with t_c at the tree. Since then, things have mostly seemed to go back to normal. t_c is guarded when it matters, witty when it doesn't.]",
             "[But sometimes, in idle moments, you catch {PRONOUN/t_c/object} slinking out of the elder's den, face guarded beneath a paw, or repairing the warrior's den, pelt tangled with brambles.]",
             "[Once, after delighting the kits with a wild fantasy about {PRONOUN/t_c/poss} past, r_q purrs what a selfless cat {PRONOUN/t_c/subject} {VERB/t_c/are/is} to take the time out of {PRONOUN/t_c/poss} day to visit the nursery.]",
@@ -1390,128 +2380,234 @@
             "[You only see it in glimpses, but when you do, all you can do is fear for it, just as t_c does.]",
             "[Maybe, if you had to live with that, you would've clung to that tree branch, too.]"
         ]
-    ],
-    "war_focus_AJ30": [
-        [
-            "focus",
-            "any",
-            "brooding",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_AJ30": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "No matter what happens ... No matter what ends up happening with this war ...",
-            "I will keep c_nClan safe."
+            "I will keep c_n safe."
         ]
-    ],
-    "war_focus_AJ31": [
-        [
-            "focus",
-            "you_kitten",
-            "cool",
-            "unabashed",
-            "brooding",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_AJ31": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "unabashed",
+                "cool",
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
-            "[You ask t_c if it's true that StarClan will stop any c_nClan cats from getting hurt in the war.]",
+        "intro": [
+            "[You ask t_c if it's true that StarClan will stop any c_n cats from getting hurt in the war.]",
             "Oh, StarClan, no, that's not true at all. Who told you that? All of us could die in a million different horrific ways at any moment.",
             "Hey - why are you looking at me like that, r_q? The kit asked!"
         ]
-    ],
-    "war_focus_AJ32": [
-        [
-            "focus",
-            "you_kitten",
-            "assertive",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_AJ32": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Don't worry about all this scary war talk, squirt. Those big, bad cats aren't gonna be able to lay a paw on you if I have anything to say about it!"
         ]
-    ],
-    "war_focus_Guy1": [
-        [
-            "focus",
-            "they_apprentice",
-            "littermate",
-            "they_ill",
-            "they_injured",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_Guy1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "illness:any",
+                "injury:any"
+            ],
+            "status": [
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "littermate"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Can you believe this, y_c? They won't let me fight!",
             "It was almost perfect too. I was going to win the war, just like in those stories the queens told us.",
             "You gotta help me... go tell r_m to fix me faster!"
         ]
-    ],
-    "war_focus_Guy2": [
-        [
-            "focus",
-            "you_warrior",
-            "you_apprentice",
-            "from_parent",
-            "they_formerlyaloner",
-            "they_formerlyarogue",
-            "they_formerlyakittypet",
-            "they_formerlyaoutsider",
-            "they_outsiderroots",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_Guy2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "backstory": [
+                "outsiderroots",
+                "formerlyaloner",
+                "formerlyarogue",
+                "formerlyakittypet",
+                "formerlyaoutsider"
+            ]
+        },
+        "relationship": [
+            "from_parent"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "... we are a part of this Clan now, yes, but this is not our war.",
             "I'm sorry, y_c. I thought we would be safe here."
         ]
-    ],
-    "war_focus_Guy3": [
-        [
-            "focus",
-            "you_mediator",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_Guy3": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "We know you're trying your best, y_c."
         ]
-    ],
-    "war_focus_Guy4": [
-        [
-            "focus",
-            "you_medicine_cat_apprentice",
-            "they_medicine_cat"
+    },
+    "war_focus_Guy4": {
+        "y_c": {
+            "status": [
+                "medicine cat apprentice"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "medicine cat"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "Well, on the bright side, you're going to get a lot of training.",
             "[t_c smiles despite your shared exhaustion.]"
         ]
-    ],
-    "war_focus_Guy5": [
-        [
-            "focus",
-            "they_medicine_cat",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_Guy5": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "medicine cat"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "I really don't have time to talk. I need to stock up on herbs... This silly spat will suck the land dry."
         ]
-    ],
-    "sweet_war_focus_1ps": [
-        [
-            "focus",
-            "no_kit",
-            "sweet",
-            "you_medicine_cat",
-            "they_warrior",
-            "sweet",
-            "you_blind",
-            "they_blind"
+    },
+    "sweet_war_focus_1ps": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "medicine cat"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet",
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c quickly moves into your den, dropping some herbs {PRONOUN/t_c/subject}'d helped gather whilst on the way back.]",
             "There was almost a fight at the border... I managed to deescalate before anyone got hurt.",
             "...",
@@ -1520,239 +2616,445 @@
             "Temporarily, yes, but...",
             "I cannot stand seeing my Clanmates suffer and being unable to do anything about it besides cause more suffering for w_cClan."
         ]
-    ],
-    "war_focusdf_SQ1": [
-        [
-            "focus",
-            "they_not_dftrainee",
-            "you_dftrainee",
-            "no_kit",
-            "you_warrior",
-            "you_apprentice",
-            "you_deputy",
-            "you_leader",
-            "platonic_love",
-            "they_blind",
-            "you_deaf",
-            "they_deaf"
+    },
+    "war_focusdf_SQ1": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader",
+                "df_trainee"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
+            ],
+            "status": [
+                "not_df_trainee"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[You've seen some w_cClan warriors training in the Dark Forest. You bristle at the thought of those tactics being used against cats like t_c.]",
             "[...you'll just have to make sure those warriors never get the chance.]"
         ]
-    ],
-    "war_focusdf_SQ2": [
-        [
+    },
+    "war_focusdf_SQ2": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy",
+                "leader"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "df_trainee"
+            ]
+        },
+        "tags": [
             "focus",
-            "they_dftrainee",
-            "you_not_dftrainee",
-            "they_warrior",
-            "they_apprentice",
-            "you_warrior",
-            "you_apprentice",
-            "you_deputy",
-            "you_leader",
-            "they_blind",
-            "you_deaf",
-            "they_deaf"
+            "you_not_dftrainee"
         ],
-        [
+        "intro": [
             "[On patrol with t_c and r_w today, you were ambushed by a small group of w_cClan warriors.]",
             "[One of the w_cClan cats seemed... familiar with t_c, mocking {PRONOUN/t_c/object} and almost exclusively targeting {PRONOUN/t_c/object}.]",
             "[You wonder what that's all about.]"
         ]
-    ],
-    "war_focusdf_SQ3": [
-        [
-            "focus",
-            "assertive",
-            "brooding",
-            "unlawful",
-            "they_dftrainee",
-            "you_dftrainee",
-            "no_kit"
+    },
+    "war_focusdf_SQ3": {
+        "y_c": {
+            "status": [
+                "df_trainee"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "brooding"
+            ],
+            "status": [
+                "df_trainee"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c slides {PRONOUN/t_c/poss} claws in and out.]",
             "War with w_cClan. This is what we've been training for.",
             "[From {PRONOUN/t_c/poss} knowing glance your way, you don't think {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} talking about ordinary training.]"
         ]
-    ],
-    "war_focusdf_SQ4": [
-        [
-            "focus",
-            "they_dftrainee",
-            "you_dftrainee",
-            "no_kit",
-            "platonic_like",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focusdf_SQ4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "df_trainee"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "df_trainee"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Be careful training tonight. I really think some of those w_cClan warriors are out for blood.",
             "[In the Dark Forest, w_cClan trainees have been even rougher than usual.]",
             "[You think your mentors are pairing you against each other on purpose, just to see what happens.]"
         ]
-    ],
-    "war_focusdf_SQ5": [
-        [
-            "focus",
-            "they_not_dftrainee",
-            "you_dftrainee",
-            "you_apprentice",
-            "you_warrior",
-            "you_deputy",
-            "you_leader",
-            "platonic_like"
+    },
+    "war_focusdf_SQ5": {
+        "y_c": {
+            "status": [
+                "apprentice",
+                "warrior",
+                "deputy",
+                "leader",
+                "df_trainee"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "not_df_trainee"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[t_c stares at your scratches from last night's Dark Forest training.]",
             "Are those from w_cClan? What happened?!",
             "[The war is a unexpectedly good cover for your unexplained injuries...]"
         ]
-    ],
-    "war_focusdf_SQ6": [
-        [
-            "focus",
-            "any",
-            "they_dftrainee",
-            "they_neurotic",
-            "you_dftrainee",
-            "platonic_like",
-            "trust",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focusdf_SQ6": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "df_trainee"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "df_trainee"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_trust_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "When I started training in the Dark Forest, I told myself I was going to learn to be brave there.",
             "And I think... I think I'm braver now, but it's obviously not enough, is it?",
             "I'm still scared of this war."
         ]
-    ],
-    "neurotic_warfocus_SQ14": [
-        [
+    },
+    "neurotic_warfocus_SQ14": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
             "focus",
-            "they_queen",
-            "they_queen's_apprentice",
-            "they_neurotic",
-            "no_kit",
-            "clan_has_kits",
-            "you_blind",
-            "they_blind"
+            "clan_has_kits"
         ],
-        [
+        "intro": [
             "r_k keeps asking about the war, and I'm not sure what to tell {PRONOUN/r_k/object}.",
             "I don't want to scare {PRONOUN/r_k/object}, but I don't want to pretend everything's fine, either.",
             "And I also don't want {PRONOUN/r_k/object} to grow up thinking violence is the only answer...",
             "I hope all of this ends soon."
         ]
-    ],
-    "neurotic_warfocus_SQ15": [
-        [
+    },
+    "neurotic_warfocus_SQ15": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
             "focus",
-            "they_queen",
-            "they_queen's_apprentice",
-            "they_neurotic",
-            "no_kit",
             "clan_has_kits"
         ],
-        [
+        "intro": [
             "[t_c sits outside of the nursery like a guard, anxiously scanning the edge of camp. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps} when r_k prods {PRONOUN/t_c/object} with one paw.]",
             "Oh, hello! I'll come play in a moment.",
             "What am I doing? Just... keeping watch for a bit. Go back inside, okay?"
         ]
-    ],
-    "neurotic_warfocus_SQ16": [
-        [
-            "focus",
-            "they_queen",
-            "they_queen's_apprentice",
-            "they_neurotic",
-            "you_medicine_cat",
-            "you_medicine_cat_apprentice",
-            "you_blind",
-            "they_blind"
+    },
+    "neurotic_warfocus_SQ16": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "I'm really sorry, but could you come check on r_k? {PRONOUN/r_k/subject/CAP} tripped when playing and got a bit scraped up.",
             "I know you're busy and saving your supplies for the war, but I want to make sure {PRONOUN/r_k/subject}{VERB/r_k/'re/'s} okay."
         ]
-    ],
-    "neurotic_warfocus_SQ17": [
-        [
-            "focus",
-            "they_queen",
-            "they_queen's_apprentice",
-            "they_neurotic",
-            "you_kitten",
-            "you_blind"
+    },
+    "neurotic_warfocus_SQ17": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "And what do you do if you see a cat you don't recognize around camp?",
             "You don't talk to them, right? You find me or another adult, even if we're busy or asleep.",
             "[Beside you, r_k kicks at a pebble. t_c's eyes narrow.]",
             "It's important you listen to this, okay? I need you to stay safe."
         ]
-    ],
-    "neurotic_warfocus_SQ18": [
-        [
+    },
+    "neurotic_warfocus_SQ18": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
+        ],
+        "tags": [
             "focus",
-            "they_queen",
-            "they_queen's_apprentice",
-            "they_neurotic",
-            "you_adult",
-            "platonic_like",
             "clan_has_kits"
         ],
-        [
+        "intro": [
             "[t_c's gaze flicks from the nursery to the camp entrance, and back again.]",
             "Even if they attacked the camp, w_cClan wouldn't hurt kits, right? Right?",
             "[Something about t_c's wide eyes tells you that {PRONOUN/t_c/subject}'ll worry regardless of your answer.]"
         ]
-    ],
-    "neurotic_warfocus_SQ19": [
-        [
-            "focus",
-            "they_mediator_apprentice",
-            "they_neurotic",
-            "no_kit",
-            "platonic_like"
+    },
+    "neurotic_warfocus_SQ19": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "mediator apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[You find t_c slumped on the edge of camp, {PRONOUN/t_c/poss} tail flicking as {PRONOUN/t_c/subject} {VERB/t_c/watch/watches} l_n and d_n discuss the ongoing war.]",
             "It's my job to help end this war.",
             "But... But I just started! I don't know anything! I really think I'll just make things worse."
         ]
-    ],
-    "neurotic_warfocus_SQ20": [
-        [
-            "they_neurotic",
-            "they_queen",
-            "they_queen's_apprentice",
-            "focus",
-            "you_any",
-            "they_blind",
-            "you_deaf"
+    },
+    "neurotic_warfocus_SQ20": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "queen",
+                "queen's apprentice"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[You notice t_c in the nursery, {PRONOUN/t_c/poss} ears pricked as {PRONOUN/t_c/subject} {VERB/t_c/listen/listens} to l_n and d_n discuss battle plans on the other side of the wall.]",
             "[As t_c wraps {PRONOUN/t_c/poss} tail around r_k, you realize {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} shaking.]"
         ]
-    ],
-    "war_focus_sh_J1": [
-        [
-            "focus",
-            "you_shunned",
-            "you_warrior",
-            "you_deputy",
-            "no_kit",
-            "they_deputy",
-            "they_warrior",
-            "assertive",
-            "platonic_like",
-            "they_blind"
+    },
+    "war_focus_sh_J1": {
+        "y_c": {
+            "shunned": true,
+            "status": [
+                "warrior",
+                "deputy"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "deputy",
+                "warrior"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "[t_c stumbles into camp after a border patrol, covered in fresh scratches.]",
             "Three more warriors to the w_cClan border!",
             "[At {PRONOUN/t_c/poss} call, several on-guard warriors rush out the entrance to help with the skirmish. You lift your head, but t_c's gaze shoots you down.]",
@@ -1761,18 +3063,28 @@
             "Though, maybe you could use the war as a chance to redeem yourself...",
             "Hm. You know what? I'll talk to l_n."
         ]
-    ],
-    "war_focus_sh_J2": [
-        [
-            "focus",
-            "you_shunned",
-            "you_medicine_cat",
-            "they_warrior",
-            "they_deputy",
-            "they_apprentice",
-            "they_blind"
+    },
+    "war_focus_sh_J2": {
+        "y_c": {
+            "shunned": true,
+            "status": [
+                "medicine cat"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy",
+                "apprentice"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[Since you're not allowed to work right now, you're sat at the edge of camp, watching the medicine den from afar as injured warriors mill in and out.]",
             "Hey, y_c?",
             "[You turn your head. t_c hops up to you with a wound on {PRONOUN/t_c/poss} foreleg.]",
@@ -1780,107 +3092,184 @@
             "Hm? Yes, of course I trust you. You're still a medicine cat.",
             "[You know it's not the time, so you stifle your smile as you examine t_c's injury.]"
         ]
-    ],
-    "war_focus_sh_J3": [
-        [
-            "focus",
-            "they_shunned",
-            "you_warrior",
-            "you_deputy",
-            "you_leader",
-            "they_deputy",
-            "they_warrior",
-            "they_leader",
-            "brooding",
-            "assertive",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_sh_J3": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy",
+                "leader"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "status": [
+                "deputy",
+                "warrior",
+                "leader"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "No, no, y_c, I'm not helping.",
             "You don't deserve my assistance when the whole Clan has been treating me like mouse-dung lately.",
             "I'll help with the war when I get to sleep in my den again."
         ]
-    ],
-    "war_focus_sh_J4": [
-        [
-            "focus",
-            "they_kitten",
-            "any",
-            "you_shunned",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_sh_J4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "y_c, aren't you in trouble because you hurt someone really bad?",
             "Well, all of the warriors are saying they're going and hurting those w_cClan cats. So why aren't they in trouble, too?",
             "And why aren't they in trouble for hurting us?"
         ]
-    ],
-    "war_focus_sh_J5": [
-        [
-            "focus",
-            "they_apprentice",
-            "you_apprentice",
-            "you_shunned",
-            "they_blind"
+    },
+    "war_focus_sh_J5": {
+        "y_c": {
+            "shunned": true,
+            "status": [
+                "apprentice"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "apprentice"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c stumbles into camp, out of breath and bleeding.]",
             "You're, uh... you're lucky you get to skip out on this, y_c.",
             "[You watch sadly as {PRONOUN/t_c/subject} {VERB/t_c/stumble/stumbles} to the medicine den.]"
         ]
-    ],
-    "war_focus_sh_J6": [
-        [
-            "focus",
-            "they_leader",
-            "any",
-            "you_shunned",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_sh_J6": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "leader"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "I don't know what to do... I don't know what to do...",
             "[t_c seems stressed about the war. You decide not to interrupt.]"
         ]
-    ],
-    "war_focus_sh_J7": [
-        [
-            "focus",
-            "you_shunned",
-            "they_shunned",
-            "no_kit",
-            "they_adult",
-            "you_warrior",
-            "you_deputy",
-            "you_medicine_cat",
-            "they_warrior",
-            "they_deputy",
-            "they_medicine_cat",
-            "brooding",
-            "cool",
-            "introspective",
-            "unabashed",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_sh_J7": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "status": [
+                "warrior",
+                "deputy",
+                "medicine cat"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "unabashed",
+                "cool",
+                "brooding",
+                "introspective"
+            ],
+            "age": [
+                "adult",
+                "not_kitten"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "status": [
+                "warrior",
+                "deputy",
+                "medicine cat"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "I bet the Clan wishes we were allowed to help 'em out now, huh?",
             "If we lose this war, they're gonna regret kicking us to the side."
         ]
-    ],
+    },
     "war_focus_J3": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet",
+                "silly",
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "apprentice"
+            ]
+        },
+        "relationship": [
+            "from_your_apprentice"
+        ],
         "tags": [
-            "focus",
-            "from_your_apprentice",
-            "you_warrior",
-            "they_apprentice",
-            "silly",
-            "sweet",
-            "neurotic",
-            "you_blind",
-            "they_blind"
+            "focus"
         ],
         "intro": [
             "y_c, this is so hard! Can we please stay in camp today?",
@@ -1906,32 +3295,58 @@
             "I knew I should've become a queen..."
         ]
     },
-    "war_focus_J4": [
-        [
-            "focus",
-            "from_mentor",
-            "you_apprentice",
-            "they_warrior",
-            "they_deputy",
-            "you_blind",
-            "they_blind"
+    "war_focus_J4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "apprentice"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy"
+            ]
+        },
+        "relationship": [
+            "from_mentor"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "y_c, wake up. l_n needs more cats at the w_cClan border.",
             "[You feel like your eyes have only been closed for a second. Exhausted, you wobble to your paws.]",
             "I know, kiddo. I'm sorry.",
             "Hopefully this will be over soon."
         ]
-    ],
-    "war_focus_J5": [
-        [
-            "focus",
-            "you_leader",
-            "they_warrior",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_J5": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "leader"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "y_c! There you are. A patrol of w_cClan cats has been spotted at the edge of the territory. Shall I send out a patrol?",
             "Oh, r_m also needs a patrol escort to collect some more herbs.",
             "|r_c|y_c! There's hardly any prey left, where's d_n?",
@@ -1939,139 +3354,248 @@
             "[Overwhelmed, you stammer out a response to t_c and race to your den before {PRONOUN/t_c/subject} can follow up.]",
             "[You feel as though this war has aged you twenty moons.]"
         ]
-    ],
-    "war_focus_J6": [
-        [
-            "focus",
-            "you_dead",
-            "they_sc",
-            "no_kit"
+    },
+    "war_focus_J6": {
+        "y_c": {
+            "dead": [
+                "any"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "dead": [
+                "sc"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
-            "[You and t_c watch the cats of c_nClan swarm around camp like ants amidst the stress of the war.]",
+        "intro": [
+            "[You and t_c watch the cats of c_n swarm around camp like ants amidst the stress of the war.]",
             "They keep asking us for help, but I don't know what to do..."
         ]
-    ],
-    "war_focus_J7": [
-        [
-            "focus",
-            "you_df",
-            "they_dead",
-            "any",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_J7": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "dead": [
+                "df"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "dead": [
+                "any"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
-            "c_nClan is really struggling with this war.",
+        "intro": [
+            "c_n is really struggling with this war.",
             "You're enjoying this, aren't you?"
         ]
-    ],
-    "war_focus_J8": [
-        [
-            "focus",
-            "they_df",
-            "you_dftrainee",
-            "any",
-            "unabashed",
-            "upstanding",
-            "assertive",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_J8": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "df_trainee"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "dead": [
+                "df"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "So, which side are you fighting on?",
             "What? It's an honest question. Training here already means you're a bit disloyal, doesn't it?"
         ]
-    ],
-    "war_focus_J9": [
-        [
+    },
+    "war_focus_J9": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "dead": [
+                "any"
+            ],
+            "status": [
+                "kitten",
+                "newborn"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "dead": [
+                "any"
+            ]
+        },
+        "tags": [
             "focus",
-            "you_kitten",
-            "newborn",
-            "you_dead",
-            "they_dead",
             "they_kittypet",
             "they_rogue",
-            "they_loner",
-            "you_blind",
-            "they_blind"
+            "they_loner"
         ],
-        [
+        "intro": [
             "Ah, you never got old enough to have to deal with all of this... Clancat violence, did you?",
             "Maybe that's a good thing... I know you probably miss your Clan, but... yikes..."
         ]
-    ],
-    "war_focus_J10": [
-        [
-            "focus",
-            "they_adult",
-            "you_warrior",
-            "you_apprentice",
-            "you_deputy",
-            "you_bloodthirsty",
-            "you_vengeful",
-            "neutral",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_J10": {
+        "y_c": {
+            "cluster": [
+                "bloodthirsty",
+                "vengeful"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "apprentice",
+                "deputy"
+            ]
+        },
+        "t_c": {
+            "age": [
+                "adult"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "neutral"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Whoa, y_c! Are you okay?",
             "[t_c stops you as you waltz back into camp after a fight with a patrol from w_cClan, covered in blood.]",
             "[You let {PRONOUN/t_c/object} know that it's not yours.]",
             "O-oh... alright. Glad you're okay."
         ]
-    ],
-    "war_focus_J11": [
-        [
-            "focus",
-            "they_leader",
-            "any",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_J11": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "leader"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "I don't know what to do... I don't know what to do...",
             "[t_c seems stressed about the war. You decide not to interrupt.]"
         ]
-    ],
-    "war_focus_J12": [
-        [
-            "focus",
-            "they_mediator",
-            "no_kit",
-            "any",
-            "you_warrior",
-            "you_medicine_cat",
-            "you_queen",
-            "you_apprentice",
-            "you_medicine_cat_apprentice",
-            "you_queen's_apprentice",
-            "you_blind",
-            "they_blind"
+    },
+    "war_focus_J12": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "medicine cat",
+                "queen",
+                "apprentice",
+                "medicine cat apprentice",
+                "queen's apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "tags": [
+            "focus"
         ],
-        [
+        "intro": [
             "[t_c is in an involved conversation with l_n about war strategies. You try to interject with an idea.]",
             "y_c, I can't talk. We're busy.",
             "[Did {PRONOUN/t_c/subject} even hear what you said?]"
         ]
-    ],
-    "unabashed_war_SV1": [
-        [
-            "they_unabashed",
-            "they_cool",
-            "they_clean",
-            "platonic_like",
-            "platonic_love",
-            "comfort",
-            "focus",
-            "no_kit",
-            "you_blind"
+    },
+    "unabashed_war_SV1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "unabashed",
+                "cool"
+            ],
+            "age": [
+                "not_kitten"
+            ],
+            "skill": [
+                "CLEAN,1"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_platonic_50",
+            "min_comfort_50"
         ],
-        [
+        "tags": [
+            "focus"
+        ],
+        "intro": [
             "Wow, you look like you've been in the center of a storm. Yeesh.",
             "Listen, I know we're all exhausted from the fighting and whatnot, but that's no excuse for you to look like a porcupine.",
             "[Without warning, t_c pulls you in and immediately starts tending to your fur.]",
             "Now hold still, I'm about to give you the makeover of your life. Resistance is futile!"
         ]
-    ]
+    }
 }

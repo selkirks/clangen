@@ -320,7 +320,7 @@ class Pelt:
     "FROG FRIEND", "COWBOY HAT", "BUNNY HAT", "WINTER HAT", "PARTY HAT", "SANTA HAT",
     "BANANA HAT", "BAT WING SUIT", "PINK BOWTIE", "GRAY BOWTIE", "PINK SCARF",
     "MOON", "MERCURY", "MARS", "JUPITER", "VENUS", "TUXEDO MASK",
-    "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL"]
+    "URANUS", "NEPTUNE", "PLUTO", "SATURN", "MINI MOON", "CRYSTAL BALL", 'MOONHAT']
 
     tail2_accessories = ["SEAWEED", "DAISY CORSAGE"]
 
@@ -458,7 +458,7 @@ class Pelt:
         self.points = points
         self.accessory = accessory
         self.accessories = accessories if accessories is not None else []
-        self.inventory = inventory
+        self.inventory = inventory if inventory is not None else []
         self.paralyzed = paralyzed
         self.opacity = opacity
         self.scars = scars if isinstance(scars, list) else []
@@ -529,8 +529,8 @@ class Pelt:
     def check_and_convert(self, convert_dict):
         """Checks for old-type properties for the appearance-related properties
         that are stored in Pelt, and converts them. To be run when loading a cat in. """
-        
-        # First, convert from some old names that may be in white_patches. 
+
+        # First, convert from some old names that may be in white_patches.
         if self.white_patches == 'POINTMARK':
             self.white_patches = "SEALPOINT"
         elif self.white_patches == 'PANTS2':
@@ -539,11 +539,11 @@ class Pelt:
             self.white_patches = 'ANYTWO'
         elif self.white_patches == "VITILIGO2":
             self.white_patches = "VITILIGOTWO"
-            
+
         if self.vitiligo == "VITILIGO2":
             self.vitiligo = "VITILIGOTWO"
 
-        # Move white_patches that should be in vit or points. 
+        # Move white_patches that should be in vit or points.
         if self.white_patches in Pelt.vit:
             self.vitiligo = self.white_patches
             self.white_patches = None
@@ -604,8 +604,16 @@ class Pelt:
             self.pattern = "MINIMALTHREE"
         elif self.pattern == "MINIMAL4":
             self.pattern = "MINIMALFOUR"
-        
+
     def init_eyes(self, parents):
+        """ Sets eye color for this cat's pelt. Takes parents' eye colors into account.
+        Heterochromia is possible based on the white-ness of the pelt, so the pelt color and white_patches must be
+        set before this function is called.
+
+        :param parents: List[Cat] representing this cat's parents
+
+        :return: None
+        """
         if not parents:
             self.eye_colour = choice(Pelt.eye_colours)
         else:
@@ -899,10 +907,10 @@ class Pelt:
         return chosen_white
 
     def init_pattern_color(self, parents, gender) -> bool:
-        """Inits self.name, self.colour, self.length, 
-            self.tortiebase and determines if the cat 
-            will have white patche or not. 
-            Return TRUE is the cat should have white patches, 
+        """Inits self.name, self.colour, self.length,
+            self.tortiebase and determines if the cat
+            will have white patche or not.
+            Return TRUE is the cat should have white patches,
             false is not. """
 
         if parents:
@@ -1244,8 +1252,8 @@ class Pelt:
         if self.points and self.white_patches in [Pelt.high_white, Pelt.mostly_white, 'FULLWHITE']:
             self.points = None
 
-    def init_white_patches(self, pelt_white, parents:tuple):
-        # Vit can roll for anyone, not just cats who rolled to have white in their pelt. 
+    def init_white_patches(self, pelt_white, parents: tuple):
+        # Vit can roll for anyone, not just cats who rolled to have white in their pelt.
         par_vit = []
         for p in parents:
             if p:
@@ -1257,7 +1265,7 @@ class Pelt:
             self.vitiligo = choice(Pelt.vit)
 
         # If the cat was rolled previously to have white patches, then determine the patch they will have
-        # these functions also handle points. 
+        # these functions also handle points.
         if pelt_white:
             if parents:
                 self.white_patches_inheritance(parents)

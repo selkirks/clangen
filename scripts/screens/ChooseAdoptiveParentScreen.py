@@ -918,7 +918,7 @@ class ChooseAdoptiveParentScreen(Screens):
             and inter_cat.moons - self.the_cat.moons
             >= 14  # Adoptive parent must be at least 14 moons older. -> own child can't adopt you
             and inter_cat.ID
-            not in self.the_cat.mate  # Can't set your mate your adoptive parent.
+            not in self.the_cat.mates  # Can't set your mate your adoptive parent.
             and inter_cat.ID
             not in self.the_cat.get_parents()  # Adoptive parents can't already be their parent
             and not inter_cat.no_kits
@@ -943,8 +943,8 @@ class ChooseAdoptiveParentScreen(Screens):
         It checks the potential parent is a relative of your mate.
         Return if the cat is a possible adoptive parent.
         """
-        if len(self.the_cat.mate) > 0:
-            for mate_id in self.the_cat.mate:
+        if len(self.the_cat.mates) > 0:
+            for mate_id in self.the_cat.mates:
                 mate = Cat.fetch_cat(mate_id)
                 mate_relatives = mate.get_relatives()
                 if possible_parent.ID in mate_relatives:
@@ -959,7 +959,7 @@ class ChooseAdoptiveParentScreen(Screens):
             ob = Cat.fetch_cat(x)
             if not isinstance(ob, Cat):
                 continue
-            if other_cat.ID in ob.mate:
+            if other_cat.ID in ob.mates:
                 return True
 
         return False

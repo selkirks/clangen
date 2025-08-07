@@ -1,12 +1,22 @@
 {
-    "unabashed mediator apprentice1": [
-        [
-            "unabashed",
-            "mediator_apprentice",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    "unabashed mediator apprentice1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "unabashed"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Oh, hi.",
             "You know, that argument you had today with r_w was stupid.",
             "You were both entitled. And you didn't end it, which doesn't make you better than {PRONOUN/r_w/object}.",
@@ -14,19 +24,38 @@
             "You were spitting words at each other for nothing. It was uncalled for.",
             "And I'm not afraid to tell you so."
         ]
-    ],
-    "assertivemediator_comfort": [
-        [
-            "assertive",
-            "you_any",
-            "they_mediator_apprentice",
-            "comfort",
-            "platonic_love",
-            "no_kit",
-            "you_blind",
-            "they_blind"
+    },
+    "assertivemediator_comfort": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "any"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50",
+            "min_comfort_50"
         ],
-        [
+        "intro": [
             "Huh? Oh, nothing's wrong ...",
             "Just ... had a bad day, is all ...",
             "*Sigh* y_c, have you ever felt like you're not enough for anyone?",
@@ -36,93 +65,146 @@
             "[You offer t_c words of reassurance, but {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} troubled beyond comforting.]",
             "[Still, you sit with {PRONOUN/t_c/object} through the night, hoping to stabilize {PRONOUN/t_c/object} through whatever storm {PRONOUN/t_c/subject} might be weathering right now.]"
         ]
-    ],
-    "brooding_mediator": [
-        [
-            "no_kit",
-            "Any",
-            "they_blind"
-        ],
-        [
+    },
+    "brooding_mediator": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "intro": [
             "Oh, y_c. l_n has been wanting to see you about your performance.",
             "Is it good or bad ...?",
             "Sorry. Couldn't tell you. You'll have to go see for yourself."
         ]
-    ],
-    "brooding_mediator_aboutneurotic": [
-        [
-            "brooding",
-            "no_kit",
+    },
+    "brooding_mediator_aboutneurotic": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
             "min_trust_30"
         ],
-        [
-            "I swear to StarClan, next time r_w_neurotic comes to me asking for assurance that some random cat doesn't hate {PRONOUN/r_w_neurotic/object}, I just might have to claw my own ears off.",
-            "I tell {PRONOUN/r_w_neurotic/object} over and over, 'all you have to do is ask', but {PRONOUN/r_w_neurotic/subject} never {VERB/r_w_neurotic/do/does}. Just {VERB/r_w_neurotic/apologize/apologizes} over and over for stuff {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/don't/doesn't} know {PRONOUN/r_w_neurotic/subject} even did.",
+        "intro": [
+            "I swear to StarClan, next time r_w-neurotic comes to me asking for assurance that some random cat doesn't hate {PRONOUN/r_w-neurotic/object}, I just might have to claw my own ears off.",
+            "I tell {PRONOUN/r_w-neurotic/object} over and over, 'all you have to do is ask', but {PRONOUN/r_w-neurotic/subject} never {VERB/r_w-neurotic/do/does}. Just {VERB/r_w-neurotic/apologize/apologizes} over and over for stuff {PRONOUN/r_w-neurotic/subject} {VERB/r_w-neurotic/don't/doesn't} know {PRONOUN/r_w-neurotic/subject} even did.",
             "How can any cat outside of the nursery possibly be so debilitatingly insecure?"
         ]
-    ],
-    "brooding_medapp": [
-        [
-            "Any",
-            "from_your_apprentice",
-            "brooding",
+    },
+    "brooding_medapp": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50",
             "neutral",
-            "dislike",
-            "you_blind",
-            "they_blind"
+            "from_your_apprentice"
         ],
-        [
+        "intro": [
             "Hm? What's that, y_c?",
             "You ... want us to do a bonding exercise, to get to know each other better as mentor and apprentice?",
             "Ha. Please.",
             "[t_c stalks off before you can even finish explaining the exercise. Clearly, you'll need to find another way of getting through to {PRONOUN/t_c/object} ...]"
         ]
-    ],
-    "brooding_medapp_2": [
-        [
-            "Any",
-            "from_your_apprentice",
-            "brooding",
+    },
+    "brooding_medapp_2": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50",
             "neutral",
-            "dislike",
-            "they_blind"
+            "from_your_apprentice"
         ],
-        [
+        "intro": [
             "[You notice your apprentice is looking a little stressed, and ask {PRONOUN/t_c/object} how {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} feeling.]",
             "Um ... Are you serious?",
             "Look, can we get one thing straight, y_c? I'm your apprentice, you're my mentor, that's it. That's all this has to be.",
             "We don't need to get into any of the 'feelings' stuff, because it really isn't necessary. Got it?",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/storm/storms} off, lashing {PRONOUN/t_c/poss} tail. If that isn't the most brutal little cat you've ever met in your life ...]"
         ]
-    ],
-    "brooding_mediatorapp": [
-        [
-            "brooding",
-            "upstanding",
-            "warrior",
-            "queen",
-            "deputy",
-            "leader",
-            "medicine_cat",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "brooding_mediatorapp": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "queen",
+                "deputy",
+                "leader",
+                "medicine cat"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "What do you need, y_c? Who are you upset with?",
             "No one?",
             "... Then don't waste my time.",
             "[For such a young cat, t_c sure doesn't mince words ...]"
         ]
-    ],
-    "brooding_mediatorapp_3": [
-        [
-            "brooding",
-            "dislike",
-            "any",
-            "you_blind",
-            "they_blind"
+    },
+    "brooding_mediatorapp_3": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
+        "intro": [
             "y_c? You're here again?",
             "No. I refuse. You always come here, always have some banal argument for me to mediate.",
             "Have you ever considered that maybe you're the problem?",
@@ -130,161 +212,258 @@
             "You're obnoxious, annoying, stupid and self-absorbed. There, that's the answer. Now, kindly leave me to go find something worth my time.",
             "[t_c just refused to help you out. But {PRONOUN/t_c/subject} can't do that ... Can {PRONOUN/t_c/subject}?]"
         ]
-    ],
-    "brooding_mediatorapp_4": [
-        [
-            "brooding",
-            "Any",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "brooding_mediatorapp_4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hm ...",
             "[For a mediator, t_c sure doesn't seem to talk much.]"
         ]
-    ],
-    "assertive_jealous1": [
-        [
-            "Any",
-            "sibling",
-            "half sibling",
-            "kitten",
+    },
+    "assertive_jealous1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50",
             "adopted_sibling",
-            "half sibling",
-            "dislike",
-            "assertive",
-            "you_blind",
-            "they_blind"
+            "sibling",
+            "half_sibling",
+            "half_sibling"
         ],
-        [
+        "intro": [
             "What did I do in a past life to wind up related to you, y_c?",
             "Must've been really terrible."
         ]
-    ],
-    "assertive_medapp1": [
-        [
-            "medicine_cat_apprentice",
-            "medicine_cat",
-            "assertive",
-            "unlawful",
-            "silly",
-            "you_blind"
-        ],
-        [
+    },
+    "assertive_medapp1": {
+        "y_c": {
+            "status": [
+                "medicine cat apprentice",
+                "medicine cat"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "silly"
+            ]
+        },
+        "intro": [
             "Hey, what does this herb do? Can I eat it?",
             "Haha, don't look so stressed! I was just joking."
         ]
-    ],
-    "assertiveapp_medapp3": [
-        [
-            "medicine_cat_apprentice",
-            "medicine_cat",
-            "assertive",
-            "silly",
-            "upstanding",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "assertiveapp_medapp3": {
+        "y_c": {
+            "status": [
+                "medicine cat apprentice",
+                "medicine cat"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "silly",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hey, y_c ... is it really true that you can talk to StarClan?",
             "Whoa! That's so cool! What does StarClan say that I'm gonna do? Am I gonna be strong? Am I destined for greatness?",
             "... It doesn't work like that? Awh. That's no fun.",
             "Well, if StarClan ever mentions me, you'll let me know, won't you?"
         ]
-    ],
-    "assertive_apprentice7": [
-        [
-            "no_kit",
-            "platonic_like",
-            "assertive",
-            "silly",
-            "you_blind",
-            "they_blind"
+    },
+    "assertive_apprentice7": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "intro": [
             "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
             "What? It's totally real, {PRONOUN/r_c/subject} wouldn't lie to me like that! I prommissseee."
         ]
-    ],
-    "assertive_1": [
-        [
-            "Any",
-            "assertive",
-            "stable",
-            "upstanding",
-            "unabashed",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "assertive_1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "stable",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "HEY!!! You leave them alone!",
             "Ugh. Can you believe how cruel some cats are, y_c? A bunch of apprentices were trying to convince these two kits to sneak into a badger den ... what a bunch of mouse-brains.",
             "No matter what, don't let anyone try to pressure you into doing something you don't think is right. Go with your gut, and stick to your own values. That's what's really important."
         ]
-    ],
-    "assertive_1_2": [
-        [
-            "Any",
-            "assertive",
-            "cool",
-            "they_clanfounder",
-            "they_clanborn",
-            "they_outsiderroots",
-            "they_half-Clan",
-            "they_orphaned",
-            "they_abandoned",
-            "newleaf",
-            "greenleaf",
+    },
+    "assertive_1_2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "cool"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "backstory": [
+                "clanfounder",
+                "outsiderroots",
+                "half-clan",
+                "orphaned",
+                "abandoned",
+                "clanborn"
+            ]
+        },
+        "season": [
             "leaffall",
-            "you_blind",
-            "they_blind"
+            "greenleaf",
+            "newleaf"
         ],
-        [
+        "intro": [
             "Hey there, y_c! Not bad weather today, hm?",
             "Sun on my pelt, wind in my fur ... Could you imagine being a kittypet and having to be cooped up in a Twoleg nest all day? I think I would go crazy!",
             "Just another reason why it's great to be a Clan cat."
         ]
-    ],
-    "assertivemediatorapp_AJ6": [
-        [
-            "any",
-            "assertive",
-            "unabashed",
-            "min_platonic_45",
-            "you_blind",
-            "they_blind"
+    },
+    "assertivemediatorapp_AJ6": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_45"
         ],
-        [
+        "intro": [
             "Hey! I brought ya back a little gift from o_c_n's territory.",
             "[t_c brandishes a colorful, exotic flower and lays it at your paws.]",
             "'Innit cool? I knew you'd like it!",
             "I saw this other cool plant, too, but didn't get the chance to snag it ... Next time, I'll make sure to bring it back!"
         ]
-    ],
-    "mediator_like_AJ": [
-        [
-            "no_kit",
-            "they_mediator",
-            "they_mediator_apprentice",
-            "min_platonic_30",
-            "they_assertive",
-            "they_unabashed",
-            "you_blind",
-            "they_blind"
+    },
+    "mediator_like_AJ": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_30"
         ],
-        [
+        "intro": [
             "Ugh, it's sooo boring today. Everything's way too calm and peaceful -- how am I supposed to do my job?",
             "Hey, why don't you go pick a fight with r_c, and then I can swoop in and mediate it?",
             "Or, maybe we could get into a fight? C'mon, take a jab at me!",
             "But don't get too cocky! I'm armed and dangerous with conflict resolution skills! Haha!"
         ]
-    ],
-    "introspective_MdtorApp": [
-        [
-            "any",
-            "introspective"
-        ],
-        [
+    },
+    "introspective_MdtorApp": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ]
+        },
+        "intro": [
             "[You hear t_c quietly groan to {PRONOUN/t_c/self} from the other side of the clearing.]",
             "y_c, I can see you staring at me. If you want to say something, say it.",
             "... No, I'm not angry at you. I'm sorry for snapping. My training's just going a bit rough.",
@@ -293,14 +472,19 @@
             "But, I suppose I became a mediator to help other cats with their problems too. I suppose I've caught my mouse and I need to eat it.",
             "Thank you for listening to me, y_c. I'll keep thinking of another solution they'll like."
         ]
-    ],
-    "introspective_MdtorApp_1": [
-        [
-            "any",
-            "introspective",
-            "you_adult"
-        ],
-        [
+    },
+    "introspective_MdtorApp_1": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ]
+        },
+        "intro": [
             "[You're sitting staring at a piece of fresh kill, when you feel something nudge into your shoulder, you turn your head to see t_c.]",
             "y_c? ... Are you okay?",
             "You look a little... out of it. Are you feeling unwell? Do you want me to take you over to the medicine den?",
@@ -309,27 +493,44 @@
             "... I could talk to them, give them a poke into your direction, but I don't want to get too involved in your love life, you're plenty capable on your own.",
             "I'd give yourself a break, and hold your head high, prove to them the cat you are."
         ]
-    ],
-    "brooding_medi_app": [
-        [
-            "brooding",
-            "newborn",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "brooding_medi_app": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "newborn"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "When you grow up, you won't cause any problems for me, right y_c?"
         ]
-    ],
-    "introspective_MdtorApp_5": [
-        [
-            "any",
-            "introspective",
-            "you_blind",
-            "they_blind",
-            "they_hearing"
-        ],
-        [
+    },
+    "introspective_MdtorApp_5": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "condition": [
+                "blind:any:false",
+                "hearing"
+            ]
+        },
+        "intro": [
             "... y_c? Is everything okay? I'm surprised you came out of your way to find me. Is there anything I can help with?",
             "I'm not busy at all. I'm always here to lend an ear to any member of my Clan, from the leader to the littlest kit. We can go to the edge of the clearing if you wish to speak privately, pretend we're sharing tongues.",
             "If it makes you feel any better, you're teaching me as I'm listening. You're allowing me to know what kind of problems everycat has, so I'm more able to help, and so I can suggest things to make everycat's day better.",
@@ -337,166 +538,258 @@
             "That's advice I can give to you, no matter what. You'll only know if you try it, y_c.",
             "Unless it's breaking the Warrior Code. Please don't do that."
         ]
-    ],
-    "introspective_MdtorApp_4": [
-        [
-            "any",
-            "introspective",
-            "you_went_deaf",
-            "they_deaf"
-        ],
-        [
+    },
+    "introspective_MdtorApp_4": {
+        "y_c": {
+            "condition": [
+                "deaf:false:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "condition": [
+                "deaf:any:false"
+            ]
+        },
+        "intro": [
             "[t_c is sat watching two of your Clanmates argue with each other, with fascination.]",
             "[One of them calls the other a half-Clan foxheart. Quite brutal. Why is t_c not saying anything?]",
             "[... A giant jaybird flies out of a tree just behind the arguing cats.]",
             "[t_c seems to come to awareness of what's going on around {PRONOUN/t_c/object}, and {PRONOUN/t_c/subject} {VERB/t_c/rush/rushes} over to deal with the yelling cats.]"
         ]
-    ],
-    "assertive_6": [
-        [
-            "Any",
-            "dislike",
-            "you_brooding",
-            "you_sweet",
-            "you_upstanding",
-            "you_introspective",
-            "you_neurotic",
-            "you_stable",
-            "assertive",
-            "cool",
-            "unlawful",
-            "you_blind",
-            "they_blind"
+    },
+    "assertive_6": {
+        "y_c": {
+            "cluster": [
+                "sweet",
+                "stable",
+                "brooding",
+                "introspective",
+                "neurotic",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "cool"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
+        "intro": [
             "*Sigh*. Hey, y_c. Come to ruin the fun again?",
             "Whatever. I'm going to go do something actually exciting. Don't wait up."
         ]
-    ],
-    "assertiveapp_leader": [
-        [
-            "leader",
-            "assertive",
-            "upstanding",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "assertiveapp_leader": {
+        "y_c": {
+            "status": [
+                "leader"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "I'll make you proud, y_c!",
-            "I'll make all of c_nClan proud!"
+            "I'll make all of c_n proud!"
         ]
-    ],
-    "assertive_elder_3": [
-        [
-            "mediator",
-            "mediator_apprentice",
-            "assertive",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "assertive_elder_3": {
+        "y_c": {
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Knowing what we know from mediating their conflicts, if everycat in camp got into a fight ... Who d'you think would win?",
             "Can be mental. Or physical. Either option would be interesting.",
             "Personally, I'm betting on r_c ... in both categories."
         ]
-    ],
-    "assertive_elder_4": [
-        [
-            "elder",
-            "assertive",
-            "cool",
-            "silly",
-            "unlawful",
-            "platonic_like",
-            "romantic_like",
-            "from_mate",
-            "you_blind",
-            "they_blind"
+    },
+    "assertive_elder_4": {
+        "y_c": {
+            "status": [
+                "elder"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "cool",
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_romantic_20",
+            "from_mate"
         ],
-        [
+        "intro": [
             "Hey, furbag. I brought you something!",
             "[t_c lays a colorful feather at your paws.]",
             "I know this is your favorite color, and you miss exploring the territory. So I knew I just had to bring it to you.",
             "Yeah, yeah, don't get all soft on me, hehe. Wanna grab a meal together?"
         ]
-    ],
-    "assertivewarrior_deputy2": [
-        [
-            "deputy",
-            "leader",
-            "assertive",
-            "unlawful",
-            "brooding",
-            "unabashed",
-            "dislike",
-            "you_blind",
-            "they_blind"
+    },
+    "assertivewarrior_deputy2": {
+        "y_c": {
+            "status": [
+                "deputy",
+                "leader"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful",
+                "unabashed",
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
+        "intro": [
             "Yeah, right. Like I have to take orders from you!",
             "You may think you're a warrior, but all you do is sit on your haunches and boss everycat around all day. That's no warrior. That's a coward.",
             "Go find some other cat to impose on."
         ]
-    ],
-    "assertivemediator_toqueen": [
-        [
-            "queen's_apprentice",
-            "queen",
-            "assertive",
-            "silly",
-            "cool",
-            "stable",
-            "upstanding",
-            "sweet",
-            "you_blind",
-            "they_blind",
-            "they_hearing"
-        ],
-        [
+    },
+    "assertivemediator_toqueen": {
+        "y_c": {
+            "status": [
+                "queen's apprentice",
+                "queen"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "sweet",
+                "stable",
+                "cool",
+                "silly",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false",
+                "hearing"
+            ]
+        },
+        "intro": [
             "Kits bickering again? *Sigh* I hear ya ...",
             "Hard to reason with cats whose brains are basically still mush. But kits are actually a lot more emotionally aware than you may realize.",
             "All they want is to feel seen and understood, just like you or I or any other cat. When you don't take the time to listen to them, that's when they really lash out.",
             "Try speaking to them like adults, respecting their feelings, and keeping in mind that they won't be able to communicate as well as we can.",
             "You got it, y_c!"
         ]
-    ],
-    "assertivemediator_toqueen_2": [
-        [
-            "queen's_apprentice",
-            "queen",
-            "assertive",
-            "silly",
-            "cool",
-            "stable",
-            "upstanding",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "assertivemediator_toqueen_2": {
+        "y_c": {
+            "status": [
+                "queen's apprentice",
+                "queen"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "sweet",
+                "stable",
+                "cool",
+                "silly",
+                "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "y_c, I know the kits fight a lot, but maybe you don't have to come to me for everything?",
             "Part of being a queen is understanding kit development, after all. You need to know how to navigate their emotions in order to help them grow into the best cats they can be!",
             "How about, just this once, you try helping the kits resolve their quarrels on your own?",
             "And if you mess up, I'll be right here to help you. It is my job, after all! *Wink*"
         ]
-    ],
-    "assertivemedapp_3": [
-        [
-            "kitten",
-            "apprentice",
-            "warrior",
-            "elder",
-            "deputy",
-            "leader",
-            "medicine_cat",
-            "medicine_cat_apprentice",
-            "queen",
-            "queen's_apprentice",
-            "assertive",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "assertivemedapp_3": {
+        "y_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "elder",
+                "deputy",
+                "leader",
+                "medicine cat",
+                "medicine cat apprentice",
+                "queen",
+                "queen's apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "[You ask t_c why {PRONOUN/t_c/subject} chose to become a mediator, given {PRONOUN/t_c/poss} adventurous personality.]",
             "Ah, well, that's easy ... Mediation is full of adventure!",
             "I get to explore far and wide, collaborating with mediators across territories, and get to know all sorts of different cats! That's plenty of excitement, no?",
@@ -504,361 +797,610 @@
             "It's terrifying ... But thrilling, too!",
             "There's lots of different paths a cat can take in this world, but I know this is the path for me. Can you say the same?"
         ]
-    ],
-    "assertivemediatorapp_4": [
-        [
-            "Any",
-            "assertive",
-            "platonic_like",
-            "romantic_like",
-            "you_blind",
-            "they_blind"
+    },
+    "assertivemediatorapp_4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_romantic_20"
         ],
-        [
+        "intro": [
             "Hey! I brought ya back a little gift from o_c_n's territory.",
             "[t_c brandishes a colorful, exotic flower and lays it at your paws.]",
             "'Innit cool? I knew you'd like it!",
             "I saw this other cool plant, too, but didn't get the chance to snag it ... Next time, I'll make sure to bring it back!"
         ]
-    ],
-    "assertivemediatorapp_5": [
-        [
-            "Any",
-            "assertive",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "assertivemediatorapp_5": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Ugh, it's sooo boring today. Everything's way too calm and peaceful. How am I supposed to do my job?",
             "Hey, maybe we could get into a fight, and then I could mediate it? C'mon, take a jab at me! What's something I do that's always annoyed you?",
             "But don't get too cocky. I'm armed and dangerous with conflict resolution skills! Haha!"
         ]
-    ],
-    "assertivemediatorapp_8": [
-        [
-            "mediator",
-            "mediator_apprentice",
-            "you_blind"
-        ],
-        [
+    },
+    "assertivemediatorapp_8": {
+        "y_c": {
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {},
+        "intro": [
             "*Sigh* Looks like the warriors are fighting again ...",
             "Do you wanna handle this one, or should I?"
         ]
-    ],
-    "assertive_dislike1": [
-        [
-            "Any",
-            "assertive",
-            "unlawful",
-            "dislike",
-            "you_blind",
-            "they_blind"
+    },
+    "assertive_dislike1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unlawful"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
+        "intro": [
             "Sorry, is someone talking to me right now?"
         ]
-    ],
-    "assertive_dislike1_2": [
-        [
-            "Any",
-            "assertive",
-            "unabashed",
-            "brooding",
-            "dislike",
-            "they_blind"
+    },
+    "assertive_dislike1_2": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed",
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
+        "intro": [
             "Can't you see I'm busy, mousebrain? Go bother someone else!"
         ]
-    ],
-    "assertive_dislike1_3": [
-        [
-            "Any",
-            "assertive",
-            "dislike",
-            "you_blind",
-            "they_blind"
+    },
+    "assertive_dislike1_3": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
+        "intro": [
             "Go away!!!"
         ]
-    ],
-    "assertive_dislike1_4": [
-        [
-            "Any",
-            "assertive",
-            "cool",
-            "dislike",
-            "no_kit",
-            "you_blind"
+    },
+    "assertive_dislike1_4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "cool"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50"
         ],
-        [
+        "intro": [
             "Hey, y_c. You're looking smaller than usual. Maybe it's time to catch up on your training.",
             "*Snrk.*"
         ]
-    ],
-    "assertive_jealous1_2": [
-        [
-            "no_kit",
-            "assertive",
-            "cool",
-            "jealousy",
-            "you_blind",
-            "they_blind"
+    },
+    "assertive_jealous1_2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "cool"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_jealousy_50"
         ],
-        [
+        "intro": [
             "Hey, so, remember when you cracked that joke today, and everybody laughed, and then I tried to be funny, and no one laughed?",
             "... What was the deal with that?"
         ]
-    ],
-    "assertivemediatorapp_9": [
-        [
-            "platonic_like",
-            "assertive",
-            "Any",
-            "they_sameage",
-            "you_blind",
-            "they_blind"
+    },
+    "assertivemediatorapp_9": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "age": [
+                "sameage"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "intro": [
             "Guess who just got told to go to the Dark Forest ... for the third time today.",
             "Tell me you're having an easier time than me, y_c. Helping others all day can be the best thing in the world, but other times, it's just awful.",
             "Still, the feeling I get when I successfully patch things up between two siblings, or help an elder reconnect with their kits ... it makes it all worth it!"
         ]
-    ],
-    "assertivemediatorapp_10": [
-        [
-            "Any",
-            "assertive",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "assertivemediatorapp_10": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Look, y_c, if you have a problem with somebody, you can't be shy about it!",
             "Honesty is key! It doesn't help anyone to keep everything all bottled up inside. You have a voice, so you gotta use it!",
             "Sure, my job is keeping the peace, but sometimes the best way to resolve a conflict is to start it. Y'know?"
         ]
-    ],
-    "assertive_warrior_or_elder": [
-        [
-            "mediator",
-            "assertive",
-            "platonic_like",
-            "neutral",
-            "you_blind",
-            "they_blind"
+    },
+    "assertive_warrior_or_elder": {
+        "y_c": {
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "neutral"
         ],
-        [
+        "intro": [
             "*Sigh* StarClan, today was hard ...",
             "Arguments in the nursery, medicine den, and warriors' den, all at the same time ... Is there something in the air?",
             "Without you here, y_c, I genuinely don't know what I would've done. Died, probably. Like, actually died.",
             "... Thanks for having my back."
         ]
-    ],
-    "cool_1": [
-        [
-            "elder",
-            "cool",
-            "unabashed",
-            "you_blind"
-        ],
-        [
+    },
+    "cool_1": {
+        "y_c": {
+            "status": [
+                "elder"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "unabashed",
+                "cool"
+            ]
+        },
+        "intro": [
             "StarClan knows why elders are always so grumpy...",
             "Oh- uh, y_c! I didn't see you there!"
         ]
-    ],
-    "cool_2": [
-        [
-            "medicine_cat",
-            "medicine_cat_apprentice",
-            "cool",
-            "introspective",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "cool_2": {
+        "y_c": {
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool",
+                "introspective"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "y_c! Hey!",
             "I was thinking, like... we're kind of the same right?",
             "Our roles. Medicine cat and mediator.",
             "You guys just heal the body, and we heal the brain!",
             "Cool, right?"
         ]
-    ],
-    "cool_mediator_AJ": [
-        [
-            "no_kit",
-            "cool",
-            "platonic_like"
+    },
+    "cool_mediator_AJ": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "intro": [
             "Anybody who tells you mediation is about 'communication' or 'conflict resolution' is just making talk. It's all about the looks, baby!",
             "Once you got a pretty face, cats don't care what's coming out of it.",
             "[t_c grins in that way that makes it hard to tell whether {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} serious or not.]"
         ]
-    ],
-    "sweet_mediapp_1": [
-        [
-            "newborn",
-            "sweet",
-            "you_blind",
-            "they_hearing"
-        ],
-        [
+    },
+    "sweet_mediapp_1": {
+        "y_c": {
+            "status": [
+                "newborn"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "hearing"
+            ]
+        },
+        "intro": [
             "Why hello there, little fella! Wow, I was that big once...?",
             "I heard the news of your arrival, and I had to come and see! You're already so much more well behaved then some of your older peers, heh."
         ]
-    ],
-    "sweet_mediapp_2": [
-        [
-            "kitten",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_2": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hey there! I hope your day's going well? Ah- you seem upset, what's the matter?",
             "You and r_c had a disagreement? What did {PRONOUN/r_c/subject} say?",
             "Ah, I see now. Would you like to go and talk with {PRONOUN/r_c/object} about it? I wouldn't mind going with you. Ah right- it is my job now, hehe.",
             "I did this even before I left the nursery, believe it or not, so it's still a bit of a habit to ask first!"
         ]
-    ],
-    "sweet_mediapp_3": [
-        [
-            "kitten",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_3": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Oh, what's it like training to be a mediator? Well, you see...",
             "The training itself is admittedly a little boring, hehe... But when you're actually in the moment, it can be pretty tough figuring out what to do!",
             "But seeing other cats smiling because I did something... it makes it all so worth it, you know?",
             "Always choose what makes you happy, okay? I know you're just a kit now, but you matter just as much as I or anyone else does!"
         ]
-    ],
-    "sweet_mediapp_4": [
-        [
-            "kitten",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_4": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hey there y_c! Is there anything that you need?",
             "Oh, you'd like to be better friends with r_c? Well, I'm a bit busy right now, but I can definitely help ya out! Anything for a little fella like you."
         ]
-    ],
-    "sweet_mediapp_5": [
-        [
-            "apprentice",
-            "queen's_apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_5": {
+        "y_c": {
+            "status": [
+                "apprentice",
+                "queen's apprentice",
+                "medicine cat apprentice",
+                "mediator apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Oh hey, y_c! I have a favor I'd like to ask of you. I need to go to o_c_n, can you come with me?",
             "I'm gonna ask a few others too, so don't worry if you don't wanna go or you're busy! There was a situation at the border and I want to make sure no one's upset or anything."
         ]
-    ],
-    "sweet_mediapp_6": [
-        [
-            "apprentice",
-            "queen's_apprentice",
-            "medicine_cat_apprentice",
-            "mediator_apprentice",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_6": {
+        "y_c": {
+            "status": [
+                "apprentice",
+                "queen's apprentice",
+                "medicine cat apprentice",
+                "mediator apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "y_c...? Oh- I'm fine, don't worry about me! I was just doing a lot of thinking.",
-            "I want to help everycat I can, but I... I don't know. I feel like I could be so much more useful /out/ there, not just in c_nClan. Am I weird for that?",
-            "I adore c_nClan, but... I saw some o_c_n apprentices fighting, but when I tried to help they told me to keep my nose in my own Clan's business.",
+            "I want to help everycat I can, but I... I don't know. I feel like I could be so much more useful /out/ there, not just in c_n. Am I weird for that?",
+            "I adore c_n, but... I saw some o_c_n apprentices fighting, but when I tried to help they told me to keep my nose in my own Clan's business.",
             "... Thank you for listening to me. It really means a lot, you know? Ah- I'm sure you came to ask me for something, what is it you need?"
         ]
-    ],
-    "sweet_mediapp_7": [
-        [
-            "apprentice",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_7": {
+        "y_c": {
+            "status": [
+                "apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Ah, y_c! What seems to be the problem?",
             "You feel like your mentor is pushing you too hard with battle training? I see.. Come on, we can go talk to m_n together! I'm sure we can come to a compromise."
         ]
-    ],
-    "sweet_mediapp_8": [
-        [
-            "queen's_apprentice",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_8": {
+        "y_c": {
+            "status": [
+                "queen's apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Mm, hey y_c? Can... Can I ask you something?",
             "I've just been thinking a lot... we've got a lot of responsibility, you being a queen's apprentice and me being a mediator apprentice...",
             "If we make one mistake, it could jeopardize the Clan.. I'm not normally the type to get too stressed out about this stuff, I'm normally the one that's comforting stressed out cats...",
             "But... if you wouldn't mind, y_c... Can I lean on your shoulder for just a moment? ... and just... forget those responsibilities... for just a second."
         ]
-    ],
-    "sweet_mediapp_9": [
-        [
-            "medicine_cat_apprentice",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_9": {
+        "y_c": {
+            "status": [
+                "medicine cat apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "[t_c lets out a loud sigh, laying down right in the entrance of the medicine den. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} exhausted.]",
             "H- Hey, y_c? If you wouldn't mind... I think I need something for a headache...",
             "I've been running back and forth throughout the camp all day... it's not been a good day for most of the Clan... and my head is starting to really hurt, but I have to go back out there.",
             "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/give/gives} you a weak smile as you agree, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} very appreciative.]",
             "Thank you so much... If there's anything I can do, please let me know."
         ]
-    ],
-    "sweet_mediapp_10": [
-        [
-            "mediator_apprentice",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_10": {
+        "y_c": {
+            "status": [
+                "mediator apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Do you need me to cover for you tonight?",
             "Nah, don't worry about it! This can be pretty tiring... Everycat deserves to rest! You go enjoy the rest of today."
         ]
-    ],
-    "sweet_mediapp_11": [
-        [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_11": {
+        "y_c": {
+            "status": [
+                "warrior",
+                "medicine cat",
+                "mediator",
+                "queen"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hey y_c! What seems to be the issue?",
             "Ahhh, I understand. d_n does seem to put you on patrols a lot... mmm...",
             "You go get yourself something to eat and go get some rest, I'll talk to {PRONOUN/d_n/object}!"
         ]
-    ],
-    "sweet_mediapp_12": [
-        [
-            "warrior",
-            "medicine_cat",
-            "mediator",
-            "queen",
-            "sweet",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_12": {
+        "y_c": {
+            "status": [
+                "warrior",
+                "medicine cat",
+                "mediator",
+                "queen"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "[t_c seems to be shaking pretty bad, staying in the corner of the camp. As you approach {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to jolt, wiping away {PRONOUN/t_c/poss} tears.]",
             "O- Oh- I...",
             "I'm sorry you have to see me like this, I'm supposed to be the one who knows what to do...",
@@ -868,83 +1410,141 @@
             "[As {PRONOUN/t_c/subject} {VERB/t_c/bury/buries} {PRONOUN/t_c/poss} face in your fur, you give {PRONOUN/t_c/object} the best reassuring words you can. t_c does {PRONOUN/t_c/poss} best, and is always happy to help everycat, you can't understand who would say otherwise.",
             "Thank you... sorry again you had to see me like this. Can we go get something to eat? ... I don't really want to be alone right now."
         ]
-    ],
-    "sweet_mediapp_13": [
-        [
-            "warrior",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_13": {
+        "y_c": {
+            "status": [
+                "warrior"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hey y_c! How's talking with r_w been?",
             "Oh I see... I'll go talk to {PRONOUN/r_w/object} about that! Thank you for letting me know!"
         ]
-    ],
-    "sweet_mediapp_14": [
-        [
-            "medicine_cat",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_14": {
+        "y_c": {
+            "status": [
+                "medicine cat"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Ehe... Hi y_c.",
             "[{PRONOUN/t_c/subject/CAP} awkwardly {VERB/t_c/turn/turns} {PRONOUN/t_c/poss} paw over, to show a couple small scratches on {PRONOUN/t_c/poss} paw.]",
             "The kits were fighting, so I went to mediate... Uh- turns out they were fake-fighting just to help me get their moss ball off the roof of the nursery.",
             "r_k was just too cute to say no to... and now I've got scratches on my paw. At least they have their ball back.",
             "[You're starting to feel like t_c is a little /too/ helpful.]"
         ]
-    ],
-    "sweet_mediapp_15": [
-        [
-            "mediator",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_15": {
+        "y_c": {
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hey y_c...? Uh- Hypothetically- If you ran into two rogues on the territory fighting over a couple's issue, what would you say to them?",
             "[t_c seems to sweat nervously as you give your answer.]",
             "...And your answer definitely doesn't involve trying to politely offer them help with finding a home?",
             "...And them assuming you meant you'll let them move into YOUR home, and them getting mad and ignoring you when you say that's not what you said?",
             "[As you hear shouting near the entrance... you decide to step in for t_c on this one.]"
         ]
-    ],
-    "sweet_mediapp_16": [
-        [
-            "queen",
-            "sweet",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_16": {
+        "y_c": {
+            "status": [
+                "queen"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "[t_c wanders into the nursery, a very tired kitten in {PRONOUN/t_c/poss} jaws. {PRONOUN/t_c/subject/CAP} {VERB/t_c/place/places} the kitten at your paws, a concerned look on {PRONOUN/t_c/poss} otherwise kind expression.]",
             "Hey y_c... Today was pretty eventful.",
             "Some of the other kits were pressuring r_k into sneaking out of the camp... I was pretty lucky I found {PRONOUN/r_k/object} just as {PRONOUN/r_k/subject} {VERB/r_k/were/was} going out.",
             "I feel like we need to talk to the other kits about this... This isn't okay. Oh- if you'd be alright if I tagged along, of course! I just... I feel /really/ bad about this..."
         ]
-    ],
-    "sweet_mediapp_17": [
-        [
-            "deputy",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_17": {
+        "y_c": {
+            "status": [
+                "deputy"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "What seems to be the issue, y_c? I hope everything's alright.",
             "Oh! Some cats were refusing to go on patrol, despite not having done anything in a few days?",
             "Thanks for letting me know! I'll go check up on them!"
         ]
-    ],
-    "sweet_mediapp_18": [
-        [
-            "deputy",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_18": {
+        "y_c": {
+            "status": [
+                "deputy"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hey y_c! What's up?",
             "You're concerned...? I think I understand... I get really stressed when it comes to mediating.",
             "I just care so much about the Clan, even about cats outside this Clan. I want to help them so badly!",
@@ -952,69 +1552,115 @@
             "Maybe... one day... I'll make the Clans just a little bit brighter.",
             "That sounds wonderful to me."
         ]
-    ],
-    "sweet_mediapp_19": [
-        [
-            "deputy",
-            "sweet",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_19": {
+        "y_c": {
+            "status": [
+                "deputy"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "[As you send out daily patrols, you hear the faint sound of shouting. It appears r_w is hissing at t_c, who seems pretty spooked about it.]",
             "[You wander over there, demanding the warrior leave to go on patrol instead of yelling at a helpless mediator apprentice.]",
             "Thank you, y_c! r_m asked me if I could mediate a situation between {PRONOUN/r_w/object} and...",
             "Well, I think you can see how it went... I feel pretty bad about {PRONOUN/r_w/object} being upset about this.",
             "Maybe I could get {PRONOUN/r_w/object} a flower to cheer {PRONOUN/r_w/object} up?"
         ]
-    ],
-    "sweet_mediapp_20": [
-        [
-            "leader",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_20": {
+        "y_c": {
+            "status": [
+                "leader"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Oh y_c!! Is something the matter? I'm happy to help with anything you need!",
             "[You explain that you were simply walking over here to get something to eat.]",
             "Oh! Well now I feel silly, hehe."
         ]
-    ],
-    "sweet_mediapp_21": [
-        [
-            "leader",
-            "sweet",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_21": {
+        "y_c": {
+            "status": [
+                "leader"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "[You see t_c expertly mediating a fight between two of your warriors.]",
             "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'ve/'s} really blossomed into {PRONOUN/t_c/poss} new role, quickly ending what could've been a huge fight.]",
             "Oh! y_c! I'll get to you in a moment! We were exchanging forgiveness flowers!"
         ]
-    ],
-    "sweet_mediapp_22": [
-        [
-            "leader",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_22": {
+        "y_c": {
+            "status": [
+                "leader"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "[You, r_w and t_c are heading over to o_c_n for a meeting. You had some things to discuss with the leader, and the mediating app just-so-happened to be heading over there.]",
             "[This was pretty good for you, considering you hadn't been there in a while, and the territory seemed foreign to you, meanwhile the apprentice seemed to remember it quite well.]",
             "Be careful when you enter the camp! The kits are pretty feisty, they always love to run up to me and say hi.",
             "Speaking of, I should grab a toy to bring for them!"
         ]
-    ],
-    "sweet_mediapp_23": [
-        [
-            "elder",
-            "sweet",
-            "you_blind",
-            "they_blind",
-            "they_hearing"
-        ],
-        [
+    },
+    "sweet_mediapp_23": {
+        "y_c": {
+            "status": [
+                "elder"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false",
+                "hearing"
+            ]
+        },
+        "intro": [
             "[You and r_e were fighting over which best place to sun was. It was a petty fight, sure, but you felt too invested to go back.]",
             "Hey, what's going on over here?",
             "[The two of you explain the fight to the mediating apprentice, who seems a bit confused at first as to how this would start a fight.]",
@@ -1022,58 +1668,93 @@
             "I think you both have very valid points, both spots are pretty nice! How about the spot closer to the center of the camp? I've heard it's pretty nice!",
             "[You and your fellow elder try out the spot. It quickly becomes your favorite spots, and you two soon apologize to each other.]"
         ]
-    ],
-    "sweet_mediapp_24": [
-        [
-            "elder",
-            "sweet",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_24": {
+        "y_c": {
+            "status": [
+                "elder"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "Hey, y_c? I think I need your help for something, if you wouldn't mind?",
             "r_k was frightened pretty badly, and has been lashing out at everycat.",
             "{PRONOUN/r_k/subject/CAP}{VERB/r_k/'ve/'s} always really loved your stories... so I think it'd mean a lot if you went in there and told {PRONOUN/r_k/object} one.",
             "Thank you so much! Expect a fresh nest tomorrow, as a thank you gift!"
         ]
-    ],
-    "sweet_mediapp_25": [
-        [
-            "elder",
-            "sweet",
-            "they_blind"
-        ],
-        [
+    },
+    "sweet_mediapp_25": {
+        "y_c": {
+            "status": [
+                "elder"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "sweet"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "intro": [
             "[t_c bounds in with a purr, fresh prey in {PRONOUN/t_c/poss} maw soon being lowered to your paws.]",
             "Today's been super peaceful, so I've decided to bring you guys something to eat and take care of your ticks!",
             "Hope you all don't mind!",
             "[You feel like this is the only time you've seen an apprentice that was <i>thrilled</i> to take care of you. It was a pretty nice feeling.]"
         ]
-    ],
-    "silly_mediator_badpatrol": [
-        [
-            "warrior",
-            "silly",
-            "they_went_blind"
-        ],
-        [
+    },
+    "silly_mediator_badpatrol": {
+        "y_c": {
+            "status": [
+                "warrior"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "silly"
+            ],
+            "condition": [
+                "blind:false:false"
+            ]
+        },
+        "intro": [
             "Oh no! I heard you and r_w fighting earlier, but I was so busy I couldn't come over! What all happened?",
             "[The mediator tilts their head curiously, and you explain the situation - you two were, admittedly, having a childish scuffle over the results of a patrol.]",
             "Huh... Oh! I know! Bring r_w here. If you're not happy with your last patrol together, maybe you two should go on another patrol... in your MINDS!",
-            "[You're confused, but they're the mediator, not you. You begrudgingly drag r_w all the way over to the farthest corner of camp.]",
+            "[You're confused, but {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} the mediator, not you. You begrudgingly drag r_w all the way over to the farthest corner of camp.]",
             "Okay, so... Imagine this. You're in the forest, and it has trees. And they're BIG trees. And inside the big trees, there are big owls with big claws, waiting to jump out and nab you at any given opportunity...",
             "[t_c leads you and r_w on a fantastical adventure using only their words. You and r_w both have made-up stats based on your real life characteristics, and the group uses a bundle of sticks to decide outcomes. At first, you didn't think this silly exercise would do anything but waste your time, but by the end, you feel as though that bad patrol never really mattered.]"
         ]
-    ],
-    "silly_mediator_clouds": [
-        [
-            "Any",
-            "trust",
-            "silly",
-            "you_blind",
-            "they_blind"
+    },
+    "silly_mediator_clouds": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_trust_50"
         ],
-        [
+        "intro": [
             "[You woke up on the wrong side of the nest today and need someone to talk to about it. You figure that t_c must be the best choice as someone trained in listening to cats, and slowly pad up to {PRONOUN/t_c/object}.]",
             "So, what did you want to tell me, y_c?",
             "[You tell t_c all about what's bothered you recently. You were awoken in the middle of the night by an insomniac kit and couldn't get back to sleep. Then, you were taken on a dawn patrol where you slipped and fell in the mud in front of a cat you adore, and only barely got it off before you approached t_c.]",
@@ -1085,17 +1766,28 @@
             "And, heck, if they do, then send me to the Dark Forest! I don't wanna be around cats that hate you!",
             "Uh. But maybe I also don't want to be around the cats in the Dark Forest. Just, like, perhaps. Hehe."
         ]
-    ],
-    "silly_mediator_savetheprey": [
-        [
-            "Any",
-            "silly",
-            "newleaf",
+    },
+    "silly_mediator_savetheprey": {
+        "y_c": {},
+        "t_c": {
+            "cluster": [
+                "silly"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "leaf-fall"
+            ]
+        },
+        "season": [
             "greenleaf",
-            "leaf-fall",
-            "they_blind"
+            "newleaf"
         ],
-        [
+        "tags": [
+            "leaf-fall"
+        ],
+        "intro": [
             "y_c! Your humble Clan mediator, t_c, has a plan, and I need you to help me go through with it!",
             "We've been hunting too much recently, and the prey is starting to dwindle. This could spell the end if we don't let it repopulate - we don't want to worsen leaf-bare, after all.",
             "Not to mention the rumors I overheard at the last Gathering. Two o_c_n apprentices were snickering to themselves saying that we must've been hunting outside of our territory because the prey inside of it was seemingly so scarce.",
@@ -1103,259 +1795,453 @@
             "What kind of contribution, you ask? Well, a tiny morsel of fresh-kill delivered right to my den, of course!",
             "[t_c puffs out their chest, satisfied with their hard work.]"
         ]
-    ],
-    "Introspective_mentor_H8": [
-        [
-            "they_introspective",
-            "from_mentor",
-            "they_mediator",
-            "you_mediator_apprentice",
+    },
+    "Introspective_mentor_H8": {
+        "y_c": {
+            "status": [
+                "mediator apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "relationship": [
             "neutral",
+            "from_mentor"
+        ],
+        "tags": [
             "clan_has_kits"
         ],
-        [
+        "intro": [
             "Hey, hey, hey... what happened? What's wrong? You were doing so well meditating those kits, then just froze.",
             "You got nervous?",
             "Oh, well that's fine! Don't beat yourself up about it. We've all gotten nervous in our apprentice days!"
         ]
-    ],
-    "Introspective_mentor_H9": [
-        [
-            "they_introspective",
-            "from_mentor",
-            "they_mediator",
-            "you_mediator_apprentice",
-            "dislike"
+    },
+    "Introspective_mentor_H9": {
+        "y_c": {
+            "status": [
+                "mediator apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "relationship": [
+            "min_dislike_50",
+            "from_mentor"
         ],
-        [
+        "intro": [
             "I understand it's hard to meditate sometimes, but did you really have to yell at poor r_a like that?",
             "{PRONOUN/r_a/subject/CAP} were already having a bad day--",
             "Oh, forget it for now. I'll speak to you later once I fix this."
         ]
-    ],
-    "Introspective_mentor_H10": [
-        [
-            "they_introspective",
-            "from_mentor",
-            "they_mediator",
-            "you_mediator_apprentice",
-            "platonic_like"
+    },
+    "Introspective_mentor_H10": {
+        "y_c": {
+            "status": [
+                "mediator apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "from_mentor"
         ],
-        [
+        "intro": [
             "[t_c has been sitting around, {PRONOUN/t_c/poss} eyes watching l_n and d_n curiosity from a distance.]",
             "Shhh, y_c. I suppose I can make this a teaching lesson of some sort... Look closely.",
-            "Do you see how d_n's tail is swishing around while l_n talks? They're not agreeing on something. Now, if I remember correctly, on the third swish of a tail...",
+            "Do you see how d_n's tail is swishing around while l_n talks? {PRONOUN/d_n/subject/CAP}{VERB/d_n/'re/'s} not agreeing on something. Now, if I remember correctly, on the third swish of a tail...",
             "[d_n makes a remark you didn't quite make out but from the look on l_n's face, it must have been shocking indeed.]",
             "I was correct! This is why you always observe, y_c. It'll help you tremendously when meditating, I promise.",
             "Now, if you'll excuse me... I must know what happened. I can be a bit nosy."
         ]
-    ],
-    "youdeaf_R19": [
-        [
-            "only_you_deaf",
-            "you_leader",
-            "no_kit",
-            "they_warrior",
-            "they_elder",
-            "they_mediator"
-        ],
-        [
+    },
+    "youdeaf_R19": {
+        "y_c": {
+            "condition": [
+                "deaf:any:true"
+            ],
+            "status": [
+                "leader"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "warrior",
+                "elder",
+                "mediator"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "intro": [
             "[t_c comes to sit with you as you watch the Clan. Everything is going well and you bask in that knowledge.]",
             "[But after a moment, {PRONOUN/t_c/subject} {VERB/t_c/bring/brings} up a good point with a quick signal. You need to think about a dog that was recently spotted on the territory.]",
             "[You sign to t_c for {PRONOUN/t_c/poss} opinion. Between the two of you, you come up with a solid plan to drive off the dog.]",
             "[Your head lifts as your ears wriggle and your whiskers twitch in the sign for 'thank you' before getting up to visit d_n and tell {PRONOUN/d_n/object} the plan.]"
         ]
-    ],
-    "neurotic_mediator_SQ1": [
-        [
-            "they_neurotic",
-            "they_mediator",
-            "no_kit",
+    },
+    "neurotic_mediator_SQ1": {
+        "y_c": {
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
             "min_platonic_20"
         ],
-        [
+        "intro": [
             "Hey, y_c. I don't mean to intrude, but let me know if I could ever help you and y_a talk through anything?",
             "It's my job, after all, and I know relationships between mentors and apprentices sometimes take a while to figure out...",
             "Just an offer, of course! I'm sure you're doing fine on your own."
         ]
-    ],
-    "neurotic_youforgiven_SQ7": [
-        [
-            "they_neurotic",
-            "they_mediator",
-            "they_mediator_apprentice",
-            "no_kit",
-            "you_forgiven",
-            "neutral",
-            "they_blind",
-            "you_blind"
+    },
+    "neurotic_youforgiven_SQ7": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "forgiven": true,
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "neutral"
         ],
-        [
+        "intro": [
             "[You accidentally bump into r_w on your way from the dirtplace. t_c practically teleports to your side.]",
             "I just wanted to check... is there, um, tension between you and r_w that would be good to talk through?",
             "No? Okay, sorry for assuming. It's my job, though, and I just want to make sure...",
             "Well, I just want to make sure nothing bad happens to anyone! You, uh, you know."
         ]
-    ],
-    "mediator_to_newborn_H1": [
-        [
-            "they_mediator",
-            "they_mediator_apprentice",
-            "newborn",
-            "you_unlawful",
-            "you_assertive",
-            "any"
-        ],
-        [
+    },
+    "mediator_to_newborn_H1": {
+        "y_c": {
+            "cluster": [
+                "assertive",
+                "unlawful"
+            ],
+            "status": [
+                "newborn"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ]
+        },
+        "intro": [
             "Well, hello, y_c! Welcome to the world.",
             "[As t_c shifts closer, you hiss and spit at {PRONOUN/t_c/object}. The mediator startles back.]",
             "I'm going to have my paws full with you, huh?"
         ]
-    ],
-    "TinyTeddy_stable_theymediator_youapp_01": [
-        [
-            "they_mediator",
-            "they_stable",
-            "you_app"
-        ],
-        [
+    },
+    "TinyTeddy_stable_theymediator_youapp_01": {
+        "y_c": {
+            "age": [
+                "adolescent"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "intro": [
             "You seem like you're doing well, y_c. That's good, I'm guessing you and m_n have worked out your differences?",
             "If you're ever having trouble, just let me know and we can set up another session. I'm always here to help! Any day, any time."
         ]
-    ],
-    "TinyTeddy_stable_theymediator_youapp_02": [
-        [
-            "they_mediator",
-            "they_stable",
-            "you_app"
-        ],
-        [
+    },
+    "TinyTeddy_stable_theymediator_youapp_02": {
+        "y_c": {
+            "age": [
+                "adolescent"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "intro": [
             "You apprentices stress me out, I'm so worried that you'll behave recklessly and get hurt...",
             "Make smart choices, y_c, don't be that cat. Don't put it all on the line just for the attention of your peers, it's never worth it. Many good cats have ignored my warnings, I beg for your sake that you do not."
         ]
-    ],
-    "TinyTeddy_stable_theymediator_youapp_03": [
-        [
-            "they_mediator",
-            "they_stable",
-            "you_app"
-        ],
-        [
+    },
+    "TinyTeddy_stable_theymediator_youapp_03": {
+        "y_c": {
+            "age": [
+                "adolescent"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "intro": [
             "Good morning, y_c. Make good choices, don't get into trouble and treat your clanmates with respect. Act in accordance with those three rules and you will be just fine. See you around."
         ]
-    ],
-    "TinyTeddy_stable_theyqueen_mentor_youmediatorapp_01": [
-        [
-            "they_mediator",
-            "they_stable",
-            "from_mentor",
-            "you_mediator_apprentice"
+    },
+    "TinyTeddy_stable_theyqueen_mentor_youmediatorapp_01": {
+        "y_c": {
+            "status": [
+                "mediator apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "relationship": [
+            "from_mentor"
         ],
-        [
+        "intro": [
             "Hey, just between mentor and apprentice, can I just say- that my patience with r_w1 and r_w2 is running so thin...",
             "['I couldn't agree more, it was just a mouse and very soon they'll turn it into a full on war...']",
             "Wait- THEY'RE TALKING TO YOU AS WELL?!?!?!"
         ]
-    ],
-    "TinyTeddy_stable_theyqueen_mentor_youmediatorapp_02": [
-        [
-            "they_mediator",
-            "they_stable",
-            "from_mentor",
-            "you_mediator_apprentice"
+    },
+    "TinyTeddy_stable_theyqueen_mentor_youmediatorapp_02": {
+        "y_c": {
+            "status": [
+                "mediator apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "relationship": [
+            "from_mentor"
         ],
-        [
+        "intro": [
             "I saw that mediation you did earlier today. You did very well and had full control of the situation, you've really gotten the hang of this. I'm proud, good job y_c.",
             "You've got good things ahead of you."
         ]
-    ],
-    "TinyTeddy_stable_theymediator_youadult_01": [
-        [
-            "they_mediator",
-            "they_stable",
-            "you_adult"
-        ],
-        [
+    },
+    "TinyTeddy_stable_theymediator_youadult_01": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "intro": [
             "Please tell me that this is a friendly hello and not a 't_c, t_c, help me, help me, I've made a mistake!' kind of conversation.",
             "[You glance away for a second and suck in a breath. t_c sighs loudly, {PRONOUN/t_c/poss} brows crease in defeat.]",
             "What is it now, y_c?"
         ]
-    ],
-    "TinyTeddy_stable_theymediator_youadult_02": [
-        [
-            "they_mediator",
-            "they_stable",
-            "you_adult"
-        ],
-        [
+    },
+    "TinyTeddy_stable_theymediator_youadult_02": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "intro": [
             "Sorry, y_c, I'm not in the mood to chat right now, I need a breather. Can we catch up later today when I'm feeling a little better?"
         ]
-    ],
-    "TinyTeddy_stable_theymediator_youadult_03": [
-        [
-            "they_mediator",
-            "they_stable",
-            "you_adult"
-        ],
-        [
+    },
+    "TinyTeddy_stable_theymediator_youadult_03": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "stable"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "intro": [
             "[t_c stumbles into camp, {PRONOUN/t_c/poss} eyes wide in astonishment. You can't see who slips around behind {PRONOUN/t_c/object}... Clearly someone had some massive baggage to dump on the mediator.]",
             "The knowledge I hold, no one should ever have to hear...",
             "I need to lay down..."
         ]
-    ],
-    "neurotic_skillhealer_SQ2": [
-        [
-            "they_neurotic",
-            "they_healer",
-            "they_warrior",
-            "they_deputy",
-            "they_apprentice",
-            "they_mediator",
-            "they_mediator_apprentice",
-            "they_queen",
-            "they_queen's_apprentice",
-            "you_medicine_cat",
-            "you_medicine_cat_apprentice",
-            "they_blind",
-            "you_blind"
-        ],
-        [
-            "Um... sorry, y_c? I don't mean to bother you, but plove_r_c has a bit of a sore throat. Could I have some honey from your stores to give them?",
+    },
+    "neurotic_skillhealer_SQ2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "medicine cat",
+                "medicine cat apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "warrior",
+                "deputy",
+                "apprentice",
+                "mediator",
+                "mediator apprentice",
+                "queen",
+                "queen's apprentice"
+            ],
+            "skill": [
+                "HEALER,1"
+            ]
+        },
+        "intro": [
+            "Um... sorry, y_c? I don't mean to bother you, but plove-r_c has a bit of a sore throat. Could I have some honey from your stores to give them?",
             "O-of course, you could give it to them, too! I don't mean to overstep.",
             "[There's not much that can go terribly wrong with honey. Since t_c seems to know {PRONOUN/t_c/poss} way around medicine despite not being a medicine cat, you give {PRONOUN/t_c/object} a dollop of honey on a stick and send {PRONOUN/t_c/object} on {PRONOUN/t_c/poss} way.]"
         ]
-    ],
-    "assertive_elder": [
-        [
-            "you_warrior",
-            "you_apprentice",
-            "they_medicine_cat",
-            "they_mediator",
-            "they_mediator_apprentice",
-            "they_medicine_cat_apprentice",
-            "they_queen",
-            "they_queen's_apprentice",
-            "assertive",
-            "upstanding",
-            "stable",
-            "neutral",
-            "no_kit"
+    },
+    "assertive_elder": {
+        "y_c": {
+            "status": [
+                "warrior",
+                "apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "stable",
+                "upstanding"
+            ],
+            "status": [
+                "medicine cat",
+                "mediator",
+                "mediator apprentice",
+                "medicine cat apprentice",
+                "queen",
+                "queen's apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "neutral"
         ],
-        [
+        "intro": [
             "*Sigh* Can't you see I have important things to do, y_c?",
             "Go back to catching mice, or whatever it is you warriors do."
         ]
-    ],
-    "brooding_mediator_AJ": [
-        [
-            "no_kit",
-            "brooding",
-            "they_mediator",
-            "they_mediator_apprentice",
-            "you_blind",
-            "they_blind"
-        ],
-        [
+    },
+    "brooding_mediator_AJ": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "intro": [
             "[You finish a rant to t_c, the mediator, about how you annoyed you are at something that r_c did earlier.]",
             "... Okay. Have you tried talking to {PRONOUN/r_c/object} about it?",
             "[... You concede that you have yet to.]",
@@ -1364,267 +2250,499 @@
             "If you spend your whole life worrying about trodding on the toes of others, you'll never get anything done.",
             "Now, do you want me to help you work out what you'll say?"
         ]
-    ],
-    "mentor_meditator_H1": [
-        [
-            "from_mentor",
-            "they_mediator",
-            "you_mediator_apprentice",
-            "you_apprentice",
-            "they_leader",
-            "you_neurotic",
-            "you_blind"
+    },
+    "mentor_meditator_H1": {
+        "y_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator apprentice",
+                "apprentice"
+            ]
+        },
+        "t_c": {
+            "status": [
+                "mediator",
+                "leader"
+            ]
+        },
+        "relationship": [
+            "from_mentor"
         ],
-        [
+        "intro": [
             "y_c, you must speak louder and enunciate your words.",
             "Chin high, eyes straight ahead. Go again, you can do it!",
             "Our voices matter just as much as the next cat. If you can't speak for yourself, then it'll be all for naught."
         ]
-    ],
-    "general_they_shunned_mediator_CM1": [
-        [
-            "Any",
-            "they_shunned",
-            "they_mediator"
-        ],
-        [
+    },
+    "general_they_shunned_mediator_CM1": {
+        "y_c": {},
+        "t_c": {
+            "shunned": true,
+            "status": [
+                "mediator"
+            ]
+        },
+        "intro": [
             "My job in this Clan is - <i>was</i> to solve problems.",
             "[You watch as t_c presses {PRONOUN/t_c/poss} claws out, digging them into the ground below. Suddenly, {PRONOUN/t_c/subject} {VERB/t_c/swing/swings} {PRONOUN/t_c/poss} head around, glaring at you.]",
             "I <i>solved</i> the problem.",
             "Cats like you, y_c, would never understand."
         ]
-    ],
-    "neurotic_tokit_SQ2": [
-        [
-            "you_kitten",
-            "they_neurotic",
-            "they_warrior",
-            "they_mediator",
-            "they_medicine_cat",
-            "they_deputy",
-            "they_leader",
-            "neutral",
+    },
+    "neurotic_tokit_SQ2": {
+        "y_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "warrior",
+                "mediator",
+                "medicine cat",
+                "deputy",
+                "leader"
+            ]
+        },
+        "season": [
             "greenleaf"
         ],
-        [
+        "relationship": [
+            "neutral"
+        ],
+        "intro": [
             "Oh! Hey, y_c. Sorry, I don't really know how to deal with... uh...",
             "[t_c's gaze lands on a clump of dandelion fuzz, caught on a patch of grass. {PRONOUN/t_c/subject/CAP} {VERB/t_c/bat/bats} it your way.]",
             "Um... here! Play with that for a bit, maybe?"
         ]
-    ],
-    "new_shunned_J7": [
-        [
-            "they_mediator",
-            "you_shunned",
-            "min_platonic_50",
-            "you_mediator",
-            "you_mediator_apprentice",
-            "cool",
-            "unabashed"
+    },
+    "new_shunned_J7": {
+        "y_c": {
+            "shunned": true,
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "unabashed",
+                "cool"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "relationship": [
+            "min_platonic_50"
         ],
-        [
+        "intro": [
             "[t_c trots back into camp after a visit to o_c_n and runs right up to you.]",
-            "Okay, so, here's the update. A queen from o_c_n accused r_w_brooding of stealing prey, but there was no proof.",
-            "Turns out, the queen flirted with r_w_brooding at the last Gathering, and she was upset she got rejected!",
+            "Okay, so, here's the update. A queen from o_c_n accused r_w-brooding of stealing prey, but there was no proof.",
+            "Turns out, the queen flirted with r_w-brooding at the last Gathering, and she was upset she got rejected!",
             "My StarClan. Some cats are crazy!",
             "[You appreciate t_c updating you on mediator secrets while you're confined to camp. You wish you could've been there to see this!]"
         ]
-    ],
-    "mediator_gen_youshunned_rad2": [
-    	[
-        	"they_mediator",
-        	"they_mediator_apprentice",
-        	"you_shunned",
-        	"they_unabashed",
-        	"they_assertive",
-        	"neutral",
-        	"you_blind",
-        	"they_blind"
-    	],
-    	[
-        	"y_c, if you needed conflict resolution skills, you could've just asked."
-    	]
-    ],
-    "mediator_theyshunned_H1": [
-        [
-            "they_mediator",
-            "min_comfort_50",
-            "min_platonic_20",
-            "they_shunned",
-            "no_kit",
-            "they_cool",
-            "strange",
-            "they_blind",
-            "you_blind"
+    },
+    "mediator_gen_youshunned_rad2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true
+        },
+        "t_c": {
+            "cluster": [
+                "assertive",
+                "unabashed"
+            ],
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "neutral"
         ],
-        [
+        "intro": [
+            "y_c, if you needed conflict resolution skills, you could've just asked."
+        ]
+    },
+    "mediator_theyshunned_H1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool",
+                "strange"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_comfort_50"
+        ],
+        "intro": [
             "Hahhh... Maybe murdering didn't have the effect I wanted.",
             "Instead of lessening conflict, I <i>added</i> more conflict.",
             "... Checking murder off my 'how to quickly end conflict' list."
         ]
-    ],
-    "mediator_theyshunned_H2": [
-        [
-            "they_mediator",
-            "min_comfort_50",
+    },
+    "mediator_theyshunned_H2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
             "min_platonic_20",
-            "they_shunned",
-            "no_kit",
-            "they_introspective",
-            "they_blind",
-            "you_blind"
+            "min_comfort_50"
         ],
-        [
+        "intro": [
             "...",
             "Yes, okay, maybe I didn't follow my own advice.",
             "'Walk away, breathe, deal with the issue when you're not furious.'",
             "I'm realizing how unrealistic that is."
         ]
-    ],
-    "mediator_theyshunned_H3": [
-        [
-            "they_mediator",
-            "min_comfort_50",
+    },
+    "mediator_theyshunned_H3": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
             "min_platonic_20",
-            "they_shunned",
-            "no_kit",
-            "they_introspective",
-            "they_blind",
-            "you_blind"
+            "min_comfort_50"
         ],
-        [
+        "intro": [
             "I thought I had a good head on my shoulders. That I wasn't easily influenced by impulse.",
             "I guess I was wrong about that if my impulse is to kill another."
         ]
-    ],
-    "mediator_theyshunned_H4": [
-        [
-            "they_mediator",
-            "min_comfort_50",
+    },
+    "mediator_theyshunned_H4": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "introspective",
+                "neurotic"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
             "min_platonic_20",
-            "they_shunned",
-            "no_kit",
-            "they_introspective",
-            "they_neurotic",
-            "they_blind",
-            "you_blind"
+            "min_comfort_50"
         ],
-        [
+        "intro": [
             "Ugh, how can I call myself a mediator now?",
             "I made such a stupid mistake, and now no cat is going to trust me with their problems anymore."
         ]
-    ],
-    "mediator_youshunned_H1": [
-        [
-            "they_mediator",
-            "min_comfort_50",
+    },
+    "mediator_youshunned_H1": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool",
+                "introspective"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
             "min_platonic_20",
-            "you_shunned",
-            "no_kit",
-            "they_introspective",
-            "they_cool",
-            "they_blind",
-            "you_blind"
+            "min_comfort_50"
         ],
-        [
+        "intro": [
             "So...",
             "Do you want to talk about your issues now? Or are you doing to allow it to consume you again?"
         ]
-    ],
-    "mediator_youshunned_H2": [
-        [
-            "they_mediator",
-            "min_dislike_20",
-            "you_shunned",
-            "no_kit",
-            "they_cool",
-            "they_blind",
-            "you_blind"
+    },
+    "mediator_youshunned_H2": {
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true,
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "cool"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_kitten"
+            ]
+        },
+        "relationship": [
+            "min_dislike_20"
         ],
-        [
+        "intro": [
             "Now, what did you learn?",
             "Killing doesn't solve your issues. In fact! It causes more!",
             "Keep that in mind next time."
         ]
-    ],
-    "neurotic_mediator_SQ2": [
-        [
-            "they_mediator",
-            "they_neurotic",
-            "you_adult",
+    },
+    "neurotic_mediator_SQ2": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "mediator"
+            ]
+        },
+        "relationship": [
             "min_platonic_30",
             "min_comfort_15"
         ],
-        [
-            "I was trying to help dislike_r_c_brooding work through a disagreement this morning, but {PRONOUN/dislike_r_c_brooding/subject} {VERB/dislike_r_c_brooding/were/was} having none of it.",
-            "{PRONOUN/dislike_r_c_brooding/subject/CAP} said {PRONOUN/dislike_r_c_brooding/subject} can deal with {PRONOUN/dislike_r_c_brooding/poss} own problems, so I reminded {PRONOUN/dislike_r_c_brooding/object} that helping other cats with their relationships is my job.",
+        "intro": [
+            "I was trying to help dislike-r_c-brooding work through a disagreement this morning, but {PRONOUN/dislike-r_c-brooding/subject} {VERB/dislike-r_c-brooding/were/was} having none of it.",
+            "{PRONOUN/dislike-r_c-brooding/subject/CAP} said {PRONOUN/dislike-r_c-brooding/subject} can deal with {PRONOUN/dislike-r_c-brooding/poss} own problems, so I reminded {PRONOUN/dislike-r_c-brooding/object} that helping other cats with their relationships is my job.",
             "[t_c's tail droops. {PRONOUN/t_c/poss/CAP} voice drops to a whisper.]",
-            "...And then {PRONOUN/dislike_r_c_brooding/subject} asked why {PRONOUN/dislike_r_c_brooding/subject}'d let me help {PRONOUN/dislike_r_c_brooding/object} with {PRONOUN/dislike_r_c_brooding/poss} issues, when I'm too cowardly to deal with my own. It... really hurt. And the worst part is, {PRONOUN/dislike_r_c_brooding/subject}{VERB/dislike_r_c_brooding/'re/'s} right.",
+            "...And then {PRONOUN/dislike-r_c-brooding/subject} asked why {PRONOUN/dislike-r_c-brooding/subject}'d let me help {PRONOUN/dislike-r_c-brooding/object} with {PRONOUN/dislike-r_c-brooding/poss} issues, when I'm too cowardly to deal with my own. It... really hurt. And the worst part is, {PRONOUN/dislike-r_c-brooding/subject}{VERB/dislike-r_c-brooding/'re/'s} right.",
             "[t_c sighs and leans against you. You sit in silence for a while, hoping your presence might reassure {PRONOUN/t_c/object}.]"
         ]
-    ],
-    "neurotic_mediator_SQ3": [
-        [
-            "they_mediator",
-            "they_neurotic",
-            "you_adult",
-            "min_platonic_20",
-            "they_blind"
+    },
+    "neurotic_mediator_SQ3": {
+        "y_c": {
+            "age": [
+                "adult"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "intro": [
             "Being a mediator is hard, sometimes. I try my best to help, but I can't make everyone happy, and then I'm left worrying whether I'm actually doing a good job.",
             "[t_c sits beside you for a while. Then, {PRONOUN/t_c/subject} {VERB/t_c/stand/stands} and {VERB/t_c/stretch/stretches}.]",
-            "Well... off I go. I'm trying to help neutral_r_w_brooding work through something. I just hope {PRONOUN/neutral_r_w_brooding/subject} {VERB/neutral_r_w_brooding/don't/doesn't} snap at me again."
+            "Well... off I go. I'm trying to help neutral-r_w-brooding work through something. I just hope {PRONOUN/neutral-r_w-brooding/subject} {VERB/neutral-r_w-brooding/don't/doesn't} snap at me again."
         ]
-    ],
-    "neurotic_mediator_SQ4": [
-        [
-            "they_mediator",
-            "they_neurotic",
-            "you_adult",
-            "min_platonic_30",
-            "they_blind",
-            "you_blind"
+    },
+    "neurotic_mediator_SQ4": {
+        "y_c": {
+            "age": [
+                "adult"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_30"
         ],
-        [
-            "It's hard to mediate cats like neutral_r_w_upstanding sometimes. I like {PRONOUN/neutral_r_w_upstanding/object} well enough, but {PRONOUN/neutral_r_w_upstanding/subject}{VERB/neutral_r_w_upstanding/'re/'s} so certain {PRONOUN/neutral_r_w_upstanding/subject}{VERB/neutral_r_w_upstanding/'re/'s} right all the time.",
-            "And I don't want to argue with {PRONOUN/neutral_r_w_upstanding/object}, but I kind of... have to? To resolve conflicts, it's important {PRONOUN/neutral_r_w_upstanding/subject} {VERB/neutral_r_w_upstanding/see/sees} the situation from other perspectives.",
-            "Anyways, I've had a long day. neutral_r_w_upstanding was being stubborn, or maybe I was being a pushover, so we've paused mediation until tomorrow.",
+        "intro": [
+            "It's hard to mediate cats like neutral-r_w-upstanding sometimes. I like {PRONOUN/neutral-r_w-upstanding/object} well enough, but {PRONOUN/neutral-r_w-upstanding/subject}{VERB/neutral-r_w-upstanding/'re/'s} so certain {PRONOUN/neutral-r_w-upstanding/subject}{VERB/neutral-r_w-upstanding/'re/'s} right all the time.",
+            "And I don't want to argue with {PRONOUN/neutral-r_w-upstanding/object}, but I kind of... have to? To resolve conflicts, it's important {PRONOUN/neutral-r_w-upstanding/subject} {VERB/neutral-r_w-upstanding/see/sees} the situation from other perspectives.",
+            "Anyways, I've had a long day. neutral-r_w-upstanding was being stubborn, or maybe I was being a pushover, so we've paused mediation until tomorrow.",
             "I really don't want to think about it. How's your day been?"
         ]
-    ],
-    "neurotic_skillstory_SQ7": [
-        [
-            "they_story",
-            "they_mediator",
-            "they_neurotic",
-            "you_adult",
-            "min_platonic_15",
-            "you_blind",
-            "they_blind"
+    },
+    "neurotic_skillstory_SQ7": {
+        "y_c": {
+            "age": [
+                "adult"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator"
+            ],
+            "skill": [
+                "STORY,1"
+            ]
+        },
+        "relationship": [
+            "min_platonic_15"
         ],
-        [
+        "intro": [
             "I've been wondering if I could use stories to help solve kits' arguments.",
             "I know most grown cats would find the method demeaning, so I haven't thought much about it... but maybe it would help kits understand how to get along?",
             "I'll ask r_q about it the next time {PRONOUN/r_q/subject}{VERB/r_q/'re/'s} free."
         ]
-    ],
-    "neurotic_skillstory_SQ8": [
-        [
-            "they_story",
-            "they_mediator",
-            "they_mediator_apprentice",
-            "they_deputy",
-            "they_neurotic",
-            "you_adult",
-            "min_platonic_20",
-            "you_blind",
-            "they_blind"
+    },
+    "neurotic_skillstory_SQ8": {
+        "y_c": {
+            "age": [
+                "adult"
+            ],
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "cluster": [
+                "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "mediator",
+                "mediator apprentice",
+                "deputy"
+            ],
+            "skill": [
+                "STORY,1"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
         ],
-        [
+        "intro": [
             "A queen in o_c_n was telling their kits a story when I visited their camp with l_n last moon. I can't stop thinking about it.",
             "It was so different from any story I'd heard before, with completely new cats. I really wanted to hear the end, but the queen took the kits inside when they realized we were there.",
             "*sigh* It's silly, but it bothers me that I'll never know how it ends. And even if I see that queen again, I'd never be brave enough to ask."
         ]
-    ]
+    },
+    "sevhache_sam1": {
+            "y_c": {
+                "status": ["not_kitten"],
+                "condition": ["blind:any:false"]
+            },
+            "t_c": {
+                "condition": ["severe headache", "blind:any:false"],
+                "status": ["mediator", "mediator apprentice"]
+            },
+            "intro": [
+                "Ugh... My headache is messing with my ability to mediate arguments.",
+                "How have I never noticed how loud arguments are?"
+            ]
+        }
 }

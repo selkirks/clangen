@@ -110,8 +110,11 @@ class AchievementScreen(Screens):
                 achievements.add("33")
             if Cat.all_cats.get(cat).status == 'kitten' and Cat.all_cats.get(cat).moons > 5:
                 achievements.add("34")
+            if Cat.all_cats.get(cat).backstory == 'dfkit1' or Cat.all_cats.get(cat).backstory == 'dfkit2':
+                achievements.add("35")
             ##WILDCARD check, because I've lost control of my life
             ##Declare Lists of wildcard combos for comparison. (Will be made more professional later.)
+            ##For Mod creators, you may need to edit this code if you're adding new pelts that have unique Wildcards
             not_wildcard_patterns = ['tabby', 'ticked', 'mackerel', 'classic', 'agouti', 'smoke', 'single']
             ##Actual check for wildcardness
             if Cat.all_cats.get(cat).pelt.name == "Tortie" or Cat.all_cats.get(cat).pelt.name == "Calico":
@@ -138,8 +141,8 @@ class AchievementScreen(Screens):
             ##code block for achievement 31
             achieve31RankList = ['warrior', 'mediator', 'leader']
             achieve31UsedRanks = []
-            if len(Cat.all_cats.get(cat).mate) >= 2:
-                catMateIDs = Cat.all_cats.get(cat).mate.copy()
+            if len(Cat.all_cats.get(cat).mates) >= 2:
+                catMateIDs = Cat.all_cats.get(cat).mates.copy()
                 if Cat.all_cats.get(cat).status in achieve31RankList:
                     achieve31UsedRanks.append(Cat.all_cats.get(cat).status)
                     for cat in clan_cats:
@@ -152,14 +155,32 @@ class AchievementScreen(Screens):
                                 countranks += 1
                             if countranks >= 3:
                                 achievements.add("31")
+
+            ##achievement block to check MC has a df mate for achieve 36. Not a copy of above code. Above code checks for Any cats
+            mcMateIDs = you.mates 
+            #for loop list is in case you have multiple mates to search through. 
+            for i in mcMateIDs:
+                if Cat.all_cats.get(cat).ID in mcMateIDs and you.dead == False:
+                    #Thank you Jay, for helping me figure out history stuff! 
+                    if Cat.all_cats.get(cat).history:
+                        if Cat.all_cats.get(cat).history.beginning:
+                            if Cat.all_cats.get(cat).history.beginning["encountered"] == True and Cat.all_cats.get(cat).df == True:
+                                achievements.add("36")
+
+
         #code for achievement 23 + 24
-            if Clan.age >= 1:                          
+            if Clan.age >= 1:
+                count_alive_cats = 0
                 if not Cat.all_cats.get(cat).dead and not Cat.all_cats.get(cat).outside:
                     count_alive_cats += 1
                 if count_alive_cats == 1 and Cat.all_cats.get(cat).ID == you.ID:
                     achievements.add('23')
                 elif count_alive_cats >= 100:
                     achievements.add('24')
+                elif count_alive_cats >= 400:
+                    achievements.add('39')
+                elif count_alive_cats == 0:
+                    achievements.add('40')
 
         if you.joined_df:
             achievements.add("7")
@@ -177,7 +198,7 @@ class AchievementScreen(Screens):
             if you.relationships.get(i).romantic_love >= 60:
                 achievements.add('12')
             
-        if len(you.mate) >= 5:
+        if len(you.mates) >= 5:
             achievements.add('13')
         if you.status == 'warrior':
             achievements.add('14')

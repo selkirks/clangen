@@ -78,6 +78,9 @@ class Name:
         shunned=0,
         load_existing_name=False,
         cat=None,
+
+        # LG
+        status=None
     ):
         self.prefix = prefix
         self.suffix = suffix
@@ -159,11 +162,9 @@ class Name:
                     self.prefix[-1] + self.suffix[:2],
                 )
                 if any(
-                    i != possible_three_letter[0][0]
-                    for i in possible_three_letter[0]
+                    i != possible_three_letter[0][0] for i in possible_three_letter[0]
                 ) and any(
-                    i != possible_three_letter[1][0]
-                    for i in possible_three_letter[1]
+                    i != possible_three_letter[1][0] for i in possible_three_letter[1]
                 ):
                     triple_letter = False
                 if (
@@ -188,9 +189,10 @@ class Name:
 
         # Add possible prefix categories to list.
         possible_prefix_categories = []
-        if eyes in self.names_dict["eye_prefixes"] and game.config["cat_name_controls"][
-                        "allow_eye_names"
-                    ]:
+        if (
+            eyes in self.names_dict["eye_prefixes"]
+            and game.config["cat_name_controls"]["allow_eye_names"]
+        ):
             possible_prefix_categories.append(self.names_dict["eye_prefixes"][eyes])
         if colour in self.names_dict["colour_prefixes"]:
             possible_prefix_categories.append(
@@ -265,7 +267,7 @@ class Name:
 
         # Handles suffix assignment with outside cats
         if self.cat:
-            if self.cat.status in ["exiled", "lost"]:
+            if self.cat.status not in ["rogue", "loner", "kittypet"] and self.cat.outside:
                 adjusted_status: str = ""
                 if self.cat.moons >= 15:
                     adjusted_status = "warrior"
@@ -280,8 +282,10 @@ class Name:
                 else:
                     adjusted_status = "warrior"
 
-                if adjusted_status != "warrior":
-                    return self.prefix + self.names_dict["special_suffixes"][adjusted_status]
+                if adjusted_status != "warrior" and not self.specsuffix_hidden:
+                    return (
+                        self.prefix + self.names_dict["special_suffixes"][adjusted_status]
+                    )
             if (
                 self.cat.status in self.names_dict["special_suffixes"]
                 and not self.specsuffix_hidden

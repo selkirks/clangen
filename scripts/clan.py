@@ -24,7 +24,6 @@ from scripts.cat.pelts import Pelt
 from scripts.cat.history import History
 from scripts.cat.names import names
 from scripts.cat.sprites import sprites
-from sys import exit  # pylint: disable=redefined-builtin
 from scripts.cat.names import Name
 from scripts.clan_resources.freshkill import FreshkillPile, Nutrition
 from scripts.events_module.generate_events import OngoingEvent
@@ -341,7 +340,7 @@ class Clan:
         """Generates up to three pairs of mates."""
 
         def get_adult_mateless_cat():
-            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 14 and not i.dead and not i.outside and not i.mate]
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 14 and not i.dead and not i.outside and not i.mates]
             if alive_cats:
                 return random.choice(alive_cats)
             return None
@@ -403,8 +402,8 @@ class Clan:
                         kit.parent1 = parent.ID
                         parent.inheritance.update_inheritance()
 
-                        if parent.mate:
-                            kit.parent2 = choice(parent.mate)
+                        if parent.mates:
+                            kit.parent2 = choice(parent.mates)
                             if not Cat.all_cats.get(kit.parent2).inheritance:
                                 Cat.all_cats.get(kit.parent2).inheritance = Inheritance(Cat.all_cats.get(kit.parent2))
                             Cat.all_cats.get(kit.parent2).inheritance.update_inheritance()
@@ -432,8 +431,8 @@ class Clan:
                             app.inheritance = Inheritance(app)
                         app.inheritance.update_inheritance()
                         parent.inheritance.update_inheritance()
-                        if parent.mate:
-                            app.parent2 = choice(parent.mate)
+                        if parent.mates:
+                            app.parent2 = choice(parent.mates)
                             if not Cat.all_cats.get(app.parent2).inheritance:
                                 Cat.all_cats.get(app.parent2).inheritance = Inheritance(Cat.all_cats.get(app.parent2))
                             app.inheritance.update_inheritance()
@@ -523,7 +522,7 @@ class Clan:
         """Generates up to three pairs of mates."""
 
         def get_adult_mateless_cat():
-            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 14 and not i.dead and not i.mate]
+            alive_cats = [i for i in Cat.all_cats.values() if i.moons >= 14 and not i.dead and not i.mates]
             if alive_cats:
                 return random.choice(alive_cats)
             return None
@@ -584,8 +583,8 @@ class Clan:
                         kit.parent1 = parent.ID
                         parent.inheritance.update_inheritance()
 
-                        if parent.mate:
-                            kit.parent2 = choice(parent.mate)
+                        if parent.mates:
+                            kit.parent2 = choice(parent.mates)
                             if not Cat.all_cats.get(kit.parent2).inheritance:
                                 Cat.all_cats.get(kit.parent2).inheritance = Inheritance(Cat.all_cats.get(kit.parent2))
                             Cat.all_cats.get(kit.parent2).inheritance.update_inheritance()
@@ -610,8 +609,8 @@ class Clan:
                         app.inheritance = Inheritance(app)
                     app.inheritance.update_inheritance()
                     parent.inheritance.update_inheritance()
-                    if parent.mate:
-                        app.parent2 = choice(parent.mate)
+                    if parent.mates:
+                        app.parent2 = choice(parent.mates)
                         if not Cat.all_cats.get(app.parent2).inheritance:
                             Cat.all_cats.get(app.parent2).inheritance = Inheritance(Cat.all_cats.get(app.parent2))
                         app.inheritance.update_inheritance()
@@ -821,6 +820,7 @@ class Clan:
             "reputation": self.reputation,
             "following_starclan": self.followingsc, 
             "mediated": game.mediated,
+            "told_story": game.told_story,
             "starting_season": self.starting_season,
             "temperament": self.temperament,
             "version_name": SAVE_VERSION_NUMBER,
@@ -1195,7 +1195,7 @@ class Clan:
             game.clan.followingsc = clan_data['following_starclan']
         else:
             game.clan.followingsc = True
-        game.clan.reputation = int(clan_data["reputation"])
+        game.clan.reputation = max(0, min(100, int(clan_data["reputation"])))
 
         game.switches["error_message"] = "Error loading ---clan.json. Check clan age"
         game.clan.age = clan_data["clanage"]
@@ -1317,6 +1317,12 @@ class Clan:
                 game.mediated = []
             else:
                 game.mediated = clan_data["mediated"]
+        # LG: story flag
+        if "told_story" in clan_data:
+            if not isinstance(clan_data["told_story"], list):
+                game.told_story = []
+            else:
+                game.told_story = clan_data["told_story"]
         game.clan.clan_age = clan_data["clan_age"] if "clan_age" in clan_data else "established"
         
         game.switches["error_message"] = "Error loading ---clan.json. Check Pregnancy.json"

@@ -15,7 +15,6 @@ from scripts.game_structure.ui_elements import (
     UISurfaceImageButton,
     CatButton,
 )
-from scripts.game_structure.windows import GameOver
 from scripts.screens.Screens import Screens
 from scripts.ui.generate_box import BoxStyles, get_box
 from scripts.ui.generate_button import get_button_dict, ButtonStyles
@@ -29,6 +28,7 @@ from scripts.utility import (
     ui_scale_dimensions,
     ui_scale_value,
     ui_scale_offset,
+    get_alive_cats
 )
  
 # LG
@@ -89,6 +89,9 @@ class EventsScreen(Screens):
         self.death_button = None
 
         self.filters_open = False
+
+        self.faith_toggle = False
+        self.faith_toggle_button = None
 
         # i dont wanna split them into different dicts or anything
         self.all_filters = [
@@ -176,6 +179,15 @@ class EventsScreen(Screens):
             elif element == self.you:
                 game.switches['cat'] = game.clan.your_cat.ID
                 self.change_screen("profile screen")
+            
+            elif element == self.faith_toggle_button:
+                if self.faith_toggle is True:
+                    self.faith_toggle = False
+                else:
+                    self.faith_toggle = True
+
+                self.update_events_display()
+                self.update_display_events_lists()
 
             elif "cat_icon" in self.fave_filter_elements and element == self.fave_filter_elements["cat_icon"]:
                 if self.filters_open is True:
@@ -193,6 +205,7 @@ class EventsScreen(Screens):
                 self.fave_filter_elements["yourcat_filter_selected"].show()
                 self.selected_fave_filter.append("yourcat_filter")
                 self.place_fave_filters()
+                self.handle_tab_switch("all events")
             elif (
                 "yourcat_filter_selected" in self.fave_filter_elements and
                 element == self.fave_filter_elements["yourcat_filter_selected"]
@@ -201,6 +214,7 @@ class EventsScreen(Screens):
                 self.fave_filter_elements["yourcat_filter_selected"].hide()
                 self.selected_fave_filter.remove("yourcat_filter")
                 self.place_fave_filters()
+                self.handle_tab_switch("all events")
 
             elif (
                 "fave_group_1" in self.fave_filter_elements and
@@ -210,6 +224,7 @@ class EventsScreen(Screens):
                 self.fave_filter_elements["fave_group_1_selected"].show()
                 self.selected_fave_filter.append("fave_group_1")
                 self.place_fave_filters()
+                self.handle_tab_switch("all events")
             elif (
                 "fave_group_1_selected" in self.fave_filter_elements and
                 element == self.fave_filter_elements["fave_group_1_selected"]
@@ -227,6 +242,7 @@ class EventsScreen(Screens):
                 self.fave_filter_elements["fave_group_2_selected"].show()
                 self.selected_fave_filter.append("fave_group_2")
                 self.place_fave_filters()
+                self.handle_tab_switch("all events")
             elif (
                 "fave_group_2_selected" in self.fave_filter_elements and
                 element == self.fave_filter_elements["fave_group_2_selected"]
@@ -235,6 +251,7 @@ class EventsScreen(Screens):
                 self.fave_filter_elements["fave_group_2_selected"].hide()
                 self.selected_fave_filter.remove("fave_group_2")
                 self.place_fave_filters()
+                self.handle_tab_switch("all events")
 
             elif (
                 "fave_group_3" in self.fave_filter_elements and
@@ -244,6 +261,7 @@ class EventsScreen(Screens):
                 self.fave_filter_elements["fave_group_3_selected"].show()
                 self.selected_fave_filter.append("fave_group_3")
                 self.place_fave_filters()
+                self.handle_tab_switch("all events")
             elif (
                 "fave_group_3_selected" in self.fave_filter_elements and
                 element == self.fave_filter_elements["fave_group_3_selected"]
@@ -252,6 +270,7 @@ class EventsScreen(Screens):
                 self.fave_filter_elements["fave_group_3_selected"].hide()
                 self.selected_fave_filter.remove("fave_group_3")
                 self.place_fave_filters()
+                self.handle_tab_switch("all events")
 
             elif element in self.involved_cat_buttons:
                 self.make_cat_buttons(element)
@@ -351,6 +370,7 @@ class EventsScreen(Screens):
 
         self.place_fave_filters()
         self.update_events_display()
+        self.update_display_events_lists()
 
     def screen_switches(self):
         super().screen_switches()
@@ -488,6 +508,21 @@ class EventsScreen(Screens):
             container=self.event_screen_container
             )
         
+        if self.faith_toggle is True:
+            icon = Icon.CAT_HEAD
+        else:
+            icon = Icon.STARCLAN
+        self.faith_toggle_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((30, 440), (25, 25))),
+            icon,
+            get_button_dict(ButtonStyles.ICON, (25, 25)),
+            object_id="@buttonstyles_icon",
+            starting_height=1,
+            container=self.event_screen_container,
+            manager=MANAGER
+        )
+        if self.current_display != "relationships":
+            self.faith_toggle_button.hide()
 
         # lifegen continue after death button
         self.death_button = UIImageButton(
@@ -862,8 +897,9 @@ class EventsScreen(Screens):
             for btn in self.fave_filter_elements:
                 self.fave_filter_elements[btn].hide()
 
-        self.update_display_events_lists()
         self.update_events_display()
+
+        self.update_display_events_lists()
 
     def update_display_events_lists(self):
         """
@@ -871,7 +907,7 @@ class EventsScreen(Screens):
         """
 
         self.all_events = [
-            x for x in game.cur_events_list if "interaction" not in x.types
+            x for x in game.cur_events_list if "interaction" not in x.types and "faith" not in x.types
         ]
 
          # LIFEGEN: changing all events based on fave filters
@@ -885,6 +921,7 @@ class EventsScreen(Screens):
 
             fav_cats = []
             fav_events = []
+
 
             for kitty in Cat.all_cats_list:
                 for num in fnumlist:
@@ -908,19 +945,19 @@ class EventsScreen(Screens):
         # ----------------------------------------------------------------
 
         self.ceremony_events = [
-            x for x in game.cur_events_list if "ceremony" in x.types
+            x for x in game.cur_events_list if "ceremony" in x.types and x.text
         ]
         self.birth_death_events = [
-            x for x in game.cur_events_list if "birth_death" in x.types
+            x for x in game.cur_events_list if "birth_death" in x.types and x.text
         ]
         self.relation_events = [
-            x for x in game.cur_events_list if "relation" in x.types
+            x for x in game.cur_events_list if "relation" in x.types and x.text
         ]
-        self.health_events = [x for x in game.cur_events_list if "health" in x.types]
+        self.health_events = [x for x in game.cur_events_list if "health" in x.types and x.text]
         self.other_clans_events = [
             x for x in game.cur_events_list if "other_clans" in x.types
         ]
-        self.misc_events = [x for x in game.cur_events_list if "misc" in x.types]
+        self.misc_events = [x for x in game.cur_events_list if "misc" in x.types and x.text]
 
     def update_events_display(self):
         """
@@ -932,7 +969,7 @@ class EventsScreen(Screens):
             print(
                 "Are you playing a normal ClanGen save? Switch to a LifeGen save or create a new cat!")
             print("Choosing random cat to play...")
-            game.clan.your_cat = Cat.all_cats[random.choice(game.clan.clan_cats)]
+            game.clan.your_cat = random.choice(get_alive_cats(Cat))
             print("Chose " + str(game.clan.your_cat.name))
         # UPDATE CLAN INFO
         # self.clan_info["season"].set_text(f"Current season: {game.clan.current_season}")
@@ -967,9 +1004,41 @@ class EventsScreen(Screens):
         if game.clan.age == 0:
             return
         
-        # LIFEGEN: This has to be here to update fave filtered events
+        # LIFEGEN: this updates events for filters + faith toggle
         if self.current_display == "all events":
             self.display_events = self.all_events
+        if self.current_display == "relationships":
+            if self.faith_toggle is True:
+                self.display_events = [
+                    x for x in game.cur_events_list if "faith" in x.types
+                ]
+            else:
+                self.display_events = [
+                    x for x in game.cur_events_list if "interaction" in x.types
+                ]
+
+        # and faith toggle button
+        if self.faith_toggle is True:
+            icon = Icon.CAT_HEAD
+        else:
+            icon = Icon.STARCLAN
+
+        self.faith_toggle_button.kill()
+        del self.faith_toggle_button
+        self.faith_toggle_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((30, 440), (25, 25))),
+            icon,
+            get_button_dict(ButtonStyles.ICON, (25, 25)),
+            object_id="@buttonstyles_icon",
+            starting_height=1,
+            container=self.event_screen_container,
+            manager=MANAGER
+        )
+
+        if self.current_display != "relationships":
+            self.faith_toggle_button.hide()
+        else:
+            self.faith_toggle_button.show()
         # -----------------------------------------------------------
 
         default_rect = pygame.Rect(

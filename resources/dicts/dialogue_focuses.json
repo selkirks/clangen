@@ -13,10 +13,10 @@
         "duration": 3,
         "season": "Newleaf",
         "moon_event": [
-            "Love is in the air this season, and all of c_nClan is abuzz over who's going to get together next!"
+            "Love is in the air this season, and all of c_n is abuzz over who's going to get together next!"
         ],
         "focus_loss": [
-            "The end of the season marks a new era for c_nClan. Whether cats have coupled up or chosen to remain single, the season of romance is over, and things return to normal."
+            "The end of the season marks a new era for c_n. Whether cats have coupled up or chosen to remain single, the season of romance is over, and things return to normal."
         ]
     },
     "leader": {
@@ -27,7 +27,7 @@
         ],
         "focus_loss": [
             "Pressured by the dissent from the Clan, l_n has decided to reverse their unpopular decision, pleasing some cats, but losing the respect of others. Now that their decision is no longer in effect, cats have decided it's in bad taste to keep talking about it.",
-            "l_n has issued an order that any more criticism of their decision will not be tolerated, and dissenters can find a home in another Clan. For better or for worse, talk of their leadership has ceased, and things in c_nClan have gone back to normal ... Though, who knows what could be brewing just below the surface?",
+            "l_n has issued an order that any more criticism of their decision will not be tolerated, and dissenters can find a home in another Clan. For better or for worse, talk of their leadership has ceased, and things in c_n have gone back to normal ... Though, who knows what could be brewing just below the surface?",
             "As the moons march on, slowly, l_n's decision becomes the new normal. Though some cats still have their reservations about l_n's leadership, everycat has been given enough time to adjust that emotions are no longer running so high."
         ]
     },
@@ -35,10 +35,10 @@
         "duration": 2,
         "season": "Any",
         "moon_event": [
-            "Overnight, the skies opened, lashing c_nClan camp with sheets of hail. Cats shelter in place until the storm is over, and when the clouds part, discuss how best to rebuild what the hail destroyed."
+            "Overnight, the skies opened, lashing c_n camp with sheets of hail. Cats shelter in place until the storm is over, and when the clouds part, discuss how best to rebuild what the hail destroyed."
         ],
         "focus_loss": [
-            "The last of the hail has finally melted and run into the ground, signifying rebirth and healing for c_nClan. As the storm moves on, so, too, does discussion around camp."
+            "The last of the hail has finally melted and run into the ground, signifying rebirth and healing for c_n. As the storm moves on, so, too, does discussion around camp."
         ]
     },
     "unknown_murder": {

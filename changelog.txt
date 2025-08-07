@@ -1,3 +1,40 @@
+<strong>v0.7.6: </strong>
+
+Changes/Additions:
+- Dialogue formatting change: writers now have creative freedom in what dialogue affects/gives
+- Refreshed Menu art
+
+New Features:
+- Elder Stories: Your elders can tell stories to your Clanmates to affect their faith.
+- Faith Events: See how the faith of your Clanmates' is affected each moon.
+- Dead LifeGen Patrols: Explore your afterlife after death.
+- Multi-Cat Dialogue: Cats will now butt into your conversations!
+- Dark Forest Graduation: Cats who are experienced enough may graduate the DF and have their own apprentices
+
+New Writing:
+- New exclusive minor condition dialogue
+- New dialogue for kit-specific traits
+
+New Art:
+- New accessory: Moonhat
+- New patrol art
+
+Bugfixes:
+- Meowbugs & Typos
+- Affairs are now usable! :tada:
+- "Indexerror: list index out of range" crashes
+- Customizer fixes
+- c_n and o_c_n appearing in events
+- Reduced long loading times when continuing with a new MC via "start a new life"
+- Renaming cats no longer risks duplicate names (ex: Moonmoon) on Clan creation 
+- LADYBUG tooltip is no longer bugged
+- Game will no longer risk generating starclan guide as main character when converting saves
+- Customiser given accessories should no longer vanish into the void after being taken off
+- Starclan cats won't be dragged down to the dark forest for the sake of patrols
+- Newborns shouldn't Theodore Pembroke III when speaking to their littermates
+- More
+
+
 <strong>v0.7.5: </strong>
 
 New Features:

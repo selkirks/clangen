@@ -24,6 +24,7 @@ class Game:
     # relation_scroll_ct = 0
 
     mediated = []  # Keep track of which couples have been mediated this moon.
+    told_story = []  # LG: Keep track of who has been told a story this moon
     just_died = []  # keeps track of which cats died this moon via die()
 
     cur_events_list = []
@@ -466,8 +467,8 @@ class Game:
             self.clan.faded_ids.append(cat)
 
             # If they have a mate, break it up
-            if inter_cat.mate:
-                for mate_id in inter_cat.mate:
+            if inter_cat.mates:
+                for mate_id in inter_cat.mates:
                     if mate_id in self.cat_class.all_cats:
                         self.cat_class.all_cats[mate_id].unset_mate(inter_cat)
 

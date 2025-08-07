@@ -249,7 +249,7 @@
             "Is picking ticks off of r_c",
             "Listens to a story from r_c",
             "Is making sure the elders are comfortable",
-            "Is asking r_c how things have changed since {PRONOUN/m_c/subject} {VERB/m_c/were/was} a 'paw",
+            "Is asking r_c how things have changed since {PRONOUN/r_c/subject} {VERB/r_c/were/was} a 'paw",
             "Appreciates r_c's words of wisdom",
             "Doesn't mind taking care of the elders",
             "Is cleaning out the elders' den today",
@@ -670,7 +670,7 @@
             "Is showing off {PRONOUN/m_c/poss} hunting moves to adoring fans",
             "Is lying through {PRONOUN/m_c/poss} fangs to gain favors",
             "Was teasingly mistaken as a sly fox",
-            "Could shift {PRONOUN/m_c/subject} peers' view at {PRONOUN/m_c/object} favorably",
+            "Could shift {PRONOUN/m_c/poss} peers' view at {PRONOUN/m_c/object} favorably",
             "Is trying to raise {PRONOUN/m_c/poss} reputation within the Clan",
             "Has a bright smile"
         ],

@@ -7,6 +7,7 @@ from platform import system
 from random import choice
 import ujson
 import pygame
+import platform
 import pygame_gui
 from re import sub
 import random
@@ -698,7 +699,7 @@ class PronounCreation(UIWindow):
             f"Create new pronouns,"
             f" you have full control. "
             f"<br> Test your created pronouns before saving them!",
-            ui_scale(pygame.Rect((15, 60), (380, 75))),
+            ui_scale(pygame.Rect((15, 50), (380, 75))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -720,7 +721,7 @@ class PronounCreation(UIWindow):
         # Title of Demo Box
         self.elements["demo title"] = pygame_gui.elements.UITextBox(
             "<b>Demo",
-            ui_scale(pygame.Rect((75, 15), (225, 32))),
+            ui_scale(pygame.Rect((75, 10), (225, 32))),
             object_id="#text_box_34_horizleft",
             manager=MANAGER,
             container=self.demo_container,
@@ -729,7 +730,7 @@ class PronounCreation(UIWindow):
         # Add UITextBox for the sample text to the sub-container
         self.sample_text_box = pygame_gui.elements.UITextBox(
             self.get_sample_text(self.the_cat.pronouns[0]),
-            ui_scale(pygame.Rect((7, 60), (197, 278))),
+            ui_scale(pygame.Rect((7, 30), (197, 278))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self.demo_container,
@@ -754,7 +755,7 @@ class PronounCreation(UIWindow):
         # Adjusted positions for labels
         self.box_labels["subject"] = pygame_gui.elements.UITextBox(
             "Subject",
-            ui_scale(pygame.Rect((87, 115), (100, 30))),
+            ui_scale(pygame.Rect((87, 100), (100, 30))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -762,7 +763,7 @@ class PronounCreation(UIWindow):
 
         self.box_labels["object"] = pygame_gui.elements.UITextBox(
             "Object",
-            ui_scale(pygame.Rect((212, 115), (100, 30))),
+            ui_scale(pygame.Rect((212, 100), (100, 30))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -770,7 +771,7 @@ class PronounCreation(UIWindow):
 
         self.box_labels["poss"] = pygame_gui.elements.UITextBox(
             "Possessive",
-            ui_scale(pygame.Rect((25, 205), (100, 30))),
+            ui_scale(pygame.Rect((25, 170), (100, 30))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -778,7 +779,7 @@ class PronounCreation(UIWindow):
 
         self.box_labels["inposs"] = pygame_gui.elements.UITextBox(
             "Independent<br>Possessive",
-            ui_scale(pygame.Rect((125, 185), (150, 60))),
+            ui_scale(pygame.Rect((125, 150), (150, 60))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -786,7 +787,7 @@ class PronounCreation(UIWindow):
 
         self.box_labels["self"] = pygame_gui.elements.UITextBox(
             "Reflexive",
-            ui_scale(pygame.Rect((275, 205), (100, 30))),
+            ui_scale(pygame.Rect((275, 170), (100, 30))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -794,7 +795,7 @@ class PronounCreation(UIWindow):
         
         self.box_labels["parent"] = pygame_gui.elements.UITextBox(
             "Parent",
-            ui_scale(pygame.Rect((175, 460), (200, 60))),
+            ui_scale(pygame.Rect((87, 235), (100, 30))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -802,7 +803,7 @@ class PronounCreation(UIWindow):
 
         self.box_labels["sibling"] = pygame_gui.elements.UITextBox(
             "Sibling",
-            ui_scale(pygame.Rect((425, 460), (200, 60))),
+            ui_scale(pygame.Rect((215, 235), (100, 30))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -810,14 +811,14 @@ class PronounCreation(UIWindow):
 
         self.checkbox_label["singular_label"] = pygame_gui.elements.UITextBox(
             "Singular",
-            ui_scale(pygame.Rect((128, 285), (100, 30))),
+            ui_scale(pygame.Rect((60, 350), (100, 30))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
         )
         self.checkbox_label["plural_label"] = pygame_gui.elements.UITextBox(
             "Plural",
-            ui_scale(pygame.Rect((235, 285), (100, 30))),
+            ui_scale(pygame.Rect((180, 350), (100, 30))),
             object_id="#text_box_30_horizcenter_spacing_95",
             manager=MANAGER,
             container=self,
@@ -825,14 +826,14 @@ class PronounCreation(UIWindow):
 
         # Row 1
         self.boxes["subject"] = pygame_gui.elements.UITextEntryLine(
-            ui_scale(pygame.Rect((90, 145), (100, 30))),
+            ui_scale(pygame.Rect((90, 125), (100, 30))),
             placeholder_text=self.the_cat.pronouns[0]["subject"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["object"] = pygame_gui.elements.UITextEntryLine(
-            ui_scale(pygame.Rect((215, 145), (100, 30))),
+            ui_scale(pygame.Rect((215, 125), (100, 30))),
             placeholder_text=self.the_cat.pronouns[0]["object"],
             manager=MANAGER,
             container=self,
@@ -840,35 +841,35 @@ class PronounCreation(UIWindow):
 
         # Row 2
         self.boxes["poss"] = pygame_gui.elements.UITextEntryLine(
-            ui_scale(pygame.Rect((25, 235), (100, 30))),
+            ui_scale(pygame.Rect((25, 200), (100, 30))),
             placeholder_text=self.the_cat.pronouns[0]["poss"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["inposs"] = pygame_gui.elements.UITextEntryLine(
-            ui_scale(pygame.Rect((150, 235), (100, 30))),
+            ui_scale(pygame.Rect((150, 200), (100, 30))),
             placeholder_text=self.the_cat.pronouns[0]["inposs"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["self"] = pygame_gui.elements.UITextEntryLine(
-            ui_scale(pygame.Rect((275, 235), (100, 30))),
+            ui_scale(pygame.Rect((275, 200), (100, 30))),
             placeholder_text=self.the_cat.pronouns[0]["self"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["parent"] = pygame_gui.elements.UITextEntryLine(
-            ui_scale(pygame.Rect((180, 520), (200, 60))),
+            ui_scale(pygame.Rect((90, 275), (100, 30))),
             placeholder_text=self.the_cat.pronouns[0]["parent"],
             manager=MANAGER,
             container=self,
         )
 
         self.boxes["sibling"] = pygame_gui.elements.UITextEntryLine(
-            ui_scale(pygame.Rect((430, 520), (200, 60))),
+            ui_scale(pygame.Rect((215, 275), (100, 30))),
             placeholder_text=self.the_cat.pronouns[0]["sibling"],
             manager=MANAGER,
             container=self,
@@ -892,7 +893,7 @@ class PronounCreation(UIWindow):
         # Add buttons
         self.buttons = {}
         self.buttons["save_pronouns"] = UISurfaceImageButton(
-            ui_scale(pygame.Rect((0, 335), (73, 30))),
+            ui_scale(pygame.Rect((140, 345), (73, 30))),
             "save",
             get_button_dict(ButtonStyles.SQUOVAL, (73, 30)),
             object_id="@buttonstyles_squoval",
@@ -902,7 +903,7 @@ class PronounCreation(UIWindow):
         )
         # Creating Checkmarks
         self.buttons["singular_unchecked"] = UIImageButton(
-            ui_scale(pygame.Rect((112, 285), (34, 34))),
+            ui_scale(pygame.Rect((40, 350), (34, 34))),
             "",
             object_id="@unchecked_checkbox",
             starting_height=2,
@@ -911,7 +912,7 @@ class PronounCreation(UIWindow):
             container=self,
         )
         self.buttons["singular_checked"] = UIImageButton(
-            ui_scale(pygame.Rect((112, 285), (34, 34))),
+            ui_scale(pygame.Rect((40, 350), (34, 34))),
             "",
             object_id="@checked_checkbox",
             starting_height=2,
@@ -921,7 +922,7 @@ class PronounCreation(UIWindow):
         )
 
         self.buttons["plural_unchecked"] = UIImageButton(
-            ui_scale(pygame.Rect((227, 285), (34, 34))),
+            ui_scale(pygame.Rect((165, 350), (34, 34))),
             "",
             object_id="@unchecked_checkbox",
             starting_height=2,
@@ -930,7 +931,7 @@ class PronounCreation(UIWindow):
             container=self,
         )
         self.buttons["plural_checked"] = UIImageButton(
-            ui_scale(pygame.Rect((227, 285), (34, 34))),
+            ui_scale(pygame.Rect((165, 350), (34, 34))),
             "",
             object_id="@checked_checkbox",
             starting_height=2,
@@ -1056,7 +1057,7 @@ class PronounCreation(UIWindow):
                 self.sample_text_box.kill()
                 self.sample_text_box = pygame_gui.elements.UITextBox(
                     self.get_sample_text(self.get_new_pronouns()),
-                    ui_scale(pygame.Rect((7, 60), (197, 278))),
+                    ui_scale(pygame.Rect((7, 30), (197, 278))),
                     object_id="#text_box_30_horizcenter_spacing_95",
                     manager=MANAGER,
                     container=self.demo_container,
@@ -1480,10 +1481,17 @@ class UpdateAvailablePopup(UIWindow):
     def process_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.continue_button:
-                self.x = UpdateWindow(
-                    game.switches["cur_screen"], self.announce_restart_callback
-                )
-                self.kill()
+                url = "https://mods.clangen.io/LifeGen/download"
+
+                if get_version_info().is_dev():
+                    url = "https://mods.clangen.io/LifeGen/download"
+
+                if platform.system() == "Darwin":
+                    subprocess.Popen(["open", "-u", url])
+                elif platform.system() == "Windows":
+                    os.system(f"start \"\" {url}")
+                elif platform.system() == "Linux":
+                    subprocess.Popen(["xdg-open", url])
             elif (
                 event.ui_element == self.close_button
                 or event.ui_element == self.cancel_button
@@ -1508,7 +1516,6 @@ class UpdateAvailablePopup(UIWindow):
         return super().process_event(event)
 
     def announce_restart_callback(self):
-        self.x.kill()
         y = AnnounceRestart(game.switches["cur_screen"])
         y.update(1)
 
@@ -2315,9 +2322,9 @@ class MateScreen(UIWindow):
         game.switches['window_open'] = True
         self.clan_name = str(game.clan.name + 'Clan')
         self.last_screen = last_screen
-        self.mate = game.switches['new_mate']
+        self.mates = game.switches['new_mate']
         self.pick_path_message = UITextBoxTweaked(
-            f"{self.mate.name} confesses their feelings to you.",
+            f"{self.mates.name} confesses their feelings to you.",
             ui_scale(pygame.Rect((20, 20), (260, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",

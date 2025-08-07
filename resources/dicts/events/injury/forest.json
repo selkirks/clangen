@@ -428,16 +428,9 @@
         },
         "injury": [
             {
-                "cats": [
-                    "m_c",
-                    "r_c"
-                ],
-                "injuries": [
-                    "shivering"
-                ],
-                "scars": [
-                    "FROSTPAWS"
-                ]
+                "cats": [ "m_c", "r_c"], 
+                "injuries": [ "shivering" ],
+                "scars": ["FROSTMITT", "FROSTSOCK"]
             }
         ],
         "history": [

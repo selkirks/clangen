@@ -40,7 +40,7 @@
                 ]
             },
             {
-                "text": "You're y_c - you never give less than your absolute best! m_n is found again and again and again... Until {PRONOUN/m_n/subject}{VERB/m_n/'re/'s} more worn out than you. Your head is held high on the way back to camp. You can't wait to tell your denmates all about your skills again!",
+                "text": "You're p_l - you never give less than your absolute best! m_n is found again and again and again... Until {PRONOUN/m_n/subject}{VERB/m_n/'re/'s} more worn out than you. Your head is held high on the way back to camp. You can't wait to tell your denmates all about your skills again!",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -557,7 +557,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app6",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -822,7 +822,7 @@
                 "weight": 20
             },
             {
-                "text": "Swimming! You're a master at that! Without hesitation you dive in and show off your skills. m_n/CAP} {VERB/m_n/joke/jokes} that {PRONOUN/m_n/subject} should learn from you instead of teaching you!",
+                "text": "Swimming! You're a master at that! Without hesitation you dive in and show off your skills. m_n jokes that {PRONOUN/m_n/subject} should learn from you instead of teaching you!",
                 "exp": 10,
                 "weight": 20,
                 "stat_trait": [
@@ -865,7 +865,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app_10",
         "min_cats": 1,
         "max_cats": 3,
         "min_max_status": {},
@@ -923,7 +923,7 @@
             "lifegen"
         ],
         "tags": [],
-        "patrol_art": "app_default",
+        "patrol_art": "lifegen_app11",
         "min_cats": 1,
         "max_cats": 2,
         "min_max_status": {},
@@ -1181,7 +1181,7 @@
         "chance_of_success": 55,
         "success_outcomes": [
             {
-                "text": "You reassure r_a that it's alright and the two of you manage to share a good laugh about it. After your mentors are ready for you to continue, the training session turns out to be a fun one! Your bond with {PRONOUN/r_a/subject} grows even if you're both exhausted in the end.",
+                "text": "You reassure r_a that it's alright and the two of you manage to share a good laugh about it. After your mentors are ready for you to continue, the training session turns out to be a fun one! Your bond with {PRONOUN/r_a/object} grows even if you're both exhausted in the end.",
                 "exp": 5,
                 "weight": 20
             },
@@ -1322,7 +1322,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "You approach {PRONOUN/r_a/object} and offer kind words of encouragement. After a few moments of listening, r_a thank you for your support, giving you a small smile of appreciation. Taking the moment to be kind was worth it.",
+                "text": "You approach {PRONOUN/r_a/object} and offer kind words of encouragement. After a few moments of listening, r_a thanks you for your support, giving you a small smile of appreciation. Taking the moment to be kind was worth it.",
                 "exp": 10,
                 "weight": 20
             },
@@ -1882,7 +1882,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "Although it's one of the worst duties an apprentice can be assigned, the task you have been given must be done. As you clean out the flea-infested moss r_e tell you an enthralling tale of daring acts and courageous moments to keep up your good spirits. It turns out that the task wasn't as bad as you thought! You thankfully don't bring any back with you either.",
+                "text": "Although it's one of the worst duties an apprentice can be assigned, the task you have been given must be done. As you clean out the flea-infested moss r_e tells you an enthralling tale of daring acts and courageous moments to keep up your good spirits. It turns out that the task wasn't as bad as you thought! You thankfully don't bring any back with you either.",
                 "exp": 10,
                 "weight": 20
             }
@@ -2244,6 +2244,155 @@
                 "can_have_stat": [
                     "p_l"
                 ]
+            }
+        ]
+    },
+    {
+        "patrol_id": "lg_app_shunned_R1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "shunned_gen",
+        "min_cats": 1,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "m_n stalks over to you with disgust clear on {PRONOUN/m_n/poss} face. It's time for a lesson, but {PRONOUN/m_n/subject} {VERB/m_n/aren't/isn't} happy about it.",
+        "decline_text": "You decide the scorn isn't worth it and hide away.",
+        "chance_of_success": 30,
+        "success_outcomes": [
+            {
+                "text": "Despite it all, m_n takes the time to perfect your hunting crouch, and a few tracking skills. Conversation starts with simple instructions before slowly blooming into advice. {PRONOUN/m_n/subject/CAP} {VERB/m_n/aren't/isn't} holding back on telling you how to get yourself back in order... but it's not wrong either.",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "Slowly, ever so slowly, the training session becomes normal. Like you're just another apprentice on another day of learning. Like you aren't shunned for your malicious crimes. m_n finally falters with realization and ends the session but you're satisfied with the taste of normalcy.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "m_n doesn't hold back in battle training. It's less actual training and more learning by trial and error. By the time your mentor decides to end the session you're exhausted and sore. You did, however, learn a bit from it, so you take the small victory.",
+                "exp": 0,
+                "weight": 15
+            },
+            {
+                "text": "There's no end to m_n's remarks about teaching you hunting tactics and tracking. Even you need to eat, but {PRONOUN/m_n/subject} {VERB/m_n/aren't/isn't} exactly wrong about the possibilities of using such skills for darker deeds... Not that you would do such a thing again, right?",
+                "exp": 0,
+                "weight": 15
+            },
+            {
+                "text": "l_n calls out to m_n swiftly. There will be no lessons for you. The clan wouldn't want to strengthen your skills for you to then use against them... again. The possibility is enough for l_n to deny you learning of any sort for the moment. At least - until you're trustworthy again.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "lg_app_shunned_R2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "shunned_gen",
+        "min_cats": 1,
+        "max_cats": 2,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "r_w1 is stalking towards you. {PRONOUN/r_w1/poss/CAP} ears are flat and {PRONOUN/r_w1/poss} lips are curled into a snarl. You brace yourself for a verbal tirade for your crimes.",
+        "decline_text": "You can't deal with that so you slink away.",
+        "chance_of_success": 30,
+        "success_outcomes": [
+            {
+                "text": "You start to crouch low, listening to r_w1's opening rant, but realize you don't have to stay there and listen. You dart away past the watching r_w2 and r_w3 to hide in a spot you remembered from kithood. The spot is a little small now but the warriors all move past it.",
+                "exp": 15,
+                "weight": 20
+            },
+            {
+                "text": "As r_w1 speaks, you feel the weight of the words on your conscience. It's fueled by hatred, yes, but it's also a desperate attempt to come to terms with your crimes. {PRONOUN/r_w1/poss/CAP} words falter into sobbing and r_w2 steps in to guide {PRONOUN/r_w1/object} away. Your heart is heavy in their wake.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You try to slink away, to avoid the vicious words, but r_w2 and r_w3 block the path. Shame claws at your belly as you remain trapped by the three warriors. There's no escape - not without potential consequences. Perhaps, r_w1 finally remarks dryly, you'll never learn...",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "The beteration for your crimes is getting old. White-hot anger boils over within you and you lash back out with words sharper than claws. l_n and d_n break up the commotion, but not before you've made a fool of yourself. The clan's hateful gazes are all on you now as you feel the rush of anger give way to shame and guilt.",
+                "exp": 0,
+                "weight": 15
+            },
+            {
+                "text": "The tirade boils over into a raised paw, claws unsheathed. For a moment you're in your victim's place - before the crime - but you're faster. You dodge the blow and are forced to pelt away from r_w1 as r_w2 and r_w3 make sure you don't leave the camp. You hide away from the sharp glares.",
+                "exp": 0,
+                "weight": 10
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_df_sam2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "df_lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_default_df",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You're doing battle training on your own, as usual, when a living Dark Forest trainee shows up. Their mentor is nowhere to be seen.",
+        "decline_text": "It's not your problem that their mentor isn't around. You walk away to train somewhere else.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You offer to train them, and they accept graciously. You may not have been a full-fledged warrior in life, but you're a much better warrior than most of the c_n cats anyways.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You offer to train them, and just as they're about to accept, their mentor shows up. Well, win-win situation, you guess. You don't have to train with some probably incompetent cat, and they don't have to train with a stranger.",
+                "exp": 0,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You offer to train them, but they hiss and run away. You just wanted to help them train, why are they so mean?",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You're bored, so you decide to offer to train them instead. You quickly discover that you're either a bad teacher, or that they're just a really bad apprentice.",
+                "exp": 0,
+                "weight": 20
             }
         ]
     }

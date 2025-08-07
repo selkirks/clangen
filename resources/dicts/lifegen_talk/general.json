@@ -1,10 +1,9 @@
 {
-    "general": [
-        [
-            "Any"
-        ],
-        [
+    "general": {
+        "y_c": {},
+        "t_c": {},
+        "intro": [
             "Meow! This is a bug, please report this in the LifeGen server #dialogue-bugs channel."
         ]
-    ]
+    }
 }

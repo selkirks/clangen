@@ -31,7 +31,7 @@
         "You accidentally scare off a rabbit while out hunting with m_n. {PRONOUN/m_n/subject/CAP} {VERB/m_n/sigh/sighs} in exasperation but patiently {VERB/m_n/explain/explains} how to avoid making noise next time.",
         "r_a confides in you about {PRONOUN/r_a/poss} worries of becoming a warrior.",
         "While battle training, you execute a complex move perfectly on your first try. m_n praises you enthusiastically in front of the other apprentices.",
-        "You spend an enjoyable afternoon playing mossball with the r_k and teaching {PRONOUN/r_k/object} some basic hunting crouches.",
+        "You spend an enjoyable afternoon playing mossball with r_k and teaching {PRONOUN/r_k/object} some basic hunting crouches.",
         "y_p pulls you aside to give you advice before an assessment. {PRONOUN/y_p/poss/CAP} eyes shine with pride as {PRONOUN/y_p/subject} {VERB/y_p/nuzzle/nuzzles} you affectionately."
     ],
     "apprentice assertive": [
@@ -118,8 +118,8 @@
         "You find a strange Twoleg object shaped like an egg with strange buttons on it. You and the other apprentices ponder the use of this strange device and its little character trapped behind the screen.",
         "In order to prove a point to the kits that eating bugs is bad, you eat one yourself and get really sick because of it. The kits now understand why they shouldn't eat bugs.",
         "You and m_n have a leaf race at the nearby river. m_n comments how your antics make {PRONOUN/m_n/object} feel like an apprentice again, the two of you grow closer thanks to this experience.",
-        "You tag along with r_d to a meeting between c_nClan and o_c_n - a privilege that the mediator reminds you apprentices don't normally get. It's a new experience that you treasure, and you intend to make the most of it.",
-        "You help r_m with {PRONOUN/r_m/poss} garden, and {PRONOUN/r_m/subject} {VERB/r_m/give/gives} you a small bouquet as a thank-you. You decide to use it to decorate the apprentice den, and soon you and your denmates are planting your own garden to make the apprentice den look the best in c_nClan.",
+        "You tag along with r_d to a meeting between c_n and o_c_n - a privilege that the mediator reminds you apprentices don't normally get. It's a new experience that you treasure, and you intend to make the most of it.",
+        "You help r_m with {PRONOUN/r_m/poss} garden, and {PRONOUN/r_m/subject} {VERB/r_m/give/gives} you a small bouquet as a thank-you. You decide to use it to decorate the apprentice den, and soon you and your denmates are planting your own garden to make the apprentice den look the best in c_n.",
         "y_p cleans your nest while you're out training with m_n, and you come back to the other apprentices snickering at you. You're embarrassed but can't help but feel warm at the actions of your parent.",
         "With a cautious gaze, you watch as m_n talks with your parents. Anxiety tugs at your chest... Oh StarClan, what are they saying?",
         "You leave some prey you caught in y_p's nest as a gift. Later {PRONOUN/y_p/subject} {VERB/y_p/come/comes} up to you and gently {VERB/y_p/rest/rests} {PRONOUN/y_p/poss} head on yours, you snuggle into {PRONOUN/y_p/poss} warm embrace."

@@ -1,0 +1,796 @@
+{
+    "no_disaster1": {
+        "intro": [
+            "Beware the cat in the shadows."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Is it someone I know?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Shadows don't scare me.",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Can I stop them?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Perhaps. The closest paws often leave the deepest wounds."
+        ],
+        "2": [
+            "Trust no one, y_c."
+        ],
+        "3": [
+            "Only if you watch closely. Your wit will be your sharpest weapon."
+        ]
+    },
+    "tornado1_c": {
+        "tags": [
+            "tornado"
+        ],
+        "intro": [
+            "The sky shall spiral, roots will tear, what once was safe will fill with fear."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "The Clan can survive anything!",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Are you talking about a real storm?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "What should I do?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Your bravery is noble... but even stone can be shattered by this wind."
+        ],
+        "2": [
+            "More than wind and rain. Change is coming, and it doesn't ask permission."
+        ],
+        "3": [
+            "When the winds rise, be the roots that hold your Clan together."
+        ]
+    },
+    "tornado2_c": {
+        "tags": [
+            "tornado"
+        ],
+        "intro": [
+            "Spirits scream in twisting skies; beware the one who tells sweet lies."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "You mean there's a traitor?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "This sounds like something out of a bad dream.",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "How do I know who to trust?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Figure out who you trust, before it's too late."
+        ],
+        "2": [
+            "All storms feel like nightmares... until they tear your den apart."
+        ],
+        "3": [
+            "Trust no one, y_c."
+        ]
+    },
+    "tornado3_c": {
+        "tags": [
+            "tornado"
+        ],
+        "intro": [
+            "A circle of fury will dance through the trees, and only the still heart will bring peace."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "What does 'still heart' mean?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Sounds like someone needs to fight the storm!",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Why me?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "The eye of the storm -- that's where you need to go."
+        ],
+        "2": [
+            "You cannot claw the sky. Wisdom must guide your paws."
+        ],
+        "3": [
+            "The storm hasn't taken you yet."
+        ]
+    },
+    "avalanche1_c": {
+        "tags": [
+            "avalanche"
+        ],
+        "intro": [
+            "White thunder sleeps on the mountain's brow. When it wakes, it will not be merciful."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Thunder doesn't sleep... What are you really saying?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Is this about snow? Should we leave the mountain?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "What do I need to do?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Call it what you will--snow, stone, thunder. It will fall, and many will fall with it if you're not ready."
+        ],
+        "2": [
+            "Some dangers cannot be outrun. You must look for the signs... and know when to dig and when to run."
+        ],
+        "3": [
+            "Guide your Clan with care."
+        ]
+    },
+    "avalanche2_c": {
+        "tags": [
+            "avalanche"
+        ],
+        "intro": [
+            "The mountain sings, soft and low. When its song becomes a roar, shelter will become grave."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "A singing mountain? Are you being poetic?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "So even shelter isn't safe?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Tell me how to stop it.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "The mountain speaks--you must learn to listen before it screams."
+        ],
+        "2": [
+            "Even your dens can become traps when the sky and earth fall together."
+        ],
+        "3": [
+            "You cannot stop what has already begun. But you *can* lead others to where the snow won't reach."
+        ]
+    },
+    "avalanche3_c": {
+        "tags": [
+            "avalanche"
+        ],
+        "intro": [
+            "Buried hearts lie beneath frozen silence. Dig carefully, or you may awaken more than snow."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "What's hidden in the snow?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Are you warning me not to dig?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Why are you speaking in riddles?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Secrets. Regret. The past does not rest easily beneath the cold."
+        ],
+        "2": [
+            "Sometimes it's safer to leave what's buried... buried."
+        ],
+        "3": [
+            "Because the truth is too heavy to give all at once. You must uncover it one pawstep at a time."
+        ]
+    },
+    "water1_c": {
+        "tags": [
+            "contaminated_water"
+        ],
+        "intro": [
+            "The mirror lies. What flows clear hides sickness no eye can see."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "You mean the water looks clean, but it's dangerous?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "So... what should we drink?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "I'll warn the others right away!",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Yes. What seems pure may bring pain. Even water can lie."
+        ],
+        "2": [
+            "Look to the places where the moonlight does not reach. There you may find what's safe."
+        ],
+        "3": [
+            "Good. But they may not believe you--until the coughing begins."
+        ]
+    },
+    "water2_c": {
+        "tags": [
+            "contaminated_water"
+        ],
+        "intro": [
+            "A silver thread has turned to poison. Those who drink deeply will fall first."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "How can I stop it?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Who's behind this?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Will I get sick too?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Search for the source. Heal the water, and you may heal the Clan."
+        ],
+        "2": [
+            "This was not done with claws. But someone knew and said nothing."
+        ],
+        "3": [
+            "Not if you act quickly. But hesitation is as deadly as the water itself."
+        ]
+    },
+    "water3_c": {
+        "tags": [
+            "contaminated_water"
+        ],
+        "intro": [
+            "They will drink, and they will suffer. Only those who thirst with care will endure."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "You're saying I should be careful where I drink from?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Can we find clean water somewhere else?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Why is this happening to us?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Yes. One wrong sip can carry more danger than a fox in the den."
+        ],
+        "2": [
+            "Yes--but you must search beyond where your paws have wandered before."
+        ],
+        "3": [
+            "Sometimes, the land is wounded... and the Clan suffers with it."
+        ]
+    },
+    "preysick1_c": {
+        "tags": [
+            "prey_sickness"
+        ],
+        "intro": [
+            "The forest's gifts have turned to curses. What fills the belly may drain the life."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "You mean the prey is poisoned?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "How do I know what's safe to eat?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "I'll warn the Clan before it spreads.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Not poisoned... but sick. Their sickness becomes yours if you're not careful."
+        ],
+        "2": [
+            "Trust your nose--and your instincts."
+        ],
+        "3": [
+            "Wise. But not all will listen until the fevers come."
+        ]
+    },
+    "preysick2_c": {
+        "tags": [
+            "prey_sickness"
+        ],
+        "intro": [
+            "The hunter becomes the hunted, not by claw, but by the rot inside the flesh."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Rot inside the flesh... is it spreading?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "What caused this?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Can we still hunt at all?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Yes. One bite is all it takes. Then the illness walks on four paws."
+        ],
+        "2": [
+            "A sickness older than your Clan. It stirs when balance breaks."
+        ],
+        "3": [
+            "You must--but with care."
+        ]
+    },
+    "preysick3_c": {
+        "tags": [
+            "prey_sickness"
+        ],
+        "intro": [
+            "Red eyes in the dark, limp legs beneath the trees... the prey no longer runs from death--it carries it."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "That sounds terrifying... What should I do?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Prey with red eyes? Is this just symbolic?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "How long do we have?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Choose wisely what you bring to your Clan. One careless bite could cost many lives."
+        ],
+        "2": [
+            "Not symbolic. The signs are real, and they walk on trembling paws."
+        ],
+        "3": [
+            "Not long. Act now, or the sickness will feast before your Clan does."
+        ]
+    },
+    "hurricane1": {
+        "intro": [
+            "Tempest comes. Tempest calls. Who are you to ignore the wind? Who are you to ignore the rain?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I won't ignore it. I'll lead the Clan through it.",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "What if I can't protect them?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Can we outrun the storm?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Then the wind may howl, but your spirit will not break."
+        ],
+        "2": [
+            "Even the most experienced leaders falter."
+        ],
+        "3": [
+            "You can't outrun the swiftest winds."
+        ]
+    },
+    "blizzard1": {
+        "intro": [
+            "Blind will you go, In the torrent of snow, In the darkness its seeds sow, Our light we will show, Should you let it be so"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I'll find the light. I swear it.",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Can we survive this snow?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "That rhyme... is it a warning or a guide?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Then we will walk beside you--one pawstep at a time."
+        ],
+        "2": [
+            "Only those who keep moving. Stillness is the cold's first victim."
+        ],
+        "3": [
+            "Both. Remember my words, y_c."
+        ]
+    },
+    "wildfire1": {
+        "intro": [
+            "The warmth is not safe."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "What do you mean?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Warmth is comfort. I don't believe you.",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Can we stop it from spreading?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "It will come when you least expect it."
+        ],
+        "2": [
+            "[t_c shrugs.]",
+            "Listen, don't listen. I'm not here to coddle you."
+        ],
+        "3": [
+            "Only if you act swiftly."
+        ]
+    },
+    "floods1": {
+        "intro": [
+            "Seeping and suffocating, rising and raising, our vital source will engulf our growth anew."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Are you saying the river will flood?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "How can we prepare for this?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Water gives us life; it wouldn't betray us.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Yes, the river's hunger knows no bounds when the skies weep."
+        ],
+        "2": [
+            "Seek higher ground and safeguard the vulnerable; the waters respect no boundaries."
+        ],
+        "3": [
+            "Be careful, y_c."
+        ]
+    },
+    "floods2": {
+        "intro": [
+            "Bubbles will break the surface, rubble will flow and water will crush."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Is there a way to stop this?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Will the camp be affected?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "We've survived floods before; we can do it again.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "The waters cannot be tamed, only endured. Prepare your Clan."
+        ],
+        "2": [
+            "No den will be spared if the river decides to reclaim its path."
+        ],
+        "3": [
+            "Past resilience does not guarantee future survival. Stay vigilant."
+        ]
+    },
+    "floods3": {
+        "intro": [
+            "An unbreakable force will pull you down into the dark waters."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "How can we avoid being pulled down?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Is this force the river?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "We are strong swimmers; we'll be fine.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Stay together and seek the high places."
+        ],
+        "2": [
+            "Yes, the river's embrace is cold and unyielding."
+        ],
+        "3": [
+            "[t_c dips {PRONOUN/t_c/poss} head.]",
+            "We believe in you and your Clan."
+        ]
+    },
+    "terrible_cold1": {
+        "intro": [
+            "There is frost in your blood that no warmth can melt."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Is this a sickness or the weather?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "How can we protect ourselves?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "We've faced leaf-bare before; we'll manage.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Think, y_c. We don't hold all the answers."
+        ],
+        "2": [
+            "Share warmth, conserve energy, and guard the elders and kits closely."
+        ],
+        "3": [
+            "This leaf-bare carries a deeper chill than any before."
+        ]
+    },
+    "terrible_cold2": {
+        "intro": [
+            "Nothing awaits but a cold embrace."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Is death coming for us?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Can we find shelter from this cold?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "We must hunt more to keep our strength up.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Not if you prepare for it."
+        ],
+        "2": [
+            "The forest offers little refuge when the frost comes."
+        ],
+        "3": [
+            "Good plan. Good luck, y_c."
+        ]
+    },
+    "terrible_cold3": {
+        "intro": [
+            "Like weeds to a garden, a host has been found."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Is the Clan the garden or the host?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "What is invading us?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "We'll root out this threat, whatever it is.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Both. The invader thrives where it finds opportunity."
+        ],
+        "2": [
+            "A sickness that preys on the weak."
+        ],
+        "3": [
+            "Vigilance and care are your best tools against this monster."
+        ]
+    },
+    "twoleg1": {
+        "intro": [
+            "Beings of two will march the land, bringing destruction where they stand."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Are the Twolegs invading our territory?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "How can we protect the Clan?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "We've dealt with Twolegs before. This is no different.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Yes, and their presence ever growing."
+        ],
+        "2": [
+            "Think of a plan before it's too late."
+        ],
+        "3": [
+            "Complacency breeds downfall. They are not the same as before."
+        ]
+    },
+    "twoleg2": {
+        "intro": [
+            "Creatures, ignorant and vain, will settle in the land we claim."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Are they building something?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "Can we drive them away?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "Maybe they won't stay long.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Yes, their nests grow like weeds."
+        ],
+        "2": [
+            "Their kind does not fear tooth or claw. You must survive, not fight."
+        ],
+        "3": [
+            "Don't not let your optimism blind you to the truth."
+        ]
+    },
+    "twoleg3": {
+        "intro": [
+            "Fear the ones built like trees, for they shall do what they please."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "What are they going to do?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "We can hide in the dens. They'll never see us.",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "How much time do we have?",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Tear through the trees, flatten the land, and leave nothing behind."
+        ],
+        "2": [
+            "Twolegs do not need to see you to harm you."
+        ],
+        "3": [
+            "Not long. I can hear the monsters already hum in the distance."
+        ]
+    },
+    "twoleg4": {
+        "intro": [
+            "Shadows walk into your camp, uninvited and unwanted."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Are you talking about Twolegs in our camp?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "How can we stop them from finding us?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "We'll move if we have to.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Yes. And once they enter, the damage is done."
+        ],
+        "2": [
+            "Seek out the other Clans, y_c. Banding together may be your only hope."
+        ],
+        "3": [
+            "A wise choice. Life is worth more than a single stretch of land."
+        ]
+    },
+    "twoleg5": {
+        "intro": [
+            "Like thorns, it's a grasp one cannot escape."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Are you saying we're trapped?",
+                "next_scene": "1"
+            },
+            "choice2": {
+                "text": "What will happen if we stay?",
+                "next_scene": "2"
+            },
+            "choice3": {
+                "text": "We'll cut through the thorns and make our way out.",
+                "next_scene": "3"
+            }
+        },
+        "1": [
+            "Trapped if you do not act. The longer you wait, the tighter it holds."
+        ],
+        "2": [
+            "Illness, hunger, and fear will follow."
+        ],
+        "3": [
+            "Then move swiftly. The Clan's survival depends on your courage."
+        ]
+    }
+}

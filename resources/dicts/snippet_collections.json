@@ -975,95 +975,28 @@
     },
     "emotional": {
       "general": [
-        [
-          "blood spilt in battle",
-          "a battle from long ago",
-          "the terror of a battle field"
-        ],
-        [
-          "a war won",
-          "a battle lost"
-        ],
-        [
-          "an old rendezvous",
-          "a friendly meeting",
-          "a truce between enemies"
-        ],
-        [
-          "a cat's last breath"
-        ],
-        [
-          "a promise kept",
-          "a half-remembered promise",
-          "a promise already broken",
-          "a promise not yet made"
-        ],
-        [
-          "a story half-remembered"
-        ],
-        [
-          "the excitement of an apprentice",
-          "an apprentice's vigor",
-          "the naivety of an apprentice"
-        ],
-        [
-          "the strength of a warrior",
-          "the steadfastness of a warrior",
-          "a warrior's loyalty"
-        ],
-        [
-          "the ache of an elder's bones",
-          "an elder's wisdom"
-        ],
-        [
-          "drowning"
-        ],
-        [
-          "lingering grief",
-          "grief's sharp impact"
-        ],
-        [
-          "a newborn's innocence",
-          "the loss of innocence"
-        ],
-        [
-          "a memory being forgotten",
-          "a fading memory",
-          "a memory long lost"
-        ],
-        [
-          "forgetting something important",
-          "forgetting a secret once precious"
-        ],
-        [
-          "wishing for something now missing",
-          "longing for a long lost possession"
-        ],
-        [
-          "hatred for a dear friend"
-        ],
-        [
-          "knowing a secret that can never be revealed"
-        ],
-        [
-          "a truth unbelieved",
-          "a truth concealed",
-          "a truth never revealed"
-        ],
-        [
-          "a weakness in {PRONOUN/cat_tag/poss} legs"
-        ],
-        [
-          "a belly so empty {PRONOUN/cat_tag/subject} feel nauseous"
-        ],
-        [
-          "a home no longer welcoming",
-          "a home long lost",
-          "a home once forgotten"
-        ],
-        [
-          "oozing corruption"
-        ]
+        ["blood spilt in battle", "a battle from long ago", "the terror of a battle field"],
+        ["a war won", "a battle lost"],
+        ["an old rendezvous", "a friendly meeting", "a truce between enemies"],
+        ["a cat's last breath"],
+        ["a promise kept", "a half-remembered promise", "a promise already broken", "a promise not yet made"],
+        ["a story half-remembered"],
+        ["the excitement of an apprentice", "an apprentice's vigor", "the naivety of an apprentice"],
+        ["the strength of a warrior", "the steadfastness of a warrior", "a warrior's loyalty"],
+        ["the ache of an elder's bones", "an elder's wisdom"],
+        ["drowning"],
+        ["lingering grief", "grief's sharp impact"],
+        ["a newborn's innocence","the loss of innocence"],
+        ["a memory being forgotten", "a fading memory", "a memory long lost"],
+        ["forgetting something important", "forgetting a secret once precious"],
+        ["wishing for something now missing", "longing for a long lost possession"],
+        ["hatred for a dear friend"],
+        ["knowing a secret that can never be revealed"],
+        ["a truth unbelieved", "a truth concealed", "a truth never revealed"],
+        ["a weakness in {PRONOUN/cat_tag/poss} legs"],
+        ["a belly so empty {PRONOUN/cat_tag/subject} {VERB/cat_tag/feel/feels} nauseous"],
+        ["a home no longer welcoming", "a home long lost", "a home once forgotten"],
+        ["oozing corruption"]
       ],
       "forest": [],
       "plains": [],

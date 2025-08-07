@@ -419,7 +419,7 @@
             "Will callout the other kits cheating in games",
             "Wants to grow up to be a trustworthy warrior",
             "Returns a kit's lost mossball, despite it looking so colorful and squashy to play with",
-            "Told r_c that {PRONOUN/r_c/subject} need a bath"
+            "Told r_c that {PRONOUN/r_c/subject} {VERB/r_c/need/needs} a bath"
         ],
         "main_trait_constraint": [
             "honest"

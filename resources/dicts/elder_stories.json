@@ -1,0 +1,327 @@
+{
+    "starclan": [
+        {
+            "id": "sc_J1",
+            "title": "A Helping Paw",
+            "story": [
+                "m_c tells a simple story about the goodness of StarClan.",
+                "It's said that ancestor spirits can lead hunting patrols to prey, even in the harshest conditions. m_c recounts a tale of a hunting patrol that was struggling to find any prey.",
+                "Just as the patrol was about to return home empty-pawed, a pure black feather floated past and landed in the bright white snow at the base of the tree. Digging at that tree uncovered a whole den of hibernating groundhogs! The patrol returned home with enough to feed the entire Clan."
+            ]
+        },
+        {
+            "id": "sc_J2",
+            "title": "StarClan's Sights",
+            "story": [
+                "m_c decides to tell a story about the grace of StarClan.",
+                "One day, a very long time ago, the leader of an ancient Clan decided to run away. Burdened by the stress of being leader, they left camp during the night and started towards the border.",
+                "The night was still and cool. The moon shone down onto the rain-slicked ground, causing the grass to twinkle just like the stars above. When the leader reached the Clan's border, the sparkles stopped. Beyond Clan territory was a dull, dark landscape, barren of StarClan's touch.",
+                "The leader decided that their life could not carry on without StarClan. They turned around and returned to camp, and when they awoke in the morning, they stepped down, allowing their capable deputy to take their place. The leader was safe in StarClan's sights once more."
+            ]
+        },
+        {
+            "id": "sc_J3",
+            "title": "Weather",
+            "min_max_cats": [2,5],
+            "kits_amount": "any",
+            "elder": {
+                "cluster": ["brooding", "cool", "stable", "introspective"],
+                "min_max_faith": [-9, 9]
+            },
+            "story": [
+                "m_c has been chosen to tell a story about StarClan today. While {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not really in the mood to tell a tale, {PRONOUN/m_c/subject} {VERB/m_c/decide/decides} to try anyway.",
+                "m_c supposes it would be worthwhile to tell the group about StarClan's control of the weather. Whether you look up to your warrior ancestors or not, it's undeniable how powerful they must be to have their control over the skies.",
+                "From clouds covering the moon at tense Gatherings to sending sudden downpours to quench fires, m_c discusses the many ways their warrior ancestors take control of the weather to help out the Clans."
+            ]
+        },
+        {
+            "id": "sc_J4",
+            "title": "Personal Approach",
+            "min_max_cats": [1,1],
+            "kits_amount": "none",
+            "elder": {
+                "min_max_faith": [2, 9]
+            },
+            "random_cat": {
+                "min_max_faith": [-2, 2]
+            },
+            "story": [
+                "When r_c asks m_c to talk to {PRONOUN/r_c/object} about StarClan, m_c is happy to oblige.",
+                "First, m_c asks why. r_c tells {PRONOUN/m_c/object} {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} been feeling a bit lost about {PRONOUN/r_c/poss} faith and thought m_c might be some help, since {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} to look up to StarClan quite a bit. Why is that?",
+                "m_c simply tells r_c how {PRONOUN/m_c/subject} {VERB/m_c/view/views} the world. To m_c, StarClan is everywhere, from the call of a bird to the gentle thrum of the rain on den roofs. Everything worth enjoying in life is sent by {PRONOUN/m_c/poss} loved ones up in StarClan."
+            ]
+        },
+        {
+            "id": "sc_ant1",
+            "title": "The Black Dog",
+            "min_max_cats": [2,5],
+            "elder": {
+                "min_max_faith": [-2,9]
+            },
+            "story": [
+                "m_c's tail flicks as {PRONOUN/m_c/subject} {VERB/m_c/begin/begins} to tell a story about one of StarClan's many omens.",
+                "It was many moons ago--long before anycat alive today was born, when a large black dog found its way into Clan territory. The dog spent nearly a moon there, chasing away prey and destroying invaluable patches of herbs that the Clancats needed. Eventually, the dog made its way into one of the Clan's camps...",
+                "Thankfully, the Clancats were safe! Though only just. The previous night, one of the Clan's medicine cats had received a cautionary omen from StarClan that told them to evacuate the camp. As dawn broke, the medicine cat managed to convince the Clan to leave their camp, ultimately saving them from the dog's wrath. Without StarClan's omen, who knows what would have happened..."
+            ]
+        },
+        {
+            "id": "sc_rad1",
+            "min_max_cats": [1,5],
+            "kits_amount": "any",
+            "elder": {
+                "min_max_faith": [1, 9]
+            },
+            "title": "The Dying Warrior",
+            "story": [
+                "m_c decides to share the legend of StarClan's dying warrior.",
+                "Long ago, swathes of Twolegs encroached on a group of Clans, destroying their territories and driving them out of their camps. The Clans desperately sought guidance from StarClan, asking where they could possibly go.",
+                "Though StarClan had a tentative answer, the interference from Twolegs made it a challenge to communicate with the Clans. The best way to direct the Clans would be for a spirit to race across the sky - but they knew whoever did so might never return.",
+                "They struggled to decide who would run such a dangerous relay, until a fading, near-forgotten cat stepped forward with a suggestion: a group of fading cats would run together, as one last service to their living Clan. Eventually, the spirits agreed, thanking their starry-furred Clanmates and wishing them well.",
+                "The group of fading cats began racing towards an unknown location, pelts so close that they almost seemed to be melding together. And then, they <i>did</i>. The clowder of near-forgotten cats merged into one, their spirits growing brighter and brighter, burning a starlit trail into the sky to guide the Clans forward - a dying warrior leading them towards a new life."
+            ]
+        },
+        {
+            "id": "sc_rad2",
+            "min_max_cats": [1,5],
+            "kits_amount": "any",
+            "elder": {
+                "min_max_faith": [1, 9]
+            },
+            "title": "A Light Battle",
+            "story": [
+                "m_c chuckles to {PRONOUN/m_c/self} as {PRONOUN/m_c/subject} {VERB/m_c/begin/begins} to share the story of the light battle.",
+                "One day, a group of StarClan cats were wandering near the Dark Forest border when they spotted a gap in the barricade. Before they could get any closer, a murky paw poked through the hole, clawing it a little wider. Though the hole wasn't large enough for a cat to slip through, it was large enough for a Dark Forest cat to peer through it, and the StarClan patrol caught a glimpse of the inky intruder flinching backwards at the light of StarClan's territory.",
+                "Outraged, the patrol would have attacked the trespasser - if not for the suggestion of one StarClan cat with mischief twinkling in their eyes. Was there truly a need to fight? Clearly this intruder had vision, and chances were, they were so used to the darkness that the brightness of StarClan territory was hurting their eyes. Perhaps the StarClan cats had better weapons than their claws.",
+                "With a nod of agreement, the StarClan cats huddled together and waited. Eventually, the Dark Forest intruder clawed a large enough hole in the border to crawl through. And just as the mischievous StarClan cat guessed, standing shoulder-to-shoulder was sufficient confrontation: to the Dark Forest cat, the intense glow of the StarClan cats' pelts plus the natural light of StarClan territory served as a painful blow to the eyes!",
+                "The intruder yowled in pain and scuttled back into the Dark Forest, leaving the StarClan cats howling with laughter as they began patching up the border. It was one of many instances that proved StarClan cats to be bright in more ways than one."
+            ]
+        }
+
+    ],
+    "darkforest": [
+        {
+            "id": "df_J1",
+            "title": "The Murky River",
+            "story": [
+                "m_c decides to tell the group a story from ancient Clans.",
+                "Long ago, a very evil cat attempted to kill their leader. They lured the leader to a dark and secluded river, where they attempted to drown the leader and take all of their lives. However, when the evil cat touched the water, a pair of paws shot out, grabbed the cat, and pulled them in, sparing the leader's lives.",
+                "The cat was dragged deeper and deeper into the water until they emerged onto the bank of a blood-red river. The forest around them had died, and hungry eyes shone at them from the shadows that surrounded them. The cat had been taken to the Dark Forest."
+            ]
+        },
+        {
+            "id": "df_J2",
+            "title": "Change of Pace",
+            "elder": {
+                "min_max_faith": [-2 ,9]
+            },
+            "story": [
+                "When m_c is asked to tell a story about the Dark Forest, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a bit nervous. {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} know much about it.",
+                "m_c eventually recalls an old story {PRONOUN/m_c/subject} once heard. {PRONOUN/m_c/subject/CAP} {VERB/m_c/tell/tells} a tale about a lost StarClan cat who ended up in the Dark Forest. The StarClan cat was terrified at first, jumping at every twig snap or howl in the distance. However, as they explored the territory, they discovered that not everything was worth being scared of.",
+                "The cat found dark rivers to swim in, and spindly trees to climb. They found inhabitants to train with and bugs to chase around. Though it was murky and the air was heavy, the StarClan cat found themself preferring the ruggedness and inpredictability of the Dark Forest to the calm and boring environment of StarClan.",
+                "The next time any of their Clanmates saw that StarClan cat in a dream, the stars in their pelt had been swapped for a film of muck."
+            ]
+        },
+        {
+            "id": "df_J3",
+            "title": "Change of Pace",
+            "elder": {
+                "min_max_faith": [-9, -2]
+            },
+            "story": [
+                "m_c is excited to tell a story about the Dark Forest!",
+                "After some thinking, m_c eventually recalls an old story {PRONOUN/m_c/subject} once heard. {PRONOUN/m_c/subject/CAP} {VERB/m_c/tell/tells} a tale about a lost StarClan cat who ended up in the Dark Forest. The StarClan cat was terrified at first, jumping at every twig snap or howl in the distance. However, as they explored the territory, they discovered that not everything was worth being scared of.",
+                "The cat found dark rivers to swim in, and spindly trees to climb. They found inhabitants to train with and bugs to chase around. Though it was murky and the air was heavy, the StarClan cat found themself preferring the ruggedness and unpredictability of the Dark Forest to the calm and boring environment of StarClan.",
+                "The next time any of their Clanmates saw that StarClan cat in a dream, the stars in their pelt had been swapped for a film of muck."
+            ]
+        },
+        {
+            "id": "df_J4",
+            "title": "The Battle",
+            "elder": {
+                "min_max_faith": [-9, -2]
+            },
+            "story": [
+                "m_c is excited to tell a story about the Dark Forest!",
+                "Once, a very long time ago, StarClan and the Dark Forest were at war. The Dark Forest had broken down the barrier between the two afterlives and launched an attack on their starry enemies for treating them so cruelly. Being highly trained and brutal, the Dark Forest cats quickly wiped out what StarClan cats they could find, showing no mercy, and enjoyed a long and lavish feast in StarClan's prey-laden forests.",
+                "Since that day so many moons ago, StarClan has since repopulated, and those Dark Forest cats have all faded away. However, some say that the barrier between StarClan and the Dark Forest is growing weaker every day, and another war is bound to break out soon..."
+            ]
+        },
+        {
+            "id": "df_Squirrel1",
+            "min_max_cats": [1,5],
+            "elder": {
+                "min_max_faith": [-9, -2],
+                "age": ["adolescent", "young adult", "adult"]
+            },
+            "random_cat": {
+                "min_max_faith": [-9, 9],
+                "age": ["adolescent", "young adult"],
+                "cluster": ["neurotic"]
+            },
+            "title": "The Cowardly Apprentice",
+            "story": [
+                "m_c looks right at r_c as {PRONOUN/m_c/subject} {VERB/m_c/begin/begins} a tale about a nervous apprentice who found a place in the Dark Forest.",
+                "Once, there was an apprentice who was scared of everything: every rustling leaf, shifting shadow, and buzzing insect. Their Clanmates regarded them with disdain, believing that the apprentice would never be brave enough to be useful to their Clan.",
+                "But one night, after the Clan leader scolded the apprentice for their cowardice in front of everyone, the apprentice awoke in an unfamiliar forest. The trees were choked in shadows, but there was something... strangely comforting about them. Unlike normal shadows, the apprentice felt that they could hide within the darkness, and use it to hide their mistakes and fear.",
+                "And so, night after night, the apprentice visited the forest in their dreams. They learned how to strike from the shadows, and honed their claws and instincts by ambushing the muck-pelted cats that called this place home.",
+                "And one fateful night, the apprentice saw their Clan leader wandering, afraid, through the fog-enswirled trees. After moons of the leader calling the apprentice a disappointment and a coward, the apprentice had no mercy. They hunted their leader down and killed them with a single, brutal strike.",
+                "The leader was found cold in their nest the following morning. The apprentice awoke with blood on their paws. And from then on, their Clan regarded them with fear, and never dared to doubt them again."
+            ]
+        },
+        {
+            "id": "df_Squirrel2",
+            "elder": {
+                "min_max_faith": [-9, -2]
+            },
+            "title": "The Forbidden Cure",
+            "story": [
+                "m_c settles down to tell a story about the Dark Forest.",
+                "Once, long ago, redcough swept through the Clan. The medicine cat tried desperately to ease their Clanmates' suffering, but they quickly ran out of the necessary herbs. The remaining healthy cats scoured their territory for the plants, but to no avail.",
+                "However, a thick patch of herbs grew just across the border on o_c_n territory. The medicine cat asked o_c_n for permission to harvest some, but their other clan's leader coldly refused their request. Desperately, the medicine cat asked their own leader and deputy for permission to trespass on the other Clan's territory to acquire the life-saving herbs, but the two were stubbornly loyal to the Warrior Code. Even if it would mean the deaths of innocent cats, they refused to break it.",
+                "The medicine cat returned to the border and glared at the herbs, so close but still out of reach. As they sat, they grew angry. What kind of leader put arbitrary rules above their Clan's well-being? How dare they stop the medicine cat from doing their job?",
+                "The medicine cat got to their paws and, without a second thought, marched across the border. They gathered as many herbs as they could carry, their heart pounding. As they turned to flee, though, they ran right into a lone o_c_n warrior.",
+                "The medicine cat froze. They knew it was over: they were going to die here, or else they would be forced out of their Clan once their leader learned what they had done. The medicine cat started to stumble through an apology, and the warrior bared their teeth, but suddenly there was a flash of dark fur and the warrior fell to the ground. An unfamiliar, muck-pelted cat stood behind them: snarling and translucent, with blood dripping from their unsheathed claws. They dipped their head towards the medicine cat, and then faded.",
+                "And so the medicine cat returned home, and many cats were saved by the collected herbs. If anyone suspected what they had done, they never said anything. And while the Clan gave thanks to StarClan for their recovery, the medicine cat secretly sent their gratitude to the Dark Forest, for it was a Dark Forest warrior who rescued them and let them save their Clanmates."
+            ]
+        }
+    ],
+    "neutral": [
+        {
+            "id": "ur_J1",
+            "title": "Ghostly Presence",
+            "story": [
+                "m_c tells a story about a vengeful spirit beyond both StarClan and the Dark Forest.",
+                "There was once a kittypet who wandered Clan territory all day. The collar on their neck jingled as they walked, startling prey and annoying nearby Clan cats. One day, the leader of a nearby Clan had enough and sent a patrol to deal with the intruder. The kittypet was swiftly killed without mercy. The Clan was relieved that prey would soon return to the forest now that the loud kittypet wasn't there to disturb it.",
+                "However, the Clan still didn't know peace. The kittypet's spirit was still left wandering the forest, and they were angry. The kittypet spent their days startling prey out of the paws of Clan hunting patrols, and when leafbare hit, many cats starved. The Clan's reckless killing only lead to more death and despair."
+            ]
+        },
+        {
+            "id": "ur_ant1",
+            "title": "Spirits Outside the Stars",
+            "elder": {
+                "min_max_faith": [-5,5]
+            },
+            "story": [
+                "m_c is excited to tell a story about a cat {PRONOUN/m_c/subject} used to know from another Clan.",
+                "The cat hadn't always been a Clancat, but rather a loner living near Twolegs. After needing a break from the Twolegplace, the cat wandered into Clan territory where o_c_n took them in. The cat adjusted well to Clan life, but never really developed an affinity for Starclan OR the Dark Forest, much to their Clanmates' surprise.",
+                "After a long life of living in the Clan, the cat happily passed away surrounded by their loved ones. Instead of traveling to StarClan or the Dark Forest, the cat's spirit went somewhere else entirely. To a new place, filled with the spirits of many other cats who felt no real connection to the inky expanses of the Dark Forest or the mellow plains of StarClan."
+            ]
+        },
+        {
+            "id": "ur_ant2",
+            "title": "The Place Between Stars",
+            "elder": {
+                "min_max_faith": [-5,5]
+            },
+            "story": [
+                "m_c wants to tell a story about a lost Clancat.",
+                "It was leaf-bare, and o_c_n's medicine cat had gone out to look for catmint. A bad bout of whitecough had recently been plaguing the Clan, and the medicine cat was worried it would soon turn into greencough",
+                "Unfortunately, the medicine cat had been out so long that the sun began to set. As darkness crept up, the snowy trails confused the medicine cat and they were unable to find their way back to o_c_n's camp. Before long, they had wandered far away from Clan territory to somewhere completely new.",
+                "A few days later, the medicine cat died because of the harsh elements. Though many StarClan ghosts tried to find the medicine cat's spirit, they had wandered too far to be found. The medicine cat's spirit wandered the territories outside of the Clans, helping guide lost cats back to their Clans to prevent history from repeating itself."
+            ]
+        },
+        {
+            "id": "ur_rad1",
+            "min_max_cats": [1,5],
+            "kits_amount": "any",
+            "elder": {
+                "min_max_faith": [-5, 5]
+            },
+            "title": "The Light at Tunnel's End",
+            "story": [
+                "Knowing that spirits don't have to hail from the Clans to influence Clancats, m_c decides to share a tale of a cat from another afterlife.",
+                "Time once told of a Clancat who was going through great emotional turmoil. After an explosive outburst at a Gathering, they couldn't bear to face their Clanmates, so they went the first place they could think of: a tunnel, one that was part of an underground labyrinth on their Clan's territory. They raced into the tunnel as their world came crashing down on them - not only figuratively, but literally, as the tunnel opening collapsed.",
+                "Lost, injured, and afraid, the cat waited for death to swallow them like the darkness had. Instead, though, a ghostly cat - neither from StarClan nor the Dark Forest - brought them water and prey, and stayed with them in the pitch-black of the tunnels.",
+                "Over time, the two became close companions. The spirit taught the self-exiled cat how to survive in the tunnels, the living cat shared stories of Clan life with the inquisitive spirit, and both confided in each other about the mistakes and blunders they'd made in life.",
+                "Yet the Clancat yearned to return to the woodlands, perhaps even to their Clan - and the spirit could recognize this. After many seasons had passed, the spirit gently told the living cat to follow their heart out of the tunnels and into the daylight. After all, the spirit was dead, but the former Clancat was still alive, and being trapped in the tunnels when they wished for open skies was no way to live.",
+                "Though the living cat initially protested, they eventually relented. Still, they owed so much to this spirit: their ghostly friend had helped them nurture not only their physical wounds, but their mental ones, too. They shared a heartfelt goodbye with the spirit, promising never to forget the cat who they owed their life to. And as they bounded out of the tunnels, they made another silent promise, a promise to reunite with the spirit when it came time."
+            ]
+        }
+
+    ],
+    "result_strings": {
+        "darkforest": {
+            "all_success": {
+                "one": [
+                    "r_c listens eagerly, {PRONOUN/r_c/poss} respect for the Dark Forest growing."
+                ],
+                "mult": [
+                    "Though noticeably intimidated by the tale, the group of cats listens attentively, taking its morals to heart."
+                ]
+           } ,
+            "some_success": {
+                "one": [
+                    "This should not appear."
+                ],
+                "mult": [
+                    "Most of the group's respect for the Dark Forest grows after hearing the tale, while some are so thoroughly spooked that they leave the den with an increased reliance on StarClan.",
+                    "The group begins debating on the moral of the story. Some believe that this means the Dark Forest is clearly more powerful than StarClan and should be respected, while others argue that this only means StarClan should be more closely followed.",
+                    "While some cats express their growing respect for the Dark Forest, others find themselves growing closer to StarClan after the story."
+                ]
+            },
+            "none_success": {
+                "one": [
+                    "r_c is unamused, telling m_c {PRONOUN/r_c/subject} {VERB/r_c/don't/doesn't} really believe the story-- the Dark Forest is nothing scarier than a kit tale."
+                ],
+                "mult": [
+                    "m_c was hoping to instill some respect for the Dark Forest in the group, but instead, the group of cats leave the den compelled even more towards StarClan.",
+                    "The group collectively agrees that the story can't possibly be true, as StarClan would never have allowed such a thing. It seems that they've missed the point..."
+                ]
+            }
+        },
+        "starclan": {
+            "all_success": {
+                "one": [
+                    "When m_c finishes the story, r_c asks for another one, {PRONOUN/r_c/poss} eyes sparkling!"
+                ],
+                "mult": [
+                    "The story is captivating, and the group of cats listen with sparkling eyes, their respect for their ancestors growing."
+                ]
+            },
+            "some_success": {
+                "one": [
+                    "This should not appear."
+                ],
+                "mult": [
+                    "Many of the group express their increased respect for StarClan, while others aren't so impressed, believing the story would have been better if the Dark Forest were involved.",
+                    "While some group members understand the StarClan-positive moral, others roll their eyes. StarClan is boring-- the Dark Forest would have made for a better story!",
+                    "Not every cat retains the pro-StarClan message of the tale, instead leaving the den pondering the Dark Forest."
+                ]
+            },
+            "none_success": {
+                "one": [
+                    "r_c listens politely, but very clearly isn't entertained by the story. At the end, {PRONOUN/r_c/subject} {VERB/r_c/ask/asks} if m_c has any stories about the Dark Forest instead."
+                ],
+                "mult": [
+                    "m_c's storytelling skills may need some work... all the group ends up asking about is the Dark Forest, and how much more interesting the story would be if they were involved."
+                ]
+            }
+        },
+        "neutral": {
+            "all_success": {
+                "one": [
+                    "r_c enjoys the story and leaves the elder's den with a new perspective."
+                ],
+                "mult": [
+                    "The group enjoys the story, feeling more connected to the ground beneath them as they leave the den."
+                ]
+            },
+            "some_success": {
+                "one": [
+                    "This should not appear."
+                ],
+                "mult": [
+                    "Some cats listen intently, feeling more grounded after the story. Others, aversely, feel more drawn to their current faith instead."
+                ]
+            },
+            "none_success": {
+                "one": [
+                    "r_c doesn't feel very moved by the story."
+                ],
+                "mult": [
+                    "The group stays silent for a moment before beginning to discuss how their warrior ancestors might have changed the story."
+                ]
+            }
+        }
+    }
+}

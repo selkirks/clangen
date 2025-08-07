@@ -31,7 +31,7 @@
         "You follow the warriors with your eyes as they leave for a patrol. You can't wait for your turn to explore beyond the camp.",
         "You cuddle close to y_l, silently vowing to always keep {PRONOUN/y_l/object} safe.",
         "Snuggled close to y_l and y_p, you can't imagine life without them.",
-        "The camp is too stuffy. You wonder what it's like to run across c_nClan's territory."
+        "The camp is too stuffy. You wonder what it's like to run across c_n's territory."
     ],
     "kitten assertive": [
         "You watch the battle-scarred warriors coming back into camp from the border patrol, eyes wide. You hope you'll be just like them someday!",
@@ -67,7 +67,7 @@
         "After a particularly rowdy play session, you find a small tuft of fur missing from your flank. You can't wait to show off your 'battle scar'!",
         "The whole hunting patrol comes to visit you in the nursery, showering you with gifts and praise.",
         "You perform a choreographed song and dance for the leader, much to their delight.",
-        "You overhear r_w remark that you must be the most charming little kit c_nClan has ever seen.",
+        "You overhear r_w remark that you must be the most charming little kit c_n has ever seen.",
         "You convince r_q to let you go out and play, without much effort. It seems you're especially good at using your words to get what you want.",
         "The o_c_n mediator visits you in the nursery, and you delight them with your jokes, successfully diffusing some of the tensions between the two Clans.",
         "An argument breaks out between two of your denmates, but you lighten the mood by cracking a joke that makes everycat laugh.",
@@ -79,7 +79,7 @@
         "The deputy visits the nursery to teach the kits about border safety, and you're thrilled to answer all their questions correctly. Maybe you'll be their deputy someday!",
         "You peek into the leader's den, eyes wide with awe. You wish you were as big and important as l_n is.",
         "You beg r_a to help you get a head start on your apprenticeship, much to {PRONOUN/r_a/poss} annoyance.",
-        "You spend an afternoon carefully planning out the rest of your life. r_w will be your mentor, then you'll usurp d_n as deputy, and finally, you'll be leader of all of c_nClan. It's flawless.",
+        "You spend an afternoon carefully planning out the rest of your life. r_w will be your mentor, then you'll usurp d_n as deputy, and finally, you'll be leader of all of c_n. It's flawless.",
         "You throw a tantrum when r_k doesn't follow the rules of the game you're playing.",
         "You memorize all the birds that move in and out of camp, delighting the warriors when you can identify them correctly.",
         "You demand that d_n give you a task or put you on a patrol, just like the warriors. {PRONOUN/d_n/subject/CAP} {VERB/d_n/assign/assigns} you to watch the nursery. You take this new responsibility seriously, standing guard with unwavering focus.",

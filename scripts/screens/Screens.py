@@ -264,7 +264,7 @@ class Screens:
     def show_mute_buttons(cls):
         """This shows all mute buttons, and makes them interact-able."""
 
-        if music_manager.muted:
+        if music_manager.muted or music_manager.audio_disabled:
             cls.menu_buttons["unmute_button"].show()
             cls.menu_buttons["mute_button"].hide()
         else:
@@ -276,16 +276,18 @@ class Screens:
         This will fail if event.type != pygame_gui.UI_BUTTON_START_PRESS"""
         if event.ui_element == Screens.menu_buttons["mute_button"]:
             music_manager.mute_music()
-            Screens.menu_buttons["mute_button"].hide()
-            Screens.menu_buttons["unmute_button"].show()
+            Screens.show_mute_buttons()
             return True
         elif event.ui_element == Screens.menu_buttons["unmute_button"]:
-            music_manager.unmute_music(self.name)
-            Screens.menu_buttons["unmute_button"].hide()
-            Screens.menu_buttons["mute_button"].show()
-            return True
+            out = music_manager.unmute_music(self.name)
+            Screens.show_mute_buttons()
+            return out
         else:
             return False
+
+    @classmethod
+    def set_mute_button_position(cls, position: str):
+        scripts.screens.screens_core.screens_core.rebuild_mute(position)
 
     @classmethod
     def set_disabled_menu_buttons(cls, disabled_buttons=()):
