@@ -22,8 +22,9 @@ from scripts.game_structure.ui_elements import UISurfaceImageButton, UIImageButt
 from scripts.screens.Screens import Screens
 from scripts.ui.generate_box import get_box, BoxStyles
 from scripts.ui.generate_button import get_button_dict, ButtonStyles
-from scripts.ui.get_arrow import get_arrow
 from scripts.utility import ui_scale, generate_sprite, ui_scale_dimensions, get_text_box_theme
+from scripts.game_structure.game.switches import switch_get_value, Switch
+from ..ui.icon import Icon
 
 """ Cat customization UI """
 
@@ -123,7 +124,12 @@ class CustomizeStatsScreen(Screens):
             "recurring shock",
             "lasting grief",
             "wobbly cat syndrome", "cleft palate",
-            "persistent headaches", "intersex"]
+            "persistent headaches", "infertility",
+            "incontinence", "rabbit gait",
+            "manx syndrome", "albinism",
+            "ocular albinism", "fully hairless",
+            "bad back", "narrowed chest",
+            "bumpy skin", "flat nose"]
         self.permanent_conditions = copy(scarless_conditions) + ["one bad eye", "lost a leg", "lost their tail", "twisted leg", "declawed", "constant rash"]
         self.permanent_conditions.sort()
         self.permanent_conditions.insert(0, "none")
@@ -274,7 +280,7 @@ class CustomizeStatsScreen(Screens):
         self.heights.sort()
         self.heights_label = None
         
-        self.genders = ["male", "female", "intersex"]
+        self.genders = ["tom", "molly", "intersex tom", "intersex molly"]
         self.genders_label = None
 
     def screen_switches(self):
@@ -286,7 +292,7 @@ class CustomizeStatsScreen(Screens):
         self.build_cat_page()
 
     def build_cat_page(self):
-        self.the_cat = Cat.fetch_cat(game.switches["cat"])
+        self.the_cat = Cat.fetch_cat(switch_get_value(Switch.cat))
         (self.next_cat, self.previous_cat) = self.the_cat.determine_next_and_previous_cats()
         self.cat_elements["cat_name"] = create_text_box("customize " + str(self.the_cat.name), (0, 40), (400, 40),
                                                         "#text_box_34_horizcenter", {"centerx": "centerx"})
@@ -344,11 +350,9 @@ class CustomizeStatsScreen(Screens):
         # ------------------------------------------------------------------------------------------------------------"""
 
     def setup_buttons(self):
-        self.previous_cat_button = create_button((25, 25), (153, 30), get_arrow(2, arrow_left=True) + " Previous Cat",
-                                                 ButtonStyles.SQUOVAL, sound_id="page_flip")
-        self.back_button = create_button((25, 60), (105, 30), get_arrow(2) + " Back", ButtonStyles.SQUOVAL)
-        self.next_cat_button = create_button((622, 25), (153, 30), "Next Cat " + get_arrow(3, arrow_left=False),
-                                             ButtonStyles.SQUOVAL, sound_id="page_flip")
+        self.previous_cat_button = create_button((25, 25), (153, 30), Icon.ARROW_LEFT + " Previous Cat", ButtonStyles.SQUOVAL)
+        self.back_button = create_button((25, 60), (105, 30), Icon.ARROW_RIGHT + " Back", ButtonStyles.SQUOVAL)
+        self.next_cat_button = create_button((622, 25), (153, 30),"Next Cat " + Icon.ARROW_RIGHT, ButtonStyles.SQUOVAL)
         #self.pelt_length_left_button = create_button((224, 530), (30, 30), get_arrow(1), ButtonStyles.ROUNDED_RECT)
         #self.pelt_length_right_button = create_button((324, 530), (30, 30), get_arrow(1, False),
                                                       #ButtonStyles.ROUNDED_RECT)
@@ -527,7 +531,7 @@ class CustomizeStatsScreen(Screens):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.previous_cat_button:
                 if isinstance(Cat.fetch_cat(self.previous_cat), Cat):
-                    game.switches["cat"] = self.previous_cat
+                    switch_get_value(Switch.cat, self.previous_cat)
                     self.kill_cat_elements()
                     self.kill_buttons()
                     self.kill_dropdowns()
@@ -536,7 +540,7 @@ class CustomizeStatsScreen(Screens):
                     print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.next_cat_button:
                 if isinstance(Cat.fetch_cat(self.next_cat), Cat):
-                    game.switches["cat"] = self.next_cat
+                    switch_get_value(Switch.cat, self.previous_cat)
                     self.kill_cat_elements()
                     self.kill_buttons()
                     self.kill_dropdowns()

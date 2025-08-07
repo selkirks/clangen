@@ -545,6 +545,9 @@ dev_tools = false
   kittypet_breed = 75
   other_breed = 1000
 
+  physical_trait_chance = 20
+  physical_trait_inherit_chance = 50
+
   chimera = 1000
   identical_twins = 333
   intersex = 100

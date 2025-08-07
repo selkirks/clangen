@@ -169,9 +169,6 @@ class ProfileScreen(Screens):
                     self.update_disabled_buttons_and_text()
                 else:
                     print("invalid next cat", self.previous_cat)
-            elif event.ui_element == self.customize_cat_button:
-                self.close_current_tab()
-                self.change_screen("customize cat screen")
             elif event.ui_element == self.customize_stats_button:
                 self.close_current_tab()
                 self.change_screen("customize stats screen")
