@@ -1999,7 +1999,7 @@ class MakeClanScreen(Screens):
         pelts_tortie.remove("SingleColour")
         # pelts_tortie.remove("TwoColour")
         # pelts_tortie.append("Single")
-        permanent_conditions = ['born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome', "excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
+        permanent_conditions = ['born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome']
 
         white_patches = ["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white
         self.pname= random.choice(pelts) if random.randint(1,3) == 1 else "Tortie"
@@ -2197,7 +2197,7 @@ class MakeClanScreen(Screens):
         # pelts_tortie.remove("SingleColour")
         # pelts_tortie.remove("TwoColour")
         
-        permanent_conditions = ['born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome', "excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
+        permanent_conditions = ['born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome']
 
     # background images
     # values are ((x position, y position), (x width, y height))
@@ -3370,7 +3370,7 @@ class MakeClanScreen(Screens):
                         self.accessories = next_acc
                 elif self.page == 3:
                     if self.current_selection == "condition":
-                        permanent_conditions = ['None', 'born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome', "excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
+                        permanent_conditions = ['None', 'born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome']
                         current_index = permanent_conditions.index(str(self.permanent_condition))
                         next_index = (current_index + num) % len(permanent_conditions)
                         if permanent_conditions[next_index] == "None":
@@ -3541,7 +3541,7 @@ class MakeClanScreen(Screens):
 
                 elif self.page == 3:
                     if self.current_selection == "condition":
-                        permanent_conditions = ['None', 'born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome', "excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
+                        permanent_conditions = ['None', 'born without a leg', 'weak leg', 'twisted leg', 'born without a tail', 'paralyzed', 'raspy lungs', 'wasting disease', 'blind', 'one bad eye', 'failing eyesight', 'partial hearing loss', 'deaf', 'constant joint pain', 'seizure prone', 'allergies', 'persistent headaches', 'cleft palate', 'wobbly cat syndrome']
 
                         self.permanent_condition = random.choice(permanent_conditions)
                         if self.permanent_condition == "born without a leg":
