@@ -491,7 +491,9 @@ class Condition_Events:
             "lasting grief",
             "persistent headaches",
             "bad back",
-            "crooked jaw"
+            "crooked jaw",
+            "wobbly cat syndrome",
+            "cleft palate"
         )
 
         got_condition = False
