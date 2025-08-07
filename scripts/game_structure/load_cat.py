@@ -94,10 +94,6 @@ def json_load():
                         loading_cat=True)
                 if cat.get("group"):
                     new_cat.group = cat.get("group")
-                if cat.get("exiled"):
-                    new_cat.exile()
-                elif not new_cat.status.is_outsider and cat.get("outside"):
-                    new_cat.become_lost()
             except Exception as e:
                 if cat.get("genotype", False):
                     raise e
@@ -200,7 +196,6 @@ def json_load():
             new_cat.no_kits = cat["no_kits"]
             new_cat.no_mates = cat["no_mates"] if "no_mates" in cat else False
             new_cat.no_retire = cat["no_retire"] if "no_retire" in cat else False
-            new_cat.driven_out = cat["driven_out"] if "driven_out" in cat else False
 
             if "skill_dict" in cat:
                 new_cat.skills = CatSkills(cat["skill_dict"])
@@ -215,7 +210,7 @@ def json_load():
                     else:
                         new_cat.backstory = "clanborn"
                 new_cat.skills = CatSkills.get_skills_from_old(
-                    cat["skill"], new_cat.status.rank, new_cat.moons
+                    cat["skill"], new_cat.status.rank, new_cat.age
                 )
 
             new_cat.mate = cat["mate"] if type(cat["mate"]) is list else [cat["mate"]]
@@ -226,8 +221,16 @@ def json_load():
             )
 
             # checking for old dead
-            if cat.get("dead") or cat.get("df"):
-                if not new_cat.status.group or not new_cat.status.group.is_afterlife():
+            if (
+                cat.get("dead")
+                or cat.get("df")
+                or cat.get("driven_out")
+                or cat.get("exiled")
+                or cat.get("outside")
+            ):
+                if cat.get("dead") and (
+                    not new_cat.status.group or not new_cat.status.group.is_afterlife()
+                ):
                     if cat.get("df"):
                         new_cat.status.send_to_afterlife(target=CatGroup.DARK_FOREST)
                     elif cat.get("outside"):
@@ -237,15 +240,15 @@ def json_load():
                     else:
                         new_cat.status.send_to_afterlife(target=CatGroup.STARCLAN)
 
-                # these should properly change the cat's status to align with old bool info
-                if not new_cat.dead and cat.get("exiled"):
-                    new_cat.status.exile_from_group()
-                if (
-                    not new_cat.dead
-                    and cat.get("outside")
-                    and not new_cat.status.is_outsider
-                ):
-                    new_cat.status.become_lost()
+                else:
+                    # these should properly change the cat's status to align with old bool info
+                    if cat.get("exiled"):
+                        new_cat.status.exile_from_group()
+                    elif cat.get("outside") and not new_cat.status.is_outsider:
+                        new_cat.status.become_lost()
+
+                    if cat.get("driven_out"):
+                        new_cat.status.change_group_nearness(CatGroup.PLAYER_CLAN)
 
             new_cat.dead_for = cat["dead_moons"]
             new_cat.experience = cat["experience"]
@@ -285,6 +288,7 @@ def json_load():
     version_convert(version_info)
 
     # replace cat ids with cat objects and add other needed variables
+    other_clan_cats = [c for c in Cat.all_cats_list if c.status.is_other_clancat]
     for cat in all_cats:
         cat.load_conditions()
 
@@ -315,7 +319,7 @@ def json_load():
 
         try:
             # initialization of thoughts
-            cat.thoughts()
+            cat.thoughts(other_clan_cats=other_clan_cats)
         except Exception as e:
             logger.exception(
                 f"There was an error when thoughts for cat #{cat} are created."

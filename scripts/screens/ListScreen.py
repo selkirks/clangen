@@ -6,8 +6,9 @@ import pygame_gui
 from pygame_gui.core import ObjectID
 
 from scripts.cat.cats import Cat
+from scripts.clan_package.settings import switch_clan_setting
 from scripts.clan_package.settings.clan_settings import (
-    set_clan_setting,
+    switch_clan_setting,
     get_clan_setting,
 )
 from scripts.game_structure.game.settings import game_setting_get
@@ -143,14 +144,13 @@ class ListScreen(Screens):
 
             # FAV TOGGLE
             if element == self.cat_list_bar_elements["fav_toggle"]:
+                switch_clan_setting("show fav")
                 if "#fav_cat_toggle_on" in event.ui_element.get_object_ids():
                     element.change_object_id("#fav_cat_toggle_off")
                     element.set_tooltip("screens.list.favorite_show_tooltip")
-                    set_clan_setting("show fav", False)
                 else:
                     element.change_object_id("#fav_cat_toggle_on")
                     element.set_tooltip("screens.list.favorite_hide_tooltip")
-                    set_clan_setting("show fav", True)
                 self.update_cat_list(
                     self.cat_list_bar_elements["search_bar_entry"].get_text()
                 )
@@ -205,13 +205,13 @@ class ListScreen(Screens):
                     element.change_object_id("@unchecked_checkbox")
                     element.set_tooltip("screens.list.search_genotypes_tooltip")
                     self.cat_list_bar_elements["search_bar_entry"].tool_tip_text = None
-                    set_clan_setting("search genotypes", False)
+                    switch_clan_setting("search genotypes")
                 else:
                     element.change_object_id("@checked_checkbox")
                     element.set_tooltip("screens.list.search_names_tooltip")
                     self.cat_list_bar_elements["search_bar_entry"].tool_tip_text = "screens.list.search_genotypes_tutorial"
                     self.cat_list_bar_elements["search_bar_entry"].tool_tip_delay = 0
-                    set_clan_setting("search genotypes", True)
+                    switch_clan_setting("search genotypes")
                 self.cat_list_bar_elements["search_bar_entry"].placeholder_text = "general.genotype_search" if get_clan_setting("search genotypes") else "general.name_search"
                 self.cat_list_bar_elements["search_bar_entry"].set_text("")
                 self.update_cat_list(
@@ -243,7 +243,6 @@ class ListScreen(Screens):
             # CAT SPRITES
             elif element in self.cat_display.cat_sprites.values():
                 switch_set_value(Switch.cat, element.return_cat_id())
-                game.last_list_forProfile = self.current_group
                 self.change_screen("profile screen")
 
             # MENU BUTTONS
@@ -263,6 +262,10 @@ class ListScreen(Screens):
         super().screen_switches()
         self.show_mute_buttons()
         self.clan_name = game.clan.name + "Clan"
+
+        if not game.last_list_forProfile:
+            self.death_status = "living"
+            self.current_group = "general.your_clan"
         
         group_names = ["general.your_clan", "general.cotc"]
         if game.clan and game.clan.clancount == "multiclan":
@@ -514,9 +517,6 @@ class ListScreen(Screens):
         # Determine the starting list of cats.
         self.get_cat_list()
         self.update_cat_list()
-        game.last_list_forProfile = (
-            "general.your_clan"  # wipe the saved last_list to avoid inconsistencies
-        )
 
     def display_change_save(self) -> Dict:
         variable_dict = super().display_change_save()
@@ -731,6 +731,8 @@ class ListScreen(Screens):
             self.set_bg(None)
             self.update_heading_text(self.current_group)
 
+        game.last_list_forProfile = self.current_group
+
     def get_cat_list(self):
         """
         grabs the correct cat list for current group
@@ -783,8 +785,8 @@ class ListScreen(Screens):
         for the_cat in Cat.all_cats_list:
             if (
                 not the_cat.dead
-                and the_cat.status.is_outsider
-                and (the_cat.status.is_near(CatGroup.PLAYER_CLAN) or 
+                and (the_cat.status.is_outsider or (the_cat.status.is_other_clancat and game.clan.clancount == "singleclan"))
+                and (the_cat.status.is_near(CatGroup.PLAYER_CLAN) or
                 next(filter(lambda c: c in the_cat.status.all_groups and the_cat.status.is_near(c), game.clan.other_clans), None))
             ):
                 self.full_cat_list.append(the_cat)

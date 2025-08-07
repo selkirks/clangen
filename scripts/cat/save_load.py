@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from typing import TYPE_CHECKING, Type
+from typing import TYPE_CHECKING, Type, List
 
 import ujson
 
@@ -64,18 +64,12 @@ def save_faded_cats(clanname, cat_class: Type["Cat"], game: "Game"):
         if not fade_cat_dir.exists():
             fade_cat_dir.mkdir()
 
-    if fade_cat_dir.exists():
-        for f in os.listdir(fade_cat_dir):
-            if f.strip(".json") not in game.clan.faded_ids:
-                game.clan.faded_ids.append(f.strip(".json"))
-
     copy_of_info = ""
     for cat in cat_to_fade:
         inter_cat = cat_class.all_cats[cat]
 
         # Add ID to list of faded cats.
         faded_ids.append(cat)
-        game.clan.faded_ids.append(cat)
 
         # If they have a mate, break it up
         if inter_cat.mate:
@@ -162,3 +156,21 @@ def add_faded_offspring_to_faded_cat(clanname, parent: str, offspring: str):
     safe_save(faded_parent_path, cat_info)
 
     return True
+
+
+def add_cat_to_fade_id(cat_id):
+    cat_to_fade.append(cat_id)
+
+
+def get_faded_ids():
+    return faded_ids + cat_to_fade
+
+
+def load_faded_cat_ids(clanname):
+    global faded_ids
+    fade_cat_dir = Path(get_save_dir()) / clanname / "faded_cats"
+    if not fade_cat_dir.exists():
+        faded_ids = []
+        return
+    faded_ids = [f.stem for f in fade_cat_dir.glob("*.json")]
+    return

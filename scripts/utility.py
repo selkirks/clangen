@@ -15,7 +15,7 @@ from math import floor
 from random import choice, choices, randint, random, sample, randrange, getrandbits
 from sys import exit as sys_exit
 from copy import deepcopy
-from typing import List, Tuple, TYPE_CHECKING, Type, Union
+from typing import List, Tuple, TYPE_CHECKING, Type, Union, Optional
 
 import i18n
 import pygame
@@ -29,7 +29,6 @@ from pygame_gui.core import ObjectID
 from scripts.clan_package.settings import get_clan_setting
 from scripts.game_structure.game.settings import game_settings_save, game_setting_get
 from scripts.game_structure.game.switches import switch_get_value, Switch
-from scripts.cat.status import StatusDict
 from scripts.game_structure.localization import (
     load_lang_resource,
     determine_plural_pronouns,
@@ -407,7 +406,14 @@ def create_bio_parents(Cat, flip=False, second_parent=True):
     return [blood_parent, blood_parent2, par2geno]
 
 def create_new_cat_block(
-    Cat, Relationship, event, in_event_cats: dict, i: int, attribute_list: List[str], clan:CatGroup=None
+    Cat: Optional["Cat"],
+    Relationship,
+    event,
+    in_event_cats: dict,
+    i: int,
+    attribute_list: List[str], 
+    clan:CatGroup=None,
+    other_clan=None,
 ) -> list:
     """
     Creates a single new_cat block and then generates and returns the cats within the block
@@ -539,9 +545,6 @@ def create_new_cat_block(
             rank = match.group(1)
             break
 
-    # GROUP - # for now, this just gets set to None. event formats don't yet pass group info
-    cat_group = None
-
     # SET AGE
     age = None
     for _tag in attribute_list:
@@ -583,6 +586,8 @@ def create_new_cat_block(
         elif rank == CatRank.ELDER:
             age = randint(Cat.age_moons["senior"][0], Cat.age_moons["senior"][1])
 
+    cat_group = None
+
     if "kittypet" in attribute_list:
         cat_social = CatSocial.KITTYPET
     elif "rogue" in attribute_list:
@@ -591,7 +596,10 @@ def create_new_cat_block(
         cat_social = CatSocial.LONER
     elif "clancat" in attribute_list or "former Clancat" in attribute_list:
         cat_social = CatSocial.CLANCAT
-        cat_group = choice(game.clan.other_clans)
+        if other_clan:
+            cat_group = other_clan.enum
+        else:
+            cat_group = choice(game.clan.other_clans)
     else:
         if game.clan.clancount == "multiclan":
             cat_social = choice([CatSocial.KITTYPET, CatSocial.LONER])
@@ -693,7 +701,7 @@ def create_new_cat_block(
         thought = i18n.t("hardcoded.thought_new_dead")
 
     # check if we can use an existing cat here
-    chosen_cat = None
+    chosen_cat: Optional["Cat"] = None
     if "exists" in attribute_list:
         existing_outsiders = [
             i for i in Cat.all_cats.values() if i.status.is_outsider and not i.dead
@@ -717,7 +725,7 @@ def create_new_cat_block(
             elif not outside:
                 chosen_cat.add_to_clan(clan)
                 if chosen_cat.status.rank != rank:
-                    chosen_cat.rank_change(rank, resort=True)
+                    chosen_cat.rank_change(new_rank=CatRank(rank), resort=True)
             elif outside:
                 # updates so that the clan is marked as knowing of this cat
                 current_standing = chosen_cat.status.get_standing_with_group(
@@ -830,6 +838,7 @@ def create_new_cat_block(
                 n_c.moons = 0
                 n_c.status = {"group": n_c.status.group, "rank": CatRank.NEWBORN, "age": CatAge.NEWBORN}
                 n_c.dead = True
+                n_c.thoughts(just_died=True)
                 n_c.history.add_death(str(n_c.name) + " was stillborn.")
                 new_cats.remove(n_c)
                 continue
@@ -1019,7 +1028,7 @@ def find_clan_cats(Cat, Relationship, event, in_event_cats: dict, i: int, attrib
             all_clan_cats = [cat for cat in all_clan_cats if give_mates[0].is_potential_mate(cat, for_love_interest=True, outsider=True)]
             if not all_clan_cats:
                 print("No possible mates found")
-                all_clan_cats = create_new_cat_block(Cat, Relationship, event, in_event_cats, i, attribute_list, other_clan.enum)
+                all_clan_cats = create_new_cat_block(Cat, Relationship, event, in_event_cats, i, attribute_list, other_clan = other_clan)
         if age == "has_kits":
             (parents, orphans) = get_alive_clan_queens(all_clan_cats, clan=other_clan)
             for par_id in parents.keys():
@@ -1272,6 +1281,10 @@ def create_new_cat(
             # give apprentice aged cat a mentor
             if new_cat.status.rank.is_any_apprentice_rank():
                 new_cat.update_mentor()
+                # ensuring that any cats joining as an apprentice will display the correct skills
+                new_cat.skills.primary.interest_only = True
+                if new_cat.skills.secondary:
+                    new_cat.skills.secondary.interest_only = True
 
         # NAMES and accs
         # clancat adults should have already generated with a clan-ish name, thus they skip all of this re-naming
@@ -1281,7 +1294,7 @@ def create_new_cat(
         ):
             # babies change name, in case their initial name isn't clan-ish
             new_cat.change_name()
-        else:
+        elif not original_group or not original_group.is_other_clan_group():
             # give kittypets a kittypet name
             overwrite_prefix = False
             if original_social == CatSocial.KITTYPET:
@@ -2454,7 +2467,6 @@ def find_special_list_types(text):
     """
     senses = []
     list_text = None
-    list_type = None
     words = text.split(" ")
     for bit in words:
         if "_list" in bit:
@@ -3911,7 +3923,7 @@ def generate_sprite(
                             whichmain.blit(sprites.sprites['lightbasecolours2'], (0, 0)) 
                             colour = 'lightbasecolours2'
                             whichmain = ApplySmokeEffects(whichmain)
-                        elif((("chocolate" in whichcolour and phenotype.pointgene == ["cb", "cb"]) or ("chocolate" in whichcolour and "cb" in phenotype.pointgene) or ("black" in whichcolour and phenotype.pointgene == ["cs", "cs"])) and cat_sprite != "20") or (("chocolate" in whichcolour and phenotype.pointgene == ["cb", "cb"]) or ("black" in whichcolour and "cb" in phenotype.pointgene)):
+                        elif((("cinnamon" in whichcolour and phenotype.pointgene == ["cb", "cb"]) or ("chocolate" in whichcolour and "cb" in phenotype.pointgene) or ("black" in whichcolour and phenotype.pointgene == ["cs", "cs"])) and cat_sprite != "20") or (("chocolate" in whichcolour and phenotype.pointgene == ["cb", "cb"]) or ("black" in whichcolour and "cb" in phenotype.pointgene)):
                             whichmain.blit(sprites.sprites['lightbasecolours1'], (0, 0))  
                             colour = 'lightbasecolours1'
                             whichmain = ApplySmokeEffects(whichmain)
@@ -4419,7 +4431,7 @@ def generate_sprite(
             if constants.CONFIG["fun"]["april_fools_hats"]:
                 if not dead:
                     new_sprite.blit(sprites.sprites['aprilfoolslines' + cat_sprite], (0, 0))
-                elif cat.df:
+                elif cat.status.group == CatGroup.DARK_FOREST:
                     new_sprite.blit(sprites.sprites['aprilfoolslineartdf' + cat_sprite], (0, 0))
                 else:
                     new_sprite.blit(sprites.sprites['aprilfoolslineartdead' + cat_sprite], (0, 0))

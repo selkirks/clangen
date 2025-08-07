@@ -295,7 +295,10 @@ class HandleShortEvents:
         self.handle_injury()
 
         # handle murder reveals
-        if "murder_reveal" in self.chosen_event.sub_type:
+        if (
+            "murder_reveal" in self.chosen_event.sub_type
+            or "hidden_murder_reveal" in self.chosen_event.sub_type
+        ):
             self.main_cat.history.reveal_murder(
                 victim=self.victim_cat,
                 murderer_id=self.main_cat.ID,
@@ -347,7 +350,7 @@ class HandleShortEvents:
             self.main_cat.name.give_prefix(Cat, game.clan.biome)
 
         if self.chosen_herb:
-            game.herb_events_list.append(f"{self.chosen_event} {self.herb_notice}.")
+            game.herb_events_list.append(f"{self.text} {self.herb_notice}")
 
         self.gather_future_event(clan)
 
@@ -403,8 +406,8 @@ class HandleShortEvents:
             random_cat=Cat.fetch_cat(event.involved_cats.get("r_c")),
             freshkill_pile=game.clan.freshkill_pile,
             victim_cat=Cat.fetch_cat(event.involved_cats.get("mur_c")),
-            sub_type=event.pool.get("subtype"),
-            ignore_subtyping="subtype" not in event.pool,
+            sub_type=event.pool.get("sub_type"),
+            ignore_subtyping="sub_type" not in event.pool,
             clan=clan
         )
 
@@ -437,7 +440,7 @@ class HandleShortEvents:
             if ("clancat" not in attribute_list and "change_clan" not in attribute_list) or game.clan.clancount != 'multiclan':
                 self.new_cats.append(
                     create_new_cat_block(
-                        Cat, Relationship, self, in_event_cats, i, attribute_list, clan=clan.enum
+                        Cat, Relationship, self, in_event_cats, i, attribute_list, clan=clan.enum, other_clan=other_clan
                     )
                 )
             else:
@@ -569,6 +572,8 @@ class HandleShortEvents:
         else:
             self.main_cat.pelt.accessory = [choice(acc_list)]
 
+        self.main_cat.pelt.rebuild_sprite = True
+
     def handle_transition(self):
         """
         handles updating gender_align and pronouns
@@ -689,6 +694,7 @@ class HandleShortEvents:
                     if tnr and 'TNR' not in kitty.pelt.scars:
                         if kitty.moons > 3:
                             kitty.pelt.scars.append("TNR")
+                            kitty.pelt.rebuild_sprite = True
                             kitty.get_permanent_condition("infertility", False)
                             if 'pregnant' in kitty.injuries:
                                 kitty.permanent_condition['infertility']['moon_start'] += 3

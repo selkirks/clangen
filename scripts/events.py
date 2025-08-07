@@ -17,7 +17,7 @@ from scripts.cat import save_load
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.enums import CatAge, CatRank, CatGroup, CatStanding, CatSocial
 from scripts.cat.names import Name
-from scripts.cat.save_load import save_cats
+from scripts.cat.save_load import save_cats, add_cat_to_fade_id
 from scripts.clan_package.settings import get_clan_setting, set_clan_setting
 from scripts.clan_resources.freshkill import FRESHKILL_EVENT_ACTIVE
 from scripts.conditions import (
@@ -153,12 +153,12 @@ class Events:
                 self.handle_future_events(clan=clan)
 
         # Calling of "one_moon" functions.
-        for cat in Cat.all_cats.copy().values():
-            if not cat.status.group:
-                self.one_moon_outside_cat(cat)
+        other_clan_cats = [c for c in Cat.all_cats_list if c.status.is_other_clancat]
+        for cat in Cat.all_cats_list.copy():
+            if not cat.status.group or (cat.status.is_other_clancat and game.clan.clancount == "singleclan"):
+                self.one_moon_outside_cat(cat, other_clan_cats)
             elif cat.status.is_any_clan_group() or cat.status.group.is_afterlife():
                 self.one_moon_cat(cat, cat.status.get_last_living_group().fetch_clan_object(game.clan) if cat.status.get_last_living_group() else game.clan)
-            
             cat.pelt.rebuild_sprite = True
 
         # keeping this commented out till disasters are more polished
@@ -216,8 +216,7 @@ class Events:
                     sorted_dead_cats[group.name].append(ghost)
             for clan in [game.clan] + game.clan.all_clans:
                 if clan.name not in ghost_names:
-                    ghost_names[clan.name] = []
-                    sorted_dead_cats[clan.name] = []
+                    continue
                 insert = adjust_list_text(ghost_names[clan.name])
 
                 if len(ghost_names[clan.name]) > 1:
@@ -269,26 +268,25 @@ class Events:
                     event = i18n.t("hardcoded.event_deaths", count=1)
                     #event = event_text_adjust(Cat, event, main_cat=Cat.dead_cats[0])
 
-                if len(ghost_names[clan.name]) > 0:
+                game.cur_events_list.append(
+                    Single_Event(
+                        event_text_adjust(Cat, event, main_cat=sorted_dead_cats[clan.name][0], clan=clan.enum),
+                        ["birth_death"],
+                        [i.ID for i in sorted_dead_cats[clan.name]],
+                        cat_dict={"m_c": (sorted_dead_cats[clan.name])[0]} 
+                        if len(sorted_dead_cats[clan.name]) == 1 else None,
+                        clan=clan.enum
+                    )
+                )
+                if extra_event:
                     game.cur_events_list.append(
                         Single_Event(
-                            event_text_adjust(Cat, event, main_cat=sorted_dead_cats[clan.name][0], clan=clan.enum),
-                            ["birth_death"],
-                            [i.ID for i in sorted_dead_cats[clan.name]],
-                            cat_dict={"m_c": (sorted_dead_cats[clan.name])[0]} 
-                            if len(sorted_dead_cats[clan.name]) == 1 else None,
+                            event_text_adjust(Cat, extra_event, clan=clan.enum), 
+                            ["birth_death"], 
+                            [i.ID for i in shaken_cats.get(clan.name, [])], 
                             clan=clan.enum
                         )
                     )
-                    if extra_event:
-                        game.cur_events_list.append(
-                            Single_Event(
-                                event_text_adjust(Cat, extra_event, clan=clan.enum), 
-                                ["birth_death"], 
-                                [i.ID for i in shaken_cats.get(clan.name, [])], 
-                                clan=clan.enum
-                            )
-                        )
                 
                 if not clancount:
                     break
@@ -999,16 +997,16 @@ class Events:
                         else:
                             clan.medicine_cat = None
 
-                save_load.cat_to_fade.append(cat.ID)
+                add_cat_to_fade_id(cat.ID)
                 cat.set_faded()
 
-    def one_moon_outside_cat(self, cat):
+    def one_moon_outside_cat(self, cat, other_clan_cats: list = None):
         """
         exiled cat events
         """
         # aging the cat
-        clan = next(filter(lambda c: cat.status.is_lost(c.enum) or cat.status.is_exiled(c.enum), game.clan.all_clans), game.clan)
-        cat.one_moon()
+        clan = next(filter(lambda c: cat.status.is_lost() or cat.status.is_exiled(), game.clan.all_clans), game.clan)
+        cat.one_moon(other_clan_cats)
         cat.manage_outside_trait()
 
         self.handle_outside_EX(cat)
@@ -1908,7 +1906,7 @@ class Events:
         if not cat:
             return
 
-        if not cat.status.group != clan.enum:
+        if cat.status.group != clan.enum:
             return
 
         # check if cat already has max acc
@@ -1978,7 +1976,7 @@ class Events:
     # This gives outsiders exp. There may be a better spot for it to go,
     # but I put it here to keep the exp functions together
     def handle_outside_EX(self, cat):
-        if cat.status.is_outsider:
+        if cat.status.is_outsider or cat.status.is_other_clancat:
             if cat.not_working() and int(random.random() * 3):
                 return
 
@@ -2379,6 +2377,7 @@ class Events:
                     event_type="birth_death",
                     main_cat=chosen_cat,
                     random_cat=cat,
+                    victim_cat=chosen_target,
                     sub_type=["murder"],
                     freshkill_pile=game.clan.freshkill_pile,
                     clan=clan,

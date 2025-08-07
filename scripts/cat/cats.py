@@ -17,6 +17,7 @@ import i18n
 import ujson  # type: ignore
 
 import scripts.game_structure.localization as pronouns
+from scripts.cat import save_load
 from scripts.cat.enums import CatAge, CatRank, CatSocial, CatGroup, CatStanding
 from scripts.cat.history import History
 from scripts.cat.names import Name
@@ -349,7 +350,7 @@ class Cat:
             potential_id = str(next(Cat.id_iter))
 
             if game.clan:
-                faded_cats = game.clan.faded_ids
+                faded_cats = save_load.get_faded_ids()
             else:
                 faded_cats = []
 
@@ -596,7 +597,7 @@ class Cat:
             self.experience = 0
                 
         if not skill_dict:
-            self.skills = CatSkills.generate_new_catskills(self.status.rank, self.moons)
+            self.skills = CatSkills.generate_new_catskills(self.status.rank, self.age)
         
         self.genetic_conditions()
 
@@ -672,7 +673,7 @@ class Cat:
 
     @property
     def dead(self) -> bool:
-        return self.status.group is not None and self.status.group.is_afterlife()
+        return bool(self.status.group and self.status.group.is_afterlife())
 
     @dead.setter
     def dead(self, die: bool):
@@ -834,15 +835,12 @@ class Cat:
                 fetched_cat.update_mentor()
         self.update_mentor()
 
-        if self.status.get_last_living_group() and self.moons > 1:
-            self.grief(body)
-
-        # mark the sprite as outdated
-        self.pelt.rebuild_sprite = True
-
-        if not self.status.is_outsider or self.status.is_former_clancat:
+        if self.status.get_last_living_group():
+            if self.moons > 1:
+                self.grief(body)
             Cat.dead_cats.append(self)
 
+        # mark the sprite as outdated
         self.pelt.rebuild_sprite = True
 
     def exile(self):
@@ -1224,7 +1222,7 @@ class Cat:
     def manage_outside_trait(self):
         """To be run every moon on outside cats
         to keep trait and skills making sense."""
-        if not self.status.is_outsider:
+        if not self.status.is_outsider and not self.status.is_other_clancat:
             return
 
         self.personality.set_kit(self.age.is_baby())  # Update kit trait stuff
@@ -1686,7 +1684,7 @@ class Cat:
     #                              moon skip functions                             #
     # ---------------------------------------------------------------------------- #
 
-    def one_moon(self):
+    def one_moon(self, other_clan_cats: list = None):
         """Handles a moon skip for an alive cat."""
         old_age = self.age
         self.moons += 1
@@ -1697,7 +1695,7 @@ class Cat:
         if not self.status.is_clancat:
             # this is handled in events.py
             self.personality.set_kit(self.age.is_baby())
-            self.thoughts()
+            self.thoughts(other_clan_cats=other_clan_cats)
             return
 
         if self.dead and not self.faded:
@@ -1715,14 +1713,24 @@ class Cat:
         if self.status.rank.is_any_apprentice_rank():
             self.update_mentor()
 
-    def thoughts(self, just_died=False, lives_left: int = 0):
+    def thoughts(
+        self, just_died=False, lives_left: int = 0, other_clan_cats: list = None
+    ):
         """
         Generates a thought for the cat, which displays on their profile.
         :param just_died: Set True if the cat is generating a death thought
         :param lives_left: If a leader is generating a death thought, include their lives left here
         """
-        all_cats = self.all_cats
-        other_cat = choice(list(all_cats.keys()))
+        if self.status.is_other_clancat:
+            if not other_clan_cats:
+                all_cats = []
+            else:
+                all_cats = other_clan_cats.copy()
+                all_cats.remove(self)
+        else:
+            all_cats = self.all_cats_list.copy()
+            all_cats.remove(self)
+
         game_mode = switch_get_value(Switch.game_mode)
         biome = switch_get_value(Switch.biome)
         camp = switch_get_value(Switch.camp_bg)
@@ -1731,68 +1739,48 @@ class Cat:
         except Exception:
             season = None
 
-        # this figures out where the cat is
-        where_kitty = None
-        if self.dead:
-            if self.status.group == CatGroup.DARK_FOREST:
-                where_kitty = "hell"
-            elif self.status.group == CatGroup.UNKNOWN_RESIDENCE:
-                where_kitty = "UR"
-            else:
-                where_kitty = "starclan"
-
-        elif self.status.is_outsider:
-            where_kitty = "outside"
-        else:
-            where_kitty = self.status.group
-
         # get other cat
         i = 0
-        # for dead cats
-        if where_kitty in ("starclan", "hell", "UR"):
-            while other_cat == self.ID and len(all_cats) > 1:
-                other_cat = choice(list(all_cats.keys()))
-                i += 1
-                if i > 100:
-                    other_cat = None
-                    break
-        # for cats inside the clan
-        elif where_kitty == self.status.group:
-            dead_chance = getrandbits(4)
-            while (
-                other_cat == self.ID
-                and len(all_cats) > 1
-                or all_cats.get(other_cat).status.group != self.status.group
-                or (all_cats.get(other_cat).dead and dead_chance != 1)
-                or (other_cat not in self.blank_relations and other_cat not in self.relationships)
-            ):
-                other_cat = choice(list(all_cats.keys()))
-                i += 1
-                if i > 100:
-                    other_cat = None
-                    break
-        # for cats currently outside
-        # it appears as for now, kittypets and loners can only think about outsider cats
-        elif where_kitty == "outside":
-            while (
-                other_cat == self.ID
-                and len(all_cats) > 1
-                or (other_cat not in self.blank_relations and other_cat not in self.relationships)
-            ):
-                other_cat = choice(list(all_cats.keys()))
-                i += 1
-                if i > 100:
-                    other_cat = None
-                    break
+        other_cat = None
+        if all_cats:
+            other_cat = choice(all_cats)
+            # for cats inside the clan
+            if self.status.is_clancat:
+                # we want to limit how often dead cats are thought about
+                thinking_of_dead_cat = getrandbits(4) == 1
+                while all_cats and (
+                    (other_cat.dead and not thinking_of_dead_cat)
+                    or other_cat.ID not in self.relationships
+                ):
+                    all_cats.remove(other_cat)
 
-        other_cat = all_cats.get(other_cat)
-        
-        if self.status.is_clancat:
-            clan = self.status.get_last_living_group()
-        elif other_cat and other_cat.status.is_clancat:
-            clan = other_cat.status.get_last_living_group()
-        else:
-            clan = CatGroup.PLAYER_CLAN
+                    if not all_cats or i > 100:
+                        other_cat = None
+                        break
+
+                    other_cat = choice(all_cats)
+
+                    i += 1
+
+            # for dead cats, they can think about whoever they want
+            elif self.status.group and self.status.group.is_afterlife():
+                other_cat = choice(all_cats)
+
+            # for cats currently outside
+            # it appears as for now, kittypets and loners can only think about outsider cats
+            elif self.status.is_outsider:
+                while all_cats and (other_cat not in self.relationships):
+                    all_cats.remove(other_cat)
+                    if not all_cats:
+                        other_cat = None
+                        break
+
+                    other_cat = choice(all_cats)
+
+                    i += 1
+                    if i > 100:
+                        other_cat = None
+                        break
 
         # get chosen thought
         if just_died:
@@ -1808,6 +1796,13 @@ class Cat:
             chosen_thought = Thoughts.get_chosen_thought(
                 self, other_cat, game_mode, biome, season, camp, game_setting_get("ageup dead")
             )
+
+        if self.status.is_clancat:
+            clan = self.status.get_last_living_group()
+        elif other_cat and other_cat.status.is_clancat:
+            clan = other_cat.status.get_last_living_group()
+        else:
+            clan = CatGroup.PLAYER_CLAN
 
         chosen_thought = event_text_adjust(
             self.__class__,
@@ -2067,6 +2062,8 @@ class Cat:
         :param lethal: Allow lethality, default `True` (bool)
         :param severity: Override severity, default `'default'` (str, accepted values `'minor'`, `'major'`, `'severe'`)
         """
+        if self.dead:
+            return
         if name not in ILLNESSES:
             print(f"WARNING: {name} is not in the illnesses collection.")
             return
@@ -2123,6 +2120,7 @@ class Cat:
                 "risks": new_illness.risks,
                 "event_triggered": new_illness.new,
             }
+            self.pelt.rebuild_sprite = True
 
     def get_injured(self, name, event_triggered=False, lethal=True, severity="default"):
         """Add an injury to this cat.
@@ -2136,6 +2134,9 @@ class Cat:
         :param severity: _description_, defaults to 'default'
         :type severity: str, optional
         """
+        if self.dead:
+            return
+
         if name not in INJURIES:
             print(f"WARNING: {name} is not in the injuries collection.")
             return
@@ -2194,6 +2195,8 @@ class Cat:
                 "cause_permanent": new_injury.cause_permanent,
                 "event_triggered": new_injury.new,
             }
+            
+            self.pelt.rebuild_sprite = True
 
         if len(new_injury.also_got) > 0 and not int(random() * 5):
             avoided = False
@@ -2247,6 +2250,8 @@ class Cat:
         self.get_permanent_condition(new_condition, born_with=True)
 
     def get_permanent_condition(self, name, born_with=False, event_triggered=False, genetic=False, custom_reveal=None):
+        if self.dead:
+            return
         with open(f"resources/dicts/conditions/permanent_conditions.json", 'r') as read_file:
             PERMANENT = ujson.loads(read_file.read())
         if name not in PERMANENT:
@@ -2305,15 +2310,17 @@ class Cat:
             )  # creating a range in which a condition can present
             moons_until = max(moons_until, 0)
 
-        if name == 'partially hairless' and self.phenotype.length != 'fur-pointed':
-            moons_until = 11
-        if custom_reveal:
-            moons_until = custom_reveal
-
         if born_with and not self.status.rank.is_baby():
             moons_until = -2
         elif born_with is False:
             moons_until = 0
+
+        if name == 'partially hairless' and self.phenotype.length != 'fur-pointed':
+            moons_until = 11
+        if custom_reveal:
+            moons_until = custom_reveal - self.moons
+            if moons_until < -2:
+                moons_until = -2
 
         if name == "paralyzed":
             self.pelt.paralyzed = True
@@ -3736,7 +3743,6 @@ class Cat:
                 "patrol_with_mentor": (self.patrol_with_mentor or 0),
                 "mate": self.mate,
                 "previous_mates": self.previous_mates,
-                "dead": self.dead,
                 "paralyzed": self.pelt.paralyzed,
                 "no_kits": self.no_kits,
                 "no_retire": self.no_retire,
@@ -3785,14 +3791,24 @@ class Cat:
             the Cat object. Takes a function which takes in a Cat instance and
             returns a boolean.
         """
+
         sorted_specific_list = [
             check_cat
             for check_cat in Cat.all_cats_list
             if check_cat.dead == self.dead
-            and check_cat.status.is_outsider == self.status.is_outsider
-            and (self.status.is_outsider or check_cat.status.group == self.status.group)
+            and ( (game.clan.clancount == "singleclan" and check_cat.status.alive_in_player_clan == self.status.alive_in_player_clan)
+                or (game.clan.clancount == "multiclan" and check_cat.status.is_outsider == self.status.is_outsider
+                and (self.status.is_outsider or check_cat.status.group == self.status.group)))
             and not check_cat.faded
         ]
+
+        # we're doing this separately so that we don't fuck up other clan cats and cats with no group
+        if self.dead:
+            sorted_specific_list = [
+                check_cat
+                for check_cat in sorted_specific_list
+                if check_cat.status.group == self.status.group
+            ]
 
         if filter_func is not None:
             sorted_specific_list = [
