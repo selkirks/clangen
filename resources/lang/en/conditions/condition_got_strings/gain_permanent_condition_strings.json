@@ -264,13 +264,5 @@
           "Despite the efforts to treat m_c's ear infection, it seems to have gone too deep. r_c gently informs {PRONOUN/m_c/object} that {PRONOUN/m_c/poss} hearing might be muffled in that ear permanently.",
           "m_c's ear infection has gone too deep, leaving {PRONOUN/m_c/poss} hearing muffled on one side."
         ]
-    },
-    "wobbly cat syndrome": [
-        "It seems m_c constantly shakes. After being looked over by r_c, {PRONOUN/m_c/subject} {VERB/m_c/are/is} diagnosed with wobbly cat syndrome.",
-        "After being unable to stand without wobbling, it appears m_c will wobble {PRONOUN/m_c/poss} entire life. Despite this, family is reassured that m_c will live a long and healthy life- just one a bit more wobbly than others."
-  ],
-  "cleft palate": [
-        "r_c looks closely at the gap between m_c's nose and mouth. A clear sign of a cleft palate. r_c reassures that m_c will do just fine with proper treatment of symptoms!",
-        "It appears there is a gap between m_c's nose and mouth. After {PRONOUN/m_c/poss} parent looks {PRONOUN/m_c/object} over, it appears m_c has a cleft palate."
-  ]
+    }
 }

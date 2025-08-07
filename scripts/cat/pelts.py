@@ -1139,64 +1139,64 @@ class Pelt:
                     par_traits = par_traits.difference(clash_traits)
                     par_traits.add(chosen_trait)
             inherit_trait_chance = int(random.random() * 100)
-            if inherit_trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_inherit_chance"]:
+            if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
                 #Roll to inherit first trait, and if so, remove it from the list
                 self.physical_trait_1 = random.choice(list(par_traits))
                 par_traits.remove(self.physical_trait_1)
                 if len(par_traits) > 0:
                     #If we have a first trait, roll to inherit a second, and if we do, remove it from the list
                     inherit_trait_chance = int(random.random() * 100)
-                    if inherit_trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_inherit_chance"]:
+                    if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
                         self.physical_trait_2 = random.choice(list(par_traits))
                         par_traits.remove(self.physical_trait_2)
                         if len(par_traits) > 0:
                             #If we have a second trait, roll to inherit a third, and if we do, remove it from the list
                             inherit_trait_chance = int(random.random() * 100)
-                            if inherit_trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_inherit_chance"]:
+                            if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
                                 self.physical_trait_3 = random.choice(list(par_traits))
                                 par_traits.remove(self.physical_trait_3)
                                 if len(par_traits) > 0:
                                     #If we have a third trait, roll to inherit a fourth, and if we do, remove it from the list
                                     inherit_trait_chance = int(random.random() * 100)
-                                    if inherit_trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_inherit_chance"]:
+                                    if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
                                         self.physical_trait_4 = random.choice(list(par_traits))
                                         par_traits.remove(self.physical_trait_4)
             if len(par_traits) > 0:
                 #If there are still leftover traits, roll to inherit as hidden with a +50% chance
                 inherit_trait_chance = int((random.random() * 100) - 50)
-                if inherit_trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_inherit_chance"]:
+                if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
                     self.physical_trait_hidden = random.choice(list(par_traits))
                     par_traits.remove(self.physical_trait_hidden)
                     if len(par_traits) > 0:
                         #If there are still leftover traits, roll to inherit as hidden with a +50% chance
                         inherit_trait_chance = int((random.random() * 100) - 50)
-                        if inherit_trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_inherit_chance"]:
+                        if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
                             self.physical_trait_hidden_2 = random.choice(list(par_traits))
                             par_traits.remove(self.physical_trait_hidden_2)
                             if len(par_traits) > 0:
                                 #If there are still leftover traits, roll to inherit as hidden with a +50% chance
                                 inherit_trait_chance = int((random.random() * 100) - 50)
-                                if inherit_trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_inherit_chance"]:
+                                if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
                                     self.physical_trait_hidden_3 = random.choice(list(par_traits))
                                     par_traits.remove(self.physical_trait_hidden_3)
                                     if len(par_traits) > 0:
                                         #If there are still leftover traits, roll to inherit as hidden with a +50% chance
                                         inherit_trait_chance = int((random.random() * 100) - 50)
-                                        if inherit_trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_inherit_chance"]:
+                                        if inherit_trait_chance <= game.config["cat_generation"]["physical_trait_inherit_chance"]:
                                             self.physical_trait_hidden_4 = random.choice(list(par_traits))
                                             par_traits.remove(self.physical_trait_hidden_4)
             
         # Giving cats that inherited nothing a 50% of base chance roll for new traits
         if not self.physical_trait_1:
             trait_chance = int(random.random() * 100)
-            if trait_chance <= constants.CONFIG["genetics_config"]["physical_trait_chance"]:
-                if trait_chance <= (0.5 * constants.CONFIG["genetics_config"]["physical_trait_chance"]):
+            if trait_chance <= game.config["cat_generation"]["physical_trait_chance"]:
+                if trait_chance <= (0.5 * game.config["cat_generation"]["physical_trait_chance"]):
                     traitcount = 2
                     trait_chance = int(random.random() * 100)
-                    if trait_chance <= (0.5 * constants.CONFIG["genetics_config"]["physical_trait_chance"]):
+                    if trait_chance <= (0.5 * game.config["cat_generation"]["physical_trait_chance"]):
                         traitcount = 3
                         trait_chance = int(random.random() * 100)
-                        if trait_chance <= (0.5 * constants.CONFIG["genetics_config"]["physical_trait_chance"]):
+                        if trait_chance <= (0.5 * game.config["cat_generation"]["physical_trait_chance"]):
                             traitcount = 4
                 else:
                     traitcount = 1
