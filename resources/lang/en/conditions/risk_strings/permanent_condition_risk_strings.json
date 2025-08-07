@@ -292,6 +292,21 @@
     "failing eyesight": [
       "Not much could be done with the frequent itching and jabbing m_c felt to {PRONOUN/m_c/poss} eyes from a stray hair or debri, but r_c still feels guilty seeing how m_c's eyes have started to get cloudier.",
       "The itching or jabbing from a pesky hair or occasional debri was annoying, sure, but m_c feels far more alarmed now that {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} noticed a cloudiness to {PRONOUN/m_c/poss} vision."
-    ]
-  }
+    ]},
+	"wobbly cat syndrome": {
+        "sore": [
+            "All of m_c's wobbling has left {PRONOUN/m_c/object} exhausted and sore. {PRONOUN/m_c/subject/CAP} {VERB/m_c/duck/ducks} into the medicine cat den, asking r_c for herbs that can hopefully lessen the pain.",
+            "m_c grimaces as {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} sore all over. With a wobbly walk, {PRONOUN/m_c/subject} {VERB/m_c/sink/sinks} back into {PRONOUN/m_c/poss} nest, hoping sleep can make the pain go away."
+        ],
+        "joint pain": [
+            "Nope. There is no way m_c can work with this joint pain. Curled up, m_c can only hope that this wave of pain leaves soon. ",
+            "Stuck in the medicine cat den, m_c absentmindedly paws a moss ball back and forth. According to r_c, it's good for {PRONOUN/m_c/poss} joints, but when {PRONOUN/m_c/subject} {VERB/m_c/hiss/hisses} as another wave of pain hits {PRONOUN/m_c/object}, {PRONOUN/m_c/subject} {VERB/m_c/begin/begins} to doubt that."
+        ]
+    },
+    "cleft palate": {
+        "whitecough": [
+            "As a result of m_c's cleft palate, {PRONOUN/m_c/subject} {VERB/m_c/are/is} left with whitecough. {PRONOUN/m_c/subject/CAP} {VERB/m_c/feel/feels} trapped in the medicine cat den, itching to go out and serve {PRONOUN/m_c/poss} Clan once more.",
+            "r_c immediately sends m_c over to the medicine cat den upon hearing a series of coughs. m_c is much more susceptible to whitecough due to {PRONOUN/m_c/poss} cleft palate, and r_c is determined to ensure the disease does not become worse."
+        ]
+    }
 }

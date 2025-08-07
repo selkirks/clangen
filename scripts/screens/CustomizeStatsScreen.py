@@ -21,9 +21,10 @@ from scripts.game_structure.screen_settings import MANAGER
 from scripts.game_structure.ui_elements import UISurfaceImageButton, UIImageButton
 from scripts.screens.Screens import Screens
 from scripts.ui.generate_box import get_box, BoxStyles
+from scripts.game_structure.game.switches import switch_get_value, Switch
 from scripts.ui.generate_button import get_button_dict, ButtonStyles
-from scripts.ui.get_arrow import get_arrow
 from scripts.utility import ui_scale, generate_sprite, ui_scale_dimensions, get_text_box_theme
+from ..ui.icon import Icon
 
 """ Cat customization UI """
 
@@ -123,7 +124,12 @@ class CustomizeStatsScreen(Screens):
             "recurring shock",
             "lasting grief",
             "wobbly cat syndrome", "cleft palate",
-            "persistent headaches", "intersex"]
+            "persistent headaches", "infertility",
+            "incontinence", "rabbit gait",
+            "manx syndrome", "albinism",
+            "ocular albinism", "fully hairless",
+            "bad back", "narrowed chest",
+            "bumpy skin", "flat nose"]
         self.permanent_conditions = copy(scarless_conditions) + ["one bad eye", "lost a leg", "lost their tail", "twisted leg", "declawed", "constant rash"]
         self.permanent_conditions.sort()
         self.permanent_conditions.insert(0, "none")
@@ -262,19 +268,15 @@ class CustomizeStatsScreen(Screens):
         self.backstories.sort()
         self.backstory_label = None
         
-        self.fur_textures = ["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse", "tangled", "fuzzy", "spiky"]
-        self.fur_textures.sort()
-        self.fur_textures_label = None
+        self.body_types = ['snub-nosed cobby', 'cobby', 'semi-cobby', 'intermediate', 'semi-oriental', 'oriental', 'wedge-faced oriental']
+        self.body_types.sort()
+        self.body_types_label = None
         
-        self.builds = ["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate", "hunched", "hefty", "burly", "bulky", "plump", "brawny", "stout", "broad", "chubby", "fat", "stocky", "chunky", "big-boned"]
-        self.builds.sort()
-        self.builds_label = None
+        self.height_types = ['teacup', 'tiny', 'small', 'below average', 'average', 'above average', 'large', 'massive', 'giant', 'goliath']
+        self.height_types.sort()
+        self.height_types_label = None
         
-        self.heights = ["petite", "short", "average", "tall", "towering"]
-        self.heights.sort()
-        self.heights_label = None
-        
-        self.genders = ["male", "female", "intersex"]
+        self.genders = ["tom", "molly", "intersex molly", "intersex tom"]
         self.genders_label = None
 
     def screen_switches(self):
@@ -286,7 +288,7 @@ class CustomizeStatsScreen(Screens):
         self.build_cat_page()
 
     def build_cat_page(self):
-        self.the_cat = Cat.fetch_cat(game.switches["cat"])
+        self.the_cat = Cat.fetch_cat(switch_get_value(Switch.cat))
         (self.next_cat, self.previous_cat) = self.the_cat.determine_next_and_previous_cats()
         self.cat_elements["cat_name"] = create_text_box("customize " + str(self.the_cat.name), (0, 40), (400, 40),
                                                         "#text_box_34_horizcenter", {"centerx": "centerx"})
@@ -307,10 +309,9 @@ class CustomizeStatsScreen(Screens):
         self.skill1_label = create_text_box("skill 1", (320, 175), (135, 40), "#text_box_22_horizleft")
         self.skill2_label = create_text_box("skill 2", (480, 175), (135, 40), "#text_box_22_horizleft")
         #self.skill3_label = create_text_box("skill 3", (640, 175), (135, 40), "#text_box_22_horizleft")
-        
-        self.fur_texture_label = create_text_box("fur texture", (320, 260), (135, 40), "#text_box_22_horizleft")
-        self.build_label = create_text_box("build", (480, 260), (135, 40), "#text_box_22_horizleft")
-        self.height_label = create_text_box("height", (640, 260), (135, 40), "#text_box_22_horizleft")
+
+        self.body_types_label = create_text_box("body types", (480, 260), (135, 40), "#text_box_22_horizleft")
+        self.height_types_label = create_text_box("height types", (640, 260), (135, 40), "#text_box_22_horizleft")
         
         self.backstory_label = create_text_box("backstory", (320, 335), (135, 40),
                                                         "#text_box_22_horizleft")
@@ -344,11 +345,9 @@ class CustomizeStatsScreen(Screens):
         # ------------------------------------------------------------------------------------------------------------"""
 
     def setup_buttons(self):
-        self.previous_cat_button = create_button((25, 25), (153, 30), get_arrow(2, arrow_left=True) + " Previous Cat",
-                                                 ButtonStyles.SQUOVAL, sound_id="page_flip")
-        self.back_button = create_button((25, 60), (105, 30), get_arrow(2) + " Back", ButtonStyles.SQUOVAL)
-        self.next_cat_button = create_button((622, 25), (153, 30), "Next Cat " + get_arrow(3, arrow_left=False),
-                                             ButtonStyles.SQUOVAL, sound_id="page_flip")
+        self.previous_cat_button = create_button((25, 25), (153, 30), Icon.ARROW_LEFT + " Previous Cat", ButtonStyles.SQUOVAL)
+        self.back_button = create_button((25, 60), (105, 30), Icon.ARROW_RIGHT + " Back", ButtonStyles.SQUOVAL)
+        self.next_cat_button = create_button((622, 25), (153, 30),"Next Cat " + Icon.ARROW_RIGHT, ButtonStyles.SQUOVAL)
         #self.pelt_length_left_button = create_button((224, 530), (30, 30), get_arrow(1), ButtonStyles.ROUNDED_RECT)
         #self.pelt_length_right_button = create_button((324, 530), (30, 30), get_arrow(1, False),
                                                       #ButtonStyles.ROUNDED_RECT)
@@ -403,16 +402,12 @@ class CustomizeStatsScreen(Screens):
         #self.skill3_dropdown = create_dropdown((640, 200), (135, 40),
                                                        #create_options_list(self.skills, "lower"),
                                                        #get_selected_option(tertiary_skill, "lower"))
-        
-        self.fur_texture_dropdown = create_dropdown((320, 285), (135, 40),
-                                                      create_options_list(self.fur_textures, "upper"),
-                                                      get_selected_option(self.the_cat.pelt.fur_texture, "upper"))
-        self.build_dropdown = create_dropdown((480, 285), (135, 40),
-                                                 create_options_list(self.builds, "upper"),
-                                                 get_selected_option(self.the_cat.pelt.build, "upper"))
-        self.height_dropdown = create_dropdown((640, 285), (135, 40),
-                                               create_options_list(self.heights, "upper"),
-                                               get_selected_option(self.the_cat.pelt.height, "upper"))
+        self.body_types_dropdown = create_dropdown((480, 285), (135, 40),
+                                                 create_options_list(self.body_types, "upper"),
+                                                 get_selected_option(self.body_types, "upper"))
+        self.height_types_dropdown = create_dropdown((640, 285), (135, 40),
+                                               create_options_list(self.height_types, "upper"),
+                                               get_selected_option(self.height_types, "upper"))
         
         self.backstory_dropdown = create_dropdown((320, 360), (135, 40),
                                                            create_options_list(self.backstories, "lower"),
@@ -490,9 +485,8 @@ class CustomizeStatsScreen(Screens):
             "skill1": self.the_cat.skills.primary.path.name,
             "skill2": self.the_cat.skills.secondary.path.name if self.the_cat.skills.secondary else "NONE",
             #"skill3": self.the_cat.skills.tertiary.path.name if self.the_cat.skills.tertiary else "NONE",
-            "fur_texture": self.the_cat.pelt.fur_texture,
-            "build": self.the_cat.pelt.build,
-            "height": self.the_cat.pelt.height,
+            "body_types": self.body_types,
+            "height_types": self.height_types,
             "backstory": self.the_cat.backstory,
             "gender": self.the_cat.gender,
             "genderalign":self.the_cat.genderalign
@@ -527,7 +521,7 @@ class CustomizeStatsScreen(Screens):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.previous_cat_button:
                 if isinstance(Cat.fetch_cat(self.previous_cat), Cat):
-                    game.switches["cat"] = self.previous_cat
+                    switch_get_value(Switch.cat, self.previous_cat)
                     self.kill_cat_elements()
                     self.kill_buttons()
                     self.kill_dropdowns()
@@ -536,7 +530,7 @@ class CustomizeStatsScreen(Screens):
                     print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.next_cat_button:
                 if isinstance(Cat.fetch_cat(self.next_cat), Cat):
-                    game.switches["cat"] = self.next_cat
+                    switch_get_value(Switch.cat, self.previous_cat)
                     self.kill_cat_elements()
                     self.kill_buttons()
                     self.kill_dropdowns()
@@ -557,7 +551,7 @@ class CustomizeStatsScreen(Screens):
                 
             #self.print_pelt_attributes()  # for testing purposes
         elif event.type == pygame_gui.UI_DROP_DOWN_MENU_CHANGED:
-            if event.ui_element in [self.permanent_condition_dropdown, self.trait1_dropdown, self.skill1_dropdown, self.skill2_dropdown,self.fur_texture_dropdown, self.build_dropdown, self.height_dropdown, self.backstory_dropdown, self.gender_dropdown]:
+            if event.ui_element in [self.permanent_condition_dropdown, self.trait1_dropdown, self.skill1_dropdown, self.skill2_dropdown, self.body_types_dropdown, self.height_types_dropdown, self.backstory_dropdown, self.gender_dropdown]:
                 self.handle_dropdown_change(event.ui_element)
             #self.print_pelt_attributes()  # for testing purposes
                 
@@ -566,9 +560,8 @@ class CustomizeStatsScreen(Screens):
         self.the_cat.personality.trait = self.initial_state["trait"]
         #self.the_cat.personality.trait2 = self.initial_state["trait2"]
         
-        self.the_cat.pelt.fur_texture = self.initial_state["fur_texture"]
-        self.the_cat.pelt.build = self.initial_state["build"]
-        self.the_cat.pelt.height = self.initial_state["height"]
+        self.body_types = self.initial_state["body_types"]
+        self.height_types= self.initial_state["height_types"]
         
         self.the_cat.gender = self.initial_state["gender"]
         self.the_cat.genderalign = self.initial_state["genderalign"]
@@ -610,13 +603,11 @@ class CustomizeStatsScreen(Screens):
             self.the_cat.genderalign = selected_option
         if dropdown == self.backstory_dropdown:
             self.the_cat.backstory = selected_option
-        
-        if dropdown == self.fur_texture_dropdown:
-            self.the_cat.pelt.fur_texture = selected_option
-        if dropdown == self.height_dropdown:
-            self.the_cat.pelt.height = selected_option
-        if dropdown == self.build_dropdown:
-            self.the_cat.pelt.build = selected_option
+
+        if dropdown == self.height_types_dropdown:
+            self.height_types = selected_option
+        if dropdown == self.body_types:
+            self.body_types = selected_option
         
         if dropdown == self.permanent_condition_dropdown:
             if selected_option == "none":
@@ -676,7 +667,7 @@ class CustomizeStatsScreen(Screens):
     def kill_labels(self):
         labels = [
             self.permanent_condition_label, self.trait1_label, self.skill1_label, self.skill2_label,
-            self.fur_texture_label, self.build_label, self.height_label, self.backstory_label, self.gender_label,
+            self.body_types_label, self.height_types_label, self.backstory_label, self.gender_label,
             self.reset_message, self.reset_facets_message, self.heal_message
         ]
         for label in labels:
@@ -692,7 +683,7 @@ class CustomizeStatsScreen(Screens):
     def kill_dropdowns(self):
         dropdowns = [
             self.permanent_condition_dropdown, self.trait1_dropdown, self.skill1_dropdown, self.skill2_dropdown,
-            self.fur_texture_dropdown, self.build_dropdown, self.height_dropdown, self.backstory_dropdown, self.gender_dropdown
+            self.body_types_dropdown, self.height_types_dropdown, self.backstory_dropdown, self.gender_dropdown
         ]
         for dropdown in dropdowns:
             dropdown.kill()
