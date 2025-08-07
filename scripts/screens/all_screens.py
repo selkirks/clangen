@@ -1,5 +1,4 @@
 from .AllegiancesScreen import AllegiancesScreen
-from .CustomizeStatsScreen import CustomizeStatsScreen
 from .CeremonyScreen import CeremonyScreen
 from .ChangeGenderScreen import ChangeGenderScreen
 from .ChooseAdoptiveParentScreen import ChooseAdoptiveParentScreen
@@ -54,7 +53,6 @@ class AllScreens:
     profile_screen = ProfileScreen("profile screen")
     ceremony_screen = CeremonyScreen("ceremony screen")
     role_screen = RoleScreen("role screen")
-    customize_stats_screen = CustomizeStatsScreen("customize stats screen")
     sprite_inspect_screen = SpriteInspectScreen("sprite inspect screen")
 
     make_clan_screen = MakeClanScreen("make clan screen")
@@ -95,7 +93,6 @@ class AllScreens:
         cls.profile_screen = ProfileScreen("profile screen")
         cls.ceremony_screen = CeremonyScreen("ceremony screen")
         cls.role_screen = RoleScreen("role screen")
-        cls.customize_stats_screen = CustomizeStatsScreen("customize stats screen")
         cls.sprite_inspect_screen = SpriteInspectScreen("sprite inspect screen")
 
         cls.make_clan_screen = MakeClanScreen("make clan screen")
