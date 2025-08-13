@@ -84,7 +84,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -167,7 +167,7 @@
     },
     "assertiveapp_6": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -581,7 +581,7 @@
     },
     "assertive_tokit": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -628,7 +628,7 @@
     },
     "assertivemedapp_tokit": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -658,16 +658,8 @@
     "assertivemedapp_3": {
         "y_c": {
             "status": [
-                "kitten",
-                "apprentice",
-                "warrior",
-                "elder",
-                "deputy",
-                "leader",
-                "mediator",
-                "mediator apprentice",
-                "queen",
-                "queen's apprentice"
+                "not_medicine cat",
+                "not_medicine cat apprentice"
             ],
             "condition": [
                 "blind:any:false"
@@ -1152,9 +1144,6 @@
             ],
             "age": [
                 "not_kitten"
-            ],
-            "status": [
-                "connected"
             ]
         },
         "tags": [
@@ -1180,9 +1169,6 @@
             ],
             "age": [
                 "not_kitten"
-            ],
-            "status": [
-                "connected"
             ]
         },
         "tags": [
@@ -1302,13 +1288,10 @@
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "min_plat_35"
             ]
         },
-        "tags": [
-            "min_plat_35"
+        "relationship": [
+            "min_platonic_35"
         ],
         "intro": [
             "[t_c hurries a bundle of herbs into the medicine den, brow furrowed and ears pinned back in concentration.]",
@@ -1324,14 +1307,12 @@
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "min_plat_35",
-                "connected"
             ]
         },
+        "relationship": [
+            "min_platonic_35"
+        ],
         "tags": [
-            "min_plat_35",
             "connected"
         ],
         "intro": [
@@ -1554,7 +1535,7 @@
     },
     "sweet_medapp_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1577,7 +1558,7 @@
     },
     "sweet_medapp_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1601,7 +1582,7 @@
     },
     "sweet_medapp_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1720,9 +1701,6 @@
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "clan_has_kits"
             ]
         },
         "tags": [
@@ -1974,7 +1952,7 @@
     },
     "brooding_medapp_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2051,15 +2029,9 @@
     "brooding_medapp_5": {
         "y_c": {
             "status": [
-                "kitten",
-                "apprentice",
-                "warrior",
-                "mediator apprentice",
-                "mediator",
-                "queen's apprentice",
-                "queen",
-                "deputy",
-                "leader"
+                "not_elder",
+                "not_medicine cat",
+                "not_medicine cat apprentice"
             ],
             "condition": [
                 "blind:any:false"
@@ -2112,7 +2084,7 @@
     },
     "brooding_medapp_7": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2136,7 +2108,7 @@
     },
     "brooding_medapp_8": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2161,7 +2133,7 @@
     },
     "brooding_medapp_9": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2769,8 +2741,7 @@
                 "min_they_deadfor_40"
             ],
             "status": [
-                "medicine cat",
-                "connected"
+                "medicine cat"
             ]
         },
         "tags": [
@@ -2805,8 +2776,7 @@
                 "min_they_deadfor_40"
             ],
             "status": [
-                "medicine cat",
-                "connected"
+                "medicine cat"
             ]
         },
         "tags": [
@@ -3213,7 +3183,8 @@
     "brooding_toqueen_AJ": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -3231,9 +3202,7 @@
                 "deputy"
             ]
         },
-        "tags": [
-            "you_queen's_aprentice"
-        ],
+        "tags": [],
         "intro": [
             "[The nursery entrance shudders open, revealing little r_k dangling from t_c's mouth, mewling and squirming in protest.]",
             "[t_c sets {PRONOUN/r_k/object} on the ground, and the kit bounds towards you, cowering behind your leg at t_c's cold glare.]",
@@ -3244,7 +3213,8 @@
     "brooding_toqueen_AJ1": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -3260,7 +3230,6 @@
             ]
         },
         "tags": [
-            "you_queen's_aprentice",
             "clan_has_kits"
         ],
         "intro": [
@@ -3577,7 +3546,7 @@
     },
     "neurotic_tokit_SQ4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3791,7 +3760,7 @@
             ],
             "status": [
                 "medicine cat",
-                "they_medicine_cat_apprentince"
+                "medicine cat apprentice"
             ],
             "age": [
                 "not_kitten"
@@ -3800,9 +3769,7 @@
                 "INNOVATOR,1"
             ]
         },
-        "tags": [
-            "they_medicine_cat_apprentince"
-        ],
+        "tags": [],
         "intro": [
             "[You make your way into the medicine den to find that t_c is building some sort of contraption around the herb stock.]",
             "Hi, y_c. What do you need?",

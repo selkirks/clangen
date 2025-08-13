@@ -4225,7 +4225,8 @@
     "cool_tomediatorAJ": {
         "y_c": {
             "status": [
-                "mediator"
+                "mediator",
+                "mediator's apprentice"
             ],
             "condition": [
                 "blind:any:false"
@@ -4246,9 +4247,7 @@
         "relationship": [
             "max_platonic_15"
         ],
-        "tags": [
-            "mediator's apprentice"
-        ],
+        "tags": [],
         "intro": [
             "Huh? Oh, I don't really need any mediation. Thanks."
         ]
@@ -4258,7 +4257,8 @@
             "status": [
                 "apprentice",
                 "queen's apprentice",
-                "medicine cat apprentice"
+                "medicine cat apprentice",
+                "mediator's apprentice"
             ],
             "condition": [
                 "blind:any:false"
@@ -4278,9 +4278,7 @@
         "relationship": [
             "max_platonic_10"
         ],
-        "tags": [
-            "mediator's apprentice"
-        ],
+        "tags": [],
         "intro": [
             "Shouldn't you be out with m_n ...?",
             "When I was your age, I'd never be caught dead shirking my duties."
@@ -6396,7 +6394,7 @@
             ]
         },
         "intro": [
-            "They'll take care of yg_c in StarClan, I promise. {PRONOUN/t_c/subject/CAP}'ll be okay."
+            "They'll take care of yg_c in StarClan, I promise. {PRONOUN/yg_c/subject/CAP}'ll be okay."
         ]
     },
     "sweetgrief_yougrief7": {
@@ -16115,7 +16113,8 @@
                 "not_kitten"
             ],
             "status": [
-                "not_deputy"
+                "not_deputy",
+                "not_leader"
             ]
         },
         "intro": [
@@ -25568,14 +25567,13 @@
             ]
         },
         "season": [
-            "greenleaf"
+            "greenleaf",
+            "leaffall"
         ],
         "biome": [
             "forest"
         ],
-        "tags": [
-            "leaf-fall"
-        ],
+        "tags": [],
         "intro": [
             "[After a recent windstorm, t_c has {PRONOUN/t_c/poss} nose to the ground, using {PRONOUN/t_c/poss} whiskers to navigate around all of the branches that have fallen into the clearing.]",
             "[Focussed on the debris underpaw, {PRONOUN/t_c/subject}{VERB/t_c/stop/stops} shorter of you than {PRONOUN/t_c/subject} normally would.]",
@@ -27389,10 +27387,8 @@
     "injury_kit_H2": {
         "y_c": {
             "age": [
-                "adolescent"
-            ],
-            "status": [
-                "kitten"
+                "adolescent",
+                "not_kitten"
             ]
         },
         "t_c": {
@@ -27414,9 +27410,7 @@
     "injury_kit_H3": {
         "y_c": {
             "age": [
-                "adolescent"
-            ],
-            "status": [
+                "adolescent",
                 "kitten"
             ]
         },
@@ -29063,10 +29057,10 @@
         },
         "relationship": [
             "min_platonic_50",
-            "from_parent"
+            "from_parent",
+            "from_adopted_parent"
         ],
         "tags": [
-            "adoptive_parent",
             "connected"
         ],
         "intro": [
@@ -29095,10 +29089,10 @@
         },
         "relationship": [
             "min_platonic_50",
-            "from_parent"
+            "from_parent",
+            "from_adopted_parent"
         ],
         "tags": [
-            "adoptive_parent",
             "connected"
         ],
         "intro": [
@@ -29127,10 +29121,10 @@
         },
         "relationship": [
             "min_platonic_50",
-            "from_parent"
+            "from_parent",
+            "from_adopted_parent"
         ],
         "tags": [
-            "adoptive_parent",
             "connected"
         ],
         "intro": [
@@ -29159,10 +29153,10 @@
         },
         "relationship": [
             "min_platonic_50",
-            "from_parent"
+            "from_parent",
+            "from_adopted_parent"
         ],
         "tags": [
-            "adoptive_parent",
             "connected"
         ],
         "intro": [
@@ -30618,6 +30612,9 @@
             ],
             "condition": [
                 "blind:any:false"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30637,9 +30634,7 @@
         "relationship": [
             "from_df_mentor"
         ],
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "So, what's the waking world like? How's your training going there?",
             "[t_c swipes at your face. You twist aside just as {PRONOUN/t_c/subject} taught you, and {PRONOUN/t_c/subject} {VERB/t_c/purr/purrs} approvingly.]",
@@ -30654,6 +30649,9 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30670,9 +30668,7 @@
         "relationship": [
             "from_df_mentor"
         ],
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "You look terrible. I'm not going to train you when you're like that.",
             "Why are you even here tonight? Are you trying to spread whatever you have?",
@@ -30687,6 +30683,9 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30706,9 +30705,7 @@
         "relationship": [
             "from_df_mentor"
         ],
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "So you're going to have kits, hmm?",
             "Well... good luck, y_c. But don't stop training with me just because you'll have some furballs to look after.",
@@ -30722,6 +30719,9 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30741,9 +30741,7 @@
         "relationship": [
             "from_df_mentor"
         ],
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "Don't wander too deep into the forest. If you go too far, you might never come out.",
             "There are some cruel cats in there, and they've had lifetimes to hone their skills. Let me train you just a little more, first."
@@ -30753,7 +30751,8 @@
         "y_c": {
             "status": [
                 "medicine cat",
-                "medicine cat apprentice"
+                "medicine cat apprentice",
+                "df_trainee"
             ],
             "age": [
                 "not_kitten"
@@ -30776,9 +30775,7 @@
         "relationship": [
             "from_df_mentor"
         ],
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "[You glimpse what seems to be a deep claw wound beneath the muck caking t_c's pelt, and ask if {PRONOUN/t_c/subject}'d like you to look at it. t_c hisses.]",
             "Remember your place, y_c. I'm your <i>mentor.</i> I can take care of myself.",
@@ -30790,6 +30787,9 @@
         "y_c": {
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30806,9 +30806,7 @@
         "relationship": [
             "from_df_mentor"
         ],
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "[You're training with t_c when the ground suddenly shudders beneath you. You both leap away as the earth collapses and your training space is swallowed by dark muck.]",
             "[t_c doesn't look at you. They stare at the sinkhole, quivering. Their eyes are wide as they slowly back away from it.]",
@@ -30819,6 +30817,9 @@
         "y_c": {
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30838,9 +30839,7 @@
         "relationship": [
             "from_df_mentor"
         ],
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "[During a break between tonight's exercises, you ask t_c a few questions about {PRONOUN/t_c/self}. You're careful not to ask anything too sensitive, but t_c still looks uncomfortable.]",
             "I'm... uh... flattered that you're interested, but I don't have much to say.",
@@ -30851,6 +30850,9 @@
         "y_c": {
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30867,9 +30869,7 @@
         "relationship": [
             "from_df_mentor"
         ],
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "[Your previous attempts to ask t_c about {PRONOUN/t_c/self} have been unsuccessful, so you try to ask {PRONOUN/t_c/object} what the world was like when {PRONOUN/t_c/subject} {VERB/t_c/were/was} alive, instead. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} look at you.]",
             "You don't have to pretend to be interested in me, y_c. I know you're just here to train.",
@@ -30880,6 +30880,9 @@
         "y_c": {
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30893,9 +30896,7 @@
                 "not_kitten"
             ]
         },
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "Life's too short to sit and take what other cats do to you.",
             "If someone's making your life miserable, it's okay to... do something about it, if you know what I mean.",
@@ -30908,6 +30909,9 @@
         "y_c": {
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "df_trainee"
             ]
         },
         "t_c": {
@@ -30921,9 +30925,7 @@
                 "not_kitten"
             ]
         },
-        "tags": [
-            "you_df_trainee"
-        ],
+        "tags": [],
         "intro": [
             "Don't listen to what the other cats here might say. They call me a coward. They think I'm weak.",
             "[t_c spits into the murk pooled around {PRONOUN/t_c/poss} paws.]",
@@ -31725,16 +31727,15 @@
                 "neurotic"
             ],
             "condition": [
-                "blind:any:false"
+                "blind:any:false",
+                "guilt"
             ],
             "shunned": true,
             "age": [
                 "not_kitten"
             ]
         },
-        "tags": [
-            "they_guilty"
-        ],
+        "tags": [],
         "intro": [
             "[t_c, alone in the corner, mumbles the same things over and over again.]",
             "I didn't mean it. I didn't mean to do it...",
@@ -33665,11 +33666,12 @@
         "t_c": {
             "cluster": [
                 "assertive"
+            ],
+            "skill": [
+                "COMFORTER,1"
             ]
         },
-        "relationship": [
-            "they_comforter"
-        ],
+        "relationship": [],
         "intro": [
             "Well if it ain't y_c, how're you doin' today?",
             "You sure don't look great. Too much to do?",
@@ -33697,11 +33699,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "skill": [
+                "ARTISTAN,1"
             ]
         },
-        "tags": [
-            "they_artistian"
-        ],
+        "tags": [],
         "intro": [
             "[t_c is arranging brittle, blackened leaves in the semblance of a garland. {PRONOUN/t_c/subject/CAP} {VERB/t_c/try/tries} to hang them so they curl around one of the twisted trees, but the leaves keep cracking and falling to the ground.]",
             "[When t_c notices you watching, {PRONOUN/t_c/subject} {VERB/t_c/glare/glares} at you and {VERB/t_c/stalk/stalks} away. The leaves crumble to dust as {PRONOUN/t_c/subject} {VERB/t_c/vanish/vanishes}.]"
@@ -35743,11 +35746,11 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "Wake {PRONOUN/t_c/object} up",
+                "text": "[Wake {PRONOUN/t_c/object} up.]",
                 "next_scene": "wake"
             },
             "choice2": {
-                "text": "Let {PRONOUN/t_c/object} sleep",
+                "text": "[Let {PRONOUN/t_c/object} sleep.]",
                 "next_scene": "sleep"
             }
         },
@@ -35894,7 +35897,7 @@
                 "next_scene": "withme"
             },
             "choice2": {
-                "text": "Ignore them.",
+                "text": "[Ignore them.]",
                 "next_scene": "ignore"
             },
             "choice3": {
@@ -36491,7 +36494,8 @@
     "neurotic_yourecoveringfrombirth_SQ1": {
         "y_c": {
             "condition": [
-                "deaf:any:false"
+                "deaf:any:false",
+                "recovering from birth"
             ],
             "age": [
                 "not_kitten"
@@ -36511,9 +36515,7 @@
         "relationship": [
             "min_platonic_10"
         ],
-        "tags": [
-            "you_recoveringfrombirth"
-        ],
+        "tags": [],
         "intro": [
             "[t_c hovers outside of the nursery until you invite {PRONOUN/t_c/object} inside. {PRONOUN/t_c/subject/CAP} {VERB/t_c/step/steps} carefully, as if worried that a kitten will teleport underfoot.]",
             "[When you beckon {PRONOUN/t_c/object} forward to see y_kk, who's asleep by your side, {PRONOUN/t_c/poss} eyes widen. {PRONOUN/t_c/subject/CAP} {VERB/t_c/reach/reaches} out a paw to touch {PRONOUN/y_kk/object}, then quickly {VERB/t_c/pull/pulls} it back.]",
@@ -38217,7 +38219,7 @@
     },
     "neurotic_general_SQ19": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -38722,7 +38724,7 @@
                 "next_scene": "shunned_revenge"
             },
             "choice2": {
-                "text": "Impulsive.",
+                "text": "Impulse.",
                 "next_scene": "shunned_impulsive"
             },
             "choice3": {
@@ -39010,7 +39012,8 @@
             ],
             "condition": [
                 "blind:any:false",
-                "deaf:any:false"
+                "deaf:any:false",
+                "guilt"
             ],
             "shunned": true
         },
@@ -39019,9 +39022,7 @@
             "min_trust_10",
             "from_mate"
         ],
-        "tags": [
-            "they_guilty"
-        ],
+        "tags": [],
         "intro": [
             "[t_c's head is buried underneath {PRONOUN/t_c/poss} paws as if hiding away from the world.]"
         ]
@@ -39081,10 +39082,6 @@
             "from_adopted_kit"
         ],
         "intro": [
-            "l_n said you did really bad things and I shouldn't talk with you anymore.",
-            "Is it true? Did you do something? I know it's serious enough for l_n to tell me personally."
-        ],
-        "intro_text": [
             "l_n said you did really bad things and I shouldn't talk with you anymore.",
             "Is it true? Did you do something? I know it's serious enough for l_n to tell me personally."
         ],
@@ -39380,9 +39377,6 @@
             "not_accomplice"
         ],
         "intro": [
-            "I'm mad at you."
-        ],
-        "intro_text": [
             "I'm mad at you."
         ],
         "intro_choices": {
@@ -41154,11 +41148,10 @@
         },
         "relationship": [
             "min_platonic_20",
-            "from_parent"
+            "from_parent",
+            "from_adopted_parent"
         ],
-        "tags": [
-            "adoptive_parent"
-        ],
+        "tags": [],
         "intro": [
             "Ah... y_c? plike-m_n mentioned you hurt yourself while training... are you okay? Do you need to see r_m?",
             "[You indeed scraped your side on a rock today, but it only left a scratch. You show t_c, and {PRONOUN/t_c/subject} {VERB/t_c/take/takes} a while to inspect it.]",
@@ -41275,7 +41268,7 @@
     },
     "neurotic_skillclairvoyant_SQ1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -41472,7 +41465,7 @@
             "condition": [
                 "deaf:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ],
             "skill": [
@@ -42238,7 +42231,8 @@
     "theypreg_sign_rad1": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -42250,9 +42244,7 @@
                 "not_queen's apprentice"
             ]
         },
-        "tags": [
-            "you_queen_apprentice"
-        ],
+        "tags": [],
         "intro": [
             "Hey, y_c, what was the sign for moss-ball again?",
             "It's been awhile since I've been in the nursery, and I don't remember all the signs the kits use."
@@ -43112,13 +43104,18 @@
         "t_c": {
             "condition": [
                 "blind:any:false",
-                "illness:any"
+                "running nose",
+                "whitecough",
+                "greencough",
+                "yellowcough",
+                "redcough"
             ],
             "age": [
                 "not_kitten"
             ]
         },
         "intro": [
+            "[t_c sniffles loudly before speaking.]",
             "...I miss breathing."
         ]
     },
@@ -44906,7 +44903,7 @@
 },
         "intro": [
            "[t_c purrs quietly as {PRONOUN/t_c/subject} {VERB/t_c/rest/rests} in a sunbeam. {PRONOUN/t_c/poss/CAP} eyes are closed, and {PRONOUN/t_c/subject} {VERB/t_c/look/looks} uncharacteristically content.]",
-           "[...{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} to realize what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing,  {VERB/t_c/sit/sits} up, and {VERB/t_c/fix/fixes} {PRONOUN/t_c/poss} usual scowl back on {PRONOUN/t_c/poss} face.]"
+           "[...{PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} to realize what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing, {VERB/t_c/sit/sits} up, and {VERB/t_c/fix/fixes} {PRONOUN/t_c/poss} usual scowl back on {PRONOUN/t_c/poss} face.]"
 ]
 },
 
@@ -45445,7 +45442,7 @@
 },
 "recovering_from_birth_SQ1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -45474,7 +45471,7 @@
     },
     "recovering_from_birth_SQ2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [

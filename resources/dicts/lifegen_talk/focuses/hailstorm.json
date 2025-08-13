@@ -249,7 +249,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -272,7 +272,7 @@
                 "unabashed",
                 "silly"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -295,7 +295,7 @@
                 "assertive",
                 "upstanding"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -439,7 +439,7 @@
     },
     "hail_focus_AJ17": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -447,7 +447,7 @@
             "cluster": [
                 "upstanding"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -582,9 +582,7 @@
         },
         "t_c": {
             "age": [
-                "adolescent"
-            ],
-            "status": [
+                "adolescent",
                 "kitten"
             ]
         },
@@ -609,9 +607,7 @@
         },
         "t_c": {
             "age": [
-                "adolescent"
-            ],
-            "status": [
+                "adolescent",
                 "kitten"
             ]
         },

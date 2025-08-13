@@ -34,14 +34,9 @@
             ],
             "age": [
                 "not_kitten"
-            ],
-            "status": [
-                "no_kit"
             ]
         },
-        "tags": [
-            "no_kit"
-        ],
+        "tags": [],
         "intro": [
             "Hey there, y_c. I've heard someone from o_c_n say they've seen you around the borders lately at the last Gathering.",
             "Like, what were you thinking? o_c_n cats could have...",
@@ -76,7 +71,7 @@
     },
     "brooding_leader": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ]
@@ -322,7 +317,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -348,7 +343,7 @@
     },
     "assertivewarrior_mediatorapp1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -376,7 +371,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -451,7 +446,7 @@
     },
     "assertive_5": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -481,7 +476,7 @@
     },
     "assertive_tokit": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -814,7 +809,7 @@
     },
     "assertive_elder_12": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -872,7 +867,7 @@
     },
     "assertive_elder_14": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1392,7 +1387,7 @@
     },
     "assertive_tokit_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2315,7 +2310,7 @@
     },
     "sweet_leader_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2337,7 +2332,7 @@
     },
     "sweet_leader_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2354,7 +2349,7 @@
     },
     "sweet_leader_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3161,13 +3156,13 @@
             "The half-moon meeting for the Clans was yesterday, and I got to visit r_m's dreams!",
             "Yeah, I do still miss living with the Clan, but...",
             "You never told me being a StarClan cat could be so fun!",
-            "I'm gonna go ask d_c how {PRONOUN/d_c/subject} {VERB/d_c/make/makes} omens... I'm thinking of sending d_n a sign that r_w should be put on more patrols.",
+            "I'm gonna go ask rsc_c how {PRONOUN/rsc_c/subject} {VERB/rsc_c/make/makes} omens... I'm thinking of sending d_n a sign that r_w should be put on more patrols.",
             "[Looks like {PRONOUN/t_c/subject} found some more work to do!]"
         ]
     },
     "neurotic_choice_foxtokit_SQ5~2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4191,7 +4186,7 @@
     },
     "neurotic_tokit_SQ2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4346,7 +4341,7 @@
     "from_parent_leader_youshunned_H1": {
         "y_c": {
             "shunned": true,
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4379,7 +4374,7 @@
                 "blind:any:false"
             ],
             "shunned": true,
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4459,15 +4454,15 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "Shush {PRONOUN/t_c/object}",
+                "text": "[Shush {PRONOUN/t_c/object}.]",
                 "next_scene": "shush"
             },
             "choice2": {
-                "text": "Agree",
+                "text": "[Agree.]",
                 "next_scene": "agree"
             },
             "choice3": {
-                "text": "Deny",
+                "text": "[Deny.]",
                 "next_scene": "deny"
             }
         },
@@ -4487,11 +4482,11 @@
         ],
         "deny_choices": {
             "choice1": {
-                "text": "Relent",
+                "text": "[Relent.]",
                 "next_scene": "agree"
             },
             "choice2": {
-                "text": "Keep denying",
+                "text": "[Keep denying.]",
                 "next_scene": "no_fun"
             }
         },
@@ -4648,8 +4643,8 @@
             "min_trust_20"
         ],
         "great_leader": [
-            "Hm... {PRONOUN/d_c/subject} would. Certainly, d_c would lead with integrity and devotion befitting a leader of c_n.",
-            "Or, at least, I hope {PRONOUN/d_c/subject} will."
+            "Hm... {PRONOUN/d_c/subject} would. Certainly, d_n would lead with integrity and devotion befitting a leader of c_n.",
+            "Or, at least, I hope {PRONOUN/d_n/subject} will."
         ],
         "recover_damagedeyes": [
             "Oh? Well, if you say I will, then it must be so.",
@@ -4659,7 +4654,7 @@
             "Do I? Well, I can't say I've never been told that before. I suppose I do have a habit of worrying over what-ifs."
         ],
         "great_deputy": [
-            "Hm... No, I must confess if d_c chose hate-r_w as {PRONOUN/d_c/poss} potential deputy, I would have to claw {PRONOUN/d_c/object} down for {PRONOUN/d_c/poss} stupidity.",
+            "Hm... No, I must confess if d_n chose hate-r_w as {PRONOUN/d_n/poss} potential deputy, I would have to claw {PRONOUN/d_n/object} down for {PRONOUN/d_n/poss} stupidity.",
             "... Ahem, excuse my harsh words."
         ]
     },

@@ -99,7 +99,7 @@ def test():
         "df_y_a": _r,
         "df_m_n": _r,
         "t_df_mn": _r,
-        "r_c_sc": _r,
+        "rsc_c": _r,
         "a_n": _r,
         "t_q": _r,
         "y_k": _r,

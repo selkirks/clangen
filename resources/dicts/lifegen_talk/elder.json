@@ -70,7 +70,7 @@
     },
     "elder32132": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -668,7 +668,7 @@
     },
     "silly_elder": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -703,7 +703,7 @@
     },
     "silly_elder_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1206,7 +1206,7 @@
     },
     "assertive_elder_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten",
                 "apprentice"
             ],
@@ -1340,16 +1340,8 @@
     "assertive_elder_9": {
         "y_c": {
             "status": [
-                "kitten",
-                "apprentice",
-                "medicine cat apprentice",
-                "medicine cat",
-                "mediator apprentice",
-                "mediator",
-                "queen's apprentice",
-                "queen",
-                "deputy",
-                "leader"
+                "not_elder",
+                "not_newborn"
             ],
             "condition": [
                 "blind:any:false"
@@ -1700,7 +1692,7 @@
     },
     "brooding_elder": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1726,7 +1718,7 @@
     },
     "brooding_elder1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1752,7 +1744,7 @@
     },
     "brooding_elder2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1778,7 +1770,7 @@
     },
     "brooding_elder3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1992,7 +1984,7 @@
     },
     "sweet_elder_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2008,7 +2000,7 @@
     },
     "sweet_elder_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2024,7 +2016,7 @@
     },
     "sweet_elder_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2446,7 +2438,7 @@
             "dead": [
                 "sc"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2843,7 +2835,7 @@
                 "elder"
             ]
         },
-        "tags": [
+        "relationship": [
             "they_grandparent"
         ],
         "intro": [
@@ -2867,7 +2859,7 @@
                 "elder"
             ]
         },
-        "tags": [
+        "relationship": [
             "they_grandparent"
         ],
         "intro": [
@@ -2913,7 +2905,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3056,7 +3048,7 @@
     },
     "livekit_sc_Guy5": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3196,7 +3188,7 @@
                 "blind:any:false"
             ],
             "shunned": true,
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3268,11 +3260,10 @@
         },
         "relationship": [
             "max_platonic_30",
-            "max_trust_30"
-        ],
-        "tags": [
+            "max_trust_30",
             "they_grandparent"
         ],
+        "tags": [],
         "intro": [
             "You have put disgrace on the family's name. How is my precious y_p suppose to succeed now?",
             "A murderer as {PRONOUN/y_p/poss} heir... tsk tsk tsk."
@@ -3299,11 +3290,10 @@
         },
         "relationship": [
             "max_platonic_30",
-            "min_dislike_30"
-        ],
-        "tags": [
+            "min_dislike_30",
             "they_grandparent"
         ],
+        "tags": [],
         "intro": [
             "You have disappointed me, young one.",
             "... Well, more than normal."
@@ -3614,11 +3604,10 @@
         },
         "relationship": [
             "max_platonic_30",
-            "max_trust_30"
-        ],
-        "tags": [
+            "max_trust_30",
             "they_grandparent"
         ],
+        "tags": [],
         "intro": [
             "I trust StarClan will punish you enough to realize your mistake."
         ]
@@ -3690,7 +3679,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },

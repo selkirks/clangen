@@ -146,7 +146,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ]
@@ -157,11 +157,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "Do you have a family, little one?",
             "Oh... you're one of them. I'm glad you have someone to look out for you."
@@ -172,11 +173,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[t_c visibly flinches when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, {PRONOUN/t_c/poss} wispy, otherworldly pelt shaking.]",
             "Oh- a Clancat! I didn't know I was on your territory... or that you could see me.",
@@ -213,11 +215,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "Eep!",
             "[t_c startles when you approach, the cat crouching a bit as {PRONOUN/t_c/subject} {VERB/t_c/cower/cowers} away from you.]",
@@ -240,11 +243,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[You go out for a hunting trip, and upon a rock, basking in the early morning sunlight, sits a spirit, purring contently.]",
             "[You move closer, and {PRONOUN/t_c/subject} {VERB/t_c/tilt/tilts} {PRONOUN/t_c/poss} head just enough to catch a glimpse of you, yawning.]",
@@ -273,11 +277,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "You know, the way you Clan cats live your lives is... interesting.",
             "Why not just find some housefolk? They're very nice, and you can enjoy all sorts of things, like warm blankets, free food, and all the cuddles you want.",
@@ -298,12 +303,11 @@
                 "ur"
             ],
             "status": [
-                "kitten"
+                "kitten",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "Hi! Um, I think I lost my housefolk. You wouldn't know where they are, would you?",
             "Oh, housefolk are, like, these big cats with no fur, and they walk on their back paws, and they have these big warm dens full of lots of stuff!",
@@ -317,11 +321,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[You find t_c near the Clan border, staring off into the trees.]",
             "Oh! Hi, y_c. I'm just... looking.",
@@ -332,7 +337,7 @@
     "dead_kittypet_J6": {
         "y_c": {
             "age": [
-                "not_kit"
+                "not_kitten"
             ]
         },
         "t_c": {
@@ -340,12 +345,11 @@
                 "ur"
             ],
             "status": [
-                "kitten"
+                "kitten",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "y_c! y_c! Look, look, look!",
             "[As soon as {PRONOUN/t_c/subject} {VERB/t_c/catch/catches} sight of you, t_c turns and sprints away. You run to catch up, almost losing {PRONOUN/t_c/poss} translucent pelt in the scenery.]",
@@ -364,11 +368,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[t_c is watching the Thunderpath.]",
             "Sometimes I just sit here and make sure that the cars don't hit any cats.",
@@ -391,11 +396,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[You see a curious t_c peeking {PRONOUN/t_c/poss} head over the border. With a graceful leap, {PRONOUN/t_c/poss} misty paws hit the star-littered ground.]",
             "Oh! Hello there!",
@@ -407,7 +413,7 @@
     },
     "sckit_urnew_R1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -425,12 +431,11 @@
                 "ur"
             ],
             "status": [
-                "newborn"
+                "newborn",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "Mewwww...",
             "[Oh! A tiny kittypet kit has wandered to the border you were playing at.]",
@@ -441,7 +446,7 @@
     },
     "sckit_urnew_R2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "dead": [
@@ -456,12 +461,11 @@
                 "ur"
             ],
             "status": [
-                "newborn"
+                "newborn",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[You're retrieving a moss-ball from near the border when you notice a newborn kittypet kit with transparent, misty fur that waves softly.]",
             "Mew?",
@@ -482,11 +486,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[t_c approaches you, tail high and eyes bright.]",
             "Hi! What are you doing here? Are you lost?",
@@ -508,11 +513,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "What's on my agenda today... Hm...",
             "Well, I was going to go visit my housefolk, see how they're doing. I think they've been lonely without me bothering them all day, haha! Someone's got to take care of them.",
@@ -532,11 +538,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "I think I'm struggling a bit without the Twolegs that took care of me.",
             "I like to visit them sometimes... I know they can't see me but I'm at peace just watching them go about their lives."
@@ -551,11 +558,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "Hello y_c!",
             "Have you seen the new housefolk that moved in to your old home?",
@@ -581,11 +589,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[t_c anxiously surveys your injuries.]",
             "I think my housefolk kept most dangerous stuff away from me. I didn't even realize it at the time.",
@@ -611,11 +620,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "You're really not looking great, y_c. Maybe... maybe you could find a Twoleg to take care of you, just for a bit?",
             "I'm sorry, I know you Clan cats don't like that! It's just... The Twolegs did a lot of scary things, but I think they were trying to help me.",
@@ -639,11 +649,12 @@
             "dead": [
                 "sc",
                 "max_they_deadfor_10"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[t_c looks around, unsure of {PRONOUN/t_c/poss} surroundings.]"
         ]
@@ -660,11 +671,12 @@
             ],
             "dead": [
                 "sc"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "All the cats in here keep talking about 'Clans' and 'StarClan' and the 'Dark Forest'.",
             "I don't understand any of it. I just want to go home."
@@ -686,11 +698,12 @@
             "dead": [
                 "any",
                 "max_they_deadfor_10"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[t_c looks around, unsure of {PRONOUN/t_c/poss} surroundings.]"
         ]
@@ -707,14 +720,15 @@
             ],
             "dead": [
                 "sc"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "I miss my napping place...",
-            "Don't get me wrong. Everything here is very fluffy. But. Everything is fluffy. I don't know where to lay!"
+            "Don't get me wrong. Everything here is very fluffy. But that's the issue! Everything is fluffy. I don't know where to lay!"
         ]
     },
     "kittypet_sc_H5": {
@@ -729,11 +743,12 @@
             ],
             "dead": [
                 "any"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "I miss napping in the sun. I guess I just miss being alive in general."
         ]

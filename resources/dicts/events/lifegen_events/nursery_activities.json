@@ -18,17 +18,24 @@
         ],
         "courage up": [
             "t_q throws a mossball high in the air for t_k to catch. {PRONOUN/t_k/subject/CAP} {VERB/t_k/make/makes} a daring leap off of a nearby rock to catch it.",
-            "t_k bravely charges at t_q to take the mossball, stealing it from under {PRONOUN/t_q/poss} paws and winning the round of the game."
+            "t_k bravely charges at t_q to take the mossball, stealing it from under {PRONOUN/t_q/poss} paws and winning the round of the game.",
+            "t_k dashes toward the mossball just before it rolls out of camp, stopping it with a dramatic slide.",
+            "t_q lobs the mossball high above t_k's head, and {PRONOUN/t_k/subject} leaps straight up to snatch it mid-air, landing neatly on all fours."
         ],
         "courage down": [
             "During a game of mossball, when it's t_k's turn to catch, {PRONOUN/t_k/subject} {VERB/t_k/hesitate/hesitates} and {VERB/t_k/shrink/shrinks} back as the ball flies {PRONOUN/t_k/poss} way.",
-            "While playing mossball, t_q tosses the ball and t_k fails to catch it, instead taking the hit. {PRONOUN/t_k/subject/CAP} {VERB/t_k/burst/bursts} into tears!"
+            "While playing mossball, t_q tosses the ball and t_k fails to catch it, instead taking the hit. {PRONOUN/t_k/subject/CAP} {VERB/t_k/burst/bursts} into tears!",
+            "t_k freezes when the mossball bounces too quickly toward {PRONOUN/t_k/object}, letting it roll right past.",
+            "The mossball game stops abruptly when t_k hides behind t_q rather than risk missing another catch."
         ],
         "empathy up": [
-            "As t_q and t_k play mossball, t_q notices how t_k takes a gentle approach when passing the ball back to {PRONOUN/t_q/object}, making sure it doesn't fly at {PRONOUN/t_q/poss} face."
+            "As t_q and t_k play mossball, t_q notices how t_k takes a gentle approach when passing the ball back to {PRONOUN/t_q/object}, making sure it doesn't fly at {PRONOUN/t_q/poss} face.",
+            "Noticing t_q looking a bit tired, t_k gently rolls the mossball back instead of sending it flying."
         ],
         "empathy down": [
-            "After t_q passes the mossball to t_k, the kit starts to hog the ball and refuses to continue playing."
+            "After t_q passes the mossball to t_k, the kit starts to hog the ball and refuses to continue playing.",
+            "After t_q calls for a turn, t_k keeps the mossball to {PRONOUN/t_k/self}, ignoring every request to pass it.",
+            "t_k purposely throws the mossball too hard toward t_q, laughing when they stumble."
         ],
         "compassion up": [
             "While t_q and t_k are playing, t_k notices one of the other kits watching in a lonely corner, and invites them to play. They happily accept, and the three have a blast."

@@ -1578,7 +1578,10 @@ class Events:
                 evt = Single_Event(evt, ["alert"], [i for i in involved_cats])
                 if evt not in game.cur_events_list:
                     game.cur_events_list.insert(0, evt)
-            Cat.all_cats[game.clan.your_cat.df_mentor].df_apprentices.remove(game.clan.your_cat.ID)
+            try:
+                Cat.all_cats[game.clan.your_cat.df_mentor].df_apprentices.remove(game.clan.your_cat.ID)
+            except:
+                print("Error removing df apprentice from mentor's list")
             game.clan.your_cat.df_mentor = None
             
 
@@ -3801,13 +3804,13 @@ class Events:
             disaster_text = ujson.loads(read_file.read())
         current_disaster = disaster_text.get(game.clan.second_disaster)
         current_moon = game.clan.second_disaster_moon
-        if current_moon > 0 and current_moon < current_disaster["duration"]:
+        if current_disaster and current_moon > 0 and current_moon < current_disaster["duration"]:
             event_string = random.choice(current_disaster["progress_events"]["moon" + str(current_moon)])
             event_string = ongoing_event_text_adjust(Cat, event_string)
             game.clan.second_disaster_moon += 1
             game.cur_events_list.insert(0,
                         Single_Event(event_string, "alert"))
-        elif current_moon == current_disaster["duration"]:
+        elif current_disaster and current_moon == current_disaster["duration"]:
             event_string = random.choice(current_disaster["conclusion_events"])
             game.clan.second_disaster_moon = 0
             game.clan.second_disaster = ""

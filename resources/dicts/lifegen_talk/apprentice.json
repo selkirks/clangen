@@ -591,7 +591,7 @@
     },
     "app31232": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1155,6 +1155,7 @@
                 "medicine cat apprentice",
                 "mediator apprentice",
                 "queen's apprentice",
+                "mediator",
                 "queen",
                 "elder"
             ],
@@ -1170,12 +1171,12 @@
                 "blind:any:false"
             ],
             "status": [
-                "apprentice"
+                "apprentice",
+                "warrior",
+                "deputy"
             ]
         },
-        "tags": [
-            "you_meditator"
-        ],
+        "tags": [],
         "intro": [
             "Doesn't it drive you insane, being cooped up inside camp all day?",
             "What about the thrill of adventure? The wind in your fur? The satisfaction of killing a hard-earned piece of prey?",
@@ -1245,7 +1246,7 @@
     },
     "assertive_tokit": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2321,9 +2322,7 @@
     "cool_apprentice_1": {
         "y_c": {
             "age": [
-                "adolescent"
-            ],
-            "status": [
+                "adolescent",
                 "kitten"
             ]
         },
@@ -2341,13 +2340,11 @@
     "cool_apprentice_2": {
         "y_c": {
             "age": [
-                "adolescent"
+                "adolescent",
+                "kitten"
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "kitten"
             ]
         },
         "t_c": {
@@ -2465,7 +2462,7 @@
     },
     "sweet_apprentice_5": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2485,7 +2482,7 @@
     },
     "sweet_apprentice_6": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2508,7 +2505,7 @@
     },
     "sweet_apprentice_7": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2759,6 +2756,9 @@
         "y_c": {
             "condition": [
                 "blind:any:false"
+            ],
+            "status": [
+                "mediator"
             ]
         },
         "t_c": {
@@ -2767,19 +2767,14 @@
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "you_meditator"
             ]
         },
-        "tags": [
-            "you_meditator"
-        ],
+        "tags": [],
         "intro": [
             "y_c!! Ah- erm- uh- I'm not- I'm not upset-",
             "Mmmnmnnnn- Fine, you caught me... I just... I didn't wanna worry you...",
-            "See... r_c said something that I really... really don't agree with, you know? And I don't know how to tell them... every time I go to, it feels like the words die in my throat, and I wonder if I'm the one in the wrong.",
-            "... Can you help me, please? It um.. It really hurt my feelings, and I don't wanna be rude at all... But I need to tell {PRONOUN/r_c/object}."
+            "See... r_c said something that I really don't agree with, you know? And I don't know how to tell {PRONOUN/r_c/object}... every time I go to, it feels like the words die in my throat, and I wonder if I'm the one in the wrong.",
+            "... Can you help me, please? It really hurt my feelings, and I don't wanna be rude at all... But I need to tell {PRONOUN/r_c/object}."
         ]
     },
     "sweet_apprentice_19": {
@@ -3974,7 +3969,7 @@
     },
     "stable_apprentice_8": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3996,7 +3991,7 @@
     },
     "stable_apprentice_9": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4463,6 +4458,9 @@
         "y_c": {
             "condition": [
                 "blind:any:false"
+            ],
+            "status": [
+                "mediator"
             ]
         },
         "t_c": {
@@ -4471,16 +4469,11 @@
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "you_meditator"
             ]
         },
-        "tags": [
-            "you_meditator"
-        ],
+        "tags": [],
         "intro": [
-            "Gah! You have no idea how much I- dislike o_c_n, I mean, just who do they think they are? The hunting ground in the west belongs to c_n, not their stinky hides.",
+            "Gah! You have no idea how much I dislike o_c_n, I mean, just who do they think they are? The hunting ground in the west belongs to c_n, not their stinky hides.",
             "[You frown. Yes, you're aware that the discussion with the opposing Clan led to this... Unfortunately, when you approached the Clan and their mediator, it didn't go too smoothly...]",
             "[You agree with t_c, the land rightfully belongs to c_n, not them.]",
             "I'm sorry, y_c, I didn't mean to make you mad or upset, it just gets on my nerves. But I trust that my Clanmates will be able to stand up for what we believe in.",
@@ -4488,18 +4481,18 @@
         ]
     },
     "stable_apprentice_32": {
-        "y_c": {},
+        "y_c": {
+            "status": [
+                "mediator",
+                "mediator apprentice"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "stable"
-            ],
-            "status": [
-                "you_meditator"
             ]
         },
-        "tags": [
-            "you_meditator"
-        ],
+        "tags": [],
         "intro": [
             "[tm_n wasn't available for training today for t_c, so you offered a paw in support. Now, at sunhigh, where the breeze is light and the smells are clear you find yourself walking with the apprentice, guided by {PRONOUN/t_c/poss} judgement.]",
             "[You may be a mediator, but you know the territory well, probably better than most. Yet this was a good chance for t_c to test {PRONOUN/t_c/poss} knowledge. As of so far, {PRONOUN/t_c/subject} {VERB/t_c/were/was} doing well.]",
@@ -4833,7 +4826,8 @@
     "upstanding_apprentice12": {
         "y_c": {
             "status": [
-                "mediator apprentice"
+                "mediator apprentice",
+                "mediator"
             ]
         },
         "t_c": {
@@ -4842,14 +4836,9 @@
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "you_meditator"
             ]
         },
-        "tags": [
-            "you_meditator"
-        ],
+        "tags": [],
         "intro": [
             "[You're just about to bite into a tasty-looking mouse when you see t_c stomping towards you, {PRONOUN/t_c/poss} pelt ruffled and {PRONOUN/t_c/poss} tail flicking irritably. What happened this time?]",
             "y_c. I need you to tell r_a that {PRONOUN/r_a/subject} can't just leave me alone to clean out the entire elders' den because {PRONOUN/r_a/subject} 'needed to fetch more moss.' {PRONOUN/r_a/subject/CAP} {VERB/t_c/were/was} in the medicine den until sunhigh!",
@@ -5237,7 +5226,7 @@
     },
     "assertive_queensapp2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5429,9 +5418,7 @@
     "injury_kit_H2": {
         "y_c": {
             "age": [
-                "adolescent"
-            ],
-            "status": [
+                "adolescent",
                 "kitten"
             ]
         },
@@ -5454,9 +5441,7 @@
     "injury_kit_H3": {
         "y_c": {
             "age": [
-                "adolescent"
-            ],
-            "status": [
+                "adolescent",
                 "kitten"
             ]
         },
@@ -6953,7 +6938,8 @@
     "brooding_toqueen_AJ": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -6971,9 +6957,7 @@
                 "deputy"
             ]
         },
-        "tags": [
-            "you_queen's_aprentice"
-        ],
+        "tags": [],
         "intro": [
             "[The nursery entrance shudders open, revealing little r_k dangling from t_c's mouth, mewling and squirming in protest.]",
             "[t_c sets {PRONOUN/r_k/object} on the ground, and the kit bounds towards you, cowering behind your leg at t_c's cold glare.]",
@@ -6984,7 +6968,8 @@
     "brooding_toqueen_AJ1": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -7000,7 +6985,6 @@
             ]
         },
         "tags": [
-            "you_queen's_aprentice",
             "clan_has_kits"
         ],
         "intro": [
@@ -7621,7 +7605,7 @@
     },
     "assertive_tokit_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },

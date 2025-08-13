@@ -50,11 +50,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "[You aren't surprised to see t_c at the border. Again.]",
             "Your kind can't just claim all of the territory!",
@@ -78,11 +79,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "[You feel eyes peering at you from the fog, wandering near the border of stars and mist.]",
             "[Briefly, you spot the ghost of a rogue, looking at your star-sewn pelt in awe.]",
@@ -101,11 +103,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "Hello?",
             "[You turn to see an unfamiliar cat, standing half-in and half-out of the fog.]",
@@ -122,11 +125,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "[You find yourself a little lost, stumbling around the mist trying to find your way out.]",
             "This way.",
@@ -151,11 +155,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "What was my name?",
             "t_c. It meant a lot to me, even though it wasn't as grand as a Clancat's.",
@@ -303,11 +308,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "[You leave the camp to stretch your legs, and run into a strange spirit.]",
             "Hey you! This is my territory!",
@@ -334,11 +340,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "I fought you. I fought you and your <i>Clan</i>. You took our food, our shelter...",
             "Why would I want to talk to you after that?"
@@ -357,14 +364,15 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
         "relationship": [
             "from_parent"
         ],
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "Hpf.",
             "Look at you unfortunate morsel.",
@@ -382,11 +390,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "Well, well. Look who we have here!",
             "It's a little Clan cat, being all brave.",
@@ -400,7 +409,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ]
@@ -411,11 +420,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "Do you have a family, little one?",
             "Oh... you're one of them. I'm glad you have someone to look out for you."
@@ -461,11 +471,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "We may be dead, but I still expect you to respect my territory."
         ]
@@ -485,11 +496,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "rogue"
             ]
         },
-        "tags": [
-            "they_rogue"
-        ],
+        "tags": [],
         "intro": [
             "Cross that line, and you cross <i>me</i>."
         ]

@@ -529,9 +529,7 @@
         "relationship": [
             "min_platonic_50"
         ],
-        "tags": [
-            "no_kit"
-        ],
+        "tags": [],
         "intro": [
             "Huh? Oh, nothing's wrong ...",
             "Just ... had a bad day, is all ...",
@@ -639,7 +637,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -790,7 +788,7 @@
     },
     "assertive_tokit4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -813,7 +811,7 @@
     },
     "assertive_tokit": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1611,7 +1609,7 @@
     },
     "sweet_warrior_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1627,7 +1625,7 @@
     },
     "sweet_warrior_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1644,7 +1642,7 @@
     },
     "sweet_warrior_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4350,7 +4348,7 @@
     },
     "stable_warriortoKITTEN_1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4368,7 +4366,7 @@
     },
     "stable_warriortoKITTEN_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4390,7 +4388,7 @@
     },
     "stable_warriortoKITTEN_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4416,7 +4414,7 @@
     },
     "stable_warriortoKITTEN_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4439,7 +4437,7 @@
     },
     "stable_warriortoKITTEN_5": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4460,7 +4458,7 @@
     },
     "stable_warriortoKITTEN_6": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4478,7 +4476,7 @@
     },
     "stable_warriortoKITTEN_7": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4502,7 +4500,7 @@
     },
     "stable_warriortoKITTEN_8": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4528,7 +4526,7 @@
     },
     "stable_warriortoKITTEN_9": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4547,7 +4545,7 @@
     },
     "stable_warriortoKITTEN_10": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4568,7 +4566,7 @@
     },
     "stable_warriortoKITTEN_11": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4589,7 +4587,7 @@
     },
     "stable_warriortoKITTEN_12": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4610,7 +4608,7 @@
     },
     "stable_warriortoKITTEN_13": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4635,7 +4633,7 @@
     },
     "stable_warriortoKITTEN_14": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4656,7 +4654,7 @@
     },
     "stable_warriortoKITTEN_15": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4677,7 +4675,7 @@
     },
     "stable_warriortoKITTEN_16": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4699,7 +4697,7 @@
     },
     "stable_warriortoKITTEN_17": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4719,7 +4717,7 @@
     },
     "stable_warriortoKITTEN_18": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4742,7 +4740,7 @@
     },
     "stable_warriortoKITTEN_19": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4764,7 +4762,7 @@
     },
     "stable_warriortoKITTEN_20": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4793,7 +4791,7 @@
     },
     "stable_warriortoKITTEN_FROMSIB_1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4821,7 +4819,7 @@
     },
     "stable_warriortoKITTEN_FROMSIB_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4845,7 +4843,7 @@
     },
     "stable_warriortoKITTEN_FROMSIB_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -5289,7 +5287,11 @@
         ]
     },
     "Introspective_mentor_H1": {
-        "y_c": {},
+        "y_c": {
+            "status": [
+                "apprentice"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "introspective"
@@ -5302,9 +5304,7 @@
             "min_platonic_50",
             "from_mentor"
         ],
-        "tags": [
-            "you_apprentince"
-        ],
+        "tags": [],
         "intro": [
             "[t_c has had you training ever since sunrise but today you just can't get your pounce right. Eyes filled with frustrated tears, you try again... But fail.]",
             "Chin up, let me help. All it takes is practice. You're allowed mistakes because that's how we learn.",
@@ -5314,7 +5314,11 @@
         ]
     },
     "Introspective_mentor_H2": {
-        "y_c": {},
+        "y_c": {
+            "status": [
+                "apprentice"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "brooding",
@@ -5328,9 +5332,7 @@
             "min_dislike_50",
             "from_mentor"
         ],
-        "tags": [
-            "you_apprentince"
-        ],
+        "tags": [],
         "intro": [
             "[t_c has been quiet these past few moons, {PRONOUN/t_c/poss} eyes filled with an emotion you can't explain. Not yet, anyway.]",
             "We're training in the rain today. Come, y_c.",
@@ -6026,7 +6028,7 @@
     },
     "neurotic_choice_foxtokit_SQ5~2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -8301,11 +8303,11 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "[Ask t_c what's wrong]",
+                "text": "[Ask t_c what's wrong.]",
                 "next_scene": "ask"
             },
             "choice2": {
-                "text": "[Leave t_c alone]",
+                "text": "[Leave t_c alone.]",
                 "next_scene": "leave"
             }
         },
@@ -8383,7 +8385,8 @@
     "brooding_toqueen_AJ": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -8401,9 +8404,7 @@
                 "deputy"
             ]
         },
-        "tags": [
-            "you_queen's_aprentice"
-        ],
+        "tags": [],
         "intro": [
             "[The nursery entrance shudders open, revealing little r_k dangling from t_c's mouth, mewling and squirming in protest.]",
             "[t_c sets {PRONOUN/r_k/object} on the ground, and the kit bounds towards you, cowering behind your leg at t_c's cold glare.]",
@@ -8414,7 +8415,8 @@
     "brooding_toqueen_AJ1": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -8430,7 +8432,6 @@
             ]
         },
         "tags": [
-            "you_queen's_aprentice",
             "clan_has_kits"
         ],
         "intro": [
@@ -8935,7 +8936,7 @@
     },
     "cool_you_kit_11_AJ": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -8988,7 +8989,7 @@
     },
     "neurotic_tokit_SQ2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -9098,7 +9099,7 @@
     },
     "assertive_tokit_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -9210,51 +9211,48 @@
             "condition": ["blind:any:false"]
         },
         "t_c": {
-"status": ["warrior"],
+            "status": ["warrior"],
             "cluster": ["upstanding"],
             "condition": ["blind:any:false"]
-},
+        },
         "relationship": ["max_dislike_10", "min_platonic_30"],
         "intro": [
            "Did you hear how neutral-d_n put me on the border patrol? I told {PRONOUN/neutral-d_n/object} that I felt that I'd be more effective hunting today, but {PRONOUN/neutral-d_n/subject} said {PRONOUN/neutral-d_n/subject}'d already organized the patrols and wouldn't change them at this point.",
            "...Of course I respect that, but I still think that we should organize patrols for maximum efficiency."
-]
-},
-
- "upstanding_warrior_SQ2": {
+        ]
+    },
+    "upstanding_warrior_SQ2": {
         "y_c": {
             "age": ["not_kitten", "not_adolescent"],
             "condition": ["blind:any:false"]
         },
         "t_c": {
-"status": ["warrior"],
+            "status": ["warrior"],
             "cluster": ["upstanding"],
             "condition": ["blind:any:false"]
-},
+        },
         "relationship": ["max_dislike_10", "min_platonic_40"],
         "intro": [
            "I can't stand being on patrol with dislike-r_w-upstanding. {PRONOUN/dislike-r_w-upstanding/subject/CAP} always {VERB/dislike-r_w-upstanding/try/tries} to take control of the group, and {VERB/dislike-r_w-upstanding/tell/tells} us what routes we're going to take and how long we're going to hunt where...",
            "{PRONOUN/dislike-r_w-upstanding/subject/CAP} never {VERB/dislike-r_w-upstanding/listen/listens} to anyone else, as if {PRONOUN/dislike-r_w-upstanding/subject} {VERB/dislike-r_w-upstanding/think/thinks} {PRONOUN/dislike-r_w-upstanding/subject}{VERB/dislike-r_w-upstanding/'re/'s} always right! It's infuriating.",
            "[...You don't point out that you know another cat who often acts the same way.]"
-]
-},
-
- "upstanding_warrior_SQ3": {
+        ]
+    },
+    "upstanding_warrior_SQ3": {
         "y_c": {
             "age": ["not_kitten"],
             "condition": ["blind:any:false"]
         },
         "t_c": {
-"status": ["warrior"],
+            "status": ["warrior"],
             "cluster": ["upstanding"],
             "condition": ["blind:any:false"]
-},
+        },
         "relationship": ["max_dislike_10", "min_platonic_15"],
         "intro": [
            "dislike-r_w-cool skipped our border patrol this morning. Do you know what {PRONOUN/dislike-r_w-cool/subject} {VERB/dislike-r_w-cool/were/was} doing instead? If {PRONOUN/dislike-r_w-cool/subject} {VERB/dislike-r_w-cool/were/was} slacking off, I'm going to report {PRONOUN/dislike-r_w-cool/object} to d_n.",
            "[You tell t_c that dislike-r_w-cool had a stomachache this morning. t_c rolls {PRONOUN/t_c/poss} eyes.]",
            "Hmph. I doubt that."
-]
-}
-
+        ]
+    }
 }

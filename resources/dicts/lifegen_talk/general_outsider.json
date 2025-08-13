@@ -276,7 +276,7 @@
             "dead": [
                 "sc"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -301,7 +301,7 @@
             "dead": [
                 "ur"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -326,7 +326,7 @@
             "dead": [
                 "df"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -404,7 +404,7 @@
     "dead_outsider_J16": {
         "y_c": {
             "age": [
-                "not_kit"
+                "not_kitten"
             ]
         },
         "t_c": {
@@ -414,7 +414,7 @@
             "dead": [
                 "ur"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -489,7 +489,7 @@
             "dead": [
                 "ur"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -509,39 +509,6 @@
         "intro": [
             "[t_c is watching c_n curiously.]",
             "I've always wondered how Clans worked. Can you tell me more about them?"
-        ]
-    },
-    "scnew_urnew_R1": {
-        "y_c": {
-            "status": [
-                "newborn"
-            ],
-            "condition": [
-                "blind:any:false"
-            ],
-            "dead": [
-                "sc"
-            ]
-        },
-        "t_c": {
-            "condition": [
-                "blind:any:false"
-            ],
-            "dead": [
-                "ur"
-            ],
-            "status": [
-                "newborn"
-            ]
-        },
-        "tags": [
-            "they_kittypet"
-        ],
-        "intro": [
-            "Meewwww!",
-            "[Oh? Who is that? You toddle closer curiously.]",
-            "Meeew mew.",
-            "[You're friends now. The day is spent napping together.]"
         ]
     },
     "scnew_urnew_R2": {
@@ -566,49 +533,15 @@
                 "ur"
             ],
             "status": [
-                "newborn"
+                "newborn",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[You've met a strange new kit who smells weird.]",
             "[You both spend time sniffing and scrunching your noses at each other before calling an apparent truce.]",
             "[You toddle away first when a queen spots you.]"
-        ]
-    },
-    "scnew_urnew_R3": {
-        "y_c": {
-            "status": [
-                "newborn"
-            ],
-            "condition": [
-                "blind:any:false"
-            ],
-            "dead": [
-                "sc"
-            ]
-        },
-        "t_c": {
-            "condition": [
-                "blind:any:false"
-            ],
-            "dead": [
-                "ur"
-            ],
-            "status": [
-                "newborn"
-            ]
-        },
-        "tags": [
-            "they_kittypet"
-        ],
-        "intro": [
-            "Mew! Mew! Mew! Mew!",
-            "[What's that sound?]",
-            "Mew! Meeew! Meeeew! Meeeew!",
-            "[You decide to mew back, and soon there is a volley of tiny squeaks echoing softly between the two of you.]"
         ]
     },
     "scnew_urnew_R4": {
@@ -633,12 +566,11 @@
                 "ur"
             ],
             "status": [
-                "newborn"
+                "newborn",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[A queen has noticed a strange newborn amongst the regulars. You already knew t_c was there.]",
             "[You snuggle closer to {PRONOUN/t_c/object}, laying your tiny head on the small of {PRONOUN/t_c/poss} back.]",
@@ -648,7 +580,7 @@
     },
     "sckit_urnew_R3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -666,12 +598,11 @@
                 "ur"
             ],
             "status": [
-                "newborn"
+                "newborn",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "Mew. Mew. Mew. Mew. Mew. Mew. Meeeew.",
             "[Is that... t_c? {VERB/t_c/Aren't/Isn't} {PRONOUN/t_c/subject} a kittypet? You heard one of the queens say that before.]",
@@ -682,7 +613,7 @@
     },
     "sckit_urnew_R4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -700,12 +631,11 @@
                 "ur"
             ],
             "status": [
-                "newborn"
+                "newborn",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[In the middle of a scavenger hunt, you stumble across t_c!]",
             "[... Well... It wouldn't hurt to have a friend to join you!]",
@@ -717,7 +647,7 @@
     },
     "sckit_urnew_R5": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -735,12 +665,11 @@
                 "ur"
             ],
             "status": [
-                "newborn"
+                "newborn",
+                "kittypet"
             ]
         },
-        "tags": [
-            "they_kittypet"
-        ],
+        "tags": [],
         "intro": [
             "[One of the queens asks you for a favor since they're alone with the newborns right now. t_c has wandered in, but it's time for {PRONOUN/t_c/object} to go home.]",
             "[The little kittypet wriggles as you struggle to carry {PRONOUN/t_c/object} to the border.]",
@@ -753,7 +682,7 @@
             "condition": [
                 "deaf:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -775,7 +704,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },

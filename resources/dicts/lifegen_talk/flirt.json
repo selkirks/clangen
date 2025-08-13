@@ -962,9 +962,6 @@
     },
     "oldflirts_41": {
         "y_c": {
-            "status": [
-                "warrior"
-            ],
             "condition": [
                 "blind:any:false"
             ]
@@ -1023,6 +1020,9 @@
                 "blind:any:false"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -1417,8 +1417,10 @@
             ]
         },
         "tags": [
-            "reject",
-            "has_mate"
+            "reject"
+        ],
+        "relationship": [
+            "non-mates"
         ],
         "intro": [
             "Uh ... hehe! How sweet of you.",
@@ -1441,6 +1443,9 @@
                 "blind:any:false"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -1912,6 +1917,9 @@
             ],
             "condition": [
                 "blind:any:false"
+            ],
+            "age": [
+                "adult"
             ]
         },
         "relationship": [
@@ -2013,10 +2021,17 @@
         ]
     },
     "brooding_flirt_AJ": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -2031,6 +2046,9 @@
         "t_c": {
             "cluster": [
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -2042,10 +2060,17 @@
         ]
     },
     "brooding_flirt_AJ2": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -2056,10 +2081,17 @@
         ]
     },
     "brooding_flirt_AJ3": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -2070,10 +2102,18 @@
         ]
     },
     "brooding_flirt_AJ4": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
             ]
         },
         "tags": [
@@ -2084,10 +2124,17 @@
         ]
     },
     "brooding_flirt_AJ5": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -2098,12 +2145,22 @@
         ]
     },
     "brooding_flirt_AJ6": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -2127,10 +2184,18 @@
         ]
     },
     "brooding_flirt_AJ8": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
-                "brooding"
+                "brooding",
+                "unlawful"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "relationship": [
@@ -2150,6 +2215,9 @@
         "t_c": {
             "cluster": [
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -2271,11 +2339,7 @@
         ]
     },
     "cool_flirt_AJ4": {
-        "y_c": {
-            "condition": [
-                "blind:any:false"
-            ]
-        },
+        "y_c": {},
         "t_c": {
             "cluster": [
                 "cool",
@@ -2522,7 +2586,11 @@
         ]
     },
     "oldflirts_88": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "stable",
@@ -2563,7 +2631,11 @@
         ]
     },
     "oldflirts_90": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "sweet",
@@ -2633,6 +2705,9 @@
             "cluster": [
                 "unlawful",
                 "unabashed"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -2765,7 +2840,7 @@
             "reject"
         ],
         "intro": [
-            "..That was an awful attempt at flirting, but you are cute, so I'll let it slide."
+            "... That was an awful attempt at flirting, but you are cute, so I'll let it slide."
         ]
     },
     "oldflirts_100": {
@@ -2831,7 +2906,7 @@
             "reject"
         ],
         "intro": [
-            "...Hahaha! At least you're funny."
+            "... Hahaha! At least you're funny."
         ]
     },
     "upstanding_reject": {
@@ -2891,7 +2966,11 @@
         ]
     },
     "oldflirts_105": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "unlawful",
@@ -3053,12 +3132,19 @@
         ]
     },
     "oldflirts_112": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "unabashed",
                 "sweet",
                 "silly"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -3112,7 +3198,8 @@
             ]
         },
         "relationship": [
-            "from_mate"
+            "from_mate",
+            "min_romantic_20"
         ],
         "tags": [
             "accept"
@@ -3194,11 +3281,18 @@
         ]
     },
     "oldflirts_118": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "unlawful",
                 "brooding"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -3232,7 +3326,11 @@
         ]
     },
     "oldflirts_120": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "introspective"
@@ -3310,7 +3408,11 @@
         ]
     },
     "oldflirts_124": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "silly"
@@ -3330,6 +3432,9 @@
                 "unabashed",
                 "cool",
                 "silly"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -3400,11 +3505,22 @@
         ]
     },
     "oldflirts_129": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
             "cluster": [
                 "unabashed",
                 "upstanding"
+            ],
+            "condition": [
+                "blind:any:false"
+            ],
+            "status": [
+                "deputy",
+                "leader"
             ]
         },
         "tags": [
@@ -3425,13 +3541,16 @@
             "cluster": [
                 "silly",
                 "neurotic"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
             "accept"
         ],
         "intro": [
-            "Arrggh, stop making me feel weird! It feels like there's butterflies in my belly whenever I see you as is!"
+            "Arrggh, stop making me feel weird! It feels like there's butterflies in my belly whenever I'm with you as is!"
         ]
     },
     "oldflirts_131": {
@@ -3451,7 +3570,8 @@
             ]
         },
         "relationship": [
-            "from_mate"
+            "from_mate",
+            "max_dislike_25"
         ],
         "tags": [
             "accept"
@@ -3629,6 +3749,9 @@
                 "heartbroken"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "accept"
         ],
@@ -3705,7 +3828,7 @@
             "accept"
         ],
         "intro": [
-            "I need some time to heal. Please understand."
+            "I need some time to heal from this heartbreak. Please understand."
         ]
     },
     "heartbroken_5": {
@@ -3795,7 +3918,7 @@
             ]
         },
         "tags": [
-            "accept"
+            "reject"
         ],
         "intro": [
             "Not the time or the place. Move along."
@@ -3842,7 +3965,7 @@
             ]
         },
         "tags": [
-            "accept"
+            "reject"
         ],
         "intro": [
             "That's cool, but I've got other things on my mind."
@@ -3864,11 +3987,14 @@
                 "heartbroken"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "accept"
         ],
         "intro": [
-            "Life's strange, isn't it? I'm still trying to recover from my last relationship, and here you are."
+            "Life's strange, isn't it? I'm still trying to recover from my last relationship, and yet here you are."
         ]
     },
     "heartbroken_12": {
@@ -3888,8 +4014,11 @@
                 "heartbroken"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
-            "accept"
+            "reject"
         ],
         "intro": [
             "Kind words, but I'm walking a solitary path for now."
@@ -3912,8 +4041,11 @@
                 "heartbroken"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
-            "accept"
+            "reject"
         ],
         "intro": [
             "Why now? Why me?"
@@ -3936,8 +4068,11 @@
                 "heartbroken"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
-            "accept"
+            "reject"
         ],
         "intro": [
             "Trust is earned. Let's keep things as they are."
@@ -3988,7 +4123,7 @@
             "accept"
         ],
         "intro": [
-            "I'm... Taking things slow right now."
+            "I'm... Taking things slow right now, but thank you."
         ]
     },
     "flirt_sh_J25": {
@@ -4003,6 +4138,9 @@
                 "blind:any:false"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -4095,7 +4233,7 @@
             "accept"
         ],
         "intro": [
-            "[t_c playfully taps you with {PRONOUN/t_c/poss} tail before pulling it away before anyone can see.]"
+            "[t_c playfully taps you with {PRONOUN/t_c/poss} tail before pulling it away before anycat can see.]"
         ]
     },
     "flirt_sh_J30": {
@@ -4148,8 +4286,13 @@
                 "blind:any:false"
             ]
         },
+        "relationship": [
+            "non-mates",
+            "min_dislike_25",
+            "min_romantic_10"
+        ],
         "tags": [
-            "accept"
+            "reject"
         ],
         "intro": [
             "Maybe I could have liked you if you weren't so evil."
@@ -4193,7 +4336,7 @@
             "accept"
         ],
         "intro": [
-            "What's going on..?"
+            "What's going on...?"
         ]
     },
     "flirt_sh_J35": {
@@ -4214,7 +4357,7 @@
             "accept"
         ],
         "intro": [
-            "What's going on..?"
+            "y_c...?"
         ]
     },
     "flirt_sh_J36": {
@@ -4234,7 +4377,7 @@
             "accept"
         ],
         "intro": [
-            "What's going on..?"
+            "What's going on...?"
         ]
     },
     "flirt_sh_J37": {
@@ -4253,7 +4396,7 @@
             "accept"
         ],
         "intro": [
-            "What's going on..?"
+            "What's going on...?"
         ]
     },
     "flirt_sh_J38": {
@@ -4279,9 +4422,16 @@
     },
     "flirt_sh_J39": {
         "y_c": {
+            "condition": [
+                "blind:any:false"
+            ],
             "shunned": true
         },
-        "t_c": {},
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "tags": [
             "reject",
             "accept"
@@ -4291,9 +4441,16 @@
         ]
     },
     "flirt_sh_J40": {
-        "y_c": {},
+        "y_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "t_c": {
-            "shunned": true
+            "shunned": true,
+            "condition": [
+                "blind:any:false"
+            ]
         },
         "tags": [
             "reject",
@@ -4340,11 +4497,11 @@
             ]
         },
         "t_c": {
-            "condition": [
-                "blind:any:false"
-            ],
             "shunned": true
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -4366,10 +4523,17 @@
             ],
             "shunned": true
         },
+        "relationship": [
+            "non-mates"
+        ],
+        "tags": [
+            "accept",
+            "reject"
+        ],
         "intro": [
             "[You approached t_c, quietly starting to flirt with {PRONOUN/t_c/object}.]",
-            "y_c. I murdered our Clanmate. Why are you talking to me, let alone like this?",
-            "[You tell t_c that you never liked that Clanmate anyway, and maybe you like a little danger too.]"
+            "y_c. I murdered neutral-v_c. Why are you talking to me, let alone like this?",
+            "[You tell t_c that you never liked neutral-v_c anyway, and maybe you like a little danger too.]"
         ]
     },
     "flirting_shunned_Ren2": {
@@ -4384,20 +4548,21 @@
             ],
             "shunned": true
         },
+        "relationship": [
+            "non-mates",
+            "min_dislike_10"
+        ],
         "tags": [
             "reject"
         ],
         "intro": [
             "[You decide to start flirting with t_c in an attempt to see where it leads. {PRONOUN/t_c/subject/CAP} {VERB/t_c/do/does} not seem amused.]",
-            "y_c. I murdered our Clanmate. I'm not afraid to go after you too if you keep at it.",
+            "y_c. I murdered v_c. I'm not afraid to go after you too if you keep at it.",
             "[You try one more time, but t_c lashes out at you, not afraid to get more blood on {PRONOUN/t_c/poss} claws. It seems {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} too fond of you.]"
         ]
     },
     "flirting_shunned_SQ3": {
         "y_c": {
-            "condition": [
-                "blind:any:false"
-            ],
             "shunned": true
         },
         "t_c": {
@@ -4405,6 +4570,9 @@
                 "blind:any:false"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -4537,16 +4705,9 @@
     },
     "flirting_shunned_SQ4": {
         "y_c": {
-            "condition": [
-                "blind:any:false"
-            ],
             "shunned": true
         },
-        "t_c": {
-            "condition": [
-                "blind:any:false"
-            ]
-        },
+        "t_c": {},
         "tags": [
             "accept"
         ],
@@ -4574,7 +4735,7 @@
             "accept"
         ],
         "intro": [
-            ".. That gives me an idea, y_c.",
+            "... That gives me an idea, y_c.",
             "c_n will never see us the same. We'll always be the dirt on their paws because we have blood on our own.",
             "We should leave, y_c, make something for us - maybe an entire Clan. But I won't leave until you're ready to come with me.",
             "I couldn't do it alone."
@@ -4587,6 +4748,9 @@
         "t_c": {
             "shunned": true
         },
+        "relationship": [
+            "min_dislike_10"
+        ],
         "tags": [
             "reject"
         ],
@@ -4621,24 +4785,23 @@
         ]
     },
     "grieving_flirt_CM1": {
-        "y_c": {
-            "condition": [
-                "blind:any:false"
-            ]
-        },
+        "y_c": {},
         "t_c": {
             "condition": [
                 "blind:any:false",
                 "grief stricken"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
         "intro": [
             "[t_c barely looks up at you, choking out a sob as {PRONOUN/t_c/subject} {VERB/t_c/tremble/trembles}.]",
             "y_c, y_c I'm sorry. I- <i>hic</i> I can't...",
-            "I can't love anyone like I did tg_c.",
+            "I can't love anyone like I did plike-tg_c.",
             "It... if I lost you... it would destroy me if I did."
         ]
     },
@@ -4816,6 +4979,9 @@
                 "grief stricken"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -5006,6 +5172,9 @@
                 "grief stricken"
             ]
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -5496,9 +5665,6 @@
             ],
             "shunned": true
         },
-        "relationship": [
-            "from_mate"
-        ],
         "tags": [
             "reject"
         ],
@@ -5518,6 +5684,9 @@
             ],
             "shunned": true
         },
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -5599,7 +5768,6 @@
             "shunned": true
         },
         "tags": [
-            "accept",
             "accept"
         ],
         "intro": [
@@ -5739,6 +5907,9 @@
                 "unlawful",
                 "brooding",
                 "introspective"
+            ],
+            "condition": [
+                "blind:any:false"
             ]
         },
         "tags": [
@@ -5876,7 +6047,7 @@
             ]
         },
         "relationship": [
-            "min_platonic_50"
+            "min_platonic_30"
         ],
         "tags": [
             "accept"
@@ -5920,7 +6091,6 @@
             ]
         },
         "relationship": [
-            "min_dislike_50",
             "non-mates"
         ],
         "tags": [
@@ -5970,7 +6140,7 @@
         ],
         "intro": [
             "... Right, that made no sense.",
-            "You should work on your flirting a little more before you come back for more."
+            "You should work on your flirting a little more before you try again."
         ]
     },
     "flirt_reject_H5": {
@@ -6036,14 +6206,14 @@
             "leafbare"
         ],
         "relationship": [
-            "min_platonic_50"
+            "min_platonic_15"
         ],
         "tags": [
             "reject"
         ],
         "intro": [
             "What are you doing outside? It's so cold!",
-            "[t_c coaxes you back to somewhere warm and alas, your attempt at flirting either went over {PRONOUN/t_c/poss} head... or was ignored.]",
+            "[t_c coaxes you back to somewhere warm. Alas, your attempt at flirting either went over {PRONOUN/t_c/poss} head... or was ignored.]",
             "[You can't decide which one is worse.]"
         ]
     },
@@ -6079,26 +6249,24 @@
             ]
         },
         "tags": [
-            "reject",
-            "has_mate"
+            "reject"
         ],
         "intro": [
             "You have some nerve..."
         ]
     },
     "blind_to_grieving_H1": {
-        "y_c": {
+        "y_c": {},
+        "t_c": {
             "condition": [
                 "blind:any:false"
             ]
         },
-        "t_c": {},
         "relationship": [
             "grievingyou"
         ],
         "tags": [
-            "reject",
-            "flirt"
+            "reject"
         ],
         "intro": [
             "I don't understand how you can flirt with me right now!",
@@ -6162,7 +6330,6 @@
             "min_romantic_20"
         ],
         "tags": [
-            "has_mate",
             "accept"
         ],
         "intro": [
@@ -6177,11 +6344,10 @@
             ]
         },
         "relationship": [
-            "min_dislike_50",
+            "min_dislike_20",
             "min_romantic_20"
         ],
         "tags": [
-            "has_mate",
             "accept"
         ],
         "intro": [
@@ -6197,18 +6363,18 @@
         },
         "t_c": {
             "condition": [
-                "deaf:any:false"
+                "deaf:any:false",
+                "blind:any:false"
             ]
         },
         "relationship": [
             "min_romantic_20"
         ],
         "tags": [
-            "has_mate",
             "accept"
         ],
         "intro": [
-            "[t_c looks away, flustered by your flirting.]",
+            "[t_c turns away, flustered by your flirting.]",
             "[Just over {PRONOUN/t_c/poss} shoulder, you see t_m watching from the distance, {PRONOUN/t_m/poss} tail lashing.]",
             "[... Whoops.]"
         ]
@@ -6224,7 +6390,6 @@
             "min_romantic_20"
         ],
         "tags": [
-            "has_mate",
             "accept"
         ],
         "intro": [
@@ -6244,8 +6409,8 @@
             "min_romantic_20"
         ],
         "tags": [
-            "has_mate",
-            "accept"
+            "accept",
+            "has_mate"
         ],
         "intro": [
             "Does everycat want a piece of me, or what?",
@@ -6268,7 +6433,6 @@
             "from_mate"
         ],
         "tags": [
-            "has_mate",
             "accept"
         ],
         "intro": [
@@ -6331,6 +6495,9 @@
             ]
         },
         "t_c": {},
+        "relationship": [
+            "non-mates"
+        ],
         "tags": [
             "reject"
         ],
@@ -6373,7 +6540,8 @@
                 "blind:any:false"
             ],
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "relationship": [
@@ -6451,7 +6619,6 @@
             "non-mates"
         ],
         "tags": [
-            "has_mate",
             "reject"
         ],
         "intro": [
@@ -6474,7 +6641,6 @@
             "non-mates"
         ],
         "tags": [
-            "has_mate",
             "reject"
         ],
         "intro": [
@@ -6497,7 +6663,6 @@
             "non-mates"
         ],
         "tags": [
-            "has_mate",
             "reject"
         ],
         "intro": [
@@ -6517,11 +6682,10 @@
             ]
         },
         "relationship": [
-            "min_dislike_50",
+            "min_dislike_30",
             "non-mates"
         ],
         "tags": [
-            "has_mate",
             "reject"
         ],
         "intro": [
@@ -6540,11 +6704,10 @@
             ]
         },
         "relationship": [
-            "min_dislike_50",
+            "min_dislike_30",
             "non-mates"
         ],
         "tags": [
-            "has_mate",
             "reject"
         ],
         "intro": [
@@ -6567,8 +6730,8 @@
             "non-mates"
         ],
         "tags": [
-            "has_mate",
-            "reject"
+            "reject",
+            "has_mate"
         ],
         "intro": [
             "Sorry, you're definitely not my type of cat."
@@ -6600,12 +6763,15 @@
     },
     "hasmate_reject_H8": {
         "y_c": {},
-        "t_c": {},
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "relationship": [
             "non-mates"
         ],
         "tags": [
-            "has_mate",
             "reject"
         ],
         "intro": [
@@ -6628,7 +6794,6 @@
             "non-mates"
         ],
         "tags": [
-            "has_mate",
             "reject"
         ],
         "intro": [
@@ -6645,10 +6810,10 @@
             ]
         },
         "relationship": [
-            "non-mates"
+            "non-mates",
+            "min_dislike_10"
         ],
         "tags": [
-            "has_mate",
             "reject"
         ],
         "intro": [
@@ -6691,8 +6856,7 @@
             "from_mate"
         ],
         "tags": [
-            "accept",
-            "flirt"
+            "accept"
         ],
         "intro": [
             "Haha...",
@@ -6754,7 +6918,6 @@
             ]
         },
         "relationship": [
-            "min_dislike_50",
             "from_mate"
         ],
         "tags": [
@@ -6798,7 +6961,6 @@
             ]
         },
         "relationship": [
-            "min_dislike_50",
             "from_mate"
         ],
         "tags": [
@@ -6865,11 +7027,11 @@
         "t_c": {
             "condition": [
                 "blind:any:false",
-                "deaf:any:false"
+                "deaf:any:false",
+                "guilt"
             ]
         },
         "tags": [
-            "they_guilty",
             "reject"
         ],
         "intro": [
@@ -6888,11 +7050,11 @@
         "t_c": {
             "condition": [
                 "blind:any:false",
-                "deaf:any:false"
+                "deaf:any:false",
+                "guilt"
             ]
         },
         "tags": [
-            "they_guilty",
             "accept"
         ],
         "intro": [
@@ -6907,14 +7069,14 @@
         },
         "t_c": {
             "condition": [
-                "blind:any:false"
+                "blind:any:false",
+                "guilt"
             ]
         },
         "relationship": [
             "from_mate"
         ],
         "tags": [
-            "they_guilty",
             "reject"
         ],
         "intro": [
@@ -6926,14 +7088,11 @@
         "y_c": {
             "condition": [
                 "deaf:any:true"
-            ],
-            "age": [
-                "not_kitten"
             ]
         },
         "t_c": {
-            "age": [
-                "not_kitten"
+            "condition": [
+                "deaf:any:false"
             ]
         },
         "relationship": [
@@ -6993,7 +7152,7 @@
     "youdeaf_R84": {
         "y_c": {
             "condition": [
-                "deaf:any:true"
+                "deaf:any:false"
             ]
         },
         "t_c": {
@@ -7011,7 +7170,7 @@
     "youdeaf_R85": {
         "y_c": {
             "condition": [
-                "deaf:any:true"
+                "deaf:any:false"
             ]
         },
         "t_c": {
@@ -8505,6 +8664,10 @@
         "relationship": [
             "from_mate"
         ],
+        "tags": [
+            "accept",
+            "reject"
+        ],
         "intro": [
             "[You press against t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/keep/keeps} {PRONOUN/t_c/poss} eyes closed, but press back against you.]",
             "[You think you hear a small purr, but it quickly turns to sobs.]"
@@ -8569,6 +8732,9 @@
             ],
             "shunned": true
         },
+        "tags": [
+            "accept"
+        ],
         "intro": [
             "[t_c smiles slightly. Even though {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} hesitant, t_c doesn't appear to hate your flirting.]"
         ]
@@ -8690,7 +8856,8 @@
         },
         "t_c": {
             "condition": [
-                "grief stricken"
+                "grief stricken",
+                "deaf:any:false"
             ]
         },
         "intro": [
@@ -8827,7 +8994,8 @@
             "condition": [
                 "grief stricken",
                 "blind:any:false"
-            ]
+            ],
+            "shunned": "any"
         },
         "t_c": {
             "condition": [
@@ -8849,7 +9017,11 @@
                 "blind:any:false"
             ]
         },
-        "t_c": {},
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
         "relationship": [
             "non-mates",
             "min_platonic_20"
@@ -8871,7 +9043,7 @@
         },
         "t_c": {
             "condition": [
-                "grief stricken"
+                "blind:any:false"
             ]
         },
         "relationship": [],
@@ -8893,7 +9065,7 @@
         },
         "t_c": {
             "condition": [
-                "grief stricken"
+                "blind:any:false"
             ]
         },
         "relationship": [
@@ -8904,6 +9076,290 @@
         ],
         "intro": [
             "Did yg_c going to StarClan make you finally realize you like me?"
+        ]
+    },
+    "mcgrievingonly_flirting_c": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "accept"
+        ],
+        "intro": [
+            "There's something beautiful about how much you miss them."
+        ]
+    },
+    "mcgrievingonly_flirting_c2": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "accept"
+        ],
+        "intro": [
+            "The way you loved yg_c...",
+            "It does make me wonder what it would feel to be loved like that too."
+        ]
+    },
+    "mcgrievingonly_flirting_c3": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "reject"
+        ],
+        "intro": [
+            "[t_c shuffles their paws, not meeting your eyes.]",
+            "[It doesn't feel entirely appropriate to accept your advances, not when you're missing yg_c so much.]"
+        ]
+    },
+    "bothgrieving_flirt_H1": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "accept"
+        ],
+        "intro": [
+            "You're a nice distraction."
+        ]
+    },
+    "bothgrieving_flirt_H2": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "shunned": "any"
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "shunned": "any"
+        },
+        "relationship": [],
+        "tags": [
+            "accept"
+        ],
+        "intro": [
+            "Determined to distract the both of us from our grievances, huh?",
+            "I won't complain."
+        ]
+    },
+    "bothgrieving_flirt_H3": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "shunned": "any"
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "shunned": "any"
+        },
+        "relationship": [],
+        "tags": [
+            "reject"
+        ],
+        "intro": [
+            "Now is not the time, y_c..."
+        ]
+    },
+    "bothgrieving_flirt_H4": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "deaf:any:false"
+            ],
+            "shunned": "any"
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken",
+                "deaf:any:false",
+                "blind:any:false"
+            ],
+            "shunned": "any"
+        },
+        "relationship": [],
+        "tags": [
+            "reject"
+        ],
+        "intro": [
+            "[t_c avoids your flirting by sitting with {PRONOUN/t_c/poss} back facing you.]"
+        ]
+    },
+    "mcgrievingonly_flirting_H8": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "deaf:any:false",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false"
+            ]
+        },
+        "relationship": [
+            "from_mate"
+        ],
+        "tags": [
+            "accept"
+        ],
+        "intro": [
+            "[t_c decides to cuddle with you instead of encouraging the flirting, hoping to make you feel better.]"
+        ]
+    },
+    "mcgrievingonly_flirting_H9": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "deaf:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "deaf:any:false"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "accept"
+        ],
+        "intro": [
+            "[t_c smiles, taking your flirting in stride.]"
+        ]
+    },
+    "mcgrievingonly_flirting_H10": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "deaf:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "deaf:any:false"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "reject"
+        ],
+        "intro": [
+            "[t_c smiles, but {PRONOUN/t_c/subject} {VERB/t_c/look/looks} a little awkward around the eyes.]"
+        ]
+    },
+    "mcshunned_theygrieving_flirting_H1": {
+        "y_c": {
+            "shunned":"any",
+            "condition": [
+                "deaf:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken",
+                "deaf:any:false",
+                "blind:any:false"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "reject"
+        ],
+        "intro": [
+            "[t_c ignores you with a flick of {PRONOUN/t_c/poss} tail.]"
+        ]
+    },
+    "mcshunned_theygrieving_flirting_H2": {
+        "y_c": {
+            "shunned":"any"
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken"
+            ],
+            "skill": [
+                "STAR,1",
+                "DARK,1",
+                "GHOST,1"
+            ]
+        },
+        "relationship": [
+            "grievingyou"
+        ],
+        "tags": [
+            "reject"
+        ],
+        "intro": [
+            "You're not real, you're not real, you're not real."
+        ]
+    },
+    "mcshunned_theygrieving_flirting_H3": {
+        "y_c": {
+            "shunned":"any"
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken"
+            ]
+        },
+        "relationship": [
+            "grievingyou"
+        ],
+        "tags": [
+            "reject",
+            "accept"
+        ],
+        "intro": [
+            "Is my mind playing tricks on me?"
         ]
     }
 }

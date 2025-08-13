@@ -51,11 +51,12 @@
         "t_c": {
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "loner"
             ]
         },
-        "tags": [
-            "they_loner"
-        ],
+        "tags": [],
         "intro": [
             "Oh- I haven't seen you before. Did you get lost?",
             "[You finally glance around at your surroundings. Ah, yes, you definitely have gotten yourself lost.]",
@@ -78,11 +79,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "loner"
             ]
         },
-        "tags": [
-            "they_loner"
-        ],
+        "tags": [],
         "intro": [
             "What's your name? y_c? Oh, what a pretty name.",
             "What do you think my name would be if I were a Clan cat?"
@@ -213,7 +215,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ]
@@ -243,11 +245,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "loner"
             ]
         },
-        "tags": [
-            "they_loner"
-        ],
+        "tags": [],
         "intro": [
             "Are you happy in a Clan?",
             "I can't imagine having all of those cats constantly around... especially now that I'm a ghost.",
@@ -272,11 +275,12 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "status": [
+                "loner"
             ]
         },
-        "tags": [
-            "they_loner"
-        ],
+        "tags": [],
         "intro": [
             "Hm.",
             "[You turn around, your fur bristling along your spine. Only to see a nearly transparent, misty cat. t_c.]",
@@ -294,7 +298,7 @@
             "dead": [
                 "df"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -304,11 +308,12 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "loner"
             ]
         },
-        "tags": [
-            "they_loner"
-        ],
+        "tags": [],
         "intro": [
             "[Running through the cold shadows that coat the Dark Forest, you stumble back just in time to not run directly into what, at first, seems to be a cloud of mist. Then you realize that it's a cat, but not one from StarClan. Too wispy.]",
             "Oh, little one!",
@@ -333,14 +338,15 @@
             ],
             "dead": [
                 "ur"
+            ],
+            "status": [
+                "loner"
             ]
         },
-        "tags": [
-            "they_loner"
-        ],
+        "tags": [],
         "intro": [
             "Still wandering?",
-            "... yeah, me too. I used to wonder what would happen after death. It's boring!"
+            "... Yeah, me too. I used to wonder what would happen after death. It's boring!"
         ]
     }
 }

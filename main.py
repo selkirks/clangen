@@ -255,7 +255,7 @@ def loading_animation(scale: float = 1):
                             if game.clan.your_cat.history.murder:
                                 if "is_murderer" in game.clan.your_cat.history.murder:
                                     if len(game.clan.your_cat.history.murder["is_murderer"]) > 0:
-                                        for i in range(len(game.clan.your_cat.history.murder["is_murderer"])):
+                                        for m in range(len(game.clan.your_cat.history.murder["is_murderer"])):
                                             b -= 3
             screen.fill((57, max(36,b), 36))
         else:
@@ -269,7 +269,7 @@ def loading_animation(scale: float = 1):
                             if game.clan.your_cat.history.murder:
                                 if "is_murderer" in game.clan.your_cat.history.murder:
                                     if len(game.clan.your_cat.history.murder["is_murderer"]) > 0:
-                                        for i in range(len(game.clan.your_cat.history.murder["is_murderer"])):
+                                        for m in range(len(game.clan.your_cat.history.murder["is_murderer"])):
                                             b -= 1
             screen.fill((206, max(b, 167), 168))
 

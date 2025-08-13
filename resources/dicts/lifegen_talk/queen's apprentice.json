@@ -82,7 +82,7 @@
     },
     "queen_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -634,7 +634,7 @@
     },
     "assertive_queensapp_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -813,7 +813,7 @@
     },
     "assertive_queensapp_10": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -871,7 +871,7 @@
     },
     "assertive_queensapp3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -962,7 +962,7 @@
     },
     "assertive_queensapp5": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1055,7 +1055,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1081,7 +1081,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1128,7 +1128,7 @@
     },
     "sweet_queenapp_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1153,7 +1153,7 @@
     },
     "sweet_queenapp_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1178,7 +1178,7 @@
     },
     "sweet_queenapp_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1645,15 +1645,14 @@
         },
         "t_c": {
             "cluster": [
-                "sweet"
+                "sweet",
+                "sensitive"
             ],
             "status": [
                 "queen's apprentice"
             ]
         },
-        "tags": [
-            "sensitive"
-        ],
+        "tags": [],
         "intro": [
             "[You're up late. It's a beautiful night in c_n and you wanted to see the stars.]",
             "[Surprisingly, you were not alone. You exited the camp to spot t_c, sobbing to {PRONOUN/t_c/self}.]",
@@ -1860,7 +1859,7 @@
     },
     "silly_queenapp_spar": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1887,7 +1886,7 @@
     },
     "silly_queenapp_ant": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1915,7 +1914,7 @@
     },
     "silly_queenapp_bigplan": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2161,7 +2160,7 @@
                 "sc",
                 "min_you_deadfor_1"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2258,7 +2257,7 @@
             "condition": [
                 "deaf:any:true"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2278,7 +2277,7 @@
             "condition": [
                 "deaf:any:true"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2319,7 +2318,7 @@
             ],
             "shunned": true,
             "status": [
-                "they_queen_apprentice"
+                "queen's apprentice"
             ]
         },
         "relationship": [
@@ -2327,9 +2326,7 @@
             "max_trust_10",
             "from_your_apprentice"
         ],
-        "tags": [
-            "they_queen_apprentice"
-        ],
+        "tags": [],
         "intro": [
             "[You shoo t_c away from the nursery with a pang of guilt in your heart.]",
             "[{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} always so good with the kits, and you can't imagine {PRONOUN/t_c/object} doing anything to them.]",
@@ -2391,10 +2388,6 @@
             "clan_has_kits"
         ],
         "intro": [
-            "... y_c?",
-            "[t_c's unsure voice is heard from behind you. {PRONOUN/t_c/subject/CAP} awkwardly {VERB/t_c/shift/shifts} {PRONOUN/t_c/poss} paws as {PRONOUN/t_c/subject} {VERB/t_c/work/works} up the courage to speak to you.]"
-        ],
-        "intro_text": [
             "... y_c?",
             "[t_c's unsure voice is heard from behind you. {PRONOUN/t_c/subject/CAP} awkwardly {VERB/t_c/shift/shifts} {PRONOUN/t_c/poss} paws as {PRONOUN/t_c/subject} {VERB/t_c/work/works} up the courage to speak to you.]"
         ],

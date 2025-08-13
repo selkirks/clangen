@@ -2,14 +2,8 @@
     "unkmurder_J1": {
         "y_c": {
             "status": [
-                "warrior",
-                "queen",
-                "medicine cat",
-                "mediator",
-                "apprentice",
-                "mediator apprentice",
-                "mediator apprentice",
-                "queen's apprentice"
+                "not_leader",
+                "not_deputy"
             ],
             "age": [
                 "not_kitten"
@@ -23,14 +17,8 @@
                 "silly"
             ],
             "status": [
-                "warrior",
-                "queen",
-                "medicine cat",
-                "mediator",
-                "apprentice",
-                "mediator apprentice",
-                "mediator apprentice",
-                "queen's apprentice"
+                "not_leader",
+                "not_deputy"
             ],
             "age": [
                 "not_kitten"
@@ -52,15 +40,15 @@
                 "next_scene": "idontknow"
             },
             "choice2": {
-                "text": "dislike-r_w1",
+                "text": "dislike-r_w1.",
                 "next_scene": "dislike_r_w1"
             },
             "choice3": {
-                "text": "r_w2-neurotic",
+                "text": "r_w2-neurotic.",
                 "next_scene": "r_w2_neurotic"
             },
             "choice4": {
-                "text": "l_n",
+                "text": "l_n.",
                 "next_scene": "l_n"
             }
         },
@@ -1370,7 +1358,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1410,7 +1398,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1424,7 +1412,7 @@
                 "silly",
                 "upstanding"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1699,14 +1687,8 @@
     "unknown_murder_J2": {
         "y_c": {
             "status": [
-                "warrior",
-                "queen",
-                "medicine cat",
-                "mediator",
-                "apprentice",
-                "mediator apprentice",
-                "mediator apprentice",
-                "queen's apprentice"
+                "not_leader",
+                "not_deputy"
             ],
             "age": [
                 "not_kitten"
@@ -1721,14 +1703,8 @@
                 "silly"
             ],
             "status": [
-                "warrior",
-                "queen",
-                "medicine cat",
-                "mediator",
-                "apprentice",
-                "mediator apprentice",
-                "mediator apprentice",
-                "queen's apprentice"
+                "not_leader",
+                "not_deputy"
             ],
             "age": [
                 "not_kitten"
@@ -1750,15 +1726,15 @@
                 "next_scene": "idontknow"
             },
             "choice2": {
-                "text": "dislike-r_w1",
+                "text": "dislike-r_w1.",
                 "next_scene": "dislike_r_w1"
             },
             "choice3": {
-                "text": "r_w2-neurotic",
+                "text": "r_w2-neurotic.",
                 "next_scene": "r_w2_neurotic"
             },
             "choice4": {
-                "text": "l_n",
+                "text": "l_n.",
                 "next_scene": "l_n"
             }
         },
@@ -1794,7 +1770,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1874,7 +1850,6 @@
             ]
         },
         "tags": [
-            "focus",
             "focus"
         ],
         "intro": [
@@ -1935,11 +1910,11 @@
                 "next_scene": "didyou"
             },
             "choice2": {
-                "text": "No",
+                "text": "No.",
                 "next_scene": "killthem_no"
             },
             "choice3": {
-                "text": "Yes",
+                "text": "Yes.",
                 "next_scene": "killthem_yes"
             }
         },
@@ -2004,7 +1979,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2069,7 +2044,7 @@
     "unknown_murder_J12": {
         "y_c": {
             "age": [
-                "not_kit"
+                "not_kitten"
             ]
         },
         "t_c": {
@@ -2279,7 +2254,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2306,7 +2281,7 @@
                 "blind:any:false",
                 "deaf:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2418,10 +2393,12 @@
                 "elder"
             ]
         },
+        "relationship": [
+            "they_grandparent"
+        ],
         "tags": [
             "focus",
-            "you_murderer",
-            "grandparent"
+            "you_murderer"
         ],
         "intro": [
             "Dear, you have been very smug lately. Don't think I can't tell.",
@@ -2502,9 +2479,7 @@
         },
         "t_c": {
             "age": [
-                "adolescent"
-            ],
-            "status": [
+                "adolescent",
                 "kitten"
             ]
         },
@@ -2524,13 +2499,11 @@
     "introspective_unkmur_H12": {
         "y_c": {
             "age": [
-                "adolescent"
+                "adolescent",
+                "kitten"
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "kitten"
             ]
         },
         "t_c": {
@@ -2779,11 +2752,11 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "I promise",
+                "text": "I promise.",
                 "next_scene": "yes"
             },
             "choice2": {
-                "text": "No",
+                "text": "No.",
                 "next_scene": "no"
             }
         },

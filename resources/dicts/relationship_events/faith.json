@@ -673,7 +673,7 @@
         "r_c": {
             "min_max_faith": [1,-1],
             "affected": true,
-            "status": [
+            "age": [
                 "kitten"
             ]
         }

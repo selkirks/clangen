@@ -263,7 +263,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -359,18 +359,13 @@
             ],
             "age": [
                 "not_kitten"
-            ],
-            "status": [
-                "no_kit"
             ]
         },
         "relationship": [
             "min_platonic_20",
             "min_platonic_20"
         ],
-        "tags": [
-            "no_kit"
-        ],
+        "tags": [],
         "intro": [
             "y_c. Buddy. Best friend. We've GOTTA TRY this. r_c told me that if you eat three mice, one rabbit, and howl at the moon, you get magic powers!",
             "What? It's totally real, {PRONOUN/r_c/subject} wouldn't lie to me like that! I prommissseee."
@@ -708,7 +703,7 @@
     },
     "assertiveapp_30": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -888,16 +883,8 @@
     "assertivemedapp_3": {
         "y_c": {
             "status": [
-                "kitten",
-                "apprentice",
-                "warrior",
-                "elder",
-                "deputy",
-                "leader",
-                "medicine cat",
-                "medicine cat apprentice",
-                "queen",
-                "queen's apprentice"
+                "not_mediator",
+                "not_mediator apprentice"
             ],
             "condition": [
                 "blind:any:false"
@@ -1097,17 +1084,12 @@
             ],
             "age": [
                 "not_kitten"
-            ],
-            "status": [
-                "no_kit"
             ]
         },
         "relationship": [
             "min_jealousy_50"
         ],
-        "tags": [
-            "no_kit"
-        ],
+        "tags": [],
         "intro": [
             "Hey, so, remember when you cracked that joke today, and everybody laughed, and then I tried to be funny, and no one laughed?",
             "... What was the deal with that?"
@@ -1235,7 +1217,7 @@
     },
     "sweet_mediapp_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1259,7 +1241,7 @@
     },
     "sweet_mediapp_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1280,7 +1262,7 @@
     },
     "sweet_mediapp_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [

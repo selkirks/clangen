@@ -1,7 +1,7 @@
 {
     "app_16a": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -39,7 +39,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -269,7 +269,7 @@
     },
     "dep_1a6": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -344,7 +344,7 @@
     },
     "elder_321312": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2628,7 +2628,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2774,7 +2774,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2813,7 +2813,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2837,7 +2837,7 @@
                 "unabashed",
                 "silly"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2858,7 +2858,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3205,7 +3205,7 @@
     },
     "unlawful_forgiven_insult_Guy2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3527,7 +3527,7 @@
     },
     "unlawful_tokit_neg1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3554,7 +3554,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3575,7 +3575,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3689,7 +3689,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3705,7 +3705,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3716,7 +3716,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3738,7 +3738,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3764,7 +3764,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3867,7 +3867,7 @@
     },
     "leader_16": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4000,7 +4000,7 @@
     },
     "leader_1ax5x": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4082,7 +4082,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4107,7 +4107,7 @@
     },
     "medapp_1s5s": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4124,7 +4124,7 @@
     },
     "medcat_16": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -4252,7 +4252,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4277,7 +4277,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4302,7 +4302,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4324,7 +4324,7 @@
     },
     "warrior_1d6": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -5350,7 +5350,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -5378,7 +5378,7 @@
                 "blind:any:false",
                 "deaf:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5392,7 +5392,7 @@
     "they_kitten_H3": {
         "y_c": {},
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5407,7 +5407,7 @@
     "they_kitten_H4": {
         "y_c": {},
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5422,7 +5422,7 @@
     "they_kitten_H5": {
         "y_c": {},
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5436,7 +5436,7 @@
     "they_kitten_H6": {
         "y_c": {},
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5451,7 +5451,7 @@
     "they_kitten_H7": {
         "y_c": {},
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5469,7 +5469,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -5486,7 +5486,7 @@
     },
     "TinyTeddy_stable_neg_youkitten_theywarrior_01": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5582,12 +5582,12 @@
     },
     "kitten_to_kitten_H1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5631,7 +5631,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ]
@@ -5658,7 +5658,7 @@
     },
     "queen_insult_H1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ],
@@ -5921,7 +5921,8 @@
     "shunned_insults_H2": {
         "y_c": {
             "condition": [
-                "blind:any:false"
+                "blind:any:false",
+                "guilt"
             ],
             "shunned": true,
             "age": [
@@ -5937,7 +5938,6 @@
             ]
         },
         "tags": [
-            "you_guilty",
             "insult"
         ],
         "intro": [
@@ -6039,7 +6039,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -6309,7 +6309,7 @@
             "condition": [
                 "deaf:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -6318,12 +6318,12 @@
                 "deaf:any:false"
             ],
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "tags": [
-            "insult",
-            "they_queen_apprentice"
+            "insult"
         ],
         "intro": [
             "[t_c cuffs your ear sharply.]"
@@ -6425,7 +6425,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -6502,6 +6502,9 @@
             "condition": [
                 "deaf:any:false",
                 "blind:any:false"
+            ],
+            "status": [
+                "not_newborn"
             ]
         },
         "t_c": {
@@ -6510,7 +6513,8 @@
                 "blind:any:false"
             ],
             "status": [
-                "older"
+                "older",
+                "not_newborn"
             ]
         },
         "relationship": [
@@ -6541,12 +6545,18 @@
             "condition": [
                 "grief stricken",
                 "deaf:any:false"
+            ],
+            "status": [
+                "not_newborn"
             ]
         },
         "t_c": {
             "condition": [
                 "deaf:any:false",
                 "blind:any:false"
+            ],
+            "status": [
+                "not_newborn"
             ]
         },
         "relationship": [],
@@ -6562,11 +6572,17 @@
             "condition": [
                 "grief stricken",
                 "blind:any:false"
+            ],
+            "status": [
+                "not_newborn"
             ]
         },
         "t_c": {
             "condition": [
                 "blind:any:false"
+            ],
+            "status": [
+                "not_newborn"
             ]
         },
         "relationship": [
@@ -6584,11 +6600,17 @@
             "condition": [
                 "grief stricken",
                 "blind:any:false"
+            ],
+            "status": [
+                "not_newborn"
             ]
         },
         "t_c": {
             "condition": [
                 "blind:any:false"
+            ],
+            "status": [
+                "not_newborn"
             ]
         },
         "relationship": [],
@@ -6619,6 +6641,415 @@
         ],
         "intro": [
             "You're just being a meanie 'cause yg_c left you!"
+        ]
+    },
+    "mcgrievingonly_insult_H6": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Oh, so now you think it's alright to insult people just because you're hurting? Give me a break."
+        ]
+    },
+    "mcgrievingonly_insult_H7": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": "any"
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Oh, sorry, didn't realize grieving cats were so delusional."
+        ]
+    },
+    "mcgrievingonly_insult_H8": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "deaf:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "shunned": "any"
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "[t_c rolls {PRONOUN/t_c/poss} eyes.]"
+        ]
+    },
+    "mcgrievingonly_insult_H9": {
+        "y_c": {
+            "condition": [
+                "deaf:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "deaf:any:false"
+            ],
+            "shunned": "any"
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "[t_c rolls {PRONOUN/t_c/poss} eyes.]"
+        ]
+    },
+    "insult_shunnedgrieving_H1": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": true
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Oh boo hoo, previous yg_c died. Did you come here to blame me for {PRONOUN/yg_c/poss} death?",
+            "You cats are becoming so predictable."
+        ]
+    },
+    "insult_shunnedgrieving_H2": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "shunned": "any"
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Cute. Did precious yg_c teach you that one?"
+        ]
+    },
+    "insult_grieving_c": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20",
+            "min_dislike_20"
+        ],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Say what you want, y_c.",
+            "I'm still here, even if you hate me for it."
+        ]
+    },
+    "insult_grieving_c2": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
+        ],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "I get that you lost yg_c. I get it.",
+            "But you don't have to lose everyone else while you're at it."
+        ]
+    },
+    "insult_grieving_c3": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ]
+        },
+        "relationship": [
+            "min_platonic_20"
+        ],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Hurt cats hurt cats. Go ahead, do whatever you need to do."
+        ]
+    },
+    "insult_shunnedgrieving_H3": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "deaf:any:false",
+                "guilt"
+            ],
+            "shunned": true
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "[t_c just takes your insults with lowered eyes, not even fighting back.]"
+        ]
+    },
+    "bothgrieving_insult_H1": {
+        "y_c": {
+            "shunned":"any",
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "shunned":"any",
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Why are we here? Just to suffer?"
+        ]
+    },
+    "bothgrieving_insult_H2": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "It's like you're a different cat when you're grieving."
+        ]
+    },
+    "bothgrieving_insult_H3": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "It's like you're a different cat when you're grieving."
+        ]
+    },
+    "bothgrieving_insult_H4": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "grief stricken"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "relationship": [
+            "min_jealousy_10"
+        ],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Cool! Hey, I'm sad, too. Do you think I can be rude to hate-r_c and get away with it like you are?"
+        ]
+    },
+    "bothgrieving_insult_H5": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "grief stricken"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Get tg_c's name out of your mouth."
+        ]
+    },
+    "bothgrieving_insult_H6": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "grief stricken"
+            ],
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Oh! Well, if you wanna play that game...",
+            "yg_c was a mousebrain, and I'm sick of pretending otherwise!"
+        ]
+    },
+    "bothgrieving_insult_H7": {
+        "y_c": {
+            "condition": [
+                "grief stricken",
+                "blind:any:false"
+            ],
+            "shunned": "any"
+        },
+        "t_c": {
+            "condition": [
+                "blind:any:false",
+                "grief stricken"
+            ],
+            "shunned": "any",
+            "age": [
+                "not_newborn"
+            ]
+        },
+        "relationship": [],
+        "tags": [
+            "insult"
+        ],
+        "intro": [
+            "Get out of my sight."
         ]
     }
 }

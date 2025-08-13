@@ -1,7 +1,7 @@
 {
     "deputy general": [
         "Surprised to find the prey pile running low, you call over r_w to lead a hunting patrol. You allow {PRONOUN/r_w/object} to pick two Clanmates of {PRONOUN/r_w/poss} choice to accompany {PRONOUN/r_w/object}, trusting {PRONOUN/r_w/object} to pick the best cats for the task.",
-        "r_w asks if {PRONOUN/r_w/subject} can take out a hunting patrol for the day. You agree, choosing r_w1 and r_w2 to tag along with {PRONOUN/r_w/object}.",
+        "r_w1 asks if {PRONOUN/r_w1/subject} can take out a hunting patrol for the day. You agree, choosing r_w2 and r_w3 to tag along with {PRONOUN/r_w1/object}.",
         "It has been a while since some of the Clan has polished their training skills. You gather a group of established warriors to the training grounds and dedicate the day to refining their battle tactics, fighting moves, and cooperation with one another. ",
         "You take a rare moment of peace to spend some time roaming the territory. It had been a while since you were able to take a peaceful stroll for yourself. ",
         "l_n approaches you, requesting you to join {PRONOUN/l_n/object} in the leader's den to confer about some private matters regarding the Clan. You nod and follow {PRONOUN/l_n/object} inside, hoping you can assist {PRONOUN/l_n/object} with your own insight.",

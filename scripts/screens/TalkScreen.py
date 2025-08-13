@@ -860,6 +860,9 @@ class TalkScreen(Screens):
                     else:
                         if dead_cat.ID == game.clan.your_cat.ID:
                             continue
+                else:
+                    if "grievingyou" in REL:
+                        continue
             elif "grievingyou" in REL:
                 continue
 
@@ -872,6 +875,9 @@ class TalkScreen(Screens):
                     else:
                         if dead_cat.name == cat.name:
                             continue
+                else:
+                    if "grievingthem" in REL:
+                        continue
             elif "grievingthem" in REL:
                 continue
 
@@ -1334,6 +1340,11 @@ class TalkScreen(Screens):
                                 continue
                             if tag.startswith(f"min_{v}_"):
                                 continue
+            
+            if TAGS:
+                if "has_mate" in TAGS:
+                    if not cat.mates:
+                        continue
 
             # FOCUS TAGS
             if game.clan.focus and game.clan.focus == "leader" and "focus" in TAGS:
@@ -1439,7 +1450,7 @@ class TalkScreen(Screens):
                 return False
             elif cat.outside and "ur" not in BLOCK["dead"]:
                 return False
-            elif "sc" not in BLOCK["dead"]:
+            elif (not cat.df and not cat.outside) and "sc" not in BLOCK["dead"]:
                 return False
         else:
             if "any" not in BLOCK["dead"]:
@@ -1758,6 +1769,7 @@ class TalkScreen(Screens):
                 weighted_tags.append(special_date)
 
             # print("------")
+            # print("Possible Dialogue for", game.clan.your_cat.name, "and", self.the_cat.name)
             for dialogue_id, item in texts_list.items():
                 tags = item["tags"] if "tags" in item else {}
                 weight = 1
@@ -1770,8 +1782,8 @@ class TalkScreen(Screens):
                 # like scribble just did in clangen for shortevents
                 # but, of course, worse
                 for constraint in item:
-                    if constraint.endswith("inventory_changes"):
-                        break
+                    # if constraint.endswith("scene_effects"):
+                    #     break
                     if constraint not in ["y_c", "t_c", "relationship", "tags", "season"]:
                         continue
                     for tag in item[constraint]:
@@ -1884,7 +1896,7 @@ class TalkScreen(Screens):
             if text[i] == "":
                 return ""
         # for item in self.cat_dict.items():
-            # print("final", item[0], ":", item[1].name)
+        #     print("final", item[0], ":", item[1].name)
 
         process_text_dict = self.cat_dict.copy()
 

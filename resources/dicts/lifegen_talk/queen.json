@@ -71,7 +71,7 @@
     },
     "queen_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -94,7 +94,7 @@
     },
     "queen_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -916,7 +916,7 @@
     },
     "assertive_queensapp3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1004,7 +1004,7 @@
     },
     "assertive_queensapp5": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1100,7 +1100,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1123,7 +1123,7 @@
     },
     "sweet_queenapp_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1682,9 +1682,6 @@
             ],
             "age": [
                 "not_kitten"
-            ],
-            "status": [
-                "clan_has_kits"
             ]
         },
         "tags": [
@@ -1697,7 +1694,7 @@
     },
     "brooding_queen10": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1723,7 +1720,7 @@
     },
     "brooding_queen11": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1750,7 +1747,7 @@
     },
     "brooding_queen12": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1778,7 +1775,7 @@
     },
     "brooding_queen13": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1809,7 +1806,7 @@
     },
     "brooding_queen14": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1952,7 +1949,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2116,7 +2113,7 @@
     },
     "silly_queen_fishClan": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2142,7 +2139,7 @@
     },
     "silly_queen_quietkit": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2171,7 +2168,7 @@
     },
     "silly_queen_stoneclan": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2196,7 +2193,7 @@
     },
     "silly_queen_kit4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2277,7 +2274,7 @@
     },
     "sweet_queen_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2310,7 +2307,7 @@
                 "unabashed",
                 "silly"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2330,7 +2327,7 @@
     },
     "sweet_queen_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2993,7 +2990,7 @@
             "dead": [
                 "sc"
             ],
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ]
@@ -3122,7 +3119,7 @@
     },
     "neurotic_queen_SQ3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3163,7 +3160,7 @@
             ]
         },
         "relationship": [
-            "min_trust_50",
+            "min_trust_20",
             "from_mentor"
         ],
         "tags": [
@@ -3428,23 +3425,23 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "Prey",
+                "text": "Prey.",
                 "next_scene": "wrong"
             },
             "choice2": {
-                "text": "Kit",
+                "text": "Kit.",
                 "next_scene": "wrong"
             },
             "choice3": {
-                "text": "Monster",
+                "text": "Monster.",
                 "next_scene": "wrong"
             },
             "choice4": {
-                "text": "Dirtplace",
+                "text": "Dirtplace.",
                 "next_scene": "right"
             },
             "choice5": {
-                "text": "t_c",
+                "text": "t_c.",
                 "next_scene": "flatter"
             }
         },
@@ -3880,7 +3877,7 @@
                 "sc",
                 "min_you_deadfor_1"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3925,7 +3922,7 @@
     },
     "livekit_sc_Guy3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3949,7 +3946,7 @@
     },
     "shunned_sc_Guy3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "shunned": true
@@ -3995,7 +3992,7 @@
     },
     "livingkit_dfqueen_sing_Guy~1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4017,7 +4014,7 @@
     },
     "livingkit_dfqueen_sing_Guy~2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4050,7 +4047,7 @@
             "condition": [
                 "deaf:any:true"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4070,7 +4067,7 @@
             "condition": [
                 "deaf:any:true"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4099,7 +4096,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4147,11 +4144,11 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "No",
+                "text": "No.",
                 "next_scene": "kits_no"
             },
             "choice2": {
-                "text": "Yes",
+                "text": "Yes.",
                 "next_scene": "kits_yes"
             }
         },

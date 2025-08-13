@@ -79,7 +79,7 @@
             "age": [
                 "adolescent"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -100,7 +100,7 @@
             "cluster": [
                 "introspective"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -271,7 +271,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -556,7 +556,7 @@
     },
     "valentine_focus_J3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -826,7 +826,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -850,7 +850,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1005,7 +1005,7 @@
     },
     "valentine_focus_AJ17": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },

@@ -1,22 +1,26 @@
 {
-    "medicine cat apprentice old": [],
     "medicine cat apprentice general": [
         "y_s visits you in the medicine den and the two of you spend all day updating each other on the exciting new things you've learned!",
         "y_s fakes an injury to spend more time with you in the medicine den.",
+        "r_k pretends to be sick, and you play along for a bit before shooing them away.",
         "You give y_s a tour of the den, giggling at how overwhelmed {PRONOUN/y_s/subject} {VERB/y_s/seem/seems} at all the herbs.",
         "Your training has kept both of you busy, but you and y_l schedule some much-needed sibling time.",
         "You spend the day cleaning out the very back corner of the herb store, much to the approval of your mentor.",
         "You can't help but feel a bit left out after watching the warrior apprentices share an inside joke you don't understand.",
-        "As instructed by y_m, you take over the task of checking your Clanmates ailments for the day. A glow of pride runs through you as you are entrusted with the duty.",
-        "You get turned around while trying to find a specific herb in the den. Why does y_m's way of organizing have to be so complicated?",
-        "You pull a face while chewing on a foul-tasting herb. y_m laughs and promises that you'll get used to it.",
+        "As instructed by m_n, you take over the task of checking your Clanmates ailments for the day. A glow of pride runs through you as you are entrusted with the duty.",
+        "You get turned around while trying to find a specific herb in the den. Why does m_n's way of organizing have to be so complicated?",
+        "You pull a face while chewing on a foul-tasting herb. m_n laughs and promises that you'll get used to it.",
         "r_w claims {PRONOUN/r_w/subject} {VERB/r_w/have/has} such a foul bellyache, and {PRONOUN/r_w/subject} should really stay in from patrols today. You're convinced {PRONOUN/r_w/subject} simply ate too much prey, but y_m still demands you to provide {PRONOUN/r_w/object} with juniper berries.",
-        "You're more than overjoyed to be working with the other apprentices, leading them out of camp for herb gathering. Apparently, they have been dreading it, and you feel lonely as the only cat to trek back with herbs in their mouth.",
+        "You're more than overjoyed to be working with the other apprentices, leading them out of camp for herb gathering. Apparently, they have been dreading it, and you feel lonely as the only cat to trek back with herbs in their mouth."
+    ],
+    "medicine cat apprentice assertive": [
+        "You stand your ground when r_e tries to get out of their checkup",
+        "You make sure to ask questions to m_n when any concept becomes confusing. After all, juniper berries and deathberries look similar, but one will send a cat early to StarClan."
+    ],
+    "medicine cat apprentice brooding": [],
+    "medicine cat apprentice cool": [
         "You bedazzle yourself with flowers from the herb store, feeling like the prettiest cat in c_n."
     ],
-    "medicine cat apprentice assertive": [],
-    "medicine cat apprentice brooding": [],
-    "medicine cat apprentice cool": [],
     "medicine cat apprentice upstanding": [],
     "medicine cat apprentice introspective": [],
     "medicine cat apprentice neurotic": [
@@ -28,13 +32,24 @@
         "When r_e tells you stories, you're comforted by the cats and places you recognize.",
         "You wonder if you're living up to y_p's hopes and expectations."
     ],
-    "medicine cat apprentice silly": [],
-    "medicine cat apprentice stable": [],
-    "medicine cat apprentice sweet": [],
-    "medicine cat apprentice unabashed": [
-        "You triple-check the elders for ticks, worrying obsessively that you might have missed a spot."
+    "medicine cat apprentice silly": [
+        "You tell r_k that slathering mouse bile on themselves gives them a shiny coat. r_k believes you and spends the rest of the day trying to get it on {PRONOUN/r_k/poss} fur."
     ],
-    "medicine cat apprentice unlawful": [],
+    "medicine cat apprentice stable": [],
+    "medicine cat apprentice sweet": [
+        "You spend time collecting honey to mix with herbs to hide their bitter taste.",
+        "You make sure to check on m_n's health once in a while in case they neglect themselves while working."
+    ],
+    "medicine cat apprentice unabashed": [
+        "You triple-check the elders for ticks, worrying obsessively that you might have missed a spot.",
+        "m_n is teaching you about wild garlic, and you can't help but wrinkle your nose at the smell.",
+        "You brag to y_s about the time you found marigold faster than m_n did."
+    ],
+    "medicine cat apprentice unlawful": [
+        "You sneak out at night to collect some herbs that you're running low on.",
+        "m_n acts like {PRONOUN/m_n/subject} know everything, but you've secretly come up with your own remedies that seem to work better.",
+        "You hide an injury that you recieved while gathering herbs, not wanting to waste them when other cats might need them more."
+    ],
     "medicine cat apprentice rare": [
         "Whilst you're out training, you see a strange looking cat. You run after them, only to find yourself falling into an empty darkness, only lit by the glow of stars. When you bring this to m_n, {PRONOUN/r_m/subject} immediately {VERB/r_m/seem/seems} concerned, and have you tell l_n everything that happened.",
         "You swear that you can hear ghostly whispers in the wind, begging you to listen."

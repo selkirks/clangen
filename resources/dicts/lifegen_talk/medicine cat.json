@@ -580,9 +580,6 @@
             ],
             "age": [
                 "not_kitten"
-            ],
-            "status": [
-                "connected"
             ]
         },
         "tags": [
@@ -608,9 +605,6 @@
             ],
             "age": [
                 "not_kitten"
-            ],
-            "status": [
-                "connected"
             ]
         },
         "tags": [
@@ -778,13 +772,10 @@
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "min_plat_35"
             ]
         },
         "tags": [
-            "min_plat_35"
+            "min_platonic_35"
         ],
         "intro": [
             "[t_c hurries a bundle of herbs into the medicine den, brow furrowed and ears pinned back in concentration.]",
@@ -800,14 +791,10 @@
             ],
             "condition": [
                 "blind:any:false"
-            ],
-            "status": [
-                "min_plat_35",
-                "connected"
             ]
         },
         "tags": [
-            "min_plat_35",
+            "min_platonic_35",
             "connected"
         ],
         "intro": [
@@ -883,16 +870,9 @@
     "assertivemedapp_3": {
         "y_c": {
             "status": [
-                "kitten",
-                "apprentice",
-                "warrior",
-                "elder",
-                "deputy",
-                "leader",
-                "mediator",
-                "mediator apprentice",
-                "queen",
-                "queen's apprentice"
+                "not_medicine cat",
+                "not_medicine cat apprentice",
+                "not_newborn"
             ],
             "condition": [
                 "blind:any:false"
@@ -1018,7 +998,7 @@
     },
     "assertivemedapp_tokit": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1668,7 +1648,7 @@
     },
     "brooding_medapp_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1811,7 +1791,7 @@
     },
     "brooding_medapp_7": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1835,7 +1815,7 @@
     },
     "brooding_medapp_8": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1860,7 +1840,7 @@
     },
     "brooding_medapp_9": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1949,7 +1929,7 @@
     },
     "sweet_meddie_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1972,7 +1952,7 @@
     },
     "sweet_meddie_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1989,7 +1969,7 @@
     },
     "sweet_meddie_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3087,7 +3067,10 @@
     },
     "medshunned_H2": {
         "y_c": {
-            "shunned": true
+            "shunned": true,
+            "condition": [
+                "illness:any"
+            ]
         },
         "t_c": {
             "shunned": true,
@@ -3101,9 +3084,7 @@
         "relationship": [
             "min_platonic_50"
         ],
-        "tags": [
-            "you_sick"
-        ],
+        "tags": [],
         "intro": [
             "[t_c curls around your sickly body, protecting you from the stares and judgment from the rest of the clan.]",
             "Don't worry. If any of them come close, I'll protect you.",
@@ -3112,7 +3093,10 @@
     },
     "medshunned_H3": {
         "y_c": {
-            "shunned": true
+            "shunned": true,
+            "condition": [
+                "illness:any"
+            ]
         },
         "t_c": {
             "shunned": true,
@@ -3124,9 +3108,7 @@
         "relationship": [
             "min_dislike_50"
         ],
-        "tags": [
-            "you_sick"
-        ],
+        "tags": [],
         "intro": [
             "[t_c reluctantly shoves a few herbs into your paws, looking away.]",
             "Stop. Don't say anything. I may dislike you, but it really pains me to see you suffer.",
@@ -4421,7 +4403,8 @@
     "brooding_toqueen_AJ": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -4439,9 +4422,7 @@
                 "deputy"
             ]
         },
-        "tags": [
-            "you_queen's_aprentice"
-        ],
+        "tags": [],
         "intro": [
             "[The nursery entrance shudders open, revealing little r_k dangling from t_c's mouth, mewling and squirming in protest.]",
             "[t_c sets {PRONOUN/r_k/object} on the ground, and the kit bounds towards you, cowering behind your leg at t_c's cold glare.]",
@@ -4452,7 +4433,8 @@
     "brooding_toqueen_AJ1": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -4468,7 +4450,6 @@
             ]
         },
         "tags": [
-            "you_queen's_aprentice",
             "clan_has_kits"
         ],
         "intro": [
@@ -4882,7 +4863,7 @@
     },
     "neurotic_tokit_SQ2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4938,7 +4919,7 @@
     },
     "neurotic_tokit_SQ4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -5209,7 +5190,8 @@
                 "silly"
             ],
             "status": [
-                "medicine cat"
+                "medicine cat",
+                "medicine cat apprentice"
             ],
             "age": [
                 "not_kitten"
@@ -5218,9 +5200,7 @@
                 "INNOVATOR,1"
             ]
         },
-        "tags": [
-            "they_medicine_cat_apprentince"
-        ],
+        "tags": [],
         "intro": [
             "[You make your way into the medicine den to find that t_c is building some sort of contraption around the herb stock.]",
             "Hi, y_c. What do you need?",

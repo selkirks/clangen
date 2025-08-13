@@ -1,11 +1,4 @@
 {
-    "medicine cat old": [
-        "You spend your day diligently conversing with l_n about the current herb supply.",
-        "You stop y_a from overlooking mold on a herb, taking the opportunity to explain why even the littlest bit of mold can cause an injury to worsen.",
-        "You lose track of time during a gathering, missing a scheduled check-up on c_n's kits.",
-        "While explaining to r_k about the uses of different herbs, you sneeze loudly from a bunch of dusty yarrow, causing r_k to squeal in delight.",
-        "You try to demonstrate how to properly chew herbs, only to end up making a disgusted face from the taste. y_a starts to giggle uncontrollably at your misfortune."
-    ],
     "medicine cat general": [
         "Finally taking a moment's rest from your duties, you lay just outside your den to observe the Clan. You watch your healthy Clanmates bustle about camp, grateful to StarClan that your hard work really does pay off.",
         "Today, you allow y_a to take the lead in tending to injuries and illnesses. You can't help but keep an eye on {PRONOUN/y_a/object}, just in case {PRONOUN/y_a/subject} {VERB/y_a/need/needs} any corrections or advice.",
@@ -16,6 +9,11 @@
         "You misinterpret a sign from StarClan, causing confusion and concern within c_n regarding an upcoming disaster.",
         "It's r_k's moonly check-up, and you spend your dusk treating a screaming and crying kit as r_q watches sheepishly from the sidelines.",
         "Another moon, another dawn treating a warrior who fell into thorns. You hold in your laughter as r_w, admittedly, reminds you of a porcupine.",
+        "You spend your day diligently conversing with l_n about the current herb supply.",
+        "You stop y_a from overlooking mold on a herb, taking the opportunity to explain why even the littlest bit of mold can cause an injury to worsen.",
+        "You lose track of time during a gathering, missing a scheduled check-up on c_n's kits.",
+        "While explaining to r_k about the uses of different herbs, you sneeze loudly from a bunch of dusty yarrow, causing r_k to squeal in delight.",
+        "You try to demonstrate how to properly chew herbs, only to end up making a disgusted face from the taste. y_a starts to giggle uncontrollably at your misfortune.",
         "r_m nods off as {PRONOUN/r_m/subject} meticulously {VERB/r_m/count/counts} the herb supply for the second time this dawn, and you can't help but snort into your paw as r_m, yet again, begins to recount the poppies."
     ],
     "medicine cat assertive": [],
@@ -23,7 +21,8 @@
     "medicine cat cool": [],
     "medicine cat upstanding": [],
     "medicine cat introspective": [
-        "You peacefully reorganize herbs within the medicine den, finding the repetitive task strangely calming."
+        "You peacefully reorganize herbs within the medicine den, finding the repetitive task strangely calming.",
+        "You think about how fleeting a cat's life can be, and how important it is to cherish every moment."
     ],
     "medicine cat neurotic": [
         "You try to warn an overenthusiastic r_a about the dangers of deathberries, only to internally scare yourself into believing you've accidentally eaten some.",
@@ -32,10 +31,15 @@
     "medicine cat silly": [
         "You try to warn an overenthusiastic r_a about the dangers of deathberries, only to internally scare yourself into believing you've accidentally eaten some."
     ],
-    "medicine cat stable": [],
+    "medicine cat stable": [
+        "You wake up early to organize your herbs before the sun even rises."
+    ],
     "medicine cat sweet": [],
     "medicine cat unabashed": [],
-    "medicine cat unlawful": [],
+    "medicine cat unlawful": [
+        "You think about sneaking across the border of o_c_n to gather some herbs that you're running low on.",
+        "You wonder how kittypets seem to recover from illnesses and injuries so quickly. Perhaps you should ask a kittypet about their secrets?"
+    ],
     "medicine cat rare": [
         "You don't catch a kit sneaking into your den, and end up having to treat them when they get into the poppy seeds. Thankfully, they survive, but you have a very important talk with the queens and the kits on the importance of using herbs correctly.",
         "A prophecy burns in your mind as you are shocked awake, leaving you lost and befuddled. Maybe you should speak with l_n about it?",

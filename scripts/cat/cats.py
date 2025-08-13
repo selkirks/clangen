@@ -3886,6 +3886,9 @@ class Cat:
 
         cat_effects = {}
         failed_cats = []
+        if not cats:
+            print("WARNING: elder_story called with no cats")
+
         for cat in cats:
             if elder.ID in cat.relationships:
                 relationship = cat.relationships[elder.ID]

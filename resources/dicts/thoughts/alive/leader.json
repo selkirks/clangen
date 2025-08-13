@@ -510,7 +510,7 @@
         "id": "righteous_leader",
         "thoughts": [
             "Is reliant on the Warrior Code",
-            "Proclaims {PRONOUN/m_c/subject} are the judge and jury in the Clan",
+            "Proclaims {PRONOUN/m_c/subject} {VERB/m_c/are/is} the judge and jury in the Clan",
             "Claims calamities derive from disloyal Clanmates",
             "Believes {PRONOUN/m_c/poss} voice surpasses others",
             "Will not abolish traditions even if they don't suit {PRONOUN/m_c/poss} needs",

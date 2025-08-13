@@ -2012,8 +2012,9 @@ class PickPath(UIWindow):
                     else:
                         status = random.choice(['mediator','warrior','medicine cat', "queen"])
                 
-                game.clan.your_cat.status_change(status)
-                self.kill()
+                if status:
+                    game.clan.your_cat.status_change(status)
+                    self.kill()
         except:
             print('Error with PickPath window!')
 

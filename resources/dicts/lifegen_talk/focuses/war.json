@@ -61,7 +61,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "skill": [
@@ -121,7 +121,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -167,7 +167,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -193,7 +193,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -219,7 +219,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -348,7 +348,7 @@
     },
     "war_mckitten_H1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -374,7 +374,7 @@
     },
     "war_mckitten_H2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -399,7 +399,7 @@
     },
     "war_mckitten_H3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -421,7 +421,7 @@
     },
     "war_mckitten_H4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -456,7 +456,7 @@
     },
     "war_faith_H2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -577,7 +577,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -601,7 +601,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -630,7 +630,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -662,7 +662,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -697,7 +697,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -716,7 +716,7 @@
                 "assertive",
                 "unlawful"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -724,7 +724,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -751,7 +751,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -780,7 +780,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -799,7 +799,7 @@
     },
     "warfocus_SQ9": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -807,7 +807,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -826,7 +826,7 @@
     },
     "warfocus_SQ10": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -834,7 +834,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -861,7 +861,7 @@
             "cluster": [
                 "neurotic"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -940,7 +940,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1141,7 +1141,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1779,7 +1779,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1861,7 +1861,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1873,7 +1873,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2055,11 +2055,11 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "[Object]",
+                "text": "[Object.]",
                 "next_scene": "object"
             },
             "choice2": {
-                "text": "[Agree]",
+                "text": "[Agree.]",
                 "next_scene": "agree"
             }
         },
@@ -2408,7 +2408,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2436,7 +2436,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -2665,7 +2665,8 @@
                 "warrior",
                 "apprentice",
                 "deputy",
-                "leader"
+                "leader",
+                "not_df_trainee"
             ]
         },
         "t_c": {
@@ -2680,8 +2681,7 @@
             ]
         },
         "tags": [
-            "focus",
-            "you_not_dftrainee"
+            "focus"
         ],
         "intro": [
             "[On patrol with t_c and r_w today, you were ambushed by a small group of w_cClan warriors.]",
@@ -2913,7 +2913,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3139,7 +3139,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3443,7 +3443,7 @@
             "dead": [
                 "any"
             ],
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ]
@@ -3454,13 +3454,15 @@
             ],
             "dead": [
                 "any"
+            ],
+            "status": [
+                "kittypet",
+                "rogue",
+                "loner"
             ]
         },
         "tags": [
-            "focus",
-            "they_kittypet",
-            "they_rogue",
-            "they_loner"
+            "focus"
         ],
         "intro": [
             "Ah, you never got old enough to have to deal with all of this... Clancat violence, did you?",

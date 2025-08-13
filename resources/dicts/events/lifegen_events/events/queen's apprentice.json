@@ -1,5 +1,4 @@
 {
-    "queen's apprentice old": [],
     "queen's apprentice general": [
         "Your training has kept both of you busy, but you and y_l schedule some much-needed sibling time.",
         "You catch a kit bullying r_k, and step in to protect r_k.",
@@ -49,7 +48,11 @@
     "queen's apprentice stable": [],
     "queen's apprentice sweet": [],
     "queen's apprentice unabashed": [],
-    "queen's apprentice unlawful": [],
+    "queen's apprentice unlawful": [
+        "You secretly teach r_k some simple battle moves. It doesn't hurt to get a head start on training.",
+        "You think about setting up some traps behind the nursery to catch any predators who'd attempt to get into the den.",
+        "You take r_k just outside of camp after {PRONOUN/r_k/subject} promise not to tell anycat."
+    ],
     "queen's apprentice rare": [
         "After making a mistake that almost injures one of the kits, you begin to wonder if the path of a queen's apprentice is truly the right choice.",
         "r_k has found out about your feelings toward yourcrush, and the mischievous look in {PRONOUN/r_k/poss} eye has you unnerved. What {VERB/r_k/are/is} {PRONOUN/r_k/subject} planning?"

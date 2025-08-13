@@ -30,11 +30,11 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "Yes",
+                "text": "Yes.",
                 "next_scene": "scare_yes"
             },
             "choice2": {
-                "text": "No",
+                "text": "No.",
                 "next_scene": "scare_no"
             }
         },
@@ -82,7 +82,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -180,7 +180,7 @@
     "halloween_J7": {
         "y_c": {
             "age": [
-                "not_kit"
+                "not_kitten"
             ],
             "condition": [
                 "blind:any:false"
@@ -190,7 +190,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -208,11 +208,11 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "Prey",
+                "text": "Prey.",
                 "next_scene": "prey"
             },
             "choice2": {
-                "text": "Prank",
+                "text": "Prank.",
                 "next_scene": "prank"
             }
         },
@@ -229,7 +229,7 @@
     },
     "halloween_sam1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -257,11 +257,11 @@
         ],
         "intro_choices": {
             "choice1": {
-                "text": "Run away",
+                "text": "[Run away.]",
                 "next_scene": "run"
             },
             "choice2": {
-                "text": "Let them",
+                "text": "[Let them.]",
                 "next_scene": "accept"
             }
         },
@@ -275,11 +275,11 @@
         ],
         "run_choices": {
             "choice1": {
-                "text": "Still refuse",
+                "text": "[Still refuse.]",
                 "next_scene": "refuse"
             },
             "choice2": {
-                "text": "Relent",
+                "text": "[Relent.]",
                 "next_scene": "accept"
             }
         },
@@ -289,11 +289,11 @@
         ],
         "accept_choices": {
             "choice1": {
-                "text": "Deer",
+                "text": "Deer.",
                 "next_scene": "costume"
             },
             "choice2": {
-                "text": "Bunny",
+                "text": "Bunny.",
                 "next_scene": "costume"
             }
         },
@@ -306,7 +306,7 @@
     },
     "halloween_sam2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -314,7 +314,7 @@
             "cluster": [
                 "silly"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -413,7 +413,7 @@
             ]
         },
         "t_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -434,7 +434,7 @@
     "Halloween_SV5": {
         "y_c": {
             "age": [
-                "not_kit"
+                "not_kitten"
             ],
             "condition": [
                 "blind:any:false"
@@ -444,7 +444,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -489,13 +489,15 @@
             ],
             "dead": [
                 "any"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
         "season": [
             "leaffall"
         ],
         "tags": [
-            "they_kittypet",
             "halloween"
         ],
         "intro": [
@@ -517,15 +519,17 @@
             ],
             "dead": [
                 "any"
+            ],
+            "status": [
+                "kittypet"
             ]
         },
         "tags": [
-            "they_kittypet",
             "halloween"
         ],
         "intro": [
             "[While all the other kittypets you've talked to lately are excited for the incoming 'visit' to their Twolegs, t_c is curled away in the distance.]",
-            "Sorry for being all moppy. I didn't want to ruin the good mood.",
+            "Sorry for being all mopey. I didn't want to ruin the good mood.",
             "I just... I know I'm not in my previous Twolegs pictures. I should be optimistic and have some faith!",
             "But I know lying to myself is just going to cause more pain."
         ]
@@ -538,11 +542,13 @@
             ],
             "dead": [
                 "any"
+            ],
+            "status": [
+                "loner",
+                "rogue"
             ]
         },
         "tags": [
-            "they_loner",
-            "they_rogue",
             "halloween"
         ],
         "intro": [

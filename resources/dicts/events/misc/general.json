@@ -1443,7 +1443,7 @@
       "any"
     ],
     "weight": 10,
-    "event_text": "m_c misstepped and slipped from a rock, but landed on {PRONOUN/m_c/poss} feet nimbly, {PRONOUN/m_c/poss} Clanmates commenting on the show of dexterity.",
+    "event_text": "m_c misstepped and slipped from a rock, but landed on {PRONOUN/m_c/poss} feet nimbly. {PRONOUN/m_c/poss/CAP} Clanmates comment on the show of dexterity.",
     "m_c": {
       "age": [
         "any"

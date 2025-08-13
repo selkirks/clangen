@@ -901,6 +901,9 @@
             ],
             "age": [
                 "not_kitten"
+            ],
+            "condition": [
+                "deaf:any:false"
             ]
         },
         "season": [

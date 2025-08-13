@@ -237,7 +237,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -766,16 +766,8 @@
     "assertivemedapp_3": {
         "y_c": {
             "status": [
-                "kitten",
-                "apprentice",
-                "warrior",
-                "elder",
-                "deputy",
-                "leader",
-                "medicine cat",
-                "medicine cat apprentice",
-                "queen",
-                "queen's apprentice"
+                "not_mediator",
+                "not_mediator apprentice"
             ],
             "condition": [
                 "blind:any:false"
@@ -1144,7 +1136,7 @@
     },
     "sweet_mediapp_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1168,7 +1160,7 @@
     },
     "sweet_mediapp_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1192,7 +1184,7 @@
     },
     "sweet_mediapp_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1782,11 +1774,10 @@
         },
         "season": [
             "greenleaf",
-            "newleaf"
+            "newleaf",
+            "leaffall"
         ],
-        "tags": [
-            "leaf-fall"
-        ],
+        "tags": [],
         "intro": [
             "y_c! Your humble Clan mediator, t_c, has a plan, and I need you to help me go through with it!",
             "We've been hunting too much recently, and the prey is starting to dwindle. This could spell the end if we don't let it repopulate - we don't want to worsen leaf-bare, after all.",
@@ -2296,7 +2287,7 @@
     },
     "neurotic_tokit_SQ2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },

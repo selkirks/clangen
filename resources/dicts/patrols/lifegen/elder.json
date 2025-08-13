@@ -475,39 +475,39 @@
         "max_cats": 1,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "You're lounging about StarClan, as you do, and feel a rumble in your stomach. You politely ask d_c to catch you a mouse, but d_c tells you to catch it yourself.",
+        "intro_text": "You're lounging about StarClan, as you do, and feel a rumble in your stomach. You politely ask rsc_c to catch you a mouse, but rsc_c tells you to catch it yourself.",
         "decline_text": "You reluctantly get up to catch yourself a mouse.",
         "chance_of_success": 50,
         "success_outcomes": [
             {
-                "text": "You shouldn't have to catch your own prey in StarClan if you didn't catch your own prey when you were alive! d_c eventually realizes your point and apologizes, going to catch you the mouse you asked for.",
+                "text": "You shouldn't have to catch your own prey in StarClan if you didn't catch your own prey when you were alive! rsc_c eventually realizes your point and apologizes, going to catch you the mouse you asked for.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "You shouldn't have to catch your own prey in StarClan if you didn't catch your own prey when you were alive! d_c rolls {PRONOUN/d_c/poss} eyes, but reluctantly heads to catch you a mouse.",
+                "text": "You shouldn't have to catch your own prey in StarClan if you didn't catch your own prey when you were alive! rsc_c rolls {PRONOUN/rsc_c/poss} eyes, but reluctantly heads to catch you a mouse.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "In response to d_c's refusal, you simply pretend that you did not hear {PRONOUN/d_c/object}. You defiantly turn your head away and wait for d_c to do what you asked. After a moment of petty silence, {PRONOUN/d_c/subject} {VERB/d_c/huff/huffs} and {VERB/d_c/walk/walks} off to catch you a mouse.",
+                "text": "In response to rsc_c's refusal, you simply pretend that you did not hear {PRONOUN/rsc_c/object}. You defiantly turn your head away and wait for rsc_c to do what you asked. After a moment of petty silence, {PRONOUN/rsc_c/subject} {VERB/rsc_c/huff/huffs} and {VERB/rsc_c/walk/walks} off to catch you a mouse.",
                 "exp": 0,
                 "weight": 20
             }
         ],
         "fail_outcomes": [
             {
-                "text": "You shouldn't have to catch your own prey in StarClan if you didn't catch your own prey when you were alive! d_c tells you that you're not in c_n anymore, and you catch your own prey in StarClan unless you're a kit. You eventually catch yourself a mouse, but it leaves a bitter taste in your mouth.",
+                "text": "You shouldn't have to catch your own prey in StarClan if you didn't catch your own prey when you were alive! rsc_c tells you that you're not in c_n anymore, and you catch your own prey in StarClan unless you're a kit. You eventually catch yourself a mouse, but it leaves a bitter taste in your mouth.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "With a grumble that you make sure is loud enough for d_c to hear, you stand up and wander off to catch yourself a mouse. However, you appear to be a bit rusty, as even in the endless prey-laden forests of StarClan, you can't seem to find anything! When you return to camp, dejected, d_c is waiting for you with a mouse, looking amused at your failure. Hmph.",
+                "text": "With a grumble that you make sure is loud enough for rsc_c to hear, you stand up and wander off to catch yourself a mouse. However, you appear to be a bit rusty, as even in the endless prey-laden forests of StarClan, you can't seem to find anything! When you return to camp, dejected, rsc_c is waiting for you with a mouse, looking amused at your failure. Hmph.",
                 "exp": 0,
                 "weight": 20
             },
             {
-                "text": "Well, if d_c won't catch you a mouse, you'll just starve! You defiantly huff and stay lounging on the fluffed clouds, expecting d_c to care at the very least. However, {PRONOUN/d_c/subject} {VERB/d_c/stand/stands} {PRONOUN/d_c/poss} ground and politely tells you again that if you wish for a mouse, you must get it yourself.",
+                "text": "Well, if rsc_c won't catch you a mouse, you'll just starve! You defiantly huff and stay lounging on the fluffed clouds, expecting rsc_c to care at the very least. However, {PRONOUN/rsc_c/subject} {VERB/rsc_c/stand/stands} {PRONOUN/rsc_c/poss} ground and politely tells you again that if you wish for a mouse, you must get it yourself.",
                 "exp": 0,
                 "weight": 20
             }

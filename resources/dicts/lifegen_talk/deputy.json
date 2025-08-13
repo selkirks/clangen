@@ -97,7 +97,7 @@
     },
     "brooding_leader": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten",
                 "newborn"
             ],
@@ -629,7 +629,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -658,7 +658,7 @@
             "condition": [
                 "blind:any:false"
             ],
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -770,7 +770,7 @@
     },
     "assertive_5": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1420,7 +1420,7 @@
     },
     "assertive_tokit_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -1567,7 +1567,7 @@
     },
     "assertive_elder_13": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -1619,7 +1619,7 @@
     },
     "assertive_elder_15": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -2024,7 +2024,7 @@
     },
     "brooding_dep_1": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3061,7 +3061,7 @@
     },
     "sweet_deputy_2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -3078,7 +3078,7 @@
     },
     "sweet_deputy_3": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3102,7 +3102,7 @@
     },
     "sweet_deputy_4": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ],
             "condition": [
@@ -3867,7 +3867,7 @@
     },
     "deputyshunned_H2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4101,7 +4101,7 @@
             "The half-moon meeting for the Clans was yesterday, and I got to visit r_m's dreams!",
             "Yeah, I do still miss living with the Clan, but...",
             "You never told me being a StarClan cat could be so fun!",
-            "I'm gonna go ask d_c how {PRONOUN/d_c/subject} {VERB/d_c/make/makes} omens... I'm thinking of sending d_n a sign that r_w should be put on more patrols.",
+            "I'm gonna go ask rsc_c how {PRONOUN/rsc_c/subject} {VERB/rsc_c/make/makes} omens... I'm thinking of sending d_n a sign that r_w should be put on more patrols.",
             "[Looks like {PRONOUN/t_c/subject} found some more work to do!]"
         ]
     },
@@ -4307,7 +4307,7 @@
     },
     "neurotic_choice_foxtokit_SQ5~2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
@@ -4489,7 +4489,7 @@
         "intro": [
             "[t_c orders the warriors to go out- a dog was just sighted on the territory.]",
             "[You couldn't help but feel proud knowing t_c is the deputy, a cat who immediately takes action and acts with the best interests at heart.]",
-            "[Knowing {PRONOUN/t_c/object}, {PRONOUN/t_c/object} will have this sorted in no time.]"
+            "[Knowing {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} will have this sorted in no time.]"
         ]
     },
     "TinyTeddy_stable_theydep_younokit_03": {
@@ -4510,7 +4510,7 @@
             ]
         },
         "intro": [
-            "[t_c sleeps comfortably outside in the sun, guessing they finally got a break. Good. {PRONOUN/t_c/subject/CAP} work very hard for c_n.]"
+            "[t_c sleeps comfortably outside in the sun. You guess {PRONOUN/t_c/subject} finally got a break. Good. {PRONOUN/t_c/subject/CAP} {VERB/t_c/work/works} very hard for c_n.]"
         ]
     },
     "TinyTeddy_stable_Deputy_Gen_01": {
@@ -5484,7 +5484,8 @@
     "brooding_toqueen_AJ1": {
         "y_c": {
             "status": [
-                "queen"
+                "queen",
+                "queen's apprentice"
             ]
         },
         "t_c": {
@@ -5500,7 +5501,6 @@
             ]
         },
         "tags": [
-            "you_queen's_aprentice",
             "clan_has_kits"
         ],
         "intro": [
@@ -5757,7 +5757,7 @@
     },
     "neurotic_tokit_SQ2": {
         "y_c": {
-            "status": [
+            "age": [
                 "kitten"
             ]
         },
