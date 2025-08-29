@@ -6,6 +6,7 @@ import i18n
 import ujson
 
 from scripts.cat.enums import CatRank, CatGroup
+from scripts.cat_relations.enums import RelType
 from scripts.events_module.event_filters import (
     event_for_location,
     event_for_season,
@@ -22,7 +23,7 @@ from scripts.events_module.ongoing.ongoing_event import OngoingEvent
 from scripts.events_module.short.short_event import ShortEvent
 from scripts.game_structure import constants
 from scripts.game_structure.game.switches import switch_get_value, Switch
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 from scripts.game_structure.localization import load_lang_resource
 from scripts.utility import (
     get_living_clan_cat_count
@@ -389,7 +390,7 @@ class GenerateEvents:
                     continue
 
                 if "current_rep" in event.other_clan and not event_for_clan_relations(
-                    event.other_clan["current_rep"], other_clan if other_clan != game.clan else clan
+                    event.other_clan["current_rep"], clan, other_clan
                 ):
                     continue
 
@@ -401,7 +402,12 @@ class GenerateEvents:
                 # during a war we want to encourage the clans to have positive events
                 # when the overall war notice was positive
                 if "war" in event.sub_type:
-                    rel_change_type = switch_get_value(Switch.war_rel_change_type)
+                    rel_change_types = switch_get_value(Switch.war_rel_change_type)
+                    rel_change_type = "rel_down"
+                    if rel_change_types.get(clan.enum):
+                        rel_change_type = rel_change_types[clan.enum].get(other_clan.enum, "rel_down")
+                    elif rel_change_types.get(other_clan.enum):
+                        rel_change_type = rel_change_types[other_clan.enum].get(clan.enum, "rel_down")
                     if (
                         event.other_clan["changed"] < 0
                         and rel_change_type != "rel_down"
@@ -552,16 +558,16 @@ class GenerateEvents:
         possible_events = []
         # grab general events first, since they'll always exist
         events = GenerateEvents.get_death_reaction_dicts("general", rel_value)
-        possible_events.extend(events["general"][body_status])
+        possible_events.extend(events["general"].get(body_status, []))
         if trait in events and body_status in events[trait]:
-            possible_events.extend(events[trait][body_status])
+            possible_events.extend(events[trait].get(body_status, []))
 
         # grab family events if they're needed. Family events should not be romantic.
-        if family_relation != "general" and rel_value != "romantic":
+        if family_relation != "general" and rel_value != RelType.ROMANCE:
             events = GenerateEvents.get_death_reaction_dicts(family_relation, rel_value)
-            possible_events.extend(events["general"][body_status])
+            possible_events.extend(events["general"].get(body_status, []))
             if trait in events and body_status in events[trait]:
-                possible_events.extend(events[trait][body_status])
+                possible_events.extend(events[trait].get(body_status, []))
 
         return possible_events
 

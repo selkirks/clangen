@@ -11,7 +11,7 @@ from scripts.game_structure import constants
 from scripts.cat.enums import CatRank, CatGroup
 from scripts.housekeeping.datadir import get_save_dir
 from .alt_namer import Namer
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 from scripts.clan_package.settings.clan_settings import get_clan_setting
 
 
@@ -91,6 +91,7 @@ class Name:
         self.prefix = prefix
         self.suffix = suffix
         self.specsuffix_hidden = specsuffix_hidden
+        no_suffixes = get_clan_setting("no suffixes") and get_clan_setting("modded names")
 
         try:
             self.cat = cat
@@ -115,21 +116,26 @@ class Name:
         name_fixpref = False
         # Set prefix
         if prefix is None:
-            self.give_prefix(cat, biome, no_suffix=True if suffix == "" else False)
+            self.give_prefix(cat, biome, no_suffix=True if (suffix == "" or no_suffixes) else False)
             # needed for random dice when we're changing the Prefix
             name_fixpref = True
 
         # Set suffix
         if self.suffix is None:
-            self.give_suffix(self.skills, self.personality, biome, honour)
-            if name_fixpref and self.prefix is None:
-                # needed for random dice when we're changing the Prefix
-                name_fixpref = False
+            if no_suffixes and not load_existing_name:
+                self.suffix = ""
+            else:
+                self.give_suffix(self.skills, self.personality, biome, honour)
+                if name_fixpref and self.prefix is None:
+                    # needed for random dice when we're changing the Prefix
+                    name_fixpref = False
 
         if self.suffix and not load_existing_name:
             self.check_name(cat, name_fixpref)
             if get_clan_setting("ancient names") and get_clan_setting("modded names"):
-                self.suffix = " " + self.suffix[0].upper() + self.suffix[1:]
+                self.suffix = " " + self.suffix.title()
+                self.specsuffix_hidden = True
+            elif get_clan_setting("no special suffixes") and get_clan_setting("modded names"):
                 self.specsuffix_hidden = True
     
     def check_name(self, cat, name_fixpref):
@@ -204,7 +210,7 @@ class Name:
     def filter(self, all, used):
         return [x for x in all if x not in used]
 
-    def change_prefix(self, cat, moons, biome, change):
+    def change_prefix(self, moons, biome, change):
         self.moons = moons
 
         colour_changed = False
@@ -234,7 +240,7 @@ class Name:
             colour_changed = True
         elif self.phenotype.ext[0] == 'ea' and ((change == "apprentice-warrior" and self.phenotype.agouti[0] != 'a') or (self.moons > 23 and change == "apprentice-warrior")):
             colour_changed = True
-        elif change == "apprentice-warrior" and self.phenotype.vitiligo:
+        elif change in ["apprentice-warrior", "warrior-elder"] and self.phenotype.vitiligo:
             colour_changed = True
         elif self.prefix in self.mod_prefixes['general']['small'] and self.phenotype.height_label in ['goliath', 'giant', 'large', 'above average', 'average']:
             colour_changed = True
@@ -246,9 +252,9 @@ class Name:
             chance /= constants.CONFIG["cat_name_controls"]["prefix_change_chance"]["pelt_change_modifier"]
 
         if random.random() < (1/chance):
-            self.give_prefix(cat, biome)
+            self.give_prefix(self.cat, biome)
 
-        self.check_name(cat, True)
+        self.check_name(self.cat, True)
 
 
     # Generate possible prefix
@@ -388,7 +394,7 @@ class Name:
                         appearance += self.mod_suffixes['other']['appearance'].get('ticked', [])
                     if 'spotted' in self.phenotype.tabby or 'servaline' in self.phenotype.tabby:
                         appearance += self.mod_suffixes['other']['appearance'].get('spotted', [])
-                    if 'classic' in self.phenotype.tabby or 'marbled' in self.phenotype.tabby:
+                    if ('blotched' in self.phenotype.tabby or 'marbled' in self.phenotype.tabby) and "sheeted" not in self.phenotype.tabby:
                         appearance += self.mod_suffixes['other']['appearance'].get('swirled', [])
                     if 'mackerel' in self.phenotype.tabby or 'braided' in self.phenotype.tabby or 'pinstripe' in self.phenotype.tabby:
                         appearance += self.mod_suffixes['other']['appearance'].get('striped', [])
@@ -438,7 +444,7 @@ class Name:
                             pelt.append("Ticked")
                     if 'spotted' in self.phenotype.tabby or 'servaline' in self.phenotype.tabby:
                         pelt.append("Spotted")
-                    if 'classic' in self.phenotype.tabby or 'marbled' in self.phenotype.tabby:
+                    if ('blotched' in self.phenotype.tabby or 'marbled' in self.phenotype.tabby) and "sheeted" not in self.phenotype.tabby:
                         pelt.append("Classic")
                     if 'mackerel' in self.phenotype.tabby or 'braided' in self.phenotype.tabby or 'pinstripe' in self.phenotype.tabby:
                         pelt.append("Mackerel")

@@ -8,7 +8,8 @@ import os
 
 import ujson
 
-from scripts.game_structure import constants
+from scripts.cat.enums import CatGroup
+from scripts.game_structure import constants, image_cache
 from scripts.game_structure.game.settings import game_setting_get
 from scripts.special_dates import SpecialDate, is_today
 
@@ -129,13 +130,15 @@ class Sprites:
         del width, height  # unneeded
 
         for x in [
-            'lineart', 'lineartdead', "line_sc_overlay", 'lineartdf',
+            "lineart", "lineartdf", "lineartdead", "lineartur", 
+            "line_sc_overlay", "line_ur_underlay", "line_ur_overlay",
+            "gradient_ur",
             'whitepatches', 'tortiepatchesmasks', 
             'scars', 'missingscars', 'bandanas',
             'medcatherbs', 'wild',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             'shadersnewwhite', 'lightingnew', 'plant2_accessories',
-            'fademask', 'fadestarclan', 'fadedarkforest', 'flower_accessories', 'snake_accessories',
+            'fademask', 'fadestarclan', 'fadedarkforest', "fadeunknownresidence", 'flower_accessories', 'snake_accessories',
             'smallAnimal_accessories', 'aliveInsect_accessories', 'harnesses', 'bows', 'teethcollars', 'sterflowers',
             'symbols', "french_scarves", "ties", 'deadInsect_accessories', 'fruit_accessories', 'crafted_accessories', 'tail2_accessories', 'bonesacc', 'butterflymothacc', 'twolegstuff',
             'boosbandanas_accessories', 'sailormoon', 'randomaccessories', 'beetle_accessories', 'beetle_feathers',
@@ -170,19 +173,27 @@ class Sprites:
             self.make_group('Break/'+x.replace('.png', ""), (0, 0), 'break/'+x.replace('.png', ""))
 
         # ...idk what to call these
+        self.make_group('genemod/fourears', (0, 0), 'fourears')
 
         self.make_group('genemod/normal border', (0, 0), 'normbord')
         self.make_group('genemod/foldborder', (0, 0), 'foldbord')
         self.make_group('genemod/curlborder', (0, 0), 'curlbord')
+
         self.make_group('genemod/foldlineart', (0, 0), 'foldlines')
         self.make_group('genemod/fold_curllineart', (0, 0), 'fold_curllines')
         self.make_group('genemod/curllineart', (0, 0), 'curllines')
-        self.make_group('genemod/foldlineartdf', (0, 0), 'foldlineartdf')
-        self.make_group('genemod/fold_curllineartdf', (0, 0), 'fold_curllineartdf')
-        self.make_group('genemod/curllineartdf', (0, 0), 'curllineartdf')
-        self.make_group('genemod/foldlineartdead', (0, 0), 'foldlineartdead')
-        self.make_group('genemod/fold_curllineartdead', (0, 0), 'fold_curllineartdead')
-        self.make_group('genemod/curllineartdead', (0, 0), 'curllineartdead')
+
+        # self.make_group('genemod/foldlineartdf', (0, 0), 'foldlineartdf')
+        # self.make_group('genemod/fold_curllineartdf', (0, 0), 'fold_curllineartdf')
+        # self.make_group('genemod/curllineartdf', (0, 0), 'curllineartdf')
+
+        # self.make_group('genemod/foldlineartur', (0, 0), 'foldlineartur')
+        # self.make_group('genemod/fold_curllineartur', (0, 0), 'fold_curllineartur')
+        # self.make_group('genemod/curllineartur', (0, 0), 'curllineartur')
+
+        # self.make_group('genemod/foldlineartdead', (0, 0), 'foldlineartdead')
+        # self.make_group('genemod/fold_curllineartdead', (0, 0), 'fold_curllineartdead')
+        # self.make_group('genemod/curllineartdead', (0, 0), 'curllineartdead')
 
         self.make_group('genemod/isolateears', (0, 0), 'isolateears')
         self.make_group('genemod/noears', (0, 0), 'noears')
@@ -229,15 +240,17 @@ class Sprites:
 
         # genemod tabby patterns
 
-        for a, i in enumerate(['mackerel', 'brokenmack', 'spotted', 'classic', 'fullbar']):
+        for a, i in enumerate(['mackerel', 'brokenmack', 'spotted', 'blotched', 'fullbar', 'fullbaralt']):
             self.make_group('Other/tabbypatterns', (a, 0), f'{i}')
-        for a, i in enumerate(['braided', 'brokenbraid', 'rosetted', 'marbled', 'redbar']):
+        for a, i in enumerate(['braided', 'brokenbraid', 'rosetted', 'marbled', 'redbar', 'redbaralt']):
             self.make_group('Other/tabbypatterns', (a, 1), f'{i}')
-        for a, i in enumerate(['pinstripe', 'brokenpins', 'servaline', 'fullbarc', 'agouti']):
+        for a, i in enumerate(['pinstripe', 'brokenpins', 'servaline', 'blotchtail', 'agouti']):
             self.make_group('Other/tabbypatterns', (a, 2), f'{i}')
-        for a, i in enumerate(['pinsbraided', 'brokenpinsbraid', 'leopard', 'redbarc', 'charcoal']):
+        for a, i in enumerate(['pinsbraided', 'brokenpinsbraid', 'leopard', 'blotchbar', 'pinsbar', 'charcoal']):
             self.make_group('Other/tabbypatterns', (a, 3), f'{i}')
-        
+        for a, i in enumerate(['macktail', 'bengtail', 'partialrosetted', 'sheeted', 'goldengradient', 'tabbypads']):
+            self.make_group('Other/tabbypatterns', (a, 4), f'{i}')
+
         #genemod point markings
 
         self.make_group('points_spring', (0, 0), 'pointsm')
@@ -293,7 +306,11 @@ class Sprites:
 
         self.make_group("lineartdead", (0, 0), "lineartdead")
         self.make_group("lineartdf", (0, 0), "lineartdf")
+        self.make_group("lineartur", (0, 0), "lineartur")
         self.make_group("line_sc_overlay", (0, 0), "sc_overlay")
+        self.make_group("line_ur_underlay", (0, 0), "ur_underlay")
+        self.make_group("line_ur_overlay", (0, 0), "ur_overlay")
+        self.make_group("gradient_ur", (0, 0), "gradient_ur")
 
 
         if is_today(SpecialDate.APRIL_FOOLS):
@@ -306,6 +323,7 @@ class Sprites:
             self.make_group("fademask", (i, 0), f"fademask{i}")
             self.make_group("fadestarclan", (i, 0), f"fadestarclan{i}")
             self.make_group("fadedarkforest", (i, 0), f"fadedf{i}")
+            self.make_group("fadeunknownresidence", (i, 0), f"fadeur{i}")
 
         
         # Define white patches
@@ -1070,6 +1088,65 @@ class Sprites:
         del var
 
         return recolored_symbol
+
+    @staticmethod
+    def get_platform(biome, season, show_nest, group: CatGroup) -> pygame.Surface:
+        """
+        Returns the relevant platform
+        :param biome: The current game biome
+        :param season: The current game season
+        :param show_nest: If true, displays the nest
+        :param group: Used to determine appropriate afterlife platform
+        :return: pygame.Surface containing the desired platform
+        """
+        offset = 0 if game_setting_get("dark mode") else 80
+        """Used to choose the dark mode version of platforms"""
+
+        available_biome = ["Forest", "Mountainous", "Plains", "Beach"]
+
+        if biome not in available_biome:
+            biome = available_biome[0]
+        if show_nest:
+            biome = "nest"
+
+        biome = biome.lower()
+
+        platformsheet = image_cache.load_image(
+            "resources/images/platforms.png"
+        ).convert_alpha()
+
+        order = ["beach", "forest", "mountainous", "nest", "plains", "dead"]
+
+        if group and group.is_afterlife():
+            biome_platforms = platformsheet.subsurface(
+                pygame.Rect(0, order.index("dead") * 70, 640, 70)
+            )
+
+            if group == CatGroup.DARK_FOREST:
+                return biome_platforms.subsurface(pygame.Rect(0 + offset, 0, 80, 70))
+            elif group == CatGroup.STARCLAN:
+                return biome_platforms.subsurface(pygame.Rect(160 + offset, 0, 80, 70))
+            elif group == CatGroup.UNKNOWN_RESIDENCE:
+                return biome_platforms.subsurface(pygame.Rect(320 + offset, 0, 80, 70))
+
+        biome_platforms = platformsheet.subsurface(
+            pygame.Rect(0, order.index(biome) * 70, 640, 70)
+        ).convert_alpha()
+        season_x = {
+            "greenleaf": 0 + offset,
+            "leaf-bare": 160 + offset,
+            "leaf-fall": 320 + offset,
+            "newleaf": 480 + offset,
+        }
+
+        return biome_platforms.subsurface(
+            pygame.Rect(
+                season_x[season.lower()],
+                0,
+                80,
+                70,
+            )
+        )
 
 
 # CREATE INSTANCE

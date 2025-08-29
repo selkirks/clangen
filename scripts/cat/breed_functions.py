@@ -563,6 +563,10 @@ class Breed_generator:
     @staticmethod
     def Bengal(genoclass, special):
         genoclass = Breed_generator.AllColours(genoclass, special)
+
+        if genoclass.odds["dense_blotched"] > 0 and randint(1, genoclass.odds["dense_blotched"]) == 1:
+            genoclass.sheeted = True
+
         # FUR LENGTH
         
         a = randint(1, 10)
@@ -1973,12 +1977,11 @@ class Breed_generator:
         for i in range(0, 4):
             genoclass.tickgenes += '0'
 
-
         for i in range(0, 4):
             genoclass.bengal += '0'
 
         for i in range(0, 4):
-            genoclass.sokoke += '0'
+            genoclass.sokoke += '2'
         
         genoclass.breeds["Pixie-Bob"] = 100
         return genoclass

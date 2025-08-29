@@ -18,7 +18,7 @@ from scripts.game_structure.game.switches import (
     Switch,
 )
 from scripts.cat.enums import CatGroup
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 from scripts.game_structure.screen_settings import game_screen_size, MANAGER
 from scripts.game_structure.ui_elements import (
     UIImageButton,
@@ -44,6 +44,7 @@ class ListScreen(Screens):
         "screens.list.filter_id",
         "screens.list.filter_exp",
         "screens.list.filter_death",
+        "screens.list.filter_clan",
     )
     living_filter_names = (
         "screens.list.filter_rank",
@@ -177,8 +178,8 @@ class ListScreen(Screens):
                     # changing dropdown options
                     self.choose_group_dropdown.new_item_list(self.living_group_names)
                     self.choose_group_dropdown.set_selected_list(["general.your_clan"])
-                    self.sort_by_dropdown.new_item_list(self.dead_filter_names)
-                    if switch_get_value(Switch.sort_type) == "death":
+                    self.sort_by_dropdown.new_item_list(self.living_filter_names)
+                    if switch_get_value(Switch.sort_type) in ("death", "clan"):
                         switch_set_value(Switch.sort_type, "rank")
                     self.sort_by_dropdown.disable_child(
                         f"screens.list.filter_{switch_get_value(Switch.sort_type)}"
@@ -261,7 +262,7 @@ class ListScreen(Screens):
     def screen_switches(self):
         super().screen_switches()
         self.show_mute_buttons()
-        self.clan_name = game.clan.name + "Clan"
+        self.clan_name = game.clan.displayname + "Clan"
 
         if not game.last_list_forProfile:
             self.death_status = "living"
@@ -269,7 +270,7 @@ class ListScreen(Screens):
         
         group_names = ["general.your_clan", "general.cotc"]
         if game.clan and game.clan.clancount == "multiclan":
-            group_names += [clan.name + "Clan" for clan in game.clan.all_clans]
+            group_names += [clan.displayname + "Clan" for clan in game.clan.all_clans]
         self.living_group_names = tuple(group_names)
 
         self.set_disabled_menu_buttons(["catlist_screen"])
@@ -372,7 +373,7 @@ class ListScreen(Screens):
 
         if (
             self.death_status != "dead"
-            and switch_get_value(Switch.sort_type) == "death"
+            and switch_get_value(Switch.sort_type) in ("death", "clan")
         ):
             switch_set_value(Switch.sort_type, "rank")
 
@@ -418,11 +419,11 @@ class ListScreen(Screens):
         self.sort_by_dropdown = UIDropDown(
             pygame.Rect((-2, 0), (63, 34)),
             f"screens.list.filter_{switch_get_value(Switch.sort_type)}",
-            item_list=self.living_filter_names,
+            item_list=self.living_filter_names if self.death_status == "living" else self.dead_filter_names,
             manager=MANAGER,
             container=self.cat_list_bar,
             parent_override=self.cat_list_bar_elements["sort_by_button"],
-            starting_selection=["screens.list.filter_rank"],
+            starting_selection=[f"screens.list.filter_{switch_get_value(Switch.sort_type)}"],
             anchors={"left_target": self.cat_list_bar_elements["sort_by_label"]},
         )
 
@@ -613,16 +614,19 @@ class ListScreen(Screens):
 
         # adding in the guide if necessary, this ensures the guide isn't affected by sorting as we always want them to
         # be the first cat on the list
-        if (
-            self.current_group == "general.dark_forest"
-            and game.clan.instructor.status.group == CatGroup.DARK_FOREST
-        ) or (
-            self.current_group == "general.starclan"
-            and game.clan.instructor.status.group == CatGroup.STARCLAN
-        ):
-            if game.clan.instructor in self.current_listed_cats:
-                self.current_listed_cats.remove(game.clan.instructor)
-                self.current_listed_cats.insert(0, game.clan.instructor)
+
+        all_instructors = [game.clan.instructor] + [clan.instructor for clan in game.clan.all_clans if clan.instructor]
+        for ins in all_instructors[::-1]:
+            if (
+                self.current_group == "general.dark_forest"
+                and ins.status.group == CatGroup.DARK_FOREST
+            ) or (
+                self.current_group == "general.starclan"
+                and ins.status.group == CatGroup.STARCLAN
+            ):
+                if ins in self.current_listed_cats:
+                    self.current_listed_cats.remove(ins)
+                    self.current_listed_cats.insert(0, ins)
         
 
         self.all_pages = (
@@ -772,7 +776,7 @@ class ListScreen(Screens):
         self.death_status = "living"
         self.full_cat_list = [
             cat for cat in Cat.all_cats_list 
-            if cat.status.is_any_clan_group() and cat.status.group.fetch_clan_object().name == self.selected_clan
+            if cat.status.is_any_clan_group() and cat.status.group.fetch_clan_object().displayname == self.selected_clan
         ]
 
     def get_cotc_cats(self):
@@ -786,8 +790,7 @@ class ListScreen(Screens):
             if (
                 not the_cat.dead
                 and (the_cat.status.is_outsider or (the_cat.status.is_other_clancat and game.clan.clancount == "singleclan"))
-                and (the_cat.status.is_near(CatGroup.PLAYER_CLAN) or
-                next(filter(lambda c: c in the_cat.status.all_groups and the_cat.status.is_near(c), game.clan.other_clans), None))
+                and the_cat.status.is_near()
             ):
                 self.full_cat_list.append(the_cat)
 
@@ -829,9 +832,8 @@ class ListScreen(Screens):
         self.full_cat_list = []
         for the_cat in Cat.all_cats_list:
             if (
-                the_cat.ID != game.clan.instructor.ID
-                and the_cat.status.group == CatGroup.UNKNOWN_RESIDENCE
+                the_cat.status.group == CatGroup.UNKNOWN_RESIDENCE
                 and not the_cat.faded
-                and the_cat.status.is_near(CatGroup.PLAYER_CLAN)
+                and the_cat.status.is_near()
             ):
                 self.full_cat_list.append(the_cat)

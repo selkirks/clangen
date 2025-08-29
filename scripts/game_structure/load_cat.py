@@ -20,7 +20,7 @@ from scripts.game_structure.game.switches import (
 from scripts.game_structure.localization import get_new_pronouns
 from scripts.housekeeping.version import SAVE_VERSION_NUMBER
 from scripts.game_structure import constants
-from .game_essentials import game
+from scripts.game_structure import game
 from ..cat.personality import Personality
 from ..cat.skills import CatSkills
 from ..cat.status import StatusDict
@@ -30,6 +30,9 @@ logger = logging.getLogger(__name__)
 
 
 def load_cats():
+    switch_set_value(
+        Switch.error_message, ""
+    )
     try:
         json_load()
     except FileNotFoundError as e:
@@ -41,6 +44,7 @@ def json_load():
     Cat.all_cats.clear()
     Cat.all_cats_list.clear()
     Cat.dead_cats.clear()
+    Inheritance.all_inheritances = {}
     all_cats = []
     clanname = switch_get_value(Switch.clan_list)[0]
     clan_cats_json_path = f"{get_save_dir()}/{clanname}/clan_cats.json"
@@ -109,6 +113,17 @@ def json_load():
                         moons=cat["moons"],
                         loading_cat=True)
 
+            if "tint" in cat:
+                if cat["tint"] == "none":
+                    cat["tint"] = None
+            if "white_patches_tint" in cat:
+                if cat["white_patches_tint"] == "none":
+                    cat["white_patches_tint"] = None
+
+            if "pattern" in cat:
+                cat["tortie_marking"] = cat["pattern"]
+                del cat["pattern"]
+
             new_cat.pelt = Pelt(
                 new_cat.phenotype,
                 tint=cat.get('tint', 'none'),
@@ -171,7 +186,7 @@ def json_load():
             )
             new_cat.moons = cat["moons"]
 
-            if "facets" in cat:
+            if "facets" in cat and cat["facets"] is not None:
                 facets = [int(i) for i in cat["facets"].split(",")]
                 new_cat.personality = Personality(
                     trait=cat["trait"],

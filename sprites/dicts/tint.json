@@ -14,7 +14,7 @@
     "GOLDEN": "warm"
   },
   "possible_tints": {
-    "basic": ["pink", "gray", "red", "orange", "none", "warmdilute"],
+    "basic": ["pink", "gray", "red", "orange", "warmdilute"],
     "warm": ["yellow", "purple", "dilute", "cooldilute", "blush", "rosy", "redwood", "maroon", "sandy", "beige", "coral", "tan", "cream", "yolk", "gold", "rust", "lightpurple", "darkpurple", "bananaone", "bananatwo", "sunny", "peach", "salmon", "buttercup", "fall"],
     "cool": ["purple", "black", "dilute", "willow", "lilac", "plum", "cadet", "cobalt", "bluesky", "browngray", "grapefruit", "lightpink", "green", "flower", "kiwi", "dullgreen", "olive", "sky", "lightblue"],
     "white": ["yellow", "tan", "cream", "bluesky", "browngray"],

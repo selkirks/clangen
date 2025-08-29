@@ -9,7 +9,6 @@ TODO: Docs
 import logging
 import os
 import re
-from copy import copy
 from itertools import combinations
 from math import floor
 from random import choice, choices, randint, random, sample, randrange, getrandbits
@@ -26,6 +25,7 @@ from scripts.cat.phenotype import Genotype
 import ujson
 from pygame_gui.core import ObjectID
 
+from scripts.cat_relations.enums import RelType, RelTier, rel_type_tiers
 from scripts.clan_package.settings import get_clan_setting
 from scripts.game_structure.game.settings import game_settings_save, game_setting_get
 from scripts.game_structure.game.switches import switch_get_value, Switch
@@ -41,7 +41,7 @@ from scripts.game_structure import image_cache, localization, constants
 from scripts.cat.enums import CatAge, CatRank, CatSocial, CatGroup, CatStanding
 from scripts.cat.names import names
 from scripts.cat.sprites import sprites
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 import scripts.game_structure.screen_settings  # must be done like this to get updates when we change screen size etc
 
 if TYPE_CHECKING:
@@ -198,19 +198,6 @@ def get_free_possible_mates(cat):
             cats.append(inter_cat)
     return cats
 
-
-def get_warring_clan():
-    """
-    returns enemy clan if a war is currently ongoing
-    """
-    enemy_clan = None
-    if game.clan.war.get("at_war", False):
-        for other_clan in game.clan.all_clans:
-            if other_clan.name == game.clan.war["enemy"]:
-                enemy_clan = other_clan
-
-    return enemy_clan
-
 def search_cats(search_text, cat_list, search_genotype):
     search_text = search_text.strip()
     all_found = cat_list.copy()
@@ -325,26 +312,23 @@ def get_current_season():
         return game.clan.current_season
 
 
-def change_clan_reputation(difference):
+def change_clan_reputation(difference, clan):
     """
     will change the Clan's reputation with outsider cats according to the difference parameter.
     """
-    game.clan.reputation += difference
-    if game.clan.reputation < 0:
-        game.clan.reputation = 0  # clamp to 0
-    elif game.clan.reputation > 100:
-        game.clan.reputation = 100  # clamp to 100
+    clan.reputation += difference
+    if clan.reputation < 0:
+        clan.reputation = 0  # clamp to 0
+    elif clan.reputation > 100:
+        clan.reputation = 100  # clamp to 100
 
 
-def change_clan_relations(other_clan, difference):
+def change_clan_relations(clan, other_clan, difference):
     """
     will change the Clan's relation with other clans according to the difference parameter.
     """
-    # grab the clan that has been indicated
-    other_clan = other_clan
     # grab the relation value for that clan
-    y = game.clan.all_clans.index(other_clan)
-    clan_relations = int(game.clan.all_clans[y].relations)
+    clan_relations = game.clan.get_relations(clan, other_clan)
     # change the value
     clan_relations += difference
     # making sure it doesn't exceed the bounds
@@ -353,7 +337,7 @@ def change_clan_relations(other_clan, difference):
     elif clan_relations < 0:
         clan_relations = 0
     # setting it in the Clan save
-    game.clan.all_clans[y].relations = clan_relations
+    game.clan.set_relations(clan, other_clan, clan_relations)
 
 def create_bio_parents(Cat, flip=False, second_parent=True):
     ages = [randint(15,120), 0]
@@ -369,7 +353,7 @@ def create_bio_parents(Cat, flip=False, second_parent=True):
                                     gender='fem' if flip else 'masc',
                                     outside=True,
                                     is_parent=True)[0]
-    while 'infertility' in blood_parent.permanent_condition:
+    while 'sterile' in blood_parent.permanent_condition:
         if(blood_parent):
             del Cat.all_cats[blood_parent.ID]
         blood_parent = create_new_cat(Cat,
@@ -388,7 +372,7 @@ def create_bio_parents(Cat, flip=False, second_parent=True):
                                     gender='masc' if flip else 'fem',
                                     outside=True,
                                     is_parent=True)[0]
-        while 'infertility' in blood_parent2.permanent_condition:
+        while 'sterile' in blood_parent2.permanent_condition:
             if blood_parent2 and Cat.all_cats[blood_parent2.ID]:
                 del Cat.all_cats[blood_parent2.ID]
             blood_parent2 = create_new_cat(Cat,
@@ -567,7 +551,7 @@ def create_new_cat_block(
             age = randint(19, 120)
             break
 
-    if not rank and not age:
+    if not rank and not age and "meeting" not in attribute_list:
         rank = choice([CatRank.WARRIOR, CatRank.WARRIOR, CatRank.WARRIOR, CatRank.APPRENTICE])
     if rank and not age:
         if rank in [
@@ -667,6 +651,7 @@ def create_new_cat_block(
         if (
             chosen_backstory
             in BACKSTORIES["backstory_categories"]["baby_clancat_backstories"]
+            or (game.clan.clancount == "multiclan" and "clancat" in attribute_list)
         ):
             cat_social = CatSocial.CLANCAT
         elif (
@@ -688,11 +673,12 @@ def create_new_cat_block(
     outside = False
     if "meeting" in attribute_list:
         outside = True
-        rank = None
-        new_name = False
-        thought = i18n.t("hardcoded.thought_meeting")
-        if age is not None and age <= 6 and not bs_override:
-            chosen_backstory = "outsider1"
+        if game.clan.clancount != "multiclan" or "clancat" not in attribute_list:
+            new_name = False
+            rank = None
+            thought = i18n.t("hardcoded.thought_meeting")
+            if age is not None and age <= 6 and not bs_override:
+                chosen_backstory = "outsider1"
 
     # IS THE CAT DEAD?
     alive = True
@@ -704,7 +690,7 @@ def create_new_cat_block(
     chosen_cat: Optional["Cat"] = None
     if "exists" in attribute_list:
         existing_outsiders = [
-            i for i in Cat.all_cats.values() if i.status.is_outsider and not i.dead
+            i for i in Cat.all_cats.values() if i.status.is_outsider and not i.dead and i.status.is_near()
         ]
         possible_outsiders = []
         for cat in existing_outsiders:
@@ -716,6 +702,9 @@ def create_new_cat_block(
                 continue
             if age and age not in Cat.age_moons[cat.age]:
                 continue
+            for picked_cats in event.new_cats:
+                if cat in picked_cats:
+                    continue
             possible_outsiders.append(cat)
 
         if possible_outsiders:
@@ -723,6 +712,8 @@ def create_new_cat_block(
             if not alive:
                 chosen_cat.die()
             elif not outside:
+                if not rank:
+                    rank = chosen_cat.status.get_rank_from_age(chosen_cat.age)
                 chosen_cat.add_to_clan(clan)
                 if chosen_cat.status.rank != rank:
                     chosen_cat.rank_change(new_rank=CatRank(rank), resort=True)
@@ -771,7 +762,7 @@ def create_new_cat_block(
     # Now we generate the new cat
     if not chosen_cat:
         generated_parents = []
-        if rank in (CatRank.KITTEN, CatRank.NEWBORN) or parent1:
+        if rank in (CatRank.KITTEN, CatRank.NEWBORN) or age in range(Cat.age_moons[CatAge.KITTEN][0], Cat.age_moons[CatAge.KITTEN][1]+1) or parent1:
             generated_parents = create_bio_parents(Cat, flip=True if parent1 and 'Y' in parent1.phenotype.sexgene else False, second_parent=not parent1)
             if not parent1:
                 parent1 = generated_parents[1]
@@ -799,7 +790,7 @@ def create_new_cat_block(
             is_parent= "age:has_kits" in attribute_list,
             adoptive_parents=adoptive_parents if adoptive_parents else None
             )
-        while "age:has_kits" in attribute_list and "infertility" in new_cats[0].permanent_condition:
+        while "age:has_kits" in attribute_list and "sterile" in new_cats[0].permanent_condition:
             del Cat.all_cats[new_cats[0].ID]
             new_cats[0] = create_new_cat(
                 Cat,
@@ -864,10 +855,10 @@ def create_new_cat_block(
 
                 y = randrange(0, 20)
                 start_relation = Relationship(n_c, inter_cat, False, True)
-                start_relation.platonic_like += 30 + y
-                start_relation.comfortable = 10 + y
-                start_relation.admiration = 15 + y
-                start_relation.trust = 10 + y
+                start_relation.like += 40 + y
+                start_relation.comfort = 40 + y
+                start_relation.respect = 10 + y
+                start_relation.trust = 30 + y
                 n_c.relationships[inter_cat.ID] = start_relation
 
             # BIO PARENTS
@@ -877,18 +868,18 @@ def create_new_cat_block(
 
                 y = randrange(0, 20)
                 start_relation = Relationship(par, n_c, False, True)
-                start_relation.platonic_like += 30 + y
-                start_relation.comfortable = 10 + y
-                start_relation.admiration = 15 + y
-                start_relation.trust = 10 + y
+                start_relation.like += 60 + y
+                start_relation.comfort = 40 + y
+                start_relation.respect = 30 + y
+                start_relation.trust = 30 + y
                 par.relationships[n_c.ID] = start_relation
 
                 y = randrange(0, 20)
                 start_relation = Relationship(n_c, par, False, True)
-                start_relation.platonic_like += 30 + y
-                start_relation.comfortable = 10 + y
-                start_relation.admiration = 15 + y
-                start_relation.trust = 10 + y
+                start_relation.like += 40 + y
+                start_relation.comfort = 70 + y
+                start_relation.respect = 30 + y
+                start_relation.trust = 60 + y
                 n_c.relationships[par.ID] = start_relation
 
             # ADOPTIVE PARENTS
@@ -900,18 +891,18 @@ def create_new_cat_block(
 
                 y = randrange(0, 20)
                 start_relation = Relationship(par, n_c, False, True)
-                start_relation.platonic_like += 30 + y
-                start_relation.comfortable = 10 + y
-                start_relation.admiration = 15 + y
-                start_relation.trust = 10 + y
+                start_relation.like += 60 + y
+                start_relation.comfort = 40 + y
+                start_relation.respect = 30 + y
+                start_relation.trust = 30 + y
                 par.relationships[n_c.ID] = start_relation
 
                 y = randrange(0, 20)
                 start_relation = Relationship(n_c, par, False, True)
-                start_relation.platonic_like += 30 + y
-                start_relation.comfortable = 10 + y
-                start_relation.admiration = 15 + y
-                start_relation.trust = 10 + y
+                start_relation.like += 40 + y
+                start_relation.comfort = 70 + y
+                start_relation.respect = 30 + y
+                start_relation.trust = 60 + y
                 n_c.relationships[par.ID] = start_relation
 
             # UPDATE INHERITANCE
@@ -1063,32 +1054,6 @@ def find_clan_cats(Cat, Relationship, event, in_event_cats: dict, i: int, attrib
                     app_ob.update_mentor()
 
             cat.update_mentor()
-
-        # ADOPTIVE PARENTS
-        for par in adoptive_parents:
-            if not par:
-                continue
-
-            par = Cat.fetch_cat(par)
-
-            y = randrange(0, 20)
-            start_relation = Relationship(par, cat, False, True)
-            start_relation.platonic_like += 30 + y
-            start_relation.comfortable = 10 + y
-            start_relation.admiration = 15 + y
-            start_relation.trust = 10 + y
-            par.relationships[cat.ID] = start_relation
-
-            y = randrange(0, 20)
-            start_relation = Relationship(cat, par, False, True)
-            start_relation.platonic_like += 30 + y
-            start_relation.comfortable = 10 + y
-            start_relation.admiration = 15 + y
-            start_relation.trust = 10 + y
-            cat.relationships[par.ID] = start_relation
-
-        # UPDATE INHERITANCE
-        cat.create_inheritance_new_cat()
     elif "change_clan_rev" in attribute_list:
         other = game.clan if give_mates[0].status.group == CatGroup.PLAYER_CLAN else next(filter(lambda c: c.enum == give_mates[0].status.group, game.clan.all_clans), None)
         give_mates[0].status.add_to_group(other_clan, standing_with_past_group=CatStanding.LEFT)
@@ -1119,6 +1084,33 @@ def find_clan_cats(Cat, Relationship, event, in_event_cats: dict, i: int, attrib
             # TODO: optimize
             cat.set_mate(inter_cat)
 
+        # ADOPTIVE PARENTS
+        for par in adoptive_parents:
+            if not par:
+                continue
+
+            cat.adoptive_parents.append(par)
+            par = Cat.fetch_cat(par)
+
+            y = randrange(0, 20)
+            start_relation = Relationship(par, cat, False, True)
+            start_relation.like += 30 + y
+            start_relation.comfortable = 10 + y
+            start_relation.respect = 15 + y
+            start_relation.trust = 10 + y
+            par.relationships[cat.ID] = start_relation
+
+            y = randrange(0, 20)
+            start_relation = Relationship(cat, par, False, True)
+            start_relation.like += 30 + y
+            start_relation.comfortable = 10 + y
+            start_relation.respect = 15 + y
+            start_relation.trust = 10 + y
+            cat.relationships[par.ID] = start_relation
+
+        if adoptive_parents:
+            cat.create_inheritance_new_cat()
+
     return picked_cats
 
 
@@ -1127,7 +1119,7 @@ def get_other_clan(clan_name):
     returns the clan object of given clan name
     """
     for clan in game.clan.all_clans:
-        if clan.name == clan_name:
+        if clan.displayname == clan_name:
             return clan
 
 
@@ -1177,6 +1169,13 @@ def create_new_cat(
     if thought is None:
         thought = i18n.t("hardcoded.thought_new_cat")
 
+    if backstory is None:
+        if original_social == CatSocial.KITTYPET:
+            backstory = BACKSTORIES["backstory_categories"]["kittypet_backstories"]
+        if original_social == CatSocial.ROGUE:
+            backstory = BACKSTORIES["backstory_categories"]["rogue_backstories"]
+        if original_social == CatSocial.LONER:
+            backstory = BACKSTORIES["backstory_categories"]["loner_backstories"]
     if isinstance(backstory, list):
         backstory = choice(backstory)
 
@@ -1184,7 +1183,7 @@ def create_new_cat(
         backstory
         in (
             BACKSTORIES["backstory_categories"]["former_clancat_backstories"]
-            or BACKSTORIES["backstory_categories"]["otherclan_categories"]
+            or BACKSTORIES["backstory_categories"]["otherclan_backstories"]
         ) 
         and original_social == CatSocial.CLANCAT
         and not original_group
@@ -1368,10 +1367,11 @@ def create_new_cat(
             kittypet_n = constants.CONFIG['tnr_mode']['kittypet_neuter']
             loner_n = constants.CONFIG['tnr_mode']['loner_tnr']
             if original_social == CatSocial.KITTYPET and random() < kittypet_n:
-                new_cat.get_permanent_condition("infertility", False)
+                new_cat.get_permanent_condition("sterile", False)
             if original_social in (CatSocial.LONER, CatSocial.ROGUE) and random() < loner_n:
-                new_cat.get_permanent_condition("infertility", False)
+                new_cat.get_permanent_condition("sterile", False)
                 new_cat.pelt.scars.append("TNR")
+                new_cat.pelt.rebuild_sprite = True
         if not int(random() * chance):
             possible_conditions = []
             for condition in PERMANENT:
@@ -1445,7 +1445,7 @@ def get_highest_romantic_relation(
     max_love_value = 0
     current_max_relationship = None
     for rel in relationships:
-        if rel.romantic_love < 0:
+        if rel.romance < 0:
             continue
         if exclude_mate and rel.cat_from.ID in rel.cat_to.mate:
             continue
@@ -1453,9 +1453,9 @@ def get_highest_romantic_relation(
             rel.cat_from, for_love_interest=True
         ):
             continue
-        if rel.romantic_love > max_love_value:
+        if rel.romance > max_love_value:
             current_max_relationship = rel
-            max_love_value = rel.romantic_love
+            max_love_value = rel.romance
 
     return current_max_relationship
 
@@ -1466,27 +1466,25 @@ def check_relationship_value(cat_from, cat_to, rel_value=None):
     :param cat_from: the cat who is having the feelings
     :param cat_to: the cat that the feelings are directed towards
     :param rel_value: the relationship value that you're looking for,
-    options are: romantic, platonic, dislike, admiration, comfortable, jealousy, trust
+    options are: romance, like, respect, comfort, trust
     """
     if cat_to.ID in cat_from.relationships:
         relationship = cat_from.relationships[cat_to.ID]
     else:
         return 0
 
-    if rel_value == "romantic":
-        return relationship.romantic_love
-    elif rel_value == "platonic":
-        return relationship.platonic_like
-    elif rel_value == "dislike":
-        return relationship.dislike
-    elif rel_value == "admiration":
-        return relationship.admiration
-    elif rel_value == "comfortable":
-        return relationship.comfortable
-    elif rel_value == "jealousy":
-        return relationship.jealousy
-    elif rel_value == "trust":
+    if rel_value == RelType.ROMANCE:
+        return relationship.romance
+    elif rel_value == RelType.LIKE:
+        return relationship.like
+    elif rel_value == RelType.RESPECT:
+        return relationship.respect
+    elif rel_value == RelType.COMFORT:
+        return relationship.comfort
+    elif rel_value == RelType.TRUST:
         return relationship.trust
+
+    return None
 
 
 def get_personality_compatibility(cat1, cat2):
@@ -1544,32 +1542,25 @@ def get_cats_of_romantic_interest(cat):
         # Extra check to ensure they are potential mates
         if (
             inter_cat.is_potential_mate(cat, for_love_interest=True)
-            and cat.relationships[inter_cat.ID].romantic_love > 0
+            and cat.relationships[inter_cat.ID].romance > 0
         ):
             cats.append(inter_cat)
     return cats
 
 
-def get_amount_of_cats_with_relation_value_towards(cat, value, all_cats):
+def get_num_of_cats_with_relation_amount_towards(cat, amount, all_cats):
     """
     Looks how many cats have the certain value
     :param cat: cat in question
-    :param value: value which has to be reached
+    :param amount: amount of relationship value which has to be reached
     :param all_cats: list of cats which has to be checked
     """
 
     # collect all true or false if the value is reached for the cat or not
     # later count or sum can be used to get the amount of cats
     # this will be handled like this, because it is easier / shorter to check
-    relation_dict = {
-        "romantic_love": [],
-        "platonic_like": [],
-        "dislike": [],
-        "admiration": [],
-        "comfortable": [],
-        "jealousy": [],
-        "trust": [],
-    }
+
+    relation_dict = {v: [] for v in [*RelType]}
 
     for inter_cat in all_cats:
         if cat.ID in inter_cat.relationships:
@@ -1577,23 +1568,17 @@ def get_amount_of_cats_with_relation_value_towards(cat, value, all_cats):
         else:
             continue
 
-        relation_dict["romantic_love"].append(relation.romantic_love >= value)
-        relation_dict["platonic_like"].append(relation.platonic_like >= value)
-        relation_dict["dislike"].append(relation.dislike >= value)
-        relation_dict["admiration"].append(relation.admiration >= value)
-        relation_dict["comfortable"].append(relation.comfortable >= value)
-        relation_dict["jealousy"].append(relation.jealousy >= value)
-        relation_dict["trust"].append(relation.trust >= value)
+        for value in [*RelType]:
+            if amount > 0:
+                relation_dict[value].append(
+                    relation.get_amount_of_type(value) >= amount
+                )
+            elif amount < 0:
+                relation_dict[value].append(
+                    relation.get_amount_of_type(value) <= amount
+                )
 
-    return_dict = {
-        "romantic_love": sum(relation_dict["romantic_love"]),
-        "platonic_like": sum(relation_dict["platonic_like"]),
-        "dislike": sum(relation_dict["dislike"]),
-        "admiration": sum(relation_dict["admiration"]),
-        "comfortable": sum(relation_dict["comfortable"]),
-        "jealousy": sum(relation_dict["jealousy"]),
-        "trust": sum(relation_dict["trust"]),
-    }
+    return_dict = {v: sum(relation_dict[v]) for v in [*RelType]}
 
     return return_dict
 
@@ -1603,20 +1588,19 @@ def filter_relationship_type(
 ):
     """
     filters for specific types of relationships between groups of cat objects, returns bool
-    :param list[Cat] group: the group of cats to be tested (make sure they're in the correct order (i.e. if testing for
+    :param group: the group of cats to be tested (make sure they're in the correct order (i.e. if testing for
     parent/child, the cat being tested as parent must be index 0)
-    :param list[str] filter_types: the relationship types to check for. possible types: "siblings", "mates",
-    "mates_with_pl" (PATROL ONLY), "not_mates", "parent/child", "child/parent", "mentor/app", "app/mentor",
-    (following tags check if value is over given int) "romantic_int", "platonic_int", "dislike_int", "comfortable_int",
-    "jealousy_int", "trust_int"
-    :param str event_id: if the event has an ID, include it here
-    :param Cat patrol_leader: if you are testing a patrol, ensure you include the self.patrol_leader here
+    :param filter_types: the relationship types to check for.
+    :param event_id: if the event has an ID, include it here
+    :param patrol_leader: if you are testing a patrol, ensure you include the self.patrol_leader here
     """
     if not filter_types:
         return True
 
+    filter_list = filter_types.copy()
+
     # keeping this list here just for quick reference of what tags are handled here
-    possible_rel_types = [
+    all_possible_tags = [
         "siblings",
         "not_siblings",
         "littermates",
@@ -1633,51 +1617,53 @@ def filter_relationship_type(
         "app/mentor",
         "not_app",
     ]
-
-    possible_value_types = [
-        "romantic",
-        "platonic",
-        "dislike",
-        "comfortable",
-        "jealousy",
-        "trust",
-        "admiration",
-    ]
+    for tier_list in rel_type_tiers.values():
+        all_possible_tags.extend(tier_list)
+        all_possible_tags.extend([f"{l}_only" for l in tier_list])
+    if not set(filter_list).issubset(set(all_possible_tags)):
+        print(
+            f"WARNING: {[tag for tag in filter_list if tag not in all_possible_tags]} is not a valid relationship_status tag!"
+        )
 
     if patrol_leader:
         if patrol_leader in group:
             group.remove(patrol_leader)
         group.insert(0, patrol_leader)
 
-    if "siblings" in filter_types:
+    if "siblings" in filter_list:
         test_cat = group[0]
         testing_cats = [cat for cat in group if cat.ID != test_cat.ID]
 
         if not all([test_cat.is_sibling(inter_cat) for inter_cat in testing_cats]):
             return False
+        filter_list.remove("siblings")
 
-    if "not_siblings" in filter_types:
+    if "not_siblings" in filter_list:
         test_cat = group[0]
         testing_cats = [cat for cat in group if cat.ID != test_cat.ID]
 
         if any([test_cat.is_sibling(inter_cat) for inter_cat in testing_cats]):
             return False
+        filter_list.remove("not_siblings")
 
-    if "littermates" in filter_types:
+    if "littermates" in filter_list:
         test_cat = group[0]
         testing_cats = [cat for cat in group if cat.ID != test_cat.ID]
 
         if not all([test_cat.is_littermate(inter_cat) for inter_cat in testing_cats]):
             return False
+        filter_list.remove("littermates")
 
-    if "not_littermates" in filter_types:
+    if "not_littermates" in filter_list:
         test_cat = group[0]
         testing_cats = [cat for cat in group if cat.ID != test_cat.ID]
 
         if any([test_cat.is_littermate(inter_cat) for inter_cat in testing_cats]):
             return False
 
-    if "mates" in filter_types:
+        filter_list.remove("not_littermates")
+
+    if "mates" in filter_list:
         # first test if more than one cat
         if len(group) == 1:
             return False
@@ -1686,14 +1672,15 @@ def filter_relationship_type(
         if not all(len(i.mate) >= (len(group) - 1) for i in group):
             return False
 
-        # Now the expensive test.  We have to see if everone is mates with each other
+        # Now the expensive test.  We have to see if everyone is mates with each other
         # Hopefully the cheaper tests mean this is only needed on events with a small number of cats
         for x in combinations(group, 2):
             if x[0].ID not in x[1].mate:
                 return False
+        filter_list.remove("mates")
 
     # check if all cats are mates with p_l (they do not have to be mates with each other)
-    if "mates_with_pl" in filter_types:
+    if "mates_with_pl" in filter_list:
         # First test if there is more than one cat
         if len(group) == 1:
             return False
@@ -1704,174 +1691,148 @@ def filter_relationship_type(
                 continue
             if cat.ID not in patrol_leader.mate:
                 return False
+        filter_list.remove("mates_with_pl")
 
     # Check if all cats are not mates
-    if "not_mates" in filter_types:
+    if "not_mates" in filter_list:
         # opposite of mate check
         for x in combinations(group, 2):
             if x[0].ID in x[1].mate:
                 return False
+        filter_list.remove("not_mates")
 
     # Check if the cats are in a parent/child relationship
-    if "parent/child" in filter_types:
+    if "parent/child" in filter_list:
         # It should be exactly two cats for a "parent/child" event
         if len(group) != 2:
             return False
         # test for parentage
         if not group[0].is_parent(group[1]):
             return False
+        filter_list.remove("parent/child")
 
-    if "not_parent" in filter_types:
+    if "not_parent" in filter_list:
         test_cat = group[0]
         testing_cats = [cat for cat in group if cat.ID != test_cat.ID]
 
         if any([test_cat.is_parent(inter_cat) for inter_cat in testing_cats]):
             return False
+        filter_list.remove("not_parent")
 
-    if "child/parent" in filter_types:
+    if "child/parent" in filter_list:
         # It should be exactly two cats for a "child/parent" event
         if len(group) != 2:
             return False
         # test for parentage
         if not group[1].is_parent(group[0]):
             return False
+        filter_list.remove("child/parent")
 
-    if "not_child" in filter_types:
+    if "not_child" in filter_list:
         test_cat = group[0]
         testing_cats = [cat for cat in group if cat.ID != test_cat.ID]
 
         if any([inter_cat.is_parent(test_cat) for inter_cat in testing_cats]):
             return False
+        filter_list.remove("not_child")
 
-    if "mentor/app" in filter_types:
+    if "mentor/app" in filter_list:
         # It should be exactly two cats for a "mentor/app" event
         if len(group) != 2:
             return False
         # test for parentage
-        if not group[1].ID in group[0].apprentice:
+        if group[1].ID not in group[0].apprentice:
             return False
+        filter_list.remove("mentor/app")
 
-    if "not_mentor" in filter_types:
+    if "not_mentor" in filter_list:
         test_cat = group[0]
         testing_cats = [cat for cat in group if cat.ID != test_cat.ID]
 
         if any([inter_cat in test_cat.apprentice for inter_cat in testing_cats]):
             return False
+        filter_list.remove("not_mentor")
 
-    if "app/mentor" in filter_types:
+    if "app/mentor" in filter_list:
         # It should be exactly two cats for a "app/mentor" event
         if len(group) != 2:
             return False
         # test for parentage
-        if not group[0].ID in group[1].apprentice:
+        if group[0].ID not in group[1].apprentice:
             return False
+        filter_list.remove("app/mentor")
 
-    if "not_app" in filter_types:
+    if "not_app" in filter_list:
         test_cat = group[0]
         testing_cats = [cat for cat in group if cat.ID != test_cat.ID]
 
         if any([inter_cat in test_cat.mentor for inter_cat in testing_cats]):
             return False
+        filter_list.remove("not_app")
 
     # Filtering relationship values
-    break_loop = False
-    for v_type in possible_value_types:
-        # first get all tags for current value types
-        tags = [constraint for constraint in filter_types if v_type in constraint]
-
-        # If there is not a tag for the current value type, check next one
-        if len(tags) == 0:
-            continue
-
-            # there should be only one value constraint for each value type
-        elif len(tags) > 1:
-            print(
-                f"ERROR: event {event_id} has multiple relationship constraints for the value {v_type}."
-            )
-            break_loop = True
-            break
-
-        # try to extract the value/threshold from the text
-        try:
-            threshold = int(tags[0].split("_")[1])
-        except:
-            print(
-                f"ERROR: event {event_id} with the relationship constraint for the value does not {v_type} follow the formatting guidelines."
-            )
-            break_loop = True
-            break
-
-        if threshold > 100:
-            print(
-                f"ERROR: event {event_id} has a relationship constraint for the value {v_type}, which is higher than the max value of a relationship."
-            )
-            break_loop = True
-            break
-
-        if threshold <= 0:
-            print(
-                f"ERROR: event {event_id} has a relationship constraint for the value {v_type}, which is lower than the min value of a relationship or 0."
-            )
-            break_loop = True
-            break
-
-        # each cat has to have relationships with this relationship value above the threshold
-        fulfilled = True
+    # each cat has to have relationships toward each other matching every level tag
+    for tier in filter_list:
         for inter_cat in group:
-            rel_above_threshold = []
+            if len(group) == 2 and inter_cat == group[1]:
+                # if this is a two cat group, then we only look for the first cat's rel toward the second cat.
+                # groups > 2 will require that all cats feel the same way toward each other.
+                continue
             group_ids = [cat.ID for cat in group]
-            relevant_relationships = list(
-                filter(
-                    lambda rel: rel.cat_to.ID in group_ids
-                    and rel.cat_to.ID != inter_cat.ID,
-                    list(inter_cat.relationships.values()),
-                )
-            )
 
-            # get the relationships depending on the current value type + threshold
-            if v_type == "romantic":
-                rel_above_threshold = [
-                    i for i in relevant_relationships if i.romantic_love >= threshold
-                ]
-            elif v_type == "platonic":
-                rel_above_threshold = [
-                    i for i in relevant_relationships if i.platonic_like >= threshold
-                ]
-            elif v_type == "dislike":
-                rel_above_threshold = [
-                    i for i in relevant_relationships if i.dislike >= threshold
-                ]
-            elif v_type == "comfortable":
-                rel_above_threshold = [
-                    i for i in relevant_relationships if i.comfortable >= threshold
-                ]
-            elif v_type == "jealousy":
-                rel_above_threshold = [
-                    i for i in relevant_relationships if i.jealousy >= threshold
-                ]
-            elif v_type == "trust":
-                rel_above_threshold = [
-                    i for i in relevant_relationships if i.trust >= threshold
-                ]
-            elif v_type == "admiration":
-                rel_above_threshold = [
-                    i for i in relevant_relationships if i.admiration >= threshold
-                ]
+            relevant_relationships = [
+                rel
+                for rel in inter_cat.relationships.values()
+                if rel.cat_to.ID in group_ids and rel.cat_to.ID != inter_cat.ID
+            ]
 
-            # if the lengths are not equal, one cat has not the relationship value which is needed to another cat of
-            # the event
-            if len(rel_above_threshold) + 1 != len(group):
-                fulfilled = False
-                break
+            # list of every cat's tier list
+            group_lists: list[RelTier] = [
+                rel.get_reltype_tiers() for rel in relevant_relationships
+            ]
 
-        if not fulfilled:
-            break_loop = True
-            break
+            # now test each list to see if the required tag is inside
+            for tier_list in group_lists:
+                # just a quick check to see if we can avoid all the extra hullabaloo
+                if tier in tier_list:
+                    continue
 
-    # if break is used in the loop, the condition are not fulfilled
-    # and this event should not be added to the filtered list
-    if break_loop:
-        return False
+                # if it's limited to *just* the given tier
+                if "_only" in tier:
+                    tier.replace("_only", "")
+                    if tier not in tier_list:
+                        return False
+                # otherwise we allow both the given tier and any greater tiers
+                else:
+                    # finding the matching tier enum
+                    rel_tier: RelTier = RelTier(tier)
+
+                    # find the matching rel_type enum
+                    rel_type: Optional[RelType] = None
+                    for rel_type in rel_type_tiers:
+                        if rel_tier in rel_type_tiers[rel_type]:
+                            rel_type = rel_type
+                            break
+                    if not rel_type:
+                        continue
+
+                    # get the tier's index within the rel_types's list
+                    index = rel_type_tiers[rel_type].index(rel_tier)
+                    allowed_levels = []
+                    # if it's a pos tier, we allow that index and higher
+                    if rel_tier.is_any_pos:
+                        allowed_levels = rel_type_tiers[rel_type][index:]
+                    # if it's a neg tier, we allow that index and lower
+                    elif rel_tier.is_any_neg:
+                        allowed_levels = rel_type_tiers[rel_type][0:index]
+
+                    discard = True
+                    for l in tier_list:
+                        if l in allowed_levels:
+                            discard = False
+                            break
+                    if discard:
+                        return False
 
     return True
 
@@ -1973,15 +1934,7 @@ def unpack_rel_block(
     :param Cat stat_cat: if passing the Patrol class, must include stat_cat separately
     :param Cat extra_cat: if not passing an event class, include the single affected cat object here. If you are not passing a full event class, then be aware that you can only include "m_c" as a cat abbreviation in your rel block.  The other cat abbreviations will not work.
     """
-    possible_values = (
-        "romantic",
-        "platonic",
-        "dislike",
-        "comfort",
-        "jealous",
-        "trust",
-        "respect",
-    )
+    possible_values = [*RelType]
 
     for block in relationship_effects:
         cats_from = block.get("cats_from", [])
@@ -2007,41 +1960,13 @@ def unpack_rel_block(
         positive = False
 
         # grabbing values
-        romantic_love = 0
-        platonic_like = 0
-        dislike = 0
-        comfortable = 0
-        jealousy = 0
-        admiration = 0
-        trust = 0
-        if "romantic" in values:
-            romantic_love = amount
-            if amount > 0:
-                positive = True
-        if "platonic" in values:
-            platonic_like = amount
-            if amount > 0:
-                positive = True
-        if "dislike" in values:
-            dislike = amount
-            if amount < 0:
-                positive = True
-        if "comfort" in values:
-            comfortable = amount
-            if amount > 0:
-                positive = True
-        if "jealous" in values:
-            jealousy = amount
-            if amount < 0:
-                positive = True
-        if "trust" in values:
-            trust = amount
-            if amount > 0:
-                positive = True
-        if "respect" in values:
-            admiration = amount
-            if amount > 0:
-                positive = True
+        value_changes = {}
+
+        for val in [*RelType]:
+            if val in values:
+                value_changes[val] = amount
+                if amount > 0:
+                    positive = True
 
         if positive:
             effect = i18n.t("relationships.positive_postscript")
@@ -2049,81 +1974,38 @@ def unpack_rel_block(
             effect = i18n.t("relationships.negative_postscript")
 
         # Get log
-        log1 = None
-        log2 = None
-        if block.get("log"):
-            log = block.get("log")
-            if isinstance(log, str):
-                log1 = log
-            elif isinstance(log, list):
-                if len(log) >= 2:
-                    log1 = log[0]
-                    log2 = log[1]
-                elif len(log) == 1:
-                    log1 = log[0]
-            else:
-                print(f"something is wrong with relationship log: {log}")
-
-        if not log1:
-            if hasattr(event, "text"):
-                try:
-                    log1 = event.text + effect
-                except AttributeError:
-                    print(
-                        f"WARNING: event changed relationships but did not create a relationship log"
-                    )
-            else:
-                log1 = i18n.t("defaults.relationship_log") + effect
-        if not log2:
-            if hasattr(event, "text"):
-                try:
-                    log2 = event.text + effect
-                except AttributeError:
-                    print(
-                        f"WARNING: event changed relationships but did not create a relationship log"
-                    )
-            else:
-                log2 = i18n.t("defaults.relationship_log") + effect
+        to_log = None
+        from_log = None
+        if "log" in block:
+            to_log = block["log"].get("cats_to") + effect if block["log"].get("cats_to") else ""
+            from_log = block["log"].get("cats_from") + effect if block["log"].get("cats_from") else ""
+            if not to_log and not from_log:
+                print(f"something is wrong with relationship log: {block['log']}")
 
         change_relationship_values(
             cats_to_ob,
             cats_from_ob,
-            romantic_love,
-            platonic_like,
-            dislike,
-            admiration,
-            comfortable,
-            jealousy,
-            trust,
-            log=event_text_adjust(Cat, log1, main_cat=cats_from_ob[0], random_cat=cats_to_ob[0])
+            **value_changes,
+            log=from_log,
         )
 
         if block.get("mutual"):
             change_relationship_values(
                 cats_from_ob,
                 cats_to_ob,
-                romantic_love,
-                platonic_like,
-                dislike,
-                admiration,
-                comfortable,
-                jealousy,
-                trust,
-                log=event_text_adjust(Cat, log2, main_cat=cats_to_ob[0], random_cat=cats_from_ob[0]),
+                **value_changes,
+                log=to_log,
             )
 
 
 def change_relationship_values(
     cats_to: list,
     cats_from: list,
-    romantic_love: int = 0,
-    platonic_like: int = 0,
-    dislike: int = 0,
-    admiration: int = 0,
-    comfortable: int = 0,
-    jealousy: int = 0,
+    romance: int = 0,
+    like: int = 0,
+    respect: int = 0,
+    comfort: int = 0,
     trust: int = 0,
-    auto_romance: bool = False,
     log: str = None,
 ):
     """
@@ -2133,22 +2015,18 @@ def change_relationship_values(
     (e.g. cat_from loses trust in cat_to)
     :param list[Cat] cats_to: list of cats objects who are the target of that rel value
     (e.g. cat_from loses trust in cat_to)
-    :param int romantic_love: amount to change romantic, default 0
-    :param int platonic_like: amount to change platonic, default 0
-    :param int dislike: amount to change dislike, default 0
-    :param int admiration: amount to change admiration (respect), default 0
-    :param int comfortable: amount to change comfort, default 0
-    :param int jealousy: amount to change jealousy, default 0
+    :param int romance: amount to change romantic, default 0
+    :param int like: amount to change platonic, default 0
+    :param int respect: amount to change admiration (respect), default 0
+    :param int comfort: amount to change comfort, default 0
     :param int trust: amount to change trust, default 0
-    :param bool auto_romance: if the cat_from already has romantic value with cat_to, then the platonic_like param value
-    will also be applied to romantic, default False
     :param str log: the string to append to the relationship log of cats involved
     """
 
     # This is just for test prints - DON'T DELETE - you can use this to test if relationships are changing
     """changed = False
-    if romantic_love == 0 and platonic_like == 0 and dislike == 0 and admiration == 0 and \
-            comfortable == 0 and jealousy == 0 and trust == 0:
+    if romance == 0 and like == 0 and respect == 0 and \
+            comfort == 0 and trust == 0:
         changed = False
     else:
         changed = True"""
@@ -2171,31 +2049,22 @@ def change_relationship_values(
                 single_cat_from.is_potential_mate(single_cat_to, for_love_interest=True)
                 or single_cat_to.ID in single_cat_from.mate
             ):
-                # if cat already has romantic feelings then automatically increase romantic feelings
-                # when platonic feelings would increase
-                if rel.romantic_love > 0 and auto_romance:
-                    romantic_love = platonic_like
-
                 # now gain the romance
-                rel.romantic_love += romantic_love
+                rel.romance += romance
 
             # gain other rel values
-            rel.platonic_like += platonic_like
-            rel.dislike += dislike
-            rel.admiration += admiration
-            rel.comfortable += comfortable
-            rel.jealousy += jealousy
+            rel.like += like
+            rel.respect += respect
+            rel.comfort += comfort
             rel.trust += trust
 
             # for testing purposes - DON'T DELETE - you can use this to test if relationships are changing
             """
             print(str(single_cat_from.name) + " gained relationship with " + str(rel.cat_to.name) + ": " +
-                  "Romantic: " + str(romantic_love) +
-                  " /Platonic: " + str(platonic_like) +
-                  " /Dislike: " + str(dislike) +
-                  " /Respect: " + str(admiration) +
-                  " /Comfort: " + str(comfortable) +
-                  " /Jealousy: " + str(jealousy) +
+                  "Romance: " + str(romance) +
+                  " /Like: " + str(like) +
+                  " /Respect: " + str(respect) +
+                  " /Comfort: " + str(comfort) +
                   " /Trust: " + str(trust)) if changed else print("No relationship change")"""
 
             if log and isinstance(log, str):
@@ -2217,7 +2086,7 @@ def get_leader_life_notice(clan) -> str:
     """
     Returns a string specifying how many lives the leader has left or notifying of the leader's full death
     """
-    if game.clan.instructor.status.group == CatGroup.DARK_FOREST:
+    if clan.instructor.status.group == CatGroup.DARK_FOREST:
         return i18n.t("cat.history.leader_lives_left_df", count=clan.leader_lives)
     return i18n.t("cat.history.leader_lives_left_sc", count=clan.leader_lives)
 
@@ -2331,8 +2200,6 @@ def process_text(text, cat_dict, raise_exception=False):
     adjust_text = re.sub(
         "|".join(name_patterns), lambda x: name_repl(x, cat_dict), adjust_text
     )
-
-    adjust_text.replace("medicine cat", "healer").replace("medicine den", "healer den")
 
     return adjust_text
 
@@ -2547,7 +2414,7 @@ def history_text_adjust(text, other_clan_name, clan, other_cat_rc=None):
         text = text.replace("o_c_n", str(other_clan_name))
 
     if "c_n" in text:
-        text = text.replace("c_n", clan.name)
+        text = text.replace("c_n", clan.displayname)
     if "r_c" in text and other_cat_rc:
         text = selective_replace(text, "r_c", str(other_cat_rc.name))
     return text
@@ -2597,15 +2464,17 @@ def ongoing_event_text_adjust(Cat, text, clan=None, other_clan_name=None):
     if other_clan_name:
         text = text.replace("o_c_n", other_clan_name)
     if clan:
-        clan_name = str(clan.name)
+        clan_name = str(clan.displayname)
     else:
         if game.clan is None:
             # todo can this be Switch.clan_name ?
             clan_name = switch_get_value(Switch.clan_list)[0]
         else:
-            clan_name = str(game.clan.name)
+            clan_name = str(game.clan.displayname)
 
     text = text.replace("c_n", clan_name + "Clan")
+
+    text.replace("medicine cat", "healer").replace("medicine den", "healer den")
 
     return text
 
@@ -2775,7 +2644,7 @@ def event_text_adjust(
 
     # other_clan_name
     if "o_c_n" in text and other_clan:
-        other_clan_name = other_clan.name
+        other_clan_name = other_clan.displayname
         pos = 0
         for x in range(text.count("o_c_n")):
             if "o_c_n" in text:
@@ -2799,7 +2668,7 @@ def event_text_adjust(
     # clan_name
     if "c_n" in text:
         try:
-            clan_name = clan.name
+            clan_name = clan.displayname
         except AttributeError:
             # todo can this be Switch.clan_name ?
             clan_name = switch_get_value(Switch.clan_list)[0]
@@ -2847,6 +2716,8 @@ def event_text_adjust(
                 "given_herb", i18n.t(f"conditions.herbs.{chosen_herb}", count=2)
             )
 
+    text.replace("medicine cat", "healer").replace("medicine den", "healer den")
+
     return text
 
 
@@ -2882,10 +2753,11 @@ def leader_ceremony_text_adjust(
         text = text.replace("[life_num]", str(extra_lives))
 
     clan = leader.status.group.fetch_clan_object()
-    text = text.replace("c_n", str(clan.name) + "Clan")
+    text = text.replace("c_n", str(clan.displayname) + "Clan")
+
+    text.replace("medicine cat", "healer").replace("medicine den", "healer den")
 
     return text
-
 
 def ceremony_text_adjust(
     Cat,
@@ -2900,7 +2772,7 @@ def ceremony_text_adjust(
     dead_parents=(),
     clan=game.clan
 ):
-    clanname = str(clan.name + "Clan")
+    clanname = str(clan.displayname + "Clan")
 
     random_honor = random_honor
     random_living_parent = None
@@ -2986,6 +2858,8 @@ def ceremony_text_adjust(
         )
 
     adjust_text = process_text(adjust_text, cat_dict)
+
+    adjust_text.replace("medicine cat", "healer").replace("medicine den", "healer den")
 
     return adjust_text, random_living_parent, random_dead_parent
 
@@ -3175,14 +3049,14 @@ def clan_symbol_sprite(clan, return_string=False, force_light=False):
         possible_sprites = []
         for sprite in sprites.clan_symbols:
             name = sprite.strip("1234567890")
-            if f"symbol{clan.name.upper()}" == name:
+            if f"symbol{clan.displayname.upper()}" == name:
                 possible_sprites.append(sprite)
         if possible_sprites:
             clan.chosen_symbol = choice(possible_sprites)
         else:
             # give random symbol if no matching symbol exists
             print(
-                f"WARNING: attempted to return symbol, but there's no clan symbol for {clan.name.upper()}. "
+                f"WARNING: attempted to return symbol, but there's no clan symbol for {clan.displayname.upper()}. "
                 f"Random chosen."
             )
             clan.chosen_symbol = choice(sprites.clan_symbols)
@@ -3305,87 +3179,156 @@ def generate_sprite(
                 phenotype.SpriteInfo(sprite_age)
                 phenotype.silver = old_silver
                 
-            def CreateStripes(stripecolour, whichbase, coloursurface=None, pattern=None, special = None):
-                notred = ('red' not in stripecolour and 'cream' not in stripecolour and 'honey' not in stripecolour and 'ivory' not in stripecolour and 'apricot' not in stripecolour)
-                stripebase = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                
-                if not pattern and not special and 'solid' not in whichbase:
-                    if('chinchilla' in whichbase):
-                        stripebase.blit(sprites.sprites['chinchillashading' + cat_sprite], (0, 0))   
-                    elif('shaded' in whichbase):
-                        stripebase.blit(sprites.sprites['shadedshading' + cat_sprite], (0, 0))       
-                    else:           
-                        stripebase.blit(sprites.sprites[phenotype.wbtype + 'shading' + cat_sprite], (0, 0))      
+            def CreateStripes(stripecolour, whichbase, coloursurface=None, preset_pattern=None, special=None):
+                stripebase = pygame.Surface(
+                    (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
 
-                if pattern:
-                    stripebase.blit(sprites.sprites[pattern + cat_sprite], (0, 0))
+                if not preset_pattern and not special and 'solid' not in whichbase:
+                    if ('chinchilla' in whichbase):
+                        stripebase.blit(
+                            sprites.sprites['chinchillashading' + cat_sprite], (0, 0))
+                    elif ('shaded' in whichbase):
+                        stripebase.blit(
+                            sprites.sprites['shadedshading' + cat_sprite], (0, 0))
+                    else:
+                        stripebase.blit(
+                            sprites.sprites[phenotype.wbtype + 'shading' + cat_sprite], (0, 0))
+
+                not_red = (
+                    'red' not in stripecolour and 'cream' not in stripecolour and 'honey' not in stripecolour and 'ivory' not in stripecolour and 'apricot' not in stripecolour)
+
+                if preset_pattern:
+                    for pat in preset_pattern:
+                        stripebase.blit(
+                            sprites.sprites[pat + cat_sprite], (0, 0))
                 elif 'ghost' in phenotype.tabby:
-                    ghoststripes = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                    ghoststripes.blit(sprites.sprites[phenotype.GetTabbySprite() + cat_sprite], (0, 0))
+                    ghoststripes = pygame.Surface(
+                        (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                    ghoststripes.blit(
+                        sprites.sprites[phenotype.GetTabbySprite()[0] + cat_sprite], (0, 0))
                     ghoststripes.set_alpha(25)
                     stripebase.blit(ghoststripes, (0, 0))
-                    stripebase.blit(sprites.sprites[phenotype.GetTabbySprite(special='ghost') + cat_sprite], (0, 0))
-                else:    
-                    stripebase.blit(sprites.sprites[phenotype.GetTabbySprite() + cat_sprite], (0, 0))
+                    pattern = phenotype.GetTabbySprite(special='ghost')
+                    for pat in pattern:
+                        stripebase.blit(
+                            sprites.sprites[pat + cat_sprite], (0, 0))
+                else:
+                    pattern = phenotype.GetTabbySprite()
+                    for pat in pattern:
+                        stripebase.blit(
+                            sprites.sprites[pat + cat_sprite], (0, 0))
+                        if (phenotype.bengtype == "mild bengal") and pat in ["braided", "brokenbraid"]:
+                            stripebase2 = pygame.Surface(
+                                (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                            stripebase2.blit(
+                                sprites.sprites[pat + cat_sprite], (0, 0))
+                            stripebase2.set_alpha(127)
+                            stripebase.blit(stripebase2, (0, 0))
+                    if pattern[0] in ["marbled", "blotched"] and phenotype.sheeted:
+                        stripebase.blit(
+                            sprites.sprites["sheeted" + cat_sprite], (0, 0))
 
-                charc = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                charc_shading = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                if(phenotype.agouti[0] == "Apb" and notred and hasattr(phenotype, "banding")):
-                    charc_shading.blit(sprites.sprites['lightbasecolours0'], (0, 0))
-                    modifiers = {
-                        "chinchilla" : 2,
-                        "shaded" : 3,
-                        "high" : 5,
-                        "medium" : 6,
-                        "low" : 7
-                    }
-                    opacity = int(25 * (modifiers.get(phenotype.banding, 5) / (1 * (int("silver" in whichbase) + 1))))
-                    charc_shading.set_alpha(opacity)
-                    charc.blit(charc_shading, (0, 0))
-                    charc.blit(sprites.sprites['charcoal' + cat_sprite], (0, 0))
-                
-                if(phenotype.agouti == ["Apb", "Apb"]):
-                    charc.set_alpha(125)
+                if not_red:
+                    stripebase.blit(
+                        sprites.sprites["tabbypads" + cat_sprite], (0, 0))
+
+                charc = pygame.Surface(
+                    (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                charc_shading = pygame.Surface(
+                    (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                if (phenotype.agouti[0] == "Apb" and not_red):
+                    if special != "no_shading":
+                        charc_shading.blit(
+                            sprites.sprites['lightbasecolours0'], (0, 0))
+                        modifiers = {
+                            "chinchilla": 2,
+                            "shaded": 3,
+                            "high": 5,
+                            "medium": 6,
+                            "low": 7
+                        }
+                        opacity = int(
+                            25 * (modifiers.get(phenotype.banding, 5) / (1 * (int("silver" in whichbase) + 1))))
+                        charc_shading.set_alpha(opacity)
+                        charc.blit(charc_shading, (0, 0))
+                    charc.blit(
+                        sprites.sprites['charcoal' + cat_sprite], (0, 0))
+                    if not preset_pattern and "fullbar" not in pattern[0] and "redbar" not in pattern[0]:
+                        charc.blit(
+                            sprites.sprites[pattern[0] + cat_sprite], (0, 0))
+
+                    if (phenotype.agouti == ["Apb", "Apb"]):
+                        charc.set_alpha(191)
                 stripebase.blit(charc, (0, 0))
 
+                if 'chinchilla' in whichbase or 'shaded' in whichbase:
+                    golden_gradient = pygame.Surface(
+                        (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                    golden_gradient2 = pygame.Surface(
+                        (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                    golden_gradient2.blit(
+                        sprites.sprites["goldengradient" + cat_sprite], (0, 0))
+
+                    if 'chinchilla' in whichbase:
+                        golden_gradient2.set_alpha(150)
+                    if 'shaded' in whichbase:
+                        if phenotype.corin[0] != "N":
+                            golden_gradient2.set_alpha(200)
+                    golden_gradient.blit(golden_gradient2, (0, 0))
+
+                    stripebase.blit(golden_gradient, (0, 0),
+                                    special_flags=pygame.BLEND_RGBA_MIN)
+                    golden_gradient = pygame.Surface(
+                        (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                    golden_gradient.fill((255, 255, 255))
+                    stripebase.blit(golden_gradient, (0, 0),
+                                    special_flags=pygame.BLEND_RGB_MAX)
+
                 if coloursurface:
-                    stripebase.blit(coloursurface, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                    stripebase.blit(coloursurface, (0, 0),
+                                    special_flags=pygame.BLEND_RGBA_MULT)
                 elif 'basecolours' in stripecolour:
-                    stripebase.blit(sprites.sprites[stripecolour], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+                    stripebase.blit(
+                        sprites.sprites[stripecolour], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
                 else:
-                    surf = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                    surf.blit(sprites.sprites[stripecolourdict.get(stripecolour[:-1], stripecolour[:-1])+stripecolour[-1]], (0, 0))
-                    if phenotype.caramel == 'caramel' and not ('red' in stripecolour or 'cream' in stripecolour or 'honey' in stripecolour or 'ivory' in stripecolour or 'apricot' in stripecolour):    
+                    surf = pygame.Surface(
+                        (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                    surf.blit(sprites.sprites[stripecolourdict.get(
+                        stripecolour[:-1], stripecolour[:-1])+stripecolour[-1]], (0, 0))
+                    if phenotype.caramel == 'caramel' and not ('red' in stripecolour or 'cream' in stripecolour or 'honey' in stripecolour or 'ivory' in stripecolour or 'apricot' in stripecolour):
                         surf.blit(sprites.sprites['caramel0'], (0, 0))
 
-                    stripebase.blit(surf, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
-                
-                middle = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                if(phenotype.soktype == "full sokoke" and not pattern and 'agouti' not in phenotype.tabby):
+                    stripebase.blit(
+                        surf, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+
+                middle = pygame.Surface(
+                    (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                if (phenotype.soktype == "full sokoke" and not preset_pattern and 'agouti' not in phenotype.tabby):
                     middle.blit(stripebase, (0, 0))
-                    stripebase = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                    stripebase = pygame.Surface(
+                        (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
                     middle.set_alpha(150)
                     stripebase.blit(middle, (0, 0))
-                    middle = CreateStripes(stripecolour, whichbase, coloursurface, pattern=phenotype.GetTabbySprite(special='redbar'))
+                    middle = CreateStripes(
+                        stripecolour, whichbase, coloursurface, special="no_shading", preset_pattern=phenotype.GetTabbySprite(special='redbar'))
                     stripebase.blit(middle, (0, 0))
-                elif(phenotype.soktype == "mild fading" and not pattern and 'agouti' not in phenotype.tabby):
+                elif (phenotype.soktype == "mild fading" and not preset_pattern and 'agouti' not in phenotype.tabby):
                     middle.blit(stripebase, (0, 0))
-                    stripebase = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
+                    stripebase = pygame.Surface(
+                        (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
                     middle.set_alpha(204)
                     stripebase.blit(middle, (0, 0))
-                    middle = CreateStripes(stripecolour, whichbase, coloursurface, pattern=phenotype.GetTabbySprite(special='redbar'))
+                    middle = CreateStripes(
+                        stripecolour, whichbase, coloursurface, special="no_shading", preset_pattern=phenotype.GetTabbySprite(special='redbar'))
                     stripebase.blit(middle, (0, 0))
-
-                # if cat.phenotype.furLength[0] == 'l':
-                #     stripebase = pygame.transform.box_blur(stripebase, 1)
 
                 return stripebase
 
-            def TabbyBase(whichcolour, whichbase, cat_unders, special = None):
+            def TabbyBase(whichcolour, whichbase, cat_unders, special=None):
                 is_red = ('red' in whichcolour or 'cream' in whichcolour or 'honey' in whichcolour or 'ivory' in whichcolour or 'apricot' in whichcolour)
                 whichmain = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
                 whichmain.blit(sprites.sprites[whichbase], (0, 0))
-                if special !='copper' and sprite_age > 12 and (phenotype.silver[0] == 'I' and phenotype.corin[0] == 'fg' and (get_current_season() == 'Leaf-fall' or get_current_season() == 'Leaf-bare' or 'infertility' in cat.permanent_condition)):
+                if special !='copper' and sprite_age > 12 and (phenotype.silver[0] == 'I' and phenotype.corin[0] == 'fg' and (get_current_season() == 'Leaf-fall' or get_current_season() == 'Leaf-bare' or 'sterile' in cat.permanent_condition)):
                     sunshine = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
                     
                     colours = phenotype.FindRed(phenotype, sprite_age, special='low')
@@ -3441,29 +3384,13 @@ def generate_sprite(
             def AddStripes(whichmain, whichcolour, whichbase, coloursurface=None):
                 stripebase = pygame.Surface(
                     (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                if ((phenotype.corin[0] != 'N' and phenotype.wbtype == "shaded") or phenotype.wbtype == 'chinchilla'):
-                    stripebase = CreateStripes(
-                        whichcolour, whichbase, coloursurface=coloursurface)
-                    stripebase.set_alpha(100)
-                elif (phenotype.wbtype == "shaded" or phenotype.corin[0] != 'N'):
-                    stripebase = CreateStripes(
-                        phenotype.FindRed(phenotype, sprite_age)[0], phenotype.FindRed(phenotype, sprite_age)[1], coloursurface=coloursurface)
-                    stripebase.set_alpha(50)
-                    whichmain.blit(stripebase, (0, 0))
-                    stripebase = CreateStripes(
-                        whichcolour, whichbase, coloursurface=coloursurface)
-                    stripebase.set_alpha(100)
-                    whichmain.blit(stripebase, (0, 0))
-                    stripebase = CreateStripes(
-                        whichcolour, whichbase, pattern="agouti", coloursurface=coloursurface)
-                    stripebase.set_alpha(200)
-                elif (('ec' in phenotype.ext or (phenotype.ext[0] == 'ea' and ((sprite_age > 7 and phenotype.ext[0] != "a") or sprite_age > 19))) and 'Eg' not in phenotype.ext and not ('red' in whichcolour or 'cream' in whichcolour or 'honey' in whichcolour or 'ivory' in whichcolour or 'apricot' in whichcolour)):
+                if (('ec' in phenotype.ext or (phenotype.ext[0] == 'ea' and ((sprite_age > 7 and phenotype.ext[0] != "a") or sprite_age > 19))) and 'Eg' not in phenotype.ext and not ('red' in whichcolour or 'cream' in whichcolour or 'honey' in whichcolour or 'ivory' in whichcolour or 'apricot' in whichcolour)):
                     stripebase = CreateStripes(
                         whichcolour, whichbase, coloursurface=coloursurface)
                     stripebase.set_alpha(200)
                     whichmain.blit(stripebase, (0, 0))
                     stripebase = CreateStripes(
-                        whichcolour, whichbase, coloursurface=coloursurface, pattern='agouti')
+                        whichcolour, whichbase, coloursurface=coloursurface, preset_pattern=['agouti'])
                 else:
                     stripebase.blit(CreateStripes(
                         whichcolour, whichbase, coloursurface=coloursurface), (0, 0))
@@ -3591,7 +3518,7 @@ def generate_sprite(
                     phenotype.SpriteInfo(10)
                     nose.blit(sprites.sprites['nosecolours' + str(nose_dict.get(phenotype.maincolour[:-1]))], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
                     phenotype.SpriteInfo(sprite_age)
-                elif maincolour != spritecolour and "masked" not in phenotype.silvergold:
+                elif maincolour != spritecolour and "masked" not in phenotype.silvergold and "charcoal" not in phenotype.tabtype:
                     nose.blit(sprites.sprites['nosecolours2'], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
                     nose.set_alpha(200)
                 else:
@@ -3603,7 +3530,7 @@ def generate_sprite(
             def MakeCat(whichmain, whichcolour, whichbase, cat_unders, special=None):
                 is_red = ('red' in whichcolour or 'cream' in whichcolour or 'honey' in whichcolour or 'ivory' in whichcolour or 'apricot' in whichcolour)
                 
-                if (phenotype.white[0] == 'W' or phenotype.pointgene[0] == 'c' or whichcolour == 'white' or phenotype.white_pattern == ['full white']):
+                if (phenotype.white[0] == 'W' or phenotype.pointgene[0] == 'c' or whichbase == 'white' or phenotype.white_pattern == ['full white']):
                     whichmain.blit(sprites.sprites['lightbasecolours0'], (0, 0))
                 elif(whichcolour != whichbase and special != 'masked silver'):
                     if(phenotype.pointgene[0] == "C"):
@@ -3801,7 +3728,7 @@ def generate_sprite(
 
                         if phenotype.length != "longhaired":
                             stripebase = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                            stripebase.blit(CreateStripes(whichcolour, "solid"), (0, 0))
+                            stripebase.blit(CreateStripes(whichcolour, "solid", special="no_shading"), (0, 0))
                             whichmain.blit(stripebase, (0, 0))
                     elif("cm" in phenotype.pointgene):
                         colour = None
@@ -3817,7 +3744,7 @@ def generate_sprite(
                             if phenotype.length != "longhaired":
                                 stripebase = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
                             
-                                stripebase.blit(CreateStripes(whichcolour.replace("black", "cinnamon"), 'solid', pattern="fullbar"), (0, 0))
+                                stripebase.blit(CreateStripes("cinnamon2", 'solid', special="no_shading", preset_pattern=["fullbaralt"]), (0, 0))
                                 stripebase.set_alpha(150)
 
                                 whichmain.blit(stripebase, (0, 0))
@@ -3874,7 +3801,7 @@ def generate_sprite(
                             
                             
                             if phenotype.length != "longhaired":
-                                stripebase = CreateStripes(colour, 'solid', coloursurface=coloursurface)
+                                stripebase = CreateStripes(colour, 'solid', special="no_shading", coloursurface=coloursurface)
                                 whichmain.blit(stripebase, (0, 0))
 
                             pointbase = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
@@ -3889,7 +3816,7 @@ def generate_sprite(
                             
                             if phenotype.length != "longhaired":
                                 stripebase = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
-                                stripebase.blit(CreateStripes(whichcolour, 'solid'), (0, 0))
+                                stripebase.blit(CreateStripes(whichcolour, 'solid', special="no_shading"), (0, 0))
 
                             pointbase2.blit(stripebase, (0, 0))
 
@@ -3971,7 +3898,7 @@ def generate_sprite(
                             whichmain.blit(sprites.sprites['lightbasecolours0'], (0, 0))
                             colour = 'lightbasecolours0'
 
-                        stripebase = CreateStripes(colour, 'solid', coloursurface=coloursurface)
+                        stripebase = CreateStripes(colour, 'solid', special="no_shading", coloursurface=coloursurface)
 
                         whichmain.blit(stripebase, (0, 0))
 
@@ -3985,7 +3912,7 @@ def generate_sprite(
 
                         
                         if phenotype.length != "longhaired":
-                            stripebase = CreateStripes(whichcolour, "solid")
+                            stripebase = CreateStripes(whichcolour, "solid", special="no_shading")
                         
                             pointbase2.blit(stripebase, (0, 0))
 
@@ -4072,12 +3999,12 @@ def generate_sprite(
                     for pattern in phenotype.tortiepattern:
                         tortpatches = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
                         if 'rev' in pattern:
-                            isred = not ('red' in phenotype.maincolour or 'cream' in phenotype.maincolour or 'honey' in phenotype.maincolour or 'ivory' in phenotype.maincolour or 'apricot' in phenotype.maincolour)
+                            isred = ('red' in phenotype.maincolour or 'cream' in phenotype.maincolour or 'honey' in phenotype.maincolour or 'ivory' in phenotype.maincolour or 'apricot' in phenotype.maincolour or 'white' in phenotype.maincolour)
                             tortpatches = MakeCat(tortpatches, phenotype.maincolour, phenotype.spritecolour, phenotype.mainunders)
                         else:
-                            isred = not ('red' in phenotype.patchmain or 'cream' in phenotype.patchmain or 'honey' in phenotype.patchmain or 'ivory' in phenotype.patchmain or 'apricot' in phenotype.patchmain)
+                            isred = ('red' in phenotype.patchmain or 'cream' in phenotype.patchmain or 'honey' in phenotype.patchmain or 'ivory' in phenotype.patchmain or 'apricot' in phenotype.patchmain or 'white' in phenotype.patchmain)
                             tortpatches = MakeCat(tortpatches, phenotype.patchmain, phenotype.patchcolour, phenotype.patchunders)
-                        if phenotype.caramel == 'caramel' and isred: 
+                        if phenotype.caramel == 'caramel' and not isred: 
                             tortpatches.blit(sprites.sprites['caramel0'], (0, 0))
                         tortpatches = ApplyPatchEffects(tortpatches)
                         
@@ -4112,20 +4039,19 @@ def generate_sprite(
                     fevercoat.blit(sprites.sprites['bleach' + cat_sprite], (0, 0))
                     fevercoat.blit(sprites.sprites['bleach' + cat_sprite], (0, 0))
                     fevercoat.blit(sprites.sprites['bleach' + cat_sprite], (0, 0))
-                    fevercoat.blit(sprites.sprites['bleach' + cat_sprite], (0, 0))
-                    fevercoat.blit(sprites.sprites['bleach' + cat_sprite], (0, 0))
-                    fevercoat.blit(sprites.sprites['lightbasecolours0'], (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
                     if (sprite_age > 2):
                         fevercoat.set_alpha(150)
                     gensprite.blit(fevercoat, (0, 0))
                 
                 elif (phenotype.bleach[0] == "lb" and sprite_age > 3) or (phenotype.wbtype == "shaded" and 'smoke' in phenotype.silvergold):
                     gensprite.blit(sprites.sprites['bleach' + cat_sprite], (0, 0))
+                elif ('masked' in phenotype.silvergold and phenotype.wbsum < 16):
+                    gensprite.blit(sprites.sprites['bleach' + cat_sprite], (0, 0))
+                    gensprite.blit(sprites.sprites['bleach' + cat_sprite], (0, 0))
 
             
             if (
                 game_setting_get('tints')
-                and cat.pelt.tint != "none" 
                 and cat.pelt.tint in sprites.cat_tints["tint_colours"]
             ):
                 tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
@@ -4133,7 +4059,6 @@ def generate_sprite(
                 gensprite.blit(tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
             if (
                 game_setting_get('tints')
-                and cat.pelt.tint != "none"
                 and cat.pelt.tint in sprites.cat_tints["dilute_tint_colours"]
             ):
                 tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
@@ -4291,25 +4216,53 @@ def generate_sprite(
                     gensprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0))
 
         # setting the lineart color to override on accessories & missing bits
-        lineart_color = pygame.Color(
-            constants.CONFIG["cat_sprites"]["lineart_color_df"]
-            if cat.status.group == CatGroup.DARK_FOREST
-            else constants.CONFIG["cat_sprites"]["lineart_color_sc"]
+        lineart_color = (
+            pygame.Color(
+                constants.CONFIG["cat_sprites"]["lineart_color_sc"]
+                if cat.status.group == CatGroup.STARCLAN
+                else constants.CONFIG["cat_sprites"]["lineart_color_df"]
+            )
+            if cat.status.group != CatGroup.UNKNOWN_RESIDENCE
+            else None
         )
 
-        def _recolor_lineart(sprite, color) -> pygame.Surface:
+        gradient_surface = (
+            sprites.sprites["gradient_ur" + cat_sprite]
+            if dead and cat.status.group == CatGroup.UNKNOWN_RESIDENCE
+            else None
+        )
+
+        def _recolor_lineart(
+            sprite, color=None, source: pygame.Surface = None
+        ) -> pygame.Surface:
             """
             Helper function to set the appropriate lineart color for the living status of the cat
             :param sprite: lineart to recolor
-            :param color: color to apply
+            :param color: color to apply to all pixels
+            :param source: source surface of same size as sprite to use instead of color
             :return:
             """
             if not dead:
                 return sprite
+
+            if color is None and source is None:
+                raise ValueError(
+                    "Must provide either `color` or `source` for _recolor_lineart"
+                )
+
             out = sprite.copy()
-            pixel_array = pygame.PixelArray(out)
-            pixel_array.replace((0, 0, 0), color, distance=0)
-            del pixel_array
+            if color:
+                pixel_array = pygame.PixelArray(out)
+                pixel_array.replace((0, 0, 0), color, distance=0)
+                del pixel_array
+                return out
+
+            width, height = sprite.get_size()
+            for x in range(width):
+                for y in range(height):
+                    if sprite.get_at((x, y)) == (pygame.Color(0, 0, 0)):
+                        color = source.get_at((x, y))
+                        out.set_at((x, y), color)
             return out
 
         # draw line art
@@ -4337,42 +4290,55 @@ def generate_sprite(
         earlines = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
         bodylines = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
 
-        if not dead:
-            if(cat.phenotype.fold[0] != 'Fd'):
-                if(cat.phenotype.curl[0] == 'Cu'):
-                    earlines.blit(sprites.sprites['curllines' + cat_sprite], (0, 0))
-                else:
-                    earlines.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
-            elif(cat.phenotype.curl[0] == 'Cu'):
-                earlines.blit(sprites.sprites['fold_curllines' + cat_sprite], (0, 0))
+        # if not dead:
+        if(cat.phenotype.fold[0] != 'Fd'):
+            if(cat.phenotype.curl[0] == 'Cu'):
+                earlines.blit(sprites.sprites['curllines' + cat_sprite], (0, 0))
             else:
-                earlines.blit(sprites.sprites['foldlines' + cat_sprite], (0, 0))
-        elif cat.status.group == CatGroup.DARK_FOREST:
-            if(cat.phenotype.fold[0] != 'Fd'):
-                if(cat.phenotype.curl[0] == 'Cu'):
-                    earlines.blit(sprites.sprites['curllineartdf' + cat_sprite], (0, 0))
-                else:
-                    earlines.blit(sprites.sprites['lineartdf' + cat_sprite], (0, 0))
-            elif(cat.phenotype.curl[0] == 'Cu'):
-                earlines.blit(sprites.sprites['fold_curllineartdf' + cat_sprite], (0, 0))
-            else:
-                earlines.blit(sprites.sprites['foldlineartdf' + cat_sprite], (0, 0))
-        elif dead:
-            if(cat.phenotype.fold[0] != 'Fd'):
-                if(cat.phenotype.curl[0] == 'Cu'):
-                    earlines.blit(sprites.sprites['curllineartdead' + cat_sprite], (0, 0))
-                else:
-                    earlines.blit(sprites.sprites['lineartdead' + cat_sprite], (0, 0))
-            elif(cat.phenotype.curl[0] == 'Cu'):
-                earlines.blit(sprites.sprites['fold_curllineartdead' + cat_sprite], (0, 0))
-            else:
-                earlines.blit(sprites.sprites['foldlineartdead' + cat_sprite], (0, 0))
+                earlines.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
+            if phenotype.fourear[0] == "dup":
+                earlines.blit(sprites.sprites['fourears' + cat_sprite], (0, 0))
+        elif(cat.phenotype.curl[0] == 'Cu'):
+            earlines.blit(sprites.sprites['fold_curllines' + cat_sprite], (0, 0))
+        else:
+            earlines.blit(sprites.sprites['foldlines' + cat_sprite], (0, 0))
+        # elif cat.status.group == CatGroup.UNKNOWN_RESIDENCE:
+        #     if(cat.phenotype.fold[0] != 'Fd'):
+        #         if(cat.phenotype.curl[0] == 'Cu'):
+        #             earlines.blit(sprites.sprites['curllineartur' + cat_sprite], (0, 0))
+        #         else:
+        #             earlines.blit(sprites.sprites['lineartur' + cat_sprite], (0, 0))
+        #     elif(cat.phenotype.curl[0] == 'Cu'):
+        #         earlines.blit(sprites.sprites['fold_curllineartur' + cat_sprite], (0, 0))
+        #     else:
+        #         earlines.blit(sprites.sprites['foldlineartur' + cat_sprite], (0, 0))
+        # elif cat.status.group == CatGroup.DARK_FOREST:
+        #     if(cat.phenotype.fold[0] != 'Fd'):
+        #         if(cat.phenotype.curl[0] == 'Cu'):
+        #             earlines.blit(sprites.sprites['curllineartdf' + cat_sprite], (0, 0))
+        #         else:
+        #             earlines.blit(sprites.sprites['lineartdf' + cat_sprite], (0, 0))
+        #     elif(cat.phenotype.curl[0] == 'Cu'):
+        #         earlines.blit(sprites.sprites['fold_curllineartdf' + cat_sprite], (0, 0))
+        #     else:
+        #         earlines.blit(sprites.sprites['foldlineartdf' + cat_sprite], (0, 0))
+        # elif dead:
+        #     if(cat.phenotype.fold[0] != 'Fd'):
+        #         if(cat.phenotype.curl[0] == 'Cu'):
+        #             earlines.blit(sprites.sprites['curllineartdead' + cat_sprite], (0, 0))
+        #         else:
+        #             earlines.blit(sprites.sprites['lineartdead' + cat_sprite], (0, 0))
+        #     elif(cat.phenotype.curl[0] == 'Cu'):
+        #         earlines.blit(sprites.sprites['fold_curllineartdead' + cat_sprite], (0, 0))
+        #     else:
+        #         earlines.blit(sprites.sprites['foldlineartdead' + cat_sprite], (0, 0))
 
         earlines.blit(sprites.sprites['isolateears' + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_SUB)
 
-        lineart.blit(earlines, (0, 0))
+        if cat_sprite != '20':
+            lineart.blit(earlines, (0, 0))
         if('rexed' in phenotype.furtype or 'wiry' in phenotype.furtype):
-            if not dead:
+            if not dead or cat.status.group == CatGroup.UNKNOWN_RESIDENCE:
                 bodylines.blit(sprites.sprites['rexlineart' + cat_sprite], (0, 0))
             elif cat.status.group == CatGroup.DARK_FOREST:
                 bodylines.blit(sprites.sprites['rexlineartdf' + cat_sprite], (0, 0))
@@ -4381,22 +4347,32 @@ def generate_sprite(
         else:
             if not dead:
                 bodylines.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
+            elif cat.status.group == CatGroup.UNKNOWN_RESIDENCE:
+                bodylines.blit(sprites.sprites['lineartur' + cat_sprite], (0, 0))
             elif cat.status.group == CatGroup.DARK_FOREST:
                 bodylines.blit(sprites.sprites['lineartdf' + cat_sprite], (0, 0))
             else:
                 bodylines.blit(sprites.sprites['lineartdead' + cat_sprite], (0, 0))
             
         bodylines.blit(sprites.sprites['noears' + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_SUB)
-        if cat_sprite != '20':
-            lineart.blit(bodylines, (0, 0))
-        new_sprite.blit(lineart, (0, 0))
+        lineart.blit(bodylines, (0, 0))
+        new_sprite.blit(_recolor_lineart(
+                            lineart,
+                            lineart_color,
+                            gradient_surface,
+                        ), (0, 0))
 
         # draw skin and scars2
         blendmode = pygame.BLEND_RGBA_MIN
 
         gensprite = new_sprite
         if cat.phenotype.bobtailnr > 0:
-            gensprite.blit(sprites.sprites['bobtail' + str(cat.phenotype.bobtailnr) + cat_sprite], (0, 0))
+            gensprite.blit(_recolor_lineart(
+                sprites.sprites['bobtail' +
+                                str(cat.phenotype.bobtailnr) + cat_sprite],
+                            lineart_color,
+                            gradient_surface,
+                        ), (0, 0))
         gensprite.set_colorkey((0, 0, 255))
         new_sprite = pygame.Surface((sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA)
         new_sprite.blit(gensprite, (0, 0))
@@ -4406,7 +4382,9 @@ def generate_sprite(
                 if scar in cat.pelt.scars2:
                     new_sprite.blit(
                         _recolor_lineart(
-                            sprites.sprites["scars" + scar + cat_sprite], lineart_color
+                            sprites.sprites["scars" + scar + cat_sprite],
+                            lineart_color,
+                            gradient_surface,
                         ),
                         (0, 0),
                         special_flags=blendmode,
@@ -4457,6 +4435,7 @@ def generate_sprite(
                                         "acc_herbs" + accessory + cat_sprite
                                     ],
                                     lineart_color,
+                                    gradient_surface,
                                 ),
                                 (0, 0),
                             )
@@ -4467,6 +4446,7 @@ def generate_sprite(
                                         "acc_wild" + accessory + cat_sprite
                                     ],
                                     lineart_color,
+                                    gradient_surface,
                                 ),
                                 (0, 0),
                             )
@@ -4475,6 +4455,7 @@ def generate_sprite(
                                 _recolor_lineart(
                                     sprites.sprites["collars" + accessory + cat_sprite],
                                     lineart_color,
+                                    gradient_surface,
                                 ),
                                 (0, 0),
                             )
@@ -4563,13 +4544,6 @@ def generate_sprite(
                                 sprites.sprites["acc_moipa" + accessory + cat_sprite], (0, 0)
                             )
 
-        # apply experimental sparkle layer
-        if dead and cat.status.group == CatGroup.STARCLAN:
-            new_sprite.blit(
-                sprites.sprites["sc_overlay" + cat_sprite],
-                (0, 0),
-            )
-
         # Apply fading fog
         if (
             cat.pelt.opacity <= 97
@@ -4591,15 +4565,61 @@ def generate_sprite(
                 special_flags=pygame.BLEND_RGBA_MULT,
             )
 
-            if cat.status.group == CatGroup.DARK_FOREST:
-                temp = sprites.sprites["fadedf" + stage + cat_sprite].copy()
-                temp.blit(new_sprite, (0, 0))
-                new_sprite = temp
-            else:
+            if cat.status.group == CatGroup.STARCLAN:
                 temp = sprites.sprites["fadestarclan" + stage + cat_sprite].copy()
                 temp.blit(new_sprite, (0, 0))
                 new_sprite = temp
-        
+            elif cat.status.group == CatGroup.UNKNOWN_RESIDENCE:
+                temp = sprites.sprites["fadeur" + stage + cat_sprite].copy()
+                temp.blit(new_sprite, (0, 0))
+                new_sprite = temp
+            else:
+                temp = sprites.sprites["fadedf" + stage + cat_sprite].copy()
+                temp.blit(new_sprite, (0, 0))
+                new_sprite = temp
+
+        # ok! we have the sprite! now, do some layer things if the cat's already dead
+        if dead:
+            temp_sprite = pygame.Surface(
+                (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA
+            )
+
+            if cat.status.group == CatGroup.STARCLAN:
+                # no underlay
+
+                # cat sprite
+                temp_sprite.blit(new_sprite, (0, 0))
+
+                # overlay
+                temp_sprite.blit(
+                    sprites.sprites["sc_overlay" + cat_sprite],
+                    (0, 0),
+                )
+            elif cat.status.group == CatGroup.UNKNOWN_RESIDENCE:
+                # underlay
+                temp_sprite.blit(
+                    sprites.sprites["ur_underlay" + cat_sprite],
+                    (0, 0),
+                )
+
+                # cat sprite
+                temp_sprite.blit(new_sprite, (0, 0))
+
+                # overlay
+                temp_sprite.blit(
+                    sprites.sprites["ur_overlay" + cat_sprite],
+                    (0, 0),
+                )
+            elif cat.status.group == CatGroup.DARK_FOREST:
+                # no underlay
+
+                # cat sprite
+                temp_sprite.blit(new_sprite, (0, 0))
+
+                # no overlay
+
+            new_sprite = temp_sprite
+
         return new_sprite
 
     try:

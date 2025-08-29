@@ -8,7 +8,7 @@ from scripts.clan_resources.herb.herb import Herb, HERBS
 from scripts.clan_resources.herb.herb_effects import HerbEffect
 from scripts.clan_resources.supply import Supply
 from scripts.game_structure import constants
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 from scripts.game_structure.localization import load_lang_resource
 from scripts.utility import (
     adjust_list_text,
@@ -825,7 +825,7 @@ class HerbSupply:
             return
 
         # grab the correct condition dict so that we can modify it
-        con_info = treatment_cat.permanent_condition[condition]
+        con_info = treatment_cat.illnesses[condition] if condition == "redcough" else treatment_cat.permanent_condition[condition]
 
         if effect == HerbEffect.RISK:
             for risk in con_info[effect]:

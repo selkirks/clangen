@@ -17,8 +17,8 @@ import ujson
 from pygame_gui.elements import UIWindow
 from pygame_gui.windows import UIMessageWindow
 
-from scripts.cat.cats import Cat
-from scripts.cat.enums import CatStanding, CatRank
+from scripts.cat.cats import Cat, BACKSTORIES
+from scripts.cat.enums import CatStanding, CatRank, CatAge
 from scripts.cat.history import History
 from scripts.cat.names import Name, names
 from scripts.cat_relations.inheritance import Inheritance
@@ -31,7 +31,7 @@ from scripts.game_structure.game.switches import (
     switch_append_list_value,
     switch_remove_list_value,
 )
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 from scripts.game_structure.localization import (
     get_lang_config,
     get_custom_pronouns,
@@ -241,7 +241,7 @@ class SaveCheck(UIWindow):
 
         self.clan_name = "UndefinedClan"
         if game.clan:
-            self.clan_name = f"{game.clan.name}Clan"
+            self.clan_name = f"{game.clan.displayname}Clan"
         self.last_screen = last_screen
         self.isMainMenu = is_main_menu
         self.mm_btn = mm_btn
@@ -557,7 +557,7 @@ class DeleteCheck(UIWindow):
 class DeleteCatCheck(UIWindow):
     def __init__(self, reloadscreen, clan_name):
         super().__init__(
-            ui_scale(pygame.Rect((250, 200), (300, 180))),
+            ui_scale(pygame.Rect((250, 200), (300, 275))),
             window_display_title="Delete Faded Cats Check",
             object_id="#delete_check_window",
             resizable=False,
@@ -568,21 +568,21 @@ class DeleteCatCheck(UIWindow):
 
         self.delete_check_message = UITextBoxTweaked(
             f"Do you wish to delete your faded cats? This is permanent and cannot be undone. Making a copy of save data is recommended in case any issues arise.",
-            ui_scale(pygame.Rect((20, 20), (260, -1))),
+            ui_scale(pygame.Rect((20, 20), (250, -1))),
             line_spacing=1,
             object_id="#text_box_30_horizcenter",
             container=self,
         )
 
         self.delete_it_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((71, 100), (153, 30))),
+            ui_scale(pygame.Rect((71, 160), (153, 30))),
             "Delete it!",
             get_button_dict(ButtonStyles.SQUOVAL, (153, 30)),
             object_id="@buttonstyles_squoval",
             container=self,
         )
         self.go_back_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((71, 145), (153, 30))),
+            ui_scale(pygame.Rect((71, 205), (153, 30))),
             "No! Go back!",
             get_button_dict(ButtonStyles.SQUOVAL, (153, 30)),
             object_id="@buttonstyles_squoval",
@@ -614,13 +614,18 @@ class DeleteCatCheck(UIWindow):
                     if not cat.history:
                         continue
                     if cat.history.died_by:
-                        for event in cat.history.died_by:
-                            if 'r_c' in event["text"]:
-                                history_event_cats.append(event["involved"])
+                        for died in cat.history.died_by:
+                            if 'r_c' in died["text"]:
+                                history_event_cats.append(died["involved"])
                     if cat.history.scar_events:
-                        for event in cat.history.scar_events:
-                            if 'r_c' in event["text"]:
-                                history_event_cats.append(event["involved"])
+                        for scar in cat.history.scar_events:
+                            if 'r_c' in scar["text"]:
+                                history_event_cats.append(scar["involved"])
+                    if cat.history.murder:
+                        for killed in cat.history.murder.get("is_murderer", []):
+                            history_event_cats.append(killed["victim"])
+                        for killed in cat.history.murder.get("is_victim", []):
+                            history_event_cats.append(killed["murderer"])
                 #get murder cats
                 #put together all living cat + family tree data with all that
                 safe_ids = Inheritance.get_all_cat_ids() + list(Cat.all_cats.keys()) + list(set(mentors)) + list(set(history_event_cats))
@@ -716,7 +721,7 @@ class GameOver(UIWindow):
             resizable=False,
         )
         self.set_blocking(True)
-        self.clan_name = str(game.clan.name + "Clan")
+        self.clan_name = str(game.clan.displayname + "Clan")
         self.last_screen = last_screen
         self.game_over_message = UITextBoxTweaked(
             "windows.game_over_message",
@@ -1835,10 +1840,16 @@ class RelationshipLog(UIWindow):
             relationship.opposite_relationship
             and len(relationship.opposite_relationship.log) > 0
         ):
-            opposite_log_string = f"{f'<br>-----------------------------<br>'.join(relationship.opposite_relationship.log)}<br>"
+            opposite_log = relationship.opposite_relationship.log.copy()
+            opposite_log.reverse()
+            opposite_log_string = (
+                f"{f'<br>-----------------------------<br>'.join(opposite_log)}<br>"
+            )
 
+        log = relationship.log.copy()
+        log.reverse()
         log_string = (
-            f"{f'<br>-----------------------------<br>'.join(relationship.log)}<br>"
+            f"{f'<br>-----------------------------<br>'.join(log)}<br>"
             if len(relationship.log) > 0
             else i18n.t("windows.no_relation_logs")
         )
@@ -2168,7 +2179,7 @@ class ChangeCatToggles(UIWindow):
         self.checkboxes = {}
 
         # Prevent Fading
-        if self.the_cat == game.clan.instructor:
+        if self.the_cat in [game.clan.instructor] + [clan.instructor for clan in game.clan.all_clans if clan.instructor]:
             box_type = "@checked_checkbox"
             tool_tip = "windows.prevent_fading_tooltip_guide"
         elif self.the_cat.prevent_fading:
@@ -2187,7 +2198,7 @@ class ChangeCatToggles(UIWindow):
             tool_tip_text=tool_tip,
         )
 
-        if self.the_cat == game.clan.instructor:
+        if self.the_cat in [game.clan.instructor] + [clan.instructor for clan in game.clan.all_clans if clan.instructor]:
             self.checkboxes["prevent_fading"].disable()
 
         # No Kits
@@ -2250,7 +2261,7 @@ class ChangeCatToggles(UIWindow):
         return super().process_event(event)
 
 
-class SelectSingleClan(UIWindow):
+class ChangeCatClan(UIWindow):
     """This window allows the user to select a clan to switch a living clan cat to."""
 
     def __init__(self, focus_cat):
@@ -2293,8 +2304,8 @@ class SelectSingleClan(UIWindow):
         for clan in [game.clan] + game.clan.all_clans:
             if self.the_cat.status.group == clan.enum:
                 continue
-            self.texts[clan.name] = pygame_gui.elements.UITextBox(
-                clan.name + "clan",
+            self.texts[clan.displayname] = pygame_gui.elements.UITextBox(
+                clan.displayname + "clan",
                 ui_scale(pygame.Rect(107, n * 27 + 38, -1, 25)),
                 object_id="#text_box_30_horizleft_pad_0_8",
                 container=self,
@@ -2312,7 +2323,7 @@ class SelectSingleClan(UIWindow):
                 continue
             box_type = "@checked_checkbox" if self.selected == clan else "@unchecked_checkbox"
 
-            self.checkboxes[clan.name] = UIImageButton(
+            self.checkboxes[clan.displayname] = UIImageButton(
                 ui_scale(pygame.Rect((75, n * 27 + 35), (34, 34))),
                 "",
                 container=self,
@@ -2327,17 +2338,35 @@ class SelectSingleClan(UIWindow):
                 game.all_screens["profile screen"].screen_switches()
                 self.kill()
             if event.ui_element == self.save_button:
-                self.the_cat.status._modify_group(
-                    CatRank.WARRIOR if self.the_cat.status.rank in (CatRank.LEADER, CatRank.DEPUTY) else self.the_cat.status.rank, 
-                    CatStanding.LEFT, self.selected.enum)
-                for app in self.the_cat.apprentice.copy():
-                    app_ob = Cat.fetch_cat(app)
-                    if app_ob:
-                        app_ob.update_mentor()
-
+                if self.the_cat.status.group:
+                    self.the_cat.backstory = "otherclan1"
+                    if self.the_cat.status.rank == CatRank.LEADER:
+                        self.the_cat.status.group.fetch_clan_object().leader = None
+                    elif self.the_cat.status.rank == CatRank.DEPUTY:
+                        self.the_cat.status.group.fetch_clan_object().deputy = None
+                    elif self.the_cat.status.rank == CatRank.LEADER:
+                        self.the_cat.status.group.fetch_clan_object().remove_med_cat(self.the_cat)
+                    self.the_cat.history.add_beginning(False)
+                    self.the_cat.status._modify_group(
+                        CatRank.WARRIOR if self.the_cat.status.rank in (CatRank.LEADER, CatRank.DEPUTY) else self.the_cat.status.rank, 
+                        CatStanding.LEFT, self.selected.enum)
+                    for app in self.the_cat.apprentice.copy():
+                        app_ob = Cat.fetch_cat(app)
+                        if app_ob:
+                            app_ob.update_mentor()
+                else:
+                    self.the_cat.add_to_clan(self.selected.enum)
+                    if (
+                        self.the_cat.backstory
+                        in BACKSTORIES["backstory_categories"][
+                            "healer_backstories"
+                        ]
+                    ):
+                        if self.the_cat.age == CatAge.ADOLESCENT:
+                            self.the_cat.status._change_rank(CatRank.MEDICINE_APPRENTICE)
+                        else:
+                            self.the_cat.status._change_rank(CatRank.MEDICINE_CAT)
                 self.the_cat.update_mentor()
-                self.the_cat.backstory = "otherclan1"
-                self.the_cat.history.add_beginning(False)
                 self.the_cat.thoughts()
                 game.all_screens["profile screen"].exit_screen()
                 game.all_screens["profile screen"].screen_switches()
@@ -2347,7 +2376,7 @@ class SelectSingleClan(UIWindow):
                     if value == event.ui_element:
                         if value.object_ids[1] == "@unchecked_checkbox":
                             self.save_button.enable()
-                            self.selected = next(filter(lambda c: c.name == clan_name, game.clan.all_clans), game.clan)
+                            self.selected = next(filter(lambda c: c.displayname == clan_name, game.clan.all_clans), game.clan)
                         if value.object_ids[1] == "@checked_checkbox":
                             self.save_button.disable()
                             self.selected = None
@@ -2395,8 +2424,8 @@ class SelectFocusClans(UIWindow):
         )
         n = 0
         for clan in game.clan.all_clans:
-            self.texts[clan.name] = pygame_gui.elements.UITextBox(
-                clan.name + "clan",
+            self.texts[clan.displayname] = pygame_gui.elements.UITextBox(
+                clan.displayname + "clan",
                 ui_scale(pygame.Rect(107, n * 27 + 38, -1, 25)),
                 object_id="#text_box_30_horizleft_pad_0_8",
                 container=self,
@@ -2411,10 +2440,10 @@ class SelectFocusClans(UIWindow):
         n = 0
         for clan in game.clan.all_clans:
             box_type = "@unchecked_checkbox"
-            if clan.name in game.clan.clans_in_focus:
+            if clan.displayname in game.clan.clans_in_focus:
                 box_type = "@checked_checkbox"
 
-            self.checkboxes[clan.name] = UIImageButton(
+            self.checkboxes[clan.displayname] = UIImageButton(
                 ui_scale(pygame.Rect((75, n * 27 + 35), (34, 34))),
                 "",
                 container=self,

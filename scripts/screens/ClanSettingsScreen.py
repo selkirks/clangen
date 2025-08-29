@@ -11,7 +11,7 @@ import ujson
 
 from scripts.cat.cats import Cat
 from scripts.game_structure.game.settings import game_setting_get
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 from scripts.game_structure.ui_elements import (
     UIImageButton,
     UISurfaceImageButton,
@@ -88,10 +88,10 @@ class ClanSettingsScreen(Screens):
                 open_data_dir()
                 return
             elif event.ui_element == self.deleted_faded_button:
-                DeleteCatCheck(self.change_screen, game.clan.name)
+                DeleteCatCheck(self.change_screen, game.clan.displayname)
                 return
             elif event.ui_element == self.deleted_faded_history_button:
-                DeleteCatHistoryCheck(self.change_screen, game.clan.name)
+                DeleteCatHistoryCheck(self.change_screen, game.clan.displayname)
                 return
             elif event.ui_element == self.relation_settings_button:
                 self.open_relation_settings()
@@ -128,14 +128,26 @@ class ClanSettingsScreen(Screens):
                         scroll_pos = self.checkboxes_text[
                             "container_general"
                         ].vert_scroll_bar.start_percentage
+                    if (
+                        "container_relation" in self.checkboxes_text
+                        and self.checkboxes_text["container_relation"].vert_scroll_bar
+                    ):
+                        scroll_pos = self.checkboxes_text[
+                            "container_relation"
+                        ].vert_scroll_bar.start_percentage
 
                     if self.sub_menu in self.opens:
                         self.opens[self.sub_menu]()
 
                     if scroll_pos is not None:
-                        self.checkboxes_text[
-                            "container_general"
-                        ].vert_scroll_bar.set_scroll_from_start_percentage(scroll_pos)
+                        if self.sub_menu == "relation":
+                            self.checkboxes_text[
+                                "container_relation"
+                            ].vert_scroll_bar.set_scroll_from_start_percentage(scroll_pos)
+                        else:
+                            self.checkboxes_text[
+                                "container_general"
+                            ].vert_scroll_bar.set_scroll_from_start_percentage(scroll_pos)
 
                     break
 
@@ -396,6 +408,10 @@ class ClanSettingsScreen(Screens):
             self.checkboxes_text[code].disable()
             n += 1
 
+        self.checkboxes_text["container_relation"].set_scrollable_area_dimensions(
+            ui_scale_dimensions((780, n * 39 + 40))
+        )
+
         self.checkboxes_text["instr"] = pygame_gui.elements.UITextBox(
             "screens.clan_settings.relation_info",
             ui_scale(pygame.Rect((100, 185), (600, 50))),
@@ -423,6 +439,7 @@ class ClanSettingsScreen(Screens):
         elders = 0
         kits = 0
         cats_outside = 0
+        other_clan_cats = 0
         starclan = 0
         df = 0
         ur = 0
@@ -442,6 +459,10 @@ class ClanSettingsScreen(Screens):
 
             if cat.status.is_outsider:
                 cats_outside += 1
+                continue
+
+            if cat.status.group.is_other_clan_group():
+                other_clan_cats += 1
                 continue
 
             living_cats += 1
@@ -464,10 +485,12 @@ class ClanSettingsScreen(Screens):
 
         self.checkboxes_text["stat_box"] = pygame_gui.elements.UITextBox(
             "screens.clan_settings.stats_text",
-            ui_scale(pygame.Rect((150, 200), (530, 345))),
+            ui_scale(pygame.Rect((150, 200), (530, 400))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             text_kwargs={
                 "living": str(living_cats),
+                "cotc": str(cats_outside),
+                "oc_cats": str(other_clan_cats),
                 "starclan": str(starclan),
                 "darkforest": str(df),
                 "unknownresidence": str(ur),

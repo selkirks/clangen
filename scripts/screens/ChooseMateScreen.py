@@ -927,11 +927,20 @@ class ChooseMateScreen(Screens):
 
         del heading_rect
 
-        self.current_cat_elements["image"] = pygame_gui.elements.UIImage(
+        genelist = str(self.the_cat.phenotype.PhenotypeOutput(self.the_cat.phenotype.white_pattern, chimera=self.the_cat.chimerapheno)) + \
+            "\n" + str(self.the_cat.phenotype.ShowGenes(True)
+                       ) + "\n" + self.the_cat.phenotype.FormatSomatic()
+        if (self.the_cat.chimerapheno):
+            genelist += "\n\n" + str(self.the_cat.chimerapheno.PhenotypeOutput(self.the_cat.chimerapheno.white_pattern,
+                                                                               chimera=self.the_cat.chimerapheno)) + "\n" + str(self.the_cat.chimerapheno.ShowGenes(True))
+
+        self.current_cat_elements["image"] = UISpriteButton(
             ui_scale(pygame.Rect((50, 150), (150, 150))),
             pygame.transform.scale(
                 self.the_cat.sprite, ui_scale_dimensions((150, 150))
             ),
+            object_id="#offspring_predict_cat",
+            tool_tip_text=genelist,
         )
         name = str(self.the_cat.name)  # get name
         if 11 <= len(name):  # check name length
@@ -1084,13 +1093,21 @@ class ChooseMateScreen(Screens):
             anchors={"centerx": "centerx"},
         )
 
-        self.selected_cat_elements["image"] = pygame_gui.elements.UIImage(
+        genelist = str(self.selected_cat.phenotype.PhenotypeOutput(self.selected_cat.phenotype.white_pattern, chimera=self.selected_cat.chimerapheno)) + \
+            "\n" + str(self.selected_cat.phenotype.ShowGenes(True)
+                       ) + "\n" + self.selected_cat.phenotype.FormatSomatic()
+        if (self.selected_cat.chimerapheno):
+            genelist += "\n\n" + str(self.selected_cat.chimerapheno.PhenotypeOutput(self.selected_cat.chimerapheno.white_pattern,
+                                                                                    chimera=self.selected_cat.chimerapheno)) + "\n" + str(self.selected_cat.chimerapheno.ShowGenes(True))
+
+        self.selected_cat_elements["image"] = UISpriteButton(
             ui_scale(pygame.Rect((600, 150), (150, 150))),
             pygame.transform.scale(
                 self.selected_cat.sprite, ui_scale_dimensions((150, 150))
             ),
+            object_id="#offspring_predict_cat",
+            tool_tip_text=genelist,
         )
-
         name = str(self.selected_cat.name)
         if 11 <= len(name):  # check name length
             short_name = str(name)[0:9]
@@ -1137,8 +1154,8 @@ class ChooseMateScreen(Screens):
         if (
             not get_clan_setting("same sex birth")
             and not (xor('Y' in self.the_cat.phenotype.sexgene, 'Y' in self.selected_cat.phenotype.sexgene) 
-            and 'infertility' not in self.the_cat.permanent_condition 
-            and 'infertility' not in self.selected_cat.permanent_condition)
+            and 'sterile' not in self.the_cat.permanent_condition 
+            and 'sterile' not in self.selected_cat.permanent_condition)
         ):
             warning_rect = ui_scale(pygame.Rect((0, 0), (160, 45)))
             warning_rect.bottomleft = ui_scale_offset((0, -5))
@@ -1188,8 +1205,8 @@ class ChooseMateScreen(Screens):
             if self.selected_cat.ID in self.the_cat.relationships:
                 relation = self.the_cat.relationships[self.selected_cat.ID]
             else:
-                relation = Relationship(self.the_cat, self.selected_cat)
-            romantic_love = relation.romantic_love
+                relation = self.the_cat.create_one_relationship(self.selected_cat)
+            romantic_love = relation.romance
 
         if 10 <= romantic_love <= 30:
             heart_number = 1
@@ -1220,8 +1237,8 @@ class ChooseMateScreen(Screens):
             if self.the_cat.ID in self.selected_cat.relationships:
                 relation = self.selected_cat.relationships[self.the_cat.ID]
             else:
-                relation = Relationship(self.selected_cat, self.the_cat)
-            romantic_love = relation.romantic_love
+                relation = self.selected_cat.create_one_relationship(self.the_cat)
+            romantic_love = relation.romance
 
         if 10 <= romantic_love <= 30:
             heart_number = 1
@@ -1259,7 +1276,7 @@ class ChooseMateScreen(Screens):
     def get_valid_mates(self, search_text):
         """Get a list of valid mates for the current cat"""
 
-        # Behold! The uglest list comprehension ever created!
+        # Behold! The ugliest list comprehension ever created!
         valid_mates = [
             i
             for i in Cat.all_cats_list
@@ -1275,8 +1292,8 @@ class ChooseMateScreen(Screens):
                 or 
                 ((get_clan_setting("same sex birth")
                 or xor('Y' in i.phenotype.sexgene, 'Y' in self.the_cat.phenotype.sexgene)) 
-                and 'infertility' not in i.permanent_condition
-                and 'infertility' not in self.the_cat.permanent_condition)
+                and 'sterile' not in i.permanent_condition
+                and 'sterile' not in self.the_cat.permanent_condition)
             )
         ]
 

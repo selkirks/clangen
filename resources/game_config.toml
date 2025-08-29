@@ -8,39 +8,58 @@ dev_tools = false
 # settings regarding relationship events, also called "interactions"
 [relationship]
   # sets the max amount of interactions a cat can have each moon
-  max_interaction = 5
+  max_interaction = 4
 
   # sets the max amount of interactions a cat with a special role (leader, deputy, medicine cat, or mediator) can have each moon
-  max_interaction_special = 8
+  max_interaction_special = 6
 
   # sets the positive or negative effect that interactions will have on other cats based on personality compatibility
   compatibility_effect = 5
 
-  # Helps set a buff for interactions that increases other values other than the main value.
-  # For example, if a cat has a positive romantic interaction with another cat,
-  # their platonic like and comfort levels will also increase,
-  # and their dislike will decrease. Increasing this setting's value will decrease the buff
-  passive_influence_div = 1.5
+  # Adds a passive buff to relationship events. We divide the value change by passive_influence_div and apply it to all other relationship values.
+  passive_influence_div = 3
 
   # 1/chance an interaction is 'neutral' instead of negative or positive
   chance_for_neutral = 10
 
   # 1/chance that a group event will be a "special group event"
   # special groups are defined in group_types.json
-  chance_of_special_group = 8
+  chance_of_special_group = 9
 
-  # base 1/chance of a romantic interaction with another cat, when a cat has a mate
-  chance_romantic_not_mate = 15
+  # base 1/chance of a romance interaction with another cat, when a cat has a mate
+  chance_romance_not_mate = 15
 
   # how much an event with a condition can influence the relationship
   # NOTE: doesn't currently do anything
   influence_condition_events = 20
 
-  [relationship.in_decrease_value]
+  [relationship.value_change_amount]
     # amount a relationship changes for "high", "medium", and "low" effects for interactions
     low = 8
     medium = 12
     high = 16
+
+  [relationship.value_intervals]
+    # The cut-off for each value level. This starts at -100 with each int marking the end of that level. 
+    # For example, extreme_neg ends at -70, making its full range -100 to -70. mid_neg starts from -69 and continues till -25.
+    # NOTE: increasing extreme_pos past 100 or decreasing extreme_neg below -100 will probably break things
+      extreme_neg = -70
+      mid_neg = -25
+      low_neg = -6
+      neutral = 5
+      low_pos = 24
+      mid_pos = 69
+      extreme_pos = 100
+
+[relationship.colours]
+  # colours are RGB values, each number is a value from 0 to 255
+  neutral = [130, 117, 82]
+  low_pos = [182, 174, 51]
+  mid_pos = [150, 195, 49]
+  extreme_pos = [154, 241, 32]
+  low_neg = [186, 128, 60]
+  mid_neg = [214, 90, 53]
+  extreme_neg = [233, 38, 30]
 
 [mates]
   # maximum age difference allowed for cats to be romantic with each other
@@ -61,65 +80,53 @@ dev_tools = false
   #  negative number: value has to be lower than number
 
   [mates.confession]
-    # if one cat has these feelings for another, they confess (if there are more, the highest romantic will be chosen)
+    # if one cat has these feelings for another, they confess (if there are more, the highest romance will be chosen)
     [mates.confession.make_confession]
-    romantic = 30
-    platonic = 15
-    dislike = -15
-    admiration = 0
-    comfortable = 10
-    jealousy = 0
+    romance = 30
+    like = 15
+    respect = 0
+    comfort = 10
     trust = 0
 
     # if these conditions are fulfilled by the opposite cat, they accept, otherwise, they reject
     [mates.confession.accept_confession]
-    romantic = 17
-    platonic = 15
-    dislike = -10
-    admiration = 0
-    comfortable = 10
-    jealousy = 0
+    romance = 17
+    like = 15
+    respect = 0
+    comfort = 10
     trust = 0
 
   # both relationships have to fulfill this condition to become mates
   [mates.mate_condition]
-    romantic = 20
-    platonic = 30
-    dislike = -10
-    admiration = 0
-    comfortable = 20
-    jealousy = 0
+    romance = 20
+    like = 30
+    respect = 0
+    comfort = 20
     trust = 0
 
-  # requirements for a platonic relationship to become romantic
-  [mates.platonic_to_romantic]
-    romantic = 0
-    platonic = 30
-    dislike = -15
-    admiration = 0
-    comfortable = 20
-    jealousy = 0
+  # requirements for a like relationship to become romance
+  [mates.like_to_romance]
+    romance = 0
+    like = 30
+    respect = 0
+    comfort = 20
     trust = 0
 
   [mates.poly]
-    # which conditions all current mate relationships has to have towards the main cat + vise versa
+    # which conditions all current mate relationships has to have towards the main cat + vice versa
     [mates.poly.current_mate_condition]
-      romantic = 30
-      platonic = 0
-      dislike = 0
-      admiration = 0
-      comfortable = 15
-      jealousy = -15
+      romance = 30
+      like = 0
+      respect = 0
+      comfort = 15
       trust = 25
 
     # which conditions all current mate relationships has to have towards the new possible mate + vise versa
     [mates.poly.mates_to_each_other]
-      romantic = 0
-      platonic = 15
-      dislike = -10
-      admiration = 0
-      comfortable = 15
-      jealousy = -15
+      romance = 0
+      like = 15
+      respect = 0
+      comfort = 15
       trust = 20
 
 [new_cat]
@@ -132,64 +139,52 @@ dev_tools = false
   [new_cat.parent_buff]
     # default relationships buff for a kit's relationships to their parents
     [new_cat.parent_buff.kit_to_parent]
-      romantic = 0
-      platonic = 40
-      dislike = 0
-      admiration = 30
-      comfortable = 40
-      jealousy = 0
-      trust = 50
+      romance = 0
+      like = 40
+      respect = 30
+      comfort = 70
+      trust = 60
 
     # default relationships buff for a parent's relationships to their kits
     [new_cat.parent_buff.parent_to_kit]
-      romantic = 0
-      platonic = 40
-      dislike = 0
-      admiration = 30
-      comfortable = 40
-      jealousy = 0
-      trust = 30
+      romance = 0
+      like = 60
+      respect = 30
+      comfort = 70
+      trust = 60
 
   [new_cat.sib_buff]
     # default relationships buff for siblings' relationships in one direction
     [new_cat.sib_buff.cat1_to_cat2]
-      romantic = 0
-      platonic = 40
-      dislike = 0
-      admiration = 10
-      comfortable = 40
-      jealousy = 0
+      romance = 0
+      like = 40
+      respect = 10
+      comfort = 40
       trust = 30
 
     # default relationships buff for siblings' relationships in the other direction
     [new_cat.sib_buff.cat2_to_cat1]
-      romantic = 0
-      platonic = 40
-      dislike = 0
-      admiration = 10
-      comfortable = 40
-      jealousy = 0
+      romance = 0
+      like = 40
+      respect = 10
+      comfort = 40
       trust = 30
 
   [new_cat.rel_buff]
     # default relationships buff for new cats relationships to other cats in the clan
     [new_cat.rel_buff.new_to_clan_cat]
-      romantic = 0
-      platonic = 15
-      dislike = 0
-      admiration = 10
-      comfortable = 15
-      jealousy = 0
+      romance = 0
+      like = 15
+      respect = 10
+      comfort = 15
       trust = 15
 
     # default relationships buff for clan cats' relationships to new cats in the clan
     [new_cat.rel_buff.clan_cat_to_new]
-      romantic = 0
-      platonic = 15
-      dislike = 0
-      admiration = 5
-      comfortable = 10
-      jealousy = 0
+      romance = 0
+      like = 15
+      respect = 5
+      comfort = 10
       trust = 10
 
 [pregnancy]
@@ -408,6 +403,11 @@ dev_tools = false
   warrior = 5000
   elder = 400
 
+[roles.become_healer_chances]
+  # 1/chance that a cat will switch to mediator. rolls every moon, so keep it high.
+  warrior = 5000
+  apprentice = 1000
+
 [lost_cat]
   # 1/chance that a lost cat will return on their own
   rejoin_chance = 20
@@ -450,7 +450,7 @@ dev_tools = false
   best_stat_modifier = 10
   fail_stat_cat_modifier = -15
 
-  # base 1/chance for a romantic patrol. gets modified further in code
+  # base 1/chance for a romance patrol. gets modified further in code
   chance_of_romance_patrol = 16
 
   # forces patrol with this id to occur, assuming it's possible by constraints
@@ -490,7 +490,7 @@ dev_tools = false
 
   # base 1/2^(chance) a completely random murder occurs
   # aggression and instability will make the denominator lower and increase chance of murder
-  base_random_murder_chance = 25
+  base_random_murder_chance = 10
 
   # base 1/chance a disliked cat will be murdered
   base_murder_kill_chance = 80
@@ -553,12 +553,13 @@ dev_tools = false
   intersex = 100
   "XXX/XXY" = 1000
   "X monosomy" = 3500
-  brindled_bicolour = 1000
+  brindled_bicolour = 2000
   pseudo_merle = 200
   vitiligo = 150
   random_mutation = 150
   somatic_mutation = 200
-  breakthrough = 25
+  breakthrough = 50
+  dense_blotched = 50
   cryptic_tortie = 100
   sectoral_heterochromia = 200
   random_heterochromia = 250
@@ -577,21 +578,22 @@ dev_tools = false
   het_dom_white_one_blue_eye = 10
   homo_dom_white_one_blue_eye = 3
 
+  # All genes are 1/x chances. They can be set to 0 to prevent it from appearing at all
   longhair = 2
-  cinnamon = 30
-  chocolate = 15
+  cinnamon = 35
+  chocolate = 20
   red = 4
   dilute = 2
-  "dominant white" = 15
+  "dominant white" = 20
   "white spotting" = 3
-  "birman gloving" = 10
+  "birman gloving" = 15
   "thai white" = 400
   "salmiak" = 300
   colourpoint = 10
   sepia = 20
   mocha = 300
   albino = 200
-  silver = 10
+  silver = 20
   solid = 2
   charcoal = 150
   blotched = 3
@@ -626,6 +628,7 @@ dev_tools = false
 
   curl = 300
   fold = 300
+  four_ears = 300
   manx = 300
   "american bobtail" = 300
   "karelian bobtail" = 500
@@ -643,14 +646,14 @@ dev_tools = false
   wideband = ["2", "1", "1", "1", "0"]
   rufousing = ["2", "1", "1", "1", "0"]
   spotted = ["2", "1", "0"]
-  tickmod = ["2", "1", "1", "1", "0", "0", "0", "0"]
-  bengal = ["2", "1", "1", "1", "0", "0", "0", "0", "0", "0"]
+  tickmod = ["2", "1", "1", "1", "0", "0", "0", "0", "0", "0", "0"]
+  bengal = ["2", "1", "1", "1", "0", "0", "0", "0", "0", "0", "0"]
   sokoke = ["2", "2", "1", "1", "1", "1", "0", "0", "0"]
   wideband_kittypet = ["2", "1", "1", "0"]
   rufousing_kittypet = ["2", "1", "1", "0"]
   spotted_kittypet = ["2", "1", "0"]
-  tickmod_kittypet = ["2", "1", "1", "1", "0", "0", "0", "0"]
-  bengal_kittypet = ["2", "1", "1", "1", "0", "0", "0", "0"]
+  tickmod_kittypet = ["2", "1", "1", "1", "0", "0", "0", "0", "0"]
+  bengal_kittypet = ["2", "1", "1", "1", "0", "0", "0", "0", "0"]
   sokoke_kittypet = ["2", "2", "1", "1", "1", "1", "0", "0", "0"]
 [april_fools_genes]
   green = 10
@@ -664,12 +667,6 @@ dev_tools = false
   Clan_tnr2 = 0.5
 
 [graduation]
-  # base possible experience gain for apprentices
-  # [[lowest_exp_gain, highest_exp_gain], [lowest_exp_gain2, highest_exp_gain2]]
-  # use the second range to slightly increase the probability that those values are used
-  base_app_timeskip_ex = [[3, 12], [5, 6]]
-  base_med_app_timeskip_ex = [[2, 7], [2, 3]]
-
   # minimum age required for a cat to graduate
   min_graduating_age = 10
 
@@ -679,6 +676,17 @@ dev_tools = false
     apprentice = 25
     "mediator apprentice" = 25
 
+[clancat_ex]
+  # base possible experience gain for apprentices
+  # [[lowest_exp_gain, highest_exp_gain], [lowest_exp_gain2, highest_exp_gain2]]
+  # use the second range to slightly increase the probability that those values are used
+  base_app_timeskip_ex = [[3, 12], [5, 6]]
+  base_med_app_timeskip_ex = [[2, 7], [2, 3]]
+
+  # passive exp gain for adult clancats, not applied if the cat patrols that moon
+  base_adult_timeskip_ex = [[4, 12], [6, 7]]
+  base_senior_timeskip_ex = [[3, 9], [3, 4]]
+
 [outside_ex]
   # base possible experience gain for cats outside the clan
   # [[lowest_exp_gain, highest_exp_gain], [lowest_exp_gain2, highest_exp_gain2]]
@@ -686,6 +694,11 @@ dev_tools = false
   base_adolescent_timeskip_ex = [[2, 10], [4, 5]]
   base_adult_timeskip_ex = [[4, 12], [6, 7]]
   base_senior_timeskip_ex = [[3, 9], [3, 4]]
+
+[outsider_events]
+  # chances for random outsider deaths or leaving the territory are 2^x
+  outsider_death = 6
+  outsider_wander_off = 7
 
 [focus]
   # NOTE: 'raid other clans' should be more dangerous than 'hoarding'!!!
@@ -896,3 +909,116 @@ dev_tools = false
       greenleaf = [1, 2, 3]
       leaf-fall = [2, 3, 2]
       leaf-bare = [5, 2, 1]
+
+  [clan_resources.freshkill]
+    activate_death = true
+    activate_events = true
+    start_amount = 60
+    auto_warrior_prey = [ 2, 4 ]
+    auto_apprentice_prey = [ 1, 3 ]
+    condition_increase = 1
+    base_event_trigger_factor = 4
+    additional_prey = 1
+    nutrition_malnourished_percentage = 45
+    nutrition_starving_percentage = 20
+    feeding_order = [
+      "newborn",
+      "kitten",
+      "queen/pregnant",
+      "elder",
+      "healer",
+      "healer apprentice",
+      "apprentice",
+      "mediator apprentice",
+      "warrior",
+      "mediator",
+      "deputy",
+      "leader"
+    ]
+
+    [clan_resources.freshkill.events_weights]
+      death = 1
+      injury = 5
+      reduce = 8
+
+    [clan_resources.freshkill.text_nutrition]
+      lower_range = [ 0, 21, 41, 61, 81, 91 ]
+      text = [
+        "starving",
+        "very hungry",
+        "hungry",
+        "satiated",
+        "full",
+        "stuffed"
+      ]
+
+    [clan_resources.freshkill.prey_requirement]
+      leader = 3
+      deputy = 3
+      healer = 2
+      "healer apprentice" = 1.5
+      "mediator apprentice" = 1.5
+      mediator = 2
+      warrior = 3
+      apprentice = 1.5
+      elder = 1.5
+      "queen/pregnant" = 4
+      kitten = 0.5
+      newborn = 0.2
+
+    [clan_resources.freshkill.hunter_bonus]
+      1 = 1
+      2 = 2
+      3 = 3
+
+    [clan_resources.freshkill.hunter_exp_bonus]
+      untrained = 0.1
+      trainee = 1
+      prepared = 2
+      competent = 3
+      proficient = 4
+      skilled = 5
+      expert = 6
+      master = 7
+
+    [clan_resources.freshkill.patrol_weight_adaption]
+      1_class_bigger_prey_allowed = [ 15, 19 ]
+      2_class_bigger_prey_allowed = [ 10, 14 ]
+      3_class_bigger_prey_allowed = [ 5, 9 ]
+      4_class_bigger_prey_allowed = [ 0, 4 ]
+
+    [clan_resources.freshkill.patrol_balance.Forest]
+      Newleaf = [ 2, 5, 5, 2, 1 ]
+      Greenleaf = [ 1, 3, 6, 4, 2 ]
+      Leaf-fall = [ 2, 4, 5, 3, 1 ]
+      Leaf-bare = [ 3, 6, 4, 2, 0 ]
+
+    [clan_resources.freshkill.patrol_balance.Mountainous]
+      Newleaf = [ 2, 5, 5, 2, 1 ]
+      Greenleaf = [ 1, 3, 6, 4, 2 ]
+      Leaf-fall = [ 2, 6, 4, 2, 1 ]
+      Leaf-bare = [ 3, 6, 4, 2, 0 ]
+
+    [clan_resources.freshkill.patrol_balance.Plains]
+      Newleaf = [ 2, 5, 5, 2, 1 ]
+      Greenleaf = [ 1, 3, 6, 4, 2 ]
+      Leaf-fall = [ 2, 4, 5, 3, 1 ]
+      Leaf-bare = [ 3, 6, 4, 2, 0 ]
+
+    [clan_resources.freshkill.patrol_balance.Beach]
+      Newleaf = [ 2, 5, 5, 2, 1 ]
+      Greenleaf = [ 2, 5, 5, 2, 1 ]
+      Leaf-fall = [ 2, 5, 5, 2, 1 ]
+      Leaf-bare = [ 2, 6, 4, 2, 1 ]
+
+    [clan_resources.freshkill.patrol_balance.Wetlands]
+      Newleaf = [ 2, 5, 5, 2, 1 ]
+      Greenleaf = [ 2, 5, 5, 2, 1 ]
+      Leaf-fall = [ 2, 5, 5, 2, 1 ]
+      Leaf-bare = [ 2, 6, 4, 2, 1 ]
+
+    [clan_resources.freshkill.patrol_balance.Desert]
+      Newleaf = [ 2, 6, 4, 2, 1 ]
+      Greenleaf = [ 3, 6, 4, 2, 0 ]
+      Leaf-fall = [ 2, 5, 5, 2, 1 ]
+      Leaf-bare = [ 1, 3, 6, 4, 2 ]

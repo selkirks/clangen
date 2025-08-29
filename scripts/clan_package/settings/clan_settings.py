@@ -6,6 +6,7 @@ import ujson
 from scripts.game_structure.game.save_load import safe_save
 from scripts.game_structure.game.switches import Switch, switch_get_value
 from scripts.housekeeping.datadir import get_save_dir
+from scripts.game_structure.game.settings import game_setting_get
 
 
 def load_clan_settings():
@@ -25,6 +26,7 @@ def load_clan_settings():
         for key, value in _load_settings.items():
             if key in clan_settings:
                 clan_settings[key] = value
+
     # if settings files does not exist, default has been loaded by __init__
 
 
@@ -56,15 +58,16 @@ def switch_clan_setting(setting_name):
 
     clan_settings[setting_name] = setting_lists[setting_name][list_index]
 
-
 def reset_loaded_clan_settings():
     global clan_settings
-
     clan_settings = {}
 
     for _setting in all_settings:  # Add all the settings to the settings dictionary
         for setting_name, inf in _setting.items():
-            clan_settings[setting_name] = inf[2]
+            if game_setting_get(setting_name) is not None:
+                clan_settings[setting_name] = game_setting_get(setting_name)
+            else:
+                clan_settings[setting_name] = inf[2]
 
     for setting, values in _settings["__other"].items():
         clan_settings[setting] = values[0]

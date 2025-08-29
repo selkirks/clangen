@@ -23,13 +23,12 @@ from scripts.events_module.generate_events import GenerateEvents
 from scripts.events_module.relationship.relation_events import Relation_Events
 from scripts.game_structure import localization, constants
 from scripts.game_structure.game.switches import switch_get_value, Switch
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure import game
 from scripts.utility import (
     event_text_adjust,
     change_clan_relations,
     change_relationship_values,
     history_text_adjust,
-    get_warring_clan,
     unpack_rel_block,
     change_clan_reputation,
     create_new_cat_block,
@@ -124,24 +123,28 @@ class HandleShortEvents:
 
         # check for war and assign self.other_clan accordingly
         war_chance = 5
+        enemies = game.clan.get_wars(clan.enum)
+        chosen_enemy = choice(enemies) if enemies else None
+        rel_change_types = switch_get_value(Switch.war_rel_change_type)
+        rel_changed = None
+        if rel_change_types.get(clan.enum):
+            rel_changed = rel_change_types[clan.enum][chosen_enemy]
+        elif rel_change_types.get(chosen_enemy):
+            rel_changed = rel_change_types[chosen_enemy][clan.enum]
         # if the war didn't go badly, then we decrease the chance of this event being war-focused
-        if switch_get_value(Switch.war_rel_change_type) != "rel_down":
+        if rel_changed != "rel_down":
             war_chance = 2
-        if game.clan.war.get("at_war", False) and (not clan or clan == game.clan.name or clan == get_warring_clan()) and randint(1, war_chance) != 1:
-            enemy_clan = get_warring_clan() if get_warring_clan() != clan else game.clan
-            self.other_clan = enemy_clan
-            self.other_clan_name = f"{self.other_clan.name}Clan"
+        if chosen_enemy and randint(1, war_chance) != 1:
+            self.other_clan = chosen_enemy.fetch_clan_object()
+            self.other_clan_name = f"{self.other_clan.displayname}Clan"
             self.sub_types.append("war")
         else:
             self.other_clan = choice(
-                game.clan.all_clans if game.clan.all_clans else None
+                game.clan.all_clans + [game.clan] if game.clan.all_clans else None
             )
-            if self.other_clan and clan and self.other_clan.name == clan.name:
-                while self.other_clan.name == clan.name:
-                    self.other_clan = choice(
-                        game.clan.all_clans + [game.clan]
-                    )
-            self.other_clan_name = f"{self.other_clan.name}Clan"
+            while self.other_clan == clan:
+                self.other_clan = choice(game.clan.all_clans + [game.clan])
+            self.other_clan_name = f"{self.other_clan.displayname}Clan"
 
         # NOW find the possible events and filter
         if event_type == "birth_death":
@@ -251,6 +254,19 @@ class HandleShortEvents:
                 clan=clan.enum,
                 other_clan=self.other_clan.enum if self.other_clan != game.clan else CatGroup.PLAYER_CLAN,
             )
+            if "log" in self.chosen_event.relationships:
+                for group in self.chosen_event.relationships["log"]:
+                    self.chosen_event.relationships["log"][group] = event_text_adjust(
+                        Cat,
+                        group,
+                        main_cat=self.main_cat,
+                        random_cat=self.random_cat,
+                        victim_cat=self.victim_cat,
+                        new_cats=self.new_cat_objects,
+                        clan=game.clan,
+                        other_clan=self.other_clan,
+                    )
+
             unpack_rel_block(Cat, self.chosen_event.relationships, self)
 
         # used in some murder events,
@@ -263,11 +279,9 @@ class HandleShortEvents:
             change_relationship_values(
                 [self.random_cat],
                 [kit],
-                platonic_like=-20,
-                dislike=40,
-                admiration=-30,
-                comfortable=-30,
-                jealousy=0,
+                like=-20,
+                respect=-30,
+                comfort=-30,
                 trust=-30,
             )
 
@@ -308,14 +322,14 @@ class HandleShortEvents:
 
         # change outsider rep
         if self.chosen_event.outsider:
-            change_clan_reputation(self.chosen_event.outsider["changed"])
+            change_clan_reputation(self.chosen_event.outsider["changed"], clan)
             if "misc" not in self.types:
                 self.types.append("misc")
 
         # change other_clan rep
-        if self.chosen_event.other_clan and clan == game.clan:
+        if self.chosen_event.other_clan:
             change_clan_relations(
-                self.other_clan, self.chosen_event.other_clan["changed"]
+                clan, self.other_clan, self.chosen_event.other_clan["changed"]
             )
             if "other_clans" not in self.types:
                 self.types.append("other_clans")
@@ -437,7 +451,7 @@ class HandleShortEvents:
         if self.random_cat:
             in_event_cats["r_c"] = self.random_cat
         for i, attribute_list in enumerate(self.chosen_event.new_cat):
-            if ("clancat" not in attribute_list and "change_clan" not in attribute_list) or game.clan.clancount != 'multiclan':
+            if (("clancat" not in attribute_list and "change_clan" not in attribute_list) or "exists" not in attribute_list) or game.clan.clancount != 'multiclan':
                 self.new_cats.append(
                     create_new_cat_block(
                         Cat, Relationship, self, in_event_cats, i, attribute_list, clan=clan.enum, other_clan=other_clan
@@ -598,7 +612,7 @@ class HandleShortEvents:
         handles killing/murdering cats
         """
         dead_list = self.dead_cats if self.dead_cats else []
-        self.current_lives = int(self.main_cat.status.get_last_living_group().fetch_clan_object(game.clan).leader_lives)
+        self.current_lives = int(clan.leader_lives)
         self.current_lives_r_c = int(self.random_cat.status.get_last_living_group().fetch_clan_object(game.clan).leader_lives) if self.random_cat else None
 
         # check if the bodies are retrievable
@@ -625,7 +639,7 @@ class HandleShortEvents:
                 if "all_lives" in self.chosen_event.tags:
                     cat.status.group.fetch_clan_object().leader_lives -= 10
                 elif "some_lives" in self.chosen_event.tags:
-                    cat.status.group.fetch_clan_object().leader_lives -= randrange(2, self.current_lives - 1)
+                    cat.status.group.fetch_clan_object().leader_lives -= randrange(2, self.current_lives - 1) if self.current_lives > 3 else 2
                 else:
                     cat.status.group.fetch_clan_object().leader_lives -= 1
 
@@ -641,7 +655,7 @@ class HandleShortEvents:
         cats that will die are added to self.dead_cats
         """
         # gather living clan cats except leader bc leader lives would be frustrating to handle in these
-        alive_cats = [i for i in Cat.all_cats.values() if i.status.group == clan]
+        alive_cats = [i for i in Cat.all_cats.values() if i.status.group == self.main_cat.status.group]
 
         # make sure all cats in the pool fit the event requirements
         requirements = self.chosen_event.m_c
@@ -686,6 +700,7 @@ class HandleShortEvents:
                     tnr = True
                     
             taken_cats = []
+            left_cats = []
             for kitty in self.dead_cats:
                 if "lost" in self.chosen_event.tags:
                     if not tnr or 'TNR' not in kitty.pelt.scars:
@@ -695,16 +710,21 @@ class HandleShortEvents:
                         if kitty.moons > 3:
                             kitty.pelt.scars.append("TNR")
                             kitty.pelt.rebuild_sprite = True
-                            kitty.get_permanent_condition("infertility", False)
+                            kitty.get_permanent_condition("sterile", False)
                             if 'pregnant' in kitty.injuries:
-                                kitty.permanent_condition['infertility']['moon_start'] += 3
+                                kitty.permanent_condition['sterile']['moon_start'] += 3
                         if kitty.moons < 4:
                             kitty.become_lost(CatSocial.KITTYPET, CatStanding.LEFT)
-                            kitty.get_permanent_condition("infertility", False, event_triggered=True, custom_reveal=randint(4, 6))
+                            kitty.get_permanent_condition("sterile", False, event_triggered=True, custom_reveal=randint(4, 6))
+                    elif tnr:
+                        left_cats.append(kitty)
+                        continue
                 self.multi_cat.append(kitty)
                 if kitty.ID not in self.involved_cats:
                     self.involved_cats.append(kitty.ID)
             for kitty in taken_cats:
+                self.dead_cats.remove(kitty)
+            for kitty in left_cats:
                 self.dead_cats.remove(kitty)
 
         else:
@@ -805,18 +825,11 @@ class HandleShortEvents:
                         )
 
                     if cat.status.is_leader:
-                        if cat.status.group == self.main_cat.status.group:
-                            self.current_lives -= 1
-                            if self.current_lives != cat.status.get_last_living_group().fetch_clan_object().leader_lives:
-                                while self.current_lives > cat.status.get_last_living_group().fetch_clan_object().leader_lives:
-                                    cat.history.add_death("multi_lives")
-                                    self.current_lives -= 1
-                        else:
-                            self.current_lives_r_c -= 1
-                            if self.current_lives_r_c != cat.status.get_last_living_group().fetch_clan_object().leader_lives:
-                                while self.current_lives_r_c > cat.status.get_last_living_group().fetch_clan_object().leader_lives:
-                                    cat.history.add_death("multi_lives")
-                                    self.current_lives_r_c -= 1
+                        self.current_lives -= 1
+                        if self.current_lives != cat.status.get_last_living_group().fetch_clan_object().leader_lives:
+                            while self.current_lives > cat.status.get_last_living_group().fetch_clan_object().leader_lives:
+                                cat.history.add_death("multi_lives")
+                                self.current_lives -= 1
                     cat.history.add_death(death_history)
 
             # new_cat history

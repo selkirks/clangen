@@ -23,7 +23,7 @@
 		"interactions": [
 			"m_c shared a embarrassing story about r_c {PRONOUN/m_c/subject} {VERB/m_c/were/was} asked not to share...",
 			"m_c's friend doesn't trust r_c.",
-			"m_c learns that r_c told a Clanmate one of {PRONOUN/m_c/poss} secrets.",
+			"r_c learns that m_c told a Clanmate one of {PRONOUN/r_c/poss} secrets.",
 			"r_c snitches on m_c for something minor.",
 			"m_c laughed at r_c when they tripped and didn't even ask if {PRONOUN/m_c/subject} needed help up.",
 			"m_c saw r_c hide something before talking to {PRONOUN/m_c/object}.",
@@ -123,14 +123,14 @@
             		"r_c caught m_c misbehaving even though {PRONOUN/m_c/subject} promised to be on {PRONOUN/m_c/poss} best behavior."
 		],
 		"relationship_constraint": [
-			"dislike_40"
+			"dislikes"
 		],
 		"main_status_constraint": [
 			"kitten"
 		],
 		"reaction_random_cat": {
 			"trust": "decrease",
-			"dislike": "increase"
+			"like": "decrease"
 		}
 	},
 	{
@@ -167,7 +167,7 @@
             		"m_c pulls a mean-spirited prank on r_c."
 		],
 		"relationship_constraint": [
-			"dislike_40"
+			"hates"
 		],
 		"reaction_random_cat": {
 			"trust": "decrease"

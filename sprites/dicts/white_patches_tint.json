@@ -14,7 +14,7 @@
     "GOLDEN": "ginger"
   },
   "possible_tints": {
-    "basic": ["none", "offwhite", "offwhite", "dark"],
+    "basic": ["offwhite", "offwhite", "dark"],
     "black": ["gray", "darkcream", "cream", "ashgray", "violet", "powder", "blue", "obsidian", "black", "darkblue", "lightblue", "slate", "lighterblue", "lightpurple", "lightblack"],
     "gray": ["gray", "blue", "mocha", "honeydew", "ashgray", "violet", "powder", "dark", "lightgray", "overcast", "cloud", "storming"],
     "ginger": ["darkcream", "cream", "pink", "orange", "vanilla", "coffee", "malted", "dawn", "peach", "cherry", "golden", "dark", "lilac", "ash", "darkash", "ivory", "chalk", "ghastly", "lightgold", "gold", "darkgold", "sunshine", "lightred", "lightorange", "lightyellow", "lightpink"],
