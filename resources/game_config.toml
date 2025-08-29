@@ -532,7 +532,7 @@ dev_tools = false
 
 [clan_creation]
   # Set this to -1 for it to be infinite
-  rerolls = 3
+  rerolls = -1
 
   # If true, boosts the chance of rarer genes and breeds for founding cats
   use_special_roller = true
