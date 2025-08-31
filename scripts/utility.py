@@ -581,7 +581,7 @@ def create_new_cat_block(
     elif "clancat" in attribute_list or "former Clancat" in attribute_list:
         cat_social = CatSocial.CLANCAT
         if other_clan:
-            cat_group = other_clan.enum
+            cat_group = other_clan
         else:
             cat_group = choice(game.clan.other_clans)
     else:
@@ -690,7 +690,7 @@ def create_new_cat_block(
     chosen_cat: Optional["Cat"] = None
     if "exists" in attribute_list:
         existing_outsiders = [
-            i for i in Cat.all_cats.values() if i.status.is_outsider and not i.dead and i.status.is_near()
+            i for i in Cat.all_cats.values() if i.status.is_outsider and not i.dead and i.status.is_near() and not i.status.is_lost()
         ]
         possible_outsiders = []
         for cat in existing_outsiders:
@@ -771,7 +771,8 @@ def create_new_cat_block(
         new_cats = create_new_cat(
             Cat,
             new_name=new_name,
-            kit=False if litter else rank in (CatRank.KITTEN, CatRank.NEWBORN),
+            kit=False if litter else rank in (CatRank.KITTEN, CatRank.NEWBORN) or age in range(
+                Cat.age_moons[CatAge.KITTEN][0], Cat.age_moons[CatAge.KITTEN][1]+1),
             # this is for singular kits, litters need this to be false
             litter=litter,
             backstory=chosen_backstory,
@@ -2474,7 +2475,7 @@ def ongoing_event_text_adjust(Cat, text, clan=None, other_clan_name=None):
 
     text = text.replace("c_n", clan_name + "Clan")
 
-    text.replace("medicine cat", "healer").replace("medicine den", "healer den")
+    text = text.replace("medicine cat", "healer").replace("medicine den", "healer den")
 
     return text
 
@@ -2716,7 +2717,7 @@ def event_text_adjust(
                 "given_herb", i18n.t(f"conditions.herbs.{chosen_herb}", count=2)
             )
 
-    text.replace("medicine cat", "healer").replace("medicine den", "healer den")
+    text = text.replace("medicine cat", "healer").replace("medicine den", "healer den")
 
     return text
 
@@ -2755,7 +2756,7 @@ def leader_ceremony_text_adjust(
     clan = leader.status.group.fetch_clan_object()
     text = text.replace("c_n", str(clan.displayname) + "Clan")
 
-    text.replace("medicine cat", "healer").replace("medicine den", "healer den")
+    text = text.replace("medicine cat", "healer").replace("medicine den", "healer den")
 
     return text
 
@@ -2859,7 +2860,7 @@ def ceremony_text_adjust(
 
     adjust_text = process_text(adjust_text, cat_dict)
 
-    adjust_text.replace("medicine cat", "healer").replace("medicine den", "healer den")
+    adjust_text = adjust_text.replace("medicine cat", "healer").replace("medicine den", "healer den")
 
     return adjust_text, random_living_parent, random_dead_parent
 
