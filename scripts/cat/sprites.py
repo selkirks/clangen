@@ -155,7 +155,10 @@ class Sprites:
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
             'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
             'boosbandanas_accessories', 'sailormoon', 'randomaccessories', 'beetle_accessories', 'beetle_feathers',
-            'heartacc', 'moipaacc', 'pridebowcollars', 'pridecollars', 'pridenyloncollars'
+            'heartacc', 'moipaacc', 'pridebowcollars', 'pridecollars', 'pridenyloncollars',
+            'caliisokokecolours', 'dotcolours', 
+            'caliispeckledcolours', 'kintsugicolours', 'dotfadecolours', 'circletabbycolours', 'colourpointcolours', 'lynxpointcolours', 
+            'ncrestedcaracaracolours', 'birchtabbycolours', 'markercolours', 'canvasbackcolours'
         ]:
             if "lineart" in x and (game.config["fun"]["april_fools"] or is_today(SpecialDate.APRIL_FOOLS)):
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -395,7 +398,10 @@ class Sprites:
             'stersokokecolours', 'sillysokokecolours', 'dancesokokecolours', 'mimisokokecolours',
             'sterspeckledcolours', 'sillyspeckledcolours', 'dancespeckledcolours', 'mimispeckledcolours',
             'stertabbycolours', 'sillytabbycolours', 'dancetabbycolours', 'mimitabbycolours',
-            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours'
+            'stertickedcolours', 'sillytickedcolours', 'dancetickedcolours', 'mimitickedcolours',
+            'caliisokokecolours', 'dotcolours', 
+            'caliispeckledcolours', 'kintsugicolours', 'dotfadecolours', 'circletabbycolours', 'colourpointcolours', 'lynxpointcolours', 
+            'ncrestedcaracaracolours', 'birchtabbycolours', 'markercolours', 'canvasbackcolours'
         ]
 
         for row, colors in enumerate(color_categories):

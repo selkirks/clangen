@@ -108,7 +108,19 @@ class Pelt:
         'Monarch': 'monarch',
         'Oceloid': 'oceloid',
         'PinstripeTabby': 'pinstripetabby',
-        'Snowflake': 'snowflake'
+        'Snowflake': 'snowflake',
+        'Dot': 'dot',
+        'Caliisokoke': 'caliisokoke',
+        'Caliispeckled': 'caliispeckled',
+        'Kintsugi': 'kintsugi',
+        'Dotfade': 'dotfade',
+        'Circletabby': 'circletabby',
+        'Colourpoint': 'colourpoint',
+        'Lynxpoint': 'lynxpoint',
+        'Ncrestedcaracara': 'ncrestedcaracara',
+        'Birchtabby': 'birchtabby',
+        'Marker': 'marker',
+        'Canvasback': 'canvasback'
     }
 
     # ATTRIBUTES, including non-pelt related
@@ -173,7 +185,9 @@ class Pelt:
                    'sterspeckled', 'sillyspeckled', 'dancespeckled', 'mimispeckled',
                    'stertabby', 'sillytabby', 'dancetabby', 'mimitabby',
                    'sterticked', 'sillyticked', 'danceticked', 'mimiticked', 'abyssinian', 'clouded', 'doberman', 'ghosttabby', 'merle',
-                   'monarch', 'oceloid', 'pinstripetabby', 'snowflake', 'stain']
+                   'monarch', 'oceloid', 'pinstripetabby', 'snowflake', 'stain',
+                   'caliisokoke', 'caliispeckled', 
+                   'circletabby', 'birchtabby', 'dot', 'dotfade', 'kintsugi', 'colourpoint', 'lynxpoint', 'ncrestedcaracara', 'marker', 'canvasback']
 
     pelt_length = ["short", "medium", "long"]
     #please dontjudge the eye_colours section
@@ -685,19 +699,20 @@ class Pelt:
         "Classic", "Sterclassic", "Sillyclassic", "Danceclassic", "Mimiclassic",
         "Sokoke", "Stersokoke", "Sillysokoke", "Dancesokoke", "Mimisokoke",
         "Agouti", "Steragouti", "Sillyagouti", "Danceagouti", "Mimiagouti",
-        "Royal", "Brindle", "GhostTabby", "PinstripeTabby"]
+        "Royal", "Brindle", "GhostTabby", "PinstripeTabby", "Caliisokoke", "Circletabby", "Birchtabby"]
     spotted = ["Speckled", "Sterspeckled", "Sillyspeckled", "Dancespeckled", "Mimispeckled",
         "Rosette", "Sterrosette", "Sillyrosette", "Dancerosette", "Mimirosette",
-        "Lynx", "Bobcat", "Spots", "Merle"]
+        "Lynx", "Bobcat", "Spots", "Merle", "Dot", "Caliispeckled", "Dotfade", "Marker"]
     plain = ["SingleColour", "SterSingle", "SillySingle", "DanceSingle", "MimiSingle", "TwoColour",
         "Smoke", "Stersmoke", "Sillysmoke", "Dancesmoke", "Mimismoke",
         "Singlestripe", "Sterstripe", "Dancestripe", "Sillystripe", "Mimistripe",
-        "Smokepoint", "Doberman", "Stain"]
+        "Smokepoint", "Doberman", "Stain", "Colourpoint", "Canvasback"]
     exotic = ["Bengal", "Sterbengal", "Sillybengal", "Dancebengal", "Mimibengal",
         "Marbled", "Stermarbled", "Sillymarbled", "Dancemarbled", "Mimimarbled",
         "Masked", "Stermasked", "Sillymasked", "Dancemasked", "Mimimasked",
         "Maned", "Ocelot", "Cheetah", "Wildcat", "Wolf", "Finleappatches", "Dalmatian", "Abyssinian", "Clouded",
-        "Snowflake", "Oceloid", "Monarch"]
+        "Snowflake", "Oceloid", "Monarch", "Kintsugi", 
+              "Lynxpoint", "Ncrestedcaracara"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
@@ -1402,7 +1417,7 @@ class Pelt:
                                                      'classic', 'sterclassic', 'sillyclassic', 'danceclassic', 'mimiclassic', 'single', 'smoke',
                                                      'stersmoke', 'sillysmoke', 'dancesmoke', 'mimismoke', "mimisingle", 'agouti', 'steragouti', 'sillyagouti', 'danceagouti', 'mimiagouti',
                                                      'ticked', 'sterticked', 'sillyticked', 'danceticked', 'mimiticked',
-                                                     'brindle', 'spots'])
+                                                     'brindle', 'spots', 'circletabby', 'birchtabby'])
                     else:
                         self.tortiepattern = random.choices([self.tortiebase, 'single'], weights=[97, 3], k=1)[0]
 
