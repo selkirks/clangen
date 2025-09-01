@@ -246,7 +246,7 @@ class CustomizeStatsScreen(Screens):
                            "know-it-all", "spoiled", "sly", "mature", "apologetic", "salty", "whiny", "spicy", "bubbly", "picky", "cheeky", "shy", "fearless", "skittish",
                            "self-conscious", "impressionable", "high-spirited", "crybaby", "tiny", "morbid", "obedient", "colorful", "zoomy", "clingy", "curious", "slug",
                            "defiant", "sinister", "prim", "tender", "jokester", "wild", "bright", "earnest", "rowdy", "sloppy", "complex", "emotional", "protective", "bossy",
-                           "CHAOS CHAOS"]
+                           "CHAOS CHAOS", "bouncy"]
         self.kit_traits.sort()
         self.traits = copy(self.adult_traits)
         self.traits_label1 = None
