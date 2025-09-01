@@ -29,6 +29,16 @@
     "monochrome": ["blue", "black", "bluegray", "cadet", "flint", "storm", "darkpurple", "cobalt", "steel", "ebony", "sunrise", "lightorange", "periwinkle", "navy", "graygreen"],
     "brown": ["yellow", "purple", "black", "flint", "acacia", "bronze", "sooty", "plum", "lilac", "cadet", "cobalt", "bluegray", "darkpurple", "ebony", "sunrise", "pinkgray", "flower", "sunflower", "wood", "dust"]
   },
+  "weighted_tints": {
+    "dilute": ["none", "cooldilute", "dilute", "warmdilute"],
+    "light_cool": ["black", "blue", "bluegray", "bluesky", "cadet", "dullgreen", "gray", "green", "lightpink", "lilac", "pink", "willow"],
+    "cool": ["flint", "lightblue", "lightpurple", "periwinkle", "pinkgray", "purple", "sandy"],
+    "dark_cool": ["cobalt", "graygreen", "kiwi", "midgray", "navy", "olive", "sage", "sky"],
+    "light_warm": ["bananatwo", "browngray", "buttercup", "cream", "creamytan", "orange", "plum", "red", "sunflower", "tan", "yellow"],
+    "warm": ["bananaone", "beige", "blush", "dust", "flower", "grapefruit", "peach", "sunny", "sunrise", "yolk"],
+    "dark_warm": ["acacia", "bronze", "coral", "fall", "gold", "lightorange", "redwood", "rosy", "rust", "salmon", "wood"],
+    "black": ["darkpurple", "ebony", "maroon", "sooty", "steel", "storm"]
+  },
   "tint_colours":
   {
     "pink": [253, 237, 237],

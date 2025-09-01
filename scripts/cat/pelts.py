@@ -1678,6 +1678,12 @@ class Pelt:
         else:
             self.tint = "none"
 
+        self.tint = "none"
+        weighted_tints = sprites.cat_tints["weighted_tints"]
+        all_tints = weighted_tints["dilute"] + weighted_tints["light_cool"] + weighted_tints["cool"] + weighted_tints["dark_cool"] + weighted_tints["light_warm"] + weighted_tints["warm"] + weighted_tints["dark_warm"] + weighted_tints["black"]
+
+        self.tint = choice([choice(weighted_tints["dilute"]), choice(weighted_tints["light_cool"]), choice(weighted_tints["light_warm"]), choice(all_tints)])
+
         # WHITE PATCHES TINT
         if self.white_patches or self.points:
             # Now for white patches
