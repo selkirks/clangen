@@ -125,6 +125,8 @@ class Sprites:
         for x in [
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 'skin', 'eyesdark', 'dark2', 'eyesvivid', 'vivid2', 'towheeeyes', 'towheeeyes2',
+            'freyes1', 'freyes2', 'freyes3', 'freyes4',
+            'freyes1het', 'freyes2het', 'freyes3het', 'freyes4het',
             'scars', 'missingscars', 'wild', 
             'medcatherbs', 'beetleeyes', 'beetleeyes2', 'beetlemore', 'beetlemore2',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
@@ -200,6 +202,26 @@ class Sprites:
             ['ALBINISTIC', 'COBALT ORE', 'RAIN', 'CYAN DYE', 'PERIWINKLE PURPLE', 'ICY CRACK']
             ]
         
+        freyes1 = [
+        ["BRIGHT EARTH FR", "BRIGHT PLAGUE FR", "BRIGHT WIND FR", "BRIGHT WATER FR", "BRIGHT LIGHTNING FR", "BRIGHT ICE FR", "BRIGHT LIGHT FR", "BRIGHT SHADOW FR", "BRIGHT ARCANE FR", "BRIGHT NATURE FR", "BRIGHT FIRE FR"],
+        ["BASIC EARTH FR", "BASIC PLAGUE FR", "BASIC WIND FR", "BASIC WATER FR", "BASIC LIGHTNING FR", "BASIC ICE FR", "BASIC SHADOW FR", "BASIC LIGHT FR", "BASIC ARCANE FR"]
+        ]
+
+        freyes2 = [
+            ["BASIC NATURE", "BASIC FIRE FR", "DARK EARTH FR", "DARK PLAGUE FR", "DARK WIND FR", "DARK WATER FR", "DARK LIGHTNING FR", "DARK ICE FR", "DARK SHADOW FR", "DARK LIGHT FR", "DARK ARCANE FR"],
+            ["DARK NATURE FR", "DARK FIRE FR", "DARK SCLERA EARTH FR", "DARK SCLERA PLAGUE FR", "DARK SCLERA WIND FR", "DARK SCLERA WATER FR", "DARK SCLERA LIGHTNING FR", "DARK SCLERA ICE FR", "DARK SCLERA SHADOW FR"]
+        ]
+
+        freyes3 = [
+            ["DARK SCLERA LIGHT FR", "DARK SCLERA ARCANE", "FACETED EARTH FR", "FACETED PLAGUE FR", "FACETED WIND FR", "FACETED WATER FR", "FACETED LIGHTNING FR", "FACETED ICE FR", "FACETED SHADOW FR", "FACETED LIGHT FR", "FACETED ARCANE FR"],
+            ["FACETED NATURE FR", "FACETED FIRE FR", "GLOWING EARTH FR", "GLOWING PLAGUE FR", "GLOWING WIND FR", "GLOWING WATER FR", "GLOWING LIGHTNING FR", "GLOWING ICE FR", "GLOWING SHADOW FR"]
+        ]
+
+        freyes4 = [
+            ["GLOWING LIGHT FR", "GLOWING ARCANE FR", "GLOWING NATURE FR", "GLOWING FIRE FR", "FADED EARTH FR", "FADED PLAGUE FR", "FADED WIND FR", "FADED WATER FR", "FADED LIGHTNING FR", "FADED ICE FR", "FADED SHADOW FR", "FADED LIGHT FR"],
+            ["FADED ARCANE FR","FADED NATURE FR", "FADED FIRE FR", "PASTEL EARTH FR", "PASTEL PLAGUE FR", "PASTEL WIND FR", "PASTEL WATER", "PASTEL LIGHTNING FR", "PASTEL ICE FR", "PASTEL SHADOW FR", "PASTEL LIGHT FR"]
+        ]
+        
         # Define era eye colors
         era_eye_colors = [
             ['DARK HAZEL', 'ROSE GOLD', 'DARK ROSE', 'REVERSE SUNLITICE', 'ICY', 'SUNSET', 'LAVENDER', 'ECLIPSE', 'BLACK',
@@ -243,6 +265,23 @@ class Sprites:
             for col, color in enumerate(colors):
                 self.make_group('eyesvivid', (col, row), f'eyes{color}')
                 self.make_group('vivid2', (col, row), f'eyes2{color}')
+
+        for row, colors in enumerate(freyes1):
+            for col, color in enumerate(colors):
+                self.make_group('freyes1', (col, row), f'eyes{color}')
+                self.make_group('freyes1het', (col, row), f'eyes2{color}')
+        for row, colors in enumerate(freyes2):
+            for col, color in enumerate(colors):
+                self.make_group('freyes2', (col, row), f'eyes{color}')
+                self.make_group('freyes2het', (col, row), f'eyes2{color}')
+        for row, colors in enumerate(freyes3):
+            for col, color in enumerate(colors):
+                self.make_group('freyes3', (col, row), f'eyes{color}')
+                self.make_group('freyes3het', (col, row), f'eyes2{color}')
+        for row, colors in enumerate(freyes4):
+            for col, color in enumerate(colors):
+                self.make_group('freyes4', (col, row), f'eyes{color}')
+                self.make_group('freyes4het', (col, row), f'eyes2{color}')
 
         # Define white patches
         white_patches = [
