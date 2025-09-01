@@ -125,8 +125,8 @@ class Sprites:
         for x in [
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 'skin', 'eyesdark', 'dark2', 'eyesvivid', 'vivid2', 'towheeeyes', 'towheeeyes2',
-            'freyes1', 'freyes2', 'freyes3', 'freyes4',
-            'freyes1het', 'freyes2het', 'freyes3het', 'freyes4het',
+            'freyes1', 'freyes2', 'freyes3', 'freyes4', 'freyes5',
+            'freyes1het', 'freyes2het', 'freyes3het', 'freyes4het', 'freyes5het',
             'scars', 'missingscars', 'wild', 
             'medcatherbs', 'beetleeyes', 'beetleeyes2', 'beetlemore', 'beetlemore2',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
@@ -224,6 +224,11 @@ class Sprites:
             ["GLOWING LIGHT FR", "GLOWING ARCANE FR", "GLOWING NATURE FR", "GLOWING FIRE FR", "FADED EARTH FR", "FADED PLAGUE FR", "FADED WIND FR", "FADED WATER FR", "FADED LIGHTNING FR", "FADED ICE FR", "FADED SHADOW FR", "FADED LIGHT FR"],
             ["FADED ARCANE FR","FADED NATURE FR", "FADED FIRE FR", "PASTEL EARTH FR", "PASTEL PLAGUE FR", "PASTEL WIND FR", "PASTEL WATER", "PASTEL LIGHTNING FR", "PASTEL ICE FR", "PASTEL SHADOW FR", "PASTEL LIGHT FR"]
         ]
+
+        freyes5 = [
+            ["PASTEL ARCANE FR", "PASTEL NATURE FR", "PASTEL FIRE FR", "UNUSUAL EARTH FR", "UNUSUAL PLAGUE FR", "UNUSUAL WIND FR", "UNUSUAL WATER FR", "UNUSUAL LIGHTNING FR", "UNUSUAL ICE FR", "UNUSUAL SHADOW FR", "UNUSUAL LIGHT FR", "UNUSUAL ARCANE FR"],
+            ["UNUSUAL NATURE FR", "UNUSUAL FIRE FR", "FACETED EARTH FR", "FACETED PLAGUE FR", "FACETED WIND FR", "FACETED WATER FR", "FACETED LIGHTNING FR", "FACETED ICE FR", "FACETED SHADOW FR"]
+            ]
         
         # Define era eye colors
         era_eye_colors = [
@@ -285,6 +290,10 @@ class Sprites:
             for col, color in enumerate(colors):
                 self.make_group('freyes4', (col, row), f'eyes{color}')
                 self.make_group('freyes4het', (col, row), f'eyes2{color}')
+        for row, colors in enumerate(freyes5):
+            for col, color in enumerate(colors):
+                self.make_group('freyes5', (col, row), f'eyes{color}')
+                self.make_group('freyes5het', (col, row), f'eyes2{color}')
 
         # Define white patches
         white_patches = [
