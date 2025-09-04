@@ -235,7 +235,7 @@ class CustomizeStatsScreen(Screens):
                        "hypocrite", "flirty", "honest", "mysterious", "polite", "enthusiastic", "vulnerable", "creative", "perfectionist", "sappy", "sentient", "annoying",
                        "lazy", "faithless", "moody", "aloof", "whimsical", "fancy", "methodical", "malicious", "frustrated", "self-reliant", "sentimental", "spontainious",
                        "stable", "strong", "fox-hearted", "sympathetic", "macabre", "civil", "teacherly", "tolerant", "unfoolable", "witty", "youthful", "enigmatic",
-                       "ordinary", "private", "loud", "questioning", "predictable", "airy", "anxious", "argumentative", "bizarre", "blunt", "calculating", "crude", "deceitful",
+                       "ordinary", "private", "loud", "questioning", "predictable", "airy", "anxious", "arguementative", "bizarre", "blunt", "calculating", "crude", "deceitful",
                        "cruel", "devious", "messy", "opinionated", "overimaginative", "power-hungry", "quirky", "reactive", "resentful", "regretful", "ritualistic", "selfish",
                        "sadistic", "scheming", "sloppy", "suspicious", "thievish", "transparent", "vague", "venomous", "envious", "artificial", "aimless", "boring", "charmless",
                        "unreliable", "dependant", "disgusted", "self-pitying", "colorless", "obnoxious", "small-thinking", "uncaring", "unimaginative", "desolate", "monotone",
