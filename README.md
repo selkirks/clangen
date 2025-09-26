@@ -1,7 +1,6 @@
 # clangen (now with 100% more cat genetics)
 
-### [Discord Server](https://discord.gg/rnFQqyPZ7K) || [Itch.io Page](https://sablesteel.itch.io/clan-gen-fan-edit)
-### [Genemod Server](https://discord.gg/t6XqgQ46Jx)
+### [Discord Server](https://discord.gg/rnFQqyPZ7K) || [Itch.io Page](https://sablesteel.itch.io/clan-gen-fan-edit
 
 A mod of the Clan-gen fan edit featuring cat genetics that get passed down from cat to cat, among a few little bonuses here and there!
 
@@ -12,10 +11,6 @@ Fan-edit of the warrior cat clangen game built using Python and Pygame.
 Original creator: just-some-cat.tumblr.com
 
 Fan-edit creator: SableSteel, and many others
-
-## Downloads
-Note: These are developer builds and are not guaranteed to work!
-- [Nightly Link](https://nightly.link/Chinch-Bug/clangen-genemod/workflows/build/modded)
 
 ## Running from source
 > [!WARNING]
