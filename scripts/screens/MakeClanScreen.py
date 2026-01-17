@@ -2005,7 +2005,7 @@ class MakeClanScreen(Screens):
         self.pname= random.choice(pelts) if random.randint(1,3) == 1 else "Tortie"
         self.length=random.choice(["short", "medium", "long"])
         self.colour=random.choice(Pelt.pelt_colours)
-        self.white_patches= choice(white_patches) if random.randint(1,2) == 1 else None
+        self.white_patches=choice(white_patches) if random.randint(1,2) == 1 else None
         self.eye_colour=choice(Pelt.eye_colours)
         self.eye_colour2=choice(Pelt.eye_colours) if random.randint(1,10) == 1 else None
         self.tortiebase=choice(Pelt.tortiebases)
@@ -3487,7 +3487,7 @@ class MakeClanScreen(Screens):
                     elif self.current_selection == "pelt_colour":
                         self.colour = random.choice(Pelt.pelt_colours)
                     elif self.current_selection == "white_patches":
-                        self.white_patches = [random.choice(["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white + [None])]
+                        self.white_patches= random.choice(["FULLWHITE"] + Pelt.little_white + Pelt.mid_white + Pelt.high_white + Pelt.mostly_white + [None])
                     elif self.current_selection == "points":
                         self.points = random.choice(Pelt.point_markings + [None])
                     elif self.current_selection == "vitiligo":
