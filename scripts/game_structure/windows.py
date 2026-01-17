@@ -52,12 +52,13 @@ from scripts.housekeeping.datadir import (
     open_data_dir,
 )
 from scripts.housekeeping.progress_bar_updater import UIUpdateProgressBar
-# from scripts.housekeeping.update import (
-#     self_update,
-#     UpdateChannel,
-#     get_latest_version_number,
-# )
+from scripts.housekeeping.update import (
+    self_update,
+    UpdateChannel,
+    get_latest_version_number,
+)
 from scripts.housekeeping.version import get_version_info
+from scripts.screens.enums import GameScreen
 from scripts.ui.generate_box import BoxStyles, get_box
 from scripts.ui.generate_button import ButtonStyles, get_button_dict
 from scripts.ui.icon import Icon
@@ -339,7 +340,7 @@ class SaveCheck(UIWindow):
                     game.is_close_menu_open = False
                     self.mm_btn.enable()
                     game.last_screen_forupdate = switch_get_value(Switch.cur_screen)
-                    switch_set_value(Switch.cur_screen, "start screen")
+                    switch_set_value(Switch.cur_screen, GameScreen.START)
                     game.switch_screens = True
                     self.kill()
                 else:
@@ -545,7 +546,7 @@ class DeleteCheck(UIWindow):
                 else:
                     print("No clan.json/txt???? Clan prolly wasnt initalized kekw")
                 self.kill()
-                self.reloadscreen("switch clan screen")
+                self.reloadscreen(GameScreen.SWITCH_CLAN)
 
             elif event.ui_element == self.go_back_button:
                 self.kill()
@@ -605,6 +606,7 @@ class DeleteCatCheck(UIWindow):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.delete_it_button:
                 rempath = get_save_dir() + "/" + self.clan_name + "/faded_cats/"
+                rempath_h = get_save_dir() + "/" + self.clan_name + "/history/"
                 #get all former mentors (preserve history mentor influence text)
                 mentors = []
                 history_event_cats = []
@@ -634,8 +636,10 @@ class DeleteCatCheck(UIWindow):
                         fileName = x.split('.')
                         if fileName[0] not in safe_ids and os.path.exists(rempath + x):
                             os.remove(rempath + x)
+                            if os.path.exists(rempath_h + x.replace(".json", "_history.json")):
+                                os.remove(rempath_h + x.replace(".json", "_history.json"))
                 self.kill()
-                self.reloadscreen("clan settings screen")
+                self.reloadscreen(GameScreen.CLAN_SETTINGS)
 
             elif event.ui_element == self.go_back_button:
                 self.kill()
@@ -702,7 +706,7 @@ class DeleteCatHistoryCheck(UIWindow):
                         if fileName[0] not in safe_ids and os.path.exists(rempath + x):
                             os.remove(rempath + x)
                 self.kill()
-                self.reloadscreen("clan settings screen")
+                self.reloadscreen(GameScreen.CLAN_SETTINGS)
 
             elif event.ui_element == self.go_back_button:
                 self.kill()
@@ -762,7 +766,7 @@ class GameOver(UIWindow):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.begin_anew_button:
                 game.last_screen_forupdate = switch_get_value(Switch.cur_screen)
-                switch_set_value(Switch.cur_screen, "start screen")
+                switch_set_value(Switch.cur_screen, GameScreen.START)
                 game.switch_screens = True
                 self.kill()
             elif event.ui_element == self.not_yet_button:
@@ -987,8 +991,8 @@ class ChangeCatName(UIWindow):
                 self.suffix_entry_box.rebuild()
                 self.suffix_entry_box.disable()
             elif event.ui_element == self.back_button:
-                game.all_screens["profile screen"].exit_screen()
-                game.all_screens["profile screen"].screen_switches()
+                game.all_screens[GameScreen.PROFILE].exit_screen()
+                game.all_screens[GameScreen.PROFILE].screen_switches()
                 self.kill()
         return super().process_event(event)
 
@@ -1223,8 +1227,8 @@ class PronounCreation(UIWindow):
     def process_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.back_button:
-                game.all_screens["change gender screen"].exit_screen()
-                game.all_screens["change gender screen"].screen_switches()
+                game.all_screens[GameScreen.CHANGE_GENDER].exit_screen()
+                game.all_screens[GameScreen.CHANGE_GENDER].screen_switches()
                 [item.kill() for item in self.dropdowns.values()]
                 self.kill()
             elif event.ui_element in self.dropdowns["conju"].child_buttons:
@@ -1437,15 +1441,15 @@ class KillCat(UIWindow):
                         )
 
                     if self.take_all:
-                        self.the_cat.status.group.fetch_clan_object(game.clan).leader_lives = 0
+                        self.the_cat.status.fetch_clan_object(game.clan).leader_lives = 0
                     else:
-                        self.the_cat.status.group.fetch_clan_object(game.clan).leader_lives -= 1
+                        self.the_cat.status.fetch_clan_object(game.clan).leader_lives -= 1
 
                 self.the_cat.die()
                 self.the_cat.history.add_death(death_message)
                 update_sprite(self.the_cat)
-                game.all_screens["profile screen"].exit_screen()
-                game.all_screens["profile screen"].screen_switches()
+                game.all_screens[GameScreen.PROFILE].exit_screen()
+                game.all_screens[GameScreen.PROFILE].screen_switches()
                 self.kill()
             elif event.ui_element == self.all_lives_check:
                 self.take_all = False
@@ -1456,73 +1460,73 @@ class KillCat(UIWindow):
                 self.all_lives_check.show()
                 self.one_life_check.hide()
             elif event.ui_element == self.back_button:
-                game.all_screens["profile screen"].exit_screen()
-                game.all_screens["profile screen"].screen_switches()
+                game.all_screens[GameScreen.PROFILE].exit_screen()
+                game.all_screens[GameScreen.PROFILE].screen_switches()
                 self.kill()
 
         return super().process_event(event)
 
 
-# class UpdateWindow(UIWindow):
-#     def __init__(self, last_screen, announce_restart_callback):
-#         super().__init__(
-#             ui_scale(pygame.Rect((250, 200), (300, 160))),
-#             window_display_title="Game Over",
-#             object_id="#game_over_window",
-#             resizable=False,
-#         )
-#         self.set_blocking(True)
-#         self.last_screen = last_screen
-#         self.update_message = pygame_gui.elements.UITextBox(
-#             "windows.update_message",
-#             ui_scale(pygame.Rect((20, 10), (260, -1))),
-#             object_id="#text_box_30_horizcenter_spacing_95",
-#             starting_height=4,
-#             container=self,
-#         )
-#         self.announce_restart_callback = announce_restart_callback
+class UpdateWindow(UIWindow):
+    def __init__(self, last_screen, announce_restart_callback):
+        super().__init__(
+            ui_scale(pygame.Rect((250, 200), (300, 160))),
+            window_display_title="Game Over",
+            object_id="#game_over_window",
+            resizable=False,
+        )
+        self.set_blocking(True)
+        self.last_screen = last_screen
+        self.update_message = pygame_gui.elements.UITextBox(
+            "windows.update_message",
+            ui_scale(pygame.Rect((20, 10), (260, -1))),
+            object_id="#text_box_30_horizcenter_spacing_95",
+            starting_height=4,
+            container=self,
+        )
+        self.announce_restart_callback = announce_restart_callback
 
-#         self.step_text = UITextBoxTweaked(
-#             "windows.downloading_update",
-#             ui_scale(pygame.Rect((20, 40), (260, -1))),
-#             line_spacing=1,
-#             object_id="#text_box_30_horizcenter",
-#             container=self,
-#         )
+        self.step_text = UITextBoxTweaked(
+            "windows.downloading_update",
+            ui_scale(pygame.Rect((20, 40), (260, -1))),
+            line_spacing=1,
+            object_id="#text_box_30_horizcenter",
+            container=self,
+        )
 
-#         self.progress_bar = UIUpdateProgressBar(
-#             ui_scale(pygame.Rect((20, 65), (260, 45))),
-#             self.step_text,
-#             object_id="progress_bar",
-#             container=self,
-#         )
+        self.progress_bar = UIUpdateProgressBar(
+            ui_scale(pygame.Rect((20, 65), (260, 45))),
+            self.step_text,
+            object_id="progress_bar",
+            container=self,
+        )
 
-#         self.update_thread = threading.Thread(
-#             target=self_update,
-#             daemon=True,
-#             args=(
-#                 UpdateChannel(get_version_info().release_channel),
-#                 self.progress_bar,
-#                 announce_restart_callback,
-#             ),
-#         )
-#         self.update_thread.start()
+        self.update_thread = threading.Thread(
+            target=self_update,
+            daemon=True,
+            args=(
+                UpdateChannel(get_version_info().release_channel),
+                self.progress_bar,
+                announce_restart_callback,
+            ),
+        )
+        self.update_thread.start()
 
-#         self.cancel_button = UIImageButton(
-#             ui_scale(pygame.Rect((200, 115), (78, 30))),
-#             "",
-#             object_id="#cancel_button",
-#             container=self,
-#         )
+        self.cancel_button = UIImageButton(
+            ui_scale(pygame.Rect((200, 115), (78, 30))),
+            "",
+            object_id="#cancel_button",
+            container=self,
+        )
 
-#         self.cancel_button.enable()
+        self.cancel_button.enable()
 
-#     def process_event(self, event):
-#         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
-#             if event.ui_element == self.cancel_button:
-#                 self.kill()
+    def process_event(self, event):
+        if event.type == pygame_gui.UI_BUTTON_START_PRESS:
+            if event.ui_element == self.cancel_button:
+                self.kill()
 
-#         return super().process_event(event)
+        return super().process_event(event)
 
 
 class AnnounceRestart(UIWindow):
@@ -2179,7 +2183,7 @@ class ChangeCatToggles(UIWindow):
         self.checkboxes = {}
 
         # Prevent Fading
-        if self.the_cat in [game.clan.instructor] + [clan.instructor for clan in game.clan.all_clans if clan.instructor]:
+        if self.the_cat in [game.clan.instructor] + [clan.instructor for clan in game.clan.all_other_clans if clan.instructor]:
             box_type = "@checked_checkbox"
             tool_tip = "windows.prevent_fading_tooltip_guide"
         elif self.the_cat.prevent_fading:
@@ -2198,7 +2202,7 @@ class ChangeCatToggles(UIWindow):
             tool_tip_text=tool_tip,
         )
 
-        if self.the_cat in [game.clan.instructor] + [clan.instructor for clan in game.clan.all_clans if clan.instructor]:
+        if self.the_cat in [game.clan.instructor] + [clan.instructor for clan in game.clan.all_other_clans if clan.instructor]:
             self.checkboxes["prevent_fading"].disable()
 
         # No Kits
@@ -2241,8 +2245,8 @@ class ChangeCatToggles(UIWindow):
     def process_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.back_button:
-                game.all_screens["profile screen"].exit_screen()
-                game.all_screens["profile screen"].screen_switches()
+                game.all_screens[GameScreen.PROFILE].exit_screen()
+                game.all_screens[GameScreen.PROFILE].screen_switches()
                 self.kill()
             elif event.ui_element == self.checkboxes["prevent_fading"]:
                 self.the_cat.prevent_fading = not self.the_cat.prevent_fading
@@ -2301,8 +2305,8 @@ class ChangeCatClan(UIWindow):
             container=self,
         )
         n = 0
-        for clan in [game.clan] + game.clan.all_clans:
-            if self.the_cat.status.group == clan.enum:
+        for clan in [game.clan] + game.clan.all_other_clans:
+            if self.the_cat.status.group_ID == clan.group_ID:
                 continue
             self.texts[clan.displayname] = pygame_gui.elements.UITextBox(
                 clan.displayname + "clan",
@@ -2318,8 +2322,8 @@ class ChangeCatClan(UIWindow):
         self.checkboxes = {}
 
         n = 0
-        for clan in [game.clan] + game.clan.all_clans:
-            if self.the_cat.status.group == clan.enum:
+        for clan in [game.clan] + game.clan.all_other_clans:
+            if self.the_cat.status.group_ID == clan.group_ID:
                 continue
             box_type = "@checked_checkbox" if self.selected == clan else "@unchecked_checkbox"
 
@@ -2334,28 +2338,28 @@ class ChangeCatClan(UIWindow):
     def process_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.back_button:
-                game.all_screens["profile screen"].exit_screen()
-                game.all_screens["profile screen"].screen_switches()
+                game.all_screens["profile_screen"].exit_screen()
+                game.all_screens["profile_screen"].screen_switches()
                 self.kill()
             if event.ui_element == self.save_button:
                 if self.the_cat.status.group:
                     self.the_cat.backstory = "otherclan1"
                     if self.the_cat.status.rank == CatRank.LEADER:
-                        self.the_cat.status.group.fetch_clan_object().leader = None
+                        self.the_cat.status.fetch_clan_object().leader = None
                     elif self.the_cat.status.rank == CatRank.DEPUTY:
-                        self.the_cat.status.group.fetch_clan_object().deputy = None
+                        self.the_cat.status.fetch_clan_object().deputy = None
                     elif self.the_cat.status.rank == CatRank.LEADER:
-                        self.the_cat.status.group.fetch_clan_object().remove_med_cat(self.the_cat)
+                        self.the_cat.status.fetch_clan_object().remove_med_cat(self.the_cat)
                     self.the_cat.history.add_beginning(False)
                     self.the_cat.status._modify_group(
                         CatRank.WARRIOR if self.the_cat.status.rank in (CatRank.LEADER, CatRank.DEPUTY) else self.the_cat.status.rank, 
-                        CatStanding.LEFT, self.selected.enum)
+                        CatStanding.LEFT, self.selected.group_ID)
                     for app in self.the_cat.apprentice.copy():
                         app_ob = Cat.fetch_cat(app)
                         if app_ob:
                             app_ob.update_mentor()
                 else:
-                    self.the_cat.add_to_clan(self.selected.enum)
+                    self.the_cat.add_to_clan(self.selected.group_ID)
                     if (
                         self.the_cat.backstory
                         in BACKSTORIES["backstory_categories"][
@@ -2368,15 +2372,15 @@ class ChangeCatClan(UIWindow):
                             self.the_cat.status._change_rank(CatRank.MEDICINE_CAT)
                 self.the_cat.update_mentor()
                 self.the_cat.thoughts()
-                game.all_screens["profile screen"].exit_screen()
-                game.all_screens["profile screen"].screen_switches()
+                game.all_screens["profile_screen"].exit_screen()
+                game.all_screens["profile_screen"].screen_switches()
                 self.kill()
             if event.ui_element in self.checkboxes.values():
                 for clan_name, value in self.checkboxes.items():
                     if value == event.ui_element:
                         if value.object_ids[1] == "@unchecked_checkbox":
                             self.save_button.enable()
-                            self.selected = next(filter(lambda c: c.displayname == clan_name, game.clan.all_clans), game.clan)
+                            self.selected = next(filter(lambda c: c.displayname == clan_name, game.clan.all_other_clans), game.clan)
                         if value.object_ids[1] == "@checked_checkbox":
                             self.save_button.disable()
                             self.selected = None
@@ -2423,7 +2427,7 @@ class SelectFocusClans(UIWindow):
             container=self,
         )
         n = 0
-        for clan in game.clan.all_clans:
+        for clan in game.clan.all_other_clans:
             self.texts[clan.displayname] = pygame_gui.elements.UITextBox(
                 clan.displayname + "clan",
                 ui_scale(pygame.Rect(107, n * 27 + 38, -1, 25)),
@@ -2438,7 +2442,7 @@ class SelectFocusClans(UIWindow):
         self.checkboxes = {}
 
         n = 0
-        for clan in game.clan.all_clans:
+        for clan in game.clan.all_other_clans:
             box_type = "@unchecked_checkbox"
             if clan.displayname in game.clan.clans_in_focus:
                 box_type = "@checked_checkbox"
@@ -2455,13 +2459,13 @@ class SelectFocusClans(UIWindow):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if event.ui_element == self.back_button:
                 game.clan.clans_in_focus = []
-                game.all_screens["warrior den screen"].exit_screen()
-                game.all_screens["warrior den screen"].screen_switches()
+                game.all_screens[GameScreen.WARRIOR_DEN].exit_screen()
+                game.all_screens[GameScreen.WARRIOR_DEN].screen_switches()
                 self.kill()
             if event.ui_element == self.save_button:
-                game.all_screens["warrior den screen"].save_focus()
-                game.all_screens["warrior den screen"].exit_screen()
-                game.all_screens["warrior den screen"].screen_switches()
+                game.all_screens[GameScreen.WARRIOR_DEN].save_focus()
+                game.all_screens[GameScreen.WARRIOR_DEN].exit_screen()
+                game.all_screens[GameScreen.WARRIOR_DEN].screen_switches()
                 self.kill()
             if event.ui_element in self.checkboxes.values():
                 for clan_name, value in self.checkboxes.items():

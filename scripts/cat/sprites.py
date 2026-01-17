@@ -21,6 +21,46 @@ class Sprites:
     white_patches_tints = {}
     clan_symbols = []
 
+    with open(
+        "sprites/dicts/pose_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        POSE_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/collar_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        COLLAR_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/wild_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        WILD_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/plant_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        PLANT_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/scar_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        SCAR_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/scar_missing_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        SCAR_MISSING_PART_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/tortie_patches_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        TORTIE_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/white_patches_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        WHITE_DATA = ujson.loads(read_file.read())
+
     def __init__(self):
         """Class that handles and hold all spritesheets.
         Size is normally automatically determined by the size
@@ -36,6 +76,8 @@ class Sprites:
         self.blank_sprite = None
 
         self.load_tints()
+
+        self.sheet_layout = self.POSE_DATA["sheet_layout"]
 
     def load_tints(self):
         try:
@@ -63,7 +105,14 @@ class Sprites:
         self.spritesheets[name] = pygame.image.load(a_file).convert_alpha()
 
     def make_group(
-        self, spritesheet, pos, name, sprites_x=3, sprites_y=7, no_index=False
+        self,
+        spritesheet,
+        pos,
+        name,
+        sprites_x=None,
+        sprites_y=None,
+        no_index=False,
+        palettes: list = None,
     ):  # pos = ex. (2, 3), no single pixels
         """
         Divide sprites on a spritesheet into groups of sprites that are easily accessible
@@ -71,9 +120,15 @@ class Sprites:
         :param pos: (x,y) tuple of offsets. NOT pixel offset, but offset of other sprites
         :param name: Name of group being made
         :param sprites_x: default 3, number of sprites horizontally
-        :param sprites_y: default 3, number of sprites vertically
-        :param no_index: default False, set True if sprite name does not require cat pose index
+        :param sprites_y: default 7, number of sprites vertically
+        :param no_index: default False, set True if sprite name does not require cat pose index:
+        :param palettes: list of palette names
         """
+        # pulls the defaults from the pose_sprite_data.json file
+        if not sprites_x:
+            sprites_x = self.sheet_layout[0]
+        if not sprites_y:
+            sprites_y = self.sheet_layout[1]
 
         group_x_ofs = pos[0] * sprites_x * self.size
         group_y_ofs = pos[1] * sprites_y * self.size
@@ -105,8 +160,55 @@ class Sprites:
                         )
                     new_sprite = self.blank_sprite
 
-                self.sprites[full_name] = new_sprite
+                if palettes:
+                    self.apply_palettes(i, name, new_sprite, palettes)
+                else:
+                    self.sprites[full_name] = new_sprite
                 i += 1
+
+    def apply_palettes(
+        self, sprite_index: int, name: str, new_sprite, palette_names: list
+    ):
+        """
+        Creates sprites for each color palette variation
+        :param sprite_index: index of sprite
+        :param name: name of sprite
+        :param new_sprite: the sprite object to create variations of
+        :param palette_names: list of palette names
+        """
+        # first we create an array of our palette map
+        full_map = pygame.image.load(f"sprites/palettes/{name}_palette.png")
+        map_array = pygame.PixelArray(full_map)
+        # then create a dictionary associating the palette name with its row of the array
+        color_palettes = {}
+        palette_names = palette_names.copy()
+        palette_names.insert(0, "BASE")
+        for row in range(
+            0, map_array.shape[1]  # pylint: disable=unsubscriptable-object
+        ):
+            color_name = palette_names[row]
+            color_palettes.update(
+                {color_name: [full_map.unmap_rgb(px) for px in map_array[::, row]]}
+            )
+
+        base_palette = color_palettes["BASE"]
+
+        # now we recolor the sprite
+        for color_name, palette in color_palettes.items():
+            if color_name == "BASE":
+                continue
+            recolor_sprite = pygame.PixelArray(new_sprite.copy())
+            # we replace each base_palette color with it's matching index from the color_palette
+            for color_i, color in enumerate(palette):
+                recolor_sprite.replace(base_palette[color_i], color)
+            # convert back into a surface
+            _sprite = recolor_sprite.make_surface()
+            # add it to our sprite dict!
+            self.sprites[f"{name}_{color_name}{sprite_index}"] = _sprite
+            # close the pixel array now that we're done
+            recolor_sprite.close()
+
+        map_array.close()
 
     def load_all(self):
         # get the width and height of the spritesheet
@@ -182,18 +284,6 @@ class Sprites:
         self.make_group('genemod/foldlineart', (0, 0), 'foldlines')
         self.make_group('genemod/fold_curllineart', (0, 0), 'fold_curllines')
         self.make_group('genemod/curllineart', (0, 0), 'curllines')
-
-        # self.make_group('genemod/foldlineartdf', (0, 0), 'foldlineartdf')
-        # self.make_group('genemod/fold_curllineartdf', (0, 0), 'fold_curllineartdf')
-        # self.make_group('genemod/curllineartdf', (0, 0), 'curllineartdf')
-
-        # self.make_group('genemod/foldlineartur', (0, 0), 'foldlineartur')
-        # self.make_group('genemod/fold_curllineartur', (0, 0), 'fold_curllineartur')
-        # self.make_group('genemod/curllineartur', (0, 0), 'curllineartur')
-
-        # self.make_group('genemod/foldlineartdead', (0, 0), 'foldlineartdead')
-        # self.make_group('genemod/fold_curllineartdead', (0, 0), 'fold_curllineartdead')
-        # self.make_group('genemod/curllineartdead', (0, 0), 'curllineartdead')
 
         self.make_group('genemod/isolateears', (0, 0), 'isolateears')
         self.make_group('genemod/noears', (0, 0), 'noears')
@@ -280,6 +370,7 @@ class Sprites:
         self.make_group('Other/satin', (0, 0), 'satin', 1, 1)
         self.make_group('Other/salmiak', (0, 0), 'salmiak')
         self.make_group('Other/nosebridge', (0, 0), 'rednose')
+        self.make_group('Other/blue-tipped', (0, 0), 'BLUE-TIPPED')
 
 
         #genemod extra
@@ -298,25 +389,51 @@ class Sprites:
                 self.make_group('Other/eyes_full', (a, b), f'R{y} ; {x}/', sprites_y=6)
         
         self.make_group('Other/red_pupils', (0, 0), 'redpupils')
+        data_jsons = (
+            self.WHITE_DATA,
+            self.TORTIE_DATA,
+            self.SCAR_DATA,
+            self.SCAR_MISSING_PART_DATA,
+            self.PLANT_DATA,
+            self.WILD_DATA,
+            self.COLLAR_DATA,
+        )
+
+        # data jsons that have multiple associated spritesheets
+        multi_sheet_data = [
+            x for x in data_jsons if isinstance(x["spritesheet"], (list, dict))
+        ]
+
+        # COMPILING SPRITESHEETS
+        spritesheets = [
+            "fademask",
+            "fadestarclan",
+            "fadedarkforest",
+            "fadeunknownresidence",
+            "symbols",
+        ]
+
+        # separate from data_json list bc we need to handle it differently later
+        spritesheets.extend(self.POSE_DATA["spritesheet"])
+
+        for data in data_jsons:
+            if data in multi_sheet_data:
+                spritesheets.extend(data["spritesheet"])
+            else:
+                spritesheets.append(data["spritesheet"])
+
+        for x in spritesheets:
+            self.spritesheet(f"sprites/{x}.png", x)
 
         # Line art
-        self.make_group("lineart", (0, 0), "lines")
-        self.make_group("shadersnewwhite", (0, 0), "shaders")
-        self.make_group("lightingnew", (0, 0), "lighting")
-
-        self.make_group("lineartdead", (0, 0), "lineartdead")
-        self.make_group("lineartdf", (0, 0), "lineartdf")
-        self.make_group("lineartur", (0, 0), "lineartur")
-        self.make_group("line_sc_overlay", (0, 0), "sc_overlay")
-        self.make_group("line_ur_underlay", (0, 0), "ur_underlay")
-        self.make_group("line_ur_overlay", (0, 0), "ur_overlay")
-        self.make_group("gradient_ur", (0, 0), "gradient_ur")
+        for sheet in self.POSE_DATA["spritesheet"]:
+            self.make_group(sheet, (0, 0), sheet)
 
 
         if is_today(SpecialDate.APRIL_FOOLS):
-            self.make_group("aprilfoolslineart", (0, 0), "aprilfoolslines")
-            self.make_group("aprilfoolslineartdead", (0, 0), "aprilfoolslineartdead")
-            self.make_group("aprilfoolslineartdf", (0, 0), "aprilfoolslineartdf")
+            self.make_group("lineart_aprilfools", (0, 0), "aprilfoolslines")
+            self.make_group("lineart_sc_aprilfools", (0, 0), "aprilfoolslineartdead")
+            self.make_group("lineart_df_aprilfools", (0, 0), "aprilfoolslineartdf")
 
         # Fading Fog
         for i in range(0, 3):
@@ -325,181 +442,36 @@ class Sprites:
             self.make_group("fadedarkforest", (i, 0), f"fadedf{i}")
             self.make_group("fadeunknownresidence", (i, 0), f"fadeur{i}")
 
-        
-        # Define white patches
-        white_patches = [
-            [
-                "FULLWHITE",
-                "ANY",
-                "TUXEDO",
-                "LITTLE",
-                "COLOURPOINT",
-                "VAN",
-                "ANYTWO",
-                "MOON",
-                "PHANTOM",
-                "POWDER",
-                "BLEACHED",
-                "SAVANNAH",
-                "FADESPOTS",
-                "PEBBLESHINE",
-            ],
-            [
-                "EXTRA",
-                "ONEEAR",
-                "BROKEN",
-                "LIGHTTUXEDO",
-                "BUZZARDFANG",
-                "RAGDOLL",
-                "LIGHTSONG",
-                "VITILIGO",
-                "BLACKSTAR",
-                "PIEBALD",
-                "CURVED",
-                "PETAL",
-                "SHIBAINU",
-                "OWL",
-            ],
-            [
-                "TIP",
-                "FANCY",
-                "FRECKLES",
-                "RINGTAIL",
-                "HALFFACE",
-                "PANTSTWO",
-                "GOATEE",
-                "VITILIGOTWO",
-                "PAWS",
-                "MITAINE",
-                "BROKENBLAZE",
-                "SCOURGE",
-                "DIVA",
-                "BEARD",
-            ],
-            [
-                "TAIL",
-                "BLAZE",
-                "PRINCE",
-                "BIB",
-                "VEE",
-                "UNDERS",
-                "HONEY",
-                "FAROFA",
-                "DAMIEN",
-                "MISTER",
-                "BELLY",
-                "TAILTIP",
-                "TOES",
-                "TOPCOVER",
-            ],
-            [
-                "APRON",
-                "CAPSADDLE",
-                "MASKMANTLE",
-                "SQUEAKS",
-                "STAR",
-                "TOESTAIL",
-                "RAVENPAW",
-                "PANTS",
-                "REVERSEPANTS",
-                "SKUNK",
-                "KARPATI",
-                "HALFWHITE",
-                "APPALOOSA",
-                "DAPPLEPAW",
-            ],
-            [
-                "HEART",
-                "LILTWO",
-                "GLASS",
-                "MOORISH",
-                "SEPIAPOINT",
-                "MINKPOINT",
-                "SEALPOINT",
-                "MAO",
-                "LUNA",
-                "CHESTSPECK",
-                "WINGS",
-                "PAINTED",
-                "HEARTTWO",
-                "WOODPECKER",
-            ],
-            [
-                "BOOTS",
-                "MISS",
-                "COW",
-                "COWTWO",
-                "BUB",
-                "BOWTIE",
-                "MUSTACHE",
-                "REVERSEHEART",
-                "SPARROW",
-                "VEST",
-                "LOVEBUG",
-                "TRIXIE",
-                "SAMMY",
-                "SPARKLE",
-            ],
-            [
-                "RIGHTEAR",
-                "LEFTEAR",
-                "ESTRELLA",
-                "SHOOTINGSTAR",
-                "EYESPOT",
-                "REVERSEEYE",
-                "FADEBELLY",
-                "FRONT",
-                "BLOSSOMSTEP",
-                "PEBBLE",
-                "TAILTWO",
-                "BUDDY",
-                "BACKSPOT",
-                "EYEBAGS",
-            ],
-            [
-                "BULLSEYE",
-                "FINN",
-                "DIGIT",
-                "KROPKA",
-                "FCTWO",
-                "FCONE",
-                "MIA",
-                "SCAR",
-                "BUSTER",
-                "SMOKEY",
-                "HAWKBLAZE",
-                "CAKE",
-                "ROSINA",
-                "PRINCESS",
-            ],
-            ["LOCKET", "BLAZEMASK", "TEARS", "DOUGIE"],
-        ]
+        for data in data_jsons:
+            # collar accs
+            # this guy is special since it uses palette mapping
+            if data == self.COLLAR_DATA and self.COLLAR_DATA["palette_map"]:
+                spritesheet = self.COLLAR_DATA["spritesheet"]
+                for row, style_type in enumerate(self.COLLAR_DATA["style_data"]):
+                    for col, style in enumerate(style_type):
+                        self.make_group(
+                            spritesheet=spritesheet,
+                            pos=(col, row),
+                            name=f"{spritesheet}{style}",
+                            palettes=style_type[style],
+                        )
 
-        for row, patches in enumerate(white_patches):
-            for col, patch in enumerate(patches):
-                self.make_group('whitepatches', (col, row), patch)
-            
-        # tortiepatchesmasks
-        tortiepatchesmasks = [
-            ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'HALF', 'STREAK', 'MASK', 'SMOKE'],
-            ['MINIMALONE', 'MINIMALTWO', 'MINIMALTHREE', 'MINIMALFOUR', 'OREO', 'SWOOP', 'CHIMERA', 'CHEST', 'ARMTAIL',
-             'GRUMPYFACE'],
-            ['MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'SMUDGED', 'DAUB', 'EMBER', 'BRIE'],
-            ['ORIOLE', 'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'DAPPLENIGHT', 'BLANKET', 'BELOVED', 'BODY'],
-            ['SHILOH', 'FRECKLED', 'HEARTBEAT', 'CRYPTIC']
-        ]
+            # these have multiple sprite sheets, so are handled differently from the others
+            elif data in multi_sheet_data:
+                for spritesheet in data["spritesheet"]:
+                    self.load_sheet(spritesheet, data["sprite_list"])
 
-        for row, masks in enumerate(tortiepatchesmasks):
-            for col, mask in enumerate(masks):
-                self.make_group('tortiepatchesmasks', (col, row), f"{mask}")
-        self.make_group('Other/blue-tipped', (0, 0), 'BLUE-TIPPED')
+            # everything else
+            else:
+                self.load_sheet(data["spritesheet"], data["sprite_list"])
 
-        self.load_scars()
         self.load_symbols()
 
-    def load_scars(self):
+    def load_sheet(self, spritesheet: str, sprite_names: list[list[str]]):
         """
-        Loads scar sprites and puts them into groups.
+        Loads sheet data and creates sprite groups.
+        :param spritesheet: name of the spritesheet
+        :param sprite_names: list containing lists of sprite names for this spritesheet, each list is a single row of the sheet
         """
 
         # Define scars

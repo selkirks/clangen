@@ -25,6 +25,7 @@ from scripts.utility import (
     search_cats,
 )
 from .Screens import Screens
+from .enums import GameScreen
 from ..clan_package.settings import get_clan_setting
 from ..game_structure.game.switches import switch_set_value, switch_get_value, Switch
 from ..game_structure.screen_settings import MANAGER
@@ -118,7 +119,7 @@ class ChooseMateScreen(Screens):
             # Cat buttons list
             if event.ui_element == self.back_button:
                 self.selected_mate_index = 0
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif event.ui_element == self.toggle_mate:
                 if self.work_thread is not None and self.work_thread.is_alive():
                     return
@@ -211,7 +212,7 @@ class ChooseMateScreen(Screens):
                     return
 
                 switch_set_value(Switch.cat, event.ui_element.cat_object.ID)
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
 
     def screen_switches(self):
         """Sets up the elements that are always on the page"""
@@ -927,20 +928,13 @@ class ChooseMateScreen(Screens):
 
         del heading_rect
 
-        genelist = str(self.the_cat.phenotype.PhenotypeOutput(self.the_cat.phenotype.white_pattern, chimera=self.the_cat.chimerapheno)) + \
-            "\n" + str(self.the_cat.phenotype.ShowGenes(True)
-                       ) + "\n" + self.the_cat.phenotype.FormatSomatic()
-        if (self.the_cat.chimerapheno):
-            genelist += "\n\n" + str(self.the_cat.chimerapheno.PhenotypeOutput(self.the_cat.chimerapheno.white_pattern,
-                                                                               chimera=self.the_cat.chimerapheno)) + "\n" + str(self.the_cat.chimerapheno.ShowGenes(True))
-
         self.current_cat_elements["image"] = UISpriteButton(
             ui_scale(pygame.Rect((50, 150), (150, 150))),
             pygame.transform.scale(
                 self.the_cat.sprite, ui_scale_dimensions((150, 150))
             ),
             object_id="#offspring_predict_cat",
-            tool_tip_text=genelist,
+            tool_tip_text=self.the_cat.create_genelist(),
         )
         name = str(self.the_cat.name)  # get name
         if 11 <= len(name):  # check name length
@@ -1093,20 +1087,13 @@ class ChooseMateScreen(Screens):
             anchors={"centerx": "centerx"},
         )
 
-        genelist = str(self.selected_cat.phenotype.PhenotypeOutput(self.selected_cat.phenotype.white_pattern, chimera=self.selected_cat.chimerapheno)) + \
-            "\n" + str(self.selected_cat.phenotype.ShowGenes(True)
-                       ) + "\n" + self.selected_cat.phenotype.FormatSomatic()
-        if (self.selected_cat.chimerapheno):
-            genelist += "\n\n" + str(self.selected_cat.chimerapheno.PhenotypeOutput(self.selected_cat.chimerapheno.white_pattern,
-                                                                                    chimera=self.selected_cat.chimerapheno)) + "\n" + str(self.selected_cat.chimerapheno.ShowGenes(True))
-
         self.selected_cat_elements["image"] = UISpriteButton(
             ui_scale(pygame.Rect((600, 150), (150, 150))),
             pygame.transform.scale(
                 self.selected_cat.sprite, ui_scale_dimensions((150, 150))
             ),
             object_id="#offspring_predict_cat",
-            tool_tip_text=genelist,
+            tool_tip_text=self.selected_cat.create_genelist(),
         )
         name = str(self.selected_cat.name)
         if 11 <= len(name):  # check name length
@@ -1284,7 +1271,7 @@ class ChooseMateScreen(Screens):
             and self.the_cat.is_potential_mate(
                 i, for_love_interest=False, age_restriction=False, ignore_no_mates=True
             )
-            and i.status.group == self.the_cat.status.group
+            and i.status.group_ID == self.the_cat.status.group_ID
             and i.ID not in self.the_cat.mate
             and (not self.single_only or not i.mate)
             and (

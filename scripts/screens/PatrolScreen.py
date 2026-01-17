@@ -23,6 +23,7 @@ from scripts.utility import (
     ui_scale_offset,
 )
 from .Screens import Screens
+from .enums import GameScreen
 from ..clan_package.settings import get_clan_setting
 from ..game_structure import image_cache, constants
 from ..game_structure.game.settings import game_setting_get
@@ -91,7 +92,7 @@ class PatrolScreen(Screens):
             if event.ui_element in self.choose_group_buttons.values():
                 self.choose_living_dropdown.close()
                 self.current_clan = event.ui_element.text.replace("Clan", "")
-                self.current_clan = [c for c in game.clan.all_clans if c.displayname == self.current_clan]
+                self.current_clan = [c for c in game.clan.all_other_clans if c.displayname == self.current_clan]
                 if self.current_clan:
                     self.current_clan = self.current_clan[0]
                 else:
@@ -109,7 +110,7 @@ class PatrolScreen(Screens):
 
         elif event.type == pygame.KEYDOWN and game_setting_get("keybinds"):
             if event.key == pygame.K_LEFT:
-                self.change_screen("list screen")
+                self.change_screen(GameScreen.LIST)
             # elif event.key == pygame.K_RIGHT:
             # self.change_screen('list screen')
 
@@ -321,14 +322,14 @@ class PatrolScreen(Screens):
             self.open_choose_cats_screen()
         elif event.ui_element == self.elements["clan_return"]:
             self.in_progress_data = None
-            self.change_screen("camp screen")
+            self.change_screen(GameScreen.CAMP)
 
     def screen_switches(self):
         super().screen_switches()
         self.set_disabled_menu_buttons(["patrol_screen"])
         self.update_heading_text(f"{game.clan.displayname}Clan")
 
-        if not self.current_clan:
+        if not self.current_clan or self.current_clan.group_ID == game.clan.group_ID:
             self.current_clan = game.clan
         if game.clan.clancount == 'multiclan':
             self.event_screen_container = pygame_gui.core.UIContainer(
@@ -365,7 +366,7 @@ class PatrolScreen(Screens):
                 manager=MANAGER,
             )
             y_pos = 32
-            for clan in game.clan.all_clans:
+            for clan in game.clan.all_other_clans:
                 self.choose_group_buttons[clan.displayname] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((0, y_pos), (190, 34))),
                     clan.displayname + "Clan",
@@ -879,7 +880,7 @@ class PatrolScreen(Screens):
 
         if self.display_text is None:
             # No patrol events were found.
-            self.change_screen("camp screen")
+            self.change_screen(GameScreen.CAMP)
             return
 
         # Layout images
@@ -1081,7 +1082,7 @@ class PatrolScreen(Screens):
                 the_cat.in_camp
                 and the_cat.ID not in game.patrolled
                 and the_cat.status.rank.is_allowed_to_patrol(get_clan_setting("allow_mediator_patrols"))
-                and the_cat.status.group == self.current_clan.enum
+                and the_cat.status.group_ID == self.current_clan.group_ID
                 and the_cat not in self.current_patrol
                 and not the_cat.not_working()
             ):

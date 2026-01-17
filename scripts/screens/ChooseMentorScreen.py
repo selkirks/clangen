@@ -18,6 +18,7 @@ from scripts.utility import (
     shorten_text_to_fit,
 )
 from .Screens import Screens
+from .enums import GameScreen
 from ..game_structure.game.switches import switch_set_value, switch_get_value, Switch
 from ..cat.enums import CatRank
 from ..game_structure.screen_settings import MANAGER
@@ -81,7 +82,7 @@ class ChooseMentorScreen(Screens):
                 self.update_buttons()
                 self.update_selected_cat()
             elif event.ui_element == self.back_button:
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif event.ui_element == self.next_cat_button:
                 if isinstance(Cat.fetch_cat(self.next_cat), Cat):
                     switch_set_value(Switch.cat, self.next_cat)
@@ -637,21 +638,21 @@ class ChooseMentorScreen(Screens):
         potential_warrior_mentors = [
             cat
             for cat in Cat.all_cats_list
-            if cat.status.group == self.the_cat.status.group
+            if cat.status.group_ID == self.the_cat.status.group_ID
             and cat.status.rank.is_any_adult_warrior_like_rank()
         ]
         valid_warrior_mentors = []
         potential_medcat_mentors = [
             cat
             for cat in Cat.all_cats_list
-            if cat.status.group == self.the_cat.status.group
+            if cat.status.group_ID == self.the_cat.status.group_ID
             and cat.status.rank == CatRank.MEDICINE_CAT
         ]
         valid_medcat_mentors = []
         potential_mediator_mentors = [
             cat
             for cat in Cat.all_cats_list
-            if cat.status.group == self.the_cat.status.group and cat.status.rank == CatRank.MEDIATOR
+            if cat.status.group_ID == self.the_cat.status.group_ID and cat.status.rank == CatRank.MEDIATOR
         ]
         valid_mediator_mentors = []
 

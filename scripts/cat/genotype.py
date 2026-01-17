@@ -1,4 +1,4 @@
-from random import choice, randint, random
+from random import choice, choices, randint, random
 import json
 from scripts.cat.breed_functions import breed_functions
 from scripts.special_dates import SpecialDate, is_today
@@ -126,6 +126,7 @@ class Genotype:
         self.shoulder_height = 0
         self.body_label = ""
         self.height_label = ""
+        self.growth_pattern = ""
 
         self.refraction = False
         self.pigmentation = False
@@ -240,8 +241,9 @@ class Genotype:
         self.somatic = json.loads(jsonstring.get("somatic", "{}")) if isinstance(jsonstring.get("somatic", "{}"), str) else jsonstring.get("somatic", {})
         self.body_value = jsonstring.get("body_type", 0)
         self.height_value = jsonstring.get("height", 0)
-        self.shoulder_height = jsonstring.get("shoulder_height", '')
+        self.shoulder_height = jsonstring.get("shoulder_height", 0)
         self.body_label = jsonstring.get("body_type_label", '')
+        self.growth_pattern = jsonstring.get("growth_pattern", "average")
 
         self.GeneSort()
         self.PolyEval()
@@ -335,6 +337,7 @@ class Genotype:
             "body_type_label" : self.body_label,
             "height" : self.height_value,
             "shoulder_height" : self.shoulder_height,
+            "growth_pattern": self.growth_pattern,
 
             "breeds" : self.breeds,
             "somatic" : self.somatic,
@@ -1363,10 +1366,12 @@ class Genotype:
     
     def VerifyHeight(self):
         height = self.shoulder_height
+        if self.growth_pattern == "runt":
+            height /= 0.85
         if self.munch[0] == 'Mk':
             height *= 1.5
         if 'Y' in self.sexgene[0]:
-            height /= 1.1
+            height /= 1.075
         height = round(height, 2)
 
         if height <= 5.00:
@@ -1546,46 +1551,56 @@ class Genotype:
         if index == 0:
             self.shoulder_height = 5.00
         elif index == 1:
-            value = self.height_value - self.height_indexes[index-1]
+            value = self.height_value - self.height_indexes[index-1]-1
             step = (6-5.01) / self.height_ranges[index]
-            self.shoulder_height = 5.01 + value * (random() * step)
+            self.shoulder_height = 5.01 + value * step + (random() * step)
         elif index == 2:
-            value = self.height_value - self.height_indexes[index-1]
+            value = self.height_value - self.height_indexes[index-1]-1
             step = (7.5-6.01) / self.height_ranges[index]
-            self.shoulder_height = 6.01 + value * (random() * step)
+            self.shoulder_height = 6.01 + value * step + (random() * step)
         elif index == 3:
-            value = self.height_value - self.height_indexes[index-1]
+            value = self.height_value - self.height_indexes[index-1]-1
             step = (8.99-7.51) / self.height_ranges[index]
-            self.shoulder_height = 7.51 + value * (random() * step)
+            self.shoulder_height = 7.51 + value * step + (random() * step)
         elif index == 4:
-            value = self.height_value - self.height_indexes[index-1]
+            value = self.height_value - self.height_indexes[index-1]-1
             step = (11-9) / self.height_ranges[index]
-            self.shoulder_height = 9 + value * (random() * step)
+            self.shoulder_height = 9 + value * step + (random() * step)
         elif index == 5:
-            value = self.height_value - self.height_indexes[index-1]
+            value = self.height_value - self.height_indexes[index-1]-1
             step = (12.49-11.01) / self.height_ranges[index]
-            self.shoulder_height = 11.01 + value * (random() * step)
+            self.shoulder_height = 11.01 + value * step + (random() * step)
         elif index == 6:
-            value = self.height_value - self.height_indexes[index-1]
+            value = self.height_value - self.height_indexes[index-1]-1
             step = (13.49-12.50) / self.height_ranges[index]
-            self.shoulder_height = 12.50 + value * (random() * step)
+            self.shoulder_height = 12.50 + value * step + (random() * step)
         elif index == 7:
-            value = self.height_value - self.height_indexes[index-1]
+            value = self.height_value - self.height_indexes[index-1]-1
             step = (14.49-13.50) / self.height_ranges[index]
-            self.shoulder_height = 13.50 + value * (random() * step)
+            self.shoulder_height = 13.50 + value * step + (random() * step)
         elif index == 8:
-            value = self.height_value - self.height_indexes[index-1]
+            value = self.height_value - self.height_indexes[index-1]-1
             step = (14.99-14.50) / self.height_ranges[index]
-            self.shoulder_height = 14.50 + value * (random() * step)
+            self.shoulder_height = 14.50 + value * step + (random() * step)
         elif index == 9:
             self.shoulder_height = 15.00
         
         if 'Y' in self.sexgene:
-            self.shoulder_height *= 1.1
+            self.shoulder_height *= 1.075
         elif len(self.sexgene) == 1:
             self.shoulder_height *= 0.9
         if self.munch[0] == 'Mk':
             self.shoulder_height /= 1.5
+
+        weights = [1, 5, 12, 5, 3] if height_types.index(self.height_label) > 5 else [1, 1, 12, 4, 4]
+        self.growth_pattern = choices(["runt", "slow", "average", "big-kitten", "small-kitten"], weights)[0]
+        index = next((n for n in range(10) if self.height_value <= self.height_indexes[n]))
+        self.height_label = height_types[index]
+
+        if self.growth_pattern == "runt":
+            self.shoulder_height *= 0.85
+            if self.shoulder_height <= 5:
+                self.shoulder_height = 5
         self.shoulder_height = round(self.shoulder_height, 2)
     
     def GeneSort(self):

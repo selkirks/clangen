@@ -27,6 +27,7 @@ from scripts.game_structure.ui_elements import (
 )
 from scripts.game_structure.windows import GameOver
 from scripts.screens.Screens import Screens
+from scripts.screens.enums import GameScreen
 from scripts.ui.generate_box import BoxStyles, get_box
 from scripts.ui.generate_button import get_button_dict, ButtonStyles
 from scripts.ui.icon import Icon
@@ -150,10 +151,10 @@ class EventsScreen(Screens):
             elif element in self.cat_profile_buttons:
                 self.save_scroll_position()
                 switch_set_value(Switch.cat, element.cat_id)
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif element in self.choose_group_buttons.values():
                 self.choose_living_dropdown.close()
-                self.current_clan = next(filter(lambda c: c.displayname == element.text.replace("Clan", ""), game.clan.all_clans), game.clan).enum
+                self.current_clan = next(filter(lambda c: c.displayname == element.text.replace("Clan", ""), game.clan.all_other_clans), game.clan).group_ID
                 self.change_clan()
                 self.timeskip_done(True)
             else:
@@ -167,10 +168,10 @@ class EventsScreen(Screens):
             if event.type == pygame.KEYDOWN:
                 # LEFT ARROW
                 if event.key == pygame.K_LEFT:
-                    self.change_screen("patrol screen")
+                    self.change_screen(GameScreen.PATROL)
                 # RIGHT ARROW
                 elif event.key == pygame.K_RIGHT:
-                    self.change_screen("camp screen")
+                    self.change_screen(GameScreen.CAMP)
                 # DOWN AND UP ARROW
                 elif event.key == pygame.K_DOWN or event.key == pygame.K_UP:
                     self.handle_tab_select(event.key)
@@ -178,7 +179,7 @@ class EventsScreen(Screens):
                     self.handle_tab_switch(self.selected_display)
 
     def change_clan(self):
-        curr_clan = next(filter(lambda c: c.enum == self.current_clan, game.clan.all_clans), game.clan)
+        curr_clan = next(filter(lambda c: c.group_ID == self.current_clan, game.clan.all_other_clans), game.clan)
         
         self.clan_info["symbol"].set_image(pygame.transform.scale(
                     clan_symbol_sprite(curr_clan), ui_scale_dimensions((100, 100))
@@ -274,9 +275,9 @@ class EventsScreen(Screens):
             manager=MANAGER,
         )
 
-        if self.current_clan not in [game.clan.enum] + [c for c in game.clan.other_clans]:
-            self.current_clan = game.clan.enum
-        curr_clan = next(filter(lambda c: c.enum == self.current_clan, game.clan.all_clans), game.clan)
+        if self.current_clan not in [game.clan.group_ID] + [c.group_ID for c in game.clan.all_other_clans]:
+            self.current_clan = game.clan.group_ID
+        curr_clan = next(filter(lambda c: c.group_ID == self.current_clan, game.clan.all_other_clans), game.clan)
 
         self.clan_info["symbol"] = pygame_gui.elements.UIImage(
             ui_scale(pygame.Rect((227, 105), (100, 100))),
@@ -330,7 +331,7 @@ class EventsScreen(Screens):
 
         if game.clan.clancount == 'multiclan':
             if not self.current_clan:
-                self.current_clan = game.clan.enum
+                self.current_clan = game.clan.group_ID
             self.choose_group_button = UISurfaceImageButton(
                 ui_scale(pygame.Rect((500, 218), (190, 34))),
                 "screens.list.choose_group",
@@ -349,7 +350,7 @@ class EventsScreen(Screens):
                 starting_height=1,
             )
             self.living_groups_container.change_layer(10)
-            self.choose_group_buttons[game.clan.enum] = UISurfaceImageButton(
+            self.choose_group_buttons[game.clan.group_ID] = UISurfaceImageButton(
                 ui_scale(pygame.Rect((0, 0), (190, 34))),
                 game.clan.displayname + "Clan",
                 get_button_dict(ButtonStyles.DROPDOWN, (190, 34)),
@@ -359,8 +360,8 @@ class EventsScreen(Screens):
                 manager=MANAGER,
             )
             y_pos = 32
-            for clan in game.clan.all_clans:
-                self.choose_group_buttons[clan.enum] = UISurfaceImageButton(
+            for clan in game.clan.all_other_clans:
+                self.choose_group_buttons[clan.group_ID] = UISurfaceImageButton(
                     ui_scale(pygame.Rect((0, y_pos), (190, 34))),
                     clan.displayname + "Clan",
                     get_button_dict(ButtonStyles.DROPDOWN, (190, 34)),
@@ -628,7 +629,7 @@ class EventsScreen(Screens):
         """
 
         if not self.current_clan:
-            self.current_clan = game.clan.enum
+            self.current_clan = game.clan.group_ID
 
         self.all_events = [
             x for x in game.cur_events_list if "interaction" not in x.types 
@@ -831,8 +832,8 @@ class EventsScreen(Screens):
 
         if not clanswitch:
             if get_living_clan_cat_count(Cat) == 0:
-                GameOver("events screen")
-            self.current_clan = game.clan.enum
+                GameOver(GameScreen.EVENTS)
+            self.current_clan = game.clan.group_ID
             self.change_clan()
 
         self.update_display_events_lists()

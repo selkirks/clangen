@@ -109,7 +109,7 @@ class PredictOffspringScreen(Screens):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             
             if event.ui_element == self.back_button:
-                self.change_screen("profile screen")
+                self.change_screen("profile_screen")
                 
             elif event.ui_element == self.predict_button:
                 self.predicted_offspring = {}
@@ -156,20 +156,13 @@ class PredictOffspringScreen(Screens):
                     
                     mate_index = self.possible_mates_names.index(selected_option)
                     self.selected_mate = self.possible_mates[mate_index-1]
-                    genelist = str(self.selected_mate.phenotype.PhenotypeOutput(self.selected_mate.phenotype.white_pattern, chimera=self.selected_mate.chimerapheno)) + \
-                        "\n" + str(self.selected_mate.phenotype.ShowGenes(True)
-                                   ) + "\n" + self.selected_mate.phenotype.FormatSomatic()
-                    if (self.selected_mate.chimerapheno):
-                        genelist += "\n\n" + str(self.selected_mate.chimerapheno.PhenotypeOutput(self.selected_mate.chimerapheno.white_pattern,
-                                                    chimera=self.selected_mate.chimerapheno)) + "\n" + str(self.selected_mate.chimerapheno.ShowGenes(True))
-
                     self.selected_mate_elements["image"] = UISpriteButton(
                         ui_scale(pygame.Rect((540, 130), (150, 150))),
                         pygame.transform.scale(
                             self.selected_mate.sprite, ui_scale_dimensions((150, 150))
                         ),
                         object_id="#offspring_predict_cat",
-                        tool_tip_text=genelist,
+                        tool_tip_text=self.selected_mate.create_genelist(),
                     )
                 
                     
@@ -199,20 +192,13 @@ class PredictOffspringScreen(Screens):
 
         self.update_potential_mates_container()
 
-        genelist = str(self.selected_cat.phenotype.PhenotypeOutput(self.selected_cat.phenotype.white_pattern, chimera=self.selected_cat.chimerapheno)) + \
-            "\n" + str(self.selected_cat.phenotype.ShowGenes(True)
-                       ) + "\n" + self.selected_cat.phenotype.FormatSomatic()
-        if (self.selected_cat.chimerapheno):
-            genelist += "\n\n" + str(self.selected_cat.chimerapheno.PhenotypeOutput(self.selected_cat.chimerapheno.white_pattern,
-                                                                            chimera=self.selected_cat.chimerapheno)) + "\n" + str(self.selected_cat.chimerapheno.ShowGenes(True))
-        
         self.selected_cat_elements["selected_image"] = UISpriteButton(
             ui_scale(pygame.Rect((70, 150), (200, 200))),
             pygame.transform.scale(
                 self.selected_cat.sprite, ui_scale_dimensions((200, 200))
             ),
             object_id="#offspring_predict_cat",
-            tool_tip_text=genelist,
+            tool_tip_text=self.selected_cat.create_genelist(),
         )
         
         self.predict_button = UISurfaceImageButton(
@@ -223,6 +209,26 @@ class PredictOffspringScreen(Screens):
             manager=MANAGER,
         )
         self.selected_mate = None
+
+        if self.selected_cat.mate:
+            selected_option = str(Cat.fetch_cat(self.selected_cat.mate[0]).name).lower()
+            try:
+                mate_index = self.possible_mates_names.index(selected_option)
+                self.selected_mate = self.possible_mates[mate_index-1]
+                self.selected_mate_elements["image"] = UISpriteButton(
+                    ui_scale(pygame.Rect((540, 130), (150, 150))),
+                    pygame.transform.scale(
+                        self.selected_mate.sprite, ui_scale_dimensions(
+                            (150, 150))
+                    ),
+                    object_id="#offspring_predict_cat",
+                    tool_tip_text=self.selected_mate.create_genelist(),
+                )
+                self.mate_dropdown.kill()
+                self.mate_dropdown = create_dropdown((555, 295), (155, 40), create_options_list(self.possible_mates_names, "upper"),
+                                                    get_selected_option(selected_option, "upper"))
+            except:
+                pass
         
         heading_rect = ui_scale(pygame.Rect((0, 20), (400, -1)))
         self.selected_cat_elements["heading"] = pygame_gui.elements.UITextBox(
@@ -305,20 +311,13 @@ class PredictOffspringScreen(Screens):
         indey = 0
     
         for offspring in self.predicted_offspring:
-            genelist = str(offspring.phenotype.PhenotypeOutput(offspring.phenotype.white_pattern, chimera=offspring.chimerapheno)) + \
-                "\n" + str(offspring.phenotype.ShowGenes(True)
-                           ) + "\n" + offspring.phenotype.FormatSomatic()
-            if (offspring.chimerapheno):
-                genelist += "\n\n" + str(offspring.chimerapheno.PhenotypeOutput(offspring.chimerapheno.white_pattern,
-                                        chimera=offspring.chimerapheno)) + "\n" + str(offspring.chimerapheno.ShowGenes(True))
-
             self.predicted_offspring_elements["offspring" + str(index) + str(indey)] = UISpriteButton(
-                    ui_scale(pygame.Rect((105 + (index*120), 395 + indey), (100, 100))),
-                    pygame.transform.scale(
-                        offspring.sprite, ui_scale_dimensions((100, 100))
-                    ),
-                    object_id="#offspring_predict_cat",
-                    tool_tip_text=genelist,
+                ui_scale(pygame.Rect((105 + (index*120), 395 + indey), (100, 100))),
+                pygame.transform.scale(
+                    offspring.sprite, ui_scale_dimensions((100, 100))
+                ),
+                object_id="#offspring_predict_cat",
+                tool_tip_text=offspring.create_genelist(),
             )
 
             if index < 4:
@@ -372,12 +371,13 @@ class PredictOffspringScreen(Screens):
             i
             for i in Cat.all_cats_list
             if i.is_potential_mate(self.selected_cat, for_love_interest=False, age_restriction=False, ignore_no_mates=True, outsider=True)
-            and (i.status.group == self.selected_cat.status.group or self.include_outsiders)
+            and (i.status.group_ID == self.selected_cat.status.group_ID or self.include_outsiders)
             and "sterile" not in i.permanent_condition
             and (get_clan_setting("same sex birth") or xor('Y' in i.phenotype.sexgene, 'Y' in self.selected_cat.phenotype.sexgene))
         ]
 
         self.possible_mates = search_cats(search_text, self.possible_mates, self.search_genotype)
+        self.possible_mates.sort(key=lambda x: str(x.name))
 
         self.possible_mates_names = ["None"]
         for cat in self.possible_mates:

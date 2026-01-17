@@ -20,6 +20,7 @@ from scripts.utility import (
     adjust_list_text,
 )
 from .Screens import Screens
+from .enums import GameScreen
 from ..game_structure.game.settings import game_setting_get
 from ..game_structure.game.switches import switch_set_value, switch_get_value, Switch
 from ..cat.enums import CatRank
@@ -40,7 +41,7 @@ class RoleScreen(Screens):
             self.mute_button_pressed(event)
 
             if event.ui_element == self.back_button:
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif event.ui_element == self.next_cat_button:
                 if isinstance(Cat.fetch_cat(self.next_cat), Cat):
                     switch_set_value(Switch.cat, self.next_cat)
@@ -54,7 +55,7 @@ class RoleScreen(Screens):
                 else:
                     print("invalid previous cat", self.previous_cat)
             elif event.ui_element == self.promote_leader:
-                clan = self.the_cat.status.group.fetch_clan_object(game.clan)
+                clan = self.the_cat.status.fetch_clan_object(game.clan)
                 if self.the_cat == clan.deputy:
                     clan.deputy = None
                 clan.new_leader(self.the_cat)
@@ -62,7 +63,7 @@ class RoleScreen(Screens):
                     Cat.sort_cats()
                 self.update_selected_cat()
             elif event.ui_element == self.promote_deputy:
-                self.the_cat.status.group.fetch_clan_object(game.clan).deputy = self.the_cat
+                self.the_cat.status.fetch_clan_object(game.clan).deputy = self.the_cat
                 self.the_cat.rank_change(CatRank.DEPUTY, resort=True)
                 self.update_selected_cat()
             elif event.ui_element == self.switch_warrior:
@@ -91,7 +92,7 @@ class RoleScreen(Screens):
 
         elif event.type == pygame.KEYDOWN and game_setting_get("keybinds"):
             if event.key == pygame.K_ESCAPE:
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif event.key == pygame.K_RIGHT:
                 switch_set_value(Switch.cat, self.next_cat)
                 self.update_selected_cat()
@@ -329,14 +330,14 @@ class RoleScreen(Screens):
     def update_disabled_buttons(self):
         self.update_previous_next_cat_buttons()
 
-        clan = self.the_cat.status.group.fetch_clan_object(game.clan)
+        clan = self.the_cat.status.fetch_clan_object(game.clan)
         if clan.leader:
-            leader_invalid = clan.leader.status.group != self.the_cat.status.group
+            leader_invalid = clan.leader.status.group_ID != self.the_cat.status.group_ID
         else:
             leader_invalid = True
 
         if clan.deputy:
-            deputy_invalid = clan.deputy.status.group != self.the_cat.status.group
+            deputy_invalid = clan.deputy.status.group_ID != self.the_cat.status.group_ID
         else:
             deputy_invalid = True
 
@@ -532,7 +533,7 @@ class RoleScreen(Screens):
         else:
             output = "screens.role.blurb_unknown"
 
-        return i18n.t(output, name=self.the_cat.name, clan=self.the_cat.status.group.fetch_clan_object().displayname)
+        return i18n.t(output, name=self.the_cat.name, clan=self.the_cat.status.fetch_clan_object().displayname)
 
     def exit_screen(self):
         self.back_button.kill()

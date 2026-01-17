@@ -17,6 +17,7 @@ from scripts.game_structure.ui_elements import (
 )
 from scripts.game_structure.windows import RelationshipLog
 from scripts.screens.Screens import Screens
+from scripts.screens.enums import GameScreen
 from scripts.utility import (
     get_text_box_theme,
     ui_scale,
@@ -85,13 +86,13 @@ class RelationshipScreen(Screens):
                 self.inspect_cat = event.ui_element.return_cat_object()
                 self.update_inspected_relation()
             elif event.ui_element == self.back_button:
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif event.ui_element == self.switch_focus_button:
                 switch_set_value(Switch.cat, self.inspect_cat.ID)
                 self.update_focus_cat()
             elif event.ui_element == self.view_profile_button:
                 switch_set_value(Switch.cat, self.inspect_cat.ID)
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif event.ui_element == self.next_cat_button:
                 if isinstance(Cat.fetch_cat(self.next_cat), Cat):
                     switch_set_value(Switch.cat, self.next_cat)
@@ -425,7 +426,7 @@ class RelationshipScreen(Screens):
         else:
             self.all_relations = (list(self.the_cat.relationships.values()).copy() + blank_relations).sorted(key=lambda x: x.cat_to)
 
-        self.all_relations = [rel for rel in self.all_relations if rel.cat_to.status.is_outsider or rel.cat_from.status.is_outsider or self.the_cat.status.group in rel.cat_to.status.all_groups]
+        self.all_relations = [rel for rel in self.all_relations if rel.cat_to.status.is_outsider or rel.cat_from.status.is_outsider or self.the_cat.status.group_ID in rel.cat_to.status.all_groups]
 
         self.focus_cat_elements["header"] = pygame_gui.elements.UITextBox(
             "screens.relationship.heading",

@@ -24,6 +24,7 @@ from scripts.game_structure.ui_elements import (
 from scripts.utility import get_text_box_theme, ui_scale, ui_scale_blit, ui_scale_offset
 from scripts.utility import ui_scale_dimensions
 from .Screens import Screens
+from .enums import GameScreen
 from .screens_core.screens_core import rebuild_den_dropdown
 from ..cat import save_load
 from ..cat.enums import CatRank
@@ -155,6 +156,10 @@ class MakeClanScreen(Screens):
         self.deputy = None
         self.med_cat = None
         self.members = []
+        
+        switch_set_value(
+            Switch.disallowed_symbol_tags, []
+        )
 
         # Buttons that appear on every screen.
         self.menu_warning = pygame_gui.elements.UITextBox(
@@ -184,7 +189,7 @@ class MakeClanScreen(Screens):
             if event.ui_element == self.main_menu:
                 if switch_get_value(Switch.clan_list):
                     load_clan_settings()
-                self.change_screen("start screen")
+                self.change_screen(GameScreen.START)
             if self.sub_screen == "game mode":
                 self.handle_game_mode_event(event)
             if self.sub_screen == "clan count mode":
@@ -216,7 +221,7 @@ class MakeClanScreen(Screens):
             elif self.sub_screen == "saved screen" and (
                 event.key == pygame.K_RETURN or event.key == pygame.K_RIGHT
             ):
-                self.change_screen("start screen")
+                self.change_screen(GameScreen.START)
 
     def handle_game_mode_event(self, event):
         """Handle events for the game mode screen"""
@@ -269,7 +274,7 @@ class MakeClanScreen(Screens):
     
     def handle_game_mode_key(self, event):
         if event.key == pygame.K_ESCAPE:
-            self.change_screen("start screen")
+            self.change_screen(GameScreen.START)
         elif event.key == pygame.K_DOWN:
             if self.game_mode == "classic":
                 self.game_mode = "expanded"
@@ -309,7 +314,7 @@ class MakeClanScreen(Screens):
 
     def handle_name_clan_key(self, event):
         if event.key == pygame.K_ESCAPE:
-            self.change_screen("start screen")
+            self.change_screen(GameScreen.START)
         elif event.key == pygame.K_LEFT:
             if not self.elements["name_entry"].is_focused:
                 self.clan_name = ""
@@ -575,7 +580,7 @@ class MakeClanScreen(Screens):
 
     def handle_saved_clan_event(self, event):
         if event.ui_element == self.elements["continue"]:
-            self.change_screen("camp screen")
+            self.change_screen(GameScreen.CAMP)
 
     def exit_screen(self):
         self.main_menu.kill()
@@ -1127,7 +1132,7 @@ class MakeClanScreen(Screens):
 
         if self.sub_screen == "choose leader":
             self.elements["cat_name"].set_text(
-                str(selected.name) + " --> " + selected.name.prefix + "star"
+                str(selected.name) + " --> " + selected.name.prefix + selected.name.names_dict["special_suffixes"].get("leader", "star")
             )
         else:
             self.elements["cat_name"].set_text(str(selected.name))
@@ -1162,6 +1167,9 @@ class MakeClanScreen(Screens):
                         game.choose_cats[u].sprite, ui_scale_dimensions((150, 150))
                     ),
                     cat_object=game.choose_cats[u],
+                    object_id="#offspring_predict_cat",
+                    tool_tip_text=selected.create_genelist(),
+                    manager=MANAGER,
                 )
             elif (
                 game.choose_cats[u]
@@ -1194,6 +1202,8 @@ class MakeClanScreen(Screens):
                         game.choose_cats[u].sprite, ui_scale_dimensions((150, 150))
                     ),
                     cat_object=game.choose_cats[u],
+                    object_id="#offspring_predict_cat",
+                    tool_tip_text=selected.create_genelist(),
                     manager=MANAGER,
                 )
             elif (

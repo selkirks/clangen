@@ -26,6 +26,8 @@ import time
 from importlib import reload
 from importlib.util import find_spec
 
+from scripts.screens.enums import GameScreen
+
 if not getattr(sys, "frozen", False):
     requiredModules = [
         "ujson",
@@ -238,7 +240,7 @@ def load_data():
             scripts.screens.screens_core.screens_core.rebuild_core()
         except Exception as e:
             logging.exception("File failed to load")
-            if switch_get_value(Switch.error_message) is None:
+            if not switch_get_value(Switch.error_message):
                 switch_set_value(
                     Switch.error_message, "There was an error loading the cats file!"
                 )
@@ -313,6 +315,9 @@ def load_game():
     game.patrolled.clear()
     game.clan = None
     switch_set_value(Switch.switch_clan, False)
+    switch_set_value(
+        Switch.error_message, ""
+    )
 
     finished_loading = False
     loading_thread = threading.Thread(target=load_data)
@@ -340,7 +345,7 @@ AllScreens.start_screen.screen_switches()
 # dev screen info now lives in scripts/screens/screens_core
 
 fps = switch_get_value(Switch.fps)
-music_manager.check_music("start screen")
+music_manager.check_music(GameScreen.START)
 
 if game_setting_get("custom cursor"):
     MANAGER.set_active_cursor(constants.CUSTOM_CURSOR)
@@ -377,11 +382,10 @@ while 1:
             if (
                 switch_get_value(Switch.cur_screen)
                 in (
-                    "start screen",
-                    "switch clan screen",
-                    "settings screen",
-                    "info screen",
-                    "make clan screen",
+                    GameScreen.START,
+                    GameScreen.SWITCH_CLAN,
+                    GameScreen.SETTINGS,
+                    GameScreen.MAKE_CLAN,
                 )
                 or not game.clan
             ):

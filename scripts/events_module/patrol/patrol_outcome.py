@@ -291,7 +291,7 @@ class PatrolOutcome:
 
         results.append(
             unpack_rel_block(
-                Cat, self.relationship_effects, patrol, stat_cat=self.stat_cat
+                Cat, self.relationship_effects, patrol, stat_cat=self.stat_cat, clan=patrol.clan
             )
         )
         results.append(self._handle_rep_changes(patrol))
@@ -521,7 +521,7 @@ class PatrolOutcome:
         # leader_lives = ("all_lives", "some_lives")
 
         cats_to_kill = gather_cat_objects(
-            Cat, self.dead_cats, patrol, stat_cat=self.stat_cat
+            Cat, self.dead_cats, patrol, stat_cat=self.stat_cat, clan=patrol.clan
         )
 
         if not cats_to_kill:
@@ -590,7 +590,7 @@ class PatrolOutcome:
             return ""
 
         cats_to_lose = gather_cat_objects(
-            Cat, self.lost_cats, patrol, stat_cat=self.stat_cat
+            Cat, self.lost_cats, patrol, stat_cat=self.stat_cat, clan=patrol.clan
         )
 
         if not cats_to_lose:
@@ -626,7 +626,7 @@ class PatrolOutcome:
         condition_lists = constants.INJURY_GROUPS
 
         for block in self.injury:
-            cats = gather_cat_objects(Cat, block.get("cats", ()), patrol, self.stat_cat)
+            cats = gather_cat_objects(Cat, block.get("cats", ()), patrol, self.stat_cat, clan=patrol.clan)
             injury = block.get("injuries", ())
             scars = block.get("scars", ())
 
@@ -739,7 +739,7 @@ class PatrolOutcome:
             text = i18n.t("screens.patrol.clan_rep_neutral")
         else:
             text = i18n.t("screens.patrol.clan_rep_worsened")
-        text = event_text_adjust(Cat, text, other_clan=patrol.other_clan.enum)
+        text = event_text_adjust(Cat, text, other_clan=patrol.other_clan)
         return text
 
     def _handle_herbs(self, patrol: "Patrol") -> str:
@@ -893,13 +893,13 @@ class PatrolOutcome:
             if game.clan.clancount != "multiclan" or (("clancat" not in attribute_list and "change_clan" not in attribute_list) or "exists" not in attribute_list):
                 patrol.new_cats.append(
                     create_new_cat_block(
-                        Cat, Relationship, patrol, in_event_cats, i, attribute_list, clan=patrol.clan.enum, other_clan=patrol.other_clan
+                        Cat, Relationship, patrol, in_event_cats, i, attribute_list, clan=patrol.clan, other_clan=patrol.other_clan
                     )
                 )
             else:
                 patrol.new_cats.append(
                     find_clan_cats(
-                        Cat, Relationship, self, in_event_cats, i, attribute_list, clan=patrol.clan.enum, other_clan=patrol.other_clan.enum
+                        Cat, Relationship, self, in_event_cats, i, attribute_list, clan=patrol.clan, other_clan=patrol.other_clan
                     )
                 )
             dead = []
@@ -908,7 +908,7 @@ class PatrolOutcome:
             for cat in patrol.new_cats[-1]:
                 if cat.dead:
                     dead.append(str(cat.name))
-                elif cat.status.group != patrol.clan.enum:
+                elif cat.status.group_ID != patrol.clan.group_ID:
                     outside.append(str(cat.name))
                 else:
                     new.append(str(cat.name))
@@ -932,7 +932,7 @@ class PatrolOutcome:
         # If so, see if recovering from birth condition is needed
         # and give the condition
         for sub in patrol.new_cats:
-            if sub[0].moons < 3:
+            if sub and sub[0].moons < 3:
                 # Search for parent
                 for sub_sub in patrol.new_cats:
                     if (
@@ -989,9 +989,7 @@ class PatrolOutcome:
             return None
 
         scar_list = [
-            x
-            for x in scar_list
-            if x in Pelt.scars1 + Pelt.scars2 + Pelt.scars3 and x not in cat.pelt.scars
+            x for x in scar_list if x in Pelt.all_scars and x not in cat.pelt.scars
         ]
 
         if not scar_list:

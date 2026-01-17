@@ -23,6 +23,7 @@ from scripts.utility import (
     ui_scale_offset,
 )
 from .Screens import Screens
+from .enums import GameScreen
 from ..cat.enums import CatRank
 from ..conditions import get_amount_cat_for_one_medic, amount_clanmembers_covered
 from ..game_structure.game.switches import switch_set_value, Switch
@@ -114,11 +115,11 @@ class MedDenScreen(Screens):
             elif event.ui_element in self.cat_buttons.values():
                 cat = event.ui_element.return_cat_object()
                 switch_set_value(Switch.cat, cat.ID)
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif event.ui_element == self.med_cat:
                 cat = event.ui_element.return_cat_object()
                 switch_set_value(Switch.cat, cat.ID)
-                self.change_screen("profile screen")
+                self.change_screen(GameScreen.PROFILE)
             elif event.ui_element == self.cats_tab:
                 self.open_tab = "cats"
                 self.cats_tab.disable()
@@ -267,6 +268,8 @@ class MedDenScreen(Screens):
             for cat in self.injured_and_sick_cats:
                 if cat.injuries:
                     for injury in cat.injuries:
+                        if injury == "pregnant" and game.clan.pregnancy_data.get(cat.ID, {}).get("hidden"):
+                            continue
                         if cat.injuries[injury][
                             "severity"
                         ] != "minor" and injury not in [
@@ -541,7 +544,7 @@ class MedDenScreen(Screens):
                 condition_list.extend(
                     [
                         event_text_adjust(Cat, i18n.t(f"conditions.injuries.{injury}"), main_cat=cat)
-                        for injury in list(cat.injuries.keys())
+                        for injury in list(cat.injuries.keys()) if (injury != "pregnant" or not game.clan.pregnancy_data.get(cat.ID, {}).get("hidden"))
                     ]
                 )
             if cat.illnesses:
