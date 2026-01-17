@@ -134,7 +134,7 @@
     "m_c": {
       "age": ["any"],
       "status": ["any"],
-      "trait": ["bloodthirsty", "venomous", "selfish", "dull", "scary", "desolate", "secretive", "polished", "high-minded", "vengeful", "passive-agressive", "intense", "fierce", "reserved", "cryptic"]
+      "trait": ["bloodthirsty", "venomous", "selfish", "dull", "scary", "desolate", "secretive", "polished", "high-minded", "vengeful", "passive-aggressive", "intense", "fierce", "reserved", "cryptic"]
     },
     "relationships": [
       {

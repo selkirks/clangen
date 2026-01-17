@@ -148,6 +148,8 @@ def json_load():
                 cat["trait"] = "warm"
             if cat["trait"] == "hefty":
                 cat["trait"] = "charming"
+            if cat["trait"] == "passive-agressive":
+                cat["trait"] = "passive-aggressive"
             if "accessories" in cat:
                 cat["accessory"] = cat.pop("accessories")
 
