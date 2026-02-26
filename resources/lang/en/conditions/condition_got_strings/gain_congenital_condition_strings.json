@@ -131,5 +131,13 @@
     "flat nose": [
         "r_c sadly confirms that there's not much {PRONOUN/r_c/subject} can do for m_c, despite how the kitten struggles to breath through {PRONOUN/m_c/poss} flattened nose and tires quickly.",
         "Some hoped m_c's odd muzzle was just visual quirk, but m_c struggles to keep up and stay active the way other kittens do, tiring easily and struggling to get used to more solid food."
+    ],
+    "wobbly cat syndrome": [
+        "It seems m_c constantly shakes. After being looked over by r_c, {PRONOUN/m_c/subject} {VERB/m_c/are/is} diagnosed with wobbly cat syndrome.",
+        "After being unable to stand without wobbling, it appears m_c will wobble {PRONOUN/m_c/poss} entire life. Despite this, family is reassured that m_c will live a long and healthy life- just one a bit more wobbly than others."
+    ],
+    "cleft palate": [
+        "r_c looks closely at the gap between m_c's nose and mouth. A clear sign of a cleft palate. r_c reassures that m_c will do just fine with proper treatment of symptoms!",
+        "It appears there is a gap between m_c's nose and mouth. After {PRONOUN/m_c/poss} parent looks {PRONOUN/m_c/object} over, it appears m_c has a cleft palate."
     ]
 }
