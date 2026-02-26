@@ -3729,9 +3729,6 @@
                 "vengeful"
             ]
         },
-        "multiclan_cat": [
-            [ "clancat", "exists", "meeting", "status:warrior" ]
-        ],
         "injury": [
             {
                 "cats": [
@@ -3775,10 +3772,7 @@
             "current_rep": [
                 "hostile"
             ],
-            "changed": -3,
-            "has_rank": [
-                "warrior"
-            ]
+            "changed": -3
         }
     },
     {
@@ -6341,9 +6335,6 @@
                 "healer apprentice"
             ]
         },
-        "new_cat": [
-            [ "clancat", "exists", "meeting", "status:warrior" ]
-        ],
         "injury": [
             {
                 "cats": [
@@ -6401,9 +6392,6 @@
                 "healer apprentice"
             ]
         },
-        "multiclan_cat": [
-            [ "clancat", "exists", "meeting", "status:warrior" ]
-        ],
         "injury": [
             {
                 "cats": [
@@ -6924,9 +6912,6 @@
                 "scars": []
             }
         ],
-        "new_cat": [
-            [ "old_name", "clancat", "exists", "meeting", "status:any_healer" ]
-        ],
         "history": [
             {
                 "cats": [
@@ -6943,8 +6928,7 @@
             ],
             "changed": 1,
             "has_rank": [
-                "warrior_mult",
-                "any_healer"
+                "warrior_mult"
             ]
         }
     },
@@ -7094,9 +7078,6 @@
                 "senior"
             ]
         },
-        "multiclan_cat": [
-            [ "clancat", "exists", "meeting", "status:warrior" ]
-        ],
         "injury": [
             {
                 "cats": [
@@ -7157,9 +7138,6 @@
                 "confident"
             ]
         },
-        "multiclan_cat": [
-            [ "clancat", "exists", "meeting", "status:warrior" ]
-        ],
         "injury": [
             {
                 "cats": [
@@ -7269,9 +7247,6 @@
                 "sincere"
             ]
         },
-        "multiclan_cat": [
-            [ "clancat", "exists", "meeting", "status:warrior" ]
-        ],
         "injury": [
             {
                 "cats": [

@@ -34,7 +34,6 @@ from scripts.utility import (
     find_alive_cats_with_rank,
     get_living_clan_cat_count,
     ui_scale_dimensions,
-    update_sprite,
 )
 
 
@@ -97,7 +96,7 @@ class LeaderDenScreen(Screens):
                         event.ui_element
                         == self.other_clan_selection_elements[f"button{i}"]
                     ):
-                        self.focus_clan = game.clan.all_other_clans[i]
+                        self.focus_clan = game.clan.all_clans[i]
                         self.update_other_clan_focus()
             elif event.ui_element == self.focus_frame_elements["negative_interaction"]:
                 text = self.focus_frame_elements["negative_interaction"].text.replace(
@@ -195,10 +194,7 @@ class LeaderDenScreen(Screens):
         self.helper_cat = None
         if self.no_leader or game.clan.leader.not_working():
             if game.clan.deputy:
-                if (
-                    not game.clan.deputy.not_working()
-                    and game.clan.deputy.status.alive_in_player_clan
-                ):
+                if not game.clan.deputy.not_working() and not game.clan.deputy.dead:
                     self.helper_cat = game.clan.deputy  # if lead is sick, dep helps
             if not self.helper_cat:  # if dep is sick, med cat helps
                 meds = find_alive_cats_with_rank(
@@ -350,7 +346,7 @@ class LeaderDenScreen(Screens):
             self.update_other_clan_focus()
             self.update_clan_interaction_choice(current_setting["interaction_type"])
         else:
-            self.focus_clan = game.clan.all_other_clans[0]
+            self.focus_clan = game.clan.all_clans[0]
             self.update_other_clan_focus()
 
     def exit_screen(self):
@@ -433,7 +429,7 @@ class LeaderDenScreen(Screens):
             starting_height=1,
             manager=MANAGER,
         )
-        for i, other_clan in enumerate(game.clan.all_other_clans):
+        for i, other_clan in enumerate(game.clan.all_clans):
             if other_clan.displayname == game.clan.displayname:
                 continue
             x_pos = 128
@@ -938,7 +934,7 @@ class LeaderDenScreen(Screens):
         )
 
         if self.focus_cat.status.is_outsider and not self.focus_cat.status.is_lost(
-            CatGroup.PLAYER_CLAN_ID
+            CatGroup.PLAYER_CLAN
         ):
             self.focus_button["invite"].set_text("screens.leader_den.invite")
         else:
@@ -995,8 +991,7 @@ class LeaderDenScreen(Screens):
             for i in Cat.all_cats.values()
             if not i.dead
             and i.status.is_outsider
-            and i.status.is_near(CatGroup.PLAYER_CLAN_ID)
-            and (i.status.is_lost(CatGroup.PLAYER_CLAN_ID) or not i.status.is_lost())
+            and i.status.is_near(CatGroup.PLAYER_CLAN)
         ]
 
         # separate them into chunks for the pages
@@ -1043,8 +1038,6 @@ class LeaderDenScreen(Screens):
         i = 0
 
         for cat in display_cats:
-            if not cat.sprite:
-                update_sprite(cat)
             self.outsider_cat_buttons[f"sprite{str(i)}"] = UISpriteButton(
                 ui_scale(pygame.Rect((5 + pos_x, pos_y), (50, 50))),
                 cat.sprite,

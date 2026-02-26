@@ -3,8 +3,6 @@
 import i18n
 import pygame
 import pygame_gui
-import os
-import ujson
 
 from scripts.cat.cats import Cat
 from scripts.game_structure import game
@@ -18,16 +16,13 @@ from scripts.utility import (
 )
 from scripts.utility import ui_scale
 from .Screens import Screens
-from .enums import GameScreen
 from ..cat.sprites import sprites
 from ..clan_package.settings import get_clan_setting
+from ..game_structure.game.settings import game_setting_get
 from ..game_structure.game.switches import switch_set_value, switch_get_value, Switch
-from scripts.game_structure.game.settings import game_setting_get
+from ..cat.enums import CatGroup
 from ..game_structure.screen_settings import MANAGER
 from ..game_structure.windows import SaveAsImage
-from scripts.housekeeping.datadir import (
-    get_save_dir,
-)
 from ..ui.generate_button import get_button_dict, ButtonStyles
 
 
@@ -49,9 +44,7 @@ class SpriteInspectScreen(Screens):
         self.acc_shown_text = None
         self.override_dead_lineart_text = None
         self.override_not_working_text = None
-        self.hide_white_text = None
         self.save_image_button = None
-        self.export_cat_button = None
 
         # Image Settings:
         self.platform_shown = None
@@ -60,7 +53,6 @@ class SpriteInspectScreen(Screens):
         self.override_dead_lineart = False
         self.acc_shown = True
         self.override_not_working = False
-        self.hide_white = False
 
         super().__init__(name)
 
@@ -69,7 +61,7 @@ class SpriteInspectScreen(Screens):
             self.mute_button_pressed(event)
 
             if event.ui_element == self.back_button:
-                self.change_screen(GameScreen.PROFILE)
+                self.change_screen("profile screen")
             elif event.ui_element == self.next_cat_button:
                 if isinstance(Cat.fetch_cat(self.next_cat), Cat):
                     switch_set_value(Switch.cat, self.next_cat)
@@ -90,8 +82,6 @@ class SpriteInspectScreen(Screens):
                 self.make_cat_image()
             elif event.ui_element == self.save_image_button:
                 SaveAsImage(self.generate_image_to_save(), str(self.the_cat.name))
-            elif event.ui_element == self.export_cat_button:
-                self.export_cat()
             elif event.ui_element == self.previous_life_stage:
                 self.displayed_life_stage = max(self.displayed_life_stage - 1, 0)
                 self.update_disabled_buttons()
@@ -133,14 +123,6 @@ class SpriteInspectScreen(Screens):
                     self.override_not_working = False
                 else:
                     self.override_not_working = True
-
-                self.make_cat_image()
-                self.update_checkboxes()
-            elif event.ui_element == self.checkboxes["hide_white"]:
-                if self.hide_white:
-                    self.hide_white = False
-                else:
-                    self.hide_white = True
 
                 self.make_cat_image()
                 self.update_checkboxes()
@@ -206,13 +188,6 @@ class SpriteInspectScreen(Screens):
             object_id="@buttonstyles_squoval",
         )
 
-        self.export_cat_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((25, 130), (135, 30))),
-            "screens.sprite_inspect.export_cat",
-            get_button_dict(ButtonStyles.SQUOVAL, (135, 30)),
-            object_id="@buttonstyles_squoval",
-        )
-
         # Toggle Text:
         self.platform_shown_text = pygame_gui.elements.UITextBox(
             "screens.sprite_inspect.show_platform",
@@ -234,19 +209,13 @@ class SpriteInspectScreen(Screens):
         )
         self.override_dead_lineart_text = pygame_gui.elements.UITextBox(
             "screens.sprite_inspect.show_living",
-            ui_scale(pygame.Rect((150, 630), (-1, 50))),
+            ui_scale(pygame.Rect((250, 630), (-1, 50))),
             object_id=get_text_box_theme("#text_box_34_horizcenter"),
             starting_height=2,
         )
         self.override_not_working_text = pygame_gui.elements.UITextBox(
             "screens.sprite_inspect.show_healthy",
-            ui_scale(pygame.Rect((350, 630), (-1, 100))),
-            object_id=get_text_box_theme("#text_box_34_horizcenter"),
-            starting_height=2,
-        )
-        self.hide_white_text = pygame_gui.elements.UITextBox(
-            "screens.sprite_inspect.hide_white",
-            ui_scale(pygame.Rect((545, 630), (-1, 100))),
+            ui_scale(pygame.Rect((450, 630), (-1, 100))),
             object_id=get_text_box_theme("#text_box_34_horizcenter"),
             starting_height=2,
         )
@@ -260,7 +229,6 @@ class SpriteInspectScreen(Screens):
         for ele in self.cat_elements:
             self.cat_elements[ele].kill()
         self.cat_elements = {}
-        self.export_cat_button.enable()
 
         self.the_cat = Cat.fetch_cat(switch_get_value(Switch.cat))
 
@@ -286,9 +254,7 @@ class SpriteInspectScreen(Screens):
         # "young adult", "adult", and "senior adult" all look the same: collapse to adult
         # This is not the best way to do it, so if we make them have difference appearances, this will
         # need to be changed/removed.
-        if (self.the_cat.age in ("young adult", "adult", "senior adult") or 
-        (game_setting_get("ageup dead") and self.the_cat.dead and self.the_cat.moons < 12) or
-        (game_setting_get("youthful dead") and self.the_cat.dead and self.the_cat.age == "senior")):
+        if self.the_cat.age in ("young adult", "adult", "senior adult") or (game_setting_get("ageup dead") and self.the_cat.dead and self.the_cat.moons < 12):
             current_life_stage = "adult"
         else:
             current_life_stage = self.the_cat.age
@@ -380,7 +346,7 @@ class SpriteInspectScreen(Screens):
 
         # "Show as living"
         self.make_one_checkbox(
-            ui_scale_offset((100, 625)),
+            ui_scale_offset((200, 625)),
             "override_dead_lineart",
             self.override_dead_lineart,
             self.the_cat.dead,
@@ -389,19 +355,10 @@ class SpriteInspectScreen(Screens):
 
         # "Show as healthy"
         self.make_one_checkbox(
-            ui_scale_offset((300, 625)),
+            ui_scale_offset((400, 625)),
             "override_not_working",
             self.override_not_working,
             self.the_cat.not_working(),
-            disabled_object_id="@checked_checkbox",
-        )
-
-        # "Hide white"
-        self.make_one_checkbox(
-            ui_scale_offset((500, 625)),
-            "hide_white",
-            self.hide_white,
-            self.the_cat.phenotype.white[0] != "w" and (not self.the_cat.chimerapheno or self.the_cat.chimerapheno.white[0] != "w"),
             disabled_object_id="@checked_checkbox",
         )
 
@@ -452,7 +409,6 @@ class SpriteInspectScreen(Screens):
             acc_hidden=not self.acc_shown,
             always_living=self.override_dead_lineart,
             disable_sick_sprite=self.override_not_working,
-            hide_white=self.hide_white
         )
 
         self.cat_elements["cat_image"] = pygame_gui.elements.UIImage(
@@ -483,8 +439,6 @@ class SpriteInspectScreen(Screens):
         self.next_life_stage = None
         self.save_image_button.kill()
         self.save_image_button = None
-        self.export_cat_button.kill()
-        self.export_cat_button = None
         self.platform_shown_text.kill()
         self.platform_shown_text = None
         self.scars_shown_text.kill()
@@ -495,8 +449,6 @@ class SpriteInspectScreen(Screens):
         self.override_dead_lineart_text = None
         self.override_not_working_text.kill()
         self.override_not_working_text = None
-        self.hide_white_text.kill()
-        self.hide_white_text = None
 
         for ele in self.cat_elements:
             self.cat_elements[ele].kill()
@@ -534,26 +486,3 @@ class SpriteInspectScreen(Screens):
             return full_image
         else:
             return self.cat_image
-
-    def export_cat(self):
-        code = self.the_cat.get_save_dict()
-        code["parent1"] = None
-        code["parent2"] = None
-        code["parent3"] = None
-        code["mentor"] = None
-        code["former_mentor"] = []
-        code["mate"] = []
-        code["previous_mates"] = []
-        code["adoptive_parents"] = []
-        code["current_apprentice"] = []
-        code["former_apprentices"] = []
-        code["faded_offspring"] = []
-
-        file_path = os.path.join(get_save_dir(), game.clan.name, "exported_cats")
-        if not os.path.exists(file_path):
-            os.makedirs(file_path)
-        file_path = os.path.join(file_path, f"{code["ID"]}.json")
-        with open(file_path, "w") as f:
-            ujson.dump(code, f, indent=4)
-        
-        self.export_cat_button.disable()

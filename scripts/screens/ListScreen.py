@@ -27,7 +27,6 @@ from scripts.game_structure.ui_elements import (
     UIDropDown,
 )
 from scripts.screens.Screens import Screens
-from scripts.screens.enums import GameScreen
 from scripts.ui.generate_button import ButtonStyles, get_button_dict
 from scripts.ui.icon import Icon
 from scripts.utility import ui_scale, get_text_box_theme, ui_scale_value, search_cats
@@ -55,7 +54,7 @@ class ListScreen(Screens):
         "screens.list.filter_exp",
     )
 
-    living_group_names = ("general.your_clan", "general.cotc", "general.cbtc")
+    living_group_names = ("general.your_clan", "general.cotc")
     dead_group_names = (
         "general.starclan",
         "general.unknown_residence",
@@ -245,8 +244,7 @@ class ListScreen(Screens):
             # CAT SPRITES
             elif element in self.cat_display.cat_sprites.values():
                 switch_set_value(Switch.cat, element.return_cat_id())
-                game.last_list_forProfile = self.current_group
-                self.change_screen(GameScreen.PROFILE)
+                self.change_screen("profile screen")
 
             # MENU BUTTONS
             else:
@@ -257,9 +255,9 @@ class ListScreen(Screens):
             if self.cat_list_bar_elements["search_bar_entry"].is_focused:
                 return
             if event.key == pygame.K_LEFT:
-                self.change_screen(GameScreen.CAMP)
+                self.change_screen("camp screen")
             elif event.key == pygame.K_RIGHT:
-                self.change_screen(GameScreen.PATROL)
+                self.change_screen("patrol screen")
 
     def screen_switches(self):
         super().screen_switches()
@@ -270,9 +268,9 @@ class ListScreen(Screens):
             self.death_status = "living"
             self.current_group = "general.your_clan"
         
-        group_names = ["general.your_clan", "general.cotc", "general.cbtc"]
+        group_names = ["general.your_clan", "general.cotc"]
         if game.clan and game.clan.clancount == "multiclan":
-            group_names += [clan.displayname + "Clan" for clan in game.clan.all_other_clans]
+            group_names += [clan.displayname + "Clan" for clan in game.clan.all_clans]
         self.living_group_names = tuple(group_names)
 
         self.set_disabled_menu_buttons(["catlist_screen"])
@@ -573,8 +571,6 @@ class ListScreen(Screens):
                 self.get_your_clan_cats()
             elif new_group == "general.cotc":
                 self.get_cotc_cats()
-            elif new_group == "general.cbtc":
-                self.get_cbtc_cats()
             elif new_group == "general.starclan":
                 self.get_sc_cats()
             elif new_group == "general.unknown_residence":
@@ -619,7 +615,7 @@ class ListScreen(Screens):
         # adding in the guide if necessary, this ensures the guide isn't affected by sorting as we always want them to
         # be the first cat on the list
 
-        all_instructors = [game.clan.instructor] + [clan.instructor for clan in game.clan.all_other_clans if clan.instructor]
+        all_instructors = [game.clan.instructor] + [clan.instructor for clan in game.clan.all_clans if clan.instructor]
         for ins in all_instructors[::-1]:
             if (
                 self.current_group == "general.dark_forest"
@@ -726,9 +722,6 @@ class ListScreen(Screens):
         elif self.current_group == "general.cotc":
             self.set_bg(None)
             self.update_heading_text("general.cotc")
-        elif self.current_group == "general.cbtc":
-            self.set_bg(None)
-            self.update_heading_text("general.cbtc")
         elif self.current_group == "general.starclan":
             self.set_bg("starclan")
             self.update_heading_text("general.starclan")
@@ -757,8 +750,6 @@ class ListScreen(Screens):
                 self.get_ur_cats()
             elif game.last_list_forProfile == "general.cotc":
                 self.get_cotc_cats()
-            elif game.last_list_forProfile == "general.cbtc":
-                self.get_cbtc_cats()
             elif game.last_list_forProfile == "general.your_clan":
                 self.get_your_clan_cats()
             else:
@@ -785,7 +776,7 @@ class ListScreen(Screens):
         self.death_status = "living"
         self.full_cat_list = [
             cat for cat in Cat.all_cats_list 
-            if cat.status.group.is_any_clan_group() and cat.status.fetch_clan_object().displayname == self.selected_clan
+            if cat.status.is_any_clan_group() and cat.status.group.fetch_clan_object().displayname == self.selected_clan
         ]
 
     def get_cotc_cats(self):
@@ -800,21 +791,6 @@ class ListScreen(Screens):
                 not the_cat.dead
                 and (the_cat.status.is_outsider or (the_cat.status.is_other_clancat and game.clan.clancount == "singleclan"))
                 and the_cat.status.is_near()
-            ):
-                self.full_cat_list.append(the_cat)
-
-    def get_cbtc_cats(self):
-        """
-        grabs cats outside the clan
-        """
-        self.current_group = "general.cbtc"
-        self.death_status = "living"
-        self.full_cat_list = []
-        for the_cat in Cat.all_cats_list:
-            if (
-                not the_cat.dead
-                and (the_cat.status.is_outsider or (the_cat.status.is_other_clancat and game.clan.clancount == "singleclan"))
-                and not the_cat.status.is_near()
             ):
                 self.full_cat_list.append(the_cat)
 

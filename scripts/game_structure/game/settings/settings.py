@@ -6,7 +6,6 @@ import ujson
 
 from scripts.game_structure.game.save_load import safe_save
 from scripts.housekeeping.datadir import get_save_dir
-from scripts.screens.enums import GameScreen
 
 settings_changed: bool = False
 settings = {"moon_and_seasons_open": False}
@@ -30,7 +29,7 @@ def game_settings_save(currentscreen=None):
 
         SaveError(traceback.format_exc())
         if currentscreen is not None:
-            currentscreen.change_screen(GameScreen.START)
+            currentscreen.change_screen("start screen")
 
 
 def game_settings_load():

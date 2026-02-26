@@ -304,65 +304,65 @@
             "many": "road runner feathers",
             "one": "road runner feather"
         },
-        "BOW": {
-            "zero": "bow",
-            "many": "bows",
-            "one": "bow"
+        "CRIMSON": {
+            "zero": "crimson leather collar",
+            "many": "crimson leather collars",
+            "one": "crimson leather collar"
         },
-        "BOW_FOIL": {
-            "zero": "foil bow",
-            "many": "foil bows",
-            "one": "foil bow"
+        "BLUE": {
+            "zero": "blue leather collar",
+            "many": "blue leather collars",
+            "one": "blue leather collar"
         },
-        "BOW_GRADIENT": {
-            "zero": "colorful bow",
-            "many": "colorful bows",
-            "one": "colorful bow"
+        "CYAN": {
+            "zero": "cyan leather collar",
+            "many": "cyan leather collars",
+            "one": "cyan leather collar"
         },
-        "LEATHER": {
-            "zero": "leather collar",
-            "many": "leather collars",
-            "one": "leather collar"
+        "YELLOW": {
+            "zero": "yellow leather collar",
+            "many": "yellow leather collars",
+            "one": "yellow leather collar"
         },
-        "LEATHER_SPIKE": {
-            "zero": "spiked leather collar",
-            "many": "spiked leather collars",
-            "one": "spiked leather collar"
+        "LIME": {
+            "zero": "lime leather collar",
+            "many": "lime leather collars",
+            "one": "lime leather collar"
         },
-        "LEATHER_GRADIENT": {
-            "zero": "colorful leather collar",
-            "many": "colorful leather collars",
-            "one": "colorful leather collar"
+        "GREEN": {
+            "zero": "green leather collar",
+            "many": "green leather collars",
+            "one": "green leather collar"
         },
-        "LEATHER_BELL": {
-            "zero": "belled leather collar",
-            "many": "belled leather collars",
-            "one": "belled leather collar"
+        "RED": {
+            "zero": "red leather collar",
+            "many": "red leather collars",
+            "one": "red leather collar"
         },
-        "LEATHER_BELL_SPIKE": {
-            "zero": "spiked leather collar with bell",
-            "many": "spiked leather collars with bells",
-            "one": "spiked leather collar with bell"
+        "RAINBOW": {
+            "zero": "rainbow leather collar",
+            "many": "rainbow leather collars",
+            "one": "rainbow leather collar"
         },
-        "LEATHER_BELL_GRADIENT": {
-            "zero": "colorful belled leather collar",
-            "many": "colorful belled leather collars",
-            "one": "colorful belled leather collar"
+        "BLACK": {
+            "zero": "black leather collar",
+            "many": "black leather collars",
+            "one": "black leather collar"
         },
-        "NYLON": {
-            "zero": "nylon collar",
-            "many": "nylon collars",
-            "one": "nylon collar"
+        "SPIKES": {
+            "zero": "spiky leather collar",
+            "many": "spiky leather collars",
+            "one": "spiky leather collar"
         },
-        "NYLON_GRADIENT": {
-            "zero": "colorful nylon collar",
-            "many": "colorful nylon collars",
-            "one": "colorful nylon collar"
+        "WHITE": {
+            "zero": "white leather collar",
+            "many": "white leather collars",
+            "one": "white leather collar"
         },
-        "NYLON_BELL": {
-            "zero": "belled nylon collar",
-            "many": "belled nylon collars",
-            "one": "belled nylon collar"
+        "PINK": {
+            "zero": "pink leather collar",
+            "many": "pink leather collars",
+            "one": "pink leather collar"
         },
         "PURPLE": {
             "zero": "purple leather collar",
@@ -2442,11 +2442,6 @@
         "zero": "celestial charm",
         "many": "celestial charms",
         "one": "celestial charm"
-    },
-        "NYLON_BELL_GRADIENT": {
-            "zero": "colorful belled nylon collar",
-            "many": "colorful belled nylon collars",
-            "one": "colorful belled nylon collar"
-        }
+    }
     }
 }

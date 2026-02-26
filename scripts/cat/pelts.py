@@ -4,7 +4,6 @@ from re import sub
 import i18n
 
 import scripts.game_structure.screen_settings
-from scripts.cat.enums import CatAge
 from scripts.cat.sprites import sprites
 from scripts.game_structure import constants
 from .phenotype import Phenotype
@@ -25,32 +24,73 @@ class Pelt:
                            'CROSSEYED', 'LAZYEYE', 'OVERGROWNTONGUE', 'LONGCHINFUR', 'SHORTCHINFUR', 'LONGMUZZLEFUR',
                            'LONGINNEREARFUR', 'WEBBEDPAWS', 'MISSINGTOE', 'UNDERSIZEDJAW', 'OVERSIZEDJAW']
    
-    # POSES
-    all_poses = list(sprites.POSE_DATA["poses"].keys())
-    newborn_poses = [x for x in all_poses if "newborn" in x]
-    kitten_poses = [x for x in all_poses if "kitten" in x]
-    adolescent_poses = [x for x in all_poses if "adolescent" in x]
-    adult_short_poses = [x for x in all_poses if "adult_short" in x and "para" not in x]
-    adult_long_poses = [x for x in all_poses if "adult_long" in x and "para" not in x]
-    senior_poses = [x for x in all_poses if "senior" in x]
-
-    # PELT LENGTH
-    pelt_length = ["short", "medium", "long"]
-
-    # SCARS
     # bite scars by @wood pank on discord
-    general_scars = []
-    for sprite_list in sprites.SCAR_DATA["sprite_list"]:
-        general_scars.extend(sprite_list)
 
-    missing_part_scars = []
-    for sprite_list in sprites.SCAR_MISSING_PART_DATA["sprite_list"]:
-        missing_part_scars.extend(sprite_list)
+    # scars from other cats, other animals
+    scars1 = [
+        "ONE",
+        "TWO",
+        "THREE",
+        "TAILSCAR",
+        "SNOUT",
+        "CHEEK",
+        "SIDE",
+        "THROAT",
+        "TAILBASE",
+        "BELLY",
+        "LEGBITE",
+        "NECKBITE",
+        "FACE",
+        "MANLEG",
+        "BRIGHTHEART",
+        "MANTAIL",
+        "BRIDGE",
+        "RIGHTBLIND",
+        "LEFTBLIND",
+        "BOTHBLIND",
+        "BEAKCHEEK",
+        "BEAKLOWER",
+        "CATBITE",
+        "RATBITE",
+        "QUILLCHUNK",
+        "QUILLSCRATCH",
+        "HINDLEG",
+        "BACK",
+        "QUILLSIDE",
+        "SCRATCHSIDE",
+        "BEAKSIDE",
+        "CATBITETWO",
+        "FOUR",
+    ]
 
-    all_scars = general_scars + missing_part_scars
+    # missing parts
+    scars2 = [
+        "LEFTEAR",
+        "RIGHTEAR",
+        "NOTAIL",
+        "HALFTAIL",
+        "NOPAW",
+        "NOLEFTEAR",
+        "NORIGHTEAR",
+        "NOEAR",
+        "TNR"
+    ]
 
-    # ACCESSORIES
-    # make sure to add plural and singular forms of new accs to accessories.en.json so that they will display nicely
+    # "special" scars that could only happen in a special event
+    scars3 = [
+        "SNAKE",
+        "TOETRAP",
+        "BURNPAWS",
+        "BURNTAIL",
+        "BURNBELLY",
+        "BURNRUMP",
+        "FROSTFACE",
+        "FROSTTAIL",
+        "FROSTMITT",
+        "FROSTSOCK",
+        "TOE",
+        "SNAKETWO",
+    ]
 
     # make sure to add plural and singular forms of new accs to acc_display.json so that they will display nicely
     bone_accessories = ["SNAKE", "BAT WINGS", "CANIDAE SKULL", "DEER ANTLERS", "RAM HORN", "GOAT HORN", "OX SKULL",
@@ -130,17 +170,8 @@ class Pelt:
         "GENDERFLUXCOLLAR", "BOYFLUXCOLLAR", "GENDERFAUNCOLLAR", "GENDERFAECOLLAR", "GRAYAROCOLLAR",
         "XENOCOLLAR", "NINCOLLAR", "VOIDPUNKCOLLAR", "UNLABELEDCOLLAR", "GENDERFLORCOLLAR",
         "GRAYACECOLLAR", "FINCOLLAR", "ENBYFLUXCOLLAR"
+        
     ]
-    collar_styles = []
-    if sprites.COLLAR_DATA["palette_map"]:
-        for style_type in sprites.COLLAR_DATA["style_data"]:
-            for style, color_list in style_type.items():
-                collar_styles.append(style)
-                for colour in color_list:
-                    collars.append(f"{style}_{colour}")
-    else:
-        for sprite_list in sprites.COLLAR_DATA["sprite_list"]:
-            collars.extend(sprite_list)
     flower_accessories = ["DAISY", "DIANTHUS", "BLEEDING HEARTS", "FRANGIPANI", "BLUE GLORY",
                      "CATNIP FLOWER", "BLANKET FLOWER", "ALLIUM", "LACELEAF",
                       "PURPLE GLORY", "YELLOW PRIMROSE", "HESPERIS",
@@ -210,28 +241,17 @@ class Pelt:
         "CRAFTED": crafted_accessories
     }
 
-    maingame_white = {
-        'low': {
-            '1': [None, 'SCOURGE', 'BLAZE', 'TAILTIP', 'TOES', 'LUNA', 'LOCKET'],
-            '2': ['LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'PAWS', 'BROKENBLAZE', 'BEARD', 'BIB', 'VEE', 'HONEY', 'TOESTAIL',
-                  'RAVENPAW', 'DAPPLEPAW', 'LILTWO', 'MUSTACHE', 'REVERSEHEART', 'SPARKLE', 'REVERSEEYE'],
-            '3': ['TUXEDO', 'SAVANNAH', 'FANCY', 'DIVA', 'BEARD', 'DAMIEN', 'BELLY', 'SQUEAKS', 'STAR', 'MISS', 'BOWTIE',
-                  'FCTWO', 'FCONE', 'MIA', 'PRINCESS', 'DOUGIE'],
-            '4': ['TUXEDO', 'SAVANNAH', 'OWL', 'RINGTAIL', 'UNDERS', 'FAROFA', 'VEST', 'FRONT', 'BLOSSOMSTEP', 'DIGIT',
-                  'HAWKBLAZE'],
-            '5': ['ANY', 'SHIBAINU', 'FAROFA', 'MISTER', 'PANTS', 'TRIXIE']
-        },
-        'high': {
-            '1': ['ANY', 'SHIBAINU', 'PANTSTWO', 'MAO', 'TRIXIE'],
-            '2': ['ANY', 'FRECKLES', 'PANTSTWO', 'MASKMANTLE', 'MAO', 'PAINTED', 'BUB', 'SCAR'],
-            '3': ['ANYTWO', 'PEBBLESHINE', 'BROKEN', 'PIEBALD', 'FRECKLES', 'HALFFACE', 'GOATEE', 'PRINCE', 'CAPSADDLE',
-                  'REVERSEPANTS', 'GLASS', 'PAINTED', 'COWTWO', 'SAMMY', 'FINN', 'BUSTER', 'CAKE'],
-            '4': ['VAN', 'PEBBLESHINE', 'LIGHTSONG', 'CURVED', 'GOATEE', 'TAIL', 'APRON', 'HALFWHITE', 'APPALOOSA', 'HEART',
-                  'MOORISH', 'COW', 'SHOOTINGSTAR', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA'],
-            '5': ['ONEEAR', 'LIGHTSONG', 'PETAL', 'CHESTSPECK', 'HEARTTWO', 'BOOTS', 'SHOOTINGSTAR', 'EYESPOT',
-                  'KROPKA']
-        }
-    }
+    tail_accessories = [
+        "RED FEATHERS",
+        "BLUE FEATHERS",
+        "JAY FEATHERS",
+        "GULL FEATHERS",
+        "SPARROW FEATHERS",
+        "CLOVER",
+        "DAISY",
+        "WISTERIA",
+        "GOLDEN CREEPING JENNY",
+    ]
 
     head_accessories = [
         "MOTH WINGS",
@@ -537,24 +557,49 @@ class Pelt:
         opacity:int=100,
         scars:list=None,
         tint:str="none",
-        white_patches_tint: str = "none",
-        kitten_sprite: str = None,
-        adol_sprite: str = None,
-        adult_sprite: str = None,
-        senior_sprite: str = None,
-        para_adult_sprite: str = None,
+        white_patches_tint:str="none",
+        kitten_sprite:int=None,
+        adol_sprite:int=None,
+        adult_sprite:int=None,
+        senior_sprite:int=None,
+        para_adult_sprite:int=None,
         reverse:bool=False,
         ) -> None:
         self.phenotype = phenotype
+        self.cat_sprites =  {
+            "kitten": kitten_sprite if kitten_sprite is not None else 0,
+            "adolescent": adol_sprite if adol_sprite is not None else 0,
+            "young adult": adult_sprite if adult_sprite is not None else 0,
+            "adult": adult_sprite if adult_sprite is not None else 0,
+            "senior adult": adult_sprite if adult_sprite is not None else 0,
+            "senior": senior_sprite if senior_sprite is not None else 0,
+            "para_adult": para_adult_sprite if para_adult_sprite is not None else 0,
+        }        
+        self.cat_sprites['newborn'] = 20
+        self.cat_sprites['para_young'] = 17
+        self.cat_sprites["sick_adult"] = 18
+        self.cat_sprites["sick_young"] = 19
         if phenotype.length == "longhaired" and phenotype.longtype == 'long' and phenotype.cornish[0] == "R" and phenotype.lykoi[0] == 'Ly' and phenotype.sedesp[0] != "re" and 'brush' not in phenotype.furtype:    
             self.length = "long"
+            if self.cat_sprites['adult'] < 9:
+                self.cat_sprites['adult'] += 3
+                self.cat_sprites['young adult'] += 3
+                self.cat_sprites['senior adult'] += 3
         elif phenotype.length != 'hairless':
             if phenotype.length == "mediumhaired":
                 self.length = 'medium'
             else:
                 self.length = "short"
+            if self.cat_sprites['adult'] > 8:
+                self.cat_sprites['adult'] -= 3
+                self.cat_sprites['young adult'] -= 3
+                self.cat_sprites['senior adult'] -= 3
         else:
             self.length = "hairless"
+            if self.cat_sprites['adult'] > 8:
+                self.cat_sprites['adult'] -= 3
+                self.cat_sprites['young adult'] -= 3
+                self.cat_sprites['senior adult'] -= 3
         self.rebuild_sprite = True
         self._accessory = accessory
         self._paralyzed = paralyzed
@@ -571,115 +616,28 @@ class Pelt:
         self.physical_trait_hidden_4 = physical_trait_hidden_4
         self.white_patches_tint = white_patches_tint
         self.screen_scale = scripts.game_structure.screen_settings.screen_scale
-
-        # converting old pose numbers into names
-        if isinstance(adol_sprite, int):
-            self.cat_sprites = {
-                "kitten": kitten_sprite if kitten_sprite is not None else 0,
-                "adolescent": adol_sprite if adol_sprite is not None else 3,
-                "young adult": adult_sprite if adult_sprite is not None else 6,
-                "adult": adult_sprite if adult_sprite is not None else 6,
-                "senior adult": adult_sprite if adult_sprite is not None else 6,
-                "senior": senior_sprite if senior_sprite is not None else 12,
-                "para_young": "para_young0",
-                "para_adult": para_adult_sprite,
-                "newborn": "newborn0",
-            }
-            for age, pose in self.cat_sprites.items():
-                # we only need to convert if it's using the old sprite pose numbers
-                if not isinstance(pose, int):
-                    break
-
-                # convert paras
-                if self.length == "long":
-                    self.cat_sprites["para_adult"] = "para_adult_long0"
-                else:
-                    self.cat_sprites["para_adult"] = "para_adult_short0"
-
-                if age == CatAge.NEWBORN:
-                    self.cat_sprites[age] = "newborn0"
-                    continue
-                if age == CatAge.KITTEN:
-                    # since these were at the top of the sheet, the pose nums were 0, 1, 2. thus they'll naturally match this fstring
-                    self.cat_sprites[age] = f"kitten{pose}"
-                    continue
-                if age == CatAge.ADOLESCENT:
-                    if pose == 3:
-                        self.cat_sprites[age] = "adolescent0"
-                    elif pose == 4:
-                        self.cat_sprites[age] = "adolescent1"
-                    elif pose == 5:
-                        self.cat_sprites[age] = "adolescent2"
-                    continue
-                if age in (CatAge.YOUNG_ADULT, CatAge.ADULT, CatAge.SENIOR_ADULT):
-                    if pose in (0, 9):
-                        self.cat_sprites[age] = "adult_long0"
-                    elif pose in (1, 10):
-                        self.cat_sprites[age] = "adult_long1"
-                    elif pose in (2, 11):
-                        self.cat_sprites[age] = "adult_long2"
-                    elif pose == 6:
-                        self.cat_sprites[age] = "adult_short0"
-                    elif pose == 7:
-                        self.cat_sprites[age] = "adult_short1"
-                    elif pose == 8:
-                        self.cat_sprites[age] = "adult_short2"
-                if age == CatAge.SENIOR:
-                    if pose in (3, 12):
-                        self.cat_sprites[age] = "senior0"
-                    elif pose in (4, 13):
-                        self.cat_sprites[age] = "senior1"
-                    elif pose in (5, 14):
-                        self.cat_sprites[age] = "senior2"
-
-        # now for the updating handling of pose name strings
-        else:
-            adult_sprite = (
-                adult_sprite
-                if adult_sprite is not None
-                and (
-                    adult_sprite in self.adult_short_poses
-                    or adult_sprite in self.adult_long_poses
-                )
-                else "adult_short0"
-            )
-
-            self.cat_sprites = {
-                "kitten": kitten_sprite
-                if kitten_sprite is not None and kitten_sprite in self.kitten_poses
-                else "kitten0",
-                "adolescent": adol_sprite
-                if adol_sprite is not None and adol_sprite in self.adolescent_poses
-                else "adolescent0",
-                "young adult": adult_sprite,
-                "adult": adult_sprite,
-                "senior adult": adult_sprite,
-                "senior": senior_sprite
-                if senior_sprite is not None and senior_sprite in self.senior_poses
-                else "senior0",
-                "para_adult": para_adult_sprite
-                if para_adult_sprite is not None
-                else "para_adult_short0",
-                "newborn": "newborn0",
-                "para_young": "para_young0",
-            }
+        self.cat_sprites = {
+            "kitten": kitten_sprite if kitten_sprite is not None else 0,
+            "adolescent": adol_sprite if adol_sprite is not None else 0,
+            "young adult": adult_sprite if adult_sprite is not None else 0,
+            "adult": adult_sprite if adult_sprite is not None else 0,
+            "senior adult": adult_sprite if adult_sprite is not None else 0,
+            "senior": senior_sprite if senior_sprite is not None else 0,
+            "para_adult": para_adult_sprite if para_adult_sprite is not None else 0,
+            "newborn": 20,
+            "para_young": 17,
+            "sick_adult": 18,
+            "sick_young": 19,
+        }
 
         self.reverse = reverse
 
-        if self.length != "long" and self.cat_sprites["adult"] not in self.adult_short_poses:
-            self.cat_sprites["adult"] = random.choice(self.adult_short_poses)
-            self.cat_sprites["young adult"] = self.cat_sprites["adult"]
-            self.cat_sprites["senior adult"] = self.cat_sprites["adult"]
-            self.cat_sprites["para_adult"] = "para_adult_short0"
-        elif self.length == "long" and self.adult_long_poses and self.cat_sprites["adult"] not in self.adult_long_poses:
-            self.cat_sprites["adult"] = random.choice(
-                self.adult_long_poses
-                if self.adult_long_poses
-                else self.adult_short_poses
-            )
-            self.cat_sprites["young adult"] = self.cat_sprites["adult"]
-            self.cat_sprites["senior adult"] = self.cat_sprites["adult"]
-            self.cat_sprites["para_adult"] = "para_adult_long0"
+        if self.cat_sprites["adult"] > 8 and self.length != "long":
+            self.cat_sprites["adult"] = random.randint(6, 8)
+            self.cat_sprites["para_adult"] = 16
+        elif self.cat_sprites["adult"] < 9 and self.length == "long":
+            self.cat_sprites["adult"] = random.randint(9, 11)
+            self.cat_sprites["para_adult"] = 15
 
     @property
     def accessory(self):
@@ -712,7 +670,28 @@ class Pelt:
     
     @staticmethod
     def generate_white(KIT, albino, KITgrade, vit, white_pattern, pax3):
-        
+        maingame_white = {
+            'low':{
+                '1': [None, 'SCOURGE', 'BLAZE', 'TAILTIP', 'TOES', 'LUNA', 'LOCKET'],
+                '2': ['LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'PAWS', 'BROKENBLAZE', 'BEARD', 'BIB', 'VEE', 'HONEY', 'TOESTAIL',
+                    'RAVENPAW', 'DAPPLEPAW', 'LILTWO', 'MUSTACHE', 'REVERSEHEART', 'SPARKLE', 'REVERSEEYE'],
+                '3': ['TUXEDO', 'SAVANNAH', 'FANCY', 'DIVA', 'BEARD', 'DAMIEN', 'BELLY', 'SQUEAKS', 'STAR', 'MISS', 'BOWTIE',
+                    'FCTWO', 'FCONE', 'MIA', 'PRINCESS', 'DOUGIE'],
+                '4': ['TUXEDO', 'SAVANNAH', 'OWL', 'RINGTAIL', 'UNDERS', 'FAROFA', 'VEST', 'FRONT', 'BLOSSOMSTEP', 'DIGIT',
+                    'HAWKBLAZE'],
+                '5': ['ANY', 'SHIBAINU', 'FAROFA', 'MISTER', 'PANTS', 'TRIXIE']
+            },
+            'high':{
+                '1': ['ANY', 'SHIBAINU', 'PANTSTWO', 'MAO', 'TRIXIE'],
+                '2': ['ANY', 'FRECKLES', 'PANTSTWO', 'MASKMANTLE', 'MAO', 'PAINTED', 'BUB', 'SCAR'],
+                '3': ['ANYTWO', 'PEBBLESHINE', 'BROKEN', 'PIEBALD', 'FRECKLES', 'HALFFACE', 'GOATEE', 'PRINCE', 'CAPSADDLE', 
+                    'REVERSEPANTS', 'GLASS', 'PAINTED', 'COWTWO', 'SAMMY', 'FINN', 'BUSTER', 'CAKE'],
+                '4': ['VAN', 'PEBBLESHINE', 'LIGHTSONG', 'CURVED', 'GOATEE', 'TAIL', 'APRON', 'HALFWHITE', 'APPALOOSA', 'HEART',
+                    'MOORISH', 'COW', 'SHOOTINGSTAR', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA'],
+                '5': ['ONEEAR', 'LIGHTSONG', 'PETAL', 'CHESTSPECK', 'HEARTTWO', 'BOOTS', 'SHOOTINGSTAR', 'EYESPOT', 
+                    'KROPKA']
+            }
+        }
 
         vitiligo = ['MOON', 'PHANTOM', 'POWDER', 'BLEACHED', 'VITILIGO', 'VITILIGOTWO', 'SMOKEY']
 
@@ -747,7 +726,7 @@ class Pelt:
                         KITgrade = random.randint(1, 2)
 
                 if(random.randint(1, 4) == 1):
-                    white_pattern.append(random.choice(Pelt.maingame_white["low"].get(str(KITgrade))))
+                    white_pattern.append(random.choice(maingame_white["low"].get(str(KITgrade))))
 
                 elif KITgrade == 1:
                     grade1list = ['chest tuft', 'belly tuft', 'chest tuft', 'belly tuft', None]
@@ -868,7 +847,7 @@ class Pelt:
                     white_pattern = [random.choice(["REVERSEPANTS"])]
 
                 if(random.randint(1, 4) == 1):
-                    white_pattern.append(random.choice(Pelt.maingame_white["high"].get(str(KITgrade))))
+                    white_pattern.append(random.choice(maingame_white["high"].get(str(KITgrade))))
 
                 elif KITgrade == 1:
                     while len(white_pattern) < 4:
@@ -967,58 +946,54 @@ class Pelt:
             return "No"
         return clean_white(white_pattern)
 
-    def check_and_convert(self, convert_dict):
+    def check_and_convert(self):
         """Checks for old-type properties for the appearance-related properties
         that are stored in Pelt, and converts them. To be run when loading a cat in."""
 
         if self.length == "long":
-            if self.cat_sprites["adult"] not in self.adult_long_poses:
-                self.cat_sprites["adult"] = random.choice(
-                    self.adult_long_poses
-                    if self.adult_long_poses
-                    else self.adult_short_poses
-                )
+            if self.cat_sprites["adult"] not in (9, 10, 11):
+                if self.cat_sprites["adult"] == 0:
+                    self.cat_sprites["adult"] = 9
+                elif self.cat_sprites["adult"] == 1:
+                    self.cat_sprites["adult"] = 10
+                elif self.cat_sprites["adult"] == 2:
+                    self.cat_sprites["adult"] = 11
                 self.cat_sprites["young adult"] = self.cat_sprites["adult"]
                 self.cat_sprites["senior adult"] = self.cat_sprites["adult"]
-                self.cat_sprites["para_adult"] = "para_adult_long0"
+                self.cat_sprites["para_adult"] = 16
         else:
-            self.cat_sprites["para_adult"] = "para_adult_short0"
-        if self.cat_sprites["senior"] not in self.senior_poses:
-            self.cat_sprites["senior"] = random.choice(self.senior_poses)
+            self.cat_sprites["para_adult"] = 15
+        if self.cat_sprites["senior"] not in (12, 13, 14):
+            if self.cat_sprites["senior"] == 3:
+                self.cat_sprites["senior"] = 12
+            elif self.cat_sprites["senior"] == 4:
+                self.cat_sprites["senior"] = 13
+            elif self.cat_sprites["senior"] == 5:
+                self.cat_sprites["senior"] = 14
 
         if self.accessory is None:
             self.accessory = []
         elif isinstance(self.accessory, str):
             self.accessory = [self.accessory]
 
-        new_acc_list = []
-        for acc in self.accessory:
-            if acc in convert_dict["collar_map"]:
-                new_acc_list.append(convert_dict["collar_map"][acc])
-            else:
-                new_acc_list.append(acc)
-        self.accessory = new_acc_list
 
     def init_sprite(self):
         self.cat_sprites = {
-            "newborn": random.choice(self.newborn_poses),
-            "kitten": random.choice(self.kitten_poses),
-            "adolescent": random.choice(self.adolescent_poses),
-            "senior": random.choice(self.senior_poses),
-            "para_young": "para_young0",
+            "newborn": 20,
+            "kitten": random.randint(0, 2),
+            "adolescent": random.randint(3, 5),
+            "senior": random.randint(12, 14),
+            "sick_young": 19,
+            "sick_adult": 18,
         }
         self.reverse = random.choice([True, False])
 
         if self.length != "long":
-            self.cat_sprites["adult"] = random.choice(self.adult_short_poses)
-            self.cat_sprites["para_adult"] = "para_adult_short0"
+            self.cat_sprites["adult"] = random.randint(6, 8)
+            self.cat_sprites["para_adult"] = 16
         else:
-            self.cat_sprites["adult"] = random.choice(
-                self.adult_long_poses
-                if self.adult_long_poses
-                else self.adult_short_poses
-            )
-            self.cat_sprites["para_adult"] = "para_adult_long0"
+            self.cat_sprites["adult"] = random.randint(9, 11)
+            self.cat_sprites["para_adult"] = 15
         self.cat_sprites["young adult"] = self.cat_sprites["adult"]
         self.cat_sprites["senior adult"] = self.cat_sprites["adult"]
 
@@ -1034,7 +1009,7 @@ class Pelt:
             scar_choice = random.randint(0, 15)  # 6.67%
 
         if scar_choice == 1:
-            self.scars.append(random.choice(Pelt.general_scars))
+            self.scars.append(random.choice([random.choice(Pelt.scars1), random.choice(Pelt.scars3)]))
 
         if "NOTAIL" in self.scars and "HALFTAIL" in self.scars:
             self.scars.remove("HALFTAIL")
@@ -1078,6 +1053,7 @@ class Pelt:
 
     def init_tint(self):
         """Sets tint for pelt and white patches"""
+
         # PELT TINT
         # Basic tints as possible for all colors.
         base_tints = sprites.cat_tints["possible_tints"]["basic"]

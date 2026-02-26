@@ -14,8 +14,7 @@ from . import save_load, settings, switches
 from .save_load import safe_save
 from .settings import game_setting_get
 from .switches import switch_get_value, Switch
-from ...screens.enums import GameScreen
-from ...cat.enums import CatGroup
+
 
 pygame.init()
 
@@ -40,8 +39,8 @@ herb_events_list = []
 freshkill_event_list = []
 
 # Keeping track of various last screen for various purposes
-last_screen_forupdate = GameScreen.START
-last_screen_forProfile = GameScreen.LIST
+last_screen_forupdate = "start screen"
+last_screen_forProfile = "list screen"
 last_list_forProfile = None
 
 choose_cats = {}
@@ -64,24 +63,6 @@ choose_cats = {}
 patrol_cats = {}
 patrolled = []
 
-used_group_IDs: dict = {
-    CatGroup.PLAYER_CLAN_ID: CatGroup.PLAYER_CLAN,
-    CatGroup.STARCLAN_ID: CatGroup.STARCLAN,
-    CatGroup.UNKNOWN_RESIDENCE_ID: CatGroup.UNKNOWN_RESIDENCE,
-    CatGroup.DARK_FOREST_ID: CatGroup.DARK_FOREST,
-}
-
-def reset_group_IDs():
-    global used_group_IDs
-    
-    used_group_IDs = {
-        CatGroup.PLAYER_CLAN_ID: CatGroup.PLAYER_CLAN,
-        CatGroup.STARCLAN_ID: CatGroup.STARCLAN,
-        CatGroup.UNKNOWN_RESIDENCE_ID: CatGroup.UNKNOWN_RESIDENCE,
-        CatGroup.DARK_FOREST_ID: CatGroup.DARK_FOREST,
-    }
-"""Int IDs already in use. Key is the group ID, value is the group type."""
-
 # store changing parts of the game that the user can toggle with buttons
 
 all_screens = {}
@@ -103,7 +84,7 @@ rpc = None
 is_close_menu_open = False
 
 
-current_screen = GameScreen.START
+current_screen = "start screen"
 clicked = False
 keyspressed = []
 switch_screens = False
@@ -220,13 +201,6 @@ def load_events():
         for event_dict in events_list:
             event_obj = Single_Event.from_dict(event_dict, cat_class)
             if event_obj:
-                if event_obj.clan and (event_obj.clan == CatGroup.PLAYER_CLAN.value or event_obj.clan == clan.displayname):
-                    event_obj.clan = CatGroup.PLAYER_CLAN_ID
-                elif event_obj.clan and len(event_obj.clan) > 2:
-                    try:
-                        event_obj.clan = str(int(event_obj.clan[-1])+4)
-                    except:
-                        event_obj.clan = next(filter(lambda c: event_obj.clan == c.displayname, clan.all_other_clans), None)
                 cur_events_list.append(event_obj)
     except FileNotFoundError:
         pass
@@ -295,16 +269,6 @@ def get_config_value(active_clan: "CatGroup", *args):
             config_value -= mod
 
     return config_value
-
-
-def get_free_group_ID(group_type: CatGroup) -> str:
-    """
-    Find the next free group ID, adds it to the used_group_ID dict, and then returns the ID.
-    :param group_type: The CatGroup that the new group will be considered.
-    """
-    new_ID = str(int(list(used_group_IDs.keys())[-1]) + 1)
-    used_group_IDs.update({new_ID: group_type})
-    return new_ID
 
 
 pygame.display.set_caption("Clan Generator")

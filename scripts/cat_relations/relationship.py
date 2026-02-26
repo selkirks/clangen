@@ -91,9 +91,9 @@ class Relationship:
     def start_interaction(self) -> None:
         """This function handles the simple interaction of this relationship."""
         # such interactions are only allowed for living Clan members
-        if not self.cat_from.status.group.is_any_clan_group():
+        if not self.cat_from.status.is_any_clan_group():
             return
-        if not self.cat_to.status.group.is_any_clan_group():
+        if not self.cat_to.status.is_any_clan_group():
             return
         if self.cat_from.ID == self.cat_to.ID:
             return
@@ -226,13 +226,13 @@ class Relationship:
         relevant_event_tabs = ["relation", "interaction"]
         if self.chosen_interaction.get_injuries:
             relevant_event_tabs.append("health")
-        clan = self.cat_from.status.fetch_clan_object(game.clan)
+        clan = self.cat_from.status.group.fetch_clan_object(game.clan)
         game.cur_events_list.append(
             Single_Event(
                 interaction_str,
                 ["relation", "interaction"],
                 cat_dict={"m_c": self.cat_to, "r_c": self.cat_from},
-                clan=clan.group_ID
+                clan=clan.enum
             )
         )
 
@@ -246,12 +246,12 @@ class Relationship:
 
         return process_text(string, cat_dict)
 
-    def get_value_change_amount(self, is_positive: bool, intensity: str) -> int:
+    def get_value_change_amount(self, value_change: bool, intensity: str) -> int:
         """Finds and returns the int amount that the relationship type will change by according to given intensity and additional modifiers
 
         Parameters
         ----------
-        is_positive : bool
+        value_change : bool
             True if the relationship value is positive, False if negative.
         intensity : str
             the intensity of the affect
@@ -263,7 +263,7 @@ class Relationship:
         """
         # get the normal amount
         amount = constants.CONFIG["relationship"]["value_change_amount"][intensity]
-        if not is_positive:
+        if value_change == "decrease":
             amount = amount * -1
 
         # take compatibility into account
@@ -280,13 +280,13 @@ class Relationship:
         return amount
 
     def interaction_affect_relationships(
-        self, is_positive: bool, intensity: str, rel_type: str
+        self, value_change: bool, intensity: str, rel_type: str
     ) -> None:
         """Affects the relationship according to the chosen types.
 
         Parameters
         ----------
-        is_positive : bool
+        value_change : str
             if the relationship value is positive
         intensity : str
             the intensity of the affect
@@ -296,8 +296,9 @@ class Relationship:
         Returns
         -------
         """
-        amount = self.get_value_change_amount(is_positive, intensity)
+        amount = self.get_value_change_amount(value_change, intensity)
 
+        buffs = []
         # only high intensity gives passive buffs
         if intensity == "high":
             passive_buff = int(
@@ -321,8 +322,9 @@ class Relationship:
                 setattr(
                     self,
                     rel_out,
-                    getattr(self, rel_out)
-                    + (choice(buffs) if rel_type != rel_out else amount),
+                    getattr(self, rel_out) + (choice(buffs)
+                    if rel_type != rel_out
+                    else amount),
                 )
         else:
             setattr(self, rel_type, getattr(self, rel_type) + amount)

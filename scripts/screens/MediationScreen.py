@@ -23,7 +23,6 @@ from scripts.cat_relations.relationship import (
     Relationship
 )
 from .Screens import Screens
-from .enums import GameScreen
 from ..clan_package.settings import get_clan_setting
 from ..game_structure.game.settings import game_setting_get
 from ..game_structure.game.switches import switch_get_value, Switch
@@ -56,7 +55,7 @@ class MediationScreen(Screens):
             self.mute_button_pressed(event)
 
             if event.ui_element == self.back_button:
-                self.change_screen(GameScreen.PROFILE)
+                self.change_screen("profile screen")
             elif event.ui_element == self.last_med:
                 self.selected_mediator -= 1
                 self.update_mediator_info()
@@ -135,7 +134,7 @@ class MediationScreen(Screens):
         for cat in Cat.all_cats_list:
             if (
                 cat.status.rank.is_any_mediator_rank()
-                and cat.status.group_ID == Cat.fetch_cat(switch_get_value(Switch.cat)).status.group_ID
+                and cat.status.group == Cat.fetch_cat(switch_get_value(Switch.cat)).status.group
             ):
                 self.mediators.append(cat)
 
@@ -373,7 +372,7 @@ class MediationScreen(Screens):
             i
             for i in Cat.all_cats_list
             if (i.ID != self.mediators[self.selected_mediator].ID)
-            and i.status.group_ID == self.mediators[self.selected_mediator].status.group_ID
+            and i.status.group == self.mediators[self.selected_mediator].status.group
         ]
         self.all_cats = self.chunks(self.all_cats_list, 24)
         self.current_listed_cats = self.all_cats_list

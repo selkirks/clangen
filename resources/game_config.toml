@@ -74,9 +74,6 @@ dev_tools = false
   # 1/chance of becoming mates, triggers with friends_to_lover (has to be a high number because many relationships are checked each moon)
   chance_friends_to_lovers = 170
 
-  # base 1/chance for mates to break up. Affected by relationship values and personality compatibility. 0 disables breakups entirely
-  base_breakup_chance = 30
-
   # NOTE FOR RELATIONSHIP CONSTRAINTS
   #  0: no condition
   #  positive number: value has to be higher than number
@@ -221,12 +218,6 @@ dev_tools = false
   # default chance 0-1 for a litter with an outside parent to be a half-clan litter
   half-clan_chance = 0.25
 
-  # 1/chance that a phantom pregnancy will happen when cats fail to have a litter
-  false_pregnancy_chance = 200
-
-  # 1/chance that a pregnancy will be hidden from the player until a cat gives birth
-  hidden_pregnancy_chance = 200
-
   # The kit number is incremental. It is 1-6 as default so if you change these numbers, you should probably keep this in mind.
   # As in, your max kits number should probably be 5 more than the min kits number.
   # But that's not required - just makes more sense that way with how the litters are generated.
@@ -274,39 +265,39 @@ dev_tools = false
     "young adult" = 128
     adult = 8
     "senior adult" = 16
-    senior = 2
+    senior = 128
   [pregnancy.two_kit_modded]
     "young adult" = 256
     adult = 16
     "senior adult" = 32
-    senior = 8
+    senior = 256
   [pregnancy.three_kit_modded]
     "young adult" = 256
     adult = 32
     "senior adult" = 64
-    senior = 8
+    senior = 256
   [pregnancy.four_kit_modded]
     "young adult" = 256
     adult = 32
     "senior adult" = 64
-    senior = 4
+    senior = 128
   [pregnancy.five_kit_modded]
     "young adult" = 128
     adult = 32
     "senior adult" = 64
-    senior = 2
+    senior = 64
   # 6-8 random litter size
   [pregnancy.six_kit_modded]
     "young adult" = 64
     adult = 16
     "senior adult" = 32
-    senior = 1
+    senior = 32
   # 9-12 random litter size
   [pregnancy.nine_kit_modded]
     "young adult" = 16
     adult = 4
     "senior adult" = 6
-    senior = 0
+    senior = 3
   # 13-19 random litter size
   [pregnancy.max_kit_modded]
     "young adult" = 1
@@ -547,7 +538,6 @@ dev_tools = false
   use_special_roller = true
 
   # how many neighbouring clans are generated on clan creation. Must be at least 1
-  # the game is also not built to handle more than 5 so issues may potentially arise with more
   other_clans_range = [2, 5]
 
 [genetics_config]
@@ -563,7 +553,7 @@ dev_tools = false
   intersex = 100
   "XXX/XXY" = 1000
   "X monosomy" = 3500
-  brindled_bicolour = 0
+  brindled_bicolour = 2000
   pseudo_merle = 200
   vitiligo = 150
   random_mutation = 150
@@ -709,8 +699,6 @@ dev_tools = false
   # chances for random outsider deaths or leaving the territory are 2^x
   outsider_death = 6
   outsider_wander_off = 7
-  # outsider_return is a 2^x chance for outsiders chased away or having left the territory to return by themselves
-  outsider_return = 6
 
 [focus]
   # NOTE: 'raid other clans' should be more dangerous than 'hoarding'!!!

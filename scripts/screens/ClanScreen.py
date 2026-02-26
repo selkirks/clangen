@@ -24,7 +24,6 @@ from scripts.utility import (
     ui_scale_value,
 )
 from .Screens import Screens
-from .enums import GameScreen
 from ..cat.save_load import save_cats
 from ..clan_package.settings import get_clan_setting
 from ..clan_package.settings.clan_settings import switch_clan_setting
@@ -77,29 +76,29 @@ class ClanScreen(Screens):
                     self.update_buttons_and_text()
                 except RuntimeError:
                     SaveError(traceback.format_exc())
-                    self.change_screen(GameScreen.START)
+                    self.change_screen("start screen")
             if event.ui_element in self.cat_buttons:
                 switch_set_value(Switch.cat, event.ui_element.return_cat_id())
-                self.change_screen(GameScreen.PROFILE)
+                self.change_screen("profile screen")
             if event.ui_element == self.label_toggle:
                 switch_clan_setting("den labels")
                 self.update_buttons_and_text()
             if event.ui_element == self.med_den_label:
-                self.change_screen(GameScreen.MED_DEN)
+                self.change_screen("med den screen")
             if event.ui_element == self.clearing_label:
-                self.change_screen(GameScreen.CLEARING)
+                self.change_screen("clearing screen")
             if event.ui_element == self.warrior_den_label:
-                self.change_screen(GameScreen.WARRIOR_DEN)
+                self.change_screen("warrior den screen")
             if event.ui_element == self.leader_den_label:
-                self.change_screen(GameScreen.LEADER_DEN)
+                self.change_screen("leader den screen")
             else:
                 self.menu_button_pressed(event)
 
         elif event.type == pygame.KEYDOWN and game_setting_get("keybinds"):
             if event.key == pygame.K_RIGHT:
-                self.change_screen(GameScreen.LIST)
+                self.change_screen("list screen")
             elif event.key == pygame.K_LEFT:
-                self.change_screen(GameScreen.EVENTS)
+                self.change_screen("events screen")
             elif event.key == pygame.K_SPACE:
                 self.save_button_saving_state.show()
                 self.save_button.disable()

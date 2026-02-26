@@ -53,16 +53,14 @@
         ],
         "herbs": {
             "1": [
-            "marigold",
-            "ragwort"
-        ],
-            "2": [
                 "daisy",
-                "juniper"
+                "juniper",
+                "marigold",
+                "ragwort",
+                "poppy"
             ],
-            "3": [
-                "dandelion"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "born without a leg": {
@@ -92,15 +90,13 @@
         ],
         "herbs": {
             "1": [
-            "marigold",
-            "ragwort"
-        ],
-            "2": [
-                "daisy"
+                "daisy",
+                "juniper",
+                "marigold",
+                "ragwort"
             ],
-            "3": [
-                "juniper"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "weak leg": {
@@ -130,16 +126,14 @@
         ],
         "herbs": {
             "1": [
-            "marigold",
-            "ragwort"
-        ],
-            "2": [
                 "daisy",
-                "juniper"
+                "juniper",
+                "marigold",
+                "ragwort",
+                "poppy"
             ],
-            "3": [
-                "thyme"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "twisted leg": {
@@ -169,18 +163,14 @@
         ],
         "herbs": {
             "1": [
-            "marigold",
-            "ragwort",
-            "dandelion"
-        ],
-            "2": [
+                "daisy",
                 "juniper",
-                "daisy"
+                "marigold",
+                "ragwort",
+                "poppy"
             ],
-            "3": [
-                "poppy",
-                "thyme"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "lost their tail": {
@@ -210,14 +200,12 @@
         ],
         "herbs": {
             "1": [
-            "juniper"
-        ],
-            "2": [
-                "ragwort"
-            ],
-            "3": [
+                "juniper",
+                "ragwort",
                 "poppy"
-            ]
+            ],
+            "2": [ ],
+            "3": [ ]
         }
     },
     "born without a tail": {
@@ -278,18 +266,14 @@
         ],
         "herbs": {
             "1": [
-            "juniper",
-            "ragwort",
-            "marigold",
-            "dandelion"
-        ],
-            "2": [
                 "daisy",
+                "juniper",
+                "ragwort",
+                "marigold",
                 "poppy"
             ],
-            "3": [
-                "elder_leaves"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "raspy lungs": {
@@ -315,15 +299,11 @@
         ],
         "herbs": {
             "1": [
-            "betony"
-        ],
-            "2": [
-                "rosemary",
-                "juniper"
-            ],
-            "3": [
+                "betony",
                 "mullein"
-            ]
+            ],
+            "2": [ ],
+            "3": [ ]
         }
     },
     "wasting disease": {
@@ -373,18 +353,11 @@
         ],
         "herbs": {
             "1": [
-            "juniper",
-            "ragwort",
-            "goldenrod",
-            "mullein"
-        ],
-            "2": [
-                "betony",
-                "tansy"
+                "juniper",
+                "ragwort"
             ],
-            "3": [
-                "poppy"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "strange lump": {
@@ -431,18 +404,12 @@
         ],
         "herbs": {
             "1": [
-            "juniper",
-            "ragwort",
-            "goldenrod",
-            "dandelion"
-        ],
-            "2": [
-                "betony",
-                "mullein"
-            ],
-            "3": [
+                "juniper",
+                "ragwort",
                 "poppy"
-            ]
+            ],
+            "2": [ ],
+            "3": [ ]
         }
     },
     "blind": {
@@ -493,17 +460,9 @@
             }
         ],
         "herbs": {
-            "1": [
-                "daisy",
-                "betony"
-            ],
-            "2": [
-                "thyme"
-            ],
-            "3": [
-                "juniper",
-                "ragwort"
-            ]
+            "1": [ ],
+            "2": [ ],
+            "3": [ ]
         }
     },
     "one bad eye": {
@@ -679,16 +638,13 @@
         ],
         "herbs": {
             "1": [
-            "marigold"
-        ],
-            "2": [
                 "daisy",
-                "ragwort",
-                "juniper"
+                "juniper",
+                "marigold",
+                "ragwort"
             ],
-            "3": [
-                "poppy"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "seizure prone": {
@@ -714,15 +670,11 @@
         ],
         "herbs": {
             "1": [
-            "ragwort"
-        ],
-            "2": [
+                "ragwort",
                 "juniper"
-        ],
-            "3": [
-                "thyme",
-                "betony"
-        ]
+            ],
+            "2": [ ],
+            "3": [ ]
         }
     },
     "allergies": {
@@ -747,11 +699,9 @@
             }
         ],
         "herbs": {
-            "1": [
-                "juniper"
-            ],
-            "2": [],
-            "3": []
+            "1": [ ],
+            "2": [ ],
+            "3": [ ]
         }
     },
     "constantly dizzy": {
@@ -804,14 +754,12 @@
         ],
         "herbs": {
             "1": [
-            "poppy"
-        ],
-            "2": [
-                "juniper"
+                "thyme",
+                "juniper",
+                "poppy"
             ],
-            "3": [
-                "thyme"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "lasting grief": {
@@ -841,15 +789,11 @@
         ],
         "herbs": {
             "1": [
-            "poppy"
-        ],
-            "2": [
-                "juniper",
-                "ragwort"
+                "thyme",
+                "juniper"
             ],
-            "3": [
-                "thyme"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "persistent headaches": {
@@ -879,14 +823,11 @@
         ],
         "herbs": {
             "1": [
-                "rosemary"
-            ],
-            "2": [
+                "poppy",
                 "juniper"
             ],
-            "3": [
-                "poppy"
-            ]
+            "2": [ ],
+            "3": [ ]
         }
     },
     "sterile": {

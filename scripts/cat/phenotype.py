@@ -36,30 +36,6 @@ class Phenotype(Genotype):
                                 'CHEST', 'GRUMPYFACE', 'SIDEMASK', 'PACMAN', 'BRIE' ,'ORIOLE', 'ROBIN', 'PAIGE', 'HEARTBEAT']
         self.def_tortie_high_patterns = ['THREE', 'FOUR', 'REDTAIL', 'HALF', 'STREAK', 'MASK', 'SWOOP', 'ARMTAIL', 'STREAMSTRIKE', 'DAUB',
                                 'ROSETAIL', 'DAPPLENIGHT', 'BLANKET']
-
-    def reset(self):
-        self.length = ""
-
-        self.highwhite = ""
-        self.fade = ""
-        self.colour = ""
-        self.silvergold = ""
-        self.tabtype = ""
-        self.tabby = ""
-        self.tortie = ""
-        self.point = ""
-        self.lowwhite = ""
-        self.karpati = ""
-        self.specwhite = ""
-
-        self.eartype = ""
-        self.tailtype = ""
-        self.bobtailnr = 0
-        self.pawtype = ""
-        self.furtype = []
-
-        self.vitiligo_string = ""
-        self.mutant_red = ""
         
     def FurtypeFinder(self):
         furtype = []
@@ -437,7 +413,6 @@ class Phenotype(Genotype):
         if(self.tailtype != ''):
             self.tailtype += "tail"
     def PhenotypeOutput(self, pattern=None, gender=None, chimera=False):
-        self.reset()
         self.FurtypeFinder()
         self.MainColourFinder()
         self.PointFinder()
@@ -484,7 +459,7 @@ class Phenotype(Genotype):
             eyes = "one " + self.lefteye + " eye, one " + self.righteye + " eye"
         
         if(self.extraeye):
-            eyes += f" and {self.extraeyecolour.lower()} sectoral heterochromia"
+            eyes += " and sectoral heterochromia"
 
         withword = self.specwhite
         if (self.eartype !="" or self.tailtype!="" or self.pawtype!="" or furtype!="" or self.vitiligo_string != ""):
@@ -697,7 +672,7 @@ class Phenotype(Genotype):
         self.patchcolour = ""
 
         if(self.silver[0] == 'I' and self.pseudomerle):
-            if self.merlepattern is None:  # pylint: disable=access-member-before-definition
+            if self.merlepattern is None:
                 self.merlepattern = self.ChooseTortiePattern(spec = 'merle')
 
         if self.white[0] == "W" or self.pointgene[0] == "c" or ('DBEalt' not in self.pax3 and 'NoDBE' not in self.pax3) or (self.brindledbi and self.specialred not in ["blue-tipped", "blue-red", "cinnamon"] and (('o' not in self.sexgene) or (self.ext[0] == 'ea' and ((moons > 11 and self.agouti[0] != 'a') or (moons > 23))) or (self.ext[0] == 'er' and moons > 23) or (self.ext[0] == 'ec' and (self.agouti[0] != 'a' or moons > 5)))):
@@ -851,7 +826,7 @@ class Phenotype(Genotype):
                 colour = "pale_" + colour
 
             rufousing = ""
-            banding = "low"
+            banding = ""
             
             if ('masked' in self.silvergold and genes.wbsum > 15) or (genes.agouti[0] != "a" and genes.ext[0] != "Eg") or (genes.ext[0] not in ['Eg', 'E']):
                 if genes.silver[0] == "I" or genes.brindledbi or (moons < 3 and genes.karp[0] == "K"):
@@ -882,10 +857,10 @@ class Phenotype(Genotype):
                 
                 if (genes.ext[0] == 'ea' and ((moons > 7 and genes.agouti[0] != "a") or moons > 19)):
                     colour = self.FindRed(genes, moons)[1]
+                self.banding = banding
                 
             else:
-                colour = maincolour
-            self.banding = banding
+                colour = maincolour        
 
 
             return [maincolour, colour, unders_colour, unders_opacity]

@@ -1,5 +1,5 @@
 {
-        "claw-wound":{
+    "claw-wound":{
         "duration": 3,
         "severity": "major",
         "medicine_duration": 2,
@@ -28,19 +28,17 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "goldenrod",
             "marigold",
+            "oak_leaves",
+            "wild_garlic",
             "tansy",
+            "poppy",
+            "ragwort",
             "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -73,19 +71,17 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "goldenrod",
             "marigold",
+            "oak_leaves",
+            "wild_garlic",
             "tansy",
+            "poppy",
+            "ragwort",
             "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
     "cat bite":{
@@ -117,19 +113,17 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "goldenrod",
             "marigold",
+            "oak_leaves",
+            "wild_garlic",
             "tansy",
+            "poppy",
+            "ragwort",
             "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -162,19 +156,17 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "goldenrod",
             "marigold",
+            "oak_leaves",
+            "wild_garlic",
             "tansy",
+            "poppy",
+            "ragwort",
             "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -205,21 +197,17 @@
         "cause_permanent": [],
         "herbs": {
             "1": [
-            "cobwebs",
-            "marigold",
             "tansy",
-            "moss"
+            "marigold",
+            "oak_leaves",
+            "goldenrod",
+            "wild_garlic",
+            "juniper",
+            "ragwort",
+            "poppy"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod",
-                "dandelion"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -259,21 +247,19 @@
         "cause_permanent": [],
         "herbs": {
             "1": [
+            "wild_garlic",
+            "burdock",
+            "tansy",
             "cobwebs",
             "marigold",
-            "tansy",
+            "oak_leaves",
+            "goldenrod",
+            "juniper",
+            "poppy",
             "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod",
-                "burdock"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -305,12 +291,11 @@
         "cause_permanent": [],
         "herbs": {
             "1": [
-            "moss"
+            "moss",
+            "plantain"
         ],
             "2": [],
-            "3": [
-                "plantain"
-            ]
+            "3": []
         }
     },
 
@@ -337,19 +322,15 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "horsetail",
             "marigold",
-            "tansy"
+            "ragwort",
+            "juniper",
+            "moss",
+            "poppy"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod",
-                "moss"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -385,18 +366,15 @@
             "1": [
             "cobwebs",
             "marigold",
-            "tansy",
+            "oak_leaves",
+            "wild_garlic",
+            "juniper",
+            "ragwort",
+            "poppy",
             "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -435,18 +413,15 @@
             "1": [
             "cobwebs",
             "marigold",
-            "tansy",
+            "oak_leaves",
+            "wild_garlic",
+            "juniper",
+            "ragwort",
+            "poppy",
             "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -486,20 +461,18 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "goldenrod",
             "marigold",
+            "wild_garlic",
+            "oak_leaves",
             "tansy",
-            "mullein"
+            "poppy",
+            "ragwort",
+            "juniper",
+            "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves",
-                "moss"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -530,14 +503,11 @@
             "1": [
             "marigold",
             "ragwort",
-            "oak_leaves"
+            "daisy",
+            "poppy"
         ],
-            "2": [
-                "daisy"
-            ],
-            "3": [
-                "poppy"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -562,16 +532,13 @@
         ],
         "herbs": {
             "1": [
+            "marigold",
+            "ragwort",
+            "daisy",
             "poppy"
         ],
-            "2": [
-                "marigold"
-            ],
-            "3": [
-                "juniper",
-                "daisy",
-                "ragwort"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -595,14 +562,12 @@
         ],
         "herbs": {
             "1": [
+            "elder_leaves",
+            "dandelion",
             "poppy"
         ],
-            "2": [
-                "dandelion"
-            ],
-            "3": [
-                "elder_leaves"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -636,20 +601,18 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "goldenrod",
             "marigold",
+            "wild_garlic",
+            "oak_leaves",
             "tansy",
-            "mullein"
+            "poppy",
+            "ragwort",
+            "juniper",
+            "moss"
         ],
-            "2": [
-                "wild_garlic",
-                "horsetail",
-                "oak_leaves",
-                "moss"
-            ],
-            "3": [
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -703,15 +666,13 @@
         ],
         "herbs": {
             "1": [
+            "oak_leaves",
             "marigold",
-            "wild_garlic"
+            "wild garlic",
+            "poppy"
         ],
-            "2": [
-                "oak_leaves"
-            ],
-            "3": [
-                "elder_leaves"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -736,16 +697,13 @@
         "herbs": {
             "1": [
             "daisy",
+            "dandelion",
             "marigold",
-            "ragwort"
+            "ragwort",
+            "poppy"
         ],
-            "2": [
-                "poppy"
-            ],
-            "3": [
-                "dandelion",
-                "elder_leaves"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -769,14 +727,11 @@
         ],
         "herbs": {
             "1": [
+            "dandelion",
             "raspberry"
         ],
-            "2": [
-                "dandelion"
-            ],
-            "3": [
-                "poppy"
-            ]
+            "2": [],
+            "3": ["poppy"]
         }
     },
 
@@ -806,13 +761,12 @@
         "herbs": {
             "1": [
             "cobwebs",
-            "marigold"
+            "marigold",
+            "oak_leaves",
+            "wild_garlic"
         ],
             "2": [],
-            "3": [
-                "oak_leaves",
-                "wild_garlic"
-            ]
+            "3": []
         }
     },
 
@@ -841,14 +795,12 @@
         ],
         "herbs": {
             "1": [
-            "marigold"
+            "marigold",
+            "oak_leaves",
+            "wild_garlic"
         ],
-            "2": [
-                "wild_garlic"
-            ],
-            "3": [
-                "oak_leaves"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -879,16 +831,14 @@
         "herbs": {
             "1": [
             "cobwebs",
-            "marigold"
+            "goldenrod",
+            "marigold",
+            "oak_leaves",
+            "wild_garlic",
+            "raspberry"
         ],
-            "2": [
-                "wild_garlic",
-                "dandelion"
-            ],
-            "3": [
-                "goldenrod",
-                "oak_leaves"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -919,16 +869,13 @@
         "herbs": {
             "1": [
             "cobwebs",
-            "marigold"
+            "goldenrod",
+            "marigold",
+            "oak_leaves",
+            "wild_garlic"
         ],
-            "2": [
-                "wild_garlic",
-                "dandelion"
-            ],
-            "3": [
-                "goldenrod",
-                "oak_leaves"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -964,17 +911,14 @@
         ],
         "herbs": {
             "1": [
+            "juniper",
             "ragwort",
-            "moss"
+            "poppy",
+            "moss",
+            "dandelion"
         ],
-            "2": [
-                "mullein"
-            ],
-            "3": [
-                "poppy",
-                "dandelion",
-                "juniper"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1008,12 +952,9 @@
             "oak_leaves",
             "juniper",
             "ragwort",
-            "moss",
-            "thyme"
+            "moss"
         ],
-            "2": [
-                "raspberry"
-            ],
+            "2": [],
             "3": []
         }
     },
@@ -1057,17 +998,15 @@
         ],
         "herbs": {
             "1": [
+            "juniper",
+            "betony",
+            "mullein",
             "tansy",
             "plantain",
             "ragwort"
         ],
-            "2": [
-                "betony",
-                "juniper"
-            ],
-            "3": [
-                "mullein"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1097,19 +1036,17 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "marigold",
+            "wild_garlic",
             "oak_leaves",
+            "goldenrod",
             "juniper",
-            "ragwort"
+            "ragwort",
+            "poppy",
+            "moss"
         ],
-            "2": [
-                "marigold",
-                "wild_garlic"
-            ],
-            "3": [
-                "moss",
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1141,19 +1078,17 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "marigold",
+            "wild_garlic",
             "oak_leaves",
+            "goldenrod",
             "juniper",
-            "ragwort"
+            "ragwort",
+            "poppy",
+            "moss"
         ],
-            "2": [
-                "marigold",
-                "wild_garlic"
-            ],
-            "3": [
-                "moss",
-                "poppy",
-                "goldenrod"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1182,14 +1117,13 @@
         ],
         "herbs": {
             "1": [
-            "ragwort"
+            "thyme",
+            "juniper",
+            "ragwort",
+            "poppy"
         ],
-            "2": [
-                "juniper"
-            ],
-            "3": [
-                "thyme"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1216,14 +1150,13 @@
         ],
         "herbs": {
             "1": [
-            "ragwort"
+            "thyme",
+            "juniper",
+            "ragwort",
+            "poppy"
         ],
-            "2": [
-                "juniper"
-            ],
-            "3": [
-                "thyme"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1263,15 +1196,12 @@
         ],
         "herbs": {
             "1": [
+            "juniper",
             "ragwort",
             "tansy"
         ],
-            "2": [
-                "thyme"
-            ],
-            "3": [
-                "juniper"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1304,12 +1234,11 @@
         "herbs": {
             "1": [
             "ragwort",
-            "juniper"
+            "juniper",
+            "moss"
         ],
             "2": [],
-            "3": [
-                "moss"
-            ]
+            "3": []
         }
     },
 
@@ -1351,15 +1280,12 @@
         ],
         "herbs": {
             "1": [
-            "ragwort"
+            "juniper",
+            "ragwort",
+            "thyme"
         ],
-            "2": [
-                "dandelion"
-            ],
-            "3": [
-                "thyme",
-                "juniper"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1394,19 +1320,17 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "goldenrod",
             "marigold",
             "oak_leaves",
-            "ragwort"
+            "wild_garlic",
+            "juniper",
+            "ragwort",
+            "poppy",
+            "moss"
         ],
-            "2": [
-                "juniper",
-                "wild_garlic"
-            ],
-            "3": [
-                "moss",
-                "goldenrod",
-                "poppy"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1439,20 +1363,17 @@
         "herbs": {
             "1": [
             "cobwebs",
+            "goldenrod",
             "marigold",
+            "oak_leaves",
+            "wild_garlic",
             "juniper",
-            "ragwort"
-
+            "ragwort",
+            "poppy",
+            "moss"
         ],
-            "2": [
-                "moss",
-                "oak_leaves"
-            ],
-            "3": [
-                "goldenrod",
-                "wild_garlic",
-                "dandelion"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1485,16 +1406,11 @@
         "herbs": {
             "1": [
             "juniper",
-            "ragwort"
+            "ragwort",
+            "poppy"
         ],
-            "2": [
-                "thyme",
-                "dandelion"
-            ],
-            "3": [
-                "poppy",
-                "burdock"
-            ]
+            "2": [],
+            "3": []
         }
     },
     
@@ -1529,7 +1445,8 @@
             "dandelion",
             "tansy",
             "juniper",
-            "ragwort"
+            "ragwort",
+            "poppy"
         ],
             "2": [],
             "3": []
@@ -1559,14 +1476,12 @@
         ],
         "herbs": {
             "1": [
-            "horsetail"
+            "blackberry",
+            "dandelion",
+            "poppy"
         ],
-            "2": [
-                "dandelion"
-            ],
-            "3": [
-                "blackberry"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1593,14 +1508,11 @@
         ],
         "herbs": {
             "1": [
-            "dandelion"
+            "poppy",
+            "juniper"
         ],
-            "2": [
-                "juniper"
-            ],
-            "3": [
-                "thyme"
-            ]
+            "2": [],
+            "3": []
         }
     },
 
@@ -1628,14 +1540,11 @@
         ],
         "herbs": {
             "1": [
+            "poppy",
             "juniper"
         ],
-            "2": [
-                "thyme"
-            ],
-            "3": [
-                "poppy"
-            ]
+            "2": [],
+            "3": []
         }
     },
     
@@ -1666,196 +1575,196 @@
         }
     },
 
-    "sunburn": {
-        "duration": 2,
-        "severity": "minor",
-        "medicine_duration": 1,
-        "mortality": {
-        "kitten": 0,
-        "adolescent": 0,
-        "young adult": 0,
-        "adult": 0,
-        "senior adult": 0,
-        "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [],
-        "also_got": [],
-        "cause_permanent": [],
-        "herbs": {
-        "1" : [
-        "cobwebs",
-        "marigold",
-        "wild_garlic",
-        "oak_leaves",
-        "goldenrod",
-        "juniper",
-        "ragwort",
-        "poppy",
-        "moss"
-        ],
-        "2" : [],
-        "3" : []
-        }
+  "sunburn": {
+    "duration": 2,
+    "severity": "minor",
+    "medicine_duration": 1,
+    "mortality": {
+      "kitten": 0,
+      "adolescent": 0,
+      "young adult": 0,
+      "adult": 0,
+      "senior adult": 0,
+      "senior": 0
     },
-
-    "body sunburn": {
-        "duration": 2,
-        "severity": "minor",
-        "medicine_duration": 1,
-        "mortality": {
-        "kitten": 0,
-        "adolescent": 0,
-        "young adult": 0,
-        "adult": 0,
-        "senior adult": 0,
-        "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [],
-        "also_got": [],
-        "cause_permanent": [],
-        "herbs": {
-        "1" : [
-        "cobwebs",
-        "marigold",
-        "wild_garlic",
-        "oak_leaves",
-        "goldenrod",
-        "juniper",
-        "ragwort",
-        "poppy",
-        "moss"
-        ],
-        "2" : [],
-        "3" : []
-        }
-    },
-
-    "back pain": {
-        "duration": 2,
-        "severity": "minor",
-        "medicine_duration": 2,
-        "mortality": {
-        "newborn": 0,
-        "kitten": 0,
-        "adolescent": 0,
-        "young adult": 0,
-        "adult": 0,
-        "senior adult": 0,
-        "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [],
-        "also_got": [],
-        "cause_permanent": [],
-        "herbs": {
-        "1" : ["marigold", "ragwort", "daisy", "poppy"],
-        "2" : [],
-        "3" : []
-        }
-    },
-
-    "cyst": {
-        "duration": 2,
-        "severity": "minor",
-        "medicine_duration": 2,
-        "mortality": {
-        "newborn": 200,
-        "kitten": 200,
-        "adolescent": 200,
-        "young adult": 200,
-        "adult": 200,
-        "senior adult": 200,
-        "senior": 200
-        },
-        "illness_infectiousness": [],
-        "risks": [
-        {
-            "name": "an infected wound",
-            "chance": 50
-        }
-        ],
-        "also_got": [],
-        "cause_permanent": [],
-        "herbs": {
-        "1" : ["marigold", "burdock", "wild_garlic", "poppy"],
-        "2" : [],
-        "3" : []
-        }
-    },
-    "fatigue": {
-        "duration": 1,
-        "severity": "major",
-        "medicine_duration": 1,
-        "mortality": {
-        "newborn": 0,
-        "kitten": 0,
-        "adolescent": 0,
-        "young adult": 0,
-        "adult": 0,
-        "senior adult": 0,
-        "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [
-        {
-            "name": "exhaustion",
-            "chance": 50
-        }
-        ],
-        "also_got": [],
-        "cause_permanent": [],
-        "herbs": {
-        "1" : [],
-        "2" : [],
-        "3" : []
-        }
-    },
-    "exhaustion": {
-        "duration": 5,
-        "severity": "major",
-        "medicine_duration": 3,
-        "mortality": {
-        "newborn": 0,
-        "kitten": 0,
-        "adolescent": 0,
-        "young adult": 0,
-        "adult": 0,
-        "senior adult": 0,
-        "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [],
-        "also_got": [],
-        "cause_permanent": [],
-        "herbs": {
-        "1" : ["juniper", "ragwort"],
-        "2" : [],
-        "3" : []
-        }
-    },
-    "runny eyes": {
-        "duration": 1,
-        "severity": "minor",
-        "medicine_duration": 1,
-        "mortality": {
-        "newborn": 0,
-        "kitten": 0,
-        "adolescent": 0,
-        "young adult": 0,
-        "adult": 0,
-        "senior adult": 0,
-        "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [],
-        "also_got": [],
-        "cause_permanent": [],
-        "herbs": {
-        "1" : [],
-        "2" : [],
-        "3" : []
-        }
+    "illness_infectiousness": [],
+    "risks": [],
+    "also_got": [],
+    "cause_permanent": [],
+    "herbs": {
+      "1" : [
+      "cobwebs",
+      "marigold",
+      "wild_garlic",
+      "oak_leaves",
+      "goldenrod",
+      "juniper",
+      "ragwort",
+      "poppy",
+      "moss"
+    ],
+      "2" : [],
+      "3" : []
     }
+  },
+
+  "body sunburn": {
+    "duration": 2,
+    "severity": "minor",
+    "medicine_duration": 1,
+    "mortality": {
+      "kitten": 0,
+      "adolescent": 0,
+      "young adult": 0,
+      "adult": 0,
+      "senior adult": 0,
+      "senior": 0
+    },
+    "illness_infectiousness": [],
+    "risks": [],
+    "also_got": [],
+    "cause_permanent": [],
+    "herbs": {
+      "1" : [
+      "cobwebs",
+      "marigold",
+      "wild_garlic",
+      "oak_leaves",
+      "goldenrod",
+      "juniper",
+      "ragwort",
+      "poppy",
+      "moss"
+    ],
+      "2" : [],
+      "3" : []
+    }
+  },
+
+  "back pain": {
+    "duration": 2,
+    "severity": "minor",
+    "medicine_duration": 2,
+    "mortality": {
+      "newborn": 0,
+      "kitten": 0,
+      "adolescent": 0,
+      "young adult": 0,
+      "adult": 0,
+      "senior adult": 0,
+      "senior": 0
+    },
+    "illness_infectiousness": [],
+    "risks": [],
+    "also_got": [],
+    "cause_permanent": [],
+    "herbs": {
+      "1" : ["marigold", "ragwort", "daisy", "poppy"],
+      "2" : [],
+      "3" : []
+    }
+  },
+
+  "cyst": {
+    "duration": 2,
+    "severity": "minor",
+    "medicine_duration": 2,
+    "mortality": {
+      "newborn": 200,
+      "kitten": 200,
+      "adolescent": 200,
+      "young adult": 200,
+      "adult": 200,
+      "senior adult": 200,
+      "senior": 200
+    },
+    "illness_infectiousness": [],
+    "risks": [
+      {
+        "name": "an infected wound",
+        "chance": 50
+      }
+    ],
+    "also_got": [],
+    "cause_permanent": [],
+    "herbs": {
+      "1" : ["marigold", "burdock", "wild_garlic", "poppy"],
+      "2" : [],
+      "3" : []
+    }
+  },
+  "fatigue": {
+    "duration": 1,
+    "severity": "major",
+    "medicine_duration": 1,
+    "mortality": {
+      "newborn": 0,
+      "kitten": 0,
+      "adolescent": 0,
+      "young adult": 0,
+      "adult": 0,
+      "senior adult": 0,
+      "senior": 0
+    },
+    "illness_infectiousness": [],
+    "risks": [
+      {
+        "name": "exhaustion",
+        "chance": 50
+      }
+    ],
+    "also_got": [],
+    "cause_permanent": [],
+    "herbs": {
+      "1" : [],
+      "2" : [],
+      "3" : []
+    }
+  },
+  "exhaustion": {
+    "duration": 5,
+    "severity": "major",
+    "medicine_duration": 3,
+    "mortality": {
+      "newborn": 0,
+      "kitten": 0,
+      "adolescent": 0,
+      "young adult": 0,
+      "adult": 0,
+      "senior adult": 0,
+      "senior": 0
+    },
+    "illness_infectiousness": [],
+    "risks": [],
+    "also_got": [],
+    "cause_permanent": [],
+    "herbs": {
+      "1" : ["juniper", "ragwort"],
+      "2" : [],
+      "3" : []
+    }
+  },
+  "runny eyes": {
+    "duration": 1,
+    "severity": "minor",
+    "medicine_duration": 1,
+    "mortality": {
+      "newborn": 0,
+      "kitten": 0,
+      "adolescent": 0,
+      "young adult": 0,
+      "adult": 0,
+      "senior adult": 0,
+      "senior": 0
+    },
+    "illness_infectiousness": [],
+    "risks": [],
+    "also_got": [],
+    "cause_permanent": [],
+    "herbs": {
+      "1" : [],
+      "2" : [],
+      "3" : []
+    }
+  }
 }

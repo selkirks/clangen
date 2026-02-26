@@ -92,7 +92,7 @@ class Patrol:
 
         print("PATROL START ---------------------------------------------------")
 
-        self.clan = game.clan if clan.group_ID == game.clan.group_ID else next(filter(lambda c: clan.group_ID == c.group_ID, game.clan.all_other_clans), game.clan)
+        self.clan = clan.enum.fetch_clan_object()
         self.add_patrol_cats(patrol_cats, game.clan)
 
         self.debug_patrol = (
@@ -256,9 +256,9 @@ class Patrol:
             else:
                 self.patrol_leader = choice(self.patrol_cats)
 
-        all_options = (clan.all_other_clans + [clan])
+        all_options = (clan.all_clans + [clan])
         all_options.remove(self.clan)
-        if clan.all_other_clans and len(all_options) > 0:
+        if clan.all_clans and len(clan.all_clans) > 0:
             self.other_clan = choice(all_options)
         else:
             self.other_clan = None
@@ -371,7 +371,7 @@ class Patrol:
         clan_neutral = False
         clan_hostile = False
         clan_allies = False
-        clan_size = int(get_living_clan_cat_count(Cat, self.clan.group_ID))
+        clan_size = int(get_living_clan_cat_count(Cat, self.clan.enum))
         chance = 0
         # assigning other_clan relations
         if clan_relations > 17:
@@ -645,7 +645,7 @@ class Patrol:
                     print("DEBUG: requested patrol does not meet constraints (tags)")
                 continue
 
-            if patrol.other_clan and game.clan.clancount == 'multiclan' and not event_for_other_clan(Cat, patrol.other_clan_filter.get("has_rank"), self.other_clan.group_ID):
+            if patrol.other_clan and game.clan.clancount == 'multiclan' and not event_for_other_clan(Cat, patrol.other_clan_filter.get("has_rank"), self.other_clan.enum):
                 if self.debug_patrol and self.debug_patrol == patrol.patrol_id:
                     print("DEBUG: requested patrol does not meet constraints (neighbour clan constraits)")
                 continue
@@ -1030,7 +1030,7 @@ class Patrol:
 
         root_dir = "resources/images/patrol_art/"
 
-        if not game_setting_get("gore") and self.patrol_event.patrol_art_clean:
+        if game_setting_get("gore") and self.patrol_event.patrol_art_clean:
             file_name = self.patrol_event.patrol_art_clean
         else:
             file_name = self.patrol_event.patrol_art

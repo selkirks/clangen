@@ -255,14 +255,9 @@ class Namer():
         extra_prefixes = []
         extra_prefixes += self.all_prefixes['general']['any']
         if self.moons < 3:
-            if self.phenotype.growth_pattern == "big-kitten":
-                extra_prefixes += self.all_prefixes['general']['big']
-            elif self.phenotype.growth_pattern == "small-kitten":
-                extra_prefixes += self.all_prefixes['general']['small']
-            elif self.phenotype.growth_pattern == "runt":
-                extra_prefixes += self.all_prefixes['general']['small']
-                extra_prefixes += self.all_prefixes['general']['small']
-                extra_prefixes += self.all_prefixes['general']['small']
+            extra_prefixes += self.all_prefixes['general']['big']
+            extra_prefixes += self.all_prefixes['general']['small']
+            extra_prefixes += self.all_prefixes['general']['small']
         else:
             if self.phenotype.shoulder_height > 11:
                 extra_prefixes += self.all_prefixes['general']['big']
@@ -763,7 +758,7 @@ class Namer():
             return self.tabby(params[0], params[1], params[2], params[3])
         
     def red(self, params):
-        if params[4] != 'none':
+        if params[4]:
             #babies don't have points
             if self.moons == 0 and 'C' not in self.phenotype.pointgene:
                 return self.white('white')
@@ -779,7 +774,7 @@ class Namer():
         if self.phenotype.ruftype == 'low' and random() < 0.2:
             self.golden(params)
 
-        if params[4] != 'none':
+        if params[4]:
             #babies don't have points
             if self.moons == 0 and 'C' not in self.phenotype.pointgene:
                 return self.white('white')
@@ -799,7 +794,7 @@ class Namer():
         return self.tabby(params[0], params[1], params[2], params[3])
 
     def golden(self, params):
-        if params[4] != 'none':
+        if params[4]:
             #babies don't have points
             if self.moons == 0 and 'C' not in self.phenotype.pointgene:
                 return self.white('white')
@@ -818,7 +813,7 @@ class Namer():
         if self.phenotype.ruftype != 'rufoused' and random() < 0.1:
             self.pink(params)
 
-        if params[4] != 'none':
+        if params[4]:
             #babies don't have points
             if self.moons == 0 and 'C' not in self.phenotype.pointgene:
                 return self.white('white')
@@ -838,7 +833,7 @@ class Namer():
         return self.tabby(params[0], params[1], params[2], params[3])
 
     def purple(self, params):
-        if params[4] != 'none':
+        if params[4]:
             #babies don't have points
             if self.moons == 0 and 'C' not in self.phenotype.pointgene:
                 return self.white('white')
@@ -849,7 +844,7 @@ class Namer():
         self.solid('purple', False, params[2]['pattern'], params[3])
 
     def pink(self, params):
-        if params[4] != 'none':
+        if params[4]:
             #babies don't have points
             if self.moons == 0 and 'C' not in self.phenotype.pointgene:
                 return self.white('white')

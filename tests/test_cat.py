@@ -1,6 +1,5 @@
 import os
 import unittest
-from unittest.mock import patch
 from copy import deepcopy
 
 from scripts.game_structure import game
@@ -275,17 +274,12 @@ class TestPossibleMateFunction(unittest.TestCase):
         self.assertTrue(elder_cat1.is_potential_mate(elder_cat2, True))
 
     # test that is_potential_mate returns False for exiled or dead cats
-
-    @patch("scripts.cat.status.Status.add_to_group")
-    @patch("scripts.game_structure.game.clan")
-    @patch("scripts.cat.history.History")
-    def test_dead_exiled(self, mock_history, _, __):
+    def test_dead_exiled(self):
         exiled_cat = Cat(disable_random=True)
         if game.clan:
             game.clan.instructor = Cat(disable_random=True)
         exiled_cat.status.exile_from_group()
         dead_cat = Cat(disable_random=True)
-        dead_cat.history = mock_history()
         dead_cat.dead = True
         normal_cat = Cat(disable_random=True)
         self.assertFalse(exiled_cat.is_potential_mate(normal_cat))
@@ -544,40 +538,36 @@ class TestNameRepr(unittest.TestCase):
         exiled_kit = {
             "group_history": [
                 {
-                    "group": CatGroup.PLAYER_CLAN_ID,
+                    "group": CatGroup.PLAYER_CLAN,
                     "rank": CatRank.KITTEN,
                     "moons_as": 1,
                 },
                 {"group": None, "rank": CatRank.LONER, "moons_as": 20},
             ],
             "standing_history": [
-                {"group": CatGroup.PLAYER_CLAN_ID, "standing": ["member", "exiled"]}
+                {"group": CatGroup.PLAYER_CLAN, "standing": ["member", "exiled"]}
             ],
         }
         exiled_app = {
             "group_history": [
                 {
-                    "group": CatGroup.PLAYER_CLAN_ID,
+                    "group": CatGroup.PLAYER_CLAN,
                     "rank": CatRank.APPRENTICE,
                     "moons_as": 1,
                 },
                 {"group": None, "rank": CatRank.LONER, "moons_as": 20},
             ],
             "standing_history": [
-                {"group": CatGroup.PLAYER_CLAN_ID, "standing": ["member", "exiled"]}
+                {"group": CatGroup.PLAYER_CLAN, "standing": ["member", "exiled"]}
             ],
         }
         exiled_warrior = {
             "group_history": [
-                {
-                    "group": CatGroup.PLAYER_CLAN_ID,
-                    "rank": CatRank.WARRIOR,
-                    "moons_as": 1,
-                },
+                {"group": CatGroup.PLAYER_CLAN, "rank": CatRank.WARRIOR, "moons_as": 1},
                 {"group": None, "rank": CatRank.LONER, "moons_as": 1},
             ],
             "standing_history": [
-                {"group": CatGroup.PLAYER_CLAN_ID, "standing": ["member", "exiled"]}
+                {"group": CatGroup.PLAYER_CLAN, "standing": ["member", "exiled"]}
             ],
         }
         ex_clancat_statuses = [
@@ -598,7 +588,6 @@ class TestNameRepr(unittest.TestCase):
         Test that outsiders with hidden special suffixes return the correct name
         :return:
         """
-        game.used_group_IDs["5"] = CatGroup.OTHER_CLAN
         outsider_statuses = [
             {"rank": CatRank.LONER},
             {"rank": CatRank.ROGUE},
@@ -606,22 +595,20 @@ class TestNameRepr(unittest.TestCase):
         ]
         former_clancat_status = {
             "group_history": [
-                {"group": "5", "rank": CatRank.WARRIOR, "moons_as": 1},
-                {"group": None, "rank": CatRank.LONER, "moons_as": 1},
-            ],
-            "standing_history": [{"group": "5", "standing": ["member", "known"]}],
-        }
-        exiled_status = {
-            "group_history": [
-                {
-                    "group": CatGroup.PLAYER_CLAN_ID,
-                    "rank": CatRank.WARRIOR,
-                    "moons_as": 1,
-                },
+                {"group": CatGroup.OTHER_CLAN1, "rank": CatRank.WARRIOR, "moons_as": 1},
                 {"group": None, "rank": CatRank.LONER, "moons_as": 1},
             ],
             "standing_history": [
-                {"group": CatGroup.PLAYER_CLAN_ID, "standing": ["member", "exiled"]}
+                {"group": CatGroup.OTHER_CLAN1, "standing": ["member", "known"]}
+            ],
+        }
+        exiled_status = {
+            "group_history": [
+                {"group": CatGroup.PLAYER_CLAN, "rank": CatRank.WARRIOR, "moons_as": 1},
+                {"group": None, "rank": CatRank.LONER, "moons_as": 1},
+            ],
+            "standing_history": [
+                {"group": CatGroup.PLAYER_CLAN, "standing": ["member", "exiled"]}
             ],
         }
         ex_clancat_statuses = [former_clancat_status, exiled_status]

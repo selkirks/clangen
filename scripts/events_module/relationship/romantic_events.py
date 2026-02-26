@@ -277,14 +277,14 @@ class RomanticEvents:
         relevant_event_tabs = ["relation", "interaction"]
         if len(chosen_interaction.get_injuries) > 0:
             relevant_event_tabs.append("health")
-        clan = cat_from.status.fetch_clan_object(game.clan)
+        clan = cat_from.status.group.fetch_clan_object(game.clan)
         game.cur_events_list.append(
             Single_Event(
                 interaction_str,
                 relevant_event_tabs,
                 [cat_to.ID, cat_from.ID],
                 cat_dict={"m_c": cat_to, "r_c": cat_from},
-                clan=clan.group_ID
+                clan=clan.enum
             )
         )
 
@@ -337,7 +337,7 @@ class RomanticEvents:
             Cat.fetch_cat(x)
             for x in Cat.all_cats
             if isinstance(Cat.fetch_cat(x), Cat)
-            and Cat.fetch_cat(x).status.group_ID == cat.status.group_ID
+            and Cat.fetch_cat(x).status.group == cat.status.group
         ]
         if not subset:
             return
@@ -381,7 +381,7 @@ class RomanticEvents:
                 and "grief stricken" not in cat.illnesses
                 and (
                     (cat_mate.dead and cat_mate.dead_for >= 4)
-                    or (cat_mate.status.is_outsider and not cat_mate.status.is_near(cat.status.group_ID))
+                    or (cat_mate.status.is_outsider and not cat_mate.status.is_near(cat.status.group))
                 )
             ):
                 # randint is a slow function, don't call it unless we have to.
@@ -389,10 +389,10 @@ class RomanticEvents:
                     text = i18n.t(
                         "hardcoded.move_on_dead_mate", mate=str(cat_mate.name)
                     )
-                    clan = cat.status.fetch_clan_object(game.clan)
+                    clan = cat.status.group.fetch_clan_object(game.clan)
                     game.cur_events_list.append(
                         Single_Event(
-                            text, "relation", cat_dict={"m_c": cat, "r_c": cat_mate}, clan=clan.group_ID
+                            text, "relation", cat_dict={"m_c": cat, "r_c": cat_mate}, clan=clan.enum
                         )
                     )
                     cat.unset_mate(cat_mate)
@@ -405,13 +405,13 @@ class RomanticEvents:
 
         if become_mates and mate_string:
             cat_from.set_mate(cat_to)
-            clan = cat_from.status.fetch_clan_object(game.clan)
+            clan = cat_from.status.group.fetch_clan_object(game.clan)
             game.cur_events_list.append(
                 Single_Event(
                     mate_string,
                     ["relation", "misc"],
                     cat_dict={"m_c": cat_from, "r_c": cat_to},
-                    clan=clan.group_ID
+                    clan=clan.enum
                 )
             )
             return True
@@ -503,16 +503,16 @@ class RomanticEvents:
             relationship_from.comfort -= 10
 
         text = choice(RomanticEvents.BREAKUP_STRINGS[breakup_type])
-        text = event_text_adjust(Cat, text, main_cat=cat_from, random_cat=cat_to, clan=cat_from.status.fetch_clan_object(game.clan))
-        clan = cat_from.status.fetch_clan_object(game.clan)
-        other_clan = cat_to.status.fetch_clan_object(game.clan)
+        text = event_text_adjust(Cat, text, main_cat=cat_from, random_cat=cat_to, clan=cat_from.status.group)
+        clan = cat_from.status.group.fetch_clan_object(game.clan) if cat_from.status.group else game.clan
+        other_clan = cat_to.status.group.fetch_clan_object(game.clan) if cat_to.status.group else clan
         game.cur_events_list.append(
             Single_Event(
                 text,
                 ["relation", "misc"],
                 [cat_from.ID, cat_to.ID],
                 cat_dict={"m_c": cat_from, "r_c": cat_to},
-                clan=clan.group_ID
+                clan=clan.enum
             )
         )
         if clan != other_clan:
@@ -522,7 +522,7 @@ class RomanticEvents:
                     ["relation", "misc"],
                     [cat_from.ID, cat_to.ID],
                     cat_dict={"m_c": cat_from, "r_c": cat_to},
-                    clan=other_clan.group_ID
+                    clan=other_clan.enum
                 )
             )
         return True
@@ -555,19 +555,19 @@ class RomanticEvents:
         if cat_to.status.is_outsider != cat_from.status.is_outsider:
             return False
 
-        if cat_to.status.group_ID != cat_from.status.group_ID and cat_to.status.group.is_any_clan_group():
+        if cat_to.status.group != cat_from.status.group and cat_to.status.is_any_clan_group():
             return False
 
         if not cat_to.is_potential_mate(cat_from) or not cat_from.is_potential_mate(cat_to):
             return False
 
         alive_inclan_from_mates = [
-            mate for mate in cat_from.mate if cat_from.status.group.is_any_clan_group()
+            mate for mate in cat_from.mate if cat_from.status.is_any_clan_group()
         ]
         alive_inclan_to_mates = [
             mate
             for mate in cat_to.mate
-            if cat_to.fetch_cat(mate).status.group.is_any_clan_group()
+            if cat_to.fetch_cat(mate).status.is_any_clan_group()
         ]
         poly = len(alive_inclan_from_mates) > 0 or len(alive_inclan_to_mates) > 0
 
@@ -605,15 +605,15 @@ class RomanticEvents:
             cat_to.relationships[cat_from.ID].comfort -= 10
 
         mate_string = RomanticEvents.prepare_relationship_string(
-            mate_string, cat_from, cat_to, clan=cat_from.status.group_ID
+            mate_string, cat_from, cat_to, clan=cat_from.status.group
         )
-        clan = cat_from.status.fetch_clan_object(game.clan)
+        clan = cat_from.status.group.fetch_clan_object(game.clan)
         game.cur_events_list.append(
             Single_Event(
                 mate_string,
                 ["relation", "misc"],
                 cat_dict={"m_c": cat_from, "r_c": cat_to},
-                clan=clan.group_ID,
+                clan=clan.enum,
             )
         )
 
@@ -637,8 +637,8 @@ class RomanticEvents:
 
         # Moving on, not breakups, occur when one mate is dead or outside.
         if (
-            (not cat_from.status.group.is_any_clan_group() and (cat_from.status.is_lost() or cat_from.status.is_exiled()))
-            or (not cat_to.status.group.is_any_clan_group() and (cat_to.status.is_lost() or cat_to.status.is_exiled()))
+            (not cat_from.status.is_any_clan_group() and (cat_from.status.is_lost() or cat_from.status.is_exiled()))
+            or (not cat_to.status.is_any_clan_group() and (cat_to.status.is_lost() or cat_to.status.is_exiled()))
         ):
             return False
 
@@ -688,12 +688,12 @@ class RomanticEvents:
         alive_inclan_from_mates = [
             mate
             for mate in cat_from.mate
-            if cat_from.fetch_cat(mate).status.group.is_any_clan_group()
+            if cat_from.fetch_cat(mate).status.is_any_clan_group()
         ]
         alive_inclan_to_mates = [
             mate
             for mate in cat_to.mate
-            if cat_to.fetch_cat(mate).status.group.is_any_clan_group()
+            if cat_to.fetch_cat(mate).status.is_any_clan_group()
         ]
         poly = len(alive_inclan_from_mates) > 0 or len(alive_inclan_to_mates) > 0
 
@@ -724,7 +724,7 @@ class RomanticEvents:
         ):
             become_mates = True
             mate_string = RomanticEvents.get_mate_string(
-                "like_to_romance", poly, cat_from, cat_to
+                "platonic_to_romantic", poly, cat_from, cat_to
             )
 
         if not become_mates:
@@ -781,7 +781,7 @@ class RomanticEvents:
         alive_inclan_from_mates = [
             mate
             for mate in cat_from.mate
-            if cat_from.fetch_cat(mate).status.group.is_any_clan_group()
+            if cat_from.fetch_cat(mate).status.is_any_clan_group()
         ]
         if len(alive_inclan_from_mates) > 0:
             for mate_id in alive_inclan_from_mates:
@@ -821,7 +821,7 @@ class RomanticEvents:
         alive_inclan_to_mates = [
             mate
             for mate in cat_to.mate
-            if cat_to.fetch_cat(mate).status.group.is_any_clan_group()
+            if cat_to.fetch_cat(mate).status.is_any_clan_group()
         ]
         if len(alive_inclan_to_mates) > 0:
             for mate_id in alive_inclan_to_mates:
@@ -866,7 +866,7 @@ class RomanticEvents:
                 str(cat_from.fetch_cat(mate_id).name)
                 for mate_id in cat_from.mate
                 if cat_from.fetch_cat(mate_id) is not None
-                and cat_from.fetch_cat(mate_id).status.group.is_any_clan_group()
+                and cat_from.fetch_cat(mate_id).status.is_any_clan_group()
             ]
             mate_name_string = mate_names[0]
             if len(mate_names) == 2:
@@ -882,7 +882,7 @@ class RomanticEvents:
                 str(cat_to.fetch_cat(mate_id).name)
                 for mate_id in cat_to.mate
                 if cat_to.fetch_cat(mate_id) is not None
-                and cat_to.fetch_cat(mate_id).status.group.is_any_clan_group()
+                and cat_to.fetch_cat(mate_id).status.is_any_clan_group()
             ]
             mate_name_string = mate_names[0]
             if len(mate_names) == 2:
@@ -921,12 +921,12 @@ class RomanticEvents:
             alive_inclan_from_mates = [
                 mate
                 for mate in cat_from.mate
-                if cat_from.fetch_cat(mate).status.group.is_any_clan_group()
+                if cat_from.fetch_cat(mate).status.is_any_clan_group()
             ]
             alive_inclan_to_mates = [
                 mate
                 for mate in cat_to.mate
-                if cat_to.fetch_cat(mate).status.group.is_any_clan_group()
+                if cat_to.fetch_cat(mate).status.is_any_clan_group()
             ]
             if len(alive_inclan_from_mates) > 0 and len(alive_inclan_to_mates) > 0:
                 poly_key = "both_mates"
@@ -934,8 +934,7 @@ class RomanticEvents:
                 poly_key = "m_c_mates"
             elif len(alive_inclan_from_mates) <= 0 and len(alive_inclan_to_mates) > 0:
                 poly_key = "r_c_mates"
-            if not poly_key:
-                # none of the other involved mates are alive
+            else:
                 return choice(RomanticEvents.MATE_DICTS[key])
             return choice(RomanticEvents.POLY_MATE_DICTS[key][poly_key])
 
@@ -970,9 +969,7 @@ class RomanticEvents:
         if RomanticEvents.relationship_fulfill_condition(relationship_to, condition):
             return 0
 
-        chance_number = constants.CONFIG["mates"]["base_breakup_chance"]
-        if not chance_number:
-            return 0
+        chance_number = 30
         chance_number += int(relationship_from.romance / 20)
         chance_number += int(relationship_to.romance / 20)
         chance_number += int(relationship_from.like / 20)

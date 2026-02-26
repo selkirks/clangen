@@ -138,24 +138,12 @@ class Name:
             elif get_clan_setting("no special suffixes") and get_clan_setting("modded names"):
                 self.specsuffix_hidden = True
     
-    def load_clan_names(self, clan):
-        if not os.path.exists(get_save_dir() + f"/{clan}" + "/names"):
-            return
-        if os.path.exists(get_save_dir() + f"/{clan}" + "/names" + "/alt_prefixes.json"):
-            with open(get_save_dir() + f"/{clan}" + "/names" + "/alt_prefixes.json") as read_file:
-                Name.mod_prefixes = ujson.loads(read_file.read())
-        if os.path.exists(get_save_dir() + f"/{clan}" + "/names" + '/alt_suffixes.json'):
-            with open(get_save_dir() + f"/{clan}" + "/names" + '/alt_suffixes.json') as read_file:
-                Name.mod_suffixes = ujson.loads(read_file.read())
-        if os.path.exists(get_save_dir() + f"/{clan}" + "/names" + '/names.json'):
-            with open(get_save_dir() + f"/{clan}" + "/names" + '/names.json') as read_file:
-                Name.names_dict = ujson.loads(read_file.read())
     def check_name(self, cat, name_fixpref):
         if not self.suffix:
             return
         # Prevent triple letter names from joining prefix and suffix from occurring (ex. Beeeye)
         possible_three_letter = (
-            (self.prefix[-2:] if len(self.prefix) > 2 else self.prefix) + self.suffix[0],
+            self.prefix[-2:] + self.suffix[0],
             self.prefix[-1] + self.suffix[:2],
         )
         triple_letter = all(
@@ -201,7 +189,7 @@ class Name:
 
             nono_name = self.prefix + self.suffix
             possible_three_letter = (
-                (self.prefix[-2:] if len(self.prefix) > 2 else self.prefix) + self.suffix[0],
+                self.prefix[-2:] + self.suffix[0],
                 self.prefix[-1] + self.suffix[:2],
             )
             if any(
@@ -276,7 +264,7 @@ class Name:
             return
 
         try:
-            used_prefixes = [c.name.prefix for c in cat.all_cats.values() if c.status.group_ID == cat.status.group_ID]
+            used_prefixes = [c.name.prefix for c in cat.all_cats.values() if c.status.group == cat.status.group]
         except:
             used_prefixes = []
 
@@ -394,8 +382,10 @@ class Name:
 
                 for i in range(1):
                     options.append(self.mod_suffixes['other']['special'])
+                for i in range(3):
+                    options.append(self.mod_suffixes['other']['common'])
 
-                appearance = self.mod_suffixes['other']['common']
+                appearance = []
 
                 if self.phenotype.length == 'longhaired':
                     appearance += self.mod_suffixes['other']['appearance'].get('longhair', [])
@@ -423,12 +413,7 @@ class Name:
                     appearance += self.mod_suffixes['other']['appearance'].get('pointed', [])
                 if 'curl' in self.phenotype.eartype or 'curl' in self.phenotype.tailtype or 'rexed' in self.phenotype.furtype:
                     appearance += self.mod_suffixes['other']['appearance'].get('curled', [])
-                
-                size = 3
-                if self.cat.moons < 11 or (self.cat.status.rank.is_any_medicine_rank() and self.cat.moons < 15):
-                    size = 1
-                for i in range(size):
-                    options.append(appearance)
+                options.append(appearance)
                 self.suffix = None
 
                 tries = 0
