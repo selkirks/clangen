@@ -29,7 +29,6 @@
         ],
         "fail_outcomes": [
             {
-            {
                 "text": "There's nothing for you here... yet!",
                 "exp": 0,
                 "weight": 20
