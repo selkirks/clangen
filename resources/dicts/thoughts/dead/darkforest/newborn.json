@@ -1,0 +1,47 @@
+[
+    {
+        "id": "gen_dead_newborn",
+        "thoughts": [
+            "Mewls pitifully for milk",
+            "Wobbles around the Dark Forest",
+            "Is crying for milk to no avail",
+            "Attempts to snarl but can only manage a tiny mewl",
+            "Is crying for {PRONOUN/m_c/poss} parents, but no one comforts {PRONOUN/m_c/object}",
+            "Doesn't know why it's suddenly so cold",
+            "Wishes to feel warmth at least once",
+            "Hears menacing whispers around {PRONOUN/m_c/object}",
+            "Is clouded in confusion and fear",
+            "Feels trapped in the sticky mud",
+            "Is feeling incredibly lonely", 
+            "Feels swallowed by the abyss",
+            "Feels nothing but fear",
+            "Is blindly spitting and hissing",
+            "Never got to hear {PRONOUN/m_c/poss} name",
+            "Doesn't understand what's going on",
+            "Barely keeps {PRONOUN/m_c/poss} head out of the mud", 
+            "Rolls around in the muck", 
+            "Tries to open {PRONOUN/m_c/poss} eyes, but has {PRONOUN/m_c/poss} face covered in mud",
+            "Snuggles against the shadows", 
+            "Is wailing",
+            "Paws at a puddle of goop", 
+            "Finds no comfort in the endless shadows", 
+            "Toddles around, trying to find {PRONOUN/m_c/poss} parent to nurse",
+            "Sputters and coughs in {PRONOUN/m_c/poss} sleep", 
+            "Feels so lost all the time"
+        ]
+    },
+    {
+        "id": "gen_dead_newborn_to_alive_parent",
+        "thoughts":[
+            "Desperately misses r_c",
+            "Misses the fleeting feeling of warmth at r_c's belly",
+            "Wishes that r_c could bathe {PRONOUN/m_c/object} again"
+        ],
+        "relationship_constraint": [
+            "child/parent"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    }
+]

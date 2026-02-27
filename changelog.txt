@@ -1,0 +1,64 @@
+<strong>v0.0.04: </strong>
+- Fixed crash related to cats using they/them pronouns and I am not even kidding
+- Made non-binary cats instead choose semi-random pronouns from a set of four (he, she, they, or it)
+- Fixed credits list misalignment
+
+<strong>v0.0.03: </strong>
+- Added proper changelog
+- Updated credits list
+- New icon
+- New menu art
+- Revised icons for camp location choices
+- Some more past-lifegen murder dialogue added back
+- Changed save directory (it is now located at Lifegen/neonpinkLifegen!)
+- Added more skills, (most of) which have actual use
+- Turned murder success chances down, as there was a way to nearly guarantee success
+- Added more murder chance tweaks, such as medicine cat apprentices having a more varied poison success chance and more skill tweaks
+- Righteous cats will now ALWAYS tell the clan if they find an abusive cat has murdered someone
+- Lifegen cats should now visually transfer better to NP (no more lack of eyes)
+- Added more biomes: Rain World, desert, wetlands. The two latter ones use WHAT ALREADY EXISTS in the code and DO NOT rely on the dev version of Lifegen.
+- Even more names, would you believe it
+- More biomes
+- Fixed crash when having both a visible condition and scars
+- Fixed a visual bug when having both a visible condition and scars
+- Added very basic framework for rival clan cats
+- Sick cats need more food
+- Cats outside the clan can get sick
+- Added more murder toggle (so it ccan be turned down)
+- More murder dialogue
+- MC is now pink in Lifegen patrols
+- Started reworking patrols somewhat
+- More patrol and murder tags
+- Fixed Lifegen bug that prevented murder relationship tags
+
+<strong>v0.0.02: </strong>
+- Peach pelt updated
+- Pelt pattern templates updated
+- Some more past-lifegen murder dialogue added back
+- Changed window name and version watermark at the bottom of the screen
+- More names
+
+<strong>v0.0.01: </strong>
+- More murder dialogue. Increased murder likelihood.
+- More names and name fixes
+- Fixed missing eyes causing the game to crash
+- NP accessories now show up
+- Mutism added and appears on the initial creation screen
+- Added pride scarves
+- Fixed owl symbol not working properly
+- Raised murder chances slightly with a warrior/deputy/leader accomplice
+- Extra punishment dialogue
+- Started to add old murder dialogue from past versions of lifegen back into the game (currently only kit murder dialogues)
+
+<strong>v0.0.00: </strong>
+Based off of LifeGen v0.7.4.(1?)
+- 3 new pelt patterns
+- 2 new pelt colours, peach not completed
+- 13 new tortie masks based on pelt patterns
+- 17 new eye colours
+- Reworking of eyes in general. Newborns will have their eye colour labelled as "???", while kittens typically have paler eyes that (typically) are labelled as "kitten-(colour)" before growing into their true eye colour. Eye_colour is now for the right eye and eye_colour2 is for left, regardless of heterochromia. heterochromia is no longer limited to completely different colours and can instead be very, very similar tones
+- 2 new permanent conditions (which will affect the cat's appearance in the future)
+- 7 new base tints, 7 new white patch tints. for the most part these are copying from one to the other.
+- New shader
+- Hidden 'toxicity' relationship value, which is tracked by the game and affects other relationship values, can be affected by mediators, can have moon events. you know that guy you dont really dislike but you start losing HP the longer youre around them? yeah
+- It / its default pronouns

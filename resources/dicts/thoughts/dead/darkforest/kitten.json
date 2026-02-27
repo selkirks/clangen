@@ -1,0 +1,77 @@
+[
+    {
+        "id": "gen_dead_kitten",
+        "thoughts": [
+            "Isn't used to the cold",
+            "Wonders why it's so dark",
+            "Wants someone to play with",
+            "Wonders why all the cats around {PRONOUN/m_c/object} are so angry",
+            "Feels hopeless, not understanding what {PRONOUN/m_c/subject} did wrong",
+            "Closes {PRONOUN/m_c/poss} eyes, hoping to see the stars once they're opened",
+            "Is terrified of the shadows surrounding {PRONOUN/m_c/object}",
+            "Feels as if {PRONOUN/m_c/subject} {VERB/m_c/have/has} been abandoned",
+            "Is so, so hungry",
+            "Is trying to teach {PRONOUN/m_c/self} to hunt, not knowing that there is no prey in the shadows",
+            "Is shivering violently",
+            "Is frozen in fear",
+            "Doesn't need to sharpen {PRONOUN/m_c/poss} claws",
+            "Is begging the older cats to teach {PRONOUN/m_c/object} battle moves",
+            "Wishes they were still in the nursery", 
+            "Is running through {PRONOUN/m_c/poss} entire life in {PRONOUN/m_c/poss} mind, trying to figure out what {PRONOUN/m_c/subject} did wrong",
+            "Misses being warm",
+            "Thinks about what {PRONOUN/m_c/poss} warrior name might have been",
+            "Knows that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} the bad cat in the nursery stories",
+            "Mewls into the endless black",
+            "Is trying to remember a song that was sung in the nursery",
+            "Is failing to calm {PRONOUN/m_c/self}",
+            "Is trying to look brave",
+            "Is praying to StarClan to let {PRONOUN/m_c/object} join them",
+            "Can't remember the words to the lullabies that were sung to {PRONOUN/m_c/object}",
+            "Still wants to be a warrior",
+            "Wishes {PRONOUN/m_c/object} would stop having nightmares",
+            "Hides from the shadows"
+        ]
+    },
+    {
+        "id": "dead_kit_to_dead_other_kit",
+        "thoughts": [
+            "Is huddled up close to r_c",
+            "Is comforting r_c despite {PRONOUN/m_c/poss} own fear",
+            "Is being comforted by r_c",
+            "Is playing hide-n-seek with r_c in the thick shadows of the Dark Forest",
+            "Jumps on top of r_c, wrestling with {PRONOUN/r_c/object} until they both fall into the mud",
+            "Makes r_c play as {PRONOUN/m_c/poss} loyal deputy while {PRONOUN/m_c/subject} {VERB/m_c/get/gets} to be the terrible Tigerstar",
+            "Still plays pretend with r_c",
+            "Hopes that r_c doesn't leave {PRONOUN/m_c/object}",
+            "Accidently hurt r_c while playing",
+            "Hurts r_c while playing and claims it was an accident",
+            "Knows r_c doesn't have a nest to hide thorns in",
+            "Is sparring with r_c, despite neither knowing how to fight",
+            "Is trying to make r_c feel warm again despite being cold {PRONOUN/m_c/self}"
+        ],
+        "random_living_status": [
+            "darkforest"
+        ],
+        "random_age_constraint": [
+            "kitten"
+        ]
+    },
+     {
+        "id": "dead_kit_to_dead_parent",
+        "thoughts": [
+            "Is upset with r_c for leaving {PRONOUN/m_c/object} to the dark",
+            "Wonders why stars shine in r_c's fur and not {PRONOUN/m_c/inposs}",
+            "Wonders if r_c hates {PRONOUN/m_c/object}",
+            "Debates asking r_c what {PRONOUN/m_c/subject} did wrong",
+            "Misses the warmth of r_c's pelt",
+            "Watches r_c longingly from across the border",
+            "Wonders if any of {PRONOUN/m_c/poss} siblings are in StarClan with r_c"
+        ],
+        "relationship_constraint": [
+            "child/parent"
+        ],
+        "random_living_status": [
+            "starclan"
+        ]
+    }
+]

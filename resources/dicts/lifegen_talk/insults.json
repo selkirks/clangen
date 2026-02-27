@@ -1,0 +1,3241 @@
+{
+    "app_16a": [
+        [
+            "kitten",
+            "insult",
+            "stable",
+            "you_blind",
+            "they_blind",
+            "they_app"
+        ],
+        [
+            "Hey! Be nice! When you're an apprentice, your mentor won't let that slide."
+        ]
+    ],
+    "app_321": [
+        [
+            "insult",
+            "Any",
+            "they_blind",
+            "you_blind",
+            "they_app"
+        ],
+        [
+            "Waaahhh!!!!!!!!!"
+        ]
+    ],
+    "app_32a1": [
+        [
+            "insult",
+            "warrior",
+            "you_blind",
+            "they_blind",
+            "they_app"
+        ],
+        [
+            "Careful, your jealousy is showing."
+        ]
+    ],
+    "app_3j2a1": [
+        [
+            "insult",
+            "Any",
+            "upstanding",
+            "you_blind",
+            "they_blind",
+            "they_apprentice",
+            "you_apprentice"
+        ],
+        [
+            "Are you just saying that because I caught a bigger bird than you?"
+        ]
+    ],
+    "app_32ga1": [
+        [
+            "insult",
+            "Any",
+            "assertive",
+            "unabashed",
+            "you_blind",
+            "they_blind",
+            "they_app"
+        ],
+        [
+            "Well, at least I don't have a furball stuck in my throat all the time!"
+        ]
+    ],
+    "app_32fa1": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "..."
+        ]
+    ],
+    "app_32aa1": [
+        [
+            "insult",
+            "upstanding",
+            "introspective",
+            "stable",
+            "Any",
+            "you_blind",
+            "they_blind",
+            "they_app"
+        ],
+        [
+            "If you put as much effort into hunting as you do into hurling insults, we'd never go hungry."
+        ]
+    ],
+    "app_32ax1": [
+        [
+            "insult",
+            "apprentice",
+            "cool",
+            "upstanding",
+            "you_blind",
+            "they_blind",
+            "they_app"
+        ],
+        [
+            "Careful, your jealousy is showing."
+        ]
+    ],
+    "app_3211": [
+        [
+            "insult",
+            "Any",
+            "platonic_like",
+            "they_blind",
+            "you_blind",
+            "they_app"
+        ],
+        [
+            "You don't really mean that... do you?"
+        ]
+    ],
+    "app_321321": [
+        [
+            "insult",
+            "Any",
+            "they_blind",
+            "you_blind",
+            "they_app"
+        ],
+        [
+            "That's- That's not nice!"
+        ]
+    ],
+    "dep_1a6": [
+        [
+            "kitten",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_deputy"
+        ],
+        [
+            "Your courage is commendable, but your manners could use some work."
+        ]
+    ],
+    "dep_132": [
+        [
+            "you_newborn",
+            "insult",
+            "you_blind",
+            "they_blind",
+            "they_deputy"
+        ],
+        [
+            "Wha.. What was that?"
+        ]
+    ],
+    "dep_15af": [
+        [
+            "Any",
+            "no_kit",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_deputy"
+        ],
+        [
+            "Say that again and you'll regret it."
+        ]
+    ],
+    "elder_321312": [
+        [
+            "kitten",
+            "insult",
+            "brooding",
+            "they_blind",
+            "you_blind",
+            "they_elder"
+        ],
+        [
+            "Watch your tongue, kit."
+        ]
+    ],
+    "elder_32131a12": [
+        [
+            "Any",
+            "insult",
+            "brooding",
+            "they_blind",
+            "you_blind",
+            "they_elder"
+        ],
+        [
+            "Watch your tongue!"
+        ]
+    ],
+    "elder_32131a1d2": [
+        [
+            "Any",
+            "insult",
+            "cool",
+            "they_blind",
+            "you_blind",
+            "they_elder"
+        ],
+        [
+            "Pfft... You make me laugh."
+        ]
+    ],
+    "insult_1": [
+        [
+            "insult",
+            "they_grieving",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[You feel too guilty to insult this cat.]"
+        ]
+    ],
+    "insult_2": [
+        [
+            "insult",
+            "they_grieving",
+            "they_blind",
+            "you_blind",
+            "any"
+        ],
+        [
+            "[You approach, an insult on your tongue, but realize t_c is curled in a ball, softly sobbing.]",
+            "[Maybe now is not a good time.]"
+        ]
+    ],
+    "assertive_jealous1_5": [
+        [
+            "Any",
+            "assertive",
+            "silly",
+            "cool",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Ahahahaaa! Good one!"
+        ]
+    ],
+    "assertive_jealous1_6": [
+        [
+            "Any",
+            "assertive",
+            "unabashed",
+            "cool",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Bold of you to assume that I care."
+        ]
+    ],
+    "assertive_jealous1_7": [
+        [
+            "Any",
+            "assertive",
+            "brooding",
+            "insult",
+            "dislike",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Go dig a hole and bury yourself in it, snake-heart."
+        ]
+    ],
+    "assertive_jealous1_8": [
+        [
+            "Any",
+            "assertive",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "You looking for a fight? I'm always ready!"
+        ]
+    ],
+    "assertive_jealous1_9": [
+        [
+            "Any",
+            "assertive",
+            "brooding",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Tch. That the best you can do?"
+        ]
+    ],
+    "general_1": [
+        [
+            "any",
+            "insult",
+            "platonic_like",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Hey! What gives?"
+        ]
+    ],
+    "general_2": [
+        [
+            "any",
+            "insult",
+            "dislike",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "As if I couldn't like you any less ..."
+        ]
+    ],
+    "Abandoned_insult": [
+        [
+            "any",
+            "insult",
+            "you_abandoned",
+            "hate",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "StarClan above. No wonder your parents left you."
+        ]
+    ],
+    "brooding_insult_1": [
+        [
+            "any",
+            "insult",
+            "brooding",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "What did you just say to me ... ?"
+        ]
+    ],
+    "brooding_insult_02": [
+        [
+            "any",
+            "insult",
+            "brooding",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Um. Okay."
+        ]
+    ],
+    "brooding_insult_2": [
+        [
+            "any",
+            "insult",
+            "brooding",
+            "platonic_like",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Haha. Good one."
+        ]
+    ],
+    "brooding_insult_3": [
+        [
+            "any",
+            "insult",
+            "brooding",
+            "cool",
+            "platonic_like",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "they_not_kit"
+        ],
+        [
+            "[t_c curls {PRONOUN/t_c/poss} lip at you and stalks away.]"
+        ]
+    ],
+    "brooding_insult_4": [
+        [
+            "no_kit",
+            "insult",
+            "brooding",
+            "they_not_kit"
+        ],
+        [
+            "[t_c just stares at you for a second, saying nothing.]",
+            "[Finally, {PRONOUN/t_c/subject} {VERB/t_c/walk/walks} up to you, grabbing you with {PRONOUN/t_c/poss} claws and yanking you inches from {PRONOUN/t_c/poss} face.]",
+            "Say that again."
+        ]
+    ],
+    "brooding_insultAJ": [
+        [
+            "any",
+            "brooding",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "Is that all?"
+        ]
+    ],
+    "brooding_insultAJ1": [
+        [
+            "any",
+            "brooding",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "Quit buzzing in my ear."
+        ]
+    ],
+    "brooding_insultAJ2": [
+        [
+            "any",
+            "brooding",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "Pathetic."
+        ]
+    ],
+    "brooding_insultAJ3": [
+        [
+            "any",
+            "brooding",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "Cry about it."
+        ]
+    ],
+    "brooding_insultAJ4": [
+        [
+            "any",
+            "brooding",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "..."
+        ]
+    ],
+    "neurotic_insult_1": [
+        [
+            "any",
+            "insult",
+            "neurotic",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Oh yeah? Well you're a - a ... uhm ... uh ...",
+            "Ugh! I can't think of a comeback!"
+        ]
+    ],
+    "neurotic_insult_2": [
+        [
+            "any",
+            "insult",
+            "neurotic",
+            "platonic_like",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "W-What? You're just joking, right?",
+            "Is that really how you think of me?"
+        ]
+    ],
+    "neurotic_insult_3": [
+        [
+            "any",
+            "insult",
+            "neurotic",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Psh. Whatever. I don't even care.",
+            "Totally not gonna overthink and cry about it later ..."
+        ]
+    ],
+    "neurotic_insult_4": [
+        [
+            "any",
+            "insult",
+            "neurotic",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Huh? Is that really true?",
+            "Who else agrees with you? Did neutral_r_c tell you to say that?",
+            "[t_c rushes off in a panic.]"
+        ]
+    ],
+    "neurotic_ insult_5": [
+        [
+            "any",
+            "insult",
+            "neurotic",
+            "platonic_like",
+            "romantic_like",
+            "they_blind"
+        ],
+        [
+            "You don't mean that, right, y_c? ...y_c? Please tell me you don't mean it...!"
+        ]
+    ],
+    "neurotic_ insult_6": [
+        [
+            "any",
+            "insult",
+            "neurotic",
+            "platonic_like",
+            "romantic_like",
+            "respect",
+            "they_blind"
+        ],
+        [
+            "What did I do wrong? I can- I- I can fix it! Or at least try!"
+        ]
+    ],
+    "neurotic_ insult_7": [
+        [
+            "any",
+            "insult",
+            "neurotic",
+            "platonic_like",
+            "romantic_like",
+            "respect",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Please tell me how I can make it up to you... I'll do anything."
+        ]
+    ],
+    "assertive_insult_1": [
+        [
+            "no_kit",
+            "assertive",
+            "insult",
+            "they_blind"
+        ],
+        [
+            "Fight me like a real warrior does!"
+        ]
+    ],
+    "assertive_insult_2": [
+        [
+            "any",
+            "assertive",
+            "insult",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Hmph. Think you're tough, huh?",
+            "We'll see who the tougher cat is on the battlefield."
+        ]
+    ],
+    "assertive_insult_3": [
+        [
+            "no_kit",
+            "assertive",
+            "brooding",
+            "unlawful",
+            "dislike",
+            "insult",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Laugh all you want. One of these days, you're gonna get what's coming to you.",
+            "I'll see to it myself."
+        ]
+    ],
+    "cool_insult_1": [
+        [
+            "any",
+            "insult",
+            "cool",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Tch ..."
+        ]
+    ],
+    "cool_insult_2": [
+        [
+            "any",
+            "cool",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Aw, look! It thinks it's clever."
+        ]
+    ],
+    "cool_insult_3": [
+        [
+            "any",
+            "cool",
+            "assertive",
+            "insult",
+            "they_blind",
+            "they_hearing",
+            "they_not_kit"
+        ],
+        [
+            "Please. I've heard worse from the kits in the nursery."
+        ]
+    ],
+    "cool_insult3": [
+        [
+            "Any",
+            "insult",
+            "cool",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "StarClan, I can barely hear you over the sound of your raging insecurity."
+        ]
+    ],
+    "cool_insult4": [
+        [
+            "Any",
+            "insult",
+            "cool",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Well, aren't you just a little ray of sunshine?"
+        ]
+    ],
+    "cool_insult5": [
+        [
+            "Any",
+            "insult",
+            "cool",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "You're too sweet."
+        ]
+    ],
+    "cool_insult6": [
+        [
+            "Any",
+            "insult",
+            "cool",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Aww, so you do think of me! ~"
+        ]
+    ],
+    "cool_insult7": [
+        [
+            "Any",
+            "insult",
+            "cool",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Try not to burst a blood vessel."
+        ]
+    ],
+    "cool_insult8": [
+        [
+            "Any",
+            "insult",
+            "cool",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Sorry, could you move a couple steps to the left? You're blocking my light."
+        ]
+    ],
+    "sweet_insult_1": [
+        [
+            "any",
+            "insult",
+            "sweet",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "That's not very nice of you to say..."
+        ]
+    ],
+    "sweet_insult_2": [
+        [
+            "any",
+            "insult",
+            "sweet",
+            "dislike",
+            "they_blind"
+        ],
+        [
+            "Why are you so mean all the time?"
+        ]
+    ],
+    "sweet_insult_3": [
+        [
+            "any",
+            "insult",
+            "sweet",
+            "neurotic",
+            "platonic_like",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You... you don't really mean that... do you, y_c...?"
+        ]
+    ],
+    "sweet_insult_4": [
+        [
+            "any",
+            "insult",
+            "sweet",
+            "platonic_like",
+            "romantic_like",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "I.. I'm sorry... I don't know what I did, but I'll make it up to you!"
+        ]
+    ],
+    "silly_insult_1": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "...you're just mad I'm funnier than you, aren'tcha?"
+        ]
+    ],
+    "silly_insult_2": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Whatever. Stay mad about it, because I sure won't. I'll forget you even talked to me in like, two seconds."
+        ]
+    ],
+    "silly_insult_3": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "You're just jealous of my inherently whimsical nature."
+        ]
+    ],
+    "silly_insult_4": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "dislike",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Oh, like I'd take anything you say seriously."
+        ]
+    ],
+    "silly_insult_05": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "dislike",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "You're just a joke to me. And not a very funny one, either."
+        ]
+    ],
+    "silly_insult_5": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "platonic_like",
+            "romantic_like",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Haha... uh... we need to work on your jokes. That... was a joke right?",
+            "...right...?"
+        ]
+    ],
+    "silly_insult_6": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "platonic_like",
+            "romantic_like",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "I'm... I'm sorry... I'm guessing you're mad I don't take things seriously enough... I'm trying to, but... It's hard."
+        ]
+    ],
+    "silly_insult_7": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "platonic_like",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Haha...ha... I'll... um, keep that in mind next time we talk."
+        ]
+    ],
+    "silly_insult_8": [
+        [
+            "any",
+            "insult",
+            "silly",
+            "platonic_like",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Is someone hungry? Because you're really not acting like yourself. Have a snack, y_c."
+        ]
+    ],
+    "silly_insult_9": [
+        [
+            "you_elder",
+            "insult",
+            "silly",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Yeah, yeah, go back to sleep, grandpa."
+        ]
+    ],
+    "unlawful_insult_1": [
+        [
+            "any",
+            "insult",
+            "unlawful",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "...You should take that back. Before someone gets hurt."
+        ]
+    ],
+    "unlawful_insult_2": [
+        [
+            "any",
+            "insult",
+            "unlawful",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "...You're lucky that plike_r_c is here. Otherwise, I don't think you'd want to know what I would do to you."
+        ]
+    ],
+    "unlawful_insult_3": [
+        [
+            "any",
+            "insult",
+            "unlawful",
+            "dislike",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "...You're so damn lucky I haven't shredded you to pieces yet."
+        ]
+    ],
+    "unlawful_insult_4": [
+        [
+            "any",
+            "insult",
+            "unlawful",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Watch yourself, y_c."
+        ]
+    ],
+    "unabashed_insult_1": [
+        [
+            "any",
+            "insult",
+            "unabashed",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Well, you suck."
+        ]
+    ],
+    "unabashed_insult_2": [
+        [
+            "any",
+            "insult",
+            "unabashed",
+            "you_cool",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I may not be cool, but you're mean. And personally, I think that's worse."
+        ]
+    ],
+    "unabashed_insult_3": [
+        [
+            "any",
+            "insult",
+            "unabashed",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Okay, grumpy."
+        ]
+    ],
+    "unabashed_insult_4": [
+        [
+            "any",
+            "insult",
+            "unabashed",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Okay. So what?"
+        ]
+    ],
+    "unabashed_insult_5": [
+        [
+            "no_kit",
+            "insult",
+            "unabashed",
+            "hate",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "You know, you're going to regret being so mean when you're in the elder's den, cold and alone without anyone to keep you company because you were such a huge jerk.",
+            "...just saying."
+        ]
+    ],
+    "insult_11": [
+        [
+            "insult",
+            "any",
+            "cool",
+            "silly",
+            "they_blind"
+        ],
+        [
+            "Your meow is worse than your bite."
+        ]
+    ],
+    "insult_12": [
+        [
+            "insult",
+            "any",
+            "sweet",
+            "stable",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Your ancestors would be ashamed."
+        ]
+    ],
+    "insult_13": [
+        [
+            "insult",
+            "any",
+            "unabashed",
+            "assertive",
+            "cool",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Maybe one day you'll be worth something to your Clan."
+        ]
+    ],
+    "insult_14": [
+        [
+            "insult",
+            "any",
+            "unlawful",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Keep talking and you'll find out how sharp my claws really are."
+        ]
+    ],
+    "insult_15": [
+        [
+            "insult",
+            "any",
+            "cool",
+            "upstanding",
+            "unabashed",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Keep yowling. Maybe one day you'll actually sound intimidating."
+        ]
+    ],
+    "insult_16": [
+        [
+            "insult",
+            "any",
+            "sweet",
+            "stable",
+            "introspective",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "May StarClan light your path, even if we don't see eye to eye."
+        ]
+    ],
+    "insult_17": [
+        [
+            "insult",
+            "any",
+            "sweet",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Oh, y_c. I believe every cat has good in them, even you."
+        ]
+    ],
+    "insult_18": [
+        [
+            "insult",
+            "any",
+            "sweet",
+            "they_not_kit"
+        ],
+        [
+            "[t_c smiles at your words. The smile doesn't reach {PRONOUN/t_c/poss} eyes.]",
+            "May your nights be filled with the sweetest dreams and the warmest nests."
+        ]
+    ],
+    "insult_19": [
+        [
+            "any",
+            "insult",
+            "stable",
+            "introspective",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Remember, the same moon shines down on all of us..."
+        ]
+    ],
+    "insult_20": [
+        [
+            "insult",
+            "any",
+            "unlawful",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Your words mean nothing. Just like you."
+        ]
+    ],
+    "cool_insult": [
+        [
+            "no_kit",
+            "cool",
+            "insult",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Tough talk, from a cat with a face like that."
+        ]
+    ],
+    "cool_insult1": [
+        [
+            "no_kit",
+            "cool",
+            "brooding",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "... *snrk*"
+        ]
+    ],
+    "cool_insult2": [
+        [
+            "no_kit",
+            "cool",
+            "unabashed",
+            "insult",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Are you lashing out to compensate for your abnormally large nose?"
+        ]
+    ],
+    "insult_sh_J23": [
+        [
+            "Any",
+            "you_shunned",
+            "they_blind",
+            "you_blind",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "Your words mean nothing. No part of me could ever be worse than you."
+        ]
+    ],
+    "insult_sh_J24": [
+        [
+            "Any",
+            "you_shunned",
+            "they_blind",
+            "you_blind",
+            "insult",
+            "they_deaf",
+            "you_deaf",
+            "they_not_kit"
+        ],
+        [
+            "[t_c just stares at you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} look upset-- just unamused.]"
+        ]
+    ],
+    "grieving_sh_J36": [
+        [
+            "Any",
+            "you_shunned",
+            "they_grieving",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "You must be truly evil."
+        ]
+    ],
+    "theyshunned_insult_J1": [
+        [
+            "they_shunned",
+            "any",
+            "you_blind",
+            "they_blind",
+            "insult"
+        ],
+        [
+            "I know."
+        ]
+    ],
+    "theyshunned_insult_J2": [
+        [
+            "they_shunned",
+            "any",
+            "you_blind",
+            "they_blind",
+            "insult",
+            "they_hearing",
+            "they_not_kit"
+        ],
+        [
+            "You're not the first cat I've heard that from today."
+        ]
+    ],
+    "theyshunned_insult_J3": [
+        [
+            "they_shunned",
+            "any",
+            "you_blind",
+            "they_blind",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "You think you're better than me, but you're not. I know it."
+        ]
+    ],
+    "bothshunned_insult_J1": [
+        [
+            "both_shunned",
+            "any",
+            "you_blind",
+            "they_blind",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "Don't be rude. We're both going through a lot right now."
+        ]
+    ],
+    "bothshunned_insult_J2": [
+        [
+            "both_shunned",
+            "any",
+            "you_blind",
+            "they_blind",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "You're not exactly a pillar of morality yourself, you know."
+        ]
+    ],
+    "bothshunned_insult_J3": [
+        [
+            "both_shunned",
+            "any",
+            "you_blind",
+            "they_blind",
+            "insult",
+            "they_hearing",
+            "they_not_kit"
+        ],
+        [
+            "Hearing that is starting to get old."
+        ]
+    ],
+    "youshunned_insult_J1": [
+        [
+            "you_shunned",
+            "any",
+            "you_blind",
+            "they_blind",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "Am I supposed to take your opinion seriously after what you've done?"
+        ]
+    ],
+    "unlawful_tomediator_negGuy1": [
+        [
+            "insult",
+            "you_mediator",
+            "unlawful",
+            "they_not_kit"
+        ],
+        [
+            "I wonder how you plan on being a mediator with no tongue?"
+        ]
+    ],
+    "unlawful_negGuy1": [
+        [
+            "insult",
+            "Any",
+            "unlawful",
+            "they_not_kit"
+        ],
+        [
+            "Heh. Why don't you go tell that one to l_n."
+        ]
+    ],
+    "unlawful_toapp_negGuy1": [
+        [
+            "insult",
+            "you_apprentice",
+            "unlawful",
+            "they_not_kit"
+        ],
+        [
+            "Careful. We both know I'm stronger than you, and your behavior tells me everything I could need to know about your wit."
+        ]
+    ],
+    "unlawful_towarrior_negGuy1": [
+        [
+            "insult",
+            "you_warrior",
+            "they_warrior",
+            "unlawful",
+            "they_not_kit"
+        ],
+        [
+            "Have you been on patrol recently, y_c? I'm sure d_n would be glad to let us mark the border together. Alone.",
+            "[Was that... a threat?]"
+        ]
+    ],
+    "unlawful_tomedcatapp_negGuy1": [
+        [
+            "insult",
+            "you_medicine_cat_apprentice",
+            "unlawful",
+            "they_not_kit"
+        ],
+        [
+            "Aw, what are you gonna do, go crying to the stars for help?"
+        ]
+    ],
+    "unlawful_tomedcat_negGuy1": [
+        [
+            "insult",
+            "you_medicine_cat",
+            "unlawful",
+            "they_not_kit"
+        ],
+        [
+            "Hah! I don't need you- I don't need <i>any of you</i>.",
+            "I can hunt my own prey and win any fight... why should I care what you have to say?"
+        ]
+    ],
+    "unlawful_tomediatorapp_negGuy1": [
+        [
+            "insult",
+            "you_mediator_apprentice",
+            "unlawful",
+            "they_not_kit"
+        ],
+        [
+            "Heh. They'll start treating you like me if that's how you 'solve problems'."
+        ]
+    ],
+    "neurotic_insult_SQ1": [
+        [
+            "they_neurotic",
+            "they_any",
+            "you_any",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "What? The whole Clan doesn't really think that... right?",
+            "[t_c nervously glances around, as if expecting everyone nearby to be watching and agreeing with your words.]"
+        ]
+    ],
+    "neurotic_insult_SQ2": [
+        [
+            "they_neurotic",
+            "they_any",
+            "you_any",
+            "platonic_like",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "Why would you say that? Did I do something wrong?",
+            "[t_c takes a step back, unable to meet your eyes. After a moment of silence, {PRONOUN/t_c/subject}  {VERB/t_c/turn/turns} and {VERB/t_c/scurry/scurries} away.]"
+        ]
+    ],
+    "hate_insult_shunned_CM1": [
+        [
+            "no_kit",
+            "you_shunned",
+            "hate",
+            "any",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "... No. You know what, y_c?",
+            "Nothing could describe just how much I hate you. If I could repeat that sentence for as long as I live, it would still not equal half of the hatred I have for you.",
+            "You're a murderer, nothing but a pile of dirt waiting to blow away in the breeze. Mouse-dung waiting to be buried.",
+            "I am thrilled to see you finally getting what you deserve after all these moons.",
+            "And now everycat can hate you, <i>does</i> hate you, but it will still never be equal to the rage I get from your very existence.",
+            "Sad, isn't it?"
+        ]
+    ],
+    "grievingyouinsult_J1": [
+        [
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "I know the real y_c would never say that.",
+            "I miss you so much I'm hallucinating you... Why are my hallucinations so mean?"
+        ]
+    ],
+    "grievingtheminsult_J1": [
+        [
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "It's really me, y_c. You're not insulting a hallucination."
+        ]
+    ],
+    "shunned_insult_J1": [
+        [
+            "they_shunned",
+            "any",
+            "insult",
+            "they_blind",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c doesn't even react to your insult.]"
+        ]
+    ],
+    "shunned_insult_J2": [
+        [
+            "both_shunned",
+            "any",
+            "insult",
+            "they_blind",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c doesn't even react to your insult.]"
+        ]
+    ],
+    "shunned_insult_J3": [
+        [
+            "you_shunned",
+            "any",
+            "insult",
+            "they_blind",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c doesn't even react to your insult.]"
+        ]
+    ],
+    "shunned_insult_J4": [
+        [
+            "you_shunned",
+            "any",
+            "insult",
+            "they_older",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "No need to lash out."
+        ]
+    ],
+    "shunned_insult_J5": [
+        [
+            "you_shunned",
+            "any",
+            "insult",
+            "they_kitten",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What?!"
+        ]
+    ],
+    "shunned_insult_J6": [
+        [
+            "insult",
+            "both_shunned",
+            "you_grieving",
+            "they_grieving",
+            "grievingthem",
+            "any",
+            "they_not_kit"
+        ],
+        [
+            "You must be confused."
+        ]
+    ],
+    "shunned_insult_J7": [
+        [
+            "insult",
+            "both_shunned",
+            "they_grieving",
+            "you_grieving",
+            "grievingyou",
+            "any",
+            "they_not_kit"
+        ],
+        [
+            "I know you don't mean that."
+        ]
+    ],
+    "bothgrieving_J5": [
+        [
+            "they_grieving",
+            "you_grieving",
+            "you_shunned",
+            "any",
+            "insult"
+        ],
+        [
+            "[t_c just stares into space, not hearing you.]"
+        ]
+    ],
+    "insult_shunned_CM1": [
+        [
+            "insult",
+            "you_shunned",
+            "no_kit",
+            "they_not_kit"
+        ],
+        [
+            "Despicable.",
+            "Care to try anything else, traitor?"
+        ]
+    ],
+    "insult_shunned_CM2": [
+        [
+            "insult",
+            "you_shunned",
+            "no_kit",
+            "they_not_kit"
+        ],
+        [
+            "Your claws are clearly sharper than your tongue."
+        ]
+    ],
+    "insult_shunned_CM3": [
+        [
+            "insult",
+            "you_shunned",
+            "they_injured",
+            "no_kit",
+            "they_not_kit"
+        ],
+        [
+            "Come to finish me off?",
+            "StarClan forbid the day you face them."
+        ]
+    ],
+    "insult_shunned_CM4": [
+        [
+            "insult",
+            "you_shunned",
+            "they_kitten",
+            "you_any"
+        ],
+        [
+            "Eep! Go away! Go away!"
+        ]
+    ],
+    "insult_shunned_CM5": [
+        [
+            "insult",
+            "you_shunned",
+            "they_newborn"
+        ],
+        [
+            "[t_c spits at you, and t_p quickly returns, swiping you away from their precious kit.]"
+        ]
+    ],
+    "insult_shunned_CM6": [
+        [
+            "insult",
+            "you_shunned",
+            "they_kitten",
+            "you_any"
+        ],
+        [
+            "t_p told me never, ever to listen to you! Because, uh, uhmm...",
+            "You are! The evilest! And stupid! And you REALLY stink!!!"
+        ]
+    ],
+    "insult_shunned_CM7": [
+        [
+            "insult",
+            "you_shunned",
+            "they_kitten",
+            "silly",
+            "unabashed",
+            "you_any"
+        ],
+        [
+            "Blehhhhh!!!",
+            "[t_c sticks {PRONOUN/t_c/poss} tongue out at you and makes a strange, scowling face.]",
+            "That's how you look! Haha!"
+        ]
+    ],
+    "insult_shunned_CM8": [
+        [
+            "insult",
+            "you_shunned",
+            "they_kitten",
+            "you_any"
+        ],
+        [
+            "Wahhhhh!!!!!!",
+            "I'm telling r_w!",
+            "You're gonna get in SOOOO much trouble!"
+        ]
+    ],
+    "insult_shunned_CM9": [
+        [
+            "insult",
+            "you_shunned",
+            "they_grieving",
+            "they_not_kit"
+        ],
+        [
+            "[t_c doesn't even look up at you.]"
+        ]
+    ],
+    "insult_shunned_CM10": [
+        [
+            "insult",
+            "you_shunned",
+            "they_grieving",
+            "they_not_kit"
+        ],
+        [
+            "How. Dare. You.",
+            "After everything I've gone through. You of all cats... How I wait for the day you're gone from this Clan forever.",
+            "I won't be the one mourning you."
+        ]
+    ],
+    "insult_shunned_CM11": [
+        [
+            "insult",
+            "you_shunned",
+            "they_grieving",
+            "they_not_kit"
+        ],
+        [
+            "Get... away from me..."
+        ]
+    ],
+    "insult_shunned_CM12": [
+        [
+            "insult",
+            "you_shunned",
+            "they_grieving",
+            "sweet",
+            "they_not_kit"
+        ],
+        [
+            "I never wanted to think you were a bad cat, y_c.",
+            "I don't know what to do when you just keep proving me wrong."
+        ]
+    ],
+    "insult_shunned_CM13": [
+        [
+            "insult",
+            "you_shunned",
+            "they_grieving",
+            "unlawful",
+            "dead_close",
+            "they_not_kit"
+        ],
+        [
+            "Hah! Hahaha!",
+            "Come on, y_c, my claws still work! I'll fight ya! d_c's honor!"
+        ]
+    ],
+    "insult_shunned_CM14": [
+        [
+            "insult",
+            "you_shunned",
+            "no_kit",
+            "they_not_kit"
+        ],
+        [
+            "I hope you're happy with yourself.",
+            "You've made it clear you don't care about what you've done.",
+            "Maybe l_n will take the hint and exile you already."
+        ]
+    ],
+    "gen_forgiven_insult_H1": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "dislike",
+            "they_not_kit"
+        ],
+        [
+            "[t_c clicks {PRONOUN/t_c/poss} tongue and looks the other way.]",
+            "I thought I was forgiven for my crimes. Do you <i>still</i> hate me?"
+        ]
+    ],
+    "gen_forgiven_insult_H2": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "they_not_kit"
+        ],
+        [
+            "Yeah, yeah, yeah, you don't like me. You don't like that I was forgiven.",
+            "Do you have anything else to say or is your brain just that small?"
+        ]
+    ],
+    "gen_forgiven_insult_H3": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_newborn"
+        ],
+        [
+            "Err. You have a ferocious mew, y_c. I suppose?"
+        ]
+    ],
+    "gen_forgiven_insult_H4": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "hate",
+            "they_not_kit"
+        ],
+        [
+            "Ugh, would murdering you be worth getting shunned again..."
+        ]
+    ],
+    "gen_forgiven_insult_H5": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "no_kit",
+            "they_not_kit"
+        ],
+        [
+            "Oh, what did you say? I couldn't hear you over my very loud murderous thoughts.",
+            "Just kidding...",
+            "Maybe."
+        ]
+    ],
+    "gen_forgiven_insult_H6": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "beach",
+            "dislike",
+            "they_not_kit"
+        ],
+        [
+            "It would be a shame if some cat found you in the ocean, wouldn't you say?"
+        ]
+    ],
+    "gen_forgiven_insult_H7": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "platonic_like",
+            "they_not_kit"
+        ],
+        [
+            "I can't tell if that's a joke.",
+            "I'm going to choose to be blissfully unaware and assume it is."
+        ]
+    ],
+    "gen_forgiven_insult_H8": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_younger",
+            "you_any",
+            "they_not_kit"
+        ],
+        [
+            "Can a cat not enjoy a day unshunned to {PRONOUN/t_c/self}?",
+            "Kids, these days..."
+        ]
+    ],
+    "gen_forgiven_insult_H9": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "they_not_kit"
+        ],
+        [
+            "Breathe in, breathe out..."
+        ]
+    ],
+    "gen_forgiven_insult_H10": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "dislike",
+            "they_not_kit"
+        ],
+        [
+            "Ouch, I would have thought with so much venom on your tone, you'd be better at this by now."
+        ]
+    ],
+    "gen_forgiven_insult_Guy1": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "they_not_kit"
+        ],
+        [
+            "What was it r_c said?",
+            "'Practice makes perfect.'"
+        ]
+    ],
+    "unlawful_forgiven_insult_Guy2": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_unlawful",
+            "you_kit",
+            "they_not_kit"
+        ],
+        [
+            "[t_c suddenly looms over you.]",
+            "Little kit... did you think the stories r_q told you weren't real?",
+            "I may be 'forgiven', but you should never forget."
+        ]
+    ],
+    "gen_forgiven_insult_Guy3": [
+        [
+            "insult",
+            "they_forgiven",
+            "they_any",
+            "you_any",
+            "no_kit",
+            "they_not_kit"
+        ],
+        [
+            "Tell me y_c... how many cats do you think I killed?",
+            "[t_c laughs while they watch your reaction.]"
+        ]
+    ],
+    "gen_youforgiven_insult_H1": [
+        [
+            "insult",
+            "you_forgiven",
+            "they_any",
+            "you_any",
+            "no_kit",
+            "platonic_like",
+            "they_not_kit"
+        ],
+        [
+            "You can't be serious.",
+            "Please, for your sake and mine, just... don't insult cats while you're forgiven.",
+            "Are you asking to be shunned again??"
+        ]
+    ],
+    "gen_youforgiven_insult_H2": [
+        [
+            "insult",
+            "you_forgiven",
+            "they_any",
+            "you_any",
+            "they_not_kit"
+        ],
+        [
+            "Oh, the lesson wasn't learned, huh?"
+        ]
+    ],
+    "gen_youforgiven_insult_H3": [
+        [
+            "insult",
+            "you_forgiven",
+            "they_any",
+            "you_any",
+            "no_kit",
+            "they_not_kit"
+        ],
+        [
+            "I suppose you still need a learning experience."
+        ]
+    ],
+    "gen_youforgiven_insult_H4": [
+        [
+            "insult",
+            "you_forgiven",
+            "they_any",
+            "you_any",
+            "no_kit",
+            "they_not_kit"
+        ],
+        [
+            "There goes the hope that you'd learn from your mistakes."
+        ]
+    ],
+    "gen_youforgiven_insult_H5": [
+        [
+            "insult",
+            "you_forgiven",
+            "they_any",
+            "you_any",
+            "they_not_kit"
+        ],
+        [
+            "Rude!"
+        ]
+    ],
+    "assertive_insult": [
+        [
+            "kitten",
+            "apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
+            "assertive",
+            "unlawful",
+            "unabashed",
+            "silly",
+            "insult",
+            "platonic_like",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Hehehe! Little guy's got a mouth on 'em! That's hilarious!",
+            "Wait, stay right there!",
+            "r_c! Guess what y_c just called me! Ahahaha!"
+        ]
+    ],
+    "assertive_insult1": [
+        [
+            "kitten",
+            "apprentice",
+            "medicine_cat_apprentice",
+            "mediator_apprentice",
+            "queen's_apprentice",
+            "assertive",
+            "insult",
+            "unlawful",
+            "dislike",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Try that again, and see what happens, pipsqueak.",
+            "I could chew you up and spit you out again without thinking twice about it."
+        ]
+    ],
+    "insult1": [
+        [
+            "insult",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Hey! Where'd you learn those words from?"
+        ]
+    ],
+    "they_shunned_grieving4": [
+        [
+            "any",
+            "both_shunned",
+            "they_grieving",
+            "you_grieving",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "That's mean, y_c. You're allowed to be upset, but please dont take it out on me."
+        ]
+    ],
+    "newborn_to_shunned_insult_J1": [
+        [
+            "they_shunned",
+            "you_newborn",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What?"
+        ]
+    ],
+    "newborninsult_J1": [
+        [
+            "you_newborn",
+            "they_older",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Um... hello..?"
+        ]
+    ],
+    "newborninsult_J2": [
+        [
+            "you_newborn",
+            "they_older",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Wha.. What was that?"
+        ]
+    ],
+    "unlawful_tonewborn_neg1": [
+        [
+            "insult",
+            "you_newborn",
+            "unlawful"
+        ],
+        [
+            "You've got a lot to say for such a small scrap of fur, huh?"
+        ]
+    ],
+    "unlawful_tokit_neg1": [
+        [
+            "insult",
+            "kitten",
+            "unlawful",
+            "they_not_kit"
+        ],
+        [
+            "Best to use those words sparingly.",
+            "The world will be much more difficult for you if you do, I should know."
+        ]
+    ],
+    "kit_insult_1": [
+        [
+            "any",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Well you're... you're dumb!"
+        ]
+    ],
+    "kit_insult_2": [
+        [
+            "any",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Well, you should... leave the shutting up... to you! Stupid!"
+        ]
+    ],
+    "kit_insult_3": [
+        [
+            "any",
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "[t_c hisses at you.]"
+        ]
+    ],
+    "kit_insult_4": [
+        [
+            "any",
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "they_shunned",
+            "they_not_kit"
+        ],
+        [
+            "[t_c hisses at you.]"
+        ]
+    ],
+    "kit_insult_5": [
+        [
+            "any",
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "you_shunned",
+            "they_not_kit"
+        ],
+        [
+            "[t_c hisses at you.]"
+        ]
+    ],
+    "kit_insult_6": [
+        [
+            "any",
+            "insult",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "you_blind",
+            "both_shunned",
+            "they_not_kit"
+        ],
+        [
+            "[t_c hisses at you.]"
+        ]
+    ],
+    "assertivekit_12": [
+        [
+            "insult",
+            "assertive",
+            "Any",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "Go away, you big meanie!!!"
+        ]
+    ],
+    "upstanding_kit8": [
+        [
+            "upstanding",
+            "insult",
+            "kitten",
+            "they_blind",
+            "you_blind",
+            "they_not_kit"
+        ],
+        [
+            "H-hey! You can't just say that! r_q!"
+        ]
+    ],
+    "kitinsult_sh_J30": [
+        [
+            "Any",
+            "you_shunned",
+            "they_blind",
+            "you_blind",
+            "insult",
+            "they_not_kit"
+        ],
+        [
+            "r_c said I shouldn't listen to you."
+        ]
+    ],
+    "kitinsult_sh_J31": [
+        [
+            "Any",
+            "you_shunned",
+            "they_blind",
+            "you_blind",
+            "insult",
+            "they_deaf",
+            "you_deaf",
+            "they_not_kit"
+        ],
+        [
+            "[t_c just stares up at you for a moment before waddling away towards the nursery.]"
+        ]
+    ],
+    "shunned_insult": [
+        [
+            "they_shunned",
+            "any",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "they_not_kit"
+        ],
+        [
+            "[t_c doesn't even react to your insult.]"
+        ]
+    ],
+    "shunned_insult2": [
+        [
+            "you_shunned",
+            "any",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "they_not_kit"
+        ],
+        [
+            "[t_c doesn't even react to your insult.]"
+        ]
+    ],
+    "shunned_insult3": [
+        [
+            "both_shunned",
+            "any",
+            "insult",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "they_not_kit"
+        ],
+        [
+            "[t_c doesn't even react to your insult.]"
+        ]
+    ],
+    "newborn_shunnedkit_insult_J1": [
+        [
+            "they_shunned",
+            "you_newborn",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What?"
+        ]
+    ],
+    "leader_16": [
+        [
+            "kitten",
+            "insult",
+            "you_blind",
+            "they_blind",
+            "they_leader"
+        ],
+        [
+            "Such strong words from such a small cat! But remember, young one, respect is the cornerstone of our Clan."
+        ]
+    ],
+    "leader_1ax5": [
+        [
+            "Any",
+            "insult",
+            "you_blind",
+            "they_blind",
+            "no_kit",
+            "they_leader"
+        ],
+        [
+            "Careful now."
+        ]
+    ],
+    "leader_1ax5w": [
+        [
+            "Any",
+            "no_kit",
+            "insult",
+            "you_blind",
+            "they_blind",
+            "they_leader"
+        ],
+        [
+            "Huh, I never took you for one to mince words."
+        ]
+    ],
+    "leader_1axs5": [
+        [
+            "Any",
+            "no_kit",
+            "insult",
+            "you_blind",
+            "they_blind",
+            "they_hearing",
+            "they_leader"
+        ],
+        [
+            "Your anger is heard, as are your words. We shall speak again when emotions have cooled."
+        ]
+    ],
+    "leader_1agx5": [
+        [
+            "Any",
+            "no_kit",
+            "insult",
+            "you_blind",
+            "they_blind",
+            "they_leader"
+        ],
+        [
+            "Your words carry weight, but they do not change who I am as a leader."
+        ]
+    ],
+    "leader_1ax5x": [
+        [
+            "Any",
+            "you_kitten",
+            "insult",
+            "you_blind",
+            "they_blind",
+            "they_leader"
+        ],
+        [
+            "Calm yourself, little one."
+        ]
+    ],
+    "medi_11": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "they_blind",
+            "you_blind",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice"
+        ],
+        [
+            "Is something the matter?"
+        ]
+    ],
+    "medi_11x": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "they_blind",
+            "you_blind",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice"
+        ],
+        [
+            "Words can be like claws, they can leave marks. Be careful with yours."
+        ]
+    ],
+    "medi_12": [
+        [
+            "insult",
+            "kitten",
+            "they_blind",
+            "you_blind",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice"
+        ],
+        [
+            "Hey! Wait... this is the perfect time to use my training!",
+            "What caused you to act this way?",
+            "How about you take a deep breath. Inhale, then exhale.",
+            "Now lets reflect on your actions... hey! Don't just walk away from me!"
+        ]
+    ],
+    "medapp_1s5s": [
+        [
+            "kitten",
+            "insult",
+            "you_blind",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice"
+        ],
+        [
+            "You're full of spirit, aren't you? I can't wait to see the cat you'll become."
+        ]
+    ],
+    "medcat_16": [
+        [
+            "kitten",
+            "introspective",
+            "insult",
+            "you_blind",
+            "they_blind",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice"
+        ],
+        [
+            "Such a sharp tongue you have. Little kit, know that some words have the power to hurt as much as a sharp claw."
+        ]
+    ],
+    "upstanding_medicinecat3": [
+        [
+            "upstanding",
+            "from_mentor",
+            "insult",
+            "any",
+            "you_blind",
+            "they_blind",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice"
+        ],
+        [
+            "Looks like someone is one step closer to missing out on the upcoming Gathering."
+        ]
+    ],
+    "newborn_7": [
+        [
+            "Any",
+            "they_newborn",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Grr..."
+        ]
+    ],
+    "newborn_7dead_dead": [
+        [
+            "Any",
+            "insult",
+            "you_dead",
+            "they_dead",
+            "they_outside",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Grr..."
+        ]
+    ],
+    "newborn_sh_insult_J1": [
+        [
+            "insult",
+            "any",
+            "you_shunned",
+            "they_blind",
+            "you_blind",
+            "they_newborn"
+        ],
+        [
+            "MROOOOOOOOW!!!!!!!!"
+        ]
+    ],
+    "queen_3_2": [
+        [
+            "insult",
+            "Any",
+            "you_blind",
+            "they_blind",
+            "they_queen",
+            "they_queen's_apprentice"
+        ],
+        [
+            "Where are your manners?"
+        ]
+    ],
+    "queen_3_2_2": [
+        [
+            "insult",
+            "Any",
+            "you_blind",
+            "they_blind",
+            "they_queen",
+            "they_queen's_apprentice"
+        ],
+        [
+            "Haven't I taught you better?"
+        ]
+    ],
+    "queen_3_2_3": [
+        [
+            "insult",
+            "Any",
+            "you_blind",
+            "they_blind",
+            "they_queen",
+            "they_queen's_apprentice"
+        ],
+        [
+            "That's it, no more moss-ball for today!"
+        ]
+    ],
+    "warrior_1d6": [
+        [
+            "kitten",
+            "insult",
+            "you_blind",
+            "they_queen",
+            "they_queen's_apprentice"
+        ],
+        [
+            "Oh, a kit with a warrior's spirit, I see."
+        ]
+    ],
+    "app_32da1": [
+        [
+            "insult",
+            "warrior",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "I'd be more offended if I respected your opinion."
+        ]
+    ],
+    "app_32afa1": [
+        [
+            "insult",
+            "warrior",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Is that the best you can do?"
+        ]
+    ],
+    "app_32fax1": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Your words do not define me. I know who I am and where my loyalties lie."
+        ]
+    ],
+    "app_32fca1": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Oh, a playful jab, huh? Good thing warriors are tough!"
+        ]
+    ],
+    "app_32fab1": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "It's easy to criticize, harder to understand. I hope one day you'll see the strength in empathy."
+        ]
+    ],
+    "app_32fa21": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Your words may sting, but they won't deter me from my duty."
+        ]
+    ],
+    "app_32faf1": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Insults are a warrior's last resort. Let's show each other respect."
+        ]
+    ],
+    "app_32faa1": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "Every cat can spit fire when they're riled up. But it's the one who remains cool who wins the fight."
+        ]
+    ],
+    "app_32fad1": [
+        [
+            "insult",
+            "Any",
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "they_not_kit"
+        ],
+        [
+            "We may not always see eye to eye, but we're part of the same Clan. Let's put our differences aside."
+        ]
+    ],
+    "upstanding_warrior17": [
+        [
+            "upstanding",
+            "from_mentor",
+            "insult",
+            "any",
+            "you_blind",
+            "they_blind",
+            "they_warrior"
+        ],
+        [
+            "Looks like someone is one step closer to missing out on the upcoming Gathering."
+        ]
+    ],
+    "youdeaf_R76": [
+        [
+            "only_you_deaf",
+            "insult",
+            "no_kit",
+            "they_deaf"
+        ],
+        [
+            "[t_c frowns a bit at you before seemingly realizing your intent.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/scowl/scowls}, flexing {PRONOUN/t_c/poss} claws before looking away pointedly.]"
+        ]
+    ],
+    "youdeaf_R77": [
+        [
+            "only_you_deaf",
+            "insult",
+            "they_deaf",
+            "no_kit"
+        ],
+        [
+            "[As you sign your insult, t_c's face darkens slowly.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses}, however, before walking away without justifying you with a response.]",
+            "[t_c doesn't bother signing to you for the rest of the day.]"
+        ]
+    ],
+    "youdeaf_R78": [
+        [
+            "only_you_deaf",
+            "insult",
+            "they_deaf",
+            "any",
+            "they_not_kit"
+        ],
+        [
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/didn't/doesn't} see your signs but motions for you to repeat it.]"
+        ]
+    ],
+    "youdeaf_R79": [
+        [
+            "only_you_deaf",
+            "insult",
+            "they_hearing",
+            "any",
+            "they_not_kit"
+        ],
+        [
+            "[t_c flattens {PRONOUN/t_c/poss} ears as if you've just said something {PRONOUN/t_c/subject} didn't want to hear.]"
+        ]
+    ],
+    "youdeaf_R80": [
+        [
+            "only_you_deaf",
+            "insult",
+            "no_kit",
+            "max_platonic_20",
+            "they_not_kit"
+        ],
+        [
+            "[With a roll of {PRONOUN/t_c/poss} eyes, t_c ignores what you've signed.]"
+        ]
+    ],
+    "neurotic_insult_SQ3": [
+        [
+            "they_neurotic",
+            "they_any",
+            "you_any",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I'm t-trying my best, y_c! Really, I swear I am!"
+        ]
+    ],
+    "neurotic_insult_SQ4": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "insult",
+            "they_blind"
+        ],
+        [
+            "[t_c leaps away from you, as if your words are a physical blow.]",
+            "What? I... why?"
+        ]
+    ],
+    "neurotic_insult_SQ5": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "insult",
+            "they_blind"
+        ],
+        [
+            "[t_c takes a long, deep breath, as if preparing a stinging comeback. You wait.]",
+            "[...t_c deflates and scurries away.]"
+        ]
+    ],
+    "neurotic_insult_SQ6": [
+        [
+            "they_neurotic",
+            "no_kit",
+            "insult",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "...That's cruel, y_c. You're... you're just a bully.",
+            "And I think, deep down, you know that too. Right?"
+        ]
+    ],
+    "neurotic_insult_SQ7": [
+        [
+            "they_neurotic",
+            "you_neurotic",
+            "no_kit",
+            "insult",
+            "neutral",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I thought we were similar, y_c. Both kind of quiet... both a little too cautious.",
+            "But I don't ever want to be like you if you say things like that."
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_01": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What is wrong with you?"
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_02": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind"
+        ],
+        [
+            "[t_c puffs out {PRONOUN/t_c/poss} chest and bites {PRONOUN/t_c/poss} lip for a second, they glare at you with angry eyes. {PRONOUN/t_c/subject/CAP} {VERB/t_c/click/clicks} {PRONOUN/t_c/poss} tongue and abruptly get up to leave, {PRONOUN/t_c/poss} shoulders tense.]",
+            "Just leave me alone. If you can't say anything worthwhile, y_c, then I don't want to hear it."
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_03": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Ignorance won't get you anywhere..."
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_04": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[{PRONOUN/t_c/subject/CAP} simply {VERB/t_c/look/looks} away, though the hair bristling at the back of {PRONOUN/t_c/poss} neck tells you a nerve was struck.]"
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_05": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I know you're better than that. So why are you acting this way?"
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_06": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Weren't you raised better than that? StarClan, learn some manners."
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_07": [
+        [
+            "insult",
+            "no_kit",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Show some respect, who do you think you are saying things like that?! Even if you don't like me, at least do the right thing and keep it to yourself! StarClan's sake!"
+        ]
+    ],
+    "TinyTeddy_stable_neg_Gen_08": [
+        [
+            "insult",
+            "no_kit",
+            "you_stable",
+            "min_platonic_30",
+            "they_stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "?!",
+            "Really... I never expected that coming from you y_c... Did something bad happen? Are you okay?"
+        ]
+    ],
+    "newborn_to_newborn_H1": [
+        [
+            "they_newborn",
+            "you_newborn",
+            "insult",
+            "they_deaf"
+        ],
+        [
+            "[You meow at t_c aggressively, flopping your paws around as if that'll do much.]",
+            "[t_c faces you with those beady blue eyes, unresponsive to your insulting.]"
+        ]
+    ],
+    "newborn_to_newborn_H2": [
+        [
+            "they_newborn",
+            "you_newborn",
+            "insult"
+        ],
+        [
+            "[Since you can't insult just yet, you flop onto t_c with a ferocious hiss.]",
+            "[r_q separates the two of you before you're able to do any real damage -- as if you could.]",
+            "[Rats!]"
+        ]
+    ],
+    "i_grievingyou_shunned_J1": [
+        [
+            "both_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[t_c stumbles away, confused and scared.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J2": [
+        [
+            "both_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[You swipe a paw at what must be t_c's ghost, but your paw hits solid fur.]",
+            "[You turn and run away, confused and frightened.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J3": [
+        [
+            "you_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[t_c stumbles away, confused and scared.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J4": [
+        [
+            "you_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[You swipe a paw at what must be t_c's ghost, but your paw hits solid fur.]",
+            "[You turn and run away, confused and frightened.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J5": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "grievingyou",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[t_c stumbles away, confused and scared.]"
+        ]
+    ],
+    "i_grievingyou_shunned_J6": [
+        [
+            "they_shunned",
+            "you_grieving",
+            "grievingthem",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_deaf",
+            "you_deaf",
+            "insult"
+        ],
+        [
+            "[You swipe a paw at what must be t_c's ghost, but your paw hits solid fur.]",
+            "[You turn and run away, confused and frightened.]"
+        ]
+    ],
+    "newborn_insult_J1": [
+        [
+            "you_newborn",
+            "they_newborn",
+            "insult"
+        ],
+        [
+            "Grrr..."
+        ]
+    ],
+    "newborn_to_newborn_H3": [
+        [
+            "they_newborn",
+            "you_newborn",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind",
+            "insult"
+        ],
+        [
+            "[t_c does not respond to your insult.]"
+        ]
+    ],
+    "shunned_grieving_H1": [
+        [
+            "they_shunned",
+            "they_grieving",
+            "any",
+            "insult",
+            "they_deaf",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[t_c turns {PRONOUN/t_c/poss} head away from you.]",
+            "[Looks like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not in the mood for banter.]"
+        ]
+    ],
+    "they_kitten_H1": [
+        [
+            "they_kitten",
+            "insult",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Well - You - You're, uhh...",
+            "Stinky, like rotten fresh-kill!",
+            "Yeah! You need to bathe! Ewwww!!"
+        ]
+    ],
+    "they_kitten_H2": [
+        [
+            "insult",
+            "they_kitten",
+            "any",
+            "they_deaf",
+            "you_deaf",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c simply laughs in your face.]"
+        ]
+    ],
+    "they_kitten_H3": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "Hah! As if that affects me at all!",
+            "[You can definitely see the unshed tears in {PRONOUN/t_c/poss} eyes.]"
+        ]
+    ],
+    "they_kitten_H4": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "... Did you know you have a bald spot on your neck?",
+            "Everycat has been too nice to say anything."
+        ]
+    ],
+    "they_kitten_H5": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "You're so mean..."
+        ]
+    ],
+    "they_kitten_H6": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "Yeah? Well, your ears are too big for your face.",
+            "You look like a dirty mouse."
+        ]
+    ],
+    "they_kitten_H7": [
+        [
+            "they_kitten",
+            "insult",
+            "any"
+        ],
+        [
+            "Well - Well I hope you run into those black and white cat wannabes with the stinky farts!"
+        ]
+    ],
+    "they_kitten_H8": [
+        [
+            "they_kitten",
+            "insult",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c stares at you intently.]",
+            "[... Minutes go past without a word. It's starting to become creepy.]"
+        ]
+    ],
+    "TinyTeddy_stable_neg_youkitten_theywarrior_01": [
+        [
+            "insult",
+            "you_kitten",
+            "they_warrior",
+            "they_stable"
+        ],
+        [
+            "WHAT THE- Who in StarClan's name...",
+            "r_q! r_q! Hey, I think someone's been teaching the kits some... less than appropriate words.",
+            "[{PRONOUN/t_c/subject} turns to you in a sharp movement, {PRONOUN/t_c/poss} gaze billowing in anger and {PRONOUN/t_c/poss} hair on end.]",
+            "Who taught you this? Who was it? Was it t_a? r_w? r_a??? Out with it kit!",
+            "[The queen tries to calm down the warrior who scoffs with a roll of {PRONOUN/t_c/poss} eyes.]",
+            "NO! No kitten should speak like this, do not excuse {PRONOUN/y_c/poss} actions, this kind of behaviour is disgusting at best and harmful at worst."
+        ]
+    ],
+    "TinyTeddy_stable_neg_youadult_theyapp_01": [
+        [
+            "insult",
+            "you_adult",
+            "they_app",
+            "they_stable"
+        ],
+        [
+            "I-",
+            "I get that I make mistakes, but I'm trying y_c... I'm really trying I- *sniff* I'm sorry, I- *sniff*...",
+            "[t_c stands with wobbly legs, {PRONOUN/t_c/poss} eyes welling with tears. {PRONOUN/t_c/subject} brushes {PRONOUN/t_c/poss} paw over {PRONOUN/t_c/poss} eyes quickly and stumble backwards.]",
+            "I- I need to go!",
+            "[You watch as {PRONOUN/t_c/subject} scampers off, tears rolling down {PRONOUN/t_c/poss} cheeks. Other cats watch as t_c runs away, then all eyes turn to face you. You can't help but flinch under the harsh gaze of the warriors or scowls of the queens.]"
+        ]
+    ],
+    "blind_to_shunnedcat_insult_H1": [
+        [
+            "insult",
+            "they_shunned",
+            "you_blind",
+            "no_kit"
+        ],
+        [
+            "Are you having fun insulting me when you're vulnerable? And alone?",
+            "I'd back up if I was you."
+        ]
+    ],
+    "deaf_to_shunnedcat_insult_H2": [
+        [
+            "insult",
+            "they_shunned",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c hisses at you, then walks away with a tail flick.]"
+        ]
+    ],
+    "kitten_to_kitten_H1": [
+        [
+            "they_kitten",
+            "you_kitten",
+            "insult"
+        ],
+        [
+            "Well - Well- you're short too!!"
+        ]
+    ]
+}

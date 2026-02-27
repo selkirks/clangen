@@ -1,0 +1,822 @@
+{
+    "good_opinion_c": [
+        [
+            "no_kit",
+            "focus"
+        ],
+        [
+            "l_n's lead us through thick and thin. This Clan's been through so much, and I know that it's thanks to l_n that we've come this far.",
+            "I'll always support {PRONOUN/l_n/object} no matter what!"
+        ]
+    ],
+    "good_opinion_Guy1": [
+        [
+            "they_kitten",
+            "focus"
+        ],
+        [
+            "l_n is the very bestest leader ever!"
+        ]
+    ],
+    "good_opinion_Guy2": [
+        [
+            "they_app",
+            "focus"
+        ],
+        [
+            "I'm so glad that l_n is our leader!"
+        ]
+    ],
+    "good_opinion_Guy3": [
+        [
+            "they_elder",
+            "focus"
+        ],
+        [
+            "I believe l_n might be the best leader c_nClan has ever had."
+        ]
+    ],
+    "good_opinion_AJ": [
+        [
+            "no_kit",
+            "assertive",
+            "stable",
+            "focus"
+        ],
+        [
+            "Oh, so one bad decision and suddenly everyone's turned against l_n? Is everybody's loyalty really that fragile?",
+            "All of us mess up from time to time, don't we? How would you like it if everybody acted like you were the worst cat ever after one little mistake?"
+        ]
+    ],
+    "good_opinion_AJ1": [
+        [
+            "no_kit",
+            "assertive",
+            "brooding",
+            "upstanding",
+            "focus"
+        ],
+        [
+            "I swear, this Clan is filled with more mouse-brains than a knothole in newleaf. l_n is a fine leader!",
+            "Cats around here like to complain, but I guarantee you, if you put any of the complainers in that position, none of them would be even half the leader l_n is."
+        ]
+    ],
+    "good_opinion_AJ2": [
+        [
+            "no_kit",
+            "assertive",
+            "unabashed",
+            "upstanding",
+            "focus"
+        ],
+        [
+            "I stand with l_n ...",
+            "[t_c puffs {PRONOUN/t_c/poss} chest out in pride.]",
+            "... And I don't care what anycat thinks about it."
+        ]
+    ],
+    "good_opinion_AJ3": [
+        [
+            "no_kit",
+            "neurotic",
+            "focus"
+        ],
+        [
+            "[t_c looks at the leader's den with a worried expression.]",
+            "You know, I really do feel for l_n.",
+            "All that pressure, all those expectations to succeed for your Clanmates ...",
+            "I would be a wreck in that position! If nothing else, I'm grateful l_n is one making the choices just so I don't have to."
+        ]
+    ],
+    "good_opinion_AJ5": [
+        [
+            "no_kit",
+            "assertive",
+            "unabashed",
+            "upstanding",
+            "focus"
+        ],
+        [
+            "Anycat who has a problem with l_n can take it up with me!",
+            "After all {PRONOUN/l_n/subject}{VERB/l_n/'ve/'s} given to the Clan, it's about time somecat gives something back!"
+        ]
+    ],
+    "good_opinion_AJ67": [
+        [
+            "no_kit",
+            "cool",
+            "focus"
+        ],
+        [
+            "I don't get why everycat's so obsessed with l_n all of a sudden. Is there something in the water? {PRONOUN/l_n/subject/CAP}{VERB/l_n/'ve/'s} always seemed like a fine leader to me.",
+            "And you know I mean it, too, because I'll never pass up on a good chance to complain."
+        ]
+    ],
+    "good_opinion_AJ6": [
+        [
+            "no_kit",
+            "neurotic",
+            "introspective",
+            "focus",
+            "platonic_like"
+        ],
+        [
+            "I know l_n has made mistakes in the past, but {PRONOUN/l_n/subject}{VERB/l_n/'ve/'s} helped the Clan through a lot, too. I don't know if I can just let go of everything we've been through together as a Clan because {PRONOUN/l_n/subject} messed something up.",
+            "l_n is a cat, just like any of us. {PRONOUN/l_n/subject/CAP} {VERB/l_n/deserve/deserves} a little grace, same as all of us do.",
+            "This Clan has enough problems as it is without all of us at each other's throats."
+        ]
+    ],
+    "good_opinion_AJ8": [
+        [
+            "no_kit",
+            "cool",
+            "focus"
+        ],
+        [
+            "So, l_n doesn't always make the best choices. Big deal!",
+            "The prey still runs, the sun still rises and sets, I can still get my nap in after my evening meal ... Are things really so bad?",
+            "When the Clan is actually in shambles, then maybe we can have a reason to question. But, until then, things seem pretty much the same as they always were."
+        ]
+    ],
+    "good_opinion_AJ9": [
+        [
+            "no_kit",
+            "assertive",
+            "unabashed",
+            "cool",
+            "focus"
+        ],
+        [
+            "Am I the only cat that thinks l_n didn't do anything wrong? Honestly, it's exactly the choice I would've made if I were in {PRONOUN/l_n/poss} position!",
+            "Everycat takes everything so personally these days ... It really isn't about what we think. l_n's word for the Clan goes, and I know I'm personally happy to follow it."
+        ]
+    ],
+    "good_opinion_AJ10": [
+        [
+            "no_kit",
+            "assertive",
+            "upstanding",
+            "brooding",
+            "max_platonic_20",
+            "they_warrior",
+            "they_deputy",
+            "they_apprentice",
+            "focus"
+        ],
+        [
+            "What are you doing?",
+            "[t_c snaps at you when you tread a little bit too close to the leader's den.]",
+            "Anyone who wants to cause any harm to l_n is going to have to get through me first!!!",
+            "[You stammer to t_c that you were just passing through, and {PRONOUN/t_c/subject} {VERB/t_c/settle/settles} back into {PRONOUN/t_c/poss} position guarding the leader's den, eyes narrowed in suspicion.]"
+        ]
+    ],
+    "good_opinion_AJ11": [
+        [
+            "no_kit",
+            "neurotic",
+            "sweet",
+            "focus"
+        ],
+        [
+            "[At mealtime, t_c kindly leaves a portion of {PRONOUN/t_c/poss} prey outside the l_n's den, clearly sympathizing with the stress of {PRONOUN/l_n/poss} situation.]"
+        ]
+    ],
+    "good_opinion_AJ12": [
+        [
+            "no_kit",
+            "introspective",
+            "focus",
+            "they_adult"
+        ],
+        [
+            "I believe that there is nuance in every situation. Our life in this Clan is complex and multifaceted. Things are not always either good or bad, dark or light, but rather exist in a multitude of shades of gray.",
+            "However, in the case of l_n, when taking everything into consideration ... The good outweighs the bad. No matter what way you look at it, it will every time.",
+            "So, speaking strictly logically, there is no reason not to support {PRONOUN/l_n/object}."
+        ]
+    ],
+    "good_opinion_AJ183": [
+        [
+            "no_kit",
+            "neurotic",
+            "they_warrior",
+            "they_apprentice",
+            "they_younger",
+            "focus"
+        ],
+        [
+            "I still remember my first ever patrol with l_n ...",
+            "I was so terrified of being around someone so important, I started getting careless and making stupid mistakes. Every piece of prey we encountered, somehow I found a way to scare it off.",
+            "It was so humiliating. It felt like the entire Clan was disappointed in me. I knew I could do better, but I just couldn't find the words to explain that to l_n. I was so sure {PRONOUN/l_n/subject} would be upset with me ...",
+            "But, really, that wasn't what happened at all. Instead, l_n told the rest of the patrol to go ahead, and took the time out of {PRONOUN/l_n/poss} important schedule to give me some tips on my hunting.",
+            "{PRONOUN/l_n/subject/CAP} {VERB/l_n/were/was} so patient and understanding with me ... Even when I doubted myself the most, l_n showed me that, no matter what, I will always have a place in this Clan.",
+            "Now that some time has passed, I want to do the same thing for {PRONOUN/l_n/object}.",
+            "No matter what happens, I will always support l_n."
+        ]
+    ],
+    "good_opinion_AJ13.1": [
+        [
+            "no_kit",
+            "neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "focus"
+        ],
+        [
+            "I still remember my first ever time treating l_n ...",
+            "I was so terrified of being around someone so important, I started getting careless and making stupid mistakes. Everything I tried, I somehow seemed to mess it up.",
+            "It was so humiliating. It felt like the entire Clan was disappointed in me. I knew I could do better, but I just couldn't find the words to explain that to l_n. I was so sure {PRONOUN/l_n/subject} would be upset with me ...",
+            "But, really, that wasn't what happened at all. Instead, l_n reassured me that it was alright, and took the time out of {PRONOUN/l_n/poss} important schedule to give me some tips on my cobweb bandaging technique.",
+            "{PRONOUN/l_n/subject/CAP} {VERB/l_n/were/was} so patient and understanding with me ... Even when I doubted myself the most, l_n showed me that, no matter what, I will always have a place in this Clan.",
+            "Now that some time has passed, I want to do the same thing for {PRONOUN/l_n/object}.",
+            "No matter what happens, I will always support l_n."
+        ]
+    ],
+    "good_opinion_AJ13.2": [
+        [
+            "no_kit",
+            "neurotic",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "they_younger",
+            "focus"
+        ],
+        [
+            "I still remember my first ever time mediating one of l_n's arguments ...",
+            "I was so terrified of being around someone so important, I started getting careless and making stupid mistakes. No matter what I tried, I only ever seemed to make the situation worse.",
+            "It was so humiliating. It felt like the entire Clan was disappointed in me. I knew I could do better, but I just couldn't find the words to explain that to l_n. I was so sure {PRONOUN/l_n/subject} would be upset with me ...",
+            "But, really, that wasn't what happened at all. Instead, l_n reassured me that it was alright, and took the time out of {PRONOUN/l_n/poss} important schedule to give me some tips on my conflict resolution.",
+            "{PRONOUN/l_n/subject/CAP} {VERB/l_n/were/was} so patient and understanding with me ... Even when I doubted myself the most, l_n showed me that, no matter what, I will always have a place in this Clan.",
+            "Now that some time has passed, I want to do the same thing for {PRONOUN/l_n/object}.",
+            "No matter what happens, I will always support l_n."
+        ]
+    ],
+    "good_opinion_AJ13.3": [
+        [
+            "no_kit",
+            "neurotic",
+            "they_queen",
+            "they_queen's_apprentice",
+            "they_younger",
+            "focus"
+        ],
+        [
+            "I still remember the first ever time l_n visited the nursery after becoming leader ...",
+            "It was a huge disaster. The kits were unruly, the queens were irritable, no one listened to anything I had to say. No matter what I tried, I just couldn't seem to get the situation under control.",
+            "It was so humiliating. It felt like the entire Clan was disappointed in me. I knew I could do better, but I just couldn't find the words to explain that to l_n. I was so sure {PRONOUN/l_n/subject} would be upset with me ...",
+            "But, really, that wasn't what happened at all. Instead, l_n reassured me that it was alright, and took the time out of {PRONOUN/l_n/poss} important schedule to give me some tips on how to manage the kits.",
+            "{PRONOUN/l_n/subject/CAP} {VERB/l_n/were/was} so patient and understanding with me ... Even when I doubted myself the most, l_n showed me that, no matter what, I will always have a place in this Clan.",
+            "Now that some time has passed, I want to do the same thing for {PRONOUN/l_n/object}.",
+            "No matter what happens, I will always support l_n."
+        ]
+    ],
+    "good_opinion_AJ13": [
+        [
+            "no_kit",
+            "they_deputy",
+            "brooding",
+            "assertive",
+            "stable",
+            "upstanding",
+            "unabashed",
+            "cool",
+            "min_trust_30",
+            "focus"
+        ],
+        [
+            "Cats in this Clan might think they know l_n, but they really don't. Not the way that I do.",
+            "Until you've worked alongside {PRONOUN/l_n/object} personally, until you know what it takes to manage this Clan down to the last minute detail, then you have no right to criticize {PRONOUN/l_n/poss} choices.",
+            "Point. Blank. Period."
+        ]
+    ],
+    "good_opinion_AJ14": [
+        [
+            "Any",
+            "assertive",
+            "upstanding",
+            "unabashed",
+            "focus"
+        ],
+        [
+            "[t_c is fighting with some of l_n's dissenters.]",
+            "Why don't you say it again? Huh? Why don't you say that to l_n's face?",
+            "If you're not going to support {PRONOUN/l_n/object}, then you don't even deserve to call yourself a part of this Clan!"
+        ]
+    ],
+    "good_opinion_AJ15": [
+        [
+            "Any",
+            "unlawful",
+            "focus"
+        ],
+        [
+            "Tch. If this is all it takes to get the Clan mad at l_n, I'd hate to see how everybody would react if they knew about some of the things <i>I've</i> done.",
+            "... No, I'm not going to tell you!"
+        ]
+    ],
+    "good_opinion_AJ16": [
+        [
+            "Any",
+            "silly",
+            "upstanding",
+            "unabashed",
+            "focus",
+            "they_elder"
+        ],
+        [
+            "If you ask me, l_n is exactly what this Clan needs. Things have only gotten better in c_nClan since {PRONOUN/l_n/subject} became leader!",
+            "Before {PRONOUN/l_n/object}, everybody in this Clan was so weak and lily livered ... l_n has really whipped us into shape, and shown us what being a c_nClanner is really all about!"
+        ]
+    ],
+    "good_opinion_AJ17": [
+        [
+            "Any",
+            "sc_faith"
+        ],
+        [
+            "Have you seen how well the prey has been running lately? It has to be some kind of good sign.",
+            "Our warrior ancestors are smiling down on l_n, and honoring {PRONOUN/l_n/poss} leadership! To question it now could mean disaster for our Clan!"
+        ]
+    ],
+    "good_opinion_AJ18": [
+        [
+            "Any",
+            "sc_faith"
+        ],
+        [
+            "I might not always have faith in l_n, but I do have faith in StarClan.",
+            "After all, they wouldn't give nine lives to just any cat! There must be something in l_n that none of us are seeing."
+        ]
+    ],
+    "good_opinion_AJ19": [
+        [
+            "Any",
+            "stable",
+            "upstanding",
+            "brooding",
+            "silly"
+        ],
+        [
+            "Everycat complaining about l_n around camp ... I'm just so sick of hearing about it.",
+            "If cats think they can do so much better, then why don't they just leave and start their own Clan? It would certainly give us a lot more peace around here."
+        ]
+    ],
+    "good_opinion_AJ20": [
+        [
+            "no_kit",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "min_trust_30"
+        ],
+        [
+            "I'm a mediator. I'm not supposed to feel any particular way about any conflicts around camp, period.",
+            "... But, if you ask me, y_c, we couldn't ask for a much better leader than the one we've got.",
+            "l_n has never really given me any problems. The Clan could do a lot worse than them."
+        ]
+    ],
+    "good_opinion_AJ21": [
+        [
+            "no_kit",
+            "they_cool"
+        ],
+        [
+            "Y'know, all this controversy has really only made me gain respect for our leader. Despite all the squabble, {PRONOUN/l_n/subject} still managed to rise above it all.",
+            "I think the rest of us could stand to learn a thing or two from that."
+        ]
+    ],
+    "good_opinion_AJ22": [
+        [
+            "no_kit",
+            "they_cool",
+            "they_unlawful"
+        ],
+        [
+            "I never really felt all that strongly about l_n's leadership style, but all this squawking about how terrible {PRONOUN/l_n/subject} {VERB/l_n/are/is} is so annoying that I just might have to support {PRONOUN/l_n/object} now, just to make a point."
+        ]
+    ],
+    "neutral_opinion_c": [
+        [
+            "no_kit",
+            "focus"
+        ],
+        [
+            "Eh, l_n? {PRONOUN/l_n/subject/CAP}{VERB/l_n/'re/'s} not bad, not the best either. I mean, there's no one else here who would really step up, to be honest. We've got what we got."
+        ]
+    ],
+    "neutral_opinion_Guy1": [
+        [
+            "they_kitten",
+            "focus"
+        ],
+        [
+            "l_n? t_p makes me listen to them!"
+        ]
+    ],
+    "neutral_opinion_Guy2": [
+        [
+            "they_app",
+            "focus"
+        ],
+        [
+            "What do I think about l_n?",
+            "[t_c pauses for a moment.]",
+            "Well, I don't know enough about the other leaders to judge {PRONOUN/l_n/object} too much."
+        ]
+    ],
+    "neutral_opinion_Guy3": [
+        [
+            "they_elder",
+            "focus"
+        ],
+        [
+            "We've had worse, we've had better... I just hope StarClan takes {PRONOUN/l_n/object} before they take me!",
+            "[t_c cackles.]"
+        ]
+    ],
+    "neutral_opinion_SQ1": [
+        [
+            "no_kit",
+            "focus",
+            "neurotic"
+        ],
+        [
+            "What do I think of l_n? I'm trying to stay out of this discussion, y_c. Sorry."
+        ]
+    ],
+    "neutral_opinion_SQ2": [
+        [
+            "no_kit",
+            "focus",
+            "neurotic"
+        ],
+        [
+            "My opinion of l_n? I don't really know...",
+            "What do you think?"
+        ]
+    ],
+    "neutral_opinion_SQ3": [
+        [
+            "no_kit",
+            "focus",
+            "neurotic"
+        ],
+        [
+            "Everyone's talking about their opinions on l_n, and it's kind of stressing me out...",
+            "Can we talk about something else?"
+        ]
+    ],
+    "neutral_opinion_AJ": [
+        [
+            "Any",
+            "brooding",
+            "focus",
+            "neutral"
+        ],
+        [
+            "You want to know my opinion on l_n?",
+            "Why in StarClan's name would I tell you?"
+        ]
+    ],
+    "neutral_opinion_AJ1": [
+        [
+            "no_kit",
+            "assertive",
+            "unabashed",
+            "upstanding"
+        ],
+        [
+            "Psh, who cares about l_n? It's not like what {PRONOUN/l_n/subject} {VERB/l_n/do/does} really matters to the Clan much anyways.",
+            "{PRONOUN/l_n/subject/CAP} can make whatever choices {PRONOUN/l_n/subject} {VERB/l_n/want/wants}, but we all know that it's what the rest of the Clan does that really matters. {PRONOUN/l_n/subject/CAP}{VERB/l_n/'re/'s} only one cat, after all.",
+            "A natural born leader with their paws on the ground has just as much influence over c_nClan as any one -star ever could!"
+        ]
+    ],
+    "neutral_opinion_AJ2": [
+        [
+            "no_kit",
+            "cool",
+            "they_warrior",
+            "they_medicine_cat",
+            "they_mediator",
+            "they_queen",
+            "they_apprentice",
+            "they_medicine_cat_apprentice",
+            "they_mediator_apprentice",
+            "they_queen's_apprentice"
+        ],
+        [
+            "l_n this, l_n that. Does anycat really think all this talk about l_n is going to make any difference to the Clan whatsoever?",
+            "Trust me, y_c, to the big cats up there, all of us are just little insects that they can crush beneath their paw. l_n couldn't give a rat's tail whether the lowly t_c approves of {PRONOUN/l_n/object} or not.",
+            "And, I don't know about you, but I'm not really one to spend a lot of time thinking about cats who wouldn't twitch their whiskers at whether I live or die."
+        ]
+    ],
+    "neutral_opinion_AJ3": [
+        [
+            "you_app",
+            "upstanding",
+            "introspective",
+            "stable",
+            "neurotic",
+            "cool",
+            "neutral",
+            "they_older"
+        ],
+        [
+            "Hm? You wanna know what I think about l_n?",
+            "... Don't you have training to get to, or something?"
+        ]
+    ],
+    "neutral_opinion_AJ4": [
+        [
+            "you_app",
+            "they_cool",
+            "they_assertive",
+            "they_older"
+        ],
+        [
+            "Sorry, pipsqueak. I don't talk politics with cats who don't even know if their name is gonna end with a -claw or a -cloud yet.",
+            "You can come back when you're a little older."
+        ]
+    ],
+    "neutral_opinion_AJ5": [
+        [
+            "any",
+            "they_introspective",
+            "they_older"
+        ],
+        [
+            "A big change is coming ... Can you feel it in the air?",
+            "This isn't the c_nClan it once was, when l_n first came into power.",
+            "I can only hope the change will be for the better ... not for the worse."
+        ]
+    ],
+    "neutral_opinion_AJ6": [
+        [
+            "any",
+            "they_introspective",
+            "they_stable"
+        ],
+        [
+            "There is good and bad in every cat. l_n is no different.",
+            "To expect anything different would be completely irrational. No matter what l_n does, c_nClan will persist as it always has."
+        ]
+    ],
+    "neutral_opinion_AJ7": [
+        [
+            "any",
+            "they_elder"
+        ],
+        [
+            "Y'know, I remember a time before l_n was leader. The leader then never always made the right choices, either. There were times when all of us doubted.",
+            "But, in the end ... c_nClan always pulled through.",
+            "I have to have faith that the same thing will happen now, as well."
+        ]
+    ],
+    "neutral_opinion_AJ8": [
+        [
+            "no_kit",
+            "they_brooding",
+            "max_platonic_30"
+        ],
+        [
+            "If you've come to talk about l_n, go waste your breath on some other cat. I'm not interested."
+        ]
+    ],
+    "neutral_opinion_AJ9": [
+        [
+            "no_kit",
+            "they_brooding"
+        ],
+        [
+            "So much idle gossip in this Clan, it's enough to make you sick.",
+            "Mark my words. Everybody may seem to feel strongly about l_n now, but before long, everybody will abandon their convictions and move onto the next idiotic topic of the moon."
+        ]
+    ],
+    "neutral_opinion_AJ10": [
+        [
+            "no_kit",
+            "they_cool",
+            "they_silly"
+        ],
+        [
+            "Pst, y_c. I heard a terrible rumor that l_n is part turtle! How can we ever expect anycat so slow to lead our Clan to success?",
+            "[... t_c can never take anything seriously.]"
+        ]
+    ],
+    "neutral_opinion_AJ11": [
+        [
+            "Any",
+            "they_adult",
+            "they_app"
+        ],
+        [
+            "[When older cats start discussing l_n, t_c gets up and moves to a different part of camp.]"
+        ]
+    ],
+    "neutral_opinion_AJ12": [
+        [
+            "Any",
+            "they_neurotic"
+        ],
+        [
+            "Oh, I just hate how much animosity there is around camp nowadays! Don't you, y_c? It seems like even the tiniest comments are enough to start a fight.",
+            "If you ask me, all this l_n nonsense couldn't be over soon enough. Clanmates are supposed to support one another! I miss it when we could all just get along."
+        ]
+    ],
+    "neutral_opinion_AJ13": [
+        [
+            "no_kit",
+            "they_cool"
+        ],
+        [
+            "Hey, love l_n or hate {PRONOUN/l_n/object}, you can't deny this is the most excitement we've had around camp in moons.",
+            "Everybody at each other's' throats, squabbling, debating ... It's some solid entertainment!",
+            "Maybe I should start another rumor about the deputy, just to keep the fun going ..."
+        ]
+    ],
+    "neutral_opinion_AJ14": [
+        [
+            "no_kit",
+            "they_mediator",
+            "they_mediator_apprentice",
+            "they_deputy",
+            "platonic_like"
+        ],
+        [
+            "Honestly, forget whatever l_n did to upset everycat -- I'm way more worried about the way c_nClan can't seem to present a unified front on ... Well, much of anything these days!",
+            "The strength of a Clan is in its unity. If other cats saw the cracks that were starting to form in our very own camp, you bet your tail they'd love to take advantage!",
+            "I just hope we can manage to pull ourselves back together soon, or else who knows what'll happen?"
+        ]
+    ],
+    "neutral_opinion_AJ15": [
+        [
+            "no_kit",
+            "platonic_like"
+        ],
+        [
+            "Nowadays, every cat is either a l_n supporter or a l_n dissenter. It used to be that we were all just Clanmates.",
+            "Certainly everyone's true colors are showing, aren't they, y_c? I never would've imagined how vicious some cats can be towards members of their own Clan!"
+        ]
+    ],
+    "bad_opinion_c": [
+        [
+            "no_kit",
+            "focus",
+            "they_assertive",
+            "they_unabashed",
+            "they_upstanding"
+        ],
+        [
+            "l_n's the worst leader I've ever seen. Anycat here would be better than {PRONOUN/l_n/object}, to be honest.",
+            "[You glance around, hoping that t_c's voice doesn't carry and that l_n isn't in camp.]",
+            "I don't care, I'll say it to {PRONOUN/l_n/poss} face!"
+        ]
+    ],
+    "bad_opinion_Guy1": [
+        [
+            "they_kitten",
+            "focus"
+        ],
+        [
+            "l_n never wants to play with us!"
+        ]
+    ],
+    "bad_opinion_Guy2": [
+        [
+            "they_apprentice",
+            "focus"
+        ],
+        [
+            "Ugh.",
+            "[You ask t_c what's wrong.]",
+            "l_n gave me the worst mentor! {PRONOUN/l_n/subject/CAP} either {VERB/l_n/want/wants} me to fail, or {PRONOUN/l_n/subject} {VERB/l_n/have/has} no idea how to lead."
+        ]
+    ],
+    "bad_opinion_Guy3": [
+        [
+            "they_elder",
+            "focus"
+        ],
+        [
+            "I hope to see the day d_n takes {PRONOUN/l_n/poss} place."
+        ]
+    ],
+    "bad_opinion_AJ": [
+        [
+            "no_kit",
+            "they_upstanding",
+            "they_cool",
+            "they_assertive",
+            "focus"
+        ],
+        [
+            "l_n's recent decision is exactly why a cat like me should be the leader. Nothing like this ever would have happened under my watch.",
+            "[You ask t_c if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} being a little forward?]",
+            "Hey, I just said a cat <i>like</i> me, not me exactly!",
+            "Honestly, I'd be happy if <i>anycat</i> other than l_n took the position ..."
+        ]
+    ],
+    "bad_opinion_AJ1": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_sweet",
+            "focus"
+        ],
+        [
+            "How could l_n possibly make a choice like this? {VERB/l_n/Don't/Doesn't} {PRONOUN/l_n/subject} understand what it will mean for our Clan?",
+            "I know {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} not a bad cat. Maybe ... Maybe if I could just help {PRONOUN/l_n/object} understand the consequences of {PRONOUN/l_n/poss} choices, then ...",
+            "[t_c's gaze trails towards the leader's den, eyes pooling with doubt and betrayal.]"
+        ]
+    ],
+    "bad_opinion_AJ2": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_upstanding",
+            "they_app",
+            "focus"
+        ],
+        [
+            "You want to know how I feel about l_n?",
+            "... If I tell the truth, will I still graduate on time?"
+        ]
+    ],
+    "bad_opinion_AJ3": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "neutral",
+            "focus"
+        ],
+        [
+            "You want to know how I feel about the l_n situation?",
+            "W-Why? Who told you to ask me? Did l_n send you?",
+            "[While t_c is reluctant to admit {PRONOUN/t_c/poss} dissent outright, {PRONOUN/t_c/poss} darting eyes and twitching tail tell you all you need to know.]"
+        ]
+    ],
+    "bad_opinion_AJ4": [
+        [
+            "no_kit",
+            "upstanding",
+            "stable",
+            "introspective",
+            "focus"
+        ],
+        [
+            "If things in c_nClan keep continuing on the way they've been going ... Well, then I don't know how much longer I can stay.",
+            "My loyalty is to my Clan, not the tyrant who wants to run it into the ground."
+        ]
+    ],
+    "bad_opinion_AJ5": [
+        [
+            "no_kit",
+            "assertive",
+            "unabashed",
+            "focus"
+        ],
+        [
+            "l_n is nothing short of a disgrace to the Clan. I don't know how {PRONOUN/l_n/subject} even became deputy in the first place, let alone leader!",
+            "Did the former leader have bees in their brain or something? I would've never let a cat like l_n come into power! Not if I knew the damage {PRONOUN/l_n/subject} could do to the Clan!"
+        ]
+    ],
+    "bad_opinion_AJ6": [
+        [
+            "no_kit",
+            "brooding",
+            "introspective",
+            "focus"
+        ],
+        [
+            "l_n is not my leader ... {PRONOUN/l_n/subject/CAP} never {VERB/l_n/have/has} been.",
+            "It's only a matter of time until StarClan realizes what a mistake it's made and strips all nine of l_n's lives away."
+        ]
+    ],
+    "neutral_opinion_E2": [
+        [
+            "upstanding",
+            "focus",
+            "you_blind",
+            "they_mediator",
+            "they_blind",
+            "no_kit"
+        ],
+        [
+            "All of this l_n drama is really ruffling my fur. It'll be a miracle if half my pelt isn't covered in gray hairs by the time I settle all of the arguments around camp.",
+            "What do I think about l_n..?",
+            "Well... sure, {PRONOUN/l_n/subject}{VERB/t_c/'ve/'s} made some... rocky decisions in the past but {PRONOUN/l_n/subject}{VERB/t_c/'ve/'s} led the Clan this far {VERB/l_n/haven't/hasn't} {PRONOUN/l_n/subject}? How can we expect {PRONOUN/l_n/object} to improve if we tear {PRONOUN/l_n/object} down whenever {PRONOUN/l_n/subject} {VERB/l_n/slip/slips} up?",
+            "I think things are fine just the way they are. l_n is learning, and that's just something the others will have to realize eventually."
+        ]
+    ],
+    "neutral_opinion_E": [
+        [
+            "upstanding",
+            "focus",
+            "you_blind",
+            "they_blind",
+            "no_kit"
+        ],
+        [
+            "What's up with everycat nowadays? All I've been hearing around camp is 'l_n this', 'l_n that', 'Did you hear what l_n told r_w earlier?'.",
+            "Seriously! If these cats spend as much time hunting as they do gossiping, the fresh-kill pile would be filled by sunhigh!"
+        ]
+    ]
+}

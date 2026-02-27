@@ -1,0 +1,22 @@
+[
+	{
+		"id": "deputy_dark_forest_thoughts",
+		"thoughts": [
+			"Wants to control c_n",
+            "Is angry that {PRONOUN/m_c/subject} never got to become leader",
+            "Is planning out {PRONOUN/m_c/poss} next battle",
+            "Is ordering around the other cats in the Dark Forest",
+            "Sulks about how little power {PRONOUN/m_c/subject} {VERB/m_c/have/has} now", 
+            "Tries to form a patrol",
+            "Is training with an apprentice",
+            "Is patrolling the StarClan border",
+            "Hisses at any cat who dare question {PRONOUN/m_c/poss} power",
+            "Misses {PRONOUN/m_c/poss} Clanmates",
+            "Knows that {PRONOUN/m_c/subject}'d be a better leader of c_n than the current one is",
+            "Enjoys how the Dark Forest apprentices worship {PRONOUN/m_c/object}",
+            "Wishes {PRONOUN/m_c/subject} knew how to control the shadows",
+            "Wants revenge, but doesn't know how to get it",
+            "Is deeply offended when another Dark Forest cat doesn't recognize {PRONOUN/m_c/object}"
+			]
+	}
+]

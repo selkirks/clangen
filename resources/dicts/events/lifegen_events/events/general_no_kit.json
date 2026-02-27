@@ -1,0 +1,83 @@
+{
+    "general general": [
+        "It's a great day to lie down and soak up the sun's rays. You take advantage of it.",
+        "You spend some time with r_w today. The two of you enjoy the time away from camp.",
+        "Today is a good day to spend with the elders. r_e is thrilled that you've come to join them.",
+        "r_q is looking worn out. You offer to watch the kits for a bit so {PRONOUN/r_q/subject} can take a rest. r_q is thrilled and accepts. When {PRONOUN/r_q/subject} {VERB/r_q/come/comes} back later the kits are napping and r_q looks much better.",
+        "You help out with a few den repairs this moon. The camp looks much better in the end, and should be good for another moon.",
+        "It's a dreary day today. r_w1 and r_w2 just came back from patrol and are sheltered beside you. The three of you share tongues for a bit, grooming out damp fur.",
+        "Lightning is striking in the sky. You watch it with r_d, r_w1, r_w2, and r_m.",
+        "r_d visits you after you had a very cross conversation with r_w.",
+        "You're out with r_a and r_w today. You're not on patrol, really, all of you just wanted to stretch your legs.",
+        "A Clan meeting has your attention. Danger in the territory means everyone should be on high alert this moon.",
+        "Twolegs on the territory have the Clan nervous. You reassure r_q and r_e that they won't find the camp.",
+        "r_k is causing trouble - and you're the first one on the scene. With a fond sigh you herd {PRONOUN/r_k/object} back to the nursery.",
+        "The Clan is having a lazy sunhigh. You end up chatting with r_w1, r_w2, and r_m about nothing in particular.",
+        "Gossip isn't necessarily good... but it sure can be fun. r_d always has the best info so you spend some time with {PRONOUN/r_d/object}.",
+        "r_w1 is chatting with r_w2. You listen in as you eat your evening meal. Seems like r_w3 has annoyed r_w1...",
+        "r_q and the kits have left a bit of a mess with whatever game they were playing. You decide to clean up, and later, r_q is incredibly grateful.",
+        "r_w is talking about a kittypet {PRONOUN/r_w/subject} met on patrol. You recall that kittypet as well. Small world!",
+        "You're helping r_m since {PRONOUN/r_m/subject} needed extra paws. {PRONOUN/r_m/subject/CAP}{VERB/r_m/'re/'s} grateful to you for the assistance, and it turns out to be a great opportunity to connect with {PRONOUN/r_m/object} more.",
+        "It's time to clean out your nest! Fresh moss is great, but you will miss the bits of fluff and feathers. r_q seems to notice your unhappiness and offers some of {PRONOUN/r_q/poss} supply for you!",
+        "r_d notices you're a little down. {PRONOUN/r_d/subject/CAP} {VERB/r_d/spend/spends} quite a bit of time talking through some things with you. By the end, a weight has been lifted off your shoulders.",
+        "r_m notices you looking tired. You reassure {PRONOUN/r_m/object} that you're fine but relent when {PRONOUN/r_m/subject} {VERB/r_m/give/gives} you some herbs to help you sleep.",
+        "l_n is looking deep in thought. You offer to hear {PRONOUN/l_n/object} out about whatever it is bothering {PRONOUN/l_n/object}.",
+        "A stroll today has let you discover a hidden gem of an area on the territory. Maybe you can use this as a nice hideaway on occasion!",
+        "Some time today was well spent lost in your own thoughts. Reflection is always a useful tool.",
+        "What you think of r_w has become relevant today within the Clan. Why is everyone so nosy?",
+        "After noticing you being quiet today, r_d comes over to check in with you. A pleasant conversation boosts your mood.",
+        "r_a seems to be having a very hard time lately. You extend some kindness to {PRONOUN/r_a/object}, and {PRONOUN/r_a/subject}{VERB/r_a/'re/'s} soon bouncing back thanks to you.",
+        "You stop to take in the moment. What a moon it's been. What a time to be you!",
+        "Did you just see something out the corner of your eyes? Or have you just spooked yourself for no good reason?",
+        "You trip on your way to the fresh-kill pile. Half the Clan saw it, but r_w is nice enough to help you play it off. Whew!",
+        "There's fun to be had this moon! l_n had suggested playing some games as a Clan. Your team won!",
+        "With your claws sharpened and fur glistening, you feel like you could conquer the world today! Until someone points out a straying tuft of fur...",
+        "r_w shakes you awake. {PRONOUN/r_w/subject/CAP} {VERB/r_w/tell/tells} you to stop sleeping. You were having such a nice dream though!",
+        "r_a is being scolded by d_n. After a moment's consideration you end up distracting d_n to let r_a catch a break.",
+        "A buzzing fly is being annoying. It ends up being caught in your keen paws for it's crime of being bothersome.",
+        "What an unusual blue butterfly! Strange... Maybe it's a sign? You ponder it for a bit.",
+        "r_w is going on and on and on about a really cool cloud. You're caught yawning at the tale, and r_w is cross for a few days. Oops?",
+        "You look to the stars one evening and ponder. Is StarClan really watching?",
+        "You look to the night sky one evening and wonder if the darkness is the Dark Forest's influence.",
+        "The camp is abuzz with chatter. Seems like l_n and d_n had an argument, and it's the talk of the Clan!"
+    ],
+    "general assertive": [
+        "You're one of the most confident cats in the Clan and you know it! Nothing could make you back down from a challenge... Even though you end up on dawn patrol after losing. Worth it.",
+        "r_w1 is talking behind your back. When r_w2 informs you, you strut right up to r_w1 to confront them. r_d has to quickly step in.",
+        "r_d is trying to speak to you about what you said to r_a earlier. You remind {PRONOUN/r_d/object} that you don't mince words.",
+        "r_a is raring for a good spar. You offer to train with {PRONOUN/r_a/object} for a bit... but by the end r_a is a bit bruised. {PRONOUN/r_d/subject/CAP} don't ask again. r_a's loss!",
+        "r_k is admiring you it seems! It's probably because of your boldness. Or maybe that you're confident? You're also pretty fierce and...",
+        "When a dog finds the camp, you're one of the first to launch at it with a yowl. Your sheer confidence unnerves the dog enough to send it away with it's tail between it's legs.",
+        "Bragging is unbecoming, r_w says. You turn your nose at {PRONOUN/r_w/object}. It's not bragging if it's true! It's sharing your accomplishments!",
+        "You may have bitten off more than you could chew this time. l_n and d_n are looking quite cross as you're called aside. Who tattled?!",
+        "You're shining as bright as the stars themselves! Nothing can stop you. Not even StarClan nor the Dark Forest could dull how you feel!",
+        "Showing off your scars is always a fun time. r_k is enthralled by each story attached to {PRONOUN/r_k/object}.",
+        "When a storm blows in, you're the first to volunteer to get to work ensuring the camp is secure."
+    ],
+    "general brooding": [],
+    "general cool": [],
+    "general upstanding": [],
+    "general introspective": [
+        "There's nothing like waking up early to watch the sun rise and feel the morning breeze against your fur! And, naturally, it's the perfect environment to think about anything and everything.",
+        "You stumbled across a yellow flower that seemed to follow the sunshine as time passed. It almost seems poetic - romantic. A rooted plant following their untouchable and unrequited love, unable to survive without them.",
+        "Some days you just wish your mind would stop thinking. It's a bit ironic that you can be annoyed of yourself.",
+        "You wonder if other cats think you talk too much or think too often. Do they find you annoying? A know-it-all? Harboring too many opinions?"
+    ],
+    "general neurotic": [],
+    "general silly": [],
+    "general stable": [],
+    "general sweet": [
+        "You take the time to sort through the fresh-kill pile, making sure to throw away any old or rotting pieces of prey."
+    ],
+    "general unabashed": [],
+    "general unlawful": [
+        "You take the last piece of fresh-kill from the pile before r_k could get to it."
+    ],
+    "general rare": [
+        "r_m takes you aside quietly. {PRONOUN/r_m/subject/CAP} {VERB/r_m/seem/seems} concerned and {VERB/r_m/begin/begins} to speak about something before shaking {PRONOUN/r_m/poss} head and telling you not to mind {PRONOUN/r_m/object}. You wonder what made r_m stop...",
+        "You overhear l_n speaking about you. It seems quite serious.",
+        "d_n is looking at you strangely. You pause to ask {PRONOUN/d_n/object}, but {PRONOUN/d_n/subject} {VERB/d_n/shake/shakes} {PRONOUN/d_n/poss} head and quietly {VERB/d_n/walk/walks} away. Weird.",
+        "When r_d takes you aside you, expect a few things. None of them happen though, as {PRONOUN/r_d/subject} simply {VERB/r_d/study/studies} you for a few moments before {PRONOUN/r_d/subject} {VERB/r_d/walk/walks} away. What was that..?",
+        "There's an uneasiness in the camp today. A blue butterfly was found torn up in the clearing. No one seems to know anything, but everyone agrees it probably isn't a good sign..."
+    ]
+}

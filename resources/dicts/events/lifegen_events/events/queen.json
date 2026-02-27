@@ -1,0 +1,49 @@
+{
+    "queen old": [],
+    "queen general": [
+        "You go over each of the different roles in the Clan for r_k so {PRONOUN/r_k/subject} can choose the right path for {PRONOUN/r_k/object}.",
+        "r_k is struggling to understand a story that r_w told, so you patiently sit down and recount the tale for {PRONOUN/r_k/object} in a way {PRONOUN/r_k/subject} {VERB/r_k/understand/understands}.",
+        "During Gatherings, some cats approach you, asking for advice on parenting.",
+        "You gently scold an expecting parent who is overworking themselves.",
+        "You teach the kits a game that can be played in the nursery when outside becomes too chilly.",
+        "Seeing r_e's fondness for a particular story, you organize the kits to reenact it. r_e is ecstatic at the show they put on.",
+        "You ask r_m if {PRONOUN/r_m/subject} {VERB/r_m/have/has} time to give the kits a lecture on what herbs to stay away from.",
+        "You ask r_k to place {PRONOUN/r_k/poss} paw in a patch of wet mud. When the mud dries, {PRONOUN/r_k/subject}'ll have a way to see how much {PRONOUN/r_k/subject} {VERB/r_k/have/has} grown over the moons by comparing the size of pawprints.",
+        "You play the quiet game with r_k.",
+        "You ask d_n to give a lecture to the kits about the different types of patrols.",
+        "One of the kits reminds you of your young self. You spend the evening telling tales of your kithood to the kits, and they watch you with wide eyes.",
+        "You watch as r_k dares another to eat a slug. You walk over to {PRONOUN/r_k/object} and lecture {PRONOUN/r_k/object} about the dangers of eating snails, but r_k doesn't seem to listen.",
+        "You notice the kits hunting butterflies, cutely jumping around. You join them, rolling around on your back, and your laughter fills the nursery.",
+        "You wake up to r_k moving {PRONOUN/r_k/poss} nest closer to yours, telling you that you make {PRONOUN/r_k/object} feel safe.",
+        "You have a talk with a kit who's been troubling the other kits, and they confess to you that they had no idea it made others feel like that. You promise to help them make out the feelings of their peers.",
+        "You spend the day with the kits, coming up with new games for them and future generations to play. You make sure to listen to every idea, making everyone feel included.",
+        "A kit giggles cheerfully when you toss a ball of moss at them. They throw it back to your face, and you playfully chase them around the nursery.",
+        "You help a kit decorate their nest. They seem upset because they can't make out whether they want the pigeon or the sparrow feathers, and you show them how to make space for both.",
+        "One evening, you take a stroll to the apprentice's den, having promised to sing a few lullabies and tug them into their nests. Afterwards, they thank you and tell you about how they've missed the comfort and warmth you always bring.",
+        "You twitch your whiskers as a warrior brings honey back from a patrol. As you foresaw, the kits completely cover themself in it, and complain loudly to you that their fur is sticky in the aftermath. You have to spend the entire rest of the day cleaning them and lecturing them about thinking before you act.",
+        "You embrace an anxious, pregnant warrior into a warm hug, soothing them with your purrs and assuring them that everything will be alright.",
+        "As a kit loudly cries, awaking every cat in c_nClan, you decide to listen to their troubles and comfort them instead of scolding them for throwing a tantrum.",
+        "One of the more bold warriors playfully pushes a kit, and you wince. Thankfully, the kit isn't scared nor sad, rather enjoying the attention.",
+        "As d_n and r_w discuss about how they should tighten the nursery walls with brambles, you share your insight about how kits would get hurt, and you come to a safer decision. ",
+        "You comfort a troubled warrior, calming them and proving how you can make anyone feel like a kit again.",
+        "On a particularly gray and rainy day, you take the kits to the elders den to listen to stories. It's an amazing idea, as the den provides coverage, the dull light is comforting and the sound of rain splashing on the roofs of the den is absolutely the most calming thing you've heard in a while.",
+        "You take a break from the loud nursery, running along flowers and climbing in trees by yourself."
+    ],
+    "queen assertive": [],
+    "queen brooding": [],
+    "queen cool": [],
+    "queen upstanding": [],
+    "queen introspective": [
+        "r_k_assertive calls you bossy after a long scolding, saying you're ruining the fun in things. Are you really bossy? Or is r_k_assertive just trying to deviate your focus from {PRONOUN/r_k_assertive/poss} actions?",
+        "Overwhelmed, you take a break from the loud nursery and chase bugs by yourself on the outskirts of C_nClan."
+    ],
+    "queen neurotic": [
+        "Overwhelmed, you take a break from the loud nursery and chase bugs by yourself on the outskirts of C_nClan."
+    ],
+    "queen silly": [],
+    "queen stable": [],
+    "queen sweet": [],
+    "queen unabashed": [],
+    "queen unlawful": [],
+    "queen rare": []
+}

@@ -1,0 +1,459 @@
+[
+    {
+        "patrol_id": "LG_halloween_SQ1",
+        "biome": ["Any"],
+        "season": ["Any"],
+        "types": ["lifegen"],
+        "tags": ["halloween", "new_cat"],
+        "patrol_art": "LG_halloween_SQ1",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {
+            "normal adult": [1, 1]
+        },
+        "weight": 15,
+        "intro_text": "You're hunting alone when you notice an unfamiliar hollow under a tree. Was that always there? The opening is criss-crossed with spiderwebs, and you think you see insects skittering around inside.",
+        "decline_text": "Nope, that's too creepy for you! You retreat to a different part of the territory  where you can hunt far away from the ominous, spiderwebbed gap.",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "You crouch and pad into the hollow, clawing thick spiderwebs out of your way, but you stop when your paw hits something round and hard tangled up in the webbing. Though the webs cling to your paw and tangle in your fur, you manage to pull the mysterious object free. You're nervous about what you might find, but when you uncover it, you're surprised to find an unfamiliar orange... fruit? You roll it around, confused, but decide to take your discovery with you.",
+                "exp": 10,
+                "weight": 15,
+                "accessory": [
+                    {
+                        "cats": [
+                            "y_c"
+                        ],
+                        "accessory": [
+                            "PUMPKIN"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "You creep into the hollow, brushing spiderwebs aside. The insects skitter away from you as you inspect the root-threaded walls. You can't find any hints about where this space came from, so you eventually leave and return to hunting, but you later find one of the insects hiding in your fur. Strangely enough, it seems to like you, so you decide to keep it.",
+                "exp": 10,
+                "weight": 15,
+                "accessory": [
+                    {
+                        "cats": [
+                            "y_c"
+                        ],
+                        "accessory": [
+                            "DUCKY ISOPOD"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "You glance into the hollow, but your attention is captured by the spiderwebs themselves. They sway in the wind, some thin and some more like clumps of fur, some with dried leaves and petals caught in their strands. They're kind of creepy, but also strangely beautiful. You continue your patrol, considering ways you could decorate the camp with spiderwebs when you get back!",
+                "exp": 10,
+                "weight": 20,
+                "stat_skill": ["ARTISTAN,1","CAMP,1"],
+                "can_have_stat": ["p_l"]
+            },
+            {
+                    "text": "You clear away the spiderwebs and inspect the interior of the hollow. You're about to dismiss it as empty and leave when you notice something on the ground: small berries, shriveled almost to nothingness. Many cats would have no way to identify them, but you recognize these as very old deathberries and shiver. What could have happened here? You're left with more questions than answers, but with the satisfying suspicion that you've uncovered the corner of a long-hidden secret.",
+                    "exp": 10,
+                    "weight": 20,
+                    "stat_skill": ["HEALER,1","CLEVER,1","SCHOLAR,1","SENSE,1","THINKER,1"],
+                    "can_have_stat": ["p_l"]
+                },
+                {
+                    "text": "As you clear spiderwebs away from the hollow's entrance, you hear a soft gasp and meet the eyes of a translucent cat, curled up behind the webbing. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/whisper/whispers} for you to continue, and when you've finally cleared the opening, {PRONOUN/n_c:0/subject} cautiously {VERB/n_c:0/step/steps} out into the sunlight. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/tell/tells} you that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'ve/'s} been trapped there for a long while, and that despite being a ghost, {PRONOUN/n_c:0/subject} couldn't pass through the spiderwebs. The cat thanks you profusely, then leaves to enjoy {PRONOUN/n_c:0/poss} new freedom.",
+                    "exp": 0,
+                    "weight": 20,
+                    "stat_skill": ["GHOST,1"],
+                    "new_cat": [
+                        ["meeting", "residence:ur"]
+                    ],
+                    "can_have_stat": ["p_l"]
+                }
+            ],
+            "fail_outcomes": [
+                {
+                    "text": "You carefully pad inside, sniffing around for any sign that an animal lives here. The spiderwebs suggest that the hollow is abandoned, but you can't be too careful! You quickly scan the walls for any hints of where this space came from, but besides some long scratches on the walls, you don't find any clues. Disappointed and a bit unnerved, you turn and leave.",
+                    "exp": 0,
+                    "weight": 15,
+                    "stat_trait": [
+                        "careful",
+                        "nervous",
+                        "insecure",
+                        "meek",
+                        "cowardly",
+                        "emotional",
+                        "lonesome"
+                    ],
+                    "can_have_stat": ["p_l"]
+                },
+                {
+                    "text": "You start to approach the hollow, but stop as cold air wafts from the opening. The air smells like crowfood and death, and everything about it feels <i>wrong</i>. You scramble back, your fur standing on end, and flee as quickly as you can.",
+                    "exp": 0,
+                    "weight": 15
+                },
+                {
+                    "text": "You creep into the hollow and look around, clawing spiderwebs out of your way. Roots stick out of the walls, some of them covered in... scratch marks? You suddenly realize that the hollow has gotten darker, and turn to see that the spiderwebs have thickened. The pathway you ripped through them has completely disappeared, like they're sealing you in. Panic wells up in your chest and you dash the way you came, tearing through the webbing, and run until you're out of breath.",
+                    "exp": 0,
+                    "weight": 15
+                },
+                {
+                    "text": "You creep into the hollow, clawing spiderwebs out of your way. The air inside is uncomfortably cold, and when it brushes against your fur a chill shoots down your spine. You think that the faint noise you hear is just wind, but as it grows louder, you realize it's your name, somehow echoing all around you: <i>y_c. y_c!</i> You flee, running as fast as you can until you're back at camp.",
+                    "exp": 0,
+                    "weight": 15
+                }
+            ]
+        },
+    {
+        "patrol_id": "LG_halloween_SQ2",
+        "biome": ["Any"],
+        "season": ["Any"],
+        "types": ["lifegen"],
+        "tags": ["halloween", "new_cat"],
+        "patrol_art": "LG_halloween_SQ2",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {
+            "normal adult": [1, 1]
+        },
+        "weight": 15,
+        "intro_text": "You're on a dawn patrol with r_w_neurotic. Fog hangs over the whole territory, turning familiar landmarks into ghostly silhouettes and making it hard to see even several tail-lengths in front of you. Suddenly, r_w_neurotic gasps. With a jolt, you follow {PRONOUN/r_w_neurotic/poss} gaze and see an indistinct, cat-sized shadow with two glowing eyes, watching you. The figure turns and runs. A haunting jingling noise follows them.",
+        "decline_text": "Absolutely not. It's too early for this! You turn away and lead r_w_neurotic the opposite direction.",
+        "chance_of_success": 30,
+        "success_outcomes": [
+            {
+                "text": "Despite r_w_neurotic's protests, you leap after the shadow. You quickly catch up to it and leap for it, but your paws pass straight through the shape and you crash to the ground! When you've finally regained your bearings, the shadow is gone. The only sign of it is a belled collar lying a tail-length away.",
+                "exp": 10,
+                "weight": 15,
+                "accessory": [
+                    {
+                        "cats": [
+                            "y_c"
+                        ],
+                        "accessory": [
+                            "BLACKBELL", "SPIKESBELL", "WHITEBELL"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "You run after the shadow. The fog makes it hard to smell, and the strange jingling noise seems to be coming from everywhere, but you've always had keen senses. You pinpoint the direction that the noise <i>actually</i> seems to be coming from and follow it. The sound gets clearer and closer until you burst out of the fog into a clearing. There's no figure in sight, but a collar lies on the ground, its bell glinting in the sudden sunlight.",
+                "exp": 10,
+                "weight": 15,
+                "stat_skill": ["HUNTER,1","SENSE,1","TRACKER,1"],
+                "can_have_stat": ["p_l"],
+                "accessory": [
+                    {
+                        "cats": [
+                            "y_c"
+                        ],
+                        "accessory": [
+                            "PURPLEBELL", "CRIMSONBELL"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "You remember an old story that says dead cats sometimes appear when the fog is thickest: not StarClan cats, but cats who have died and now roam elsewhere. You call after the shadow, asking if they're one of those cats. For a long moment, there's no response. r_w_neurotic quivers beside you. Then, the figure reappears and blinks at you with its still-glowing eyes. You make out an indistinct cat silhouette before it seems to fade and become one with the fog, leaving a belled collar on the ground where it once stood.",
+                "exp": 10,
+                "weight": 15,
+                "stat_skill": ["STORY,1","LORE,1"],
+                "can_have_stat": ["p_l"],
+                "accessory": [
+                    {
+                        "cats": [
+                            "y_c"
+                        ],
+                        "accessory": [
+                            "MULTIBELL", "RAINBOWBELL"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "You race after the jingling noise, and r_w_neurotic follows close behind. As you run, the fog gradually clears, until you're standing before a gnarled, lone tree with tangled chimes hanging from one branch. Was that what was making the noise? You're skeptical, but r_w_neurotic is obviously spooked, so you quickly leave the area.",
+                "exp": 10,
+                "weight": 15
+            },
+            {
+                "text": "You race after the jingling noise, and r_w_neurotic follows close behind. As you run, the fog gradually clears, until you're standing before a gnarled, lone tree with tangled chimes hanging from one branch. Was that what was making the noise? Despite r_w_neurotic's nervous protests, you climb the tree and cut the chimes down before heading back towards more familiar territory.",
+                "exp": 10,
+                "weight": 15,
+                "accessory": [
+                    {
+                        "cats": [
+                            "y_c"
+                        ],
+                        "accessory": [
+                            "LUNARCHIMES", "CELESTIALCHIMES", "STARCHIMES"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "You're familiar with ghost cats, and that looks like a ghost! You gently call after the shadow, and {PRONOUN/n_c:0/subject} {VERB/n_c:0/pause/pauses}. Slowly, {PRONOUN/n_c:0/subject} {VERB/n_c:0/pad/pads} back towards you, {PRONOUN/n_c:0/poss} collar gently jangling. While the interaction is a bit awkward, especially with a clearly spooked r_w_neurotic beside you, you have a polite conversation before parting ways.",
+                "exp": 10,
+                "weight": 15,
+                "stat_skill": ["GHOST,1"],
+                "can_have_stat": ["p_l"],
+            "accessory": [
+                {
+                    "cats": ["n_c:0"],
+                    "accessory": ["CYANBELL"],
+                    "no_results": true
+                }
+            ],
+            "new_cat": [
+                ["meeting", "residence:ur", "kittypet"]
+            ]
+        },
+            {
+                "text": "You're about to run after the shadow but r_w_neurotic, panicked, begs for you not to leave {PRONOUN/r_w_neurotic/object}. {PRONOUN/r_w_neurotic/subject/CAP}{VERB/r_w_neurotic/'re/'s} wide-eyed and breathing hard, clearly terrified by the fog. You turn back and talk to {PRONOUN/r_w_neurotic/object} gently, urging {PRONOUN/r_w_neurotic/object} to take deep breaths, trying to calm {PRONOUN/r_w_neurotic/object} down. It takes a few minutes, but you manage to talk r_w_neurotic out of {PRONOUN/r_w_neurotic/poss} panic, and your Clanmate is shaken but grateful.",
+                "exp": 10,
+                "weight": 15,
+                "stat_skill": ["COMFORTER,1","COOPERATIVE,1","INSIGHTFUL,1","MEDIATOR,1","SPEAKER,1"],
+                "can_have_stat": ["p_l"],
+                "relationships": [
+                    {
+                        "cats_to": ["y_c"],
+                        "cats_from": ["r_w_neurotic"],
+                        "mutual": false,
+                        "values": ["comfort", "platonic"],
+                        "amount": 5
+                    }
+                ]
+            }
+],
+        "fail_outcomes": [
+            {
+                "text": "For a second, you're frozen, but then you leap after the shadow. Is it another cat? A harmless kittypet, or maybe a dangerous rogue? You're spurred onwards by a need to make sure the shadow isn't a threat to your Clan, but you lose it in the thick fog. It takes you a while to find your way back to r_w_neurotic.",
+                "exp": 0,
+                "weight": 15,
+                "stat_trait": [
+                    "careful",
+                    "nervous",
+                    "insecure",
+                    "meek",
+                    "cowardly",
+                    "emotional",
+                    "lonesome"
+                ],
+                "can_have_stat": ["p_l"]
+            },
+            {
+                "text": "You start to run after the shadow, but r_w_neurotic leaps in front of you, {PRONOUN/r_w_neurotic/poss} eyes wide and {PRONOUN/r_w_neurotic/poss} fur fluffed in terror. {PRONOUN/r_w_neurotic/subject/CAP} {VERB/r_w_neurotic/beg/begs} you not to follow the figure and {VERB/r_w_neurotic/plead/pleads} for you to come back to camp with {PRONOUN/r_w_neurotic/object} instead. You manage to talk {PRONOUN/r_w_neurotic/object} out of {PRONOUN/r_w_neurotic/poss} panic, but by then the shadow is long gone.",
+                "exp": 0,
+                "weight": 15
+            },
+            {
+                "text": "You leap after the figure, but you trip and slam into the ground. You look back to see what you tripped over, and see a familiar log... but you recognize it from a completely different part of the territory. How did you get here? Did the fog disorient you so much you've been wandering the complete wrong direction? Unnerved, and with the shadowy figure now long gone, you and r_w_neurotic quickly make your way back to camp.",
+                "exp": 0,
+                "weight": 15
+            },
+            {
+                "text": "You race after the shadow, but soon the fog's so thick you can barely see your own whiskers. You still hear that strange jingling sound, though, and try to follow it, but it seems to be coming from multiple directions at once. Suddenly, a shadowy paw shoots out of the fog and slashes at you! You dodge and prepare to fight back, but the shadow doesn't reappear.",
+                "exp": 0,
+                "weight": 15
+            },
+            {
+                "text": "You plunge into the fog, following the jingling sound. Soon, you can't see anything, and the jingling seems to be coming from all around you. You think you're running in circles, but without any visible landmarks, it feels like you're in a void. You're not sure how long it takes for the fog to clear. When you finally regain your bearings, you're at the edge of the territory, and you trudge home to find a distraught r_w_neurotic telling your Clanmates how the fog seemed to eat you.",
+                "exp": 0,
+                "weight": 15
+            }
+        ]
+    },
+
+    {
+        "patrol_id": "LG_halloween_SQ3",
+        "biome": ["Any"],
+        "season": ["Any"],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "halloween"
+        ],
+        "patrol_art": "general_scare",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "r_w_neurotic has been insisting that a grove of trees on the territory is haunted. {PRONOUN/r_w_neurotic/subject/CAP} {VERB/r_w_neurotic/claim/claims} to hear strange noises whenever {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/get/gets} close, and {VERB/r_w_neurotic/say/says} {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/feel/feels} like {PRONOUN/r_w_neurotic/subject}{VERB/r_w_neurotic/'re/'s} being watched. After several days of this, you consider checking the grove out yourself.",
+        "decline_text": "You don't have time to investigate every rumor you hear. If r_w_neurotic is really worried, {PRONOUN/r_w_neurotic/subject} should ask someone to accompany {PRONOUN/r_w_neurotic/object} {PRONOUN/r_w_neurotic/self}.",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "As you approach the grove, you hear a strange hissing noise. You crouch and creep forward, alert for any signs of danger. Could r_w_neurotic be right? Could the grove really be haunted? You follow the sound to a bundle of Twoleg trash and cautiously paw through it until you uncover a strange, hissing device. When you bat at the pieces sticking out of it, the hissing subsides, and you triumphantly return to camp with the now-silent object to let r_w_neurotic know what you discovered.",
+                "exp": 15,
+                "weight": 10,
+                "accessory": [
+                    {
+                        "cats": ["y_c"],
+                        "accessory": ["RADIO"]
+                    }
+                ]
+            },
+            {
+                "text": "You approach the grove and hear a haunting, bird-like chorus coming from the branches above. You creep forward, ready to fight or flee, but... oh! You're familiar with ghost cats, but this is a different sight: a flock of translucent birds flits through the canopy, calling to each other with chirps that sound a bit too ghostly and resonant to be comforting. You're not sure how r_w_neurotic was able to hear them, too, but they don't look like a threat. You watch the ghost birds for a while before returning to camp.",
+                "exp": 15,
+                "weight": 20,
+                "stat_skill": ["GHOST,1","DARK,1","STAR,1"],
+                "can_have_stat": ["p_l"]
+            },
+            {
+                "text": "As you enter the grove, something lunges at you with a yowl! You yelp and prepare to fight or flee, only for you to realize your attacker is... r_w_neurotic? It seems this was the setup to a prank! You wouldn't have guessed r_w_neurotic to be capable of such a thing, but {PRONOUN/r_w_neurotic/subject} {VERB/r_w_neurotic/seem/seems} thrilled to have scared you.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "It's not long after you enter the grove that you notice a shape following you. It's huge and winged, but seems to vanish whenever you chase after it. You search for a while, your unease and frustration growing, until you finally leave. For a moment, you think you see scarlet eyes watching you leave, but surely that's a trick of the light...",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "When you arrive, the grove is uncomfortably silent. You pad through the undergrowth, listening for any strange sounds, but the only thing you notice is the growing sense that you're being watched. When the feeling gets too much for you to take, you turn tail and dash out of the grove, not stopping until you get home.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "As you enter the grove, you hear a strange creaking noise coming from the canopy. You tense, but quickly realize it's just the trees creaking as they're blown back and forth by the wind. You spend some time searching the area for anything suspicious, but find nothing. You aren't convinced that r_w_neurotic wouldn't have recognized the sounds of creaking trees, but that must be all... right?",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "halloween_med_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "halloween"
+        ],
+        "patrol_art": "kittybat_INTRO",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {
+            "queen": [-1, 0],
+            "queen's apprentice": [-1, 0],
+            "elder": [-1, 0]
+        },
+        "weight": 15,
+        "intro_text": "While sniffing around near the border, you hear a kittypet call out to you. They've got some sort of weird Twoleg contraption on, and they ask for your help getting out of the thing.",
+        "decline_text": "You pretend not to hear the kittypet and turn back towards camp. Whatever they're wearing, they don't seem to be in pain from it, so it's not your duty to help the stranger.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You agree to help, and are able to wrestle the strange device over the kittypet's head, allowing {PRONOUN/n_c:0/object} to wriggle free. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/tell/tells} you that if you don't take it with you back home, {PRONOUN/n_c:0/poss} housefolk are just going to make {PRONOUN/n_c:0/object} wear it again. Weird. It can't be <i>that</i> uncomfortable, right?",
+                "exp": 20,
+                "weight": 10,
+                "accessory": [
+                    {
+                        "cats": ["y_c"],
+                        "accessory": ["BATHARNESS"]
+                    }
+                ],
+                "new_cat": [
+                    ["meeting", "kittypet"]
+                ]
+            },
+            {
+                "text": "You try with the kittypet for a few moments, but you're unable to get the weird thing off. Eventually, {PRONOUN/n_c:0/subject} {VERB/n_c:0/accept/accepts} {PRONOUN/n_c:0/poss} fate, saying {PRONOUN/n_c:0/poss} housefolk seem to quite enjoy the costume, so maybe {PRONOUN/n_c:0/subject} can put up with it until the end of the season. Those Twolegs sure have some strange practices.",
+                "exp": 20,
+                "weight": 20,
+                "accessory": [
+                    {
+                        "cats": ["n_c:0"],
+                        "accessory": ["BATHARNESS"],
+                        "no_results": true
+                    }
+                ],
+                "new_cat": [
+                    ["meeting", "kittypet"]
+                ]
+            },
+            {
+                "text": "You and the kittypet are able to work together to get the weird thing off, that {PRONOUN/n_c:0/subject} {VERB/n_c:0/call/calls} a <i>costume</i>. Picking it up in {PRONOUN/n_c:0/poss} mouth, {PRONOUN/n_c:0/subject} {VERB/n_c:0/give/gives} you a thankful nod and {VERB/n_c:0/run/runs} off to go bury it where {PRONOUN/n_c:0/poss} Twolegs will never find it.",
+                "exp": 20,
+                "weight": 20,
+                "new_cat": [
+                    ["meeting", "kittypet"]
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You approach the kittypet to try and help, but you hear the call of a Twoleg, and they roll their eyes and turn around, saying they need to get back home. What kind of cat lets a Twoleg boss them around?",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "As you get near the kittypet to help, they change their mind and turn you away, stating that you smell of herbs and Clan cats, and that's apparently a bad thing. Your tail twitches in irritation as they turn to go back to their Twoleg home. They'd better hope they don't find themselves in a position where they need help from those herbs and cats!",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "halloween_J2",
+        "biome": [
+            "Forest"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "halloween"
+        ],
+        "patrol_art": "lg_warrior_default",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You hear a strange bellowing noise from the forest late one night, after every other cat in camp has gone to sleep. But you're wide awake. You wonder if it's worth investigating.",
+        "decline_text": "None of your business. You head back to your nest, putting a paw over your ears when you hear the eerie noise for a second time.",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "You cautiously pick your way into the forest in the direction the noise came from. After some wandering around in the dark, you find a pristine deer skull, sitting perfectly on top of the stump of a tree that you could've sworn was standing just a few days ago. A bit freaked out, you head back to camp. The next morning, the skull is sitting right next to your nest, and your denmates are complimenting you on the cool find.",
+                "exp": 20,
+                "weight": 10,
+                "accessory": [
+                    {
+                        "cats": ["y_c"],
+                        "accessory": ["ROESKULL"],
+                        "no_results": true
+                    }
+                ]
+            },
+            {
+                "text": "When you venture into the forest, you find a freshly fallen tree. Weird-- the night is perfectly still, why would a tree have fallen? It's a bit unsettling... maybe it's none of your business.",
+                "exp": 20,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You head into the forest to find the source of the sound, but the cold night air pierces your fur, and you decide to head back home right away. You could've sworn it was only a few minutes of wandering, but when you get back to camp, you find the sun beginning to rise.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You approach the cam entrance, ready to investigate, but you head the noise again, louder, and you suddenly have no interest in getting any close to it. You race back to your nest, cover your ears with moss, and hope you can go to sleep and forget about it.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    }    
+]

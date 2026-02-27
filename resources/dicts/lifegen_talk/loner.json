@@ -1,0 +1,208 @@
+{
+    "dead_loner_J1": [
+        [
+            "they_dead",
+            "you_dead",
+            "any",
+            "you_blind",
+            "they_blind",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "This isn't what I expected from the afterlife."
+        ]
+    ],
+    "dead_loner_J2": [
+        [
+            "they_dead",
+            "any",
+            "you_blind",
+            "they_blind",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "This isn't what I expected from the afterlife."
+        ]
+    ],
+    "sc_ur_loner_Ren1": [
+        [
+            "you_sc",
+            "they_loner",
+            "they_ur",
+            "any"
+        ],
+        [
+            "Oh- I haven't seen you before. Did you get lost?",
+            "[You finally glance around at your surroundings. Ah, yes, you definitely have gotten yourself lost.]",
+            "[You look at t_c. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} like {PRONOUN/t_c/subject} {VERB/t_c/know/knows} the area better than you.]",
+            "[You ask for {PRONOUN/t_c/poss} help home and t_c happily points you in the right direction.]"
+        ]
+    ],
+    "sc_ur_loner_c": [
+        [
+            "you_sc",
+            "they_loner",
+            "they_ur",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "What's your name? y_c? Oh, what a pretty name.",
+            "What do you think my name would be if I were a Clan cat?"
+        ]
+    ],
+    "live_df_ps_1": [
+        [
+            "they_df",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "How curious... a creature, roaming these rooted confinements.",
+            "Do not be afraid, your fear will not aid you. I had to learn that the hard way, alone."
+        ]
+    ],
+    "live_df_ps_2": [
+        [
+            "they_df",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "It seems you are lost in more ways than one.",
+            "As am I, I suppose we have that much in common. Lucky you."
+        ]
+    ],
+    "live_df_ps_3": [
+        [
+            "they_df",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You can run as much as you'd like.",
+            "In time, the trees will start to whisper misguidance to you.",
+            "Then, you will never find your way home."
+        ]
+    ],
+    "live_df_ps_4": [
+        [
+            "they_df",
+            "any",
+            "you_blind"
+        ],
+        [
+            "I've seen wondrous lands, even whilst alone and afraid.",
+            "It makes me bitter, you know. Knowing all that is out there...",
+            "Yet, the place I was supposed to call home is the same that drags me here."
+        ]
+    ],
+    "live_df_ps_5": [
+        [
+            "they_df",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You can't trust anyone, I learnt that out there.",
+            "You shouldn't even trust me.."
+        ]
+    ],
+    "dead_outsider_J7": [
+        [
+            "they_df",
+            "any",
+            "no_kit",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "How awful must I have been, to end up in the hell for a belief that I didn't even hold?",
+            "[t_c chuckles.]",
+            "Guess I'd better start learning some of this 'Clan' stuff. Hey, wanna teach me?"
+        ]
+    ],
+    "living_ur_kit_Guy1": [
+        [
+            "they_ur",
+            "kitten",
+            "newborn",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Do you have a family, little one?",
+            "Oh... you're one of them. I'm glad you have someone to look out for you."
+        ]
+    ],
+    "living_ur_loner_Guy1": [
+        [
+            "they_ur",
+            "they_loner",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Are you happy in a Clan?",
+            "I can't imagine having all of those cats constantly around... especially now that I'm a ghost.",
+            "[You feel like the loner is moreso assuring {PRONOUN/t_c/self} rather than of you.]"
+        ]
+    ],
+    "you_df_they_ur_CM1": [
+        [
+            "they_ur",
+            "they_loner",
+            "you_df",
+            "no_kit",
+            "they_blind"
+        ],
+        [
+            "Hm.",
+            "[You turn around, your fur bristling along your spine. Only to see a nearly transparent, misty cat. t_c.]",
+            "All my life, I never much cared for the ways of the 'Clans'. Too violent.",
+            "But I never thought your afterlife would be like this.",
+            "[You take a deep breath, explaining to t_c that not all Clan cats go... here.]",
+            "Well, maybe I should be glad that you <i>are</i> here, then."
+        ]
+    ],
+    "you_df_they_ur_CM2": [
+        [
+            "they_ur",
+            "they_loner",
+            "you_df",
+            "kitten",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[Running through the cold shadows that coat the Dark Forest, you stumble back just in time to not run directly into what, at first, seems to be a cloud of mist. Then you realize that it's a cat, but not one from StarClan. Too wispy.]",
+            "Oh, little one!",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/turn/turns} to you, frowning.]",
+            "You poor thing... ending up in a place like this. Here, let me.",
+            "[t_c crouches down, giving gentle laps at the thick layers of shadowy goop that has been matted to your fur since you arrived.]",
+            "[You squeal, trying to squirm away from the misty-coated cat's surprise bathtime. When you manage to escape and bolt off, you do somehow seem cleaner. Huh.]"
+        ]
+    ],
+    "ur_ur_loner_Guy1": [
+        [
+            "they_ur",
+            "they_loner",
+            "you_ur",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Still wandering?",
+            "... yeah, me too. I used to wonder what would happen after death. It's boring!"
+        ]
+    ]
+}

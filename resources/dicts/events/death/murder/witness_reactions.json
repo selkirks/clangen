@@ -1,0 +1,50 @@
+{
+    "high_lawful": {
+        "will_not_reveal": {
+            "general": [
+                "[witness] felt like gagging as they saw the limp, crumpled body of [victim], with blood and fur scattered, painted by a murderous cat. As its painter, standing proudly over the deceased, [murderer] slowly turns towards their audience. They know they hold both their silence and their life, if need be.",
+                "With rapid movements of spitting hisses leaking off their tongue, and their pelt bristling, [witness] stood in disgust and fright. Spotting [murderer] dripping with crimson from their lips and claws, they wanted to launch themselves at the cat, but froze when the murderer threatened to harm more loved ones.",
+                "With [witness]'s paws turning to stone at the worst moment, it took the will of StarClan themselves to snap them back into reality. However, as they tried to take a step back from what they had witnessed, their paws echoed their location to [murderer], alerting them as they tried to lick [victim]'s blood from their claws."
+            ],
+            "friends": [
+                "[witness] looks aghast as they stumble upon [murderer] standing over [victim]. Though there is pain in their eyes, they agree to keep their muzzle shut."
+            ],
+            "parent": [
+                "[witness] can feel all of the fur along their spine lifting as they gaze into the eyes of their kit. Ears laid flat against their head, they know that they can't tell anyone."
+            ],
+            "child": [],
+            "sibling": []
+        },
+        "will_reveal": {
+            "general": [],
+            "friends": [
+                "[witness] can't believe what they're seeing. They slowly back away, careful not to let [murderer] spot them."
+            ],
+            "parent": [],
+            "child": [],
+            "sibling": []
+        }
+    },
+    "low_lawful": {
+        "will_not_reveal": {
+            "general": [],
+            "friends": [
+                "[witness] looks aghast as they stumble upon [murderer] standing over [victim]. Though there is pain in their eyes, they agree to keep their muzzle shut."
+            ],
+            "parent": [
+                "[witness] can feel all of the fur along their spine lifting as they gaze into the eyes of their kit. Ears laid flat against their head, they know that they can't tell anyone."
+            ],
+            "child": [],
+            "sibling": []
+        },
+        "will_reveal": {
+            "general": [],
+            "friends": [
+                "[witness] can't believe what they're seeing. They slowly back away, careful not to let [murderer] spot them."
+            ],
+            "parent": [],
+            "child": [],
+            "sibling": []
+        }
+    }
+}

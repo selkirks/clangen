@@ -1,0 +1,53 @@
+{
+    "Tornado": {
+        "event": "Tornado",
+        "camp": [
+            "any"
+        ],
+        "season": [
+            "Newleaf",
+            "Greenleaf",
+            "Leaf-fall",
+            "Leaf-bare"
+        ],
+        "tags": [],
+        "priority": "both",
+        "duration": 3,
+        "rarity": "rare",
+        "trigger_events": [
+            "The sky darkens ominously, a strange stillness falls over the territory of c_n. Birds cease their singing, and the prey hides away as if aware of the coming fury. dep_name organizes patrols, their eyes constantly scanning the horizon for the first sign of danger.",
+            "A charge builds in the air and the sky changes to an eerie green. The Clan gathers, sensing the shift in the weather. med_name's voice is somber as they share visions of destruction, a force so powerful it could uproot their very lives."
+        ],
+        "progress_events": {
+            "moon1": [
+                "As the tornado rages, lead_name risks their life to save a kit who had nearly been pulled from the nursery. The Clan watches, hearts in their throats, as they battle the wind to bring the last of their kin to safety.",
+                "c_n huddles together in the darkness, the sound of their territory being torn apart echoing around them. med_name offers quiet words of comfort, invoking the protection of StarClan over their trembling Clanmates.",
+                "The storm hits with little warning, a monstrous tornado tearing through the plains, its roar deafening. lead_name orders an immediate evacuation from their camp, but the path is fraught with peril as the wind hurls debris with lethal force."
+            ],
+            "moon2": [
+                "The tornado leaves a path of destruction in its wake, the landscape unrecognizable. Trees uprooted, dens destroyed, and the air filled with the scent of loss. lead_name stands resolute amid the devastation, vowing to rebuild their home from the ruins.",
+                "The aftermath is a test of survival. With their territory in ruins, hunting becomes a challenge. dep_name leads foraging parties further afield, seeking sustenance among the scattered and broken remnants of the plains.",
+                "med_name tends to the injured, the medicine den makeshift but functional. The storm has passed, but its scars linger on the Clan, both physically and in their spirits. Yet, in this time of hardship, the bonds of the Clan strengthen, their resolve unyielding."
+            ]
+        },
+        "conclusion_events": [
+            "As the moons pass, green shoots break through the torn earth, a symbol of the plains' resilience. lead_name watches as their Clanmates work together to rebuild. The tornado's fury is etched in their memory, but so too is their unity in its aftermath.",
+            "The first hunt after the storm brings a glimmer of hope; prey is returning to the plains. The Clan gathers to share their meal, a moment of normalcy amid the chaos.",
+            "With the rebuilding well underway, c_n gathers to honor those lost to the tornado."
+        ],
+        "collateral_damage": {
+            "injuries": [
+                "broken bone"
+            ],
+            "deaths": {
+                "death_text": [
+                    "As the tornado approached, m_c remembered the old nursery tales about a monster that could sweep cats away to the afterlife. Facing the raging storm, m_c realized how powerless they were against its force. The wind howled like the monster from those stories, and in a moment, m_c was lifted up, caught in the tornado's grip. There was no fighting back, no escape. As the tornado carried m_c away, those nursery tales didn't seem like just stories anymore.",
+                    "During the tornado, m_c was desperately seeking shelter when suddenly, a flying piece of debris struck them. Despite their attempts to avoid the danger, the impact was too much. m_c was found after the storm had passed, a victim of the tornado's destructive path."
+                ],
+                "history_text": {
+                    "reg_death": "m_c died in a tornado."
+                }
+            }
+        }
+    }
+}

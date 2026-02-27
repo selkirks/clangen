@@ -1,0 +1,53 @@
+{
+  "colour_groups":
+  {
+    "WHITE": "white",
+    "PALEGREY": "gray",
+    "SILVER": "gray",
+    "GREY": "gray",
+    "DARKGREY": "black",
+    "GHOST": "black",
+    "BLACK": "black",
+    "CREAM": "ginger",
+    "PALEGINGER": "ginger",
+    "GOLDEN": "ginger",
+    "GINGER": "ginger",
+    "DARKGINGER": "ginger",
+    "SIENNA": "ginger",
+    "LIGHTBROWN": "brown",
+    "LILAC": "brown",
+    "BROWN": "brown",
+    "GOLDEN-BROWN": "brown",
+    "DARKBROWN": "brown",
+    "CHOCOLATE": "brown"
+  },
+  "possible_tints": {
+    "basic": ["none", "offwhite", "offwhite", "purple"],
+    "black": ["gray", "darkcream", "cream", "blackish", "black", "lightblack"],
+    "gray": ["gray", "gray", "blue", "blackish", "darkgray"],
+    "ginger": ["darkcream", "cream", "pink", "red"],
+    "brown": ["darkcream", "cream", "orange", "purple"],
+    "white": ["offwhite", "none"]
+  },
+  "tint_colours":
+  {
+    "darkcream": [236, 229, 208],
+    "cream": [247, 241, 225],
+    "offwhite": [238, 249, 252],
+    "gray": [208, 225, 229],
+    "pink": [254, 248, 249],
+	
+    "red": [248, 226, 228],
+    "orange": [255, 247, 235],
+    "yellow": [250, 248, 225],
+    "purple": [235, 225, 244],
+    "blue": [218, 237, 245],
+    "blackish": [120, 123, 125],
+    "darkgray": [150, 151, 153],
+	
+	"lightblack": [80, 83, 85],
+	"black": [10, 13, 15],
+	
+    "none": null
+  }
+}

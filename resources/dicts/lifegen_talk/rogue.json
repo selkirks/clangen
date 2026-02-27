@@ -1,0 +1,294 @@
+{
+    "dead_rogue_J1": [
+        [
+            "they_dead",
+            "you_dead",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "This isn't what I expected from the afterlife."
+        ]
+    ],
+    "dead_rogue_J2": [
+        [
+            "they_dead",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "This isn't what I expected from the afterlife."
+        ]
+    ],
+    "sc_ur_rogue_Guy1": [
+        [
+            "they_ur",
+            "they_rogue",
+            "you_sc",
+            "they_blind",
+            "any"
+        ],
+        [
+            "[You aren't surprised to see t_c at the border. Again.]",
+            "Your kind can't just claim all of the territory!",
+            "[You explain, once again, to the rogue that {PRONOUN/t_c/subject} {VERB/t_c/have/has} more territory and freedom than StarClan cats.]",
+            "Yeah, well you better stay over there!",
+            "[Somethings never change, even when you're dead.]"
+        ]
+    ],
+    "sc_urrogue_ps_1": [
+        [
+            "they_ur",
+            "they_rogue",
+            "you_sc",
+            "you_deaf",
+            "they_deaf",
+            "any"
+        ],
+        [
+            "[You feel eyes peering at you from the fog, wandering near the border of stars and mist.]",
+            "[Briefly, you spot the ghost of a rogue, looking at your star-sewn pelt in awe.]",
+            "[Though, once {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you've spotted {PRONOUN/t_c/object}, {PRONOUN/t_c/subject} {VERB/t_c/turn/turns} tail and {VERB/t_c/run/runs}.]"
+        ]
+    ],
+    "sc_urrogue_ps_2": [
+        [
+            "they_ur",
+            "they_rogue",
+            "you_sc",
+            "they_blind",
+            "any"
+        ],
+        [
+            "Hello?",
+            "[You turn to see an unfamiliar cat, standing half-in and half-out of the fog.]",
+            "I used to know one of you... though, I can't seem to remember who.",
+            "Would you mind asking your StarClan friends if they used to know me?"
+        ]
+    ],
+    "sc_urrogue_ps_3": [
+        [
+            "they_ur",
+            "they_rogue",
+            "you_sc",
+            "any"
+        ],
+        [
+            "[You find yourself a little lost, stumbling around the mist trying to find your way out.]",
+            "This way.",
+            "[You whirl around, spotting a cat who somehow seemed to sneak up on you.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/guide/guides} you out, but {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to disappear when you go to thank {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "sc_urrogue_ps_4": [
+        [
+            "they_ur",
+            "they_rogue",
+            "you_sc",
+            "you_blind",
+            "they_blind",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "What was my name?",
+            "t_c. It meant a lot to me, even though it wasn't as grand as a Clancat's.",
+            "I take careful steps to ensure I never forget it."
+        ]
+    ],
+    "live_df_ps_1": [
+        [
+            "they_df",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "How curious... a creature, roaming these rooted confinements.",
+            "Do not be afraid, your fear will not aid you. I had to learn that the hard way, alone."
+        ]
+    ],
+    "live_df_ps_2": [
+        [
+            "they_df",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "It seems you are lost in more ways than one.",
+            "As am I, I suppose we have that much in common. Lucky you."
+        ]
+    ],
+    "live_df_ps_3": [
+        [
+            "they_df",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You can run as much as you'd like.",
+            "In time, the trees will start to whisper misguidance to you.",
+            "Then, you will never find your way home."
+        ]
+    ],
+    "live_df_ps_4": [
+        [
+            "they_df",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I've seen wondrous lands, even whilst alone and afraid.",
+            "It makes me bitter, you know. Knowing all that is out there...",
+            "Yet, the place I was supposed to call home is the same that drags me here."
+        ]
+    ],
+    "live_df_ps_5": [
+        [
+            "they_df",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You can't trust anyone, I learnt that out there.",
+            "You shouldn't even trust me.."
+        ]
+    ],
+    "dead_outsider_J7": [
+        [
+            "they_df",
+            "any",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "How awful must I have been, to end up in the hell for a belief that I didn't even hold?",
+            "[t_c chuckles.]",
+            "Guess I'd better start learning some of this 'Clan' stuff. Hey, wanna teach me?"
+        ]
+    ],
+    "living_ur_rogue_Guy1": [
+        [
+            "they_ur",
+            "no_kit",
+            "they_rogue",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[You leave the camp to stretch your legs, and run into a strange spirit.]",
+            "Hey you! This is my territory!",
+            "[You explain that {PRONOUN/t_c/subject} {VERB/t_c/are/is} dead and {VERB/t_c/have/has} no claims to it.]",
+            "Thats- thats not true! I'm as alive as you are!",
+            "[You hope {PRONOUN/t_c/subject} {VERB/t_c/find/finds} peace.]"
+        ]
+    ],
+    "living_ur_rogue_Guy2": [
+        [
+            "they_ur",
+            "no_kit",
+            "they_rogue",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I fought you. I fought you and your <i>Clan</i>. You took our food, our shelter...",
+            "Why would I want to talk to you after that?"
+        ]
+    ],
+    "ur_parent_newborn_CM2": [
+        [
+            "newborn",
+            "kitten",
+            "they_ur",
+            "they_rogue",
+            "from_parent",
+            "you_abandoned"
+        ],
+        [
+            "Hpf.",
+            "Look at you unfortunate morsel.",
+            "Taken in by those sly-hearted, mouse dung-eating 'Clan' cats.",
+            "I hope you have enough sense not to listen to them."
+        ]
+    ],
+    "You_living_they_ur_CM1": [
+        [
+            "newborn",
+            "kitten",
+            "they_ur",
+            "they_rogue"
+        ],
+        [
+            "Well, well. Look who we have here!",
+            "It's a little Clan cat, being all brave.",
+            "Come closer, little friend. I want to show you something.",
+            "[You shake your head, and {PRONOUN/t_c/subject} {VERB/t_c/let/lets} out an amused purr.]",
+            "Smart one, aren't you?"
+        ]
+    ],
+    "living_ur_kit_Guy1": [
+        [
+            "they_ur",
+            "they_kittypet",
+            "kitten",
+            "newborn",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Do you have a family, little one?",
+            "Oh... you're one of them. I'm glad you have someone to look out for you."
+        ]
+    ],
+    "ur_parent_newborn_CM1": [
+        [
+            "newborn",
+            "kitten",
+            "they_ur",
+            "any",
+            "from_parent",
+            "you_blind"
+        ],
+        [
+            "Look, look! t_m!",
+            "I told you that {PRONOUN/y_c/subject} {VERB/y_c/were/was} safe, even when {PRONOUN/y_c/subject}{VERB/y_c/'re/'s} so far away...",
+            "Now what did those nice cats name you again? y_c? Strange... but beautiful.",
+            "Just like you, my kit."
+        ]
+    ],
+    "ur_ur_rogue_Guy1": [
+        [
+            "they_ur",
+            "they_rogue",
+            "you_ur",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "We may be dead, but I still expect you to respect my territory."
+        ]
+    ],
+    "ur_ur_rogue_Guy2": [
+        [
+            "they_ur",
+            "they_rogue",
+            "you_ur",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Cross that line, and you cross <i>me</i>."
+        ]
+    ]
+}

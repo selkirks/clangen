@@ -1,0 +1,42 @@
+{
+    "mediator apprentice old": [],
+    "mediator apprentice general": [
+        "r_k insists that you be the referee for {PRONOUN/r_k/poss} game in order to prevent the other kits from cheating.",
+        "Your training has kept both of you busy, but you y_l and schedule some much-needed sibling time.",
+        "You break up an argument between a couple of kits, learning a valuable lesson about patience and keeping a cool head.",
+        "y_s asks you to help {PRONOUN/y_s/object} apologize to r_c, but you accidentally make the situation worse. y_s laughs it off, but you can't help but feel like you've failed {PRONOUN/y_s/object}.",
+        "The warriors keep arguing, and you have to learn the importance of keeping your cool, even if your Clanmates are really, really annoying sometimes.",
+        "You learn something very important today - not every cat in high positions has constant patience.",
+        "y_p's expectations of you weight heavily on your mind as you go about your day.",
+        "On a brief break, you wonder what your warrior name would be. The suffix tree, perhaps?",
+        "r_a_unabashed approaches you while you're eating freshkill, claiming proudly that they were to one to catch it. What a nice way to rub their success in your face."
+    ],
+    "mediator apprentice assertive": [],
+    "mediator apprentice brooding": [],
+    "mediator apprentice cool": [],
+    "mediator apprentice upstanding": [],
+    "mediator apprentice introspective": [
+        "You find yourself musing over how you could have solved a previous complication differently, and it spirals into deep thought, only shaken when your mentor calls out for you. You realize your 'brief' self-reflection lasted all dawn. Whoops.",
+        "You happen to find yourself conveniently around m_n and d_n when they strike up conversation, and you listen intently for any gossip or mention of your name. Alas, the conversation ends up running dry and you lose interest.",
+        "Overwhelmed and tired with the day of work, you find refuge in the Elder's Den to listen to some stories and calm your busy mind.",
+        "You couldn't help but be curious of how the mediator role came to be. Which Clan was so rattled with arguments and disturbances that they needed a specifically trained cat to sooth their bickering?"
+    ],
+    "mediator apprentice neurotic": [
+        "You overhear m_n reviewing your progress with l_n, but can't make out enough to be sure what m_n really thinks of you.",
+        "You find the perfect spot to lie in the sun by yourself and watch the camp.",
+        "r_w notices you sitting alone and invites you to eat with {PRONOUN/r_w/object}.",
+        "When r_e tells you stories, you're comforted by the cats and places you recognize.",
+        "You wonder if you're living up to y_p's hopes and expectations."
+    ],
+    "mediator apprentice silly": [],
+    "mediator apprentice stable": [],
+    "mediator apprentice sweet": [],
+    "mediator apprentice unabashed": [],
+    "mediator apprentice unlawful": [
+        "You find your mediator training too easy!"
+    ],
+    "mediator apprentice rare": [
+        "A gathering goes badly and you lash out, only making the situation more tense. m_n scolds you, and as the Clan returns home, you hold your head low in shame.",
+        "You wonder, for a brief moment, if you should have chose a different path. One without constant arguments and headaches."
+    ]
+}

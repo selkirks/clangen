@@ -1,0 +1,165 @@
+{
+    "comments": {
+        "stats": [
+            "courage",
+            "compassion",
+            "intelligence",
+            "empathy"
+        ]
+    },
+    "mossball": {
+        "stat_change": [
+            "courage up",
+            "courage down",
+            "empathy up",
+            "empathy down",
+            "compassion up",
+            "compassion down"
+        ],
+        "courage up": [
+            "t_q throws a mossball high in the air for t_k to catch. {PRONOUN/t_k/subject/CAP} {VERB/t_k/make/makes} a daring leap off of a nearby rock to catch it.",
+            "t_k bravely charges at t_q to take the mossball, stealing it from under {PRONOUN/t_q/poss} paws and winning the round of the game."
+        ],
+        "courage down": [
+            "During a game of mossball, when it's t_k's turn to catch, {PRONOUN/t_k/subject} {VERB/t_k/hesitate/hesitates} and {VERB/t_k/shrink/shrinks} back as the ball flies {PRONOUN/t_k/poss} way.",
+            "While playing mossball, t_q tosses the ball and t_k fails to catch it, instead taking the hit. {PRONOUN/t_k/subject/CAP} {VERB/t_k/burst/bursts} into tears!"
+        ],
+        "empathy up": [
+            "As t_q and t_k play mossball, t_q notices how t_k takes a gentle approach when passing the ball back to {PRONOUN/t_q/object}, making sure it doesn't fly at {PRONOUN/t_q/poss} face."
+        ],
+        "empathy down": [
+            "After t_q passes the mossball to t_k, the kit starts to hog the ball and refuses to continue playing."
+        ],
+        "compassion up": [
+            "While t_q and t_k are playing, t_k notices one of the other kits watching in a lonely corner, and invites them to play. They happily accept, and the three have a blast."
+        ],
+        "compassion down": [
+            "As t_q and t_k play mossball, t_k accidentally sends the ball flying towards another cat, hitting them in the side. t_k doesn't apologize at all as {PRONOUN/t_k/subject} {VERB/t_k/retrieve/retrieves} the ball!"
+        ]
+    },
+    "clean": {
+        "stat_change": [
+            "compassion up",
+            "empathy up",
+            "compassion down",
+            "empathy down",
+            "intelligence up",
+            "intelligence down"
+        ],
+        "compassion up": [
+            "After t_q shows t_k how to clean out {PRONOUN/t_k/poss} bedding, the kit asks if {PRONOUN/t_k/subject} can help the elders with theirs too."
+        ],
+        "compassion down": [
+            "When changing out the nursery's moss bedding, t_q notices t_k saved all of the best moss for {PRONOUN/t_k/self}.",
+            "While cleaning the nursery, t_q sees t_k snickering, and discovers {PRONOUN/t_k/subject} snuck a thorn into the bedding!"
+        ],
+        "empathy up": [
+            "Before t_q even asks t_k to help clean the nursery, {PRONOUN/t_k/subject} had already volunteered. The space becomes tidy in no time."
+        ],
+        "empathy down": [
+            "t_k whines and flops down in {PRONOUN/t_k/poss} nest, refusing to help t_q clean the nursery."
+        ],
+        "intelligence up": [
+            "While cleaning, t_k suggests a shortcut to clean up faster, and t_q tries it out. Within moments, the nursery is clean, and t_q praises t_k for {PRONOUN/t_k/poss} clever thinking!"
+        ],
+        "intelligence down": [
+            "t_k accidentally mixes up the dirty moss and the clean moss, and t_q only notices after the fact, so nothing actually gets done."
+        ]
+    },
+    "lecture": {
+        "stat_change": [
+            "intelligence down",
+            "intelligence up",
+            "compassion up",
+            "compassion down"
+        ],
+        "intelligence down": [
+            "t_q tries to teach t_k about the dangers of eating herbs without consulting the medicine cat. {PRONOUN/t_k/subject/CAP} {VERB/t_k/seem/seems} more engrossed in playing with a feather instead."
+        ],
+        "intelligence up": [
+            "During t_q's lecture on Clan history, t_k is completely engrossed, asking insightful questions that t_q tries {PRONOUN/t_q/poss} best to answer."
+        ],
+        "compassion up": [
+            "t_q lectures t_k about the different roles in the Clan and t_k answers every question in the pop quiz correctly."
+        ],
+        "compassion down": [
+            "t_q lectures t_k about times of hardship in Clan history, but the kit appears completely indifferent."
+        ]
+    },
+    "playfight": {
+        "stat_change": [
+            "courage up",
+            "intelligence up",
+            "courage down",
+            "intelligence down",
+            "empathy up",
+            "empathy down"
+        ],
+        "courage up": [
+            "t_k shows remarkable bravery when facing t_q in a playfight, determined to one day become the victor."
+        ],
+        "intelligence up": [
+            "t_k shows an impressive strategic mind when facing t_q in a playfight, {PRONOUN/t_k/poss} skills nearly rivaling an apprentice's."
+        ],
+        "courage down": [
+            "t_k cries and buries {PRONOUN/t_k/self} in {PRONOUN/t_k/poss} nest after losing in a playfight."
+        ],
+        "intelligence down": [
+            "t_k yowls that {PRONOUN/t_k/subject}'ll shred t_q to pieces one day after losing in a playfight."
+        ],
+        "empathy up": [
+            "t_k accidentally bites t_q hard enough to make {PRONOUN/t_q/object} bleed, but upon noticing, apologizes profusely."
+        ],
+        "empathy down": [
+            "t_k keeps attacking even after t_q surrenders, and when t_q scolds t_k for biting hard enough to make {PRONOUN/t_q/object} bleed, t_k just shrugs, saying it was an accident and shouldn't be a big deal."
+        ]
+    },
+    "tell story": {
+        "stat_change": [
+            "compassion up",
+            "empathy up",
+            "compassion down",
+            "empathy down",
+            "courage up",
+            "courage down"
+        ],
+        "compassion up": [
+            "As t_q tells a story about a Clan cat who helped others in need, t_k listens intently, eyes wide with admiration."
+        ],
+        "empathy up": [
+            "t_q shares a story about forgiveness between rival warring Clans and t_k takes the moral of the tale to heart."
+        ],
+        "compassion down": [
+            "t_q tells a story about the struggle of leafbare, but t_k seems disinterested and dismissive of the struggles depicted."
+        ],
+        "empathy down": [
+            "As t_q recounts a story about a misunderstood loner, t_k laughs and makes jokes, showing little regard for the character's situation."
+        ],
+        "courage up": [
+            "t_q tells a story about an apprentice who faces their fears and saves their friend from danger, and t_k seems a little bit more bold when {PRONOUN/t_k/subject} {VERB/t_k/leave/leaves} the den with {PRONOUN/t_k/poss} tail raised high."
+        ],
+        "courage down": [
+            "t_q tells a story about a cat facing their fears in the dangers of war, but halfway through, t_k begins crying, terrified! t_q has to take a break from storytime to comfort {PRONOUN/t_k/object}."
+        ]
+    },
+    "scavenger hunt": {
+        "stat_change": [
+            "intelligence up",
+            "courage up",
+            "intelligence down",
+            "courage down"
+        ],
+        "intelligence up": [
+            "During a scavenger hunt, t_k's quick thinking leads {PRONOUN/t_k/object} to the hidden items in no time."
+        ],
+        "courage up": [
+            "During a scavenger hunt, t_k explores unfamiliar parts of the camp without hesitation."
+        ],
+        "intelligence down": [
+            "t_k becomes frustrated when {PRONOUN/t_k/subject} can't find the things that t_q hid for {PRONOUN/t_k/object} in the scavenger hunt."
+        ],
+        "courage down": [
+            "t_k refuses to explore an unfamiliar part of the camp for the scavenger hunt that t_q set up."
+        ]
+    }
+}

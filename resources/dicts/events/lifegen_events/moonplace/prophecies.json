@@ -1,0 +1,305 @@
+{
+    "no_disaster": {
+        "text": [
+            [
+                "Beware the cat in the shadows."
+            ],
+            [
+                "[You feel eyes on you -- staring from all directions -- as the starry hunting grounds of StarClan fades away.]"
+            ],
+            [
+                "Do not underestimate Mother Nature, her love strong yet her cruelty fierce."
+            ],
+            [
+                "Keep eyes and hearts sharp, for none shall know what awaits in the dark"
+            ],
+            [
+                "One was not meant to be, keep an eye for those who do not want to be seen."
+            ],
+            [
+                "The stars will gift, only when it is needed most."
+            ],
+            [
+                "Blood will be what ties us all together."
+            ],
+            [
+                "A warrior will rise where others have fallen."
+            ],
+            [
+                "An act of kindness will bring forth despair and tragedy."
+            ],
+            [
+                "You must keep to your path. Even as temptation arises, do not falter."
+            ],
+            [
+                "Peace shall prosper, even when there are those who will not live to see it."
+            ],
+            [
+                "Haunted whispers will beckon those willing to listen."
+            ],
+            [
+                "Beware the whispers, heed the call, united they stand or divided they fall."
+            ],
+            [
+                "There will be a warrior whose spirit shall journey beyond the stars."
+            ],
+            [
+                "Shadows will deepen as claws meet. Do not stand by as they compete."
+            ],
+            [
+                "As seasons shift, so too will the balance of power."
+            ],
+            [
+                "When the stars falter, the chosen shall illuminate the way."
+            ],
+            [
+                "As the sun sets on the old, the dawn of the new shall cast its light."
+            ],
+            [
+                "There will be secrets that will poison those you love."
+            ],
+            [
+                "The brittle ones will break."
+            ],
+            [
+                "Run, swim or feed. The choice is yours and yours alone."
+            ],
+            [
+                "Poison will swallow the Clan."
+            ],
+            [
+                "Lungs will boil with scorching blood."
+            ],
+            [
+                "A watchful eye lurks in the rain, beware this cat and their pain."
+            ]
+        ]
+    },
+    "Hurricane": {
+        "text": [
+            [
+                "Unite the Clan beneath the tempest's roar."
+            ],
+            [
+                "The roar of the Clan shall outlast the fiercest bluster."
+            ],
+            [
+                "Lightning strikes not once but twice."
+            ],
+            [
+                "Hold your breath if you dare."
+            ],
+            [
+                "Fly or fall, the choice is yours."
+            ],
+            [
+                "Beware above, for strength together will not be enough."
+            ],
+            [
+                "Tempest comes. Tempest calls. Who are you to ignore the wind? Who are you to ignore the rain?",
+                "Let it be. Let it storm, or else c_nClan will be no more."
+            ],
+            [
+                "Raise your heads to the sky."
+            ],
+            [
+                "You will rise from the wreck stronger than before."
+            ]
+        ]
+    },
+    "Great Blizzard": {
+        "text": [
+            [
+                "Blind will you go, In the torrent of snow, In the darkness its seeds sow, Our light we will show, Should you let it be so"
+            ],
+            [
+                "Your vision suddenly goes white and your blood runs cold. You awake shivering in your nest."
+            ],
+            [
+                "Prey will turn white like bone."
+            ],
+            [
+                "Savour the fire for it will be your Clan's desire."
+            ],
+            [
+                "Watch out for the solid slip."
+            ],
+            [
+                "Ice will grow within the weed's roots."
+            ],
+            [
+                "The land will shrink, stranded, you are alone."
+            ],
+            [
+                "March forward if you dare, do not ignore night's icy stare."
+            ]
+        ]
+    },
+    "Wildfire": {
+        "text": [
+            [
+                "The warmth is not safe."
+            ],
+            [
+                "Ever hungry but never tired, the relentless pyre shall consume all."
+            ],
+            [
+                "The surrounding trees will feel the burning breeze."
+            ],
+            [
+                "With teeth that strip the trees to bone and claws that wear the ground to stone, a force that is grown from a single seed, beware the beast of endless greed."
+            ],
+            [
+                "Do not chase the blinding light."
+            ],
+            [
+                "The air is dry and it's hard to breathe. Your paws will burn from the sparking seeds. Prepare to run, do not fight or else you will not survive this night."
+            ],
+            [
+                "Anger is billowing, overwhelming and furious. A Clanmate will bring upon fathomless destruction, seek shelter while you can. StarClan cannot help you now."
+            ],
+            [
+                "Orange light walks beside you."
+            ],
+            [
+                "Pelts will darken with an unshakable fear. Clanmates will bleed smoke, ash and tears."
+            ],
+            [
+                "Smoke can hold down even the strongest of warriors."
+            ]
+        ]
+    },
+    "Terrible Cold": {
+        "text": [
+            [
+                "There is frost in your blood that no warmth can melt."
+            ],
+            [
+                "Nothing awaits but a cold embrace."
+            ],
+            [
+                "Like weeds to a garden, a host has been found."
+            ],
+            [
+                "Deny the help given to you for you will only share your pain."
+            ]
+        ]
+    },
+    "Floods": {
+        "text": [
+            [
+                "Seeping and suffocating, rising and raising, our vital source will engulf our growth anew."
+            ],
+            [
+                "Bubbles will break the surface, rubble will flow and water will crush."
+            ],
+            [
+                "An unbreakable force will pull you down into the dark."
+            ],
+            [
+                "Fight back against what it is that you can't see, those that can will have already pulled themselves from the tide."
+            ],
+            [
+                "Bodies of fur will float above endless water."
+            ],
+            [
+                "Water brings life through rain and rivers, but also brings death when balance shifts."
+            ]
+        ]
+    },
+    "Twoleg Invasion": {
+        "text": [
+            [
+                "Beings of two will march the land, bringing destruction where they stand."
+            ],
+            [
+                "Creatures, ignorant and vain, will settle in the land we claim."
+            ],
+            [
+                "Fear the ones built like trees, for they shall do what they please."
+            ],
+            [
+                "Shadows walk into your camp, uninvited and unwanted."
+            ],
+            [
+                "Like thorns, it's a grasp one cannot escape."
+            ]
+        ]
+    },
+    "Prey Sickness": {
+        "text": [
+            [
+                "With delirious groans and fangs of foam, those who were once friend shall now be known as foe."
+            ],
+            [
+                "Poison in the stomach, undetected and dangerous."
+            ],
+            [
+                "The one who hunts becomes the hunted through invisible lies and deception masked behind good fortune."
+            ]
+        ]
+    },
+    "Contaminated Water": {
+        "text": [
+            [
+                "The water is grey and filled with goo, its sight a rotten stain created by two."
+            ],
+            [
+                "Once the water runs fickle and prey dwindle, you'll realize how close you are to peril."
+            ],
+            [
+                "A new threat lurks beneath the waves, look for the water that turns gray."
+            ],
+            [
+                "Blue turns red as trust is broken."
+            ],
+            [
+                "Neighbors will become foes in the face of liars whose desires will poison your needs."
+            ],
+            [
+                "Drink carefully, throats will burn red and vision will blur if what consumed is tainted to the touch"
+            ]
+        ]
+    },
+    "Avalanche": {
+        "text": [
+            [
+                "A sheet of white, so daunting and bright, will bury all in its torrential might."
+            ],
+            [
+                "What was once deemed as safe will fall faster than one can blink."
+            ],
+            [
+                "Watch out for falling threats."
+            ],
+            [
+                "Walk your territory safely. Even the softest touch will bring upon the Clan's destruction."
+            ],
+            [
+                "Some words are better left unspoken, awake the mountain and pay the price of a sharper tongue than your own."
+            ],
+            [
+                "The Clans are plotting against you, they threaten to bury you once and for all."
+            ],
+            [
+                "What is buried will be unearthed by the next generation."
+            ]
+        ]
+    },
+    "Tornado": {
+        "text": [
+            [
+                "The silence of the inbetween is your only hope."
+            ],
+            [
+                "Dangerous winds, howling ghosts, they've come to tear up what is needed most."
+            ],
+            [
+                "No amount of shelter will save the Clan. When faced with power that loops and churns, you are left helpless. Your only hope is to run."
+            ],
+            [
+                "With a flick of your tail, you will command what cannot be controlled."
+            ]
+        ]
+    }
+}

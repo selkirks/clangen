@@ -1,0 +1,104 @@
+[
+    {
+        "id": "gen_mediator_apprentice",
+        "thoughts": [
+            "Is enjoying learning about mediating",
+            "Is learning how to deal with argumentative Clanmates",
+            "Is learning how to gently guide a cat into accepting a truth they don't like",
+            "Wishes {PRONOUN/m_c/subject} had learned to mediate arguments sooner",
+            "Wants {PRONOUN/m_c/poss} training to be completed already",
+            "Is learning guided breathing techniques",
+            "Is learning how to help others see the bigger picture",
+            "Is helping a cat work through complicated emotions",
+            "Is practicing neutrality",
+            "Is learning how to open channels of communication between two cats",
+            "Is clarifying issues"
+        ]
+    },
+    {
+        "id": "mediator_app_alive_mediator_app",
+        "thoughts": [
+            "Had an argument with another mediator apprentice",
+            "Doesn't agree with r_c's style of mediation",
+            "Is planning a group mediation session with r_c and some troubling cats"
+        ],
+        "random_status_constraint": [
+            "mediator apprentice"
+        ]
+    },
+    {
+        "id": "mediator_app_alive_mediator",
+        "thoughts": [
+            "Is amazed at how well r_c mediated a fight between Clanmates",
+            "Is amazed at how well r_c mediated a territory dispute",
+            "Is amazed at how r_c talked {PRONOUN/r_c/poss} way out of a potential war",
+            "Is asking r_c the best way to calm down an angry cat",
+            "Is asking r_c about new ways to work through problems",
+            "Is following in r_c's pawsteps"
+        ],
+        "random_status_constraint": [
+            "mediator"
+        ]
+    },
+    {
+        "id": "mediator_app_alive_apprentice",
+        "thoughts": [
+            "Successfully solved an argument between {PRONOUN/m_c/poss} denmates",
+            "Tried to solve an argument between {PRONOUN/m_c/poss} denmates but only made it worse",
+            "Helped r_c work through some insecurities",
+            "Helped r_c learn to be more receptive to criticism",
+            "Moved nests around to avoid an argument between the other apprentices"
+        ],
+        "random_status_constraint": [
+            "mediator apprentice",
+            "apprentice",
+            "medicine cat apprentice"
+        ]
+    },
+    {
+        "id": "righteous_mediator_apprentice",
+        "thoughts": [
+            "Was scolded for taking sides in mediating arguments recently",
+            "Is being reminded to be neutral in mediation",
+            "Is having trouble remaining neutral when one cat is clearly in the wrong",
+            "Is struggling between doing the right thing and keeping a secret",
+            "Thinks that doing the right thing is more important than staying completely neutral"
+        ],
+        "main_trait_constraint": [
+            "righteous"
+        ]
+    },
+    {
+        "id": "vengeful_mediator_apprentice",
+        "thoughts": [
+            "Takes the opposite side of a cat that was rude to {PRONOUN/m_c/object}",
+            "Considers letting an argument continue after being so rudely blown off"
+        ],
+        "main_trait_constraint": [
+            "vengeful"
+        ]
+    },
+    {
+        "id": "flamboyant_mediator_app",
+        "thoughts": [
+          "Learns to not gossip so much about what {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} told by Clanmates",
+          "Brings attention off a shyer Clanmate with wild skylarking through camp",
+          "Yowls about another Clan being unreasonable",
+          "Encourages a Clanmate to speak to their crush fearlessly",
+          "Doesn't understand {PRONOUN/m_c/poss} quieter Clanmates but tries to learn",
+          "Is understanding all sorts of personalities through games and acting",
+          "Starts to understand why certain styles are popular compared to others",
+          "Should tell r_c nicely to be more stylish",
+          "Was scolded after bluntly telling r_c {PRONOUN/r_c/subject} {VERB/r_c/weren't/wasn't} stylish enough",
+          "Is learning what makes everyone different",
+          "Encourages the kits to be themselves always",
+          "Yowls approval of r_c making a positive change",
+          "Tells r_c {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} slaying",
+          "Exclaims that being oneself is being their best self",
+          "Hollers support to r_c while 'hiding' across camp"
+        ],
+        "main_trait_constraint": [
+          "flamboyant"
+        ]
+      }
+]

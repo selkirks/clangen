@@ -1,0 +1,148 @@
+{
+  "general": {
+    "body": [
+      "r_c glares down at m_c with a scowl. How pathetic. To think this is {PRONOUN/r_c/poss} mate. Hopefully, future ones won't be as disappointing as {PRONOUN/m_c/object}.",
+      "With m_c gone from this world, r_c, to make {PRONOUN/r_c/self} not look daunting, dramatically woes {PRONOUN/m_c/self} with fake tears at the vigil. Hopefully, with the right amount of tears, a more preferable cat will be betrothed to {PRONOUN/r_c/object}.",
+      "Driven by empathy and sorrow, Clanmates reach out to r_c, offering prey and a noble shoulder to cry on after the vigil for m_c. However, r_c simply turns down every gesture of sympathy; death comes for everyone, and it took its sweet time for m_c.",
+      "r_c holds m_c in {PRONOUN/r_c/poss} paws during the vigil, weeping burning tears onto the cold, limp body. Even if things have soured throughout their lives, and r_c wants nothing more but to hiss at {PRONOUN/r_c/poss} dumb mate, deep down, {PRONOUN/r_c/subject} misses m_c.",
+      "Near the end of m_c's vigil, Clanmates' eyes shift towards r_c, moving aside for the widow to say {PRONOUN/r_c/poss} farewells. However, unlike what is expected, {PRONOUN/r_c/subject} twists {PRONOUN/r_c/poss} head solemnly, and, with an icy voice, states that {PRONOUN/r_c/subject} has nothing to say about {PRONOUN/r_c/poss} mate.",
+      "At the end of the vigil, after the tears are shed and the mourning sweeps through the Clan, r_c drags {PRONOUN/r_c/self} straight into {PRONOUN/r_c/poss} nest. m_c and r_c once share this nest, but now it's all {PRONOUN/r_c/poss}. Despite only resurfacing horrible memories between the two, the nest feels... empty.",
+      "{PRONOUN/r_c/subject/CAP} doesn't care what {PRONOUN/r_c/poss} Clanmates say about how {PRONOUN/r_c/subject} should behave during m_c's vigil. Tears are meant for those {PRONOUN/r_c/subject} cares about, but m_c will never receive a single drop from {PRONOUN/r_c/object}."
+    ],
+    "no_body": [
+      "As the days fade, it doesn't take much for r_c to notice the sudden disappearance of m_c. {PRONOUN/m_c/poss/CAP} disappearance is like a StarClan's blessing. Thus, r_c won't squander this opportunity to savor the long-desired taste of freedom without {PRONOUN/r_c/poss} mate breathing down {PRONOUN/r_c/poss} neck. And, with no body found to hold a vigil, {PRONOUN/r_c/subject} doesn't need to weep, only to celebrate."
+    ]
+  },
+  "adventurous": {
+    "body": [],
+    "no_body": []
+  },
+  "altruistic": {
+    "body": [],
+    "no_body": []
+  },
+  "ambitious": {
+    "body": [],
+    "no_body": []
+  },
+  "bloodthirsty": {
+    "body": [],
+    "no_body": []
+  },
+  "bold": {
+    "body": [],
+    "no_body": []
+  },
+  "calm": {
+    "body": [],
+    "no_body": []
+  },
+  "careful": {
+    "body": [],
+    "no_body": []
+  },
+  "charismatic": {
+    "body": [],
+    "no_body": []
+  },
+  "childish": {
+    "body": [],
+    "no_body": []
+  },
+  "cold": {
+    "body": [],
+    "no_body": []
+  },
+  "compassionate": {
+    "body": [],
+    "no_body": []
+  },
+  "confident": {
+    "body": [],
+    "no_body": []
+  },
+  "daring": {
+    "body": [],
+    "no_body": []
+  },
+  "empathetic": {
+    "body": [],
+    "no_body": []
+  },
+  "faithful": {
+    "body": [],
+    "no_body": []
+  },
+  "fierce": {
+    "body": [],
+    "no_body": []
+  },
+  "insecure": {
+    "body": [],
+    "no_body": []
+  },
+  "lonesome": {
+    "body": [],
+    "no_body": []
+  },
+  "loving": {
+    "body": [],
+    "no_body": []
+  },
+  "loyal": {
+    "body": [],
+    "no_body": []
+  },
+  "nervous": {
+    "body": [],
+    "no_body": []
+  },
+  "patient": {
+    "body": [],
+    "no_body": []
+  },
+  "playful": {
+    "body": [],
+    "no_body": []
+  },
+  "responsible": {
+    "body": [],
+    "no_body": []
+  },
+  "righteous": {
+    "body": [],
+    "no_body": []
+  },
+  "shameless": {
+    "body": [],
+    "no_body": []
+  },
+  "sneaky": {
+    "body": [],
+    "no_body": []
+  },
+  "strange": {
+    "body": [],
+    "no_body": []
+  },
+  "strict": {
+    "body": [],
+    "no_body": []
+  },
+  "thoughtful": {
+    "body": [],
+    "no_body": []
+  },
+  "troublesome": {
+    "body": [],
+    "no_body": []
+  },
+  "vengeful": {
+    "body": [],
+    "no_body": []
+  },
+  "wise": {
+    "body": [],
+    "no_body": []
+  }
+}

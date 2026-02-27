@@ -1,0 +1,521 @@
+{
+    "halloween_J1" : {
+        "tags": [
+            "silly",
+            "stable",
+            "min_platonic_20",
+            "halloween",
+            "no_kit",
+            "they_blind"
+        ],
+        "intro": [
+            "Boo!",
+            "[t_c pops out at you from behind a bush with the pelt of a rabbit laid over {PRONOUN/t_c/poss} own.]",
+            "Hehe, did I scare ya? Did you think I was a scary cat-rabbit hybrid?"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Yes",
+                "next_scene": "scare_yes"
+            },
+            "choice2": {
+                "text": "No",
+                "next_scene": "scare_no"
+            }
+        },
+        "scare_yes": [
+            "Yes! I'm the best scarer in the Clan, y_c, don't you forget it.",
+            "Now... have you seen platonic_r_c? My reign of terror must continue!"
+        ],
+        "scare_no": [
+            "Aw, really?",
+            "I'll get you one of these days, y_c... 'tis the season, after all...",
+            "[t_c backs away slowly. Maybe you should sleep with one eye open tonight.]"
+        ]
+    },
+    "halloween_J2": [
+        [
+            "they_brooding",
+            "no_kit",
+            "halloween"
+        ],
+        [
+            "[Everyone in the Clan has been doing their best to scare each other lately. Today, r_k catches a glimpse of t_c from across the camp, jumps, and races back into the nursery.]",
+            "What? What's wrong?",
+            "I scared {PRONOUN/r_k/object}?",
+            "... That's just my face."
+        ]
+    ],
+    "halloween_J3": [
+        [
+            "they_kitten",
+            "min_platonic_10",
+            "you_queen",
+            "you_queen's_apprentice",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice"
+        ],
+        [
+            "y_c, y_c! Look, look, look!",
+            "[t_c runs towards you with a shiny, rectangular Twoleg object in {PRONOUN/t_c/poss} mouth.]",
+            "Look what r_a brought back for me from a patrol! {PRONOUN/r_a/subject/CAP} said {PRONOUN/r_a/subject} {VERB/r_a/think/thinks} it's Twoleg food... wanna share?",
+            "[You remember hearing about these things. As t_c attempts to tear into the object, you stop {PRONOUN/t_c/object}, informing {PRONOUN/t_c/object} that it's poisonous.]",
+            "Whoa, really? But r_a said the Twolegs were giving them to each other as gifts!",
+            "They're so cruel..."
+        ]
+    ],
+    "halloween_J4": [
+        [
+            "they_artistan",
+            "no_kit",
+            "halloween"
+        ],
+        [
+            "[t_c is licking clean the bones of some prey, long after most cats would have discarded of it.]",
+            "Hi, y_c!",
+            "Oh, I'm just cleaning up these bones so I can decorate the camp with them, since we're all in such a spooky mood lately.",
+            "I think this sparrow skull would look perfect on the top of the leader's den, don't you?"
+        ]
+    ],
+    "halloween_J5": [
+        [
+            "they_brooding",
+            "they_cool",
+            "halloween",
+            "no_kit",
+            "they_blind"
+        ],
+        [
+            "[t_c stalks past you with an indignant look on {PRONOUN/t_c/poss} face. {PRONOUN/t_c/subject/CAP} {VERB/t_c/have/has} a few sticks fastened to {PRONOUN/t_c/poss} head with vines.]",
+            "plike_r_c_silly wanted to put me in a costume. I'm a deer.",
+            "Uncanny, right?"
+        ]
+    ],
+    "halloween_J6": [
+        [
+            "halloween",
+            "stable",
+            "neurotic",
+            "introspective",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "no_kit"
+        ],
+        [
+            "y_c, would it be insensitive to pretend I'm a ghost to scare plove_r_c?",
+            "Could you ask StarClan? I don't want to be rude."
+        ]
+    ],
+    "halloween_J7": {
+        "tags": [
+            "halloween",
+            "they_kitten",
+            "you_not_kit",
+            "non-related",
+            "they_blind",
+            "you_blind"
+        ],
+        "intro": [
+            "[t_c runs up to your den and skids to a stop.]",
+            "y_c! y_c!",
+            "Prank or prey!",
+            "[Hm... Which will it be..?]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Prey",
+                "next_scene": "prey"
+            },
+            "choice2": {
+                "text": "Prank",
+                "next_scene": "prank"
+            }
+        },
+        "prey": [
+            "[You turn around and grab a small piece of honeycomb from behind your nest. You set it gently at t_c's paws.]",
+            "Eeee!! Thank you, y_c!",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/run/runs} off to show t_p {PRONOUN/t_c/poss} new treat!]"
+        ],
+        "prank": [
+            "[You turn around, pretending to grab something, but you quickly turn back and lunge in t_c's direction with your scariest face.]",
+            "Eep!",
+            "[t_c stumbles backwards and bolts away, squealing with laughter.]"
+        ]
+    },
+    "halloween_sam1": {
+    "tags": [
+        "they_queen",
+        "they_queen's_apprentice",
+        "you_kitten",
+        "they_formerlyakittypet",
+        "they_silly",
+        "halloween"
+    ],
+    "intro": [
+        "[t_c walks into camp, holding some strange colorful things. Pelt decorations, maybe?]",
+        "I got costumes!!! The Twolegs would always dress me up in these around this time of year and then point metal boxes at me.",
+        "I don't have metal boxes, but I thought you guys would look adorable in these! plike_r_c_unlawful gave me the idea.",
+        "Who wants a costume first?",
+        "y_c! Come here, you'll be first!"
+    ],
+    "intro_choices": {
+        "choice1": {
+            "text": "Run away",
+            "next_scene": "run"
+        },
+        "choice2": {
+            "text": "Let them",
+            "next_scene": "accept"
+        }
+        },
+        "run": [
+            "Come on! It'll only be for a few minutes!",
+            "[Even t_p is telling you to put on the 'costume'.]",
+            "Please?"
+        ],
+        "accept": [
+            "Thank you! What costume do you want?"
+        ],
+        "run_choices": {
+            "choice1": {
+                "text": "Still refuse",
+                "next_scene": "refuse"
+            },
+            "choice2": {
+                "text": "Relent",
+                "next_scene": "accept"
+            }
+        },
+        "refuse": [
+            "Ughhh fine, what about y_l? Are you going to be more cooperative than your {PRONOUN/y_c/sibling}?",
+            "[y_l is in fact not any more cooperative, and you burst out laughing when you see {PRONOUN/y_l/object} in {PRONOUN/y_l/poss} costume.]"
+        ],
+        "accept_choices": {
+            "choice1": {
+                "text": "Deer",
+                "next_scene": "costume"
+            },
+            "choice2": {
+                "text": "Bunny",
+                "next_scene": "costume"
+            }
+        },
+        "costume": [
+            "Aww! You look so cute!",
+            "..There's no way to convince you to wear that for the rest of the day, is there?",
+            "It was worth a try. You can take it off now, if you want.",
+            "Who's next?"
+        ]
+    },
+    "halloween_sam2": [
+        [
+            "they_kitten",
+            "you_kitten",
+            "halloween",
+            "they_silly"
+        ],
+        [
+            "y_c! Do you want to hear the story that r_e just told me?",
+            "So once upon a time a cat got attacked.",
+            "Wait, that's not the right part.",
+            "Once upon a time there was a kittypet.",
+            "This kittypet was scary. At least to the cats around them.",
+            "There were rumors that they were a witch-cat!",
+            "One day, a warrior got curious about the kittypet. Then, yowls and screams were heard from the kittypet's house.",
+            "The warrior was never seen again.",
+            "Haha look at your face! I'm kidding.",
+            "Or am I? Hehehe!"
+        ]
+    ],
+    "Halloween_SV1": [
+        [
+            "halloween",
+            "they_ghost"
+
+        ],
+        [
+            "y_c! Come join us! r_e is going to tell ghost stories!",
+            "What? Ghosts aren't real?",
+            "Hmph, alright.",
+            "Then I suppose that white paw on your shoulder isn't either..."
+        ]
+    ],
+    "Halloween_SV2": [
+        [
+            "halloween",
+            "leaffall",
+            "no_kit"
+
+        ],
+        [
+            "[You and t_c sit in the clearing, watching the last light of day fade from the sky.]",
+            "Look at that.",
+            "[t_c points to a shadow cast by the twisted roots of a nearby tree.]",
+            "Doesn't it look like a cat?... Or maybe something worse.",
+            "[You follow {PRONOUN/t_c/poss} gaze, and the shadow seems to shift, moving unnaturally along the ground.]",
+            "t_p used to say that during Leaf-fall, spirits play with shadows. That's why they seem alive.",
+            "[The silence stretches, and the shadow seems to creep closer, dark and menacing.]",
+            "M-Maybe we should leave."
+        ]
+    ],
+    "Halloween_SV3": [
+        [
+            "halloween",
+            "leaffall",
+            "they_warrior",
+            "you_warrior",
+            "you_apprentice"
+        ],
+        [
+            "[While out on patrol, t_c suddenly halts and holds you back with {PRONOUN/t_c/poss} tail.]",
+            "Whoa, whoa, don't get too close to that thing.",
+            "[t_c glances at a nearby hollowed-out tree, its bark gnarled and twisted into strange patterns.]",  
+            "They say a cat was buried inside it, and during Leaf-fall, you can still hear them scratching to get out.",
+            "[In an instant, a sharp scraping sound emerges from within the hollow.]",
+            "Did you hear that?"
+        ]
+    ],
+    "Halloween_SV4": [
+        [
+            "halloween",
+            "they_kitten",
+            "you_adult"
+        ],
+        [
+            "Watch me! I'm practicing my scary faces!",
+            "[On cue, t_c scrunches up {PRONOUN/t_c/poss} nose and bares {PRONOUN/t_c/poss} teeth, trying to look fierce.]",
+            "Raaaar! I'm a mean old fox!",
+            "[t_c glances around for a reaction, then huffs with determination.]",
+            "Wait, wait, I can do better!",
+            "[The kit takes a deep breath, puffing out {PRONOUN/t_c/poss} cheeks and widening {PRONOUN/t_c/poss} eyes.]",
+            "How about this? I'm a ghost! Oooooo!",
+            "[You try to pretend to be frightened, but it's hard to take such a cute sight seriously.]"
+        ]
+    ],
+    "Halloween_SV5": [
+        [
+            "halloween",
+            "they_kitten",
+            "you_not_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "[t_c blocks your path, bursting into song.]",
+            "Prank or prey, come and play! Give me some fresh-kill today! If you don't, I don't care, I'll give you a big old scare!" 
+        ]
+    ],
+    "Halloween_SV6": [
+        [
+            "halloween",
+            "they_app",
+            "you_any"
+        ],
+        [
+            "[A group of cats are gathered around a large puddle, with t_c in the forefront, crouched low.]",
+            "Okay, okay, I just need to grab one real quick.",
+            "[As you draw closer, you spot a few apples bobbing teasingly on the surface.]",
+            "[t_c dips {PRONOUN/t_c/poss} head to snatch one, but it slips away, causing {PRONOUN/t_c/object} to earn a mouthful of water.]",
+            "Pfft! Bleh! Why are these things so slippery!?",
+            "[The apprentice lunges again, snapping {PRONOUN/t_c/poss} jaws at the apple, but it floats out of reach once more.]",
+            "Mouse-dung!",
+            "[It seems like {PRONOUN/t_c/subject} might be at this all day.]"
+        ]
+    ],
+    "ofrenda_dead_H1": [
+        [
+            "they_kittypet",
+            "they_introspective",
+	        "halloween",
+            "they_dead",
+            "any",
+	        "leaffall"
+        ],
+        [
+            "[Anytime you saw t_c in the past, {PRONOUN/t_c/subject} looked gloomy. However, as the leaves turn orange and the air chills, t_c is absolutely ecstatic.]",
+            "y_c! y_c, do you know what time it is?",
+            "Oh, who am I kidding? It's when the housefolk-- I mean, Twolegs start putting up the pictures and candles! They say the dead visits them when they do.",
+            "I hope - no, I know I'm in one of the pictures! I'll get to visit them! Isn't that exciting?",
+            "[You nod, though as t_c continues to talk, you wonder what exactly a 'picture' and a 'candle' is.]"
+        ]
+    ],
+   "ofrenda_dead_H2": [
+        [
+            "they_kittypet",
+            "they_introspective",
+            "they_dead",
+            "any",
+            "halloween",
+            "they_blind"
+        ],
+        [
+            "[While all the other kittypets you've talked to lately are excited for the incoming 'visit' to their Twolegs, t_c is curled away in the distance.]",
+            "Sorry for being all moppy. I didn't want to ruin the good mood.",
+            "I just... I know I'm not in my previous Twolegs pictures. I should be optimistic and have some faith!",
+            "But I know lying to myself is just going to cause more pain."
+        ]
+    ],
+    "ofrenda_dead_H3": [
+        [
+            "they_loner",
+            "they_rogue",
+            "they_introspective",
+            "they_dead",
+            "any",
+            "halloween"
+        ],
+        [
+            "Oh, hey, y_c? Have you heard of what the kittypets have been talking about lately - the 'pictures' and 'candles'?",
+            "It's really sweet, I think, to have others so dedicated to keeping your memory alive.",
+            "... The kittypets must be adored so much, even if it's from Twolegs, huh? It must've been nice."
+        ]
+    ],
+    "halloween_SQ1~1": [
+        [
+            "halloween",
+            "they_neurotic",
+            "no_kit",
+            "min_platonic_10",
+            "you_blind"
+        ],
+        [
+            "Have you noticed there've been lots of spiders around camp recently?",
+	        "I mean... I've got nothing against spiders! And I don't think these ones are venomous, it's just... they're a bit startling, you know?",
+	        "I wonder why there are so many around recently. I hope they stop soon."
+        ]
+    ],
+
+    "halloween_SQ1~2": [
+        [
+            "halloween",
+            "they_neurotic",
+            "no_kit",
+            "min_platonic_10",
+            "you_blind",
+            "connected"
+        ],
+        [
+            "Ugh! There are still so many spiders around camp... I've been trying to stay out of their way.",
+	        "There was one hanging right in the middle of the entrance to the warriors' den, like it was guarding the place... it was huge, and orange, and... *shudder*",
+	        "I know they eat insects, and they're good to have around! All their legs, though... they just creep me out.",
+	        "I still don't understand why there are so many in camp."
+        ]
+    ],
+
+    "halloween_SQ2": [
+        [
+            "halloween",
+            "they_language",
+            "no_kit"
+        ],
+        [
+            "[A large raven has been hanging around the camp recently, filling silences with its mournful croaks and loudly flapping its wings when cats least expect it.]",
+	        "[t_c is trying to speak with the bird to figure out what it wants, but so far {PRONOUN/t_c/poss} efforts have just been met with disparaging glances.}"
+        ]
+    ],
+
+    "halloween_SQ3": [
+        [
+            "halloween",
+            "they_story",
+            "no_kit",
+	        "they_blind"
+        ],
+        [
+            "[t_c's using the recent spooky mood in camp as an excuse to tell scarier stories than usual.]",
+	        "And with a mournful wail, the ghost lifted its paw and pointed at the c_nClan cats! It hissed that for the blood they had spilled, all of them would be cursed for the rest of their lives...",
+	        "[r_c_neurotic excuses {PRONOUN/r_c_neurotic/self} and quickly leaves the audience, shivering.]"
+        ]
+    ],
+
+    "halloween_SQ4": [
+        [
+            "halloween",
+            "they_navigator",
+            "no_kit",
+	        "min_platonic_15"
+        ],
+        [
+            "I just had a weird experience today when I was on a walk with plike_r_w. We were on the western side of the territory, and it was a bit foggy...",
+	        "And suddenly, we were just... in another part of the territory. I swear, it was like I blinked and everything around us shifted!",
+	        "[t_c shudders. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'ve/'s} always been unnaturally good at keeping {PRONOUN/t_c/poss} bearings, and you used to think it was impossible for {PRONOUN/t_c/object} to get lost.]",
+	        "[This experience seems to have spooked {PRONOUN/t_c/object} more than {PRONOUN/t_c/subject}'d like to admit.]"
+        ]
+    ],
+
+    "halloween_SQ5": [
+        [
+            "halloween",
+            "they_dream",
+	        "they_neurotic",
+            "no_kit",
+	        "min_platonic_15"
+        ],
+        [
+            "I've been having weird dreams lately. They're full of shadows and spiderwebs, and it keeps feeling like someone's watching me...",
+	        "[t_c shivers. For a moment, {PRONOUN/t_c/subject} {VERB/t_c/stare/stares} into space.]",
+	        "I... I really hope they don't mean something bad."
+        ]
+    ],
+
+    "halloween_SQ6~1": [
+        [
+            "halloween",
+	        "they_neurotic",
+            "no_kit",
+	        "min_platonic_15",
+	        "you_blind",
+	        "they_blind"
+        ],
+        [
+            "Have you ever wondered if we could fight ghosts? You know, if one decided to come after the Clan?",
+	        "Please don't laugh at me. It's just... everyone's been talking about ghosts and spooky things recently, and I can't help but worry. What if that stuff's real, and dangerous?"
+        ]
+    ],
+    "halloween_SQ6~2": [
+        [
+            "halloween",
+	        "they_neurotic",
+            "no_kit",
+	        "min_platonic_15",
+	        "connected"
+        ],
+        [
+            "[t_c stares intently at the empty space in front of {PRONOUN/t_c/object}. {PRONOUN/t_c/subject/CAP} {VERB/t_c/swipe/swipes} one paw through the air with a quiet battlecry, but {VERB/t_c/stumble/stumbles} when {PRONOUN/t_c/subject} {VERB/t_c/notice/notices} you nearby.]",
+            "Ah... hi, y_c. So, remember how I was wondering about fighting ghosts a while back?",
+            "r_c_introspective said maybe in order to fight a ghost, you just have to believe really hard that you'll be able to hit them. And if you don't believe enough, your paws will just pass through...",
+            "I know, it sounds like a kit story. But I couldn't stop thinking about it, so I guess I'm... practicing? Yeah. I'm practicing my believing, if that makes any sense.",
+            "...I'll go do something useful now."
+        ]
+    ],
+    "halloween_SQ7": [
+        [
+            "halloween",
+	        "they_neurotic",
+            "no_kit",
+	        "min_platonic_15",
+            "they_hearing"
+        ],
+        [
+            "[t_c sits slumped at the edge of camp, looking at {PRONOUN/t_c/poss} paws. You ask {PRONOUN/t_c/object} if {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} okay, and {PRONOUN/t_c/subject} {VERB/t_c/sigh/sighs}.]",
+            "Yeah... I'm trying to be. Um... neutral_r_c1_silly jumped out at me as I was coming back into camp. {PRONOUN/neutral_r_c1_silly/subject/CAP} {VERB/neutral_r_c1_silly/were/was} just joking around, but {PRONOUN/neutral_r_c1_silly/subject} scared me.",
+            "Anyways, I kind of screamed... I'm surprised you didn't hear me. And then I snapped at neutral_r_c1_silly, even though I didn't mean it, and now I feel really bad...",
+            "[t_c looks across the camp at neutral_r_c1_silly, who's joking around with r_c2_silly.]",
+            "{PRONOUN/neutral_r_c1_silly/subject/CAP} {VERB/neutral_r_c1_silly/don't/doesn't} seem too bothered, but maybe {PRONOUN/neutral_r_c1_silly/subject}{VERB/neutral_r_c1_silly/'re/'s} just hiding it well? But if {PRONOUN/neutral_r_c1_silly/subject} really {VERB/neutral_r_c1_silly/have/has} forgotten, I don't want to bring anything back up by apologizing."
+        ]
+    ],
+    "halloween_E1": [
+        [
+            "halloween",
+            "no_kit",
+            "you_queen's_apprentice",
+            "you_queen",
+            "they_blind"
+        ],
+        [
+            "Oh- Oh! y_c!",
+            "[t_c's wide, guilty eyes meet your own as you enter the nursery. {PRONOUN/t_c/subject/CAP} {VERB/t_c/shift/shifts} awkwardly to the side, trying to conceal a shivering r_k who is currently sobbing into {PRONOUN/t_c/poss} fur.]",
+            "I uh... heh- I think my ghost stories might have been a <i>little</i>... over the top."
+        ]
+    ]
+}

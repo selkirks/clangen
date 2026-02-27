@@ -1,0 +1,21 @@
+{
+    "leader general": [
+        "You watch l_n closely each day, hoping {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} effectively using the life that you gave {PRONOUN/l_n/object}.",
+        "You consider gifting StarClan's apprentices and kits with full names.",
+        "You feel the pressure of deciding cats' fates on your shoulders now more than ever as a StarClan leader.",
+        "You feel a sense of nostalgia as you stand by the other StarClan leaders to watch over a Clan Gathering.",
+        "You and the other StarClan leaders hold a private meeting to discuss certain cats' futures."
+    ],
+    "leader assertive": [],
+    "leader brooding": [],
+    "leader cool": [],
+    "leader upstanding": [],
+    "leader introspective": [],
+    "leader neurotic": [],
+    "leader silly": [],
+    "leader stable": [],
+    "leader sweet": [],
+    "leader unabashed": [],
+    "leader unlawful": [],
+    "leader rare": []
+}

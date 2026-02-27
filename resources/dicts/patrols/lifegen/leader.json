@@ -1,0 +1,464 @@
+[
+    {
+        "patrol_id": "life_lead_og1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "leaf-bare"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "life_lead_og1",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You need to make a decision about the allocation of prey during the scarce leaf-bare. Prey is already becoming scarce by the sight of the dwindling freshkill pile... The Clan's survival depends on your decision.",
+        "decline_text": "Rather than making the decision alone, you decide to hold a Clan meeting to discuss the issue. The Clan appreciates your democratic leadership style.",
+        "chance_of_success": 75,
+        "success_outcomes": [
+            {
+                "text": "Your fair and thoughtful decision ensures that all cats get enough to eat, despite the scarcity. The Clan appreciates your wise leadership.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your best efforts, there's unrest in the Clan due to the scarcity of food. The harsh realities of leadership weigh heavy on you.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_og2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "life_leader_og2",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "As you ponder over a tough decision to make for the Clan, you wonder if it would be wise to confide some of your Clan members and ask for their opinions and advice. A few of your warriors may have good insight.",
+        "decline_text": "You decide not to confide in your Clanmates, confident in your ability to make decisions on your own.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You cave in and decide to ask the warriors what they think about your decision. You, r_w1, r_w2, and r_w3 are able to have a serious conversation, going over the advantages and disadvantages of your plan and how it could affect the Clan's future. You are able to walk away confident in both your decision and the opinions of your Clanmates.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You cave in and decide to ask the senior warriors what they think about your decision. Unfortunately, each of your Clanmates seem to have a different opinion from one another. r_w1, r_w2, and r_w3 are unable to see each other eye to eye despite your presence. You break up the conversation and stalk back to your den, your time wasted and your mind split with indecision.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_og3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "life_lead_og3",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "o_c_n has been encroaching on your territory with subtle shifted scent marks and pawprints. Then again, it could be a simple mistake. As the leader, you have to decide how to respond.",
+        "decline_text": "Rather than making a hasty decision, you decide to gather more information about the situation. Your Clan respects your thoroughness.",
+        "chance_of_success": 70,
+        "success_outcomes": [
+            {
+                "text": "Your decision to send a stern warning to o_c_n proves effective. They apologize and promise to respect the borders. Your Clan admires your stern defense of the territory.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your stern warning, the o_c_n continues to violate the borders. This challenge tests your resolve as a leader. You'll need a new plan.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_og4",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "During a moment of downtime, r_w approaches you. {PRONOUN/r_w/subject/CAP} {VERB/r_w/inform/informs} you that {PRONOUN/r_w/subject} {VERB/r_w/have/has} a few concerns regarding a decision that you recently made for the Clan, and {PRONOUN/r_w/subject} would like to give {PRONOUN/r_w/poss} input.",
+        "decline_text": "You tell your Clanmate that they can voice their concerns in a private conversation later.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You make sure to listen fully to r_w's concerns, allowing {PRONOUN/r_w/object} to voice out {PRONOUN/r_w/poss} full opinion and give {PRONOUN/r_w/poss} own insight on how this decision may affect the Clan in the future. You thank {PRONOUN/r_w/object} for {PRONOUN/r_w/poss} decision to confide in you and promise to have a word with the Clan's senior warriors and elders to see what they think.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You lash out at r_w with your fur bristled, harshly reminding {PRONOUN/r_w/object} that {PRONOUN/r_w/subject} {VERB/r_w/do/does} not have the right to question your orders. What {VERB/r_w/do/does} {PRONOUN/r_w/subject} know about leadership!? {PRONOUN/r_w/subject/CAP} {VERB/r_w/slink/slinks} off with ears flattened in anger at your denial.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_og5",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "An argument between r_w1 and r_w2 threatens to divide the Clan. They stand in the clearing, fur bristled as they spit at each other. The rest of your Clanmates appear to be taking sides. You need to intervene and restore peace before this gets out of hand.",
+        "decline_text": "Instead of directly intervening, you decide to involve the Clan's mediator. This thoughtful action shows your belief in the strengths of your Clan members.",
+        "chance_of_success": 70,
+        "success_outcomes": [
+            {
+                "text": "Stepping between the two warriors, your wise words defuse the tension and resolve the argument. The mark of a good compromise is neither being fully satisfied. The Clan is grateful for your balanced judgment. d_n looks thoughtful about how you handled r_w1 and r_w2 with such ease.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your intervention, the warriors continue to argue. Frustration overtakes you, but d_n steps in to assist. With {PRONOUN/d_n/poss} help the situation dissolves finally but not thanks to you. Your Clanmates whisper behind your back. Maybe d_n simply knows r_w1 and r_w2 better?",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_og6",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "A fierce storm has damaged the camp, and as the leader, you must organize the repair efforts. Several of your Clanmates are ready to help. All they need now is direction on where to start.",
+        "decline_text": "Rather than dictating the repair process, you decide to listen to the ideas of your Clan members. This approach shows your trust in your Clan's abilities.",
+        "chance_of_success": 75,
+        "success_outcomes": [
+            {
+                "text": "With your guidance, the Clan works together efficiently to repair the camp. Tonight everyone will have nice, warm nests after the soaking storm. The gratitude radiates from r_w1 and r_w2 as they both head to their nests so that they can be up in time for dawn patrol with d_n.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your efforts, the repair process is slow and arduous. This difficult situation tests the patience of all. By moonhigh there is still more to be done but it will have to wait until tomorrow...",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_og7",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "An epidemic has spread through the Clan and you must decide how to handle the crisis. r_m has {PRONOUN/r_m/poss} paws full enough with multiple patients and not enough herbs.",
+        "decline_text": "Recognizing your limitations in medical matters, you choose to defer to the medicine cat's judgment. The Clan appreciates your humility and trust in others.",
+        "chance_of_success": 70,
+        "success_outcomes": [
+            {
+                "text": "You calmly organize a quarantine and direct the warrior's efforts to herb gathering. r_m is incredibly grateful, and admires your composure and swift decision-making in the face of adversity. Your choices meant {PRONOUN/r_m/subject} could focus on patients.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your efforts, the epidemic continues to spread and the medicine cats have to work overtime regardless. This crisis tests r_m's trust in you. Failure hurts, but you can learn from this.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "lg_leader_shunned_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The Clan leader-- your replacement-- is giving an announcement to the Clan about a recent gathering. They share a decision that you don't really agree with, but wonder if anycat would listen to your opinion anymore.",
+        "decline_text": "Best not to anger anyone with unsolicited advice.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "Ready to get shot down, you raise your voice above the crowd and express your disagreement with the leader's plan. The entire Clan looks to them to see whether or not they'll shoot you down. To your surprise, though, they do not, and instead acknowledge your opinion with a curt nod, and a mutter about how they'll consider it. It's not much, but it's better than nothing.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You can barely finish your sentence before the leader silences you with a hiss. They let you know very clearly that your opinion is of the least concern to the Clan right now, and you can't help but feel offended that your Clanmate would treat you this way.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_CZ1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The constant management of leading the Clan has left you exhausted, but you've promised the kits that you would visit them in the nursery and share a meal days ago, and you feel somewhat guilty for having waited so long. r_k was keen on seeing you.",
+        "decline_text": "You decide that resting in your den is more important. You won't be of any use to your Clan if you're too tired to think; you spend the evening relaxing in solitude, promising to yourself that you would visit the kits tomorrow.",
+        "chance_of_success": 70,
+        "success_outcomes": [
+            {
+                "text": "It wouldn't hurt to do one last errand. You slip into the nursery with a mouse held in your jaws, only to find that all of the kits are asleep. So, you instead share the mouse with r_q and have a lovely and insightful conversation with {PRONOUN/r_q/object}.",
+                "exp": 10,
+                "weight": 20
+            },
+            {
+                "text": "r_k is energetic, but not overwhelming. As you share a thrush with the nursery, you answer all of the questions and delight in the kit's bright-eyed curiosity. You leave feeling happy and reinvigorated for your work to continue tomorrow.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "As soon as you enter the nursery, you're swarmed by hyperactive kits and a constant stream of questions. You do your best to hold conversation with them, but r_q recognize your fatigue and usher the kits aside, allowing you to escape to the peace and quiet of your den.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You do your best to concentrate on your conversation with the Clan's young ones, but even r_k can tell that you're beginning to nod off halfway through the conversation. None of your Clanmates blame you for excusing yourself early, but you feel guilt begin to writhe in your chest as you make your way out.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_R1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "d_n has come to you with an issue. More warriors are reporting to {PRONOUN/d_n/object} that r_w_assertive has been starting more arguments as of late on patrols. Before {PRONOUN/d_n/subject} {VERB/d_n/speak/speaks} to {PRONOUN/r_w_assertive/object}, {PRONOUN/d_n/subject} wanted your opinion.",
+        "decline_text": "d_n should trust {PRONOUN/d_n/self} more. {PRONOUN/d_n/subject/CAP} {VERB/d_n/know/knows} what is best.",
+        "chance_of_success": 65,
+        "success_outcomes": [
+            {
+                "text": "r_w_assertive isn't a problem starter - {PRONOUN/r_w_assertive/subject}{VERB/r_w_assertive/'re/'s} a problem finisher. d_n realizes the issue seems to lie with r_w1 as well. After a moment {PRONOUN/d_n/subject} {VERB/d_n/decide/decides} to separate the two for a bit and resolve it with r_d.",
+                "exp": 10,
+                "weight": 20
+            },
+            {
+                "text": "d_n hasn't seemed to catch on that r_w_assertive isn't a problem starter - {PRONOUN/r_w_assertive/subject}{VERB/r_w_assertive/'re/'s} a problem finisher. You gently remind {PRONOUN/d_n/object} that each of {PRONOUN/d_n/poss} Clanmates are unique. By the time you finish explaining d_n is more confident with new knowledge before heading off to complete the task.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "d_n doesn't know {PRONOUN/d_n/poss} own Clanmates if {PRONOUN/d_n/subject} can't see what's happening. Despite it being obvious to you, you can't seem to explain it in a way that makes sense to your deputy. In the end, d_n stalks out of your den in frustration.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "r_c_assertive, causing problems? What else is new? And why would d_n need your advice for handling it? You shake your head at {PRONOUN/d_n/object} and tell {PRONOUN/d_n/object} to speak to r_w_assertive on {PRONOUN/d_n/poss} own if it's so important. You have other matters to attend to.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_R2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "r_k approaches you one afternoon as you sunbathe. {PRONOUN/r_k/subject/CAP} {VERB/r_k/appear/appears} nervous as {PRONOUN/r_k/subject} {VERB/r_k/gather/gathers} {PRONOUN/r_k/poss} thoughts. What could make r_k so nervous to bring up?",
+        "decline_text": "The kit scampers away instead. Did {PRONOUN/r_k/subject} lose {PRONOUN/r_k/poss} nerve?",
+        "chance_of_success": 70,
+        "success_outcomes": [
+            {
+                "text": "Conspiratorially, r_k leans in close to whisper to you. Ah... A mentor request! It seems r_w has a fan. Hiding your chuckles you gently agree to consider apprenticing {PRONOUN/r_k/object} to r_w - but only because {PRONOUN/r_k/subject} asked so politely.",
+                "exp": 10,
+                "weight": 20
+            },
+            {
+                "text": "Shuffling {PRONOUN/r_k/poss} paws, r_k gathers the courage to boldly announce that you're {PRONOUN/r_k/poss} favorite leader. Considering {PRONOUN/r_k/subject} {VERB/r_k/haven't/hasn't} met another, it's not the boldest of confessions, but it has you thanking {PRONOUN/r_k/object} for saying so. The kit scampers off happily.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Pestering kits aren't what you want right now. You gently discourage {PRONOUN/r_k/object} from bothering you, and r_k slinks off upset. Guilt plagues you for the rest of your evening.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "r_k stumbles and stutters out something that you don't understand. When you politely ask {PRONOUN/r_k/object} to speak up, the kit bursts into tears and runs back to the nursery. What just happened..?",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_lead_R3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_leader_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "While in your den, r_w_upstanding bursts in, frustrated. {PRONOUN/r_w_upstanding/subject/CAP} exclaims that r_w chased and caught prey over the o_c_n border but d_n doesn't see the issue! Something needs to be done about this.",
+        "decline_text": "You're too busy for this. r_w_upstanding is dismissed so you can focus.",
+        "chance_of_success": 70,
+        "success_outcomes": [
+            {
+                "text": "Gently, you assure r_w_upstanding that one mistake isn't going to cause problems. To make {PRONOUN/r_w_upstanding/object} feel more at ease, you agree to mention this to r_d. {PRONOUN/r_w_upstanding/subject/CAP} {VERB/r_w_upstanding/aren't/isn't} totally satisfied by this but is more assured as {PRONOUN/r_w_upstanding/subject} {VERB/r_w_upstanding/walk/walks} away.",
+                "exp": 10,
+                "weight": 20
+            },
+            {
+                "text": "You summon r_w and d_n to your den after assuring r_w_upstanding you'll take care of it. The two recieve an earful from you for the trespassing and dismissal of r_w_upstanding. ",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "r_w_upstanding is so frustrated and flustered that it's hard to understand exactly what's happening. You send {PRONOUN/r_w_upstanding/object} to r_d, who is better equipped for whatever is happening.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "It's rude to enter the leader's den without permission. You scold r_w_upstanding for bursting in and making a fuss about something minor. If d_n said it was fine, then it was fine. r_w_upstanding leaves with {PRONOUN/r_w_upstanding/poss} tail lashing and ears pinned back in anger.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    }
+]

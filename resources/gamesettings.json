@@ -1,0 +1,122 @@
+{
+    ".": [
+        "WARNING: This file is NOT where your settings are stored.",
+        "This file is only used to display the settings in the game.",
+        "The file you are looking for is 'settings.txt' in your saves folder.",
+        "If you want to change your settings, edit that file instead.",
+        "FORMAT:",
+        {
+            "group": {
+                "setting name": [
+                    "display name",
+                    "tooltip",
+                    "default"
+                ]
+            }
+        }
+    ],
+    "general": {
+        "dark mode": [
+            "Dark mode",
+            "Camp backgrounds will match with the mode: nighttime for dark mode and daytime for light mode.",
+            false
+        ],
+        "new accessories": [
+            "Lifegen Accessories",
+            "Enable Lifegen accessories",
+            true
+        ],
+        "neonpink accessories": [
+            "NeonPink Accessories",
+            "Enable NeonPink accessories",
+            true
+        ],
+        "red_bg": [
+            "Red background",
+            "Enable background color to get more red as you murder more cats",
+            true
+        ],
+        "custom cursor": [
+            "Custom cursor",
+            "The cursor will be replaced with a cat paw. The cursor is currently unfinished and is prone to crashing.",
+            false
+        ],
+        "keybinds": [
+            "Keybinds",
+            "Enables certain keybinds to be used throughout the menus for quick navigation.",
+            false
+        ],
+        "shaders": [
+            "Enable Shaders",
+            "This will add a shading layer onto the cat sprites. Does not include lighting.",
+            true
+        ],
+        "lightinglayer": [
+            "Enable Lighting",
+            "This will add a lighting layer onto the cat sprites. Does not include shading.",
+            true
+        ],
+        "shaderartisttoggle": [
+            "Shader Artist",
+            "This swaps the shader between Neon and Pink's work. By default, it is Pink's shader.",
+            false
+        ],
+        "vanillalineart": [
+            "Vanilla Lineart",
+            "Reverts the lineart to its vanilla setting.",
+            false
+        ],
+        "gore": [
+            "Allow mild gore and blood in patrol artwork",
+            "Mild gore and blood will be allowed in the artwork displayed alongside patrols.",
+            true
+        ],
+        "discord": [
+            "Enable Discord integration",
+            "Discord will show info about your Clan, including your Clan name",
+            false
+        ],
+        "check_for_updates": [
+            "Check for updates",
+            "Automatically checks for updates on startup",
+            false
+        ],
+        "show_changelog": [
+            "Display changelog on startup",
+            "Shows the changelog of the latest release on startup",
+            true
+        ],
+        "special_dates": [
+            "Allow special date events",
+            "Certain changes may be made to the game on special days such as April Fools",
+            true
+        ],
+        "random relation": [
+            "Randomize relationship values when creating Clan",
+            "Clan founder cats will start the game with established relationships.",
+            true
+        ],
+        "they them default": [
+            "Use they/them as default pronouns",
+            "If this setting is on new cats will generate with they/them pronouns, regardless of gender.",
+            false
+        ]
+    },
+    "..": "these are special. they do not have a display name or a tooltip",
+    "__other": {
+        "language": [
+            "english",
+            "spanish",
+            "german"
+        ],
+        "text size": [
+            "0",
+            "1",
+            "2"
+        ],
+        "fullscreen": [
+            false,
+            true
+        ]
+    }
+}

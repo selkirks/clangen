@@ -1,0 +1,365 @@
+{
+    "hail_focus_AJ": [
+        [
+            "focus",
+            "any",
+            "they_adult",
+            "they_brooding",
+            "min_platonic_20"
+        ],
+        [
+            "This Clan sure loves the sound of its own chatter, doesn't it? It's just a hail storm! What's the big deal?",
+            "These days, it seems like even the most inane mouse dung is enough to set everybody off.",
+            "That cloud up there looks kinda like a turtle. Is everybody gonna be talking about that, next?"
+        ]
+    ],
+    "hail_focus_AJ1": [
+        [
+            "focus",
+            "any",
+            "they_introspective",
+            "they_adult"
+        ],
+        [
+            "[t_c rolls a large sphere of hail beneath {PRONOUN/t_c/poss} paws, gazing thoughtfully at its movement.]",
+            "Incredible, how precisely formed these spheres are, how perfect and smooth ...",
+            "It truly makes you wonder about the presence of a higher power, doesn't it, y_c? Were these balls of hail created by design? What is their significance?",
+            "And, were they created with intention, then why would StarClan release them upon our camp to cause such devastation? Is it a form of divine punishment? An act of fate?",
+            "[You ask t_c if {PRONOUN/t_c/poss} paws are cold from rolling the ball of hail for so long.]",
+            "... Er, why, yes. I suppose they are."
+        ]
+    ],
+    "hail_focus_AJ2": [
+        [
+            "focus",
+            "any",
+            "they_cool",
+            "they_assertive",
+            "they_unabashed",
+            "they_silly",
+            "they_younger",
+            "min_dislike_5"
+        ],
+        [
+            "[A tiny pellet of hail strikes you from behind.]",
+            "What? Why are you looking at me? I didn't do anything.",
+            "[You turn around. Another hail pellet bounces off your rump.]",
+            "*Snicker*"
+        ]
+    ],
+    "hail_focus_AJ2.5": [
+        [
+            "focus",
+            "any",
+            "they_cool",
+            "they_assertive",
+            "they_unabashed",
+            "they_silly",
+            "they_sameage",
+            "dislike"
+        ],
+        [
+            "[A tiny pellet of hail strikes you from behind.]",
+            "What? Why are you looking at me? I didn't do anything.",
+            "[You turn around. Another hail pellet bounces off your rump.]",
+            "*Snicker*"
+        ]
+    ],
+    "hail_focus_AJ3": [
+        [
+            "focus",
+            "no_kit",
+            "they_stable",
+            "they_upstanding"
+        ],
+        [
+            "I wonder if we can make anything useful out of this hail storm ...",
+            "Maybe we could use some of the more sizeable pieces to roll branches from one side of camp to the other?",
+            "And the smaller ones could plug some of the holes in the dens! Or be toys for the kits!",
+            "[You ask t_c what's going to happen when the hail pellets melt?]",
+            "Oh, yeah, right. Melting. Forgot about that ...",
+            "Well, there's gotta be a solution for that as well, right? Maybe if we bury them deep enough in the ground and wait until leafbare, we could ... Uh ... Hmm ....",
+            "[t_c trails off into unintelligible muttering, seemingly talking to {PRONOUN/t_c/self} now more than to you.]"
+        ]
+    ],
+    "hail_focus_AJ4": [
+        [
+            "focus",
+            "no_kit",
+            "they_upstanding"
+        ],
+        [
+            "[t_c dutifully works to repair the nursery, weaving strands of brambles into the puncture holes caused by the hail, ears pinned back in focus.]",
+            "[Since the storm, it seems like {PRONOUN/t_c/subject} {VERB/t_c/haven't/hasn't} done much else!]"
+        ]
+    ],
+    "hail_focus_AJ5": [
+        [
+            "focus",
+            "no_kit",
+            "they_stable",
+            "they_neurotic",
+            "they_introspective",
+            "they_brooding"
+        ],
+        [
+            "[t_c stares apprehensively at the darkening skies.]",
+            "I hope it doesn't hail again ... Not after all the work we've done already."
+        ]
+    ],
+    "hail_focus_AJ6": [
+        [
+            "focus",
+            "no_kit",
+            "they_unabashed",
+            "they_silly"
+        ],
+        [
+            "StarClan, y_c, did you hear that hail last night? It was crazy! It sounded like all of the stars dropped out of the sky at once!",
+            "Say, maybe that's not a bad idea ... Just think about it. Have you <i>seen</i> a star since the storm? Like, even once?",
+            "Yeah, I know it's been cloudy, but still!"
+        ]
+    ],
+    "hail_focus_AJ7": [
+        [
+            "focus",
+            "no_kit",
+            "they_unabashed",
+            "they_silly"
+        ],
+        [
+            "Uh -- A little helth? I'm a bit thuck.",
+            "[You whirl around to find t_c, whose tongue is fused to a huge pellet of hail.]",
+            "Come on, you can't thay that I'm the <i>only</i> one in camp whoth wondered what it tathes like!",
+            "[Try as you might to pry the pellet off of t_c's face, it's no use. {PRONOUN/t_c/subject/CAP}'ll just have to wait until it melts.]",
+            "Hey, at leatht I'm thaying hydrated! Haha!"
+        ]
+    ],
+    "hail_focus_AJ8": [
+        [
+            "focus",
+            "no_kit",
+            "they_cool"
+        ],
+        [
+            "Tch. Stupid hail nearly made me jump out of my fur last night. Couldn't it have picked a better time to demolish camp than when I'm trying to get my much-needed beauty sleep?",
+            "Now, I'm gonna have to shift my afternoon nap up, just to fix my schedule ..."
+        ]
+    ],
+    "hail_focus_AJ9": [
+        [
+            "focus",
+            "you_adult",
+            "they_kitten"
+        ],
+        [
+            "[t_c and t_l bat a hail pellet back and forth, squealing with laughter.]"
+        ]
+    ],
+    "hail_focus_AJ10": [
+        [
+            "focus",
+            "you_adult",
+            "they_kitten",
+            "they_silly",
+            "they_unabashed",
+            "they_assertive"
+        ],
+        [
+            "[t_c tries and fails to balance atop a piece of hail, tiny paws scrabbling for balance.]",
+            "Wait, r_q! Just one more chance, please? I've almost got it!"
+        ]
+    ],
+    "hail_focus_AJ11": [
+        [
+            "focus",
+            "you_adult",
+            "they_kitten",
+            "they_assertive",
+            "they_upstanding"
+        ],
+        [
+            "[t_c heaves a giant ball of hail towards the nursery, {PRONOUN/t_c/poss} little pelt soaked through from contact.]",
+            "Here it is! The giantest piece of hail in all of c_nClan history! I'm the one who found it! It was all me!",
+            "[Just then, r_k rolls an even bigger ball of hail through the entrance of the nursery, chased out by r_q's chidings about catching a cold.]",
+            "Oh, come on!"
+        ]
+    ],
+    "hail_focus_AJ12": [
+        [
+            "focus",
+            "no_kit",
+            "brooding",
+            "max_platonic_50"
+        ],
+        [
+            "[t_c tackles you out of nowhere, slamming you into the ground and smothering you with {PRONOUN/t_c/poss} fur.]",
+            "[Just as you're about to demand what gives, a tree branch bends overhead, sending hundreds of stone-like hail pellets spiraling down where you were just standing.]",
+            "... You're welcome."
+        ]
+    ],
+    "hail_focus_AJ13": [
+        [
+            "focus",
+            "no_kit",
+            "brooding"
+        ],
+        [
+            "[t_c is brooding alone in {PRONOUN/t_c/poss} corner of camp, as always.]",
+            "[On your way to fetch more fresh moss, you remind {PRONOUN/t_c/object} that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} supposed to be sheltering and should really only leave {PRONOUN/t_c/poss} den in an emergency.]",
+            "Tch, what's going to happen? A little hail is gonna kill me?",
+            "We're supposed to be warriors. Now, everyone's suddenly cowering like kits over a couple of pebbles."
+        ]
+    ],
+    "hail_focus_AJ14": [
+        [
+            "focus",
+            "no_kit",
+            "they_warrior",
+            "silly"
+        ],
+        [
+            "Oh, hey, y_c! I was just thinking of ways to help everyone pass time in the warrior's den until this whole storm thing is over.",
+            "Maybe we could play a game of moss-ball, like when all of us were kits? That could help lift everyone's spirits!",
+            "Though, on second thought, it just might give d_n a heart attack if any more damage is done to the dens, especially when there hasn't even been another hailstorm."
+        ]
+    ],
+    "hail_focus_AJ15": [
+        [
+            "focus",
+            "no_kit",
+            "they_apprentice",
+            "cool",
+            "assertive",
+            "unabashed"
+        ],
+        [
+            "Ugh, this hail is the worst! We have, like, triple our normal apprentice's duties!",
+            "None of the warriors had to go through this during their apprenticeships ... It really isn't fair!",
+            "I swear, for all this extra trouble, tm_n better take it easy on me once actual training starts again ... If I have to go back to doing drills after staying up all night fixing the nursery, I'm gonna lose it!"
+        ]
+    ],
+    "hail_focus_AJ16": [
+        [
+            "focus",
+            "no_kit",
+            "upstanding"
+        ],
+        [
+            "I swear, sometimes it's like I'm the only one in this Clan who takes anything seriously!",
+            "I took it upon myself to redo the leader's den and half of the nursery, and was anyone there to help me? No!",
+            "[You point out to t_c that r_w offered to assist {PRONOUN/t_c/object}, but {PRONOUN/t_c/subject} freaked out over {PRONOUN/r_w/poss} 'imprecise weaving technique' and kicked them off the job.]",
+            "... Okay, point taken, but I was the only one who knew how to do it the <i>right</i> way!"
+        ]
+    ],
+    "hail_focus_AJ17": [
+        [
+            "focus",
+            "kitten",
+            "they_kitten",
+            "upstanding"
+        ],
+        [
+            "I really wanna help the warriors fix the nursery, but r_q says I'm not allowed, cuz it's too dangerous.",
+            "Ohhhh, what do I do, y_c? I need to work hard to show my Clanmates I'm smart, but I also don't wanna break a rule!",
+            "[t_c sits in {PRONOUN/t_c/poss} nest, seemingly paralyzed by the choice.]"
+        ]
+    ],
+    "hail_focus_AJ18": [
+        [
+            "focus",
+            "no_kit",
+            "clan_has_kits",
+            "brooding",
+            "they_warrior"
+        ],
+        [
+            "[The kits have temporarily taken over the warrior's den while the nursery is being repaired.]",
+            "[t_c sinks {PRONOUN/t_c/poss} claws into the moss of {PRONOUN/t_c/poss} nest, trying desperately to hold it together as the kits use {PRONOUN/t_c/poss} back as a temporary climbing gym.]",
+            "Any shot d_n would let me take my chances sleeping outside tonight?"
+        ]
+    ],
+    "hailstorm_focus_J1": [
+        [
+            "focus",
+            "they_df",
+            "you_sc",
+            "no_kit"
+        ],
+        [
+            "[You catch a glimpse of t_c through the bramble border and ask boldly if {PRONOUN/t_c/subject} had anything to do with the harsh storm that just pummelled the Clan.]",
+            "[t_c snickers, entirely unintimidated by your accusation.]",
+            "Hehe, what, the hail?",
+            "No, no, I would never be so mean! Maybe you guys should be doing a better job protecting them instead of pointing paws, huh?"
+        ]
+    ],
+    "hailstorm_focus_J2": [
+        [
+            "focus",
+            "they_queen",
+            "clan_has_kits",
+            "you_adult",
+            "min_platonic_20"
+        ],
+        [
+            "Ugh, hey, y_c.",
+            "Hm? Oh, yeah, just tired. The kits have been running around all day, trying to help clean up after the storm, getting in the way and tripping up warriors.",
+            "I'm sure you've noticed.",
+            "I challenged them all to see who could make the biggest hail pile, though, and that seems to have distracted them.",
+            "[You and t_c glance backwards towards the nursery, where the kits are scrambling to collect as many hailstones as possible to push into their pile.]",
+            "I think r_k is winning!"
+        ]
+    ],
+    "hailstorm_focus_J3": [
+        [
+            "focus",
+            "they_medicinecat",
+            "they_medicine_cat_apprentice",
+            "introspective",
+            "stable",
+            "no_kit"
+        ],
+        [
+            "[As t_c does {PRONOUN/t_c/poss} best to patch up the hail damage on the medicine den, you ask how {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
+            "Hm? Oh, fine, fine. Just, you know, a bit annoyed at all of this.",
+            "I guess I'm just glad the hail didn't injure anycat too badly.",
+            "[You tell t_c that, actually, a pellet managed to hit you in the paw and it's feeling a bit sore.]",
+            "What?! Oh, y_c.",
+            "Get in the den. I'll look at it in a moment."
+        ]
+    ],
+    "hailstorm_kitten_H1~1": [
+        [
+            "focus",
+            "they_kitten",
+            "they_app",
+            "you_adult",
+            "you_app",
+            "you_older",
+            "clan_has_kits"
+        ],
+        [
+            "Next time, I'm going to be prepared! I've been practicing dodging it!",
+            "[t_c starts to show you how {PRONOUN/t_c/subject} would 'dodge' the balls of ice, jumping from side to side.]",
+            "See? See? Look, I--",
+            "[t_c proceeds to trip over {PRONOUN/t_c/poss} own paws and tumbles, squeaking and giggling.]"
+        ]
+    ],
+    "hailstorm_kitten_H1~2": [
+        [
+            "focus",
+            "they_kitten",
+            "they_app",
+            "you_adult",
+            "you_app",
+            "you_older",
+            "clan_has_kits",
+            "connected"
+        ],
+        [
+            "[You stop to peek over a group of warriors shoulders, catching sight of t_c jumping side to side, teaching other kittens on how to 'dodge' the balls of ice if the storm ever happens again.]",
+            "Like this, like this! Then, if the ice ever does rain again, we can outsmart it and dodge! Just like r_w says we should do if something is coming after us.",
+            "[The kittens attempt to follow t_c's movements, yet they trip over each other in a heep of giggles. At least the kittens are entertained.]"
+        ]
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "default_pronouns": [
+    {
+      "subject": "they",
+      "object": "them",
+      "poss": "their",
+      "inposs": "theirs",
+      "self": "themself",
+      "conju": 1,
+      "parent": "parent",
+      "sibling": "sibling"
+    },
+    {
+      "subject": "she",
+      "object": "her",
+      "poss": "her",
+      "inposs": "hers",
+      "self": "herself",
+      "conju": 2,
+      "parent": "mother",
+      "sibling": "sister"
+    },
+    {
+      "subject": "he",
+      "object": "him",
+      "poss": "his",
+      "inposs": "his",
+      "self": "himself",
+      "conju": 2,
+      "parent": "father",
+      "sibling": "brother"
+    },
+	{
+		"subject": "it",
+		"object": "it",
+		"poss": "its",
+		"inposs": "its",
+		"self": "itself",
+		"conju": 2,
+		"parent": "parent",
+		"sibling": "sibling"
+	}
+  ]
+}

@@ -1,0 +1,176 @@
+{
+    "intros": {
+        "you_single_med": [
+            [
+                "[You make the long trek to the moonplace. The stars are shining brightly today.]"
+            ],
+            [
+                "[It's the half-moon and it's time for the medicine cats to gather.]"
+            ]
+        ],
+        "you_app_mentor": [
+            [
+                "[You follow m_n's lead as you make your way to the moonplace.]"
+            ]
+        ],
+        "you_app_mentorless": [
+            [
+                "[You follow the path that your ancestors have shown you until you reach the moonplace.]"
+            ]
+        ],
+        "two_meds": [
+            [
+                "[You and r_m represent your Clan at the half-moon gathering.]"
+            ]
+        ],
+        "multi_meds": [
+            [
+                "[You and the other medicine cats head to the moonplace, the stars shining brightly above you.]"
+            ]
+        ]
+    },
+    "med_cat_greetings": {
+        "general_greeting_one_med": [
+            "[o_c_m from o_cn greets you when you arrive.]"
+        ],
+        "general_greeting_multi_med": [
+            "[o_c_m from o_cn greet you when you arrive.]"
+        ],
+        "general_greeting_war_one_med": [
+            "[o_c_m from o_cn doesn't acknowledge you when you arrive.]"
+        ],
+        "general_greeting_war_multi_med": [
+            "[o_c_m from o_cn don't acknowledge you when you arrive.]"
+        ],
+        "general_greeting_gracious_one_med": [
+            "[o_c_m from o_cn smiles at you when you arrive.]"
+        ],
+        "general_greeting_gracious_multi_med": [
+            "[o_c_m from o_cn smile at you when you arrive.]"
+        ],
+        "general_greeting_mellow_one_med": [
+            "[o_c_m from o_cn nods in greeting when you arrive.]"
+        ],
+        "general_greeting_mellow_multi_med": [
+            "[o_c_m from o_cn nod in greeting when you arrive.]"
+        ],
+        "general_greeting_logical_one_med": [
+            "[o_c_m from o_cn quizzes you about herbs as soon as you arrive.]"
+        ],
+        "general_greeting_logical_multi_med": [
+            "[o_c_m from o_cn quiz you about herbs as soon as you arrive.]"
+        ],
+        "general_greeting_amiable_one_med": [
+            "[o_c_m from o_cn starts up a conversation as soon as you arrive.]"
+        ],
+        "general_greeting_amiable_multi_med": [
+            "[o_c_m from o_cn start up a conversation as soon as you arrive.]"
+        ],
+        "general_greeting_stoic_one_med": [
+            "[o_c_m from o_cn dips their head in greeting.]"
+        ],
+        "general_greeting_stoic_multi_med": [
+            "[o_c_m from o_cn dip their head in greeting.]"
+        ],
+        "general_greeting_wary_one_med": [
+            "[o_c_m from o_cn watches you carefully as you approach.]"
+        ],
+        "general_greeting_wary_multi_med": [
+            "[o_c_m from o_cn watch you carefully as you approach.]"
+        ],
+        "general_greeting_cunning_one_med": [
+            "[o_c_m from o_cn gives you a sly smile as you arrive.]"
+        ],
+        "general_greeting_cunning_multi_med": [
+            "[o_c_m from o_cn give you a sly smile as you arrive.]"
+        ],
+        "general_greeting_proud_one_med": [
+            "[o_c_m from o_cn holds their head high as they greet you.]"
+        ],
+        "general_greeting_proud_multi_med": [
+            "[o_c_m from o_cn hold their heads high as they greet you.]"
+        ],
+        "general_greeting_bloodthirsty_one_med": [
+            "[o_c_m from o_cn has a fierce glint in their eyes as they meet you.]"
+        ],
+        "general_greeting_bloodthirsty_multi_med": [
+            "[o_c_m from o_cn have a fierce glint in their eyes as they meet you.]"
+        ],
+        "general_greeting_friendly_one_med": [
+            "[o_c_m from o_cn greets you warmly as you arrive.]"
+        ],
+        "general_greeting_friendly_multi_med": [
+            "[o_c_m from o_cn greet you warmly as you arrive.]"
+        ],
+        "general_greeting_unfriendly_one_med": [
+            "[o_c_m from o_cn gives you a cold look as you arrive.]"
+        ],
+        "general_greeting_unfriendly_multi_med": [
+            "[o_c_m from o_cn give you a cold look as you arrive.]"
+        ]
+    },
+    "moonplace": {
+        "starclan_general": [
+            [
+                "[You and the other medicine cats settle around the gathering place. You open your eyes to find yourself in StarClan's hunting grounds.]",
+                "Welcome, y_c.",
+                "I have a message for you."
+            ]
+        ],
+        "starclan_no_message": [
+            [
+                "[You and the other medicine cats settle around the gathering place.]",
+                "[However, StarClan is silent tonight. It seems like there is no message for you.]"
+            ]
+        ]
+    },
+    "apprentice_halfmoon": [
+        [
+            "[It's tradition for apprentices to visit the Moonplace once during their apprenticeship, even if they are not a medicine cat apprentice.]",
+            "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+            "[Carefully, you touch your nose to the sacred spot. A StarClan cat greets you.]",
+            "Hello, young y_c. You've come far to visit us.",
+            "Let me give you some advice.",
+            "You walk in the footsteps of many great warriors before you, yet your path is your own to shape.",
+            "Trust in your heart, y_c, even when the night is dark.",
+            "Even StarClan cannot foresee every twist in your path."
+        ],
+        [
+            "[Visiting the Moonplace is a rite of passage for all apprentices, regardless of their destined path within the Clan.]",
+            "[You decide to make the journey this moon, treading the path countless medicine cats and leaders have worn smooth before you.]",
+            "[Carefully, you gently press your nose to the sacred spot.]",
+            "Greetings, brave apprentice. Allow me to share a piece of wisdom with you.",
+            "In your eyes, I see the fire of curiosity burning. Let it fuel your journey, but be wary, for not all knowledge leads to wisdom.",
+            "Listen to the wind, watch the sky, and learn the language of the forest. It will speak to you, if only you listen."
+        ],
+        [
+            "[Every apprentice must undertake the revered journey to the Moonplace as part of their training.]",
+            "[You decide to make the journey this moon, treading the path countless medicine cats and leaders have worn smooth before you.]",
+            "[Carefully, you touch your nose to the sacred spot.]",
+            "It is rare for one so young to visit us here in the stars.",
+            "Your journey has only just begun, yet already you show the resilience of the oak.",
+            "Let me offer you some advice.",
+            "Strength is not just in standing tall but in bending when the storm comes, so you do not break."
+        ],
+        [
+            "[All apprentices are expected to make the solemn journey to the Moonplace, honoring an ancient custom.]",
+            "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+            "[Carefully, you touch your nose to the sacred spot.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/gaze/gazes} at you, and you shiver. It's almost like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} staring through your soul.]",
+            "[Finally, {PRONOUN/t_c/subject} {VERB/t_c/speak/speaks}.]",
+            "Welcome, young apprentice. I have some guidance to offer.",
+            "Your path will be filled with challenges, but within you lies the power to overcome them.",
+            "Learn from the water -- the way it flows around obstacles, adapts to its surroundings, and finds its way even through the smallest of cracks.",
+            "Be like the water, and you'll live a greater life."
+        ],
+        [
+            "[All apprentices are called to visit the Moonplace, fulfilling a time-honored rite of passage.]",
+            "[You decide to make the journey this moon, following the well-worn path walked by several generations of medicine cats and leaders.]",
+            "[Carefully, you touch your nose to the sacred spot.]",
+            "Ah, an apprentice! It's nice to meet you, y_c.",
+            "While you're here, let me offer some advice.",
+            "Bravery is not the only virtue of a strong cat. Compassion, understanding, and respect for all life are just as important.",
+            "Carry these values with you, for they are the true marks of greatness."
+        ]
+    ]
+}

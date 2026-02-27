@@ -1,0 +1,1167 @@
+{
+    "queen_1": [
+        [
+            "they_queen",
+            "they_queen's_apprentice",
+            "you_any",
+            "no_kit",
+            "trust",
+            "introspective",
+            "stable",
+            "sweet",
+            "you_blind"
+        ],
+        [
+            "Being a queen... it's a role filled with both joy and heartache. Every kit that's born, I feel an overwhelming surge of love and protectiveness. I watch them take their first breath, open their eyes, and explore the world.",
+            "Yet, with that love comes immense responsibility. I am not just nurturing the next generation of warriors, but the very future of our Clan. Their every scrape, every cry, keeps me awake at night. Have I done enough?",
+            "Am I teaching them the right lessons?",
+            "The nursery can sometimes feel like a bubble, separated from the rest of the Clan. But every whisper, every decision made by the leaders, affects us deeply. For one day, these kits will face those very challenges outside.",
+            "Seeing them grow, becoming apprentices, and then warriors, fills my heart with pride. But it's also tinged with fear. Will they remember what they learned in the nursery? Will the world be kind to them?",
+            "It's a life of countless emotions, challenges, and rewards. But when I see them succeed, when I see them find their place in the Clan, all the sleepless nights and worries fade away.",
+            "For I know, I've played a part in shaping the Clan's future, one kit at a time."
+        ]
+    ],
+    "assertivewarriorapp_comfort": [
+        [
+            "no_kit",
+            "they_queen",
+            "they_queen's_apprentice",
+            "assertive",
+            "comfort",
+            "platonic_love",
+            "clan_has_kits",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Huh? Oh, nothing's wrong ...",
+            "Just ... had a bad day, is all ...",
+            "*Sigh* y_c, have you ever felt like you're not enough for anyone?",
+            "Usually, when it comes to making a decision, I never hesitate. Whatever the obstacle, I'll run headfirst into it, no questions asked.",
+            "But, today, in the nursery, I was playing with one of the kits, and they accidentally got hurt ...",
+            "I just feel like such a failure. A liability. I can't help the way I am, but what if everyone's better off without me?",
+            "[You offer t_c words of reassurance, but {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} troubled beyond comforting.]",
+            "[Still, you sit with t_c through the night, hoping to stabilize {PRONOUN/t_c/object} through whatever storm {PRONOUN/t_c/subject} might be weathering right now.]"
+        ]
+    ],
+    "queen_2": [
+        [
+            "you_kitten",
+            "they_queen",
+            "they_queen's_apprentice",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Come here, little one. Your fur is so spiky!",
+            "Hey! Don't run away from me!"
+        ]
+    ],
+    "assertive_medapp2": [
+        [
+            "you_medicine_cat_apprentice",
+            "they_queen",
+            "they_queen's_apprentice",
+            "platonic_like",
+            "romantic_like",
+            "assertive",
+            "sweet",
+            "stable",
+            "cool",
+            "comfort",
+            "platonic_like",
+            "unabashed",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey, y_c ... do you ever get lonely sleeping here in the medicine den all by yourself? I know I would ...",
+            "Tell you what, if you ever get scared or cold in the night, just come over to my den. You can sleep in my nest, with me. Okay?"
+        ]
+    ],
+    "broodingapp_toqueenapp": [
+        [
+            "no_kit",
+            "they_queen",
+            "they_queen's_apprentice",
+            "brooding",
+            "neutral",
+            "you_any",
+            "clan_has_kits",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[You notice t_c playing with some kits, a rare smile on {PRONOUN/t_c/poss} face.]",
+            "[{PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to notice your gaze, pausing and accidentally stumbling over a kit.]",
+            "[Nodding, you look away. It's good to see {PRONOUN/t_c/object} having fun every once in a while.]"
+        ]
+    ],
+    "brooding_queen": [
+        [
+            "no_kit",
+            "brooding",
+            "they_queen's_apprentice",
+            "platonic_love",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "*Sigh*",
+            "y_c ... Do you think I'm not ... 'nice' enough to be a queen?",
+            "Everyone tells me that queens are supposed to be all soft and loving ...",
+            "I just like keeping kits safe."
+        ]
+    ],
+    "introspective_queenapp_to_queen": [
+        [
+            "you_queen",
+            "they_queen's_apprentice",
+            "platonic_like",
+            "introspective",
+            "you_blind"
+        ],
+        [
+            "Oh morning, y_c. Is there anything you need me to get you while I'm up?",
+            "You're good, oh that's good- Huh? I seem fidget-y? No, I'm absolutely fine!",
+            "Why am I running all over the place? It's uh... Well I want to help you. You're amazing, you know that, right?",
+            "You're the reason I decided to train to become a queen. You were always there for me when I was a kit. Always making sure I was okay, and had someone to talk to.",
+            "You made me want to help other kits, just like you. You genuinely made a difference to me. I could never see myself becoming a warrior now.",
+            "Okay. Now is there anything I can get you?"
+        ]
+    ],
+    "introspective_queenapp": [
+        [
+            "no_kit",
+            "they_queen's_apprentice",
+            "you_any",
+            "non-related",
+            "neutral",
+            "introspective"
+        ],
+        [
+            "y_c? Oh hello. Are you lost?",
+            "You're in the nursery. Cats don't generally go out of their way to come here.",
+            "Huh? You've come to see me? Oh that's lovely, thank you.",
+            "It makes me happy that you've come to see me. I don't... often get to see cats who aren't kits, you know? Or tm_n.",
+            "I love being a queen, it's the reason I chose to train to be one permanently, but it does make you feel a little...",
+            "Disconnected. You know?",
+            "Thank you for coming out of your way. Want to play with the kits? They love seeing different faces!"
+        ]
+    ],
+    "introspective_queenapp_1": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "no_kit",
+            "clan_has_kits",
+            "introspective",
+            "you_blind"
+        ],
+        [
+            "Oh, y_c! Quick, grab them!",
+            "[r_k rushes towards you, away from the nursery. You quickly grab {PRONOUN/r_k/object} by the scruff to stop {PRONOUN/r_k/object} from escaping any further.]",
+            "Oh, StarClan's grace. Thank you, y_c. I owe you my next freshkill for that. I had my eyes off r_k for a second and {PRONOUN/r_k/subject} made a wild rush out the nursery!",
+            "I promise I won't make a habit out of this. Have a nice rest of your day.",
+            "[t_c gently picks up the kitten and walks back into the nursery.]"
+        ]
+    ],
+    "introspective_queenapp_2": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "they_queen",
+            "no_kit",
+            "unabashed",
+            "clan_has_kits",
+            "introspective",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hm? Oh hello, y_c. What's wrong?",
+            "Why am I out of the nursery? You know I'm not stuck in there, right? I can actually leave.",
+            "I needed a break from all the action in there. There's lots going on, I needed a breather.",
+            "Getting irritated at all the noise, and then snapping at the kits seriously doesn't seem like a good idea, does it? It's not their fault that they're excited.",
+            "So out here, I am. It's much much quieter, since most are out of camp at this time."
+        ]
+    ],
+    "introspective_queenapp_3": [
+        [
+            "you_any",
+            "no_kit",
+            "they_queen's_apprentice",
+            "clan_has_kits",
+            "introspective"
+        ],
+        [
+            "[You hear a soft hum coming from the nursery.]",
+            "... and pollen will spring from wilted flowers, and the day will rise again...",
+            "[You look into the medicine den, watching t_c singing a lullaby to the sleeping kits.]",
+            "y_c? It's nice to see you. Sorry, the kits wanted to be sung to, and tm_n suggested that I get some practice in. There'll be lots of future kits wanting songs.",
+            "You can stay to listen if you want. But don't feel like you're forced to.",
+            "[t_c returns to humming the same tune.]"
+        ]
+    ],
+    "introspective_queenapp_4": [
+        [
+            "you_any",
+            "no_kit",
+            "they_queen's_apprentice",
+            "silly",
+            "clan_has_kits",
+            "introspective",
+            "they_blind"
+        ],
+        [
+            "Oh no... I've been defeated!",
+            "[t_c is playing dead on the floor, covered in kittens. Seems like {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} playing along with the kits game.]",
+            "I will be back! StarClan cannot hold my spirit forever! I will take over the Clans, mark my words!",
+            "[You decide to leave t_c to it. {PRONOUN/t_c/subject/CAP} {VERB/t_c/look/looks} really busy being dead.]"
+        ]
+    ],
+    "introspective_queenapp_5": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "they_queen",
+            "clan_has_kits",
+            "stable",
+            "introspective"
+        ],
+        [
+            "It'll be okay. I promise.",
+            "[t_c is talking to a upset kit curled up against {PRONOUN/t_c/poss} side.]",
+            "You don't need to try and force yourself to be something you're not. I get tired of talking to others too.",
+            "You're still a wonderful part of c_nClan. Even if you need space sometimes... You'll always have cats who want to be around you, and see you.",
+            "[You notice t_c is looking at you. {PRONOUN/t_c/subject/CAP} {VERB/t_c/smile/smiles} pleasantly, then returns {PRONOUN/t_c/poss} full attention to the kit.]",
+            "You'll never be forgotten, no matter what path your paws will lead you."
+        ]
+    ],
+    "assertive_elder": [
+        [
+            "you_any",
+            "assertive",
+            "they_queen's_apprentice",
+            "neutral",
+            "platonic_like",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c, can you believe it? I actually got to advise a real queen today! Eeee, so cool!!!",
+            "I mean, uh, definitely not cool. I'm definitely very serious and respectful towards my sacred duty to c_nClan.",
+            "... Is tm_n still there?"
+        ]
+    ],
+    "assertive_elder_2": [
+        [
+            "you_elder",
+            "they_queen's_apprentice",
+            "assertive",
+            "platonic_like",
+            "clan_has_kits",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Er, sorry, y_c. I can't chat right now ...",
+            "tm_n really needs me to give the kits a lesson right now, and I kinda actually have to focus.",
+            "I'll come and find you as soon as I'm free, though, okay?"
+        ]
+    ],
+    "assertive_elder_4": [
+        [
+            "you_queen",
+            "assertive",
+            "unabashed",
+            "they_queen's_apprentice",
+            "from_your_apprentice",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Ugh, do I really have to hold all these dumb rule-teaching sessions all the time?",
+            "It's so stuffy and boring ... It's like we're brainwashing kits into thinking the same way we do!",
+            "What if, instead of holding lessons, we organized a gauntlet of games to help teach the kits Warrior Code! Or - Or maybe we could have, like, interactive storytelling sessions, where we ask the kits what they think is right and wrong?",
+            "I dunno! But anything beats sitting around and memorizing!"
+        ]
+    ],
+    "assertive_queensapp": [
+        [
+            "you_queen",
+            "they_queen's_apprentice",
+            "assertive",
+            "neurotic",
+            "from_your_apprentice",
+            "clan_has_kits"
+        ],
+        [
+            "r_k's crying again. {PRONOUN/r_k/subject/CAP}{VERB/r_k/'ve/'s} been having such a hard time lately ...",
+            "Why haven't I comforted them?",
+            "I dunno, I was waiting for you.",
+            "I ... guess I was worried I'd mess it up somehow.",
+            "You want me to try? Uh, are you positive? I'm pretty good at the 'playing' and 'telling stories' parts. This, the emotional part ... uh, not so much, hehe.",
+            "But, if you insist.",
+            "[t_c goes across the nursery and sits near wailing r_k. {PRONOUN/t_c/subject/CAP} start off stiff and awkward, attempting to crack jokes to play off the mood, but slowly, {PRONOUN/t_c/poss} cadence grows more natural, more confident.]",
+            "[{PRONOUN/t_c/subject/CAP} tentatively lay a tail across the kit's shoulders. To your surprise, r_k buries {PRONOUN/r_k/self} in t_c's fur with a purr.]",
+            "[t_c glances back to you with an elated look.]",
+            "[{PRONOUN/t_c/subject/CAP} don't say anything, but {PRONOUN/t_c/poss} eyes tell you all you need to know.]"
+        ]
+    ],
+    "assertive_queensapp_2": [
+        [
+            "you_queen",
+            "they_queen's_apprentice",
+            "assertive",
+            "unabashed",
+            "clan_has_kits",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Happy to report everything's been going good today, y_c!",
+            "I did some exercises with an expecting queen, I got the kits down for a nap, and - Oh, fox-dung! I completely forgot I have training with r_m today!!!",
+            "[t_c rushes out of the nursery, leaving a trail of dust behind {PRONOUN/t_c/object}. You hope r_m isn't too upset with {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "assertive_queensapp_3": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "clan_has_kits",
+            "unlawful",
+            "silly",
+            "assertive",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You want me to stop roughhousing with the kits?",
+            "Psh, c'mon, y_c, loosen up! You worry too much!",
+            "These are the fearsome future warriors of c_nClan. {PRONOUN/t_c/subject/CAP} can withstand a little -",
+            "[One of the kits smacks facefirst into the nursery wall and starts crying.]",
+            "... Okay, I swear that's the first time that's happened."
+        ]
+    ],
+    "assertive_queensapp_4": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "assertive",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey! I'll race ya to the other side of the nursery!",
+            "[You and t_c line up at the wall, and at the signal, you break into a full sprint! t_c gets a head start and you're worried you won't make it ... Until, miraculously, you start gaining on {PRONOUN/t_c/object}!]",
+            "Ahh, you beat me!!",
+            "Hehe, you'll be a great warrior yet!"
+        ]
+    ],
+    "assertive_mediatorapp": [
+        [
+            "you_mediator_apprentice",
+            "you_mediator",
+            "they_queen's_apprentice",
+            "they_apprentice",
+            "they_medicine_cat_apprentice",
+            "they_kitten",
+            "assertive",
+            "upstanding"
+        ],
+        [
+            "Is it really true that you're allowed to just ... travel between the Clans as you please?",
+            "Whoa! That's so cool!!! I've always wanted to explore the other territories, but I've never been allowed.",
+            "Is it true that o_cClan cats can swim like fish? Or that their territory is full of snakes?",
+            "[You and t_c have a long conversation about the other Clans. With each detail you share, {PRONOUN/t_c/poss} eyes grow bigger and bigger.]"
+        ]
+    ],
+    "assertive_queensapp_6": [
+        [
+            "you_queen",
+            "clan_has_kits",
+            "they_queen's_apprentice",
+            "assertive",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c is barreling through the nursery, pretending to be a monster in one of the kits' games.]",
+            "Raaahhh! I'm gonna get you!",
+            "[Before {PRONOUN/t_c/subject} reach the kit, you stop t_c in {PRONOUN/t_c/poss} tracks and gently explain to t_c how it's generally better to let the kits win.]",
+            "Oh ... Wait, does this mean all those battles I won against the warriors in the nursery were fake all along?",
+            "I, uh ... I have some thinking to do."
+        ]
+    ],
+    "assertive_queensapp_7": [
+        [
+            "you_queen",
+            "they_queen's_apprentice",
+            "assertive",
+            "clan_has_kits",
+            "sweet",
+            "upstanding",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey! I just finished giving the kits their lesson for the day!",
+            "This one was about safety around brambles ... I came up with it myself! Did I do good?"
+        ]
+    ],
+    "assertive_queensapp_8": [
+        [
+            "clan_has_kits",
+            "they_queen's_apprentice",
+            "you_queen",
+            "you_queen's_apprentice",
+            "sweet",
+            "silly",
+            "assertive",
+            "unabashed",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "It's so quiet while the kits are sleeping ...",
+            "I almost wanna wake them up again! The nursery doesn't feel alive without them!",
+            "[You truly cannot fathom how t_c never seems to run out of energy.]"
+        ]
+    ],
+    "assertive_queensapp_9": [
+        [
+            "you_queen",
+            "you_queen's_apprentice",
+            "they_queen's_apprentice",
+            "they_queen",
+            "clan_has_kits",
+            "assertive",
+            "sweet",
+            "silly",
+            "you_blind"
+        ],
+        [
+            "r_w was in here earlier asking about kits ... I didn't know what to tell {PRONOUN/r_w/object}. Sorta weird that {PRONOUN/r_w/subject} {VERB/r_w/were/was} asking, no?",
+            "What do you think it means?",
+            "Ooh! Maybe {PRONOUN/r_w/subject}{VERB/r_w/'re/'s} in a forbidden relationship! A star-crossed love that can never be, with a rugged yet good-looking rogue who would do anything to protect {PRONOUN/r_w/object}!",
+            "*Sigh* ... Sorry, what was I talking about?"
+        ]
+    ],
+    "assertive_queensapp_10": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "assertive",
+            "sweet",
+            "platonic_like"
+        ],
+        [
+            "y_c! I found something I think you're really gonna love!",
+            "[t_c drops a perfectly smooth, shiny pebble at your paws.]",
+            "Pretty, huh? Plus, it's perfect to play with! No sharp corners, see, so you can't get hurt.",
+            "Come find me later, and maybe we can play a game with it!"
+        ]
+    ],
+    "assertive_queensapp1": [
+        [
+            "no_kit",
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_any",
+            "silly",
+            "assertive",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[As you watch t_c move around the nursery, it's easy to tell why {PRONOUN/t_c/subject} chose to become a queen.]",
+            "[{PRONOUN/t_c/subject/CAP} have so much energy, it's almost like t_c is still a kit {PRONOUN/t_c/self}!]"
+        ]
+    ],
+    "assertive_queensapp3": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "they_queen",
+            "assertive",
+            "cool",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey, guess what time it is?",
+            "... Do you reeeaally wanna know?",
+            "Do you REALLY, REALLY, REALLY wanna know?!",
+            "... It's time to take the herbs r_m gave you for your tummy! Yaaaayyy!",
+            "[Grinning, t_c pushes the herbs towards you, and you find yourself feeling a little tricked.]"
+        ]
+    ],
+    "assertive_queensapp4": [
+        [
+            "no_kit",
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_any",
+            "assertive",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c is currently being used as a climbing rock by all the kits in the nursery.]",
+            "Oh, hey, y_c! How's it - ACK! Hey, not the eyes, not the eyes!",
+            "[You ask if you should maybe come back another time?]",
+            "Oh, nah. This is nothing! Just wait until the hunting patrol gets back - that's when it gets really crazy around here!",
+            "So, is there something you need?"
+        ]
+    ],
+    "assertive_queensapp4_2": [
+        [
+            "you_queen",
+            "you_queen's_apprentice",
+            "they_queen's_apprentice",
+            "they_queen",
+            "assertive",
+            "clan_has_kits"
+        ],
+        [
+            "Shh - Not too loud! The kits are sleeping.",
+            "Getting them down was such a nightmare ... Oh, but they're so cute, though.",
+            "Seeing them all curled up together like that ... All the headaches and pain suddenly seem worth it, don'tcha think?"
+        ]
+    ],
+    "assertive_queensapp5": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "they_queen",
+            "assertive",
+            "cool",
+            "unabashed",
+            "strange",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Alright, alright, settle down! Time for a nap everybody, playtime's over!",
+            "That means you, too, y_c, no exceptions. You don't want Quietkit to get you, do you?",
+            "Who's Quietkit? Well, it's an interesting story ...",
+            "Once upon a time, there was a young kit named Quietkit who always stayed up past her bedtime. She was so tired that, one day, she fell asleep on her paws, and fell into a hole so deep, it went straight into the Dark Forest!",
+            "Now, her spirit haunts the nursery, waiting for more disobedient kits she can take down with her ...",
+            "Now, do you wanna be Quietkit's next playmate? Or do you wanna put the moss-ball down and get in your nest?"
+        ]
+    ],
+    "queens_app_general_newborn": [
+        [
+            "newborn",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet",
+            "stable",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hi there, sweet kit. You're so precious."
+        ]
+    ],
+    "upstanding_queenapp": [
+        [
+            "upstanding",
+            "clan_has_kits",
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_any",
+            "no_kit"
+        ],
+        [
+            "Oh, hey there y_c! What are you doing up this early?",
+            "Hm. I guess that camp is pretty nice when you have it all to yourself. As for me, I've been a little busy making a few things for the kits.",
+            "[t_c nodded to a pile of several carefully crafted playthings. Some are made out of feathers and twigs, others out of moss and leaves.]",
+            "Isn't it great? Sure, it was pretty hard to put those together, and yeah, it might have taken me all night, but it'll be so worth it once I see the looks on their faces!"
+        ]
+    ],
+    "upstanding_queenapp1": [
+        [
+            "upstanding",
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_kitten",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey! C'mere you little furball! What did I tell you about leaving the nursery at this hour?",
+            "Ah ah, no buts! Rules are rules, and those rules say you are going straight back to the nursery!"
+        ]
+    ],
+    "upstanding_queenapp2": [
+        [
+            "upstanding",
+            "they_queen's_apprentice",
+            "you_kitten",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh hey there y_c, didn't think I'd find you in here all by yourself. How about you go out into the clearing and play? There's plenty of space out there!",
+            "Just don't feel like it huh? Well, How about I tell you a story instead?",
+            "[t_c begins a long and detailed story about how the Warrior Code was created, and why it applies to all Clans across the territories.]",
+            "[{PRONOUN/t_c/subject/CAP} trail off about halfway through and watch as you roll around on the nursery floor with a ball of moss clutched between your paws]",
+            "... are you even listening to me right now?"
+        ]
+    ],
+    "sweet_queenapp_1": [
+        [
+            "newborn",
+            "they_queen's_apprentice",
+            "sweet",
+            "you_blind"
+        ],
+        [
+            "Why hello there, y_c!! Welcome to the world!! I can't wait to see you become the best warrior you can.",
+            "Or, possibly, a different role! Maybe, one day, I'll be your mentor here in the nursery."
+        ]
+    ],
+    "sweet_queenapp_2": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hello y_c! How are you today? Did you go to bed at a good hour last night?",
+            "Come on, let's go get some breakfast while you tell me about your plans for today, alright? I'm sure they're gonna be amazing!"
+        ]
+    ],
+    "sweet_queenapp_3": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "What do you have there, y_c? A little bug?",
+            "Ah, I know that guy! When I was your age, he was my best friend! Come on, let's take him over here to play, alright?"
+        ]
+    ],
+    "sweet_queenapp_4": [
+        [
+            "kitten",
+            "they_queen's_apprentice",
+            "they_queen",
+            "stable",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hmhm, what do we have here? Oh, I couldn't possibly be stalked by a fearsome predator, could I?",
+            "Ah-! Oh, you got me! You were so stealthy, little one! Be careful jumping off of rocks like that though, you could get hurt!",
+            "Even the most fierce of warriors can get hurt by a big jump, so remember to take care of yourself!"
+        ]
+    ],
+    "sweet_queenapp_5": [
+        [
+            "they_queen's_apprentice",
+            "you_app",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Ah, y_c! How have you been, has m_n been good to you? Ah- I'm sorry, I know I worry too much.",
+            "Just make sure you're taking care of yourself, okay? Being a queen's apprentice... I've learned a lot about cats bottling up their stress just to 'do things right'.",
+            "I'm rooting for you! Now go get some rest, hehe, before m_n takes my fur off for distracting you!"
+        ]
+    ],
+    "sweet_queenapp_6": [
+        [
+            "they_queen's_apprentice",
+            "you_any",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Another good day in c_nClan, right y_c? Ah- I'm sorry, I didn't mean to startle you!",
+            "I've finally got a break, being a queen is no easy task! What about you, how has today been?",
+            "Wait- Let's go grab something to eat first, gotta make sure we're well fed and ready for the day!"
+        ]
+    ],
+    "sweet_queenapp_7": [
+        [
+            "you_app",
+            "they_queen's_apprentice",
+            "platonic_like",
+            "comfort",
+            "sweet"
+        ],
+        [
+            "[t_c seems surprised to see you rush in here in a panic.]",
+            "Is everything okay y_c? What's wrong?",
+            "[{PRONOUN/t_c/subject/CAP} move to make room for you in {PRONOUN/t_c/poss} nest, allowing you to settle down beside {PRONOUN/t_c/object} as t_c lets out a comforting purr.]",
+            "You don't have to talk about it, it's okay. Just get some rest, alright?"
+        ]
+    ],
+    "sweet_queenapp_8": [
+        [
+            "they_queen's_apprentice",
+            "you_queen's_apprentice",
+            "platonic_like",
+            "no_kit",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You know, it's kinda lonely in here... it feels cramped at times, and whilst I love being a queen's apprentice and helping out with the kits, I sometimes miss the companionship warriors have.",
+            "[t_c sighs, then smiles at you.]",
+            "I'm glad you're here too... And that you put up with me and my sappy self."
+        ]
+    ],
+    "sweet_queenapp_9": [
+        [
+            "they_queen's_apprentice",
+            "you_mediator_apprentice",
+            "platonic_like",
+            "sweet"
+        ],
+        [
+            "Oh, y_c! I've been looking everywhere for you, how have you been?",
+            "[{PRONOUN/t_c/subject/CAP} press {PRONOUN/t_c/poss} forehead against yours as a friendly gesture, {PRONOUN/t_c/poss} whiskers twitching as {PRONOUN/t_c/subject} step back to reveal r_k.]",
+            "r_k wasn't feeling very well, are you free to look at {PRONOUN/r_k/object} right now?"
+        ]
+    ],
+    "sweet_queenapp_10": [
+        [
+            "you_mediator_apprentice",
+            "they_queen's_apprentice",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey, y_c? Can I please get your help? The kits...",
+            "One of the kits stole r_k's toy and now they keep fighting... I've tried everything I could.",
+            "Oh thank you so much! You're a lifesaver, y_c!"
+        ]
+    ],
+    "sweet_queenapp_11": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet"
+        ],
+        [
+            "Oh, y_c! Just the cat I've been looking for. r_k made a gift for you, and {PRONOUN/r_k/subject} wanted me to bring it to you!",
+            "[It's a small stone, with berry juice hastily splattered onto it. Truly artistic.]"
+        ]
+    ],
+    "sweet_queenapp_12": [
+        [
+            "you_any",
+            "they_queen's_apprentice",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[With t_c being an apprentice, it can be a bit hard to spot {PRONOUN/t_c/object} amongst the hoards of kits.]",
+            "[However, you do find {PRONOUN/t_c/object}, snuggled down with r_k resting across {PRONOUN/t_c/poss} back.]",
+            "Shh, they're sleeping!"
+        ]
+    ],
+    "sweet_queenapp_13": [
+        [
+            "they_queen's_apprentice",
+            "they_queen",
+            "you_warrior",
+            "you_apprentice",
+            "sweet"
+        ],
+        [
+            "[You were just trying to go on patrol, when you suddenly find yourself pounced on.]",
+            "Ah, no no r_k! y_c is not pounce practice!",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pluck/plucks} the kitten off of you, giving you a sheepish look.]",
+            "Sorry about that! They've been pretty restless.",
+            "Hehe, I think someone needs some new toys to play with... so that the warriors don't become the toys."
+        ]
+    ],
+    "sweet_queenapp_14": [
+        [
+            "they_queen's_apprentice",
+            "you_medicine_cat_apprentice",
+            "you_medicine_cat",
+            "sweet"
+        ],
+        [
+            "[t_c stumbles into your den, {PRONOUN/t_c/poss} fur ruffled and filled with thorns.]",
+            "I hope I'm not being a bother... r_k fell into a thorny bush and I dove in to grab {PRONOUN/r_k/object}. Now I'm-",
+            "Well, frankly, I think I look like a porcupine, hehe."
+        ]
+    ],
+    "sweet_queenapp_15": [
+        [
+            "they_queen's_apprentice",
+            "you_mediator",
+            "you_mediator_apprentice",
+            "sweet",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[You spot the queen's apprentice near the edge of camp, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to be pretty tired.]",
+            "[Two kits begin fighting in front of {PRONOUN/t_c/object}... ah, now you understand.]",
+            "[You quickly mediate the argument, helping the kits learn to share. t_c looks at you with awe.]"
+        ]
+    ],
+    "sweet_queenapp_16": [
+        [
+            "they_queen's_apprentice",
+            "you_queen",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey y_c?",
+            "[The apprentice sits down beside you, sighing as {PRONOUN/t_c/subject} {VERB/t_c/close/closes} {PRONOUN/t_c/poss} eyes. {PRONOUN/t_c/subject/CAP} {VERB/t_c/seem/seems} stressed.]",
+            "Do you really think I'm cut out for this? ... I'm really struggling to tell the kits no.",
+            "[You reassure t_c that {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing fine, and that it's not a bad thing to not be perfect all the time.]",
+            "Heh... thanks. I've been told I'm... too nice, hehe."
+        ]
+    ],
+    "sweet_queenapp_17": [
+        [
+            "you_deputy",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You've been trying to get your duties done, but r_k has been trying to play all day.]",
+            "[{PRONOUN/r_k/subject/CAP}{VERB/r_k/'re/'s} very cute and you'd probably play with {PRONOUN/r_k/object} any other day, but l_n was practically begging you to finish this as soon as possible.]",
+            "y_c! Ah!",
+            "[You hear t_c bouncing towards you, here to rescue you from the kit.]",
+            "Sorry about that! r_k lost {PRONOUN/r_k/poss} favorite toy and I went to go find it.",
+            "[As {PRONOUN/t_c/subject} carry the kitten away, you let out a sigh of relief. Finally, you can finish your task.]"
+        ]
+    ],
+    "sweet_queenapp_18": [
+        [
+            "you_deputy",
+            "they_queen's_apprentice",
+            "sweet"
+        ],
+        [
+            "[It's been a while since t_c left camp, and you're quite concerned. Queens aren't typically good fighters or hunters, and t_c is an apprentice.]",
+            "[Finally, you find t_c outside of camp, {PRONOUN/t_c/subject} {VERB/t_c/seem/seems} to be hiding something as soon as you approach though.]",
+            "y_c! I just- we just...",
+            "[You ask {PRONOUN/t_c/object} to tell you what's going on and {PRONOUN/t_c/subject} move some leaves, revealing an injured kittypet.]",
+            "... r_m and I found this kittypet out in the territory... {PRONOUN/t_c/subject/CAP} were pretty badly hurt.",
+            "[You ask where r_m is, sighing softly.]",
+            "They're out gathering herbs... we were out getting stuff for the nursery together.",
+            "You won't tell l_n will you? ... I just want to make sure this cat makes it home safely.",
+            "[You sigh, agreeing only under the condition that you supervise.]",
+            "T- Thank you! Thank you so much! I'll make it up to you, I promise."
+        ]
+    ],
+    "sweet_queenapp_19": [
+        [
+            "you_deputy",
+            "they_queen's_apprentice",
+            "sweet"
+        ],
+        [
+            "[You spot the queen's apprentice sitting and looking at the stars, the kits of the Clan snuggled up close.]",
+            "Oh, y_c! Would you mind joining us? We're learning about StarClan and well- you're the deputy.",
+            "[You can't resist the pleading gazes of the kits, sitting and joining in on the lesson.]"
+        ]
+    ],
+    "sweet_queenapp_20": [
+        [
+            "you_leader",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey y_c! Would you mind if I asked which kits are becoming which roles?",
+            "Why am I asking? ... I just want to make sure they're prepared for their roles so they can adjust well.",
+            "I felt pretty unprepared when I became a queen's apprentice, though I do love my job! I don't want that for them."
+        ]
+    ],
+    "sweet_queenapp_21": [
+        [
+            "you_leader",
+            "they_queen's_apprentice",
+            "sweet"
+        ],
+        [
+            "[You hear the shriek of laughter ring out through the camp. Curious, you go to see the origin.]",
+            "[You spot t_c with r_k, their paws are covered in colors and smashed berries are off to the side.]",
+            "[You approach, asking what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} doing.]",
+            "Oh! You see, r_k was playing a bit too rough, so I tried to find a different outlet for {PRONOUN/r_k/poss} energy.",
+            "{PRONOUN/r_k/subject} {VERB/r_k/seem/seems} to be enjoying making colorful rocks and I can't blame {PRONOUN/r_k/object}, I'm having fun too!"
+        ]
+    ],
+    "sweet_queenapp_22": [
+        [
+            "you_leader",
+            "they_queen's_apprentice",
+            "sensitive",
+            "sweet"
+        ],
+        [
+            "[You're up late. It's a beautiful night in c_nClan and you wanted to see the stars.]",
+            "[Surprisingly, you were not alone. You exited the camp to spot t_c, sobbing to {PRONOUN/t_c/self}.]",
+            "... How many of these little stars used to be kits? ... The smallest of us, taken too soon...",
+            "[Ah, you understand. You sit by {PRONOUN/t_c/object} and explain that... sadly, a lot of them probably were kits and apprentices.",
+            "That's way too young...",
+            "[It is, you as a leader have seen plenty of grief in your lifetime. However, the kits aren't in any pain up there.]",
+            "[When you got your lives, you saw kits playing with stardust and running around happily.]",
+            "[They're were happy up there, they were away from harm and heartbreak.]",
+            "... Thank you... that makes me feel a bit better.",
+            "[You stay there to comfort t_c for a while before sending {PRONOUN/t_c/object} back to camp to go to bed, t_c exhausted after all of that crying.]"
+        ]
+    ],
+    "sweet_queenapp_23": [
+        [
+            "you_elder",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet",
+            "they_blind"
+        ],
+        [
+            "[You hear the cheer of kits, rushing into the den for storytime.]",
+            "[t_c bounds in after them, looking just as excited. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'d/'s} always loved storytime, ever since {PRONOUN/t_c/subject} were a kit.]",
+            "[Stories with a happy ending were always t_c's favorites.]",
+            "We're here for storytime!"
+        ]
+    ],
+    "sweet_queenapp_24": [
+        [
+            "you_elder",
+            "they_queen's_apprentice",
+            "they_queen",
+            "sweet",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c looks exhausted, r_k running circles around {PRONOUN/t_c/object} as {PRONOUN/t_c/subject} lay on the ground.]",
+            "[You decide to call the kits over to you to give t_c a break, {PRONOUN/t_c/subject} give you a grateful look.]"
+        ]
+    ],
+    "sweet_queenapp_25": [
+        [
+            "you_elder",
+            "they_queen's_apprentice",
+            "sweet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[You were expecting prey from one of the warrior apprentices, but today it's t_c who pops in with some prey.]",
+            "[r_k trails behind {PRONOUN/t_c/object}, trying to play with {PRONOUN/t_c/poss} tail as {PRONOUN/t_c/subject} plop the piece of prey down right in front of you.]",
+            "Hey y_c! r_a was supposed to bring you this, but {PRONOUN/r_a/subject} needed a day off so I decided to!",
+            "Do you need anything, y_c?"
+        ]
+    ],
+    "neurotic_app4": [
+        [
+            "no_kit",
+            "you_any",
+            "they_queen's_apprentice",
+            "neurotic",
+            "upstanding",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Gah, stupid, stupid, so stupid, t_c ...",
+            "Wuh - y_c? How long have you been standing there?",
+            "Why was I talking to myself ...?",
+            "*Sigh* It's, like, the dumbest thing ever. tm_n gave me this surprise assessment today, and I totally flunked it!",
+            "How could I have answered that the best way to protect kits from hawks is by grabbing them out of the sky? It just doesn't make sense!",
+            "I just know that tm_n is still laughing at me ... the whole Clan probably is.",
+            "[You tell t_c not to be so hard on {PRONOUN/t_c/self}.]",
+            "But, if I'm not hard on myself, then how will I ever become stronger?",
+            "I refuse to be an embarrassment to my Clan and mentor. I'll pass that assessment next time ... Whatever it takes!"
+        ]
+    ],
+    "silly_queenapp_mycats": [
+        [
+            "Any",
+            "no_kit",
+            "clan_has_kits",
+            "they_queen's_apprentice",
+            "you_any",
+            "silly",
+            "cool",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "I love being a queen! The kits are, like, my cats.",
+            "Plus, since I'm younger than tm_n, the kits listen to me first. Hehe."
+        ]
+    ],
+    "silly_queenapp_overthrow": [
+        [
+            "Any",
+            "no_kit",
+            "clan_has_kits",
+            "they_queen's_apprentice",
+            "platonic_like",
+            "you_any",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "y_c, help meeeee...",
+            "I told r_k that {PRONOUN/r_k/subject} shouldn't be conducting plans to overthrow r_m as young as {PRONOUN/r_k/subject} are, and then r_k took it to mean {PRONOUN/r_k/subject} want me to help {PRONOUN/r_k/object}.",
+            "I don't think r_k is serious! I don't even know how chervil root would help them, I think {PRONOUN/r_k/subject} just heard me talking about giving some to r_q and assumed it was some weird evil thing.",
+            "I mean, sure, I did tell r_k I would think about it, but I just thought that was the thing older cats say to mean no when they don't want to disappoint you!"
+        ]
+    ],
+    "silly_queenapp_spar": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "silly",
+            "unlawful",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Oh my goodness! Hi, y_c!",
+            "Woah, woah, wait. I was supposed to tell you off for playing too rough with r_k...",
+            "Eh. It's fineee, right? But if you're gonna be that rough, you gotta go spar with l_n! I bet you could beat 'em. Then, they'd have to make you the leader!"
+        ]
+    ],
+    "silly_queenapp_ant": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "neutral",
+            "silly",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hehe. You're, like, an ant.",
+            "Hey, wait, no! I didn't mean it in a bad way! I just meant that you're very tiny and cute!"
+        ]
+    ],
+    "silly_queenapp_bigplan": [
+        [
+            "you_kitten",
+            "they_queen's_apprentice",
+            "silly",
+            "they_blind"
+        ],
+        [
+            "[As soon as you see t_c, you run up to {PRONOUN/t_c/object} on your tiny little paws, asking {PRONOUN/t_c/object} about your new biggest, greatest, and possibly stupidest idea you've ever had.]",
+            "Woah... that sounds like a really cool idea. You should lemme help you with it!",
+            "Once I'm finished fixing this nest, I'll help you gather the stuff."
+        ]
+    ],
+    "neurotic_queenapp_SQ1": [
+        [
+            "neurotic",
+            "they_queen's_apprentice",
+            "you_queen's_apprentice",
+            "no_kit",
+            "platonic_like"
+        ],
+        [
+            "[t_c watches over the nursery, tail twitching anxiously.]",
+            "t_mn says that we're important because we're role models for the kits. But what if I'm not a good role model? What if I accidentally model something bad?"
+        ]
+    ],
+    "neurotic_queenapp_SQ2": [
+        [
+            "neurotic",
+            "no_kit",
+            "they_queen's_apprentice",
+            "platonic_like",
+            "clan_has_kits"
+        ],
+        [
+            "The kits are doing well! t_mn is showing me how to build their confidence through stories and games.",
+            "I hope they grow up to be self-assured, and stick up for themselves, and...",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/pause/pauses} and {VERB/t_c/duck/ducks} {PRONOUN/t_c/poss} head, suddenly mumbling.]",
+            "...you know. Not like me."
+        ]
+    ],
+    "neurotic_queenapp_SQ3": [
+        [
+            "they_neurotic",
+            "they_queen's_apprentice",
+            "you_adult",
+            "you_app",
+            "min_platonic_30",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "It feels really weird to become an apprentice, but still spend all my time in the same places I did when I was a kit.",
+            "Like, the warrior apprentices go explore the territory, and the medicine cat apprentices move to the medicine den and visit the herb patches... but I'm still in the nursery.",
+            "Sometimes, I'm scared I just decided to be a queen's apprentice 'cause I'm scared of things changing.",
+            "I... I don't think that's true, but maybe it is and I just don't realize it?"
+        ]
+    ],
+    "neurotic_queenapp_SQ4": [
+        [
+            "they_neurotic",
+            "they_queen's_apprentice",
+            "you_adult",
+            "you_app",
+            "min_platonic_30",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "r_k_unlawful said {PRONOUN/r_k_unlawful/subject} didn't have to listen to me, because I'm basically still a kit too...",
+            "I didn't know what to say. {PRONOUN/r_k_unlawful/subject}{VERB/r_k_unlawful/'re/'s} kind of right. I'm not that much older than {PRONOUN/r_k_unlawful/object}, and I have no idea what I'm doing.",
+            "I guess I just... hoped {PRONOUN/r_k_unlawful/subject}'d still respect me? That sounds stupid when I say it out loud."
+        ]
+    ],
+    "neurotic_skillhealer_SQ2": [
+     [
+"they_neurotic",
+"they_healer",
+"they_warrior",
+"they_deputy",
+"they_apprentice",
+"they_mediator",
+"they_mediator_apprentice",
+"they_queen",
+"they_queen's_apprentice",
+"you_medicine_cat",
+"you_medicine_cat_apprentice",
+	"they_blind",
+	"you_blind"
+     ],
+     [
+"Um... sorry, y_c? I don't mean to bother you, but plove_r_c has a bit of a sore throat. Could I have some honey from your stores to give them?",
+"O-of course, you could give it to them, too! I don't mean to overstep.",
+"[There's not much that can go terribly wrong with honey. Since t_c seems to know {PRONOUN/t_c/poss} way around medicine despite not being a medicine cat, you give {PRONOUN/t_c/object} a dollop of honey on a stick and send {PRONOUN/t_c/object} on {PRONOUN/t_c/poss} way.]" 
+     ]
+    ]
+}

@@ -1,0 +1,495 @@
+{
+    "gen_crush": [
+        [
+            "no_kit",
+            "platonic_like",
+            "any"
+        ],
+        [
+            "[You're chatting with t_c, but {PRONOUN/t_c/subject} {VERB/t_c/keep/keeps} glancing away and swishing {PRONOUN/t_c/poss} tail. It's clear that {PRONOUN/t_c/poss} attention lies elsewhere.]",
+            "*Sigh* ...",
+            "[You follow {PRONOUN/t_c/poss} gaze to the middle of the clearing, where their_crush lazes, grooming {PRONOUN/their_crush/self}.]",
+            "[It seems there's something t_c isn't telling you ...]"
+        ]
+    ],
+    "gen_crush1": [
+        [
+            "no_kit",
+            "platonic_like",
+            "silly",
+            "assertive",
+            "cool",
+            "unlawful",
+            "unabashed",
+            "they_blind",
+            "Any"
+        ],
+        [
+            "[t_c and their_crush laugh hysterically together in the middle of the clearing, howls careening off the camp walls.]",
+            "[You smile to yourself, happy to see t_c make some progress with {PRONOUN/t_c/poss} obvious crush.]"
+        ]
+    ],
+    "gen_crush4": [
+        [
+            "no_kit",
+            "introspective",
+            "they_deaf",
+            "you_deaf",
+            "Any"
+        ],
+        [
+            "[t_c sits alone at the edge of camp, grinning from ear to ear with a dreamy look in their eyes.]",
+            "[You'd know that look anywhere, and if you had to guess, you could probably predict exactly who {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} thinking about.]",
+            "[Just then, their_crush peeks in through the camp entrance, and t_c races over to greet {PRONOUN/their_crush/object}, apparently overjoyed.]",
+            "[It seems your prediction was correct!]"
+        ]
+    ],
+    "gen_crush5": [
+        [
+            "no_kit",
+            "they_adult",
+            "brooding",
+            "assertive",
+            "unlawful",
+            "they_deaf",
+            "you_deaf",
+            "Any"
+        ],
+        [
+            "[t_c stares at their_crush talking with r_w across camp, expression filled with pain.]",
+            "[When their_crush laughs and bats at {PRONOUN/r_w/object}, t_c digs {PRONOUN/t_c/poss} claws into the soil.]",
+            "[Yeesh ... probably best to give {PRONOUN/t_c/object} some space.]"
+        ]
+    ],
+    "trust_crush": [
+        [
+            "no_kit",
+            "platonic_love",
+            "trust",
+            "comfort",
+            "Any"
+        ],
+        [
+            "Say, ah ... What do you think about their_crush?",
+            "I mean, like, me and their_crush. Do you think we'd make a good pair?",
+            "I dunno. I just ... value your opinion, I guess.",
+            "I really like {PRONOUN/t_c/object}, but asking someone to be your mate? It's a big decision. Plus, I have no idea if {PRONOUN/t_c/subject} even {VERB/t_c/feel/feels} the same way!",
+            "I just don't want to make a mistake and end up heartbroken ...",
+            "[t_c stares at their_crush from across camp, expression filled with incredible yearning.]"
+        ]
+    ],
+    "confront_crush": [
+        [
+            "no_kit",
+            "assertive",
+            "unlawful",
+            "brooding",
+            "cool",
+            "you_blind",
+            "Any"
+        ],
+        [
+            "[You ask t_c if the rumors about {PRONOUN/t_c/object} and their_crush are true.]",
+            "What? Me and their_crush? C'mon, don't be ridiculous! Why would I ever like their_crush?",
+            "Sure, I guess {PRONOUN/their_crush/subject}{VERB/their_crush/'re/'s} kinda pretty, and - and smart, and {PRONOUN/their_crush/subject} {VERB/their_crush/make/makes} me laugh like no one else can ...",
+            "Not to mention talented ... and hardworking ... and {PRONOUN/their_crush/poss} smile, great StarClan, there's nothing else like it ...",
+            "... But - But it's not like I like {PRONOUN/their_crush/object}, or anything!",
+            "*Blush*"
+        ]
+    ],
+    "crush_moveon": [
+        [
+            "no_kit",
+            "platonic_love",
+            "they_blind",
+            "Any"
+        ],
+        [
+            "Ah - maybe I just gotta face it, y_c. There's no way I'm gonna end up with their_crush, not in a million moons.",
+            "Why would a cat like {PRONOUN/t_c/object} ever settle down with a cat like me? It just wouldn't make any sense.",
+            "Maybe I just gotta move on and -- Oh, hang on, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} coming over here!",
+            "Oh - Oh, hey, their_crush! Yeah, sure, I can come on a walk with you tonight, when are you free?",
+            "[You roll your eyes. t_c is hopeless!]"
+        ]
+    ],
+    "gen_yourcrush": [
+        [
+            "Any",
+            "unabashed",
+            "cool",
+            "assertive",
+            "brooding",
+            "they_blind",
+            "you_blind",
+            "they_hearing",
+            "Any"
+        ],
+        [
+            "You talk in your sleep, y'know, y_c? It woke me up last night.",
+            "It sounded like you were mumbling about your_crush ...",
+            "... Something you wanna announce to the Clan, y_c? *snrk*"
+        ]
+    ],
+    "gen_yourcrush1": [
+        [
+            "no_kit",
+            "assertive",
+            "unabashed",
+            "upstanding",
+            "platonic_like",
+            "Any"
+        ],
+        [
+            "[t_c walks over to you with a plump rabbit.]",
+            "Hey, y_c!",
+            "I saw you stealing glances at your_crush earlier. You should ask {PRONOUN/your_crush/object} to share this freshkill with you.",
+            "Oh come on, that crush of yours is obvious! Don't be such a scaredy-cat and walk over to {PRONOUN/your_crush/object}.",
+            "[t_c smiles encouragingly at you as you walk over to your_crush. You ought to thank {PRONOUN/t_c/object} later.]"
+        ]
+    ],
+    "apprentice_confront_yourcrush": [
+        [
+            "no_kit",
+            "they_app",
+            "assertive",
+            "cool",
+            "unabashed",
+            "they_blind",
+            "you_any"
+        ],
+        [
+            "And then, tm_n told me I had to do tick duty because r_a was out battle training, like, how is that fair?!",
+            "[While t_c rambles on, your only focus is your_crush. How could anyone ever be so amazing?]",
+            ".. Oh, so that's why you haven't been answering?",
+            "Wait, let me call {PRONOUN/your_crush/object} over. Hi, your_crush! y_c wants to tell you something important!!!",
+            "[You put your paw over t_c's mouth quickly, but your_crush is already looking in your direction.]",
+            "[You blush and lift your paw to wave at your_crush. {PRONOUN/your_crush/subject/CAP} {VERB/your_crush/send/sends} you a big, sunny smile before continuing {PRONOUN/your_crush/poss} task.]",
+            "*snrk*. You're funnier than I am! Haha!"
+        ]
+    ],
+    "hater_yourcrush": [
+        [
+            "any",
+            "dislike",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You don't stand a chance with your_crush ... You know that, don't you?",
+            "A cat like that is way out of your league.",
+            "I'd give up now, if you know what's good for you."
+        ]
+    ],
+    "hater_yourcrush1": [
+        [
+            "any",
+            "assertive",
+            "cool",
+            "unlawful",
+            "unabashed",
+            "silly",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Rumor around camp is that you have a thing for your_crush. Isn't that a laugh?",
+            "As if the two of you could ever end up together. Haha!",
+            "... Why do you look so sad? It's not like you actually like {PRONOUN/your_crush/object}, right?"
+        ]
+    ],
+    "inform_yourcrush1": [
+        [
+            "any",
+            "platonic_love",
+            "assertive",
+            "cool",
+            "unabashed",
+            "silly",
+            "they_went_blind"
+        ],
+        [
+            "Hey, flea-brain! Wanna go on a walk later?",
+            "[You tell t_c that you'd love to, but you already have plans with your_crush.]",
+            "your_crush, huh?",
+            "I gotta say, the two of you are spending an awful lot of time together lately ...",
+            "Is there something going on that I should know about?",
+            "[t_c grins and bats {PRONOUN/t_c/poss} eyelashes at you. Though you vehemently deny, you know {PRONOUN/t_c/subject} pushed you into a corner.]",
+            "It's okay. Your secret's safe with me, hehe!",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/dash/dashes} off. Knowing t_c, the whole Clan will probably know about your crush on your_crush by tomorrow.]"
+        ]
+    ],
+    "inform_yourcrush": [
+        [
+            "any",
+            "platonic_like",
+            "assertive",
+            "cool",
+            "respect",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Look, y_c. You wanna get your_crush to like you - which, don't even try to deny, it's embarrassingly obvious - you need to work on your flirting skills.",
+            "Luckily for you, you've come to just the right cat! I have a whole system worked out for these kinds of things.",
+            "Okay, so, pretend I'm your_crush, and you want to ask me out for some alone time. What are you gonna say?",
+            "[You pretend to ask t_c on a date.]",
+            "EERGH! Let me stop you right there! Wrong, it's all wrong! Yeesh, is that really the best you can do?",
+            "First of all, you want to engage {PRONOUN/your_crush/object} physically. Bat {PRONOUN/your_crush/object} with your paw, some playful touches, nothing too crazy.",
+            "Secondly, you were way too direct in your language. You gotta tease it out, y'know, make {PRONOUN/your_crush/object} feel like it's {PRONOUN/your_crush/poss} idea to go with you.",
+            "Thirdly, and this is the most important thing ...",
+            "[You really try to keep up with t_c's flirting advice, but trying to follow along for too long honestly just makes your head spin!]"
+        ]
+    ],
+    "introspective_yourcrush": [
+        [
+            "any",
+            "introspective",
+            "stable",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "So, you and your_crush, hm? Interesting ...",
+            "Of all the potential matches for you, your_crush is never one I would've predicted, but the two of you make a good pair.",
+            "Who told me? Ah, I didn't need to hear it from someone else! Call it one of the perks of being so observant",
+            "You should ask {PRONOUN/your_crush/object} out, by the way. By my calculations ... {PRONOUN/your_crush/subject} should definitely like you back. *Wink*"
+        ]
+    ],
+    "neurotic_yourcrush": [
+        [
+            "any",
+            "neurotic",
+            "sweet",
+            "silly",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Ah, y_c, you and your_crush are just so cute together. I'm so happy for the two of you.",
+            "Oh, what? You're not mates yet? Could've fooled me!",
+            "If that's how you act together before you're even mates, I'd hate to see how you act once you actually do get together, heh!"
+        ]
+    ],
+    "yourcrush_downbad": [
+        [
+            "any",
+            "romantic_like"
+        ],
+        [
+            "What's wrong, y_c? Romantic troubles? Is your_crush getting you down?",
+            "Ah, don't let it worry you, even for one second. You're so amazing, y_c ... any cat in this Clan would be lucky to have you.",
+            "And if your_crush can't see that, {PRONOUN/your_crush/subject} must be the most mouse-brained cat on this entire planet!",
+            "In fact, I'm sure there's plenty of cats who would do just about anything to be with you, but are too afraid to say it ...",
+            "Ahem.",
+            "[t_c blushes and glances away.]"
+        ]
+    ],
+    "yourcrush_downbad1": [
+        [
+            "any",
+            "romantic_like"
+        ],
+        [
+            "So, uh ... are the rumors about you and your_crush true, then? It's all anyone around camp is talking about.",
+            "They are?",
+            "Oh ...",
+            "Um, what do you see in {PRONOUN/your_crush/object}, if you don't mind me asking?",
+            "Mm ... I see ...",
+            "{PRONOUN/your_crush/subject/CAP} {VERB/your_crush/make/makes} you happy, then?",
+            "Well ... I guess that's all that really matters.",
+            "I'm glad you've found someone, y_c.",
+            "Even if ... Even though ... Ah. E-Excuse me.",
+            "[t_c slinks away with {PRONOUN/t_c/poss} shoulders hunched, tail drooping.]"
+        ]
+    ],
+    "yourcrush_parent": [
+        [
+            "any",
+            "from_parent",
+            "adopted_parent",
+            "you_blind"
+        ],
+        [
+            "I've been seeing you and your_crush around together a lot ... am I gonna be getting some grandkits soon?",
+            "Hehe, only joking, of course. I'm happy for you, y_c.",
+            "The two of you make a good pair."
+        ]
+    ],
+    "yourcrush_parent1": [
+        [
+            "any",
+            "from_parent",
+            "adopted_parent",
+            "you_blind"
+        ],
+        [
+            "Ah, seeing you and your_crush really takes me back ... The two of you are just like me and t_m were at your age!",
+            "So young and free ... Don't waste these moons, y_c! You'll remember them fondly later."
+        ]
+    ],
+    "yourcrush_sibling": [
+        [
+            "any",
+            "sibling",
+            "adopted_sibling",
+            "unlawful",
+            "assertive",
+            "cool",
+            "unabashed",
+            "silly"
+        ],
+        [
+            "[t_c spots you talking with your_crush across camp, and a huge dirt-eating smile forms on {PRONOUN/t_c/poss} face.]",
+            "Oh, your_crush! your_crush, I love you so much~! Hahahahaa!",
+            "[You swat {PRONOUN/t_c/object} away, completely mortified.]",
+            "[your_crush laughs it off, but you're already planning your revenge on your {PRONOUN/t_c/sibling} for later.]"
+        ]
+    ],
+    "yourcrush_sibling1": [
+        [
+            "any",
+            "sibling",
+            "adopted_sibling",
+            "unlawful",
+            "assertive",
+            "cool",
+            "silly",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Say, when are you and your_crush finally gonna make it official? I'm dying to have some little nieces and nephews to play with!",
+            "Haha, okay, okay, I'll leave it alone.",
+            "Just don't keep me waiting too much longer! And, ah, promise to name one of the little ones after me, when the time comes. Gotta carry on the family legacy, after all."
+        ]
+    ],
+    "yourcrush_supportive": [
+        [
+            "any",
+            "platonic_like",
+            "unlawful",
+            "assertive",
+            "cool",
+            "silly",
+            "stable"
+        ],
+        [
+            "[t_c interrupts you in the middle of talking to your_crush.]",
+            "Hey, r_c told me to tell you --",
+            "Oh, I'm sorry. I didn't notice you and your_crush were talking.",
+            "No, by all means, please, carry on. I'll, ah, leave the two of you lovebirds to it ... hehehe",
+            "[t_c shoots you a wink on the way out. You can practically sense {PRONOUN/t_c/object} begging for every detail of the conversation later.]"
+        ]
+    ],
+    "yourcrush_apprentice": [
+        [
+            "apprentice",
+            "they_app",
+            "unabashed",
+            "assertive",
+            "cool",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Psst, y_c!",
+            "[t_c tries to nudge you awake, though you remain sound asleep in your nest.]",
+            "y_c, wake up! your_crush is asking for you!",
+            "[As fast as the wind, you sit up, giving t_c your full attention.]",
+            "Hah! I knew that would work. Actually, I just wanted to know if you would help me replace the elder's moss..",
+            "...",
+            "... No, your_crush wasn't actually asking for you. But if you're that eager to talk to {PRONOUN/your_crush/object}, maybe you should just go ask {PRONOUN/their_crush/object}."
+        ]
+    ],
+    "yourcrush_parent2": [
+        [
+            "any",
+            "from_parent",
+            "adopted_parent"
+        ],
+        [
+            "y_c? Where are you going in that haste?",
+            "You're going to hang out with your_crush?",
+            "[t_c shoots you that familiar proud smile {PRONOUN/t_c/subject} always {VERB/t_c/give/gives} you.]",
+            "Well, in that case, you can't be going out like that. Get over here.",
+            "[You reluctantly turn to t_c, who starts grooming your fur intently.]",
+            "There, you're all done.",
+            "... Have fun!"
+        ]
+    ],
+    "meddy_crush": [
+        [
+            "medicine_cat",
+            "medicine_cat_apprentice",
+            "assertive",
+            "silly",
+            "cool",
+            "sweet",
+            "stable",
+            "upstanding",
+            "you_blind"
+        ],
+        [
+            "Is it just me, or has your_crush been coming into the medicine den an awful lot lately?",
+            "What? I'm just saying! I've seen the way {PRONOUN/t_c/subject} {VERB/t_c/look/looks} at you!",
+            "Not like {PRONOUN/t_c/subject}{VERB/t_c/'re/s} exactly bad looking either... You could certainly do much worse!",
+            "Okay, okay, I'll stop now. Hehe!"
+        ]
+    ],
+    "yourcrush_youshunned_J1": [
+        [
+            "you_shunned",
+            "any"
+        ],
+        [
+            "[t_c catches you watching your_crush sharing tongues across camp.]",
+            "Aw, buddy.",
+            "Never gonna happen. Not now."
+        ]
+    ],
+    "deaf_crush_J1": [
+        [
+            "any",
+            "you_deaf",
+            "only_they_deaf",
+            "no_kit"
+        ],
+        [
+            "[As you stare at your_crush from across camp, t_c waves {PRONOUN/t_c/poss} tail in front of your face.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/cock/cocks} {PRONOUN/t_c/poss} head, but after glancing between you and your_crush, {VERB/t_c/seem/seems} to come to a realisation.]",
+            "..! *Wink*",
+            "[Ugh. You turn your focus elsewhere.]"
+        ]
+    ],
+    "cool_tomedcat": [
+        [
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "cool",
+            "min_platonic_40"
+        ],
+        [
+            "[You notice aloud to t_c that your_crush has been sick an awful lot recently ...]",
+            "Psh, yeah, no doubt they're sick. {PRONOUN/your_crush/subject/CAP}{VERB/your_crush/'ve/'s}  got a horrible case of y_c fever.",
+            "[You blush, looking away. Surely your_crush doesn't actually feel that way about you ... right?]",
+            "[Sensing your hesitation, t_c rolls {PRONOUN/t_c/poss} eyes.]",
+            "I swear, y_c, you're so blind, there has got to be some mole blood in your ancestry.",
+            "If I have to see the two of you pining after each other any longer, I just might have to take matters into my own paws!"
+        ]
+    ],
+    "deaf_crush_J2": [
+        [
+            "any",
+            "you_deaf",
+            "they_deaf",
+            "they_blind",
+            "only_you_blind",
+            "no_kit"
+        ],
+        [
+            "[As you sit next to t_c, you smell your_crush approach and lay down next to you.]",
+            "[{PRONOUN/your_crush/poss/CAP} scent is comforting, and when {PRONOUN/your_crush/poss} fur brushes yours, you feel your face grow hot.]",
+            "[t_c smacks your haunches teasingly with {PRONOUN/t_c/poss} tail, and you reach out a hind leg to kick {PRONOUN/t_c/object}. Against you, your_crush's body shakes with laughter.]"
+        ]
+    ]
+}

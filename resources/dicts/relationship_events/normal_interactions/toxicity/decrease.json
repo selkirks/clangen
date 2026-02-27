@@ -1,0 +1,43 @@
+[
+    {
+		"id": "toxicity_de_low1",
+		"intensity": "low",
+		"interactions": [
+			"m_c asks for r_c's opinion on something and puts it into genuine consideration."
+		]
+	},
+	{
+		"id": "toxicity_de_low2",
+		"intensity": "low",
+		"interactions": [
+			"m_c and r_c were honest with one another."
+		],
+		"reaction_random_cat": {
+			"toxicity": "decrease"
+		}
+	},
+    {
+		"id": "toxicity_de_med1",
+		"intensity": "medium",
+		"interactions": [
+			"m_c eases up on r_c a little bit."
+		]
+	},
+	{
+		"id": "toxicity_de_high1",
+		"intensity": "high",
+		"interactions": [
+			"m_c realizes {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been treating r_c wrong."
+		]
+	},
+	{
+		"id": "toxicity_de_high2",
+		"intensity": "high",
+		"interactions": [
+			"m_c reconsiders how {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been treating r_c when {PRONOUN/r_c/subject} can't take it anymore and bursts into tears."
+		],
+		"reaction_random_cat": {
+			"toxicity": "increase"
+		}
+	}
+]

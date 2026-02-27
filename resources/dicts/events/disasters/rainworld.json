@@ -1,0 +1,114 @@
+{
+    "Great Blizzard": {
+        "event": "Great Blizzard",
+        "camp": [
+            "any"
+        ],
+        "season": [
+            "Leaf-bare"
+        ],
+        "tags": [],
+        "priority": "primary",
+        "duration": 2,
+        "rarity": "uncommon",
+        "trigger_events": [
+            "The first few flakes of snow drift down delicately in the yellowish light, some of the younger cats of c_n chasing them down playfully. Within a day, no cat can see past their whiskers, the forest blanketed in a blizzard."
+        ],
+        "progress_events": {
+            "moon1": [
+                "The snow doesn't seem to have an end to it, the nights and days the same dreary shade of white. It is all c_n can do to dig themselves out of their nests each morning."
+            ]
+        },
+        "conclusion_events": [
+            "The dazzling light of the sun shines brightly on white, still snow. The blizzard has ended, though leaf-bare still continues."
+        ],
+        "secondary_disasters": {
+            "Barren Land": {
+                "disaster": "Barren Land",
+                "triggers_during": "during",
+                "chance": 5,
+                "trigger_events": [
+                    "The snow has hidden all plants and trails, everything that c_n has relied on. Herbs, favorite moss gathering spots, best cobweb collections, all of it has been obliterated by white, icy flakes."
+                ]
+            },
+            "Famine": {
+                "disaster": "Famine",
+                "triggers_during": "during",
+                "chance": 5,
+                "trigger_events": [
+                    "No cat can smell any prey scent past the snow. There could be mice right under their paws, but no warrior of c_n can track them, and those lucky enough to see one, slip more often than not."
+                ]
+            },
+            "Terrible Cold": {
+                "disaster": "Terrible Cold",
+                "triggers_during": "during",
+                "chance": 5,
+                "trigger_events": [
+                    "Any cat with a thin pelt can't seem to get warm with all the snow falling in the forest. Sneezing and coughing wake up many a cat in the muffled silence of the blizzard."
+                ]
+            }
+        },
+        "collateral_damage": {
+            "injuries": [
+                "frostbite",
+                "shivering"
+            ],
+            "deaths": {
+                "death_text": [
+                    "Despite their efforts to find shelter, m_c was overwhelmed by the snow and cold.",
+                    "The blizzard buried m_c so quickly under the snow that rescue efforts were futile."
+                ],
+                "history_text": {
+                    "reg_death": "m_c froze to death during a blizzard."
+                }
+            }
+        }
+    },
+    "Terrible Cold": {
+        "event": "Terrible Cold",
+        "camp": [
+            "any"
+        ],
+        "season": [
+            "Leaf-fall",
+            "Leaf-bare"
+        ],
+        "tags": [],
+        "priority": "both",
+        "duration": 2,
+        "rarity": "uncommon",
+        "trigger_events": [
+            "The air has sharper claws than any enemy warrior. Even the rising sun cannot make it gentler, only causing the new frozen land to glitter in grim beauty. A terrible cold has come, and sickness will soon follow.",
+            "It hurts to breathe, the cold air like daggers in their lungs. The Clan hunkers down in their dens, curling tightly around each other in shivering piles. This terrible cold will pass, they tell each other, it won't be for forever.",
+            "The forest is crying. lead_name's fur spikes with alarm, trying to keep calm and prevent panic as the terrible cold makes the trees creak and crack."
+        ],
+        "progress_events": {
+            "moon1": [
+                "The younger cats have forgotten the warmth of greenleaf, some believe that they may never get warm again, and the older cats suffer the cold even more because of their memory of hot days. Both young and old curl around each other for warmth, and hope, despite the chill of these long nights.",
+                "It feels never ending, the cold. The wind doesn't even dare disturb it, the air so still it feels as though it could cut. Noses are covered by tails and paws are tucked tightly away as the Clan does all they can to avoid freezing.",
+                "Whispers are beginning to spread through camp, rumors of what they might have done for StarClan to turn their backs and freeze c_n into never ending stillness."
+            ]
+        },
+        "conclusion_events": [
+            "The sun rises one day, rainbow shards of ice glinting on the ground like so many days before, but as the day goes on... They melt and turn to mud. While everyone soon gets dirty, the sunlight feels so good on every cat's fur, no one can complain too much through their purrs.",
+            "When the Clan steps from their dens and finds the world no longer freezing, they're almost shocked by the change. It had been so cold for so long, they'd forgotten warmth's embrace.",
+            "As the cold loses its grip on their throats, the forest of c_n weeps with relief, trees oozing sap from their damaged trunks."
+        ],
+        "secondary_disasters": [],
+        "collateral_damage": {
+            "injuries": [
+                "shivering",
+                "frostbite"
+            ],
+            "deaths": {
+                "death_text": [
+                    "m_c's shivering soon stops and it becomes much too hard for them to move. They curl up and close their eyes one final time.",
+                    "m_c paces back and forth for warmth until their paws go numb and their vision blurs. Eventually, they sink to the frozen ground, and are unable to be roused."
+                ],
+                "history_text": {
+                    "reg_death": "m_c froze to death during a terrible cold."
+                }
+            }
+        }
+    }
+}

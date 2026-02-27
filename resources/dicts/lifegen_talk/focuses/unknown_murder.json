@@ -1,0 +1,1542 @@
+{
+    "unkmurder_J1": {
+        "tags": [
+            "focus",
+            "brooding",
+            "assertive",
+            "cool",
+            "silly",
+            "no_kit",
+            "min_trust_20",
+            "they_warrior",
+            "they_queen",
+            "they_medicine_cat",
+            "they_mediator",
+            "they_apprentice",
+            "they_mediator_apprentice",
+            "they_mediator_apprentice",
+            "they_queen's_apprentice",
+            "you_warrior",
+            "you_queen",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_apprentice",
+            "you_mediator_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice"
+        ],
+        "intro": [
+            "Who do you think did it?",
+            "Come on, you have to have a guess."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I don't know.",
+                "next_scene": "idontknow"
+            },
+            "choice2": {
+                "text": "dislike_r_w1",
+                "next_scene": "dislike_r_w1"
+            },
+            "choice3": {
+                "text": "r_w2_neurotic",
+                "next_scene": "r_w2_neurotic"
+            },
+            "choice4": {
+                "text": "l_n",
+                "next_scene": "l_n"
+            }
+        },
+        "idontknow": [
+            "Fine. Keep your secrets.",
+            "I have my eye on dislike_r_w1, personally... But don't tell {PRONOUN/dislike_r_w1/object} I said that, alright?"
+        ],
+        "dislike_r_w1": [
+            "[t_c's eyes widen.]",
+            "See, I was thinking the same thing... {PRONOUN/dislike_r_w1/subject}{VERB/dislike_r_w1/'re/'s} weird, right?",
+            "Let's keep an eye on {PRONOUN/dislike_r_w1/object}, okay? It could be one of us next..."
+        ],
+        "r_w2_neurotic": [
+            "[t_c almost laughs.]",
+            "r_w2_neurotic? Why?",
+            "That cat jumps every time they hear a woodpecker. And you think {PRONOUN/r_w2_neurotic/subject} killed fc_c?",
+            "Hm... now that you think about it, maybe that anxiety is all just an act... Oh, maybe {PRONOUN/r_w2_neurotic/subject}{VERB/r_w2_neurotic/'ve/'s} had us fooled this whole time!",
+            "[t_c seems to be having a bit too much fun with this...]"
+        ],
+        "l_n": [
+            "Whoa! y_c, lower your voice!",
+            "[t_c whips around, in the least inconspicuous way possible, to see if the leader was within earshot. It appears that {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} not even in camp.]",
+            "You need to be more careful, y_c. You can't just throw out an accusation like that.",
+            "[But... {VERB/t_c/aren't/isn't} {PRONOUN/t_c/subject} the one that asked?!]"
+        ]
+    },
+    "unkmurder_focus_SQ1": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_comfort_15",
+            "min_platonic_20",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "[t_c looks exhausted. {PRONOUN/t_c/subject/CAP} {VERB/t_c/keep/keeps} nodding off, then jolting back awake. You offer to take {PRONOUN/t_c/poss} patrols today so {PRONOUN/t_c/subject} can get some sleep.]",
+            "Thanks for the offer, but I don't think it'll help. I've been having trouble sleeping ever since plike_fc_c... you know.",
+            "My nightmares have gotten pretty bad recently. Last night I had one about fc_c's murderer coming after me. I kept screaming, but no one listened...",
+            "Sorry. You don't want to hear about that. I'll be fine."
+        ]
+    ],
+    "unkmurder_focus_SQ2": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_trust_15",
+            "min_platonic_30",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "Cats know that I didn't get along with dislike_fc_c, right? But do you think any of them believe I was the one who... you know... killed {PRONOUN/dislike_fc_c/object}?",
+            "I feel like everyone's been whispering around me a lot recently, and I'm kind of scared. I swear I didn't... I swear I would never..."
+        ]
+    ],
+    "unkmurder_focus_SQ3": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_20",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "I'm supposed to help clean out plove_fc_c's nest today, but I really don't want to.",
+            "It's not just that I don't want to see it gone... what if there's some kind of clue to what happened to {PRONOUN/plove_fc_c/object} in their nest, and we don't notice it, and we throw it out?",
+            "Wouldn't it be safer to wait? Just a little longer?"
+        ]
+    ],
+    "unkmurder_focus_SQ4": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_trust_15",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "fc_c's death was an accident, right? It had to be. Or else it was a rogue, or someone from o_cClan.",
+            "I just really, really can't deal with the thought that it was one of us."
+        ]
+    ],
+    "unkmurder_focus_SQ5": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c hasn't spoken much since fc_c's death. {PRONOUN/t_c/subject/CAP} {VERB/t_c/don't/doesn't} meet anyone's eyes and {PRONOUN/t_c/subject} {VERB/t_c/jump/jumps} away from other cats, as if {PRONOUN/t_c/poss} Clanmates are just waiting for an opportunity to turn on {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "unkmurder_focus_SQ6": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_cool",
+            "they_unabashed",
+            "they_unlawful",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "Whichever one of you killed plove_fc_c... get out of here tonight. Get <i>far</i> from here and never, never show your face again.",
+            "Because if you're still here when we find you out, I swear to StarClan...",
+            "...You'll wish that you ran."
+        ]
+    ],
+    "unkmurder_focus_SQ7": [
+        [
+            "no_kit",
+            "focus"
+        ],
+        [
+            "[dislike_r_c_assertive loudly reminds a group of whispering cats that t_c never got along well with dislike_fc_c.]",
+            "[t_c glares at {PRONOUN/dislike_r_c_assertive/object}, then wordlessly stalks away.]"
+        ]
+    ],
+    "unkmurder_focus_SQ8": [
+        [
+            "no_kit",
+            "min_trust_15",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Maybe I'm imagining it, but I feel like plike_fc_c_neurotic was even more nervous than usual the day before {PRONOUN/plike_fc_c_neurotic/subject} died.",
+            "Do you think {PRONOUN/plike_fc_c_neurotic/subject} knew what was going to happen?"
+        ]
+    ],
+    "unkmurder_focus_SQ9": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "they_neurotic",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I never thought something like this would happen to plike_fc_c_neurotic. {PRONOUN/plike_fc_c_neurotic/subject/CAP} {VERB/plike_fc_c_neurotic/were/was} so careful! {PRONOUN/plike_fc_c_neurotic/subject/CAP} took every precaution!",
+            "If someone killed {PRONOUN/plike_fc_c_neurotic/object} , what chance do the rest of us have?"
+        ]
+    ],
+    "unkmurder_focus_SQ10": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_upstanding",
+            "they_stable",
+            "they_unabashed",
+            "they_unlawful"
+        ],
+        [
+            "I was trying to help plove_fc_c_neurotic be less... <i>scared</i> all the time! I was trying to convince {PRONOUN/plove_fc_c_neurotic/object} that the world wasn't out to get {PRONOUN/plove_fc_c_neurotic/object}, and that it was okay to let {PRONOUN/plove_fc_c_neurotic/poss} guard down!",
+            "[t_c digs {PRONOUN/t_c/poss} claws into the soil. {PRONOUN/t_c/subject/CAP} {VERB/t_c/glare/glares} at the cats clustered nearby.]",
+            "I will <i>never</i> forgive whichever of you proved to plove_fc_c_neurotic that {PRONOUN/plove_fc_c_neurotic/subject} {VERB/plove_fc_c_neurotic/were/was} right to be scared."
+        ]
+    ],
+    "unkmurder_focus_SQ11": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "sc_faith",
+            "they_assertive",
+            "they_upstanding",
+            "they_introspective",
+            "they_stable",
+            "focus"
+        ],
+        [
+            "StarClan will guide us to plike_fc_c's murderer. They haven't led us wrong before.",
+            "[t_c gazes upwards. The stars glimmer, but stay silent for now.]"
+        ]
+    ],
+    "unkmurder_focus_SQ12": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "they_introspective",
+            "sc_faith",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "I'm trying to untangle this... if StarClan let neutral_fc_c die, was there a reason?",
+            "I'm sure they'll tell us more as soon as they can, but for now I can't help but wonder."
+        ]
+    ],
+    "unkmurder_focus_SQ13": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "df_faith",
+            "focus"
+        ],
+        [
+            "I don't get how cats still believe StarClan cares, or that they're even there, when their precious stars haven't said anything about what happened to plove_fc_c.",
+            "[t_c glares at the sky. Clouds languish in front of the stars.]",
+            "plove_fc_c was <i>murdered</i>. If that's not enough to break StarClan's silence, then nothing is going to."
+        ]
+    ],
+    "unkmurder_focus_SQ14": [
+        [
+            "no_kit",
+            "min_trust_15",
+            "min_platonic_20",
+            "df_faith",
+            "focus"
+        ],
+        [
+            "[The unusually clear night means that the stars are brighter than usual. You try to find a new one... one that might be fc_c.]",
+            "[t_c scoffs and you look at {PRONOUN/t_c/object}, surprised, but {PRONOUN/t_c/subject} {VERB/t_c/aren't/isn't} watching you. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} looking at the stars.]",
+            "StarClan isn't going to help us, y_c. If we want to know what happened to plove_fc_c, we need to take matters into our own paws."
+        ]
+    ],
+    "unkmurder_focus_SQ15": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "plove_fc_c_assertive had an 'awesome idea' {PRONOUN/plove_fc_c_assertive/subject} {VERB/plove_fc_c_assertive/were/was} going to tell me about. {PRONOUN/plove_fc_c_assertive/subject/CAP} said I was going to love it, and that it 'definitely wouldn't cause trouble like last time'.",
+            "I can't stand the fact that I'll never know what it was."
+        ]
+    ],
+    "unkmurder_focus_SQ16": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_cool",
+            "they_unabashed",
+            "they_unlawful",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "hate_fc_c_introspective paid more attention to {PRONOUN/hate_fc_c_introspective/poss} own thoughts than {PRONOUN/hate_fc_c_introspective/poss} surroundings. Someone probably sauntered right up and killed {PRONOUN/hate_fc_c_introspective/object} without {PRONOUN/hate_fc_c_introspective/object} noticing.",
+            "[t_c snickers. No one joins in.]"
+        ]
+    ],
+    "unkmurder_focus_SQ17": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "plove_fc_c_silly was joking around like usual the day before {PRONOUN/plove_fc_c_silly/subject} died. {PRONOUN/plove_fc_c_silly/subject/CAP} made some ridiculous pun, but I was busy and kind of brushed it off...",
+            "I wish I could remember what it was. I wish I'd said something back."
+        ]
+    ],
+    "unkmurder_focus_SQ18": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_cool",
+            "they_upstanding",
+            "they_unabashed",
+            "they_unlawful",
+            "min_platonic_20",
+            "focus"
+        ],
+        [
+            "Did dislike_fc_c_unabashed call my fur scruffy the night before {PRONOUN/dislike_fc_c_unabashed/subject} died? Yes. Have I made comments about wanting to kill {PRONOUN/dislike_fc_c_unabashed/object}? Absolutely.",
+            "Did I <i>actually</i> murder dislike_fc_c_unabashed? One of our Clanmates? Absolutely not. If I see one more cat looking at me suspiciously...",
+            "[t_c stalks off, casting irritated looks across the camp.]"
+        ]
+    ],
+    "unkmurder_focus_SQ19": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "You know what? I'm going to say it. If hate_fc_c_unlawful was killed, it was probably because {PRONOUN/hate_fc_c_unlawful/subject} {VERB/hate_fc_c_unlawful/were/was} doing something {PRONOUN/hate_fc_c_unlawful/subject} shouldn't have been.",
+            "I'd <i>easily</i> believe that {PRONOUN/hate_fc_c_unlawful/subject} tried to hurt someone, and got killed in self-defense."
+        ]
+    ],
+    "unkmurder_focus_SQ20": [
+        [
+            "no_kit",
+            "they_adult",
+            "they_brooding",
+            "focus"
+        ],
+        [
+            "[t_c coldly scans the small gathering of c_nClan cats, meeting everyone's eyes one by one.]",
+            "To whichever one of you murdered plike_fc_c, I hope you understand what you've done.",
+            "You've not only weakened this Clan by killing one of our own, but by causing so much suspicion and doubt.",
+            "This is unforgivable. And the truth <i>will</i> come to light."
+        ]
+    ],
+    "unkmurder_focus_SQ21": [
+        [
+            "no_kit",
+            "they_deputy",
+            "they_assertive",
+            "they_upstanding",
+            "they_stable",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "We all need to be alert for a while.",
+            "No one should leave the camp alone, and for the next moon, I'm assigning cats to watch the camp at night.",
+            "What happened to fc_c won't happen to anyone else."
+        ]
+    ],
+    "unkmurder_focus_SQ22": [
+        [
+            "no_kit",
+            "min_platonic_10",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "I just don't understand. plove_fc_c_cool could talk {PRONOUN/plove_fc_c_cool/poss} way into anyone's heart, and out of any trouble.",
+            "{PRONOUN/plove_fc_c_cool/subject/CAP} {VERB/plove_fc_c_cool/were/was} so clever... so confident...",
+            "How could anyone hurt {PRONOUN/plove_fc_c_cool/object}? <i>Why</i> would anyone hurt {PRONOUN/plove_fc_c_cool/object}?!"
+        ]
+    ],
+    "unkmurder_focus_SQ23": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "they_assertive",
+            "they_brooding",
+            "they_upstanding",
+            "they_stable",
+            "they_unabashed",
+            "focus"
+        ],
+        [
+            "dislike_fc_c_cool was always too busy gossipping and posturing to do {PRONOUN/dislike_fc_c_cool/poss} job. It was honestly infuriating.",
+            "Don't look at me like that! Of <i>course</i> I didn't kill {PRONOUN/dislike_fc_c_cool/object}. I'm just saying, I understand why someone might."
+        ]
+    ],
+    "unkmurder_focus_SQ24": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "they_neurotic",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "The worst thing about this is that we have no idea why someone killed fc_c.",
+            "Was it a personal thing? Or do they want to take out c_nClan, one cat at a time?",
+            "...I'm keeping my guard up for now. You should, too."
+        ]
+    ],
+    "unkmurder_focus_SQ25": [
+        [
+            "no_kit",
+            "min_platonic_20",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "Why are we even asking who fc_c's murderer was? Isn't it obvious?",
+            "dislike_rsh_c has killed before. Of course {PRONOUN/dislike_rsh_c/subject}'d kill again."
+        ]
+    ],
+    "unkmurder_focus_SQ26": [
+        [
+            "no_kit",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "Would everyone stop accusing plove_rsh_c of killing fc_c? Just because {PRONOUN/plove_rsh_c/subject} made a mistake in the past doesn't mean {PRONOUN/plove_rsh_c/subject}{VERB/plove_rsh_c/'re/'s} suddenly responsible for every mysterious death!",
+            "Leave {PRONOUN/plove_rsh_c/object} alone and stop gossipping, for StarClan's sake!"
+        ]
+    ],
+    "unkmurder_focus_SQ27": [
+        [
+            "no_kit",
+            "they_introspective",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "I know this might seem like a stretch, but have you considered that someone might be trying to frame neutral_rsh_c for fc_c's murder?",
+            "Think about it: the real murderer probably knew we'd immediately be suspicious of neutral_rsh_c. They saw their chance to get rid of fc_c and escape blame, and they took it.",
+            "Just a thought. I wouldn't take anything at face value, right now."
+        ]
+    ],
+    "unkmurder_focus_SQ28": [
+        [
+            "they_deputy",
+            "they_leader",
+            "they_assertive",
+            "they_upstanding",
+            "they_stable",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "You have dangerous herbs in your den, right? Deathberries and the like?",
+            "Make sure they're somewhere that's hard to access for a bit. Maybe even hide them. I don't want to take any risks."
+        ]
+    ],
+    "unkmurder_focus_SQ29": [
+        [
+            "they_deputy",
+            "they_leader",
+            "they_neurotic",
+            "you_medicine_cat",
+            "you_medicine_cat_apprentice",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "You keep deathberries and other dangerous herbs, right? I'm sorry, I don't want to tell you how to do your job, but maybe you should get rid of them for now...",
+            "Just until everything settles down, and we figure out what happened to fc_c, and we know we're safe again."
+        ]
+    ],
+    "unkmurder_focus_SQ30": [
+        [
+            "they_mediator",
+            "they_mediator_apprentice",
+            "they_neurotic",
+            "no_kit",
+            "min_platonic_20",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "plike_fc_c... one of our Clanmates... was murdered...",
+            "[t_c sits with {PRONOUN/t_c/poss} back to a tree, watching the camp. {PRONOUN/t_c/subject/CAP} sniffle.]",
+            "Isn't it my job to notice tensions and stop them before something bad happens?",
+            "I should've seen something. I should've been a good enough mediator to keep plike_fc_c safe!"
+        ]
+    ],
+    "unkmurder_focus_SQ31": [
+        [
+            "they_apprentice",
+            "sc_faith",
+            "they_neurotic",
+            "no_kit",
+            "min_platonic_20",
+            "focus"
+        ],
+        [
+            "StarClan had to have seen what happened to fc_c. I hope they tell neutral_r_m about it soon.",
+            "Unless... what if neutral_r_m was the one who... you know...",
+            "[t_c stares at the medicine den, tail twitching. When neutral_r_m steps outside, blinking in the sunlight, t_c squeaks like a kit and scurries away."
+        ]
+    ],
+    "unkmurder_focus_SQ32": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "r_c_assertive's going around and questioning everyone about where they were the day fc_c died.",
+            "...That seems like a bad idea to me. I'm laying low for now. Don't draw too much attention to yourself either, okay?"
+        ]
+    ],
+    "unkmurder_focus_SQ33": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_20",
+            "they_formerlyakittypet",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "I'm seriously thinking about going back to being a kittypet, y_c.",
+            "It wasn't the greatest, but I've never heard of a kittypet killing another kittypet! And if you find a good Twoleg, they'll keep you safe...",
+            "I don't know. I don't think I'm actually brave enough to leave the Clan. I just don't know how long I can take this tension."
+        ]
+    ],
+    "unkmurder_focus_SQ34": [
+        [
+            "no_kit",
+            "they_brooding",
+            "they_introspective",
+            "they_neurotic",
+            "min_platonic_20",
+            "they_formerlyaloner",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "One of the reasons I joined c_nClan was because I thought it\u00e2\u20ac\u2122d be safer than living on my own.",
+            "It seems like I was wrong. Apparently it just lures cats like fc_c into a false sense of security so someone can kill them."
+        ]
+    ],
+    "unkmurder_focus_SQ35": [
+        [
+            "no_kit",
+            "they_assertive",
+            "they_brooding",
+            "they_cool",
+            "they_upstanding",
+            "they_unlawful",
+            "min_platonic_20",
+            "they_formerlyarogue",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "This is ridiculous. At least when rogues kill other cats, they\u00e2\u20ac\u2122re open about what they did.",
+            "plike_fc_c doesn\u00e2\u20ac\u2122t deserve to have {PRONOUN/plike_fc_c/poss} death be a mystery."
+        ]
+    ],
+    "unkmurder_focus_SQ36": [
+        [
+            "no_kit",
+            "you_murderer",
+            "they_brooding",
+            "they_unlawful",
+            "min_dislike_40",
+            "focus"
+        ],
+        [
+            "[t_c hisses in your ear.]",
+            "It was you, wasn\u00e2\u20ac\u2122t it? I saw your face when we first realized what happened to fc_c. You didn\u00e2\u20ac\u2122t look nearly surprised enough.",
+            "No, I don\u00e2\u20ac\u2122t have proof, but the whole Clan knows how you feel about me. If I\u00e2\u20ac\u2122m next, well...",
+            "...Let\u00e2\u20ac\u2122s just say that everyone will know it was you. And honestly, that might be worth dying for."
+        ]
+    ],
+    "unkmurder_focus_SQ37": [
+        [
+            "no_kit",
+            "you_murderer",
+            "they_brooding",
+            "they_unlawful",
+            "min_dislike_30",
+            "you_blind",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "I know it was you. I don\u00e2\u20ac\u2122t have proof yet, but I <i>will</i> soon.",
+            "Watch yourself."
+        ]
+    ],
+    "unkmurder_focus_SQ38": [
+        [
+            "no_kit",
+            "you_murderer",
+            "they_unlawful",
+            "min_dislike_20",
+            "you_deaf",
+            "they_deaf",
+            "focus"
+        ],
+        [
+            "[t_c has been eying you all day. Any time you look over, {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} fixated on you. {VERB/t_c/Are/Is} {PRONOUN/t_c/subject} sliding {PRONOUN/t_c/poss} claws in and out?]",
+            "[If {PRONOUN/t_c/subject} {VERB/t_c/figure/figures} out that you were the one to kill plove_fc_c, you\u00e2\u20ac\u2122re pretty sure {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} the type to take action rather than wait for l_n to intervene. You\u00e2\u20ac\u2122ll have to be careful.]"
+        ]
+    ],
+    "unkmurder_focus_SQ39": [
+        [
+            "they_apprentice",
+            "you_app",
+            "they_assertive",
+            "they_upstanding",
+            "they_silly",
+            "they_stable",
+            "min_platonic_20",
+            "focus"
+        ],
+        [
+            "[t_c is practicing defensive moves over and over with r_a. When {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, {PRONOUN/t_c/subject} {VERB/t_c/call/calls} you over.]",
+            "Hey, do you want to practice with us? tm_n taught me a technique to get away if someone pins you down.",
+            "I think everyone should learn it, in case whoever killed fc_c tries anything else. Come on, I\u00e2\u20ac\u2122ll teach you!"
+        ]
+    ],
+    "unkmurder_focus_SQ40": [
+        [
+            "they_apprentice",
+            "you_apprentice",
+            "you_warrior",
+            "they_assertive",
+            "they_cool",
+            "they_silly",
+            "they_unabashed",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "Of course I\u00e2\u20ac\u2122m not saying it\u00e2\u20ac\u2122s good that neutral_fc_c got killed, but it means tm_n\u00e2\u20ac\u2122s been teaching me some advanced fighting moves early.",
+            "Here, try to attack me! I\u00e2\u20ac\u2122ll show you!"
+        ]
+    ],
+    "unkmurder_focus_SQ41": [
+        [
+            "they_apprentice",
+            "no_kit",
+            "they_assertive",
+            "they_cool",
+            "they_silly",
+            "they_unabashed",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "tm_n tried to take me hunting this morning. {PRONOUN/tm_n/subject/CAP} said it\u00e2\u20ac\u2122s important to keep the Clan well-fed, but I told {PRONOUN/tm_n/object} that after what happened to neutral_fc_c, I\u00e2\u20ac\u2122ve gotta learn to fight so I can defend myself.",
+            "So we did that instead! It was fun."
+        ]
+    ],
+    "unkmurder_focus_SQ42": [
+        [
+            "they_warrior",
+            "they_apprentice",
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_40",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "neutral_r_w1 and I were supposed to hunt as a pair today, but I asked if trust_r_w2 could come too.",
+            "It\u00e2\u20ac\u2122s not that I don\u00e2\u20ac\u2122t trust {PRONOUN/neutral_r_w1/object}! I just... I don\u00e2\u20ac\u2122t feel comfortable being alone with anyone right now.",
+            "I really hope I didn\u00e2\u20ac\u2122t hurt neutral_r_w1\u00e2\u20ac\u2122s feelings."
+        ]
+    ],
+    "unkmurder_focus_SQ43": [
+        [
+            "they_adult",
+            "you_kitten",
+            "they_neurotic",
+            "min_platonic_50",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "If anyone wants you to follow them somewhere, even if it's a cat you know, tell me first, okay?",
+            "[t_c licks you between the ears like normal, but you feel {PRONOUN/t_c/object}... shaking?]"
+        ]
+    ],
+    "unkmurder_focus_SQ44": [
+        [
+            "they_kitten",
+            "you_kitten",
+            "they_assertive",
+            "they_brooding",
+            "they_cool",
+            "they_upstanding",
+            "they_silly",
+            "they_unabashed",
+            "they_unlawful",
+            "you_assertive",
+            "you_brooding",
+            "you_cool",
+            "you_upstanding",
+            "you_silly",
+            "you_unabashed",
+            "you_unlawful",
+            "min_platonic_20",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "[The adults seem more on edge than usual lately. Some of them seem weirdly distracted, and some of them seem super intense.]",
+            "[You and t_c make a game of getting as close as you can to anyone who you notice whispering. The more words you hear, the more points you win!]"
+        ]
+    ],
+    "unkmurder_focus_SQ45": [
+        [
+            "no_kit",
+            "they_introspective",
+            "they_neurotic",
+            "they_stable",
+            "min_platonic_50",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "y_c, if you need to go anywhere alone, let me know, okay? We can go together, in case... well... you know.",
+            "I just don't want anything to happen to you."
+        ]
+    ],
+    "unkmurder_focus_SQ46": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_20",
+            "min_trust_15",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "I don't get it. respect_fc_c_upstanding was so... solid, I guess? Like... a constant. Like {PRONOUN/respect_fc_c_upstanding/subject}'d always be here, looking out for the Clan.",
+            "But now {PRONOUN/respect_fc_c_upstanding/subject}{VERB/respect_fc_c_upstanding/'re/'s} gone, and that doesn't even feel possible, somehow, and...",
+            "I don't know what I'm saying. I just... who's going to take care of c_nClan like {PRONOUN/respect_fc_c_upstanding/subject} used to?"
+        ]
+    ],
+    "unkmurder_focus_SQ47": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_20",
+            "min_trust_15",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "plike_fc_c_upstanding was the sort who would do anything for c_nClan. It just makes me wonder... did {PRONOUN/plike_fc_c_upstanding/subject} die protecting us from something?",
+            "Probably not, but that's all I can think about. I don't feel safe not knowing what exactly happened to {PRONOUN/plike_fc_c_upstanding/object}."
+        ]
+    ],
+    "unkmurder_focus_SQ48": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_30",
+            "min_trust_15",
+            "focus"
+        ],
+        [
+            "[t_c crouches in the shadow of a rock, watching the camp. {PRONOUN/t_c/subject/CAP} {VERB/t_c/tense/tenses} at your approach, but {VERB/t_c/relax/relaxes} when {PRONOUN/t_c/subject} {VERB/t_c/realize/realizes} it's you.]",
+            "Who do you think will be next? I want to believe that fc_c's murder will be the last, but I just can't convince myself.",
+            "Do you think the murderer will go after the strongest of us, to weaken the Clan? Or maybe someone like r_k, because they're an easy target?",
+            "I'm so scared, y_c. Things are bad, but I think they'll only get worse."
+        ]
+    ],
+    "unkmurder_focus_SQ49": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "min_platonic_20",
+            "max_respect_15",
+            "focus"
+        ],
+        [
+            "[Ever since plove_fc_c's death, t_c has been keeping {PRONOUN/t_c/poss} claws out. With how jumpy {PRONOUN/t_c/subject} {VERB/t_c/are/is}, you think it won't be long before {PRONOUN/t_c/subject} accidentally {VERB/t_c/hurt/hurts} someone.]",
+            "[You remind t_c to sheathe {PRONOUN/t_c/poss} claws. {PRONOUN/t_c/subject/CAP} {VERB/t_c/stare/stares} at {PRONOUN/t_c/poss} paws for a long moment, then slowly {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head.]",
+            "I'm... I'm sorry, y_c. I'm keeping them out for now. If someone comes after me, I want to be ready to defend myself.",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/scoot/scoots} away, looking apologetic. You make a note to be especially careful not to surprise {PRONOUN/t_c/object} for a while.]"
+        ]
+    ],
+    "unkmurder_focus_SQ50": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "sc_faith",
+            "you_murderer",
+            "focus"
+        ],
+        [
+            "[t_c fidgets with {PRONOUN/t_c/poss} paws beside the medicine den. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} watching everyone, but {VERB/t_c/are/is} {PRONOUN/t_c/subject} staring at you more?]",
+            "[After a bit of this, you ask what {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} thinking about. {PRONOUN/t_c/subject/CAP} {VERB/t_c/jump/jumps}.]",
+            "Oh, uh, nothing much! I just... I think I might have had a vision from StarClan last night?",
+            "{PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} definitely averting {PRONOUN/t_c/poss} eyes. What {VERB/t_c/do/does} {PRONOUN/t_c/subject} know? Did StarClan reveal... no. They couldn't have.]",
+            "I'm just trying to figure out what it means, or if it means anything at all. Dreams are confusing!",
+            "[t_c gives you a weak smile and then goes back to looking away. You ask {PRONOUN/t_c/subject} for more details, but {PRONOUN/t_c/subject} just {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head.]",
+            "[...You'll have to keep an eye on {PRONOUN/t_c/object}.]"
+        ]
+    ],
+    "unkmurder_focus_SQ51": [
+        [
+            "no_kit",
+            "they_neurotic",
+            "they_medicine_cat",
+            "they_medicine_cat_apprentice",
+            "sc_faith",
+            "min_platonic_20",
+            "min_comfort_15",
+            "they_blind",
+            "you_blind",
+            "focus"
+        ],
+        [
+            "I haven't heard <i>anything</i> from StarClan about fc_c's death. Shouldn't they have said something by now?",
+            "I feel like the whole Clan is waiting for me to get a sign. Every night I don't get one, I feel like I'm letting everyone down."
+        ]
+    ],
+    "unknown_murder_J1": [
+        [
+            "any",
+            "focus",
+            "they_blind",
+            "you_blind",
+            "neurotic",
+            "upstanding",
+            "stable"
+        ],
+        [
+            "I can't believe plike_fc_c is gone and we don't even know who killed {PRONOUN/fc_c/object}...",
+            "The camp seems so empty now. And even worse, one of us is a murderer! How are we supposed to sleep at night?"
+        ]
+    ],
+    "unknown_murder_J2": {
+        "tags": [
+            "focus",
+            "brooding",
+            "assertive",
+            "stable",
+            "cool",
+            "silly",
+            "no_kit",
+            "min_trust_20",
+            "they_warrior",
+            "they_queen",
+            "they_medicine_cat",
+            "they_mediator",
+            "they_apprentice",
+            "they_mediator_apprentice",
+            "they_mediator_apprentice",
+            "they_queen's_apprentice",
+            "you_warrior",
+            "you_queen",
+            "you_medicine_cat",
+            "you_mediator",
+            "you_apprentice",
+            "you_mediator_apprentice",
+            "you_mediator_apprentice",
+            "you_queen's_apprentice"
+        ],
+        "intro": [
+            "Who do you think did it?",
+            "Come on, you have to have a guess."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I don't know.",
+                "next_scene": "idontknow"
+            },
+            "choice2": {
+                "text": "dislike_r_w1",
+                "next_scene": "dislike_r_w1"
+            },
+            "choice3": {
+                "text": "r_w2_neurotic",
+                "next_scene": "r_w2_neurotic"
+            },
+            "choice4": {
+                "text": "l_n",
+                "next_scene": "l_n"
+            }
+        },
+        "idontknow": [
+            "Fine. Keep your secrets.",
+            "I have my eye on dislike_r_w1, personally... But don't tell {PRONOUN/dislike_r_w1/object} I said that, alright?"
+        ],
+        "dislike_r_w1": [
+            "[t_c's eyes widen.]",
+            "See, I was thinking the same thing... {PRONOUN/dislike_r_w1/subject}{VERB/dislike_r_w1/'re/'s} weird, right?",
+            "Let's keep an eye on {PRONOUN/dislike_r_w1/object}, okay? It could be one of us next..."
+        ],
+        "r_w2_neurotic": [
+            "[t_c almost laughs.]",
+            "r_w2_neurotic? Why?",
+            "That cat jumps every time they hear a woodpecker. And you think {PRONOUN/r_w2_neurotic/subject} killed fc_c?",
+            "Hm... now that you think about it, maybe that anxiety is all just an act... Oh, maybe {PRONOUN/r_w2_neurotic/subject}{VERB/r_w2_neurotic/'ve/'s} had us fooled this whole time!",
+            "[t_c seems to be having a bit too much fun with this...]"
+        ],
+        "l_n": [
+            "Whoa! y_c, lower your voice!",
+            "[t_c whips around, in the least inconspicuous way possible, to see if the leader was within earshot. It appears that {PRONOUN/l_n/subject}{VERB/l_n/'re/'s} not even in camp.]",
+            "You need to be more careful, y_c. You can't just throw out an accusation like that.",
+            "[But... {VERB/t_c/aren't/isn't} {PRONOUN/t_c/subject} the one that asked?!]"
+        ]
+    },
+    "unknown_murder_J3": [
+        [
+            "focus",
+            "brooding",
+            "assertive",
+            "cool",
+            "you_kitten",
+            "they_apprentice",
+            "they_mediator_apprentice",
+            "min_dislike_10",
+            "max_platonic_30",
+            "you_silly",
+            "you_sweet",
+            "you_not_murderer",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Hey, y_c. Did you hear about the monster?",
+            "Yup. There's a monster in camp. It killed neutral_fc_c. It might get you next.",
+            "Don't worry, though. I'll protect you... if you can sneak me some honey from the medicine den.",
+            "What? I don't work for free. Go on!",
+            "[You turn to run for the medicine den. A little bit of stolen honey is a small price to pay for protection from the monster!]"
+        ]
+    ],
+    "unknown_murder_J4": [
+        [
+            "focus",
+            "any",
+            "no_kit",
+            "min_platonic_70",
+            "assertive",
+            "upstanding",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "y_c! y_c, do you have any enemies?",
+            "I'm just... being cautious. I didn't think fc_c_sweet had any enemies, but...",
+            "[You assure t_c that you would never let anyone kill you, and {PRONOUN/t_c/subject} {VERB/t_c/don't/doesn't} have to worry.]",
+            "Okay. I'll take your word for it, y_c.",
+            "Just... be careful, okay?"
+        ]
+    ],
+    "unknown_murder_J5": [
+        [
+            "brooding",
+            "they_leader",
+            "focus",
+            "focus"
+        ],
+        [
+            "[t_c is observing the Clan from above, {PRONOUN/t_c/poss} face stern and cold.]",
+            "Not now, y_c. I'm busy.",
+            "[This mystery seems to be troubling {PRONOUN/t_c/object}...]"
+        ]
+    ],
+    "unknown_murder_J6": [
+        [
+            "focus",
+            "any",
+            "min_dislike_40",
+            "you_murderer",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c flinches when you walk past. Almost as if {PRONOUN/t_c/subject} {VERB/t_c/suspect/suspects} something...]",
+            "[Almost.]"
+        ]
+    ],
+    "unknown_murder_J7": {
+        "tags": [
+            "focus",
+            "brooding",
+            "assertive",
+            "no_kit"
+        ],
+        "intro": [
+            "Did you kill fc_c?",
+            "Don't mess with me, y_c. I'll know if you lie. Answer the question."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "Did you?",
+                "next_scene": "didyou"
+            },
+            "choice2": {
+                "text": "No",
+                "next_scene": "killthem_no"
+            },
+            "choice3": {
+                "text": "Yes",
+                "next_scene": "killthem_yes"
+            }
+        },
+        "didyou": [
+            "...",
+            "... ... ... ... ... ...",
+            "... ... ... ... ... ... ... ... ... ... ... ...",
+            "Well played, y_c. I'll let you go.",
+            "[You have no idea what you're supposed to think.]"
+        ],
+        "killthem_no": [
+            "And you swear you're telling the truth? Swear on StarClan?",
+            "[You nod.]",
+            "Okay. Thank you.",
+            "[t_c turns and approaches r_c, standing nearby. Is this {PRONOUN/t_c/poss} investigation strategy?]"
+        ],
+        "killthem_yes": [
+            "What? Seriously?",
+            "No, you're messing with me. I told you not to mess with me! I can tell that you're lying!",
+            "Ugh. I'm gonna go ask r_c.",
+            "[What a foolproof investigation strategy.]"
+        ]
+    },
+    "unknown_murder_J8": [
+        [
+            "focus",
+            "you_murderer",
+            "min_trust_30",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[Anytime you catch t_c's eye, {PRONOUN/t_c/subject} {VERB/t_c/give/gives} you a sad, hollow stare.]",
+            "[Is it grief for plove_fc_c, or {VERB/t_c/are/is} {PRONOUN/t_c/subject} trying to tell you something..?]"
+        ]
+    ],
+    "unknown_murder_J9": [
+        [
+            "focus",
+            "you_queen",
+            "you_queen's_apprentice",
+            "they_kitten",
+            "neurotic",
+            "assertive",
+            "you_not_murderer",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[After hearing about the mystery death in the Clan, t_c has refused to leave the nursery.]",
+            "No! No! I don't care! If I go out there, the monster's gonna get me like fc_c!",
+            "[You consider telling {PRONOUN/t_c/object} that fc_c was killed by a cat, not a monster, but... that would probably make it worse.]"
+        ]
+    ],
+    "unknown_murder_J10": [
+        [
+            "focus",
+            "any",
+            "they_grieving",
+            "they_blind",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c looks awful. The suspicious death of plove_fc_c must be incredibly stressful for {PRONOUN/t_c/object}... you can't even imagine.]"
+        ]
+    ],
+    "unknown_murder_J11": [
+        [
+            "focus",
+            "you_shunned",
+            "you_not_murderer",
+            "they_any",
+            "upstanding",
+            "assertive",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[Ever since plove_fc_c's death, t_c looks at you as if {PRONOUN/t_c/subject} watched you kill {PRONOUN/plove_fc_c/object}.]",
+            "[You know there's no way you'll be able to convince {PRONOUN/t_c/object} that you didn't... not until the real killer is found.]"
+        ]
+    ],
+    "unknown_murder_J12": [
+        [
+            "focus",
+            "they_shunned",
+            "you_not_murderer",
+            "you_not_kit",
+            "they_any",
+            "brooding",
+            "min_platonic_30"
+        ],
+        [
+            "Hey. HEY. y_c. Stop looking at me like that.",
+            "[t_c must have noticed how nervous you are around {PRONOUN/t_c/object}. {VERB/t_c/Do/Does} {PRONOUN/t_c/subject} think yelling at you is going to help?]",
+            "Wow. You really think I killed plove_fc_c, don't you? You think I'm that evil?",
+            "I thought we were friends, y_c. I thought you knew me better than that.",
+            "[You don't know what you know anymore.]"
+        ]
+    ],
+    "unknown_murder_J13": [
+        [
+            "focus",
+            "they_df",
+            "you_dftrainee",
+            "they_older",
+            "you_not_murderer",
+            "cool",
+            "they_ancientspirit"
+        ],
+        [
+            "Hey, kid. You don't know who killed fc_c, do ya?",
+            "Really? I thought it was pretty obvious, honestly...",
+            "No, I'm not telling you!"
+        ]
+    ],
+    "unknown_murder_J14": [
+        [
+            "focus",
+            "they_df",
+            "you_murderer",
+            "any",
+            "brooding",
+            "cool"
+        ],
+        [
+            "[Since they were curious, you took t_c to the place you killed fc_c. They sniff around the area, inspecting the ground through squinting eyes.]",
+            "You really covered your tracks well, huh...",
+            "Impressive. Really.",
+            "You gonna keep going?"
+        ]
+    ],
+    "introspective_unkmur_H1": [
+        [
+            "focus",
+            "no_kit",
+            "they_introspective",
+            "min_trust_15",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "dislike_r_c has been accusing me of being too quiet about neutral_fc_c's death.",
+            "But is being quiet about a murder really that bad? It is unfortunate for both c_nClan and neutral_fc_c.",
+            "I'm at a loss on what else to say."
+        ]
+    ],
+    "introspective_unkmur_H2": [
+        [
+            "focus",
+            "no_kit",
+            "they_introspective",
+            "any",
+            "they_deaf",
+            "you_deaf"
+        ],
+        [
+            "[t_c observes c_nClan around {PRONOUN/t_c/object}, {PRONOUN/t_c/poss} back pressed against the nearest surface.]",
+            "[After plike_fc_c's death, t_c seems suspicious of every cat.]"
+        ]
+    ],
+    "introspective_unkmur_H3": [
+        [
+            "focus",
+            "no_kit",
+            "they_introspective",
+            "they_upstanding",
+            "they_grieving",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "plove_fc_c was murdered... and here is every cat thinking about themselves. If they're next, if r_c was involved...",
+            "The fact of the matter is that I <i>need</i> to avenge my precious plove_fc_c.",
+            "No matter the cost."
+        ]
+    ],
+    "introspective_unkmur_H4": [
+        [
+            "focus",
+            "no_kit",
+            "they_introspective",
+            "min_dislike_50",
+            "you_murderer",
+            "any"
+        ],
+        [
+            "[t_c stares at you with unnerving observance. {PRONOUN/t_c/poss/CAP} eyes narrow, as if t_c knows something no other cat does.]",
+            "So... fc_c was murdered, huh?",
+            "I admit, I haven't heard you say anything about {PRONOUN/fc_c/poss} death yet. Don't you think that makes you suspicious?"
+        ]
+    ],
+    "introspective_unkmur_H5": [
+        [
+            "focus",
+            "they_kitten",
+            "they_introspective",
+            "from_your_kit",
+            "from_adopted_kit",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Everyone is whispering about plike_fc_c.",
+            "Did something bad happen?",
+            "... Huff, so even my {PRONOUN/t_c/parent} doesn't want to tell me! plike_fc_c is my friend! Don't I have the right to know?"
+        ]
+    ],
+    "introspective_unkmur_H6": [
+        [
+            "focus",
+            "they_kitten",
+            "they_introspective",
+            "from_your_kit",
+            "from_adopted_kit",
+            "any",
+            "they_blind",
+            "they_deaf"
+        ],
+        [
+            "[You were whispering to y_m about what happened to neutral_fc_c when you notice the flick of fur in the corner of your eye.]",
+            "[You turn your head just in time to catch t_c rushing out of sight.]"
+        ]
+    ],
+    "gen_unkmur_H1": [
+        [
+            "focus",
+            "they_grieving",
+            "min_comfort_15",
+            "no_kit",
+            "any",
+            "they_blind"
+        ],
+        [
+            "y_c, I can't understand why anyone would hate plove_fc_c enough to... to...",
+            "[t_c buries {PRONOUN/t_c/poss} head into {PRONOUN/t_c/poss} paws.]",
+            "It's awful! I keep thinking about it and nothing makes sense!"
+        ]
+    ],
+    "introspective_unkmur_H7": [
+        [
+            "focus",
+            "they_introspective",
+            "they_elder",
+            "no_kit",
+            "any"
+        ],
+        [
+            "[t_c has been oddly calm about fc_c's death, a drastic difference from the rest of c_nClan's panic.]",
+            "Oh dear y_c, I've seen many murders in my days and the Clan always acts the same.",
+            "Take it from me. Panicking just blinds you from the truth standing right in front of you."
+        ]
+    ],
+    "introspective_unkmur_H8": [
+        [
+            "focus",
+            "they_introspective",
+            "they_elder",
+            "you_not_murderer",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Back in my day, the leader and deputy would look for the murderer themselves.",
+            "Hmmf. It seems like those days are long gone now, though. Poor fc_c... No one to avenge {PRONOUN/fc_c/object}, no one to look for the truth."
+        ]
+    ],
+    "introspective_unkmur_H9": [
+        [
+            "focus",
+            "they_introspective",
+            "they_elder",
+            "you_murderer",
+            "grandparent",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Dear, you have been very smug lately. Don't think I can't tell.",
+            "I wonder what has gotten you in this mood."
+        ]
+    ],
+    "gen_unkmur_H2": [
+        [
+            "focus",
+            "they_younger",
+            "any"
+        ],
+        [
+            "Huh? Oh. Yes, I heard about neutral_fc_c.",
+            "[t_c's tone is very dismissive as {PRONOUN/t_c/subject} {VERB/t_c/continue/continues} to stare with heart eyes in their_crush's direction.]",
+            "[Seems like t_c is too... occupied to talk about neutral_fc_c's murder.]"
+        ]
+    ],
+    "introspective_unkmur_H10": [
+        [
+            "focus",
+            "they_introspective",
+            "you_murderer",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I noticed you were asking every cat about fc_c's murder.",
+            "Why's that?"
+        ]
+    ],
+    "introspective_unkmur_H11": [
+        [
+            "focus",
+            "they_introspective",
+            "you_murderer",
+            "they_any",
+            "any",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
+        ],
+        [
+            "I heard plike_fc_c crying the night before {PRONOUN/plike_fc_c/subject} died.",
+            "I wonder if {PRONOUN/plike_fc_c/subject} knew {PRONOUN/plike_fc_c/subject} {VERB/plike_fc_c/were/was} in danger."
+        ]
+    ],
+    "aboutcluster_unkmur_H1": [
+        [
+            "focus",
+            "they_kitten",
+            "they_app",
+            "you_medicine_cat",
+            "min_comfort_15",
+            "min_trust_15"
+        ],
+        [
+            "Hey, y_c? Can you promise me something?",
+            "If you see plove_fc_c_introspective at the half-moon meeting, can you ask {PRONOUN/plove_fc_c_introspective/object} what story {PRONOUN/plove_fc_c/subject} {VERB/plove_fc_c_introspective/were/was} going to tell me before {PRONOUN/plove_fc_c_introspective/subject} {VERB/plove_fc_c_introspective/were/was}...",
+            "[t_c tears up and in pity, you cut them off with a nod of your head.]"
+        ]
+    ],
+    "introspective_unkmur_H12": [
+        [
+            "focus",
+            "they_leader",
+            "they_introspective",
+            "they_upstanding",
+            "you_kitten",
+            "you_app",
+            "min_comfort_15",
+            "you_blind"
+        ],
+        [
+            "Hm. Don't worry, little one. I've been watching c_nClan for any suspicious behavior lately.",
+            "I dislike doing this, but no one should go through what neutral_fc_c experienced. If that means watching my Clan as if I never held trust for them... so be it."
+        ]
+    ],
+    "introspective_unkmur_H13": [
+        [
+            "focus",
+            "they_leader",
+            "they_introspective",
+            "you_any",
+            "they_blind",
+            "you_blind",
+            "they_hearing"
+        ],
+        [
+            "[As you approach t_c, you hear {PRONOUN/t_c/object} mumbling to {PRONOUN/t_c/self}.]",
+            "rsh_c? No, no, {PRONOUN/rsh_c/subject} wouldn't dare do it so soon. What about dislike_r_c1_unlawful... gah {PRONOUN/dislike_r_c1_unlawful/subject} may be a handful, but I trust {PRONOUN/dislike_r_c1_unlawful/object} more than r_c2_brooding... but r_c2_brooding wouldn't do something like this either...",
+            "[You decide to leave t_c alone as {PRONOUN/t_c/poss} mumbles turn frustrated.]"
+        ]
+    ],
+    "introspective_unkmur_H14": [
+        [
+            "focus",
+            "they_introspective",
+            "they_deputy",
+            "you_kitten",
+            "you_apprentice",
+            "min_dislike_10",
+            "they_hearing"
+        ],
+        [
+            "[t_c and l_n look to be deep in conversation.]",
+            "[You attempt to crawl in earshot, but t_c turns {PRONOUN/t_c/poss} head just as you hear fc_c's name.]",
+            "y_c, this is not the time. Reoccupy yourself elsewhere. And please, be good and do not cause further trouble."
+        ]
+    ],
+    "gen_unkmur_H3": [
+        [
+            "focus",
+            "they_leader",
+            "from_parent",
+            "min_dislike_10",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "y_c... just because you're my kit, it does not mean you can simply ask for information on fc_c's murder.",
+            "... No, no, you cannot ask again."
+        ]
+    ],
+    "gen_unkmur_H4": [
+        [
+            "focus",
+            "you_shunned",
+            "you_not_murderer",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I don't know what to believe. Every cat has been watching you so closely, they forgot anyone else could also do the same crime.",
+            "Well, duh, I don't think you killed neutral_fc_c. I think that's a bit far-fetched, considering every cat has been watching you like a hawk.",
+            "Where would you even find the opening?",
+            "... Don't answer that."
+        ]
+    ],
+    "strange_unkmur_H1": [
+        [
+            "focus",
+            "strange",
+            "no_kit",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Every cat is thinking r_c1_unlawful or r_c2_unabashed murdered fc_c.",
+            "But I think we need to think out of the box. What about r_c3_neurotic? Or r_c4_upstanding?",
+            "Hey, I'm not weird for that! It's always the quiet, uptight ones...",
+            "Huh? Oh, I didn't say anything! Ahaha..."
+        ]
+    ],
+    "strange_unkmur_H2": {
+        "tags": [
+            "focus",
+            "strange",
+            "no_kit"
+        ],
+        "intro": [
+            "Ohh, y_c~! I noticed every cat was playing a guessing game involving fc_c!",
+            "So, y_c, do YOU think I murdered fc_c??",
+            "Come on, come on, I wanna know!"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "[Stare incredulously.]",
+                "next_scene": "incredulously"
+            },
+            "choice2": {
+                "text": "As if.",
+                "next_scene": "as_if"
+            },
+            "choice3": {
+                "text": "Maybe.",
+                "next_scene": "maybe"
+            },
+            "choice4": {
+                "text": "Do you want me to?",
+                "next_scene": "wantto"
+            }
+        },
+        "incredulously": [
+            "... What? Why are you looking at me like that?",
+            "I think it's a valid question!",
+            "Ugh, fine, don't answer! I'll just ask some other cat since you're no fun.",
+            "[t_c skips gleefully to r_c_upstanding. That's <i>totally</i> going to go well.]"
+        ],
+        "as_if": [
+            "[t_c makes an offended noise.]",
+            "'As if'?? No, no, I totally could murder! You underestimate me!",
+            "Not - not like I would do it though! Ugh!",
+            "[You huff in amusement. It seems like t_c is confusing {PRONOUN/t_c/self} with this joke of {PRONOUN/t_c/inposs}.]"
+        ],
+        "maybe": [
+            "Hehe, I get a maybe? So mysterious, y_c!",
+            "Hmmf. Keep your secrets. I'll just have to try harder next time!",
+            "[... Was this t_c's way of interrogating you?]"
+        ],
+        "wantto": [
+            "Erm. I'm not going to answer that, even though it wasn't even an answer to my question!",
+            "Asking a question to my question, I see how it is...",
+            "[t_c continues to grumble at how 'unfair' you're being before {PRONOUN/t_c/subject} {VERB/t_c/saunter/saunters} away.]"
+        ]
+    }
+}

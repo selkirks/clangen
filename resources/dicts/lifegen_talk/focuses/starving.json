@@ -1,0 +1,595 @@
+{
+    "starving_elder": [
+        [
+            "no_kit",
+            "sweet",
+            "introspective",
+            "stable",
+            "they_starving",
+            "unabashed",
+            "focus"
+        ],
+        [
+            "...",
+            "Oh...? Is that mouse for me?",
+            "[t_c stares longingly at the prey, eyes dull with hunger.]",
+            "No, you take it, young'un. It's not long before I take my place in StarClan, and you need your strength."
+        ]
+    ],
+    "theystarving_1": [
+        [
+            "they_starving",
+            "Any",
+            "they_blind",
+            "they_deaf",
+            "focus"
+        ],
+        [
+            "[t_c kneads {PRONOUN/t_c/poss} stomach, eyes hollow with hunger.]",
+            "[Seems like this famine is really doing a number on everyone ...]"
+        ]
+    ],
+    "theystarving_2": [
+        [
+            "they_starving",
+            "warrior",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "Is it time for another hunting patrol already?",
+            "[t_c struggles to their paws and heads to the camp's entrance.]",
+            "Let's hope we catch something this time..."
+        ]
+    ],
+    "they_starving_3": [
+        [
+            "any",
+            "introspective",
+            "they_starving",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "... y_c. Hello.",
+            "This situation... I can barely describe it.",
+            "'Hunger is the killer of the mind' is something the elders used to tell me. I think I finally understand that.",
+            "I can barely focus on anything else.",
+            "We need to find more prey. The Clan can't thrive like this."
+        ]
+    ],
+    "they_starving_5": [
+        [
+            "any",
+            "introspective",
+            "they_starving",
+            "focus"
+        ],
+        [
+            "...",
+            "[t_c is staring up at the trees, scanning the branches.]",
+            "You know, y_c. It seems this hunger is affecting everything. The grass seems dry, and the little birds that normally sing above our camp haven't appeared.",
+            "It's demoralising. I don't know how we'll go on, y_c."
+        ]
+    ],
+    "they_starving_6": [
+        [
+            "they_starving",
+            "Any",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "I'd give anything for a nice mouse right now. StarClan, I'd even settle for a stale one! Anything to get rid of this hunger..."
+        ]
+    ],
+    "starving_queen": [
+        [
+            "no_kit",
+            "sweet",
+            "introspective",
+            "stable",
+            "upstanding",
+            "neurotic",
+            "they_starving",
+            "focus"
+        ],
+        [
+            "[t_c stares into the nursery, eyes hollow.]",
+            "None of the kits have been out to play today.",
+            "[t_c makes a choking sound, avoiding your gaze.]",
+            "Th-they're usually always so energetic... I don't...",
+            "y_c, I don't know what to do! This starvation it's.. I know it affects the kits. I need to get some prey. I can't think."
+        ]
+    ],
+    "theystarving_sweet1": [
+        [
+            "they_starving",
+            "no_kit",
+            "sweet",
+            "they_deaf",
+            "focus"
+        ],
+        [
+            "[Despite {PRONOUN/t_c/poss} obvious hunger, you can see t_c nudging what little {PRONOUN/t_c/subject} have to r_c.]",
+            "[{PRONOUN/t_c/subject} {VERB/t_c/look/looks} at you and smile tiredly. The pain means nothing to {PRONOUN/t_c/object} if it means {PRONOUN/t_c/subject} could help someone else.]"
+        ]
+    ],
+    "theystarving_sweet2": [
+        [
+            "they_starving",
+            "no_kit",
+            "sweet",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "I'm gonna do what I can to get more food... I promise.",
+            "If I can't, you can have my portion tonight.. I don't mind."
+        ]
+    ],
+    "theystarving_sweet3": [
+        [
+            "they_starving",
+            "no_kit",
+            "sweet",
+            "focus"
+        ],
+        [
+            "[Despite everything, t_c continues to smile. Despite everything, {PRONOUN/t_c/subject} {VERB/t_c/keep/keeps} trying to make you happy.]",
+            "StarClan will bring us food, we just need to be patient.",
+            "[Despite everything... the look in {PRONOUN/t_c/poss} eyes tells you {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} just as hopeless as you are.]"
+        ]
+    ],
+    "youstarving_1": [
+        [
+            "you_starving",
+            "Any",
+            "platonic_like",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "[t_c drops a small mouse at your paws, nosing it towards you.]",
+            "Eat. We all need to keep our strength up, especially in times like these."
+        ]
+    ],
+    "you_starving_2": [
+        [
+            "any",
+            "you_starving",
+            "focus"
+        ],
+        [
+            "Oh, y_c.",
+            "[t_c comes trotting up to you, worry carved into {PRONOUN/t_c/poss} face.]",
+            "You know... I didn't expect that you would fall victim to hunger. You always seemed too strong for it.",
+            "Please... just hold on for a little bit longer. I'll make sure that the next fresh kill goes to you."
+        ]
+    ],
+    "you_starving_3": [
+        [
+            "any",
+            "you_starving",
+            "focus"
+        ],
+        [
+            "Oh, y_c. I'm so sorry...",
+            "[t_c scans over the fresh kill pile, it appearing to be barren.]",
+            "There's still no fresh kill. Nothing's been found.",
+            "[{PRONOUN/t_c/poss/CAP} voice hitches and {PRONOUN/t_c/subject} {VERB/t_c/sniff/sniffs} quietly to {PRONOUN/t_c/self}.]",
+            "This... why would StarClan do this to us...?"
+        ]
+    ],
+    "you_starving_4": [
+        [
+            "warrior",
+            "apprentice",
+            "you_starving",
+            "focus"
+        ],
+        [
+            "y_c?",
+            "[You turn to look up at t_c.]",
+            "Listen... I know you're hungry, but we need more cats on hungry --- hunting. Hunting patrol.",
+            "There's nothing in the fresh kill pile, and we're getting a little desperate. Maybe you might be able to find something? A fresh pair of eyes is helpful.",
+            "I know, I know. I wouldn't ask if it wasn't essential, y_c. You know this."
+        ]
+    ],
+    "you_starving_6": [
+        [
+            "you_starving",
+            "Any",
+            "focus"
+        ],
+        [
+            "[t_c trudges back into camp with {PRONOUN/t_c/poss} head and tail lowered in defeat. {PRONOUN/t_c/poss/CAP} dull eyes meet yours and {PRONOUN/t_c/subject} {VERB/t_c/shake/shakes} {PRONOUN/t_c/poss} head.]",
+            "There's not even so much as a mouse out there... I'm sorry. Let's try not to worry though, we have to catch at least something sooner or later!",
+            "...",
+            "Right?"
+        ]
+    ],
+    "you_starving_7": [
+        [
+            "you_starving",
+            "they_starving",
+            "no_kit",
+            "greenleaf",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "Ironic, isn't it? Greenleaf is supposed to be the time of year when prey is the most abundant, yet here we are. Starving."
+        ]
+    ],
+    "theystarving_silly": [
+        [
+            "they_starving",
+            "no_kit",
+            "silly",
+            "assertive",
+            "stable",
+            "unabashed",
+            "cool",
+            "focus"
+        ],
+        [
+            "Y'know, I heard that if you imagine a meal in vivid enough detail, you can trick your brain into thinking you've eaten!",
+            "Okay, so ... I'm imagining a mouse still warm from the hunting patrol, with super tender flesh.",
+            "Now I'm imagining a ginormous fish shimmering with scales!",
+            "Now, I'm imagining one -- no, two -- no, ten squirrels, topped off with a vole or two, and maybe a sparrow to finish it all off!",
+            "... Man. If anything, all that did was make me even hungrier."
+        ]
+    ],
+    "you_starving_8": [
+        [
+            "you_starving",
+            "no_kit",
+            "introspective",
+            "sweet",
+            "stable",
+            "platonic_like",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "[t_c noses a small sparrow towards you.]",
+            "Please, t_c, you have to eat something.",
+            "It's very moving to see your dedication to the Clan during this period of hardship, but no cat can go without forever.",
+            "Your life is not worth any less than the rest of ours. c_nClan needs you healthy.",
+            "Promise me you'll eat it and regain your strength, okay?"
+        ]
+    ],
+    "you_starving_9": [
+        [
+            "you_starving",
+            "no_kit",
+            "brooding",
+            "platonic_like",
+            "they_blind",
+            "focus"
+        ],
+        [
+            "[t_c drops a tiny mouse at your paws and looks away shyly.]",
+            "I know it's not much, but ... the hunting patrol couldn't bring much back. It's all I could manage to save for you.",
+            "What about me?",
+            "[t_c looks away.]",
+            "I ... I'll be fine. Don't worry."
+        ]
+    ],
+    "they_starving_4": [
+        [
+            "any",
+            "they_starving",
+            "they_newborn",
+            "focus"
+        ],
+        [
+            "Meeewwww!!!!",
+            "[A newborn kitten kneads against a queen trying to get milk, but seemingly being unable to.]",
+            "[The queen gives you a sad glance before gently licking {PRONOUN/t_c/poss} forehead.]"
+        ]
+    ],
+    "you_starving_5": [
+        [
+            "any",
+            "you_starving",
+            "they_medicine_cat",
+            "focus"
+        ],
+        [
+            "Oh, good morning, y_c.",
+            "[You look over to see t_c coming over to you, a bundle of herbs wrapped in a leaf in {PRONOUN/t_c/poss} mouth. {PRONOUN/t_c/subject/CAP} gently {VERB/t_c/place/places} the package down next to you.]",
+            "Listen, I've noticed that... well you're not doing okay. This starvation is awful for the body and the mind. I've been thinking about it since yesterday, and I decided to make some herb bundles.",
+            "They're normally for traveling, but I suppose in a morbid sense this is its own kind of adventure. Please will you eat them? I've made a bundle for all the cats that need it, so you don't need to worry that you're taking herbs off of someone else.",
+            "In case you're wondering, it's a mixture of honey, chamomile and willow herb, and wrapped in a laurel leaf.",
+            "... there we go. Thank you y_c. Hopefully there will be more fresh-kill soon."
+        ]
+    ],
+    "you_starving_51": [
+        [
+            "any",
+            "you_starving",
+            "they_medicine_cat_apprentice",
+            "focus"
+        ],
+        [
+            "Oh, good morning, y_c.",
+            "[You look over to see t_c coming over to you, a bundle of herbs wrapped in a leaf in {PRONOUN/t_c/poss} mouth. {PRONOUN/t_c/subject/CAP} gently {VERB/t_c/place/places} the package down next to you.]",
+            "Listen, I've noticed that... well you're not doing okay. This starvation is awful for the body and the mind. I've been thinking about it since yesterday, and I decided to make some herb bundles.",
+            "They're normally for traveling, but I suppose in a morbid sense this is its own kind of adventure. Please will you eat them? I've made a bundle for all the cats that need it, so you don't need to worry that you're taking herbs off of someone else.",
+            "In case you're wondering, it's a mixture of honey, chamomile and willow herb, and wrapped in a laurel leaf.",
+            "... there we go. Thank you y_c. Hopefully there will be more fresh-kill soon."
+        ]
+    ],
+    "you_starving_31": [
+        [
+            "any",
+            "you_starving",
+            "kitten",
+            "newborn",
+            "focus"
+        ],
+        [
+            "Oh, y_c. I'm so sorry...",
+            "[t_c scanned over the fresh kill pile, it appearing to be barren.]",
+            "There's still no fresh kill. Nothing's been found.",
+            "[{PRONOUN/t_c/poss/CAP} voice hitches and {PRONOUN/t_c/subject} {VERB/t_c/sniff/sniffs} quietly to {PRONOUN/t_c/self}.]",
+            "This... why would StarClan do this to us...?"
+        ]
+    ],
+    "starving_unlawful_Guy1": [
+        [
+            "Any",
+            "you_starving",
+            "unlawful"
+        ],
+        [
+            "Psst, y_c.",
+            "[You gather the strength to look at t_c, and notice that {PRONOUN/t_c/subject}  {VERB/t_c/have/has} somehow found a skinny vole.",
+            "It was supposed to be l_n's... but you need it more."
+        ]
+    ],
+    "starve_shunned_CM1": [
+        [
+            "no_kit",
+            "you_shunned",
+            "starving",
+            "focus"
+        ],
+        [
+            "[t_c looks down at your pelt, dull and thin from what feels like moons of endless hunger.]",
+            "Preparing for the Dark Forest early, y_c?",
+            "Serves you right, coward."
+        ]
+    ],
+    "starve_shunned_CM2": [
+        [
+            "no_kit",
+            "you_shunned",
+            "platonic_love",
+            "starving",
+            "focus"
+        ],
+        [
+            "[Since the Clan has been so low on prey recently, you've had even rarer meals than you would have before. The days spent stuck in camp are long and hard. And yet...]",
+            ".. y_c? Are you there?",
+            "[t_c approaches you with a small, scrawny mouse in {PRONOUN/t_c/poss} jaws, looking around to check that no cat notices when {PRONOUN/t_c/subject} drop it in front of you.]",
+            "You have to eat too. Some of our Clanmates don't think it's worth it to feed you anymore.",
+            "But I've seen the real you, y_c, I know what kind of cat you are, and you need to survive this.",
+            "I believe in you, and I know that you'll hold on."
+        ]
+    ],
+    "dead_to_starving_H5": [
+        [
+            "they_newborn",
+            "you_dead",
+            "any",
+            "focus",
+            "they_starving",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "[t_c makes a small, pitiful mewl from where {PRONOUN/t_c/subject} {VERB/t_c/lay/lays} against the nest.]"
+        ]
+    ],
+    "dead_to_starving_H3~1": {
+        "tags": [
+            "they_starving",
+            "they_introspective",
+            "you_sc",
+            "Any",
+            "no_kit",
+            "focus",
+            "trust",
+            "sc_faith"
+        ],
+        "intro": [
+            "[t_c looks up as you approach, {PRONOUN/t_c/poss} body sunken from the lack of fresh-kill.]",
+            "y_c, I'm sorry to ask this of you.",
+            "You're able to disrupt omens and prophecies, right? You're able to help c_nClan... right?",
+            "[t_c gazes at you with pleading eyes. It seems you are {PRONOUN/t_c/poss} last, fickle hope.]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I will try.",
+                "next_scene": "try"
+            },
+            "choice2": {
+                "text": "I can't do that.",
+                "next_scene": "cant_do"
+            },
+            "choice3": {
+                "text": "[Lie.]",
+                "next_scene": "lie_starving"
+            }
+        },
+        "try": [
+            "Thank you... Thank you, y_c.",
+            "[t_c sighs a breath of relief.]",
+            "May the stars align in our favor. I can only hope our ancestors are as forgiving."
+        ],
+        "cant_do": [
+            "Oh... Haha, it must have slipped my mind. You are simply a ghost of what once lived, after all. I shouldn't expect you to disrupt fate.",
+            "Yet, I can hope and dream that one moon things will become better."
+        ],
+        "lie_starving": [
+            "Can you?? Oh, thank you, y_c!",
+            "When that time comes, I'm going to savor my fresh-kill and make sure everycat gets a delicious bite.",
+            "We all deserve the weight of hunger lifted off our shoulders.",
+            "[t_c lights up with joy and hope, and you can't help but wonder if lying was the right thing to do.]"
+        ]
+    },
+    "dead_to_starving_H3~2": {
+        "tags": [
+            "you_sc",
+            "they_introspective",
+            "Any",
+            "no_kit",
+            "focus",
+            "trust",
+            "sc_faith",
+            "connected"
+        ],
+        "intro": [
+            "[You decided to visit t_c once more, curious about {PRONOUN/t_c/poss} situation. t_c smiles brightly as {PRONOUN/t_c/subject} catch sight of your star-speckled pelt.]",
+            "y_c! Oh, I am so glad to see you!",
+            "[t_c looks better -- less sunken and sad.]",
+            "c_nClan's patrols suddenly found a whole lot of fresh-kill! It was a blessing!",
+            "I can't help but wonder if you had a role in the patrol's discovery. I need to give you my thanks."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I didn't do anything!",
+                "next_scene": "didnt_do"
+            },
+            "choice2": {
+                "text": "You don't need to thank me.",
+                "next_scene": "no_thanks"
+            }
+        },
+        "didnt_do": [
+            "Even if you didn't do anything directly, I still need to thank you!",
+            "c_nClan is doing so much better with StarClan's help and we'll thrive once again -- I just know it!",
+            "So... I thank you sincerely, y_c, and the rest of those with star-speckled pelts."
+        ],
+        "no_thanks": [
+            "But it's the polite thing to do!",
+            "Well, if I can't thank you, you need to carry my thanks to Starclan, okay?",
+            "Preferably with haste and smiles!"
+        ]
+    },
+    "dead_to_starving_H4~1": {
+        "tags": [
+            "they_starving",
+            "they_introspective",
+            "you_sc",
+            "Any",
+            "no_kit",
+            "focus",
+            "trust",
+            "sc_faith"
+        ],
+        "intro": [
+            "[t_c looks up as you approach, {PRONOUN/t_c/poss} body sunken from the lack of fresh-kill.]",
+            "y_c, I'm sorry to ask this of you.",
+            "You're able to disrupt omens and prophecies, right? You're able to help c_nClan... right?",
+            "[t_c gazes at you with pleading eyes. It seems you are {PRONOUN/t_c/poss} last, fickle hope.]"
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "I will try.",
+                "next_scene": "try"
+            },
+            "choice2": {
+                "text": "I can't do that.",
+                "next_scene": "cant_do"
+            },
+            "choice3": {
+                "text": "[Lie.]",
+                "next_scene": "lie_starving"
+            }
+        },
+        "try": [
+            "Thank you... Thank you, y_c.",
+            "[t_c sighs a breath of relief.]",
+            "May the stars align in our favor. I can only hope our ancestors are as forgiving."
+        ],
+        "cant_do": [
+            "Oh... Haha, it must have slipped my mind. You are simply a ghost of what once lived, after all. I shouldn't expect you to disrupt fate.",
+            "Yet, I can hope and dream that one moon things will become better."
+        ],
+        "lie_starving": [
+            "Can you?? Oh, thank you, y_c!",
+            "When that time comes, I'm going to savor my fresh-kill and make sure everycat gets a delicious bite.",
+            "We all deserve the weight of hunger lifted off our shoulders.",
+            "[t_c lights up with joy and hope, and you can't help but wonder if lying was the right thing to do.]"
+        ]
+    },
+    "dead_to_starving_H4~2": {
+        "tags": [
+            "you_sc",
+            "they_dead",
+            "max_they_deadfor_5",
+            "they_introspective",
+            "Any",
+            "no_kit",
+            "trust",
+            "connected"
+        ],
+        "intro": [
+            "[It didn't surprise you to see t_c in the afterlife, regardless of the saddening discovery. c_nClan must have not thrived, in the end.]",
+            "Oh, y_c.",
+            "It is... strange being here, alongside the dead. Yet I suppose it was inevitable."
+        ],
+        "intro_choices": {
+            "choice1": {
+                "text": "[Apologize.]",
+                "next_scene": "apologies"
+            },
+            "choice2": {
+                "text": "[Stay quiet.]",
+                "next_scene": "stay_quiet"
+            }
+        },
+        "apologies": [
+            "Oh, don't apologize, y_c. I'm sure you tried your best and I'll admit, I held too much faith in only you.",
+            "It was unfair of me to ask you to change our fates. I knew once the hunger dug its claws into our bellies, we would have no chance to fight back.",
+            "At least my suffering is over, but I wonder if the price is too much to pay."
+        ],
+        "stay_quiet": [
+            "I'll admit, I held too much faith in you to stop the inevitable, but I didn't want to die like that - starving and suffering.I guess I started to become desperate.",
+            "It's unfair. Why do our ancestors allow it? What did c_nClan do? There's too many questions and no answers in sight."
+        ]
+    },
+    "dead_to_starving_H1": [
+        [
+            "they_starving",
+            "you_sc",
+            "Any",
+            "focus",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "It must be nice to have infinite amounts of food."
+        ]
+    ],
+    "dead_to_starving_H2": [
+        [
+            "they_starving",
+            "you_dead",
+            "Any",
+            "focus",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hey... y_c?",
+            "[You hear t_c's stomach growl. t_c sighs from the recent familiar feeling of being hungry.]",
+            "What's it like to not have to eat fresh-kill? Sometimes I wished it wasn't a necessity.",
+            "... Especially now."
+        ]
+    ]
+}

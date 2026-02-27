@@ -1,0 +1,54 @@
+{
+    "war": {
+        "duration": -1,
+        "season": "Any",
+        "moon_event": null
+    },
+    "starving": {
+        "duration": -1,
+        "season": "Any",
+        "moon_event": null
+    },
+    "valentines": {
+        "duration": 3,
+        "season": "Newleaf",
+        "moon_event": [
+            "Love is in the air this season, and all of c_nClan is abuzz over who's going to get together next!"
+        ],
+        "focus_loss": [
+            "The end of the season marks a new era for c_nClan. Whether cats have coupled up or chosen to remain single, the season of romance is over, and things return to normal."
+        ]
+    },
+    "leader": {
+        "duration": 2,
+        "season": "Any",
+        "moon_event": [
+            "After a particularly controversial decision, l_n is called into question. Camp is filled with whisperings about whether they're really fit to lead the Clan."
+        ],
+        "focus_loss": [
+            "Pressured by the dissent from the Clan, l_n has decided to reverse their unpopular decision, pleasing some cats, but losing the respect of others. Now that their decision is no longer in effect, cats have decided it's in bad taste to keep talking about it.",
+            "l_n has issued an order that any more criticism of their decision will not be tolerated, and dissenters can find a home in another Clan. For better or for worse, talk of their leadership has ceased, and things in c_nClan have gone back to normal ... though, who knows what could be brewing just below the surface?",
+            "As the moons march on, slowly, l_n's decision becomes the new normal. Though some cats still have their reservations about l_n's leadership, everyone has been given enough time to adjust that emotions are no longer running so high."
+        ]
+    },
+    "hailstorm": {
+        "duration": 2,
+        "season": "Any",
+        "moon_event": [
+            "Overnight, the skies opened, lashing c_nClan camp with sheets of hail. Cats shelter in place until the storm is over, and when the clouds part, discuss how best to rebuild what the hail destroyed."
+        ],
+        "focus_loss": [
+            "The last of the hail has finally melted and run into the ground, signifying rebirth and healing for c_nClan. As the storm moves on, so, too, does discussion around camp."
+        ]
+    },
+    "unknown_murder": {
+        "duration": 2,
+        "season": "Any",
+        "moon_event": [
+            "This moon, a Clanmate has mysteriously turned up dead. With no cat aware of who the killer could be, the Clan is very on edge."
+        ],
+        "focus_loss": [
+            "The discussion surrounding the Clan's mysterious murder has died down... for now."
+        ]
+    }
+}

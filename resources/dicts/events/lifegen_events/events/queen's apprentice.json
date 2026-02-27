@@ -1,0 +1,33 @@
+{
+    "queen's apprentice old": [],
+    "queen's apprentice general": [
+        "Your training has kept both of you busy, but you and y_l schedule some much-needed sibling time.",
+        "You catch a kit bullying r_k, and step in to protect r_k.",
+        "You toss a pebble across the clearing and laugh as the kits run after it.",
+        "You spend the day coming up with new lullabies to sing to the kits.",
+        "You manage to finally get a kit to fall asleep, and m_n's eyes gleam with contented pride.",
+        "You spend the day with m_n, making up lullabies and preparing sticks and feathers for potential future kits.",
+        "A kit sees you lay down the moss that you've been out collecting for the nursery and completely tears it apart while playing. Learning to keep your temper is part of the queen's role.",
+        "A kit refuses to listen to you because, 'you're not a real queen yet'. No matter what you try, they turn their nose at you. You have to grit your teeth and tell yourself that they don't know better."
+    ],
+    "queen's apprentice assertive": [],
+    "queen's apprentice brooding": [],
+    "queen's apprentice cool": [],
+    "queen's apprentice upstanding": [],
+    "queen's apprentice introspective": [],
+    "queen's apprentice neurotic": [
+        "You overhear m_n reviewing your progress with l_n, but can't make out enough to be sure what m_n really thinks of you.",
+        "You find the perfect spot to lie in the sun by yourself and watch the camp.",
+        "r_w notices you sitting alone and invites you to eat with {PRONOUN/r_w/object}.",
+        "When r_e tells you stories, you're comforted by the cats and places you recognize.",
+        "You wonder if you're living up to y_p's hopes and expectations."
+    ],
+    "queen's apprentice silly": [],
+    "queen's apprentice stable": [],
+    "queen's apprentice sweet": [],
+    "queen's apprentice unabashed": [],
+    "queen's apprentice unlawful": [],
+    "queen's apprentice rare": [
+        "After making a mistake that almost injures one of the kits, you begin to wonder if the path of a queen's apprentice is truly the right choice."
+    ]
+}

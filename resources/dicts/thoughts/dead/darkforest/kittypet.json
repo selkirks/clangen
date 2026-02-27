@@ -1,0 +1,31 @@
+[
+{        
+    "id": "general_kittypet_dead_thoughts",
+    "thoughts": [
+        "Wonders how {PRONOUN/m_c/subject} ended up here",
+        "Traipses through the muck with a disgusted look on {PRONOUN/m_c/poss} face",
+        "Growls at the shadows",
+        "Wonders if {PRONOUN/m_c/poss} housefolk are okay",
+        "Is tougher than {PRONOUN/m_c/subject} look", 
+        "Is failing to get along with the Clanborn cats",
+        "Is getting along surprisingly well with the CLanborn cats",
+        "Is a quick learner",
+        "Isn't as soft as other cats think",
+        "Mourns how soft {PRONOUN/m_c/poss} coat used to be",
+        "Feels truly hungry for the first time",
+        "Can't seem to figure out the shadowy wastes",
+        "Gets lost in the endless black and yowls for hours before giving up",
+        "Thinks about {PRONOUN/m_c/poss} housefolk",
+        "Yearns for their old home",
+        "Wonders who the starry-pelted cats are",
+        "Hisses at every movement",
+        "Is trying to remember what food tastes like",
+        "Wishes {PRONOUN/m_c/subject} had caught the fish in {PRONOUN/m_c/poss} neighbor's pond before {PRONOUN/m_c/subject} died",
+        "Is trying to figure out how {PRONOUN/m_c/poss} housefolk would have gotten the mud out of {PRONOUN/m_c/poss} fur",
+        "Hates being constantly damp with muck"
+    ],
+    "main_status_constraint": [
+        "kittypet"
+    ]
+}
+]

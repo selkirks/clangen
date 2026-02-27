@@ -1,0 +1,50 @@
+{
+    "elder general": [
+        "You find kits frolicking in your favorite spot to nap, but you don't have the heart to scare them off. Instead, you watch them play fondly until they're eventually called back by the queens.",
+        "You spend the day taking a very productive nap in the sun.",
+        "You take a moment to think about how much the Clan has changed.",
+        "You find yourself longing for the time when your biggest worries were catching butterflies and trying to figure out which nest in the nursery had the softest moss.",
+        "You attract a small crowd as you tell a thrilling story, leading your audience through many unexpected twists and turns.",
+        "You accidentally cause an apprentice to get side-tracked by telling them tales from your own apprentice days.",
+        "Soaking up the rays in camp seems like a grand plan. r_k ends up joining you, and soon you find yourself snuggled up with the Clan's kits in the bright warmth of the sun.",
+        "r_q asks you to do a story-telling session for the kits! By the end of the day, some apprentices, warriors, and even d_n have come to listen as well.",
+        "r_e and you spend time sharing tongues in the camp clearing. The two of you swap drama and stories without a care in the world.",
+        "A storm blowing through makes your joints ache. r_m sympathizes and gives you some honey-laced herbs.",
+        "Old age gets the best of everyone. You're no different - and you ponder that while sunbathing."
+    ],
+    "elder assertive": [
+        "d_n asks where you're going as you amble towards the camp's exit. You tell them to mind {PRONOUN/d_n/poss} own business and that you'll be back by nightfall. With an amused huff {PRONOUN/d_n/subject} {VERB/d_n/remind/reminds} you not to go too far or get into trouble.",
+        "When r_k trods on your leg, you cuff {PRONOUN/r_k/poss} ear lightly. Before {PRONOUN/r_k/subject} can cry or apologize however you're on your feet with a proposition to play a different game... One that makes sure you'll be left in peace for a while.",
+        "You're quite happy soaking up a patch of sun until clouds begin to cover the sky. With a huff you get to your paws and search for a better spot. l_n seems to have already laid claim to a warm rock... so you demand the spot. {PRONOUN/l_n/subject/CAP} huff at you but give in without a fuss.",
+        "r_d approaches you for a bit of advice. Since you're self-assured, {PRONOUN/r_d/subject} ask you how that came to be over your many moons. You ramble on and on... and on and on... and on... Until r_d politely excuses {PRONOUN/r_d/self}.",
+        "As you head out of camp for the day, r_w calls out to stop you. {PRONOUN/r_w/subject/CAP} say it could be dangerous if you left the camp alone. You remind {PRONOUN/r_w/object} sternly that you're well aware after all your moons - and have chosen to go alone anyways.",
+        "r_a is complaining loudly about you. Apparently you're either always wandering off alone, or being 'mean'. r_w, to {PRONOUN/r_w/poss} credit, does attempt to warn r_a before you saunter by with your head held high towards d_n. r_a will be cleaning your den personally for a moon!"
+    ],
+    "elder brooding": [],
+    "elder cool": [],
+    "elder upstanding": [],
+    "elder introspective": [
+        "You spend your day gazing out to the distance, pondering your life to this point.",
+        "You shiver repulsively, suddenly have a flashback to an embarrassing memory from your youth. You find yourself musing on the dreadful memory for the rest of the day.",
+        "You feel a sliver of guilt as you deny r_k playtime, knowing your old bones are too wary for such activities."
+    ],
+    "elder neurotic": [],
+    "elder silly": [],
+    "elder stable": [
+        "You breathe in deeply, embracing the cool air of a new day. You just hope it isn't your last.",
+        "You find yourself venting to r_d, you don't understand why you're still standing when those you grew up with died young. {PRONOUN/r_d/subject/CAP} {VERB/r_d/assure/assures} you that through you living, their memories are kept alive and thanks to you, the Clan won't soon forget them.",
+        "The warriors roll their eyes at you again, not wanting to listen to another lecture on loyalty to Clanmates- you state it as if the cats of this Clan think it's an unheard concept.",
+        "You sit peacefully as you let the kits crawl over your tail, playing some kind of game where they think it's a big and scary snake. You occasionally hiss which sends them squealing with childish joy.",
+        "r_m chats with you about your day as {PRONOUN/r_m/subject} {VERB/r_m/perform/performs} {PRONOUN/r_m/poss} regular medical exam. It's a pleasant morning between you both.",
+        "You share embarrassing stories of an apprentice's mentor from when they were an apprentice. You give them a confidence boost in sharing how everyone makes mistakes and a new perspective allowing the apprentice to loosen up around their mentor.",
+        "You offer l_n words of wisdom for the upcoming gathering."
+    ],
+    "elder sweet": [],
+    "elder unabashed": [],
+    "elder unlawful": [],
+    "elder rare": [
+        "You wake up to the medicine cat and a handful of friends gathered around you in a hush, discovering that you had scared r_e by not waking up when shaken. You shake it off, but your mind keeps wandering back to what would have happened if you didn't awaken.",
+        "Gazing out over the camp, you ponder about your long life. Things could have been so different... But would you have changed them for anything else?",
+        "One night, deep in sleep, you look around to notice yourself between a star-shimmering territory and a shadow-soaked forest. You can feel eyes on you from both sides as you stand in the grey between. Then, you gasp awake in your nest, r_e glancing at you worriedly."
+    ]
+}

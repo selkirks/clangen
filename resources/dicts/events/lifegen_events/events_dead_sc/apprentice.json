@@ -1,0 +1,33 @@
+{
+    "apprentice general": [
+        "You wonder if there are any StarClan leaders who would be willing to give you your warrior name.",
+        "For old times sake, you do some battle training with r_c_sc. You'll never need to use these skills again, but you still don't want to lose them.",
+        "You try to imagine what your warrior assessment would've been like.",
+        "A StarClan warrior offers to teach you better crouch-and-pounce etiquette. The endless grasslands await the stars' mightiest little hunter.",
+        "r_c_sc softly shares tales from {PRONOUN/r_c_sc/subject} life and you listen politely.",
+        "You join a group of apprentices from o_cClan in a playful chase. You never could have done this when you were alive.",
+        "You quietly observe the patterns of the stars, tracing constellations with your paws in the soft, glowing grass.",
+        "Beside the mirror-like river that flows through StarClan's territories, you practice the hunter's crouch, your movements slow and deliberate, mirroring the calm waters."
+    ],
+    "apprentice assertive": [],
+    "apprentice brooding": [],
+    "apprentice cool": [],
+    "apprentice upstanding": [],
+    "apprentice introspective": [],
+    "apprentice neurotic": [],
+    "apprentice silly": [],
+    "apprentice stable": [
+        "You wish that you had the chance to become a warrior.",
+        "You have no idea where you went wrong, you have no idea why you had to go so young... You had so much to live for, didn't you?",
+        "You beam gleefully as you train with a StarClan warrior.",
+        "You sleep peacefully in the apprentice den in the space where your nest used to be.",
+        "You can't help but feel conflicted as you run through StarClan, embracing the feeling of freedom without pain, but with that pain there was life.",
+        "A feeling of disappointment overtakes you as you watch the medicine cat, wishing they could save you."
+    ],
+    "apprentice sweet": [],
+    "apprentice unabashed": [],
+    "apprentice unlawful": [],
+    "apprentice rare": [
+        "In the quiet starlit fields, where you can chase endless prey, you find yourself thinking a lot. Is it wrong to miss being alive? Even here, where everything is peaceful and beautiful, part of you still longs for the life you had. You spend lots of time lost in these thoughts, wondering."
+    ]
+}

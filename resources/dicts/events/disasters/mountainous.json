@@ -1,0 +1,34 @@
+{
+    "Avalanche": {
+        "event": "Avalanche",
+        "camp": [
+            "any"
+        ],
+        "season": [
+            "Leaf-bare"
+        ],
+        "tags": [],
+        "priority": "both",
+        "duration": 3,
+        "rarity": "uncommon",
+        "trigger_events": [
+            "lead_name's breath hangs in the air, frost clinging to their whiskers as they gaze up at the towering mountains surrounding c_n's territory. The snow is heavier this year, a white blanket that threatens more than it comforts.",
+            "A deep, resonating rumble interrupts the quiet of the early dawn, causing birds to scatter and the ground to tremble. The snowpack on the mountainside is unstable, and it's only a matter of time before it comes down."
+        ],
+        "progress_events": {
+            "moon1": [
+                "A patrol reports a minor avalanche in a rarely used part of the mountainous territory. It's a clear warning sign, and dep_name decides to restrict movements to essential patrols only. The risk of being caught in a larger slide is too high.",
+                "Anxiety grips the Clan as the snow continues to fall, each flake a silent threat. lead_name organizes drills, preparing the cats for quick evacuation should the mountain decide to release its deadly burden."
+            ],
+            "moon2": [
+                "A large crack echoes through the mountains, a sound like the world splitting apart. The Clan watches in horror as a massive wall of snow descends upon them. lead_name's orders are swift, directing as many cats as they can out of the avalanche's path.",
+                "The avalanche is a monster of snow and ice, obliterating everything in its path. c_n's camp is hit hard, the outer dens crushed under the weight. Miraculously, the main camp is spared the full force, but the relief is short-lived as they realize part of their territory is now buried."
+            ]
+        },
+        "conclusion_events": [
+            "c_n faces the monumental task of digging out from under the snow. The landscape is changed, landmarks buried, and hunting grounds lost. lead_name organizes search parties for trapped and injured Clanmates.",
+            "The snow is a cruel jailer, keeping the Clan confined to a fraction of their territory. Food is scarce, and the cold is unyielding. med_name works tirelessly to treat frostbite and injuries, while dep_name leads foraging patrols to scavenge what they can."
+        ],
+        "collateral_damage": {}
+    }
+}

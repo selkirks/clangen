@@ -1,0 +1,200 @@
+{
+  "general": {
+    "body": [
+      "r_c stares at the body of {PRONOUN/r_c/poss} sibling, m_c, and can only think of the time they had together, and all the time they've now lost.",
+      "r_c feels numb to the news of m_c's death. How could {PRONOUN/r_c/subject} ever walk through a world without {PRONOUN/r_c/poss} sibling at {PRONOUN/r_c/poss} side?",
+      "A world without m_c at {PRONOUN/r_c/poss} side seems cold and empty to r_c, how can life continue on like nothing has happened?",
+      "r_c feels sick to {PRONOUN/r_c/poss} stomach. The last time {PRONOUN/r_c/subject} saw m_c, {PRONOUN/r_c/subject} quarreled with {PRONOUN/m_c/object}, and now all r_c can do is beg for forgiveness and hope m_c is watching from StarClan.",
+      "r_c's voice wavers as {PRONOUN/r_c/subject} {VERB/r_c/talk/talks} about {PRONOUN/r_c/poss} sibling, trying to get through the tale and return to grieving over m_c's body. But {PRONOUN/r_c/subject} {VERB/r_c/want/wants} m_c's vigil to be good, to show that {PRONOUN/m_c/subject} {VERB/m_c/were/was} loved.",
+      "With swollen, shaken eyes, r_c could do nothing but stare in silence. What happened? How and why was m_c's cold body laid in front of {PRONOUN/r_c/object}? Even though r_c could see cats circling, arguing, and sobbing around {PRONOUN/r_c/object}, everything seemed muted-in terms of colors and voices. It got worse when {PRONOUN/r_c/poss} legs nearly gave out from under {PRONOUN/r_c/poss} weighted heart, but thankfully someone caught {PRONOUN/r_c/object}. m_c was like another part of {PRONOUN/r_c/object}, and now, without {PRONOUN/r_c/poss} sibling to enjoy another sunset together, r_c could only weep at the vigil.",
+      "It's hard for cats to bury a Clanmate, but it's even harder when that Clanmate was a sibling. r_c never imagined {PRONOUN/r_c/subject} would have to learn this so soon, realizing m_c now belonged to StarClan. Having to lick m_c for the last time, r_c choked back tears and screams as {PRONOUN/r_c/subject} sunk {PRONOUN/r_c/poss} claws into the dirt, burying m_c."
+    ],
+    "no_body": [
+      "r_c feels numb to the news of m_c's death. How could {PRONOUN/r_c/subject} ever walk through a world without {PRONOUN/r_c/poss} sibling at {PRONOUN/r_c/poss} side?",
+      "A world without m_c at {PRONOUN/r_c/poss} side seems cold and empty to r_c, how can life continue on like nothing has happened?",
+      "r_c feels sick to {PRONOUN/r_c/poss} stomach. The last time {PRONOUN/r_c/subject} saw m_c, {PRONOUN/r_c/subject} quarreled with {PRONOUN/m_c/object}, and now all r_c can do is beg for forgiveness and hope m_c is watching from StarClan.",
+      "r_c couldn't believe it. {PRONOUN/r_c/subject/CAP} just couldn't. Not even if StarClan themselves told {PRONOUN/r_c/object}. Despite the size of the Clan, not a single eye could locate m_c's missing body; stolen away by nature or, sadly, in the belly of a hungry beast. r_c had to be restrained from searching the entire region-possibly the entire world-for {PRONOUN/r_c/poss} sibling. However, as days crept by, r_c's heart sank when the truth revealed itself; m_c is gone.",
+      "It's normal to see m_c disappear for a solo trip, but when {PRONOUN/m_c/subject} was gone for moons, it sparked a new fear. r_c stood by, watching and waiting for {PRONOUN/r_c/poss} sibling, hoping to see that rascal dragging in heavy prey and that was why {PRONOUN/m_c/subject} took so long. Or possibly playing another prank, though this time {PRONOUN/m_c/subject} would face a hefty paw to the muzzle. m_c wouldn't just... disappear from this world. {PRONOUN/r_c/subject/CAP} didn't want to hear it, but {PRONOUN/r_c/poss} Clanmates had to convince {PRONOUN/r_c/object} otherwise, to not starve {PRONOUN/r_c/self} waiting for someone who would never come back."
+    ]
+  },
+  "adventurous": {
+    "body": [],
+    "no_body": []
+  },
+  "altruistic": {
+    "body": [],
+    "no_body": []
+  },
+  "ambitious": {
+    "body": [],
+    "no_body": []
+  },
+  "bloodthirsty": {
+    "body": [],
+    "no_body": []
+  },
+  "bold": {
+    "body": [],
+    "no_body": []
+  },
+  "calm": {
+    "body": [],
+    "no_body": []
+  },
+  "careful": {
+    "body": [],
+    "no_body": []
+  },
+  "charismatic": {
+    "body": [],
+    "no_body": []
+  },
+  "childish": {
+    "body": [],
+    "no_body": []
+  },
+  "cold": {
+    "body": [],
+    "no_body": []
+  },
+  "compassionate": {
+    "body": [],
+    "no_body": []
+  },
+  "confident": {
+    "body": [],
+    "no_body": []
+  },
+  "daring": {
+    "body": [],
+    "no_body": []
+  },
+  "empathetic": {
+    "body": [],
+    "no_body": []
+  },
+  "faithful": {
+    "body": [],
+    "no_body": []
+  },
+  "fierce": {
+    "body": [],
+    "no_body": []
+  },
+  "insecure": {
+    "body": [],
+    "no_body": []
+  },
+  "lonesome": {
+    "body": [],
+    "no_body": []
+  },
+  "loving": {
+    "body": [],
+    "no_body": []
+  },
+  "loyal": {
+    "body": [],
+    "no_body": []
+  },
+  "nervous": {
+    "body": [],
+    "no_body": []
+  },
+  "patient": {
+    "body": [],
+    "no_body": []
+  },
+  "playful": {
+    "body": [],
+    "no_body": []
+  },
+  "responsible": {
+    "body": [],
+    "no_body": []
+  },
+  "righteous": {
+    "body": [],
+    "no_body": []
+  },
+  "shameless": {
+    "body": [],
+    "no_body": []
+  },
+  "sneaky": {
+    "body": [],
+    "no_body": []
+  },
+  "strange": {
+    "body": [],
+    "no_body": []
+  },
+  "strict": {
+    "body": [],
+    "no_body": []
+  },
+  "thoughtful": {
+    "body": [],
+    "no_body": []
+  },
+  "troublesome": {
+    "body": [],
+    "no_body": []
+  },
+  "vengeful": {
+    "body": [],
+    "no_body": []
+  },
+  "wise": {
+    "body": [],
+    "no_body": []
+  },
+  "attention-seeker": {
+    "body": [],
+    "no_body": []
+  },
+  "bossy": {
+    "body": [],
+    "no_body": []
+  },
+  "bouncy": {
+    "body": [],
+    "no_body": []
+  },
+  "bullying": {
+    "body": [],
+    "no_body": []
+  },
+  "charming": {
+    "body": [],
+    "no_body": []
+  },
+  "daydreamer": {
+    "body": [],
+    "no_body": []
+  },
+  "impulsive": {
+    "body": [],
+    "no_body": []
+  },
+  "inquisitive": {
+    "body": [],
+    "no_body": []
+  },
+  "noisy": {
+    "body": [],
+    "no_body": []
+  },
+  "polite": {
+    "body": [],
+    "no_body": []
+  },
+  "quiet": {
+    "body": [],
+    "no_body": []
+  },
+  "sweet": {
+    "body": [],
+    "no_body": []
+  }
+}

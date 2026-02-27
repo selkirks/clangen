@@ -1,0 +1,47 @@
+{
+    "exiled general": [
+        "You wander around, lost.",
+        "You see d_n leading a patrol around the borders. They, along with r_w1 and r_w2, snarl and chase you away after spotting you hanging around.",
+        "Life outside of the borders of your home is harder than you imagined. You miss the company of others within the camp, the comradery of your Clanmates.",
+        "Prey is harder to come by out here. You take the time to sneak into c_nClan territory as carefully as you can, but get caught by r_w and chased away again.",
+        "You meet a loner as you wander around. They seem wary of you however, and soon moves on.",
+        "You meet a small group of rogues you know have been causing problems for your former Clan. With a bit of well-timed mischief, you manage to chase them off without a hitch.",
+        "One day you notice a kit wandering just outside of the territory looking lost. Oh - that's r_k. You don't know how {PRONOUN/r_k/subject} go there but you watch over them until a patrol of frantic warriors comes to collect them.",
+        "While lingering on the border you notice r_a alone. You also notice a rogue stalking closer. You yowl a warning, and r_a puffs up in shock before turning tail and racing back the way {PRONOUN/r_a/subject} came.",
+        "You notice a flourishing patch of herbs. c_nClan would find this useful... You end up deciding to leave some on a path you know r_m takes daily.",
+        "A group of rogues approach you to learn more about c_nClan. You sense they're up to no good. You share a bit of information anyways, and wish them luck with whatever they're planning.",
+        "You watch the daily life of your former Clan with growing resentment...",
+        "You catch a mouse right before it crosses the border.",
+        "A bird escapes from r_w - and right into your awaiting paws. You sneer your gratitude as r_w hisses and spits in fury.",
+        "You spot a patrol meandering along the border chatting idly.",
+        "As you walk along the border, a voice calls out to you. It's l_n, reminding you to stay out. You continue on without a care in the world."
+    ],
+    "exiled assertive": [
+        "You spend some time within c_nClan's borders. Sure, you don't need to anymore, but it's fun to spite your former Clan.",
+        "Despite exile being a punishment, it isn't for you. You've never felt so free. Now you can do what you want - without your Clanmates breathing down your neck.",
+        "Some rogues are causing trouble for c_nClan. Without hesitation you chase them off. c_nClan is yours to mess with - not theirs.",
+        "r_w is stalking a bird. You take a second before deciding to have some fun. You yowl to scare both r_w and the bird. It takes off in a burst of panic, and your former Clanmate spits at you.",
+        "While sneaking around on c_nClan territory, you notice a patch of herbs flourishing. Just for the sake of it you trample part of the plant before leaving. r_m will be spitting mad later!",
+        "When you meet a passing loner, they strike up conversation. You hold nothing back about your past in c_nClan, however, and the loner is quick to make an excuse to leave.",
+        "You meet with a rogue you know is pleasant to work with. With your information, they are able to put together some plans to make c_nClan regret exiling you.",
+        "Exile is anything but boring. You can always bother your former Clanmates - or accomplish your dreams of exploring freely.",
+        "You mark your scent on the c_nClan borders. You're still here. They'd do well to remember that."
+    ],
+    "exiled brooding": [],
+    "exiled cool": [],
+    "exiled upstanding": [],
+    "exiled introspective": [
+        "Being exiled has its perks - you're now able to daydream and wonder out loud without complaining cats disrupting your very critical alone time... at least.",
+        "You're starting to wonder if you're hearing voices within the unfamiliar silence, but despite your efforts to search the surroundings - nothing. It is all in your head?"
+    ],
+    "exiled neurotic": [],
+    "exiled silly": [],
+    "exiled stable": [],
+    "exiled sweet": [],
+    "exiled unabashed": [],
+    "exiled unlawful": [],
+    "exiled rare": [
+        "Your hunting brings you right to the border, and your prey escapes over the scentlines. You curse your luck before r_w shows themselves with your lost meal. {PRONOUN/r_w/subject/CAP} stare at you a moment before dropping {PRONOUN/r_w/poss} catch and walking away to let you take it.",
+        "To your surprise, r_m approaches you one moon with a bundle of herbs, placing them a distance away. No words were exchanged, but as r_m treads back to the clan, you can't help but wonder if this act of kindness was pity - or something else entirely?"
+    ]
+}

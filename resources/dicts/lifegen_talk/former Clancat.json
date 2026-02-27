@@ -1,0 +1,280 @@
+{
+    "dead_formerclancat_J1": [
+        [
+            "they_dead",
+            "you_dead",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "This isn't what I expected from the afterlife. Was this what you were hoping for?"
+        ]
+    ],
+    "dead_formerclancat_J2": [
+        [
+            "they_dead",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I don't know why you can see me. It kind of freaks me out."
+        ]
+    ],
+    "dead_formerclancat_J3": [
+        [
+            "they_sc",
+            "you_ur",
+            "any",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "I don't think it's fair that I'm over here, and you're not.",
+            "Maybe there's some way I could sneak you in..?",
+            "No, no, I couldn't do that. If I do, they might kick me out...",
+            "I'm sorry, y_c."
+        ]
+    ],
+    "dead_formerclancat_J4": [
+        [
+            "they_dead",
+            "you_shunned",
+            "any",
+            "they_blind",
+            "you_blind",
+            "no_kit"
+        ],
+        [
+            "Clans are cruel. This wouldn't be happening to you if you just left."
+        ]
+    ],
+    "dead_formerclancat_J5": [
+        [
+            "they_dead",
+            "grievingthem",
+            "you_grieving",
+            "any",
+            "they_deaf",
+            "they_blind",
+            "you_deaf",
+            "no_kit"
+        ],
+        [
+            "[t_c butts {PRONOUN/t_c/poss} ghostly head against yours.]",
+            "[You can't tell if being able to see {PRONOUN/t_c/object} as a ghost makes you more happy or sad.]",
+            "[{PRONOUN/t_c/poss/CAP} pelt is translucent, lacking any colour or feeling...]",
+            "[You miss the living t_c. So, so much.]"
+        ]
+    ],
+    "dead_formerclancat_J6": [
+        [
+            "they_dead",
+            "you_grieving",
+            "any",
+            "they_blind",
+            "you_blind",
+            "no_kit"
+        ],
+        [
+            "I'm sorry for your loss, y_c.",
+            "Being in a Clan is all about community, and helping each other out... isn't it?",
+            "You Clanmates will get you back on your paws. You'll be okay."
+        ]
+    ],
+    "dead_formerclancat_J7": [
+        [
+            "they_df",
+            "any",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "This existence is what I get for running away, I suppose.",
+            "StarClan plays some sick games."
+        ]
+    ],
+    "dead_formerclancat_J8": [
+        [
+            "they_df",
+            "you_sc",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "You StarClan cats have a say in who gets sent to the Dark Forest, right?",
+            "So, why me? I'm sorry I ran away from my Clan. Was that what I did wrong?",
+            "Can I get you to forgive me?"
+        ]
+    ],
+    "dead_formerclancat_J9": [
+        [
+            "they_df",
+            "you_ur",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Hey, ghostie.",
+            "How's your day been?",
+            "Mm, good. Oh, me? Nothing, nothing, just endless fighting and starving and drowning.",
+            "The usual."
+        ]
+    ],
+    "dead_formerclancat_J10": [
+        [
+            "they_df",
+            "you_df",
+            "no_kit",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "This sucks."
+        ]
+    ],
+    "dead_formerclancat_J11": [
+        [
+            "they_df",
+            "you_sc",
+            "kitten",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Hey, there, buddy.",
+            "How did you get over here? Is there an open spot at the border? Can you show me?"
+        ]
+    ],
+    "dead_formerclancat_J12": [
+        [
+            "they_df",
+            "you_ur",
+            "kitten",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "Are... are you lost?",
+            "So am I."
+        ]
+    ],
+    "dead_formerclancat_J13": [
+        [
+            "they_df",
+            "you_df",
+            "kitten",
+            "they_blind",
+            "you_blind"
+        ],
+        [
+            "An outsider and a kit in the Dark Forest.",
+            "I think these 'StarClan' cats need to take a good look at who it really is they're sending to purgatory."
+        ]
+    ],
+    "dead_formerclancat_J14": [
+        [
+            "they_dead",
+            "you_shunned",
+            "grievingthem",
+            "you_grieving",
+            "any",
+            "no_kit",
+            "you_deaf",
+            "they_deaf"
+        ],
+        [
+            "[t_c gives you a sympathetic look.]"
+        ]
+    ],
+    "dead_formerclancat_J15": [
+        [
+            "they_dead",
+            "you_shunned",
+            "grievingthem",
+            "you_grieving",
+            "any",
+            "no_kit",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Aw, y_c. Bad moon, huh?"
+        ]
+    ],
+    "dead_formerclancat_J16": [
+        [
+            "they_ur",
+            "you_df",
+            "no_kit"
+        ],
+        [
+            "Oh, wow, look at you...",
+            "I guess leaving the Clans was the right choice, huh? You should've done the same."
+        ]
+    ],
+    "dead_formerclancat_J17": [
+        [
+            "they_dead",
+            "you_dead",
+            "newborn"
+        ],
+        [
+            "Oh, goodness...",
+            "I'm sorry you have to be here, little guy."
+        ]
+    ],
+    "fcshunned_deaf_J1": [
+        [
+            "you_shunned",
+            "they_dead",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c looks at you very curiously, but makes no attempt to communicate.]"
+        ]
+    ],
+    "fcshunned_deaf_J2": [
+        [
+            "you_shunned",
+            "they_dead",
+            "they_deaf",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c is looking at you with pity.]",
+            "[You flash them a harsh glare. A ghost shouldn't be sympathising with a killer.]"
+        ]
+    ],
+    "fcshunned_deaf_J3": [
+        [
+            "you_shunned",
+            "they_ur",
+            "they_dead",
+            "you_deaf",
+            "any"
+        ],
+        [
+            "[t_c is looking at you with pity.]",
+            "[You flash them a harsh glare. A ghost shouldn't be sympathising with a killer.]"
+        ]
+    ],
+    "deaf_sc_Guy1": [
+        [
+            "they_sc",
+            "any",
+            "they_deaf",
+            "you_deaf",
+            "they_blind"
+        ],
+        [
+            "[t_c raises {PRONOUN/t_c/poss} sparkling tail in welcome.]"
+        ]
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "mediator general": [
+        "r_k insists that you be the referee for {PRONOUN/r_k/poss} game in order to prevent the other kits from cheating.",
+        "You're called to settle an argument between two cats, only to find out they're arguing over what piece of prey is the best, and getting far too heated about it.",
+        "A queen in the nursery calls you over, thanking you for settling an argument between the kits earlier. Apparently they see you as a hero now.",
+        "You recall a memory with one of your mediator friends from o_cClan, and are suddenly thankful that you'll never have to meet them in battle.",
+        "l_n asks you to stay by {PRONOUN/l_n/poss} side before the Gathering begins while {PRONOUN/l_n/subject} {VERB/l_n/greet/greets} the other leaders.",
+        "d_n sends you two warriors who were arguing with each other during their last patrol. You make good progress on getting them to work out their conflict, but still advise d_n against pairing them together for a bit.",
+        "You help talk r_q through {PRONOUN/r_q/poss} feelings of aimlessness when there aren't any kits to take care of.",
+        "r_k asks you if one day, {PRONOUN/r_k/subject}'ll be able to visit other Clans and talk to as many cats as you do.",
+        "You and r_q work together to calm a sobbing r_k and figure out what happened.",
+        "You and r_d swap tips on defusing tense situations, then spend an hour just chatting.",
+        "You meet the o_cClan mediator on the border to discuss how to best foster peace between your Clans.",
+        "When you travel to o_cClan, r_e asks you to pass a message to a cat {PRONOUN/r_e/subject} used to know.",
+        "At the Gathering, you keep an eye on r_w and the o_cClan warrior {PRONOUN/r_w/subject} bickered with last moon. This time, they avoid each other.",
+        "After o_cClan's deputy accuses r_w of crossing their border, you carefully but quickly get to the bottom of what happened.",
+        "You advise r_w1 and r_w2 on what to do if they encounter a patrol from o_cClan while marking the border.",
+        "You mediate a group of warriors after a friendly prey-catching competition gets heated.",
+        "You help r_w sort through {PRONOUN/r_w/poss} complicated feelings about another cat."
+    ],
+    "mediator assertive": [],
+    "mediator brooding": [],
+    "mediator cool": [],
+    "mediator upstanding": [],
+    "mediator introspective": [
+        "Word of a dispute between apprentices across the border catches your attention and you quickly race to scold the apprentices involved, stressing the importance of keeping Clan relations in good shape."
+    ],
+    "mediator neurotic": [
+        "You accompany l_n to o_cClan to resolve a border dispute. With so many unfamiliar eyes on your pelt, you stumble over your words, but the arrival of the other Clan's mediator puts you more at ease."
+    ],
+    "mediator silly": [],
+    "mediator stable": [],
+    "mediator sweet": [],
+    "mediator unabashed": [],
+    "mediator unlawful": [],
+    "mediator rare": [
+        "After a practical joke goes worse than expected, you comfort the targeted cats and make sure the pranksters understand why bringing a wasp nest into camp is a terrible idea.",
+        "Unexpectedly harsh weather means more tasks to do around camp. You help l_n and d_n delegate jobs."
+    ]
+}

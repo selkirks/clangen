@@ -1,0 +1,379 @@
+{
+    "dead_kittypet_J1": [
+        [
+            "they_dead",
+            "any",
+            "you_dead",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "My housefolk got a dog recently.",
+            "I miss them, but, wow... I'm glad I don't have to deal with that."
+        ]
+    ],
+    "live_df_ps_1": [
+        [
+            "they_df",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "How curious... a creature, roaming these rooted confinements.",
+            "Do not be afraid, your fear will not aid you. I had to learn that the hard way, alone."
+        ]
+    ],
+    "live_df_ps_2": [
+        [
+            "they_df",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "It seems you are lost in more ways than one.",
+            "As am I, I suppose we have that much in common. Lucky you."
+        ]
+    ],
+    "live_df_ps_3": [
+        [
+            "they_df",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You can run as much as you'd like.",
+            "In time, the trees will start to whisper misguidance to you.",
+            "Then, you will never find your way home."
+        ]
+    ],
+    "live_df_ps_4": [
+        [
+            "they_df",
+            "any",
+            "you_blind"
+        ],
+        [
+            "I've seen wondrous lands, even whilst alone and afraid.",
+            "It makes me bitter, you know. Knowing all that is out there...",
+            "Yet, the place I was supposed to call home is the same that drags me here."
+        ]
+    ],
+    "live_df_ps_5": [
+        [
+            "they_df",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You can't trust anyone, I learnt that out there.",
+            "You shouldn't even trust me.."
+        ]
+    ],
+    "dead_outsider_J7": [
+        [
+            "they_df",
+            "any",
+            "no_kit",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "How awful must I have been, to end up in the hell for a belief that I didn't even hold?",
+            "[t_c chuckles.]",
+            "Guess I'd better start learning some of this 'Clan' stuff. Hey, wanna teach me?"
+        ]
+    ],
+    "living_ur_kit_Guy1": [
+        [
+            "they_ur",
+            "they_kittypet",
+            "kitten",
+            "newborn",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Do you have a family, little one?",
+            "Oh... you're one of them. I'm glad you have someone to look out for you."
+        ]
+    ],
+    "living_ur_Guy2": [
+        [
+            "they_ur",
+            "they_kittypet",
+            "any"
+        ],
+        [
+            "[t_c visibly flinches when {PRONOUN/t_c/subject} {VERB/t_c/see/sees} you, {PRONOUN/t_c/poss} wispy, otherworldly pelt shaking.]",
+            "Oh- a Clancat! I didn't know I was on your territory... or that you could see me.",
+            "[The kittypet seems to disappear into mist in front of you. You can't help but wonder where {PRONOUN/t_c/subject} {VERB/t_c/go/goes}.]"
+        ]
+    ],
+    "ur_parent_newborn_CM1": [
+        [
+            "newborn",
+            "kitten",
+            "they_ur",
+            "any",
+            "from_parent",
+            "you_blind"
+        ],
+        [
+            "Look, look! t_m!",
+            "I told you that {PRONOUN/y_c/subject} {VERB/y_c/were/was} safe, even when {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} so far away...",
+            "Now what did those nice cats name you again? y_c? Strange... but beautiful.",
+            "Just like you, my kit."
+        ]
+    ],
+    "living_to_ur_kittypet_CM1": [
+        [
+            "they_ur",
+            "they_kittypet",
+            "any"
+        ],
+        [
+            "Eep!",
+            "[t_c startles when you approach, the cat crouching a bit as {PRONOUN/t_c/subject} {VERB/t_c/cower/cowers} away from you.]",
+            "[You assure the kittypet that you won't hurt {PRONOUN/t_c/object}.]",
+            "Really? Isn't that what you 'Clan' cats do? I thought you all hated housecats...",
+            "[You bring up the fact it doesn't make much sense to chase off a cat that's already dead.]",
+            "You're right, I suppose. Sometimes I swear others can see me, too, though. Not everycat is so kind... thank you, but I should leave.",
+            "[You give t_c a light wave of your tail as {PRONOUN/t_c/subject} {VERB/t_c/disappear/disappears} into the horizon beyond, {PRONOUN/t_c/poss} wispy shape fading into nothing but a pale glow.]"
+        ]
+    ],
+    "living_to_ur_kittypet_CM2": [
+        [
+            "they_ur",
+            "they_kittypet",
+            "no_kit"
+        ],
+        [
+            "[You go out for a hunting trip, and upon a rock, basking in the early morning sunlight, sits a spirit, purring contently.]",
+            "[You move closer, and {PRONOUN/t_c/subject} {VERB/t_c/tilt/tilts} {PRONOUN/t_c/poss} head just enough to catch a glimpse of you, yawning.]",
+            "Isn't this weather wonderful?",
+            "You wouldn't believe how hard it is to feel warm like this anymore.",
+            "You should join me, while you can still enjoy it to its fullest.",
+            "[After a moment, you clamber up onto the rock, pressing yourself close to the ghostly cat. {PRONOUN/t_c/subject/CAP} {VERB/t_c/purr/purrs}, shifting {PRONOUN/t_c/self} aside to give you the full ray of sun.]",
+            "[It really is wonderful.]"
+        ]
+    ],
+    "dead_kittypet_J3": [
+        [
+            "they_ur",
+            "any",
+            "no_kit",
+            "they_kittypet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "You know, the way you Clan cats live your lives is... interesting.",
+            "Why not just find some housefolk? They're very nice, and you can enjoy all sorts of things, like warm blankets, free food, and all the cuddles you want.",
+            "Why are you making that face?"
+        ]
+    ],
+    "dead_kittypet_J4": [
+        [
+            "they_ur",
+            "any",
+            "they_kitten",
+            "they_kittypet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Hi! Um, I think I lost my housefolk. You wouldn't know where they are, would you?",
+            "Oh, housefolk are, like, these big cats with no fur, and they walk on their back paws, and they have these big warm dens full of lots of stuff!",
+            "Mine are very nice. They were very happy to have me, I just don't know where they went...",
+            "[You tell the kit that you're sorry, but you don't think you can help {PRONOUN/t_c/object}.]",
+            "Oh, okay, that's fine. I'll keep looking."
+        ]
+    ],
+    "dead_kittypet_J5": [
+        [
+            "they_ur",
+            "any",
+            "they_kittypet"
+        ],
+        [
+            "[You find t_c near the Clan border, staring off into the trees.]",
+            "Oh! Hi, y_c. I'm just... looking.",
+            "I lost my housefolk forever ago, and I feel like I'll never find them, when I look at how big the world is.",
+            "Do you think they're around here, somewhere? They must be so sad without me..."
+        ]
+    ],
+    "dead_kittypet_J6": [
+        [
+            "they_ur",
+            "any",
+            "they_kittypet",
+            "they_kitten",
+            "you_not_kit"
+        ],
+        [
+            "y_c! y_c! Look, look, look!",
+            "[As soon as {PRONOUN/t_c/subject} {VERB/t_c/catch/catches} sight of you, t_c turns and sprints away. You run to catch up, almost losing {PRONOUN/t_c/poss} translucent pelt in the scenery.]",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/stop/stops} short of a weird hole in the ground and {VERB/t_c/point/points} to it.]",
+            "Here! Look! It's a pawprint from some housefolk! There's a bunch of them! They came from this way!",
+            "They don't smell familiar, but, maybe they're from my housefolk, and they've finally come looking for me!",
+            "[You ensure t_c that, yes, maybe that's true, and at the same time, make a mental note to inform the rest of the Clan about Twolegs on the territory.]"
+        ]
+    ],
+    "car_c": [
+        [
+            "you_dead",
+            "they_kittypet",
+            "they_ur",
+            "any"
+        ],
+        [
+            "[t_c is watching the Thunderpath.]",
+            "Sometimes I just sit here and make sure that the cars don't hit any cats.",
+            "They're usually pretty smart and slow down when they see anyone crossing the road... but I watch just in case.",
+            "[You don't understand most of the words that t_c is meowing.]"
+        ]
+    ],
+    "you_sc_they_ur_CM1": [
+        [
+            "they_ur",
+            "they_kittypet",
+            "you_sc",
+            "no_kit"
+        ],
+        [
+            "[You see a curious t_c peeking {PRONOUN/t_c/poss} head over the border. With a graceful leap, {PRONOUN/t_c/poss} misty paws hit the star-littered ground.]",
+            "Oh! Hello there!",
+            "Jee, you Clan cats are less scary than I thought you were.",
+            "Sad that I only figured that out once... you know...",
+            "[You offer the kittypet to hunt with you in StarClan for a while, and {PRONOUN/t_c/subject} cautiously {VERB/t_c/accept/accepts}, allowing you to show {PRONOUN/t_c/poss} the ropes. After a few catches, {PRONOUN/t_c/subject} {VERB/t_c/return/returns} to {PRONOUN/t_c/poss} side of the border.]",
+            "Thank you, y_c! I had a lovely time, but I have to go back to watching over my housefolk. They still need me."
+        ]
+    ],
+    "sckit_urnew_R1": [
+        [
+            "kitten",
+            "they_newborn",
+            "you_sc",
+            "they_ur",
+            "they_kittypet",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "Mewwww...",
+            "[Oh! A tiny kittypet kit has wandered to the border you were playing at.]",
+            "Mew? Mew!",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/toddle/toddles} as fast as {PRONOUN/t_c/subject} can to your side and {VERB/t_c/cuddle/cuddles} in. Maybe {PRONOUN/t_c/subject}{VERB/t_c/'re/'s} not a StarClan cat... But you can give {PRONOUN/t_c/object} some company!]",
+            "[t_c drifts to sleep. Soon enough, so do you. When a queen finds you all alone later you don't mention the strange little visitor.]"
+        ]
+    ],
+    "sckit_urnew_R2": [
+        [
+            "kitten",
+            "they_newborn",
+            "you_sc",
+            "they_ur",
+            "they_kittypet",
+            "they_blind"
+        ],
+        [
+            "[You're retrieving a moss-ball from near the border when you notice a newborn kittypet kit with transparent, misty fur that waves softly.]",
+            "Mew?",
+            "Mew mew!",
+            "[{PRONOUN/t_c/subject/CAP} {VERB/t_c/bap/baps} the mossball with a teeny tiny paw! Though {PRONOUN/t_c/subject} can't play properly, you invite t_c to join you and your friends for a bit. {PRONOUN/t_c/subject/CAP}{VERB/t_c/'re/'s} content with company.]",
+            "[It's sad to see {PRONOUN/t_c/object} go later.]"
+        ]
+    ],
+    "df_kittypet_c": [
+        [
+            "you_df",
+            "they_kittypet",
+            "they_ur",
+            "any",
+            "they_blind"
+        ],
+        [
+            "[t_c approaches you, tail high and eyes bright.]",
+            "Hi! What are you doing here? Are you lost?",
+            "[It feels so strange to talk to a cat who isn't immediately hostile towards you. You aren't even sure how to respond.]"
+        ]
+    ],
+    "df_kittypet_c2": [
+        [
+            "you_df",
+            "they_kittypet",
+            "they_ur",
+            "any",
+            "you_blind",
+            "they_blind"
+        ],
+        [
+            "What's on my agenda today... Hm...",
+            "Well, I was going to go visit my housefolk, see how they're doing. I think they've been lonely without me bothering them all day, haha! Someone's got to take care of them.",
+            "After that, I'll go say hi to the kits, and take a nap by the old oak. Or maybe I should go to the river instead? What do you think? I like the oak better but-",
+            "[You growl for this kittypet to just <i>stop talking</i>, but {PRONOUN/t_c/subject} {VERB/t_c/ignore/ignores} you and {VERB/t_c/continue/continues} rambling on.]"
+        ]
+    ],
+    "UR_backstory_H1": [
+        [
+            "they_ur",
+            "you_ur",
+            "they_kittypet",
+            "any",
+            "you_blind"
+        ],
+        [
+            "I think I'm struggling a bit without the Twolegs that took care of me.",
+            "I like to visit them sometimes... I know they can't see me but I'm at peace just watching them go about their lives."
+        ]
+    ],
+    "ur_ur_kittypet_Guy1": [
+        [
+            "you_ur",
+            "they_ur",
+            "they_kittypet",
+            "any"
+        ],
+        [
+            "Hello y_c!",
+            "Have you seen the new housefolk that moved in to your old home?",
+            "They brought a kitten with them!"
+        ]
+    ],
+    "neurotic_urtoliving_SQ1": [
+     [
+"no_kit",
+"they_neurotic",
+"they_ur",
+"they_kittypet",
+"you_injured",
+"you_blind"
+     ],
+     [
+"[t_c anxiously surveys your injuries.]",
+"I think my housefolk kept most dangerous stuff away from me. I didn't even realize it at the time.",
+"You Clan cats get hurt a lot. I really hope you recover soon, y_c."
+     ]
+    ],
+
+"neurotic_urtoliving_SQ2": [
+     [
+"no_kit",
+"they_neurotic",
+"they_ur",
+"they_kittypet",
+"you_ill",
+"you_blind"
+     ],
+     [
+"You're really not looking great, y_c. Maybe... maybe you could find a Twoleg to take care of you, just for a bit?",
+"I'm sorry, I know you Clan cats don't like that! It's just... the Twolegs did a lot of scary things, but I think they were trying to help me.",
+"Whenever I was sick, they brought me to this place that smelled bad and had bright lights, and I really didn't like it but I felt better afterwards...",
+"Just... please think about it, okay? I really don't want to see you... you know."
+     ]
+    ]
+}

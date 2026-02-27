@@ -1,0 +1,304 @@
+[
+    {
+        "patrol_id": "life_medi_og1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_mediator_default",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "An argument breaks out in the Clan over the best way to store fresh-kill for leaf-bare. As a mediator, you step in to settle the dispute.",
+        "decline_text": "Deciding the matter is too complex for a single cat to handle, you suggest forming a small committee to make the decision. The Clan appreciates your wise approach.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You gather everyone's input and propose a plan that takes into account the various perspectives. The Clan agrees on your plan, commending your mediation skills.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your efforts, the Clan can't reach an agreement. The leader eventually has to step in and make a decision. This experience is a reminder that some disputes are hard to mediate.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_medi_og2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "generic lifegen_mediator_r2",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Two warriors have a heated argument about a recent hunting trip. You decide to mediate before things get out of hand.",
+        "decline_text": "Feeling this situation is beyond your skill, you ask a senior warrior to intervene. Watching them handle the situation, you pick up some valuable lessons.",
+        "chance_of_success": 55,
+        "success_outcomes": [
+            {
+                "text": "Using your mediation skills, you manage to diffuse the argument. Both warriors calm down, acknowledging your fair judgement.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your best efforts, the argument escalates. A senior warrior has to intervene. Not every situation can be easily mediated, but you learn from the experience.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_medi_og3",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_mediator_default",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "A dispute breaks out in the Clan about which part of the territory is best for hunting. As a mediator, you try to keep the peace.",
+        "decline_text": "You decide to consult with some senior warriors before stepping in, believing their experience will help you mediate better. The Clan appreciates your cautious approach.",
+        "chance_of_success": 55,
+        "success_outcomes": [
+            {
+                "text": "You hear both sides and suggest a compromise that satisfies everyone. Your skills as a mediator are commended by the Clan.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your best efforts, the dispute continues. A senior warrior has to intervene. It's a learning experience about how hard mediation can sometimes be.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_medi_og4",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "life_mediator_og4",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "The apprentices are arguing about who is the fastest runner. You decide to step in before the argument escalates.",
+        "decline_text": "You decide to let the apprentices settle the argument themselves, observing how they handle the situation. Sometimes, stepping back is the best way to mediate.",
+        "chance_of_success": 50,
+        "success_outcomes": [
+            {
+                "text": "You suggest a friendly race to determine the fastest runner. The apprentices agree, the argument is settled, and everyone enjoys the race.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your suggestion of a friendly race, the argument continues. It takes a while for the situation to calm down, but you learn some valuable lessons in mediation.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_medi_og5",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lg_mediator_default",
+        "min_cats": 1,
+        "max_cats": 3,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "A disagreement over border markings with a neighbouring Clan is causing tension. As a mediator, you decide to intervene.",
+        "decline_text": "Feeling that the issue is too sensitive for you to handle alone, you consult with the Clan leader before taking any action. The Clan appreciates your wise decision.",
+        "chance_of_success": 55,
+        "success_outcomes": [
+            {
+                "text": "You manage to resolve the disagreement by proposing a shared patrol to remark the border. Both Clans appreciate your diplomacy and fairness.",
+                "exp": 10,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "Despite your efforts, the disagreement escalates into a skirmish. It's a hard lesson in the limits of mediation.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "lg_mediator_shunned_J1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [
+            "shunned"
+        ],
+        "patrol_art": "lg_mediator_default",
+        "min_cats": 1,
+        "max_cats": 6,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Despite your leader barring you from doing your job as a mediator, two Clanmates stalk up to you one day, tails twitching. They ask you for your thoughts on a disagreement they've been having, and you wonder whether they really value your opinion.",
+        "decline_text": "You turn them away. Your Clan has made it very clear that they don't see you as equal-- why should you solve their problems for them?",
+        "chance_of_success": 40,
+        "success_outcomes": [
+            {
+                "text": "You decide to listen to your Clanmates' problem, and once they've begun to see each other's point of view, you ask why they chose to come to you, given your situation. They say that they still respect your opinion as a mediator, despite everything, and you can't help but feel some fondness for the both of them.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "When you offer a solution that one warrior doesn't seem to agree with, they scoff and wonder aloud why they went to a murderer to solve their problems. When they stalk away, the other half of the argument follows them, and you just stare after them regretfully.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_medi_R1",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lifegen_mediator_r1",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "You watch a hunting patrol return, anticipating a good hunt. At the end of the patrol an apprentice is trudging behind with their head low.",
+        "decline_text": "Everyone has a hard day, but they can rest now. It's time for you to tuck into a well deserved meal!",
+        "chance_of_success": 55,
+        "success_outcomes": [
+            {
+                "text": "As the apprentice stays on the side lines as the Clan shares tongues and freshkill, you pick up a juicy bit of prey to bring over to them. It doesn't take much for them to open up about how worried they are about their training progress. Nor does it take much to soothe their fears and reassure them that they are still learning. By the time the prey is gone the apprentice's spirits are high again as they head to their nest.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "As you attempt to bring prey over to the lone apprentice their mentor interrupts. They tell you not to worry about their apprentice too much - they merely lost a chance to show off to the rest of the patrol. It leaves you a little unsettled but you take their word for it before tucking into your meal.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    },
+    {
+        "patrol_id": "life_medi_R2",
+        "biome": [
+            "Any"
+        ],
+        "season": [
+            "Any"
+        ],
+        "types": [
+            "lifegen"
+        ],
+        "tags": [],
+        "patrol_art": "lifegen_mediator_r2",
+        "min_cats": 1,
+        "max_cats": 1,
+        "min_max_status": {},
+        "weight": 20,
+        "intro_text": "Not every mentor and apprentice pair work well together. You take careful note of the tension between the two and gently make your way between to diffuse the situation.",
+        "decline_text": "You have another matter to deal with at the moment but this can't get out of paw. You suggest that they spend the day on separate duties and attend to more pressing problems as they walk away.",
+        "chance_of_success": 55,
+        "success_outcomes": [
+            {
+                "text": "You ask to speak to the mentor alone. The conversation that follows is promising - they agree to try being more understanding with their apprentice, and attempt a different approach to teaching. You part ways with your head held high about a job well done.",
+                "exp": 5,
+                "weight": 20
+            },
+            {
+                "text": "You ask to speak to the apprentice alone. The conversation that follows is promising - they agree to try listening more to their mentor, and attempt to focus more on their training. You part ways with your head held high about a job well done.",
+                "exp": 5,
+                "weight": 20
+            },
+            {
+                "text": "You sit to speak with the pair. It is no simple matter to parse through with misunderstandings on both sides. With some effort and careful words, however, you bridge the gap and the two have reached understanding. Over the next few days you watch them work together better than ever with a smile on your face.",
+                "exp": 15,
+                "weight": 20
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "You ask to speak to the mentor alone. The conversation that follows is disheartening - they rant on and on about their upstart apprentice. There is no chance to speak through it peacefully. You part ways with your spirits low, wondering what the next step should be.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You ask to speak to the apprentice alone. The conversation that follows is disheartening - they are swiftly upset by your efforts to speak to them about listening to their mentor. Tail lashing, the apprentice sulks off to their den as their mentor calls after them crossly. You part ways with your spirits low, wondering what the next step should be.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "You sit to speak with the pair. It is no simple matter to parse through with misunderstandings on both sides. No matter your efforts, the situation is becoming increasingly more heated. The leader is forced to step in and ultimately is contemplating separating the two. This is a good lesson that you can't mend every relationship.",
+                "exp": 0,
+                "weight": 20
+            }
+        ]
+    }
+]

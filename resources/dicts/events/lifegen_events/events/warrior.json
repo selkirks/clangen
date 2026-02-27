@@ -1,0 +1,62 @@
+{
+    "warrior general": [
+        "In a moment of downtime, you take the time to impress the kits with your finest hunting crouch.",
+        "d_n informs you that you are scheduled for yet another midnight patrol. Seriously?",
+        "A heated argument with a o_cClan patrol leaves you ruffled, claws itching for a fight.",
+        "You offer to teach r_m some battle moves, just in case. ",
+        "You try to show off a few battle moves to the kits, only to face plant on the ground instead. Truly impressive.",
+        "You notice r_a pouting, seemingly gathering mouse bile for tick duty. You walk over to {PRONOUN/r_a/object} to offer your help, and {PRONOUN/r_a/subject} happily {VERB/r_a/accept/accepts}. Though most apprentices see this task as annoying, it brings you memories and nostalgia of your past.",
+        "You're chosen to lead a hunting patrol! The patrol ends in a success, with you hauling back enough prey to feed the entire Clan.",
+        "You're chosen to lead a hunting patrol! However, the patrol ends in a failure with only a few scraggly pieces of prey caught to be added to the fresh-kill pile.",
+        "While on border patrol, you come across a peculiar scent that you can't quite identify. You make a mental note to report it to d_n.",
+        "You take a moment to stretch out in a warm patch of sunlight, enjoying a brief respite from your warrior duties.",
+        "During a Gathering, you strike up a friendly conversation with a warrior from o_cClan.",
+        "During a Gathering, you and a warrior from o_cClan get into a heated debate.",
+        "You're chosen to help r_m with a herb gathering patrol this moon. r_m thanks you gratefully as you carry back a large bundle of herbs.",
+        "You're chosen to help r_d with a mediation this moon over at o_cClan. r_d thanks you for keeping {PRONOUN/r_d/object} safe as you travel through the other Clan's territory.",
+        "You and plike_r_w chase each other through the territory!"
+    ],
+    "warrior assertive": [
+
+    ],
+    "warrior brooding": [
+
+    ],
+    "warrior cool": [
+
+    ],
+    "warrior upstanding": [
+        "Despite your exhaustion, you volunteer for an extra dawn patrol to ensure the Clan's safety."
+    ],
+    "warrior introspective": [
+        "You often volunteer for the dawn patrol, enjoying the peaceful moments to reflect as the world awakens.",
+        "r_a asks for words of wisdom before {PRONOUN/r_a/poss} assessment, and despite having an inkling r_a is joking, you give {PRONOUN/r_a/object} a heartfelt speech anyway to uplift {PRONOUN/r_a/poss} spirits. You don't notice r_a left during your rambling until you're finished."
+    ],
+    "warrior neurotic": [
+        "r_a looks to you for reassurance before {PRONOUN/r_a/poss} assessment, and your encouraging words soothe {PRONOUN/r_a/poss} fears. You remember when you were in the same place, moons ago.",
+        "When a hunting patrol takes longer than expected to return, you fear the worst, convinced something terrible happened.",
+        "You're not too disappointed when neutral_r_w1 has to help r_w2 instead of joining you on a hunting patrol, leaving you to go alone. You spend an afternoon traipsing through the territory, enjoying the solitude."
+    ],
+    "warrior silly": [
+
+    ],
+    "warrior stable": [
+        "When a kit wanders too close to the edge of the camp, you gently guide them back to the nursery, promising to teach them about the territory when they're older."
+    ],
+    "warrior sweet": [
+        "When r_e complains of aching joints, you go out of your way to find {PRONOUN/r_e/object} the softest moss for {PRONOUN/r_e/poss} bedding.",
+        "You spend your free time playing with the kits, patiently letting them clamber all over you."
+    ],
+    "warrior unabashed": [
+        "At the full moon Gathering, you enthusiastically greet every cat, completely unashamed of your excitement.",
+        "When d_n questions your hunting techniques, you firmly remind {PRONOUN/d_n/object} that your methods get results."
+    ],
+    "warrior unlawful": [
+        "On a solo hunt, you purposely cross Clan boundaries to chase a fat squirrel, telling no one.",
+        "You 'accidentally' forget to wake up r_w for {PRONOUN/r_w/poss} dawn patrol shift after {PRONOUN/r_w/subject} annoyed you the day before.",
+        "r_a catches you sneaking out of camp at night, but you threaten {PRONOUN/r_a/object} to keep quiet about it."
+    ],
+    "warrior rare": [
+        
+    ]
+}

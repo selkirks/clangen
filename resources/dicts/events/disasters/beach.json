@@ -1,0 +1,46 @@
+{
+    "Hurricane": {
+        "event": "Hurricane",
+        "camp": [
+            "any"
+        ],
+        "season": [
+            "Leaf-fall",
+            "Greenleaf",
+            "Newleaf"
+        ],
+        "tags": [],
+        "priority": "both",
+        "duration": 2,
+        "rarity": "uncommon",
+        "trigger_events": [
+            "lead_name looks over the vast blue of the horizon, the tide rising to their paws where it has not dared to pass before, and the pit of dread in their stomach disrupts their thoughts.",
+            "dep_name pulls lead_name aside to the edge of c_n's territory. They point out the approaching clouds within the cold air, and the ominous implication of a storm ahead compels tense whispers across c_n."
+        ],
+        "progress_events": {
+            "moon1": [
+                "The tide has risen to the shore, and the younger cats of c_n giggle as they play in the shallow waters, oblivious to the looming doom that awaits them. Within a day, the tide is high enough to disrupt patrol paths and drown precious herbs along the beach.",
+                "The wind has become overbearing, and heavy rainfall soon followed. Lead_name dismissed patrols for the day, their voice quivering with uncertainty as their eyes flicker nervously to the ever-swelling ocean's surface and the subtle hint of foam on the horizon."
+            ]
+        },
+        "conclusion_events": [
+            "Even if they knew the storm was coming, c_n were unprepared for the onslaught of seawater that pushed into their territory. The beach flooded in seconds, the camp crushed by the weight of water and high winds.",
+            "The coming of seawater and storm surges are never-ending. It is impossible to rest. c_n cats make do with what they can, guiding cats to high ground while searching for those missing or injured in the disaster.",
+            "c_n is separated in the disaster, and cats of all ages and ranks are forced to search for their missing Clanmates without proper instructions. The destruction of their home and the sudden change of landscape troubles even the most adept cats of c_n."
+        ],
+        "collateral_damage": {
+            "injuries": [
+                "water in their lungs"
+            ],
+            "deaths": {
+                "death_text": [
+                    "The water crashed along the shorelines with a power that m_c wasn't expecting. One moment, they're standing safely on the sand -- the next, they're gone forever.",
+                    "In the middle of the hurricane, no one noticed when m_c was swept away from camp by the crashing waves."
+                ],
+                "history_text": {
+                    "reg_death": "m_c died in a hurricane."
+                }
+            }
+        }
+    }
+}
