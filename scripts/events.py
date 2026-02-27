@@ -112,6 +112,7 @@ class Events:
         game.herb_events_list = []
         game.freshkill_events_list = []
         game.mediated = []
+        game.told_story = []
         game.switches["saved_clan"] = False
         self.new_cat_invited = False
         Relation_Events.clear_trigger_dict()

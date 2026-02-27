@@ -2619,6 +2619,7 @@ class MakeClanScreen(Screens):
     def save_clan(self):
         self.handle_create_other_cats()
         game.mediated.clear()
+        game.told_story.clear()
         game.patrolled.clear()
         game.cat_to_fade.clear()
         Cat.outside_cats.clear()

@@ -37,6 +37,9 @@ class Game:
     misc_events_list = []
     herb_events_list = []
     freshkill_event_list = []
+    
+    #lg stuff
+    told_story = [] # keeps track of who has been told a story by the elders this moo
 
     allegiance_list = []
     language = {}

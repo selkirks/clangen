@@ -909,6 +909,7 @@ class Clan:
             "reputation": self.reputation,
             "following_starclan": self.followingsc, 
             "mediated": game.mediated,
+            "told_story": game.told_story,
             "starting_season": self.starting_season,
             "temperament": self.temperament,
             "version_name": SAVE_VERSION_NUMBER,
@@ -1407,6 +1408,12 @@ class Clan:
                 game.mediated = []
             else:
                 game.mediated = clan_data["mediated"]
+        # LG: story flag
+        if "told_story" in clan_data:
+            if not isinstance(clan_data["told_story"], list):
+                game.told_story = []
+            else:
+                game.told_story = clan_data["told_story"]
         game.clan.clan_age = clan_data["clan_age"] if "clan_age" in clan_data else "established"
         
         game.switches["error_message"] = "Error loading ---clan.json. Check Pregnancy.json"
