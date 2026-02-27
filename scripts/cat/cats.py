@@ -390,7 +390,7 @@ class Cat:
                 prefix,
                 suffix,
                 self.pelt.colour,
-                self.pelt.eye_colour,
+                self.pelt.eye_color,
                 self.pelt.name,
                 self.pelt.tortiepattern,
                 biome=biome,
@@ -1332,8 +1332,8 @@ class Cat:
 
     def describe_eyes(self):
         """Get a human-readable description of this cat's eye colour"""
-        colour = str(self.pelt.eye_colour).lower()
-        colour2 = str(self.pelt.eye_colour2).lower()
+        colour = str(self.pelt.eye_color).lower()
+        colour2 = str(self.pelt.eye_color2).lower()
 
         if colour == "palegreen":
             colour = "pale green"
@@ -1395,7 +1395,7 @@ class Cat:
             colour = "ringed"
         elif colour == "genderfluid":
             colour = "wildcard"
-        if self.pelt.eye_colour2:
+        if self.pelt.eye_color2:
             if colour2 == "palegreen":
                 colour2 = "pale green"
             if colour2 == "darkblue":
@@ -1480,7 +1480,7 @@ class Cat:
                     colour == "love") and not colour == "ringed" and not colour == "wildcard":
                 colour = "kit-blue"
             
-            if self.pelt.eye_colour2:
+            if self.pelt.eye_color2:
                 if colour2 == "missing" or colour2 == "closed":
                     colour2 = "missing"
                 elif colour2 == "yellow" or colour2 == "amber" or colour2 == "hazel" or colour2 == "pale yellow" or (
@@ -4106,8 +4106,8 @@ class Cat:
                 "sprite_adult": self.pelt.cat_sprites["adult"],
                 "sprite_senior": self.pelt.cat_sprites["senior"],
                 "sprite_para_adult": self.pelt.cat_sprites["para_adult"],
-                "eye_colour": self.pelt.eye_colour,
-                "eye_colour2": self.pelt.eye_colour2 if self.pelt.eye_colour2 else self.pelt.eye_colour,
+                "eye_color": self.pelt.eye_color,
+                "eye_color2": self.pelt.eye_color2 if self.pelt.eye_color2 else self.pelt.eye_color,
                 "reverse": self.pelt.reverse,
                 "white_patches": self.pelt.white_patches,
                 "vitiligo": self.pelt.vitiligo,

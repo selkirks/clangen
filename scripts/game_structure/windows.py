@@ -630,7 +630,7 @@ class ChangeCatName(UIWindow):
                         None,
                         use_suffix,
                         self.the_cat.pelt.colour,
-                        self.the_cat.pelt.eye_colour,
+                        self.the_cat.pelt.eye_color,
                         self.the_cat.pelt.name,
                         self.the_cat.pelt.tortiepattern,
                     ).prefix
@@ -646,7 +646,7 @@ class ChangeCatName(UIWindow):
                         use_prefix,
                         None,
                         self.the_cat.pelt.colour,
-                        self.the_cat.pelt.eye_colour,
+                        self.the_cat.pelt.eye_color,
                         self.the_cat.pelt.name,
                         self.the_cat.pelt.tortiepattern,
                     ).suffix

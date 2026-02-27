@@ -85,28 +85,28 @@ def json_load():
                 parent1=cat["parent1"],
                 parent2=cat["parent2"],
                 moons=cat["moons"],
-                eye_colour=cat["eye_colour"],
+                eye_color=cat["eye_color"],
                 loading_cat=True,
             )
             
-            if cat["eye_colour"] == "BLUE2":
-                cat["eye_colour"] = "COBALT"
-            if cat["eye_colour"] in ["BLUEYELLOW", "BLUEGREEN"]:
-                if cat["eye_colour"] == "BLUEYELLOW":
-                    cat["eye_colour2"] = "YELLOW"
-                elif cat["eye_colour"] == "BLUEGREEN":
-                    cat["eye_colour2"] = "GREEN"
-                cat["eye_colour"] = "BLUE"
-            if "eye_colour2" in cat:
-                if cat["eye_colour2"] == "BLUE2":
-                    cat["eye_colour2"] = "COBALT"
+            if cat["eye_color"] == "BLUE2":
+                cat["eye_color"] = "COBALT"
+            if cat["eye_color"] in ["BLUEYELLOW", "BLUEGREEN"]:
+                if cat["eye_color"] == "BLUEYELLOW":
+                    cat["eye_color2"] = "YELLOW"
+                elif cat["eye_color"] == "BLUEGREEN":
+                    cat["eye_color2"] = "GREEN"
+                cat["eye_color"] = "BLUE"
+            if "eye_color2" in cat:
+                if cat["eye_color2"] == "BLUE2":
+                    cat["eye_color2"] = "COBALT"
 
             new_cat.pelt = Pelt(
                 name=cat["pelt_name"],
                 length=cat["pelt_length"],
                 colour=cat["pelt_color"],
-                eye_color=cat["eye_colour"],
-                eye_colour2=cat["eye_colour2"] if "eye_colour2" in cat else cat["eye_colour"],
+                eye_color=cat["eye_color"],
+                eye_color2=cat["eye_color2"] if "eye_color2" in cat else cat["eye_color"],
                 paralyzed=cat["paralyzed"],
                 kitten_sprite=(
                     cat["sprite_kitten"]

@@ -635,7 +635,7 @@ def create_new_cat_block(
                     )
                 else:  # completely new name
                     chosen_cat.name.give_prefix(
-                        eyes=chosen_cat.pelt.eye_colour,
+                        eyes=chosen_cat.pelt.eye_color,
                         colour=chosen_cat.pelt.colour,
                         biome=game.clan.biome
                     )
@@ -1010,12 +1010,12 @@ def create_new_cat(
                     new_cat.pelt.scars.append("NOTAIL")
                 elif chosen_condition == "born without an eye":
                     if random.randint(1, 2) == 1:
-                        new_cat.pelt.eye_colour= None
+                        new_cat.pelt.eye_color= None
                     else:
-                        new_cat.pelt.eye_colour2 = None
+                        new_cat.pelt.eye_color2 = None
                 elif chosen_condition == "born without eyes":
-                    new_cat.pelt.eye_colour = None
-                    new_cat.pelt.eye_colour2 = None
+                    new_cat.pelt.eye_color = None
+                    new_cat.pelt.eye_color2 = None
 
         if outside:
             new_cat.outside = True
@@ -2742,11 +2742,11 @@ def generate_sprite(
             )
 
         # draw eyes & scars1
-        if cat.pelt.eye_colour != None:
-            eyes = sprites.sprites["eyes" + cat.pelt.eye_colour + cat_sprite].copy()
-        if cat.pelt.eye_colour2 != None:
+        if cat.pelt.eye_color != None:
+            eyes = sprites.sprites["eyes" + cat.pelt.eye_color + cat_sprite].copy()
+        if cat.pelt.eye_color2 != None:
             eyes.blit(
-                sprites.sprites["eyes2" + cat.pelt.eye_colour2 + cat_sprite], (0, 0)
+                sprites.sprites["eyes2" + cat.pelt.eye_color2 + cat_sprite], (0, 0)
             )
         new_sprite.blit(eyes, (0, 0))
 

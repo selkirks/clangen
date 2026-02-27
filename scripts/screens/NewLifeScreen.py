@@ -107,7 +107,7 @@ class NewLifeScreen(Screens):
         self.colour="WHITE"
         self.white_patches=None
         self.eye_color="BLUE"
-        self.eye_colour2="BLUE"
+        self.eye_color2="BLUE"
         self.tortiebase=None
         self.tortiecolour=None
         self.pattern=None
@@ -785,8 +785,8 @@ class NewLifeScreen(Screens):
         self.length=random.choice(["short", "medium", "long"])
         self.colour=random.choice(Pelt.pelt_colours)
         self.white_patches= choice(white_patches) if random.randint(1,2) == 1 else None
-        self.eye_color=choice(Pelt.eye_colours)
-        self.eye_colour2=choice(Pelt.eye_colours) if random.randint(1,10) == 1 else self.eye_color
+        self.eye_color=choice(Pelt.eye_colors)
+        self.eye_color2=choice(Pelt.eye_colors) if random.randint(1,10) == 1 else self.eye_color
         self.tortiebase=choice(Pelt.tortiebases)
         self.tortiecolour=choice(Pelt.pelt_colours)
         self.pattern=choice(Pelt.tortiepatterns)
@@ -822,7 +822,7 @@ class NewLifeScreen(Screens):
             colour=self.colour,
             white_patches=self.white_patches,
             eye_color=self.eye_color,
-            eye_colour2=self.eye_colour2,
+            eye_color2=self.eye_color2,
             tortiebase=self.tortiebase,
             tortiecolour=self.tortiecolour,
             pattern=self.pattern,
@@ -1043,7 +1043,7 @@ class NewLifeScreen(Screens):
                 object_id=get_text_box_theme("#text_box_30_horizleft"), manager=MANAGER
             )
             self.elements['eye color'] = pygame_gui.elements.UIDropDownMenu(
-                Pelt.eye_colours, str(self.eye_color),
+                Pelt.eye_colors, str(self.eye_color),
                 scale(pygame.Rect((column3_x, y_pos[8]),(250,70))), manager=MANAGER)
 
             self.elements['eye color2 text'] = pygame_gui.elements.UITextBox(
@@ -1051,10 +1051,10 @@ class NewLifeScreen(Screens):
                 scale(pygame.Rect((column4_x, y_pos[7] ),(1200,-1))),
                 object_id=get_text_box_theme("#text_box_30_horizleft"), manager=MANAGER
             )
-            if self.eye_colour2:
-                self.elements['eye color2'] = pygame_gui.elements.UIDropDownMenu(Pelt.eye_colours, str(self.eye_colour2), scale(pygame.Rect((column4_x, y_pos[8]),(250,70))), manager=MANAGER)
+            if self.eye_color2:
+                self.elements['eye color2'] = pygame_gui.elements.UIDropDownMenu(Pelt.eye_colors, str(self.eye_color2), scale(pygame.Rect((column4_x, y_pos[8]),(250,70))), manager=MANAGER)
             else:
-                self.elements['eye color2'] = pygame_gui.elements.UIDropDownMenu(Pelt.eye_colours, str(self.eye_colour), scale(pygame.Rect((column4_x, y_pos[8]),(250,70))), manager=MANAGER)
+                self.elements['eye color2'] = pygame_gui.elements.UIDropDownMenu(Pelt.eye_colors, str(self.eye_color), scale(pygame.Rect((column4_x, y_pos[8]),(250,70))), manager=MANAGER)
 
         #page 1
         #tortie
@@ -1306,7 +1306,7 @@ class NewLifeScreen(Screens):
                     self.eye_color = event.text
                     self.update_sprite()
                 elif event.ui_element == self.elements['eye color2']:
-                    self.eye_colour2 = event.text
+                    self.eye_color2 = event.text
                     self.update_sprite() 
             
             elif self.page == 1:
@@ -1539,7 +1539,7 @@ class NewLifeScreen(Screens):
             colour=self.colour,
             white_patches=self.white_patches,
             eye_color=self.eye_color,
-            eye_colour2=self.eye_colour2,
+            eye_color2=self.eye_color2,
             tortiebase=self.tortiebase,
             tortiecolour=self.tortiecolour,
             pattern=self.pattern,

@@ -1682,7 +1682,7 @@ class ProfileScreen(Screens):
             elif the_cat.status == "rival apprentice":
                 renamedRole += "apprentice"
             elif the_cat.status == "rival mediator apprentice":
-                outrenamedRoleut += "mediator apprentice"
+                renamedRole += "mediator apprentice"
             elif the_cat.status == "rival medicine cat apprentice":
                 renamedRole += "medicine cat apprentice"
             elif the_cat.status == "rival queen's apprentice":

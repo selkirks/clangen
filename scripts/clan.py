@@ -2006,7 +2006,7 @@ def neonpinkEasteregg(self):
     self.instructor.pelt = Pelt(
         name="Tortie",colour="SILVER",tortiepattern="sokoke",tortiebase="sokoke",
         pattern="SHADEDPATTERN",tortiecolour="PEACH",
-        length="long",eye_color="BALLSGREEN",eye_colour2="CLOSED",
+        length="long",eye_color="BALLSGREEN",eye_color2="CLOSED",
         scars=["NOTAIL"], accessories=["BULB ORANGE"])
     self.instructor.dead = True
     self.instructor.dead_for = 0
@@ -2020,7 +2020,7 @@ def neonpinkEasteregg(self):
     self.demon = Cat(
         prefix="Sun",suffix="bellow",moons=23,status="medicine cat",gender_align="nonbinary"
                         )
-    self.demon.pelt=Pelt(name="Goldshaded",length="short",eye_color="STARCLANWARM",eye_colour2="STARCLANWARM",
+    self.demon.pelt=Pelt(name="Goldshaded",length="short",eye_color="STARCLANWARM",eye_color2="STARCLANWARM",
                     colour="VOID",tint="purple")
     self.demon.df = True
     self.demon.dead = True

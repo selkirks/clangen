@@ -56,7 +56,7 @@ Based off of LifeGen v0.7.4.(1?)
 - 2 new pelt colours, peach not completed
 - 13 new tortie masks based on pelt patterns
 - 17 new eye colours
-- Reworking of eyes in general. Newborns will have their eye colour labelled as "???", while kittens typically have paler eyes that (typically) are labelled as "kitten-(colour)" before growing into their true eye colour. Eye_colour is now for the right eye and eye_colour2 is for left, regardless of heterochromia. heterochromia is no longer limited to completely different colours and can instead be very, very similar tones
+- Reworking of eyes in general. Newborns will have their eye colour labelled as "???", while kittens typically have paler eyes that (typically) are labelled as "kitten-(colour)" before growing into their true eye colour. Eye_color is now for the right eye and eye_color2 is for left, regardless of heterochromia. heterochromia is no longer limited to completely different colours and can instead be very, very similar tones
 - 2 new permanent conditions (which will affect the cat's appearance in the future)
 - 7 new base tints, 7 new white patch tints. for the most part these are copying from one to the other.
 - New shader

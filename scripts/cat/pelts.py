@@ -69,7 +69,7 @@ class Pelt:
                    'goldshaded', 'silverclassic', 'silvermackerel']
 
     pelt_length = ["short", "medium", "long"]
-    eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE',
+    eye_colors = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE',
                    'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT', 'SUNLITICE', 'GREENYELLOW', 'BRONZE', 'SILVER',
 
                    'BALLSGREEN', 'RED', 'DUSK', 'ENDER', 'ALBINISM', 'FALSEBINO', 'EDGY', 'HAWKFROST', 'MISSING', 'CLOSED',
@@ -248,7 +248,7 @@ class Pelt:
                  colour: str = "WHITE",
                  white_patches: str = None,
                  eye_color: str = "BLUE",
-                 eye_colour2: str = "BLUE",
+                 eye_color2: str = "BLUE",
                  tortiebase: str = None,
                  tortiecolour: str = None,
                  pattern: str = None,
@@ -274,8 +274,8 @@ class Pelt:
         self.name = name
         self.colour = colour
         self.white_patches = white_patches
-        self.eye_colour = eye_color
-        self.eye_colour2 = eye_colour2
+        self.eye_color = eye_color
+        self.eye_color2 = eye_color2
         self.tortiebase = tortiebase
         self.pattern = pattern
         self.tortiepattern = tortiepattern
@@ -378,17 +378,17 @@ class Pelt:
             self.white_patches_tint = "none"
 
         # Eye Color Convert Stuff
-        if self.eye_colour == "BLUE2":
-            self.eye_colour = "COBALT"
-        if self.eye_colour2 == "BLUE2":
-            self.eye_colour2 = "COBALT"
+        if self.eye_color == "BLUE2":
+            self.eye_color = "COBALT"
+        if self.eye_color2 == "BLUE2":
+            self.eye_color2 = "COBALT"
 
-        if self.eye_colour in ["BLUEYELLOW", "BLUEGREEN"]:
-            if self.eye_colour == "BLUEYELLOW":
-                self.eye_colour2 = "YELLOW"
-            elif self.eye_colour == "BLUEGREEN":
-                self.eye_colour2 = "GREEN"
-            self.eye_colour = "BLUE"
+        if self.eye_color in ["BLUEYELLOW", "BLUEGREEN"]:
+            if self.eye_color == "BLUEYELLOW":
+                self.eye_color2 = "YELLOW"
+            elif self.eye_color == "BLUEGREEN":
+                self.eye_color2 = "GREEN"
+            self.eye_color = "BLUE"
 
         if self.length == 'long':
             if self.cat_sprites['adult'] not in [9, 10, 11]:
@@ -434,9 +434,9 @@ class Pelt:
 
     def init_eyes(self, parents):
         if not parents:
-            self.eye_colour = choice(Pelt.eye_colours)
+            self.eye_color = choice(Pelt.eye_colors)
         else:
-            self.eye_colour = choice([i.pelt.eye_colour for i in parents] + [choice(Pelt.eye_colours)])
+            self.eye_color = choice([i.pelt.eye_color for i in parents] + [choice(Pelt.eye_colors)])
 
         num = game.config["cat_generation"]["base_heterochromia"]
         # White patches must be initalized before eye color.
@@ -445,19 +445,19 @@ class Pelt:
         if self.white_patches == 'FULLWHITE' or self.colour == 'WHITE':
             num -= 10
         for _par in parents:
-            if _par.pelt.eye_colour2:
+            if _par.pelt.eye_color2:
                 num -= 10
 
         if num < 0:
             num = 1
 
         if not random.randint(0, num):
-            self.eye_colour2 = choice(Pelt.eye_colours)
+            self.eye_color2 = choice(Pelt.eye_colors)
         # ordinarily,  the above prevents heterochromia from giving cats eyes of too-similar colours.
         # i think thats stupid, so i removed that.
         
         if random.randint(0, num):
-            self.eye_colour2 = self.eye_colour
+            self.eye_color2 = self.eye_color
         # eyes will default to being "heterochromatic", but with one eye of each colour
         
 
