@@ -8,7 +8,7 @@
             "kitten"
         ],
         "relationship_constraint": [
-            "stranger"
+            "strangers"
         ],
         "random_living_status": [
             "starclan"
@@ -408,6 +408,9 @@
         ],
         "main_trait_constraint": [
             "bullying"
+        ],
+        "random_living_status": [
+            "living"
         ]
     },
     {
@@ -1283,6 +1286,68 @@
             "unruly"
         ]
     },
+	{
+        "id": "grim_kit",
+        "thoughts": [
+			"Is constantly staring at {PRONOUN/m_c/poss} Clanmates",
+			"Seems to appear out of nowhere",
+			"Is talking to {PRONOUN/m_c/object}self",
+			"Claims to be talking to an imaginary friend",
+			"Wants to know everything {PRONOUN/m_c/self} can about ghosts",
+			"Is telling ghost stories",
+			"Wants to hear a scary story",
+			"Sneaks out of the nursery to look up at the moon",
+			"Slinks around in the shadows",
+			"Is asking older cats about StarClan",
+			"Starts a collection of prey bones",
+			"Walks so quietly you can hardly hear {PRONOUN/m_c/object}",
+			"Accidentally snuck up on a Clanmate",
+			"Only wants to come out at night",
+			"Asks a Clanmate an unsettling question",
+			"Has big round eyes",
+			"Is imitating owl calls",
+			"Wants to visit the graves of those who have passed on",
+			"Is feeling angsty",
+			"Is feeling somber",
+			"Asks the medicine cat which herbs make you sick"
+        ],
+        "main_trait_constraint": [
+            "grim"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+	{
+        "id": "sensitive_kit",
+        "thoughts": [
+			"Worries that nobody likes {PRONOUN/m_c/object}",
+			"Curls up next to a Clanmate",
+			"Never wants to be alone",
+			"Had a nightmare after hearing a scary story",
+			"Feels overwhelmed",
+			"Doesn't want to leave the nursery today",
+			"Got {PRONOUN/m_c/poss} feelings hurt",
+			"Is feeling weepy",
+			"Is scared of {PRONOUN/m_c/poss} own shadow",
+			"Is crying after being teased",
+			"Tries to listen to a Clanmate's problems",
+			"Wants to help a Clanmate feel better",
+			"Insists {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} NOT a crybaby!",
+			"Worries that {PRONOUN/m_c/subject} accidentally hurt someone's feelings",
+			"Finds a bug and gently guides it out of camp",
+			"Cries when {PRONOUN/m_c/subject} sees the prey pile",
+			"Is scared after hearing a strange noise",
+			"Tries to keep up with {PRONOUN/m_c/poss} Clanmates",
+			"Tries to be brave"
+        ],
+        "main_trait_constraint": [
+            "sensitive"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
     {
         "id": "skittish_kit",
         "thoughts": [
@@ -1456,7 +1521,7 @@
             "bossy",
             "troublesome",
             "noisy",
-            "attention_seeker"
+            "attention-seeker"
         ],
         "random_status_constraint": [
             "apprentice",
