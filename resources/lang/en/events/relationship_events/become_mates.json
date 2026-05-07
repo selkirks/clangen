@@ -12,7 +12,12 @@
 		"m_c and r_c announce they've become mates in the least showy way possible, by combining their nests into one.",
 		"There's such happiness in the promises they make to each other. m_c and r_c leap into their new life as mates without question or hesitation.",
 		"For just this one perfect moment, heads pressed together and speaking their commitment in front of the Clan, there's nothing in m_c and r_c's worlds but love.",
-		"m_c and r_c are very proud to announce their new status as mates — it's quite cute."
+		"m_c and r_c are very proud to announce their new status as mates — it's quite cute.",
+		"After moons and moons of dancing around the subject, m_c and r_c have finally become mates.",
+		"m_c and r_c have both dreamed of this day for so long - the day they can finally tell the world that they're mates.",
+		"While on a long, romantic walk together, m_c finally confesses to r_c. The two become mates.",
+		"m_c and r_c sit watching the stars together. m_c can't believe how beautiful r_c looks. {PRONOUN/m_c/subject/CAP} can't take it any longer. m_c confesses {PRONOUN/m_c/poss} feelings, and r_c says {PRONOUN/r_c/subject} {VERB/r_c/feel/feels} the same way!",
+		"Love has bloomed between m_c and r_c like newleaf flowers, and they're both eager to spend the rest of their lives together."
 	],
 	"low_romantic":[
 		"m_c and r_c have become mates.",
@@ -50,7 +55,9 @@
         "After being rejected by r_c, m_c's barely been visible round camp. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} good at hiding when {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to be.",
 		"m_c confesses {PRONOUN/m_c/poss} feelings to r_c, asking to be mates. And the answer, well, it's not yes.",
 		"Look, r_c is sorry, but {PRONOUN/r_c/subject} just {VERB/r_c/don't/doesn't} see m_c that way. m_c slinks off, rejected.",
-		"m_c's confession of love to r_c could've gone better. Actually, anything would've been better than the rejection {PRONOUN/m_c/subject} got."
+		"m_c's confession of love to r_c could've gone better. Actually, anything would've been better than the rejection {PRONOUN/m_c/subject} got.",
+		"r_c avoids m_c's gaze after {PRONOUN/m_c/subject} {VERB/m_c/confess/confesses} {PRONOUN/m_c/poss} love. The problem isn't m_c, r_c insists. It's r_c.",
+		"This isn't a good time to start something new, r_c gently explains. m_c understands...but {PRONOUN/m_c/subject} {VERB/m_c/know/knows} a rejection when {PRONOUN/m_c/subject} {VERB/m_c/hear/hears} one."
 	],
 	"makeup_fail":[
 		"m_c wants to get back with r_c, so {PRONOUN/m_c/subject} confessed {PRONOUN/m_c/poss} feelings to r_c but was rejected.",
