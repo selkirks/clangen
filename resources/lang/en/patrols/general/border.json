@@ -1304,5 +1304,763 @@
                 "art": "gen_train_waterdive_app"
             }
         ]
-    }
-] 
+    },
+  {
+    "patrol_id": "mod_theos_any_bord_appfriend",
+    "biome": [
+      "any"
+    ],
+    "season": [
+      "any"
+    ],
+    "types": [
+      "border"
+    ],
+    "tags": [
+      "new_cat"
+    ],
+    "patrol_art": "gen_train_soloapp",
+    "min_cats": 1,
+    "max_cats": 1,
+    "min_max_status": {
+      "apprentice": [
+        1,
+        1
+      ]
+    },
+    "frequency": 4,
+    "intro_text": "The moon is high overhead as p_l slinks along the o_c_n border, head low. {PRONOUN/p_l/subject/CAP} {VERB/p_l/hope/hopes} that nobody saw {PRONOUN/p_l/object} leave camp. {PRONOUN/p_l/subject/CAP} {VERB/p_l/aren't/isn't} sure {PRONOUN/p_l/subject} can handle being caught before seeing {PRONOUN/p_l/poss} friend. They've gotten away with it for this long, so they should be fine. Right?",
+    "decline_text": "This was a bad idea. It's too risky...and breaking the Code, besides. p_l {VERB/p_l/give/gives} up and {VERB/p_l/return/returns} to camp.",
+    "chance_of_success": 40,
+    "success_outcomes": [
+      {
+        "text": "This is it! p_l sees {PRONOUN/p_l/poss} friend sneaking up to the border. p_l eagerly rushes up to say hello, only to be surprised when {PRONOUN/n_c:0/subject} {VERB/n_c:0/blurt/blurts} out that {PRONOUN/n_c:0/subject} want to join p_l in c_n. It will take a lot of explaining back at camp, and the older cats might not approve...but p_l knows it's worth it.",
+        "exp": 10,
+        "frequency": 4,
+        "art": "gen_train_youngerapp_olderapp",
+        "new_cat": [
+          [
+            "status:apprentice",
+            "backstory:otherclan2"
+          ]
+        ],
+        "relationships": [
+          {
+            "cats_to": [
+              "p_l"
+            ],
+            "cats_from": [
+              "n_c:0"
+            ],
+            "mutual": true,
+            "values": [
+              "like"
+            ],
+            "amount": 15,
+            "log": {
+              "cats_to": "cat_to was overjoyed when cat_from joined c_n.",
+              "cats_from": "cat_from was overjoyed that cat_to welcomed them into c_n."
+            }
+          },
+          {
+            "cats_to": [
+              "p_l"
+            ],
+            "cats_from": [
+              "high_lawful",
+              "high_stable"
+            ],
+            "mutual": false,
+            "values": [
+              "trust"
+            ],
+            "amount": -5,
+            "log": {
+              "cats_from": "cats_from disapproved of cat_to inviting an outsider into the clan."
+            }
+          }
+        ],
+        "other_clan_rep": -1
+      },
+      {
+        "text": "This is it! p_l eagerly rushes forward, greeting {PRONOUN/p_l/poss} friend with an affectionate headbump. p_l feels {PRONOUN/p_l/poss} heart flutter when the other apprentice blurts out that {PRONOUN/n_c:0/subject} {VERB/n_c:0/want/wants} to join {PRONOUN/p_l/object} in c_n. It will take a lot of explaining back at camp, and the older cats might not approve...but p_l knows it's worth it.",
+        "exp": 10,
+        "frequency": 4,
+        "art": "gen_train_youngerapp_olderapp",
+        "new_cat": [
+          [
+            "status:apprentice",
+            "backstory:otherclan2"
+          ]
+        ],
+        "relationships": [
+          {
+            "cats_to": [
+              "p_l"
+            ],
+            "cats_from": [
+              "n_c:0"
+            ],
+            "mutual": true,
+            "values": [
+              "like"
+            ],
+            "amount": 15,
+            "log": {
+              "cats_to": "cat_to was overjoyed when cat_from joined c_n.",
+              "cats_from": "cat_from was overjoyed that cat_to welcomed them into c_n."
+            }
+          },
+          {
+            "cats_to": [
+              "p_l"
+            ],
+            "cats_from": [
+              "n_c:0"
+            ],
+            "mutual": true,
+            "values": [
+              "romance"
+            ],
+            "amount": 15,
+            "log": {
+              "cats_to": "cat_to was flattered when cat_from joined c_n.",
+              "cats_from": "cat_from was flattered that cat_to welcomed them into c_n."
+            }
+          },
+          {
+            "cats_to": [
+              "p_l"
+            ],
+            "cats_from": [
+              "high_lawful",
+              "high_stable"
+            ],
+            "mutual": false,
+            "values": [
+              "trust"
+            ],
+            "amount": -5,
+            "log": {
+              "cats_from": "cats_from disapproved of cat_to inviting an outsider into the clan."
+            }
+          }
+        ],
+        "other_clan_rep": -1
+      },
+      {
+        "text": "p_l is eager when {PRONOUN/p_l/subject} {VERB/p_l/see/sees} {PRONOUN/p_l/poss} friend approach the border. The pair of them have all night to play, and they quickly resume their game from last time. p_l hasn't laughed this long in ages, and before {PRONOUN/p_l/subject} {VERB/p_l/leave/leaves} {PRONOUN/p_l/subject} {VERB/p_l/promise/promises} to meet up again soon.",
+        "frequency": 2,
+        "art": "gen_train_youngerapp_olderapp",
+        "exp": 10,
+        "new_cat": [
+          [
+            "status:apprentice",
+            "clancat",
+            "meeting"
+          ]
+        ]
+      }
+    ],
+    "fail_outcomes": [
+      {
+        "text": "p_l has been waiting to see {PRONOUN/p_l/poss} friend from o_c_n for ages...but, instead, it's an enemy warrior who finds {PRONOUN/p_l/object} waiting. {PRONOUN/p_l/subject/CAP} {VERB/p_l/have/has} to pretend to be lost, avoiding trouble by a whisker.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_speaking_cat_app",
+        "other_clan_rep": -1
+      },
+      {
+        "text": "p_l has been waiting to see {PRONOUN/p_l/poss} friend from o_c_n for ages...but, instead, it's an enemy warrior who finds {PRONOUN/p_l/object} waiting. The warrior accuses p_l of spying, and before {PRONOUN/p_l/subject} can explain, the warrior attacks! p_l flees back to camp, nursing a fresh injury.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_speaking_cat_app",
+        "injury": [
+          {
+            "cats": [
+              "p_l"
+            ],
+            "injuries": [
+              "battle_injury"
+            ]
+          }
+        ],
+        "history_text": {
+          "death": "m_c died from injuries inflicted by an enemy warrior.",
+          "scar": "m_c was scarred from a fight with an enemy warrior."
+        },
+        "other_clan_rep": -1
+      },
+      {
+        "text": "p_l is eager when {PRONOUN/p_l/subject} see {PRONOUN/p_l/poss} friend approach the border. p_l is ready to start playing...but before {PRONOUN/p_l/subject} {VERB/p_l/get/gets} the chance, the other apprentice announces that they can't keep meeting up. p_l protests, but it's all over. {PRONOUN/p_l/subject/CAP} {VERB/p_l/return/returns} back to camp, heartbroken.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_speaking_cat_app",
+        "new_cat": [
+          [
+            "status:apprentice",
+            "clancat",
+            "meeting"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "patrol_id": "mod_theos_gen_bord_fleeingloner",
+    "biome": [
+      "any"
+    ],
+    "season": [
+      "any"
+    ],
+    "types": [
+      "border"
+    ],
+    "tags": [
+      "new_cat"
+    ],
+    "patrol_art": "bord_general_intro",
+    "min_cats": 2,
+    "max_cats": 6,
+    "frequency": 2,
+    "min_max_status": {},
+    "intro_text": "As the patrol marks the o_c_n border, r_c swears {PRONOUN/r_c/subject} {VERB/r_c/keep/keeps} hearing a strange whispering noise. The patrol pauses to listen closer, and after a few moments they hear the sound of hushed conversation coming from a hidden spot in the undergrowth.",
+    "decline_text": "After a moment, the noises stop, and p_l decides it must have been the wind. Marking the border is more important than jumping at shadows.",
+    "chance_of_success": 55,
+    "success_outcomes": [
+      {
+        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner explains that o_c_n warriors attacked {PRONOUN/n_c:0/object} when {PRONOUN/n_c:0/subject} tried crossing their territory. p_l offers to bring the loner and {PRONOUN/n_c:0/poss} kits back to camp for treatment, and after a moment of consideration {PRONOUN/n_c:0/subject} {VERB/n_c:0/agree/agrees}.",
+        "exp": 20,
+        "frequency": 4,
+        "art": "gen_cat_with_kits_loner",
+        "new_cat": [
+          [
+            "loner",
+            "age:has_kits"
+          ],
+          [
+            "litter",
+            "parent:0",
+            "status:kitten",
+            "backstory:outsider_roots2"
+          ]
+        ],
+        "relationships": [
+          {
+            "cats_from": [
+              "n_c:0"
+            ],
+            "cats_to": [
+              "patrol"
+            ],
+            "values": [
+              "like",
+              "trust",
+              "comfort"
+            ],
+            "amount": 10,
+            "log": {
+              "cats_from": "cat_from was grateful to cat_to for inviting {PRONOUN/m_c/object} into the clan."
+            }
+          }
+        ],
+        "injury": [
+          {
+            "cats": [
+              "n_c:0"
+            ],
+            "injuries": [
+              "battle_injury"
+            ],
+            "no_results": true
+          }
+        ],
+        "outsider_rep": 1,
+        "other_clan_rep": -1
+      },
+      {
+        "text": "p_l slowly approaches the undergrowth and is horrified when {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a dead loner, {PRONOUN/n_c:0/poss} fur reeking of o_c_n scent. Even worse, the loner was clearly guarding {PRONOUN/n_c:0/poss} kits, who are hidden wide-eyed in the undergrowth. The kits explain that 'big, scary cats' attacked them. p_l gathers the kits together, heart heavy as {PRONOUN/p_l/subject} {VERB/p_l/explain/explains} that the patrol will take them somewhere safe.",
+        "exp": 20,
+        "frequency": 4,
+        "art": "gen_cat_with_kits_unknown_ghost",
+        "new_cat": [
+          [
+            "loner",
+            "age:has_kits",
+            "meeting",
+            "dead"
+          ],
+          [
+            "litter",
+            "parent:0",
+            "status:kitten",
+            "backstory:outsider_roots2"
+          ]
+        ],
+        "relationships": [
+          {
+            "cats_from": [
+              "n_c:0"
+            ],
+            "cats_to": [
+              "patrol"
+            ],
+            "values": [
+              "like",
+              "trust",
+              "comfort"
+            ],
+            "amount": 10,
+            "log": {}
+          }
+        ],
+        "outsider_rep": 1,
+        "other_clan_rep": -1
+      }
+    ],
+    "fail_outcomes": [
+      {
+        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens, and when p_l tries to talk to {PRONOUN/n_c:0/object}, {PRONOUN/n_c:0/subject} {VERB/n_c:0/attack/attacks}. p_l orders the patrol to back off. When they return later, the loner and {PRONOUN/n_c:0/poss} kits are gone.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_angry_cat_loner",
+        "new_cat": [
+          [
+            "loner",
+            "age:has_kits",
+            "meeting"
+          ],
+          [
+            "loner",
+            "litter",
+            "status:kitten",
+            "meeting",
+            "parent:0"
+          ]
+        ],
+        "injury": [
+          {
+            "cats": [
+              "p_l"
+            ],
+            "injuries": [
+              "battle_injury"
+            ]
+          }
+        ],
+        "outsider_rep": -1
+      },
+      {
+        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens. p_l offers to bring the family back to camp for treatment, but the loner insists that {PRONOUN/n_c:0/subject} will be taking {PRONOUN/n_c:0/poss} kits and leaving as soon as {PRONOUN/n_c:0/subject} gets {PRONOUN/n_c:0/poss} breath back.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_angry_cat_loner",
+        "new_cat": [
+          [
+            "loner",
+            "age:has_kits",
+            "meeting"
+          ],
+          [
+            "loner",
+            "litter",
+            "status:kitten",
+            "meeting",
+            "parent:0"
+          ]
+        ],
+        "outsider_rep": -1
+      },
+      {
+        "text": "p_l slowly approaches the undergrowth and is horrified when {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a dead loner, {PRONOUN/n_c:0/poss} fur reeking of o_c_n scent. Worse, {PRONOUN/p_l/subject} can smell frightened kit-scent, though the kits are nowhere to be found. The patrol settles in to bury the loner.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_cat_with_kits_loner",
+        "new_cat": [
+          [
+            "loner",
+            "age:has_kits",
+            "meeting",
+            "dead"
+          ]
+        ]
+      }
+    ],
+    "antag_fail_outcomes": [
+      {
+        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens. p_l coldly informs the loner that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} tresspassing, but {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} unimpressed. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/snap/snaps} that {PRONOUN/n_c:0/subject}'ll leave when {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} ready, and not a moment sooner.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_cat_with_kits_loner",
+        "new_cat": [
+          [
+            "loner",
+            "age:has_kits",
+            "meeting"
+          ],
+          [
+            "loner",
+            "litter",
+            "parent:0",
+            "status:kitten",
+            "meeting"
+          ]
+        ],
+        "relationships": [
+          {
+            "cats_to": [
+              "p_l"
+            ],
+            "cats_from": [
+              "patrol"
+            ],
+            "mutual": false,
+            "values": [
+              "respect",
+              "trust"
+            ],
+            "amount": -5,
+            "log": {}
+          }
+        ],
+        "outsider_rep": -1
+      },
+      {
+        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens, and when p_l orders {PRONOUN/n_c:0/object} to leave c_n territory, {PRONOUN/n_c:0/subject} {VERB/n_c:0/attack/attacks}. The patrol retreats, and when they return later, the loner and {PRONOUN/n_c:0/poss} kits are gone.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_angry_cat_loner",
+        "new_cat": [
+          [
+            "loner",
+            "age:has_kits",
+            "meeting"
+          ],
+          [
+            "litter",
+            "loner",
+            "status:kitten",
+            "meeting",
+            "parent:0"
+          ]
+        ],
+        "injury": [
+          {
+            "cats": [
+              "p_l"
+            ],
+            "injuries": [
+              "battle_injury"
+            ]
+          }
+        ],
+        "relationships": [
+          {
+            "cats_to": [
+              "p_l"
+            ],
+            "cats_from": [
+              "patrol"
+            ],
+            "mutual": false,
+            "values": [
+              "respect",
+              "trust"
+            ],
+            "amount": -5,
+            "log": {}
+          }
+        ],
+        "outsider_rep": -1
+      }
+    ],
+    "antag_success_outcomes": [
+      {
+        "text": "p_l slowly approaches the undergrowth and is surprised to find a snarling, injured loner. The loner attacks, but {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} woefully outnumbered. The patrol makes quick work of the loner, but they're horrified when they hear the mewling of kits deeper in the undergrowth. They can't just leave the kits to starve. The patrol gathers the kits up and brings them back to camp, while p_l quickly buries the loner.",
+        "exp": 0,
+        "frequency": 2,
+        "art": "gen_angry_cat_loner",
+        "stat_trait": [
+          "vengeful",
+          "bloodthirsty",
+          "fierce"
+        ],
+        "new_cat": [
+          [
+            "meeting",
+            "loner",
+            "age:has_kits",
+            "dead"
+          ],
+          [
+            "loner",
+            "litter",
+            "parent:0",
+            "status:kitten",
+            "backstory:abandoned1"
+          ]
+        ],
+        "relationships": [
+          {
+            "cats_from": [
+              "n_c:0"
+            ],
+            "cats_to": [
+              "patrol"
+            ],
+            "values": [
+              "like",
+              "trust",
+              "comfort"
+            ],
+            "amount": -10,
+            "log": {
+            }
+          }
+        ],
+        "outsider_rep": -1
+      },
+      {
+        "text": "p_l slowly approaches the undergrowth and is surprised to see an injured loner crouched over a litter of kits. The loner snarls, clearly protective over {PRONOUN/n_c:0/poss} kittens. p_l coldly informs the loner that {PRONOUN/n_c:0/subject}{VERB/n_c:0/'re/'s} tresspassing, and the patrol escorts the family off of c_n territory.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "gen_angry_cat_loner",
+        "new_cat": [
+          [
+            "meeting",
+            "loner",
+            "age:has_kits"
+          ],
+          [
+            "loner",
+            "litter",
+            "parent:0",
+            "status:kitten",
+            "meeting"
+          ]
+        ],
+        "outsider_rep": -1
+      }
+    ]
+  },
+  {
+    "patrol_id": "mod_theos_gen_bord_kitsteal1",
+    "biome": [
+      "any"
+    ],
+    "season": [
+      "any"
+    ],
+    "types": [
+      "border"
+    ],
+    "tags": [
+      "new_cat"
+    ],
+    "patrol_art": "gen_bord_patrolabandonedkitrescue",
+    "min_cats": 1,
+    "max_cats": 1,
+    "frequency": 1,
+    "min_max_status": {
+      "normal adult": [
+        1,
+        6
+      ]
+    },
+    "intro_text": "p_l lurks at the edge of the o_c_n camp, ears pricked. {PRONOUN/p_l/subject/CAP} {VERB/p_l/wait/waits} in the shadows until the perfect opprotunity arises. There! The last queen has left the nursery, padding away to chat with a Clanmate. The nursery stands unguarded.",
+    "decline_text": "On second thought, this mission is too dangerous. p_l could be killed. {PRONOUN/p_l/subject/CAP} {VERB/p_l/decide/decides} it's safest to turn back and return to c_n territory.",
+    "chance_of_success": 40,
+    "success_outcomes": [
+      {
+        "text": "p_l won't get a better chance than this. {PRONOUN/p_l/subject/CAP} {VERB/p_l/rush/rushes} in and {VERB/p_l/grab/grabs} a single kit by the scruff. {PRONOUN/p_l/subject/CAP} {VERB/p_l/flee/flees} the o_c_n camp, desperate to avoid capture. p_l runs until {PRONOUN/p_l/subject} {VERB/p_l/arrive/arrives} safely home, still carrying the newest member of c_n.",
+        "exp": 20,
+        "frequency": 20,
+        "new_cat": [
+          [
+            "status:newborn",
+            "backstory:stolenkit1"
+          ]
+        ],
+        "other_clan_rep": -2
+      }
+    ],
+    "fail_outcomes": [
+      {
+        "text": "Seconds after p_l takes {PRONOUN/p_l/poss} first hesitant steps towards the nursery, a queen appears. Mouse-dung! p_l knows {PRONOUN/p_l/poss} chance has passed. {PRONOUN/p_l/subject/CAP} {VERB/p_l/sneak/sneaks} out of the o_c_n camp, not realizing that {PRONOUN/p_l/poss} scent is left hanging outside the nursery, giving away {PRONOUN/p_l/poss} presence.",
+        "exp": 0,
+        "frequency": 4,
+        "other_clan_rep": -2
+      },
+      {
+        "text": "As p_l takes {PRONOUN/p_l/poss} first steps towards the nursery, a patrol of o_c_n warriors emerges from deeper within camp. The warriors quickly realize what p_l was about to do and, bristling with fury, launch into an attack. p_l is killed for trying to steal o_c_n kits.",
+        "exp": 0,
+        "frequency": 4,
+        "dead_cats": [
+          "p_l"
+        ],
+        "history_text": {
+          "death": "m_c was slain by o_c_n warriors",
+          "scar": ""
+        },
+        "other_clan_rep": -2
+      }
+    ],
+    "antag_fail_outcomes": [
+      {
+        "text": "Seconds after p_l takes {PRONOUN/p_l/poss} first hesitant steps towards the nursery, a queen appears. Mouse-dung! It seems p_l has lost {PRONOUN/p_l/poss} chance to weaken o_c_n.",
+        "exp": 0,
+        "frequency": 4,
+        "other_clan_rep": -1
+      }
+    ],
+    "antag_success_outcomes": [
+      {
+        "text": "p_l is eager to weaken o_c_n and strengthen c_n by stealing one of their kits. {PRONOUN/p_l/subject/CAP} {VERB/p_l/rush/rushes} in and {VERB/p_l/grab/grabs} a single kit by the scruff. {PRONOUN/p_l/subject/CAP} {VERB/p_l/flee/flees} the o_c_n camp, desperate to avoid capture. p_l runs until {PRONOUN/p_l/subject} {VERB/p_l/arrive/arrives} safely home, still carrying the newest member of c_n.",
+        "exp": 20,
+        "frequency": 4,
+        "new_cat": [
+          [
+            "status:newborn",
+            "backstory:otherclan1"
+          ]
+        ],
+        "other_clan_rep": -2
+      }
+    ]
+  },
+  {
+    "patrol_id": "mod_theos_gen_bord_app_sneak1",
+    "biome": [
+      "any"
+    ],
+    "season": [
+      "any"
+    ],
+    "types": [
+      "border"
+    ],
+    "min_cats": 3,
+    "max_cats": 6,
+    "patrol_art": "gen_speaking_cat_app",
+    "intro_text": "Come on! It'll be fun, p_l insists. All of the warriors are asleep, and nobody will notice if a few apprentices sneak out for a bit of night exploration.",
+    "decline_text": "p_l might be ready to go on an adventure, but that doesn't mean {PRONOUN/p_l/poss} fellow apprentices feel the same. Instead of breaking the rules, everyone agrees to stay in camp.",
+    "min_max_status": {
+      "warrior": [
+        -1,
+        -1
+      ],
+      "normal adult": [
+        -1,
+        -1
+      ],
+      "apprentice": [
+        3,
+        6
+      ]
+    },
+    "frequency": 2,
+    "chance_of_success": 40,
+    "tags": [],
+    "success_outcomes": [
+      {
+        "text": "The moon is high overhead as the gaggle of apprentices dash about the territory, elated to be able to run and play freely without their mentors around to stop them! It's a long, pleasant night, and everyone returns to camp satisfied...if a little tired.",
+        "exp": 20,
+        "frequency": 4,
+        "art": "fst_hunt_fun4",
+        "relationships": [
+
+        ]
+      },
+      {
+        "text": "p_l and the other apprentices are goofing off deep in c_n territory when they smell an unfamiliar scent. Stealth, they all decide, is for cowards. They charge forward as a group all shouting in hopes of scaring off the stranger. The trespassing rogue doesn't stand a chance. They immediately flee from the gang of unruly apprentices, who return to camp proud to have protected c_n.",
+        "exp": 25,
+        "frequency": 2,
+        "art": "fst_hunt_fun4",
+        "outsider_rep": -1
+      },
+      {
+        "text": "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! r_c notices a second too late and points it out to the group. Instead of retreating, the apprentices all agree that a little exploration wouldn't hurt. They manage to poke around o_c_n territory, feeling like spies. Eventually they return to camp, triumphant that their trespass went undiscovered.",
+        "exp": 40,
+        "frequency": 2,
+        "art": "fst_hunt_fun4"
+      },
+      {
+        "text": "The darkness makes the night mysterious. The apprentices slip through the territory, hearts pounding with exhilaration. There's something so thrilling about the pools of darkness and the wind whispering through the territory. It's a perfect night for hide-and-seek. The group spends the night playing, sneaking into their nests just before dawn breaks. What a fun night!",
+        "exp": 20,
+        "frequency": 4,
+        "art": "fst_hunt_fun4"
+      }
+    ],
+    "fail_outcomes": [
+      {
+        "text": "The apprentices barely make it two rabbit hops out of camp before they end up nose to nose with a warrior! It seems a night patrol was sent out, and p_l and the others are brought back to camp before the adventure can even begin.",
+        "exp": 0,
+        "frequency": 4,
+        "art": "running_warrior_app"
+      },
+      {
+        "text": "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! app1 notices a second too late and points it out to the group. Instead of retreating, the apprentices agree that a little exploration wouldn't hurt...but the patrol of enemy warriors that discovers them does not. A battle breaks out and the apprentices eventually flee, returning to camp battered and embarrassed.",
+        "exp": 0,
+        "frequency": 2,
+        "art": "gen_battle_app_other_clan",
+        "injury": [
+          {
+            "cats": [
+              "r_c",
+              "multi"
+            ],
+            "injuries": [
+              "battle_injury",
+              "battle_injury"
+            ]
+          }
+        ],
+        "history_text": {
+          "scar": "m_c was scarred after being attacked by an enemy warrior.",
+            "death": "m_c died from {PRONOUN/m_c/poss} injuries after being attacked by an enemy warrior."
+        }
+      },
+      {
+        "text": "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! app1 notices a second too late and points it out to the group. Instead of retreating, the apprentices agree that a little exploration wouldn't hurt...but the patrol of enemy warriors that discovers them does not. The apprentices are escorted back to c_n's camp, humiliated when the o_c_n warriors insist on reporting their trespass. They're going to be in so much trouble!",
+        "exp": 0,
+        "frequency": 2,
+        "art": "gen_bord_otherclan_hostile"
+      },
+      {
+        "text": "The moon is high overhead as the gaggle of apprentices dash about the territory, elated to be able to run and play freely. They're all so distracted by their games that they don't notice the sudden rush of dog scent. What started as a night of adventure quickly becomes a night of tragedy as a pair of giant hounds attacks the group. The apprentices flee, pausing only long enough to help their injured friends back to camp.",
+        "exp": 0,
+        "frequency": 1,
+        "art": "gen_patrol_dog_apprentice",
+        "injury": [
+          {
+            "cats": [
+              "r_c",
+              "multi"
+            ],
+            "injuries": [
+              "big_bite_injury"
+            ]
+          }
+        ],
+        "history_text": {
+          "death": "m_c died from {PRONOUN/r_c/poss} injuries after a dog attack.",
+          "scar": "m_c was scarred after being attacked by a dog."
+        }
+      },
+      {
+        "text": "The moon is high overhead as the gaggle of apprentices dash about the territory, elated to be able to run and play freely. They're all so distracted by their games that they don't notice the sudden rush of dog scent. What started as a night of adventure quickly becomes a night of tragedy as a pair of giant hounds attacks the group. The surviving apprentices flee, hearts breaking as they leave their friends behind.",
+        "exp": 0,
+        "frequency": 1,
+        "art": "gen_patrol_dog_apprentice",
+        "dead_cats": [
+          "r_c",
+          "multi"
+        ],
+        "history_text": {
+          "death": "m_c died during a dog attack."
+        }
+      }
+    ]
+  }
+]
