@@ -26,6 +26,195 @@
             "self": "herself",
             "conju": 2,
             "gender": 2
+        },
+        "3": {
+            "subject": "it",
+            "object": "it",
+            "poss": "its",
+            "inposs": "its",
+            "self": "itself",
+            "conju": 2,
+            "gender": 0
+        },
+        "4": {
+            "subject": "xe",
+            "object": "xem",
+            "poss": "xyr",
+            "inposs": "xyrs",
+            "self": "xemself",
+            "conju": 1,
+            "gender": 0
+        },
+        "5": {
+            "subject": "ae",
+            "object": "aer",
+            "poss": "aer",
+            "inposs": "aers",
+            "self": "aerself",
+            "conju": 2,
+            "gender": 0
+        },
+        "6": {
+            "subject": "e",
+            "object": "em",
+            "poss": "eir",
+            "inposs": "eirs",
+            "self": "emself",
+            "conju": 2,
+            "gender": 0
+        },
+        "7": {
+            "subject": "bun",
+            "object": "bun",
+            "poss": "buns",
+            "inposs": "buns",
+            "self": "bunself",
+            "conju": 2,
+            "gender": 0
+        },
+        "8": {
+            "subject": "faun",
+            "object": "faun",
+            "poss": "fauns",
+            "inposs": "fauns",
+            "self": "faunself",
+            "conju": 2,
+            "gender": 0
+        },
+        "9": {
+            "subject": "ne",
+            "object": "nem",
+            "poss": "nir",
+            "inposs": "nirs",
+            "self": "nemself",
+            "conju": 2,
+            "gender": 0
+        },
+        "10": {
+            "subject": "thon",
+            "object": "thon",
+            "poss": "thons",
+            "inposs": "thons",
+            "self": "thonself",
+            "conju": 2,
+            "gender": 0
+        },
+        "11": {
+            "subject": "ve",
+            "object": "ver",
+            "poss": "vis",
+            "inposs": "vis",
+            "self": "verself",
+            "conju": 2,
+            "gender": 0
+        },
+        "12": {
+            "subject": "ze",
+            "object": "zir",
+            "poss": "zir",
+            "inposs": "zirs",
+            "self": "zirself",
+            "conju": 2,
+            "gender": 0
+        },
+        "13": {
+           "subject": "voi",
+            "object": "void",
+            "poss": "voids",
+            "inposs": "voids",
+            "self": "voidself",
+            "conju": 2,
+            "gender": 0
+        },
+        "14": {
+           "subject": "fae",
+            "object": "faer",
+            "poss": "faer",
+            "inposs": "faers",
+            "self": "faeself",
+            "conju": 2,
+            "gender": 0
+        },
+        "15": {
+           "subject": "bat",
+            "object": "bat",
+            "poss": "bats",
+            "inposs": "bats",
+            "self": "batself",
+            "conju": 2,
+            "gender": 0
+        },
+        "16": {
+           "subject": "bea",
+            "object": "beam",
+            "poss": "beams",
+            "inposs": "beams",
+            "self": "beamself",
+            "conju": 2,
+            "gender": 0
+        },
+        "17": {
+           "subject": "chir",
+            "object": "chirp",
+            "poss": "chirps",
+            "inposs": "chirps",
+            "self": "chirpself",
+            "conju": 2,
+            "gender": 0
+        },
+        "18": {
+           "subject": "claw",
+            "object": "claw",
+            "poss": "claws",
+            "inposs": "claws",
+            "self": "clawself",
+            "conju": 2,
+            "gender": 0
+        },
+        "19": {
+           "subject": "clo",
+            "object": "cloud",
+            "poss": "clouds",
+            "inposs": "clouds",
+            "self": "cloudself",
+            "conju": 2,
+            "gender": 0
+        },
+        "20": {
+           "subject": "lea",
+            "object": "leaf",
+            "poss": "leafs",
+            "inposs": "leaves",
+             "self": "leafself",
+            "conju": 2,
+            "gender": 0
+        },
+        "21": {
+          "subject": "purr",
+            "object": "purr",
+            "poss": "purrs",
+            "inposs": "purrs",
+            "self": "purrself",
+            "conju": 2,
+            "gender": 0
+        },
+        "22": {
+           "subject": "ro",
+            "object": "rose",
+            "poss": "roses",
+            "inposs": "roses",
+            "self": "roseself",
+            "conju": 2,
+            "gender": 0
+        },
+        "23": {
+           "subject": "star",
+            "object": "star",
+            "poss": "stars",
+            "inposs": "stars",
+            "self": "starself",
+            "conju": 2,
+            "gender": 0
         }
     }
 }
