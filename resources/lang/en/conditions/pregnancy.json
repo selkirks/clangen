@@ -74,7 +74,7 @@
             "m_c feels like every cat in the Clan is looking at {PRONOUN/m_c/object}. {PRONOUN/m_c/subject/CAP} {VERB/m_c/love/loves} {PRONOUN/m_c/poss} {insert}, but {PRONOUN/m_c/subject} {VERB/m_c/hate/hates} feeling judged.",
             "Other cats keep pestering m_c about where {insert} came from, but m_c brushes them all off.",
             "A {insert}. m_c watches them, uncertainty pricking at {PRONOUN/m_c/poss} pelt.",
-            "At first, m_c was confident {PRONOUN/m_c/subject} could do this alone. Now, looking down at {inisert}, {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} too sure.",
+            "At first, m_c was confident {PRONOUN/m_c/subject} could do this alone. Now, looking down at {insert}, {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} too sure.",
             "m_c is so, so happy about {insert}...and so frightened that {PRONOUN/m_c/subject} might let them down."
 
         ],
@@ -106,7 +106,7 @@
             "Cats call out, but m_c can't be convinced to go back to the nursery. Not with the new {insert} made from {PRONOUN/m_c/object} and r_c there, taunting m_c with what should have been.",
             "Looking down at r_c's last gift to {PRONOUN/m_c/object}, m_c vows to protect {PRONOUN/m_c/poss} new {insert}.",
             "It's so hard, so very, very, nearly insurmountably hard doing this without {PRONOUN/m_c/poss} mate, but m_c wouldn't change it for the world. This {insert} is the last piece of r_c {PRONOUN/m_c/subject} {VERB/m_c/have/has}.",
-            "m_c stares at the nursery wall. {PRONOUN/m_c/subject} can barely look at {insert}, not when every second with them is a reminder of what could have been.",
+            "m_c stares at the nursery wall. {PRONOUN/m_c/subject/CAP} can barely look at {insert}, not when every second with them is a reminder of what could have been.",
             "m_c never wanted to do this alone...but {PRONOUN/m_c/subject} {VERB/m_c/promise/promises} to care for them, even without r_c at {PRONOUN/m_c/poss} side.",
             "m_c knows that r_c is with {PRONOUN/m_c/object} as {PRONOUN/m_c/subject} {VERB/m_c/curl/curls} up around {insert}."
         ],
