@@ -588,8 +588,12 @@ class Skill:
     def __repr__(self) -> str:
         return f"<Skill: {self.path}, {self.points}, {self.tier}, {self.interest_only}>"
 
-    def get_short_skill(self):
-        return Skill.short_strings.get(self.path, "???")
+    def get_short_skill_string(self):
+        """
+        Returns a localized short string descriptor of the skill
+        :return: string representing the skill
+        """
+        return i18n.t(f"cat.skills.{Skill.short_strings.get(self.path, 'unknown')}")
 
     @staticmethod
     def generate_from_save_string(save_string: str):
