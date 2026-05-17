@@ -101,7 +101,333 @@ class SkillPath(Enum):
         "deep Dark Forest bond",
         "unshakable Dark Forest link",
     )
+    GARDENER = (
+        "loves to pick flowers",
+        "grows herbs",
+        "herb organizer",
+        "caretaker of the greens"
+    ) 
+    UNKNOWN = (
+        "intrigued about the Unknown Residence",
+        "Unknown Residence accord",
+        "deep Unknown Residence bond",
+        "unshakable Unknown Residence link"
+    ) 
+    WAKEFUL = (
+        "never settles down",
+        "light sleeper",
+        "alert",
+        "vigilant"
+    ) 
+    DELIVERER = (
+        "queen helper",
+        "helpful stork",
+        "kit deliverer",
+        "pregnancy expert"
+    ) 
+    DECORATOR = (
+        "makes things pretty",
+        "crafty paws",
+        "creative",
+        "decor master"
+    ) 
+    LEADERSHIP = (
+        "deputy helper",
+        "leads patrols",
+        "leader's accomplice",
+        "assiduous"
+    ) 
+    AGILE = (
+        "parkours around camp",
+        "light-footed",
+        "lithe",
+        "quick agilist"
+    ) 
+    STEALTHY = (
+        "startles others",
+        "underpawed",
+        "furtive kitty",
+        "clandestine"
+    ) 
+    MEMORY = (
+        "remembers little details",
+        "memorious",
+        "retentive memory",
+        "mnemonist"
+    ) 
+    MESSENGER = (
+        "delivers messages",
+        "message-bearer",
+        "message-carrier",
+        "harbinger to the clans"
+    ) 
+    ASSIST = (
+        "little helper",
+        "assist guard",
+        "alert assistant",
+        "camp's assister"
+    ) 
+    HISTORIAN = (
+        "remembers stories",
+        "bookkeeper",
+        "archivist",
+        "accountant of history"
+    ) 
+    BOOKMAKER = (
+        "loves to tell stories",
+        "journalist",
+        "novelist",
+        "author of many stories"
+    ) 
+    PATIENT = (
+        "waits their turn",
+        "serene",
+        "even-tempered",
+        "equanimous"
+    ) 
+    DETECTIVE = (
+        "curious about mysteries",
+        "elementary case-solver",
+        "great sleuth",
+        "masterful detective"
+    ) 
+    HERBALIST = (
+        "curious about remedies",
+        "herbal inventor",
+        "poison maker",
+        "creator of remedies"
+    )
+    CHEF = (
+        "seasons their food",
+        "cooks prey",
+        "gourmet prey maker",
+        "masterful chef"
+    )
+    PRODIGY = (
+        "unusually gifted",
+        "knows alot of facts",
+        "smart role model",
+        "seen as an omen"
+    )
+    EXPLORER = (
+        "curious wanderer",
+        "knowledgeable explorer",
+        "brave pathfinder",
+        "master of territories"
+    )
+    TRACKER = (
+        "tracker instincts",
+        "proficient tracker",
+        "great tracker",
+        "masterful tracker"
+    )
+    ARTISAN = (
+        "likes to decorate",
+        "good decorator",
+        "great decorator",
+        "artisan"
+    )
+    GUARDIAN = (
+        "watchful",
+        "good guard",
+        "great guard",
+        "guardian"
+    )
+    TUNNELER = (
+        "enjoys digging",
+        "good tunneler",
+        "great tunneler",
+        "fantastic tunneler"
+    )
+    NAVIGATOR = (
+        "good with directions",
+        "good navigator",
+        "great navigator",
+        "pathfinder"
+    )
+    SONG = (
+        "likes to sing",
+        "good singer",
+        "great singer",
+        "captivating singer"
+    )
+    GRACE = (
+        "steps lightly",
+        "graceful",
+        "elegant",
+        "radiates elegance"
+    )
+    CLEAN = (
+        "tidy",
+        "fur-care enthusiast",
+        "meticulous cleaner",
+        "master of aesthetics"
+    )
+    INNOVATOR = (
+        "always curious",
+        "problem solver",
+        "creator of solutions",
+        "visionary thinker"
+    )
+    COMFORTER = (
+        "gentle voice",
+        "comforting presence",
+        "nightmare soother",
+        "boogeyman-fighter"
+    )
+    MATCHMAKER = (
+        "interested in relationship drama",
+        "relationship advisor",
+        "skilled heart-reader",
+        "masterful matchmaker"
+    )
+    THINKER = (
+        "oddly resourceful",
+        "out-of-the-box thinker",
+        "paradox enthusiast",
+        "philosopher"
+    )
+    COOPERATIVE = (
+        "lives in groups",
+        "good sport",
+        "team player",
+        "insider"
+    )
+    SCHOLAR = (
+        "always learning",
+        "well-versed",
+        "incredibly knowledgeable",
+        "polymath"
+    )
+    TIME = (
+        "oddly orderly",
+        "always busy",
+        "coordinated",
+        "efficiency aficionado"
+    )
+    TREASURE = (
+        "looks for trinkets",
+        "item stasher",
+        "trinket stower",
+        "treasure keeper"
+    )
+    FISHER = (
+        "bats at rivers", 
+        "grazes fish", 
+        "fish-catcher", 
+        "gold star fishercat"
+    )
+    LANGUAGE = (
+        "other-cat-ly whisperer",
+        "dog-whisperer",
+        "multilingual",
+        "listener of all voices"
+    ) 
+    SLEEPER = (
+        "dozes easily",
+        "sunhigh log",
+        "dormouse", 
+        "leader of SnoozeClan"
+    )
+    DISGUISE = (
+        "accessory hoarder",
+        "creator of appearances",
+        "skillful disguiser", 
+        "shapeshifter"
+    )
+    PYRO = (
+        "loves warmth",
+        "messes with embers",
+        "spark master", 
+        "fire starter"
+    )
+    HYDRO = (
+        "water lover",
+        "great firefighter",
+        "excellent extinguisher",
+        "masterful extinguisher"
+    )
+    WEATHER = (
+        "looks at the sky",
+        "cloud watcher",
+        "rain sense", 
+        "weather predictor"
+    )
+    GIFTGIVER = (
+        "loves to gift",
+        "nice giftgiver",
+        "excellent giftgiver", 
+        "always gives gifts"
+    )
+    VIBES = (
+        "senses vibes",
+        "knows who to trust",
+        "mood reader", 
+        "vibe detector"
+    )
+    STARGAZER = (
+        "gazes at the stars",
+        "night vision",
+        "star-filled eyes", 
+        "celestial insight"
+    )
+    IMMUNE = (
+        "rarely sick",
+        "better immune system",
+        "strong immune system", 
+        "constant germ immunity"
+    )
+    HIDER = (
+        "hide-and-seek winner",
+        "blends into surroundings",
+        "natural colors", 
+        "invisible hider"
+    )
+    MUSICVIBES = (
+        "charming voice",
+        "nice singing",
+        "beautiful singing", 
+        "lovely singing"
+    )
+    AURAVIBES = (
+        "nice aura",
+        "friendly aura",
+        "calming aura", 
+        "pleasant aura"
+    )
+    ANIMALTAKER = (
+        "friendly with animals",
+        "loves to care for animals",
+        "wildlife friend", 
+        "deep animal-lover"
+    )
+    VET = (
+        "cares for injured creatures",
+        "helps animals",
+        "animal soother", 
+        "woodland healer"
+    )
+    ANIMALMAGNET = (
+        "small critters follow them",
+        "attracts animals",
+        "animals gather around them", 
+        "animal magnet"
+    )
+    DAY = ("naps at night", "early bird", "sun watcher", "day warrior")
+    NIGHT = ("naps during the day", "night owl", "moon watcher", "night warrior")
+    
+    LUCK = ("finds four leaf clovers", "unusually lucky", "extremely lucky", "dodges disasters")
+    STRONG = ("tackles other cats", "breaks rocks", "crushes prey bones", "strong as a lion")
+    BUG = ("chases ladybugs", "bug catcher", "bug collector", "bee keeper")
+    BONES = ("plays with prey scraps", "bone cleaner", "bone collector", "expert taxidermist")
 
+    DANGER = ("picks fights often", "trains with claws", "loves border patrols", "chases danger")
+    OCCULT = ("loves ghost stories", "believes in conspiracy theories", "investigates the occult", "hunts cryptids")
+    GEO = ("plays with pebbles", "collects stones", "looks for crystals", "finds rare gems")
+    
+    COMEDY = ("always giggling", "good at making jokes", "comedian", "makes every cat laugh")
+    TOUGH = ("tougher than other kits", "hard to injure", "very tough", "practically a cockroach")
+    
     @staticmethod
     def get_random(exclude: list = ()):
         """Get a random path, with more uncommon paths being less common"""
@@ -117,6 +443,13 @@ class SkillPath(Enum):
                 SkillPath.STAR,
                 SkillPath.HEALER,
                 SkillPath.DARK,
+                SkillPath.PRODIGY,
+                SkillPath.VET,
+                SkillPath.LANGUAGE,
+                SkillPath.PYRO,
+                SkillPath.DAY,
+                SkillPath.NIGHT,
+                SkillPath.OCCULT
             )
             if i not in exclude
         ]
@@ -177,6 +510,69 @@ class Skill:
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
         SkillPath.DARK: "dark forest",
+        SkillPath.GARDENER: "gardener",
+        SkillPath.UNKNOWN: "unknown residence",
+        SkillPath.WAKEFUL: "awake",
+        SkillPath.DELIVERER: "delivery",
+        SkillPath.DECORATOR: "decorator",
+        SkillPath.LEADERSHIP: "great leader",
+        SkillPath.AGILE: "agile",
+        SkillPath.STEALTHY: "stealthy",
+        SkillPath.MEMORY: "memorizing",
+        SkillPath.MESSENGER: "messenger",
+        SkillPath.ASSIST: "assisting",
+        SkillPath.HISTORIAN: "history keeper",
+        SkillPath.BOOKMAKER: "storymaker",
+        SkillPath.TUNNELER: "tunneling",
+        SkillPath.PATIENT: "patience",
+        SkillPath.DETECTIVE: "solves mysteries",
+        SkillPath.HERBALIST: "herbalist",
+        SkillPath.CHEF: "chef",
+        SkillPath.PRODIGY: "prodigy",
+        SkillPath.EXPLORER: "exploring",
+        SkillPath.TRACKER: "tracking",
+        SkillPath.ARTISAN: "decorating",
+        SkillPath.GUARDIAN: "guarding",
+        SkillPath.NAVIGATOR: "navigating",
+        SkillPath.SONG: "singing",
+        SkillPath.GRACE: "grace",
+        SkillPath.CLEAN: "cleaning",
+        SkillPath.INNOVATOR: "innovating",
+        SkillPath.COMFORTER: "comforting",
+        SkillPath.MATCHMAKER: "matchmaking",
+        SkillPath.THINKER: "thinking",
+        SkillPath.COOPERATIVE: "cooperating",
+        SkillPath.SCHOLAR: "learning",
+        SkillPath.TIME: "efficient",
+        SkillPath.TREASURE: "finding",
+        SkillPath.FISHER: "fishing",
+        SkillPath.LANGUAGE: "language",
+        SkillPath.SLEEPER: "sleeping",
+        SkillPath.DISGUISE: "disguiser",
+        SkillPath.PYRO: "flame controller",
+        SkillPath.HYDRO: "water hoarder",
+        SkillPath.WEATHER: "weather predictor",
+        SkillPath.GIFTGIVER: "gives gifts",
+        SkillPath.VIBES: "vibe detector",
+        SkillPath.STARGAZER: "looks at the stars",
+        SkillPath.IMMUNE: "immunity to sickness",
+        SkillPath.HIDER: "excellent hider",
+        SkillPath.MUSICVIBES: "musical aura",
+        SkillPath.AURAVIBES: "pleasant aura",
+        SkillPath.ANIMALTAKER: "loves animals",
+        SkillPath.VET: "animal helper",
+        SkillPath.ANIMALMAGNET: "animal attractor",
+        SkillPath.DAY: "diurnal",
+        SkillPath.NIGHT: "nocturnal",
+        SkillPath.LUCK: "lucky",
+        SkillPath.STRONG: "strength",
+        SkillPath.BUG: "bug collecting",
+        SkillPath.BONES: "taxidermy",
+        SkillPath.DANGER: "danger seeker",
+        SkillPath.OCCULT: "occultist",
+        SkillPath.GEO: "rock collecting",
+        SkillPath.COMEDY: "comedy",
+        SkillPath.TOUGH: "tough"
     }
 
     def __init__(self, path: SkillPath, points: int = 0, interest_only: bool = False):
@@ -325,6 +721,69 @@ class CatSkills:
         SkillPath.PROPHET: SkillTypeFlag.SUPERNATURAL,
         SkillPath.GHOST: SkillTypeFlag.SUPERNATURAL,
         SkillPath.DARK: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.GARDENER: SkillTypeFlag.SMART,
+        SkillPath.HIDER: SkillTypeFlag.OBSERVANT,
+        SkillPath.UNKNOWN: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.WAKEFUL: SkillTypeFlag.STRONG | SkillTypeFlag.OBSERVANT,
+        SkillPath.DELIVERER: SkillTypeFlag.SMART | SkillTypeFlag.SOCIAL,
+        SkillPath.DECORATOR: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.LEADERSHIP: SkillTypeFlag.STRONG | SkillTypeFlag.SMART | SkillTypeFlag.SOCIAL,
+        SkillPath.AGILE: SkillTypeFlag.AGILE | SkillTypeFlag.OBSERVANT,
+        SkillPath.STEALTHY: SkillTypeFlag.SMART | SkillTypeFlag.AGILE | SkillTypeFlag.OBSERVANT,
+        SkillPath.MEMORY: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.MESSENGER: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.ASSIST: SkillTypeFlag.STRONG | SkillTypeFlag.SOCIAL,
+        SkillPath.HISTORIAN: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.BOOKMAKER: SkillTypeFlag.SOCIAL,
+        SkillPath.TUNNELER: SkillTypeFlag.STRONG | SkillTypeFlag.AGILE,
+        SkillPath.PATIENT: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.DETECTIVE: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.HERBALIST: SkillTypeFlag.SMART | SkillTypeFlag.SUPERNATURAL,
+        SkillPath.CHEF: SkillTypeFlag.AGILE | SkillTypeFlag.SOCIAL,
+        SkillPath.PRODIGY: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.EXPLORER: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.TRACKER: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.ARTISAN: SkillTypeFlag.SMART,
+        SkillPath.GUARDIAN: SkillTypeFlag.STRONG | SkillTypeFlag.OBSERVANT,
+        SkillPath.NAVIGATOR: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.SONG: SkillTypeFlag.SOCIAL,
+        SkillPath.GRACE: SkillTypeFlag.AGILE,
+        SkillPath.CLEAN: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL,
+        SkillPath.INNOVATOR: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.COMFORTER: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.MATCHMAKER: SkillTypeFlag.SOCIAL | SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.THINKER: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.COOPERATIVE: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.SCHOLAR: SkillTypeFlag.SMART,
+        SkillPath.TIME: SkillTypeFlag.AGILE | SkillTypeFlag.SMART,
+        SkillPath.TREASURE: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.FISHER: SkillTypeFlag.STRONG | SkillTypeFlag.AGILE | SkillTypeFlag.OBSERVANT,
+        SkillPath.LANGUAGE: SkillTypeFlag.SOCIAL,
+        SkillPath.SLEEPER: SkillTypeFlag.STRONG,
+        SkillPath.DISGUISE: SkillTypeFlag.AGILE | SkillTypeFlag.OBSERVANT | SkillTypeFlag.SMART,
+        SkillPath.PYRO: SkillTypeFlag.SMART,
+        SkillPath.HYDRO: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.WEATHER: SkillTypeFlag.OBSERVANT,
+        SkillPath.GIFTGIVER: SkillTypeFlag.SOCIAL,
+        SkillPath.VIBES: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL | SkillTypeFlag.SMART,
+        SkillPath.STARGAZER: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL,
+        SkillPath.MUSICVIBES: SkillTypeFlag.SOCIAL,
+        SkillPath.AURAVIBES: SkillTypeFlag.SOCIAL,
+        SkillPath.ANIMALTAKER: SkillTypeFlag.SOCIAL,
+        SkillPath.VET: SkillTypeFlag.OBSERVANT | SkillTypeFlag.SOCIAL,
+        SkillPath.ANIMALMAGNET: SkillTypeFlag.SOCIAL,
+        SkillPath.IMMUNE: SkillTypeFlag.OBSERVANT,
+        SkillPath.DAY: SkillTypeFlag.OBSERVANT,
+        SkillPath.NIGHT: SkillTypeFlag.OBSERVANT,
+        SkillPath.LUCK: SkillTypeFlag.OBSERVANT,
+        SkillPath.STRONG: SkillTypeFlag.STRONG,
+        SkillPath.BUG: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.BONES: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.DANGER: SkillTypeFlag.STRONG,
+        SkillPath.OCCULT: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.GEO: SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT,
+        SkillPath.TOUGH: SkillTypeFlag.STRONG,
+        SkillPath.COMEDY: SkillTypeFlag.SOCIAL,
     }
 
     # pylint: enable=unsupported-binary-operation
@@ -336,6 +795,8 @@ class CatSkills:
         primary_points: int = 0,
         secondary_path: SkillPath = None,
         secondary_points: int = 0,
+        tertiary_path: SkillPath = None,
+        tertiary_points: int = 0,
         hidden_skill: HiddenSkillEnum = None,
         interest_only=False,
     ):
@@ -345,6 +806,11 @@ class CatSkills:
             self.hidden = (
                 HiddenSkillEnum[skill_dict["hidden"]] if skill_dict["hidden"] else None
             )
+            # convert old saves
+            if len(skill_dict) == 4:
+                self.tertiary = Skill.generate_from_save_string(skill_dict["tertiary"])
+            else:
+                self.tertiary = None
         else:
             if primary_path:
                 self.primary = Skill(primary_path, primary_points, interest_only)
@@ -354,11 +820,27 @@ class CatSkills:
                 self.secondary = Skill(secondary_path, secondary_points, interest_only)
             else:
                 self.secondary = None
+                
+            if tertiary_path:
+                self.tertiary = Skill(tertiary_path, tertiary_points, interest_only)
+            else:
+                self.tertiary = None
 
             self.hidden = hidden_skill
 
     def __repr__(self) -> str:
-        return f"<CatSkills: Primary: |{self.primary}|, Secondary: |{self.secondary}|, Hidden: |{self.hidden}|>"
+        return f"<CatSkills: Primary: |{self.primary}|, Secondary: |{self.secondary}|, Tertiary: |{self.tertiary}|, Hidden: |{self.hidden}|>"
+
+    def gain_new_skill_as_kit(self, skill_string, tier):
+        skill_save = skill_string
+        skill_save += ",1,False"
+        temp = Skill.generate_from_save_string(skill_save)
+        if tier == "secondary" and self.secondary is None:
+            if temp != self.primary:
+                self.secondary = temp
+        elif tier == "tertiary" and self.tertiary is None:
+            if temp != self.primary and temp != self.secondary:
+                self.tertiary = temp
 
     @staticmethod
     def generate_new_catskills(
@@ -376,28 +858,58 @@ class CatSkills:
         elif rank.is_any_apprentice_rank() or age == CatAge.ADOLESCENT:
             new_skill.primary = Skill.get_random_skill(point_tier=1, interest_only=True)
             if random.randint(1, 3) == 1:
+                tempexclude = new_skill.primary.path
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                 new_skill.secondary = Skill.get_random_skill(
-                    point_tier=1, interest_only=True, exclude=new_skill.primary.path
+                    point_tier=1, interest_only=True, exclude=tempexclude
+                )
+            if new_skill.secondary and random.randint(1, 5) == 1:
+                tempexclude = [new_skill.primary.path,new_skill.secondary.path]
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY, new_skill.secondary.path]
+                elif new_skill.secondary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY, new_skill.primary.path]
+                new_skill.secondary = Skill.get_random_skill(
+                    point_tier=random.randint(1, 2), interest_only=True, exclude=tempexclude
                 )
         else:
             primary_tier = 1
             secondary_tier = 1
+            tertiary_tier = 1
             if age == CatAge.YOUNG_ADULT:
                 primary_tier += random.randint(0, 1)
                 secondary_tier += random.randint(0, 1)
+                tertiary_tier += random.randint(0, 1)
             elif age == CatAge.ADULT:
                 primary_tier += random.randint(0, 2)
                 secondary_tier += random.randint(0, 1)
+                tertiary_tier += random.randint(0, 1)
             elif age == CatAge.SENIOR_ADULT:
                 primary_tier += random.randint(1, 2)
-                secondary_tier += random.randint(0, 1)
+                secondary_tier += random.randint(0, 2)
+                tertiary_tier += random.randint(0, 1)
             elif age == CatAge.SENIOR:
-                primary_tier -= random.randint(0, 1)
+                primary_tier += 2
+                secondary_tier += random.randint(1, 2)
+                tertiary_tier += random.randint(0, 2)
 
             new_skill.primary = Skill.get_random_skill(point_tier=primary_tier)
             if random.randint(1, 2) == 1:
+                tempexclude = new_skill.primary.path
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                 new_skill.secondary = Skill.get_random_skill(
-                    point_tier=secondary_tier, exclude=new_skill.primary.path
+                    point_tier=1, exclude=tempexclude
+                )
+            if new_skill.secondary and random.randint(1, 4) == 1:
+                tempexclude = [new_skill.primary.path,new_skill.secondary.path]
+                if new_skill.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY, new_skill.secondary.path]
+                elif new_skill.secondary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                    tempexclude = [SkillPath.NIGHT, SkillPath.DAY, new_skill.primary.path]
+                new_skill.secondary = Skill.get_random_skill(
+                    point_tier=random.randint(1, 2), exclude=tempexclude
                 )
 
         return new_skill
@@ -406,28 +918,32 @@ class CatSkills:
         return {
             "primary": self.primary.get_save_string() if self.primary else None,
             "secondary": self.secondary.get_save_string() if self.secondary else None,
+            "tertiary": self.tertiary.get_save_string() if self.tertiary else None,
             "hidden": self.hidden.name if self.hidden else None,
         }
 
     def skill_string(self, short=False):
-        output = []
+        output = ""
 
         if short:
             if self.primary:
-                output.append(i18n.t(f"cat.skills.{self.primary.get_short_skill()}"))
-            if self.secondary:
-                output.append(i18n.t(f"cat.skills.{self.secondary.get_short_skill()}"))
+                output += (self.primary.get_short_skill())
+            if self.secondary and self.tertiary:
+                output += ", " +(self.secondary.get_short_skill()) + " & " + (self.tertiary.get_short_skill())
+            elif self.secondary:
+                output += " & " + (self.secondary.get_short_skill())
         else:
             if self.primary:
-                output.append(i18n.t(f"cat.skills.{self.primary.skill}"))
-            if self.secondary:
-                output.append(i18n.t(f"cat.skills.{self.secondary.skill}"))
+                output += self.primary.skill
+            if self.secondary and self.tertiary:
+                output += ", " + self.secondary.skill + " & " + self.tertiary.skill
+            elif self.secondary:
+                output += " & " + self.secondary.skill
 
         if not output:
             return "???"
 
-        out = " & ".join(output)
-        return out
+        return output
 
     def mentor_influence(self, mentor):
         """Handles mentor influence on the cat's skill
@@ -454,26 +970,63 @@ class CatSkills:
             if self.secondary and mentor_tags
             else False
         )
+        can_tertiary = (
+            bool(CatSkills.influence_flags[self.tertiary.path] & mentor_tags)
+            if self.tertiary and mentor_tags
+            else False
+        )
 
         # If nothing can be effected, just return as well.
-        if not (can_primary or can_secondary):
+        if not (can_primary or can_secondary or can_tertiary):
             return
 
         amount_effect = random.randint(1, 4)
 
-        if can_primary and can_secondary:
-            if random.randint(1, 2) == 1:
-                self.primary.points += amount_effect
-                path = self.primary.path
+        if can_primary:
+            if can_secondary:
+                if can_tertiary:
+                    num = random.randint(1, 3)
+                    if num == 1:
+                        self.primary.points += amount_effect
+                        path = self.primary.path
+                    elif num == 2:
+                        self.secondary.points += amount_effect
+                        path = self.secondary.path
+                    else:
+                        self.tertiary.points += amount_effect
+                        path = self.tertiary.path
+                else:
+                    if random.randint(1, 2) == 1:
+                        self.primary.points += amount_effect
+                        path = self.primary.path
+                    else:
+                        self.secondary.points += amount_effect
+                        path = self.secondary.path
+            else:
+                if can_tertiary:
+                    if random.randint(1, 2) == 1:
+                        self.primary.points += amount_effect
+                        path = self.primary.path
+                    else:
+                        self.tertiary.points += amount_effect
+                        path = self.tertiary.path
+                else:
+                    self.primary.points += amount_effect
+                    path = self.primary.path
+        elif can_secondary:
+            if can_tertiary:
+                if random.randint(1, 2) == 1:
+                    self.secondary.points += amount_effect
+                    path = self.secondary.path
+                else:
+                    self.tertiary.points += amount_effect
+                    path = self.tertiary.path
             else:
                 self.secondary.points += amount_effect
                 path = self.secondary.path
-        elif can_primary:
-            self.primary.points += amount_effect
-            path = self.primary.path
         else:
-            self.secondary.points += amount_effect
-            path = self.secondary.path
+            self.tertiary.points += amount_effect
+            path = self.tertiary.path
 
         return mentor.ID, path, amount_effect
 
@@ -514,8 +1067,31 @@ class CatSkills:
         if the_cat.status.is_clancat:
             if the_cat.status.rank == CatRank.KITTEN:
                 # Check to see if the cat gains a secondary
+                if not self.secondary and not int(random.random() * 11):
+                    # if there's no secondary skill, try to give one!
+                    tempexclude = self.primary.path
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
+                    self.secondary = Skill.get_random_skill(
+                        point_tier=random.randint(1, 2), interest_only=True, exclude=tempexclude
+                    )
+                
                 if not self.secondary and not int(random.random() * 22):
                     # if there's no secondary skill, try to give one!
+                    tempexclude = self.primary.path
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
+                    self.secondary = Skill.get_random_skill(
+                        point_tier=random.randint(1, 2), interest_only=True, exclude=tempexclude
+                    )
+                
+                if self.secondary and not self.tertiary and not int(random.random() * 22):
+                    # if there's no secondary skill, try to give tertiary one!
+                    tempexclude = [self.primary.path, self.secondary.path]
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY, self.secondary.path]
+                    elif self.secondary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY, self.primary.path]
                     self.secondary = Skill.get_random_skill(
                         points=0, interest_only=True, exclude=self.primary.path
                     )
@@ -523,20 +1099,43 @@ class CatSkills:
                 # if the the_cat has skills, check if they get any points this moon
                 if not int(random.random() * 4):
                     amount_effect = random.randint(1, 4)
-                    if self.primary and self.secondary:
+                    if self.primary and self.secondary and self.tertiary:
+                        which_one = random.randint(1, 3)
+                        if which_one == 1:
+                            self.primary.points += amount_effect
+                        elif which_one == 3:
+                            self.tertiary.points += amount_effect
+                        else:
+                            self.secondary.points += amount_effect
+                    elif self.primary and self.secondary:
                         if random.randint(1, 2) == 1:
                             self.primary.points += amount_effect
                         else:
                             self.secondary.points += amount_effect
-                    elif self.primary:
+                    else:
                         self.primary.points += amount_effect
 
             elif the_cat.status.rank.is_any_apprentice_rank():
                 # Check to see if the cat gains a secondary
                 if not self.secondary and not int(random.random() * 22):
                     # if there's no secondary skill, try to give one!
+                    tempexclude = self.primary.path
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                     self.secondary = Skill.get_random_skill(
-                        points=0, interest_only=True, exclude=self.primary.path
+                        point_tier=random.randint(1, 2), interest_only=True, exclude=tempexclude
+                    )
+                
+                # Check to see if the cat gains a tertiary
+                if not self.tertiary and self.secondary and not int(random.random() * 22):
+                    # if there's no secondary skill, try to give one!
+                    tempexclude = [self.primary.path,self.secondary.path]
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY, self.secondary.path]
+                    elif self.secondary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY, self.primary.path]
+                    self.secondary = Skill.get_random_skill(
+                        point_tier=random.randint(1, 2), interest_only=True, exclude=tempexclude
                     )
 
                 # Check if they get any points this moon
@@ -556,14 +1155,8 @@ class CatSkills:
                 self.primary.interest_only = False
                 if self.secondary:
                     self.secondary.interest_only = False
-
-                chance = max(1, 160 - the_cat.moons)
-                if not int(
-                    random.random() * chance
-                ):  # chance increases as the_cat ages
-                    self.primary.points -= 1
-                    if self.secondary:
-                        self.secondary.points -= 1
+                if self.tertiary:
+                    self.tertiary.interest_only = False
             else:
                 # If they are still in "interest" stage, there is a change to swap primary and secondary
                 # If they are still in "interest" but reached this part, they just graduated.
@@ -584,8 +1177,11 @@ class CatSkills:
                 # If a cat doesn't can a secondary, have a small change for them to get one.
                 # but, only a first-tier skill.
                 if not self.secondary and not int(random.random() * 300):
+                    tempexclude = self.primary.path
+                    if self.primary.path in [SkillPath.NIGHT, SkillPath.DAY]:
+                        tempexclude = [SkillPath.NIGHT, SkillPath.DAY]
                     self.secondary = Skill.get_random_skill(
-                        exclude=self.primary.path, point_tier=1
+                        point_tier=random.randint(1, 2), exclude=tempexclude
                     )
 
                 # There is a change for primary to continue to improve throughout life
@@ -600,6 +1196,8 @@ class CatSkills:
                 self.primary.interest_only = False
                 if self.secondary:
                     self.secondary.interest_only = False
+                if self.tertiary:
+                    self.tertiary.interest_only = False
 
     def meets_skill_requirement(
         self, path: Union[str, SkillPath, HiddenSkillEnum], min_tier: int = 0
@@ -619,7 +1217,8 @@ class CatSkills:
                 try:
                     path = HiddenSkillEnum[path]
                 except KeyError:
-                    raise KeyError(f"{path} is not a real skill path")
+                    print(f"{path} is not a real skill path")
+                    return False
 
         if isinstance(path, HiddenSkillEnum):
             if path == self.hidden:
@@ -631,6 +1230,10 @@ class CatSkills:
 
             if self.secondary:
                 if path == self.secondary.path and self.secondary.tier >= min_tier:
+                    return True
+                
+            if self.tertiary:
+                if path == self.tertiary.path and self.tertiary.tier >= min_tier:
                     return True
 
         return False

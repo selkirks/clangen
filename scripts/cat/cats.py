@@ -2051,6 +2051,10 @@ class Cat:
         self.get_injured(injury, event_triggered=True)
 
     def congenital_condition(self, cat):
+        with open(
+            f"{resource_directory}permanent_conditions.json", "r", encoding="utf-8"
+        ) as read_file:
+            PERMANENT = ujson.loads(read_file.read())
         possible_conditions = []
 
         for condition in PERMANENT:
