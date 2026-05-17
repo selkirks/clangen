@@ -3592,8 +3592,8 @@
                         }
                     },
                     {
-                        "cats_to": ["app1"],
-                        "cats_from": ["p_l"],
+                        "cats_to": ["p_l"],
+                        "cats_from": ["app1"],
                         "mutual": false,
                         "values": [
                             "trust"
@@ -10518,7 +10518,7 @@
             "medicine cat": [1, 1],
             "medicine cat apprentice": [1, 1]
         },
-        "frequency": 3,
+        "frequency": 2,
         "intro_text": "p_l has to attend to one of {PRONOUN/p_l/poss} grimmer jobs as a medicine cat — the grounds where c_n goes to mourn their dead need to be tended to. {PRONOUN/p_l/subject/CAP}{VERB/p_l/'re/'s} bringing along app1 as {PRONOUN/p_l/poss} assistant for this trip, and the two cats head out in relative silence.",
         "decline_text": "Just before the two can leave, a cat calls for their attention.",
         "chance_of_success": 60,
@@ -10588,7 +10588,7 @@
             "healer cats": [1, 1],
             "normal adult": [1, 1]
         },
-        "frequency": 3,
+        "frequency": 2,
         "intro_text": "p_l has to attend to one of {PRONOUN/p_l/poss} grimmer jobs as a medicine cat — the grounds where c_n goes to mourn their dead need to be tended to. {PRONOUN/p_l/subject/CAP}{VERB/p_l/'re/'s} bringing along r_c as {PRONOUN/p_l/poss} assistant for this trip, and the two cats head out in relative silence.",
         "decline_text": "Just before the two can leave, a cat calls for their attention.",
         "chance_of_success": 60,
@@ -31282,7 +31282,7 @@
         "chance_of_success": 70,
         "success_outcomes": [
             {
-                "text": "The rains have made the soil loose and good for digging. While finding burdock plants is starting to become harder, at least it's easy to harvest the roots when p_l comes across some. On the way home, {PRONOUN/p_l/subject} {VERB/p_l/spot/spots} some straggly-looking plantain near the path. {PRONOUN/p_l/subject/CAP} pick it, as well. The more herbs they have before leaf-bare, the better.",
+                "text": "The rains have made the soil loose and good for digging. While finding burdock plants is starting to become harder, at least it's easy to harvest the roots when p_l comes across some. On the way home, {PRONOUN/p_l/subject} {VERB/p_l/spot/spots} some straggly-looking plantain near the path. {PRONOUN/p_l/subject/CAP} {VERB/p_l/pick/picks} it, as well. The more herbs they have before leaf-bare, the better.",
                 "exp": 10,
                 "herbs": [
                     "burdock",
