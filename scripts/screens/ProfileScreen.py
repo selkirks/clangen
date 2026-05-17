@@ -938,6 +938,20 @@ class ProfileScreen(Screens):
 
         # NEWLINE ----------
         output += "\n"
+        pronoun_text = ""
+        if len(the_cat.pronouns) == 1:
+            if the_cat.pronouns[0].get("subject") == the_cat.pronouns[0].get("object"):
+                pronoun_text += the_cat.pronouns[0].get("subject") + "/" + the_cat.pronouns[0].get("poss")
+            else:
+                pronoun_text += the_cat.pronouns[0].get("subject") + "/" + the_cat.pronouns[0].get("object")
+        else:
+            for pronoun in the_cat.pronouns:
+                pronoun_text += pronoun.get("subject") + "/"
+            if pronoun_text[-1] == "/":
+                pronoun_text = pronoun_text[:-1]
+        output += pronoun_text
+        # NEWLINE ----------
+        output += "\n"
 
         # LEADER LIVES:
         # Optional - Only shows up for leaders

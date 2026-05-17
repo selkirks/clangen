@@ -484,6 +484,13 @@ class Condition_Events:
             "selective mutism",
             "absent",
             "crooked jaw",
+            "wobbly cat syndrome",
+            "cleft palate",
+            "testosterone deficiency",
+            "excess testosterone",
+            "aneuploidy",
+            "mosaicism",
+            "chimerism",
         )
 
         got_condition = False
