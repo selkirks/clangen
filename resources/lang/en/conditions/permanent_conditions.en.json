@@ -28,6 +28,13 @@
         "persistent headaches": "persistent headaches",
         "selective mutism": "selective mutism",
         "damaged throat": "damaged throat",
+        "wobbly cat syndrome": "wobbly cat syndrome",
+        "cleft palate": "cleft palate",
+        "testosterone deficiency": "testosterone deficiency",
+        "excess testosterone": "excess testosterone",
+        "aneuploidy": "aneuploidy",
+        "mosaicism": "mosaicism",
+        "chimerism": "chimerism",
         "unknown_condition_risk_given": "m_c's condition has gotten worse."
     }
 }

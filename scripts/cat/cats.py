@@ -8,7 +8,7 @@ import bisect
 import itertools
 import os.path
 import sys
-from random import choice, randint, sample, random, randrange
+from random import choice, randint, sample, random, randrange, choices
 from typing import Dict, List, Any, Union, Callable, Optional, TYPE_CHECKING
 
 import i18n
@@ -100,7 +100,7 @@ class Cat:
         CatRank.LEADER,
     ]
 
-    gender_tags = {"female": "F", "male": "M"}
+    gender_tags = {"female": "F", "male": "M", "intersex": "I"}
 
     # EX levels and ranges.
     # Ranges are inclusive to both bounds
@@ -313,8 +313,12 @@ class Cat:
         # sex!?!??!?!?!??!?!?!?!??
         if self.gender is None:
             self.gender = (
-                "female" if self.disable_random else choice(["female", "male"])
+                "female" if self.disable_random else choices(["female", "male", "intersex"], weights=[23,23,4])[0]
             )
+            if self.gender == "intersex":
+                intersex_condition = choice(["excess testosterone", "testosterone deficiency", "aneuploidy",
+                                             "mosaicism", "chimerism"])
+                self.get_permanent_condition(intersex_condition, born_with=True)
 
         """if self.genderalign == "":
             self.genderalign = self.gender"""
@@ -423,21 +427,30 @@ class Cat:
         :return: None
         """
         # trans cat chances
+        nonbiney_list = ["nonbinary", "genderfluid", "demigirl", "demiboy", "genderfae", "genderfaun", "bigender",
+                         "genderqueer", "agender", "???", "deminonbinary", "trigender", "genderflux", "polygender"]
+        enby_masc = ["trans male", "demiboy", "genderfaun", "trans masc"]
+        enby_fem = ["trans female", "demigirl", "genderfae", "trans femme"]
+        
         self.genderalign = self.gender
-        trans_chance = randint(0, 50)
-        nb_chance = randint(0, 75)
+        trans_chance = randint(0, 30)
+        nb_chance = randint(0, 50)
 
         # GENDER IDENTITY
         if self.age.is_baby() or self.disable_random:
             # newborns can't be trans, sorry babies
             pass
         elif nb_chance == 1:
-            self.genderalign = "nonbinary"
+            if self.gender == "intersex" and "intergender" not in nonbiney_list:
+                nonbiney_list += "intergender"
+            self.genderalign = choice(nonbiney_list)
         elif trans_chance == 1:
             if self.gender == "female":
-                self.genderalign = "trans male"
+                self.genderalign = choices(enby_masc, weights=[12,5,5,7])[0]
+            elif self.gender =="male":
+                self.genderalign = choices(enby_fem, weights=[12,5,5,7])[0]
             else:
-                self.genderalign = "trans female"
+                self.genderalign = choice((enby_masc + enby_fem + ["intergender"]))
 
         # PRONOUNS AUTO-GENERATE WHEN REQUIRED
 
@@ -645,6 +658,7 @@ class Cat:
         if self.genderalign in (
             "female",
             "male",
+            "intersex",
             "trans female",
             "trans male",
             "nonbinary",

@@ -717,7 +717,8 @@ def create_new_cat(
                 leeway = 5 - (PERMANENT[condition]["moons_until"] + 1)
                 if moons > leeway:
                     continue
-                possible_conditions.append(condition)
+                if condition not in ["excess testosterone", "testosterone deficiency", "aneuploidy", "mosaicism", "chimerism"]:
+                    possible_conditions.append(condition)
 
             if possible_conditions:
                 chosen_condition = choice(possible_conditions)

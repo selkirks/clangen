@@ -73,14 +73,42 @@
         "When m_c is anxious, {PRONOUN/m_c/poss} voice freezes up, no matter how strongly {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to speak up."
     ],
     "strange lump": [
-            "m_c developed a new lump on {PRONOUN/m_c/poss} body. It doesn't look good.",
-            "r_c isn't sure where this lump on {PRONOUN/m_c/poss} body came from, but m_c isn't sure it's good news.",
-            "m_c complains about being unable to sleep properly, leading r_c to find a strange lump on {PRONOUN/m_c/object}. It's not good news.",
-            "m_c won't let r_c see the new lump that appeared on {PRONOUN/m_c/poss} body."
-        ],
+        "m_c developed a new lump on {PRONOUN/m_c/poss} body. It doesn't look good.",
+        "r_c isn't sure where this lump on {PRONOUN/m_c/poss} body came from, but m_c isn't sure it's good news.",
+        "m_c complains about being unable to sleep properly, leading r_c to find a strange lump on {PRONOUN/m_c/object}. It's not good news.",
+        "m_c won't let r_c see the new lump that appeared on {PRONOUN/m_c/poss} body."
+    ],
     "absent": [
-            "m_c has been getting more and more forgetful lately. {PRONOUN/m_c/subject/CAP} is starting to fade.",
-            "r_c has to repeat m_c's name several times to get {PRONOUN/m_c/poss} attention, quietly concerned about how long it takes {PRONOUN/m_c/object} to respond.",
-            "m_c has trouble remembering where {PRONOUN/m_c/poss} nest is. r_c takes note — m_c has been fading fast."
-        ]
+        "m_c has been getting more and more forgetful lately. {PRONOUN/m_c/subject/CAP} is starting to fade.",
+        "r_c has to repeat m_c's name several times to get {PRONOUN/m_c/poss} attention, quietly concerned about how long it takes {PRONOUN/m_c/object} to respond.",
+        "m_c has trouble remembering where {PRONOUN/m_c/poss} nest is. r_c takes note — m_c has been fading fast."
+    ],
+    "testosterone deficiency": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
+    ],
+    "excess testosterone": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex. "
+    ],
+    "aneuploidy": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
+    ],
+    "mosaicism": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
+    ],
+    "chimerism": [
+        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
+        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
+    ],
+    "wobbly cat syndrome": [
+        "It seems m_c constantly shakes. After being looked over by r_c, {PRONOUN/m_c/subject} {VERB/m_c/are/is} diagnosed with wobbly cat syndrome.",
+        "After being unable to stand without wobbling, it appears m_c will wobble {PRONOUN/m_c/poss} entire life. Despite this, family is reassured that m_c will live a long and healthy life- just one a bit more wobbly than others."
+    ],
+    "cleft palate": [
+        "r_c looks closely at the gap between m_c's nose and mouth. A clear sign of a cleft palate. r_c reassures that m_c will do just fine with proper treatment of symptoms!",
+        "It appears there is a gap between m_c's nose and mouth. After {PRONOUN/m_c/poss} parent looks {PRONOUN/m_c/object} over, it appears m_c has a cleft palate."
+    ]
 }

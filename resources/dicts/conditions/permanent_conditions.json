@@ -910,5 +910,177 @@
             "2": [],
             "3": []
         }
+    },
+    "testosterone deficiency": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
+    },
+    "excess testosterone": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
+    },
+    "aneuploidy": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
+    },
+    "mosaicism": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
+    },
+    "chimerism": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
+    },
+    "cleft palate": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [{
+            "name": "whitecough",
+            "chance": 20
+        }
+        ],
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
+    },
+    "wobbly cat syndrome": {
+        "severity": "major",
+        "congenital": "always",
+        "moons_until": 3,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "sore",
+                "chance": 20
+            },
+            {
+                "name": "joint pain",
+                "chance": 40
+            }
+        ],
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
     }
 }
