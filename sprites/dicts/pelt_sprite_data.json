@@ -10,7 +10,6 @@
         "colours_bengal": ["Bengal"],
         "colours_mackerel": ["Mackerel"],
         "colours_classic": ["Classic"],
-        "colours_sokoke": ["Sokoke"],
         "colours_agouti": ["Agouti"],
         "colours_singlestripe": ["Singlestripe"],
         "colours_masked": ["Masked"]
@@ -40,6 +39,12 @@
             "GOLDEN-BROWN": "brown",
             "DARKBROWN": "brown",
             "CHOCOLATE": "brown"
+        },
+        {
+            "MAPLESYRUP": "brown",
+            "CHARCOAL": "black",
+            "APPLEBLOSSOM": "brown",
+            "PITCH": "black"
         }
     ],
     "pattern_names": [
@@ -53,7 +58,6 @@
         "speckled",
         "mackerel",
         "classic",
-        "sokoke",
         "agouti",
         "singlestripe",
         "masked"
@@ -64,12 +68,10 @@
             "Ticked",
             "Mackerel",
             "Classic",
-            "Sokoke",
             "Agouti"
         ],
         "spotted": [
-            "Speckled",
-            "Rosette"
+            "Speckled"
         ],
         "plain": [
             "SingleColour",
@@ -80,7 +82,8 @@
         "exotic": [
             "Bengal",
             "Marbled",
-            "Masked"
+            "Masked",
+            "Rosette"
         ],
         "torties": [
             "Tortie",

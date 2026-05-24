@@ -77,6 +77,22 @@
             "one": "brown",
             "many": "dark brown"
         },
+        "MAPLESYRUP": {
+            "one": "syrup",
+            "many": "maple-syrup-colored"
+        },
+        "CHARCOAL": {
+            "one": "gray",
+            "many": "charcoal"
+        },
+        "APPLEBLOSSOM": {
+            "one": "brown",
+            "many": "apple-colored"
+        },
+        "PITCH": {
+            "one": "black",
+            "many": "pitch-black"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
@@ -101,8 +117,8 @@
         "Agouti_long": "%{color} tabby",
         "Singlestripe": "single-striped",
         "Singlestripe_long": "dorsal-striped %{color}",
-        "Rosette": "rosette",
-        "Rosette_long": "unusually spotted %{color}",
+        "Rosette": "braided",
+        "Rosette_long": "unusually striped %{color}",
         "Sokoke": "sokoke",
         "Sokoke_long": "%{color} tabby",
         "Masked": "masked",

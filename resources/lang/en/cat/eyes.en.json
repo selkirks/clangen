@@ -29,6 +29,10 @@
         "MUSTARD": "mustard-yellow",
         "EARTHY": "earthy brown",
         "SEA": "sea blue",
-        "BLUEBELL": "bluebell"
+        "BLUEBELL": "bluebell",
+        "LAKE": "lake blue",
+        "ROSY": "rosy pink",
+        "BLUSH": "blush",
+        "WINTER": "winter blue"
     }
 }
