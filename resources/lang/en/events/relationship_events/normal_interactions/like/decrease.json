@@ -970,7 +970,7 @@
             "m_c threatened to put r_c in {PRONOUN/r_c/poss} place next time they crossed paths."
 		],
 		"relationship_constraint": [
-			"dislike_40"
+			"hates"
 		],
         "reaction_main_cat": {
 			"trust": "decrease",
