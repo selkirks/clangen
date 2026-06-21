@@ -1128,8 +1128,8 @@ class Cat:
             return
 
         try:
-            if switch_get_value(Switch.clan_name) != "":
-                clanname = switch_get_value(Switch.clan_name)
+            if switch_get_value(Switch.clan_save_id) != "":
+                clanname = switch_get_value(Switch.clan_save_id)
             else:
                 clanname = switch_get_value(Switch.clan_list)[0]
         except IndexError:
@@ -1611,9 +1611,11 @@ class Cat:
             cat_list = self.all_cats_list.copy()
             other_clan_id = (
                 choice(game.clan.other_clan_IDs)
-                if game.clan and game.clan.other_clan_IDs
+                if game.clan
+                and hasattr(game.clan, "other_clan_ids")
+                and game.clan.other_clan_IDs
                 else None
-            )
+            )  # this is so stupid convoluted because of tests and game.clan initialization
 
         if not other_cat:
             other_cat = get_other_cat_for_thought(
@@ -2062,20 +2064,7 @@ class Cat:
         # remove accessories if need be
         if "NOTAIL" in self.pelt.scars or "HALFTAIL" in self.pelt.scars:
             self.pelt.accessory = tuple(
-                acc
-                for acc in self.pelt.accessory
-                if acc
-                not in (
-                    "RED FEATHERS",
-                    "BLUE FEATHERS",
-                    "JAY FEATHERS",
-                    "GULL FEATHERS",
-                    "SPARROW FEATHERS",
-                    "CLOVER",
-                    "DAISY",
-                    "WISTERIA",
-                    "GOLDEN CREEPING JENNY",
-                )
+                acc for acc in self.pelt.accessory if acc not in Pelt.tail_accessories
             )
 
         condition = PERMANENT[name]
@@ -2226,21 +2215,19 @@ class Cat:
 
     def save_condition(self):
         # save conditions for each cat
-        clanname = None
-        if switch_get_value(Switch.clan_name) != "":
-            clanname = switch_get_value(Switch.clan_name)
+        save_id = None
+        if switch_get_value(Switch.clan_save_id) != "":
+            save_id = switch_get_value(Switch.clan_save_id)
         elif len(switch_get_value(Switch.clan_list)) > 0:
-            clanname = switch_get_value(Switch.clan_list)[0]
+            save_id = switch_get_value(Switch.clan_list)[0]
         elif game.clan is not None:
-            clanname = game.clan.name
+            save_id = game.clan.save_id
 
-        condition_directory = get_save_dir() + "/" + clanname + "/conditions"
+        condition_directory = get_save_dir() + "/" + save_id + "/conditions"
         condition_file_path = condition_directory + "/" + self.ID + "_conditions.json"
 
-        if (
-            (not self.is_ill() and not self.is_injured() and not self.is_disabled())
-            or self.dead
-            or self.status.is_outsider
+        if (not self.is_ill() and not self.is_injured() and not self.is_disabled()) or (
+            (self.dead or self.status.is_outsider) and not self.is_disabled()
         ):
             if os.path.exists(condition_file_path):
                 os.remove(condition_file_path)
@@ -2260,8 +2247,8 @@ class Cat:
         safe_save(condition_file_path, conditions)
 
     def load_conditions(self):
-        if switch_get_value(Switch.clan_name) != "":
-            clanname = switch_get_value(Switch.clan_name)
+        if switch_get_value(Switch.clan_save_id) != "":
+            clanname = switch_get_value(Switch.clan_save_id)
         else:
             clanname = switch_get_value(Switch.clan_list)[0]
 
@@ -2731,8 +2718,8 @@ class Cat:
         safe_save(f"{relationship_dir}/{self.ID}_relations.json", rel)
 
     def load_relationship_of_cat(self):
-        if switch_get_value(Switch.clan_name) != "":
-            clanname = switch_get_value(Switch.clan_name)
+        if switch_get_value(Switch.clan_save_id) != "":
+            clanname = switch_get_value(Switch.clan_save_id)
         else:
             clanname = switch_get_value(Switch.clan_list)[0]
 
@@ -3018,7 +3005,7 @@ class Cat:
             clan = (
                 switch_get_value(Switch.clan_list)[0]
                 if game.clan is None
-                else game.clan.name
+                else game.clan.save_id
             )
 
             with open(
