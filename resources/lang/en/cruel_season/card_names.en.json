@@ -1,9 +1,11 @@
 {
   "en": {
-    "neverending_cold": "Neverending Cold",
-    "scarce_prey": "Scarce Prey",
-    "persistent_twolegs": "Persistent Twolegs",
-    "endless_strife": "Endless Strife",
-    "blighted_herbs": "Blighted Herbs"
+    "environment_placeholder0": "Environment Placeholder 1",
+    "environment_placeholder1": "Environment Placeholder 2",
+    "environment_placeholder2": "Environment Placeholder 3",
+    "forsaken": "Forsaken",
+    "fated_paths": "Fated Paths",
+    "public_enemy": "Public Enemy",
+    "resolute": "Resolute"
   }
 }
