@@ -54,6 +54,8 @@
     "Sokoke": ["stripe", "feather", "leaf", "stripe", "fern", "swirl"],
     "Agouti": ["back", "pelt", "fur"],
     "Singlestripe": ["stripe", "streak", "back", "shade", "stem", "shadow"],
+    "Countershade": ["stripe", "streak", "back", "shade", "stem", "shadow"],
+    "Cape": ["stripe", "streak", "back", "shade", "stem", "shadow"],
     "Masked": ["stripe", "mask", "mask", "shade"],
     "Tortie": ["dapple", "speckle", "spot", "dapple"],
     "Calico": ["stripe", "dapple", "patch", "patch"]
@@ -72,6 +74,8 @@
     "sokoke": ["stripe", "feather", "fern", "shade", "dapple"],
     "agouti": ["back", "pelt", "fur", "dapple", "splash"],
     "singlestripe": ["stripe", "back", "shade", "stem", "dapple"],
+    "Countershade": ["stripe", "back", "shade", "stem", "dapple"],
+    "Cape": ["stripe", "back", "shade", "stem", "dapple"],
     "masked": ["stripe", "dapple", "mask", "mask", "shade"]
   },
 
