@@ -15,7 +15,7 @@ dev_tools = false
   length = 3
 
 [cruel_season]
-  card_limit = 12
+  card_limit = 30
 
   # for specifying that a hyper-specific reaction should occur due to a card
   [cruel_season.event]
@@ -331,7 +331,7 @@ dev_tools = false
   base_heterochromia = 120
 
   # 1/(chance + 1) for a cat to have same pelt as one of their parents
-  direct_inheritance = 15
+  direct_inheritance = 3
 
   # 1/2^(chance) that a cat will be a wildcard tortie
   wildcard_tortie = 9
@@ -569,7 +569,7 @@ dev_tools = false
 
 [clan_creation]
   # Set this to -1 for it to be infinite
-  rerolls = 3
+  rerolls = -1
 
   # other clans will start with a random relation between the two numbers
   starting_clan_relation = [8, 12]

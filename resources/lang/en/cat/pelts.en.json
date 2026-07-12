@@ -1,25 +1,25 @@
 {
     "en": {
         "WHITE": {
-            "one": "pale",
-            "many": "pale"
+            "one": "silver blue",
+            "many": "silver blue"
         },
         "FULLWHITE": "white",
         "PALEGREY": {
-            "one": "gray",
-            "many": "pale gray"
+            "one": "blue",
+            "many": "blue"
         },
         "SILVER": {
             "one": "silver",
             "many": "silver"
         },
         "GREY": {
-            "one": "gray",
-            "many": "gray"
+            "one": "silver fawn",
+            "many": "silver fawn"
         },
         "DARKGREY": {
-            "one": "gray",
-            "many": "dark gray"
+            "one": "silver lilac",
+            "many": "silver lilac"
         },
         "GHOST": {
             "one": "black",
@@ -34,87 +34,91 @@
             "many": "cream"
         },
         "PALEGINGER": {
-            "one": "ginger",
-            "many": "pale ginger"
+            "one": "cream",
+            "many": "silver cream"
         },
         "GOLDEN": {
-            "one": "golden",
-            "many": "golden"
+            "one": "golden black",
+            "many": "golden black"
         },
         "GINGER": {
-            "one": "ginger",
-            "many": "ginger"
+            "one": "red",
+            "many": "red"
         },
         "DARKGINGER": {
-            "one": "ginger",
-            "many": "dark ginger"
+            "one": "dark red",
+            "many": "dark red"
         },
         "SIENNA": {
-            "one": "ginger",
-            "many": "dark ginger"
+            "one": "red",
+            "many": "silver red"
         },
         "LIGHTBROWN": {
-            "one": "brown",
-            "many": "light brown"
+            "one": "fawn",
+            "many": "fawn"
         },
         "LILAC": {
-            "one": "brown",
-            "many": "light brown"
+            "one": "lilac",
+            "many": "lilac"
         },
         "BROWN": {
-            "one": "brown",
-            "many": "brown"
+            "one": "silver cinnamon",
+            "many": "silver cinnamon"
         },
         "GOLDEN-BROWN": {
-            "one": "brown",
-            "many": "golden brown"
+            "one": "cinnamon",
+            "many": "cinnamon"
         },
         "DARKBROWN": {
-            "one": "brown",
-            "many": "dark brown"
+            "one": "silver chocolate",
+            "many": "silver chocolate"
         },
         "CHOCOLATE": {
-            "one": "brown",
-            "many": "dark brown"
+            "one": "chocolate",
+            "many": "chocolate"
         },
-        "SingleColour": "single color",
-        "SingleColour_long": "%{color}",
-        "TwoColour": "two color",
-        "TwoColour_long": "%{color}",
-        "Tabby": "tabby",
-        "Tabby_long": "%{color} tabby",
-        "Speckled": "speckled",
-        "Speckled_long": "speckled %{color}",
-        "Bengal": "bengal",
-        "Bengal_long": "unusually dappled %{color}",
-        "Marbled": "marbled",
-        "Marbled_long": "%{color} tabby",
-        "Ticked": "ticked",
-        "Ticked_long": "%{color} ticked",
+        "SingleColour": "solid",
+        "SingleColour_long": "solid %{color}",
+        "TwoColour": "bicolor",
+        "TwoColour_long": "%{color} bicolor",
+        "Tabby": "broken mackerel tabby",
+        "Tabby_long": "%{color} broken mackerel tabby",
+        "Speckled": "spotted tabby",
+        "Speckled_long": "%{color} spotted tabby",
+        "Bengal": "braided tabby",
+        "Bengal_long": "%{color} braided tabby",
+        "Marbled": "marbled tabby",
+        "Marbled_long": "%{color} marbled tabby",
+        "Ticked": "broken braided tabby",
+        "Ticked_long": "%{color} broken braided tabby",
         "Smoke": "smoke",
         "Smoke_long": "%{color} smoke",
-        "Mackerel": "mackerel",
-        "Mackerel_long": "%{color} tabby",
-        "Classic": "classic",
-        "Classic_long": "%{color} tabby",
-        "Agouti": "agouti",
-        "Agouti_long": "%{color} tabby",
-        "Singlestripe": "single-striped",
-        "Singlestripe_long": "dorsal-striped %{color}",
-        "Rosette": "rosette",
-        "Rosette_long": "unusually spotted %{color}",
-        "Sokoke": "sokoke",
-        "Sokoke_long": "%{color} tabby",
-        "Masked": "masked",
-        "Masked_long": "masked %{color} tabby",
+        "Mackerel": "mackerel tabby",
+        "Mackerel_long": "%{color} mackerel tabby",
+        "Classic": "classic tabby",
+        "Classic_long": "%{color} classic tabby",
+        "Agouti": "ticked tabby",
+        "Agouti_long": "%{color} ticked tabby",
+        "Singlestripe": "agouti tabby",
+        "Singlestripe_long": "%{color} agouti tabby",
+        "Rosette": "rosette tabby",
+        "Rosette_long": "%{color} rosette tabby",
+        "Sokoke": "sokoke tabby",
+        "Sokoke_long": "%{color} sokoke tabby",
+        "Masked": "charcoal rosette tabby",
+        "Masked_long": "%{color} charcoal rosette tabby",
+        "Countershade": "countershaded",
+        "Countershade_long": "%{color} countershaded",
+        "Cape": "caped",
+        "Cape_long": "%{color} caped",
         "Calico": "calico",
         "Calico_long": "%{color} calico",
         "Calico_tabby": "calico tabby",
         "Calico_tabby_long": "%{color} calico tabby",
-        "Tortie": "tortie",
-        "Tortie_long": "%{color} tortie",
-        "Tortie_tabby": "tortie tabby",
-        "Tortie_tabby_long": "%{color} tortie tabby",
+        "Tortie": "tortoiseshell",
+        "Tortie_long": "%{color} tortoiseshell",
+        "Tortie_tabby": "tortoiseshell tabby",
+        "Tortie_tabby_long": "%{color} tortoiseshell tabby",
         "mottled": "mottled",
         "mottled_long": "%{color} mottled",
         "point": "%{color} point",
@@ -125,10 +129,10 @@
         "NORIGHTEAR": "a missing ear",
         "NOEAR": "no ears",
         "vitiligo": "vitiligo",
-        "long_furred": "long-furred",
+        "long_furred": "longhair",
         "scarred": "scarred",
-        "fur_short": "short",
-        "fur_medium": "medium",
-        "fur_long": "long"
+        "fur_short": "shorthair",
+        "fur_medium": "mediumhair",
+        "fur_long": "longhair"
     }
 }
