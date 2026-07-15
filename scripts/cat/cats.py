@@ -8,7 +8,7 @@ import bisect
 import itertools
 import os.path
 import sys
-from random import choice, randint, sample, random, randrange
+from random import choice, randint, sample, random, randrange, choices
 from typing import Dict, List, Any, Union, Callable, Optional, TYPE_CHECKING, Literal
 
 import i18n
@@ -32,7 +32,6 @@ from scripts.cat.skills import CatSkills
 from scripts.cat.status import Status, StatusDict
 from scripts.config import get_config
 from scripts.events_module.thoughts.generate_thoughts import (
-    new_death_thought,
     new_thought,
     get_other_cat_for_thought,
 )
@@ -131,9 +130,9 @@ class Cat:
         prefix=None,
         gender=None,
         status_dict: StatusDict = None,
-        backstory="clanborn",
-        parent1=None,
-        parent2=None,
+        backstory: str = "clanborn",
+        parent1: str = None,
+        parent2: str = None,
         adoptive_parents=None,
         suffix=None,
         specsuffix_hidden=False,
@@ -733,6 +732,7 @@ class Cat:
             grief_allowed
             and game.clan
             and self.status.get_last_living_group() == CatGroup.PLAYER_CLAN_ID
+            and not self.status.is_exiled(CatGroup.PLAYER_CLAN_ID)
         ):
             self.grief(body)
             game.dead_cats_to_grieve.append(self)
@@ -2383,6 +2383,10 @@ class Cat:
         if self.ID == other_cat.ID:
             return False
 
+        # Config check
+        if not get_config("mates.allow_mating"):
+            return False
+
         # No Mates Check
         if not ignore_no_mates and (self.no_mates or other_cat.no_mates):
             return False
@@ -2488,8 +2492,12 @@ class Cat:
 
         inheritance_db.load_inheritances(Cat)
 
-    def set_mate(self, other_cat: Cat):
-        """Sets up a mate relationship between self and other_cat."""
+    def set_mate(self, other_cat: Cat, recalculate_inheritance: bool = True):
+        """
+        Sets up a mate relationship between self and other_cat.
+        :param other_cat: The other cat
+        :param recalculate_inheritance: Set to False if this func should SKIP recalculating inheritance. Take care when using this.
+        """
         if other_cat.ID not in self.mate:
             self.mate.append(other_cat.ID)
         if self.ID not in other_cat.mate:
@@ -2501,7 +2509,8 @@ class Cat:
         if self.ID in other_cat.previous_mates:
             other_cat.previous_mates.remove(self.ID)
 
-        inheritance_db.load_inheritances(Cat)
+        if recalculate_inheritance:
+            inheritance_db.load_inheritances(Cat)
 
         # Set starting relationship values
         if not self.dead:
@@ -3446,23 +3455,17 @@ def create_cat(rank, moons=None, biome=None):
 
 
 # Twelve example cats
-def create_example_cats() -> list[Cat]:
-    warrior_indices = sample(range(12), 3)
+def create_example_cats(majority_rank: CatRank, rank_weights: dict) -> list[Cat]:
+    majority_rank_cats = sample(range(12), 3)
 
     chosen_cats = []
     for cat_index in range(12):
-        if cat_index in warrior_indices:
-            chosen_cats.append(create_cat(rank=CatRank.WARRIOR))
+        if cat_index in majority_rank_cats:
+            chosen_cats.append(create_cat(rank=majority_rank))
         else:
-            random_rank = choice(
-                [
-                    CatRank.KITTEN,
-                    CatRank.APPRENTICE,
-                    CatRank.WARRIOR,
-                    CatRank.WARRIOR,
-                    CatRank.ELDER,
-                ]
-            )
+            random_rank = choices(
+                list(rank_weights.keys()), list(rank_weights.values())
+            )[0]
             chosen_cats.append(create_cat(rank=random_rank))
 
     return chosen_cats

@@ -1,3 +1,4 @@
+import copy
 import tomllib
 
 from scripts.game_structure import constants, game
@@ -19,13 +20,10 @@ def get_config(
     config_keys = tuple(config_path.split("."))
 
     # checking cards first
-    card_list = (
-        card_list_override
-        if card_list_override
-        else game.clan.cruel_cards
-        if not creating_clan
-        else []
-    )
+    card_list = card_list_override if card_list_override else []
+    if game.clan and not card_list and not creating_clan:
+        card_list = game.clan.cruel_cards
+
     for card in card_list:
         card_info = constants.CRUEL_CARDS_ALL[card]
         if config_path in card_info["modifiers"]:
@@ -36,4 +34,4 @@ def get_config(
         for key in config_keys:
             config_value = config_value[key]
 
-    return config_value
+    return copy.deepcopy(config_value)
