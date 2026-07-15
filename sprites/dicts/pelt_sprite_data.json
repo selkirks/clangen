@@ -15,7 +15,8 @@
         "colours_singlestripe": ["Singlestripe"],
         "colours_masked": ["Masked"],
         "colours_countershade": ["Countershade"],
-        "colours_cape": ["Cape"]
+        "colours_cape": ["Cape"],
+        "colours_freckled": ["Freckled"]
     },
     "sprite_list": [
         {
@@ -53,6 +54,7 @@
         "smoke",
         "rosette",
         "speckled",
+        "freckled",
         "mackerel",
         "classic",
         "sokoke",
@@ -73,7 +75,8 @@
         ],
         "spotted": [
             "Speckled",
-            "Rosette"
+            "Rosette",
+            "Freckled"
         ],
         "plain": [
             "SingleColour",

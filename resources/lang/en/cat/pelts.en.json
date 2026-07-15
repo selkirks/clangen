@@ -103,6 +103,8 @@
         "Singlestripe_long": "%{color} agouti tabby",
         "Rosette": "rosette tabby",
         "Rosette_long": "%{color} rosette tabby",
+        "Freckled": "freckled",
+        "Freckled_long": "unusually dotted %{color}",
         "Sokoke": "sokoke tabby",
         "Sokoke_long": "%{color} sokoke tabby",
         "Masked": "charcoal rosette tabby",
