@@ -1,6 +1,14 @@
 {
-    "little": {},
-    "mid": {},
-    "high": {},
-    "mostly": {}
+    "little": {
+        "OOPSALLTIPS": ["littleLEFTEAR", "littleRIGHTEAR", "littlePAWS", "littleTAILTIP"]
+    },
+    "mid": {
+        "BLUESHELL": ["littleTOES", "littleESTRELLA", "midBEARD"]
+    },
+    "high": {
+
+    },
+    "mostly": {
+        "OIL": ["highPANTSTWO", "highBLOSSOMSTEP", "highBULLSEYE"]
+    }
 }

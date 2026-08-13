@@ -27,9 +27,9 @@
             "PALEYELLOW": "yellow",
             "GOLD": "yellow",
             "GREENYELLOW": "yellow",
-            "ORANGE": "yellow",
-            "DAWN": "yellow",
-            "DUSK": "yellow"
+            "ORANGE": "red",
+            "DAWN": "red",
+            "DUSK": "red"
         },
         {
             "AURORA": "blue",
@@ -53,15 +53,24 @@
             "LIME": "green",
             "SAND": "yellow",
             "PERIWINKLE": "blue",
-            "WILDFIRE": "yellow",
-			"WALNUT": "yellow",
+            "WILDFIRE": "red",
+			"WALNUT": "red",
 			"SWAMP": "green",
 			"ALGAE": "green",
 			"STORM": "blue"
 		},
 	    {
 	        "PERIDOT": "green"
-	}
-
+	},
+      {
+            "LAKE": "blue",
+            "ROSE": "red",
+            "AMARANTH": "red",
+            "WINTER": "blue",
+            "LAVENDER": "blue",
+            "SUNSET": "red",
+            "YEW": "red",
+            "CINNABAR": "red"
+      }
     ]
 }

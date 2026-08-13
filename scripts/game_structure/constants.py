@@ -23,7 +23,7 @@ MENU_SCREENS = [
     GameScreen.MAKE_CLAN_CLAN_CREATED,
 ]
 
-EVENTS_PER_PAGE = 10
+EVENTS_PER_PAGE = 15
 
 BIOME_TYPES = ["Forest", "Plains", "Mountainous", "Beach", "Wetlands", "Desert"]
 

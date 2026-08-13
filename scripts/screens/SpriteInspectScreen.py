@@ -249,6 +249,13 @@ class SpriteInspectScreen(Screens):
         # "young adult", "adult", and "senior adult" all look the same: collapse to adult
         # This is not the best way to do it, so if we make them have difference appearances, this will
         # need to be changed/removed.
+        life_stages_dict = {
+            "newborn": 0,
+            "kitten": 1,
+            "adolescent": 2,
+            "adult": 3,
+            "senior": 4
+        }
         if self.the_cat.age in ("young adult", "adult", "senior adult"):
             current_life_stage = "adult"
         else:
@@ -257,11 +264,9 @@ class SpriteInspectScreen(Screens):
         self.valid_life_stages = []
         for life_stage in SpriteInspectScreen.cat_life_stages:
             self.valid_life_stages.append(life_stage)
-            if life_stage == current_life_stage:
-                break
 
         # Store the index of the currently displayed life stage.
-        self.displayed_life_stage = len(self.valid_life_stages) - 1
+        self.displayed_life_stage = life_stages_dict.get(current_life_stage)
 
         # Reset all the toggles
         self.lifestage = None
@@ -324,11 +329,19 @@ class SpriteInspectScreen(Screens):
         )
 
         # "Show Scars"
+        scars = list(self.the_cat.pelt.scars)
+        if "FOLDEDEARS" in scars:
+            scars.remove("FOLDEDEARS")
+        if "NOTAIL" in scars and "born without a tail" in self.the_cat.permanent_condition:
+            scars.remove("NOTAIL")
+        if "NOPAW" in scars and "born without a leg" in self.the_cat.permanent_condition:
+            scars.remove("NOPAW")
+        scars = tuple(scars)
         self.make_one_checkbox(
             ui_scale_offset((300, 575)),
             "scars_shown",
             self.scars_shown,
-            self.the_cat.pelt.scars,
+            scars,
         )
 
         # "Show accessories"

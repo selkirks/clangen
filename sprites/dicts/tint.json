@@ -2,32 +2,49 @@
   "colour_groups":
   {
     "WHITE": "white",
-    "PALEGREY": "cool",
-    "SILVER": "cool",
-    "GREY": "monochrome",
-    "DARKGREY": "monochrome",
-    "GHOST": "monochrome",
-    "BLACK": "monochrome",
-    "CREAM": "warm",
-    "PALEGINGER": "warm",
-    "GOLDEN": "warm",
-    "GINGER": "warm",
-    "DARKGINGER": "warm",
-    "SIENNA": "brown",
-    "LIGHTBROWN": "brown",
-    "LILAC": "brown",
+    "PALEGREY": "palegrey",
+    "SILVER": "silver",
+    "GREY": "grey",
+    "DARKGREY": "grey",
+    "GHOST": "ghost",
+    "BLACK": "black",
+    "CREAM": "cream",
+    "PALEGINGER": "paleginger",
+    "GOLDEN": "golden",
+    "GINGER": "ginger",
+    "DARKGINGER": "darkginger",
+    "SIENNA": "sienna",
+    "LIGHTBROWN": "lightbrown",
+    "LILAC": "lilac",
     "BROWN": "brown",
-    "GOLDEN-BROWN": "brown",
-    "DARKBROWN": "brown",
-    "CHOCOLATE": "brown"
+    "GOLDEN-BROWN": "goldenbrown",
+    "DARKBROWN": "darkbrown",
+    "CHOCOLATE": "chocolate"
   },
   "possible_tints": {
-    "basic": ["pink", "gray", "red", "orange", "warmdilute"],
-    "warm": ["yellow", "purple", "dilute", "cooldilute"],
-    "cool": ["purple", "black", "dilute"],
-    "white": ["yellow"],
-    "monochrome": ["blue", "black", "dilute", "cooldilute"],
-    "brown": ["yellow", "purple", "black", "dilute", "cooldilute"]
+    "basic": ["gray", "red", "orange", "warmdilute"],
+
+    "white": ["yellow", "purple", "blue", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "purplediluteeve", "patinaeve"],
+    "palegrey": ["purple", "blue", "black", "dilute", "darkeve", "darkpurpleeve", "purplediluteeve", "patinaeve", "pinkdiluteeve"],
+    "silver": ["purple", "blue", "black", "dilute", "darkeve", "darkpurpleeve", "purplediluteeve", "patinaeve", "pinkdiluteeve"],
+    "grey": ["blue", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "purplediluteeve", "patinaeve", "pinkdiluteeve"],
+    "darkgrey": ["blue", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "auburneve", "plumeve", "patinaeve"],
+    "ghost": ["blue", "black", "dilute", "cooldilute", "darkeve", "auburneve", "plumeve"],
+    "black": ["blue", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "auburneve", "patinaeve"],
+
+    "cream": ["yellow", "purple", "dilute", "cooldilute", "purplediluteeve", "pinkdiluteeve"],
+    "paleginger": ["yellow", "purple", "dilute", "purplediluteeve", "pinkdiluteeve"],
+    "golden": ["yellow", "purple", "dilute", "cooldilute", "auburneve", "purplediluteeve", "pinkdiluteeve"],
+    "ginger": ["yellow", "purple", "dilute", "cooldilute", "darkpurpleeve", "auburneve", "plumeve", "purplediluteeve", "pinkdiluteeve"],
+    "darkginger": ["yellow", "purple", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "auburneve", "plumeve", "purplediluteeve", "pinkdiluteeve"],
+    "sienna": ["yellow", "purple", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "auburneve", "plumeve", "pinkdiluteeve"],
+
+    "lightbrown": ["yellow", "purple", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "plumeve",  "purplediluteeve", "pinkdiluteeve"],
+    "lilac": ["yellow", "purple", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "plumeve", "patinaeve", "pinkdiluteeve"],
+    "brown": ["yellow", "purple", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "auburneve", "plumeve",  "purplediluteeve", "pinkdiluteeve"],
+    "goldenbrown": ["yellow", "purple", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "auburneve", "plumeve", "patinaeve",  "pinkdiluteeve"],
+    "darkbrown": ["yellow", "purple", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "auburneve", "plumeve", "purplediluteeve",  "pinkdiluteeve"],
+    "chocolate": ["yellow", "purple", "black", "dilute", "cooldilute", "darkeve", "darkpurpleeve", "auburneve", "plumeve", "patinaeve",  "pinkdiluteeve"]
   },
   "tint_colours":
   {
@@ -39,6 +56,11 @@
     "yellow": [250, 248, 225],
     "purple": [235, 225, 244],
     "blue": [218, 237, 245],
+    "darkeve": [140, 140, 140],
+    "darkpurpleeve": [197, 186, 207],
+    "auburneve": [222, 147, 106],
+    "plumeve": [110, 77, 85],
+    "patinaeve": [209, 219, 208],
     "none": null
   },
   "dilute_tint_colours":
@@ -46,6 +68,8 @@
     "dilute": [20, 20, 20],
     "warmdilute": [25, 15, 7],
     "cooldilute": [7, 15, 25],
+    "purplediluteeve": [31, 25, 36],
+    "pinkdiluteeve": [36, 7, 16],
     "none": null
   }
 }

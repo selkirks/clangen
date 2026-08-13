@@ -17,7 +17,7 @@
 
         "hunting": "hunting",
         "HUNTER,0": "moss ball hunter",
-        "HUNTER,0.5": "fledgeling hunter",
+        "HUNTER,0.5": "fledgling hunter",
         "HUNTER,1": "good hunter",
         "HUNTER,2": "great hunter",
         "HUNTER,3": "renowned hunter",
@@ -51,11 +51,11 @@
         "SWIMMER,3": "fish-like swimmer",
 
         "stealth": "stealth",
-        "STEALTH,0": "hide and seek champ",
+        "STEALTH,0": "hard to find",
         "STEALTH,0.5": "light-pawed",
         "STEALTH,1": "sneaky",
         "STEALTH,2": "very stealthy",
-        "STEALTH,3": "one with shadows",
+        "STEALTH,3": "skulks through shadows",
 
         "speaking": "speaking",
         "SPEAKER,0": "chatty",
