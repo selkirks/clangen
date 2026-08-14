@@ -15,7 +15,7 @@ dev_tools = true
   length = 3
 
 [cruel_season]
-  card_limit = 12
+  card_limit = 25
 
   # for specifying that a hyper-specific reaction should occur due to a card
   [cruel_season.event]
