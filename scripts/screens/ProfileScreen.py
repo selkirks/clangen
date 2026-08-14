@@ -953,6 +953,14 @@ class ProfileScreen(Screens):
                 rank=i18n.t(f"general.{the_cat.status.rank}", count=1),
             )
 
+        # LEADER LIVES:
+        # Optional - Only shows up for leaders
+        if not the_cat.dead and CatRank.LEADER in the_cat.status.rank:
+            output += " "
+            output += i18n.t(
+                "screens.profile.lives_remaining_label", count=game.clan.leader_lives
+            )
+
         # NEWLINE ----------
         output += "\n"
         pronoun_text = ""
@@ -967,17 +975,6 @@ class ProfileScreen(Screens):
             if pronoun_text[-1] == "/":
                 pronoun_text = pronoun_text[:-1]
         output += pronoun_text
-        # NEWLINE ----------
-        output += "\n"
-
-        # LEADER LIVES:
-        # Optional - Only shows up for leaders
-        if not the_cat.dead and CatRank.LEADER in the_cat.status.rank:
-            output += " "
-            output += i18n.t(
-                "screens.profile.lives_remaining_label", count=game.clan.leader_lives
-            )
-
         # NEWLINE ----------
         output += "\n"
 
