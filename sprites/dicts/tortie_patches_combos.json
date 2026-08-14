@@ -156,5 +156,13 @@
     "PATCHY_OREO": [
         "OREO",
         "ONE"
+    ],
+    "BRINDLED_BODY": [
+        "BODY",
+        "BRINDLE"
+    ],
+    "DELILAH_ONE": [
+        "DELILAH",
+        "ONE"
     ]
 }
