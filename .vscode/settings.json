@@ -1,4 +1,49 @@
 {
+    "json.schemas": [
+        {
+            "url": "./schemas/thought.schema.json",
+            "fileMatch": [
+                "thoughts/**/*.json"
+            ]
+        },
+        {
+            "url": "./schemas/patrol.schema.json",
+            "fileMatch": [
+                "patrols/**/*.json",
+                "!patrols/explicit_patrol_art.json"
+            ]
+        },
+        {
+            "url": "./schemas/shortevent.schema.json",
+            "fileMatch": [
+                "events/death/*.json",
+                "events/misc/*.json",
+                "events/new_cat/*.json",
+                "events/injury/*.json"
+            ]
+        },
+        {
+            "url": "./schemas/relationship_group_event.schema.json",
+            "fileMatch": [
+                "events/relationship_events/group_interactions/high/*.json",
+                "events/relationship_events/group_interactions/medium/*.json",
+                "events/relationship_events/group_interactions/low/*.json"
+            ]
+        },
+        {
+            "url": "./schemas/relationship_pair_event.schema.json",
+            "fileMatch": [
+                "events/relationship_events/normal_interactions/**/*.json",
+                "events/relationship_events/joining_interactions/**/*.json"
+            ]
+        },
+        {
+            "url": "./schemas/poi.schema.json",
+            "fileMatch": [
+                "points_of_interest.json"
+            ]
+        }
+    ],
     "python.formatting.provider": "yapf",
     "editor.formatOnSave": false,
     "python.linting.enabled": true,
@@ -15,8 +60,10 @@
     "cSpell.words": [
         "blit",
         "bloodlust",
+        "clanborn",
         "Clanmates",
         "cooldown",
+        "customizer",
         "freshkill",
         "greenleaf",
         "headedness",
@@ -29,6 +76,7 @@
         "parentless",
         "pygame",
         "Silverpelt",
+        "specsuffix",
         "starclan",
         "Thunderpath",
         "Twoleg",

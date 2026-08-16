@@ -1,5 +1,5 @@
 {
-    "claw-wound":{
+        "claw-wound":{
         "duration": 3,
         "severity": "major",
         "medicine_duration": 2,
@@ -22,23 +22,27 @@
         "also_got": [
             "torn pelt",
             "torn ear",
-            "blood loss",
-            "shock"
+            "blood loss"
         ],
         "cause_permanent": [
-			"recurring shock"
-		],
-        "herbs": [
+        ],
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
             "marigold",
-            "oak_leaves",
-            "wild_garlic",
             "tansy",
-            "poppy",
-            "ragwort",
             "moss"
-        ]
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "bite-wound":{
@@ -64,23 +68,27 @@
         ],
         "also_got": [
             "torn pelt",
-            "blood loss",
-            "shock"
+            "blood loss"
         ],
         "cause_permanent": [
-            "recurring shock"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
             "marigold",
-            "oak_leaves",
-            "wild_garlic",
             "tansy",
-            "poppy",
-            "ragwort",
             "moss"
-        ]
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "cat bite":{
@@ -106,23 +114,26 @@
         ],
         "also_got": [
             "torn pelt",
-            "blood loss",
-            "shock"
+            "blood loss"
         ],
-        "cause_permanent": [
-			"recurring shock"
-		],
-        "herbs": [
+        "cause_permanent": [],
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
             "marigold",
-            "oak_leaves",
-            "wild_garlic",
             "tansy",
-            "poppy",
-            "ragwort",
             "moss"
-        ]
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "beak bite":{
@@ -148,23 +159,26 @@
         ],
         "also_got": [
             "torn pelt",
-            "blood loss",
-            "shock"
+            "blood loss"
         ],
-        "cause_permanent": [
-            "recurring shock"
-        ],
-        "herbs": [
+        "cause_permanent": [],
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
             "marigold",
-            "oak_leaves",
-            "wild_garlic",
             "tansy",
-            "poppy",
-            "ragwort",
             "moss"
-        ]
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "snake bite":{
@@ -189,22 +203,27 @@
             }
         ],
         "also_got": [
-            "poisoned",
-            "shock"
+            "poisoned"
         ],
-        "cause_permanent": [
-            "recurring shock"
-        ],
-        "herbs": [
-            "tansy",
+        "cause_permanent": [],
+        "herbs": {
+            "1": [
+            "cobwebs",
             "marigold",
-            "oak_leaves",
-            "goldenrod",
-            "wild_garlic",
-            "juniper",
-            "ragwort",
-            "poppy"
-        ]
+            "tansy",
+            "moss"
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod",
+                "dandelion"
+            ]
+        }
     },
 
     "rat bite":{
@@ -235,27 +254,30 @@
                 "name": "a festering wound",
                 "chance": 5
             }
+
         ],
         "also_got": [
-            "torn pelt",
-            "shock"
+            "torn pelt"
         ],
-        "cause_permanent": [
-            "weak leg",
-            "recurring shock"
-        ],
-        "herbs": [
-            "wild_garlic",
-            "burdock",
-            "tansy",
+        "cause_permanent": [],
+        "herbs": {
+            "1": [
             "cobwebs",
             "marigold",
-            "oak_leaves",
-            "goldenrod",
-            "juniper",
-            "poppy",
+            "tansy",
             "moss"
-        ]
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod",
+                "burdock"
+            ]
+        }
     },
 
     "tick bites":{
@@ -275,15 +297,24 @@
         "risks": [
             {
                 "name": "an infected wound",
-                "chance": 40
+                "chance": 30
+            },
+            {
+                "name": "tick fever",
+                "chance": 50
             }
         ],
         "also_got": [],
         "cause_permanent": [],
-        "herbs": [
-            "moss",
-            "plantain"
-        ]
+        "herbs": {
+            "1": [
+            "moss"
+        ],
+            "2": [],
+            "3": [
+                "plantain"
+            ]
+        }
     },
 
     "blood loss":{
@@ -306,15 +337,23 @@
             "shock"
         ],
         "cause_permanent": [],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "horsetail",
             "marigold",
-            "ragwort",
-            "juniper",
-            "moss",
-            "poppy"
-        ]
+            "tansy"
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod",
+                "moss"
+            ]
+        }
     },
 
     "broken jaw":{
@@ -340,23 +379,29 @@
         "also_got": [
             "blood loss",
             "scrapes",
-            "bruises",
-            "shock"
+            "bruises"
         ],
         "cause_permanent": [
             "crooked jaw",
-            "recurring shock"
+            "damaged throat"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
             "marigold",
-            "oak_leaves",
-            "wild_garlic",
-            "juniper",
-            "ragwort",
-            "poppy",
+            "tansy",
             "moss"
-        ]
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "broken bone":{
@@ -384,24 +429,29 @@
             "mangled leg",
             "blood loss",
             "scrapes",
-            "bruises",
-            "shock"
+            "bruises"
         ],
         "cause_permanent": [
             "weak leg",
-            "twisted leg",
-            "recurring shock"
+            "twisted leg"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
             "marigold",
-            "oak_leaves",
-            "wild_garlic",
-            "juniper",
-            "ragwort",
-            "poppy",
+            "tansy",
             "moss"
-        ]
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "mangled leg":{
@@ -430,27 +480,31 @@
             "dislocated joint",
             "blood loss",
             "scrapes",
-            "bruises",
-            "shock"
+            "bruises"
         ],
         "cause_permanent": [
             "lost a leg",
             "weak leg",
-            "twisted leg",
-            "recurring shock"
+            "twisted leg"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
             "marigold",
-            "wild_garlic",
-            "oak_leaves",
             "tansy",
-            "poppy",
-            "ragwort",
-            "juniper",
-            "moss"
-        ]
+            "mullein"
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves",
+                "moss"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "dislocated joint":{
@@ -476,43 +530,19 @@
         "cause_permanent": [
             "constant joint pain"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "marigold",
             "ragwort",
-            "daisy",
-            "poppy"
-        ]
-    },
-
-	"subluxated joint": {
-	"duration": 2,
-	"severity": "major",
-  	"medicine_duration": 1,
-	"mortality": {
-		"kitten": 0,
-		"adolescent": 0,
-		"young adult": 0,
-		"adult": 0,
-		"senior adult": 0,
-		"senior": 0
-	},
-	"illness_infectiousness": [
-	],
-	"risks": [],
-        "also_got": [
-            "bruises",
-            "sore",
-            "joint pain"
+            "oak_leaves"
         ],
-        "cause_permanent": [
-            "constant joint pain"
-        ],
-        "herbs": [
-            "marigold",
-            "ragwort",
-            "daisy",
-            "poppy"
-        ]
+            "2": [
+                "daisy"
+            ],
+            "3": [
+                "poppy"
+            ]
+        }
     },
 
     "joint pain":{
@@ -534,12 +564,19 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
-            "marigold",
-            "ragwort",
-            "daisy",
+        "herbs": {
+            "1": [
             "poppy"
-        ]
+        ],
+            "2": [
+                "marigold"
+            ],
+            "3": [
+                "juniper",
+                "daisy",
+                "ragwort"
+            ]
+        }
     },
 
     "sprain":{
@@ -560,11 +597,17 @@
         "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": [
-            "elder_leaves",
-            "dandelion",
+        "herbs": {
+            "1": [
             "poppy"
-        ]
+        ],
+            "2": [
+                "dandelion"
+            ],
+            "3": [
+                "elder_leaves"
+            ]
+        }
     },
 
     "mangled tail":{
@@ -589,25 +632,29 @@
         ],
         "also_got": [
             "torn pelt",
-            "blood loss",
-            "shock"
+            "blood loss"
         ],
         "cause_permanent": [
-            "lost their tail",
-            "recurring shock"
+            "lost their tail"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
             "marigold",
-            "wild_garlic",
-            "oak_leaves",
             "tansy",
-            "poppy",
-            "ragwort",
-            "juniper",
-            "moss"
-        ]
+            "mullein"
+        ],
+            "2": [
+                "wild_garlic",
+                "horsetail",
+                "oak_leaves",
+                "moss"
+            ],
+            "3": [
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "bruises":{
@@ -628,7 +675,11 @@
         "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": []
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
     },
 
     "cracked pads":{
@@ -654,12 +705,18 @@
         "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": [
-            "oak_leaves",
+        "herbs": {
+            "1": [
             "marigold",
-            "wild garlic",
-            "poppy"
-        ]
+            "wild_garlic"
+        ],
+            "2": [
+                "oak_leaves"
+            ],
+            "3": [
+                "elder_leaves"
+            ]
+        }
     },
 
     "sore":{
@@ -680,13 +737,20 @@
         "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "daisy",
-            "dandelion",
             "marigold",
-            "ragwort",
-            "poppy"
-        ]
+            "ragwort"
+        ],
+            "2": [
+                "poppy"
+            ],
+            "3": [
+                "dandelion",
+                "elder_leaves"
+            ]
+        }
     },
 
     "phantom pain":{
@@ -707,11 +771,17 @@
         "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": [
-            "dandelion",
-            "poppy",
+        "herbs": {
+            "1": [
             "raspberry"
-        ]
+        ],
+            "2": [
+                "dandelion"
+            ],
+            "3": [
+                "poppy"
+            ]
+        }
     },
 
     "scrapes":{
@@ -737,12 +807,17 @@
         "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "marigold",
-            "oak_leaves",
-            "wild_garlic"
-        ]
+            "marigold"
+        ],
+            "2": [],
+            "3": [
+                "oak_leaves",
+                "wild_garlic"
+            ]
+        }
     },
 
     "small cut":{
@@ -768,11 +843,17 @@
         "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": [
-            "marigold",
-            "oak_leaves",
-            "wild_garlic"
-        ]
+        "herbs": {
+            "1": [
+            "marigold"
+        ],
+            "2": [
+                "wild_garlic"
+            ],
+            "3": [
+                "oak_leaves"
+            ]
+        }
     },
 
     "torn pelt":{
@@ -799,14 +880,20 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
-            "marigold",
-            "oak_leaves",
-            "wild_garlic",
-            "raspberry"
-        ]
+            "marigold"
+        ],
+            "2": [
+                "wild_garlic",
+                "dandelion"
+            ],
+            "3": [
+                "goldenrod",
+                "oak_leaves"
+            ]
+        }
     },
 
     "torn ear":{
@@ -829,20 +916,24 @@
                 "chance": 25
             }
         ],
-        "also_got": [
-            "shock"
-        ],
+        "also_got": [],
         "cause_permanent": [
-            "partial hearing loss",
-            "recurring shock"
+            "partial hearing loss"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
-            "marigold",
-            "oak_leaves",
-            "wild_garlic"
-        ]
+            "marigold"
+        ],
+            "2": [
+                "wild_garlic",
+                "dandelion"
+            ],
+            "3": [
+                "goldenrod",
+                "oak_leaves"
+            ]
+        }
     },
 
     "frostbite":{
@@ -870,23 +961,25 @@
                 "chance": 4
             }
         ],
-        "also_got": [
-            "shock"
-        ],
+        "also_got": [],
         "cause_permanent": [
             "lost a leg",
-            "lost their tail",
-            "recurring shock"
+            "lost their tail"
         ],
-        "herbs": [
-            "juniper",
+        "herbs": {
+            "1": [
             "ragwort",
-            "poppy",
-            "moss",
-            "dandelion",
-            "poppy",
-            "dandelion"
-        ]
+            "moss"
+        ],
+            "2": [
+                "mullein"
+            ],
+            "3": [
+                "poppy",
+                "dandelion",
+                "juniper"
+            ]
+        }
     },
 
     "recovering from birth":{
@@ -914,12 +1007,19 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "oak_leaves",
             "juniper",
             "ragwort",
-            "moss"
-        ]
+            "moss",
+            "thyme"
+        ],
+            "2": [
+                "raspberry"
+            ],
+            "3": []
+        }
     },
 
     "water in their lungs":{
@@ -955,21 +1055,24 @@
                 "chance": 20
             }
         ],
-        "also_got": [
-            "shock"
-        ],
+        "also_got": [],
         "cause_permanent": [
-            "raspy lungs",
-            "recurring shock"
+            "raspy lungs"
         ],
-        "herbs": [
-            "juniper",
-            "betony",
-            "mullein",
+        "herbs": {
+            "1": [
             "tansy",
             "plantain",
             "ragwort"
-        ]
+        ],
+            "2": [
+                "betony",
+                "juniper"
+            ],
+            "3": [
+                "mullein"
+            ]
+        }
     },
 
     "burn":{
@@ -992,22 +1095,26 @@
                 "chance": 25
             }
         ],
-        "also_got": [
-            "shock"
-        ],
+        "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "marigold",
-            "wild_garlic",
             "oak_leaves",
-            "goldenrod",
             "juniper",
-            "ragwort",
-            "poppy",
-            "moss"
-        ]
+            "ragwort"
+        ],
+            "2": [
+                "marigold",
+                "wild_garlic"
+            ],
+            "3": [
+                "moss",
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "severe burn":{
@@ -1030,25 +1137,28 @@
                 "chance": 15
             }
         ],
-        "also_got": [
-            "shock"
-        ],
+        "also_got": [],
         "cause_permanent": [
             "lost their tail",
-            "lost a leg",
-			"recurring shock"
+            "lost a leg"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "marigold",
-            "wild_garlic",
             "oak_leaves",
-            "goldenrod",
             "juniper",
-            "ragwort",
-            "poppy",
-            "moss"
-        ]
+            "ragwort"
+        ],
+            "2": [
+                "marigold",
+                "wild_garlic"
+            ],
+            "3": [
+                "moss",
+                "poppy",
+                "goldenrod"
+            ]
+        }
     },
 
     "shock":{
@@ -1074,12 +1184,17 @@
         "also_got": [],
         "cause_permanent": [
         ],
-        "herbs": [
-            "thyme",
-            "juniper",
-            "ragwort",
-            "poppy"
-        ]
+        "herbs": {
+            "1": [
+            "ragwort"
+        ],
+            "2": [
+                "juniper"
+            ],
+            "3": [
+                "thyme"
+            ]
+        }
     },
 
     "lingering shock":{
@@ -1101,15 +1216,20 @@
         "also_got": [],
         "cause_permanent": [
             "recurring shock",
-			"echoing shock",
-			"anxiety"
+            "absent",
+            "selective mutism"
         ],
-        "herbs": [
-            "thyme",
-            "juniper",
-            "ragwort",
-            "poppy"
-        ]
+        "herbs": {
+            "1": [
+            "ragwort"
+        ],
+            "2": [
+                "juniper"
+            ],
+            "3": [
+                "thyme"
+            ]
+        }
     },
 
     "shivering":{
@@ -1146,11 +1266,18 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
-            "juniper",
+        "herbs": {
+            "1": [
             "ragwort",
             "tansy"
-        ]
+        ],
+            "2": [
+                "thyme"
+            ],
+            "3": [
+                "juniper"
+            ]
+        }
     },
 
     "dehydrated":{
@@ -1172,6 +1299,10 @@
             {
                 "name": "heat exhaustion",
                 "chance": 10
+            },
+            {
+                "name": "sore throat",
+                "chance": 10
             }
         ],
         "also_got": [
@@ -1179,11 +1310,16 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "ragwort",
-            "juniper",
-            "moss"
-        ]
+            "juniper"
+        ],
+            "2": [],
+            "3": [
+                "moss"
+            ]
+        }
     },
 
     "head damage":{
@@ -1212,26 +1348,28 @@
             }
         ],
         "also_got": [
-			"dizziness",
-            "lingering shock"
         ],
         "cause_permanent": [
             "failing eyesight",
             "one bad eye",
             "blind",
-            "recurring shock",
             "constantly dizzy",
             "partial hearing loss",
             "persistent headaches",
-	        "disrupted senses",
-            "jumbled noise",
-	        "lazy eye"
+            "absent"
         ],
-        "herbs": [
-            "juniper",
-            "ragwort",
-            "thyme"
-        ]
+        "herbs": {
+            "1": [
+            "ragwort"
+        ],
+            "2": [
+                "dandelion"
+            ],
+            "3": [
+                "thyme",
+                "juniper"
+            ]
+        }
     },
 
     "damaged eyes":{
@@ -1256,26 +1394,29 @@
             }
         ],
         "also_got": [
-            "shock"
         ],
         "cause_permanent": [
             "blind",
             "one bad eye",
-            "failing eyesight",
-            "recurring shock",
-	        "lazy eye"
+            "failing eyesight"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
             "marigold",
             "oak_leaves",
-            "wild_garlic",
-            "juniper",
-            "ragwort",
-            "poppy",
-            "moss"
-        ]
+            "ragwort"
+        ],
+            "2": [
+                "juniper",
+                "wild_garlic"
+            ],
+            "3": [
+                "moss",
+                "goldenrod",
+                "poppy"
+            ]
+        }
     },
 
     "quilled by a porcupine":{
@@ -1304,17 +1445,24 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "cobwebs",
-            "goldenrod",
             "marigold",
-            "oak_leaves",
-            "wild_garlic",
             "juniper",
-            "ragwort",
-            "poppy",
-            "moss"
-        ]
+            "ragwort"
+
+        ],
+            "2": [
+                "moss",
+                "oak_leaves"
+            ],
+            "3": [
+                "goldenrod",
+                "wild_garlic",
+                "dandelion"
+            ]
+        }
     },
 
     "broken back":{
@@ -1339,20 +1487,26 @@
             }
         ],
         "also_got": [
-            "shock",
-            "lingering shock"
         ],
         "cause_permanent": [
-            "paralyzed",
-            "recurring shock"
+            "paralyzed"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "juniper",
-            "ragwort",
-            "poppy"
-        ]
+            "ragwort"
+        ],
+            "2": [
+                "thyme",
+                "dandelion"
+            ],
+            "3": [
+                "poppy",
+                "burdock"
+            ]
+        }
     },
-
+    
     "poisoned": {
         "duration": 2,
         "severity": "major",
@@ -1378,15 +1532,17 @@
             "shock"
         ],
         "cause_permanent": [
-            "recurring shock"
         ],
-        "herbs": [
+        "herbs": {
+            "1": [
             "dandelion",
             "tansy",
             "juniper",
-            "ragwort",
-            "poppy"
-        ]
+            "ragwort"
+        ],
+            "2": [],
+            "3": []
+        }
     },
 
     "bee sting": {
@@ -1410,11 +1566,17 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
-            "blackberry",
-            "dandelion",
-            "poppy"
-        ]
+        "herbs": {
+            "1": [
+            "horsetail"
+        ],
+            "2": [
+                "dandelion"
+            ],
+            "3": [
+                "blackberry"
+            ]
+        }
     },
 
     "headache": {
@@ -1438,38 +1600,19 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
-            "poppy",
-            "juniper"
-        ]
+        "herbs": {
+            "1": [
+            "dandelion"
+        ],
+            "2": [
+                "juniper"
+            ],
+            "3": [
+                "thyme"
+            ]
+        }
     },
 
-   "sound headache" : {
-        "duration": 1,
-        "severity": "major",
-        "medicine_duration": 1,
-        "mortality": {
-                "newborn": 0,
-                "kitten": 0,
-                "adolescent": 0,
-                "young adult": 0,
-                "adult": 0,
-                "senior": 0,
-                "senior adult": 0
-        },
-        "illness_infectiousness": [
-        ],
-        "risks":[
-        ],
-        "also_got":[
-        ],
-	"cause_permanent": [
-        ],
-        "herbs": [
-            "poppy",
-            "juniper"
-        ]
-   },
     "severe headache": {
         "duration": 1,
         "severity": "major",
@@ -1491,141 +1634,20 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
-            "poppy",
+        "herbs": {
+            "1": [
             "juniper"
-        ]
+        ],
+            "2": [
+                "thyme"
+            ],
+            "3": [
+                "poppy"
+            ]
+        }
     },
 
-    "rash":{
-        "duration": 3,
-        "severity": "minor",
-        "medicine_duration": 1,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [
-            {
-                "name": "torn pelt",
-                "chance": 40
-            }
-        ],
-        "also_got": [],
-        "cause_permanent": [
-		"constant rash"
-		],
-        "herbs": [
-            "poppy",
-	        "comfrey",
-	        "elder_leaves"
-        ]
-    },
-
-    "acute pain":{
-        "duration": 3,
-        "severity": "major",
-        "medicine_duration": 2,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [],
-        "also_got": [],
-        "cause_permanent": [
-        ],
-        "herbs": [
-            "daisy",
-            "dandelion",
-            "marigold",
-            "ragwort",
-            "poppy"
-        ]
-    },
-
-    "wrenched claws":{
-        "duration": 2,
-        "severity": "major",
-        "medicine_duration": 1,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [],
-        "risks": [
-		{
-			"name": "an infected wound",
-			"chance": 20
-			}
-		],
-        "also_got": [
-            "bruises",
-            "sore",
-            "joint pain"
-        ],
-        "cause_permanent": [
-		    "declawed",
-		    "recurring shock"
-        ],
-        "herbs": [
-            "juniper",
-            "ragwort",
-            "daisy"
-        ]
-    },
-
-    "sunblindness":{
-        "duration": 2,
-        "severity": "major",
-        "medicine_duration": 1,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [
-        ],
-        "risks": [],
-        "also_got": [
-        ],
-        "cause_permanent": [
-            "failing eyesight",
-	        "burning light"
-        ],
-        "herbs": [
-            "cobwebs",
-            "goldenrod",
-            "marigold",
-            "oak_leaves",
-            "wild_garlic",
-            "juniper",
-            "ragwort",
-            "moss"
-        ]
-    },
-
-    "earache": {
+    "sore throat": {
         "duration": 1,
         "severity": "minor",
         "medicine_duration": 1,
@@ -1641,165 +1663,24 @@
         "illness_infectiousness": [
         ],
         "risks": [
-			{
-				"name": "an infected wound",
-				"chance": 25
-			},
-			{
-				"name": "ear buzzing",
-				"chance": 10
-			}
         ],
         "also_got": [
-			"dizziness",
-            "shock"
         ],
         "cause_permanent": [
-			"partial hearing loss"
+            "damaged throat"
         ],
-        "herbs": [
+             "herbs": {
+            "1": [
             "poppy",
             "juniper"
-        ]
+        ],
+            "2": [],
+            "3": [
+            "honey"
+            ]
+        }
     },
-
-    "overstimulation":{
-        "duration": 3,
-        "severity": "major",
-        "medicine_duration": 2,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [
-        ],
-        "risks": [],
-        "also_got": [
-        ],
-        "cause_permanent": [
-            "burning light",
-	        "disrupted senses"
-        ],
-        "herbs": [
-	        "thyme",
-	        "poppy",
-	        "catmint",
-            "moss"
-        ]
-    },
-
-    "understimulation":{
-        "duration": 3,
-        "severity": "major",
-        "medicine_duration": 2,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [
-        ],
-        "risks": [
-			{
-				"name": "anxiety attack",
-				"chance": 10
-			}
-		],
-        "also_got": [
-        ],
-        "cause_permanent": [
-			"disrupted senses"
-        ],
-        "herbs": [
-	        "thyme",
-  	        "poppy",
-	        "catmint",
-            "moss"
-        ]
-    },
-
-    "fatigue": {
-        "duration": 4,
-        "severity": "minor",
-        "medicine_duration": 3,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [
-        ],
-        "risks": [
-			{
-				"name": "sleeplessness",
-				"chance": 25
-			},
-			{
-				"name": "nightmares",
-				"chance": 10
-			},
-			{
-				"name": "dizziness",
-				"chance": 20
-			}
-		],
-        "also_got": [
-        ],
-        "cause_permanent": [
-			"constant fatigue"
-        ],
-        "herbs": [
-            "honey",
-            "chamomile",
-            "poppy"
-        ]
-    },
-
-    "fainting": {
-        "duration": 1,
-        "severity": "major",
-        "medicine_duration": 1,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [
-        ],
-        "risks": [
-            {
-                "name": "head damage",
-                "chance": 120
-            }
-        ],
-        "also_got": [
-            "scrapes",
-            "bruises",
-            "dizziness",
-            "headache"
-        ],
-        "herbs": [
-            
-        ]
-    },
-
+    
     "pregnant": {
         "duration": 2,
         "severity": "major",
@@ -1820,8 +1701,16 @@
         ],
         "cause_permanent": [
         ],
-        "herbs": [
-        ]
+        "herbs": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
     }
+    
 }
+
+    
+
+
 
