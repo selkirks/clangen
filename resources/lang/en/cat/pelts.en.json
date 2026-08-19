@@ -13,6 +13,18 @@
             "one": "silver",
             "many": "silver"
         },
+        "SNOW": {
+            "one": "snowy",
+            "many": "snowy"
+        },
+        "STEAM": {
+            "one": "steam",
+            "many": "steam"
+        },
+        "ALUMINUM": {
+            "one": "aluminum",
+            "many": "aluminum"
+        },
         "GREY": {
             "one": "gray",
             "many": "gray"
@@ -77,13 +89,9 @@
             "one": "brown",
             "many": "dark brown"
         },
-        "SNOW": {
-            "one": "snowy",
-            "many": "snowy"
-        },
-        "STEAM": {
-            "one": "steam",
-            "many": "steam"
+        "STEEL": {
+            "one": "steel",
+            "many": "steely"
         },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
