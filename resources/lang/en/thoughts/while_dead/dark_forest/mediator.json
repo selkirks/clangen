@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "df_mediator",
+=======
+        "event_id": "df_mediator",
+>>>>>>> clangen-megamerge
         "strings": [
             "Skillfully talked {PRONOUN/m_c/poss} way out of a confrontation",
             "Convinced a shadowy cat to do {PRONOUN/m_c/poss} bidding",

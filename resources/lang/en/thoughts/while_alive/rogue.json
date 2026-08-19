@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "general_rogue_thoughts",
+=======
+        "event_id": "general_rogue_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Wishes the other rogues would leave {PRONOUN/m_c/object} alone",
             "Snarls at any cat that comes near",
@@ -18,7 +22,11 @@
         ]
     },
     {
+<<<<<<< HEAD
         "id": "rogue_to_other_rogues",
+=======
+        "event_id": "rogue_to_other_rogues",
+>>>>>>> clangen-megamerge
         "strings": [
             "Showing off {PRONOUN/m_c/poss} scars to r_c"
         ],
@@ -47,7 +55,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "rogue_to_playerclan_warriors",
+=======
+        "event_id": "rogue_to_playerclan_warriors",
+>>>>>>> clangen-megamerge
         "strings": [
             "Wants to show r_c in c_n a whole new world as a rogue",
             "Is waiting to ambush r_c in c_n",
@@ -67,7 +79,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "kitten_rogue_thoughts",
+=======
+        "event_id": "kitten_rogue_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is currently trying to figure out how to catch a bird"
         ],
@@ -80,7 +96,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "adolescent_rogue_thoughts",
+=======
+        "event_id": "adolescent_rogue_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is setting up a pile of thorns to catch a cat off guard",
             "Wishes {PRONOUN/m_c/subject} still had {PRONOUN/m_c/poss} family around",
@@ -99,7 +119,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "adult_rogue_thoughts",
+=======
+        "event_id": "adult_rogue_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Hisses at a missed catch",
             "Wonders if {PRONOUN/m_c/subject} should build {PRONOUN/m_c/poss} own Clan",
@@ -120,7 +144,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "senior_rogue_thoughts",
+=======
+        "event_id": "senior_rogue_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Thinks about finding some Twolegs to help {PRONOUN/m_c/object} in {PRONOUN/m_c/poss} old age",
             "Thinks {PRONOUN/m_c/poss} joints are aching too much to hunt today",
@@ -135,7 +163,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "bloodthirsty_rogue_to_alive_playerclan_leadership",
+=======
+        "event_id": "bloodthirsty_rogue_to_alive_playerclan_leadership",
+>>>>>>> clangen-megamerge
         "strings": [
             "Tells {PRONOUN/m_c/self} {PRONOUN/m_c/subject} {VERB/m_c/are/is} going to kill r_c and take their position in c_n"
         ],
@@ -160,7 +192,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "cold_rogue",
+=======
+        "event_id": "cold_rogue",
+>>>>>>> clangen-megamerge
         "strings": [
             "Thinks about how {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} need anyone else"
         ],
@@ -175,7 +211,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "shameless_rogue",
+=======
+        "event_id": "shameless_rogue",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is eating kittypet kibble",
             "Stole some random kittypet's food",
@@ -193,7 +233,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "strange_rogue",
+=======
+        "event_id": "strange_rogue",
+>>>>>>> clangen-megamerge
         "strings": [
             "Crowns {PRONOUN/m_c/self} the ruler of all rogues"
         ],
@@ -208,7 +252,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "vengeful_rogue",
+=======
+        "event_id": "vengeful_rogue",
+>>>>>>> clangen-megamerge
         "strings": [
             "Wants vengeance on {PRONOUN/m_c/poss} past Clan"
         ],

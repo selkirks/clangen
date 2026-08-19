@@ -161,8 +161,56 @@
         "BODY",
         "BRINDLE"
     ],
+<<<<<<< HEAD
     "DELILAH_ONE": [
         "DELILAH",
         "ONE"
+=======
+
+    "DELILAH_ONE": [
+        "DELILAH",
+        "ONE"
+    ],
+    "PANTS_FACE": [
+        "SIDEMASK",
+        "SWOOP"
+    ],
+    "BELOVED_BIRD": [
+        "ROBIN",
+        "HEARTBEAT",
+        "BELOVED"
+    ],
+    "MOTTLED_SHILOH": [
+        "SHILOH",
+        "MOTTLED"
+    ],
+    "CHIMERIC_EMBER": [
+        "EMBER",
+        "BANDANA",
+        "CHIMERA"
+    ],
+    "SOL": [
+        "SMUDGED",
+        "REDTAIL",
+        "ONE",
+        "MINIMALTHREE"
+    ],
+    "OREO_MAN": [
+        "PACMAN",
+        "OREO"
+    ],
+    "OC_TIME": [
+        "STREAMSTRIKE",
+        "DAPPLENIGHT"
+    ],
+    "MINIMAL_ORIOLE": [
+        "ORIOLE",
+        "MINIMALTWO"
+    ],
+    "BROKEN_HEARTED": [
+        "HALF",
+        "HEARTBEAT",
+        "GRUMPYFACE"
+>>>>>>> clangen-megamerge
     ]
 }

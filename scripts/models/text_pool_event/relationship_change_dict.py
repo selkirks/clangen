@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 from typing import List, Optional
+=======
+from typing import List, Optional, Literal
+>>>>>>> clangen-megamerge
 
 from pydantic import BaseModel, ConfigDict, Field
 
 from scripts.models.common.gather_cat import GatherCat
+<<<<<<< HEAD
 from scripts.models.common.relationship import Log
 from scripts.models.patrol.value import Value
+=======
+from scripts.models.common.value import Value
+>>>>>>> clangen-megamerge
 
 
 class RelationshipChange(BaseModel):
@@ -28,3 +36,10 @@ class RelationshipChange(BaseModel):
         ...,
         description="Exact amount the relationship value will be affected. Can be positive or negative.",
     )
+<<<<<<< HEAD
+=======
+    log: dict[Literal["cats_from", "cats_to"], str] = Field(
+        ...,
+        description="The string that will display within the relationship logs. A string can be specified for both the cats_from and cats_to groups",
+    )
+>>>>>>> clangen-megamerge

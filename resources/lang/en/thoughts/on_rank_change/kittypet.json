@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "becoming_kittypet",
+=======
+        "event_id": "becoming_kittypet",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is delighted at how comfortable a Twoleg nest is"
         ]

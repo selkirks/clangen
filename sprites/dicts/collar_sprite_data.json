@@ -132,6 +132,7 @@
             "NYLON_BELL_GRADIENT": [
                 "rainbow"
             ]
+<<<<<<< HEAD
         },
         {
             "TEETH": [
@@ -155,6 +156,8 @@
             "TEETH_GRADIENT": [
                 "rainbow"
             ]
+=======
+>>>>>>> clangen-megamerge
         }
     ]
 }

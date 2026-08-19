@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "gen_dead_leader",
+=======
+        "event_id": "gen_dead_leader",
+>>>>>>> clangen-megamerge
         "strings": [
             "Watches c_n proudly",
             "Hopes {PRONOUN/m_c/subject} {VERB/m_c/have/has} been a good leader",
@@ -9,7 +13,11 @@
         ]
     },
     {
+<<<<<<< HEAD
         "id": "dead_leader_to_alive_leader",
+=======
+        "event_id": "dead_leader_to_alive_leader",
+>>>>>>> clangen-megamerge
         "strings": [
             "Approves of r_c's leadership choices",
             "Walks in r_c's dreams to impart wisdom and guidance",
@@ -28,7 +36,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "dead_leader_founder",
+=======
+        "event_id": "dead_leader_founder",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is proud of being one of c_n's first leaders"
         ],

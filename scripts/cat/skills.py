@@ -603,10 +603,10 @@ class CatSkills:
         """
 
         if isinstance(path, str):
-            # Try to conter to Skillpath or HiddenSkillEnum
             try:
                 path = SkillPath[path]
             except KeyError:
+<<<<<<< HEAD
                 try:
                     path = HiddenSkillEnum[path]
                 except KeyError:
@@ -616,6 +616,11 @@ class CatSkills:
             if path == self.hidden:
                 return True
         elif isinstance(path, SkillPath):
+=======
+                raise KeyError(f"{path} is not a real skill path")
+
+        if isinstance(path, SkillPath):
+>>>>>>> clangen-megamerge
             if self.primary:
                 if path == self.primary.path and self.primary.tier >= min_tier:
                     return True
@@ -623,6 +628,7 @@ class CatSkills:
             if self.secondary:
                 if path == self.secondary.path and self.secondary.tier >= min_tier:
                     return True
+<<<<<<< HEAD
 
         return False
 
@@ -636,18 +642,51 @@ class CatSkills:
         min_tier = 0
         for _skill in skill_list:
             spl = _skill.split(",")
+=======
+>>>>>>> clangen-megamerge
 
-            if len(spl) != 2:
+        return False
+
+    def check_skill_requirement_list(self, skill_list: list) -> int:
+        """Takes a whole list of skill requirements in the form
+        [ "SKILL_PATH,MIN_TIER" ... ] and determines how many skill
+        requirements are met. The list format is used in all patrol and event skill
+        restrictions. Returns an integer value of how many skills requirements are met.
+        """
+        skills_meet = 0
+        for _skill in skill_list:
+            info = _skill.split(",")
+
+            if "-" in info[0]:
+                is_exclusionary = True
+                info[0] = info[0].replace("-", "")
+            else:
+                is_exclusionary = False
+
+            if len(info) != 2:
                 print("Incorrectly formatted skill restriction", _skill)
                 continue
             try:
-                min_tier = int(spl[1])
+                min_tier = int(info[1])
             except ValueError:
                 print("Min Skill Tier cannot be converted to int", _skill)
                 continue
 
+<<<<<<< HEAD
             if self.meets_skill_requirement(spl[0], min_tier):
                 skills_meet += 1
+=======
+            if self.meets_skill_requirement(info[0], min_tier):
+                if info[0] == self.primary.path:
+                    skills_meet += self.primary.tier
+                elif self.secondary:
+                    skills_meet += self.secondary.tier
+                break
+
+            elif is_exclusionary:
+                skills_meet += self.primary.tier
+                break
+>>>>>>> clangen-megamerge
 
         return skills_meet
 

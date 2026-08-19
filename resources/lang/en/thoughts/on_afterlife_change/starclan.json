@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "gen_new_sc",
+=======
+        "event_id": "gen_new_sc",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is relieved to once again hunt in StarClan",
             "Purrs at a phantom breeze and the thousand stars overhead",

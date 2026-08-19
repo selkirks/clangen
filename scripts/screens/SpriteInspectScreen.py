@@ -7,6 +7,10 @@ import pygame_gui
 from scripts.cat.cats import Cat
 from scripts.game_structure import game
 from ..ui.elements.image_button import UIImageButton
+<<<<<<< HEAD
+=======
+from ..ui.elements.checkbox import UICheckbox
+>>>>>>> clangen-megamerge
 from ..ui.elements.surface_image_button import UISurfaceImageButton
 from ..ui.theme import get_text_box_theme
 from ..events_module.text_adjust import shorten_text_to_fit
@@ -98,7 +102,7 @@ class SpriteInspectScreen(Screens):
                     self.scars_shown = True
 
                 self.make_cat_image()
-                self.update_checkboxes()
+                self.checkboxes["scars_shown"].toggle()
             elif event.ui_element == self.checkboxes["acc_shown"]:
                 if self.acc_shown:
                     self.acc_shown = False
@@ -106,20 +110,21 @@ class SpriteInspectScreen(Screens):
                     self.acc_shown = True
 
                 self.make_cat_image()
-                self.update_checkboxes()
-            elif event.ui_element == self.checkboxes["override_dead_lineart"]:
+                self.checkboxes["acc_shown"].toggle()
+            elif event.ui_element == self.checkboxes["show_as_living"]:
                 if self.override_dead_lineart:
                     self.override_dead_lineart = False
                 else:
                     self.override_dead_lineart = True
 
                 self.make_cat_image()
-                self.update_checkboxes()
-            elif event.ui_element == self.checkboxes["override_not_working"]:
+                self.checkboxes["show_as_living"].toggle()
+            elif event.ui_element == self.checkboxes["show_as_healthy"]:
                 if self.override_not_working:
                     self.override_not_working = False
                 else:
                     self.override_not_working = True
+<<<<<<< HEAD
 
                 self.make_cat_image()
                 self.update_checkboxes()
@@ -132,6 +137,20 @@ class SpriteInspectScreen(Screens):
                     "Remove favorite" if self.the_cat.favourite else "Mark as favorite"
                 )
 
+=======
+
+                self.make_cat_image()
+                self.checkboxes["show_as_healthy"].toggle()
+            elif event.ui_element == self.cat_elements["favourite_button"]:
+                self.the_cat.favourite = not self.the_cat.favourite
+                self.cat_elements["favourite_button"].change_object_id(
+                    "#fav_star" if self.the_cat.favourite else "#not_fav_star"
+                )
+                self.cat_elements["favourite_button"].set_tooltip(
+                    "Remove favorite" if self.the_cat.favourite else "Mark as favorite"
+                )
+
+>>>>>>> clangen-megamerge
         return super().handle_event(event)
 
     def screen_switches(self):
@@ -319,6 +338,7 @@ class SpriteInspectScreen(Screens):
         self.checkboxes = {}
 
         # "Show Platform"
+<<<<<<< HEAD
         self.make_one_checkbox(
             ui_scale_offset((100, 575)), "platform_shown", self.platform_shown
         )
@@ -356,6 +376,49 @@ class SpriteInspectScreen(Screens):
             self.the_cat.not_working(),
             disabled_object_id="@checked_checkbox",
         )
+=======
+        self.checkboxes["platform_shown"] = UICheckbox(
+            position=(100, 575),
+            manager=MANAGER,
+            check=self.platform_shown,
+        )
+
+        # "Show Scars"
+        self.checkboxes["scars_shown"] = UICheckbox(
+            position=(300, 575),
+            manager=MANAGER,
+            check=self.scars_shown,
+        )
+        if not self.the_cat.pelt.scars:
+            self.checkboxes["scars_shown"].disable()
+
+        # "Show accessories"
+        self.checkboxes["acc_shown"] = UICheckbox(
+            position=(500, 575),
+            manager=MANAGER,
+            check=self.acc_shown,
+        )
+        if not self.the_cat.pelt.accessory:
+            self.checkboxes["acc_shown"].disable()
+
+        # "Show as living"
+        self.checkboxes["show_as_living"] = UICheckbox(
+            position=(200, 625),
+            manager=MANAGER,
+            check=self.override_dead_lineart,
+        )
+        if not self.the_cat.dead:
+            self.checkboxes["show_as_living"].disable()
+
+        # "Show as healthy"
+        self.checkboxes["show_as_healthy"] = UICheckbox(
+            position=(400, 625),
+            manager=MANAGER,
+            check=self.override_not_working,
+        )
+        if not self.the_cat.not_working():
+            self.checkboxes["show_as_healthy"].disable()
+>>>>>>> clangen-megamerge
 
     def make_one_checkbox(
         self,

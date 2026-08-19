@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "lost_mediator_thoughts",
+=======
+        "event_id": "lost_mediator_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Hopes that {PRONOUN/m_c/poss} Clan is doing okay without {PRONOUN/m_c/poss} help"
         ]

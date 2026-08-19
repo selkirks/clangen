@@ -614,7 +614,11 @@
         "colours": {
             "normal_text": "#EFE5CE",
             "hovered_text": "#EFE5CE",
+<<<<<<< HEAD
             "normal_border": "#2F2918", 
+=======
+            "normal_border": "#2F2918",
+>>>>>>> clangen-megamerge
             "dark_bg": "#AC9D72"
         },
         "misc":
@@ -1375,6 +1379,7 @@
             "selected_image": {"path": "resources\/images\/alert_mark.png"}
         }
     },
+<<<<<<< HEAD
     "@checked_checkbox": {
         "prototype": "@image_button",
         "images": {
@@ -1406,12 +1411,46 @@
             },
             "disabled_image": {
                 "path": "resources\/images\/buttons\/checkmark_off_unavailable.png"
+=======
+    "@checkmark": {
+        "prototype": "@image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources\/images\/buttons\/checkmark.png"
+            },
+            "hovered_image": {
+                "path": "resources\/images\/buttons\/checkmark.png"
+            },
+            "selected_image": {
+                "path": "resources\/images\/buttons\/checkmark.png"
+            },
+            "disabled_image": {
+                "path": "resources\/images\/buttons\/checkmark.png"
+            }
+        }
+    },
+    "@checkbox": {
+        "prototype": "@image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources\/images\/buttons\/tiny_box_normal.png"
+            },
+            "hovered_image": {
+                "path": "resources\/images\/buttons\/tiny_box_hover.png"
+            },
+            "selected_image": {
+                "path": "resources\/images\/buttons\/tiny_box_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources\/images\/buttons\/tiny_box_unavailable.png"
+>>>>>>> clangen-megamerge
             }
         }
     },
     "@checked_checkbox_smalltooltip": {
         "images": {
             "normal_image": {
+<<<<<<< HEAD
                 "path": "resources\/images\/buttons\/checkmark_on.png"
             },
             "hovered_image": {
@@ -1419,12 +1458,22 @@
             },
             "selected_image": {
                 "path": "resources\/images\/buttons\/checkmark_on_hover.png"
+=======
+                "path": "resources\/images\/buttons\/checkmark.png"
+            },
+            "hovered_image": {
+                "path": "resources\/images\/buttons\/checkmark.png"
+            },
+            "selected_image": {
+                "path": "resources\/images\/buttons\/checkmark.png"
+>>>>>>> clangen-megamerge
             }
         }
     },
     "@unchecked_checkbox_smalltooltip": {
         "images": {
             "normal_image": {
+<<<<<<< HEAD
                 "path": "resources\/images\/buttons\/checkmark_off.png"
             },
             "hovered_image": {
@@ -1432,6 +1481,15 @@
             },
             "selected_image": {
                 "path": "resources\/images\/buttons\/checkmark_off_hover.png"
+=======
+                "path": "resources\/images\/buttons\/tiny_box_normal.png"
+            },
+            "hovered_image": {
+                "path": "resources\/images\/buttons\/tiny_box_hover.png"
+            },
+            "selected_image": {
+                "path": "resources\/images\/buttons\/tiny_box_hover.png"
+>>>>>>> clangen-megamerge
             }
         }
     },

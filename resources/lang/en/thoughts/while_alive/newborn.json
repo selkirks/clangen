@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "gen_newborn",
+=======
+        "event_id": "gen_newborn",
+>>>>>>> clangen-megamerge
         "strings": [
             "Mewls pitifully for milk",
             "Tries to figure out all of the smells around {PRONOUN/m_c/object}",
@@ -24,7 +28,11 @@
         }
     },
     {
+<<<<<<< HEAD
         "id": "gen_newborn_to_parent",
+=======
+        "event_id": "gen_newborn_to_parent",
+>>>>>>> clangen-megamerge
         "strings": [
             "Snuggles closer to r_c",
             "Snuggles up to the belly of r_c",
@@ -64,7 +72,11 @@
         ]
     },
     {
+<<<<<<< HEAD
         "id": "gen_newborn_to_sibling",
+=======
+        "event_id": "gen_newborn_to_sibling",
+>>>>>>> clangen-megamerge
         "strings": [
             "Tried suckling on r_c's tail",
             "Is being buried under r_c",

@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "general_meeting",
+=======
+        "event_id": "general_meeting",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is wondering about those new cats"
         ]

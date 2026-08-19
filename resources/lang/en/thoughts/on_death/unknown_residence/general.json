@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "general_death_outside_thoughts",
+=======
+        "event_id": "general_death_outside_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is fascinated by the new ghostly world {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} stumbled into",
             "Can't stand the sight of {PRONOUN/m_c/poss} own dead body",
@@ -8,7 +12,11 @@
         ]
     },
     {
+<<<<<<< HEAD
         "id": "ur_parent_death_to_newborn",
+=======
+        "event_id": "ur_parent_death_to_newborn",
+>>>>>>> clangen-megamerge
         "strings": [
             "Clings to the warmth of {PRONOUN/m_c/poss} litter",
             "Doesn't want to leave {PRONOUN/m_c/poss} litter behind",
@@ -43,7 +51,11 @@
         ]
     },
     {
+<<<<<<< HEAD
         "id": "ur_parent_death_to_newborn",
+=======
+        "event_id": "ur_parent_death_to_newborn",
+>>>>>>> clangen-megamerge
         "strings": [
             "Wishes {PRONOUN/m_c/poss} kits had a chance to grow up",
             "Is happy to not be separated from {PRONOUN/m_c/poss} litter",

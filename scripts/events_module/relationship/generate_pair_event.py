@@ -14,12 +14,21 @@ from scripts.events_module.event_filters import (
     get_personality_compatibility,
     event_for_cat,
     check_rel_constraint_groups,
+<<<<<<< HEAD
     event_for_location,
     event_for_season,
     event_for_tags,
 )
 from scripts.events_module.text_adjust import process_text
 from scripts.events_module.text_pool_event import TextPoolEvent
+=======
+)
+from scripts.events_module.text_adjust import process_text
+from scripts.events_module.text_pool_event.check_general_constraints import (
+    passes_general_constraints,
+)
+from scripts.events_module.text_pool_event.text_pool_event import TextPoolEvent
+>>>>>>> clangen-megamerge
 from scripts.game_structure import game
 from scripts.game_structure.localization import load_lang_resource
 
@@ -234,6 +243,7 @@ def _get_event(
     """
     final_events = []
 
+<<<<<<< HEAD
     possible_events = []
     for e in events:
         if not event_for_location(e.location):
@@ -267,6 +277,30 @@ def _get_event(
             for constraint in e.relationship_constraint
         ):
             final_events.append(e)
+=======
+    for e in events:
+        if not passes_general_constraints(e, main_cat, {"m_c": main_cat}):
+            continue
+        if not event_for_cat(
+            e.involved_cats.get("m_c", {}), main_cat, event_id=e.event_id
+        ):
+            continue
+        if not event_for_cat(
+            e.involved_cats.get("r_c", {}),
+            other_cat,
+            involved_cat_dict={"m_c": main_cat},
+            event_id=e.event_id,
+        ):
+            continue
+
+        if not all(
+            check_rel_constraint_groups(constraint, {"m_c": main_cat, "r_c": other_cat})
+            for constraint in e.relationship_constraint
+        ):
+            continue
+
+        final_events.append(e)
+>>>>>>> clangen-megamerge
 
     return choice(final_events)
 
@@ -435,7 +469,11 @@ def _load_file(path) -> list[TextPoolEvent]:
         for t in load_lang_resource(path):
             loaded_events[path].append(
                 TextPoolEvent(
+<<<<<<< HEAD
                     id=t.get("id"),
+=======
+                    event_id=t.get("id"),
+>>>>>>> clangen-megamerge
                     location=t.get("location", []),
                     season=t.get("season", []),
                     tags=t.get("tags", []),

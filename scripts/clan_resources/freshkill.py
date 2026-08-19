@@ -686,9 +686,14 @@ ADDITIONAL_PREY = constants.CONFIG["prey"]["additional_prey"]
 CONDITION_INCREASE = constants.CONFIG["prey"]["condition_increase"]
 HUNTER_BONUS = constants.CONFIG["prey"]["hunter_bonus"]
 HUNTER_EXP_BONUS = constants.CONFIG["prey"]["hunter_exp_bonus"]
+<<<<<<< HEAD
 FRESHKILL_EVENT_TRIGGER_FACTOR = constants.CONFIG["prey"]["base_event_trigger_factor"]
 MAL_PERCENTAGE = constants.CONFIG["prey"]["nutrition_malnourished_percentage"]
 STARV_PERCENTAGE = constants.CONFIG["prey"]["nutrition_starving_percentage"]
 
+=======
+MAL_PERCENTAGE = constants.CONFIG["prey"]["nutrition_malnourished_percentage"]
+STARV_PERCENTAGE = constants.CONFIG["prey"]["nutrition_starving_percentage"]
+>>>>>>> clangen-megamerge
 FRESHKILL_ACTIVE = constants.CONFIG["prey"]["activate_death"]
 FRESHKILL_EVENT_ACTIVE = constants.CONFIG["prey"]["activate_events"]

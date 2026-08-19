@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "gen_dead_exiled",
+=======
+        "event_id": "gen_dead_exiled",
+>>>>>>> clangen-megamerge
         "strings": [
             "Wishes {PRONOUN/m_c/subject} had the chance to fix {PRONOUN/m_c/poss} mistakes while alive",
             "Curses c_n for making {PRONOUN/m_c/object} die alone",

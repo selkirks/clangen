@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "general_kittypet_dead_thoughts",
+=======
+        "event_id": "general_kittypet_dead_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Admires the stars in {PRONOUN/m_c/poss} fur",
             "Wonders how {PRONOUN/m_c/subject} ended up here",

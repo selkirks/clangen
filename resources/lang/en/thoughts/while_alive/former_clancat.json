@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "general_formerclancat_thoughts",
+=======
+        "event_id": "general_formerclancat_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Thinks about {PRONOUN/m_c/poss} former Clanmates forlornly",
             "Wonders if StarClan still watches over {PRONOUN/m_c/object}",
@@ -12,7 +16,11 @@
         ]
     },
     {
+<<<<<<< HEAD
         "id": "formerclancat_tragedy_thoughts",
+=======
+        "event_id": "formerclancat_tragedy_thoughts",
+>>>>>>> clangen-megamerge
         "strings": [
             "Wonders what happened to {PRONOUN/m_c/poss} Clanmates",
             "Wakes up shaking after a nightmare",

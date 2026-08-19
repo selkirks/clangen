@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "gen_death_body_present",
+=======
+        "event_id": "gen_death_body_present",
+>>>>>>> clangen-megamerge
         "strings": [
             "Helped bury r_c, leaving {PRONOUN/r_c/poss} favorite prey at the grave",
             "Slips out of camp to visit r_c's grave",

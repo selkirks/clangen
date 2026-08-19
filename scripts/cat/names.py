@@ -10,7 +10,11 @@ import i18n
 import ujson
 
 from scripts.game_structure import constants
+<<<<<<< HEAD
 from scripts.cat.enums import CatRank, CatGroup, CatAge
+=======
+from scripts.cat.enums import CatRank, CatGroup, CatAge, CatSocial
+>>>>>>> clangen-megamerge
 from scripts.game_structure.localization import load_lang_resource
 from scripts.housekeeping.datadir import get_save_dir
 
@@ -23,6 +27,10 @@ class Name:
     current_save_dir = None
     currently_loaded_lang = None
     names_dict = {}
+<<<<<<< HEAD
+=======
+    prefix_history = []
+>>>>>>> clangen-megamerge
 
     def __init__(
         self,
@@ -32,7 +40,10 @@ class Name:
         specsuffix_hidden=False,
         load_existing_name=False,
         cat=None,
+<<<<<<< HEAD
         pelt=None,
+=======
+>>>>>>> clangen-megamerge
     ):
         self.load_localized_names()
         self.prefix = prefix
@@ -41,6 +52,7 @@ class Name:
 
         self.cat = cat
 
+<<<<<<< HEAD
         if pelt is not None:
             color = pelt.colour
             eyes = pelt.eye_colour
@@ -57,6 +69,18 @@ class Name:
                 eyes = None
                 pelt = None
                 tortie_pattern = None
+=======
+        try:
+            color = cat.pelt.colour
+            eyes = cat.pelt.eye_colour
+            pelt = cat.pelt.name
+            tortie_pattern = cat.pelt.tortie_pattern
+        except AttributeError:
+            color = None
+            eyes = None
+            pelt = None
+            tortie_pattern = None
+>>>>>>> clangen-megamerge
 
         name_fixpref = False
         # Set prefix
@@ -73,6 +97,7 @@ class Name:
                 name_fixpref = False
 
         if self.suffix and not load_existing_name:
+<<<<<<< HEAD
             # Prevent triple letter names from joining prefix and suffix from occurring (ex. Beeeye)
             possible_three_letter = (
                 self.prefix[-2:] + self.suffix[0],
@@ -131,6 +156,157 @@ class Name:
                 ):
                     double_animal = False
                 i += 1
+=======
+            # check if random die was for prefix
+            if name_fixpref:
+                self.give_prefix(eyes, color, biome)
+            else:
+                self.give_suffix(pelt, biome, tortie_pattern)
+
+    @classmethod
+    def _usable_name(cls, prefix, suffix):
+        if prefix is None or suffix is None:
+            return True
+
+        name = prefix + suffix
+
+        # Prevent triple letter names from joining prefix and suffix from occurring (ex. Beeeye)
+        # Prevent crash on empty prefix or suffix (e.g. empty-suffix loner names)
+        if not prefix or not suffix:
+            triple_letter = False
+        else:
+            possible_three_letter = (
+                prefix[-2:] + suffix[0],
+                prefix[-1] + suffix[:2],
+            )
+            triple_letter = all(
+                i == possible_three_letter[0][0] for i in possible_three_letter[0]
+            ) or all(i == possible_three_letter[1][0] for i in possible_three_letter[1])
+
+        # Prevent double animal names (ex. Spiderfalcon)
+        double_animal = (
+            prefix in cls.names_dict["animal_prefixes"]
+            and suffix in cls.names_dict["animal_suffixes"]
+        )
+
+        # Prevent double names (ex. Iceice)
+        # Prevent suffixes containing the prefix (ex. Butterflyfly)
+        double_name = (prefix.lower() in suffix.lower() and str(prefix) != "") or (
+            suffix.lower() in prefix.lower() and str(suffix) != ""
+        )
+
+        return not (
+            # Prevent the inappropriate names
+            name.lower() in cls.names_dict["inappropriate_names"]
+            or triple_letter
+            or double_animal
+            or double_name
+        )
+
+    @classmethod
+    def load_localized_names(cls):
+        """
+        Loads the correct names for the given language. Includes override for always using English names, in case localization wants to be ignored
+        :return: None
+        """
+
+        # allowing the user to override the localized language names if desired
+        if always_english := constants.CONFIG["cat_name_controls"][
+            "always_use_english"
+        ]:
+            lang = "en"
+        else:
+            lang = i18n.config.get("locale")
+
+        if cls.current_save_dir == get_save_dir() and cls.currently_loaded_lang == lang:
+            # nothing to do here, all good
+            return
+
+        if always_english:
+            with open("resources/lang/en/names.json", encoding="utf-8") as read_file:
+                names_dict = ujson.loads(read_file.read())
+        else:
+            names_dict = load_lang_resource("names.json")
+
+        save_dir = get_save_dir()
+
+        # here onwards is copied wholesale from the original Name class
+
+        if os.path.exists(save_dir + "/prefixlist.txt"):
+            with open(
+                str(save_dir + "/prefixlist.txt"), "r", encoding="utf-8"
+            ) as read_file:
+                name_list = read_file.read()
+                if_names = len(name_list)
+            if if_names > 0:
+                new_names = name_list.split("\n")
+                for new_name in new_names:
+                    if new_name != "":
+                        if new_name.startswith("-"):
+                            while new_name[1:] in names_dict["normal_prefixes"]:
+                                names_dict["normal_prefixes"].remove(new_name[1:])
+                        else:
+                            names_dict["normal_prefixes"].append(new_name)
+
+        if os.path.exists(save_dir + "/suffixlist.txt"):
+            with open(
+                str(save_dir + "/suffixlist.txt"), "r", encoding="utf-8"
+            ) as read_file:
+                name_list = read_file.read()
+                if_names = len(name_list)
+            if if_names > 0:
+                new_names = name_list.split("\n")
+                for new_name in new_names:
+                    if new_name != "":
+                        if new_name.startswith("-"):
+                            while new_name[1:] in names_dict["normal_suffixes"]:
+                                names_dict["normal_suffixes"].remove(new_name[1:])
+                        else:
+                            names_dict["normal_suffixes"].append(new_name)
+
+        if os.path.exists(save_dir + "/specialsuffixes.txt"):
+            with open(
+                str(save_dir + "/specialsuffixes.txt", "r"), encoding="utf-8"
+            ) as read_file:
+                name_list = read_file.read()
+                if_names = len(name_list)
+            if len(name_list) > 0:
+                new_names = name_list.split("\n")
+                for new_name in new_names:
+                    if new_name != "":
+                        if new_name.startswith("-"):
+                            del names_dict["special_suffixes"][new_name[1:]]
+                        elif ":" in new_name:
+                            _tmp = new_name.split(":")
+                            names_dict["special_suffixes"][_tmp[0]] = _tmp[1]
+
+        cls.names_dict = names_dict
+        cls.current_save_dir = save_dir
+        cls.currently_loaded_lang = lang
+
+    def __str__(self):
+        return self.__repr__()
+
+    def find_outsider_name(self, social: CatSocial):
+        if social == CatSocial.CLANCAT:
+            return
+
+        # if it ain't a clancat, give it a non-clancat name
+        name_categories = [
+            "silly_names",
+            "human_names",
+            "loner_names",
+            "normal_prefixes",
+        ]
+        # defaults in case of error
+        weights = [1, 1, 1, 1]
+        # give kittypets a kittypet name
+        weights = constants.CONFIG["cat_name_controls"][str(social)]
+
+        selected_category = random.choices(name_categories, weights, k=1)[0]
+        name = random.choice(self.names_dict[selected_category])
+        self.cat.change_name(new_prefix=name, new_suffix="")
+>>>>>>> clangen-megamerge
 
     def load_localized_names(self):
         """
@@ -222,6 +398,7 @@ class Name:
     def give_prefix(self, eyes, colour, biome):
         """Generate possible prefix."""
         self.load_localized_names()
+<<<<<<< HEAD
 
         # decided in constants.CONFIG: cat_name_controls
         if constants.CONFIG["cat_name_controls"]["always_name_after_appearance"]:
@@ -232,6 +409,8 @@ class Name:
             )  # Chance for True is '1/4'
 
         named_after_biome_ = not random.getrandbits(3)  # chance for True is 1/8
+=======
+>>>>>>> clangen-megamerge
 
         # Add possible prefix categories to list.
         possible_prefix_categories = []
@@ -247,6 +426,7 @@ class Name:
         if biome is not None and biome in self.names_dict["biome_prefixes"]:
             possible_prefix_categories.append(self.names_dict["biome_prefixes"][biome])
 
+<<<<<<< HEAD
         # Choose appearance-based prefix if possible and named_after_appearance because True.
         if (
             named_after_appearance
@@ -259,6 +439,43 @@ class Name:
             self.prefix = random.choice(prefix_category)
         else:
             self.prefix = random.choice(self.names_dict["normal_prefixes"])
+=======
+        while True:
+            # decided in constants.CONFIG: cat_name_controls
+            if constants.CONFIG["cat_name_controls"]["always_name_after_appearance"]:
+                named_after_appearance = True
+            else:
+                named_after_appearance = not random.getrandbits(
+                    2
+                )  # Chance for True is '1/4'
+
+            named_after_biome = not random.getrandbits(3)  # chance for True is 1/8
+            # Choose appearance-based prefix if possible and named_after_appearance because True.
+            if (
+                named_after_appearance
+                and possible_prefix_categories
+                and not named_after_biome
+                or named_after_biome
+                and possible_prefix_categories
+            ):
+                prefix_category = random.choice(possible_prefix_categories)
+                self.prefix = random.choice(prefix_category)
+            else:
+                self.prefix = random.choice(self.names_dict["normal_prefixes"])
+
+            # prevent prefix duplications from happening
+            if self.prefix in self.prefix_history or not self._usable_name(
+                self.prefix, self.suffix
+            ):
+                continue
+            else:
+                self.prefix_history.append(self.prefix)
+                # Set the maximin length to 8 just to be sure
+                if len(self.prefix_history) > 8:
+                    # removing at zero so the oldest gets removed
+                    self.prefix_history.pop(0)
+                return
+>>>>>>> clangen-megamerge
 
         # This thing prevents any prefix duplications from happening.
         # Try statement stops this form running when initializing.
@@ -281,6 +498,7 @@ class Name:
         """Generate possible suffix."""
         self.load_localized_names()
 
+<<<<<<< HEAD
         if pelt is None or pelt == "SingleColour":
             self.suffix = random.choice(self.names_dict["normal_suffixes"])
         else:
@@ -308,6 +526,51 @@ class Name:
                     self.suffix = random.choice(self.names_dict["normal_suffixes"])
             else:
                 self.suffix = random.choice(self.names_dict["normal_suffixes"])
+=======
+        while True:
+            pool = self.names_dict["normal_suffixes"]
+
+            if pelt is not None or pelt != "SingleColour":
+                named_after_pelt = not random.getrandbits(
+                    2
+                )  # Chance for True is '1/8'.
+                named_after_biome = not random.getrandbits(3)  # 1/8
+                # Pelt name only gets used if there's an associated suffix.
+                if named_after_pelt:
+                    if (
+                        pelt in ("Tortie", "Calico")
+                        and tortie_pattern in self.names_dict["tortie_pelt_suffixes"]
+                    ):
+                        pool = self.names_dict["tortie_pelt_suffixes"][tortie_pattern]
+                    elif pelt in self.names_dict["pelt_suffixes"]:
+                        pool = self.names_dict["pelt_suffixes"][pelt]
+                    else:
+                        pool = self.names_dict["normal_suffixes"]
+                elif named_after_biome:
+                    if biome in self.names_dict["biome_suffixes"]:
+                        pool = self.names_dict["biome_suffixes"][biome]
+                    else:
+                        pool = self.names_dict["normal_suffixes"]
+                else:
+                    pool = self.names_dict["normal_suffixes"]
+            self.suffix = random.choice(pool)
+            if self._usable_name(self.prefix, self.suffix):
+                return
+
+    def get_specsuffix_name(self, rank: CatRank = CatRank.LEADER):
+        """
+        Return the cat's name with the appropriate special suffix. If no specsuffix is given for that rank, returns
+        default prefix + suffix. If specsuffix_hidden is true, return default prefix + suffix.
+        :param rank: CatRank matching
+        :return: Cat's name string
+        """
+        self.load_localized_names()
+
+        if rank in self.names_dict["special_suffixes"] and not self.specsuffix_hidden:
+            return self.prefix + self.names_dict["special_suffixes"][rank]
+
+        return self.prefix + self.suffix
+>>>>>>> clangen-megamerge
 
     def change_name(self, prefix, suffix):
         self.prefix = prefix
@@ -371,5 +634,9 @@ class Name:
         return self.prefix + self.suffix
 
 
+<<<<<<< HEAD
 names = Name()
 names.prefix_history = []
+=======
+Name.load_localized_names()
+>>>>>>> clangen-megamerge

@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "gen_dead_war_app",
+=======
+        "event_id": "gen_dead_war_app",
+>>>>>>> clangen-megamerge
         "strings": [
             "Is sad {PRONOUN/m_c/subject} never got {PRONOUN/m_c/poss} warrior name",
             "Patrols StarClan's territory",
@@ -13,7 +17,11 @@
         ]
     },
     {
+<<<<<<< HEAD
         "id": "dead_app_to_dead_other",
+=======
+        "event_id": "dead_app_to_dead_other",
+>>>>>>> clangen-megamerge
         "strings": [
             "Laughs with r_c",
             "Stalks through StarClan's forests with r_c",

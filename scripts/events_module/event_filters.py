@@ -1,7 +1,11 @@
 import re
 from itertools import combinations
 from random import choice, randint
+<<<<<<< HEAD
 from typing import List, Optional, Dict, Union
+=======
+from typing import List, Optional, Dict, Union, Literal
+>>>>>>> clangen-megamerge
 
 from scripts.cat.constants import BACKSTORIES
 from scripts.cat.personality import Personality
@@ -13,6 +17,10 @@ from scripts.clan_resources.point_of_interest import (
     get_poi_categories_set,
 )
 from scripts.cat_relations.relationship import Relationship
+<<<<<<< HEAD
+=======
+from scripts.config import get_config
+>>>>>>> clangen-megamerge
 from scripts.events_module.parameter_dicts import (
     InvolvedCatDict,
     RelationshipConstraintDict,
@@ -127,15 +135,22 @@ def event_for_season(seasons: list) -> bool:
     return is_exclusionary
 
 
+<<<<<<< HEAD
 def event_for_tags(
     tags: list, cat, other_cat=None, mentor_tags_fulfilled: dict = None
 ) -> bool:
+=======
+def event_for_tags(tags: list, cat, other_cat=None) -> bool:
+>>>>>>> clangen-megamerge
     """
     Checks if current tags disqualify the event.
     :param tags: Tags to check validity for.
     :param cat: Main cat to compare against tags.
     :param other_cat: Secondary cat to compare against tags.
+<<<<<<< HEAD
     :param mentor_tags_fulfilled: Dict of mentor values used to validate mentor tags. Only utilized by patrols.
+=======
+>>>>>>> clangen-megamerge
     """
     if not tags:
         return True
@@ -223,6 +238,7 @@ def event_for_tags(
         if not special_date or special_date.patrol_tag not in tags:
             return False
 
+<<<<<<< HEAD
     if "all_mentored" in tags:
         return mentor_tags_fulfilled.get("general", False)
     for _tag in tags:
@@ -231,6 +247,8 @@ def event_for_tags(
         ):
             return False
 
+=======
+>>>>>>> clangen-megamerge
     return True
 
 
@@ -266,7 +284,11 @@ def event_for_reputation(required_rep: list) -> bool:
     """
     checks if the clan has reputation matching required_rep
     """
+<<<<<<< HEAD
     if "any" in required_rep:
+=======
+    if not required_rep or "any" in required_rep:
+>>>>>>> clangen-megamerge
         return True
 
     clan_rep = game.clan.reputation
@@ -293,7 +315,13 @@ def event_for_clan_relations(required_rel: list, other_clan) -> bool:
     return current_standing in required_rel
 
 
+<<<<<<< HEAD
 def event_for_freshkill_supply(pile, trigger, factor, clan_size) -> bool:
+=======
+def event_for_freshkill_supply(
+    pile, trigger: Literal["always", "low", "adequate", "full", "excess"], clan_size
+) -> bool:
+>>>>>>> clangen-megamerge
     """
     checks if clan has the correct amount of freshkill for event
     """
@@ -314,6 +342,10 @@ def event_for_freshkill_supply(pile, trigger, factor, clan_size) -> bool:
     # find how much is too much freshkill
     # it would probably be good to move this section of finding trigger_value to the freshkill class
     divider = 35 if game.clan.game_mode == "expanded" else 20
+<<<<<<< HEAD
+=======
+    factor = get_config("prey.base_event_trigger_factor")
+>>>>>>> clangen-megamerge
     factor = factor - round(pow((clan_size / divider), 2))
     if factor < 2 and game.clan.game_mode == "expanded":
         factor = 2
@@ -329,7 +361,11 @@ def event_for_freshkill_supply(pile, trigger, factor, clan_size) -> bool:
     return False
 
 
+<<<<<<< HEAD
 def event_for_herb_supply(trigger, supply_type, clan_size) -> bool:
+=======
+def event_for_herb_supply(trigger, supply_type) -> bool:
+>>>>>>> clangen-megamerge
     """
     checks if clan's herb supply qualifies for event
     """
@@ -363,6 +399,29 @@ def event_for_herb_supply(trigger, supply_type, clan_size) -> bool:
         return False
 
 
+<<<<<<< HEAD
+=======
+def event_for_required_cat_types(
+    required_types: dict[str, list[int]], current_cat_types: dict[str, list]
+) -> bool:
+    """
+    Checks if the required_types dict is being fulfilled
+    """
+    if not required_types:
+        return True
+
+    for c_type, amount_range in required_types.items():
+        type_list = current_cat_types.get(c_type, [])
+        if amount_range[1] == -1 and not type_list:
+            continue
+
+        if amount_range[0] > len(type_list) or len(type_list) > amount_range[1]:
+            return False
+
+    return True
+
+
+>>>>>>> clangen-megamerge
 def event_for_cat(
     cat_info: Union[dict, InvolvedCatDict],
     cat,
@@ -416,6 +475,13 @@ def event_for_cat(
                 f"Input contains invalid data, check traceback!\ncat_info: {cat_info}\nevent_id: {event_id}"
             ) from e
 
+<<<<<<< HEAD
+=======
+    # checking mentor
+    if cat_info.get("has_mentor") and not cat.mentor:
+        return False
+
+>>>>>>> clangen-megamerge
     # checking groups
     if cat_info.get("group"):
         if not _check_cat_group(cat, cat_info["group"], involved_cat_dict):
@@ -950,6 +1016,10 @@ def cat_for_event(
     comparison_cat=None,
     comparison_cat_rel_status: list = None,
     injuries: list = None,
+<<<<<<< HEAD
+=======
+    other_involved_clan_id: str = None,
+>>>>>>> clangen-megamerge
     return_id: bool = True,
     return_list: bool = False,
 ):
@@ -963,6 +1033,10 @@ def cat_for_event(
      cat. Keep in mind that this will search for a possible cat with the given relationship toward comparison cat.
     :param comparison_cat_rel_status: The relationship_status dict for the comparison cat
     :param injuries: List of injuries a cat may get from the event
+<<<<<<< HEAD
+=======
+    :param other_involved_clan_id: if another Clan is involved, include their ID
+>>>>>>> clangen-megamerge
     :param return_id: If true, return cat ID instead of object
     :param return_list: if true, return a list of all valid cats instead of a single valid cat
     :param tags: List of event tags
@@ -971,6 +1045,10 @@ def cat_for_event(
     func_dict = {
         "age": _get_cats_with_age,
         "status": _get_cats_with_status,
+<<<<<<< HEAD
+=======
+        "past_status": _get_cats_with_status_history,
+>>>>>>> clangen-megamerge
         "stat": _get_cats_with_stat,
         "skill": _get_cats_with_skill,
         "trait": _get_cats_with_trait,
@@ -997,6 +1075,16 @@ def cat_for_event(
         # if the list is emptied, return
         if not allowed_cats:
             return None
+<<<<<<< HEAD
+=======
+    if constraint_dict.get("standing"):
+        allowed_cats = _get_cats_with_standing(
+            allowed_cats,
+            constraint_dict["standing"],
+            involved_cat_dict,
+            other_involved_clan_id,
+        )
+>>>>>>> clangen-megamerge
 
     # find cats that can get the injuries that will be given
     if injuries:
@@ -1013,7 +1101,11 @@ def cat_for_event(
             return None
 
     # rel status check
+<<<<<<< HEAD
     if "romance" in tags:
+=======
+    if "romance" in tags and comparison_cat:
+>>>>>>> clangen-megamerge
         allowed_cats = list(
             set(allowed_cats).intersection(set(get_possible_mates(comparison_cat)[0]))
         )
@@ -1143,6 +1235,16 @@ def _get_cats_with_status(cat_list: list, statuses: list[str]) -> list:
         ]
 
 
+<<<<<<< HEAD
+=======
+def _get_cats_with_status_history(cat_list: list, statuses: list) -> list:
+    if not statuses or "any" in statuses:
+        return cat_list
+
+    return [c for c in cat_list if _check_cat_status_history(c, statuses)]
+
+
+>>>>>>> clangen-megamerge
 def _get_cats_with_stat(cat_list: list, stat: dict) -> list:
     """
     Returns list of cats with the required stats
@@ -1271,6 +1373,25 @@ def _get_cats_from_group(
     return cat_list
 
 
+<<<<<<< HEAD
+=======
+def _get_cats_with_standing(
+    cat_list: list,
+    standing: Dict[str, list],
+    already_involved_cats: dict,
+    other_clan_id: str = None,
+):
+    if not standing:
+        return cat_list
+
+    return [
+        c
+        for c in cat_list
+        if _check_cat_standing(c, standing, already_involved_cats, other_clan_id)
+    ]
+
+
+>>>>>>> clangen-megamerge
 def _get_cats_with_backstory(cat_list: list, backstories: list[str]) -> list:
     """
     Checks cat_list against required backstories and returns qualifying cats.
@@ -1314,6 +1435,7 @@ def check_rel_constraint_groups(
         # if we don't have any cats to compare, then just send back
         return True
 
+<<<<<<< HEAD
     cats_from = [
         involved_cats[c]
         for c in constraints_dict["cats_from"]
@@ -1329,6 +1451,25 @@ def check_rel_constraint_groups(
     ]
     if "multi_cat" in constraints_dict["cats_to"]:
         cats_to.extend(involved_cats.get("multi_cat", []))
+=======
+    cats_from = []
+    for abbr in constraints_dict["cats_from"]:
+        if abbr not in involved_cats:
+            continue
+        if isinstance(involved_cats[abbr], list):
+            cats_from.extend(involved_cats[abbr])
+        else:
+            cats_from.append(involved_cats[abbr])
+
+    cats_to = []
+    for abbr in constraints_dict["cats_to"]:
+        if abbr not in involved_cats:
+            continue
+        if isinstance(involved_cats[abbr], list):
+            cats_to.extend(involved_cats[abbr])
+        else:
+            cats_to.append(involved_cats[abbr])
+>>>>>>> clangen-megamerge
 
     if not _filter_relationship_type_updated(
         cats_from=cats_from,
@@ -1379,6 +1520,34 @@ def _filter_relationship_type_updated(
     # if the cat meets the check AND it's an exclusionary tag: return False
     # if the cat doesn't meet the check AND it's an inclusionary tag: return False
     # otherwise, continue onwards
+<<<<<<< HEAD
+=======
+    cats_to = [c for c in cats_to if c not in cats_from]
+
+    if "can_romance" in filter_types:
+        for cat in cats_from:
+            # if the cats CAN romance
+            if all(
+                [
+                    cat.is_potential_mate(inter_cat) or cat.ID in inter_cat.mate
+                    for inter_cat in cats_to
+                ]
+            ):
+                if "can_romance" in exclusionary_values:
+                    return False
+            # if some but not ALL can romance
+            elif "can_romance" in inclusionary_values and any(
+                [
+                    cat.is_potential_mate(inter_cat) or cat.ID in inter_cat.mate
+                    for inter_cat in cats_to
+                ]
+            ):
+                return False
+            # if the cats CAN'T romance
+            elif "can_romance" in inclusionary_values:
+                return False
+        filter_types.remove("can_romance")
+>>>>>>> clangen-megamerge
 
     if "strangers" in filter_types:
         for cat in cats_from:
@@ -1688,6 +1857,7 @@ def filter_relationship_type(group: list, filter_types: List[str], patrol_leader
 
         filter_types.remove("mates")
 
+<<<<<<< HEAD
     # check if all cats are mates with p_l (they do not have to be mates with each other)
     if "mates_with_pl" in filter_types:
         # First test if there is more than one cat
@@ -1708,6 +1878,8 @@ def filter_relationship_type(group: list, filter_types: List[str], patrol_leader
                 return False
         filter_types.remove("mates_with_pl")
 
+=======
+>>>>>>> clangen-megamerge
     # Check if the cats are in a parent/child relationship
     if "parent/child" in filter_types:
         # It should be exactly two cats for a "parent/child" event
