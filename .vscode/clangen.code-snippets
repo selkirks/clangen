@@ -3,6 +3,7 @@
     "prefix": "clangen-patrol-minimal",
     "scope": "json",
     "body": [
+<<<<<<< HEAD
       "{",
       "    \"patrol_id\": \"$1\",",
       "    \"biome\": [$2],",
@@ -19,6 +20,26 @@
       "    \"success_outcomes\": [$13],",
       "    \"fail_outcomes\": [$14]",
       "}"
+=======
+       "{",
+        "    \"id\": \"$1\",",
+        "    \"types\": [$2],",
+        "    \"frequency\": ${3:4},",
+        "    \"required_cat_types\": {",
+        "        \"patrol_cats\": [1, 6]",
+        "    },",
+        "    \"chance_of_success\": ${4:100},",
+        "    \"patrol_art\": \"$5\",",
+        "    \"intro_text\": \"$6\",",
+        "    \"decline_text\": \"$7\",",
+        "    \"success_outcomes\": [",
+        "        $8",
+        "    ],",
+        "    \"fail_outcomes\": [",
+        "        $9",
+        "    ]",
+        "}$0"
+>>>>>>> clangen-megamerge
     ],
     "description": "Clangen patrol template, with only the required fields."
   },
@@ -26,10 +47,19 @@
     "prefix": "clangen-patrol-outcome-minimal",
     "body": [
       "{",
+<<<<<<< HEAD
       "    \"text\": \"$1\",",
       "    \"exp\": ${2:0},",
       "    \"frequency\": ${3:4}",
       "}"
+=======
+      "    \"frequency\": ${1:4},",
+      "    \"strings\": [",
+      "        \"$2\"",
+      "    ],",
+      "    \"exp_gained\": ${3:0}",
+      "}$0",
+>>>>>>> clangen-megamerge
     ],
     "description": "Clangen outcome template, with only the required fields."
   },

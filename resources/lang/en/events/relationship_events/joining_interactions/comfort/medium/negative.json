@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "gen_comfort_med_neg1",
+=======
+        "event_id": "gen_comfort_med_neg1",
+>>>>>>> clangen-megamerge
         "strings": [
 			"r_c made an off-putting comment after m_c introduced {PRONOUN/m_c/self}."
         ]

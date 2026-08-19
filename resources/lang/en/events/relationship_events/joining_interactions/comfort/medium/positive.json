@@ -1,6 +1,10 @@
 [
     {
+<<<<<<< HEAD
         "id": "gen_comfort_med_pos1",
+=======
+        "event_id": "gen_comfort_med_pos1",
+>>>>>>> clangen-megamerge
         "strings": [
 			"r_c and m_c bonded over their preferred nesting materials while m_c was getting comfortable in {PRONOUN/m_c/poss} new den."
         ],

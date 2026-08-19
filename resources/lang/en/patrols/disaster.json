@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "patrol_id": "gen_bord_flashflood1",
         "biome": [
             "-desert"
@@ -9,10 +10,25 @@
         ],
         "types": [
             "border"
+=======
+        "event_id": "gen_bord_flashflood1",
+        "types": [
+            "border"
+        ],
+        "frequency": 2,
+        "location": [
+            "-desert"
+        ],
+        "season": [
+            "newleaf",
+            "greenleaf",
+            "leaf-fall"
+>>>>>>> clangen-megamerge
         ],
         "tags": [
             "disaster"
         ],
+<<<<<<< HEAD
         "patrol_art": "cat_sprites/gen_bord_flashflood_Wr",
         "min_cats": 2,
         "max_cats": 6,
@@ -32,6 +48,32 @@
                         ],
                         "cats_from": [
                             "patrol"
+=======
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                6
+            ]
+        },
+        "chance_of_success": 40,
+        "patrol_art": "cat_sprites/gen_bord_flashflood_Wr",
+        "intro_text": "There are dark clouds on the horizon, and p_l wonders if they should continue.",
+        "decline_text": "The patrol decides to head back early.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "While it's pretty gray up there, the promised rain never comes."
+                ],
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "patrol_cats"
+                        ],
+                        "cats_from": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -42,6 +84,7 @@
                             "cats_from": "cat_from and cat_to gained trust in each other after persevering on a border patrol despite gray skies."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -55,6 +98,23 @@
                         ],
                         "cats_from": [
                             "patrol"
+=======
+                ]
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "The cats get wet in the rain, but the patrol is otherwise successful."
+                ],
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "patrol_cats"
+                        ],
+                        "cats_from": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -65,6 +125,7 @@
                             "cats_from": "cat_from and cat_to gained trust in each other after persevering on a rainy border patrol."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 1
             },
@@ -81,6 +142,35 @@
                         ],
                         "cats_from": [
                             "patrol"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 makes a careful judgment, and the patrol keeps going, but they make sure to stay on the high ground as the rain pours down around them."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "skill": [
+                                "CLEVER,2"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+                        ],
+                        "cats_from": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -92,6 +182,7 @@
                             "cats_from": "cat_from appreciated that cat_to led their border patrol to higher ground during a rainstorm."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -110,6 +201,39 @@
                         ],
                         "cats_from": [
                             "patrol", "high_social", "high_stable"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "It's not worth the risk. s_c0 convinces the patrol to head for home."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "trait": [
+                                "careful",
+                                "insecure",
+                                "nervous"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+                        ],
+                        "cats_from": [
+                            "patrol_cats",
+                            "high_social",
+                            "high_stable"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -122,10 +246,19 @@
                     },
                     {
                         "cats_to": [
+<<<<<<< HEAD
                             "s_c"
                         ],
                         "cats_from": [
                             "patrol", "low_social", "low_stable"
+=======
+                            "s_c0"
+                        ],
+                        "cats_from": [
+                            "patrol_cats",
+                            "low_social",
+                            "low_stable"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -136,12 +269,17 @@
                             "cats_from": "cat_from wasn't happy that cat_to canceled a border patrol over a few dark clouds."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
+=======
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "There is a downpour, and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
                 "exp": 0,
                 "dead_cats": [
@@ -151,10 +289,26 @@
                     "death": "This cat was drowned by floodwaters."
                 },
                 "frequency": 4
+=======
+                "frequency": 4,
+                "strings": [
+                    "There is a downpour, and a sudden flood from the overflowing river sweeps all of the cats in the patrol away."
+                ],
+                "exp_gained": 0,
+                "death": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "history": "This cat was drowned by floodwaters."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "multi_bord_flashflood2",
         "biome": [
             "forest", "plains", "mountainous"
@@ -204,10 +358,95 @@
                     "nervous"
                 ],
                 "frequency": 4
+=======
+        "event_id": "multi_bord_flashflood2",
+        "types": [
+            "border"
+        ],
+        "frequency": 2,
+        "location": [
+            "forest",
+            "plains",
+            "mountainous"
+        ],
+        "season": [
+            "newleaf",
+            "greenleaf",
+            "leaf-fall"
+        ],
+        "tags": [
+            "disaster"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                1,
+                1
+            ]
+        },
+        "chance_of_success": 40,
+        "patrol_art": "cat_sprites/gen_bord_flashflood_Wr",
+        "intro_text": "There are dark clouds on the horizon and p_l wonders if {PRONOUN/p_l/subject} should continue.",
+        "decline_text": "The patrol decides to head back early.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "While it's pretty gray up there, the promised rain never comes."
+                ],
+                "exp_gained": 20
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "p_l gets wet in the rain, but the patrol is otherwise successful."
+                ],
+                "exp_gained": 20
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 makes a careful judgment and keeps going, but {PRONOUN/s_c0/subject} {VERB/s_c0/make/makes} sure to stay on the high ground as the rain pours down around {PRONOUN/s_c0/object}."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "skill": [
+                                "CLEVER,2"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 20
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "It's not worth the risk. s_c0 heads home."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "trait": [
+                                "careful",
+                                "insecure",
+                                "nervous"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 20
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "There is a downpour, and a sudden flood from the overflowing river sweeps r_c away.",
                 "exp": 0,
                 "dead_cats": [
@@ -217,10 +456,26 @@
                     "death": "m_c was drowned by floodwaters."
                 },
                 "frequency": 4
+=======
+                "frequency": 4,
+                "strings": [
+                    "There is a downpour, and a sudden flood from the overflowing river sweeps p_l away."
+                ],
+                "exp_gained": 0,
+                "death": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "history": "m_c was drowned by floodwaters."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "pln_bord_abandontwolegdis1",
         "biome": [
             "plains"
@@ -284,6 +539,90 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+        "event_id": "pln_bord_abandontwolegdis1",
+        "types": [
+            "border"
+        ],
+        "frequency": 2,
+        "location": [
+            "plains"
+        ],
+        "tags": [
+            "disaster"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                6
+            ]
+        },
+        "chance_of_success": 70,
+        "patrol_art": "backgrounds/gen_abandontwolegdis",
+        "intro_text": "The patrol hears some odd noises coming from an abandoned Twoleg nest out on the plains.",
+        "decline_text": "The patrol decides not to investigate.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "It's just an odd loner singing to {PRONOUN/n_c0/self}. The patrol greets {PRONOUN/n_c0/object}, and as the loner isn't inside c_n territory, it's a polite interaction without any hostility."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "loner"
+                        ]
+                    }
+                },
+                "exp_gained": 30
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "The patrol walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c0 is there, fighting with the courage of LionClan, the strength of TigerClan, and the dexterity of LeopardClan. Shaken but no more than bruised, the patrol manages to retreat to safety."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "skill": [
+                                "FIGHTER,3"
+                            ]
+                        }
+                    },
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 30,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -296,10 +635,17 @@
                     },
                     {
                         "cats_from": [
+<<<<<<< HEAD
                             "patrol"
                         ],
                         "cats_to": [
                             "s_c"
+=======
+                            "patrol_cats"
+                        ],
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -311,6 +657,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -322,10 +669,43 @@
                     "nervous"
                 ],
                 "frequency": 4
+=======
+                "death": [
+                    {
+                        "cats": [
+                            "n_c2"
+                        ],
+                        "history": "This cat died while wandering.",
+                        "no_results": false
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 signals for the patrol to stop. Carefully and quietly,{PRONOUN/s_c0/subject} {VERB/s_c0/explain/explains} {PRONOUN/s_c0/poss} concerns about the unknown situation. And maybe {PRONOUN/s_c0/subject}{VERB/s_c0/'re/'s} being too cautious, but then p_l picks up on the scent of strange cats around the Twoleg den. Forewarned, the patrol retreats to safety."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "trait": [
+                                "careful",
+                                "insecure",
+                                "nervous"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 30
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "The patrol walks into an ambush by a group of rogues. Everyone is slaughtered.",
                 "exp": 0,
                 "dead_cats": [
@@ -335,10 +715,26 @@
                     "death": "m_c was ambushed and killed by rogues."
                 },
                 "frequency": 4
+=======
+                "frequency": 4,
+                "strings": [
+                    "The patrol walks into an ambush by a group of rogues. Everyone is slaughtered."
+                ],
+                "exp_gained": 0,
+                "death": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "history": "m_c was ambushed and killed by rogues."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "pln_bord_abandontwolegdis2",
         "biome": [
             "plains"
@@ -413,6 +809,106 @@
                         ],
                         "cats_to": [
                             "s_c"
+=======
+        "event_id": "pln_bord_abandontwolegdis2",
+        "types": [
+            "border"
+        ],
+        "frequency": 2,
+        "location": [
+            "plains"
+        ],
+        "tags": [
+            "disaster"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                1,
+                1
+            ]
+        },
+        "chance_of_success": 30,
+        "patrol_art": "backgrounds/gen_abandontwolegdis",
+        "intro_text": "p_l hears some odd noises coming from an abandoned Twoleg nest out on the plains.",
+        "decline_text": "The patrol decides not to investigate.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "It's just an odd loner singing to {PRONOUN/n_c0/self}. p_l greets {PRONOUN/n_c0/object}, and as the loner isn't inside c_n territory, it's a polite interaction without any hostility."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "loner"
+                        ]
+                    }
+                },
+                "exp_gained": 30
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "It's just an odd loner singing to {PRONOUN/n_c0/self}. When {PRONOUN/n_c0/subject} {VERB/n_c0/see/sees} p_l, {PRONOUN/n_c0/subject} {VERB/n_c0/invite/invites} {PRONOUN/p_l/object} to sing too. {PRONOUN/p_l/subject/CAP} politely {VERB/p_l/decline/declines} and continues on {PRONOUN/p_l/poss} solo patrol."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "loner"
+                        ]
+                    }
+                },
+                "exp_gained": 30
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c0 has the reaction time to escape, running for {PRONOUN/s_c0/poss} life."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "skill": [
+                                "FIGHTER,3",
+                                "RUNNER,3"
+                            ]
+                        }
+                    },
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 30,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -423,6 +919,7 @@
                             "cats_from": "cat_from tried to ambush and kill cat_to, but cat_to escaped."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -435,10 +932,35 @@
                     "nervous"
                 ],
                 "frequency": 4
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 has a bad feeling about this. And maybe {PRONOUN/s_c0/subject}{VERB/s_c0/'re/'s} being too cautious, but then {PRONOUN/s_c0/subject} {VERB/s_c0/pick/picks} up on the scent of strange cats around the Twoleg den. Forewarned, s_c0 retreats to safety."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "trait": [
+                                "careful",
+                                "insecure",
+                                "nervous"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 30
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "r_c walks into an ambush by a group of rogues and is slaughtered.",
                 "exp": 0,
                 "dead_cats": [
@@ -449,10 +971,29 @@
                     "death": "m_c died in a rogue ambush while on a solo patrol."
                 },
                 "frequency": 4
+=======
+                "tags": [
+                    "some_lives"
+                ],
+                "frequency": 4,
+                "strings": [
+                    "p_l walks into an ambush by a group of rogues and is slaughtered."
+                ],
+                "exp_gained": 0,
+                "death": [
+                    {
+                        "cats": [
+                            "r_c0"
+                        ],
+                        "history": "m_c died in a rogue ambush while on a solo patrol."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "bch_bord_abandontwolegdis1",
         "biome": [
             "beach"
@@ -512,6 +1053,87 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+        "event_id": "bch_bord_abandontwolegdis1",
+        "types": [
+            "border"
+        ],
+        "frequency": 2,
+        "location": [
+            "beach"
+        ],
+        "tags": [
+            "disaster"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                6
+            ]
+        },
+        "chance_of_success": 40,
+        "patrol_art": "backgrounds/gen_abandontwolegdis",
+        "intro_text": "The patrol hears some odd noises coming from an abandoned Twoleg nest out on the cliffs above the beach.",
+        "decline_text": "The patrol decides not to investigate.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "It's just an odd loner singing to {PRONOUN/n_c0/self}. The patrol greets {PRONOUN/n_c0/object}, and as the loner isn't inside c_n territory, it's a polite interaction without any hostility."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "loner"
+                        ]
+                    }
+                },
+                "exp_gained": 30
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "It's just an odd loner singing to {PRONOUN/n_c0/self}. When {PRONOUN/n_c0/subject} {VERB/n_c0/see/sees} the patrol, {PRONOUN/n_c0/subject} {VERB/n_c0/invite/invites} them to sing, too. The patrol politely declines but compliments the loner's songs."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "loner"
+                        ]
+                    }
+                },
+                "exp_gained": 30
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "The patrol walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c0 is there, fighting with the courage of LionClan, the strength of TigerClan, and the dexterity of LeopardClan. Shaken but no more than bruised, the patrol manages to retreat to safety."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "skill": [
+                                "FIGHTER,3"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 30,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -524,10 +1146,17 @@
                     },
                     {
                         "cats_from": [
+<<<<<<< HEAD
                             "patrol"
                         ],
                         "cats_to": [
                             "s_c"
+=======
+                            "patrol_cats"
+                        ],
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -538,6 +1167,7 @@
                             "cats_from": "cat_to saved cat_from's life in a rogue ambush."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -550,10 +1180,35 @@
                     "nervous"
                 ],
                 "frequency": 4
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 signals for the patrol to stop. Carefully and quietly,{PRONOUN/s_c0/subject} {VERB/s_c0/explain/explains} {PRONOUN/s_c0/poss} concerns about the unknown situation. And maybe {PRONOUN/s_c0/subject}{VERB/s_c0/'re/'s} being too cautious, but then p_l picks up on the scent of strange cats around the Twoleg den. Forewarned, the patrol retreats to safety."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "trait": [
+                                "careful",
+                                "insecure",
+                                "nervous"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 30
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "The patrol walks into an ambush by a group of rogues. Everyone is slaughtered.",
                 "exp": 0,
                 "dead_cats": [
@@ -563,10 +1218,26 @@
                     "death": "m_c was ambushed and killed by rogues."
                 },
                 "frequency": 4
+=======
+                "frequency": 4,
+                "strings": [
+                    "The patrol walks into an ambush by a group of rogues. Everyone is slaughtered."
+                ],
+                "exp_gained": 0,
+                "death": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "history": "m_c was ambushed and killed by rogues."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "bch_bord_abandontwolegdis2",
         "biome": [
             "beach"
@@ -641,6 +1312,106 @@
                         ],
                         "cats_to": [
                             "s_c"
+=======
+        "event_id": "bch_bord_abandontwolegdis2",
+        "types": [
+            "border"
+        ],
+        "frequency": 2,
+        "location": [
+            "beach"
+        ],
+        "tags": [
+            "disaster"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                1,
+                1
+            ]
+        },
+        "chance_of_success": 10,
+        "patrol_art": "backgrounds/gen_abandontwolegdis",
+        "intro_text": "p_l hears some odd noises coming from an abandoned Twoleg nest out on the cliffs above the beach.",
+        "decline_text": "The patrol decides not to investigate.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "It's just an odd loner singing to {PRONOUN/n_c0/self}. p_l greets {PRONOUN/n_c0/object}, and as the loner isn't inside c_n territory, it's a polite interaction without any hostility."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "loner"
+                        ]
+                    }
+                },
+                "exp_gained": 30
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "It's just an odd loner singing to {PRONOUN/n_c0/self}. When {PRONOUN/n_c0/subject} {VERB/n_c0/see/sees} p_l, {PRONOUN/n_c0/subject} {VERB/n_c0/invite/invites} {PRONOUN/p_l/object} to sing too. {PRONOUN/p_l/subject/CAP} politely {VERB/p_l/decline/declines} but {VERB/p_l/compliment/compliments} the loner's songs."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "loner"
+                        ]
+                    }
+                },
+                "exp_gained": 30
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c0 has the reaction time to escape, running for {PRONOUN/s_c0/poss} life."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "skill": [
+                                "FIGHTER,3",
+                                "RUNNER,3"
+                            ]
+                        }
+                    },
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 30,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -651,6 +1422,7 @@
                             "cats_from": "cat_from tried to ambush and kill cat_to, but cat_to escaped."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -663,10 +1435,35 @@
                     "nervous"
                 ],
                 "frequency": 4
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 has a bad feeling about this. And maybe {PRONOUN/s_c0/subject}{VERB/s_c0/'re/'s} being too cautious, but then {PRONOUN/s_c0/subject} {VERB/s_c0/pick/picks} up on the scent of strange cats around the Twoleg den. Forewarned, s_c0 retreats to safety."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "trait": [
+                                "careful",
+                                "insecure",
+                                "nervous"
+                            ]
+                        }
+                    }
+                },
+                "exp_gained": 30
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "r_c walks into an ambush by a group of rogues and is slaughtered.",
                 "exp": 0,
                 "dead_cats": [
@@ -677,10 +1474,29 @@
                     "death": "m_c died in a rogue ambush while on a solo patrol."
                 },
                 "frequency": 4
+=======
+                "tags": [
+                    "some_lives"
+                ],
+                "frequency": 4,
+                "strings": [
+                    "p_l walks into an ambush by a group of rogues and is slaughtered."
+                ],
+                "exp_gained": 0,
+                "death": [
+                    {
+                        "cats": [
+                            "r_c0"
+                        ],
+                        "history": "m_c died in a rogue ambush while on a solo patrol."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "multi_bord_roguedis1",
         "biome": [
             "forest", "plains", "beach"
@@ -729,6 +1545,124 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+        "event_id": "multi_bord_roguedis1",
+        "types": [
+            "border"
+        ],
+        "frequency": 2,
+        "location": [
+            "forest",
+            "plains",
+            "beach"
+        ],
+        "tags": [
+            "disaster"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                3
+            ]
+        },
+        "chance_of_success": 40,
+        "patrol_art": "bord_general_intro",
+        "intro_text": "As the patrol is marking the border lines, a gang of rogues burst from the bushes! An ambush!",
+        "decline_text": "The patrol turns tail and races away! The borders are left open for the rogues to muddy.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "The patrol descends into battle without a second thought, eventually driving the rogues away."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+                        ],
+                        "mutual": true,
+                        "values": [
+                            "like"
+                        ],
+                        "amount": -50,
+                        "log": {
+                            "cats_from": "cat_from and cat_to got into a vicious fight when they encountered one another along the border."
+                        }
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 immediately leaps to protect {PRONOUN/s_c0/poss} Clanmates. {PRONOUN/s_c0/poss/CAP} ferocity in battle terrifies the rogues. Realizing that they've sorely underestimated the Clan cats, the rogues turn tail and run."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "skill": [
+                                "FIGHTER,3"
+                            ]
+                        }
+                    },
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -740,6 +1674,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -817,6 +1752,65 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+                "death": [
+                    {
+                        "cats": [
+                            "n_c2"
+                        ],
+                        "history": "This cat died while wandering.",
+                        "no_results": false
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 revels in the battle, leaping into the fray with {PRONOUN/s_c0/poss} teeth bared and claws unsheathed. The rogues are quickly driven away by the patrol."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "trait": [
+                                "bloodthirsty",
+                                "fierce",
+                                "vengeful"
+                            ]
+                        }
+                    },
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -829,10 +1823,17 @@
                     },
                     {
                         "cats_from": [
+<<<<<<< HEAD
                             "patrol"
                         ],
                         "cats_to": [
                             "s_c"
+=======
+                            "patrol_cats"
+                        ],
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -844,11 +1845,24 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
+=======
+                "death": [
+                    {
+                        "cats": [
+                            "n_c2"
+                        ],
+                        "history": "This cat died while wandering.",
+                        "no_results": false
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "The rogues greatly outnumber the patrol and have no trouble defeating them. The fallen warriors' bodies are recovered the next day, covered in battle wounds and cold.",
                 "exp": 0,
                 "new_cat": [
@@ -899,6 +1913,78 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+                "frequency": 4,
+                "strings": [
+                    "The rogues greatly outnumber the patrol and have no trouble defeating them. The fallen warriors' bodies are recovered the next day, covered in battle wounds and cold."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "death": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "history": "m_c was killed when rogues ambushed {PRONOUN/m_c/poss} patrol."
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "Taken by surprise, the patrol scatters and loses cohesion. The rogues are quick to take advantage of the confusion, and eventually the patrol retreats, r_c0 badly wounded."
+                ],
+                "involved_cats": {
+                    "r_c0": {},
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -910,6 +1996,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "injury": [
                     {
                         "cats": [
@@ -925,10 +2012,25 @@
                     "death": "m_c died of wounds sustained in a rogue ambush."
                 },
                 "frequency": 4
+=======
+                "condition": [
+                    {
+                        "cats": [
+                            "r_c0"
+                        ],
+                        "condition": [
+                            "battle_injury"
+                        ],
+                        "scar_history": "m_c was badly scarred when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                        "death_history": "m_c died of wounds sustained in a rogue ambush."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "mtn_bord_roguedis1",
         "biome": [
             "mountainous"
@@ -977,6 +2079,65 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+        "event_id": "mtn_bord_roguedis1",
+        "types": [
+            "border"
+        ],
+        "frequency": 2,
+        "location": [
+            "mountainous"
+        ],
+        "tags": [
+            "disaster"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                3
+            ]
+        },
+        "chance_of_success": 60,
+        "patrol_art": "bord_general_intro",
+        "intro_text": "As the patrol is marking the border lines, a gang of rogues leaps out from behind a tumble of rocks! An ambush!",
+        "decline_text": "The patrol turns tail and races away! The borders are left open for the rogues to muddy.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "The patrol descends into battle without a second thought, easily driving the rogues away as they use their knowledge of the rocky terrain to their advantage."
+                ],
+                "involved_cats": {
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 30,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -987,6 +2148,7 @@
                             "cats_from": "cat_from and cat_to got into a vicious fight when they encountered one another along the border."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -1020,6 +2182,55 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 immediately leaps to protect {PRONOUN/s_c0/poss} Clanmates. {PRONOUN/s_c0/poss/CAP} ferocity in battle terrifies the rogues. Realizing that they've sorely underestimated the Clan cats, the rogues turn tail and run."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "skill": [
+                                "FIGHTER,3"
+                            ]
+                        }
+                    },
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 30,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -1032,10 +2243,17 @@
                     },
                     {
                         "cats_from": [
+<<<<<<< HEAD
                             "patrol"
                         ],
                         "cats_to": [
                             "s_c"
+=======
+                            "patrol_cats"
+                        ],
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1047,6 +2265,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -1081,6 +2300,65 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+                "death": [
+                    {
+                        "cats": [
+                            "n_c2"
+                        ],
+                        "history": "This cat died while wandering.",
+                        "no_results": false
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 revels in the battle, leaping into the fray with {PRONOUN/s_c0/poss} teeth bared and claws unsheathed. The rogues are quickly driven away by the patrol."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "prior_abbreviation": [
+                            "any"
+                        ],
+                        "stat": {
+                            "trait": [
+                                "bloodthirsty",
+                                "fierce",
+                                "vengeful"
+                            ]
+                        }
+                    },
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 30,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -1093,10 +2371,17 @@
                     },
                     {
                         "cats_from": [
+<<<<<<< HEAD
                             "patrol"
                         ],
                         "cats_to": [
                             "s_c"
+=======
+                            "patrol_cats"
+                        ],
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1108,11 +2393,24 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
+=======
+                "death": [
+                    {
+                        "cats": [
+                            "n_c2"
+                        ],
+                        "history": "This cat died while wandering.",
+                        "no_results": false
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "The rogues greatly outnumber the patrol and have no trouble defeating them. The fallen warriors' bodies are recovered the next day, covered in battle wounds and cold.",
                 "exp": 0,
                 "dead_cats": [
@@ -1147,6 +2445,56 @@
                         ],
                         "cats_to": [
                             "patrol"
+=======
+                "frequency": 4,
+                "strings": [
+                    "The rogues greatly outnumber the patrol and have no trouble defeating them. The fallen warriors' bodies are recovered the next day, covered in battle wounds and cold."
+                ],
+                "exp_gained": 0,
+                "death": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "history": "m_c was killed when rogues ambushed {PRONOUN/m_c/poss} patrol."
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "Taken by surprise, the patrol scatters and loses cohesion. The rogues are quick to take advantage of the confusion, and eventually the patrol retreats, r_c0 badly wounded."
+                ],
+                "involved_cats": {
+                    "r_c0": {},
+                    "n_c0": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c1": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    },
+                    "n_c2": {
+                        "can_create_new_cat": {},
+                        "status": [
+                            "rogue"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_from": [
+                            "patrol_cats"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1160,12 +2508,21 @@
                     },
                     {
                         "cats_from": [
+<<<<<<< HEAD
                             "n_c:0",
                             "n_c:1",
                             "n_c:2"
                         ],
                         "cats_to": [
                             "patrol"
+=======
+                            "n_c0",
+                            "n_c1",
+                            "n_c2"
+                        ],
+                        "cats_to": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -1177,6 +2534,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "injury": [
                     {
                         "cats": [
@@ -1196,3 +2554,21 @@
         ]
     }
 ]
+=======
+                "condition": [
+                    {
+                        "cats": [
+                            "r_c0"
+                        ],
+                        "condition": [
+                            "battle_injury"
+                        ],
+                        "scar_history": "m_c was badly scarred when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                        "death_history": "m_c died of wounds sustained in a rogue ambush."
+                    }
+                ]
+            }
+        ]
+    }
+]
+>>>>>>> clangen-megamerge

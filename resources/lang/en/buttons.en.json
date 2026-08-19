@@ -7,6 +7,10 @@
         "quit": "quit",
         "event_edit": "event edit",
         "tortie_patch": "add tortie patch",
+<<<<<<< HEAD
+=======
+        "white_patch": "add white patch",
+>>>>>>> clangen-megamerge
         "bug_report": "report a bug!",
         "edit_deaths": "edit deaths",
         "edit_injuries": "edit injuries",

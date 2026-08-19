@@ -1,12 +1,22 @@
 [
     {
+<<<<<<< HEAD
         "patrol_id": "wtlnd_train_greenleaf_humidhot1",
         "biome": [
+=======
+        "event_id": "wtlnd_train_greenleaf_humidhot1",
+        "types": [
+            "training"
+        ],
+        "frequency": 3,
+        "location": [
+>>>>>>> clangen-megamerge
             "wetlands"
         ],
         "season": [
             "greenleaf"
         ],
+<<<<<<< HEAD
         "types": [
             "training"
         ],
@@ -17,20 +27,50 @@
         "min_cats": 4,
         "max_cats": 6,
         "min_max_status": {
+=======
+        "tags": [
+            "romance"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                4,
+                6
+            ],
+>>>>>>> clangen-megamerge
             "normal adult": [
                 2,
                 6
             ]
         },
+<<<<<<< HEAD
         "frequency": 3,
         "chance_of_success": 60,
         "relationship_constraint": [
             "-mates"
         ],
+=======
+        "relationship_constraint": [
+            {
+                "cats_from": [
+                    "p_l"
+                ],
+                "cats_to": [
+                    "patrol_cats"
+                ],
+                "mutual": false,
+                "constraints": [
+                    "-mates"
+                ]
+            }
+        ],
+        "chance_of_success": 60,
+        "patrol_art": "cat_sprites/gen_hunt_heat_WrWr",
+>>>>>>> clangen-megamerge
         "intro_text": "This heat is just oppressive. The patrol gives up on battle training. The humidity blankets the wetlands, thick, suffocating, sapping their strength as surely as a viper's bite.",
         "decline_text": "Time to go back home and wait it out.",
         "success_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "The patrol staggers towards the nearest pond and flops into it — not to hunt, solely for the cool water. r_c swipes water towards p_l and {PRONOUN/p_l/subject} {VERB/p_l/laugh/laughs}, welcoming it and returning the favour. There's nothing like swimming in greenleaf, and the patrol devolves into a splash-fight.",
                 "exp": 20,
                 "art": "cat_sprites/gen_train_soggykittyhappy_Wr",
@@ -41,6 +81,24 @@
                         ],
                         "cats_from": [
                             "patrol"
+=======
+                "frequency": 4,
+                "outcome_art": "cat_sprites/gen_train_soggykittyhappy_Wr",
+                "strings": [
+                    "The patrol staggers towards the nearest pond and flops into it — not to hunt, solely for the cool water. r_c0 swipes water towards p_l and {PRONOUN/p_l/subject} {VERB/p_l/laugh/laughs}, welcoming it and returning the favour. There's nothing like swimming in greenleaf, and the patrol devolves into a splash-fight."
+                ],
+                "involved_cats": {
+                    "r_c0": {}
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "patrol_cats"
+                        ],
+                        "cats_from": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -57,7 +115,11 @@
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -68,6 +130,7 @@
                             "cats_from": "cat_from and cat_to had a fun water fight after a dreadfully hot patrol."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -82,6 +145,27 @@
                         ],
                         "cats_from": [
                             "patrol"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "outcome_art": "cat_sprites/fst_train_NL_matesonadates_WrWr",
+                "strings": [
+                    "The patrol staggers towards the nearest pond and flops into it — not to hunt, solely for the cool water. r_c0 swipes water towards p_l and {PRONOUN/p_l/subject} {VERB/p_l/laugh/laughs}, welcoming it and returning the favour, batting back in splash-fight. The rest of the patrol fades away. The two of them are in their own little world."
+                ],
+                "involved_cats": {
+                    "r_c0": {}
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "patrol_cats"
+                        ],
+                        "cats_from": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -98,7 +182,11 @@
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -111,19 +199,33 @@
                             "cats_from": "cat_from and cat_to had a fun water fight after a dreadfully hot patrol."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
+=======
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "It's a long walk home, and not a pleasant one. They probably should have drunk more water before going out to train. Or not gone out at all.",
                 "exp": 0,
                 "injury": [
+=======
+                "frequency": 4,
+                "strings": [
+                    "It's a long walk home, and not a pleasant one. They probably should have drunk more water before going out to train. Or not gone out at all."
+                ],
+                "exp_gained": 0,
+                "condition": [
+>>>>>>> clangen-megamerge
                     {
                         "cats": [
                             "multi"
                         ],
+<<<<<<< HEAD
                         "injuries": [
                             "dehydrated"
                         ]
@@ -137,3 +239,15 @@
         ]
     }
 ]
+=======
+                        "condition": [
+                            "dehydrated"
+                        ],
+                        "death_history": "m_c got dehydrated training under the hot greenleaf sun, and it eventually sapped {PRONOUN/m_c/poss} life from {PRONOUN/m_c/object}."
+                    }
+                ]
+            }
+        ]
+    }
+]
+>>>>>>> clangen-megamerge

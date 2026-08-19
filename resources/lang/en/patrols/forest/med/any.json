@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "patrol_id": "fst_med_herblocation1",
         "biome": [
             "forest"
@@ -15,6 +16,21 @@
         "min_cats": 2,
         "max_cats": 2,
         "min_max_status": {
+=======
+        "event_id": "fst_med_herblocation1",
+        "types": [
+            "herb_gathering"
+        ],
+        "frequency": 4,
+        "location": [
+            "forest"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                2
+            ],
+>>>>>>> clangen-megamerge
             "medicine cat": [
                 1,
                 1
@@ -24,6 +40,7 @@
                 1
             ]
         },
+<<<<<<< HEAD
         "relationship_constraint": ["mentor/app"],
         "frequency": 4,
         "intro_text": "p_l looks at the calm, cloudless sky, and decides it's a good opportunity to show app1 where some of the most commonly needed herbs are located in their territory.",
@@ -37,12 +54,60 @@
                     "random_herbs"
                 ],
                 "relationships": [
+=======
+        "relationship_constraint": [
+            {
+                "cats_from": [
+                    "p_l"
+                ],
+                "cats_to": [
+                    "patrol_cats"
+                ],
+                "mutual": false,
+                "constraints": [
+                    "mentor/app"
+                ]
+            }
+        ],
+        "involved_cats": {
+            "r_c1": {
+                "status": [
+                    "apprentice",
+                    "medicine cat apprentice"
+                ]
+            }
+        },
+        "chance_of_success": 65,
+        "patrol_art": "med_general_intro",
+        "intro_text": "p_l looks at the calm, cloudless sky, and decides it's a good opportunity to show r_c1 where some of the most commonly needed herbs are located in their territory.",
+        "decline_text": "As {PRONOUN/p_l/subject} {VERB/p_l/look/looks} at r_c1's absent-minded gaze, {PRONOUN/p_l/subject} {VERB/p_l/hesitate/hesitates} and {VERB/p_l/change/changes} {PRONOUN/p_l/poss} mind. Maybe another day would be best, when r_c1 is more focused.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "r_c1 is focused and attentive, giving p_l confidence that next time there is an emergency, r_c1 will be able to find the herbs {PRONOUN/r_c1/subject} {VERB/r_c1/need/needs} without {PRONOUN/p_l/object} if needed."
+                ],
+                "involved_cats": {
+                    "r_c1": {
+                        "status": [
+                            "apprentice",
+                            "medicine cat apprentice"
+                        ]
+                    }
+                },
+                "exp_gained": 10,
+                "relationship_changes": [
+>>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "app1"
+=======
+                            "r_c1"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -56,6 +121,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -65,12 +131,40 @@
                     "random_herbs"
                 ],
                 "relationships": [
+=======
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "As p_l is explaining why and where the herbs are growing, r_c1 lets out a shout and bolts ahead. To p_l's surprise, {PRONOUN/r_c1/subject} {VERB/r_c1/have/has} found a previously unknown patch of an uncommon herb! Stunned, but filled with pride that {PRONOUN/r_c1/subject} found and recognized the herb, p_l promises {PRONOUN/r_c1/object} the first pick of fresh-kill as soon as they return to camp."
+                ],
+                "involved_cats": {
+                    "r_c1": {
+                        "status": [
+                            "apprentice",
+                            "medicine cat apprentice"
+                        ]
+                    }
+                },
+                "exp_gained": 10,
+                "relationship_changes": [
+>>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "app1"
+=======
+                            "r_c1"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -84,17 +178,46 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 1
+=======
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "app1 is constantly distracted, running ahead at every little noise or interesting sight, much to the frustration of p_l. Evidently, no new knowledge will be gained that day.",
                 "exp": 0,
                 "relationships": [
                     {
                         "cats_to": [
                             "app1"
+=======
+                "frequency": 4,
+                "strings": [
+                    "r_c1 is constantly distracted, running ahead at every little noise or interesting sight, much to the frustration of p_l. Evidently, no new knowledge will be gained that day."
+                ],
+                "involved_cats": {
+                    "r_c1": {
+                        "status": [
+                            "apprentice",
+                            "medicine cat apprentice"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "r_c1"
+>>>>>>> clangen-megamerge
                         ],
                         "cats_from": [
                             "p_l"
@@ -109,12 +232,17 @@
                             "cats_from": "Frustrated by cat_to's inattention, cat_from ended {PRONOUN/cat_from/poss} gathering lesson early."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
+=======
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "fst_med_herblocation2",
         "biome": [
             "forest"
@@ -154,17 +282,77 @@
                     "random_herbs"
                 ],
                 "frequency": 1
+=======
+        "event_id": "fst_med_herblocation2",
+        "types": [
+            "herb_gathering"
+        ],
+        "frequency": 4,
+        "location": [
+            "forest"
+        ],
+        "tags": [],
+        "required_cat_types": {
+            "patrol_cats": [
+                1,
+                1
+            ],
+            "medicine cat apprentice": [
+                1,
+                1
+            ]
+        },
+        "chance_of_success": 65,
+        "patrol_art": "cat_sprites/fst_med_herblocation2",
+        "intro_text": "p_l has been sent out into the forest to try to find specific herbs alone.",
+        "decline_text": "Nervous and scared of everything that even slightly moves, {PRONOUN/p_l/subject} {VERB/p_l/decide/decides} to go back to camp and try again another day. {PRONOUN/p_l/poss/CAP} mentor won't be very pleased, but {PRONOUN/p_l/subject} {VERB/p_l/rationalize/rationalizes} that it's better to go with confidence than nerves.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "strings": [
+                    "p_l is focused and determined to prove {PRONOUN/p_l/poss} independence. {PRONOUN/p_l/subject/CAP} {VERB/p_l/find/finds} the herbs easily, and {VERB/p_l/bring/brings} them back to the camp with {PRONOUN/p_l/poss} head held high, no sweat, no stress, no fuss."
+                ],
+                "exp_gained": 10,
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "p_l goes to a known herb patch — but the plant has died! {PRONOUN/p_l/subject/CAP} {VERB/p_l/don't/doesn't} give up, hunting around in the area until {PRONOUN/p_l/subject} {VERB/p_l/find/finds} a smaller overlooked bush that still has leaves on it."
+                ],
+                "exp_gained": 10,
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "p_l goes to a known herb patch — but the plant has died! {PRONOUN/p_l/subject/CAP} {VERB/p_l/give/gives} up and {VERB/p_l/return/returns} to camp, {PRONOUN/p_l/poss} tail dragging miserably along the ground.",
                 "exp": 0,
                 "frequency": 4
+=======
+                "frequency": 4,
+                "strings": [
+                    "p_l goes to a known herb patch — but the plant has died! {PRONOUN/p_l/subject/CAP} {VERB/p_l/give/gives} up and {VERB/p_l/return/returns} to camp, {PRONOUN/p_l/poss} tail dragging miserably along the ground."
+                ],
+                "exp_gained": 0
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "fst_med_stumble1",
         "biome": [
             "forest"
@@ -200,6 +388,65 @@
                     {
                         "cats_to": [
                             "r_c"
+=======
+        "event_id": "fst_med_stumble1",
+        "types": [
+            "herb_gathering"
+        ],
+        "frequency": 4,
+        "location": [
+            "forest"
+        ],
+        "tags": [
+            "romance"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                2
+            ],
+            "medicine cat": [
+                1,
+                1
+            ],
+            "normal adult": [
+                1,
+                1
+            ]
+        },
+        "involved_cats": {
+            "r_c0": {}
+        },
+        "relationship_constraint": [
+            {
+                "cats_to": [
+                    "patrol_cats"
+                ],
+                "cats_from": [
+                    "patrol_cats"
+                ],
+                "mutual": true,
+                "constraints": [
+                    "can_romance"
+                ]
+            }
+        ],
+        "chance_of_success": 60,
+        "patrol_art": "cat_sprites/fst_med_stumble_McWr",
+        "intro_text": "r_c0 trips over a tree root while helping p_l to collect herbs.",
+        "decline_text": "{PRONOUN/r_c0/subject/CAP} quickly {VERB/r_c0/pick/picks} {PRONOUN/r_c0/self} up and {VERB/r_c0/continue/continues} on.",
+        "success_outcomes": [
+            {
+                "frequency": 1,
+                "strings": [
+                    "Though p_l checks {PRONOUN/r_c0/object} over and doesn't find any injuries, r_c0 <i>insists</i> that {PRONOUN/r_c0/subject} {VERB/r_c0/need/needs} to lean on p_l's shoulder all the way back to camp. p_l complies, and r_c0 purrs the entire way home."
+                ],
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "cats_from": [
                             "p_l"
@@ -210,7 +457,11 @@
                         ],
                         "amount": 10,
                         "log": {
+<<<<<<< HEAD
                             "cats_from": "When r_c tripped on patrol, {PRONOUN/r_c/subject} insisted on leaning against p_l all the way back to camp."
+=======
+                            "cats_from": "When r_c0 tripped on patrol, {PRONOUN/r_c0/subject} insisted on leaning against p_l all the way back to camp."
+>>>>>>> clangen-megamerge
                         }
                     },
                     {
@@ -218,7 +469,11 @@
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -231,6 +486,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 1
             },
             {
@@ -249,12 +505,47 @@
                     "random_herbs"
                 ],
                 "relationships": [
+=======
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 swears {PRONOUN/s_c0/subject} didn't trip! {PRONOUN/s_c0/subject/CAP} {VERB/s_c0/were/was} just saying hello to the ground. With {PRONOUN/s_c0/poss} face."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "playful",
+                                "bold",
+                                "charismatic",
+                                "confident"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "r_c0"
+                        ]
+                    }
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+>>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "s_c"
+=======
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -263,22 +554,48 @@
                         ],
                         "amount": 10,
                         "log": {
+<<<<<<< HEAD
                             "cats_from": "When s_c tripped on patrol, {PRONOUN/s_c/subject} tried to play it off in front of p_l.",
                             "cats_to": "p_l was amused by how s_c played it off when {PRONOUN/s_c/subject} tripped over a root while on patrol."
                         }
                     }
                 ],
                 "frequency": 4
+=======
+                            "cats_from": "When s_c0 tripped on patrol, {PRONOUN/s_c0/subject} tried to play it off in front of p_l.",
+                            "cats_to": "p_l was amused by how s_c0 played it off when {PRONOUN/s_c0/subject} tripped over a root while on patrol."
+                        }
+                    }
+                ],
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "Thankfully, r_c is able to pick {PRONOUN/r_c/self} up, {PRONOUN/r_c/poss} only injuries being the ones to {PRONOUN/r_c/poss} pride. StarClan, did that <i>really</i> have to happen in front of p_l?",
                 "exp": 0,
                 "relationships": [
                     {
                         "cats_to": [
                             "r_c"
+=======
+                "frequency": 4,
+                "strings": [
+                    "Thankfully, r_c0 is able to pick {PRONOUN/r_c0/self} up, {PRONOUN/r_c0/poss} only injuries being the ones to {PRONOUN/r_c0/poss} pride. StarClan, did that <i>really</i> have to happen in front of p_l?"
+                ],
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "cats_from": [
                             "p_l"
@@ -297,7 +614,11 @@
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -308,6 +629,7 @@
                             "cats_from": "cat_from embarrassed {PRONOUN/cat_from/self} in front of cat_to by tripping on a root, and avoided {PRONOUN/cat_to/object} afterward."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -329,6 +651,37 @@
                         ],
                         "cats_from": [
                             "r_c"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 checks r_c0 over and, upon confirming that there are no injuries, tells {PRONOUN/r_c0/object} that {PRONOUN/r_c0/object}{VERB/r_c0/'re/'s} fine and to walk it off."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "cold",
+                                "grumpy",
+                                "strict"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "p_l"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+                        ],
+                        "cats_from": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -343,10 +696,17 @@
                     },
                     {
                         "cats_to": [
+<<<<<<< HEAD
                             "r_c"
                         ],
                         "cats_from": [
                             "s_c"
+=======
+                            "r_c0"
+                        ],
+                        "cats_from": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -357,6 +717,7 @@
                             "cats_from": "cat_from was unimpressed by how cat_to made a big deal out of tripping over a root."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -401,6 +762,52 @@
                         ],
                         "cats_from": [
                             "patrol"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "p_l checks r_c0 over and, while the other cat is not seriously injured, {PRONOUN/r_c0/subject}{VERB/r_c0/'re/'s} definitely a little more battered than {PRONOUN/r_c0/subject} {VERB/r_c0/were/was} when they set out."
+                ],
+                "exp_gained": 0,
+                "condition": [
+                    {
+                        "cats": [
+                            "r_c0"
+                        ],
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 sees r_c0 falling and rushes to help. However, before s_c0 can reach {PRONOUN/s_c0/poss} Clanmate, {PRONOUN/s_c0/subject} {VERB/s_c0/trip/trips} over the <i>same</i> tree root and {VERB/s_c0/end/ends} up joining r_c0 on the ground. Thankfully, neither cat is seriously injured and, after sharing a laugh over their shared misfortune, they decide to call it a day and head back to camp, leaning on each other the whole way home."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "oblivious"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "p_l"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "patrol_cats"
+                        ],
+                        "cats_from": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -413,6 +820,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -442,6 +850,45 @@
                         ],
                         "cats_from": [
                             "r_c"
+=======
+                "condition": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 can't help the <i>mrrp</i>s of laughter that escape {PRONOUN/s_c0/object} at the sight. Sweet StarClan, if only r_c0 could see {PRONOUN/r_c0/poss} own face! However, karma quickly comes for s_c0, who is so busy laughing at r_c's misfortune that {PRONOUN/s_c0/subject} completely {VERB/s_c0/miss/misses} and trips over the <i>other</i> tree root that just so happens to be directly in {PRONOUN/s_c0/poss} path. <i>Meowch!</i>"
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "childish",
+                                "playful"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "p_l"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+                        ],
+                        "cats_from": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -455,6 +902,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -475,10 +923,42 @@
                     "death": "m_c died from injuries sustained after tripping over a tree root."
                 },
                 "frequency": 1
+=======
+                "condition": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "r_c0 yowls out in pain, alerting p_l and causing {PRONOUN/p_l/object} to drop everything and rush over. The medicine cat tries to help {PRONOUN/p_l/poss} companion to stand, but it quickly becomes clear that that won't be happening. r_c0 will need to be carried back to camp."
+                ],
+                "exp_gained": 0,
+                "condition": [
+                    {
+                        "cats": [
+                            "r_c0"
+                        ],
+                        "condition": [
+                            "blunt_force_injury"
+                        ],
+                        "scar_history": "m_c was scarred after {PRONOUN/m_c/subject} tripped over a tree root.",
+                        "death_history": "m_c died from injuries sustained after tripping over a tree root."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "fst_med_stumble2",
         "biome": [
             "forest"
@@ -513,6 +993,61 @@
                     {
                         "cats_to": [
                             "r_c"
+=======
+        "event_id": "fst_med_stumble2",
+        "types": [
+            "herb_gathering"
+        ],
+        "frequency": 4,
+        "location": [
+            "forest"
+        ],
+        "tags": [
+            "romance"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                2
+            ],
+            "medicine cat": [
+                2,
+                2
+            ]
+        },
+        "involved_cats": {
+            "r_c0": {}
+        },
+        "relationship_constraint": [
+            {
+                "cats_to": [
+                    "patrol_cats"
+                ],
+                "cats_from": [
+                    "patrol_cats"
+                ],
+                "mutual": true,
+                "constraints": [
+                    "can_romance"
+                ]
+            }
+        ],
+        "chance_of_success": 60,
+        "patrol_art": "cat_sprites/fst_med_stumble_McMc",
+        "intro_text": "r_c0 trips over a tree root while out collecting herbs with p_l.",
+        "decline_text": "{PRONOUN/r_c0/subject/CAP} quickly {VERB/r_c0/pick/picks} {PRONOUN/r_c0/self} up and {VERB/r_c0/continue/continues} on.",
+        "success_outcomes": [
+            {
+                "frequency": 1,
+                "strings": [
+                    "Though p_l checks {PRONOUN/r_c0/object} over and doesn't find any injuries, r_c0 <i>insists</i> that {PRONOUN/r_c0/subject} {VERB/r_c0/need/needs} to lean on p_l's shoulder all the way back to camp. p_l complies, and r_c0 purrs the entire way home."
+                ],
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "cats_from": [
                             "p_l"
@@ -523,7 +1058,11 @@
                         ],
                         "amount": 10,
                         "log": {
+<<<<<<< HEAD
                             "cats_from": "When r_c tripped on patrol, {PRONOUN/r_c/subject} insisted on leaning against p_l all the way back to camp."
+=======
+                            "cats_from": "When r_c0 tripped on patrol, {PRONOUN/r_c0/subject} insisted on leaning against p_l all the way back to camp."
+>>>>>>> clangen-megamerge
                         }
                     },
                     {
@@ -531,7 +1070,11 @@
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -544,6 +1087,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 1
             },
             {
@@ -562,12 +1106,47 @@
                     "random_herbs"
                 ],
                 "relationships": [
+=======
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 swears {PRONOUN/s_c0/subject} didn't trip! {PRONOUN/s_c0/subject/CAP} {VERB/s_c0/were/was} just saying hello to the ground. With {PRONOUN/s_c0/poss} face."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "playful",
+                                "bold",
+                                "charismatic",
+                                "confident"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "r_c0"
+                        ]
+                    }
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+>>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "s_c"
+=======
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -576,22 +1155,48 @@
                         ],
                         "amount": 10,
                         "log": {
+<<<<<<< HEAD
                             "cats_from": "When s_c tripped on patrol, {PRONOUN/s_c/subject} tried to play it off in front of p_l.",
                             "cats_to": "p_l was amused by how s_c played it off when {PRONOUN/s_c/subject} tripped over a root while on patrol."
                         }
                     }
                 ],
                 "frequency": 4
+=======
+                            "cats_from": "When s_c0 tripped on patrol, {PRONOUN/s_c0/subject} tried to play it off in front of p_l.",
+                            "cats_to": "p_l was amused by how s_c0 played it off when {PRONOUN/s_c0/subject} tripped over a root while on patrol."
+                        }
+                    }
+                ],
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "Thankfully, r_c is able to pick {PRONOUN/r_c/self} up, {PRONOUN/r_c/poss} only injuries being the ones to {PRONOUN/r_c/poss} pride. StarClan, did that <i>really</i> have to happen in front of p_l?",
                 "exp": 0,
                 "relationships": [
                     {
                         "cats_to": [
                             "r_c"
+=======
+                "frequency": 4,
+                "strings": [
+                    "Thankfully, r_c0 is able to pick {PRONOUN/r_c0/self} up, {PRONOUN/r_c0/poss} only injuries being the ones to {PRONOUN/r_c0/poss} pride. StarClan, did that <i>really</i> have to happen in front of p_l?"
+                ],
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "cats_from": [
                             "p_l"
@@ -610,7 +1215,11 @@
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -621,6 +1230,7 @@
                             "cats_from": "cat_from embarrassed {PRONOUN/cat_from/self} in front of cat_to by tripping on a root, and avoided {PRONOUN/cat_to/object} afterward."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -642,6 +1252,37 @@
                         ],
                         "cats_from": [
                             "r_c"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 checks r_c0 over and, upon confirming that there are no injuries, tells {PRONOUN/r_c0/object} that {PRONOUN/r_c0/object}{VERB/r_c0/'re/'s} fine and to walk it off."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "cold",
+                                "grumpy",
+                                "strict"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "p_l"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+                        ],
+                        "cats_from": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -656,10 +1297,17 @@
                     },
                     {
                         "cats_to": [
+<<<<<<< HEAD
                             "r_c"
                         ],
                         "cats_from": [
                             "s_c"
+=======
+                            "r_c0"
+                        ],
+                        "cats_from": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -670,6 +1318,7 @@
                             "cats_from": "cat_from was unimpressed by how cat_to made a big deal out of tripping over a root."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -714,6 +1363,52 @@
                         ],
                         "cats_from": [
                             "patrol"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "p_l checks r_c0 over and, while the other medicine cat is not seriously injured, {PRONOUN/r_c0/subject}{VERB/r_c0/'re/'s} definitely a little more battered than {PRONOUN/r_c0/subject} {VERB/r_c0/were/was} when they set out."
+                ],
+                "exp_gained": 0,
+                "condition": [
+                    {
+                        "cats": [
+                            "r_c0"
+                        ],
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 sees r_c0 falling and rushes to help. However, before s_c0 can reach {PRONOUN/s_c0/poss} Clanmate, {PRONOUN/s_c0/subject} {VERB/s_c0/trip/trips} over the <i>same</i> tree root and {VERB/s_c0/end/ends} up joining r_c0 on the ground. Thankfully, neither cat is seriously injured and, after sharing a laugh over their joint misfortune, they decide to call it a day and head back to camp, leaning on each other the whole way home."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "oblivious"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "p_l"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "patrol_cats"
+                        ],
+                        "cats_from": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -726,6 +1421,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -755,6 +1451,45 @@
                         ],
                         "cats_from": [
                             "r_c"
+=======
+                "condition": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 can't help the <i>mrrp</i>s of laughter that escape {PRONOUN/s_c0/object} at the sight. Sweet StarClan, if only r_c0 could see {PRONOUN/r_c0/poss} own face! However, karma quickly comes for s_c0, who is so busy laughing at r_c's misfortune that {PRONOUN/s_c0/subject} completely {VERB/s_c0/miss/misses} and trips over the <i>other</i> tree root that just so happens to be directly in {PRONOUN/s_c0/poss} path. <i>Meowch!</i>"
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "childish",
+                                "playful"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "p_l"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+                        ],
+                        "cats_from": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -768,6 +1503,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -788,10 +1524,42 @@
                     "death": "m_c died from injuries sustained after tripping over a tree root."
                 },
                 "frequency": 1
+=======
+                "condition": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "r_c0 yowls out in pain, alerting p_l and causing {PRONOUN/p_l/object} to drop everything and rush over. p_l tries to help {PRONOUN/p_l/poss} fellow medicine cat to stand, but it quickly becomes clear that that won't be happening. r_c0 will need to be carried back to camp."
+                ],
+                "exp_gained": 0,
+                "condition": [
+                    {
+                        "cats": [
+                            "r_c0"
+                        ],
+                        "condition": [
+                            "blunt_force_injury"
+                        ],
+                        "scar_history": "m_c was scarred after {PRONOUN/m_c/subject} tripped over a tree root.",
+                        "death_history": "m_c died from injuries sustained after tripping over a tree root."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     },
     {
+<<<<<<< HEAD
         "patrol_id": "fst_med_stumble3",
         "biome": [
             "forest"
@@ -824,12 +1592,72 @@
                     "random_herbs"
                 ],
                 "relationships": [
+=======
+        "event_id": "fst_med_stumble3",
+        "types": [
+            "herb_gathering"
+        ],
+        "frequency": 4,
+        "location": [
+            "forest"
+        ],
+        "tags": [
+            "romance"
+        ],
+        "required_cat_types": {
+            "patrol_cats": [
+                2,
+                2
+            ],
+            "medicine cat": [
+                1,
+                1
+            ],
+            "normal adult": [
+                1,
+                1
+            ]
+        },
+        "involved_cats": {
+            "r_c0": {}
+        },
+        "relationship_constraint": [
+            {
+                "cats_to": [
+                    "patrol_cats"
+                ],
+                "cats_from": [
+                    "patrol_cats"
+                ],
+                "mutual": true,
+                "constraints": [
+                    "can_romance"
+                ]
+            }
+        ],
+        "chance_of_success": 60,
+        "patrol_art": "cat_sprites/fst_med_stumble_WrMc",
+        "intro_text": "p_l trips over a tree root while out collecting herbs with r_c0.",
+        "decline_text": "{PRONOUN/p_l/subject/CAP} quickly {VERB/p_l/pick/picks} {PRONOUN/p_l/self} up and {VERB/p_l/continue/continues} on.",
+        "success_outcomes": [
+            {
+                "frequency": 1,
+                "strings": [
+                    "Though p_l has no visible injuries, {PRONOUN/p_l/subject} <i>{VERB/p_l/insist/insists}</i> that {PRONOUN/p_l/subject} {VERB/p_l/need/needs} to lean on r_c's shoulder all the way back to camp. r_c0 complies, and p_l purrs the entire way home."
+                ],
+                "exp_gained": 20,
+                "relationship_changes": [
+>>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -837,6 +1665,7 @@
                         ],
                         "amount": 10,
                         "log": {
+<<<<<<< HEAD
                             "cats_from": "When p_l tripped on patrol, {PRONOUN/p_l/subject} insisted on leaning against r_c all the way back to camp."
                         }
                     }
@@ -865,6 +1694,47 @@
                         ],
                         "cats_from": [
                             "r_c"
+=======
+                            "cats_from": "When p_l tripped on patrol, {PRONOUN/p_l/subject} insisted on leaning against r_c0 all the way back to camp."
+                        }
+                    }
+                ],
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 swears {PRONOUN/s_c0/subject} didn't trip! {PRONOUN/s_c0/subject/CAP} {VERB/s_c0/were/was} just saying hello to the ground. With {PRONOUN/s_c0/poss} face."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "playful",
+                                "bold",
+                                "charismatic",
+                                "confident"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "p_l"
+                        ]
+                    }
+                },
+                "exp_gained": 20,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+                        ],
+                        "cats_from": [
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -873,25 +1743,52 @@
                         ],
                         "amount": 10,
                         "log": {
+<<<<<<< HEAD
                             "cats_from": "When s_c tripped on patrol, {PRONOUN/s_c/subject} tried to play it off in front of r_c.",
                             "cats_to": "r_c was amused by how s_c played it off when {PRONOUN/s_c/subject} tripped over a root while on patrol."
                         }
                     }
                 ],
                 "frequency": 4
+=======
+                            "cats_from": "When s_c0 tripped on patrol, {PRONOUN/s_c0/subject} tried to play it off in front of r_c0.",
+                            "cats_to": "r_c0 was amused by how s_c0 played it off when {PRONOUN/s_c0/subject} tripped over a root while on patrol."
+                        }
+                    }
+                ],
+                "supply": [
+                    {
+                        "type": "random_herbs",
+                        "adjust": "increase_medium"
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
+<<<<<<< HEAD
                 "text": "Thankfully, p_l doesn't fall far and is able to pick {PRONOUN/p_l/self} up, {PRONOUN/p_l/poss} only injuries being the ones to {PRONOUN/p_l/poss} pride. StarClan, did that <i>really</i> have to happen in front of r_c?",
                 "exp": 0,
                 "relationships": [
+=======
+                "frequency": 4,
+                "strings": [
+                    "Thankfully, p_l doesn't fall far and is able to pick {PRONOUN/p_l/self} up, {PRONOUN/p_l/poss} only injuries being the ones to {PRONOUN/p_l/poss} pride. StarClan, did that <i>really</i> have to happen in front of r_c?"
+                ],
+                "exp_gained": 0,
+                "relationship_changes": [
+>>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -904,7 +1801,11 @@
                     },
                     {
                         "cats_to": [
+<<<<<<< HEAD
                             "r_c"
+=======
+                            "r_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "cats_from": [
                             "p_l"
@@ -918,6 +1819,7 @@
                             "cats_from": "cat_from embarrassed {PRONOUN/cat_from/self} in front of cat_to by tripping on a root, and avoided {PRONOUN/cat_to/object} afterward."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -936,6 +1838,34 @@
                     {
                         "cats_to": [
                             "s_c"
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 may not be a medicine cat, but even <i>{PRONOUN/s_c0/subject}</i> can tell that p_l is fine. Already annoyed at having been woken up so early in the morning just to go pick herbs, s_c0 callously tells the medicine cat to get up and walk it off."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "cold",
+                                "grumpy",
+                                "strict"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "r_c0"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "cats_from": [
                             "p_l"
@@ -956,7 +1886,11 @@
                             "p_l"
                         ],
                         "cats_from": [
+<<<<<<< HEAD
                             "s_c"
+=======
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -967,6 +1901,7 @@
                             "cats_from": "cat_from was unimpressed by how cat_to made a big deal out of tripping over a root."
                         }
                     }
+<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -974,10 +1909,22 @@
                 "text": "r_c hurries over to help p_l and, while the medicine cat is not seriously injured, {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} definitely a little more battered than {PRONOUN/p_l/subject} {VERB/p_l/were/was} when they set out.",
                 "exp": 0,
                 "injury": [
+=======
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "r_c0 hurries over to help p_l and, while the medicine cat is not seriously injured, {PRONOUN/p_l/subject}{VERB/p_l/'re/'s} definitely a little more battered than {PRONOUN/p_l/subject} {VERB/p_l/were/was} when they set out."
+                ],
+                "exp_gained": 0,
+                "condition": [
+>>>>>>> clangen-megamerge
                     {
                         "cats": [
                             "p_l"
                         ],
+<<<<<<< HEAD
                         "injuries": [
                             "minor_injury"
                         ]
@@ -1011,6 +1958,39 @@
                         ],
                         "cats_from": [
                             "patrol"
+=======
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 sees p_l falling and rushes to help. However, before s_c0 can reach {PRONOUN/s_c0/poss} Clanmate, {PRONOUN/s_c0/subject} {VERB/s_c0/trip/trips} over the <i>same</i> tree root and {VERB/s_c0/end/ends} up joining p_l on the ground. Thankfully, neither cat is seriously injured and, after sharing a laugh over their shared misfortune, they decide to call it a day and head back to camp, leaning on each other the whole way home."
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "oblivious"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "r_c0"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "patrol_cats"
+                        ],
+                        "cats_from": [
+                            "patrol_cats"
+>>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1023,6 +2003,7 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -1049,6 +2030,42 @@
                     {
                         "cats_to": [
                             "s_c"
+=======
+                "condition": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 4,
+                "strings": [
+                    "s_c0 can't help the <i>mrrp</i>s of laughter that escape {PRONOUN/s_c0/object} at the sight. Sweet StarClan, if only p_l could see {PRONOUN/p_l/poss} own face! However, karma quickly comes for s_c0, who is so busy laughing at p_l's misfortune that {PRONOUN/s_c0/subject} completely {VERB/s_c0/miss/misses} and trips over the <i>other</i> tree root that just so happens to be directly in {PRONOUN/s_c0/poss} path. <i>Meowch!</i>"
+                ],
+                "involved_cats": {
+                    "s_c0": {
+                        "stat": {
+                            "trait": [
+                                "childish",
+                                "playful"
+                            ]
+                        },
+                        "prior_abbreviation": [
+                            "r_c0"
+                        ]
+                    }
+                },
+                "exp_gained": 0,
+                "relationship_changes": [
+                    {
+                        "cats_to": [
+                            "s_c0"
+>>>>>>> clangen-megamerge
                         ],
                         "cats_from": [
                             "p_l"
@@ -1065,16 +2082,38 @@
                         }
                     }
                 ],
+<<<<<<< HEAD
                 "frequency": 4
             },
             {
                 "text": "p_l yowls out in pain, alerting r_c and causing {PRONOUN/r_c/object} to drop everything and rush over. r_c tries to help the medicine cat to stand, but it quickly becomes clear that that won't be happening. p_l will need to be carried back to camp.",
                 "exp": 0,
                 "injury": [
+=======
+                "condition": [
+                    {
+                        "cats": [
+                            "patrol_cats"
+                        ],
+                        "condition": [
+                            "minor_injury"
+                        ]
+                    }
+                ]
+            },
+            {
+                "frequency": 1,
+                "strings": [
+                    "p_l yowls out in pain, alerting r_c0 and causing {PRONOUN/r_c0/object} to drop everything and rush over. r_c0 tries to help the medicine cat to stand, but it quickly becomes clear that that won't be happening. p_l will need to be carried back to camp."
+                ],
+                "exp_gained": 0,
+                "condition": [
+>>>>>>> clangen-megamerge
                     {
                         "cats": [
                             "p_l"
                         ],
+<<<<<<< HEAD
                         "injuries": [
                             "blunt_force_injury"
                         ]
@@ -1085,6 +2124,15 @@
                     "death": "m_c died from injuries sustained after tripping over a tree root."
                 },
                 "frequency": 1
+=======
+                        "condition": [
+                            "blunt_force_injury"
+                        ],
+                        "scar_history": "m_c was scarred after {PRONOUN/m_c/subject} tripped over a tree root.",
+                        "death_history": "m_c died from injuries sustained after tripping over a tree root."
+                    }
+                ]
+>>>>>>> clangen-megamerge
             }
         ]
     }

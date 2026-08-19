@@ -428,6 +428,7 @@
             "zero": "colorful belled nylon collar",
             "many": "colorful belled nylon collars",
             "one": "colorful belled nylon collar"
+<<<<<<< HEAD
         },
         "TEETH": {
             "zero": "dog teeth collar",
@@ -443,6 +444,8 @@
             "zero": "rainbow dog teeth collar",
             "many": "rainbow dog teeth collars",
             "one": "rainbow dog teeth collar"
+=======
+>>>>>>> clangen-megamerge
         }
     }
 }

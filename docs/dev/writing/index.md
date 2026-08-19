@@ -9,7 +9,11 @@ Thank you for your interest in contributing to the written content within ClanGe
 
     Guidelines and general knowledge that will help you in your ClanGen writing journey.
 
+<<<<<<< HEAD
 - __[PatrolEvent](patrols.md)__
+=======
+- __[PatrolEvent](patrols/patrols.md)__
+>>>>>>> clangen-megamerge
 
     ---
 
@@ -27,7 +31,11 @@ Thank you for your interest in contributing to the written content within ClanGe
 
     Guidelines on adding future event blocks to patrol and short events.
 
+<<<<<<< HEAD
 - __[Leader Den Events](patrols.md)__
+=======
+- __[Leader Den Events](patrols/patrols.md)__
+>>>>>>> clangen-megamerge
 
     ---
 
@@ -57,7 +65,11 @@ Thank you for your interest in contributing to the written content within ClanGe
 
     Interested on localizing ClanGen into a new language? This is the place to go.
 
+<<<<<<< HEAD
 - __[Advanced Documentation](patrols.md)__
+=======
+- __[Advanced Documentation](patrols/patrols.md)__
+>>>>>>> clangen-megamerge
 
     ---
 
