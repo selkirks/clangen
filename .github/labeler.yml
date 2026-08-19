@@ -3,18 +3,9 @@
     - any-glob-to-any-file: "**/*.py"
 "PR:writing":
   - changed-files:
-<<<<<<< HEAD
     - any-glob-to-any-file: "**/*.json"
 "PR:art":
   - changed-files:
     - any-glob-to-any-file: "**/*.png"
-=======
-    - any-glob-to-any-file: "resources/lang/**/*.json"
-"PR:art":
-  - changed-files:
-    - any-glob-to-any-file: 
-      - "**/*.png"
-      - "sprites/**/*.json"
->>>>>>> clangen-megamerge
 "target:stable":
   - base-branch: "^release"

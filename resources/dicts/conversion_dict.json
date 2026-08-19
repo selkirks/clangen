@@ -201,7 +201,6 @@
         "PURPLENYLON": "NYLON_BELL_purple",
         "MULTINYLON": "NYLON_BELL_rose",
         "INDIGONYLON": "NYLON_BELL_indigo",
-<<<<<<< HEAD
         "RAINBOWNYLON": "NYLON_BELL_GRADIENT_rainbow",
         "CRIMSONTEETHCOLLAR": "TEETH_crimson",
         "BLUETEETHCOLLAR": "TEETH_blue",
@@ -218,8 +217,5 @@
         "INDIGOTEETHCOLLAR": "TEETH_indigo",
         "SPIKESTEETHCOLLAR": "TEETH_SPIKE_black_gold",
         "RAINBOWTEETHCOLLAR": "TEETH_GRADIENT_rainbow"
-=======
-        "RAINBOWNYLON": "NYLON_BELL_GRADIENT_rainbow"
->>>>>>> clangen-megamerge
     }
 }

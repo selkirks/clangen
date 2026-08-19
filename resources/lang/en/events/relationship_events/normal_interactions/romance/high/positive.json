@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "rom_inc_high1",
-=======
-        "event_id": "rom_inc_high1",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c is spending a lot of time with r_c.",
             "m_c enjoys the time with r_c and feels secure.",
@@ -38,11 +34,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high2",
-=======
-        "event_id": "rom_inc_high2",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c gave a pretty flower {PRONOUN/m_c/subject} found to r_c.",
             "m_c picks some fragrant flowers for r_c.",
@@ -68,11 +60,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high3",
-=======
-        "event_id": "rom_inc_high3",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c is rolling around a little too playfully with r_c...",
             "m_c could spend hours listening to r_c's voice.",
@@ -111,11 +99,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high4",
-=======
-        "event_id": "rom_inc_high4",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c was caught enjoying a moonlit stroll with r_c last night...",
             "m_c sneaks out at night to sleep in r_c's nest.",
@@ -158,11 +142,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high5",
-=======
-        "event_id": "rom_inc_high5",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c purrs for a long time at one of r_c's lame jokes.",
             "m_c can't stop gushing over r_c."
@@ -200,11 +180,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high6",
-=======
-        "event_id": "rom_inc_high6",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c takes r_c out to look at the stars, explaining the constellations to {PRONOUN/r_c/object}.",
             "m_c tells r_c romantic stories of old."
@@ -237,11 +213,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_warrior7",
-=======
-        "event_id": "rom_inc_high_warrior7",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c came back to camp sulking after failing to catch r_c's favorite prey for {PRONOUN/r_c/object} but {PRONOUN/r_c/subject} {VERB/r_c/doesn't/didn't} seem to care, nuzzling into m_c's neck.",
             "m_c goes out of {PRONOUN/m_c/poss} way to catch r_c's favorite prey.",
@@ -298,11 +270,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraittroublesome",
-=======
-        "event_id": "rom_inc_high_matetraittroublesome",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c finds r_c's attitude exciting.",
             "m_c wonders what kinds of trouble {PRONOUN/m_c/subject} and r_c could get into together.",
@@ -318,11 +286,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitlonesome",
-=======
-        "event_id": "rom_inc_high_matetraitlonesome",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c thinks r_c's still waters must run deep.",
             "m_c wants to know what's going on in r_c's head.",
@@ -338,11 +302,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitfierce",
-=======
-        "event_id": "rom_inc_high_matetraitfierce",
->>>>>>> clangen-megamerge
         "strings": [
             "r_c's passion for everything excites m_c.",
             "m_c thinks r_c would defend {PRONOUN/m_c/object} with {PRONOUN/r_c/poss} life.",
@@ -358,11 +318,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitbloodthirsty",
-=======
-        "event_id": "rom_inc_high_matetraitbloodthirsty",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c thinks nothing bad would ever happen to {PRONOUN/m_c/object} with a cat like r_c in {PRONOUN/m_c/poss} corner.",
             "m_c finds r_c's intimidating aura thrilling.",
@@ -378,11 +334,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitcold",
-=======
-        "event_id": "rom_inc_high_matetraitcold",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c is flustered by r_c's cool and unflappable attitude.",
             "m_c admires how nothing seems to faze r_c.",
@@ -398,11 +350,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitplayful",
-=======
-        "event_id": "rom_inc_high_matetraitplayful",
->>>>>>> clangen-megamerge
         "strings": [
             "r_c helps m_c lighten up and enjoy life more.",
             "m_c always purrs with laughter around r_c.",
@@ -418,11 +366,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitcharismatic",
-=======
-        "event_id": "rom_inc_high_matetraitcharismatic",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c falls prey to r_c's charming personality.",
             "r_c is easy to like, almost infuriatingly so. m_c is peeved to realize {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not immune.",
@@ -438,11 +382,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitbolddaring",
-=======
-        "event_id": "rom_inc_high_matetraitbolddaring",
->>>>>>> clangen-megamerge
         "strings": [
             "r_c's reckless courage leaves m_c breathless.",
             "m_c is tired of cats who are all talk and no action, which is why r_c is so thrilling.",
@@ -458,11 +398,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitnervous",
-=======
-        "event_id": "rom_inc_high_matetraitnervous",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c wants to reassure r_c that {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} doing a great job.",
             "m_c finds r_c's anxious behavior endearing.",
@@ -478,11 +414,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitinsecure",
-=======
-        "event_id": "rom_inc_high_matetraitinsecure",
->>>>>>> clangen-megamerge
         "strings": [
             "The way r_c worries over other cats' feelings charms m_c.",
             "m_c wants to see r_c blossom and grow as a cat.",
@@ -498,11 +430,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rom_inc_high_matetraitrighteous",
-=======
-        "event_id": "rom_inc_high_matetraitrighteous",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c finds r_c's strength of belief inspiring and attractive.",
             "m_c appreciates that r_c can lay down the law.",

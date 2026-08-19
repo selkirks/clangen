@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "trust_inc_med1",
-=======
-        "event_id": "trust_inc_med1",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c thinks about how r_c is always reliable.",
             "m_c notices how r_c is being helpful around camp.",
@@ -18,11 +14,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_inc_med2",
-=======
-        "event_id": "trust_inc_med2",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c comes up with a plan to sneak out of camp with r_c.",
             "r_c doesn't entertain a rumor that is being spread about m_c.",
@@ -49,11 +41,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_inc_medpat",
-=======
-        "event_id": "trust_inc_medpat",
->>>>>>> clangen-megamerge
         "strings": [
             "Something embarrassing happens to m_c on a patrol, but r_c promises not to tell anyone.",
             "m_c lets r_c bring back fresh-kill {PRONOUN/m_c/subject} caught on a patrol.",
@@ -97,11 +85,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_inc_med3",
-=======
-        "event_id": "trust_inc_med3",
->>>>>>> clangen-megamerge
         "strings": [
             "r_c is telling m_c in great detail how {PRONOUN/r_c/subject} would protect {PRONOUN/m_c/object} from any danger.",
             "r_c gets riled up on m_c's behalf during a debate.",
@@ -118,11 +102,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "trust_inc_med4",
-=======
-        "event_id": "trust_inc_med4",
->>>>>>> clangen-megamerge
         "strings": [
             "r_c is building up m_c's confidence.",
             "r_c promises m_c that everything will be okay."
@@ -138,11 +118,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "trust_inc_med5",
-=======
-        "event_id": "trust_inc_med5",
->>>>>>> clangen-megamerge
         "strings": [
             "r_c let m_c lean on {PRONOUN/r_c/poss} shoulder after a recent injury.",
             "r_c skips eating a meal so m_c can have food.",
@@ -162,11 +138,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "trust_de_med3",
-=======
-        "event_id": "trust_de_med3",
->>>>>>> clangen-megamerge
         "strings": [
             "r_c is teaching m_c how to walk without making a sound.",
             "r_c is showing m_c how to sneak up on {PRONOUN/m_c/poss} enemies.",
@@ -184,11 +156,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "trust_de_med3",
-=======
-        "event_id": "trust_de_med3",
->>>>>>> clangen-megamerge
         "strings": [
             "r_c is giving m_c advice.",
             "r_c is teaching m_c something important."
@@ -204,11 +172,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "trust_adult_inc_med1",
-=======
-        "event_id": "trust_adult_inc_med1",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c is giving advice to r_c.",
             "m_c asks r_c to show off {PRONOUN/r_c/poss} skills.",
@@ -252,11 +216,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_adult_inc_med2",
-=======
-        "event_id": "trust_adult_inc_med2",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c goes to r_c to ask for {PRONOUN/r_c/poss} wisdom.",
             "m_c is faced with a tough decision and wonders what r_c would do.",
@@ -295,11 +255,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_kit_parent_inc_med",
-=======
-        "event_id": "trust_kit_parent_inc_med",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c always listens to r_c's advice.",
             "m_c knows r_c won't judge {PRONOUN/m_c/object}.",
@@ -331,11 +287,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_inc_highpat",
-=======
-        "event_id": "trust_inc_highpat",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c and r_c watch one another's back on a patrol.",
             "m_c protects r_c from something on a patrol.",
@@ -376,11 +328,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_led_inc_high1",
-=======
-        "event_id": "trust_led_inc_high1",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c talks with r_c about difficult decisions."
         ],
@@ -429,11 +377,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_led_inc_high2",
-=======
-        "event_id": "trust_led_inc_high2",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c makes battle plans with r_c.",
             "m_c discusses future plans for the Clan with r_c.",
@@ -484,11 +428,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_med_inc_high1",
-=======
-        "event_id": "trust_med_inc_high1",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c tells r_c a trick about a certain herb.",
             "m_c shows r_c how to make an herb taste better.",
@@ -529,11 +469,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "trust_med_inc_high2",
-=======
-        "event_id": "trust_med_inc_high2",
->>>>>>> clangen-megamerge
         "strings": [
             "m_c observes r_c carefully attending to any cat that needs help.",
             "m_c feels like {PRONOUN/m_c/subject} can count on r_c to give {PRONOUN/m_c/object} the best treatment possible."

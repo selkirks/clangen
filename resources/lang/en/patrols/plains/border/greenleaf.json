@@ -1,22 +1,12 @@
 [
     {
-<<<<<<< HEAD
         "patrol_id": "pln_bord_shortswim1",
         "biome": [
-=======
-        "event_id": "pln_bord_shortswim1",
-        "types": [
-            "border"
-        ],
-        "frequency": 3,
-        "location": [
->>>>>>> clangen-megamerge
             "plains"
         ],
         "season": [
             "greenleaf"
         ],
-<<<<<<< HEAD
         "types": [
             "border"
         ],
@@ -64,55 +54,10 @@
                     "SWIMMER,1"
                 ],
                 "frequency": 4
-=======
-        "required_cat_types": {
-            "patrol_cats": [
-                1,
-                1
-            ],
-            "normal adult": [
-                1,
-                1
-            ],
-            "apprentice": [
-                -1,
-                -1
-            ]
-        },
-        "chance_of_success": 50,
-        "patrol_art": "backgrounds/pln_shortswim",
-        "intro_text": "p_l looks at the small watering hole {PRONOUN/p_l/subject} {VERB/p_l/pass/passes} by on the way to mark the border and {VERB/p_l/debate/debates} if {PRONOUN/p_l/subject} should stop for a quick swim to cool off.",
-        "decline_text": "p_l decides to continue with the patrol instead.",
-        "success_outcomes": [
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_train_soggykittyhappy_Wr",
-                "strings": [
-                    "{PRONOUN/p_l/subject/CAP} {VERB/p_l/stop/stops} to swim for a few moments and {VERB/p_l/feel/feels} rejuvenated, cooled, and ready to continue."
-                ],
-                "exp_gained": 5
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_train_soggykittyhappy_Wr",
-                "strings": [
-                    "{PRONOUN/p_l/subject/CAP} {VERB/p_l/stick/sticks} to {PRONOUN/p_l/poss} task, although p_l wades through the watering hole as {PRONOUN/p_l/subject} {VERB/p_l/do/does}. The water cools {PRONOUN/p_l/poss} paws pleasantly."
-                ],
-                "exp_gained": 5
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_train_soggykittyhappy_Wr",
-                "strings": [
-                    "p_l swims right through the watering hole and out the other side, stopping to shake {PRONOUN/p_l/poss} coat dry(ish). A pleasant way of getting from A to B, and a nice chance to feel the weightlessness of swimming."
-                ],
-                "exp_gained": 5
->>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
-<<<<<<< HEAD
                 "text": "{PRONOUN/r_c/subject/CAP} get distracted while splashing in the water. r_c swears {PRONOUN/r_c/subject} saw a fish, but it derails {PRONOUN/r_c/poss} border patrol completely, and {PRONOUN/r_c/subject} {VERB/r_c/get/gets} nothing done.",
                 "exp": 0,
                 "art": "cat_sprites/gen_train_soggykittymad_Wr",
@@ -122,25 +67,6 @@
                         "cats_from": ["some_clan"],
                         "cats_to": ["r_c"],
                         "values": ["respect"],
-=======
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_train_soggykittymad_Wr",
-                "strings": [
-                    "{PRONOUN/p_l/subject/CAP} get distracted while splashing in the water. p_l swears {PRONOUN/p_l/subject} saw a fish, but it derails {PRONOUN/p_l/poss} border patrol completely, and {PRONOUN/p_l/subject} {VERB/p_l/get/gets} nothing done."
-                ],
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_from": [
-                            "some_clan"
-                        ],
-                        "cats_to": [
-                            "r_c0"
-                        ],
-                        "values": [
-                            "respect"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "amount": -5,
                         "log": {
@@ -152,23 +78,13 @@
         ]
     },
     {
-<<<<<<< HEAD
         "patrol_id": "pln_bord_greenleaf_longdistancemarking_group1",
         "biome": [
-=======
-        "event_id": "pln_bord_greenleaf_longdistancemarking_group1",
-        "types": [
-            "border"
-        ],
-        "frequency": 1,
-        "location": [
->>>>>>> clangen-megamerge
             "plains"
         ],
         "season": [
             "greenleaf"
         ],
-<<<<<<< HEAD
         "types": [
             "border"
         ],
@@ -190,34 +106,6 @@
                     {
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-        "required_cat_types": {
-            "patrol_cats": [
-                2,
-                6
-            ]
-        },
-        "chance_of_success": 40,
-        "patrol_art": "cat_sprites/gen_meadow_WrWr",
-        "intro_text": "Here on the plains, the reaches of c_n's territory is vast, particularly in the direction p_l and {PRONOUN/p_l/poss} patrol are heading, where there is endless grass but no permanent water sources. The greenleaf sun beats down strongly.",
-        "decline_text": "The patrol is interrupted by a hunting patrol that needs help carrying prey back to camp — border marking will wait til later.",
-        "success_outcomes": [
-            {
-                "frequency": 1,
-                "outcome_art": "cat_sprites/gen_train_talking_WrWr",
-                "strings": [
-                    "The grass has gone to seed in this area. p_l makes a note to share the knowledge back at camp — there'll be good hunting here, even if it's a trek to come out so far. c_n will need to send out another patrol to finish the task, there's still more ground to cover here."
-                ],
-                "exp_gained": 30,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -227,7 +115,6 @@
                             "cats_from": "cat_from and cat_to scouted good hunting grounds on patrol together."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 1
             },
@@ -245,37 +132,6 @@
                     {
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_hunt_funrun_WrWr",
-                "strings": [
-                    "s_c0 isn't just talented at running fast — on the plains, you also need to cover lots of ground too, and {PRONOUN/s_c0/subject} {VERB/s_c0/share/shares} {PRONOUN/s_c0/poss} tips for endurance. The other cats purr gratitude at the end of the day. Everyone's exhausted, but they made it the entire length of that far off border thanks to s_c0."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "RUNNER,2"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 40,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect"
@@ -286,17 +142,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -306,7 +153,6 @@
                             "cats_from": "cat_from and cat_to made the long trek to the outer plains while on patrol together."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -325,40 +171,6 @@
                     {
                         "cats_to": ["s_c"],
                         "cats_from": ["r_c"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_hunt_heat_WrWr",
-                "strings": [
-                    "s_c0 notices r_c0 beginning to pant as {PRONOUN/r_c0/subject} {VERB/r_c0/trudge/trudges} under the hot sun. {PRONOUN/s_c0/subject/CAP} {VERB/s_c0/take/takes} the next opportunity to herd the patrol under the shade of a rock with a scrappy bush clinging to it. There's no reason to risk heat stroke here."
-                ],
-                "involved_cats": {
-                    "r_c0": {},
-                    "s_c0": {
-                        "stat": {
-                            "skill": [
-                                "SENSE,1",
-                                "INSIGHTFUL,1"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "-p_l",
-                            "-r_c0"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "r_c0"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -369,17 +181,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -389,7 +192,6 @@
                             "cats_from": "cat_from and cat_to made the long trek to the outer plains while on patrol together."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -411,43 +213,6 @@
                     {
                         "cats_to": ["s_c"],
                         "cats_from": ["r_c"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_hunt_heat_WrWr",
-                "strings": [
-                    "s_c0 notices r_c0 beginning to pant as {PRONOUN/r_c0/subject} {VERB/r_c0/trudge/trudges} under the hot sun. {PRONOUN/s_c0/subject/CAP} take the next opportunity to herd the patrol under the shade of a rock with a scrappy bush clinging to it. There's no reason to risk heat stroke here."
-                ],
-                "involved_cats": {
-                    "r_c0": {},
-                    "s_c0": {
-                        "stat": {
-                            "trait": [
-                                "responsible",
-                                "compassionate",
-                                "thoughtful",
-                                "careful",
-                                "wise"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "-p_l",
-                            "-r_c0"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "r_c0"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -458,17 +223,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -478,17 +234,12 @@
                             "cats_from": "cat_from and cat_to made the long trek to the outer plains while on patrol together."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
-=======
-                ]
->>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
-<<<<<<< HEAD
                 "text": "They trek, and they wander, and they amble, and they pad. But as the sun creeps over the sky, before they reach the far border itself, p_l spots r_c limping. It's nothing, {PRONOUN/r_c/subject} {VERB/r_c/say/says}, just slept on the leg wrong. But far from camp isn't the right place to be limping, and p_l calls the patrol off.",
                 "exp": 0,
                 "art": "cat_sprites/gen_hunt_heat_WrWr",
@@ -505,25 +256,6 @@
                     {
                         "cats_to": ["p_l"],
                         "cats_from": ["r_c"],
-=======
-                "frequency": 3,
-                "outcome_art": "cat_sprites/gen_hunt_heat_WrWr",
-                "strings": [
-                    "They trek, and they wander, and they amble, and they pad. But as the sun creeps over the sky, before they reach the far border itself, p_l spots r_c0 limping. It's nothing, {PRONOUN/r_c0/subject} {VERB/r_c0/say/says}, just slept on the leg wrong. But far from camp isn't the right place to be limping, and p_l calls the patrol off."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "p_l"
-                        ],
-                        "cats_from": [
-                            "r_c0"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": true,
                         "values": [
                             "trust",
@@ -535,7 +267,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 3
             },
             {
@@ -586,68 +317,6 @@
                         "cats_to": ["p_l"],
                         "cats_from": [
                             "clan", "high_aggress"
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "condition": [
-                            "sprain",
-                            "sore"
-                        ]
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_running_WrWr",
-                "strings": [
-                    "Before they reach the far border itself, p_l spots s_c0 limping. It's nothing, {PRONOUN/s_c0/subject} {VERB/s_c0/say/says}, and refuses to stop. But in these far reaches, in territory not commonly checked, other predators intrude. When a young, inexperienced cougar charges the patrol, s_c0 <i>should</i> have been able to run fast enough to escape. <i>Should.</i>"
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "stat": {
-                            "trait": [
-                                "troublesome",
-                                "fierce",
-                                "confident",
-                                "arrogant",
-                                "competitive",
-                                "rebellious"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "-p_l"
-                        ]
-                    }
-                },
-                "exp_gained": 0,
-                "death": [
-                    {
-                        "cats": [
-                            "s_c0"
-                        ],
-                        "history": "This cat was killed by a young, inexperienced cougar after continuing to patrol the far border while injured."
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_hunt_heat_WrWr",
-                "strings": [
-                    "p_l really pushes them to be able to patrol all the far border in a single patrol. They make it and are congratulated on the achievement when they come back into camp after dark, panting, but everyone who went out under the hot sun is more tired than they should be, and some have clearly gotten heat stroke."
-                ],
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "p_l"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_aggress"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -659,19 +328,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["p_l"],
                         "cats_from": [
                             "clan", "high_social", "low_aggress"
-=======
-                        "cats_to": [
-                            "p_l"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_social",
-                            "low_aggress"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -683,17 +342,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["p_l"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "p_l"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "comfort",
@@ -705,7 +355,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -719,22 +368,10 @@
                     "HEALER,0"
                 ],
                 "injury": [
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "patrol_cats"
-                        ],
-                        "condition": [
-                            "dehydrated"
-                        ]
-                    },
->>>>>>> clangen-megamerge
                     {
                         "cats": [
                             "multi"
                         ],
-<<<<<<< HEAD
                         "injuries": [
                             "dehydrated"
                         ]
@@ -745,42 +382,6 @@
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "clan", "high_social"
-=======
-                        "condition": [
-                            "heat stroke"
-                        ]
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_hunt_heat_WrWr",
-                "strings": [
-                    "p_l really pushes them to be able to patrol all the far border in a single patrol. But s_c0 brings everything to a halt, spotting that some of the patrol are beginning to feel the effects of the heat, and insisting they return home. It saves anyone else from being injured by the heat."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "stat": {
-                            "skill": [
-                                "HEALER,0"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "-p_l",
-                            "-r_c0"
-                        ]
-                    }
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_social"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -792,19 +393,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["p_l"],
                         "cats_from": [
                             "clan", "low_social", "high_aggress"
-=======
-                        "cats_to": [
-                            "p_l"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "low_social",
-                            "high_aggress"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -816,17 +407,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["p_l"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "p_l"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "comfort",
@@ -838,17 +420,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust",
@@ -860,41 +433,18 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "multi"
-                        ],
-                        "condition": [
-                            "dehydrated"
-                        ]
-                    }
-                ]
->>>>>>> clangen-megamerge
             }
         ]
     },
     {
-<<<<<<< HEAD
         "patrol_id": "pln_bord_greenleaf_coyote_small_patrol1",
         "biome": [
-=======
-        "event_id": "pln_bord_greenleaf_coyote_small_patrol1",
-        "types": [
-            "border"
-        ],
-        "frequency": 2,
-        "location": [
->>>>>>> clangen-megamerge
             "plains"
         ],
         "season": [
             "greenleaf"
         ],
-<<<<<<< HEAD
         "types": [
             "border"
         ],
@@ -917,34 +467,6 @@
                         "cats_to": ["patrol"],
                         "cats_from": [
                             "clan", "high_aggress"
-=======
-        "required_cat_types": {
-            "patrol_cats": [
-                2,
-                4
-            ]
-        },
-        "chance_of_success": 30,
-        "patrol_art": "cat_sprites/gen_bord_dogscent_Wr",
-        "intro_text": "Padding along the border, the cats find fresh coyote scat, steaming in the greenleaf heat. There's a yip in the distance.",
-        "decline_text": "The patrol decides not to pursue such a dangerous creature, especially seeing as it hasn't crossed the border.",
-        "success_outcomes": [
-            {
-                "frequency": 4,
-                "outcome_art": "animals/animals/gen_coyote",
-                "strings": [
-                    "That yip seemed a little high-pitched. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts, more play than true intent, and half the weight of an adult. Dangerous, but... manageable. The patrol leaves the area quickly afterwards, before the pup's parents realize it's missing."
-                ],
-                "exp_gained": 60,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_aggress"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -957,17 +479,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -977,7 +490,6 @@
                             "cats_from": "cat_from and cat_to worked together to kill a coyote pup on patrol."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -990,25 +502,6 @@
                         "cats_to": ["patrol"],
                         "cats_from": [
                             "clan", "high_lawful"
-=======
-                ]
-            },
-            {
-                "frequency": 2,
-                "outcome_art": "cat_sprites/gen_running_WrWr",
-                "strings": [
-                    "The patrol shadows the coyote, sending a message back to warn camp. It's an exhausting and stressful day, but by the time night falls they've confirmed that the coyote is leaving the local area, and the patrol has assured c_n's safety."
-                ],
-                "exp_gained": 30,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_lawful"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1020,7 +513,6 @@
                             "cats_from": "cat_from appreciated how cat_to's patrol shadowed a coyote to track its movements and keep c_n safe."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 2
             },
@@ -1033,25 +525,6 @@
                         "cats_to": ["patrol"],
                         "cats_from": [
                             "clan", "high_lawful"
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "animals/animals/gen_coyotedanger",
-                "strings": [
-                    "There's a lone oak near here. p_l darts towards it with the patrol, scrambling up. Not a moment too soon — from their perch in the oak, the patrol hears the scrabbling of paws and a yip of frustration. That confirms the coyote exists and is interested in cat meat. They wait for the predator to give up, so they can go warn c_n."
-                ],
-                "exp_gained": 40,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_lawful"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1060,23 +533,11 @@
                         "amount": 10,
                         "log": {
                             "cats_from": "cat_from appreciated cat_to warning the Clan about a coyote."
-<<<<<<< HEAD
                         } 
                     },
                     {
                         "cats_to": ["p_l"],
                         "cats_from": ["patrol"],
-=======
-                        }
-                    },
-                    {
-                        "cats_to": [
-                            "p_l"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect",
@@ -1087,7 +548,6 @@
                             "cats_from": "cat_from gained respect for cat_to when {PRONOUN/cat_to/subject} thought fast and led the patrol up a tree to escape a coyote."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -1098,22 +558,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 2,
-                "outcome_art": "cat_sprites/gen_running_WrWr",
-                "strings": [
-                    "The patrol gathers their courage and valiantly tries to lead away the coyote. With such a small group of cats, they can only lead it a short distance, but it's better than nothing."
-                ],
-                "exp_gained": 30,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "some_clan"
                         ],
@@ -1126,7 +570,6 @@
                             "cats_from": "cat_from heard about how cat_to's small patrol led a coyote away from the camp."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 2
             },
@@ -1143,34 +586,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "s_c0 sets up a careful ambush ahead of the coyote, and the surprising, darting attack bloodies the coyote's flank, dissuading it from heading further into c_n territory."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "FIGHTER,3"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 30,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "some_clan"
                         ],
@@ -1184,17 +599,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect",
@@ -1205,7 +611,6 @@
                             "cats_from": "cat_to ambushed a coyote on patrol and led cat_from in an effort to drive it off the territory."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -1223,37 +628,6 @@
                     {
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "animals/animals/gen_coyotedanger",
-                "strings": [
-                    "With the border here so flat, there's no trees to climb to escape. But s_c0 thinks of everything; they go to a well-known burrow that the apprentices play in all the time. It's not a moment too soon. The coyote wanders straight past the entrance as it hunts for field mice, the cats within crouched and silent."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "CLEVER,2"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 50,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect",
@@ -1264,7 +638,6 @@
                             "cats_from": "cat_to saved cat_from from a coyote by finding a burrow for the patrol to hide in."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -1284,38 +657,6 @@
                         "cats_to": ["patrol"],
                         "cats_from": [
                             "clan", "high_lawful"
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_running_WrWr",
-                "strings": [
-                    "That isn't just the sound of a coyote, that's the sound of a <i>frightened</i> coyote, s_c0 hisses. It's not good, it means there's something even worse out that direction, and the cats return home quickly and silently. c_n needs to know about the danger in the borderlands."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "CLEVER,2",
-                                "SENSE,2"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 50,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_lawful"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1327,17 +668,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -1347,7 +679,6 @@
                             "cats_from": "cat_to identified the sound of a frightened coyote and warned the patrol before they encountered danger."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -1368,41 +699,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_running_Wr",
-                "strings": [
-                    "s_c0 selflessly takes the lion's share of the run as the patrol leads the coyote on, exhausting {PRONOUN/s_c0/self} almost to the point of danger, but leading the coyote far away from c_n borders. {PRONOUN/s_c0/poss/CAP} Clanmates support {PRONOUN/s_c0/object} on the long walk home once it's all over, their purrs mixing with s_c0's exhausted pants."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "trait": [
-                                "compassionate",
-                                "confident",
-                                "faithful",
-                                "fierce",
-                                "loving",
-                                "loyal",
-                                "responsible",
-                                "righteous"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 30,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -1416,17 +712,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "patrol"
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1438,17 +726,12 @@
                             "cats_from": "cat_from was grateful that cat_to took on the brunt of the danger in leading a coyote away from c_n territory."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
-=======
-                ]
->>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
-<<<<<<< HEAD
                 "text": "That yip seemed a little high-pitched. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts. Dangerous, but... manageable. What's less manageable are the parents, who come running as the patrol attacks the pup.",
                 "exp": 0,
                 "art": "cat_sprites/gen_coyote_Wr",
@@ -1480,19 +763,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "That yip seemed a little high-pitched. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts. Dangerous, but... manageable. What's less manageable are the parents, who come running as the patrol attacks the pup."
-                ],
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -1506,7 +776,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -1520,22 +789,10 @@
                     "FIGHTER,3"
                 ],
                 "injury": [
-=======
-                "death": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "history": "m_c died to keep coyotes away from c_n's borders."
-                    }
-                ],
-                "condition": [
->>>>>>> clangen-megamerge
                     {
                         "cats": [
                             "multi"
                         ],
-<<<<<<< HEAD
                         "injuries": [
                             "minor_injury",
                             "torn ear"
@@ -1549,50 +806,6 @@
                 "relationships": [
                     {
                         "cats_to": ["s_c"],
-=======
-                        "condition": [
-                            "big_bite_injury"
-                        ],
-                        "scar_history": "m_c was scarred after a fight with two coyotes.",
-                        "death_history": "m_c died to keep coyotes away from c_n's borders."
-                    },
-                    {
-                        "cats": [
-                            "multi"
-                        ],
-                        "condition": [
-                            "scrapes"
-                        ],
-                        "scar_history": "m_c was scarred after a fight with two coyotes.",
-                        "death_history": "m_c died to keep coyotes away from c_n's borders."
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "That yip seemed a little high pitched. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts. Dangerous, but... manageable. What's less manageable are the parents, who come running as the patrol attacks the pup. s_c0 holds them off long enough for the patrol retreat."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "FIGHTER,3"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -1606,7 +819,6 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "patrol"
@@ -1614,18 +826,6 @@
                         "mutual": false,
                         "values": [
                             "respect", "trust"
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
-                        "mutual": false,
-                        "values": [
-                            "respect",
-                            "trust"
->>>>>>> clangen-megamerge
                         ],
                         "amount": 30,
                         "log": {
@@ -1633,7 +833,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -1645,37 +844,6 @@
                         "cats_to": ["patrol"],
                         "cats_from": [
                             "clan", "high_aggress"
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "multi"
-                        ],
-                        "condition": [
-                            "minor_injury",
-                            "torn ear"
-                        ],
-                        "scar_history": "Killing a juvenile coyote and being driven off by its parents left its scars on r_c0.",
-                        "death_history": "m_c died to keep coyotes away from c_n's borders."
-                    }
-                ]
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "cat_sprites/gen_dogpaw_Wr",
-                "strings": [
-                    "The patrol tries to keep watch on the coyote from a distance, but it spots the cats and they have to scatter. Everyone escapes just fine, but they lose track of the coyote. It could be anywhere still out there, lurking, waiting to attack."
-                ],
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_aggress"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1687,7 +855,6 @@
                             "cats_from": "cat_from heard that cat_to failed to track a coyote on patrol, leaving c_n in danger."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 1
             },
@@ -1704,37 +871,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "cat_sprites/gen_dogpaw_Wr",
-                "strings": [
-                    "s_c0 tries to take the lion's share of the effort to lead the coyote away, but {PRONOUN/s_c0/poss} strength fails {PRONOUN/s_c0/object} and the rest of the patrol needs to rescue {PRONOUN/s_c0/object}, cutting short the results of the patrol. Instead, everyone knows the coyote could still be lurking on their borders."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "trait": [
-                                "ambitious",
-                                "bloodthirsty",
-                                "troublesome",
-                                "vengeful"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -1748,7 +884,6 @@
                             "cats_from": "cat_from heard that cat_to failed to track a coyote on patrol, leaving c_n in danger."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 1
             },
@@ -1766,26 +901,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_dead_Wr_EXPLICIT",
-                "outcome_art_clean": "cat_sprites/gen_running_WrWr",
-                "strings": [
-                    "The patrol tries to lead the coyote away from the Clan's borders, but with so few cats it's impossible to cover each other's backs. r_c0 falls to the coyote as the rest of the patrol runs for their lives back to camp, terrified out of their pelts and mourning their Clanmate."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -1796,7 +911,6 @@
                         ],
                         "amount": -15,
                         "log": {
-<<<<<<< HEAD
                             "cats_from": "cat_from heard that cat_to's patrol wasn't able to lead a coyote away and r_c was killed as a result."
                         }
                     }
@@ -1822,36 +936,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                            "cats_from": "cat_from heard that cat_to's patrol wasn't able to lead a coyote away and r_c0 was killed as a result."
-                        }
-                    }
-                ],
-                "death": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "history": "This cat died to keep the Clan safe from a large coyote."
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "The patrol tries bravely to lead the coyote away from c_n borders, but with so few cats it's impossible to cover each other's backs. r_c0 gets caught while running, and it's all the rest of the patrol can do to distract the coyote long enough to get {PRONOUN/r_c0/object} to safety."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -1862,51 +946,22 @@
                         ],
                         "amount": -5,
                         "log": {
-<<<<<<< HEAD
                             "cats_from": "cat_from heard that cat_to's patrol wasn't able to lead a coyote away and r_c was injured as a result."
                         }
                     }
                 ],
                 "frequency": 4
-=======
-                            "cats_from": "cat_from heard that cat_to's patrol wasn't able to lead a coyote away and r_c0 was injured as a result."
-                        }
-                    }
-                ],
-                "condition": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "condition": [
-                            "big_bite_injury"
-                        ],
-                        "scar_history": "m_c was scarred defending the Clan against a coyote.",
-                        "death_history": "m_c died of injuries inflicted by a coyote."
-                    }
-                ]
->>>>>>> clangen-megamerge
             }
         ]
     },
     {
-<<<<<<< HEAD
         "patrol_id": "pln_bord_greenleaf_coyote_big_patrol1",
         "biome": [
-=======
-        "event_id": "pln_bord_greenleaf_coyote_big_patrol1",
-        "types": [
-            "border"
-        ],
-        "frequency": 2,
-        "location": [
->>>>>>> clangen-megamerge
             "plains"
         ],
         "season": [
             "greenleaf"
         ],
-<<<<<<< HEAD
         "types": [
             "border"
         ],
@@ -1927,34 +982,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-        "required_cat_types": {
-            "patrol_cats": [
-                5,
-                6
-            ]
-        },
-        "chance_of_success": 10,
-        "patrol_art": "cat_sprites/gen_bord_dogscent_Wr",
-        "intro_text": "Approaching the border, the patrol stops in their tracks. A coyote has marked over c_n's border markings — so recently that it stinks from several fox-lengths away, so recently that the canine might be still here, hiding in the tall greenleaf grass.",
-        "decline_text": "The patrol decides not to pursue such a dangerous creature. c_n will just have to hope it doesn't come any nearer to camp.",
-        "success_outcomes": [
-            {
-                "frequency": 4,
-                "outcome_art": "animals/animals/gen_coyoterun",
-                "strings": [
-                    "The warriors share a glance and a nod. They have enough cats to try and tackle this problem. Spreading out, they use a search pattern they've all been trained in to isolate the adult coyote's location, and the cover of the grass to approach stealthily. r_c0 starts the battle strong, sinking {PRONOUN/r_c0/poss} teeth into the coyote's hamstring, and the rest of the patrol break cover with screeches, driving the coyote away from c_n."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 60,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -1968,17 +995,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["r_c"],
                         "cats_from": [
                             "patrol"
-=======
-                        "cats_to": [
-                            "r_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -1990,17 +1009,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2010,7 +1020,6 @@
                             "cats_from": "cat_from and cat_to worked together to drive off a coyote."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -2032,37 +1041,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "animals/animals/gen_coyoterun",
-                "strings": [
-                    "s_c0 uses {PRONOUN/s_c0/poss} tracking talents to lead the patrol to their enemy. They find the coyote panting under a bush, with prey stolen from c_n lying at its feet while it cools off from the glaring sun. Not only does the patrol manage to maul the canine, they also recapture the food."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "stat": {
-                            "skill": [
-                                "CLEVER,2",
-                                "INSIGHTFUL,2",
-                                "HUNTER,2"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "-p_l",
-                            "-r_c0"
-                        ]
-                    }
-                },
-                "exp_gained": 70,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -2076,17 +1054,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "patrol"
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -2098,17 +1068,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2119,7 +1080,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -2129,27 +1089,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                "supply": [
-                    {
-                        "type": "freshkill",
-                        "adjust": "increase_small"
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "animals/animals/gen_coyote",
-                "strings": [
-                    "The marking doesn't smell like a grown adult. On the other side of the border, a juvenile hunts, more play than true intent, and half the weight of an adult. Dangerous, but... manageable. The patrol leaves the area quickly afterwards, before the pup's parents realize it's missing."
-                ],
-                "exp_gained": 70,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -2163,17 +1102,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2183,7 +1113,6 @@
                             "cats_from": "cat_from and cat_to worked together to kill a juvenile coyote."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -2214,25 +1143,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "The marking doesn't smell like a grown adult. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts. Dangerous, but... manageable. What's less manageable are the parents, who come running as the patrol attacks the pup. r_c0 gets {PRONOUN/r_c0/poss} ear torn, and a couple others get scraped up, but with teamwork the cats manage to maul the opposing pack, and both sides retreat, point made."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 70,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -2246,17 +1156,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2267,7 +1168,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -2283,55 +1183,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "multi"
-                        ],
-                        "condition": [
-                            "scrapes"
-                        ],
-                        "scar_history": "Mauling a juvenile coyote and being driven off by its parents left its scars on r_c0.",
-                        "death_history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    },
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "condition": [
-                            "torn ear"
-                        ],
-                        "scar_history": "Mauling a juvenile coyote and being driven off by its parents left its scars on r_c0.",
-                        "death_history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "The marking doesn't smell like a grown adult. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts. Dangerous, but... manageable. What's less manageable are the parents, who come running as the patrol attacks the pup. s_c0 makes the difference, and the pup's death leaves little reason for the parents to keep fighting."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "FIGHTER,3"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 70,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -2345,17 +1196,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect"
@@ -2366,17 +1208,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2386,7 +1219,6 @@
                             "cats_from": "cat_from and cat_to worked together to kill a juvenile coyote and drive off its parents."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -2421,36 +1253,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_angrycat_Wr",
-                "strings": [
-                    "That yip seemed a little high-pitched. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts. Dangerous, but... manageable. What's less manageable are the parents, who come running as the patrol attacks the pup. s_c0 hauls r_c0 out of the fight and applies pressure on {PRONOUN/r_c0/poss} wound, saving {PRONOUN/r_c0/poss} life."
-                ],
-                "involved_cats": {
-                    "r_c0": {},
-                    "s_c0": {
-                        "stat": {
-                            "skill": [
-                                "HEALER,0"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "-p_l",
-                            "-r_c0"
-                        ]
-                    }
-                },
-                "exp_gained": 80,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -2464,17 +1266,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "r_c"
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "r_c0"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -2487,17 +1281,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2508,7 +1293,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -2518,43 +1302,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "condition": [
-                            "bite-wound"
-                        ],
-                        "scar_history": "Killing a juvenile coyote and being driven off by its parents left its scars on r_c0.",
-                        "death_history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    },
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "condition": [
-                            "blood loss"
-                        ],
-                        "scar_history": "Killing a juvenile coyote and being driven off by its parents left its scars on r_c0.",
-                        "death_history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    }
-                ]
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "animals/animals/gen_coyoterun",
-                "strings": [
-                    "They decide that no cat is going to be surprised by this predator again, and the patrol shadows the coyote, sending a message to warn camp. With enough cats to keep watch, rest, track, and send messages forward and back from camp, c_n is kept safe from the wandering coyote."
-                ],
-                "exp_gained": 40,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "some_clan"
                         ],
@@ -2568,17 +1315,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2588,7 +1326,6 @@
                             "cats_from": "cat_from and cat_to worked together to track a coyote."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 1
             },
@@ -2599,22 +1336,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "animals/animals/gen_coyoterun",
-                "strings": [
-                    "The patrol gathers their courage and valiantly drives away the coyote. Together, working as one, and with all the strength of StarClan behind them, the patrol presses the coyote. By keeping up a series of small skirmishes through the entire day, they drive it far off c_n territory."
-                ],
-                "exp_gained": 40,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -2628,17 +1349,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2648,7 +1360,6 @@
                             "cats_from": "cat_from and cat_to worked together to drive off a coyote."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 1
             },
@@ -2664,36 +1375,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "animals/animals/gen_coyoterun",
-                "strings": [
-                    "A yip sounds from close by. s_c0 has just enough time to yell out a plan, leading the whole large patrol in a skillful battle plan against the coyote that protects the cats from the chance of injury. The coyote tucks tail, and runs for more friendly lands."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "FIGHTER,3",
-                                "INSIGHTFUL,2",
-                                "CLEVER,3"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 60,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -2707,17 +1388,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "patrol"
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -2729,17 +1402,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2749,7 +1413,6 @@
                             "cats_from": "cat_from and cat_to worked together to drive off a coyote."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -2770,41 +1433,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "animals/animals/gen_coyoterun",
-                "strings": [
-                    "s_c0 selflessly throws {PRONOUN/s_c0/self} into the fight, and every time the coyote tries to grab at {PRONOUN/s_c0/poss} Clanmates, {PRONOUN/s_c0/subject}{VERB/s_c0/'re/'s} there with claws, fur puffed out to twice {PRONOUN/s_c0/poss} normal size. With s_c0 defending them, the patrol drives the coyote off, yowling triumphantly."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "trait": [
-                                "compassionate",
-                                "confident",
-                                "faithful",
-                                "fierce",
-                                "loving",
-                                "loyal",
-                                "responsible",
-                                "righteous"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 50,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -2818,17 +1446,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "patrol"
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -2840,17 +1460,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -2860,17 +1471,12 @@
                             "cats_from": "cat_from and cat_to worked together to drive off a coyote."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 1
-=======
-                ]
->>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
-<<<<<<< HEAD
                 "text": "The warriors share a glance and a nod. They have enough cats to try and tackle this problem. Spreading out, they use a search pattern they've all been trained in to isolate the adult coyote's location, and the cover of the grass to approach stealthily. But r_c misjudges the first attack, and instead the patrol has to focus on defence and getting out of there mostly unscathed.",
                 "exp": 0,
                 "art": "cat_sprites/gen_coyote_Wr",
@@ -2933,61 +1539,6 @@
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
-=======
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "The warriors share a glance and a nod. They have enough cats to try and tackle this problem. Spreading out, they use a search pattern they've all been trained in to isolate the adult coyote's location, and the cover of the grass to approach stealthily. But r_c0 misjudges the first attack, and instead the patrol has to focus on defence and getting out of there mostly unscathed."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_from": [
-                            "patrol_cats",
-                            "high_aggress"
-                        ],
-                        "cats_to": [
-                            "r_c0"
-                        ],
-                        "values": [
-                            "respect"
-                        ],
-                        "mutual": false,
-                        "amount": -8,
-                        "log": {
-                            "cats_from": "cat_from blamed cat_to for the patrol's failure to drive off a coyote."
-                        }
-                    }
-                ],
-                "condition": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "condition": [
-                            "torn ear"
-                        ],
-                        "scar_history": "A coyote encounter left its scars on r_c0.",
-                        "death_history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "That yip seemed a little high-pitched. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts. Dangerous, but... manageable. What's less manageable are the parents, who come running as the patrol attacks the pup."
-                ],
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "r_c0"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -3001,7 +1552,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -3015,22 +1565,10 @@
                     "FIGHTER,3"
                 ],
                 "injury": [
-=======
-                "death": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    }
-                ],
-                "condition": [
->>>>>>> clangen-megamerge
                     {
                         "cats": [
                             "multi"
                         ],
-<<<<<<< HEAD
                         "injuries": [
                             "minor_injury",
                             "torn ear"
@@ -3044,50 +1582,6 @@
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
-=======
-                        "condition": [
-                            "big_bite_injury"
-                        ],
-                        "scar_history": "Killing a juvenile coyote and being driven off by its parents left its scars on m_c.",
-                        "death_history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    },
-                    {
-                        "cats": [
-                            "multi"
-                        ],
-                        "condition": [
-                            "scrapes"
-                        ],
-                        "scar_history": "Killing a juvenile coyote and being driven off by its parents left its scars on m_c.",
-                        "death_history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "That yip seemed a little high-pitched. Ears pricked, the patrol stalks closer, crossing the border. On the other side, a juvenile hunts. Dangerous, but... manageable. What's less manageable are the parents, who come running as the patrol attacks the pup. s_c0 manages to hold them off long enough for the patrol retreat."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "FIGHTER,3"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -3101,17 +1595,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "patrol"
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -3123,7 +1609,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -3149,65 +1634,6 @@
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "patrol", "high_aggress"
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "multi"
-                        ],
-                        "condition": [
-                            "minor_injury",
-                            "torn ear"
-                        ],
-                        "scar_history": "Killing a juvenile coyote and being driven off by its parents left its scars on r_c0.",
-                        "death_history": "m_c died from injuries sustained keeping coyotes away from c_n's borders."
-                    }
-                ]
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "animals/animals/gen_coyotedanger",
-                "strings": [
-                    "The patrol tries to keep watch on the coyote from a distance, but it spots the cats and they have to scatter. It's not as bad as it could've been though; r_c0 manages to keep track of the coyote's position, and it doesn't come any further into c_n territory."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 0
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "s_c0 tries to show off {PRONOUN/s_c0/poss} strength as the patrol bounds toward battle, but it gets in the way of the attack. Without everyone committed to driving the coyote off, the patrol has to fall back, but they do so in good order."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "trait": [
-                                "ambitious",
-                                "bloodthirsty",
-                                "troublesome",
-                                "vengeful",
-                                "insecure",
-                                "rebellious"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats",
-                            "high_aggress"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -3218,7 +1644,6 @@
                             "cats_from": "cat_from blamed cat_to for the patrol's failure to drive off a coyote."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 1
             },
@@ -3237,26 +1662,6 @@
                 "relationships": [
                     {
                         "cats_to": ["r_c"],
-=======
-                ]
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "cat_sprites/gen_dead_Wr_EXPLICIT",
-                "outcome_art_clean": "cat_sprites/gen_deadghodt_WrSc",
-                "strings": [
-                    "With so many cats all working as one, the coyote started to get beaten back. But just as the tide of the fight seems about to turn, one lucky strike hits r_c0, and those vicious jaws take {PRONOUN/r_c0/object} to StarClan."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "r_c0"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -3270,7 +1675,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 1
             },
             {
@@ -3294,35 +1698,6 @@
                         "cats_to": ["r_c"],
                         "cats_from": [
                             "clan", "high_aggress"
-=======
-                "death": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "history": "This cat died to keep the Clan safe from a large coyote."
-                    }
-                ]
-            },
-            {
-                "frequency": 1,
-                "outcome_art": "cat_sprites/gen_coyote_Wr",
-                "strings": [
-                    "The patrol fights bravely, but you only need to be unlucky once. r_c0 gets taken out of the fight with one snap of the beast's huge jaws. The rest of the patrol rallies to defend {PRONOUN/r_c0/object}, and r_c0 is safely helped back to camp, where the medicine den awaits."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "r_c0"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_aggress"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -3334,43 +1709,18 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 1
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "r_c0"
-                        ],
-                        "condition": [
-                            "big_bite_injury"
-                        ],
-                        "scar_history": "This cat is scarred from bravely defending the Clan against a coyote.",
-                        "death_history": "m_c died of injuries inflicted by a coyote."
-                    }
-                ]
->>>>>>> clangen-megamerge
             }
         ]
     },
     {
-<<<<<<< HEAD
         "patrol_id": "pln_bord_greenleaf_apprenticegrouppatrol1",
         "biome": [
-=======
-        "event_id": "pln_bord_greenleaf_apprenticegrouppatrol1",
-        "types": [
-            "border"
-        ],
-        "frequency": 4,
-        "location": [
->>>>>>> clangen-megamerge
             "plains"
         ],
         "season": [
             "greenleaf"
         ],
-<<<<<<< HEAD
         "types": [
             "border"
         ],
@@ -3395,64 +1745,6 @@
                     {
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-        "required_cat_types": {
-            "patrol_cats": [
-                4,
-                6
-            ],
-            "apprentice": [
-                4,
-                6
-            ],
-            "normal adult": [
-                -1,
-                -1
-            ]
-        },
-        "involved_cats": {
-            "r_c1": {
-                "status": [
-                    "apprentice"
-                ]
-            },
-            "r_c2": {
-                "status": [
-                    "apprentice"
-                ]
-            },
-            "r_c3": {
-                "status": [
-                    "apprentice"
-                ]
-            },
-            "r_c4": {
-                "status": [
-                    "apprentice"
-                ]
-            }
-        },
-        "chance_of_success": 30,
-        "patrol_art": "cat_sprites/gen_hunt_funrun_ApAp",
-        "intro_text": "First r_c1 takes the lead, then r_c2, then r_c3 and r_c4 battle for it, all of them charging through the grass. The sun shines down merrily above them as they run, energetic and determined. They don't need to be warriors to do a good job patrolling the border!",
-        "decline_text": "Eventually the apprentices get tired. Whatever, they're not supposed to be out here without a warrior anyway.",
-        "success_outcomes": [
-            {
-                "frequency": 3,
-                "outcome_art": "cat_sprites/gen_running_ApAp",
-                "strings": [
-                    "From one marking post to another to another, the horde of apprentices run wild along the border, confidently navigating along the track that marks it."
-                ],
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "comfort",
@@ -3463,7 +1755,6 @@
                             "cats_from": "cat_from and cat_to had a great time on an all-apprentice border patrol."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 3
             },
@@ -3475,47 +1766,6 @@
                     {
                         "cats_to": ["patrol"],
                         "cats_from": ["app1"],
-=======
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "cat_sprites/gen_train_argue_ApAp",
-                "strings": [
-                    "r_c4 and r_c1 skid to a halt at a rock that peeks above the plains, arguing about which direction to go. r_c3 and r_c2 both side with r_c4, and even worse, they're all <i>right</i>, making r_c1 grumble resentfully as {PRONOUN/r_c3/subject} trail behind the others."
-                ],
-                "involved_cats": {
-                    "r_c1": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    },
-                    "r_c2": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    },
-                    "r_c3": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    },
-                    "r_c4": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "r_c1"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect",
@@ -3527,7 +1777,6 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_from": ["app4"],
                         "cats_to": ["app2", "app3"],
                         "mutual": false,
@@ -3550,59 +1799,6 @@
                             "app2"
                         ],
                         "cats_from": ["app1"],
-=======
-                        "cats_from": [
-                            "r_c4"
-                        ],
-                        "cats_to": [
-                            "r_c2",
-                            "r_c3"
-                        ],
-                        "mutual": false,
-                        "values": [
-                            "like",
-                            "trust"
-                        ],
-                        "amount": 10,
-                        "log": {
-                            "cats_from": "cat_from appreciated that cat_to backed {PRONOUN/cat_from/object} up when cat_from argued with r_c1 about which direction to go on patrol."
-                        }
-                    }
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "cat_sprites/gen_bord_twocathostile_ApAp",
-                "strings": [
-                    "r_c1 and r_c2 tumble around, skidding to a halt to bat at each other and shove, claws sheathed. r_c4 calls back, telling them to hurry up or get left behind. r_c1 and r_c2 bound along to catch up, still scuffling."
-                ],
-                "involved_cats": {
-                    "r_c1": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    },
-                    "r_c2": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    },
-                    "r_c4": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "r_c2"
-                        ],
-                        "cats_from": [
-                            "r_c1"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": true,
                         "values": [
                             "like"
@@ -3613,17 +1809,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "like",
@@ -3634,7 +1821,6 @@
                             "cats_from": "cat_from and cat_to had fun on an all-apprentice border patrol."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 3
             },
@@ -3658,43 +1844,6 @@
                     {
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_train_solo_Ap",
-                "strings": [
-                    "The apprentices spot a stringy, rangy looking elk calf, busy taking its first independant adventures away from its mother. If they brought an <i>elk calf</i> back to camp, they'd be the talk of the next gathering! Only s_c0 has the bravery to bound up to it, leaping through the grass. The elk calf snuffles and touches noses with {PRONOUN/s_c0/object}."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "trait": [
-                                "arrogant",
-                                "competitive",
-                                "rebellious",
-                                "fierce",
-                                "bloodthirsty",
-                                "bold",
-                                "daring"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect"
@@ -3704,7 +1853,6 @@
                             "cats_from": "cat_from was impressed that cat_to was brave enough to approach an elk calf on patrol."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -3716,25 +1864,6 @@
                     {
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/pln_hunt_gonetwolegtrap1_Ap",
-                "strings": [
-                    "The apprentices gather round the weird dead-ended metal tunnel, poking at its rusty sides, clearing away the soil piled on its roof. Really weird, but this'll make a great story to tell back at camp."
-                ],
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "comfort",
@@ -3745,7 +1874,6 @@
                             "cats_from": "cat_from and cat_to enjoyed messing with a strange metal tunnel on patrol."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -3764,38 +1892,6 @@
                     {
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_scared_Ap",
-                "strings": [
-                    "The apprentices gather round the weird dead-ended metal tunnel, poking at its rusty sides. s_c0 suddenly flinches backwards. Get away from that, it's a trap!"
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "CLEVER,0",
-                                "CAMP,0"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "comfort",
@@ -3807,17 +1903,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect"
@@ -3827,7 +1914,6 @@
                             "cats_from": "cat_to rescued cat_from and the other apprentices from a Twoleg trap."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -3845,37 +1931,6 @@
                     {
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_train_trainingsuccess_Ap",
-                "strings": [
-                    "The apprentices skip round each other, stretching their legs. But among them, s_c0 is easily the fastest, darting to the front and letting others overtake {PRONOUN/s_c0/object} to continue the game. When everyone else collapses, panting, {PRONOUN/s_c0/subject}{VERB/s_c0/'re/'s} still raring to go and ready for more."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "RUNNER,0"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "comfort",
@@ -3887,17 +1942,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect"
@@ -3907,7 +1953,6 @@
                             "cats_from": "cat_from learned that cat_to is a fast runner on an all-apprentice border patrol."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -3927,39 +1972,6 @@
                     {
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_bord_trackrogue_WrRg",
-                "strings": [
-                    "The apprentices find some footprints. Are they from a rogue? A loner? An <i>intruder</i>?! s_c0 rolls {PRONOUN/s_c0/poss} eyes. Clearly those prints smell of c_n; they're just from one of the warriors."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "skill": [
-                                "HUNTER,0",
-                                "INSIGHTFUL,0",
-                                "SENSE,0"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "comfort",
@@ -3971,17 +1983,8 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect"
@@ -3991,17 +1994,12 @@
                             "cats_from": "cat_from was impressed by how easily cat_to identified the source of some mysterious tracks on a border patrol."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
-=======
-                ]
->>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
-<<<<<<< HEAD
                 "text": "The apprentices spot a stringy, rangy looking elk calf, busy taking its first independant adventures away from its mother. If they brought an <i>elk calf</i> back to camp, they'd be the talk of the next gathering! Only s_c has the bravery to bound up to it. The calf startles, flinches backwards and stomping with its front hooves.",
                 "exp": 20,
                 "art": "cat_sprites/gen_train_solo_Ap",
@@ -4033,40 +2031,6 @@
                     {
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                "frequency": 3,
-                "outcome_art": "cat_sprites/gen_train_solo_Ap",
-                "strings": [
-                    "The apprentices spot a stringy, rangy looking elk calf, busy taking its first independant adventures away from its mother. If they brought an <i>elk calf</i> back to camp, they'd be the talk of the next gathering! Only s_c0 has the bravery to bound up to it. The calf startles, flinches backwards and stomping with its front hooves."
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "prior_abbreviation": [
-                            "any"
-                        ],
-                        "stat": {
-                            "trait": [
-                                "arrogant",
-                                "competitive",
-                                "rebellious",
-                                "fierce",
-                                "bloodthirsty",
-                                "bold",
-                                "daring"
-                            ]
-                        }
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "respect"
@@ -4077,7 +2041,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 3
             },
             {
@@ -4088,59 +2051,16 @@
                     {
                         "cats": ["app1"],
                         "injuries": [
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "s_c0"
-                        ],
-                        "condition": [
-                            "blunt_force_injury"
-                        ],
-                        "scar_history": "m_c was scarred from bounding up to an elk calf after a dare from fellow apprentices.",
-                        "death_history": "m_c provoked an elk calf, and the wounds gotten from the experience eventually killed {PRONOUN/m_c/object}."
-                    }
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "cat_sprites/gen_train_trainingfail_Ap",
-                "strings": [
-                    "r_c1 is running so fast to catch up with the others that when {PRONOUN/r_c1/subject} {VERB/r_c1/put/puts} a paw down into a rabbit burrow entrance, it yanks {PRONOUN/r_c1/object} down. {PRONOUN/r_c1/subject/CAP} {VERB/r_c1/slam/slams} against the ground, air whooshing out of {PRONOUN/r_c1/poss} lungs, biting {PRONOUN/r_c1/poss} tongue as {PRONOUN/r_c1/poss} jaw hits the dirt. Ow..."
-                ],
-                "involved_cats": {
-                    "r_c1": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "condition": [
-                    {
-                        "cats": [
-                            "r_c1"
-                        ],
-                        "condition": [
->>>>>>> clangen-megamerge
                             "sprain"
                         ]
                     },
                     {
-<<<<<<< HEAD
                         "cats": ["app1"],
                         "injuries": [
-=======
-                        "cats": [
-                            "r_c1"
-                        ],
-                        "condition": [
->>>>>>> clangen-megamerge
                             "sore"
                         ]
                     },
                     {
-<<<<<<< HEAD
                         "cats": ["app1"],
                         "injuries": [
                             "bruises"
@@ -4188,61 +2108,6 @@
                     {
                         "cats_to": ["s_c"],
                         "cats_from": ["patrol"],
-=======
-                        "cats": [
-                            "r_c1"
-                        ],
-                        "condition": [
-                            "bruises"
-                        ]
-                    }
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "animals/gen_eagledive",
-                "strings": [
-                    "Though they don't know it, the racing apprentices are being stalked. A golden eagle falls out of the sky, hitting one of the racing young cats with claws outstretched, the momentum skidding them both across the ground. There's nothing anyone can do but watch."
-                ],
-                "exp_gained": 20,
-                "death": [
-                    {
-                        "cats": [
-                            "r_c1",
-                            "r_c1"
-                        ],
-                        "history": "m_c was taken by an eagle as an apprentice, out on a border patrol with {PRONOUN/m_c/poss} friends."
-                    }
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "animals/gen_eagledive",
-                "strings": [
-                    "Though they don't know it, the racing apprentices are being stalked. A golden eagle falls out of the sky, aiming for one of the racing young cats. s_c0 launches {PRONOUN/s_c0/self} to get in between the predator and {PRONOUN/s_c0/poss} friend, puffing up to twice {PRONOUN/s_c0/poss} size as the eagle lashes out, frustrated. No you don't!"
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "stat": {
-                            "skill": [
-                                "FIGHTER,0"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "any"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust",
@@ -4254,13 +2119,7 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "clan"
                         ],
@@ -4274,7 +2133,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 3
             },
             {
@@ -4306,59 +2164,6 @@
                     {
                         "cats_to": ["app4"],
                         "cats_from": ["app2"],
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "s_c0"
-                        ],
-                        "condition": [
-                            "claw-wound",
-                            "beak_bite"
-                        ],
-                        "scar_history": "m_c proudly bears scars from defending a friend from an eagle.",
-                        "death_history": "m_c died from the wounds sustained defending a friend from an eagle."
-                    }
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "animals/gen_eagledive",
-                "strings": [
-                    "Though they don't know it, the racing apprentices are being stalked. A golden eagle falls out of the sky, aiming for r_c2. r_c4 yowls, and r_c2 manages to flinch, only getting caught by a glancing blow. As the other apprentices drive the bird off, s_c0 runs in to help r_c2, stopping the blood loss."
-                ],
-                "involved_cats": {
-                    "r_c2": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    },
-                    "r_c4": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    },
-                    "s_c0": {
-                        "stat": {
-                            "skill": [
-                                "HEALER,0"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "r_c1"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "r_c4"
-                        ],
-                        "cats_from": [
-                            "r_c2"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust",
@@ -4370,17 +2175,9 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
                         "cats_from": [
                             "app2"
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
-                        "cats_from": [
-                            "r_c2"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -4393,13 +2190,7 @@
                         }
                     },
                     {
-<<<<<<< HEAD
                         "cats_to": ["s_c"],
-=======
-                        "cats_to": [
-                            "s_c0"
-                        ],
->>>>>>> clangen-megamerge
                         "cats_from": [
                             "some_clan"
                         ],
@@ -4409,7 +2200,6 @@
                         ],
                         "amount": 10,
                         "log": {
-<<<<<<< HEAD
                             "cats_from": "cat_from heard that cat_to stopped app2's bleeding when the patrol was attacked by an eagle."
                         }
                     }
@@ -4435,48 +2225,6 @@
                     {
                         "cats_to": ["patrol"],
                         "cats_from": ["patrol"],
-=======
-                            "cats_from": "cat_from heard that cat_to stopped r_c2's bleeding when the patrol was attacked by an eagle."
-                        }
-                    }
-                ],
-                "condition": [
-                    {
-                        "cats": [
-                            "r_c2"
-                        ],
-                        "condition": [
-                            "claw-wound",
-                            "beak_bite"
-                        ],
-                        "scar_history": "m_c bears scars from an eagle that nearly killed {PRONOUN/m_c/object} as an apprentice.",
-                        "death_history": "m_c died from the wounds an eagle gave {PRONOUN/m_c/object} on patrol."
-                    }
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "cat_sprites/dst_hunt_heat_ApAp",
-                "strings": [
-                    "The apprentices run, fast and free as the wind, all the way along one entire side of c_n's vast borders. It's only when they reach the end and collpase, panting and proud, that it occurs to r_c4 that there's absolutely no water anywhere near here. By the time they all trudge back to camp, they're dangerously thirsty."
-                ],
-                "involved_cats": {
-                    "r_c4": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "patrol_cats"
-                        ],
->>>>>>> clangen-megamerge
                         "mutual": false,
                         "values": [
                             "trust"
@@ -4487,7 +2235,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 3
             },
             {
@@ -4512,35 +2259,6 @@
                         "cats_to": ["patrol"],
                         "cats_from": [
                             "clan", "high_lawful"
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "patrol_cats"
-                        ],
-                        "condition": [
-                            "dehydrated"
-                        ],
-                        "death_history": "m_c died after overheating on a patrol."
-                    }
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "cat_sprites/dst_hunt_heat_ApAp",
-                "strings": [
-                    "The sun blazes down in full force as the apprentices race along the border, a place without cover or shade. When they return home, they're all thirsty, but for some of them, they're dazed and confused. The patrol is scolded for making themselves vulnerable to heat stroke."
-                ],
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "clan",
-                            "high_lawful"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -4553,7 +2271,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 3
             },
             {
@@ -4599,46 +2316,6 @@
                         "cats_to": ["app1"],
                         "cats_from": [
                             "app2"
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "multi"
-                        ],
-                        "condition": [
-                            "hot_injury"
-                        ],
-                        "death_history": "m_c died after overheating on a patrol."
-                    }
-                ]
-            },
-            {
-                "frequency": 4,
-                "outcome_art": "cat_sprites/gen_battle_ApAp",
-                "strings": [
-                    "r_c1 tries to retake the lead as the apprentices race along the border, but r_c2 shoves {PRONOUN/r_c1/object} off the track. That coyote-heart! r_c1 regains {PRONOUN/r_c1/poss} feet and pounces, sending r_c2 tumbling, and then r_c2 rears up with claws extended. By the time the other apprentices break up the fight, blood has been shed and grudges created."
-                ],
-                "involved_cats": {
-                    "r_c1": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    },
-                    "r_c2": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    }
-                },
-                "exp_gained": 20,
-                "relationship_changes": [
-                    {
-                        "cats_to": [
-                            "r_c1"
-                        ],
-                        "cats_from": [
-                            "r_c2"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -4652,7 +2329,6 @@
                         }
                     }
                 ],
-<<<<<<< HEAD
                 "frequency": 4
             },
             {
@@ -4663,72 +2339,6 @@
                     "app1"
                 ],
                 "frequency": 3
-=======
-                "condition": [
-                    {
-                        "cats": [
-                            "r_c1"
-                        ],
-                        "condition": [
-                            "battle_injury"
-                        ],
-                        "scar_history": "m_c was scarred up by a fight {PRONOUN/m_c/subject} had as an apprentice with another apprentice of c_n.",
-                        "death_history": "The wounds obtained fighting another apprentice eventually killed m_c."
-                    },
-                    {
-                        "cats": [
-                            "r_c2"
-                        ],
-                        "condition": [
-                            "battle_injury"
-                        ],
-                        "scar_history": "m_c was scarred up by a fight {PRONOUN/m_c/subject} had as an apprentice with another apprentice of c_n.",
-                        "death_history": "The wounds obtained fighting another apprentice eventually killed m_c."
-                    },
-                    {
-                        "cats": [
-                            "r_c1"
-                        ],
-                        "condition": [
-                            "torn ear"
-                        ],
-                        "scar_history": "m_c was scarred up by a fight {PRONOUN/m_c/subject} had as an apprentice with another apprentice of c_n.",
-                        "death_history": "The wounds obtained fighting another apprentice eventually killed m_c."
-                    },
-                    {
-                        "cats": [
-                            "r_c2"
-                        ],
-                        "condition": [
-                            "torn ear"
-                        ],
-                        "scar_history": "m_c was scarred up by a fight {PRONOUN/m_c/subject} had as an apprentice with another apprentice of c_n.",
-                        "death_history": "The wounds obtained fighting another apprentice eventually killed m_c."
-                    }
-                ]
-            },
-            {
-                "frequency": 3,
-                "outcome_art": "cat_sprites/pln_hunt_gonetwolegtrap1_Ap",
-                "strings": [
-                    "Huh, look at this. r_c1's never seen a tunnel with straight walls, or metal ones, for that matter. But c_n can always benefit from knowing about new tunnels, so {PRONOUN/r_c1/subject} {VERB/r_c1/creep/creeps} in. The trap door slams shut behind {PRONOUN/r_c1/object}."
-                ],
-                "involved_cats": {
-                    "r_c1": {
-                        "status": [
-                            "apprentice"
-                        ]
-                    }
-                },
-                "exp_gained": 0,
-                "lost": [
-                    {
-                        "cats": [
-                            "r_c1"
-                        ]
-                    }
-                ]
->>>>>>> clangen-megamerge
             }
         ]
     }

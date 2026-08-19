@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_trust_med_pos1",
-=======
-        "event_id": "gen_trust_med_pos1",
->>>>>>> clangen-megamerge
         "strings": [
 			"r_c made sure m_c was personally introduced to everyone in the Clan."
         ]

@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_respect_med_pos1",
-=======
-        "event_id": "gen_respect_med_pos1",
->>>>>>> clangen-megamerge
         "strings": [
 			"m_c seemed to admire r_c from the moment they met."
         ]

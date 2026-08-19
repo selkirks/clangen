@@ -48,11 +48,7 @@ Altogether this might look like `normal_interations/comfort/medium/negative.json
 
 ```json
 {
-<<<<<<< HEAD
     "id": "test",
-=======
-    "event_id": "test",
->>>>>>> clangen-megamerge
     "strings": [
         "m_c spent time chatting with r_c."
     ]
@@ -62,11 +58,7 @@ Altogether this might look like `normal_interations/comfort/medium/negative.json
 ### Full Format
 ```json
     {
-<<<<<<< HEAD
         "id": "test",
-=======
-        "event_id": "test",
->>>>>>> clangen-megamerge
         "location": [],
         "season": [],
         "tags": [],

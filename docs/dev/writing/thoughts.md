@@ -52,11 +52,7 @@ Within the game, all cats take a new thought each timeskip. However, there are a
 
 ```json
 {
-<<<<<<< HEAD
     "id": "test",
-=======
-    "event_id": "test",
->>>>>>> clangen-megamerge
     "strings": [
         "Is thinking"
     ]
@@ -66,11 +62,7 @@ Within the game, all cats take a new thought each timeskip. However, there are a
 ### Full Format
 ```json
     {
-<<<<<<< HEAD
         "id": "test",
-=======
-        "event_id": "test",
->>>>>>> clangen-megamerge
         "location": [],
         "season": [],
         "tags": [],

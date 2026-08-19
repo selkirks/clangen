@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_like_med_dec1",
-=======
-        "event_id": "gen_like_med_dec1",
->>>>>>> clangen-megamerge
         "strings": [
 			"r_c scoffed when m_c introduced {PRONOUN/m_c/self}."
         ],
