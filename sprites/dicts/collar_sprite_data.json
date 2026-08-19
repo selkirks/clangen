@@ -132,6 +132,29 @@
             "NYLON_BELL_GRADIENT": [
                 "rainbow"
             ]
+        },
+        {
+            "TEETH": [
+                "crimson",
+                "blue",
+                "yellow",
+                "cyan",
+                "orange",
+                "lime",
+                "green",
+                "black",
+                "white",
+                "pink",
+                "purple",
+                "lilac",
+                "indigo"
+            ],
+            "TEETH_SPIKE": [
+                "black_gold"
+            ],
+            "TEETH_GRADIENT": [
+                "rainbow"
+            ]
         }
     ]
 }

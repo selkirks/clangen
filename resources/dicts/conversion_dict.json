@@ -201,6 +201,21 @@
         "PURPLENYLON": "NYLON_BELL_purple",
         "MULTINYLON": "NYLON_BELL_rose",
         "INDIGONYLON": "NYLON_BELL_indigo",
-        "RAINBOWNYLON": "NYLON_BELL_GRADIENT_rainbow"
+        "RAINBOWNYLON": "NYLON_BELL_GRADIENT_rainbow",
+        "CRIMSONTEETHCOLLAR": "TEETH_crimson",
+        "BLUETEETHCOLLAR": "TEETH_blue",
+        "YELLOWTEETHCOLLAR": "TEETH_yellow",
+        "CYANTEETHCOLLAR": "TEETH_cyan",
+        "REDTEETHCOLLAR": "TEETH_orange",
+        "LIMETEETHCOLLAR": "TEETH_lime",
+        "GREENTEETHCOLLAR": "TEETH_green",
+        "BLACKTEETHCOLLAR": "TEETH_black",
+        "WHITETEETHCOLLAR": "TEETH_white",
+        "PINKTEETHCOLLAR": "TEETH_pink",
+        "PURPLETEETHCOLLAR": "TEETH_purple",
+        "MULTITEETHCOLLAR": "TEETH_lilac",
+        "INDIGOTEETHCOLLAR": "TEETH_indigo",
+        "SPIKESTEETHCOLLAR": "TEETH_SPIKE_black_gold",
+        "RAINBOWTEETHCOLLAR": "TEETH_GRADIENT_rainbow"
     }
 }

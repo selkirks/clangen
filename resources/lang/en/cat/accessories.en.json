@@ -428,6 +428,21 @@
             "zero": "colorful belled nylon collar",
             "many": "colorful belled nylon collars",
             "one": "colorful belled nylon collar"
+        },
+        "TEETH": {
+            "zero": "dog teeth collar",
+            "many": "dog teeth collars",
+            "one": "dog teeth collar"
+        },
+        "TEETH_SPIKE": {
+            "zero": "spiked blue and gold dog teeth collar",
+            "many": "spiked blue and gold dog teeth collars",
+            "one": "spiked blue and gold dog teeth collar"
+        },
+        "TEETH_GRADIENT": {
+            "zero": "rainbow dog teeth collar",
+            "many": "rainbow dog teeth collars",
+            "one": "rainbow dog teeth collar"
         }
     }
 }
