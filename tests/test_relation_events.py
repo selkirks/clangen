@@ -16,12 +16,8 @@ os.environ["SDL_AUDIODRIVER"] = "dummy"
 
 from scripts.cat_relations.relationship import Relationship
 from scripts.clan import Clan
-<<<<<<< HEAD
 from scripts.events_module.relationship.pregnancy_events import Pregnancy_Events
 from scripts.events_module.relationship import romantic_events
-=======
-from scripts.events_module.pregnancy import pregnancy_events
->>>>>>> clangen-megamerge
 
 cat_factory = TestCatFactory()
 
@@ -36,7 +32,6 @@ class TestPregnancySettings(unittest.TestCase):
 
         # our parents are unmated, thus this would be single parenthood
         # allowed
-<<<<<<< HEAD
         self.assertTrue(
             Pregnancy_Events.check_if_can_have_kits(
                 parent1,
@@ -54,18 +49,10 @@ class TestPregnancySettings(unittest.TestCase):
                 allow_affair=True,
             )
         )
-=======
-        set_clan_setting("single parentage", True)
-        self.assertTrue(pregnancy_events.check_if_can_have_kits(parent1))
-        # not allowed
-        set_clan_setting("single parentage", False)
-        self.assertFalse(pregnancy_events.check_if_can_have_kits(parent1))
->>>>>>> clangen-megamerge
 
         # set mate
         parent1.mate = [parent2.ID]
         # single parentage setting shouldn't prevent these cats from having kits
-<<<<<<< HEAD
         self.assertTrue(
             Pregnancy_Events.check_if_can_have_kits(
                 parent1,
@@ -81,17 +68,6 @@ class TestPregnancySettings(unittest.TestCase):
                 allow_unmated=True,
                 allow_affair=True,
             )
-=======
-        self.assertTrue(pregnancy_events.check_if_can_have_kits(parent1))
-
-    def test_ignore_biology(self):
-        parent1 = cat_factory.create_cat(moons=50, gender="male")
-        parent2 = cat_factory.create_cat(moons=50, gender="male")
-        set_clan_setting("same sex birth", False)
-
-        self.assertEqual(
-            pregnancy_events.check_second_parent(parent1, parent2), (False, False)
->>>>>>> clangen-megamerge
         )
 
     def test_unmated(self):
@@ -100,7 +76,6 @@ class TestPregnancySettings(unittest.TestCase):
 
         # parent1 is unmated
         # allow
-<<<<<<< HEAD
         self.assertTrue(
             Pregnancy_Events.check_if_can_have_kits(
                 parent1,
@@ -119,18 +94,10 @@ class TestPregnancySettings(unittest.TestCase):
                 allow_affair=True,
             )
         )
-=======
-        set_clan_setting("unmated parentage", True)
-        self.assertTrue(pregnancy_events.check_if_can_have_kits(parent1))
-        # don't allow
-        set_clan_setting("unmated parentage", False)
-        self.assertFalse(pregnancy_events.check_if_can_have_kits(parent1))
->>>>>>> clangen-megamerge
 
         # set mate
         parent1.mate = [parent2.ID]
         # unmated parentage setting shouldn't prevent these cats from having kits
-<<<<<<< HEAD
         self.assertTrue(
             Pregnancy_Events.check_if_can_have_kits(
                 parent1,
@@ -147,10 +114,6 @@ class TestPregnancySettings(unittest.TestCase):
                 allow_affair=True,
             )
         )
-=======
-        self.assertTrue(pregnancy_events.check_if_can_have_kits(parent1))
-        self.assertTrue(pregnancy_events.check_if_can_have_kits(parent1))
->>>>>>> clangen-megamerge
 
     def test_affair(self):
         parent1 = cat_factory.create_cat(moons=50, gender="male")
@@ -158,7 +121,6 @@ class TestPregnancySettings(unittest.TestCase):
 
         # our parents are unmated and so an affair isn't allowed (only mated cats have affairs)
         # allowed
-<<<<<<< HEAD
         self.assertFalse(
             Pregnancy_Events.check_if_can_have_kits(
                 parent1,
@@ -167,9 +129,6 @@ class TestPregnancySettings(unittest.TestCase):
                 allow_affair=True,
             )
         )
-=======
-        self.assertFalse(pregnancy_events.check_if_can_have_kits(parent1))
->>>>>>> clangen-megamerge
         # set mate
         parent1.mate = [parent2.ID]
         affair_cat = cat_factory.create_cat(moons=50, gender="female")
@@ -179,21 +138,13 @@ class TestPregnancySettings(unittest.TestCase):
         # our parents ARE mated and so an affair is allowed
         # TODO: would love to test this, but the way affairs are set up does not allow it
         # self.assertEqual(
-<<<<<<< HEAD
         #    Pregnancy_Events.get_second_parent(parent1), (affair_cat, True)
-=======
-        #    pregnancy_events.get_second_parent(parent1), (affair_cat, True)
->>>>>>> clangen-megamerge
         # )
 
         # turn affairs off
         set_clan_setting("affair", False)
         # now an affair isn't allowed
-<<<<<<< HEAD
         self.assertEqual(Pregnancy_Events.get_second_parent(parent1), (parent2, False))
-=======
-        self.assertEqual(pregnancy_events.get_second_parent(parent1), (parent2, False))
->>>>>>> clangen-megamerge
 
 
 class CanHaveKits(unittest.TestCase):
@@ -204,11 +155,7 @@ class CanHaveKits(unittest.TestCase):
         game.used_group_IDs["5"] = CatGroup.OTHER_CLAN
         cat.status.add_to_group("5")
 
-<<<<<<< HEAD
         self.assertFalse(Pregnancy_Events.handle_having_kits(cat, test_clan))
-=======
-        self.assertFalse(pregnancy_events.handle_having_kits(cat))
->>>>>>> clangen-megamerge
 
     def test_cat_not_working_pregnancy(self):
         test_clan = Clan(save_id="clan")
@@ -216,11 +163,7 @@ class CanHaveKits(unittest.TestCase):
         cat = cat_factory.create_cat(gender="female", moons=50)
         cat.get_injured("broken bone")
 
-<<<<<<< HEAD
         self.assertFalse(Pregnancy_Events.handle_having_kits(cat, test_clan))
-=======
-        self.assertFalse(pregnancy_events.handle_having_kits(cat))
->>>>>>> clangen-megamerge
 
     def test_prevent_kits(self):
         # given
@@ -228,7 +171,6 @@ class CanHaveKits(unittest.TestCase):
         cat.no_kits = True
 
         # then
-<<<<<<< HEAD
         self.assertFalse(
             Pregnancy_Events.check_if_can_have_kits(
                 cat, allow_single_parent=True, allow_unmated=True, allow_affair=True
@@ -238,11 +180,6 @@ class CanHaveKits(unittest.TestCase):
     @patch(
         "scripts.events_module.relationship.pregnancy_events.Pregnancy_Events.check_if_can_have_kits"
     )
-=======
-        self.assertFalse(pregnancy_events.check_if_can_have_kits(cat))
-
-    @patch("scripts.events_module.pregnancy.check_parents.check_if_can_have_kits")
->>>>>>> clangen-megamerge
     def test_no_kit_setting(self, check_if_can_have_kits):
         # given
         test_clan = Clan(save_id="clan")
@@ -260,11 +197,7 @@ class CanHaveKits(unittest.TestCase):
 
         # when
         check_if_can_have_kits.return_value = True
-<<<<<<< HEAD
         Pregnancy_Events.handle_having_kits(cat=cat1, clan=test_clan)
-=======
-        pregnancy_events.handle_having_kits(cat=cat1)
->>>>>>> clangen-megamerge
 
         # then
         self.assertNotIn(cat1.ID, test_clan.pregnancy_data.keys())
@@ -282,9 +215,8 @@ class SameSexAdoptions(unittest.TestCase):
         )
         cat1.mate.append(cat2.ID)
         cat2.mate.append(cat1.ID)
-        set_clan_setting("same sex adoption", True)
+
         # when
-<<<<<<< HEAD
         single_parentage = False
         unmated_parentage = False
         allow_affair = False
@@ -307,26 +239,15 @@ class SameSexAdoptions(unittest.TestCase):
             allow_affair=allow_affair,
             same_sex_birth=False,
             same_sex_adoption=True,
-=======
-        self.assertTrue(pregnancy_events.check_if_can_have_kits(cat1))
-        self.assertTrue(pregnancy_events.check_if_can_have_kits(cat2))
-
-        can_have_kits, kits_are_adopted = pregnancy_events.check_second_parent(
-            cat=cat1, second_parent=cat2
->>>>>>> clangen-megamerge
         )
         self.assertTrue(can_have_kits)
         self.assertTrue(kits_are_adopted)
 
 
 class Pregnancy(unittest.TestCase):
-<<<<<<< HEAD
     @patch(
         "scripts.events_module.relationship.pregnancy_events.Pregnancy_Events.check_if_can_have_kits"
     )
-=======
-    @patch("scripts.events_module.pregnancy.check_parents.check_if_can_have_kits")
->>>>>>> clangen-megamerge
     def test_single_cat_female(self, check_if_can_have_kits):
         # given
         clan = Clan(save_id="clan")
@@ -337,22 +258,14 @@ class Pregnancy(unittest.TestCase):
 
         # when
         check_if_can_have_kits.return_value = True
-<<<<<<< HEAD
         Pregnancy_Events.handle_zero_moon_pregnant(cat, None, clan)
-=======
-        pregnancy_events.handle_zero_moon_pregnant(cat, None)
->>>>>>> clangen-megamerge
 
         # then
         self.assertIn(cat.ID, clan.pregnancy_data.keys())
 
-<<<<<<< HEAD
     @patch(
         "scripts.events_module.relationship.pregnancy_events.Pregnancy_Events.check_if_can_have_kits"
     )
-=======
-    @patch("scripts.events_module.pregnancy.check_parents.check_if_can_have_kits")
->>>>>>> clangen-megamerge
     def test_pair(self, check_if_can_have_kits):
         # given
         clan = Clan(save_id="clan")
@@ -367,11 +280,7 @@ class Pregnancy(unittest.TestCase):
 
         # when
         check_if_can_have_kits.return_value = True
-<<<<<<< HEAD
         Pregnancy_Events.handle_zero_moon_pregnant(cat1, cat2, clan)
-=======
-        pregnancy_events.handle_zero_moon_pregnant(cat1, cat2)
->>>>>>> clangen-megamerge
 
         # then
         self.assertIn(cat1.ID, clan.pregnancy_data.keys())

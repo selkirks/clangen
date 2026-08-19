@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_new_ur",
-=======
-        "event_id": "gen_new_ur",
->>>>>>> clangen-megamerge
         "strings": [
             "Is surprised to find {PRONOUN/m_c/self} walking in a foreign land",
             "Wonders how far {PRONOUN/m_c/subject} would have to run to reach StarClan again",

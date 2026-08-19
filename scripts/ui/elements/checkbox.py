@@ -2,14 +2,7 @@ import pygame
 from pygame_gui.core import IContainerLikeInterface
 
 from scripts.ui.elements.image_button import UIImageButton
-<<<<<<< HEAD
 from scripts.ui.scale import ui_scale
-=======
-from scripts.ui.elements.modified_image import UIModifiedImage
-from scripts.game_structure.screen_settings import MANAGER
-from scripts.game_structure import image_cache
-from scripts.ui.scale import ui_scale, ui_scale_dimensions
->>>>>>> clangen-megamerge
 
 
 class UICheckbox(UIImageButton):
@@ -39,7 +32,6 @@ class UICheckbox(UIImageButton):
         anchors=None,
     ):
         self.checked = check
-<<<<<<< HEAD
 
         relative_rect = ui_scale(pygame.Rect(position, (34, 34)))
 
@@ -47,11 +39,6 @@ class UICheckbox(UIImageButton):
             object_id = "@checked_checkbox"
         else:
             object_id = "@unchecked_checkbox"
-=======
-        relative_rect = ui_scale(pygame.Rect(position, (34, 34)))
-
-        object_id = "@checkbox"
->>>>>>> clangen-megamerge
 
         super().__init__(
             relative_rect=relative_rect,
@@ -65,58 +52,25 @@ class UICheckbox(UIImageButton):
             anchors=anchors,
         )
 
-<<<<<<< HEAD
     def toggle(self):
         if self.checked:
             self.uncheck()
         elif not self.checked:
             self.check()
-=======
-        # Creates the checkmark image that gets layered on top of the checkbox when checked
-        self.checkmark = UIModifiedImage(
-            ui_scale(relative_rect),
-            pygame.transform.scale(
-                image_cache.load_image(f"resources/images/buttons/checkmark.png"),
-                ui_scale_dimensions((34, 34)),
-            ),
-            container=container,
-            manager=manager,
-            starting_height=3,
-            visible=self.checked,
-            anchors=anchors,
-        )
-        self.checkmark.disable()
-
-    def toggle(self):
-        if self.checked:
-            self.uncheck()
-            self.checkmark.hide()
-        elif not self.checked:
-            self.check()
-            self.checkmark.show()
->>>>>>> clangen-megamerge
 
     def check(self):
         """
         switches the checkbox into the "checked" state
         """
         self.checked = True
-<<<<<<< HEAD
         self.change_object_id("@checked_checkbox")
-=======
-        self.checkmark.show()
->>>>>>> clangen-megamerge
 
     def uncheck(self):
         """
         switches the checkbox into the "unchecked" state
         """
         self.checked = False
-<<<<<<< HEAD
         self.change_object_id("@unchecked_checkbox")
-=======
-        self.checkmark.hide()
->>>>>>> clangen-megamerge
 
     def hover_point(self, hover_x: float, hover_y: float) -> bool:
         """
@@ -150,10 +104,3 @@ class UICheckbox(UIImageButton):
         return bool(self.rect.collidepoint(hover_x, hover_y)) and bool(
             container_clip_rect.collidepoint(hover_x, hover_y)
         )
-<<<<<<< HEAD
-=======
-
-    def kill(self):
-        super().kill()
-        self.checkmark.kill()
->>>>>>> clangen-megamerge

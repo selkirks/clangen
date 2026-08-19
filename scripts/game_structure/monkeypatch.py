@@ -38,7 +38,6 @@ def translate(text: str, **kwargs):
         return event_text_adjust(
             Cat,
             output,
-<<<<<<< HEAD
             patrol_leader=dict.get("p_l"),
             main_cat=dict.get("m_c"),
             random_cat=dict.get("r_c"),
@@ -46,11 +45,6 @@ def translate(text: str, **kwargs):
             victim_cat=dict.get("mur_c"),
             patrol_cats=dict.get("patrol_cats"),
             patrol_apprentices=dict.get("patrol_apprentices"),
-=======
-            main_cat=dict.get("m_c"),
-            random_cat=dict.get("r_c"),
-            victim_cat=dict.get("mur_c"),
->>>>>>> clangen-megamerge
             new_cats=dict.get("new_cats"),
             multi_cats=dict.get("multi_cats"),
             clan=dict.get("clan", game.clan),

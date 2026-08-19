@@ -154,17 +154,6 @@ class CatGroup(StrEnum):
             self.OTHER_CLAN,
         )
 
-<<<<<<< HEAD
-=======
-    def is_ID(self) -> bool:
-        return self in (
-            self.PLAYER_CLAN_ID,
-            self.STARCLAN_ID,
-            self.UNKNOWN_RESIDENCE_ID,
-            self.DARK_FOREST_ID,
-        )
-
->>>>>>> clangen-megamerge
 
 class CatCompatibility(Enum):
     NEGATIVE = auto()

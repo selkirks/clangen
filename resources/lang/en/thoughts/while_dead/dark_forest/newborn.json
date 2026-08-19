@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_dead_newborn",
-=======
-        "event_id": "gen_dead_newborn",
->>>>>>> clangen-megamerge
         "strings": [
             "Mewls pitifully for milk",
             "Wobbles around the Dark Forest",
@@ -31,11 +27,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_dead_newborn_to_alive_parent",
-=======
-        "event_id": "gen_dead_newborn_to_alive_parent",
->>>>>>> clangen-megamerge
         "strings": [
             "Desperately misses r_c",
             "Misses the fleeting feeling of warmth at r_c's belly",

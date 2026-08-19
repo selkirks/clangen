@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_dead_elder",
-=======
-        "event_id": "gen_dead_elder",
->>>>>>> clangen-megamerge
         "strings": [
             "Is watching c_n proudly",
             "Is having some well-deserved rest",
@@ -18,11 +14,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "dead_elder_to_dead_other",
-=======
-        "event_id": "dead_elder_to_dead_other",
->>>>>>> clangen-megamerge
         "strings": [
             "Is giving r_c unsolicited advice",
             "Is telling r_c about {PRONOUN/m_c/poss} glory days"

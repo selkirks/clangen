@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-from scripts.clan import OtherClan
->>>>>>> clangen-megamerge
 from scripts.game_structure import game
 
 
@@ -27,7 +23,6 @@ def get_other_clan(clan_name):
             return clan
 
 
-<<<<<<< HEAD
 def change_clan_relations(other_clan, difference):
     """
     will change the Clan's relation with other clans according to the difference parameter.
@@ -46,13 +41,6 @@ def change_clan_relations(other_clan, difference):
         clan_relations = 0
     # setting it in the Clan save
     game.clan.all_other_clans[y].relations = clan_relations
-=======
-def change_clan_relations(other_clan: OtherClan, difference):
-    """
-    will change the Clan's relation with other clans according to the difference parameter.
-    """
-    other_clan.relations += difference
->>>>>>> clangen-megamerge
 
 
 def change_clan_reputation(difference):

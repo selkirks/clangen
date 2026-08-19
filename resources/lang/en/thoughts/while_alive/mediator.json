@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "mediator_gen",
-=======
-        "event_id": "mediator_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is feeling a sense of pride after mediating a difficult argument",
             "Wishes {PRONOUN/m_c/poss} Clanmates would just talk to each other",
@@ -36,11 +32,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "mediator_to_alive_mediator",
-=======
-        "event_id": "mediator_to_alive_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Is discussing conflict resolution strategies with r_c",
             "Thinks r_c may have worsened a c_n argument",
@@ -59,11 +51,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "mediator_to_alive_kits",
-=======
-        "event_id": "mediator_to_alive_kits",
->>>>>>> clangen-megamerge
         "strings": [
             "Had to fix an argument between the kits... again"
         ],
@@ -76,11 +64,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "mediator_to_alive_leader",
-=======
-        "event_id": "mediator_to_alive_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Is upset with the leader over a border dispute gone wrong",
             "Mediated a meeting between senior warriors and the leader over recent Clan decisions",
@@ -98,11 +82,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "mediator_to_alive_elder",
-=======
-        "event_id": "mediator_to_alive_elder",
->>>>>>> clangen-megamerge
         "strings": [
             "Had to fix an argument between the elders... again"
         ],
@@ -115,11 +95,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bloodthirsty_mediator",
-=======
-        "event_id": "bloodthirsty_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Is wondering if {PRONOUN/m_c/subject} should sabotage a relationship that is going a bit too well",
             "Wishes to break up a sickeningly lovey-dovey couple",
@@ -136,11 +112,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "cold_mediator",
-=======
-        "event_id": "cold_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Is judging two Clanmates for their foolish argument",
             "Wishes to break up a sickeningly lovey-dovey couple",
@@ -157,11 +129,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "compassionate_mediator",
-=======
-        "event_id": "compassionate_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Feels bad for a parent who can't seem to get along with their child",
             "Wonders why everyone can't just get along"
@@ -177,11 +145,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fierce_mediator",
-=======
-        "event_id": "fierce_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Is greatly annoyed by a Clanmate's inability to accept they were in the wrong",
             "Is fighting the urge to shake some sense into a Clanmate"
@@ -197,11 +161,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "insecure_mediator",
-=======
-        "event_id": "insecure_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Finds mediating emotionally draining",
             "Is worried {PRONOUN/m_c/subject} may have made things worse"
@@ -217,11 +177,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loving_mediator",
-=======
-        "event_id": "loving_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Wonders why everyone can't just get along",
             "Sees all sides of the argument",
@@ -238,11 +194,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "nervous_mediator",
-=======
-        "event_id": "nervous_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Finds mediating emotionally draining",
             "Is feeling worried with all the high tension lately"
@@ -258,11 +210,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "righteous_mediator",
-=======
-        "event_id": "righteous_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Is greatly annoyed by a Clanmate's inability to accept they were in the wrong"
         ],
@@ -277,11 +225,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "troublesome_mediator",
-=======
-        "event_id": "troublesome_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Is looking for a pair to sabotage, out of boredom",
             "Solves problems by starting them"
@@ -297,11 +241,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "vengeful_mediator",
-=======
-        "event_id": "vengeful_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Is wondering if {PRONOUN/m_c/subject} should sabotage a relationship that is going a bit too well",
             "Wishes to break up a sickeningly lovey-dovey couple",
@@ -318,11 +258,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "mediator_to_dead_mediator",
-=======
-        "event_id": "mediator_to_dead_mediator",
->>>>>>> clangen-megamerge
         "strings": [
             "Wishes {PRONOUN/m_c/subject} could ask r_c for advice",
             "Wonders how r_c would have handled c_n's most recent conflict"
@@ -339,11 +275,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "mediator_to_newborn",
-=======
-        "event_id": "mediator_to_newborn",
->>>>>>> clangen-megamerge
         "strings": [
             "Readies {PRONOUN/m_c/self} for the emotions a new birth might provoke"
         ],

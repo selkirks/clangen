@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_kit",
-=======
-        "event_id": "gen_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Plays moss ball by {PRONOUN/m_c/self}",
             "Wants to take a nap",
@@ -47,11 +43,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "gen_kit_and_cat",
-=======
-        "event_id": "gen_kit_and_cat",
->>>>>>> clangen-megamerge
         "strings": [
             "Wonders who {PRONOUN/m_c/poss} mentor will be",
             "Is nervous for {PRONOUN/m_c/poss} apprentice ceremony",
@@ -76,11 +68,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "kit_to_kit",
-=======
-        "event_id": "kit_to_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is telling on r_c for climbing a bit too high",
             "Is telling on r_c for doing something bad",
@@ -105,11 +93,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "kit_older_cats",
-=======
-        "event_id": "kit_older_cats",
->>>>>>> clangen-megamerge
         "strings": [
             "Is asking older cats how kits are born",
             "Wishes other cats would stop babying {PRONOUN/m_c/object}",
@@ -137,11 +121,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "kit_alive_med_cat",
-=======
-        "event_id": "kit_alive_med_cat",
->>>>>>> clangen-megamerge
         "strings": [
             "Refuses to eat the herbs the medicine cat has given {PRONOUN/m_c/object} for {PRONOUN/m_c/poss} tummy",
             "Hides in the medicine cat's herb stores",
@@ -165,11 +145,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "kit_alive_elder",
-=======
-        "event_id": "kit_alive_elder",
->>>>>>> clangen-megamerge
         "strings": [
             "Was nipped on the rump by an elder for being naughty",
             "Was hissed at by r_c for being too noisy",
@@ -192,11 +168,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_greenleaf_kit",
-=======
-        "event_id": "gen_greenleaf_kit",
->>>>>>> clangen-megamerge
         "season": [
             "greenleaf"
         ],
@@ -213,11 +185,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_leafbare_kit",
-=======
-        "event_id": "gen_leafbare_kit",
->>>>>>> clangen-megamerge
         "season": [
             "leaf-bare"
         ],
@@ -234,11 +202,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "attention-seeker_kit",
-=======
-        "event_id": "attention-seeker_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Wakes r_c in the middle of the night to ask a question about snails",
             "Wakes up early to say hello to the dawn patrol",
@@ -268,11 +232,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "guarding_kit",
-=======
-        "event_id": "guarding_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Guards the fresh-kill pile to make sure each Clanmate only takes one piece",
             "Demands to be allowed to guard camp",
@@ -294,11 +254,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "tattletale_kit",
-=======
-        "event_id": "tattletale_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is telling on r_c for something m_c was told {PRONOUN/m_c/subject} couldn't do"
         ],
@@ -330,11 +286,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bossy_kit",
-=======
-        "event_id": "bossy_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Can't wait to be deputy so {PRONOUN/m_c/subject} can assign patrols",
             "Tells r_c to catch {PRONOUN/m_c/object} some fresh prey",
@@ -363,11 +315,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bullying_kit",
-=======
-        "event_id": "bullying_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Knocks over r_c",
             "Makes fun of r_c's insecurities",
@@ -403,11 +351,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bullying_kit_to_other",
-=======
-        "event_id": "bullying_kit_to_other",
->>>>>>> clangen-megamerge
         "strings": [
             "Knocks over r_c",
             "Shoved r_c out of the nest",
@@ -432,11 +376,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "charming_kit",
-=======
-        "event_id": "charming_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is rolling around cutely while warriors look upon {PRONOUN/m_c/object}",
             "Is rubbing up against the warriors' legs",
@@ -467,11 +407,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "daydreamer_kit",
-=======
-        "event_id": "daydreamer_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Thinks {PRONOUN/m_c/subject} saw a StarClan cat in {PRONOUN/m_c/poss} dreams",
             "Is mesmerized by the night sky",
@@ -510,11 +446,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fearless_kit",
-=======
-        "event_id": "fearless_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is attempting to pounce on the tail of r_c",
             "Tries to sneak out of camp with a patrol",
@@ -548,11 +480,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fearless_kit_to_apprentice",
-=======
-        "event_id": "fearless_kit_to_apprentice",
->>>>>>> clangen-megamerge
         "strings": [
             "Picks a fight with an apprentice so {PRONOUN/m_c/subject} can show {PRONOUN/m_c/poss} skills"
         ],
@@ -575,11 +503,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fearless_kit_to_leader",
-=======
-        "event_id": "fearless_kit_to_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Is trying to challenge the leader but isn't being taken very seriously",
             "Is sneaking into the leader's nest"
@@ -603,11 +527,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "impulsive_kit",
-=======
-        "event_id": "impulsive_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is streaking across the clearing",
             "Is pretending to be a rabbit and hopping about",
@@ -668,11 +588,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "know-it-all_kit",
-=======
-        "event_id": "know-it-all_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Has already learned the hunter's crouch",
             "Doesn't need r_c to tell {PRONOUN/m_c/object} anything",
@@ -703,11 +619,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "noisy_kit",
-=======
-        "event_id": "noisy_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is practicing a mighty roar",
             "Yowls as loudly as {PRONOUN/m_c/subject} can",
@@ -739,11 +651,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "noisy_kit_to_elder",
-=======
-        "event_id": "noisy_kit_to_elder",
->>>>>>> clangen-megamerge
         "strings": [
             "Asked r_c for a story but keeps interrupting {PRONOUN/r_c/object}"
         ],
@@ -766,11 +674,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "polite_kit",
-=======
-        "event_id": "polite_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Always says please and thank you",
             "Is making sure not to be in anyone's way",
@@ -800,11 +704,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "quiet_kit",
-=======
-        "event_id": "quiet_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is too good at playing hide and seek",
             "Is asked to speak up",
@@ -844,11 +744,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "self-conscious_kit",
-=======
-        "event_id": "self-conscious_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Doesn't think {PRONOUN/m_c/subject} will ever be an apprentice",
             "Thinks r_c doesn't like {PRONOUN/m_c/object}",
@@ -879,11 +775,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "shy_kit",
-=======
-        "event_id": "shy_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Feels alone",
             "Wishes {PRONOUN/m_c/subject} had friends",
@@ -914,11 +806,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "skittish_kit",
-=======
-        "event_id": "skittish_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Was startled by a croaking frog",
             "Is doing {PRONOUN/m_c/poss} best not to get stepped on",
@@ -971,11 +859,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "sweet_kit",
-=======
-        "event_id": "sweet_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is pretending to be the medicine cat",
             "Plucks feathers from a fresh-kill bird to add to nests",
@@ -1019,11 +903,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "unruly_kit",
-=======
-        "event_id": "unruly_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Thinks about mischief",
             "Wonders what trouble {PRONOUN/m_c/subject} can create",
@@ -1067,11 +947,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "kit_med_parent",
-=======
-        "event_id": "kit_med_parent",
->>>>>>> clangen-megamerge
         "strings": [
             "Is visiting the medicine cat den to see {PRONOUN/m_c/poss} parent, r_c",
             "Is wondering why r_c became a medicine cat and not a warrior",
@@ -1107,11 +983,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "kit_dead_kit",
-=======
-        "event_id": "kit_dead_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is wondering if r_c would have been {PRONOUN/m_c/poss} friend"
         ],
@@ -1141,11 +1013,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "kit_dead_kit2",
-=======
-        "event_id": "kit_dead_kit2",
->>>>>>> clangen-megamerge
         "strings": [
             "Is missing seeing r_c in the nursery",
             "Is asking when r_c is coming back",
@@ -1167,11 +1035,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "kittencough_gen",
-=======
-        "event_id": "kittencough_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Wants to play but can't stop coughing",
             "Is unusually willing to nap",
@@ -1190,11 +1054,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "kit_to_pregnant_cat",
-=======
-        "event_id": "kit_to_pregnant_cat",
->>>>>>> clangen-megamerge
         "strings": [
             "Wants r_c to let {PRONOUN/m_c/object} name one of the kits",
             "Can't wait for r_c's kits to be here so they can play together",
@@ -1212,11 +1072,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "kit_to_newborn",
-=======
-        "event_id": "kit_to_newborn",
->>>>>>> clangen-megamerge
         "strings": [
             "Asks when r_c will be big enough to play with",
             "Tries to give r_c a juicy piece of prey",
@@ -1252,11 +1108,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "Stolen_kit",
-=======
-        "event_id": "Stolen_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Fears what might happen to {PRONOUN/m_c/object}",
             "Is thinking of {PRONOUN/m_c/poss} family",
@@ -1279,11 +1131,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "Stolen_kit_to_other_kit",
-=======
-        "event_id": "Stolen_kit_to_other_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is hesitant to play with r_c",
             "Watches r_c carefully",
@@ -1310,11 +1158,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "Stolen_kit_bold",
-=======
-        "event_id": "Stolen_kit_bold",
->>>>>>> clangen-megamerge
         "strings": [
             "Is caught trying to escape",
             "Nips r_c to demostrate {PRONOUN/m_c/poss} strength",
@@ -1349,11 +1193,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "Stolen_kit_nervous",
-=======
-        "event_id": "Stolen_kit_nervous",
->>>>>>> clangen-megamerge
         "strings": [
             "Is avoiding everyone",
             "Tries to stay quiet",

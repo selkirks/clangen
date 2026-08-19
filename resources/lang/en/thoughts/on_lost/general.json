@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_newly_lost",
-=======
-        "event_id": "gen_newly_lost",
->>>>>>> clangen-megamerge
         "strings": [
             "Looks around in confusion"
         ]

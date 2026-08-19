@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "warrior_gen_alive_kits",
-=======
-        "event_id": "warrior_gen_alive_kits",
->>>>>>> clangen-megamerge
         "strings": [
             "Is watching over the kits",
             "Begrudgingly allows kits to play with {PRONOUN/m_c/poss} tail",
@@ -28,11 +24,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "warrior_gen_alive_apprentice",
-=======
-        "event_id": "warrior_gen_alive_apprentice",
->>>>>>> clangen-megamerge
         "strings": [
             "Has the apprentices very engaged in a very, very tall tale"
         ],
@@ -48,11 +40,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "warrior_gen_deputy",
-=======
-        "event_id": "warrior_gen_deputy",
->>>>>>> clangen-megamerge
         "strings": [
             "Wants to be chosen as the new deputy"
         ],
@@ -65,11 +53,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_older_warrior",
-=======
-        "event_id": "gen_older_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Tries to set a good example for younger cats"
         ],
@@ -89,11 +73,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "warrior_gen_medicine_cat",
-=======
-        "event_id": "warrior_gen_medicine_cat",
->>>>>>> clangen-megamerge
         "strings": [
             "Plans to visit the medicine cat",
             "Is helping to escort the medicine cat to gather herbs"
@@ -110,11 +90,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "warrior_gen_warrior",
-=======
-        "event_id": "warrior_gen_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is sparring with some Clanmates",
             "Wants to critique r_c's fighting techniques",
@@ -132,11 +108,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "ambitious_forest_warrior",
-=======
-        "event_id": "ambitious_forest_warrior",
->>>>>>> clangen-megamerge
         "location": [
             "forest"
         ],
@@ -154,11 +126,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "ambitious_warrior",
-=======
-        "event_id": "ambitious_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is boasting loudly about having defeated an enemy warrior on patrol the other day",
             "Made sure to wake up early to volunteer for the dawn patrol",
@@ -182,11 +150,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "careful_warrior",
-=======
-        "event_id": "careful_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is dutifully standing guard outside of camp",
             "Is going back to check on an old fox burrow {PRONOUN/m_c/subject} discovered yesterday, just to be safe",
@@ -203,11 +167,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "careful_warrior_to_deputy",
-=======
-        "event_id": "careful_warrior_to_deputy",
->>>>>>> clangen-megamerge
         "strings": [
             "Asks the deputy about sending out some more hunting patrols \u00e2\u20ac\u201d just to be sure"
         ],
@@ -230,11 +190,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "childish_warrior",
-=======
-        "event_id": "childish_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is whining about Clan duties",
             "Splashes in a puddle of water during a patrol",
@@ -252,11 +208,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "compassionate_warrior",
-=======
-        "event_id": "compassionate_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Patiently waits for a rabbit to come out of its burrow, eventually catching it",
             "Offered to walk at the front of the patrol",
@@ -279,11 +231,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "compassionate_warrior_to_living_apprentices",
-=======
-        "event_id": "compassionate_warrior_to_living_apprentices",
->>>>>>> clangen-megamerge
         "strings": [
             "Takes r_c's place in the dawn patrol so {PRONOUN/r_c/subject} can sleep in a little"
         ],
@@ -306,11 +254,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "daring_warrior",
-=======
-        "event_id": "daring_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is challenging any Clanmate {PRONOUN/m_c/subject} can to a sparring match... with minimal recruiting success",
             "Is challenging some Clanmates to a sparring match, two-on-one!",
@@ -330,11 +274,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fierce_warrior",
-=======
-        "event_id": "fierce_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is showing off {PRONOUN/m_c/poss} battle moves",
             "Offered to lead a border patrol today",
@@ -352,11 +292,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fierce_warrior_to_living_deputy",
-=======
-        "event_id": "fierce_warrior_to_living_deputy",
->>>>>>> clangen-megamerge
         "strings": [
             "Was recently chastised by the deputy for reckless behavior out on patrol"
         ],
@@ -379,11 +315,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fierce_warrior_to_living_medcat",
-=======
-        "event_id": "fierce_warrior_to_living_medcat",
->>>>>>> clangen-megamerge
         "strings": [
             "Is asking the medicine cat for herbs that may help {PRONOUN/m_c/object} in battle"
         ],
@@ -407,11 +339,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fierce_warrior_to_living_apprentices",
-=======
-        "event_id": "fierce_warrior_to_living_apprentices",
->>>>>>> clangen-megamerge
         "strings": [
             "Is arguing for more battle training for the apprentices"
         ],
@@ -434,11 +362,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loyal_warrior_to_leader",
-=======
-        "event_id": "loyal_warrior_to_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Is listening to the leader intently",
             "Is telling the leader details about {PRONOUN/m_c/poss} recent patrol",
@@ -465,11 +389,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loyal_warrior_to_deputy",
-=======
-        "event_id": "loyal_warrior_to_deputy",
->>>>>>> clangen-megamerge
         "strings": [
             "Is listening to the deputy intently",
             "Is telling the deputy details about {PRONOUN/m_c/poss} recent patrol",
@@ -494,11 +414,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "responsible_warrior",
-=======
-        "event_id": "responsible_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is making sure {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} done all of {PRONOUN/m_c/poss} daily duties",
             "Is offering to lead the next patrol out",
@@ -515,11 +431,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "righteous_warrior",
-=======
-        "event_id": "righteous_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is refusing to follow the deputy's recent orders due to {PRONOUN/m_c/poss} own morals"
         ],
@@ -542,11 +454,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "strict_warrior",
-=======
-        "event_id": "strict_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is conducting a rather rigorous training session for the younger warriors",
             "Takes pride in how well-run {PRONOUN/m_c/poss} patrols always are"
@@ -562,11 +470,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "troublesome_warrior",
-=======
-        "event_id": "troublesome_warrior",
->>>>>>> clangen-megamerge
         "strings": [
             "Ate a mouse while out on patrol"
         ],
@@ -581,11 +485,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "troublesome_warrior_to_deputy",
-=======
-        "event_id": "troublesome_warrior_to_deputy",
->>>>>>> clangen-megamerge
         "strings": [
             "Is being lectured yet again by the deputy"
         ],
@@ -608,11 +508,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "warrior_parent_alive_kits",
-=======
-        "event_id": "warrior_parent_alive_kits",
->>>>>>> clangen-megamerge
         "strings": [
             "Excitedly plays games with r_c, letting {PRONOUN/r_c/object} win every time",
             "Is woken up by r_c jumping on {PRONOUN/m_c/object}, begging for something",
@@ -648,11 +544,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "warrior_formerly_a_loner_alive_kits",
-=======
-        "event_id": "warrior_formerly_a_loner_alive_kits",
->>>>>>> clangen-megamerge
         "strings": [
             "Is telling the kits about {PRONOUN/m_c/poss} days as a loner",
             "Is being begged by r_c to tell {PRONOUN/r_c/object} about what being a loner was like"
@@ -679,11 +571,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "warrior_formerly_a_rogue_alive_kits",
-=======
-        "event_id": "warrior_formerly_a_rogue_alive_kits",
->>>>>>> clangen-megamerge
         "strings": [
             "Is telling the kits about {PRONOUN/m_c/poss} days as a rogue",
             "Is being begged by r_c to tell {PRONOUN/r_c/object} more what being a rogue was like"

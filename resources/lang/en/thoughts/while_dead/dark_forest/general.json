@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "general_dark_forest_thoughts",
-=======
-        "event_id": "general_dark_forest_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Is practicing battle moves",
             "Is sharpening {PRONOUN/m_c/poss} claws",
@@ -55,11 +51,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "dark_forest_to_living_other",
-=======
-        "event_id": "dark_forest_to_living_other",
->>>>>>> clangen-megamerge
         "strings": [
             "Is thinking about walking in the dreams of r_c",
             "Watches r_c with malice in {PRONOUN/m_c/poss} eyes",
@@ -76,11 +68,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "dark_forest_kind",
-=======
-        "event_id": "dark_forest_kind",
->>>>>>> clangen-megamerge
         "strings": [
             "Wishes {PRONOUN/m_c/subject} could go to StarClan",
             "Feels regret for {PRONOUN/m_c/poss} actions",
@@ -118,11 +106,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "dark_forest_evil",
-=======
-        "event_id": "dark_forest_evil",
->>>>>>> clangen-megamerge
         "strings": [
             "Is fighting with another member of the Dark Forest",
             "Wishes {PRONOUN/m_c/subject} could hurt those who have wronged {PRONOUN/m_c/object}",
@@ -172,11 +156,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "dark_forest_sneaky",
-=======
-        "event_id": "dark_forest_sneaky",
->>>>>>> clangen-megamerge
         "strings": [
             "Isn't surprised in the slightest as to why {PRONOUN/m_c/subject} ended up here",
             "Easily avoided encountering another shadowy cat",
@@ -199,11 +179,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "dark_forest_stealth",
-=======
-        "event_id": "dark_forest_stealth",
->>>>>>> clangen-megamerge
         "strings": [
             "Easily avoided encountering another shadowy cat",
             "Talked {PRONOUN/m_c/poss} way out of a training session",

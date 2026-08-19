@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_dead_newborn",
-=======
-        "event_id": "gen_dead_newborn",
->>>>>>> clangen-megamerge
         "strings": [
             "Mewls pitifully for milk",
             "Snoozes peacefully",
@@ -24,11 +20,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_dead_newborn_to_alive_parent",
-=======
-        "event_id": "gen_dead_newborn_to_alive_parent",
->>>>>>> clangen-megamerge
         "strings": [
             "Thinks {PRONOUN/m_c/subject} heard r_c's voice",
             "Is mewling for r_c",
@@ -63,11 +55,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "gen_dead_newborn_to_dead_other",
-=======
-        "event_id": "gen_dead_newborn_to_dead_other",
->>>>>>> clangen-megamerge
         "strings": [
             "Is being watched by r_c",
             "Is being bathed by r_c",

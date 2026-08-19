@@ -93,11 +93,8 @@ def read_clans():
     :return:
     """
     save_dir = Path(get_save_dir())
-<<<<<<< HEAD
     clanlist_path = Path(get_save_dir()) / "clanlist.txt"
     """save_dir/clanlist.txt"""
-=======
->>>>>>> clangen-megamerge
     currentclan_path = Path(get_save_dir()) / "currentclan.txt"
     """save_dir/currentclan.txt"""
 
@@ -111,7 +108,6 @@ def read_clans():
     clan_list: List[str] = [d.name for d in save_dir.iterdir() if d.is_dir()]
     clan_list.sort()  # because iterdir doesn't guarantee an order, we guarantee alphabetical here
 
-<<<<<<< HEAD
     # the Clan specified in saves/clanlist.txt should be first in the list
     # so that we can load it automatically
     if clanlist_path.exists():
@@ -125,9 +121,6 @@ def read_clans():
         if loaded_clan:
             safe_save(currentclan_path, loaded_clan)
     elif currentclan_path.exists():
-=======
-    if currentclan_path.exists():
->>>>>>> clangen-megamerge
         with open(currentclan_path, "r", encoding="utf-8") as f:
             loaded_clan = f.read().strip()
     else:

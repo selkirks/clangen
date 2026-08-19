@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 from typing import List
 
 from pydantic import Field
-=======
-from typing import List, Union, Literal
-
-from pydantic import Field
-from pydantic_core import MISSING
->>>>>>> clangen-megamerge
 
 from scripts.models.relationship_pair_event.cat_enums import PairEventCatEnum
 from scripts.models.text_pool_event.relationship_constraint_dict import (

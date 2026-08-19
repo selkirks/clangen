@@ -1,20 +1,12 @@
 [
     {
-<<<<<<< HEAD
         "id": "general_exiled",
-=======
-        "event_id": "general_exiled",
->>>>>>> clangen-megamerge
         "strings": [
             "Is shocked that {PRONOUN/m_c/subject} {VERB/m_c/have/has} been exiled"
         ]
     },
     {
-<<<<<<< HEAD
         "id": "general_exiled_revenge",
-=======
-        "event_id": "general_exiled_revenge",
->>>>>>> clangen-megamerge
         "strings": [
             "Swears {PRONOUN/m_c/poss} revenge for being exiled"
         ],

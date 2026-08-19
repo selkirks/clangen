@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "general_loner_thoughts",
-=======
-        "event_id": "general_loner_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Is spending the night with a friend",
             "Wonders about what Clan life would be like",
@@ -32,11 +28,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "loner_kitten_/_adolescent_thoughts",
-=======
-        "event_id": "loner_kitten_/_adolescent_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Is trying to figure out how to catch a bird",
             "Is trying to figure out how to catch a mouse",
@@ -52,11 +44,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loner_adolescent_thoughts",
-=======
-        "event_id": "loner_adolescent_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Is currently trying to figure out how to catch a squirrel",
             "Is currently trying to figure out how to catch a rabbit",
@@ -87,11 +75,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loner_adolescent_to_clanapp_thoughts",
-=======
-        "event_id": "loner_adolescent_to_clanapp_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Has a mock battle with r_c from c_n whenever the apprentice flees from {PRONOUN/r_c/poss} boring chores",
             "Shows off individual scars and tells r_c in detail how {PRONOUN/m_c/subject} got them all",
@@ -115,11 +99,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loner_adult_thoughts",
-=======
-        "event_id": "loner_adult_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Is scouting out locations for a new den",
             "Nearly got caught in a Twoleg trap!",
@@ -139,11 +119,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loner_senior_or_elder_thoughts",
-=======
-        "event_id": "loner_senior_or_elder_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Wonders if {PRONOUN/m_c/subject} should have joined a Clan when {PRONOUN/m_c/subject} {VERB/m_c/were/was} younger",
             "Debates finding housefolk to care for {PRONOUN/m_c/object} in {PRONOUN/m_c/poss} old age",
@@ -173,11 +149,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loner_leaffall",
-=======
-        "event_id": "loner_leaffall",
->>>>>>> clangen-megamerge
         "season": [
             "leaf-fall"
         ],
@@ -186,11 +158,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "loner_leafbare",
-=======
-        "event_id": "loner_leafbare",
->>>>>>> clangen-megamerge
         "season": [
             "leaf-bare"
         ],

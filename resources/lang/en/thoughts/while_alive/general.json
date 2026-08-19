@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen",
-=======
-        "event_id": "gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is feeling quite lazy",
             "Is spending a considerable amount of time grooming",
@@ -78,11 +74,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "gen_to_other",
-=======
-        "event_id": "gen_to_other",
->>>>>>> clangen-megamerge
         "strings": [
             "Is eavesdropping on r_c",
             "Wonders how r_c is doing",
@@ -90,11 +82,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "gen_not_kit",
-=======
-        "event_id": "gen_not_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is thinking about {PRONOUN/m_c/poss} life choices",
             "Can't wait to take a nap later",
@@ -113,11 +101,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_to_kit",
-=======
-        "event_id": "gen_to_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is a bit cross with r_c",
             "Is growing fond of r_c",
@@ -144,11 +128,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_to_alive_senior",
-=======
-        "event_id": "gen_to_alive_senior",
->>>>>>> clangen-megamerge
         "strings": [
             "Is hoping r_c will tell {PRONOUN/m_c/object} a new story",
             "Wonders at all that r_c has seen and done",
@@ -173,11 +153,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_newleaf_greenleaf",
-=======
-        "event_id": "gen_newleaf_greenleaf",
->>>>>>> clangen-megamerge
         "season": [
             "newleaf",
             "greenleaf"
@@ -187,11 +163,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "gen_greenleaf",
-=======
-        "event_id": "gen_greenleaf",
->>>>>>> clangen-megamerge
         "season": [
             "greenleaf"
         ],
@@ -204,11 +176,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "gen_leaffall",
-=======
-        "event_id": "gen_leaffall",
->>>>>>> clangen-megamerge
         "season": [
             "leaf-fall"
         ],
@@ -219,11 +187,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "gen_leafbare",
-=======
-        "event_id": "gen_leafbare",
->>>>>>> clangen-megamerge
         "season": [
             "leaf-bare"
         ],
@@ -236,11 +200,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "adventurous_gen",
-=======
-        "event_id": "adventurous_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Wonders what lies beyond the distant horizon...",
             "Is dreaming of one day discovering something new and exciting!",
@@ -263,11 +223,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "play_pretend_gen",
-=======
-        "event_id": "play_pretend_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Has r_c very engaged in a very, very tall tale",
             "Is proudly watching r_c plan how to hunt down a creature {PRONOUN/m_c/subject} made up",
@@ -303,11 +259,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "ambitious_gen",
-=======
-        "event_id": "ambitious_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is feeling proud of {PRONOUN/m_c/self}",
             "Wants to drive off a fox all by {PRONOUN/m_c/self}",
@@ -325,11 +277,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "arrogant_gen",
-=======
-        "event_id": "arrogant_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is sure that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} more skilled than anyone else",
             "Is confidently spreading misinformation on something {PRONOUN/m_c/subject} {VERB/m_c/know/knows} little about",
@@ -350,11 +298,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bloodthirsty_gen",
-=======
-        "event_id": "bloodthirsty_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is acting suspicious",
             "Has been washing {PRONOUN/m_c/poss} paws a lot lately",
@@ -382,11 +326,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bold_gen",
-=======
-        "event_id": "bold_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Prances around with {PRONOUN/m_c/poss} tail up high, ready for anything",
             "Is not afraid of anything"
@@ -402,11 +342,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bold_to_kit",
-=======
-        "event_id": "bold_to_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Promises r_c {PRONOUN/m_c/subject}'ll protect {PRONOUN/r_c/object} when the time comes"
         ],
@@ -430,11 +366,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "calm_gen",
-=======
-        "event_id": "calm_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is taking a moment to appreciate some peace and quiet",
             "Is meditating upon a sun-warmed rock",
@@ -459,11 +391,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "calm_to_kit",
-=======
-        "event_id": "calm_to_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is unable to be scared, no matter how much the kits try"
         ],
@@ -486,11 +414,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "careful_gen",
-=======
-        "event_id": "careful_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Slowly and methodically grooms {PRONOUN/m_c/self}",
             "Feels at peace",
@@ -508,11 +432,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "careful_to_younger",
-=======
-        "event_id": "careful_to_younger",
->>>>>>> clangen-megamerge
         "strings": [
             "Is chiding r_c for being so reckless"
         ],
@@ -540,11 +460,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "charismatic_gen",
-=======
-        "event_id": "charismatic_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Always manages to turn the mood into a lighter one",
             "Is laughing with friends",
@@ -573,11 +489,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "childish_gen",
-=======
-        "event_id": "childish_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is playing with {PRONOUN/m_c/poss} food",
             "Is crunching leaves with {PRONOUN/m_c/poss} paws",
@@ -601,11 +513,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "silly_to_living_kit",
-=======
-        "event_id": "silly_to_living_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Is pretending to not see r_c sneaking up on {PRONOUN/m_c/object}",
             "Excitedly asks r_c if {PRONOUN/r_c/subject} {VERB/r_c/know/knows} any good games",
@@ -631,11 +539,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "cold_gen",
-=======
-        "event_id": "cold_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is hissing in frustration",
             "Is grunting rudely at passersby",
@@ -657,11 +561,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "compassionate_gen",
-=======
-        "event_id": "compassionate_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is delighted by the slow passage of time",
             "Feels entirely unlike {PRONOUN/m_c/self} when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} bothered by something small",
@@ -682,11 +582,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "compassionate_to_kit",
-=======
-        "event_id": "compassionate_to_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Smiles at some kit's cheap prank, knowing they'll grow out of it soon",
             "Listens to a kit's complaints, even if they seem trivial",
@@ -711,11 +607,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "competitive_gen",
-=======
-        "event_id": "competitive_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Puffs out {PRONOUN/m_c/poss} chest, feeling secure with the space {PRONOUN/m_c/subject} {VERB/m_c/take/takes} up",
             "Is practicing doing things around camp as fast as possible, just in case",
@@ -732,11 +624,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "confident_gen",
-=======
-        "event_id": "confident_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is puffing {PRONOUN/m_c/poss} chest out",
             "Thinks that {PRONOUN/m_c/subject} {VERB/m_c/are/is} the funniest cat around",
@@ -758,11 +646,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "cunning_gen",
-=======
-        "event_id": "cunning_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Knows exactly how to get {PRONOUN/m_c/self} out of a mess {PRONOUN/m_c/subject} orchestrated",
             "Grooms {PRONOUN/m_c/poss} pelt to <i>just</i> this side of perfection",
@@ -780,11 +664,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "daring_gen",
-=======
-        "event_id": "daring_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Took a nap on a high tree branch",
             "Took a nap on the edge of a high rock",
@@ -811,11 +691,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "faithful_gen",
-=======
-        "event_id": "faithful_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is certain of {PRONOUN/m_c/poss} purpose",
             "Doesn't question {PRONOUN/m_c/poss} own judgment",
@@ -836,11 +712,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "faithful_to_kit",
-=======
-        "event_id": "faithful_to_kit",
->>>>>>> clangen-megamerge
         "strings": [
             "Urges r_c to follow {PRONOUN/r_c/poss} own beliefs"
         ],
@@ -863,11 +735,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "fierce_gen",
-=======
-        "event_id": "fierce_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Isn't scared of anything today!",
             "Can't stop flexing {PRONOUN/m_c/poss} claws",
@@ -894,11 +762,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "flamboyant_gen",
-=======
-        "event_id": "flamboyant_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is catching the attention of every cat around {PRONOUN/m_c/object}",
             "Works to show off {PRONOUN/m_c/poss} talents in every movement {PRONOUN/m_c/subject} {VERB/m_c/make/makes}",
@@ -924,11 +788,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gloomy_gen",
-=======
-        "event_id": "gloomy_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is feeling down...",
             "Wants to be alone...",
@@ -951,11 +811,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "grumpy_gen",
-=======
-        "event_id": "grumpy_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is grumbling about something or other to {PRONOUN/m_c/self}",
             "Is extra irritable today",
@@ -982,11 +838,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "insecure_gen",
-=======
-        "event_id": "insecure_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is wondering if {PRONOUN/m_c/subject} {VERB/m_c/are/is} good enough...",
             "Is thinking about where {PRONOUN/m_c/subject} {VERB/m_c/belong/belongs}",
@@ -1014,11 +866,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "lonesome_gen",
-=======
-        "event_id": "lonesome_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is sitting alone",
             "Wants to be alone...",
@@ -1056,11 +904,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loving_gen",
-=======
-        "event_id": "loving_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is feeling content with the little things in life",
             "Is purring with friends",
@@ -1090,11 +934,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "loyal_gen",
-=======
-        "event_id": "loyal_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is determined to protect {PRONOUN/m_c/poss} loved ones",
             "Is determined to protect {PRONOUN/m_c/poss} loved ones, now more-so than ever",
@@ -1118,11 +958,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "nervous_gen",
-=======
-        "event_id": "nervous_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Feels like there are ants pricking {PRONOUN/m_c/poss} pelt...",
             "Wonders if other cats laugh with {PRONOUN/m_c/object} or at {PRONOUN/m_c/object}...",
@@ -1151,11 +987,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "playful_gen",
-=======
-        "event_id": "playful_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Pounced on a stray leaf with satisfaction",
             "Seems to be playing with {PRONOUN/m_c/poss} food",
@@ -1187,11 +1019,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "rebellious_gen",
-=======
-        "event_id": "rebellious_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is doubting why things are done the way they are",
             "Has simply decided not to do what {PRONOUN/m_c/subject} {VERB/m_c/were/was} told",
@@ -1209,11 +1037,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "responsible_gen",
-=======
-        "event_id": "responsible_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Plans to wake up early tomorrow",
             "Was the first to rise this morning",
@@ -1236,11 +1060,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "righteous_gen",
-=======
-        "event_id": "righteous_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is reevaluating {PRONOUN/m_c/poss} morals",
             "Silently judges r_c from afar"
@@ -1261,11 +1081,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "shameless_gen",
-=======
-        "event_id": "shameless_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is snoring at a ridiculous volume",
             "Is laughing at a dog stuck behind a Twoleg fence",
@@ -1297,11 +1113,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "sincere_gen",
-=======
-        "event_id": "sincere_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Doesn't understand why other cats lie",
             "Is spending a lot of {PRONOUN/m_c/poss} time thinking of ways to support any cat, no matter what they're going through",
@@ -1330,11 +1142,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "strange_gen",
-=======
-        "event_id": "strange_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Doesn't understand why cats stare at {PRONOUN/m_c/object} the way they do",
             "Won a staring contest against a cat who was not participating",
@@ -1372,11 +1180,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "strange_not_kittypet",
-=======
-        "event_id": "strange_not_kittypet",
->>>>>>> clangen-megamerge
         "strings": [
             "Wants to change {PRONOUN/m_c/poss} name to be like a kittypet"
         ],
@@ -1397,11 +1201,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "stealth_gen",
-=======
-        "event_id": "stealth_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Taunted a dog stuck behind a Twoleg fence",
             "Is acting suspicious",
@@ -1430,11 +1230,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "strict_gen",
-=======
-        "event_id": "strict_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is lashing {PRONOUN/m_c/poss} tail furiously",
             "Will not allow {PRONOUN/m_c/self} to rest",
@@ -1451,11 +1247,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "thoughtful_gen",
-=======
-        "event_id": "thoughtful_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Prepared the perfect gift for a friend",
             "Looks out for r_c",
@@ -1478,11 +1270,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "troublesome_gen",
-=======
-        "event_id": "troublesome_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Won't stop pulling pranks",
             "Is causing problems",
@@ -1513,11 +1301,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "vengeful_gen",
-=======
-        "event_id": "vengeful_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Seems to be plotting something",
             "Is definitely plotting something",
@@ -1544,11 +1328,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "vengeful_to_disliked",
-=======
-        "event_id": "vengeful_to_disliked",
->>>>>>> clangen-megamerge
         "strings": [
             "Won't let r_c get away with it",
             "Whispers the names of cats who have wronged {PRONOUN/m_c/object} before {PRONOUN/m_c/subject} {VERB/m_c/sleep/sleeps}",
@@ -1584,11 +1364,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "wise_gen",
-=======
-        "event_id": "wise_gen",
->>>>>>> clangen-megamerge
         "strings": [
             "Is grooming {PRONOUN/m_c/self} thoughtfully",
             "Solves a problem by thinking back to another time the exact same thing happened",
@@ -1618,11 +1394,7 @@
         }
     },
     {
-<<<<<<< HEAD
     "id": "gen_parent_gen",
-=======
-    "event_id": "gen_parent_gen",
->>>>>>> clangen-megamerge
     "strings": [
         "Wonders if {PRONOUN/m_c/subject} {VERB/m_c/are/is} a good parent",
         "Worries about r_c's health",
@@ -1644,11 +1416,7 @@
         ]
 },
     {
-<<<<<<< HEAD
     "id": "gen_parent_adultkit",
-=======
-    "event_id": "gen_parent_adultkit",
->>>>>>> clangen-megamerge
     "strings": [
         "Misses when r_c was young",
         "Is so proud of r_c",
@@ -1676,11 +1444,7 @@
         ]
 },
     {
-<<<<<<< HEAD
     "id": "gen_parent_youngkit",
-=======
-    "event_id": "gen_parent_youngkit",
->>>>>>> clangen-megamerge
     "strings": [
         "Is exhausted chasing after r_c",
         "Is snuggled in {PRONOUN/m_c/poss} nest with {PRONOUN/m_c/poss} litter",

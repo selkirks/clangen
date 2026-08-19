@@ -1,22 +1,12 @@
 [
     {
-<<<<<<< HEAD
         "patrol_id": "wtlnd_train_leaffall_eclipsemyth_storylocked1",
         "biome": [
-=======
-        "event_id": "wtlnd_train_leaffall_eclipsemyth_storylocked1",
-        "types": [
-            "training"
-        ],
-        "frequency": 3,
-        "location": [
->>>>>>> clangen-megamerge
             "wetlands"
         ],
         "season": [
             "leaf-fall"
         ],
-<<<<<<< HEAD
         "types": [
             "training"
         ],
@@ -25,64 +15,29 @@
         "min_cats": 4,
         "max_cats": 6,
         "min_max_status": {
-=======
-        "required_cat_types": {
-            "patrol_cats": [
-                4,
-                6
-            ],
->>>>>>> clangen-megamerge
             "normal adult": [
                 1,
                 6
             ]
         },
-<<<<<<< HEAD
         "frequency": 3,
         "chance_of_success": 60,
         "pl_skill_constraint": [
             "STORY,1"
         ],
-=======
-        "involved_cats": {
-            "p_l": {
-                "stat": {
-                    "skill": [
-                        "STORY,1"
-                    ],
-                    "trait": []
-                }
-            }
-        },
-        "chance_of_success": 60,
-        "patrol_art": "cat_sprites/gen_train_ghost_WrWrWr",
->>>>>>> clangen-megamerge
         "intro_text": "Gather round, gather round. p_l sits in the center of the group and drops {PRONOUN/p_l/poss} voice down low as a hush falls. Today, {PRONOUN/p_l/subject}'ll tell the story of StarClan's Great Anger.",
         "decline_text": "A leaf-fall rain shower chooses that moment to break — thematic, perhaps, but wet. The cats decide to pick up the story some other time.",
         "success_outcomes": [
             {
-<<<<<<< HEAD
                 "text": "At first, few but the medicine cats noticed how harsh this leaf-fall was: the snows early, the prey scarce. But all cats noticed on the day StarClan hissed — the great sun itself went dark under their anger. All paid heed to the omens then, and the Clans turned back to StarClan, begging for life and sun to return. They learned a lesson not soon forgotten.",
                 "exp": 40,
                 "relationships": [
-=======
-                "frequency": 4,
-                "strings": [
-                    "At first, few but the medicine cats noticed how harsh this leaf-fall was: the snows early, the prey scarce. But all cats noticed on the day StarClan hissed — the great sun itself went dark under their anger. All paid heed to the omens then, and the Clans turned back to StarClan, begging for life and sun to return. They learned a lesson not soon forgotten."
-                ],
-                "exp_gained": 40,
-                "relationship_changes": [
->>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
-<<<<<<< HEAD
                             "patrol"
-=======
-                            "patrol_cats"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": true,
                         "values": [
@@ -94,41 +49,21 @@
                             "cats_to": "cat_to appreciated cat_from listening to {PRONOUN/cat_to/poss} story on patrol."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
-=======
-                ]
->>>>>>> clangen-megamerge
             }
         ],
         "fail_outcomes": [
             {
-<<<<<<< HEAD
                 "text": "r_c refuses to believe their ancestors ever blotted out the sun — not that they couldn't, but that they wouldn't ever hurt the Clans, their own beloved descendants.",
                 "exp": 0,
                 "relationships": [
-=======
-                "frequency": 4,
-                "strings": [
-                    "r_c0 refuses to believe their ancestors ever blotted out the sun — not that they couldn't, but that they wouldn't ever hurt the Clans, their own beloved descendants."
-                ],
-                "involved_cats": {
-                    "r_c0": {}
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
->>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
-<<<<<<< HEAD
                             "r_c"
-=======
-                            "r_c0"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -141,7 +76,6 @@
                             "cats_from": "cat_from refused to believe the story cat_to told could ever be true."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             },
@@ -155,39 +89,12 @@
                     "rebellious"
                 ],
                 "relationships": [
-=======
-                ]
-            },
-            {
-                "frequency": 4,
-                "strings": [
-                    "If StarClan hissed at them, they should've hissed back, s_c0 argues. Their ancestors are nothing without them!"
-                ],
-                "involved_cats": {
-                    "s_c0": {
-                        "stat": {
-                            "trait": [
-                                "rebellious"
-                            ]
-                        },
-                        "prior_abbreviation": [
-                            "r_c0"
-                        ]
-                    }
-                },
-                "exp_gained": 0,
-                "relationship_changes": [
->>>>>>> clangen-megamerge
                     {
                         "cats_to": [
                             "p_l"
                         ],
                         "cats_from": [
-<<<<<<< HEAD
                             "s_c"
-=======
-                            "s_c0"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -202,17 +109,10 @@
                     },
                     {
                         "cats_to": [
-<<<<<<< HEAD
                             "patrol"
                         ],
                         "cats_from": [
                             "s_c"
-=======
-                            "patrol_cats"
-                        ],
-                        "cats_from": [
-                            "s_c0"
->>>>>>> clangen-megamerge
                         ],
                         "mutual": false,
                         "values": [
@@ -224,17 +124,9 @@
                             "cats_from": "cat_from disliked how cat_to tolerated a clearly disempowering story."
                         }
                     }
-<<<<<<< HEAD
                 ],
                 "frequency": 4
             }
         ]
     }
 ]
-=======
-                ]
-            }
-        ]
-    }
-]
->>>>>>> clangen-megamerge

@@ -2,11 +2,6 @@ from enum import Enum
 
 
 class RelationshipStatus(Enum):
-<<<<<<< HEAD
-=======
-    can_romance = "can_romance"
-    not_can_romance = "-can_romance"
->>>>>>> clangen-megamerge
     strangers = "strangers"
     siblings = "siblings"
     not_siblings = "-siblings"

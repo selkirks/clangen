@@ -33,7 +33,6 @@ from scripts.conditions import (
     get_amount_cat_for_one_medic,
 )
 from scripts.event_class import Single_Event
-<<<<<<< HEAD
 
 from scripts.events_module.generate_events import GenerateEvents, generate_events
 from scripts.events_module.outsider import outsider_events
@@ -69,43 +68,6 @@ from scripts.clan_package.get_clan_cats import (
     get_living_clan_cat_count,
 )
 
-=======
-
-from scripts.events_module.generate_events import GenerateEvents, generate_events
-from scripts.events_module.outsider import outsider_events
-from scripts.events_module.patrol.patrol import Patrol
-from scripts.events_module.relationship import relation_events
-from scripts.events_module.pregnancy import pregnancy_events
-from scripts.events_module.short.condition_events import Condition_Events
-from scripts.events_module.short.short_event_generation import create_short_event
-from scripts.game_structure import constants
-from scripts.game_structure.game.switches import (
-    Switch,
-    switch_get_value,
-    switch_set_value,
-)
-from scripts.game_structure import game
-from scripts.game_structure.localization import load_lang_resource
-from scripts.ui.windows.save_error import SaveErrorWindow
-from scripts.events_module.text_adjust import (
-    ongoing_event_text_adjust,
-    event_text_adjust,
-    ceremony_text_adjust,
-    adjust_list_text,
-    history_text_adjust,
-)
-from scripts.events_module.consequences import unpack_rel_block
-from scripts.clan_package.cotc import (
-    change_clan_reputation,
-    change_clan_relations,
-    get_other_clan,
-)
-from scripts.clan_package.get_clan_cats import (
-    find_alive_cats_with_rank,
-    get_living_clan_cat_count,
-)
-
->>>>>>> clangen-megamerge
 logger = logging.getLogger(__name__)
 
 
@@ -148,11 +110,7 @@ def one_moon():
     game.clan.age += 1
 
     update_afterlife_temper()
-<<<<<<< HEAD
     Pregnancy_Events.handle_pregnancy_age(game.clan)
-=======
-    pregnancy_events.increment_pregnancy_age()
->>>>>>> clangen-megamerge
     check_war()
 
     if game.clan.game_mode in ("expanded", "cruel_season") and game.clan.freshkill_pile:
@@ -1006,11 +964,7 @@ def one_moon_outside_cat(cat, other_clan_cats: list = None):
 
     # skill progression needs to be after rank progression
     cat.skills.progress_skill(cat)
-<<<<<<< HEAD
     Pregnancy_Events.handle_having_kits(cat, clan=game.clan)
-=======
-    pregnancy_events.handle_having_kits(cat)
->>>>>>> clangen-megamerge
 
     if not cat.dead:
         outsider_events.killing_outsiders(cat)
@@ -1106,11 +1060,7 @@ def one_moon_cat(cat):
             return
 
     coming_out(cat)
-<<<<<<< HEAD
     Pregnancy_Events.handle_having_kits(cat, clan=game.clan)
-=======
-    pregnancy_events.handle_having_kits(cat)
->>>>>>> clangen-megamerge
     # Stop the timeskip if the cat died in childbirth
     if cat.dead:
         return

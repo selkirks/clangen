@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "general_death_dark_forest_thoughts",
-=======
-        "event_id": "general_death_dark_forest_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Is startled to find {PRONOUN/m_c/self} wading in the muck of a shadowed forest",
             "Is watching {PRONOUN/m_c/poss} own vigil",
@@ -12,11 +8,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "star_death_dark_forest",
-=======
-        "event_id": "star_death_dark_forest",
->>>>>>> clangen-megamerge
         "strings": [
             "Is shocked to find {PRONOUN/m_c/self} here and not StarClan",
             "Just can't believe {PRONOUN/m_c/subject} ended up in the Dark Forest. Was StarClan not watching over c_n?"

@@ -17,14 +17,7 @@ class PointOfInterestItem(BaseModel):
     biome: List[Union[BiomeNoExclusions, Literal["any"]]] = Field(
         ..., description="Biomes the Point of Interest belongs to."
     )
-<<<<<<< HEAD
     tags: List[PointsOfInterestTag]
-=======
-    tags: List[PointsOfInterestTag] = Field(
-        ...,
-        description="Points of Interests can use many different tags that denote circumstances around them to help specify how it can be used and what events/patrols it would fit with",
-    )
->>>>>>> clangen-megamerge
 
 
 class PointsOfInterestSchema(RootModel):

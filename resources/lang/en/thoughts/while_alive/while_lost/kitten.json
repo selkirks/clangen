@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "lost_kitten_thoughts",
-=======
-        "event_id": "lost_kitten_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Is wandering around aimlessly",
             "Is attempting to catch a bird",
@@ -20,11 +16,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "lost_clan_kitten_thoughts",
-=======
-        "event_id": "lost_clan_kitten_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Misses playing moss ball",
             "Is looking desperately for {PRONOUN/m_c/poss} parent",
@@ -62,11 +54,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "lost_new_kitten_thoughts",
-=======
-        "event_id": "lost_new_kitten_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Wonders about {PRONOUN/m_c/poss} true home",
             "Doesn't understand why cats live in Clans",

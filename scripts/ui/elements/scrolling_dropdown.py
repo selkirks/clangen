@@ -96,10 +96,6 @@ class UIScrollingDropDown(UIDropDownContainer):
             disable_selection=disable_selection,
             starting_selection=starting_selection,
         )
-<<<<<<< HEAD
-=======
-        self.item_list = item_list
->>>>>>> clangen-megamerge
         self.child_buttons = self.child_button_container.buttons.values()
         self.child_button_dicts = self.child_button_container.buttons
 
@@ -117,10 +113,6 @@ class UIScrollingDropDown(UIDropDownContainer):
 
     def set_selected_list(self, new_list):
         self.child_button_container.set_selected_list(new_list)
-<<<<<<< HEAD
-=======
-        self.selected_list = self.child_button_container.selected_list
->>>>>>> clangen-megamerge
 
     def new_item_list(self, item_list):
         """

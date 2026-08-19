@@ -265,13 +265,6 @@ class ShortEvent:
             if self.handle_accessories() is False:
                 return
 
-<<<<<<< HEAD
-=======
-        # update gender before relationships
-        if self.new_gender:
-            self.handle_transition()
-
->>>>>>> clangen-megamerge
         # change relationships before killing anyone
         if self.relationships:
             # we're doing this here to make sure rel logs get adjusted text
@@ -314,13 +307,10 @@ class ShortEvent:
                 trust=-30,
             )
 
-<<<<<<< HEAD
         # update gender
         if self.new_gender:
             self.handle_transition()
 
-=======
->>>>>>> clangen-megamerge
         # kill cats
         self.handle_death()
 

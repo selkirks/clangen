@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "general_loner_dead_thoughts",
-=======
-        "event_id": "general_loner_dead_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Feels a sharp pang of hunger",
             "Wonders how {PRONOUN/m_c/subject} ended up here",

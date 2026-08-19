@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_newborn",
-=======
-        "event_id": "gen_newborn",
->>>>>>> clangen-megamerge
         "strings": [
             "Is being nursed by a purring, ghostly queen",
             "Tries to figure out all of the smells around {PRONOUN/m_c/object}",
@@ -20,11 +16,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_newborn_to_parent",
-=======
-        "event_id": "gen_newborn_to_parent",
->>>>>>> clangen-megamerge
         "strings": [
             "Snuggles closer to r_c",
             "Smells r_c and immediately perks up",

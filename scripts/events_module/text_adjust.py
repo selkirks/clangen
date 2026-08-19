@@ -1,11 +1,7 @@
 import re
 from math import floor
 from random import choice, sample, randint
-<<<<<<< HEAD
 from typing import Type, List, TYPE_CHECKING
-=======
-from typing import Type, List, TYPE_CHECKING, Union
->>>>>>> clangen-megamerge
 import logging
 
 import i18n
@@ -375,7 +371,6 @@ def event_text_adjust(
     Cat: Type["Cat"],
     text,
     *,
-<<<<<<< HEAD
     patrol_leader=None,
     main_cat=None,
     random_cat=None,
@@ -385,14 +380,6 @@ def event_text_adjust(
     patrol_apprentices: list = None,
     new_cats: list = None,
     multi_cats: list = None,
-=======
-    main_cat=None,
-    random_cat=None,
-    victim_cat=None,
-    new_cats: list = None,
-    multi_cats: list = None,
-    involved_cat_dict: dict = None,
->>>>>>> clangen-megamerge
     clan=None,
     other_clan=None,
     chosen_herb: str = None,
@@ -401,7 +388,6 @@ def event_text_adjust(
     handles finding abbreviations in the text and replacing them appropriately, returns the adjusted text
     :param Cat Cat: always pass the Cat class
     :param str text: the text being adjusted
-<<<<<<< HEAD
     :param Cat patrol_leader: Cat object for patrol_leader (p_l), if present
     :param Cat main_cat: Cat object for main_cat (m_c), if present
     :param Cat random_cat: Cat object for random_cat (r_c), if present
@@ -411,29 +397,14 @@ def event_text_adjust(
     :param list[Cat] patrol_apprentices: List of Cat objects for patrol_apprentices (app#), if present
     :param list[Cat] new_cats: List of Cat objects for new_cats (n_c:index), if present
     :param list[Cat] multi_cats: List of Cat objects for multi_cat (multi_cat), if present
-=======
-    :param Cat main_cat: Cat object for main_cat (m_c), if present
-    :param Cat random_cat: Cat object for random_cat (r_c), if present
-    :param Cat victim_cat: Cat object for victim_cat (mur_c), if present
-    :param list[Cat] new_cats: List of Cat objects for new_cats (n_c:index), if present
-    :param list[Cat] multi_cats: List of Cat objects for multi_cat (multi_cat), if present
-    :param involved_cat_dict: dict of cat designations and their associated cat objects
->>>>>>> clangen-megamerge
     :param Clan clan: pass game.clan
     :param OtherClan other_clan: OtherClan object for other_clan (o_c_n), if present
     :param str chosen_herb: string of chosen_herb (chosen_herb), if present
     """
-<<<<<<< HEAD
     if not patrol_apprentices:
         patrol_apprentices = []
     if not new_cats:
         new_cats = []
-=======
-    if not new_cats:
-        new_cats = []
-    if not involved_cat_dict:
-        involved_cat_dict = {}
->>>>>>> clangen-megamerge
 
     if not text:
         text = "This should not appear, report as a bug please! Tried to adjust the text, but no text was provided."
@@ -456,25 +427,11 @@ def event_text_adjust(
         if cat_tag:
             text = text.replace("cat_tag", cat_tag)
 
-<<<<<<< HEAD
-=======
-    for abbr, cat in involved_cat_dict.items():
-        if abbr in [*CatRank]:  # we don't want to replace mentions of ranks
-            continue
-        if abbr in text:
-            if isinstance(cat, list):
-                cat_name = adjust_list_text([str(c.name) for c in cat])
-                text.replace(abbr, cat_name)
-            else:
-                replace_dict[abbr] = (str(cat.name), choice(cat.pronouns))
-
->>>>>>> clangen-megamerge
     # main_cat
     if "m_c" in text:
         if main_cat:
             replace_dict["m_c"] = (str(main_cat.name), choice(main_cat.pronouns))
 
-<<<<<<< HEAD
     # patrol_lead
     if "p_l" in text:
         if patrol_leader:
@@ -483,14 +440,11 @@ def event_text_adjust(
                 choice(patrol_leader.pronouns),
             )
 
-=======
->>>>>>> clangen-megamerge
     # random_cat
     if "r_c" in text:
         if random_cat:
             replace_dict["r_c"] = (str(random_cat.name), get_pronouns(random_cat))
 
-<<<<<<< HEAD
     # stat cat
     if "s_c" in text:
         if stat_cat:
@@ -526,10 +480,6 @@ def event_text_adjust(
 
     # new_cats (include pre version)
     if "n_c" in text:
-=======
-    # new_cats (include pre version)
-    if "n_c" in text and not involved_cat_dict:
->>>>>>> clangen-megamerge
         for i, cat_list in enumerate(new_cats):
             if len(new_cats) > 1:
                 pronoun = get_new_pronouns("default plural")[0]

@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "general_loner_dead_thoughts",
-=======
-        "event_id": "general_loner_dead_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Wanders around {PRONOUN/m_c/poss} old territory",
             "Catches sight of Clan cats near {PRONOUN/m_c/poss} old territory",

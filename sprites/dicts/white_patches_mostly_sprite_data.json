@@ -2,7 +2,6 @@
     "spritesheet": "patches_white_mostly",
     "sprite_list": [
         [
-<<<<<<< HEAD
             "FULLWHITE",
             "VAN",
             "PEBBLESHINE",
@@ -19,33 +18,16 @@
             "HEARTTWO"
         ],
         [
-=======
-            "PEBBLESHINE",
-            "TAIL",
-            "HEART",
-            "MOORISH",
-            "CHESTSPECK",
-            "HEARTTWO",
->>>>>>> clangen-megamerge
             "BOOTS",
             "COW",
             "COWTWO",
             "LOVEBUG",
             "SHOOTINGSTAR",
-<<<<<<< HEAD
             "EYESPOT",
             "PEBBLE",
             "TAILTWO",
             "BUDDY",
             "KROPKA"
-=======
-            "PEBBLE",
-            "BUDDY",
-            "KROPKA"
-        ],
-        [
-           
->>>>>>> clangen-megamerge
         ]
     ]
 }

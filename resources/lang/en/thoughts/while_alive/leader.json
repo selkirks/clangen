@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "gen_leader",
-=======
-        "event_id": "gen_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Is hoping for a sign from StarClan",
             "Is hoping that {PRONOUN/m_c/subject} {VERB/m_c/are/is} leading {PRONOUN/m_c/poss} Clan well",
@@ -31,11 +27,7 @@
         ]
     },
     {
-<<<<<<< HEAD
         "id": "leader_DF",
-=======
-        "event_id": "leader_DF",
->>>>>>> clangen-megamerge
         "strings": [
             "Thinks {PRONOUN/m_c/subject} {VERB/m_c/have/has} been hearing the voices of Dark Forest cats...",
             "Is pondering recent dreams {PRONOUN/m_c/subject} {VERB/m_c/have/has} had... perhaps from the Dark Forest?"
@@ -49,11 +41,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "leader_alive_kits",
-=======
-        "event_id": "leader_alive_kits",
->>>>>>> clangen-megamerge
         "strings": [
             "Has recently picked up the scent of mischievous kits in {PRONOUN/m_c/poss} den...",
             "Is pondering the next mentors for the kits of the Clan",
@@ -74,11 +62,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "leader_alive_apprentices",
-=======
-        "event_id": "leader_alive_apprentices",
->>>>>>> clangen-megamerge
         "strings": [
             "Is assessing some apprentices",
             "Is satisfied that r_c is doing well in {PRONOUN/r_c/poss} training",
@@ -99,11 +83,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "leader_alive_deputy",
-=======
-        "event_id": "leader_alive_deputy",
->>>>>>> clangen-megamerge
         "strings": [
             "Tries to set a good example for the deputy",
             "Has been letting {PRONOUN/m_c/poss} deputy call the shots recently and is proud of {PRONOUN/r_c/poss} initiative",
@@ -126,11 +106,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "ambitious_leader",
-=======
-        "event_id": "ambitious_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Considers expanding the borders",
             "Makes sure all cats are battle ready"
@@ -146,11 +122,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bold_leader",
-=======
-        "event_id": "bold_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Considers expanding the borders",
             "Feels confident that the Clan admires {PRONOUN/m_c/object}"
@@ -166,11 +138,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "bloodthirsty_leader",
-=======
-        "event_id": "bloodthirsty_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Encourages warriors to start fights on border patrols",
             "Is debating if {PRONOUN/m_c/subject} should declare a war with another Clan",
@@ -198,11 +166,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "calm_leader",
-=======
-        "event_id": "calm_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Stays composed when a cat comes to {PRONOUN/m_c/object} in a panic",
             "Watches over all the cats"
@@ -218,11 +182,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "careful_leader",
-=======
-        "event_id": "careful_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Reminds a patrol not to stray over the border"
         ],
@@ -237,11 +197,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "charismatic_leader",
-=======
-        "event_id": "charismatic_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Gives a particularly rousing speech at a Clan meeting",
             "Feels confident that the Clan admires {PRONOUN/m_c/object}"
@@ -257,11 +213,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "childish_leader",
-=======
-        "event_id": "childish_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Pranks r_c by switching {PRONOUN/r_c/poss} fresh-kill with crow-food"
         ],
@@ -281,11 +233,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "cold_leader",
-=======
-        "event_id": "cold_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Rolls {PRONOUN/m_c/poss} eyes when r_c suggests sharing their fresh-kill with other Clans"
         ],
@@ -305,11 +253,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "insecure_leader",
-=======
-        "event_id": "insecure_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Thinks {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} deserve StarClan's blessing of 9 lives",
             "Wonders if cats like {PRONOUN/m_c/object} as a leader"
@@ -325,11 +269,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "strange_leader",
-=======
-        "event_id": "strange_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "No thoughts, head empty",
             "Insists that {PRONOUN/m_c/subject} received ten lives instead of nine",
@@ -347,11 +287,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "leader_meanie_deputy_meanie",
-=======
-        "event_id": "leader_meanie_deputy_meanie",
->>>>>>> clangen-megamerge
         "strings": [
             "Is pleased with r_c's ruthless treatment of the warriors",
             "Is sparring violently with r_c, both drawing blood",
@@ -392,11 +328,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "leader_meanie_med_meanie",
-=======
-        "event_id": "leader_meanie_med_meanie",
->>>>>>> clangen-megamerge
         "strings": [
             "Is pleased that r_c is withholding herbs from the weaker cats",
             "Instructs r_c to let a sick cat die",
@@ -435,11 +367,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "leader_nice_deputy_meanie",
-=======
-        "event_id": "leader_nice_deputy_meanie",
->>>>>>> clangen-megamerge
         "strings": [
             "Is wondering if {PRONOUN/m_c/subject} made a mistake by appointing r_c",
             "Is trying to teach r_c to lead with kindness",
@@ -480,11 +408,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "gen_former_kittypet_leader",
-=======
-        "event_id": "gen_former_kittypet_leader",
->>>>>>> clangen-megamerge
         "strings": [
             "Is proud of how far {PRONOUN/m_c/subject} {verb/m_c/have/has} come from {PRONOUN/m_c/poss} kittypet life",
             "Would never wish to return to {PRONOUN/m_c/poss} old kittypet life",
@@ -513,11 +437,7 @@
         }
     },
     {
-<<<<<<< HEAD
         "id": "leader_to_newborn",
-=======
-        "event_id": "leader_to_newborn",
->>>>>>> clangen-megamerge
         "strings": [
             "Believes c_n is thriving with the birth of the new litter",
             "Feels more pressure to protect c_n after meeting the new litter",

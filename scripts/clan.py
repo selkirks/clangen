@@ -11,11 +11,7 @@ TODO: Docs
 import os
 import statistics
 from random import choice, choices, randint, getrandbits
-<<<<<<< HEAD
 from typing import Literal
-=======
-from typing import Literal, Optional
->>>>>>> clangen-megamerge
 
 import i18n
 import ujson
@@ -23,13 +19,8 @@ import ujson
 from scripts.cat.cats import Cat, BACKSTORIES
 from scripts.cat.enums import CatRank, CatGroup, CatSocial, CatCompatibility
 from scripts.cat.factories.new_cat_factory import NewCatFactory
-<<<<<<< HEAD
 from scripts.cat.factories.enums import CatType
 from scripts.cat.names import names
-=======
-from scripts.cat.factories.typed_dicts import StatusDict
-from scripts.cat.names import Name
->>>>>>> clangen-megamerge
 from scripts.cat.save_load import (
     save_cats,
     get_faded_ids,
@@ -47,10 +38,7 @@ from scripts.clan_resources.point_of_interest import (
     get_poi_save_dict,
     generate_and_add_new_poi,
     PoiType,
-<<<<<<< HEAD
     get_poi_names_set,
-=======
->>>>>>> clangen-megamerge
     clear_pois,
 )
 from scripts.config import get_config
@@ -139,11 +127,7 @@ class Clan:
         # This is the first cat in starclan, to "guide" the other dead cats there.
         self.clan_cats = []
         self.biome = biome
-<<<<<<< HEAD
         self.override_biome = None
-=======
-        self.override_biome: Optional[str] = None
->>>>>>> clangen-megamerge
         self.camp_bg = camp_bg
         self.chosen_symbol = symbol
         self.game_mode = game_mode
@@ -190,11 +174,7 @@ class Clan:
         rebuild_top_menu_buttons()
 
     @property
-<<<<<<< HEAD
     def current_season(self):
-=======
-    def current_season(self) -> str:
->>>>>>> clangen-megamerge
         season_length = get_config("seasons.length")
         modifiers = {
             season: i * season_length
@@ -284,11 +264,7 @@ class Clan:
         )
 
         self.instructor = NewCatFactory.create_cat(
-<<<<<<< HEAD
             status_dict={"rank": instructor_rank, "group_ID": CatGroup.STARCLAN_ID},
-=======
-            status_dict=StatusDict(rank=instructor_rank, group_ID=CatGroup.STARCLAN_ID),
->>>>>>> clangen-megamerge
             backstory=choice(
                 BACKSTORIES["backstory_categories"]["clan_guide_backstories"]
             ),
@@ -372,11 +348,7 @@ class Clan:
                     weights = constants.CONFIG["cat_name_controls"]["rogue"]
 
                 selected_category = choices(name_categories, weights, k=1)[0]
-<<<<<<< HEAD
                 name = choice(names.names_dict[selected_category])
-=======
-                name = choice(Name.names_dict[selected_category])
->>>>>>> clangen-megamerge
                 c.change_name(new_prefix=name, new_suffix="")
 
                 # add back to all_cats, cus they get removed during `create_clan()`
@@ -628,13 +600,10 @@ class Clan:
 
         if os.path.exists(f"{get_save_dir()}/{self.save_id}clan.json"):
             os.remove(f"{get_save_dir()}/{self.save_id}clan.json")
-<<<<<<< HEAD
         elif os.path.exists(get_save_dir() + f"/{self.save_id}clan.txt") & (
             self.save_id != "current"
         ):
             os.remove(get_save_dir() + f"/{self.save_id}clan.txt")
-=======
->>>>>>> clangen-megamerge
 
     def load_clan(self):
         """
@@ -652,14 +621,7 @@ class Clan:
         elif os.path.exists(
             get_save_dir() + "/" + switch_get_value(Switch.clan_list)[0] + "clan.txt"
         ):
-<<<<<<< HEAD
             self.load_clan_txt()
-=======
-            switch_set_value(
-                Switch.error_message,
-                "TXT Clans are no longer supported. Please use an external tool to update your Clan to the modern format.",
-            )
->>>>>>> clangen-megamerge
         else:
             switch_set_value(
                 Switch.error_message, "There was an error loading the clan.json"
@@ -673,7 +635,6 @@ class Clan:
 
     @staticmethod
     def add_guide_influence():
-<<<<<<< HEAD
         """
         Adds guide's facet influences to their current afterlife
         """
@@ -683,12 +644,9 @@ class Clan:
             game.dark_forest.adjust_facets_by_cat(game.clan.instructor)
 
     def load_clan_txt(self):
-=======
->>>>>>> clangen-megamerge
         """
-        Adds guide's facet influences to their current afterlife
+        TODO: DOCS
         """
-<<<<<<< HEAD
 
         if not switch_get_value(Switch.clan_list):
             number_other_clans = randint(3, 5)
@@ -870,12 +828,6 @@ class Clan:
         game.clan.chosen_symbol = clan_symbol_sprite(game.clan, return_string=True)
 
         switch_set_value(Switch.error_message, "")
-=======
-        if game.clan.instructor.status.group == CatGroup.STARCLAN:
-            game.starclan.adjust_facets_by_cat(game.clan.instructor)
-        elif game.clan.instructor.status.group == CatGroup.DARK_FOREST:
-            game.dark_forest.adjust_facets_by_cat(game.clan.instructor)
->>>>>>> clangen-megamerge
 
     def load_clan_json(self):
         """
@@ -996,17 +948,10 @@ class Clan:
             game.clan.add_cat(game.clan.instructor)
         else:
             game.clan.instructor = NewCatFactory.create_cat(
-<<<<<<< HEAD
                 status_dict={
                     "rank": choice((CatRank.WARRIOR, CatRank.WARRIOR, CatRank.ELDER)),
                     "group": CatGroup.STARCLAN,
                 },
-=======
-                status_dict=StatusDict(
-                    rank=choice([CatRank.WARRIOR, CatRank.WARRIOR, CatRank.ELDER]),
-                    group_ID=CatGroup.STARCLAN_ID,
-                )
->>>>>>> clangen-megamerge
             )
             # update_sprite(game.clan.instructor)
             game.clan.instructor.dead = True

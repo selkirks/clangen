@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "leader_death_outside_thoughts",
-=======
-        "event_id": "leader_death_outside_thoughts",
->>>>>>> clangen-megamerge
         "strings": [
             "Is surprised to find {PRONOUN/m_c/self} walking in the afterlife"
         ]

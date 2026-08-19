@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
         "id": "becoming_elder",
-=======
-        "event_id": "becoming_elder",
->>>>>>> clangen-megamerge
         "strings": [
             "Looks forward to day-to-day life as an elder"
         ]

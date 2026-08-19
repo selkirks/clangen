@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 from random import choice, choices, sample
 from typing import Union, List, Optional
-=======
-from random import choice, choices
-from typing import Union, Optional
->>>>>>> clangen-megamerge
 
 import i18n
 
@@ -12,7 +7,6 @@ from scripts.cat.cats import Cat
 from scripts.config import get_config
 from scripts.event_class import Single_Event
 from scripts.events_module.consequences import change_relationship_values
-<<<<<<< HEAD
 from scripts.events_module.event_filters import (
     event_for_cat,
     cat_for_event,
@@ -23,14 +17,6 @@ from scripts.events_module.parameter_dicts import (
 )
 from scripts.events_module.text_adjust import process_text, adjust_list_text
 from scripts.events_module.text_pool_event import TextPoolEvent
-=======
-from scripts.events_module.text_adjust import process_text, adjust_list_text
-from scripts.events_module.text_pool_event.check_general_constraints import (
-    passes_general_constraints,
-)
-from scripts.events_module.text_pool_event.find_involved_cats import find_cats
-from scripts.events_module.text_pool_event.text_pool_event import TextPoolEvent
->>>>>>> clangen-megamerge
 from scripts.game_structure import game
 from scripts.game_structure.localization import load_lang_resource
 
@@ -72,22 +58,15 @@ def trigger_interaction(main_cat: Cat, interactable_cats: list) -> list[str]:
 def _get_event(
     events: list[TextPoolEvent], interactable_cats: list[Cat], main_cat: Cat
 ) -> tuple[TextPoolEvent, dict[str, Union[Cat, list[Cat]]]]:
-<<<<<<< HEAD
     # find events that m_c can have
     possible_events = _find_events_for_main_cat(main_cat, events)
 
-=======
->>>>>>> clangen-megamerge
     # set up the basic cat dict
     involved_cats: dict[str, Union[Cat, list[Cat]]] = {"m_c": main_cat}
 
     # attempt to find a valid event where we can fill the other roles
     chosen_event, involved_cats = _find_event_and_cats(
-<<<<<<< HEAD
         interactable_cats, involved_cats, main_cat, possible_events
-=======
-        interactable_cats, involved_cats, main_cat, events
->>>>>>> clangen-megamerge
     )
     return chosen_event, involved_cats
 
@@ -137,17 +116,12 @@ def _resolve_event(
 
 
 def _find_event_and_cats(
-<<<<<<< HEAD
     interactable_cats, involved_cats, main_cat, possible_events
-=======
-    interactable_cats, involved_cats, main_cat, possible_events: list[TextPoolEvent]
->>>>>>> clangen-megamerge
 ) -> tuple[TextPoolEvent, dict]:
     """
     Filters through the possible events to find the ones that we have valid cats for. Returns both the event and the valid cats.
     """
     chosen_event: Optional[TextPoolEvent] = None
-<<<<<<< HEAD
 
     while not chosen_event and possible_events:
         involved_cats = {"m_c": main_cat}
@@ -201,42 +175,6 @@ def _find_event_and_cats(
             continue
         else:
             chosen_event = event_to_test
-=======
-    outside_cats = [
-        c
-        for c in Cat.all_cats_list
-        if (c.status.is_other_clancat or c.status.is_outsider) and not c.dead
-    ]
-    other_clan = (
-        choice(game.clan.all_other_clans) if game.clan.all_other_clans else None
-    )
-    while not chosen_event and possible_events:
-        involved_cats = {"m_c": main_cat}
-        event_to_test = choices(possible_events, [e.weight for e in possible_events])[0]
-        if not passes_general_constraints(
-            event_to_test, involved_cats["m_c"], involved_cats, other_clan
-        ):
-            possible_events.remove(event_to_test)
-            continue
-
-        # make sure none of the interactable cats are already assigned to an abbr
-        interactable_cats = [
-            c for c in interactable_cats if c not in involved_cats.values()
-        ]
-        temp_involved_cats = find_cats(
-            interactable_cats=interactable_cats,
-            involved_cats=involved_cats,
-            outside_cats=outside_cats,
-            event=event_to_test,
-            other_clan=other_clan,
-        )
-        if not temp_involved_cats:
-            possible_events.remove(event_to_test)
-            continue
-
-        chosen_event = event_to_test
-        involved_cats = temp_involved_cats
->>>>>>> clangen-megamerge
 
     return chosen_event, involved_cats
 
@@ -272,7 +210,6 @@ def _influence_relationships(involved_cats, event: TextPoolEvent, chosen_string:
         )
 
 
-<<<<<<< HEAD
 def _find_events_for_main_cat(cat: Cat, possible_events: List[TextPoolEvent]) -> list:
     """
     Returns possible events for the given cat.
@@ -408,8 +345,6 @@ def _get_multi_cats(
     return chosen_cats
 
 
-=======
->>>>>>> clangen-megamerge
 def _load_file(path) -> list[TextPoolEvent]:
     """
     Loads and returns the events file
@@ -420,11 +355,7 @@ def _load_file(path) -> list[TextPoolEvent]:
         for t in load_lang_resource(path):
             loaded_events[path].append(
                 TextPoolEvent(
-<<<<<<< HEAD
                     id=t.get("id"),
-=======
-                    event_id=t.get("id"),
->>>>>>> clangen-megamerge
                     location=t.get("location", []),
                     season=t.get("season", []),
                     tags=t.get("tags", []),
