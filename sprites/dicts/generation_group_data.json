@@ -4,6 +4,8 @@
             "WHITE": "white",
             "PALEGREY": "white",
             "SILVER": "white",
+            "SNOW": "white",
+            "STEAM": "white",
             "GREY": "black",
             "DARKGREY": "black",
             "GHOST": "black",

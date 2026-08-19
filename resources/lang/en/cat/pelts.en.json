@@ -77,6 +77,14 @@
             "one": "brown",
             "many": "dark brown"
         },
+        "SNOW": {
+            "one": "snowy",
+            "many": "snowy"
+        },
+        "STEAM": {
+            "one": "steam",
+            "many": "steam"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
