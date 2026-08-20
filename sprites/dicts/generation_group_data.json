@@ -12,6 +12,8 @@
             "GHOST": "black",
             "BLACK": "black",
             "STEEL": "black",
+            "CHARCOAL": "black",
+            "GUNMETAL": "gunmetal",
             "CREAM": "ginger",
             "PALEGINGER": "ginger",
             "GOLDEN": "ginger",

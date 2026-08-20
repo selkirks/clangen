@@ -41,6 +41,18 @@
             "one": "black",
             "many": "black"
         },
+        "STEEL": {
+            "one": "steel",
+            "many": "steely"
+        },
+        "CHARCOAL": {
+            "one": "charcoal",
+            "many": "charcoal"
+        },
+        "GUNMETAL": {
+            "one": "gunmetal",
+            "many": "gunmetal"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
@@ -88,10 +100,6 @@
         "CHOCOLATE": {
             "one": "brown",
             "many": "dark brown"
-        },
-        "STEEL": {
-            "one": "steel",
-            "many": "steely"
         },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
