@@ -1,11 +1,11 @@
 [[actions]]
 name = "play"
 platform = "windows"
-path = "Clangen/Clangen.exe"
+path = "MegaMerge/MegaMerge.exe"
 args = ["--launched-through-itch"]
 
 [[actions]]
 name = "play"
 platform = "linux"
-path = "Clangen/Clangen"
+path = "MegaMerge/MegaMerge"
 args = ["--launched-through-itch"]

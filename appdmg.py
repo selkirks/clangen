@@ -11,7 +11,7 @@ def get_icon(app_path):
     return str(app_path_obj.joinpath("Contents", "Resources", icon_name))
 
 
-application = "dist/Clangen.app"
+application = "dist/MegaMerge.app"
 badge_icon = get_icon(application)
 
 background = "resources/images/mac_installer_bg_blank.png"
@@ -20,7 +20,7 @@ format = "UDBZ"
 
 files = [application]
 symlinks = {"Applications": "/Applications"}
-icon_locations = {"Clangen.app": (66, 200), "Applications": (204, 200)}
+icon_locations = {"MegaMerge.app": (66, 200), "Applications": (204, 200)}
 
 window_rect = ((100, 100), (600, 500))
 

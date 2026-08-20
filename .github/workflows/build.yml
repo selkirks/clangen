@@ -18,21 +18,21 @@ jobs:
       matrix:
         include:
           - os: ubuntu-22.04
-            artifact_name: Clangen_Linux64_glibc2.35+.tar.xz
+            artifact_name: MegaMerge_Linux64_glibc2.35+.tar.xz
             python_version: "3.12"
             python_arch: "x64"
             itch_channel: linux64_glibc_235
             api_artifact_name: linux2.35
 
           - os: windows-latest
-            artifact_name: Clangen_Win64_Windows10+.zip
+            artifact_name: MegaMerge_Win64_Windows10+.zip
             python_version: "3.12"
             python_arch: "x64"
             itch_channel: win64_10
             api_artifact_name: win10+
             
           - os: macos-15-intel
-            artifact_name: Clangen_macOS64.dmg
+            artifact_name: MegaMerge_macOS64.dmg
             python_version: "3.12"
             python_arch: "x64"
             itch_channel: osx64
@@ -123,29 +123,29 @@ jobs:
           cp target/release/self_updater.exe ../resources/
       - name: Run PyInstaller (Development)
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
-        run: uv run pyinstaller Clangen.spec
+        run: uv run pyinstaller MegaMerge.spec
         env:
           IS_RELEASE: 0
       - name: Run PyInstaller (Release)
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
-        run: uv run pyinstaller Clangen.spec
+        run: uv run pyinstaller MegaMerge.spec
         env:
           IS_RELEASE: 1
       - name: Create archive (Linux)
         if: startsWith(matrix.os, 'ubuntu')
-        run: tar -caf ${{ matrix.artifact_name }} -C dist Clangen
+        run: tar -caf ${{ matrix.artifact_name }} -C dist MegaMerge
       - name: Create archive (Windows)
         if: startsWith(matrix.os, 'windows')
         shell: powershell
         run: |
-          cp dist/Clangen/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f ${{ matrix.artifact_name }} -C dist Clangen .itch.toml
+          cp dist/MegaMerge/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f ${{ matrix.artifact_name }} -C dist MegaMerge .itch.toml
       - name: Create DMG (macOS)
         if: startsWith(matrix.os, 'macos')
         run: |
-          rm -r dist/Clangen
+          rm -r dist/MegaMerge
           uv sync --group mac-build
-          uv run dmgbuild -s appdmg.py "Clangen" ${{ matrix.artifact_name }}
+          uv run dmgbuild -s appdmg.py "MegaMerge" ${{ matrix.artifact_name }}
       - uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.artifact_name }}
