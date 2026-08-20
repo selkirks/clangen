@@ -53,6 +53,14 @@
             "one": "gunmetal",
             "many": "gunmetal"
         },
+        "THAMAR": {
+            "one": "thamar",
+            "many": "thamar"
+        },
+        "VEIL": {
+            "one": "veil",
+            "many": "veil"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
