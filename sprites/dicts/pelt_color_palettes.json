@@ -970,7 +970,7 @@
         "base_gradient_bottom": "#717171",
         "base_gradient_top": "#464646",
         "pattern": "#292929",
-        "pattern_gradient_top": "242424",
+        "pattern_gradient_top": "#242424",
         "pattern_fill": "#383838",
         "masked_light_pattern": "#6C6C6C",
 
