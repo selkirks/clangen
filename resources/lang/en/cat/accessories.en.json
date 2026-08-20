@@ -435,14 +435,54 @@
             "one": "dog teeth collar"
         },
         "TEETH_SPIKE": {
-            "zero": "spiked blue and gold dog teeth collar",
-            "many": "spiked blue and gold dog teeth collars",
-            "one": "spiked blue and gold dog teeth collar"
+            "zero": "spiked dog teeth collar",
+            "many": "spiked dog teeth collars",
+            "one": "spiked dog teeth collar"
         },
         "TEETH_GRADIENT": {
             "zero": "rainbow dog teeth collar",
             "many": "rainbow dog teeth collars",
             "one": "rainbow dog teeth collar"
+        },
+        "HARNESS": {
+            "zero": "harness",
+            "many": "harnesses",
+            "one": "harness"
+        },
+        "HARNESS_SPIKE": {
+            "zero": "spiked harness",
+            "many": "spiked harnesses",
+            "one": "spiked harness"
+        },
+        "HARNESS_GRADIENT": {
+            "zero": "rainbow harness",
+            "many": "rainbow harnesses",
+            "one": "rainbow harness"
+        },
+        "TIE": {
+            "zero": "tie",
+            "many": "ties",
+            "one": "tie"
+        },
+        "TIE_GRADIENT": {
+            "zero": "rainbow tie",
+            "many": "rainbow ties",
+            "one": "rainbow tie"
+        },
+        "FRESCARF": {
+            "zero": "french scarf",
+            "many": "french scarves",
+            "one": "french scarf"
+        },
+        "FRESCARF_DUO": {
+            "zero": "spiked french scarf",
+            "many": "spiked french scarves",
+            "one": "spiked french scarf"
+        },
+        "FRESCARF_GRADIENT": {
+            "zero": "rainbow french scarf",
+            "many": "rainbow french scarves",
+            "one": "rainbow french scarf"
         }
     }
 }

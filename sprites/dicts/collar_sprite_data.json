@@ -155,6 +155,73 @@
             "TEETH_GRADIENT": [
                 "rainbow"
             ]
+        },
+        {
+            "HARNESS": [
+                "crimson",
+                "blue",
+                "yellow",
+                "cyan",
+                "orange",
+                "lime",
+                "green",
+                "black",
+                "white",
+                "pink",
+                "purple",
+                "lilac",
+                "indigo"
+            ],
+            "HARNESS_SPIKE": [
+                "black_gold"
+            ],
+            "HARNESS_GRADIENT": [
+                "rainbow"
+            ]
+        },
+        {
+            "TIE": [
+                "crimson",
+                "blue",
+                "yellow",
+                "cyan",
+                "orange",
+                "lime",
+                "green",
+                "black",
+                "blue_gold",
+                "white",
+                "pink",
+                "purple",
+                "lilac",
+                "indigo"
+            ],
+            "TIE_GRADIENT": [
+                "rainbow"
+            ]
+        },
+        {
+            "FRESCARF": [
+                "crimson",
+                "blue",
+                "yellow",
+                "cyan",
+                "orange",
+                "lime",
+                "green",
+                "black",
+                "white",
+                "pink",
+                "purple",
+                "lilac",
+                "indigo"
+            ],
+            "FRESCARF_DUO": [
+                "blue_gold"
+            ],
+            "FRESCARF_GRADIENT": [
+                "rainbow"
+            ]
         }
     ]
 }
