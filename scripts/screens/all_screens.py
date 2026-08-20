@@ -1,6 +1,7 @@
 import warnings
 
 from .AllegiancesScreen import AllegiancesScreen
+from .CustomizeCatScreen import CustomizeCatScreen
 from .CeremonyScreen import CeremonyScreen
 from .ChangeGenderScreen import ChangeGenderScreen
 from .ChooseAdoptiveParentScreen import ChooseAdoptiveParentScreen
@@ -63,6 +64,7 @@ def rebuild_all_screens():
 
     enum_to_class = {
         GameScreen.PROFILE: ProfileScreen,
+        GameScreen.CUSTOMIZE_CAT: CustomizeCatScreen,
         GameScreen.CEREMONY: CeremonyScreen,
         GameScreen.CHANGE_ROLE: RoleScreen,
         GameScreen.SPRITE_INSPECT: SpriteInspectScreen,
