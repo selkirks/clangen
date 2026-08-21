@@ -61,6 +61,14 @@
             "one": "veil",
             "many": "veil"
         },
+        "LAVENDERSTEEL": {
+            "one": "lavender steel",
+            "many": "lavender steel"
+        },
+        "ORNAMENTALSILVER": {
+            "one": "ornamental silver",
+            "many": "ornamental silver"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
