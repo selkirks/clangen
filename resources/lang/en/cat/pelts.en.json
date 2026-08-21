@@ -113,6 +113,14 @@
             "one": "smoky",
             "many": "smoky"
         },
+        "CAULDRON": {
+            "one": "cauldron",
+            "many": "cauldron"
+        },
+        "BLACKOLIVE": {
+            "one": "black olive",
+            "many": "black olive"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
