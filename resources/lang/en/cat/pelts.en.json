@@ -33,6 +33,10 @@
             "one": "silver red",
             "many": "silver red"
         },
+        "CHINCHILLA": {
+            "one": "chinchilla",
+            "many": "chinchilla"
+        },
         "GREY": {
             "one": "gray",
             "many": "gray"
@@ -92,6 +96,10 @@
         "OUZEL": {
             "one": "ouzel",
             "many": "ouzel"
+        },
+        "DOLPHIN": {
+            "one": "dolphin",
+            "many": "dolphin"
         },
         "CREAM": {
             "one": "cream",
