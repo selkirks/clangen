@@ -2242,7 +2242,7 @@
                 "frequency": 4,
                 "strings": [
                     "The apprentices barely make it two rabbit hops out of camp before they end up nose to nose with a warrior! It seems a night patrol was sent out, and p_l and the others are brought back to camp before the adventure can even begin.",
-                    "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! app1 notices a second too late and points it out to the group. Instead of retreating, the apprentices agree that a little exploration wouldn't hurt...but the patrol of enemy warriors that discovers them does not. The apprentices are escorted back to c_n's camp, humiliated when the o_c_n warriors insist on reporting their trespass. They're going to be in so much trouble!"
+                    "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! app1 notices a second too late and points it out to the group. Instead of retreating, the apprentices agree that a little exploration wouldn't hurt... but the patrol of enemy warriors that discovers them does not. The apprentices are escorted back to c_n's camp, humiliated when the o_c_n warriors insist on reporting their trespass. They're going to be in so much trouble!"
                 ],
                 "exp_gained": 0
             },
@@ -2250,7 +2250,7 @@
                 "outcome_art": "cat_sprites/gen_angrycat_Ow",
                 "frequency": 2,
                 "strings": [
-                    "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! app1 notices a second too late and points it out to the group. Instead of retreating, the apprentices agree that a little exploration wouldn't hurt...but the patrol of enemy warriors that discovers them does not. A battle breaks out and the apprentices eventually flee, returning to camp battered and embarrassed."
+                    "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! app1 notices a second too late and points it out to the group. Instead of retreating, the apprentices agree that a little exploration wouldn't hurt... but the patrol of enemy warriors that discovers them does not. A battle breaks out and the apprentices eventually flee, returning to camp battered and embarrassed."
                 ],
                 "exp_gained": 0,
                 "reputation_changes": {

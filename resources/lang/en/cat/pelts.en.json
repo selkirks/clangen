@@ -69,6 +69,14 @@
             "one": "ornamental silver",
             "many": "ornamental silver"
         },
+        "BLUEBEARD": {
+            "one": "bluebeard",
+            "many": "bluebeard"
+        },
+        "OVERCAST": {
+            "one": "overcast",
+            "many": "overcast"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
