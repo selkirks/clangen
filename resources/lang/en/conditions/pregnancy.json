@@ -2,11 +2,6 @@
     "announcement": [
         "m_c announced that {PRONOUN/m_c/subject} {VERB/m_c/are/is} expecting kits.",
         "m_c is surprised when {PRONOUN/m_c/subject} {VERB/m_c/find/finds} out that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} expecting kits.",
-        "A rumor spreads around camp that m_c is expecting kits."
-    ],
-    "litter_guess": {
-         "small": [
-        "m_c hopes the litter will be small — {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} overwhelmed at the idea of a big litter.",
         "m_c has suspicions of being pregnant and is overjoyed by confirmation!",
         "m_c is shocked to be told that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} pregnant.",
         "m_c worries when {PRONOUN/m_c/subject} {VERB/m_c/are/is} told that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} pregnant. {PRONOUN/m_c/subject/CAP} just {VERB/m_c/are/is}n't ready.",
@@ -65,7 +60,6 @@
             "m_c hopes {PRONOUN/m_c/subject}'ll have a large litter. m_c always wanted a big family after all.",
             "m_c feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} eating enough at each meal to feed the whole Clan. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} predicting a big litter. Or perhaps one very plump kit.",
             "m_c, citing queens' intuition, claims {PRONOUN/m_c/subject} {VERB/m_c/know/knows} {PRONOUN/m_c/subject}'ll have a big litter."
-
         ],
         "unsure": [
             "m_c is unsure how many kits {PRONOUN/m_c/subject}'ll have.",
@@ -88,7 +82,7 @@
         " {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} believe {PRONOUN/m_c/subject} can efficiently perform {PRONOUN/m_c/poss} duties while expecting kits and {VERB/m_c/decide/decides} to move into the nursery.",
         " Time to move to the nursery and relax before the new arrivals make their appearance.",
         " Though, when one waddles more than pads around camp, one has to accept that {PRONOUN/m_c/subject} should move into the nursery.",
-        " {PRONOUN/m_c/subject/CAP} moves into the nursery, grumbling {PRONOUN/m_c/poss} protest all the way.",
+        " {PRONOUN/m_c/subject/CAP} {VERB/m_c/move/moves} into the nursery, grumbling {PRONOUN/m_c/poss} protest all the way.",
         " Pregnancy sucks. m_c gives in and moves into the nursery.",
         " It's time to settle into the nursery and make sure everything is perfectly prepared.",
         " {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} scolded into taking up a nest in the nursery, despite {PRONOUN/m_c/poss} best protests.",
@@ -137,6 +131,7 @@
             "m_c had a {insert} with r_c.",
             "In the nursery, m_c lies suckling a {insert}, r_c watching over them and purring so hard {PRONOUN/r_c/poss} body vibrates.",
             "m_c and r_c's eyes meet over their {insert}, full of love for their growing family.",
+            "As m_c gazes upon {PRONOUN/m_c/poss} {insert} with r_c, {PRONOUN/m_c/subject} can't help but wonder if parenthood is what {PRONOUN/m_c/subject} really {VERB/m_c/want/wants}.",
             "In the quiet of the nursery, in the nest they've spent so long preparing, m_c and r_c welcome a {insert}.",
             "With {PRONOUN/m_c/poss} {insert} mewling at {PRONOUN/m_c/poss} belly, m_c's long pregnancy has finally given {PRONOUN/m_c/object} and r_c the expansion to their family they've been hoping and waiting for.",
             "Even with r_c by {PRONOUN/m_c/poss} side, m_c doesn't feel ready to be a parent of this {insert}. But {PRONOUN/m_c/subject} {VERB/m_c/promise/promises} to the tiny flailing limbs by {PRONOUN/m_c/poss} side that {PRONOUN/m_c/subject}'ll do {PRONOUN/m_c/poss} best. {PRONOUN/m_c/subject/CAP} {VERB/m_c/swear/swears} it on StarClan itself.",
@@ -233,7 +228,7 @@
             "m_c wasn't expecting {PRONOUN/m_c/poss} birth to be so incredibly painful. As the day wears on, {PRONOUN/m_c/poss} condition deteriorates, leaving {PRONOUN/m_c/poss} {insert} mewling and trying to suckle a cooling body.",
             "It breaks {PRONOUN/m_c/poss} heart that {PRONOUN/m_c/subject} won't get to be with {PRONOUN/m_c/poss} {insert} as they grow. m_c pants out instructions and pleads to {PRONOUN/m_c/poss} friends around {PRONOUN/m_c/object} as the blood loss from birth slowly takes {PRONOUN/m_c/poss} life.",
             "However, m_c is too far gone for the herbs {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} given to choke down to fix this blood loss. The cats are helpless as m_c slowly slips to StarClan.",
-            "Hours later, eons later, the {insert} mews. Outside, m_c's body cools, the toll of birth too much for {PRONOUN/m_c/object}.",
+            "Later — hours later, eons later — the {insert} mews. Outside, m_c's body cools, the toll of birth too much for {PRONOUN/m_c/object}.",
             "Though all looks fine, the Clan will wake tomorrow to discover m_c's body cold in the nursery, {PRONOUN/m_c/poss} {insert} mewing in vain for their parent.",
             "Though birth is always considered a difficult and risky event, no one thought they'd lose m_c to it. Not after the {insert} was born and seemed fine... they thought the blood loss was under control.",
             "Everyone knew m_c was the most excited of everyone to meet {PRONOUN/m_c/poss} kits... It's a cruel twist of fate, however, as m_c's body lays cooling, leaving the {insert} without {PRONOUN/m_c/object}.",
@@ -255,6 +250,9 @@
         "outside_alone": [
             "Rumors reach the Clan that m_c gave birth to a {insert}."
         ],
+        "outside_lost": [
+            "Far from the Clan, m_c gave birth to a {insert}."
+        ],
         "outside_in_clan": [
             "r_c heard a rumor that m_c had a litter.",
             "r_c thinks that m_c should have had {PRONOUN/m_c/poss} litter by now."
@@ -269,6 +267,5 @@
             "m_c lost one of {PRONOUN/m_c/poss} nine lives, but gave birth to a {insert}.",
             "Although m_c gave birth to a {insert}, it came at the cost of one of {PRONOUN/m_c/poss} nine lives."
         ]
-    }
     }
 }
