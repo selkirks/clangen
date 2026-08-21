@@ -37,6 +37,10 @@
             "one": "chinchilla",
             "many": "chinchilla"
         },
+        "SILVERBERRY": {
+            "one": "silverberry",
+            "many": "silverberry"
+        },
         "GREY": {
             "one": "gray",
             "many": "gray"
