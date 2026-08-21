@@ -25,6 +25,14 @@
             "one": "aluminum",
             "many": "aluminum"
         },
+        "SILVERCINNAMON": {
+            "one": "silver cinnamon",
+            "many": "silver cinnamon"
+        },
+        "SILVERRED": {
+            "one": "silver red",
+            "many": "silver red"
+        },
         "GREY": {
             "one": "gray",
             "many": "gray"
