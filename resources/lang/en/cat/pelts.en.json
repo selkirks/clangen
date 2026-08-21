@@ -25,6 +25,14 @@
             "one": "aluminum",
             "many": "aluminum"
         },
+        "SILVERCINNAMON": {
+            "one": "silver cinnamon",
+            "many": "silver cinnamon"
+        },
+        "SILVERRED": {
+            "one": "silver red",
+            "many": "silver red"
+        },
         "GREY": {
             "one": "gray",
             "many": "gray"
@@ -60,6 +68,30 @@
         "VEIL": {
             "one": "veil",
             "many": "veil"
+        },
+        "LAVENDERSTEEL": {
+            "one": "lavender steel",
+            "many": "lavender steel"
+        },
+        "ORNAMENTALSILVER": {
+            "one": "ornamental silver",
+            "many": "ornamental silver"
+        },
+        "BLUEBEARD": {
+            "one": "bluebeard",
+            "many": "bluebeard"
+        },
+        "OVERCAST": {
+            "one": "overcast",
+            "many": "overcast"
+        },
+        "MIDNIGHT": {
+            "one": "midnight",
+            "many": "midnight"
+        },
+        "OUZEL": {
+            "one": "ouzel",
+            "many": "ouzel"
         },
         "CREAM": {
             "one": "cream",
