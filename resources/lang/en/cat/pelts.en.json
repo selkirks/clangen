@@ -85,6 +85,14 @@
             "one": "overcast",
             "many": "overcast"
         },
+        "MIDNIGHT": {
+            "one": "midnight",
+            "many": "midnight"
+        },
+        "OUZEL": {
+            "one": "ouzel",
+            "many": "ouzel"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
