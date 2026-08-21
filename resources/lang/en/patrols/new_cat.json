@@ -13266,7 +13266,7 @@
         ]
     },
     {
-        "event_id": "Mod_theos_gen_bord_kitsteal1",
+        "event_id": "Mod_theos_gen_bord_kitsteal",
         "types": [
             "border"
         ],

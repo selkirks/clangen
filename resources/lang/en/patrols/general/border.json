@@ -2199,5 +2199,113 @@
                 ]
             }
         ]
+    },
+    {
+        "event_id": "Mod_theos_gen_bord_app_sneak",
+        "types": [
+            "border"
+        ],
+        "frequency": 1,
+        "required_cat_types": {
+            "apprentice": [
+                3,
+                6
+            ]
+        },
+        "chance_of_success": 40,
+        "patrol_art": "cat/sprites/gen_speakingcat_Ap",
+        "intro_text": "Come on! It'll be fun, p_l insists. All of the warriors are asleep, and nobody will notice if a few apprentices sneak out for a bit of night exploration.",
+        "decline_text": "p_l might be ready to go on an adventure, but that doesn't mean {PRONOUN/p_l/poss} fellow apprentices feel the same. Instead of breaking the rules, everyone agrees to stay in camp.",
+        "success_outcomes": [
+            {
+                "frequency": 4,
+                "outcome_art": "cat_sprites/gen_hunt_funrun_ApAp",
+                "strings": [
+                    "The moon is high overhead as the gaggle of apprentices dash about the territory, elated to be able to run and play freely without their mentors around to stop them! It's a long, pleasant night, and everyone returns to camp satisfied...if a little tired.",
+                    "The darkness makes the night mysterious. The apprentices slip through the territory, hearts pounding with exhilaration. There's something so thrilling about the pools of darkness and the wind whispering through the territory. It's a perfect night for hide-and-seek. The group spends the night playing, sneaking into their nests just before dawn breaks. What a fun night!"
+                ],   
+                "exp_gained": 5
+            },
+                        {
+                "frequency": 2,
+                "outcome_art": "cat_sprites/gen_hunt_funrun_ApAp",
+                "strings": [
+                    "p_l and the other apprentices are goofing off deep in c_n territory when they smell an unfamiliar scent. Stealth, they all decide, is for cowards. They charge forward as a group all shouting in hopes of scaring off the stranger. The trespassing rogue doesn't stand a chance. They immediately flee from the gang of unruly apprentices, who return to camp proud to have protected c_n.",
+                    "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! r_c0 notices a second too late and points it out to the group. Instead of retreating, the apprentices all agree that a little exploration wouldn't hurt. They manage to poke around o_c_n territory, feeling like spies. Eventually they return to camp, triumphant that their trespass went undiscovered."
+                ],   
+                "exp_gained": 10
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "outcome_art": "cat_sprites/gen_embarrassed_ApWr",
+                "frequency": 4,
+                "strings": [
+                    "The apprentices barely make it two rabbit hops out of camp before they end up nose to nose with a warrior! It seems a night patrol was sent out, and p_l and the others are brought back to camp before the adventure can even begin.",
+                    "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! app1 notices a second too late and points it out to the group. Instead of retreating, the apprentices agree that a little exploration wouldn't hurt...but the patrol of enemy warriors that discovers them does not. The apprentices are escorted back to c_n's camp, humiliated when the o_c_n warriors insist on reporting their trespass. They're going to be in so much trouble!"
+                ],
+                "exp_gained": 0
+            },
+            {
+                "outcome_art": "cat_sprites/gen_angrycat_Ow",
+                "frequency": 2,
+                "strings": [
+                    "p_l and the other apprentices are so distracted by their games that they don't even notice when they cross the o_c_n border! app1 notices a second too late and points it out to the group. Instead of retreating, the apprentices agree that a little exploration wouldn't hurt...but the patrol of enemy warriors that discovers them does not. A battle breaks out and the apprentices eventually flee, returning to camp battered and embarrassed."
+                ],
+                "exp_gained": 0,
+                "reputation_changes": {
+                    "other_clan": -2
+                },
+                "condition": [
+                    {
+                        "cats": [
+                            "multi"
+                        ],
+                        "condition": [
+                            "battle_injury"
+                        ],
+                        "scar_history": "m_c was scarred after being attacked by an enemy warrior.",
+                        "death_history": "m_c died from {PRONOUN/m_c/poss} injuries after being attacked by an enemy warrior."
+                    }
+                ]
+            },
+            {
+                "outcome_art": "cat_sprites/gen_angrycat_Ap",
+                "frequency": 2,
+                "strings": [
+                    "The moon is high overhead as the gaggle of apprentices dash about the territory, elated to be able to run and play freely. They're all so distracted by their games that they don't notice the sudden rush of dog scent. What started as a night of adventure quickly becomes a night of tragedy as a pair of giant hounds attacks the group. The apprentices flee, pausing only long enough to help their injured friends back to camp."
+                ],
+                "exp_gained": 0,
+                "condition": [
+                    {
+                        "cats": [
+                            "multi"
+                        ],
+                        "condition": [
+                            "big_bite_injury"
+                        ],
+                        "scar_history": "m_c was scarred after being attacked by a dog.",
+                        "death_history": "m_c died from {PRONOUN/m_c/poss} injuries after a dog attack."
+                    }
+                ]
+            },
+            {
+                "outcome_art": "cat_sprites/gen_angrycat_Ow",
+                "frequency": 1,
+                "strings": [
+                    "The moon is high overhead as the gaggle of apprentices dash about the territory, elated to be able to run and play freely. They're all so distracted by their games that they don't notice the sudden rush of dog scent. What started as a night of adventure quickly becomes a night of tragedy as a pair of giant hounds attacks the group. The surviving apprentices flee, hearts breaking as they leave their friends behind."
+                ],
+                "death": [
+                    {
+                        "cats": [
+                            "multi"
+                        ],
+                        "history": "m_c died during a dog attack.",
+                        "no_results": true
+                    }
+                ],
+                "exp_gained": 5
+            }
+        ]
     }
 ]
