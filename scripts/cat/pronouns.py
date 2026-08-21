@@ -12,7 +12,6 @@ if TYPE_CHECKING:
 
 default_pronouns: Dict[str, Dict[str, Dict[str, Union[str, int]]]] = {}
 
-
 def get_pronouns(cat: "Cat"):
     """Get a cat's pronoun even if the cat has faded to prevent crashes (use gender-neutral pronouns when the cat has faded)"""
     if not cat.pronouns:
@@ -20,7 +19,6 @@ def get_pronouns(cat: "Cat"):
         return get_new_pronouns("default")[0]
     else:
         return choice(cat.pronouns)
-
 
 def get_new_pronouns(genderalign: str) -> List[Dict[str, Union[str, int]]]:
     """
@@ -68,7 +66,6 @@ def get_new_pronouns(genderalign: str) -> List[Dict[str, Union[str, int]]]:
             default_pronouns[locale] = temp[i18n.config.get("fallback")]
     return [default_pronouns[locale][pronouns]]
 
-
 def determine_plural_pronouns(cat_list: List[Dict[str, Union[str, int]]]):
     """
     Returns the correct plural pronoun for the provided list
@@ -84,7 +81,6 @@ def determine_plural_pronouns(cat_list: List[Dict[str, Union[str, int]]]):
             return get_new_pronouns(group)[0]
     return get_new_pronouns("plural default")[0]
 
-
 def get_default_pronouns(lang=None):
     if lang is None:
         lang = i18n.config.get("locale")
@@ -99,7 +95,6 @@ def get_default_pronouns(lang=None):
         }
     return default_pronouns[lang]
 
-
 def get_custom_pronouns(lang=None):
     if lang is None:
         lang = i18n.config.get("locale")
@@ -108,7 +103,6 @@ def get_custom_pronouns(lang=None):
     except KeyError:
         game.clan.custom_pronouns[lang] = []
     return game.clan.custom_pronouns[lang]
-
 
 def add_custom_pronouns(pronouns, lang=None):
     if lang is None:
