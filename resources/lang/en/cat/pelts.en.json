@@ -105,6 +105,14 @@
             "one": "dolphin",
             "many": "dolphin"
         },
+        "PURPLETONE": {
+            "one": "purpletone",
+            "many": "purpletone"
+        },
+        "SMOKY": {
+            "one": "smoky",
+            "many": "smoky"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
