@@ -46,7 +46,9 @@
             "GOLDEN-BROWN": "brown",
             "DARKBROWN": "brown",
             "CHOCOLATE": "brown",
-            "WOODEN": "brown"
+            "WOODEN": "brown",
+            "BARREL": "brown",
+            "CORRAL": "corral"
         },
         "pattern_types": {
             "Tabby": "tabbies",

@@ -185,6 +185,14 @@
             "one": "wood",
             "many": "wood"
         },
+        "BARREL": {
+            "one": "barrel",
+            "many": "barrel"
+        },
+        "CORRAL": {
+            "one": "corral",
+            "many": "corral"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
