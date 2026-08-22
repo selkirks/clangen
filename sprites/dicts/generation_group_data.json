@@ -52,7 +52,9 @@
             "CORRAL": "brown",
             "COLA": "brown",
             "COFFEE": "brown",
-            "BROWNSUGAR": "brown"
+            "BROWNSUGAR": "brown",
+            "RAWHIDE": "brown",
+            "COCOA": "cocoa"
         },
         "pattern_types": {
             "Tabby": "tabbies",

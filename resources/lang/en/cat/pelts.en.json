@@ -209,6 +209,14 @@
             "one": "brown sugar",
             "many": "brown sugar"
         },
+        "RAWHIDE": {
+            "one": "rawhide",
+            "many": "rawhide"
+        },
+        "COCOA": {
+            "one": "cocoa",
+            "many": "cocoa"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
