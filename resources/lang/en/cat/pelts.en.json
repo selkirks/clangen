@@ -45,6 +45,10 @@
             "one": "taupedo",
             "many": "taupedo"
         },
+        "SILVERLILAC": {
+            "one": "silver lilac",
+            "many": "silver lilac"
+        },
         "GREY": {
             "one": "gray",
             "many": "gray"
@@ -216,6 +220,10 @@
         "COCOA": {
             "one": "cocoa",
             "many": "cocoa"
+        },
+        "CLAY": {
+            "one": "clay",
+            "many": "clay"
         },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",

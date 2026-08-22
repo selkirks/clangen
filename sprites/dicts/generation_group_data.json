@@ -12,6 +12,7 @@
             "CHINCHILLA": "white",
             "SILVERBERRY": "white",
             "TAUPEDO": "white",
+            "SILVERLILAC": "white",
             "GREY": "black",
             "DARKGREY": "black",
             "GHOST": "black",
@@ -54,7 +55,8 @@
             "COFFEE": "brown",
             "BROWNSUGAR": "brown",
             "RAWHIDE": "brown",
-            "COCOA": "cocoa"
+            "COCOA": "brown",
+            "CLAY": "brown"
         },
         "pattern_types": {
             "Tabby": "tabbies",
