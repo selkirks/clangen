@@ -49,6 +49,10 @@
             "one": "silver lilac",
             "many": "silver lilac"
         },
+        "SILVERASH": {
+            "one": "silver ash",
+            "many": "silver ash"
+        },
         "GREY": {
             "one": "gray",
             "many": "gray"
@@ -165,6 +169,10 @@
             "one": "ginger",
             "many": "dark ginger"
         },
+        "SILVERORANGE": {
+            "one": "silver orange",
+            "many": "silver orange"
+        },
         "LIGHTBROWN": {
             "one": "brown",
             "many": "light brown"
@@ -224,6 +232,10 @@
         "CLAY": {
             "one": "clay",
             "many": "clay"
+        },
+        "SILVERBROWN": {
+            "one": "silver brown",
+            "many": "silver brown"
         },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",

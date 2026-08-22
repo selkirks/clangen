@@ -13,6 +13,7 @@
             "SILVERBERRY": "white",
             "TAUPEDO": "white",
             "SILVERLILAC": "white",
+            "SILVERASH": "white",
             "GREY": "black",
             "DARKGREY": "black",
             "GHOST": "black",
@@ -42,6 +43,7 @@
             "GINGER": "ginger",
             "DARKGINGER": "ginger",
             "SIENNA": "ginger",
+            "SILVERORANGE": "ginger",
             "LIGHTBROWN": "brown",
             "LILAC": "brown",
             "BROWN": "brown",
@@ -56,7 +58,8 @@
             "BROWNSUGAR": "brown",
             "RAWHIDE": "brown",
             "COCOA": "brown",
-            "CLAY": "brown"
+            "CLAY": "brown",
+            "SILVERBROWN": "brown"
         },
         "pattern_types": {
             "Tabby": "tabbies",
