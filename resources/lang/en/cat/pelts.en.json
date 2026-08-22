@@ -121,6 +121,14 @@
             "one": "black olive",
             "many": "black olive"
         },
+        "MOUSY": {
+            "one": "mousy",
+            "many": "mousy"
+        },
+        "HAGSTONE": {
+            "one": "hagstone",
+            "many": "hagstone"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
