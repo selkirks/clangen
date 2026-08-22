@@ -50,7 +50,9 @@
             "WOODEN": "brown",
             "BARREL": "brown",
             "CORRAL": "brown",
-            "COLA": "brown"
+            "COLA": "brown",
+            "COFFEE": "brown",
+            "BROWNSUGAR": "brown"
         },
         "pattern_types": {
             "Tabby": "tabbies",

@@ -201,6 +201,14 @@
             "one": "cola",
             "many": "cola"
         },
+        "COFFEE": {
+            "one": "coffee",
+            "many": "coffee"
+        },
+        "BROWNSUGAR": {
+            "one": "brown sugar",
+            "many": "brown sugar"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
