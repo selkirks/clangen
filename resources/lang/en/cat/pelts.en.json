@@ -133,6 +133,10 @@
             "one": "hagstone",
             "many": "hagstone"
         },
+        "NIGHTSHADE": {
+            "one": "nightshade",
+            "many": "nightshade"
+        },
         "CREAM": {
             "one": "cream",
             "many": "cream"
@@ -192,6 +196,10 @@
         "CORRAL": {
             "one": "corral",
             "many": "corral"
+        },
+        "COLA": {
+            "one": "cola",
+            "many": "cola"
         },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
