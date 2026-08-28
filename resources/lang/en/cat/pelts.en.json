@@ -237,6 +237,86 @@
             "one": "silver brown",
             "many": "silver brown"
         },
+        "ACACIA": {
+            "one": "ginger",
+            "many": "dark ginger"
+        },
+        "MOLD": {
+            "one": "black",
+            "many": "black"
+        },
+        "LAVENDER": {
+            "one": "brown",
+            "many": "light brown"
+        },
+        "TOASTED": {
+            "one": "white-ginger",
+            "many": "white-ginger"
+        },
+        "SUNSHINE": {
+            "one": "golden-gray",
+            "many": "golden-gray"
+        },
+        "STARRY": {
+            "one": "black",
+            "many": "black"
+        },
+        "GOLD-GRAY": {
+            "one": "golden-gray",
+            "many": "golden-gray"
+        },
+        "MOSSYLOG": {
+            "one": "brown",
+            "many": "light brown"
+        },
+        "BRICK": {
+            "one": "red",
+            "many": "dark red"
+        },
+        "BINGO": {
+            "one": "ginger",
+            "many": "ginger"
+        },
+        "EARLGRAY": {
+            "one": "gray",
+            "many": "pale gray"
+        },
+        "CONCRETE": {
+            "one": "dark gray",
+            "many": "black"
+        },
+        "MUD": {
+            "one": "brown",
+            "many": "dark brown"
+        },
+        "PEACH": {
+            "one": "ginger",
+            "many": "pale ginger"
+        },
+        "LIMESTONE": {
+            "one": "gray-brown",
+            "many": "pale gray-brown"
+        },
+        "NIGHTTIME": {
+            "one": "black",
+            "many": "black"
+        },
+        "CARPET": {
+            "one": "brown",
+            "many": "light brown"
+        },
+        "ROSESILVER": {
+            "one": "rosy silver",
+            "many": "pale rosy silver"
+        },
+        "RUSTED": {
+            "one": "rusty black",
+            "many": "rusty black"
+        },
+        "TEA": {
+            "one": "brown",
+            "many": "golden brown"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
