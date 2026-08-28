@@ -269,6 +269,8 @@
         "Sokoke_long": "%{color} tabby",
         "Masked": "masked",
         "Masked_long": "masked %{color} tabby",
+        "Abyssinian": "abyssinian",
+        "Abyssinian_long": "%{color} abyssinian",
         "Calico": "calico",
         "Calico_long": "%{color} calico",
         "Calico_tabby": "calico tabby",

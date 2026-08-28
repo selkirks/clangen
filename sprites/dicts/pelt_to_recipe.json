@@ -17,5 +17,6 @@
     "Singlestripe": "SinglestripeRecipe",
     "Bengal": "BengalRecipe",
     "Marbled": "MarbledRecipe",
-    "Masked": "MaskedRecipe"
+    "Masked": "MaskedRecipe",
+    "Abyssinian": "AbyssinianRecipe"
 }
