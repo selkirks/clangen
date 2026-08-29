@@ -111,6 +111,8 @@
         "Masked_long": "masked %{color} tabby",
         "Abyssinian": "abyssinian",
         "Abyssinian_long": "%{color} abyssinian",
+        "Wolf": "wolf",
+        "Wolf_long":  "%{color} wolf",
         "Calico": "calico",
         "Calico_long": "%{color} calico",
         "Calico_tabby": "calico tabby",
