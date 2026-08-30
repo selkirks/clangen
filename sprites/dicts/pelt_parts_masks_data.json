@@ -54,7 +54,10 @@
             "ABYSSINIANMIDDLE",
             "WOLFUNDERS",
             "WOLFPATTERN",
-            "WOLFOVER"
+            "WOLFOVER",
+            "SPOTSGRADIENT",
+            "SPOTSPATTERN",
+            "SPOTSUNDERS"
         ]
 
     ]

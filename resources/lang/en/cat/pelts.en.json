@@ -357,6 +357,8 @@
         "Abyssinian_long": "%{color} abyssinian",
         "Wolf": "wolf",
         "Wolf_long":  "%{color} wolf",
+        "Spots": "spotted",
+        "Spots_long": "%{color} spotted",
         "Calico": "calico",
         "Calico_long": "%{color} calico",
         "Calico_tabby": "calico tabby",
