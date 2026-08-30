@@ -13206,7 +13206,7 @@
                             "adult",
                             "senior adult"
                         ],
-                        "gender": "can_birth",
+                        "gender": ["can_birth"],
                         "backstory": [
                             "loner1"
                         ]
@@ -13300,7 +13300,7 @@
                             "adult",
                             "senior adult"
                         ],
-                        "gender": "can_birth",
+                        "gender": ["can_birth"],
                         "backstory": [
                             "loner3"
                         ],
@@ -13408,7 +13408,7 @@
                             "adult",
                             "senior adult"
                         ],
-                        "gender": "can_birth",
+                        "gender": ["can_birth"],
                         "backstory": [
                             "loner3"
                         ],
@@ -13447,7 +13447,7 @@
                             "adult",
                             "senior adult"
                         ],
-                        "gender": "can_birth",
+                        "gender": ["can_birth"],
                         "backstory": [
                             "loner3"
                         ],
@@ -13490,7 +13490,7 @@
                             "adult",
                             "senior adult"
                         ],
-                        "gender": "can_birth",
+                        "gender": ["can_birth"],
                         "backstory": [
                             "loner3"
                         ],
@@ -13538,7 +13538,7 @@
                             "adult",
                             "senior adult"
                         ],
-                        "gender": "can_birth",
+                        "gender": ["can_birth"],
                         "backstory": [
                             "loner3"
                         ],
@@ -13602,7 +13602,7 @@
                             "adult",
                             "senior adult"
                         ],
-                        "gender": "can_birth",
+                        "gender": ["can_birth"],
                         "backstory": [
                             "loner3"
                         ],
@@ -13659,7 +13659,7 @@
                         "age": [
                             "newborn"
                         ],
-                        "gender": "can_birth",
+                        "gender": ["can_birth"],
                         "backstory": [
                             "stolenkit1"
                         ]
