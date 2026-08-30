@@ -79,9 +79,9 @@
         "abyssinian_bottom": "#F0D3C0",
         "abyssinian_middle": "#A5A0A5",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#898E93",
+        "wolf_pattern": "#E4E2DD",
+        "wolf_bottom": "#9C7D65",
         
         "exotic_base": "#BDC3CE",
         "exotic_base_gradient_bottom": "#F8F8F5",
@@ -131,9 +131,9 @@
         "abyssinian_bottom": "#F3B790",
         "abyssinian_middle": "#899ca8",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#686D78",
+        "wolf_pattern": "#E1E2E1",
+        "wolf_bottom": "#6E6259",
 
         "exotic_base": "#CACFD4",
         "exotic_base_gradient_bottom": "#F8F8F5",
@@ -183,9 +183,9 @@
         "abyssinian_bottom": "#868B9C",
         "abyssinian_middle": "#414657",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#62666F",
+        "wolf_pattern": "#F2F2EA",
+        "wolf_bottom": "#5A4D37",
         
         "exotic_base": "#8D939E",
         "exotic_base_gradient_bottom": "#F8F9DD",
@@ -235,9 +235,9 @@
         "abyssinian_bottom": "#98ACAC",
         "abyssinian_middle": "#3B504F",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#55575E",
+        "wolf_pattern": "#D4D6D3",
+        "wolf_bottom": "#4A3F38",
 
         "exotic_base": "#90939D",
         "exotic_base_gradient_bottom": "#F8F8F5",
@@ -288,9 +288,9 @@
         "abyssinian_bottom": "#2E324E",
         "abyssinian_middle": "#74778D",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#20242B",
+        "wolf_pattern": "#B1C2D4",
+        "wolf_bottom": "#494747",
 
         "exotic_base": "#3B4045",
         "exotic_base_gradient_bottom": "#98ABC0",
@@ -346,9 +346,9 @@
         "abyssinian_bottom": "#F0D6C9",
         "abyssinian_middle": "#2A2B37",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#141418",
+        "wolf_pattern": "#C3BFB6",
+        "wolf_bottom": "#241D16",
 
         "exotic_base": "#343439",
         "exotic_base_gradient_bottom": "#C2BEB4",
@@ -398,9 +398,9 @@
         "abyssinian_bottom": "#FFF0D8",
         "abyssinian_middle": "#F6D296",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#C6A382",
+        "wolf_pattern": "#F8F1DF",
+        "wolf_bottom": "#DBA269",
 
         "exotic_base": "#F4D7B2",
         "exotic_base_gradient_bottom": "#F8F6F2",
@@ -450,9 +450,9 @@
         "abyssinian_bottom": "#F4C472",
         "abyssinian_middle": "#AA7D2E",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#CF9A6B",
+        "wolf_pattern": "#F0D0B3",
+        "wolf_bottom": "#AA733B",
 
         "exotic_base": "#E7C092",
         "exotic_base_gradient_bottom": "#ECDDD2",
@@ -502,9 +502,9 @@
         "abyssinian_bottom": "#EADAA6",
         "abyssinian_middle": "#b27856",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#D0AF76",
+        "wolf_pattern": "#F3E5BC",
+        "wolf_bottom": "#9C6E40",
 
         "exotic_base": "#EFCE82",
         "exotic_base_gradient_bottom": "#F3EDD9",
@@ -554,9 +554,9 @@
         "abyssinian_bottom": "#FDD1A8",
         "abyssinian_middle": "#B04313",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#F2A96B",
+        "wolf_pattern": "#FEEDC3",
+        "wolf_bottom": "#BA5E12",
 
         "exotic_base": "#F5AB68",
         "exotic_base_gradient_bottom": "#FFF2B2",
@@ -606,9 +606,9 @@
         "abyssinian_bottom": "#EEB18D",
         "abyssinian_middle": "#522925",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#D1703C",
+        "wolf_pattern": "#F4D4A1",
+        "wolf_bottom": "#872100",
 
         "exotic_base": "#D67539",
         "exotic_base_gradient_bottom": "#FFF1B2",
@@ -658,9 +658,9 @@
         "abyssinian_bottom": "#A46153",
         "abyssinian_middle": "#682619",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#A9563D",
+        "wolf_pattern": "#D2C2A5",
+        "wolf_bottom": "#8A5337",
 
         "exotic_base": "#AE5F42",
         "exotic_base_gradient_bottom": "#D6C898",
@@ -710,9 +710,9 @@
         "abyssinian_bottom": "#ECF4F6",
         "abyssinian_middle": "#B59E8E",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#DDCEAF",
+        "wolf_pattern": "#F8F8F5",
+        "wolf_bottom": "#AEA391",
 
         "exotic_base": "#D2C2A2",
         "exotic_base_gradient_bottom": "#F8F8F4",
@@ -762,9 +762,9 @@
         "abyssinian_bottom": "#DAC5B9",
         "abyssinian_middle": "#886857",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#B4948C",
+        "wolf_pattern": "#E8CDB2",
+        "wolf_bottom": "#847876",
 
         "exotic_base": "#B3968F",
         "exotic_base_gradient_bottom": "#DFC4A4",
@@ -814,9 +814,9 @@
         "abyssinian_bottom": "#E6C5B1",
         "abyssinian_middle": "#725A52",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#957861",
+        "wolf_pattern": "#F2E7D3",
+        "wolf_bottom": "#584A41",
 
         "exotic_base": "#A38268",
         "exotic_base_gradient_bottom": "#F3EDD9",
@@ -866,9 +866,9 @@
         "abyssinian_bottom": "#E8AD86",
         "abyssinian_middle": "#6C3B1B",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#925F4C",
+        "wolf_pattern": "#ECD6B2",
+        "wolf_bottom": "#583720",
 
         "exotic_base": "#A66C56",
         "exotic_base_gradient_bottom": "#DFCCA2",
@@ -918,9 +918,9 @@
         "abyssinian_bottom": "#CCAB9C",
         "abyssinian_middle": "#5A392A",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#585049",
+        "wolf_pattern": "#D5C3AF",
+        "wolf_bottom": "#37271C",
 
         "exotic_base": "#685D57",
         "exotic_base_gradient_bottom": "#E8E0C5",
@@ -970,9 +970,9 @@
         "abyssinian_bottom": "#301614",
         "abyssinian_middle": "#1C1211",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#64403B",
+        "wolf_pattern": "#E0C7BD",
+        "wolf_bottom": "#4E291F",
 
         "exotic_base": "#724742",
         "exotic_base_gradient_bottom": "#C2A89C",
