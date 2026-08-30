@@ -27,9 +27,9 @@
         "abyssinian_bottom": "#EEF6F7",
         "abyssinian_middle": "#C6D0D1",
 
-        "wolf_top": "#ff0000",
-        "wolf_pattern": "#00ff00",
-        "wolf_bottom": "#0000ff",
+        "wolf_top": "#D2D1D2",
+        "wolf_pattern": "#FFFEFF",
+        "wolf_bottom": "#E1CEC0",
 
         "exotic_base": "#F6F6F6",
         "exotic_base_gradient_bottom": "#FFFFFF",
