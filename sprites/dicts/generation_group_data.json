@@ -56,6 +56,7 @@
             "BINGO": "ginger",
             "PEACH": "ginger",
             "BANANA": "ginger",
+            "RUSTEDIRON": "ginger",
             "LIGHTBROWN": "brown",
             "LILAC": "brown",
             "BROWN": "brown",
@@ -80,7 +81,9 @@
             "LIMESTONE": "brown",
             "CARPET": "brown",
             "RUSTED": "brown",
-            "TEA": "brown"
+            "TEA": "brown",
+            "MULBERRY": "brown",
+            "REDCLAY": "brown"
         },
         "pattern_types": {
             "Tabby": "tabbies",

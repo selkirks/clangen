@@ -225,6 +225,10 @@
             "one": "yellow",
             "many": "pale yellow"
         },
+        "RUSTEDIRON": {
+            "one": "rusty silver",
+            "many": "rusty silver"
+        },
         "LIGHTBROWN": {
             "one": "brown",
             "many": "light brown"
@@ -320,6 +324,14 @@
         "TEA": {
             "one": "brown",
             "many": "golden brown"
+        },
+        "MULBERRY": {
+            "one": "brown",
+            "many": "light brown"
+        },
+        "REDCLAY": {
+            "one": "brown",
+            "many": "brown"
         },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
