@@ -104,5 +104,5 @@
         "verdana"
     ],
     "editor.defaultColorDecorators": "always",
-    "editor.colorDecoratorsLimit": 2000,
+    "editor.colorDecoratorsLimit": 15000,
 }
