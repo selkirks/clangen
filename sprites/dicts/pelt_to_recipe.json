@@ -19,5 +19,6 @@
     "Marbled": "MarbledRecipe",
     "Masked": "MaskedRecipe",
     "Abyssinian": "AbyssinianRecipe",
-    "Wolf": "WolfRecipe"
+    "Wolf": "WolfRecipe",
+    "Spots": "SpotsRecipe"
 }
