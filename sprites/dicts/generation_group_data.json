@@ -95,6 +95,7 @@
             "Speckled": "spotted",
             "Rosette": "spotted",
             "Freckled": "spotted",
+            "Spots": "spotted",
             "SingleColour": "plain",
             "TwoColour": "plain",
             "Smoke": "plain",
