@@ -2234,8 +2234,8 @@
         },
         "chance_of_success": 40,
         "patrol_art": "cat/sprites/gen_speakingcat_Ap",
-        "intro_text": "Come on! It'll be fun, p_l insists. All of the warriors are asleep, and nobody will notice if a few apprentices sneak out for a bit of night exploration.",
-        "decline_text": "p_l might be ready to go on an adventure, but that doesn't mean {PRONOUN/p_l/poss} fellow apprentices feel the same. Instead of breaking the rules, everyone agrees to stay in camp.",
+        "intro_strings": ["Come on! It'll be fun, p_l insists. All of the warriors are asleep, and nobody will notice if a few apprentices sneak out for a bit of night exploration."],
+        "decline_strings": ["p_l might be ready to go on an adventure, but that doesn't mean {PRONOUN/p_l/poss} fellow apprentices feel the same. Instead of breaking the rules, everyone agrees to stay in camp."],
         "success_outcomes": [
             {
                 "frequency": 4,
@@ -2279,7 +2279,7 @@
                 "condition": [
                     {
                         "cats": [
-                            "multi"
+                            "some_patrol"
                         ],
                         "condition": [
                             "battle_injury"
@@ -2299,7 +2299,7 @@
                 "condition": [
                     {
                         "cats": [
-                            "multi"
+                            "some_patrol"
                         ],
                         "condition": [
                             "big_bite_injury"
@@ -2318,7 +2318,7 @@
                 "death": [
                     {
                         "cats": [
-                            "multi"
+                            "some_patrol"
                         ],
                         "history": "m_c died during a dog attack.",
                         "no_results": true

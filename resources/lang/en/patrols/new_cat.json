@@ -13125,8 +13125,8 @@
         },
         "chance_of_success": 50,
         "patrol_art": "cat_sprites/gen_train_solo_Ap",
-        "intro_text": "The moon is high overhead as p_l slinks along the o_c_n border, head low. {PRONOUN/p_l/subject/CAP} {VERB/p_l/hope/hopes} that nobody saw {PRONOUN/p_l/object} leave camp. {PRONOUN/p_l/subject/CAP} {VERB/p_l/aren't/isn't} sure {PRONOUN/p_l/subject} can handle being caught before seeing {PRONOUN/p_l/poss} friend. They've gotten away with it for this long, so they should be fine. Right?",
-        "decline_text": "This was a bad idea. It's too risky...and breaking the Code, besides. p_l {VERB/p_l/give/gives} up and {VERB/p_l/return/returns} to camp.",
+        "intro_strings": ["The moon is high overhead as p_l slinks along the o_c_n border, head low. {PRONOUN/p_l/subject/CAP} {VERB/p_l/hope/hopes} that nobody saw {PRONOUN/p_l/object} leave camp. {PRONOUN/p_l/subject/CAP} {VERB/p_l/aren't/isn't} sure {PRONOUN/p_l/subject} can handle being caught before seeing {PRONOUN/p_l/poss} friend. They've gotten away with it for this long, so they should be fine. Right?"],
+        "decline_strings": ["This was a bad idea. It's too risky...and breaking the Code, besides. p_l {VERB/p_l/give/gives} up and {VERB/p_l/return/returns} to camp."],
         "success_outcomes": [
             {
                 "frequency": 4,
@@ -13344,8 +13344,8 @@
         },
         "chance_of_success": 50,
         "patrol_art": "cat/sprites/bord_general_intro",
-        "intro_text": "As the patrol marks the o_c_n border, p_l swears {PRONOUN/p_l/subject} {VERB/p_l/keep/keeps} hearing a strange whispering noise. The patrol pauses to listen closer, and after a few moments they hear the sound of hushed conversation coming from a hidden spot in the undergrowth.",
-        "decline_text": "After a moment, the noises stop, and p_l decides it must have been the wind. Marking the border is more important than jumping at shadows.",
+        "intro_strings": ["As the patrol marks the o_c_n border, p_l swears {PRONOUN/p_l/subject} {VERB/p_l/keep/keeps} hearing a strange whispering noise. The patrol pauses to listen closer, and after a few moments they hear the sound of hushed conversation coming from a hidden spot in the undergrowth."],
+        "decline_strings": ["After a moment, the noises stop, and p_l decides it must have been the wind. Marking the border is more important than jumping at shadows."],
         "success_outcomes": [
             {
                 "frequency": 4,
@@ -13798,8 +13798,8 @@
         },
         "chance_of_success": 40,
         "patrol_art": "cat/sprites/bord_general_intro",
-        "intro_text": "p_l lurks at the edge of the o_c_n camp, ears pricked. {PRONOUN/p_l/subject/CAP} {VERB/p_l/wait/waits} in the shadows until the perfect opprotunity arises. There! The last queen has left the nursery, padding away to chat with a Clanmate. The nursery stands unguarded.",
-        "decline_text": "On second thought, this mission is too dangerous. p_l could be killed. {PRONOUN/p_l/subject/CAP} {VERB/p_l/decide/decides} it's safest to turn back and return to c_n territory.",
+        "intro_strings": ["p_l lurks at the edge of the o_c_n camp, ears pricked. {PRONOUN/p_l/subject/CAP} {VERB/p_l/wait/waits} in the shadows until the perfect opprotunity arises. There! The last queen has left the nursery, padding away to chat with a Clanmate. The nursery stands unguarded."],
+        "decline_strings": ["On second thought, this mission is too dangerous. p_l could be killed. {PRONOUN/p_l/subject/CAP} {VERB/p_l/decide/decides} it's safest to turn back and return to c_n territory."],
         "success_outcomes": [
             {
                 "frequency": 2,
