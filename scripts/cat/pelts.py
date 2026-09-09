@@ -40,6 +40,10 @@ class Pelt:
     # PELT LENGTH
     pelt_length = ["short", "medium", "long"]
 
+    # BODY TYPES
+    body_types: list = ["tall", "towering", "muscular", "burly", "stocky", "petite", "small", "lithe",
+                  "slender", "skinny", "thin", "scrawny", "lanky", "wiry", "plump", "stout", "fat", "round"]
+
     # PELT COLOURS
     all_pelt_colours: list = []
     ginger_colours: list = []
@@ -139,6 +143,7 @@ class Pelt:
     yellow_eyes: list = []
     green_eyes: list = []
     blue_eyes: list = []
+    red_eyes: list = []
     for sprite_list in sprites.EYE_DATA["sprite_list"]:
         all_eye_colours.extend(sprite_list.keys())
         for colour in sprite_list:
@@ -148,6 +153,8 @@ class Pelt:
                 green_eyes.append(colour)
             elif sprite_list[colour] == "blue":
                 blue_eyes.append(colour)
+            elif sprite_list[colour] == "red":
+                red_eyes.append(colour)
 
     # SKIN
     skin_sprites: list = []
@@ -242,6 +249,7 @@ class Pelt:
         self,
         name: str = "SingleColour",
         length: str = "short",
+        body: str = None,
         colour: str = "WHITE",
         white_patches: str = None,
         eye_color: str = "BLUE",
@@ -268,6 +276,7 @@ class Pelt:
         reverse: bool = False,
     ) -> None:
         self.name = name
+        self.body = body
         self.colour = colour
         self.white_patches = white_patches
         self.eye_colour = eye_color
@@ -470,6 +479,7 @@ class Pelt:
     @staticmethod
     def generate_new_pelt(gender: str, parents: tuple = (), age: str = "adult"):
         new_pelt = Pelt()
+        new_pelt.body = choice(Pelt.body_types)
 
         pelt_white = new_pelt.init_pattern_color(parents, gender)
         new_pelt.init_white_patches(pelt_white, parents)
@@ -479,6 +489,8 @@ class Pelt:
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
         new_pelt.init_tint()
+
+        return new_pelt
 
         return new_pelt
 
@@ -551,6 +563,9 @@ class Pelt:
         elif self.tortie_marking == "MINIMAL4":
             self.tortie_marking = "MINIMALFOUR"
 
+        if self.body is None:
+            self.body = choice(Pelt.body_types)
+
         if self.accessory is None:
             self.accessory = tuple()
         elif isinstance(self.accessory, str):
@@ -599,7 +614,7 @@ class Pelt:
             num = 1
 
         if not random.randint(0, num):
-            colour_wheel = [Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.green_eyes]
+            colour_wheel = [Pelt.yellow_eyes, Pelt.blue_eyes, Pelt.green_eyes, Pelt.red_eyes]
             for colour in colour_wheel[:]:
                 if self.eye_colour in colour:
                     colour_wheel.remove(
