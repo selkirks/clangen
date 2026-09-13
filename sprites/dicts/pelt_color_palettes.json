@@ -1094,6 +1094,18 @@
 
         "freckled_pattern_gradient_top": "#49201C",
 
+        "abyssinian_top": "#1C1211",
+        "abyssinian_bottom": "#301614",
+        "abyssinian_middle": "#1C1211",
+
+        "wolf_top": "#64403B",
+        "wolf_pattern": "#E0C7BD",
+        "wolf_bottom": "#4E291F",
+
+        "spots_pattern_gradient": "#312022",
+        "spots_pattern": "#4B2B2D",
+        "spots_bottom": "#926761",
+
         "exotic_base": "#391B1C",
         "exotic_base_gradient_bottom": "#32121D",
         "exotic_base_gradient_top": "#6F3020",
@@ -1143,6 +1155,18 @@
 
         "freckled_pattern_gradient_top": "#E5BCA4",
 
+        "abyssinian_top": "#1C1211",
+        "abyssinian_bottom": "#301614",
+        "abyssinian_middle": "#1C1211",
+
+        "wolf_top": "#64403B",
+        "wolf_pattern": "#E0C7BD",
+        "wolf_bottom": "#4E291F",
+
+        "spots_pattern_gradient": "#312022",
+        "spots_pattern": "#4B2B2D",
+        "spots_bottom": "#926761",
+
         "exotic_base": "#F9F7F2",
         "exotic_base_gradient_bottom": "#FBF9F8",
         "exotic_base_gradient_top": "#F3E2CC",
@@ -1188,6 +1212,18 @@
         "smoke_pattern_gradient_top": "#5E5762",
 
         "freckled_pattern_gradient_top": "#BEBABF",
+
+        "abyssinian_top": "#1C1211",
+        "abyssinian_bottom": "#301614",
+        "abyssinian_middle": "#1C1211",
+
+        "wolf_top": "#64403B",
+        "wolf_pattern": "#E0C7BD",
+        "wolf_bottom": "#4E291F",
+
+        "spots_pattern_gradient": "#312022",
+        "spots_pattern": "#4B2B2D",
+        "spots_bottom": "#926761",
 
         "exotic_base": "#EECCB2",
         "exotic_base_gradient_bottom": "#FFFDF3",
