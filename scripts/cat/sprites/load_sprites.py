@@ -79,11 +79,6 @@ class Sprites:
         GENERATION_GROUP_DATA = ujson.loads(read_file.read())
 
     with open(
-        "sprites/dicts/skin_sprite_data.json", "r", encoding="utf-8"
-    ) as read_file:
-        SKIN_DATA = ujson.loads(read_file.read())
-
-    with open(
         "sprites/dicts/tortie_patches_sprite_data.json", "r", encoding="utf-8"
     ) as read_file:
         TORTIE_DATA = ujson.loads(read_file.read())
@@ -325,7 +320,6 @@ class Sprites:
             self.WHITE_VITILIGO_DATA,
             self.WHITE_POINT_DATA,
             self.TORTIE_DATA,
-            self.SKIN_DATA,
             self.SCAR_DATA,
             self.SCAR_MISSING_PART_DATA,
             self.PLANT_DATA,

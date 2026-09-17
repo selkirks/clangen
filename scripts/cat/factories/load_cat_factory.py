@@ -266,7 +266,6 @@ class LoadCatFactory(BaseCatFactory):
                 "tortie_colour": kwargs["tortie_color"],
                 "tortie_pattern": kwargs["tortie_pattern"],
                 "tortie_marking": kwargs["tortie_marking"],
-                "skin": kwargs.get("skin"),
                 "tint": kwargs.get("tint"),
                 "scars": kwargs["scars"],
                 "accessory": kwargs.get("accessory", []),

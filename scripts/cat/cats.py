@@ -2486,7 +2486,6 @@ class Cat:
                 "tortie_base": self.pelt.tortie_base,
                 "tortie_color": self.pelt.tortie_colour,
                 "tortie_pattern": self.pelt.tortie_pattern,
-                "skin": self.pelt.skin,
                 "tint": self.pelt.tint,
                 "skill_dict": self.skills.get_skill_dict(),
                 "scars": self.pelt.scars or [],

@@ -303,13 +303,8 @@ def _draw_sprite(
         new_sprite.blit(sprites.sprites["lineart_df" + cat_sprite], (0, 0))
     elif dead:
         new_sprite.blit(sprites.sprites["lineart_sc" + cat_sprite], (0, 0))
-    # draw skin and scars2
+    # draw scars2
     blendmode = pygame.BLEND_RGBA_MIN
-    sprite_name = f"{sprites.SKIN_DATA['spritesheet']}{cat.pelt.skin}{cat_sprite}"
-    new_sprite.blit(
-        sprites.sprites[sprite_name],
-        (0, 0),
-    )
 
     if not scars_hidden:
         for scar in cat.pelt.scars:

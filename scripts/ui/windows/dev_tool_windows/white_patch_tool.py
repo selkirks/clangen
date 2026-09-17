@@ -250,7 +250,6 @@ class WhitePatchToolWindow(ComboToolWindow):
                 tortie_pattern=None,
                 tortie_colour=None,
                 tint="pink",
-                skin="DARK",
                 adult_sprite=self.current_pose,
             ),
         )

@@ -265,7 +265,6 @@ class TortiePatchToolWindow(GameWindow):
                 tortie_pattern="mackerel",
                 tortie_colour="GINGER",
                 tint="pink",
-                skin="DARK",
                 adult_sprite="adult_short2",
             ),
         )

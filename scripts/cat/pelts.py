@@ -149,11 +149,6 @@ class Pelt:
             elif sprite_list[colour] == "blue":
                 blue_eyes.append(colour)
 
-    # SKIN
-    skin_sprites: list = []
-    for sprite_list in sprites.SKIN_DATA["sprite_list"]:
-        skin_sprites.extend(sprite_list)
-
     # SCARS
     # bite scars by @wood pank on discord
     general_scars = []
@@ -244,7 +239,6 @@ class Pelt:
         opacity: int = 100,
         scars: list = None,
         tint: str | None = None,
-        skin: str = "BLACK",
         white_patches_tint: str | None = None,
         newborn_sprite: str = None,
         kitten_sprite: str = None,
@@ -425,7 +419,6 @@ class Pelt:
             }
 
         self.reverse = reverse
-        self.skin = skin
 
     @property
     def accessory(self):
@@ -897,8 +890,6 @@ class Pelt:
             "para_young": "para_young0",
         }
         self.reverse = bool(random.getrandbits(1))
-        # skin chances
-        self.skin = choice(Pelt.skin_sprites)
 
         if self.length == "long":
             self.cat_sprites["adolescent"] = random.choice(

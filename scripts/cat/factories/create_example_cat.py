@@ -51,7 +51,6 @@ def create_option_preview_cat(scar: str = None, acc: str = None):
             tortie_pattern=None,
             tortie_colour=None,
             tint="gray",
-            skin="BLUE",
             scars=[scar] if scar else [],
             adult_sprite="8",
             accessory=[acc] if acc else [],

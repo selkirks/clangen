@@ -157,7 +157,6 @@ class TortiePatchToolWindow(ComboToolWindow):
                 tortie_pattern="mackerel",
                 tortie_colour="GINGER",
                 tint="pink",
-                skin="DARK",
                 adult_sprite=self.current_pose,
             ),
         )
