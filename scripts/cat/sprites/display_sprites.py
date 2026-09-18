@@ -368,15 +368,30 @@ def _draw_sprite(
                         sprite_name = (
                             f"{sprites.LIVING_INSECTS_DATA['spritesheet']}{accessory}{cat_sprite}"
                         )
+                        new_sprite.blit(
+                            _recolor_lineart(
+                                sprites.sprites[sprite_name],
+                                lineart_color,
+                                gradient_surface,
+                                ),
+                                (0, 0),
+                        )
                     elif accessory in cat.pelt.snakes_accessories:
                         sprite_name = (
                             f"{sprites.SNAKES_DATA['spritesheet']}{accessory}{cat_sprite}"
                                         )
+                        new_sprite.blit(
+                            _recolor_lineart(
+                                sprites.sprites[sprite_name],
+                                lineart_color,
+                                gradient_surface,
+                                ),
+                                (0, 0),
+                        )
                     elif accessory in cat.pelt.ster_flowers_accessories:
                         sprite_name = (
                             f"{sprites.STER_FLOWERS_DATA['spritesheet']}{accessory}{cat_sprite}"
                         )
-
                         new_sprite.blit(
                              _recolor_lineart(
                                 sprites.sprites[sprite_name],
