@@ -480,32 +480,32 @@ dev_tools = true
 
 [accessory_generation]
   # base 1/chance a cat generates with an accessory 
-  base_acc_chance = 150
+  base_acc_chance = 3
 
   # modifiers for accessories add or subtract from chance IN THE DENOMINATOR 
   #   i.e. 1/(chance + med_modifier + baby_modifier + elder_modifier + ...)
   # so SUBTRACTING will INCREASE the chance an accessory is given
 
   # modifies accessory chance based on if cat is a medicine cat
-  med_modifier = -80
+  med_modifier = -3
 
   # modifies accessory chance based on if cat is a kitten or adolescent
-  baby_modifier = -20
+  baby_modifier = -3
 
   # modifies accessory chance based on if cat is a senior or senior adult
-  elder_modifier = 20
+  elder_modifier = 3
 
   # modifies accessory chance based on if cat has "happy" traits
-  happy_trait_modifier = -30
+  happy_trait_modifier = -3
 
   # modifies accessory chance based on if cat has "grumpy" traits
-  grumpy_trait_modifier = 30
+  grumpy_trait_modifier = 3
 
   # modifies accessory chance based on if cat had a ceremony
-  ceremony_modifier = -20
+  ceremony_modifier = -3
 
   # modifies accessory chance based on if cat already has at least one other accessory
-  multiple_acc_modifier = 50
+  multiple_acc_modifier = 3
 
 [transition_related]
   # base 1/chance that a cat will trans their gender

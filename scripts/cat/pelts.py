@@ -260,6 +260,9 @@ class Pelt:
         "PLANT": plant_accessories,
         "WILD": wild_accessories,
         "COLLAR": collar_accessories,
+        "LIVING_INSECT": living_insect_accessories,
+        "SNAKES": snakes_accessories,
+        "STER_FLOWERS": ster_flowers_accessories
     }
 
     """Holds all appearance information for a cat. """

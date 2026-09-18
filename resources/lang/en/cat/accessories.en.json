@@ -543,6 +543,91 @@
             "zero": "yellow ladybug",
             "many": "yellow ladybugs",
             "one": "yellow ladybug"
+        },
+        "GRASS SNAKE": {
+            "zero": "grass snake",
+            "many": "grass snakes",
+            "one": "grass snake"
+        },
+        "BLUE RACER": {
+            "zero": "blue racer",
+            "many": "blue racers",
+            "one": "blue racer"
+        },
+        "WESTERN COACHWHIP": {
+            "zero": "western coachwhip",
+            "many": "western coachwhips",
+            "one": "western coachwhip"
+        },
+        "KINGSNAKE": {
+            "zero": "kingsnake",
+            "many": "kingsnakes",
+            "one": "kingsnake"
+        },
+        "POPPY FLOWER": {
+            "zero": "poppy flower",
+            "many": "poppy flowers",
+            "one": "poppy flower"
+        },
+        "JUNIPER BERRY": {
+            "zero": "juniper berry",
+            "many": "juniper berries",
+            "one": "juniper berry"
+        },
+        "DAISY FLOWER": {
+            "zero": "daisy flower",
+            "many": "daisy flowers",
+            "one": "daisy flower"
+        },
+        "BORAGE FLOWER": {
+            "zero": "borage flower",
+            "many": "borage flowers",
+            "one": "borage flower"
+        },
+        "OAK LEAF": {
+            "zero": "oak leaf",
+            "many": "oak leaves",
+            "one": "oak leaf"
+        },
+        "BEECH LEAF": {
+            "zero": "beech leaf",
+            "many": "beech leaves",
+            "one": "beech leaf"
+        },
+        "LAUREL LEAVES": {
+            "zero": "laurel leaf",
+            "many": "laurel leaves",
+            "one": "laurel leaf"
+        },
+        "COLTSFOOT": {
+            "zero": "coltsfoot flower",
+            "many": "coltsfoot flowers",
+            "one": "coltsfoot flower"
+        },
+        "BINDWEED": {
+            "zero": "bindweed",
+            "many": "bindweeds",
+            "one": "bindweed"
+        },
+        "TORMENTIL": {
+            "zero": "tormentil",
+            "many": "tormentils",
+            "one": "tormentil"
+        },
+        "BRIGHT EYE": {
+            "zero": "bright eye",
+            "many": "bright eyes",
+            "one": "bright eye"
+        },
+        "LAVENDER WREATH": {
+            "zero": "lavender wreath",
+            "many": "lavender wreaths",
+            "one": "lavender wreath"
+        },
+        "YARROW": {
+            "zero": "yarrow",
+            "many": "yarrow",
+            "one": "yarrow"
         }
     }
 }

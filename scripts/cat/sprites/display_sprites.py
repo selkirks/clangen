@@ -372,7 +372,7 @@ def _draw_sprite(
                         sprite_name = (
                             f"{sprites.SNAKES_DATA['spritesheet']}{accessory}{cat_sprite}"
                                         )
-                    elif accessory in cat.pelt.ster_flower_accessories:
+                    elif accessory in cat.pelt.ster_flowers_accessories:
                         sprite_name = (
                             f"{sprites.STER_FLOWERS_DATA['spritesheet']}{accessory}{cat_sprite}"
                         )
