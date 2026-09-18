@@ -1,0 +1,11 @@
+{
+    "spritesheet": "acc_snakes",
+    "sprite_list": [
+        {
+            "GRASS SNAKE": "body",
+            "BLUE RACER": "body",
+            "WESTERN COACHWHIP": "body",
+            "KINGSNAKE": "body"
+        }
+    ]
+}

@@ -18026,5 +18026,109 @@
                 "senior"
             ]
         }
+    },
+    {
+        "event_id": "mod_snake_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c skips back into camp with a pep in {PRONOUN/m_c/poss} step... and with a new noodly, harmless friend!",
+        "new_accessory": [
+            "GRASS SNAKE",
+            "BLUE RACER",
+            "WESTERN COACHWHIP",
+            "KINGSNAKE"
+        ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_snake_accessory2",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "r_c chirps softly at m_c as {PRONOUN/r_c/subject} {VERB/r_c/walk/walks} over, and offers to show {PRONOUN/m_c/object} a cool, silly little snake {PRONOUN/r_c/subject} found! m_c takes {PRONOUN/r_c/poss} invitation. After seeing the weird, harmless thing, m_c decides to take it home with {PRONOUN/m_c/object}.",
+        "new_accessory": [
+            "GRASS SNAKE",
+            "BLUE RACER",
+            "WESTERN COACHWHIP",
+            "KINGSNAKE"
+        ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_grasssnake_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c waltzes back into camp... with a grass snake!? m_c promises that the snake is safe to be around, and that {PRONOUN/m_c/subject} will be the one to take care of it's needs.",
+        "new_accessory": [
+            "GRASS SNAKE"
+        ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "trait": [
+                "bold",
+                "adventurous",
+                "careful",
+                "confident",
+                "daring",
+                "ambitious",
+                "strange",
+                "charismatic"
+            ]
+        }
     }
 ]

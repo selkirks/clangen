@@ -69,6 +69,11 @@ class Sprites:
         LIVING_INSECT_DATA = ujson.loads(read_file.read())
 
     with open(
+            "sprites/dicts/snakes_sprite_data.json", "r", encoding="utf-8"
+        ) as read_file:
+            SNAKES_DATA = ujson.loads(read_file.read())
+
+    with open(
         "sprites/dicts/scar_sprite_data.json", "r", encoding="utf-8"
     ) as read_file:
         SCAR_DATA = ujson.loads(read_file.read())
