@@ -2557,7 +2557,8 @@
         "event_text": "m_c found acc_plural while out on a walk and decided to keep them.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "age": [
@@ -2584,7 +2585,8 @@
         "event_text": "m_c was given acc_plural as a congratulations. r_c watched from the side with a jealous glint in {PRONOUN/r_c/poss} eyes.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "age": [
@@ -2689,7 +2691,8 @@
         "event_text": "m_c decided to pick something to adorn {PRONOUN/m_c/poss} pelt as celebration.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "age": [
@@ -2716,7 +2719,8 @@
         "event_text": "r_c gave m_c something to adorn {PRONOUN/m_c/poss} pelt as congratulations.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "age": [
@@ -2778,7 +2782,20 @@
             "ORANGE POPPY",
             "WHITE POPPY",
             "CYAN POPPY",
-            "PINK POPPY"
+            "PINK POPPY",
+            "POPPY FLOWER",
+            "DAISY FLOWER",
+            "JUNIPER BERRY",
+            "BORAGE FLOWER",
+            "OAK LEAF",
+            "BEECH LEAF",
+            "LAUREL LEAVES",
+            "COLTSFOOT FLOWER",
+            "BINDWEED",
+            "TORMENTIL",
+            "BRIGHTEYE",
+            "LAVENDER WREATH",
+            "YARROW"
         ],
         "m_c": {
             "age": [
@@ -3327,7 +3344,10 @@
         "frequency": 2,
         "event_text": "r_c gave m_c the prettiest fallen leaf {PRONOUN/r_c/subject} could find. m_c wears it with pride.",
         "new_accessory": [
-            "MAPLE LEAF"
+            "MAPLE LEAF",
+            "OAK LEAF",
+            "BEECH LEAF",
+            "LAUREL LEAVES"
         ],
         "m_c": {
             "age": [
@@ -3789,7 +3809,8 @@
         "new_accessory": [
             "HOLLY",
             "JUNIPER",
-            "RASPBERRY"
+            "RASPBERRY",
+            "JUNIPER BERRY"
         ],
         "m_c": {
             "status": [
@@ -3882,7 +3903,10 @@
         "event_text": "As the wind blows fallen leaves around the camp, m_c picked a acc_singular to decorate {PRONOUN/m_c/poss} pelt.",
         "new_accessory": [
             "OAK LEAVES",
-            "MAPLE LEAF"
+            "MAPLE LEAF",
+            "OAK LEAF",
+            "BEECH LEAF",
+            "LAUREL LEAVES"
         ],
         "m_c": {
             "status": [
@@ -7457,7 +7481,8 @@
         "event_text": "r_c presented m_c with acc_plural as a congratulations.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -7641,7 +7666,8 @@
         "event_text": "r_c presented m_c with acc_plural as a congratulations.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -9467,7 +9493,8 @@
         "event_text": "r_c is so proud of how far {PRONOUN/r_c/poss} child has grown. With a look of pride, r_c presented m_c with acc_plural as a congratulations.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -9519,7 +9546,8 @@
         "event_text": "r_c is so proud of how far {PRONOUN/r_c/poss} kit has grown. With a look of pride, r_c presented m_c with acc_plural as a congratulations for becoming an apprentice.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -9571,7 +9599,8 @@
         "event_text": "r_c is so proud of how far {PRONOUN/r_c/poss} child has grown. With a look of pride, r_c presented m_c with acc_plural as a congratulations for becoming a warrior. r_c knew that m_c would do great things for c_n.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -9623,7 +9652,8 @@
         "event_text": "r_c is so proud of how far {PRONOUN/r_c/poss} child has grown. With a look of pride, r_c presented m_c with acc_plural as a congratulations. m_c took it, but as r_c turned away, a complicated expression crossed {PRONOUN/m_c/poss} face. Perhaps {PRONOUN/m_c/subject} has had the wrong idea about r_c.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -9777,7 +9807,8 @@
         "event_text": "m_c felt a bit overwhelmed now that {PRONOUN/m_c/subject} {VERB/m_c/are/is} an apprentice. Luckily, r_c was there with a gift of acc_plural and some comforting words to cheer m_c up.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -9890,7 +9921,8 @@
         "frequency": 4,
         "event_text": "m_c felt hurt when {PRONOUN/m_c/poss} sibling wasn't there to congratulate {PRONOUN/m_c/object} for becoming a warrior. When {PRONOUN/m_c/subject} went to {PRONOUN/m_c/poss} new nest, {PRONOUN/m_c/subject} found r_c waiting for {PRONOUN/m_c/object} with a gift of acc_plural. Together, the siblings worked on making m_c's new nest feel more comfortable.",
         "new_accessory": [
-            "WILD"
+            "WILD",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -9946,7 +9978,8 @@
         "event_text": "m_c has been so excited for {PRONOUN/m_c/poss} first lesson with r_c. However, instead of something like hunting or moss gathering, r_c took {PRONOUN/m_c/object} on a tour of the territory. At the end of the lesson, r_c gave m_c acc_plural, saying {PRONOUN/r_c/subject} {VERB/r_c/are/is} glad to be m_c's mentor.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -10007,7 +10040,8 @@
         "event_text": "As a new mentor, r_c wanted to make a good initial impression on {PRONOUN/r_c/poss} apprentice and after some careful consideration {PRONOUN/r_c/subject} decided the best way is a gift. r_c took m_c aside and gave {PRONOUN/m_c/object} acc_plural, telling {PRONOUN/m_c/object} with a soft voice that if m_c has any sort of issue then {PRONOUN/m_c/subject} can come to {PRONOUN/r_c/object} for help.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -10064,7 +10098,8 @@
         "event_text": "r_c pounced on m_c, startling {PRONOUN/m_c/object}. r_c didn't notice m_c's discomfort as {PRONOUN/r_c/subject} excitedly pointed out the acc_plural that now adorns m_c's pelt.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS"
         ],
         "m_c": {
             "status": [
@@ -10160,7 +10195,20 @@
             "GORSE",
             "LILY OF THE VALLEY",
             "BLUEBELLS",
-            "FORGET ME NOTS"
+            "FORGET ME NOTS",
+            "POPPY FLOWER",
+            "DAISY FLOWER",
+            "JUNIPER BERRY",
+            "BORAGE FLOWER",
+            "OAK LEAF",
+            "BEECH LEAF",
+            "LAUREL LEAVES",
+            "COLTSFOOT FLOWER",
+            "BINDWEED",
+            "TORMENTIL",
+            "BRIGHTEYE",
+            "LAVENDER WREATH",
+            "YARROW"
         ],
         "m_c": {
             "age": [
@@ -17838,7 +17886,7 @@
             ]
         }
       },
-            {
+        {
         "event_id": "mod_worm_accessory5",
         "location": [
             "any"
@@ -18128,6 +18176,121 @@
                 "ambitious",
                 "strange",
                 "charismatic"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_plant_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "-leaf-bare"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c skips back into camp with a pep in {PRONOUN/m_c/poss} step and a new acc_singular accessory!",
+        "new_accessory": [
+            "POPPY",
+            "ORANGE POPPY",
+            "CYAN POPPY",
+            "WHITE POPPY",
+            "PINK POPPY",
+            "BULB WHITE",
+            "BULB YELLOW",
+            "BULB ORANGE",
+            "BULB PINK",
+            "BULB BLUE",
+            "LAVENDER",
+            "HEATHER",
+            "GORSE",
+            "LILY OF THE VALLEY",
+            "BLUEBELLS",
+            "FORGET ME NOTS",
+            "POPPY FLOWER",
+            "DAISY FLOWER",
+            "JUNIPER BERRY",
+            "BORAGE FLOWER",
+            "OAK LEAF",
+            "BEECH LEAF",
+            "LAUREL LEAVES",
+            "COLTSFOOT FLOWER",
+            "BINDWEED",
+            "TORMENTIL",
+            "BRIGHTEYE",
+            "LAVENDER WREATH",
+            "YARROW"
+        ],
+        "m_c": {
+            "age": [
+                "any"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_plant_accessory2",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "r_c chirps softly at m_c as {PRONOUN/r_c/subject} {VERB/r_c/walk/walks} over, and offers {PRONOUN/m_c/object} a pretty acc_singular! m_c takes it and decorates {PRONOUN/m_c/self} with it, purring out a thank you.",
+        "new_accessory": [
+            "POPPY",
+            "ORANGE POPPY",
+            "CYAN POPPY",
+            "WHITE POPPY",
+            "PINK POPPY",
+            "BULB WHITE",
+            "BULB YELLOW",
+            "BULB ORANGE",
+            "BULB PINK",
+            "BULB BLUE",
+            "LAVENDER",
+            "HEATHER",
+            "GORSE",
+            "LILY OF THE VALLEY",
+            "BLUEBELLS",
+            "FORGET ME NOTS",
+            "POPPY FLOWER",
+            "DAISY FLOWER",
+            "JUNIPER BERRY",
+            "BORAGE FLOWER",
+            "OAK LEAF",
+            "BEECH LEAF",
+            "LAUREL LEAVES",
+            "COLTSFOOT FLOWER",
+            "BINDWEED",
+            "TORMENTIL",
+            "BRIGHTEYE",
+            "LAVENDER WREATH",
+            "YARROW"
+        ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
             ]
         }
     }

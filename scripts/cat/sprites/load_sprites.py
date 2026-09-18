@@ -71,7 +71,12 @@ class Sprites:
     with open(
             "sprites/dicts/snakes_sprite_data.json", "r", encoding="utf-8"
         ) as read_file:
-            SNAKES_DATA = ujson.loads(read_file.read())
+        SNAKES_DATA = ujson.loads(read_file.read())
+
+    with open(
+            "sprites/dicts/ster_flowers_sprite_data.json", "r", encoding="utf-8"
+         ) as read_file:
+        STER_FLOWERS_DATA = ujson.loads(read_file.read())
 
     with open(
         "sprites/dicts/scar_sprite_data.json", "r", encoding="utf-8"

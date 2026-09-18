@@ -372,6 +372,11 @@ def _draw_sprite(
                         sprite_name = (
                             f"{sprites.SNAKES_DATA['spritesheet']}{accessory}{cat_sprite}"
                                         )
+                    elif accessory in cat.pelt.ster_flower_accessories:
+                        sprite_name = (
+                            f"{sprites.STER_FLOWERS_DATA['spritesheet']}{accessory}{cat_sprite}"
+                        )
+
                         new_sprite.blit(
                              _recolor_lineart(
                                 sprites.sprites[sprite_name],
