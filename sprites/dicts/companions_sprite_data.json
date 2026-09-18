@@ -1,0 +1,45 @@
+{
+    "spritesheet": "acc_companions",
+    "sprite_list": [
+        {
+            "GRAY SQUIRREL": "paws",
+            "RED SQUIRREL": "paws",
+            "CRAB": "body",
+            "WHITE RABBIT": "paws",
+            "BLACK RABBIT": "paws",
+            "BROWN RABBIT": "paws",
+            "INDIAN GIANT SQUIRREL": "paws",
+            "FAWN RABBIT": "paws",
+            "BROWN-AND-WHITE RABBIT": "paws"
+        },
+        {
+            "FAWN-AND-WHITE RABBIT": "paws",
+            "BLACK VITILIGO RABBIT": "paws",
+            "BROWN VITILIGO RABBIT": "paws",
+            "FAWN VITILIGO RABBIT": "paws",
+            "BLACKBIRD": "paws",
+            "ROBIN": "paws",
+            "JAY": "paws",
+            "THRUSH": "paws",
+            "CARDINAL": "paws"
+        },
+        {
+            "CUBAN TROGAN": "paws",
+            "TAN RABBIT": "paws",
+            "TAN-AND-WHITE RABBIT": "paws",
+            "TAN VITILIGO RABBIT": "paws",
+            "RAT": "paws",
+            "WHITE MOUSE": "paws",
+            "BLACK MOUSE": "paws",
+            "GRAY MOUSE": "paws",
+            "BROWN MOUSE": "paws"
+        },
+        {
+            "GRAY-AND-WHITE RABBIT": "paws",
+            "GRAY VITILIGO RABBIT": "paws",
+            "BLACK-AND-WHITE RABBIT": "paws",
+            "MAGPIE": "paws",
+            "GRAY RABBIT": "paws"
+        }
+    ]
+}

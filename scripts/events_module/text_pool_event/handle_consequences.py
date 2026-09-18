@@ -183,10 +183,11 @@ def _handle_accessories(
             acc_list.extend(Pelt.snakes_accessories)
         if "STER_FLOWERS" in possible_accs:
             acc_list.extend(Pelt.ster_flowers_accessories)
-        
+        if "COMPANIONS" in possible_accs:
+            acc_list.extend(Pelt.companions_accessories)
 
         for acc in possible_accs:
-            if acc not in ("WILD", "PLANT", "COLLAR", "LIVING_INSECTS", "SNAKES", "STER_FLOWERS"):
+            if acc not in ("WILD", "PLANT", "COLLAR", "LIVING_INSECTS", "SNAKES", "STER_FLOWERS", "COMPANIONS"):
                 acc_list.append(acc)
 
         new_acc = choice(acc_list)

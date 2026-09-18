@@ -400,6 +400,20 @@ def _draw_sprite(
                                 ),
                                 (0, 0),
                         )
+
+                    elif accessory in cat.pelt.companions_accessories:
+                        sprite_name = (
+                            f"{sprites.COMPANIONS_DATA['spritesheet']}{accessory}{cat_sprite}"
+                        )
+                        new_sprite.blit(
+                             _recolor_lineart(
+                                sprites.sprites[sprite_name],
+                                lineart_color,
+                                gradient_surface,
+                                ),
+                                (0, 0),
+                        )
+
                     elif accessory in cat.pelt.collar_accessories:
                         sprite_name = f"{sprites.COLLAR_DATA['spritesheet']}{accessory}{cat_sprite}"
                         new_sprite.blit(
