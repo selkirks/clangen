@@ -480,7 +480,7 @@ dev_tools = true
 
 [accessory_generation]
   # base 1/chance a cat generates with an accessory 
-  base_acc_chance = 3
+  base_acc_chance = 150
 
   # modifiers for accessories add or subtract from chance IN THE DENOMINATOR 
   #   i.e. 1/(chance + med_modifier + baby_modifier + elder_modifier + ...)
