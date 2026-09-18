@@ -177,8 +177,8 @@ def _handle_accessories(
             acc_list.extend(Pelt.plant_accessories)
         if "COLLAR" in possible_accs:
             acc_list.extend(Pelt.collar_accessories)
-        if "LIVING_INSECT" in possible_accs:
-            acc_list.extend(Pelt.living_insect_accessories)
+        if "LIVING_INSECTS" in possible_accs:
+            acc_list.extend(Pelt.living_insects_accessories)
         if "SNAKES" in possible_accs:
             acc_list.extend(Pelt.snakes_accessories)
         if "STER_FLOWERS" in possible_accs:
@@ -186,7 +186,7 @@ def _handle_accessories(
         
 
         for acc in possible_accs:
-            if acc not in ("WILD", "PLANT", "COLLAR"):
+            if acc not in ("WILD", "PLANT", "COLLAR", "LIVING_INSECTS", "SNAKES", "STER_FLOWERS"):
                 acc_list.append(acc)
 
         new_acc = choice(acc_list)

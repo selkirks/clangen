@@ -364,9 +364,9 @@ def _draw_sprite(
                             ),
                             (0, 0),
                         )
-                    elif accessory in cat.pelt.living_insect_accessories:
+                    elif accessory in cat.pelt.living_insects_accessories:
                         sprite_name = (
-                            f"{sprites.LIVING_INSECT_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            f"{sprites.LIVING_INSECTS_DATA['spritesheet']}{accessory}{cat_sprite}"
                         )
                     elif accessory in cat.pelt.snakes_accessories:
                         sprite_name = (

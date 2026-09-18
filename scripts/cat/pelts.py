@@ -203,9 +203,9 @@ class Pelt:
             elif sprite_list[sprite] == "paw":
                 paw_accessories.append(sprite)
 
-    living_insect_accessories = []
-    for sprite_list in sprites.LIVING_INSECT_DATA["sprite_list"]:
-        living_insect_accessories.extend(sprite_list)
+    living_insects_accessories = []
+    for sprite_list in sprites.LIVING_INSECTS_DATA["sprite_list"]:
+        living_insects_accessories.extend(sprite_list)
         for sprite in sprite_list:
             if sprite_list[sprite] == "tail":
                 tail_accessories.append(sprite)
@@ -260,7 +260,7 @@ class Pelt:
         "PLANT": plant_accessories,
         "WILD": wild_accessories,
         "COLLAR": collar_accessories,
-        "LIVING_INSECT": living_insect_accessories,
+        "LIVING_INSECTS": living_insects_accessories,
         "SNAKES": snakes_accessories,
         "STER_FLOWERS": ster_flowers_accessories
     }

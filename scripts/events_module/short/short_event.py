@@ -516,8 +516,8 @@ class ShortEvent:
             acc_list.extend(Pelt.plant_accessories)
         if "COLLAR" in possible_accs:
             acc_list.extend(Pelt.collar_accessories)
-        if "LIVING_INSECT" in possible_accs:
-            acc_list.extend(Pelt.living_insect_accessories)
+        if "LIVING_INSECTS" in possible_accs:
+            acc_list.extend(Pelt.living_insects_accessories)
         if "SNAKES" in possible_accs:
             acc_list.extend(Pelt.snakes_accessories)
         if "STER_FLOWERS" in possible_accs:
