@@ -616,14 +616,14 @@ class ProfileScreen(Screens):
 
         self.profile_elements["cat_info_column1"] = UITextBoxTweaked(
             self.generate_column1(self.the_cat),
-            ui_scale(pygame.Rect((300, 220), (180, 200))),
+            ui_scale(pygame.Rect((293, 216), (210, 200))),
             object_id=get_text_box_theme("#text_box_22_horizleft"),
             line_spacing=1,
             manager=MANAGER,
         )
         self.profile_elements["cat_info_column2"] = UITextBoxTweaked(
             self.generate_column2(self.the_cat),
-            ui_scale(pygame.Rect((490, 220), (250, 200))),
+            ui_scale(pygame.Rect((508, 216), (250, 200))),
             object_id=get_text_box_theme("#text_box_22_horizleft"),
             line_spacing=1,
             manager=MANAGER,
@@ -751,11 +751,39 @@ class ProfileScreen(Screens):
     def generate_column1(self, the_cat):
         """Generate the left column information"""
         output = ""
-        # SEX/GENDER
+        # SEX/GENDER/PRONOUNS
         if the_cat.genderalign is None or the_cat.genderalign == the_cat.gender:
-            output += the_cat.gender_string
+            gender_text = the_cat.gender_string
         else:
-            output += the_cat.genderalign_string
+            gender_text = the_cat.genderalign_string
+
+        pronoun_text = ""
+        if len(the_cat.pronouns) == 1:
+            if the_cat.pronouns[0].get("subject") == the_cat.pronouns[0].get("object"):
+                pronoun_text += (
+                        the_cat.pronouns[0].get("subject")
+                        + "/"
+                        + the_cat.pronouns[0].get("poss")
+                )
+            else:
+                pronoun_text += (
+                        the_cat.pronouns[0].get("subject")
+                        + "/"
+                        + the_cat.pronouns[0].get("object")
+                )
+        else:
+            for pronoun in the_cat.pronouns:
+                pronoun_text += pronoun.get("subject") + "/"
+
+            if pronoun_text[-1] == "/":
+                pronoun_text = pronoun_text[:-1]
+
+        output += i18n.t(
+            "screens.profile.gender_pronouns",
+            gender=gender_text,
+            pronouns=pronoun_text
+        )
+
         # NEWLINE ----------
         output += "\n"
 
@@ -776,30 +804,94 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
-        # EYE COLOR
-        if the_cat.age == CatAge.NEWBORN:
-            output += "???"
+        # BODY TYPE
+        output += i18n.t(
+            "screens.profile.body_label",
+            body=the_cat.pelt.body or "stocky"
+        )
+
+        # PELT LENGTH
+        if the_cat.pelt.length == "medium":
+            output += i18n.t("screens.profile.fur_medium_label")
         else:
             output += i18n.t(
-                "screens.profile.eyes_label", eyes=the_cat.pelt.describe_eyes()
+                "screens.profile.fur_label",
+                length=i18n.t(f"cat.pelts.fur_{the_cat.pelt.length}"),
             )
-        # NEWLINE ----------
-        output += "\n"
 
         # PELT TYPE
         output += i18n.t(
             "screens.profile.pelt_label",
             pelt=i18n.t(f"cat.pelts.{the_cat.pelt.name}").lower(),
         )
-        # NEWLINE ----------
-        output += "\n"
 
-        # PELT LENGTH
+        # GENDER
+        gender_display = {
+            "male": "tom",
+            "female": "she-cat",
+            "trans male": "tom",
+            "trans female": "she-cat",
+            "nonbinary": "cat",
+        }
+
+        if the_cat.genderalign is None or the_cat.genderalign == the_cat.gender:
+            output += i18n.t(f"general.{gender_display.get(the_cat.gender, the_cat.gender)}")
+        else:
+            output += i18n.t(f"general.{gender_display.get(the_cat.genderalign, the_cat.genderalign)}")
+
+        # PELT COLOUR
         output += i18n.t(
-            "screens.profile.fur_label",
-            length=i18n.t(f"cat.pelts.fur_{the_cat.pelt.length}"),
+            "screens.profile.pelt_colour_label",
+            colour=i18n.t(f"cat.pelts.{the_cat.pelt.colour}").lower(),
         )
-        # NEWLINE ----------
+
+        # PELT TINT
+        if the_cat.pelt.tint is not None:
+            output += i18n.t(
+                "screens.profile.pelt_tint_label",
+                tint=i18n.t(f"cat.pelts.{the_cat.pelt.tint}").lower(),
+            )
+
+        # WHITE PATCH + TINT
+
+        if the_cat.pelt.white_patches in Pelt.mostly_white:
+            patch = "cat.pelts.mostly_white"
+        elif the_cat.pelt.white_patches in Pelt.high_white:
+            patch = "cat.pelts.high_white"
+        elif the_cat.pelt.white_patches in Pelt.mid_white:
+            patch = "cat.pelts.mid_white"
+        elif the_cat.pelt.white_patches in Pelt.little_white:
+            patch = "cat.pelts.little_white"
+
+        if the_cat.pelt.white_patches is not None:
+            output += i18n.t(
+                "screens.profile.white_patches_label",
+                patch=i18n.t(patch),
+                white_patches_tint=i18n.t(f"cat.pelts.{the_cat.pelt.white_patches_tint}"),
+            )
+        else:
+            output += i18n.t("screens.profile.no_white_patches_label")
+
+            #VIT AND POINT
+
+        if the_cat.pelt.vitiligo is not None:
+            output += i18n.t("screens.profile.vitiligo_label")
+
+        if the_cat.pelt.points is not None:
+             output += i18n.t("screens.profile.point_label")
+
+        # EYE COLOR
+        if the_cat.pelt.eye_colour2:
+            output += i18n.t(
+                "screens.profile.heterochromia_eyes_label",
+                eyes1=i18n.t(f"cat.eyes.{the_cat.pelt.eye_colour}"),
+                eyes2=i18n.t(f"cat.eyes.{the_cat.pelt.eye_colour2}"),
+            )
+        else:
+            output += i18n.t(
+                "screens.profile.eyes_label",
+                eyes=i18n.t(f"cat.eyes.{the_cat.pelt.eye_colour}"),
+            )
 
         # ACCESSORY
         if the_cat.pelt.accessory:

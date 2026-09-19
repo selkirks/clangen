@@ -2603,6 +2603,7 @@ class Cat:
                 "opacity": self.pelt.opacity,
                 "prevent_fading": self.prevent_fading,
                 "favourite": self.favourite,
+                "pelt_body": self.pelt.body,
             }
 
     def determine_next_and_previous_cats(
