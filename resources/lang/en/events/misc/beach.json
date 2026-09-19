@@ -505,5 +505,160 @@
                 }
             }
         ]
+    },
+    {
+        "event_id": "Mod_bch_misc_any_crab_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c stares at a crab that wandered near the warrior's den. The crab stares back ominously. m_c squints at it, and the crab <i>(somehow)</i> squints back. Out of pure respect, m_c keeps the crab around {PRONOUN/m_c/object} when possible.",
+        "new_accessory": [
+            "CRAB"
+        ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "Mod_bch_misc_any_crab_accessory2",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "r_c decides to stop by the warrior's den, asking if m_c would like a crab. m_c nods with slight surprise, and r_c plops down the critter as it still attempts to crawl while on it's back. m_c doesn't crack {PRONOUN/m_c/poss} jaws into it's shell like expected. Instead, m_c flips it over and ogles it curiously. Seems like m_c has found a new friend...?",
+        "new_accessory": [
+            "CRAB"
+        ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "Mod_bch_misc_any_crab_accessory3",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c curiously pokes and prods at a crab that wandered into camp. The crab, unbothered to m_c's antics, seems relaxed enough to keep as a pet. m_c cheerfully shows off {PRONOUN/m_c/poss} new friend!",
+        "new_accessory": [
+            "CRAB"
+        ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "Mod_bch_misc_any_crab_accessory4",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "r_c decides to stop by m_c while {PRONOUN/m_c/subject} are sunbathing in camp, asking if m_c would like a crab they caught. m_c nods, interested, and r_c plops down the critter as it still attempts to crawl while on it's back. m_c doesn't crack {PRONOUN/m_c/poss} jaws into it's shell like expected. Instead, m_c flips it over and ogles it curiously. Seems like m_c has found a new friend...?",
+        "new_accessory": [
+            "CRAB"
+        ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "Mod_bch_misc_any_crab_accessory5",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "r_c decides to stop by the nursery, asking if m_c would like to try a crab. m_c nods with big eyes, and r_c plops down the critter as it still attempts to crawl while on it's back. m_c doesn't crack {PRONOUN/m_c/poss} jaws into it's shell like expected. Instead, m_c flips it over and ogles it curiously. Seems like m_c has found a new friend...?",
+        "new_accessory": [
+            "CRAB"
+        ],
+        "m_c": {
+            "age": [
+                "kitten"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
     }
 ]

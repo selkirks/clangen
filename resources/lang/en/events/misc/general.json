@@ -18293,5 +18293,348 @@
                 "senior"
             ]
         }
+    },
+    {
+        "event_id": "mod_squirrel_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c waltzes onto camp with a squirrel following suit! {PRONOUN/m_c/subject/CAP} {VERB/m_c/growl/growls} at any cat who attempts to snap at the poor thing, and m_c proudly states that it's {PRONOUN/m_c/poss} new pet.",
+        "new_accessory": [
+            "GRAY SQUIRREL",
+            "RED SQUIRREL",
+            "INDIAN GIANT SQUIRREL"
+        ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "trait": [
+                "bold",
+                "adventurous",
+                "careful",
+                "confident",
+                "daring",
+                "ambitious",
+                "strange",
+                "charismatic"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_rabbit_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c gently guides a rabbit into camp. Seems like m_c has found a new friend?",
+        "new_accessory": [
+            "BLACK RABBIT",
+            "WHITE RABBIT",
+            "BROWN RABBIT",
+            "FAWN RABBIT",
+            "BROWN-AND-WHITE RABBIT",
+            "FAWN-AND-WHITE RABBIT",
+            "BLACK VITILIGO RABBIT",
+            "BROWN VITILIGO RABBIT",
+            "FAWN VITILIGO RABBIT",
+            "TAN RABBIT",
+            "TAN-AND-WHITE RABBIT",
+            "TAN VITILIGO RABBIT",
+            "GRAY RABBIT",
+            "GRAY-AND-WHITE RABBIT",
+            "GRAY VITILIGO RABBIT"
+            ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_rabbit_accessory2",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "r_c spots acc_singular near camp. Before r_c can rip {PRONOUN/r_c/poss} way through camp and to the acc_singular, m_c stops {PRONOUN/r_c/object} and tells {PRONOUN/r_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/want/wants} it as a pet. r_c opens {PRONOUN/r_c/poss} mouth to <i>hiss</i> at m_c, but the kit bounds over to the acc_singular. Guess it's too late to catch it...",
+        "new_accessory": [
+            "BLACK RABBIT",
+            "WHITE RABBIT",
+            "BROWN RABBIT",
+            "FAWN RABBIT",
+            "BROWN-AND-WHITE RABBIT",
+            "FAWN-AND-WHITE RABBIT",
+            "BLACK VITILIGO RABBIT",
+            "BROWN VITILIGO RABBIT",
+            "FAWN VITILIGO RABBIT",
+            "TAN RABBIT",
+            "TAN-AND-WHITE RABBIT",
+            "TAN VITILIGO RABBIT",
+            "GRAY RABBIT",
+            "GRAY-AND-WHITE RABBIT",
+            "GRAY VITILIGO RABBIT"
+            ],
+        "m_c": {
+            "age": [
+                "kitten"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_rabbit_accessory3",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c's eyes dilate as {PRONOUN/m_c/subject} {VERB/m_c/focus/focuses} on a rabbit near the dirt-place. m_c has been taught all {PRONOUN/m_c/poss} life that hunting was the only thing that a warrior did near rabbits... but this one was so <i>cute</i>. m_c wanders towards it, and quickly befriends it!",
+        "new_accessory": [
+            "BLACK RABBIT",
+            "WHITE RABBIT",
+            "BROWN RABBIT",
+            "FAWN RABBIT",
+            "BROWN-AND-WHITE RABBIT",
+            "FAWN-AND-WHITE RABBIT",
+            "BLACK VITILIGO RABBIT",
+            "BROWN VITILIGO RABBIT",
+            "FAWN VITILIGO RABBIT",
+            "TAN RABBIT",
+            "TAN-AND-WHITE RABBIT",
+            "TAN VITILIGO RABBIT",
+            "GRAY RABBIT",
+            "GRAY-AND-WHITE RABBIT",
+            "GRAY VITILIGO RABBIT"
+            ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_bird_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c and r_c sneak out of camp to go bird watching. Seems like one of the birds decided to stick around m_c after they attempt to leave!",
+        "new_accessory": [
+            "BLACKBIRD",
+            "ROBIN",
+            "JAY",
+            "THRUSH",
+            "CARDINAL",
+            "CUBAN TROGAN",
+            "MAGPIE"
+            ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_bird_accessory2",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c sneaks out of camp to go bird watching. Seems like one of the birds decided to stick around m_c after they attempt to leave!",
+        "new_accessory": [
+            "BLACKBIRD",
+            "ROBIN",
+            "JAY",
+            "THRUSH",
+            "CARDINAL",
+            "CUBAN TROGAN",
+            "MAGPIE"
+            ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_mouse_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c grins toothily at a acc_singular that wandered into camp! Instead of diving toward it like anyone would expect a cat to do, m_c decides to befriend it with seeds and nuts.",
+        "new_accessory": [
+            "RAT",
+            "WHITE MOUSE",
+            "GRAY MOUSE",
+            "BLACK MOUSE",
+            "BROWN MOUSE"
+            ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_mouse_accessory2",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "r_c's eyes dilate as {PRONOUN/r_c/subject} {VERB/r_c/hunch/hunches} down to watch acc_singular nibble at a fat seed! m_c stops r_c before {PRONOUN/r_c/subject} {VERB/r_c/pounce/pounces}, and manages to... befriend the acc_singular! r_c rolls {PRONOUN/r_c/poss} eyes, grumbling about wasted food.",
+        "new_accessory": [
+            "RAT",
+            "WHITE MOUSE",
+            "GRAY MOUSE",
+            "BLACK MOUSE",
+            "BROWN MOUSE"
+            ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_rat_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c eyes a pink-nosed rat that wandered into camp. Before r_c can even think about stopping {PRONOUN/m_c/object}, m_c befriends the weird little thing with a few leftover acorns.",
+        "new_accessory": [
+            "RAT"
+            ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
     }
 ]
