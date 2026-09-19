@@ -788,6 +788,86 @@
             "zero": "gray rabbit",
             "many": "gray rabbits",
             "one": "gray rabbit"
+        },
+        "DOGWOOD": {
+            "zero": "dogwood",
+            "many": "dogwoods",
+            "one": "dogwood"
+        },
+        "TREESTAR": {
+            "zero": "treestar",
+            "many": "treestars",
+            "one": "treestar"
+        },
+        "RACCOON LEAF": {
+            "zero": "raccoon leaf",
+            "many": "raccoon leaves",
+            "one": "raccoon leaf"
+        },
+        "WHITE RACCOON LEAF": {
+            "zero": "white raccoon leaf",
+            "many": "white raccoon leaves",
+            "one": "white raccoon leaf"
+        },
+        "CHERRY BLOSSOM": {
+            "zero": "cherry blossom",
+            "many": "cherry blossoms",
+            "one": "cherry blossom"
+        },
+        "DAISY BLOOM": {
+            "zero": "daisy bloom",
+            "many": "daisy blooms",
+            "one": "daisy bloom"
+        },
+        "FEATHERS": {
+            "zero": "feather",
+            "many": "feathers",
+            "one": "feather"
+        },
+        "RED ROSE": {
+            "zero": "red rose",
+            "many": "red roses",
+            "one": "red rose"
+        },
+        "WHITE ROSE": {
+            "zero": "white rose",
+            "many": "white roses",
+            "one": "white rose"
+        },
+        "PEBBLE": {
+            "zero": "pebble",
+            "many": "pebbles",
+            "one": "pebble"
+        },
+        "PEBBLE COLLECTION": {
+            "zero": "pebble collection",
+            "many": "pebble collections",
+            "one": "pebble collection"
+        },
+        "GOLDEN FLOWER": {
+            "zero": "golden flower",
+            "many": "golden flowers",
+            "one": "golden flower"
+        },
+        "DANDELIONS": {
+            "zero": "dandelion",
+            "many": "dandelions",
+            "one": "dandelion"
+        },
+        "DANDELION PUFFS": {
+            "zero": "dandelion puff",
+            "many": "dandelion puffs",
+            "one": "dandelion puff"
+        },
+        "DICE": {
+            "zero": "die",
+            "many": "dice",
+            "one": "die"
+        },
+        "GOLDEN EARRINGS": {
+            "zero": "golden earring",
+            "many": "golden earrings",
+            "one": "golden earring"
         }
     }
 }

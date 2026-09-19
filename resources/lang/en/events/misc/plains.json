@@ -87,7 +87,16 @@
         "event_text": "The acc_plural are just absolutely blooming this season! m_c decides to keep some to remind {PRONOUN/m_c/object} of such a beautiful sight.",
         "new_accessory": [
             "HEATHER",
-            "GORSE"
+            "GORSE",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [

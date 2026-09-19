@@ -2475,7 +2475,8 @@
             "BLUE FEATHERS",
             "JAY FEATHERS",
             "GULL FEATHERS",
-            "SPARROW FEATHERS"
+            "SPARROW FEATHERS",
+            "FEATHERS"
         ],
         "m_c": {
             "age": [
@@ -2501,7 +2502,16 @@
         "event_text": "r_c found acc_plural while out on a walk and decided to give them to m_c.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -2558,7 +2568,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -2586,7 +2605,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -2638,7 +2666,16 @@
         "event_text": "m_c received a present, acc_plural, from r_c and decided to keep it with {PRONOUN/m_c/object} on {PRONOUN/m_c/poss} pelt.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -2692,7 +2729,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -2720,7 +2766,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -2795,7 +2850,16 @@
             "TORMENTIL",
             "BRIGHT EYE",
             "LAVENDER WREATH",
-            "YARROW"
+            "YARROW",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -3169,7 +3233,17 @@
         "event_text": "r_c found some acc_plural and gave m_c one to make up for a bad fight between them.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -3226,7 +3300,17 @@
         "event_text": "r_c found some acc_plural and gifted them to {PRONOUN/r_c/poss} beloved m_c to wear some in {PRONOUN/m_c/poss} pelt.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -3785,7 +3869,8 @@
             "BLUE FEATHERS",
             "JAY FEATHERS",
             "GULL FEATHERS",
-            "SPARROW FEATHERS"
+            "SPARROW FEATHERS",
+            "FEATHERS"
         ],
         "m_c": {
             "status": [
@@ -3929,7 +4014,17 @@
         "event_text": "m_c is just too cute. r_c gave {PRONOUN/m_c/object} a pretty acc_singular as a gift.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -3979,7 +4074,18 @@
         "event_text": "r_c gave m_c a pretty acc_singular {PRONOUN/r_c/subject} found while playing.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS",
+            "PEBBLE",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -4027,7 +4133,19 @@
         "event_text": "m_c started bringing a pretty acc_singular everywhere {PRONOUN/m_c/subject} went, and r_c has been loudly complaining ever since that {PRONOUN/r_c/subject} {VERB/r_c/want/wants} one, too.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS",
+            "PEBBLE",
+            "PEBBLE COLLECTION",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -4083,7 +4201,19 @@
             "DRY HERBS",
             "DRY CATMINT",
             "DRY NETTLES",
-            "DRY LAURELS"
+            "DRY LAURELS",
+            "STER_FLOWERS",
+            "PEBBLE",
+            "PEBBLE COLLECTION",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -4117,7 +4247,17 @@
         "event_text": "m_c found some acc_singular to wear in {PRONOUN/m_c/poss} fur to impress r_c!",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -4755,7 +4895,7 @@
         },
         "frequency": 4,
         "event_text": "m_c climbed up into POI to steal some feathers. {PRONOUN/m_c/subject/CAP} returned with a new pelt decoration and a few missing chunks of fur.",
-        "new_accessory": ["JAY FEATHERS", "BLUE FEATHERS"],
+        "new_accessory": ["JAY FEATHERS", "BLUE FEATHERS", "FEATHERS"],
         "m_c": {
             "status": ["-kitten"],
             "trait": [
@@ -4799,7 +4939,7 @@
         },
         "frequency": 4,
         "event_text": "r_c climbed up into POIto steal some feathers. {PRONOUN/r_c/subject/CAP} returned with a few missing chunks of fur and triumphantly presented a flustered m_c with {PRONOUN/r_c/poss} prize.",
-        "new_accessory": ["JAY FEATHERS", "BLUE FEATHERS"],
+        "new_accessory": ["JAY FEATHERS", "BLUE FEATHERS", "FEATHERS"],
         "m_c": {
             "relationship_status": ["fancies"]
         },
@@ -4939,7 +5079,7 @@
         },
         "frequency": 4,
         "event_text": "m_c went missing in POI for a few days and came back wearing a acc_singular.",
-        "new_accessory": ["COLLAR"],
+        "new_accessory": ["COLLAR", "DICE", "GOLDEN EARRINGS", "RACCOON LEAF", "WHITE RACCOON LEAF"],
         "m_c": {
             "status": ["-kitten"]
         },
@@ -4951,7 +5091,7 @@
                 "amount": -10,
                 "mutual": false,
                 "log": {
-                    "cats_from": "cat_from disapproved of cat_to wearing a collar."
+                    "cats_from": "cat_from disapproved of cat_to wearing a kittypet accessory."
                 }
             }
         ]
@@ -4983,7 +5123,7 @@
         },
         "frequency": 4,
         "event_text": "m_c was on a walk by POI when {PRONOUN/m_c/subject} found some lovely feathers. {PRONOUN/m_c/subject/CAP} decided to wear them.",
-        "new_accessory": ["BLUE FEATHERS", "RED FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS"],
+        "new_accessory": ["BLUE FEATHERS", "RED FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "FEATHERS"],
         "m_c": {
             "status": ["-kitten"]
         }
@@ -5036,7 +5176,16 @@
         "event_text": "m_c was dared to hunt outside in the snow alone and returned with acc_singular in {PRONOUN/m_c/poss} pelt.",
         "new_accessory": [
             "WILD",
-            "PLANT"
+            "PLANT",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -5062,7 +5211,8 @@
             "GULL FEATHERS",
             "SPARROW FEATHERS",
             "JAY FEATHERS",
-            "RED FEATHERS"
+            "RED FEATHERS",
+            "FEATHERS"
         ],
         "m_c": {
             "age": [
@@ -7482,7 +7632,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -7667,7 +7826,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -9494,7 +9662,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -9547,7 +9724,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -9600,7 +9786,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -9653,7 +9848,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -9808,7 +10012,16 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -9867,7 +10080,15 @@
             "DRY HERBS",
             "DRY CATMINT",
             "DRY NETTLES",
-            "DRY LAURELS"
+            "DRY LAURELS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -9922,7 +10143,16 @@
         "event_text": "m_c felt hurt when {PRONOUN/m_c/poss} sibling wasn't there to congratulate {PRONOUN/m_c/object} for becoming a warrior. When {PRONOUN/m_c/subject} went to {PRONOUN/m_c/poss} new nest, {PRONOUN/m_c/subject} found r_c waiting for {PRONOUN/m_c/object} with a gift of acc_plural. Together, the siblings worked on making m_c's new nest feel more comfortable.",
         "new_accessory": [
             "WILD",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "status": [
@@ -9979,7 +10209,18 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS",
+            "RACCOON LEAF",
+            "WHITE RACCOON LEAF"
         ],
         "m_c": {
             "status": [
@@ -10041,7 +10282,18 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS",
+            "RACCOON LEAF",
+            "WHITE RACCOON LEAF"
         ],
         "m_c": {
             "status": [
@@ -10099,7 +10351,18 @@
         "new_accessory": [
             "WILD",
             "PLANT",
-            "STER_FLOWERS"
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS",
+            "RACCOON LEAF",
+            "WHITE RACCOON LEAF"
         ],
         "m_c": {
             "status": [
@@ -10208,7 +10471,16 @@
             "TORMENTIL",
             "BRIGHT EYE",
             "LAVENDER WREATH",
-            "YARROW"
+            "YARROW",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -11407,7 +11679,17 @@
             ]
         },
         "new_accessory": [
-            "WILD"
+            "WILD",
+            "STER_FLOWERS",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "other_clan": {
             "changed": 2
@@ -17258,7 +17540,8 @@
             "BLUE FEATHERS",
             "JAY FEATHERS",
             "GULL FEATHERS",
-            "SPARROW FEATHERS"
+            "SPARROW FEATHERS",
+            "FEATHERS"
         ],
         "m_c": {
             "status": ["apprentice"]
@@ -17275,7 +17558,7 @@
             "name": ["terrain_rookery"]
         },
         "event_text": "m_c returned from a hunt at POI, adorned with some feathers from {PRONOUN/m_c/poss} catch.",
-        "new_accessory": ["BLUE FEATHERS", "JAY FEATHERS"],
+        "new_accessory": ["BLUE FEATHERS", "JAY FEATHERS", "FEATHERS"],
         "m_c": {
             "status": ["-kitten", "-elder"]
         }
@@ -17291,7 +17574,7 @@
             "name": ["terrain_rookery"]
         },
         "event_text": "r_c returned from a hunt at POI and gifted some beautiful feathers from {PRONOUN/r_c/poss} catch to m_c.",
-        "new_accessory": ["BLUE FEATHERS", "JAY FEATHERS"],
+        "new_accessory": ["BLUE FEATHERS", "JAY FEATHERS", "FEATHERS"],
         "m_c": {
             "age": ["any"],
             "dies": false
@@ -17390,7 +17673,7 @@
         "tags": [],
         "frequency": 2,
         "event_text": "m_c took a moment to pick a specific bird from the fresh-kill pile and was later seen wearing its feathers.",
-        "new_accessory": ["BLUE FEATHERS", "SPARROW FEATHERS", "JAY FEATHERS", "RED FEATHERS"],
+        "new_accessory": ["BLUE FEATHERS", "SPARROW FEATHERS", "JAY FEATHERS", "RED FEATHERS", "FEATHERS"],
         "m_c": {
             "age": ["any"],
             "dies": false
@@ -17909,7 +18192,7 @@
         }
     },
     {
-        "event_id": "mod_redsnail_accessory",
+        "event_id": "mod_redsnail_accessory1",
         "location": [
             "any"
         ],
@@ -18221,7 +18504,16 @@
             "TORMENTIL",
             "BRIGHT EYE",
             "LAVENDER WREATH",
-            "YARROW"
+            "YARROW",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [
@@ -18271,7 +18563,16 @@
             "TORMENTIL",
             "BRIGHT EYE",
             "LAVENDER WREATH",
-            "YARROW"
+            "YARROW",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "m_c": {
             "age": [

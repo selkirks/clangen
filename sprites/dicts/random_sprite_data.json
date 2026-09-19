@@ -1,0 +1,27 @@
+{
+    "spritesheet": "acc_random",
+    "sprite_list": [
+        {
+            "DOGWOOD": "head",
+            "TREESTAR": "body",
+            "RACCOON LEAF": "paw",
+            "WHITE RACCOON LEAF": "paw",
+            "CHERRY BLOSSOM": "head",
+            "DAISY BLOOM": "head"
+        },
+        {
+            "FEATHERS": "body",
+            "RED ROSE": "body",
+            "WHITE ROSE": "body",
+            "PEBBLE": "head",
+            "PEBBLE COLLECTION": "body",
+            "GOLDEN FLOWER": "head"
+        },
+        {
+            "DANDELIONS": "head",
+            "DANDELION PUFFS": "head",
+            "DICE": "body",
+            "GOLDEN EARRINGS": "body"
+        }
+    ]
+}

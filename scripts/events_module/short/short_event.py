@@ -523,10 +523,13 @@ class ShortEvent:
         if "STER_FLOWERS" in possible_accs:
             acc_list.extend(Pelt.ster_flowers_accessories)
         if "COMPANIONS" in possible_accs:
-            acc_list.extend(Pelt.companions_accessories)
+            acc_list.extend(Pelt.companions_accessories),
+        if "RANDOM" in possible_accs:
+            acc_list.extend(Pelt.random_accessories)
 
         for acc in possible_accs:
-            if acc not in ("WILD", "PLANT", "COLLAR"):
+            if acc not in ("WILD", "PLANT", "COLLAR", "LIVING_INSECTS", "SNAKES", "STER_FLOWERS",
+                           "COMPANIONS", "RANDOM"):
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):

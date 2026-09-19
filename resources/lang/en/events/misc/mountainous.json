@@ -116,7 +116,16 @@
             "WHITE POPPY",
             "PINK POPPY",
             "BULB WHITE",
-            "POPPY FLOWER"
+            "POPPY FLOWER",
+            "DOGWOOD",
+            "TREESTAR",
+            "CHERRY BLOSSOM",
+            "DAISY BLOOM",
+            "RED ROSE",
+            "WHITE ROSE",
+            "GOLDEN FLOWER",
+            "DANDELIONS",
+            "DANDELION PUFFS"
         ],
         "r_c": {
             "age": [
