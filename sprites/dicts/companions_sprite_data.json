@@ -2,44 +2,44 @@
     "spritesheet": "acc_companions",
     "sprite_list": [
         {
-            "GRAY SQUIRREL": "paws",
-            "RED SQUIRREL": "paws",
+            "GRAY SQUIRREL": "paw",
+            "RED SQUIRREL": "paw",
             "CRAB": "body",
-            "WHITE RABBIT": "paws",
-            "BLACK RABBIT": "paws",
-            "BROWN RABBIT": "paws",
-            "INDIAN GIANT SQUIRREL": "paws",
-            "FAWN RABBIT": "paws",
-            "BROWN-AND-WHITE RABBIT": "paws"
+            "WHITE RABBIT": "paw",
+            "BLACK RABBIT": "paw",
+            "BROWN RABBIT": "paw",
+            "INDIAN GIANT SQUIRREL": "paw",
+            "FAWN RABBIT": "paw",
+            "BROWN-AND-WHITE RABBIT": "paw"
         },
         {
-            "FAWN-AND-WHITE RABBIT": "paws",
-            "BLACK VITILIGO RABBIT": "paws",
-            "BROWN VITILIGO RABBIT": "paws",
-            "FAWN VITILIGO RABBIT": "paws",
-            "BLACKBIRD": "paws",
-            "ROBIN": "paws",
-            "JAY": "paws",
-            "THRUSH": "paws",
-            "CARDINAL": "paws"
+            "FAWN-AND-WHITE RABBIT": "paw",
+            "BLACK VITILIGO RABBIT": "paw",
+            "BROWN VITILIGO RABBIT": "paw",
+            "FAWN VITILIGO RABBIT": "paw",
+            "BLACKBIRD": "paw",
+            "ROBIN": "paw",
+            "JAY": "paw",
+            "THRUSH": "paw",
+            "CARDINAL": "paw"
         },
         {
-            "CUBAN TROGAN": "paws",
-            "TAN RABBIT": "paws",
-            "TAN-AND-WHITE RABBIT": "paws",
-            "TAN VITILIGO RABBIT": "paws",
-            "RAT": "paws",
-            "WHITE MOUSE": "paws",
-            "BLACK MOUSE": "paws",
-            "GRAY MOUSE": "paws",
-            "BROWN MOUSE": "paws"
+            "CUBAN TROGAN": "paw",
+            "TAN RABBIT": "paw",
+            "TAN-AND-WHITE RABBIT": "paw",
+            "TAN VITILIGO RABBIT": "paw",
+            "RAT": "paw",
+            "WHITE MOUSE": "paw",
+            "BLACK MOUSE": "paw",
+            "GRAY MOUSE": "paw",
+            "BROWN MOUSE": "paw"
         },
         {
-            "GRAY-AND-WHITE RABBIT": "paws",
-            "GRAY VITILIGO RABBIT": "paws",
-            "BLACK-AND-WHITE RABBIT": "paws",
-            "MAGPIE": "paws",
-            "GRAY RABBIT": "paws"
+            "GRAY-AND-WHITE RABBIT": "paw",
+            "GRAY VITILIGO RABBIT": "paw",
+            "BLACK-AND-WHITE RABBIT": "paw",
+            "MAGPIE": "paw",
+            "GRAY RABBIT": "paw"
         }
     ]
 }
