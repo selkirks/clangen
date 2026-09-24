@@ -345,6 +345,14 @@
             "one": "brown",
             "many": "brown"
         },
+        "BURRO": {
+            "one": "burro",
+            "many": "burro"
+        },
+        "SABLE": {
+            "one": "sable",
+            "many": "sable"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",

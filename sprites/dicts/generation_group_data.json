@@ -87,7 +87,9 @@
             "RUSTED": "brown",
             "TEA": "brown",
             "MULBERRY": "brown",
-            "REDCLAY": "brown"
+            "REDCLAY": "brown",
+            "BURRO": "brown",
+            "SABLE": "brown"
         },
         "pattern_types": {
             "Tabby": "tabbies",
