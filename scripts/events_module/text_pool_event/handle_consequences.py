@@ -187,9 +187,12 @@ def _handle_accessories(
             acc_list.extend(Pelt.companions_accessories)
         if "RANDOM" in possible_accs:
             acc_list.extend(Pelt.random_accessories)
+        if "TAIL" in possible_accs:
+            acc_list.extend(Pelt.tail_accessories)
 
         for acc in possible_accs:
-            if acc not in ("WILD", "PLANT", "COLLAR", "LIVING_INSECTS", "SNAKES", "STER_FLOWERS", "COMPANIONS", "RANDOM"):
+            if acc not in ("WILD", "PLANT", "COLLAR", "LIVING_INSECTS", "SNAKES",
+                           "STER_FLOWERS", "COMPANIONS", "RANDOM", "TAIL"):
                 acc_list.append(acc)
 
         new_acc = choice(acc_list)

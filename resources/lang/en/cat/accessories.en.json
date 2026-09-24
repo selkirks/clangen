@@ -868,6 +868,16 @@
             "zero": "golden earring",
             "many": "golden earrings",
             "one": "golden earring"
+        },
+        "SEAWEED": {
+            "zero": "seaweed",
+            "many": "seaweed",
+            "one": "seaweed"
+        },
+        "DAISY CORSAGE": {
+            "zero": "daisy corsage",
+            "many": "daisy corsages",
+            "one": "daisy corsage"
         }
     }
 }

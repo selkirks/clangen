@@ -89,6 +89,11 @@ class Sprites:
         RANDOM_DATA = ujson.loads(read_file.read())
 
     with open(
+        "sprites/dicts/tail_acc_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        TAIL_DATA = ujson.loads(read_file.read())
+
+    with open(
         "sprites/dicts/scar_sprite_data.json", "r", encoding="utf-8"
     ) as read_file:
         SCAR_DATA = ujson.loads(read_file.read())
@@ -360,7 +365,8 @@ class Sprites:
             self.SNAKES_DATA,
             self.STER_FLOWERS_DATA,
             self.COMPANIONS_DATA,
-            self.RANDOM_DATA
+            self.RANDOM_DATA,
+            self.TAIL_DATA
         )
 
         # data jsons that have multiple associated spritesheets

@@ -268,6 +268,19 @@ class Pelt:
             elif sprite_list[sprite] == "paw":
                 paw_accessories.append(sprite)
 
+    tail_accessories = []
+    for sprite_list in sprites.TAIL_DATA["sprite_list"]:
+        tail_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "paw":
+                paw_accessories.append(sprite)
+
     collar_accessories = []
     collar_styles = []
     if sprites.COLLAR_DATA["palette_map"]:
@@ -289,7 +302,9 @@ class Pelt:
         "LIVING_INSECTS": living_insects_accessories,
         "SNAKES": snakes_accessories,
         "STER_FLOWERS": ster_flowers_accessories,
-        "COMPANIONS": companions_accessories
+        "COMPANIONS": companions_accessories,
+        "RANDOM": random_accessories,
+        "TAIL": tail_accessories
     }
 
     """Holds all appearance information for a cat. """

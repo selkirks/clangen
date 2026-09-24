@@ -660,5 +660,130 @@
                 "senior"
             ]
         }
+    },
+    {
+        "event_id": "Mod_bch_misc_any_seaweed_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c grumbles incoherently as {PRONOUN/m_c/subject} {VERB/m_c/trudge/trudges} back to camp, soaked and with {PRONOUN/m_c/poss} tail knotted and wrapped with seaweed. Poor m_c.",
+        "new_accessory": [
+            "SEAWEED"
+        ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "Mod_bch_misc_any_seaweed_accessory2",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c received a present, dried but vibrant acc_plural, from r_c and decided to keep it with {PRONOUN/m_c/object} on {PRONOUN/m_c/poss} tail.",
+        "new_accessory": [
+            "SEAWEED"
+        ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "Mod_bch_misc_any_seaweed_accessory3",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c peeks out of their den, and finds that some seaweed managed to get into camp. m_c decides to use it as some cool decoration for {PRONOUN/m_c/poss} tail!",
+        "new_accessory": [
+            "SEAWEED"
+        ],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "Mod_bch_misc_any_seaweed_accessory4",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "r_c, during a free sunny morning before dawn patrol, quietly wraps vibrant seaweed around m_c's tail.",
+        "new_accessory": [
+            "SEAWEED"
+        ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
     }
 ]

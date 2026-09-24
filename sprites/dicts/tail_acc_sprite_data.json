@@ -1,0 +1,9 @@
+{
+    "spritesheet": "acc_tail",
+    "sprite_list": [
+        {
+            "SEAWEED": "tail",
+            "DAISY CORSAGE": "tail"
+        }
+    ]
+}
