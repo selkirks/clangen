@@ -40,6 +40,18 @@ class Pelt:
     # PELT LENGTH
     pelt_length = ["short", "medium", "long"]
 
+    # BODY TYPES
+    body_types: list = ["stocky", "slender", "lithe", "wiry", "muscular", "lanky",
+                        "delicate", "hunched", "hefty", "burly", "bulky", "plump",
+                        "brawny", "stout", "broad", "chubby", "fat", "stocky", "chunky",
+                        "big-boned"]
+    # FUR TEXTURE
+    texture: list = ["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse",
+                         "tangled", "fuzzy", "spiky"]
+
+    # HEIGHT
+    height: list = ["petite", "short", "average", "average", "tall", "towering"]
+    
     # PELT COLOURS
     all_pelt_colours: list = []
     ginger_colours: list = []
@@ -313,6 +325,9 @@ class Pelt:
         self,
         name: str = "SingleColour",
         length: str = "short",
+        body: str = None,
+        texture: str = None,
+        height: str = None,
         colour: str = "WHITE",
         white_patches: str = None,
         eye_color: str = "BLUE",
@@ -339,6 +354,9 @@ class Pelt:
         reverse: bool = False,
     ) -> None:
         self.name = name
+        self.body = body
+        self.texture = texture
+        self.height = height
         self.colour = colour
         self.white_patches = white_patches
         self.eye_colour = eye_color
@@ -541,6 +559,9 @@ class Pelt:
     @staticmethod
     def generate_new_pelt(gender: str, parents: tuple = (), age: str = "adult"):
         new_pelt = Pelt()
+        new_pelt.body = choice(Pelt.body_types)
+        new_pelt.texture = choice(Pelt.texture)
+        new_pelt.height = choice(Pelt.height)
 
         pelt_white = new_pelt.init_pattern_color(parents, gender)
         new_pelt.init_white_patches(pelt_white, parents)
@@ -621,6 +642,15 @@ class Pelt:
             self.tortie_marking = "MINIMALTHREE"
         elif self.tortie_marking == "MINIMAL4":
             self.tortie_marking = "MINIMALFOUR"
+
+        if self.body is None:
+            self.body = choice(Pelt.body_types)
+
+        if self.texture is None:
+            self.texture = choice(Pelt.texture)
+
+        if self.height is None:
+            self.height = choice(Pelt.height)
 
         if self.accessory is None:
             self.accessory = tuple()

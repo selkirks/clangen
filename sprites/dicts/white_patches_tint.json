@@ -25,11 +25,11 @@
     "RUST": "brown"
   },
   "possible_tints": {
-    "basic": ["offwhite", "offwhite"],
+    "basic": ["offwhite", "offwhite", "dark"],
     "black": ["gray", "darkcream", "cream"],
-    "gray": ["gray"],
+    "gray": ["gray", "dark"],
     "ginger": ["darkcream", "cream", "pink"],
-    "brown": ["darkcream", "cream"],
+    "brown": ["darkcream", "cream", "dark"],
     "white": []
   },
   "tint_colours":
@@ -39,6 +39,7 @@
     "offwhite": [238, 249, 252],
     "gray": [208, 225, 229],
     "pink": [254, 248, 249],
+    "midnight": [38, 38, 38],
     "none": null
   }
 }
