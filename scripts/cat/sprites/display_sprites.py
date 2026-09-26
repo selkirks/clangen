@@ -364,6 +364,7 @@ def _draw_sprite(
                             ),
                             (0, 0),
                         )
+                        
                     elif accessory in cat.pelt.living_insects_accessories:
                         sprite_name = (
                             f"{sprites.LIVING_INSECTS_DATA['spritesheet']}{accessory}{cat_sprite}"
@@ -428,9 +429,22 @@ def _draw_sprite(
                                 (0, 0),
                         )
 
-                    elif accessory in cat.pelt.tail_accessories:
+                    elif accessory in cat.pelt.tail2_accessories:
                         sprite_name = (
-                            f"{sprites.TAIL_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            f"{sprites.TAIL2_DATA['spritesheet']}{accessory}{cat_sprite}"
+                        )
+                        new_sprite.blit(
+                            _recolor_lineart(
+                                sprites.sprites[sprite_name],
+                                lineart_color,
+                                gradient_surface,
+                                ),
+                                (0, 0),
+                        )
+
+                    elif accessory in cat.pelt.bellamy_accessories:
+                        sprite_name = (
+                            f"{sprites.BELLAMY_DATA['spritesheet']}{accessory}{cat_sprite}"
                         )
                         new_sprite.blit(
                             _recolor_lineart(

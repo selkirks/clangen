@@ -2477,7 +2477,9 @@
             "GULL FEATHERS",
             "SPARROW FEATHERS",
             "FEATHERS",
-            "DAISY CORSAGE"
+            "DAISY CORSAGE",
+            "RAVEN FEATHERS",
+            "MARTIN FEATHERS"
         ],
         "m_c": {
             "age": [
@@ -3880,7 +3882,9 @@
             "JAY FEATHERS",
             "GULL FEATHERS",
             "SPARROW FEATHERS",
-            "FEATHERS"
+            "FEATHERS",
+            "RAVEN FEATHERS",
+            "MARTIN FEATHERS"
         ],
         "m_c": {
             "status": [
@@ -5138,7 +5142,7 @@
         },
         "frequency": 4,
         "event_text": "m_c was on a walk by POI when {PRONOUN/m_c/subject} found some lovely feathers. {PRONOUN/m_c/subject/CAP} decided to wear them.",
-        "new_accessory": ["BLUE FEATHERS", "RED FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "FEATHERS"],
+        "new_accessory": ["BLUE FEATHERS", "RED FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "FEATHERS", "MARTIN FEATHERS", "RAVEN FEATHERS"],
         "m_c": {
             "status": ["-kitten"]
         }
@@ -5228,7 +5232,9 @@
             "SPARROW FEATHERS",
             "JAY FEATHERS",
             "RED FEATHERS",
-            "FEATHERS"
+            "FEATHERS",
+            "RAVEN FEATHERS",
+            "MARTIN FEATHERS"
         ],
         "m_c": {
             "age": [
@@ -17571,7 +17577,9 @@
             "JAY FEATHERS",
             "GULL FEATHERS",
             "SPARROW FEATHERS",
-            "FEATHERS"
+            "FEATHERS",
+            "RAVEN FEATHERS",
+            "MARTIN FEATHERS"
         ],
         "m_c": {
             "status": ["apprentice"]
@@ -17708,7 +17716,9 @@
             "SPARROW FEATHERS",
             "JAY FEATHERS",
             "RED FEATHERS",
-            "FEATHERS"
+            "FEATHERS",
+            "RAVEN FEATHERS",
+            "MARTIN FEATHERS"
         ],
         "m_c": {
             "age": ["any"],
@@ -19073,6 +19083,110 @@
                 "adult",
                 "senior adult",
                 "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_muddypaws_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c comes back from patrol, paws all muddied. Despite being told to not track mud throughout the camp, m_c assures r_c it'll be fine. It's a new fashion statement, overall!",
+        "new_accessory": [
+            "MUDDY PAWS"
+            ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_muddypaws_accessory2",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c returns back to camp, paws muddied. It's a new fashion statement- or so {PRONOUN/m_c/subject} {VERB/m_c/say/says}.",
+        "new_accessory": [
+            "MUDDY PAWS"
+            ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        }
+    },
+    {
+        "event_id": "mod_bloodypaws_accessory1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "accessory"
+        ],
+        "frequency": 1,
+        "event_text": "m_c doesn't seem to mind the stares when {PRONOUN/m_c/subject} {VERB/m_c/walk/walks} into camp, sporting red-stained paws. What's the issue? It's just some leftover prey blood, or so m_c claims.",
+        "new_accessory": [
+            "BLOODY PAWS"
+            ],
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "trait": [
+                "arrogant",
+                "ambitious",
+                "bloodthirsty",
+                "bold",
+                "childish",
+                "confident",
+                "cunning",
+                "daring",
+                "fierce",
+                "flamboyant",
+                "oblivious",
+                "rebellious",
+                "shameless",
+                "strange",
+                "troublesome",
+                "vengeful"
             ]
         }
     }

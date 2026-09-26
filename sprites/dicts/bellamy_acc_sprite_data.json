@@ -1,0 +1,11 @@
+{
+    "spritesheet": "acc_bellamy",
+    "sprite_list": [
+        {
+            "MARTIN FEATHERS": "tail",
+            "RAVEN FEATHERS": "tail",
+            "BLOODY PAWS": "paw",
+            "MUDDY PAWS": "paw"
+        }
+    ]
+}

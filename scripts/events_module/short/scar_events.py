@@ -225,6 +225,10 @@ class Scar_Events:
                         "SPARROW FEATHERS",
                         "CLOVER",
                         "DAISY",
+                        "DAISY CORSAGE",
+                        "SEAWEED",
+                        "RAVEN FEATHERS",
+                        "MARTIN FEATHERS"
                     )
                 )
 
