@@ -12,6 +12,7 @@
             "TAUPEDO": "white",
             "EARLGRAY": "white",
             "ROSESILVER": "white",
+            "IVORY": "white",
             "GREY": "black",
             "DARKGREY": "black",
             "GHOST": "black",
@@ -89,7 +90,8 @@
             "MULBERRY": "brown",
             "REDCLAY": "brown",
             "BURRO": "brown",
-            "SABLE": "brown"
+            "SABLE": "brown",
+            "MARMITE": "brown"
         },
         "pattern_types": {
             "Tabby": "tabbies",
