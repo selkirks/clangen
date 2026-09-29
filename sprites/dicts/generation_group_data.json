@@ -92,7 +92,10 @@
             "BURRO": "brown",
             "SABLE": "brown",
             "MARMITE": "brown",
-            "ROEBUCK": "brown"
+            "ROEBUCK": "brown",
+            "FRAPPE": "brown",
+            "BEIGE": "brown",
+            "BONE": "brown"
         },
         "pattern_types": {
             "Tabby": "tabbies",

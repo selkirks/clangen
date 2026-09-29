@@ -185,6 +185,10 @@
             "one": "cream",
             "many": "cream"
         },
+        "HONEY": {
+            "one": "honey",
+            "many": "honey"
+        },
         "SOMALI": {
             "one": "somali",
             "many": "somali"
@@ -368,6 +372,14 @@
         "FRAPPE": {
             "one": "frappe",
             "many": "frappe"
+        },
+        "BEIGE": {
+            "one": "beige",
+            "many": "beige"
+        },
+        "BONE": {
+            "one": "bone",
+            "many": "bone"
         },
         "pink": "pink",
         "gray": "haze",
