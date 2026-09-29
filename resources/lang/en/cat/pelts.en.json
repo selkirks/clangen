@@ -361,6 +361,14 @@
             "one": "marmite",
             "many": "marmite"
         },
+        "ROEBUCK": {
+            "one": "roebuck",
+            "many": "roebuck"
+        },
+        "FRAPPE": {
+            "one": "frappe",
+            "many": "frappe"
+        },
         "pink": "pink",
         "gray": "haze",
         "red": "red",
