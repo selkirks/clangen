@@ -381,6 +381,14 @@
             "one": "bone",
             "many": "bone"
         },
+        "VANILLA": {
+            "one": "vanilla",
+            "many": "vanilla"
+        },
+        "CLAM": {
+            "one": "clam",
+            "many": "clam"
+        },
         "pink": "pink",
         "gray": "haze",
         "red": "red",
