@@ -4,64 +4,26 @@
     ],
     "sprite_list": [
         {
-            "YELLOW": "yellow",
-            "AMBER": "yellow",
-            "HAZEL": "green",
-            "PALEGREEN": "green",
-            "GREEN": "green",
-            "BLUE": "blue",
-            "DARKBLUE": "blue",
-            "GREY": "blue",
-            "CYAN": "blue",
-            "EMERALD": "green",
-            "HEATHERBLUE": "blue",
-            "SUNLITICE": "blue"
+            "BUG": "green",
+            "DARK": "yellow",
+            "DRAGON": "blue",
+            "ELECTRIC": "yellow",
+            "FAIRY": "pink",
+            "FIGHTING": "yellow",
+            "FIRE": "yellow",
+            "FLYING": "blue",
+            "GHOST": "pink",
+            "GRASS": "green",
+            "GROUND": "yellow",
+            "ICE": "blue"
         },
         {
-            "COPPER": "yellow",
-            "SAGE": "green",
-            "COBALT": "blue",
-            "PALEBLUE": "blue",
-            "BRONZE": "yellow",
-            "SILVER": "yellow",
-            "PALEYELLOW": "yellow",
-            "GOLD": "yellow",
-            "GREENYELLOW": "yellow",
-            "ORANGE": "yellow",
-            "DAWN": "yellow",
-            "DUSK": "yellow"
-        },
-        {
-            "AURORA": "blue",
-            "FOREST": "green",
-            "MUSTARD": "yellow",
-            "EARTHY": "yellow",
-            "SEA": "blue",
-            "BLUEBELL": "blue",
-	        "OLIVE": "green",
-	        "CATTAIL": "green",
-	        "GRASSYGREEN": "green",
-	        "FERN": "green",
-	        "LICHEN": "green",
-	        "MOSSY": "green"
-        },
-	    {
-	        "LEAF": "green",
-	        "AQUAMARINE": "green",
-	        "CACTUS": "green",
-            "MAPLE": "yellow",
-            "LIME": "green",
-            "SAND": "yellow",
-            "PERIWINKLE": "blue",
-            "WILDFIRE": "yellow",
-			"WALNUT": "yellow",
-			"SWAMP": "green",
-			"ALGAE": "green",
-			"STORM": "blue"
-		},
-	    {
-	        "PERIDOT": "green"
-	}
-
+            "NORMAL": "yellow",
+            "POISON": "pink",
+            "PSYCHIC": "pink",
+            "ROCK": "yellow",
+            "STEEL": "blue",
+            "WATER": "blue"
+        }
     ]
 }
