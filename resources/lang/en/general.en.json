@@ -18,48 +18,48 @@
             "many": "%{count} lives"
         },
         "leader": {
-            "one": "leader",
-            "many": "leaders"
+            "one": "monarch",
+            "many": "monarchs"
         },
         "deputy": {
-            "one": "deputy",
-            "many": "deputies"
+            "one": "viceroy",
+            "many": "viceroys"
         },
         "warrior": {
-            "one": "warrior",
-            "many": "warriors"
+            "one": "knight",
+            "many": "knights"
         },
         "healer": {
-			"one": "healer",
-			"many": "healers"
+			"one": "apothecary",
+			"many": "apothecarys"
         },
         "mediator": {
             "one": "mediator",
             "many": "mediators"
         },
         "apprentice": {
-            "one": "apprentice",
-            "many": "apprentices"
+            "one": "trainee",
+            "many": "trainees"
         },
 		"healer apprentice": {
-			"one": "healer apprentice",
-			"many": "healer apprentices"
+			"one": "apothecary trainee",
+			"many": "apothecary trainees"
 		},
         "mediator apprentice": {
-            "one": "mediator apprentice",
-            "many": "mediator apprentices"
+            "one": "mediator trainee",
+            "many": "mediator trainees"
         },
         "queen": {
-            "one": "queen",
-            "many": "queens"
+            "one": "nurturer",
+            "many": "nurturer"
         },
         "queen/pregnant": {
-            "one": "queen/pregnant cat",
-            "many": "queens/pregnant cats"
+            "one": "nurturer/pregnant cat",
+            "many": "nurturer/pregnant cats"
         },
 		"queen apprentice": {
-			"one": "queen apprentice",
-			"many": "queen apprentices"
+			"one": "nurturer trainee",
+			"many": "nurturer trainee"
 		},
         "newborn": {
             "one": "newborn",
