@@ -196,7 +196,7 @@ def _handle_accessories(
         if "TAIL2" in possible_accs:
             acc_list.extend(Pelt.tail2_accessories)
         if "BELLAMY" in possible_accs:
-                    acc_list.extend(Pelt.bellamy_accessories)
+            acc_list.extend(Pelt.bellamy_accessories)
 
         for acc in possible_accs:
             if acc not in ("WILD", "PLANT", "COLLAR", "LIVING_INSECTS", "SNAKES",

@@ -363,9 +363,7 @@ def _draw_sprite(
                         )
                         
                     elif accessory in cat.pelt.living_insects_accessories:
-                        sprite_name = (
-                            f"{sprites.LIVING_INSECTS_DATA['spritesheet']}{accessory}{cat_sprite}"
-                        )
+                        sprite_name = f"{sprites.LIVING_INSECTS_DATA['spritesheet']}{accessory}_{cat_sprite}"
                         new_sprite.blit(
                             _recolor_lineart(
                                 sprites.sprites[sprite_name],
@@ -376,9 +374,7 @@ def _draw_sprite(
                         )
 
                     elif accessory in cat.pelt.snakes_accessories:
-                        sprite_name = (
-                            f"{sprites.SNAKES_DATA['spritesheet']}{accessory}{cat_sprite}"
-                                        )
+                        sprite_name = f"{sprites.SNAKES_DATA['spritesheet']}{accessory}_{cat_sprite}"
                         new_sprite.blit(
                             _recolor_lineart(
                                 sprites.sprites[sprite_name],
@@ -388,9 +384,7 @@ def _draw_sprite(
                                 (0, 0),
                         )
                     elif accessory in cat.pelt.ster_flowers_accessories:
-                        sprite_name = (
-                            f"{sprites.STER_FLOWERS_DATA['spritesheet']}{accessory}{cat_sprite}"
-                        )
+                        sprite_name = f"{sprites.STER_FLOWERS_DATA['spritesheet']}{accessory}_{cat_sprite}"
                         new_sprite.blit(
                              _recolor_lineart(
                                 sprites.sprites[sprite_name],
@@ -401,9 +395,7 @@ def _draw_sprite(
                         )
 
                     elif accessory in cat.pelt.companions_accessories:
-                        sprite_name = (
-                            f"{sprites.COMPANIONS_DATA['spritesheet']}{accessory}{cat_sprite}"
-                        )
+                        sprite_name = f"{sprites.COMPANIONS_DATA['spritesheet']}{accessory}_{cat_sprite}"
                         new_sprite.blit(
                              _recolor_lineart(
                                 sprites.sprites[sprite_name],
@@ -414,9 +406,7 @@ def _draw_sprite(
                         )
 
                     elif accessory in cat.pelt.random_accessories:
-                        sprite_name = (
-                            f"{sprites.RANDOM_DATA['spritesheet']}{accessory}{cat_sprite}"
-                        )
+                        sprite_name = f"{sprites.RANDOM_DATA['spritesheet']}{accessory}_{cat_sprite}"
                         new_sprite.blit(
                             _recolor_lineart(
                                 sprites.sprites[sprite_name],
@@ -427,9 +417,7 @@ def _draw_sprite(
                         )
 
                     elif accessory in cat.pelt.tail2_accessories:
-                        sprite_name = (
-                            f"{sprites.TAIL2_DATA['spritesheet']}{accessory}{cat_sprite}"
-                        )
+                        sprite_name = f"{sprites.TAIL2_DATA['spritesheet']}{accessory}_{cat_sprite}"
                         new_sprite.blit(
                             _recolor_lineart(
                                 sprites.sprites[sprite_name],
@@ -440,9 +428,7 @@ def _draw_sprite(
                         )
 
                     elif accessory in cat.pelt.bellamy_accessories:
-                        sprite_name = (
-                            f"{sprites.BELLAMY_DATA['spritesheet']}{accessory}{cat_sprite}"
-                        )
+                        sprite_name = f"{sprites.BELLAMY_DATA['spritesheet']}{accessory}_{cat_sprite}"
                         new_sprite.blit(
                             _recolor_lineart(
                                 sprites.sprites[sprite_name],
