@@ -1,8 +1,11 @@
-All CODE in this project falls under the Mozilla Public License Version 2.0 license 
+All CODE in this project falls under the Mozilla Public License Version 2.0 license
 
 All SPRITES/ART/ICON in this project falls under the Creative Commons Attribution-NonCommercial 4.0 International License (https://creativecommons.org/licenses/by-nc/4.0/)
 
 If anything were to occur to make Selkirks no longer able to update any ClanGen branches due to external factors, all updates will be ceased and it will follow GitHub's Deceased User Policy (https://docs.github.com/en/site-policy/other-site-policies/github-deceased-user-policy)
+
+Audio prepended with `BBC_` is wholly or partially © copyright BBC - bbc.co.uk, used under RemArc license. Any reuse is subject to the BBC's license, available at https://sound-effects.bbcrewind.co.uk/licensing.
+
 
 Mozilla Public License Version 2.0
 ==================================

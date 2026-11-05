@@ -53,15 +53,16 @@
             "BACKTAILPATTERNGRAD",
             "LEGPATTERNGRAD",
             "MASKEDEYEBROWS",
+            "FRONTPATTERNGRAD",
             "SPOTSUNDERS",
             "SPOTSPATTERN",
             "SPOTSGRADIENT",
             "WOLFUNDERS",
             "WOLFPATTERN",
-            "WOLFOVER",
-            "ABYSSINIANBOTTOM"
+            "WOLFOVER"
         ],
-        [
+        [   
+            "ABYSSINIANBOTTOM",
             "ABYSSINIANMIDDLE",
             "ABYSSINIANTOP",
             "LYNXUNDERS",
@@ -70,8 +71,10 @@
             "LYNXEYEPATTERN",
             "LYNXNOSEPATTERN",
             "DOBERMANTOP",
-            "DOBERMANPATTERN",
-            "DOBERMANPATTERNGRADIENT"
+            "DOBERMANPATTERN"
+        ],
+        [
+            "ABYSSINIANBOTTOM"
         ]
 
     ]
