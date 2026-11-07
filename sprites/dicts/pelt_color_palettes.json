@@ -93,6 +93,28 @@
         "freckled_pattern_gradient_top": "#a0a3bd",
         "chinchilla_freckled_pattern_body": "#697085",
 
+        "abyssinian_top": "#717384",
+        "abyssinian_bottom": "#9FA7AB",
+        "abyssinian_middle": "#C0C8CC",
+
+        "wolf_top": "#717384",
+        "wolf_pattern": "#fffdf4",
+        "wolf_bottom": "#C0C8CC",
+        
+        "spots_pattern_gradient": "#697085",
+        "spots_pattern": "#C0C8CC",
+        "spots_bottom": "#fffdf4",
+
+        "lynx_unders": "#fffdf4",
+        "lynx_top": "#414852",
+        "lynx_spots": "#717384",
+        "lynx_eyes": "#ffffff",
+        "lynx_nose": "#e6e4eb",
+
+        "doberman_top": "#a0a3bd",
+        "doberman_pattern": "#e6e4eb",
+        "doberman_gradient": "#c9cadb",
+
         "exotic_base": "#e6e4eb",
         "exotic_base_gradient_bottom": "#fffdf4",
         "exotic_base_gradient_top": "#afb6c7",
