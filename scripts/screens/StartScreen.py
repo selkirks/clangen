@@ -103,7 +103,7 @@ class StartScreen(Screens):
             elif element == self.elements.get("white_patch"):
                 WhitePatchToolWindow()
             elif element == self.elements.get("bug_report"):
-                open_url("https://github.com/ClanGenOfficial/clangen/issues/new/choose")
+                open_url("https://discord.com/channels/1345739018792599643/1492321821809447073")
             elif element == self.social_buttons["discord_button"]:
                 open_url("https://discord.gg/clangen")
             elif element == self.social_buttons["tumblr_button"]:
