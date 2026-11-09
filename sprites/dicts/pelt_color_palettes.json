@@ -1914,8 +1914,8 @@
         "lynx_nose": "#888d93",
 
         "doberman_top": "#EEF2F7",
-        "doberman_pattern": "#BDC4CC",
-        "doberman_gradient": "#888d93",
+        "doberman_pattern": "#F8F9FC",
+        "doberman_gradient": "#D9DFE6",
 
         "exotic_base": "#EEF2F7",
         "exotic_base_gradient_bottom": "#FFFFFF",
@@ -1980,8 +1980,8 @@
         "lynx_nose": "#ACACAC",
 
         "doberman_top": "#DDDDDD",
-        "doberman_pattern": "#ABABAC",
-        "doberman_gradient": "#989899",
+        "doberman_pattern": "#F4F4F4",
+        "doberman_gradient": "#DCDCDC",
 
         "exotic_base": "#DCDCDC",
         "exotic_base_gradient_bottom": "#F5F5F5",
@@ -2046,8 +2046,8 @@
         "lynx_nose": "#ACACAC",
 
         "doberman_top": "#AFAFAF",
-        "doberman_pattern": "#6A6A6A",
-        "doberman_gradient": "#4f4f4f",
+        "doberman_pattern": "#DEDEDE",
+        "doberman_gradient": "#ACACAC",
 
         "exotic_base": "#ACACAC",
         "exotic_base_gradient_bottom": "#D6D6D6",
@@ -2112,8 +2112,8 @@
         "lynx_nose": "#C5C5C5",
 
         "doberman_top": "#7B7B7B",
-        "doberman_pattern": "#464646",
-        "doberman_gradient": "#292929",
+        "doberman_pattern": "#C5C5C5",
+        "doberman_gradient": "#989898",
 
         "exotic_base": "#6C6C6C",
         "exotic_base_gradient_bottom": "#9C9C9C",
@@ -2178,8 +2178,8 @@
         "lynx_nose": "#C5C5C5",
 
         "doberman_top": "#464646",
-        "doberman_pattern": "#292929",
-        "doberman_gradient": "#242424",
+        "doberman_pattern": "#C5C5C5",
+        "doberman_gradient": "#717171",
 
         "exotic_base": "#444444",
         "exotic_base_gradient_bottom": "#717171",
@@ -2244,8 +2244,8 @@
         "lynx_nose": "#C5C5C5",
 
         "doberman_top": "#202023",
-        "doberman_pattern": "#151515",
-        "doberman_gradient": "#0c0c0c",
+        "doberman_pattern": "#C5C5C5",
+        "doberman_gradient": "#3E3E3E",
 
         "exotic_base": "#202023",
         "exotic_base_gradient_bottom": "#3E3E3E",
@@ -2310,8 +2310,8 @@
         "lynx_nose": "#A0A0A3",
 
         "doberman_top": "#171717",
-        "doberman_pattern": "#0C0C0D",
-        "doberman_gradient": "#060607",
+        "doberman_pattern": "#A0A0A3",
+        "doberman_gradient": "#323232",
 
         "exotic_base": "#191919",
         "exotic_base_gradient_bottom": "#282828",
@@ -2375,9 +2375,9 @@
         "lynx_eyes": "#211C1C",
         "lynx_nose": "#383738",
 
-        "doberman_top": "#ff0000",
-        "doberman_pattern": "#fbff00",
-        "doberman_gradient": "#00ff22",
+        "doberman_top": "#211C1C",
+        "doberman_pattern": "#A0A0A3",
+        "doberman_gradient": "#7b7b81",
 
         "exotic_base": "#151212",
         "exotic_base_gradient_bottom": "#231D1D",
@@ -2441,9 +2441,9 @@
         "lynx_eyes": "#E3E9F8",
         "lynx_nose": "#A9B1C6",
 
-        "doberman_top": "#ff0000",
-        "doberman_pattern": "#fbff00",
-        "doberman_gradient": "#00ff22",
+        "doberman_top": "#A9B1C6",
+        "doberman_pattern": "#E3E9F8",
+        "doberman_gradient": "#AFB8CD",
 
         "exotic_base": "#C7CDDD",
         "exotic_base_gradient_bottom": "#E8EEFD",
@@ -2507,9 +2507,9 @@
         "lynx_eyes": "#C1C8D9",
         "lynx_nose": "#8F97AC",
 
-        "doberman_top": "#ff0000",
-        "doberman_pattern": "#fbff00",
-        "doberman_gradient": "#00ff22",
+        "doberman_top": "#525864",
+        "doberman_pattern": "#C1C8D9",
+        "doberman_gradient": "#8F97AC",
 
         "exotic_base": "#8F97AC",
         "exotic_base_gradient_bottom": "#C5CBDC",
@@ -2573,9 +2573,9 @@
         "lynx_eyes": "#939BAF",
         "lynx_nose": "#B8B7CB",
 
-        "doberman_top": "#ff0000",
-        "doberman_pattern": "#fbff00",
-        "doberman_gradient": "#00ff22",
+        "doberman_top": "#585e6c",
+        "doberman_pattern": "#B8B7CB",
+        "doberman_gradient": "#939BAF",
 
         "exotic_base": "#676E81",
         "exotic_base_gradient_bottom": "#9BA3B7",
@@ -2639,9 +2639,9 @@
         "lynx_eyes": "#666C7D",
         "lynx_nose": "#B8B7CB",
 
-        "doberman_top": "#ff0000",
-        "doberman_pattern": "#fbff00",
-        "doberman_gradient": "#00ff22",
+        "doberman_top": "#393e4d",
+        "doberman_pattern": "#B8B7CB",
+        "doberman_gradient": "#6C7283",
 
         "exotic_base": "#454B5C",
         "exotic_base_gradient_bottom": "#6C7283",
@@ -2705,9 +2705,9 @@
         "lynx_eyes": "#FAF7F7",
         "lynx_nose": "#A48B80",
 
-        "doberman_top": "#ff0000",
-        "doberman_pattern": "#fbff00",
-        "doberman_gradient": "#00ff22",
+        "doberman_top": "#A48B80",
+        "doberman_pattern": "#FAF7F7",
+        "doberman_gradient": "#EADBD9",
 
         "exotic_base": "#E4D5D2",
         "exotic_base_gradient_bottom": "#FBF7F7",
