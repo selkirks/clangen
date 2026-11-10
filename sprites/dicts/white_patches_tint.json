@@ -175,7 +175,10 @@
     "GOLDSPOT": "ginger",
     "SILVER-RATHA": "white",
     "TIGERSTRIPE": "ginger",
-    "GOLDEN-KIRIN": "brown"
+    "GOLDEN-KIRIN": "brown",
+    "LIGHTGOLD": "ginger",
+    "GOLD": "ginger",
+    "DARKGOLD": "ginger"
   },
   "possible_tints": {
     "basic": ["offwhite", "offwhite", "dark"],

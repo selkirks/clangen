@@ -702,8 +702,18 @@
             "one": "bright gold",
             "many": "thunder emperor gold"
         },
-
-
+        "LIGHTGOLD": {
+            "one": "light gold",
+            "many": "light gold"
+        },
+        "GOLD": {
+            "one": "gold",
+            "many": "gold"
+        },
+        "DARKGOLD": {
+            "one": "dark gold",
+            "many": "dark gold"
+        },
 
         "pink": "pink",
         "gray": "haze",
