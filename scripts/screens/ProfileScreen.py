@@ -894,16 +894,11 @@ class ProfileScreen(Screens):
             output += "\n"
 
         # EYE COLOR
-        if the_cat.pelt.eye_colour2:
-            output += i18n.t(
-                "screens.profile.heterochromia_eyes_label",
-                eyes1=i18n.t(f"cat.eyes.{the_cat.pelt.eye_colour}"),
-                eyes2=i18n.t(f"cat.eyes.{the_cat.pelt.eye_colour2}"),
-            )
+        if the_cat.age == CatAge.NEWBORN:
+            output += "???"
         else:
             output += i18n.t(
-                "screens.profile.eyes_label",
-                eyes=i18n.t(f"cat.eyes.{the_cat.pelt.eye_colour}"),
+                "screens.profile.eyes_label", eyes=the_cat.pelt.describe_eyes()
             )
 
         # ACCESSORY
