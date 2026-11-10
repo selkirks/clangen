@@ -670,6 +670,39 @@
             "one": "fallow",
             "many": "fallow"
         },
+        "WHITETIGER": {
+            "one": "pale",
+            "many": "pale"
+        },
+        "LAVENDERPETAL": {
+            "one": "pale purple",
+            "many": "lavender"
+        },
+        "DUSTY-ROSE": {
+            "one": "dusty rose",
+            "many": "dusty rose"
+        },
+        "LILAC-ASH": {
+            "one": "lilac",
+            "many": "lilac"
+        },
+        "GOLDSPOT": {
+            "one": "gilded orange",
+            "many": "gilded orange"
+        },
+        "SILVER-RATHA": {
+            "one": "silver",
+            "many": "silver lavender"
+        },
+        "TIGERSTRIPE": {
+            "one": "sunlit clay",
+            "many": "sunlit clay"
+        },
+        "GOLDEN-KIRIN": {
+            "one": "bright gold",
+            "many": "thunder emperor gold"
+        },
+
 
 
         "pink": "pink",

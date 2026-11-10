@@ -10,6 +10,7 @@
     "IVORY": "white",
     "CLAM": "white",
     "VANILLA": "white",
+    "WHITETIGER": "white",
     "COTTON": "white",
     "PEARL": "ginger",
     "STONE": "gray",
@@ -167,7 +168,14 @@
     "DRIPSTONE": "brown",
     "SOUL": "brown",
     "DEBRIS": "brown",
-    "GRANITE": "brown"
+    "LAVENDERPETAL": "purple",
+    "GRANITE": "brown",
+    "DUSTY-ROSE": "brown",
+    "LILAC-ASH": "white",
+    "GOLDSPOT": "ginger",
+    "SILVER-RATHA": "white",
+    "TIGERSTRIPE": "ginger",
+    "GOLDEN-KIRIN": "brown"
   },
   "possible_tints": {
     "basic": ["offwhite", "offwhite", "dark"],

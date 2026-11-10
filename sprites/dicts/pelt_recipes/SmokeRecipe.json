@@ -114,6 +114,22 @@
                     "color": "smoke_base_gradient_top"
                 }
             }
+        },
+        {
+            "colors": "GOLDEN-KIRIN",
+            "layer_order": ["1", "2", "3", "3.5", "3.6", "4", ["5", "6"]],
+            "layers":
+            {
+                "3.5": {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom",
+                    "opacity": 100
+                },
+                "3.6": {
+                    "group_name": "BELLY",
+                    "color": "base_gradient_bottom"
+                }
+            }
         }
     ]
 }

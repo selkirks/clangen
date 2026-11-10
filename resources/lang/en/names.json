@@ -613,7 +613,43 @@
     ],
     "FALLOW": [
     "Tan", "Pale", "Almond", "Fawn", "Fallow", "Peach"
+    ],
+    "WHITETIGER": [
+    "White", "Tiger", "Moon", "Snowy", "Snow", "Leopard", "Ice", "Frost", "Alabaster",
+    "Pale", "Silver", "Winter", "Lucent", "Brich", "Badger", "Zebra", "Mottled"
+ ],
+ "LAVENDER": [
+"Lavender", "Purple", "Orchid", "Pale", "Flower"
+],
+"DUSTY-ROSE": [
+    "Rose", "Rosy", "Pale", "Dusty"
+    ],
+    "LILAC-ASH": [
+    "Lilac", "Ash", "Ashen", "Pale"
+    ],
+    "GOLDSPOT": [
+    "Gilded", "Fire", "Flame", "Mesa", "Canyon", "Golden", "Gold", "Orange"
+    ],
+    "SILVER-RATHA": [
+    "Silver", "Argent", "Pale", "Oleander", "Ash", "Ashen", "White", "Grey",
+    "Lavender", "Burning", "Blazing", "Radiant", "Shiny", "Refulgent", "Inferno",
+    "Scorching", "Sun", "Soaring", "Roaring", "Fire", "Flame", "Blaze", "Winged",
+    "Sky", "Wyvern", "Sol", "Searing"
+    ],
+    "TIGERSTRIPE": [
+    "Shark", "Fin", "Fang", "Snapping", "Gnashing", "Orange", "Sandy", "Sand", "Sandstone",
+    "Dune", "Dunes", "Frog", "Toad", "Leaping", "Lurking", "Stalking", "Jumping", "Terror",
+    "Desert", "Wastes", "Dry", "Hot", "Scorched", "Scorching", "Tan"
+    ],
+    "GOLDEN-KIRIN": [
+    "Mythic", "Mythical", "Ephemeral", "Phantom", "Phantasm", "Specter", "Mist", "Misty",
+    "Fog", "Foggy", "Horse", "Dragon", "Unicorn", "Kirin", "Legendary", "Running", "Racing",
+    "Prancing", "Rushing", "Ghost", "Spirit", "Beautiful", "Piercing", "Spearing", "Spear",
+    "Horn", "Galloping", "Thunder", "Lightning", "Flash", "Brilliant", "Bright", "Blinding",
+    "Storm", "Striking", "Spark", "Bolt", "Yellow", "Saffron", "Gold", "Golden", "Sun", "Amber",
+    "Copper", "Emperor"
     ]
+
   },
 
 	"colour_suffixes": {
@@ -864,15 +900,15 @@
     "stone", "boulder", "pebble", "storm", "shadow", "cloak", "shroud", "night", "squall", "leaf", "rock"
     ],
     "CAMEL": [
-"camel", "sand", "desert", "dry", "dune"
-],
-  "LIGHTLILAC": [
-"lilac", "bark", "tree"
-],
-"STONEBROWN": [
-"stone", "pebble", "rock", "boulder", "mud"
-],
-"RICH-MAHOGANY": [
+    "camel", "sand", "desert", "dry", "dune"
+    ],
+      "LIGHTLILAC": [
+    "lilac", "bark", "tree"
+    ],
+    "STONEBROWN": [
+    "stone", "pebble", "rock", "boulder", "mud"
+    ],
+    "RICH-MAHOGANY": [
     "mud", "tree", "bear"
     ],
     "WHITE-DOVE": [
@@ -887,7 +923,7 @@
     "TAUPE": [
     "mouse", "owl"
     ],
-"LIGHT-TAUPE": [
+    "LIGHT-TAUPE": [
     "frost", "light"
     ],
     "KHAKI": [
@@ -907,6 +943,37 @@
     ],
     "FALLOW": [
     "fawn", "fallow"
+    ],
+    "WHITETIGER": [
+    "snow", "tiger", "frost", "moon", "winter", "leopard", "ermine"
+    ],
+    "LAVENDER": [
+    "lavender", "orchid", "frost", "mist", "petal", "bloom", "blossom"
+    ],
+    "DUSTY-ROSE": [
+    "rose", "dust", "petal"
+    ],
+    "LILAC-ASH": [
+    "ash", "lilac", "petal"
+    ],
+    "GOLDSPOT": [
+    "gilded", "flame", "fire", "blaze", "mesa", "canyon"
+    ],
+    "SILVER-RATHA": [
+    "burn", "inferno", "scorch", "fire", "flame", "blaze", "wing", "wings", "roar",
+    "soar", "flight", "sky", "wyvern", "soul", "sun", "sol", "sear", "claw", "talon",
+    "claws", "talons"
+    ],
+    "TIGERSTRIPE": [
+    "shark", "fin", "fang", "fangs", "tooth", "teeth", "maw", "jaw", "snap", "gnash",
+    "dune", "dunes", "desert", "wastes", "frog", "toad", "leap", "lurker", "jump",
+    "stalker", "terror"
+    ],
+    "GOLDEN-KIRIN": [
+    "rush", "trot", "run", "strike", "gallop", "prance", "storm", "break", "horse", "dragon",
+    "kirin", "neigh", "whinnie", "spear", "horn", "pierce", "beauty", "ghost", "phantom",
+    "specter", "spirit", "phantasm", "lightning", "thunder", "strike", "bolt", "spark", "lord",
+    "emperor"
     ]
   },
 
