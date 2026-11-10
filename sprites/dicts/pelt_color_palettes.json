@@ -5699,7 +5699,7 @@
         "newborn_exotic_light_pattern": "#d7b9ae",
         "newborn_exotic_muzzle": "#160c12"
 },
-"ACACIAWOOD": {
+"ACACIABLOCK": {
         "base": "#544e47",
         "base_gradient_bottom": "#be6b3e",
         "base_gradient_top": "#49443e",

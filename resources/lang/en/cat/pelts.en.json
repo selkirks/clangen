@@ -602,6 +602,10 @@
             "one": "suspicious",
             "many": "suspicious"
         },
+        "CHINCHILLA": {
+            "one": "chinchilla",
+            "many": "chinchilla"
+        },
 
         "pink": "pink",
         "gray": "haze",
@@ -697,6 +701,8 @@
         "Cheetah_long": "unusually spotted %{color}",
         "Spice": "striped",
         "Spice_long": "unusually striped %{color}",
+        "Pinstripe": "mottled",
+        "Pinstripe_long": "mottled %{color} tabby",
         "Calico": "calico",
         "Calico_long": "%{color} calico",
         "Calico_tabby": "calico tabby",

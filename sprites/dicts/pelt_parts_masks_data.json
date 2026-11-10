@@ -81,8 +81,15 @@
             "CHEETAHCHEST",
             "SPICEPATTERN",
             "SPICEACCENT",
-            "SPICENOSE"
+            "SPICENOSE",
+            "EYERINGS",
+            "PINSTRIPEPATTERN"
+        ],
+        [
+            "FALSEEYES",
+            "HINDLEGS",
+            "SMOKETAILTIP",
+            "BELLY"
         ]
-
     ]
 }

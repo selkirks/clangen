@@ -1,0 +1,72 @@
+{
+        "name": "PinstripeRecipe",
+    "layer_order": ["1", "2", "3", "4", "5", "6", ["7", "8"]],
+    "layers": {
+        "8":{
+            "group_name": "PINSTRIPEPATTERN",
+            "blend_mode": "mask"
+        },
+        "7":{
+            "group_name": "BASICPATTERNGRAD",
+            "color": "pattern_gradient_top"
+        },
+        "6":{
+            "group_name": "PINSTRIPEPATTERN",
+            "color": "pattern"
+        },
+        "5":{
+            "group_name": "TICKEDSTRIPEFADE",
+            "color": "pattern",
+            "opacity": 50
+        },
+        "4":{
+            "group_name": "TICKEDTOPGRAD",
+            "color": "pattern"
+        },
+        "3": {
+            "group_name": "SIMPLETOPGRAD",
+            "color": "base_gradient_top"
+        },
+        "2": {
+            "group_name": "SIMPLEBOTTOMGRAD",
+            "color": "base_gradient_bottom"
+        },
+        "1":{
+            "group_name": "BASEMASK",
+            "color": "base"
+        }
+    },
+    "exceptions": [
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "5":
+                {
+                    "group_name": "BASICPATTERNGRAD",
+                    "color": "newborn_pattern_gradient_top"
+                },
+                "4":
+                {
+                    "group_name": "PINSTRIPEPATTERN",
+                    "color": "newborn_pattern"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        }
+    ]
+}
