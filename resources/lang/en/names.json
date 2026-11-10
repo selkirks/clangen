@@ -563,6 +563,56 @@
     "Tawny", "Lion", "Dandelion", "Marigold", "Warm", "Amber", "Canary", "Daffodil", "Bright", "Daisy", "Nectar", "Tansy", "Flower",
     "Buttercup", "Straw", "Glint", "Auburn", "Blazing", "Furze", "Gorse", "Oriole", "Cougar", "Wheat", "Shine", "Bee", "Bay", "Bumble",
     "Rye"
+    ],
+    "IRONGREY": [
+    "Iron", "Grey", "Stone", "Boulder", "Basalt", "Pebble", "Storm", "Shadow", "Shroud", "Umbrage", "Night", "Squall", "Granite", "Black",
+    "Char", "Rock", "Hazy", "Murk", "Murky", "Ash", "Ashen", "Cinder", "Cindered", "Smoke", "Smokey", "Charred", "Scorch", "Scorched", "Soot",
+    "Sooty", "Burned", "Burn", "Dark"
+    ],
+    "CAMEL": [
+    "Camel", "Sand", "Sandy", "Desert", "Dry", "Dune", "Dunes", "Lemon", "Yellow"
+    ],
+    "LIGHTLILAC": [
+    "Lilac", "Light", "Tree", "Tan", "Fallow", "Pale", "Mouse", "Lion"
+    ],
+    "STONEBROWN": [
+    "Stone", "Stoney", "Brown", "Pale", "Mud", "Rock", "Dust", "Boulder", "Pebble", "Slate"
+    ],
+    "RICH-MAHOGANY": [
+    "Mahogany", "Dark", "Brown"
+    ],
+    "WHITE-DOVE": [
+    "Dove", "Pale", "Grey", "Silver", "Moon", "White", "Pure"
+    ],
+    "GRAPHITE": [
+    "Grey", "Dark", "Storm", "Stormcloud", "Soot", "Ash", "Ashen"
+    ],
+    "WALNUT": [
+    "Walnut", "Brown", "Cinnamon"
+    ],
+    "TAUPE": [
+    "Taupe", "Mouse", "Owl", "Brown"
+    ],
+    "LIGHT-TAUPE": [
+    "Taupe", "Pale"
+    ],
+    "KHAKI": [
+    "Beige", "Pale", "Sand", "Sandy", "Tan"
+    ],
+    "GROUNDCINNAMON": [
+    "Cinnamon", "Brown", "Walnut", "Bark", "Spice", "Rat", "Rust"
+    ],
+    "DARK-WALNUT": [
+    "Dark", "Walnut", "Brown", "Bark"
+    ],
+    "DOVE": [
+    "Dove", "Pigeon", "Owl", "Grey", "Stone", "Pale", "Pebble"
+    ],
+    "MUSHROOM": [
+    "Brown", "Pale", "Mushroom", "Buff", "Beige", "Tan"
+    ],
+    "FALLOW": [
+    "Tan", "Pale", "Almond", "Fawn", "Fallow", "Peach"
     ]
   },
 
@@ -680,7 +730,7 @@
     "DARKOAK": [
     "root", "bark", "shade", "owl", "oak", "wood", "moth", "branch", "burr"
     ],
-      "HAZELNUT": [
+    "HAZELNUT": [
     "root", "owl", "twig", "wood", "moth", "lion", "cougar"
     ],
     "RUDDY": [
@@ -772,7 +822,7 @@
     "cloud", "storm", "pool", "lake", "pebble", "rock", "stone", "boulder", "minnow", "smoke", "dust", "cinder", "badger", "raccoon"
     ],
     "NETHERITE": [
-        "strength", "hide"
+    "strength", "hide"
     ],
      "BEDROCK": [
     "shadow", "shade", "dusk", "coal", "ink", "bat", "cinder", "ghost", "night", "raven", "crow", "burn", "badger", "raccoon"
@@ -799,7 +849,7 @@
     "burn", "blaze", "flame", "flare", "ember", "fox", "vixen"
     ],
     "COPPER": [
-        "copper"
+    "copper"
     ],
     "PUMPKIN": [
     "burn", "sun", "beam", "shine", "spark", "blaze", "flame", "flare", "ember", "fox", "vixen"
@@ -809,6 +859,54 @@
     ],
     "SUSPICIOUS": ["sun", "beam", "shine", "spark", "blaze", "honey", "honey", "flash", "bee", "lion", "cougar", "bright", "bee", "root", "bumble",
     "flower", "gorse"
+    ],
+    "IRONGREY": [
+    "stone", "boulder", "pebble", "storm", "shadow", "cloak", "shroud", "night", "squall", "leaf", "rock"
+    ],
+    "CAMEL": [
+"camel", "sand", "desert", "dry", "dune"
+],
+  "LIGHTLILAC": [
+"lilac", "bark", "tree"
+],
+"STONEBROWN": [
+"stone", "pebble", "rock", "boulder", "mud"
+],
+"RICH-MAHOGANY": [
+    "mud", "tree", "bear"
+    ],
+    "WHITE-DOVE": [
+    "dove", "moon", "frost"
+    ],
+    "GRAPHITE": [
+    "storm", "ash", "soot"
+    ],
+    "WALNUT": [
+    "walnut", "tree"
+    ],
+    "TAUPE": [
+    "mouse", "owl"
+    ],
+"LIGHT-TAUPE": [
+    "frost", "light"
+    ],
+    "KHAKI": [
+    "sand", "beach"
+    ],
+    "GROUNDCINNAMON": [
+    "bark", "tree", "fur", "vole", "rat"
+    ],
+    "DARK-WALNUT": [
+    "walnut", "tree", "bark", "mud"
+    ],
+    "DOVE": [
+    "dove", "pigeon", "owl", "stone", "pebble"
+    ],
+    "MUSHROOM": [
+    "mushroom", "shroom"
+    ],
+    "FALLOW": [
+    "fawn", "fallow"
     ]
   },
 

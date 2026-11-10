@@ -606,6 +606,71 @@
             "one": "chinchilla",
             "many": "chinchilla"
         },
+        "IRONGREY": {
+            "one": "dark grey",
+            "many": "iron grey"
+        },
+        "CAMEL": {
+            "one": "camel",
+            "many": "camel"
+        },
+        "LIGHTLILAC": {
+            "one": "lilac",
+            "many": "light lilac"
+        },
+        "STONEBROWN": {
+            "one": "pale brown",
+            "many": "stone brown"
+        },
+        "RICH-MAHOGANY": {
+            "one": "rich mahogany",
+            "many": "rich mahogany"
+        },
+        "WHITE-DOVE": {
+            "one": "dove white",
+            "many": "dove white"
+        },
+        "GRAPHITE": {
+            "one": "graphite",
+            "many": "graphite"
+        },
+        "WALNUT": {
+            "one": "walnut",
+            "many": "walnut"
+        },
+        "TAUPE": {
+            "one": "taupe",
+            "many": "taupe"
+        },
+        "LIGHT-TAUPE": {
+            "one": "light taupe",
+            "many": "light taupe"
+        },
+        "KHAKI": {
+            "one": "khaki beige",
+            "many": "khaki beige"
+        },
+        "GROUNDCINNAMON": {
+            "one": "cinnamon",
+            "many": "cinnamon"
+        },
+        "DARK-WALNUT": {
+            "one": "dark walnut",
+            "many": "dark walnut"
+        },
+        "DOVE": {
+            "one": "dove grey",
+            "many": "dove grey"
+        },
+        "MUSHROOM": {
+            "one": "mushroom buff",
+            "many": "mushroom buff"
+        },
+        "FALLOW": {
+            "one": "fallow",
+            "many": "fallow"
+        },
+
 
         "pink": "pink",
         "gray": "haze",
