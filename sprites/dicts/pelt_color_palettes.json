@@ -27,8 +27,6 @@
         "abyssinian_bottom": "#EEF6F7",
         "abyssinian_middle": "#C6D0D1",
 
-        "wolf_top": "#D2D1D2",
-        "wolf_pattern": "#FFFEFF",
         "wolf_bottom": "#E1CEC0",
 
         "spots_pattern_gradient": "#C9D9DE",
@@ -97,8 +95,6 @@
         "abyssinian_bottom": "#9FA7AB",
         "abyssinian_middle": "#C0C8CC",
 
-        "wolf_top": "#717384",
-        "wolf_pattern": "#fffdf4",
         "wolf_bottom": "#C0C8CC",
         
         "spots_pattern_gradient": "#697085",
@@ -163,8 +159,6 @@
         "abyssinian_bottom": "#F0D3C0",
         "abyssinian_middle": "#A5A0A5",
 
-        "wolf_top": "#898E93",
-        "wolf_pattern": "#E4E2DD",
         "wolf_bottom": "#9C7D65",
         
         "spots_pattern_gradient": "#6F8484",
@@ -229,8 +223,6 @@
         "abyssinian_bottom": "#F3B790",
         "abyssinian_middle": "#899ca8",
 
-        "wolf_top": "#686D78",
-        "wolf_pattern": "#E1E2E1",
         "wolf_bottom": "#6E6259",
 
         "spots_pattern_gradient": "#2A373E",
@@ -295,8 +287,6 @@
         "abyssinian_bottom": "#868B9C",
         "abyssinian_middle": "#414657",
 
-        "wolf_top": "#62666F",
-        "wolf_pattern": "#F2F2EA",
         "wolf_bottom": "#5A4D37",
 
         "spots_pattern_gradient": "#405351",
@@ -361,8 +351,6 @@
         "abyssinian_bottom": "#cec8c3",
         "abyssinian_middle": "#746868",
 
-        "wolf_top": "#352930",
-        "wolf_pattern": "#cec8c3",
         "wolf_bottom": "#746868",
 
         "spots_pattern_gradient": "#352930",
@@ -427,8 +415,6 @@
         "abyssinian_bottom": "#98ACAC",
         "abyssinian_middle": "#3B504F",
 
-        "wolf_top": "#55575E",
-        "wolf_pattern": "#D4D6D3",
         "wolf_bottom": "#4A3F38",
 
         "spots_pattern_gradient": "#101A18",
@@ -494,8 +480,6 @@
         "abyssinian_bottom": "#2E324E",
         "abyssinian_middle": "#74778D",
 
-        "wolf_top": "#20242B",
-        "wolf_pattern": "#B1C2D4",
         "wolf_bottom": "#494747",
 
         "spots_pattern_gradient": "#5C6B6F",
@@ -566,8 +550,6 @@
         "abyssinian_bottom": "#F0D6C9",
         "abyssinian_middle": "#2A2B37",
 
-        "wolf_top": "#141418",
-        "wolf_pattern": "#C3BFB6",
         "wolf_bottom": "#241D16",
 
         "spots_pattern_gradient": "#0E1119",
@@ -632,8 +614,6 @@
         "abyssinian_bottom": "#CDC7BC",
         "abyssinian_middle": "#795a55",
 
-        "wolf_top": "#40333F",
-        "wolf_pattern": "#CDC7BC",
         "wolf_bottom": "#795a55",
 
         "spots_pattern_gradient": "#40333F",
@@ -698,8 +678,6 @@
         "abyssinian_bottom": "#F2D7C1",
         "abyssinian_middle": "#E4A88E",
 
-        "wolf_top": "#5E5762",
-        "wolf_pattern": "#F2D7C1",
         "wolf_bottom": "#E4A88E",
 
         "spots_pattern_gradient": "#5E5762",
@@ -769,8 +747,6 @@
         "abyssinian_bottom": "#F3EDE3",
         "abyssinian_middle": "#F2D7B9",
 
-        "wolf_top": "#B68067",
-        "wolf_pattern": "#F3EDE3",
         "wolf_bottom": "#F2D7B9",
 
         "spots_pattern_gradient": "#B68067",
@@ -837,8 +813,6 @@
         "abyssinian_bottom": "#D2B696",
         "abyssinian_middle": "#A1451A",
 
-        "wolf_top": "#220704",
-        "wolf_pattern": "#D2B696",
         "wolf_bottom": "#A1451A",
 
         "spots_pattern_gradient": "#220704",
@@ -903,8 +877,6 @@
         "abyssinian_bottom": "#FFF0D8",
         "abyssinian_middle": "#F6D296",
 
-        "wolf_top": "#C6A382",
-        "wolf_pattern": "#F8F1DF",
         "wolf_bottom": "#DBA269",
 
         "spots_pattern_gradient": "#CE966D",
@@ -969,8 +941,6 @@
         "abyssinian_bottom": "#F4C472",
         "abyssinian_middle": "#AA7D2E",
 
-        "wolf_top": "#CF9A6B",
-        "wolf_pattern": "#F0D0B3",
         "wolf_bottom": "#AA733B",
 
         "spots_pattern_gradient": "#B98156",
@@ -1040,8 +1010,6 @@
         "abyssinian_bottom": "#F2E7CB",
         "abyssinian_middle": "#d6a771",
 
-        "wolf_top": "#9e6843",
-        "wolf_pattern": "#F2E7CB",
         "wolf_bottom": "#d6a771",
 
         "spots_pattern_gradient": "#9e6843",
@@ -1107,8 +1075,6 @@
         "abyssinian_bottom": "#EADAA6",
         "abyssinian_middle": "#b27856",
 
-        "wolf_top": "#D0AF76",
-        "wolf_pattern": "#F3E5BC",
         "wolf_bottom": "#9C6E40",
 
         "spots_pattern_gradient": "#865E48",
@@ -1173,8 +1139,6 @@
         "abyssinian_bottom": "#EADAA6",
         "abyssinian_middle": "#b27856",
 
-        "wolf_top": "#D0AF76",
-        "wolf_pattern": "#F3E5BC",
         "wolf_bottom": "#9C6E40",
 
         "spots_pattern_gradient": "#865E48",
@@ -1239,8 +1203,6 @@
         "abyssinian_bottom": "#FDD1A8",
         "abyssinian_middle": "#B04313",
 
-        "wolf_top": "#F2A96B",
-        "wolf_pattern": "#FEEDC3",
         "wolf_bottom": "#BA5E12",
 
         "spots_pattern_gradient": "#A7572E",
@@ -1305,8 +1267,6 @@
         "abyssinian_bottom": "#EEB18D",
         "abyssinian_middle": "#522925",
 
-        "wolf_top": "#D1703C",
-        "wolf_pattern": "#F4D4A1",
         "wolf_bottom": "#872100",
 
         "spots_pattern_gradient": "#692F1B",
@@ -1371,8 +1331,6 @@
         "abyssinian_bottom": "#A46153",
         "abyssinian_middle": "#682619",
 
-        "wolf_top": "#A9563D",
-        "wolf_pattern": "#D2C2A5",
         "wolf_bottom": "#8A5337",
 
         "spots_pattern_gradient": "#572F2F",
@@ -1437,8 +1395,6 @@
         "abyssinian_bottom": "#ECF4F6",
         "abyssinian_middle": "#B59E8E",
 
-        "wolf_top": "#DDCEAF",
-        "wolf_pattern": "#F8F8F5",
         "wolf_bottom": "#AEA391",
 
         "spots_pattern_gradient": "#806950",
@@ -1503,8 +1459,6 @@
         "abyssinian_bottom": "#DAC5B9",
         "abyssinian_middle": "#886857",
 
-        "wolf_top": "#B4948C",
-        "wolf_pattern": "#E8CDB2",
         "wolf_bottom": "#847876",
 
         "spots_pattern_gradient": "#6E5859",
@@ -1569,8 +1523,6 @@
         "abyssinian_bottom": "#E6C5B1",
         "abyssinian_middle": "#725A52",
 
-        "wolf_top": "#957861",
-        "wolf_pattern": "#F2E7D3",
         "wolf_bottom": "#584A41",
 
         "spots_pattern_gradient": "#4A362D",
@@ -1635,8 +1587,6 @@
         "abyssinian_bottom": "#E8AD86",
         "abyssinian_middle": "#6C3B1B",
 
-        "wolf_top": "#925F4C",
-        "wolf_pattern": "#ECD6B2",
         "wolf_bottom": "#583720",
 
         "spots_pattern_gradient": "#553A36",
@@ -1701,8 +1651,6 @@
         "abyssinian_bottom": "#CCAB9C",
         "abyssinian_middle": "#5A392A",
 
-        "wolf_top": "#585049",
-        "wolf_pattern": "#D5C3AF",
         "wolf_bottom": "#37271C",
 
         "spots_pattern_gradient": "#201312",
@@ -1767,8 +1715,6 @@
         "abyssinian_bottom": "#301614",
         "abyssinian_middle": "#1C1211",
 
-        "wolf_top": "#64403B",
-        "wolf_pattern": "#E0C7BD",
         "wolf_bottom": "#4E291F",
 
         "spots_pattern_gradient": "#312022",
@@ -1833,8 +1779,6 @@
         "abyssinian_bottom": "#6F3020",
         "abyssinian_middle": "#331605",
 
-        "wolf_top": "#120A08",
-        "wolf_pattern": "#391B1C",
         "wolf_bottom": "#5E2C1F",
 
         "spots_pattern_gradient": "#391B1C",
@@ -1899,8 +1843,6 @@
         "abyssinian_bottom": "#EEF2F7",
         "abyssinian_middle": "#D9DFE6",
 
-        "wolf_top": "#C9D0D7",
-        "wolf_pattern": "#888d93",
         "wolf_bottom": "#BDC4CC",
 
         "spots_pattern_gradient": "#BDC4CC",
@@ -1965,8 +1907,6 @@
         "abyssinian_bottom": "#DCDCDC",
         "abyssinian_middle": "#ACACAC",
 
-        "wolf_top": "#B9B9B9",
-        "wolf_pattern": "#969696",
         "wolf_bottom": "#ACACAC",
 
         "spots_pattern_gradient": "#ACACAC",
@@ -2031,8 +1971,6 @@
         "abyssinian_bottom": "#D6D6D6",
         "abyssinian_middle": "#6A6A6A",
 
-        "wolf_top": "#ACACAC",
-        "wolf_pattern": "#DEDEDE",
         "wolf_bottom": "#6A6A6A",
 
         "spots_pattern_gradient": "#6A6A6A",
@@ -2097,8 +2035,6 @@
         "abyssinian_bottom": "#9C9C9C",
         "abyssinian_middle": "#616161",
 
-        "wolf_top": "#9C9C9C",
-        "wolf_pattern": "#C5C5C5",
         "wolf_bottom": "#464646",
 
         "spots_pattern_gradient": "#464646",
@@ -2163,8 +2099,6 @@
         "abyssinian_bottom": "#717171",
         "abyssinian_middle": "#444444",
 
-        "wolf_top": "#444444",
-        "wolf_pattern": "#C5C5C5",
         "wolf_bottom": "#292929",
 
         "spots_pattern_gradient": "#292929",
@@ -2229,8 +2163,6 @@
         "abyssinian_bottom": "#3E3E3E",
         "abyssinian_middle": "#2F2F31",
 
-        "wolf_top": "#202023",
-        "wolf_pattern": "#C5C5C5",
         "wolf_bottom": "#141414",
 
         "spots_pattern_gradient": "#141414",
@@ -2295,8 +2227,6 @@
         "abyssinian_bottom": "#323232",
         "abyssinian_middle": "#282828",
 
-        "wolf_top": "#282828",
-        "wolf_pattern": "#A0A0A3",
         "wolf_bottom": "#0C0C0D",
 
         "spots_pattern_gradient": "#0C0C0D",
@@ -2361,8 +2291,6 @@
         "abyssinian_bottom": "#383738",
         "abyssinian_middle": "#1E1E1E",
 
-        "wolf_top": "#231D1D",
-        "wolf_pattern": "#A0A0A3",
         "wolf_bottom": "#0F0D0D",
 
         "spots_pattern_gradient": "#0F0D0D",
@@ -2427,8 +2355,6 @@
         "abyssinian_bottom": "#D7DDED",
         "abyssinian_middle": "#C7CDDD",
 
-        "wolf_top": "#AFB8CD",
-        "wolf_pattern": "#EAF0FF",
         "wolf_bottom": "#8A94AF",
 
         "spots_pattern_gradient": "#8A94AF",
@@ -2493,8 +2419,6 @@
         "abyssinian_bottom": "#C5CBDC",
         "abyssinian_middle": "#8F97AC",
 
-        "wolf_top": "#8F97AC",
-        "wolf_pattern": "#C5CBDC",
         "wolf_bottom": "#575F74",
 
         "spots_pattern_gradient": "#575F74",
@@ -2559,8 +2483,6 @@
         "abyssinian_bottom": "#9DA5B9",
         "abyssinian_middle": "#5F6676",
 
-        "wolf_top": "#3D4250",
-        "wolf_pattern": "#B8B7CB",
         "wolf_bottom": "#5F6676",
 
         "spots_pattern_gradient": "#3D4250",
@@ -2625,8 +2547,6 @@
         "abyssinian_bottom": "#6C7283",
         "abyssinian_middle": "#454B5C",
 
-        "wolf_top": "#454B5C",
-        "wolf_pattern": "#B8B7CB",
         "wolf_bottom": "#1D212C",
 
         "spots_pattern_gradient": "#454B5C",
@@ -2691,8 +2611,6 @@
         "abyssinian_bottom": "#EADBD9",
         "abyssinian_middle": "#A48B80",
 
-        "wolf_top": "#6A4633",
-        "wolf_pattern": "#EADBD9",
         "wolf_bottom": "#A48B80",
 
         "spots_pattern_gradient": "#6A4633",
@@ -2757,8 +2675,6 @@
         "abyssinian_bottom": "#F5E5DD",
         "abyssinian_middle": "#E5A989",
 
-        "wolf_top": "#D3672C",
-        "wolf_pattern": "#F5E5DD",
         "wolf_bottom": "#E5A989",
 
         "spots_pattern_gradient": "#312022",
@@ -2823,8 +2739,6 @@
         "abyssinian_bottom": "#45454D",
         "abyssinian_middle": "#333339",
 
-        "wolf_top": "#28282D",
-        "wolf_pattern": "#B8B7CB",
         "wolf_bottom": "#1B1B1F",
 
         "spots_pattern_gradient": "#1B1B1F",
@@ -2889,8 +2803,6 @@
         "abyssinian_bottom": "#5F5F69",
         "abyssinian_middle": "#797A80",
 
-        "wolf_top": "#53545A",
-        "wolf_pattern": "#B8B7CB",
         "wolf_bottom": "#333339",
 
         "spots_pattern_gradient": "#333339",
@@ -2955,8 +2867,6 @@
         "abyssinian_bottom": "#D8D9E5",
         "abyssinian_middle": "#777888",
 
-        "wolf_top": "#777888",
-        "wolf_pattern": "#D8D9E5",
         "wolf_bottom": "#484953",
 
         "spots_pattern_gradient": "#484953",
@@ -3021,8 +2931,6 @@
         "abyssinian_bottom": "#D9DAE6",
         "abyssinian_middle": "#B2AFB8",
 
-        "wolf_top": "#9495A2",
-        "wolf_pattern": "#D9DAE6",
         "wolf_bottom": "#777888",
 
         "spots_pattern_gradient": "#777888",
@@ -3087,8 +2995,6 @@
         "abyssinian_bottom": "#DBD8E4",
         "abyssinian_middle": "#ACA8B7",
 
-        "wolf_top": "#ACA8B7",
-        "wolf_pattern": "#DBD8E4",
         "wolf_bottom": "#8C8898",
 
         "spots_pattern_gradient": "#8D8998",
@@ -3153,8 +3059,6 @@
         "abyssinian_bottom": "#645F6D",
         "abyssinian_middle": "#3F3B45",
 
-        "wolf_top": "#3F3B45",
-        "wolf_pattern": "#B8B7CB",
         "wolf_bottom": "#2B2831",
 
         "spots_pattern_gradient": "#2B2831",
@@ -3219,8 +3123,6 @@
         "abyssinian_bottom": "#B0AEA7",
         "abyssinian_middle": "#3D3A37",
 
-        "wolf_top": "#3D3A37",
-        "wolf_pattern": "#B0AEA7",
         "wolf_bottom": "#1C1A19",
 
         "spots_pattern_gradient": "#1C1A19",
@@ -3285,8 +3187,6 @@
         "abyssinian_bottom": "#B0AEA7",
         "abyssinian_middle": "#565250",
 
-        "wolf_top": "#565250",
-        "wolf_pattern": "#B0AEA7",
         "wolf_bottom": "#363331",
 
         "spots_pattern_gradient": "#363331",
@@ -3351,8 +3251,6 @@
         "abyssinian_bottom": "#BCB4AE",
         "abyssinian_middle": "#8B837D",
 
-        "wolf_top": "#8B837D",
-        "wolf_pattern": "#BCB4AE",
         "wolf_bottom": "#5C544D",
 
         "spots_pattern_gradient": "#5C544D",
@@ -3417,8 +3315,6 @@
         "abyssinian_bottom": "#BCB1A9",
         "abyssinian_middle": "#A89F98",
 
-        "wolf_top": "#BCB1A9",
-        "wolf_pattern": "#D9D1CA",
         "wolf_bottom": "#847A72",
 
         "spots_pattern_gradient": "#847A72",
@@ -3483,8 +3379,6 @@
         "abyssinian_bottom": "#CEBAA8",
         "abyssinian_middle": "#A08C7A",
 
-        "wolf_top": "#AF9883",
-        "wolf_pattern": "#D6C3B2",
         "wolf_bottom": "#7E6A58",
 
         "spots_pattern_gradient": "#6E5B4A",
@@ -3549,8 +3443,6 @@
         "abyssinian_bottom": "#AC9681",
         "abyssinian_middle": "#7E6A58",
 
-        "wolf_top": "#84705E",
-        "wolf_pattern": "#D6C3B2",
         "wolf_bottom": "#574636",
 
         "spots_pattern_gradient": "#574636",
@@ -3615,8 +3507,6 @@
         "abyssinian_bottom": "#84705E",
         "abyssinian_middle": "#564637",
 
-        "wolf_top": "#564637",
-        "wolf_pattern": "#D6C3B2",
         "wolf_bottom": "#392B1F",
 
         "spots_pattern_gradient": "#392B1F",
@@ -3681,8 +3571,6 @@
         "abyssinian_bottom": "#5A4839",
         "abyssinian_middle": "#2A2118",
 
-        "wolf_top": "#5A4839",
-        "wolf_pattern": "#D6C3B2",
         "wolf_bottom": "#2A2118",
 
         "spots_pattern_gradient": "#2A2118",
@@ -3747,8 +3635,6 @@
         "abyssinian_bottom": "#31241B",
         "abyssinian_middle": "#251C1C",
 
-        "wolf_top": "#251C1C",
-        "wolf_pattern": "#8F806B",
         "wolf_bottom": "#100B07",
 
         "spots_pattern_gradient": "#100B07",
@@ -3813,8 +3699,6 @@
         "abyssinian_bottom": "#8F806B",
         "abyssinian_middle": "#402619",
 
-        "wolf_top": "#402619",
-        "wolf_pattern": "#8F806B",
         "wolf_bottom": "#200C03",
 
         "spots_pattern_gradient": "#200C03",
@@ -3879,8 +3763,6 @@
         "abyssinian_bottom": "#8E6854",
         "abyssinian_middle": "#6A4633",
 
-        "wolf_top": "#6A4633",
-        "wolf_pattern": "#B89B82",
         "wolf_bottom": "#36180A",
 
         "spots_pattern_gradient": "#36180A",
@@ -3945,8 +3827,6 @@
         "abyssinian_bottom": "#AB8571",
         "abyssinian_middle": "#7A5642",
 
-        "wolf_top": "#7A5642",
-        "wolf_pattern": "#AB8571",
         "wolf_bottom": "#5A3724",
 
         "spots_pattern_gradient": "#5A3724",
@@ -4011,8 +3891,6 @@
         "abyssinian_bottom": "#C5A990",
         "abyssinian_middle": "#A8826D",
 
-        "wolf_top": "#A8826D",
-        "wolf_pattern": "#C5A990",
         "wolf_bottom": "#7B5946",
 
         "spots_pattern_gradient": "#7B5946",
@@ -4077,8 +3955,6 @@
         "abyssinian_bottom": "#CBA695",
         "abyssinian_middle": "#9A7165",
 
-        "wolf_top": "#9A7165",
-        "wolf_pattern": "#CBA695",
         "wolf_bottom": "#7B5147",
 
         "spots_pattern_gradient": "#7B5147",
@@ -4143,8 +4019,6 @@
         "abyssinian_bottom": "#E0DDE8",
         "abyssinian_middle": "#9F9BA7",
 
-        "wolf_top": "#615C6A",
-        "wolf_pattern": "#F9F8FA",
         "wolf_bottom": "#9F9BA7",
 
         "spots_pattern_gradient": "#615C6A",
@@ -4209,8 +4083,6 @@
         "abyssinian_bottom": "#F9F7F6",
         "abyssinian_middle": "#A39D99",
 
-        "wolf_top": "#605B57",
-        "wolf_pattern": "#F9F7F6",
         "wolf_bottom": "#A39D99",
 
         "spots_pattern_gradient": "#A39D99",
@@ -4275,8 +4147,6 @@
         "abyssinian_bottom": "#CAC2BC",
         "abyssinian_middle": "#A6968B",
 
-        "wolf_top": "#64503C",
-        "wolf_pattern": "#E7DCDA",
         "wolf_bottom": "#A6968B",
 
         "spots_pattern_gradient": "#64503C",
@@ -4341,8 +4211,6 @@
         "abyssinian_bottom": "#FDE8D7",
         "abyssinian_middle": "#E3782D",
 
-        "wolf_top": "#AA5A21",
-        "wolf_pattern": "#FDE8D7",
         "wolf_bottom": "#E3782D",
 
         "spots_pattern_gradient": "#AA5A21",
@@ -4407,8 +4275,6 @@
         "abyssinian_bottom": "#CDA990",
         "abyssinian_middle": "#934C19",
 
-        "wolf_top": "#934C19",
-        "wolf_pattern": "#D6C9BB",
         "wolf_bottom": "#4C321D",
 
         "spots_pattern_gradient": "#4C321D",
@@ -4473,8 +4339,6 @@
         "abyssinian_bottom": "#58544D",
         "abyssinian_middle": "#302B2A",
 
-        "wolf_top": "#302B2A",
-        "wolf_pattern": "#6C6B62",
         "wolf_bottom": "#171C17",
 
         "spots_pattern_gradient": "#171C17",
@@ -4539,8 +4403,6 @@
         "abyssinian_bottom": "#CCC3BD",
         "abyssinian_middle": "#655556",
 
-        "wolf_top": "#655556",
-        "wolf_pattern": "#CCC3BD",
         "wolf_bottom": "#331F27",
 
         "spots_pattern_gradient": "#331F27",
@@ -4605,8 +4467,6 @@
         "abyssinian_bottom": "#DAB9A9",
         "abyssinian_middle": "#BC8064",
 
-        "wolf_top": "#672B1F",
-        "wolf_pattern": "#EFF1F1",
         "wolf_bottom": "#BC8064",
 
         "spots_pattern_gradient": "#672B1F",
@@ -4671,8 +4531,6 @@
         "abyssinian_bottom": "#D1A568",
         "abyssinian_middle": "#896E47",
 
-        "wolf_top": "#50555B",
-        "wolf_pattern": "#F4EEE7",
         "wolf_bottom": "#896E47",
 
         "spots_pattern_gradient": "#50555B",
@@ -4737,8 +4595,6 @@
         "abyssinian_bottom": "#96929A",
         "abyssinian_middle": "#E8E6ED",
 
-        "wolf_top": "#E8E6ED",
-        "wolf_pattern": "#96929A",
         "wolf_bottom": "#0C0C0C",
 
         "spots_pattern_gradient": "#96929A",
@@ -4803,8 +4659,6 @@
         "abyssinian_bottom": "#E7D78D",
         "abyssinian_middle": "#D8A365",
 
-        "wolf_top": "#434448",
-        "wolf_pattern": "#E3DEBA",
         "wolf_bottom": "#AE7B1C",
 
         "spots_pattern_gradient": "#434448",
@@ -4869,8 +4723,6 @@
         "abyssinian_bottom": "#BAB9A6",
         "abyssinian_middle": "#786E64",
 
-        "wolf_top": "#786E64",
-        "wolf_pattern": "#BAB9A6",
         "wolf_bottom": "#7A8274",
 
         "spots_pattern_gradient": "#786E64",
@@ -4935,8 +4787,6 @@
         "abyssinian_bottom": "#C78D74",
         "abyssinian_middle": "#75443D",
 
-        "wolf_top": "#75443D",
-        "wolf_pattern": "#E8BFAB",
         "wolf_bottom": "#461713",
 
         "spots_pattern_gradient": "#020000",
@@ -5001,8 +4851,6 @@
         "abyssinian_bottom": "#B5AFA7",
         "abyssinian_middle": "#6D3717",
 
-        "wolf_top": "#6D3717",
-        "wolf_pattern": "#DDDDDD",
         "wolf_bottom": "#322C29",
 
         "spots_pattern_gradient": "#322C29",
@@ -5067,8 +4915,6 @@
         "abyssinian_bottom": "#EDD1BC",
         "abyssinian_middle": "#65616D",
 
-        "wolf_top": "#65616D",
-        "wolf_pattern": "#EDD1BC",
         "wolf_bottom": "#6D5F59",
 
         "spots_pattern_gradient": "#65616D",
@@ -5133,8 +4979,6 @@
         "abyssinian_bottom": "#B0B4BA",
         "abyssinian_middle": "#6C7888",
 
-        "wolf_top": "#20272E",
-        "wolf_pattern": "#B0B4BA",
         "wolf_bottom": "#6C7888",
 
         "spots_pattern_gradient": "#20272E",
@@ -5199,8 +5043,6 @@
         "abyssinian_bottom": "#413A3C",
         "abyssinian_middle": "#381C03",
 
-        "wolf_top": "#381C03",
-        "wolf_pattern": "#C1A19C",
         "wolf_bottom": "#0C0404",
 
         "spots_pattern_gradient": "#0C0404",
@@ -5265,8 +5107,6 @@
         "abyssinian_bottom": "#ECD7BF",
         "abyssinian_middle": "#DCAC88",
 
-        "wolf_top": "#4A4846",
-        "wolf_pattern": "#F7F8F8",
         "wolf_bottom": "#9F7F67",
 
         "spots_pattern_gradient": "#4A4846",
@@ -5331,8 +5171,6 @@
         "abyssinian_bottom": "#CFD8CD",
         "abyssinian_middle": "#B39B7F",
 
-        "wolf_top": "#B39B7F",
-        "wolf_pattern": "#EFEDE8",
         "wolf_bottom": "#80868A",
 
         "spots_pattern_gradient": "#80868A",
@@ -5397,8 +5235,6 @@
         "abyssinian_bottom": "#6C7888",
         "abyssinian_middle": "#343B41",
 
-        "wolf_top": "#343B41",
-        "wolf_pattern": "#747D89",
         "wolf_bottom": "#0F1317",
 
         "spots_pattern_gradient": "#0F1317",
@@ -5463,8 +5299,6 @@
         "abyssinian_bottom": "#B7B4AD",
         "abyssinian_middle": "#786452",
 
-        "wolf_top": "#786452",
-        "wolf_pattern": "#D8CFBE",
         "wolf_bottom": "#5F3723",
 
         "spots_pattern_gradient": "#5F3723",
@@ -5529,8 +5363,6 @@
         "abyssinian_bottom": "#D3D4DA",
         "abyssinian_middle": "#CEB4A7",
 
-        "wolf_top": "#CEB4A7",
-        "wolf_pattern": "#F7F8F8",
         "wolf_bottom": "#66696D",
 
         "spots_pattern_gradient": "#66696D",
@@ -5595,8 +5427,6 @@
         "abyssinian_bottom": "#4F3829",
         "abyssinian_middle": "#271D16",
 
-        "wolf_top": "#60300D",
-        "wolf_pattern": "#BC977A",
         "wolf_bottom": "#070101",
 
         "spots_pattern_gradient": "#070101",
@@ -5661,8 +5491,6 @@
         "abyssinian_bottom": "#816747",
         "abyssinian_middle": "#533610",
 
-        "wolf_top": "#533610",
-        "wolf_pattern": "#746F65",
         "wolf_bottom": "#361F10",
 
         "spots_pattern_gradient": "#361F10",
@@ -5727,8 +5555,6 @@
         "abyssinian_bottom": "#FFF7D1",
         "abyssinian_middle": "#C8AC78",
 
-        "wolf_top": "#C8AC78",
-        "wolf_pattern": "#FFF7D1",
         "wolf_bottom": "#837357",
 
         "spots_pattern_gradient": "#837357",
@@ -5793,8 +5619,6 @@
         "abyssinian_bottom": "#AAAAAF",
         "abyssinian_middle": "#805C50",
 
-        "wolf_top": "#805C50",
-        "wolf_pattern": "#E4EAF0",
         "wolf_bottom": "#402823",
 
         "spots_pattern_gradient": "#402823",
@@ -5859,8 +5683,6 @@
         "abyssinian_bottom": "#6D4E50",
         "abyssinian_middle": "#AEA3A5",
 
-        "wolf_top": "#2C090F",
-        "wolf_pattern": "#DEDEDE",
         "wolf_bottom": "#6D4E50",
 
         "spots_pattern_gradient": "#2C090F",
@@ -5925,8 +5747,6 @@
         "abyssinian_bottom": "#DBC9BA",
         "abyssinian_middle": "#A87571",
 
-        "wolf_top": "#A87571",
-        "wolf_pattern": "#DBC9BA",
         "wolf_bottom": "#373B3C",
 
         "spots_pattern_gradient": "#373B3C",
@@ -5991,8 +5811,6 @@
         "abyssinian_bottom": "#cc988c",
         "abyssinian_middle": "#8C6157",
 
-        "wolf_top": "#5D382F",
-        "wolf_pattern": "#cc988c",
         "wolf_bottom": "#8C6157",
 
         "spots_pattern_gradient": "#5D382F",
@@ -6057,8 +5875,6 @@
         "abyssinian_bottom": "#865A51",
         "abyssinian_middle": "#6E413A",
 
-        "wolf_top": "#43211C",
-        "wolf_pattern": "#865A51",
         "wolf_bottom": "#6E413A",
 
         "spots_pattern_gradient": "#43211C",
@@ -6123,8 +5939,6 @@
         "abyssinian_bottom": "#FDFBFA",
         "abyssinian_middle": "#F7EEE8",
 
-        "wolf_top": "#C9AC96",
-        "wolf_pattern": "#FDFBFA",
         "wolf_bottom": "#F7EEE8",
 
         "spots_pattern_gradient": "#C9AC96",
@@ -6189,8 +6003,6 @@
         "abyssinian_bottom": "#684032",
         "abyssinian_middle": "#4D2822",
 
-        "wolf_top": "#22100E",
-        "wolf_pattern": "#684032",
         "wolf_bottom": "#4D2822",
 
         "spots_pattern_gradient": "#22100E",
@@ -6255,8 +6067,6 @@
         "abyssinian_bottom": "#C5AA8F",
         "abyssinian_middle": "#745845",
 
-        "wolf_top": "#493528",
-        "wolf_pattern": "#C5AA8F",
         "wolf_bottom": "#745845",
 
         "spots_pattern_gradient": "#493528",
@@ -6321,8 +6131,6 @@
         "abyssinian_bottom": "#E8CEBA",
         "abyssinian_middle": "#C9AC96",
 
-        "wolf_top": "#6a5342",
-        "wolf_pattern": "#E8CEBA",
         "wolf_bottom": "#C9AC96",
 
         "spots_pattern_gradient": "#6a5342",
@@ -6387,8 +6195,6 @@
         "abyssinian_bottom": "#E3C8B3",
         "abyssinian_middle": "#B9967E",
 
-        "wolf_top": "#91705a",
-        "wolf_pattern": "#E3C8B3",
         "wolf_bottom": "#B9967E",
 
         "spots_pattern_gradient": "#91705a",
@@ -6453,8 +6259,6 @@
         "abyssinian_bottom": "#F0DECF",
         "abyssinian_middle": "#CCB39E",
 
-        "wolf_top": "#a9907b",
-        "wolf_pattern": "#F0DECF",
         "wolf_bottom": "#CCB39E",
 
         "spots_pattern_gradient": "#a9907b",
@@ -6519,8 +6323,6 @@
         "abyssinian_bottom": "#F7E9D5",
         "abyssinian_middle": "#dac9b2",
 
-        "wolf_top": "#c5b192",
-        "wolf_pattern": "#F7E9D5",
         "wolf_bottom": "#dac9b2",
 
         "spots_pattern_gradient": "#c5b192",
@@ -6585,8 +6387,6 @@
         "abyssinian_bottom": "#FCEFDE",
         "abyssinian_middle": "#E6CCA4",
 
-        "wolf_top": "#c5a97e",
-        "wolf_pattern": "#FCEFDE",
         "wolf_bottom": "#E6CCA4",
 
         "spots_pattern_gradient": "#c5a97e",
