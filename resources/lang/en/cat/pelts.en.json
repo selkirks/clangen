@@ -405,6 +405,204 @@
             "one": "gray",
             "many": "heather gray"
         },
+        "COTTON":{
+            "one": "cotton",
+            "many": "cotton"
+        },
+        "PEARL": {
+            "one": "pearl",
+            "many": "pearl"
+        },
+        "STONE": {
+            "one": "stone",
+            "many": "stone"
+        },
+        "CHARCOALDUST": {
+            "one": "charcoal",
+            "many": "charcoal"
+        },
+        "ACORN": {
+            "one": "acorn",
+            "many": "acorn"
+        },
+        "EFFOC": {
+            "one": "coffee",
+            "many": "coffee"
+        },
+        "DARKOAK": {
+            "one": "dark oak",
+            "many": "dark oak"
+        },
+        "HAZELNUT": {
+            "one": "hazelnut",
+            "many": "hazelnut"
+        },
+        "RUDDY": {
+            "one": "ruddy",
+            "many": "ruddy"
+        },
+        "FIERY": {
+            "one": "fiery",
+            "many": "fiery"
+        },
+        "CANYON": {
+            "one": "canyon",
+            "many": "canyon"
+        },
+        "HARVEST": {
+            "one": "harvest",
+            "many": "harvest"
+        },
+        "SUNBURST": {
+            "one": "sunburst",
+            "many": "sunburst"
+        },
+        "TERRACOTTA": {
+            "one": "terracotta",
+            "many": "terracotta"
+        },
+        "SOFTCREAM": {
+            "one": "soft cream",
+            "many": "soft cream"
+        },
+        "WHEAT": {
+            "one": "wheat",
+            "many": "wheat"
+        },
+        "OAT": {
+            "one": "oat",
+            "many": "oat"
+        },
+        "DAISY": {
+            "one": "daisy",
+            "many": "daisy"
+        },
+        "SLATE": {
+            "one": "slate",
+            "many": "slate"
+        },
+        "RIVER": {
+            "one": "river",
+            "many": "river"
+        },
+        "WARMLILAC": {
+            "one": "warm lilac",
+            "many": "warm lilac"
+        },
+        "WHWOOL": {
+            "one": "white wool",
+            "many": "white wool"
+        },
+        "LGWOOL": {
+            "one": "light gray wool",
+            "many": "light gray wool"
+        },
+        "GRWOOL": {
+            "one": "gray wool",
+            "many": "gray wool"
+        },
+        "BRWOOL": {
+            "one": "brown wool",
+            "many": "brown wool"
+        },
+        "POPLAR": {
+            "one": "poplar",
+            "many": "poplar"
+        },
+        "CHERRY": {
+            "one": "cherry",
+            "many": "cherry"
+        },
+        "ACACIABLOCK": {
+            "one": "acacia",
+            "many": "acacia"
+        },
+        "BONEBLOCK": {
+            "one": "bone",
+            "many": "bone"
+        },
+        "QUARTZ": {
+            "one": "quartz",
+            "many": "quartz"
+        },
+
+        "DIORITE": {
+            "one": "diorite",
+            "many": "diorite"
+        },
+        "GRAVEL": {
+            "one": "gravel",
+            "many": "gravel"
+        },
+        "TUFF": {
+            "one": "tuff",
+            "many": "tuff"
+        },
+        "ANDESITE": {
+            "one": "andesite",
+            "many": "andesite"
+        },
+        "COBBLESTONE": {
+            "one": "cobblestone",
+            "many": "cobblestone"
+        },
+        "NETHERITE": {
+            "one": "netherite",
+            "many": "netherite"
+        },
+        "BEDROCK": {
+            "one": "bedrock",
+            "many": "bedrock"
+        },
+        "DEEPSLATE": {
+            "one": "deepslate",
+            "many": "deepslate"
+        },
+        "SKULK": {
+            "one": "skulk",
+            "many": "skulk"
+        },
+        "DRIPSTONE": {
+            "one": "dripstone",
+            "many": "dripstone"
+        },
+        "SOUL": {
+            "one": "soul sand",
+            "many": "soul sand"
+        },
+        "DEBRIS": {
+            "one": "debris",
+            "many": "debris"
+        },
+        "GRANITE": {
+            "one": "granite",
+            "many": "granite"
+        },
+        "CINNABAR": {
+            "one": "cinnabar",
+            "many": "cinnabar"
+        },
+        "COPPER": {
+            "one": "copper",
+            "many": "copper"
+        },
+        "PUMPKIN": {
+            "one": "pumpkin",
+            "many": "pumpkin"
+        },
+        "RESIN": {
+            "one": "resin",
+            "many": "resin"
+        },
+        "SULFUR": {
+            "one": "sulfur",
+            "many": "sulfur"
+        },
+        "SUSPICIOUS": {
+            "one": "suspicious",
+            "many": "suspicious"
+        },
+
         "pink": "pink",
         "gray": "haze",
         "red": "red",
