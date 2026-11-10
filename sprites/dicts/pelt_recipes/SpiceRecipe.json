@@ -1,0 +1,31 @@
+{
+    "name": "SpiceRecipe",
+    "layer_order": ["1", "2", "3", "4", "5", "6"],
+    "layers": {
+        "6":{
+            "group_name": "SPICENOSE",
+            "color": "masked_light_pattern"
+        },
+        "5":{
+            "group_name": "SPICEPATTERN",
+            "color": "pattern"
+        },
+        "4":{
+            "group_name": "SPICEACCENT",
+            "color": "pattern_gradient_top"
+        },
+        "3": {
+            "group_name": "SIMPLETOPGRAD",
+            "color": "base_gradient_top"
+        },
+        "2": {
+            "group_name": "SIMPLEBOTTOMGRAD",
+            "color": "base_gradient_bottom"
+        },
+        "1":{
+            "group_name": "BASEMASK",
+            "color": "base"
+        }
+    },
+    "exceptions": []
+}

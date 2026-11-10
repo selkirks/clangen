@@ -109,6 +109,7 @@
             "Classic": "tabbies",
             "Sokoke": "tabbies",
             "Agouti": "tabbies",
+            "Spice": "tabbies",
             "Speckled": "spotted",
             "Rosette": "spotted",
             "Freckled": "spotted",
@@ -124,6 +125,8 @@
             "Abyssinian": "exotic",
             "Wolf": "exotic",
             "Doberman": "exotic",
+            "Braided": "exotic",
+            "Cheetah": "exotic",
             "Tortie": "torties",
             "Calico": "torties"
         }

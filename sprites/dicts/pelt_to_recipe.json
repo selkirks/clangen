@@ -22,5 +22,8 @@
     "Wolf": "WolfRecipe",
     "Spots": "SpotsRecipe",
     "Lynx": "LynxRecipe",
-    "Doberman": "DobermanRecipe"
+    "Doberman": "DobermanRecipe",
+    "Braided": "BraidedRecipe",
+    "Cheetah": "CheetahRecipe",
+    "Spice": "SpiceRecipe"
 }

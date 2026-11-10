@@ -74,7 +74,14 @@
             "DOBERMANPATTERN"
         ],
         [
-            "DOBERMANPATTERNGRADIENT"
+            "DOBERMANPATTERNGRADIENT",
+            "BRAIDEDPATTERN",
+            "BRAIDEDFILL",
+            "CHEETAHPATTERN",
+            "CHEETAHCHEST",
+            "SPICEPATTERN",
+            "SPICEACCENT",
+            "SPICENOSE"
         ]
 
     ]
