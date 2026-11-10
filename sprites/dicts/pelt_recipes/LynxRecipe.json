@@ -4,23 +4,23 @@
     "layers": {
         "8": {
             "group_name": "LYNXNOSEPATTERN",
-            "color": "lynx_nose"
+            "color": "pattern_fill"
         },
         "7": {
             "group_name": "LYNXEYEPATTERN",
-            "color": "lynx_eyes"
+            "color": "base_gradient_bottom"
         },
         "6": {
             "group_name": "LYNXSPOTS",
-            "color": "lynx_spots"
+            "color": "pattern"
         },
         "5": {
             "group_name": "LYNXTOP",
-            "color": "lynx_top"
+            "color": "smoke_base_gradient_top"
         },
         "4": {
             "group_name": "LYNXUNDERS",
-            "color": "lynx_unders"
+            "color": "masked_light_pattern"
         },
         "3": {
             "group_name": "SIMPLETOPGRAD",
