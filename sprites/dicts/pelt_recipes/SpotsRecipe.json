@@ -4,15 +4,15 @@
     "layers": {
         "6": {
             "group_name": "SPOTSGRADIENT",
-            "color": "spots_pattern_gradient"
+            "color": "pattern_gradient_top"
         },
         "5": {
             "group_name": "SPOTSPATTERN",
-            "color": "spots_pattern"
+            "color": "pattern"
         },
         "4": {
             "group_name": "SPOTSUNDERS",
-            "color": "spots_bottom"
+            "color": "masked_light_pattern"
         },
         "3": {
             "group_name": "SIMPLETOPGRAD",
