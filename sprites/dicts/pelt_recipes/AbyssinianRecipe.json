@@ -4,15 +4,15 @@
     "layers": {
         "6": {
             "group_name": "ABYSSINIANTOP",
-            "color": "abyssinian_top"
+            "color": "pattern"
         },
         "5": {
             "group_name": "ABYSSINIANMIDDLE",
-            "color": "abyssinian_middle"
+            "color": "exotic_pattern_fill"
         },
         "4": {
             "group_name": "ABYSSINIANBOTTOM",
-            "color": "abyssinian_bottom"
+            "color": "smoke_base"
         },
         "3": {
             "group_name": "SIMPLETOPGRAD",
