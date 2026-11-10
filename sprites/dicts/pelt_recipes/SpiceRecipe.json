@@ -27,5 +27,39 @@
             "color": "base"
         }
     },
-    "exceptions": []
+    "exceptions": [
+        {
+            "colors": "SILVER-RATHA",
+            "layer_order": ["1", "2", "3", "4", "5", "6"],
+            "layers":
+            {
+                "2": {
+                    "group_name": "EXOTICBOTTOMGRAD",
+                    "color": "base_gradient_bottom"
+                }
+            }
+        },
+        {
+            "colors": "TIGERSTRIPE",
+            "layer_order": ["1", "2", "3", "4", "5", "6"],
+            "layers":
+            {
+                "2": {
+                    "group_name": "EXOTICBOTTOMGRAD",
+                    "color": "base_gradient_bottom"
+                }
+            }
+        },
+        {
+            "colors": "GOLDEN-KIRIN",
+            "layer_order": ["1", "2", "3", "4", "5", "6"],
+            "layers":
+            {
+                "2": {
+                    "group_name": "EXOTICBOTTOMGRAD",
+                    "color": "base_gradient_bottom"
+                }
+            }
+        }
+    ]
 }
