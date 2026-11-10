@@ -214,11 +214,11 @@
     "Hawthorn", "Laurel", "Wisp", "Silk", "Web", "Goose", "Moth", "Moon", "Down", "Daisy", "Gardenia", "Hemlock", "Magnolia", "Birch",
     "Snow", "Snowy", "Owl", "Mink", "Petal", "Bloom"
     ],
-	"DAWN": [
-	"Apricot", "Aspen", "Barley", "Beam", "Bloom", "Blossom", "Bright", "Cougar", "Coyote", "Dawn", "Dazzle", "Dew",
-	"Dream", "Drift", "Drizzle", "Egg", "Fallow", "Flicker", "Garlic", "Hare", "Haze", "Hazy", "Ivory", "Light",
-	"Mist", "Misty", "Morning", "Moth", "Mouse", "Pale", "Pearl", "Rabbit", "Sand", "Shell", "Shimmer", "Sky"
-	],
+    "DAWN": [
+    "Apricot", "Aspen", "Barley", "Beam", "Bloom", "Blossom", "Bright", "Cougar", "Coyote", "Dawn", "Dazzle", "Dew",
+    "Dream", "Drift", "Drizzle", "Egg", "Fallow", "Flicker", "Garlic", "Hare", "Haze", "Hazy", "Ivory", "Light",
+    "Mist", "Misty", "Morning", "Moth", "Mouse", "Pale", "Pearl", "Rabbit", "Sand", "Shell", "Shimmer", "Sky"
+    ],
     "PALEGINGER": [
     "Pale", "Ginger", "Sand", "Sandy", "Yellow", "Sun", "Sunny", "Light", "Lion", "Bright", "Phlox", "Vervain",
     "Honey", "Daisy", "Warm", "Robin", "Cosmos", "Orchid", "Snapdragon", "Foxglove", "Verbena", "Straw",
@@ -304,6 +304,17 @@
     "Night", "Shadow", "Scorch", "Midnight", "Pepper", "Pitch", "Bat", "Burnt", "Coal", "Ink", "Inky", "Murk", "Rat", "Magpie",
     "Char", "Charred", "Mulberry", "Evening", "Dark", "Ghost", "Mud", "Spider", "Shale", "Panther", "Starling", "Soot", "Wolf", "Badger",
     "Raccoon", "Skulk"
+    ],
+    "CINNAMON": [
+    "Brown", "Brown", "Oak", "Mouse", "Shade", "Russet", "Dust", "Dusty", "Mud", "Deer", "Fawn", "Doe", "Stag", "Bark", "Tawny", "Twig",
+    "Owl", "Log", "Vole", "Branch", "Hazel", "Cicada", "Robin", "Umber", "Tree", "Root", "Ochre", "Auburn", "Burnet", "Moth", "Elm",
+    "Thrush", "Elm", "Nut", "Chestnut", "Cypress", "Wolf", "Maple", "Fir", "Sand", "Sandy", "Warm", "Fox"
+    ],
+    "HEATHER": [
+    "Heather", "Pale", "Light", "Glow", "River", "Water", "Lavender", "Wisteria", "Lilac", "Silver", "Frozen", "Freeze", "Frost", "Fog",
+    "Bright", "Storm", "Rain", "Cloud", "Violet", "Smoke", "Smoky", "Pebble", "Mist", "Misty", "Plume", "Shade", "Shaded", "Ice", "Icy",
+    "Cold", "Puddle", "Shimmer", "Shine", "Glint", "Air", "Dusk", "Pebble", "Stone", "Wolf", "Pigeon", "Flower", "Bloom", "Comet",
+    "Silver", "Lake"
     ]
   },
 
@@ -394,6 +405,13 @@
     ],
     "BLACK": [
 	"shadow", "shade", "dusk", "coal", "ink", "bat", "cinder", "ghost", "night", "raven", "crow", "burn", "badger", "raccoon"
+    ],
+    "CINNAMON": [
+    "root", "owl", "twig", "wood", "moth", "bark", "branch", "burr", "spark", "fox", "vixen"
+    ],
+    "HEATHER": [
+    "flower", "ghost", "shadow", "shade", "shine", "glow", "aster", "wolf", "frost", "ash", "heather", "water", "river",
+    "pebble", "ice", "cloud", "lake", "mist", "storm", "feather"
     ]
   },
 

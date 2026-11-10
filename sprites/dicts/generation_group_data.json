@@ -16,6 +16,7 @@
             "IVORY": "white",
             "VANILLA": "white",
             "CLAM": "white",
+            "HEATHER": "white",
             "SOOT": "black",
             "GREY": "black",
             "DARKGREY": "black",
@@ -100,7 +101,8 @@
             "ROEBUCK": "brown",
             "FRAPPE": "brown",
             "BEIGE": "brown",
-            "BONE": "brown"
+            "BONE": "brown",
+            "CINNAMON": "brown"
         },
         "pattern_types": {
             "Tabby": "tabbies",

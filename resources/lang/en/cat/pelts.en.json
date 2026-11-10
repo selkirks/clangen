@@ -397,6 +397,14 @@
             "one": "clam",
             "many": "clam"
         },
+        "CINNAMON": {
+            "one": "brown",
+            "many": "golden brown"
+        },
+        "HEATHER": {
+            "one": "gray",
+            "many": "heather gray"
+        },
         "pink": "pink",
         "gray": "haze",
         "red": "red",
