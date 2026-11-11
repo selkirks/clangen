@@ -41,13 +41,27 @@ class Pelt:
     pelt_length = ["short", "medium", "long"]
 
     # BODY TYPES
-    body_types: list = ["stocky", "slender", "lithe", "wiry", "muscular", "lanky",
-                        "delicate", "hunched", "hefty", "burly", "bulky", "plump",
-                        "brawny", "stout", "broad", "chubby", "fat", "stocky", "chunky",
-                        "big-boned"]
+    body_types: list = ["tall", "towering", "muscular", "burly", "stocky", "petite",
+                            "small", "lithe", "slender", "skinny", "thin", "scrawny",
+                            "lanky", "wiry", "plump", "stout", "fat", "round", "compact",
+                            "robust", "gangly", "long-limbed", "cobby", "semi-cobby",
+                            "average", "toned", "brawny", "broad-shouldered", "chiseled",
+                            "barrel-chested", "heavy", "athletic", "portly", "heavyset",
+                            "soft-framed", "full-figured", "ample", "frail", "delicate",
+                            "hunched", "dainty", "lumbering", "streamlined", "massive",
+                            "tiny", "runty", "puny", "defined", "gigantic", "bony",
+                            "dwarfish", "hefty", "bulky", "broad", "chubby", "chunky",
+                            "big-boned"]
     # FUR TEXTURE
-    texture: list = ["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse",
-                         "tangled", "fuzzy", "spiky"]
+    texture: list = ["coarse", "downy", "wispy", "dense", "soft", "rough", "silky",
+                        "velvety", "feathery", "glossy", "lustrous", "fleecy", "plush",
+                        "wiry", "bristly", "shaggy", "bushy", "thick", "grizzled",
+                        "matted", "tangled", "ruffled", "stands on end", "wild", "sleek",
+                        "patchy", "molting", "brittle", "crinky", "wavy", "dull", "fine",
+                        "flat", "fluffy", "frizzy", "fuzzy", "greasy", "knotted", "lush",
+                        "oily", "puffy", "scraggly", "slick", "stiff", "tousled",
+                        "unkempt", "voluminous", "windy blown", "windswept",
+                        "well-groomed", "tidy", "pristine", "curly", "sparse", "spiky"]
 
     # HEIGHT
     height: list = ["petite", "short", "average", "average", "tall", "towering"]
