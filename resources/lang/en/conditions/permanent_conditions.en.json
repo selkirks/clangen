@@ -29,6 +29,8 @@
         "selective_mutism": "selective mutism",
         "damaged_throat": "damaged throat",
         "paralyzed": "paralyzed",
-        "absent": "absent"
+        "absent": "absent",
+        "wobbly_cat_syndrome": "wobbly cat syndrome",
+        "cleft_palate": "cleft palate"
     }
 }

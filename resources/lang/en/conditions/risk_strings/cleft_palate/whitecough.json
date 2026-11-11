@@ -1,0 +1,28 @@
+[
+    {
+        "event_id": "cleft_palate_whitecough0",
+        "strings": [
+            "r_c immediately sends m_c over to the medicine cat den upon hearing a series of coughs. m_c is much more susceptible to whitecough due to {PRONOUN/m_c/poss} cleft palate, and r_c is determined to ensure the disease does not become worse."
+        ],
+        "involved_cats": {
+            "m_c": {},
+            "r_c0": {
+                "status": [
+                    "medicine cat"
+                ],
+                "group": [
+                    "player_clan"
+                ]
+            }
+        }
+    },
+    {
+        "event_id": "cleft_palate_whitecough1",
+        "strings": [
+            "As a result of m_c's cleft palate, {PRONOUN/m_c/subject} {VERB/m_c/are/is} left with whitecough. {PRONOUN/m_c/subject/CAP} {VERB/m_c/feel/feels} trapped in the medicine cat den, itching to go out and serve {PRONOUN/m_c/poss} Clan once more."
+        ],
+        "involved_cats": {
+            "m_c": {}
+        }
+    }
+]

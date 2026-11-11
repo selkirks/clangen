@@ -1,0 +1,28 @@
+[
+    {
+        "event_id": "reveal_condition_wobbly_cat_syndrome0",
+        "strings": [
+            "It seems m_c constantly shakes. After being looked over by r_c, {PRONOUN/m_c/subject} {VERB/m_c/are/is} diagnosed with wobbly cat syndrome."
+        ],
+        "involved_cats": {
+            "m_c": {},
+            "r_c0": {
+                "status": [
+                    "medicine cat"
+                ],
+                "group": [
+                    "match:m_c"
+                ]
+            }
+        }
+    },
+    {
+        "event_id": "reveal_condition_wobbly_cat_syndrome1",
+        "strings": [
+            "After being unable to stand without wobbling, it appears m_c will wobble {PRONOUN/m_c/poss} entire life. Despite this, family is reassured that m_c will live a long and healthy life- just one a bit more wobbly than others."
+        ],
+        "involved_cats": {
+            "m_c": {}
+        }
+    }
+]

@@ -57,5 +57,24 @@
                 "ragwort"
             ]
         }
+    },
+    "wobbly_cat_syndrome": {
+        "severity": "severe",
+        "can_be_congenital": true,
+        "can_be_acquired": false,
+        "remove_on_death": false,
+        "moons_until_discovery": [0,0],
+        "mortality": {},
+        "immune_system_effect": 0.0,
+        "progression": {},
+        "risks": {
+            "sore": 0.4,
+            "exhausted": 0.1
+        },
+        "treatment_strength": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
     }
 }

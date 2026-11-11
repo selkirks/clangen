@@ -1,0 +1,28 @@
+[
+    {
+        "event_id": "reveal_condition_cleft_palate0",
+        "strings": [
+            "r_c looks closely at the gap between m_c's nose and mouth. A clear sign of a cleft palate. r_c reassures that m_c will do just fine with proper treatment of symptoms!"
+        ],
+        "involved_cats": {
+            "m_c": {},
+            "r_c0": {
+                "status": [
+                    "medicine cat"
+                ],
+                "group": [
+                    "match:m_c"
+                ]
+            }
+        }
+    },
+    {
+        "event_id": "reveal_condition_cleft_palate1",
+        "strings": [
+            "There is a gap between m_c's nose and mouth. It appears m_c has a cleft palate."
+        ],
+        "involved_cats": {
+            "m_c": {}
+        }
+    }
+]

@@ -249,5 +249,23 @@
         "possible_scars": [
             "THROAT"
         ]
+    },
+    "cleft_palate": {
+        "severity": "minor",
+        "can_be_congenital": true,
+        "can_be_acquired": false,
+        "requires_scar": true,
+        "moons_until_discovery": [2,3],
+        "mortality": {},
+        "immune_system_effect": 0.0,
+        "progression": {},
+        "risks": {
+            "whitecough": 0.4
+        },
+        "treatment_strength": {
+            "1": [],
+            "2": [],
+            "3": []
+        }
     }
 }
