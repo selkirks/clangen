@@ -1,0 +1,28 @@
+{
+    "spritesheet": "acc_companions",
+    "sprite_list": [
+        {
+            "GREEN HYDRANGEA": "head",
+            "PINK HYDRANGEA": "head",
+            "BLUE HYDRANGEA": "head",
+            "MULTICOLORED HYDRANGEA": "head",
+            "DRIED HYDRANGEA": "head",
+            "CHERRY BRANCH": "body",
+            "TULIP PETALS": "body",
+            "PANSIES": "body",
+            "INDIGO FLOWERS": "body"
+        },
+        {
+            
+            "FORSYTHIA": "body",
+            "PLUM BLOSSOMS": "body",
+            "ROSE PETALS": "tail",
+            "MINI SUNFLOWER": "body",
+            "RED POINSETTA": "body",
+            "WHITE POINSETTA": "body",
+            "ROSE": "head",
+            "FLORAL CROWN": "head",
+            "ASTERS": "tail"
+        }
+    ]
+}

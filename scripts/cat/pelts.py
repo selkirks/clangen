@@ -311,7 +311,7 @@ class Pelt:
 
     tail2_accessories = []
     for sprite_list in sprites.TAIL2_DATA["sprite_list"]:
-        tail_accessories.extend(sprite_list)
+        tail2_accessories.extend(sprite_list)
         for sprite in sprite_list:
             if sprite_list[sprite] == "tail":
                 tail_accessories.append(sprite)
@@ -325,6 +325,19 @@ class Pelt:
     bellamy_accessories = []
     for sprite_list in sprites.BELLAMY_DATA["sprite_list"]:
         bellamy_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "paw":
+                paw_accessories.append(sprite)
+
+    era_flowers_accessories = []
+    for sprite_list in sprites.ERA_FLOWERS_DATA["sprite_list"]:
+        era_flowers_accessories.extend(sprite_list)
         for sprite in sprite_list:
             if sprite_list[sprite] == "tail":
                 tail_accessories.append(sprite)
@@ -359,7 +372,8 @@ class Pelt:
         "COMPANIONS": companions_accessories,
         "RANDOM": random_accessories,
         "TAIL2": tail2_accessories,
-        "BELLAMY": bellamy_accessories
+        "BELLAMY": bellamy_accessories,
+        "ERAFLOWER": era_flowers_accessories
     }
 
     """Holds all appearance information for a cat. """
@@ -1109,7 +1123,7 @@ class Pelt:
             self.accessory = tuple(
                 (choice(Pelt.plant_accessories + Pelt.wild_accessories + Pelt.bellamy_accessories + Pelt.random_accessories
                         + Pelt.companions_accessories + Pelt.living_insects_accessories + Pelt.tail2_accessories
-                        + Pelt.ster_flowers_accessories + Pelt.snakes_accessories),)
+                        + Pelt.ster_flowers_accessories + Pelt.snakes_accessories + Pelt.era_flowers_accessories),)
             )
         else:
             self.accessory = tuple()

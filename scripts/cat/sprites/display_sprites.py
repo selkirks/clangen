@@ -437,6 +437,16 @@ def _draw_sprite(
                                 ),
                                 (0, 0),
                         )
+                    elif accessory in cat.pelt.era_flowers_accessories:
+                        sprite_name = f"{sprites.ERA_FLOWERS_DATA['spritesheet']}{accessory}_{cat_sprite}"
+                        new_sprite.blit(
+                            _recolor_lineart(
+                                sprites.sprites[sprite_name],
+                                lineart_color,
+                                gradient_surface,
+                                ),
+                                (0, 0),
+                        )
 
                     elif accessory in cat.pelt.collar_accessories:
                         sprite_name = f"{get_spritesheet(sprites.COLLAR_DATA)}{accessory}_{cat_sprite}"

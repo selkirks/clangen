@@ -534,11 +534,13 @@ class ShortEvent:
         if "TAIL2" in possible_accs:
             acc_list.extend(Pelt.tail2_accessories)
         if "BELLAMY" in possible_accs:
-                    acc_list.extend(Pelt.bellamy_accessories)
+            acc_list.extend(Pelt.bellamy_accessories)
+        if "ERA_FLOWERS" in possible_accs:
+            acc_list.extend(Pelt.era_flowers_accessories)
 
         for acc in possible_accs:
             if acc not in ("WILD", "PLANT", "COLLAR", "LIVING_INSECTS", "SNAKES", "STER_FLOWERS",
-                           "COMPANIONS", "RANDOM", "TAIL2", "BELLAMY"):
+                           "COMPANIONS", "RANDOM", "TAIL2", "BELLAMY", "ERA_FLOWERS"):
                 acc_list.append(acc)
 
         if hasattr(self.main_cat.pelt, "scars"):

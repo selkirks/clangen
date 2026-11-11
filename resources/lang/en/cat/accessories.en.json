@@ -913,6 +913,96 @@
             "zero": "colorful puffball collar",
             "many": "colorful puffball collars",
             "one": "colorful puffball collar"
+        },
+        "GREEN HYDRANGEA": {
+            "zero": "green hydrangea",
+            "many": "green hydrangeas",
+            "one": "green hydrangea"
+        },
+        "PINK HYDRANGEA": {
+            "zero": "pink hydrangea",
+            "many": "pink hydrangeas",
+            "one": "pink hydrangea"
+        },
+        "BLUE HYDRANGEA": {
+            "zero": "blue hydrangea",
+            "many": "blue hydrangeas",
+            "one": "blue hydrangea"
+        },
+        "MULTICOLORED HYDRANGEA": {
+            "zero": "multicolored hydrangea",
+            "many": "multicolored hydrangeas",
+            "one": "multicolored hydrangea"
+        },
+        "DRIED HYDRANGEA": {
+            "zero": "dried hydrangea",
+            "many": "dried hydrangeas",
+            "one": "dried hydrangea"
+        },
+        "CHERRY BRANCH": {
+            "zero": "cherry branch",
+            "many": "cherry branches",
+            "one": "cherry branch"
+        },
+        "TULIP PETALS": {
+            "zero": "tulip petals",
+            "many": "tulip petals",
+            "one": "tulip petal"
+        },
+        "PANSIES": {
+            "zero": "pansies",
+            "many": "pansies",
+            "one": "pansy"
+        },
+        "INDIGO FLOWERS": {
+            "zero": "indigo flowers",
+            "many": "indigo flowers",
+            "one": "indigo flower"
+        },
+        "ASTERS": {
+            "zero": "asters",
+            "many": "asters",
+            "one": "aster"
+        },
+        "FORSYTHIA": {
+            "zero": "forsythia",
+            "many": "forsythias",
+            "one": "forsythia"
+        },
+        "PLUM BLOSSOMS": {
+            "zero": "plum blossoms",
+            "many": "plum blossoms",
+            "one": "plum blossom"
+        },
+        "ROSE PETALS": {
+            "zero": "rose petals",
+            "many": "rose petals",
+            "one": "rose petal"
+        },
+        "MINI SUNFLOWER": {
+            "zero": "mini sunflower",
+            "many": "mini sunflowers",
+            "one": "mini sunflower"
+        },
+        "RED POINSETTA": {
+            "zero": "red poinsetta",
+            "many": "red poinsettas",
+            "one": "red poinsetta"
+        },
+        "WHITE POINSETTA": {
+            "zero": "white poinsetta",
+            "many": "white poinsettas",
+            "one": "white poinsetta"
+        },
+        "ROSE": {
+            "zero": "rose",
+            "many": "roses",
+            "one": "rose"
+        },
+        "FLORAL CROWN": {
+            "zero": "floral crown",
+            "many": "floral crowns",
+            "one": "floral crown"
         }
     }
 }
