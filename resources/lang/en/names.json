@@ -648,8 +648,28 @@
     "Horn", "Galloping", "Thunder", "Lightning", "Flash", "Brilliant", "Bright", "Blinding",
     "Storm", "Striking", "Spark", "Bolt", "Yellow", "Saffron", "Gold", "Golden", "Sun", "Amber",
     "Copper", "Emperor"
+    ],
+    "MUSHROOMSTEM": [
+    "Mushroom"
+    ],
+    "IRON": [
+    "Iron", "Metal"
+    ],
+    "MUD": [
+    "Mud"
+    ],
+    "HONEYCOMB": [
+    "Honey", "Bee"
+    ],
+    "MCDARKOAK": [
+    "Antler", "Bear", "Bittern", "Bluff", "Brown", "Burdock", "Buzzard", "Cougar", "Crag", "Cricket",
+    "Dark", "Deer", "Dust", "Falcon", "Fallow", "Fawn", "Ferret", "Grouse", "Moth", "Mud", "Python",
+    "Quail", "Quill", "Root", "Sable", "Shade", "Shrew", "Squirrel", "Stag", "Wood", "Wren",
+    "Char", "Charred"
+    ],
+    "PALEOAK": [
+    "pale", "root"
     ]
-
   },
 
 	"colour_suffixes": {
@@ -974,6 +994,24 @@
     "kirin", "neigh", "whinnie", "spear", "horn", "pierce", "beauty", "ghost", "phantom",
     "specter", "spirit", "phantasm", "lightning", "thunder", "strike", "bolt", "spark", "lord",
     "emperor"
+    ],
+    "HONEYCOMB": [
+    "honey", "bee"
+    ],
+    "MUD": [
+    "mud"
+    ],
+    "IRON": [
+    "iron", "metal"
+    ],
+    "MUSHROOMSTEM": [
+    "mushroom"
+    ],
+    "PALEOAK": [
+    "pale", "root"
+    ],
+    "MCDARKOK": [
+    "root", "bark", "shade", "owl", "oak", "wood", "moth", "branch", "burr"
     ]
   },
 

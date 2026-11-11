@@ -714,6 +714,34 @@
             "one": "dark gold",
             "many": "dark gold"
         },
+        "HONEYCOMB": {
+            "one": "honeycomb",
+            "many": "honeycomb"
+        },
+        "NETHERRACK": {
+            "one": "netherrack",
+            "many": "netherrack"
+        },
+        "MUDBLOCK": {
+            "one": "mud",
+            "many": "mud"
+        },
+        "IRON": {
+            "one": "iron",
+            "many": "iron"
+        },
+        "MUSHROOMSTEM": {
+            "one": "mushroom stem",
+            "many": "mushroom stem"
+        },
+        "MCDARKOAK": {
+            "one": "dark oak",
+            "many": "dark oak"
+        },
+        "PALEOAK": {
+            "one": "pale oak",
+            "many": "pale oak"
+        },
 
         "pink": "pink",
         "gray": "haze",
