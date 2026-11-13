@@ -742,6 +742,32 @@
             "one": "pale oak",
             "many": "pale oak"
         },
+        "DURIAN": {
+            "one": "durian",
+            "many": "durian"
+        },
+
+        "CRACKER": {
+            "one": "cracker",
+            "many": "cracker"
+        },
+        "CARAMEL": {
+            "one": "caramel",
+            "many": "caramel"
+        },
+        "BUTTERSCOTCH": {
+            "one": "butterscotch",
+            "many": "butterscotch"
+        },
+
+        "NATROLITE": {
+            "one": "natrolite",
+            "many": "natrolite"
+        },
+        "FLOUR": {
+            "one": "flour",
+            "many": "flour"
+        },
 
         "pink": "pink",
         "gray": "haze",

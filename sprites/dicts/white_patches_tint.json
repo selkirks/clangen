@@ -185,7 +185,13 @@
     "GOLDEN-KIRIN": "brown",
     "LIGHTGOLD": "ginger",
     "GOLD": "ginger",
-    "DARKGOLD": "ginger"
+    "DARKGOLD": "ginger",
+    "DURIAN": "ginger",
+    "CRACKER": "ginger",
+    "CARAMEL": "ginger",
+    "BUTTERSCOTCH": "ginger",
+    "NATROLITE": "ginger",
+    "FLOUR": "white"
   },
   "possible_tints": {
     "basic": ["offwhite", "offwhite", "dark"],
