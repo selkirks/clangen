@@ -772,7 +772,10 @@
             "one": "honeysuckle",
             "many": "honeysuckle"
         },
-
+        "CARIBOU": {
+            "one": "caribou",
+            "many": "caribou"
+        },
 
         "pink": "pink",
         "gray": "haze",

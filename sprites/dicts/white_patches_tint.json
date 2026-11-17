@@ -192,7 +192,8 @@
     "BUTTERSCOTCH": "ginger",
     "NATROLITE": "ginger",
     "FLOUR": "white",
-    "HONEYSUCKLE": "ginger"
+    "HONEYSUCKLE": "ginger",
+    "CARIBOU": "ginger"
   },
   "possible_tints": {
     "basic": ["offwhite", "offwhite", "dark"],
