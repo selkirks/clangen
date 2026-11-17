@@ -776,6 +776,10 @@
             "one": "caribou",
             "many": "caribou"
         },
+        "EAGLE": {
+            "one": "eagle",
+            "many": "eagle"
+        },
 
         "pink": "pink",
         "gray": "haze",
