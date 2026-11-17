@@ -768,6 +768,11 @@
             "one": "flour",
             "many": "flour"
         },
+        "HONEYSUCKLE": {
+            "one": "honeysuckle",
+            "many": "honeysuckle"
+        },
+
 
         "pink": "pink",
         "gray": "haze",

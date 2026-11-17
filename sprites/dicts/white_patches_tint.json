@@ -191,7 +191,8 @@
     "CARAMEL": "ginger",
     "BUTTERSCOTCH": "ginger",
     "NATROLITE": "ginger",
-    "FLOUR": "white"
+    "FLOUR": "white",
+    "HONEYSUCKLE": "ginger"
   },
   "possible_tints": {
     "basic": ["offwhite", "offwhite", "dark"],
