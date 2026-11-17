@@ -161,6 +161,10 @@
             "one": "Beedrill",
             "many": "Beedrill"
         },
+        "PIDGEY": {
+            "one": "Pidgey",
+            "many": "Pidgey"
+        },
         "pink": "pink",
         "gray": "haze",
         "red": "red",
