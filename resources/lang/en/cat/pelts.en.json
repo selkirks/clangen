@@ -788,6 +788,14 @@
             "one": "clockwork",
             "many": "clockwork"
         },
+        "RADIANT": {
+            "one": "radiant",
+            "many": "radiant"
+        },
+        "CANTALOUPE": {
+            "one": "cantaloupe",
+            "many": "cantaloupe"
+        },
 
         "pink": "pink",
         "gray": "haze",
