@@ -780,6 +780,14 @@
             "one": "eagle",
             "many": "eagle"
         },
+        "CURRY": {
+            "one": "curry",
+            "many": "curry"
+        },
+        "CLOCKWORK": {
+            "one": "clockwork",
+            "many": "clockwork"
+        },
 
         "pink": "pink",
         "gray": "haze",
