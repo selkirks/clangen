@@ -840,6 +840,18 @@
             "one": "sandy",
             "many": "sandy cream"
         },
+        "SCHNITZEL": {
+            "one": "orange",
+            "many": "orange"
+        },
+        "TANGO": {
+            "one": "orange",
+            "many": "orange"
+        },
+        "CITRINE": {
+            "one": "citrine",
+            "many": "citrine"
+        },
 
         "pink": "pink",
         "gray": "haze",
