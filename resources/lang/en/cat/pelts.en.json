@@ -852,6 +852,47 @@
             "one": "citrine",
             "many": "citrine"
         },
+        "SILVERSAND": {
+            "one": "silver sand",
+            "many": "silver sand"
+        },
+        "MOUSSE": {
+            "one": "mousse",
+            "many": "mousse"
+        },
+        "HULL": {
+            "one": "rich brown",
+            "many": "rich brown"
+        },
+        "UMBER": {
+            "one": "rich brown",
+            "many": "rich brown"
+        },
+        "CRABAPPLE": {
+            "one": "brown",
+            "many": "brown"
+        },
+        "PETAL": {
+            "one": "petal",
+            "many": "petal"
+        },
+        "BLACKSILVER": {
+            "one": "black silver",
+            "many": "black silver"
+        },
+        "GRAYSILVER": {
+            "one": "gray silver",
+            "many": "gray silver"
+        },
+        "BLUESILVER": {
+            "one": "blue silver",
+            "many": "blue silver"
+        },
+        "SEALSILVER": {
+            "one": "seal silver",
+            "many": "seal silver"
+        },
+
 
         "pink": "pink",
         "gray": "haze",
