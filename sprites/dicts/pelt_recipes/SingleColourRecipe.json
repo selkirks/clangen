@@ -266,6 +266,785 @@
                     "color": "masked_light_pattern"
                 }
             }
+        },
+                {
+            "colors": "CINNAMON-WOOD",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "CINNAMON-WOOD",
+            "layer_order": ["1", "2", "3"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "PLUM",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "PLUM",
+            "layer_order": ["1", "2", "3"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "DARKCOPPER",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "DARKCOPPER",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+         {
+            "colors": "LIGHTCOPPER",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "LIGHTCOPPER",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+        {
+            "colors": "DARKPEACH",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "DARKPEACH",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+        {
+            "colors": "LIGHTPEACH",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "LIGHTPEACH",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+         {
+            "colors": "SUNGUS",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "APRICOT",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+ {
+            "colors": "DARKAPRICOT",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "DARKAPRICOT",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+ {
+            "colors": "LIGHTAPRICOT",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "LIGHTAPRICOT",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+        {
+            "colors": "SANDY-RED",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "SANDY-RED",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
+        },
+         {
+            "colors": "SANDY-CLAY",
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layer_order": ["1", "2"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom_singlecolour_black"
+                }
+            }
+        },
+        {
+            "colors": "SANDY-CLAY",
+            "layer_order": ["1", "2", "3", "4"],
+            "layers":
+            {
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "base_singlecolour_black"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "base_gradient_bottom_singlecolour_black"
+                },
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "base_gradient_top_singlecolour_black"
+                },
+                "4":
+                {
+                    "group_name": "AGOUTIPATTERN",
+                    "color": "pattern_gradient_top"
+                }
+            }
+        },
+        {
+            "poses": ["newborn0", "newborn1", "newborn2"],
+            "layers":
+            {
+                "3":
+                {
+                    "group_name": "SIMPLETOPGRAD",
+                    "color": "newborn_base_gradient_top"
+                },
+                "2":
+                {
+                    "group_name": "SIMPLEBOTTOMGRAD",
+                    "color": "newborn_base_gradient_bottom"
+                },
+                "1":
+                {
+                    "group_name": "BASEMASK",
+                    "color": "newborn_base"
+                }
+            }
         }
     ]
 }

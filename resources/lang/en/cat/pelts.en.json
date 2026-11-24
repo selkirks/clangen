@@ -800,6 +800,50 @@
             "one": "apricot",
             "many": "apricot"
         },
+        "CINNAMON-WOOD": {
+            "one": "pale cinnamon",
+            "many": "pale cinnamon"
+        },
+         "PLUM": {
+            "one": "chocolate plum",
+            "many": "chocolate plum"
+        },
+        "DARKCOPPER": {
+            "one": "dark copper",
+            "many": "dark copper"
+        },
+        "LIGHTCOPPER": {
+            "one": "light copper",
+            "many": "light copper"
+        },
+        "DARKPEACH": {
+            "one": "dark peach",
+            "many": "dark peach"
+        },
+        "LIGHTPEACH": {
+            "one": "light peach",
+            "many": "light peach"
+        },
+        "SUNGUS": {
+            "one": "apricot",
+            "many": "apricot"
+        },
+        "DARKAPRICOT": {
+            "one": "dark apricot",
+            "many": "dark apricot"
+        },
+        "LIGHTAPRICOT": {
+            "one": "light apricot",
+            "many": "light apricot"
+        },
+        "SANDY-RED": {
+            "one": "pale ginger",
+            "many": "pale ginger"
+        },
+        "SANDY-CLAY": {
+            "one": "sandy",
+            "many": "sandy cream"
+        },
 
         "pink": "pink",
         "gray": "haze",

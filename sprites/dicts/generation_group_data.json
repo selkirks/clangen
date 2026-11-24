@@ -195,7 +195,18 @@
             "DRIPSTONE": "brown",
             "SOUL": "brown",
             "DEBRIS": "brown",
-            "GRANITE": "brown"
+            "GRANITE": "brown",
+            "CINNAMON-WOOD": "brown",
+            "PLUM": "brown",
+            "DARKCOPPER": "ginger",
+            "LIGHTCOPPER": "ginger",
+            "DARKPEACH": "ginger",
+            "LIGHTPEACH": "ginger",
+            "SUNGUS": "ginger",
+            "LIGHTAPRICOT": "ginger",
+            "DARKAPRICOT": "ginger",
+            "SANDY-RED": "ginger",
+            "SANDY-CLAY": "ginger"
         },
         "pattern_types": {
             "Tabby": "tabbies",

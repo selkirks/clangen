@@ -669,7 +669,42 @@
     ],
     "PALEOAK": [
     "pale", "root"
+    ],
+     "CINNAMON-WOOD": [
+    "Cinnamon", "Light", "Pale"
+    ],
+    "PLUM": [
+    "Plume"
+    ],
+    "DARKCOPPER": [
+    "Copper"
+    ],
+    "LIGHTCOPPER": [
+    "Copper"
+    ],
+    "DARKPEACH": [
+    "Peach"
+    ],
+    "LIGHTPEACH": [
+    "Peach"
+    ],
+    "SUNGUS": [
+    "Apricot"
+    ],
+    "LIGHTAPRICOT": [
+    "Apricot"
+    ],
+    "DARKAPRICOT": [
+    "Apricot"
+    ],
+    "SANDY-RED": [
+    "Sandy"
+    ],
+    "SANDY-CLAY": [
+    "Sandy"
     ]
+
+
   },
 
 	"colour_suffixes": {
@@ -1012,7 +1047,21 @@
     ],
     "MCDARKOK": [
     "root", "bark", "shade", "owl", "oak", "wood", "moth", "branch", "burr"
+    ],
+    "CINNAMON-WOOD": [
+    "mouse"
+    ],
+    "PLUM": [
+    "bark"
+    ],
+    "SANDY-RED": [
+    "sand"
+    ],
+    "SANDY-CLAY": [
+    "sand"
     ]
+
+
   },
 
   "biome_prefixes": {
