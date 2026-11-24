@@ -4982,8 +4982,8 @@
         "exotic_pattern_gradient_top": "#9c4e00",
         "exotic_pattern_fill": "#E77F0C",
         "exotic_pattern_fill_gradient_top": "#be6806",
-        "exotic_light_pattern": "#E77F0C",
-        "exotic_muzzle": "#FFC64A",
+        "exotic_light_pattern": "#d77c0c",
+        "exotic_muzzle": "#E77F0C",
 
         "newborn_exotic_base": "#FF9D22",
         "newborn_exotic_base_gradient_bottom": "#d77c0c",
@@ -4992,8 +4992,8 @@
         "newborn_exotic_pattern_gradient_top": "#9c4e00",
         "newborn_exotic_pattern_fill": "#E77F0C",
         "newborn_exotic_pattern_fill_gradient_top": "#be6806",
-        "newborn_exotic_light_pattern": "#E77F0C",
-        "newborn_exotic_muzzle": "#FFC64A"
+        "newborn_exotic_light_pattern": "#d77c0c",
+        "newborn_exotic_muzzle": "#E77F0C"
     },
     "CANTALOUPE": {
         "base": "#FEB256",
@@ -5026,8 +5026,8 @@
         "exotic_pattern_gradient_top": "#dc7d1e",
         "exotic_pattern_fill": "#FAA13F",
         "exotic_pattern_fill_gradient_top": "#d0802b",
-        "exotic_light_pattern": "#FAA13F",
-        "exotic_muzzle": "#FFD88E",
+        "exotic_light_pattern": "#FFD88E",
+        "exotic_muzzle": "#FAA13F",
 
         "newborn_exotic_base": "#FEB256",
         "newborn_exotic_base_gradient_bottom": "#FFD88E",
@@ -5036,8 +5036,52 @@
         "newborn_exotic_pattern_gradient_top": "#dc7d1e",
         "newborn_exotic_pattern_fill": "#FAA13F",
         "newborn_exotic_pattern_fill_gradient_top": "#d0802b",
-        "newborn_exotic_light_pattern": "#FAA13F",
-        "newborn_exotic_muzzle": "#FFD88E"
+        "newborn_exotic_light_pattern": "#FFD88E",
+        "newborn_exotic_muzzle": "#FAA13F"
+    },
+    "APRICOT": {
+        "base": "#F5A479",
+        "base_gradient_bottom": "#FCC6A0",
+        "base_gradient_top": "#e19166",
+        "pattern": "#D6733E",
+        "pattern_gradient_top": "#c1622f",
+        "pattern_fill": "#E28655",
+        "masked_light_pattern": "#FDCDA8",
+
+        "newborn_base": "#F5A479",
+        "newborn_base_gradient_bottom": "#FCC6A0",
+        "newborn_base_gradient_top": "#e19166",
+        "newborn_pattern": "#D6733E",
+        "newborn_pattern_gradient_top": "#c1622f",
+        "newborn_pattern_fill": "#E28655",
+
+        "smoke_base": "#F5A479",
+        "smoke_base_gradient_top": "#e19166",
+        "smoke_base_gradient_bottom": "#FCC6A0",
+        "smoke_pattern": "#D6733E",
+        "smoke_pattern_gradient_top": "#c1622f",
+
+        "freckled_pattern_gradient_top": "#aa5223",
+
+        "exotic_base": "#F5A479",
+        "exotic_base_gradient_bottom": "#FCC6A0",
+        "exotic_base_gradient_top": "#e19166",
+        "exotic_pattern": "#D6733E",
+        "exotic_pattern_gradient_top": "#c1622f",
+        "exotic_pattern_fill": "#E28655",
+        "exotic_pattern_fill_gradient_top": "#c76e3f",
+        "exotic_light_pattern": "#E28655",
+        "exotic_muzzle": "#FCC6A0",
+
+        "newborn_exotic_base": "#F5A479",
+        "newborn_exotic_base_gradient_bottom": "#FCC6A0",
+        "newborn_exotic_base_gradient_top": "#e19166",
+        "newborn_exotic_pattern": "#D6733E",
+        "newborn_exotic_pattern_gradient_top": "#c1622f",
+        "newborn_exotic_pattern_fill": "#E28655",
+        "newborn_exotic_pattern_fill_gradient_top": "#c76e3f",
+        "newborn_exotic_light_pattern": "#E28655",
+        "newborn_exotic_muzzle": "#FCC6A0"
     },
     "CINNAMON": {
         "base": "#966c36",
@@ -5071,7 +5115,7 @@
         "exotic_pattern_fill": "#864913",
         "exotic_pattern_fill_gradient_top": "#864913",
         "exotic_light_pattern": "#e8cc8a",
-        "exotic_muzzle": "#8d5525",
+        "exotic_muzzle": "#7c451a",
 
         "newborn_exotic_base": "#aa8247",
         "newborn_exotic_base_gradient_bottom": "#e3bf70",
@@ -5081,7 +5125,7 @@
         "newborn_exotic_pattern_fill": "#864913",
         "newborn_exotic_pattern_fill_gradient_top": "#864913",
         "newborn_exotic_light_pattern": "#e8cc8a",
-        "newborn_exotic_muzzle": "#8d5525"
+        "newborn_exotic_muzzle": "#7c451a"
     },
     "HEATHER": {
         "base": "#A695B7",

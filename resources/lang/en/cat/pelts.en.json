@@ -796,6 +796,10 @@
             "one": "cantaloupe",
             "many": "cantaloupe"
         },
+        "APRICOT": {
+            "one": "apricot",
+            "many": "apricot"
+        },
 
         "pink": "pink",
         "gray": "haze",
