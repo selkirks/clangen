@@ -8234,7 +8234,7 @@
   },
    "TIGERSTRIPE": {
         "base": "#E6A963",
-        "base_gradient_bottom": "#B7D3B5",
+        "base_gradient_bottom": "#d2d3b5",
         "base_gradient_top": "#B86B43",
         "pattern": "#B14F2A",
         "pattern_gradient_top": "#A33A23",
@@ -8242,7 +8242,7 @@
         "masked_light_pattern": "#8A1B01",
 
         "newborn_base": "#E6A963",
-        "newborn_base_gradient_bottom": "#B7D3B5",
+        "newborn_base_gradient_bottom": "#d2d3b5",
         "newborn_base_gradient_top": "#B86B43",
         "newborn_pattern": "#B14F2A",
         "newborn_pattern_gradient_top": "#A33A23",
@@ -8250,14 +8250,14 @@
 
         "smoke_base": "#CFBE8C",
         "smoke_base_gradient_top": "#E6A963",
-        "smoke_base_gradient_bottom": "#B7D3B5",
+        "smoke_base_gradient_bottom": "#d2d3b5",
         "smoke_pattern": "#BF6639",
         "smoke_pattern_gradient_top": "#B14F2A",
 
         "freckled_pattern_gradient_top": "#8A1B01",
 
         "exotic_base": "#E6A963",
-        "exotic_base_gradient_bottom": "#B7D3B5",
+        "exotic_base_gradient_bottom": "#d2d3b5",
         "exotic_base_gradient_top": "#B86B43",
         "exotic_pattern": "#B14F2A",
         "exotic_pattern_gradient_top": "#A33A23",
@@ -8267,7 +8267,7 @@
         "exotic_muzzle": "#8A1B01",
 
         "newborn_exotic_base": "#E6A963",
-        "newborn_exotic_base_gradient_bottom": "#B7D3B5",
+        "newborn_exotic_base_gradient_bottom": "#d2d3b5",
         "newborn_exotic_base_gradient_top": "#B86B43",
         "newborn_exotic_pattern": "#B14F2A",
         "newborn_exotic_pattern_gradient_top": "#A33A23",
