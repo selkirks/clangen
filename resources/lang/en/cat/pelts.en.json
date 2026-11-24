@@ -897,6 +897,8 @@
         "Spice_long": "unusually striped %{color}",
         "Pinstripe": "mottled",
         "Pinstripe_long": "mottled %{color} tabby",
+        "BlueTang": "Blue Tang",
+        "BlueTang_long": "caped %{color}",
         "Calico": "calico",
         "Calico_long": "%{color} calico",
         "Calico_tabby": "calico tabby",

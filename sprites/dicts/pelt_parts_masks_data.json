@@ -89,7 +89,13 @@
             "FALSEEYES",
             "HINDLEGS",
             "SMOKETAILTIP",
-            "BELLY"
+            "BELLY",
+            "BLUETANGLEG",
+            "BLUETANGLEGGRAD",
+            "BLUETANGPATTERNFILL",
+            "BLUETANGTAIL",
+            "BLUETANGTAILGRAD",
+            "BLUETANGPATTERN"
         ]
     ]
 }
