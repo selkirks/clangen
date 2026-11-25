@@ -77,10 +77,6 @@
             "one": "gunmetal",
             "many": "gunmetal"
         },
-        "THAMAR": {
-            "one": "thamar",
-            "many": "thamar"
-        },
         "VEIL": {
             "one": "veil",
             "many": "veil"
@@ -105,10 +101,6 @@
             "one": "midnight",
             "many": "midnight"
         },
-        "OUZEL": {
-            "one": "ouzel",
-            "many": "ouzel"
-        },
         "DOLPHIN": {
             "one": "dolphin",
             "many": "dolphin"
@@ -124,14 +116,6 @@
         "MOUSY": {
             "one": "mousy",
             "many": "mousy"
-        },
-        "HAGSTONE": {
-            "one": "hagstone",
-            "many": "hagstone"
-        },
-        "NIGHTSHADE": {
-            "one": "nightshade",
-            "many": "nightshade"
         },
         "MOLD": {
             "one": "black",
@@ -277,10 +261,6 @@
             "one": "brown",
             "many": "rusted brown"
         },
-        "WOODEN": {
-            "one": "wood",
-            "many": "wood"
-        },
         "BARREL": {
             "one": "barrel",
             "many": "barrel"
@@ -349,10 +329,6 @@
             "one": "brown",
             "many": "golden brown"
         },
-        "MULBERRY": {
-            "one": "brown",
-            "many": "light brown"
-        },
         "REDCLAY": {
             "one": "brown",
             "many": "brown"
@@ -369,29 +345,13 @@
             "one": "ivory",
             "many": "ivory"
         },
-        "MARMITE": {
-            "one": "marmite",
-            "many": "marmite"
-        },
         "ROEBUCK": {
             "one": "roebuck",
             "many": "roebuck"
         },
-        "FRAPPE": {
-            "one": "frappe",
-            "many": "frappe"
-        },
         "BEIGE": {
             "one": "beige",
             "many": "beige"
-        },
-        "BONE": {
-            "one": "bone",
-            "many": "bone"
-        },
-        "VANILLA": {
-            "one": "vanilla",
-            "many": "vanilla"
         },
         "CLAM": {
             "one": "clam",
@@ -412,10 +372,6 @@
         "PEARL": {
             "one": "pearl",
             "many": "pearl"
-        },
-        "STONE": {
-            "one": "stone",
-            "many": "stone"
         },
         "CHARCOALDUST": {
             "one": "charcoal",
@@ -520,15 +476,6 @@
         "QUARTZ": {
             "one": "quartz",
             "many": "quartz"
-        },
-
-        "DIORITE": {
-            "one": "diorite",
-            "many": "diorite"
-        },
-        "GRAVEL": {
-            "one": "gravel",
-            "many": "gravel"
         },
         "TUFF": {
             "one": "tuff",
@@ -722,10 +669,6 @@
             "one": "mud",
             "many": "mud"
         },
-        "IRON": {
-            "one": "iron",
-            "many": "iron"
-        },
         "MUSHROOMSTEM": {
             "one": "mushroom stem",
             "many": "mushroom stem"
@@ -738,11 +681,6 @@
             "one": "pale oak",
             "many": "pale oak"
         },
-        "DURIAN": {
-            "one": "durian",
-            "many": "durian"
-        },
-
         "CRACKER": {
             "one": "cracker",
             "many": "cracker"
@@ -750,15 +688,6 @@
         "CARAMEL": {
             "one": "caramel",
             "many": "caramel"
-        },
-        "BUTTERSCOTCH": {
-            "one": "butterscotch",
-            "many": "butterscotch"
-        },
-
-        "NATROLITE": {
-            "one": "natrolite",
-            "many": "natrolite"
         },
         "FLOUR": {
             "one": "flour",
@@ -776,10 +705,6 @@
             "one": "eagle",
             "many": "eagle"
         },
-        "CURRY": {
-            "one": "curry",
-            "many": "curry"
-        },
         "CLOCKWORK": {
             "one": "clockwork",
             "many": "clockwork"
@@ -787,10 +712,6 @@
         "RADIANT": {
             "one": "radiant",
             "many": "radiant"
-        },
-        "CANTALOUPE": {
-            "one": "cantaloupe",
-            "many": "cantaloupe"
         },
         "APRICOT": {
             "one": "apricot",
@@ -844,10 +765,6 @@
             "one": "orange",
             "many": "orange"
         },
-        "TANGO": {
-            "one": "orange",
-            "many": "orange"
-        },
         "CITRINE": {
             "one": "citrine",
             "many": "citrine"
@@ -861,10 +778,6 @@
             "many": "mousse"
         },
         "HULL": {
-            "one": "rich brown",
-            "many": "rich brown"
-        },
-        "UMBER": {
             "one": "rich brown",
             "many": "rich brown"
         },
